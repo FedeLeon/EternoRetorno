@@ -1,0 +1,8 @@
+.godot/
+.tools/
+downloads/
+builds/*.apk
+builds/*.idsig
+*.tmp
+__pycache__/
+*.pyc

@@ -1,0 +1,665 @@
+{
+  "heroes": {
+    "warrior": {
+      "id": "warrior",
+      "name": "Guerrero",
+      "role": "Daño directo",
+      "hp": 58,
+      "color": "c66d58",
+      "lore": "Acero contra el olvido.",
+      "starter": [
+        "warrior_slash",
+        "warrior_slash",
+        "warrior_guard",
+        "warrior_guard",
+        "warrior_heavy",
+        "warrior_charge"
+      ]
+    },
+    "guardian": {
+      "id": "guardian",
+      "name": "Guardiana",
+      "role": "Protección",
+      "hp": 64,
+      "color": "80b4b3",
+      "lore": "Nadie cae a sus espaldas.",
+      "starter": [
+        "guardian_bash",
+        "guardian_bash",
+        "guardian_guard",
+        "guardian_guard",
+        "guardian_wall",
+        "guardian_strike"
+      ]
+    },
+    "rogue": {
+      "id": "rogue",
+      "name": "Pícaro",
+      "role": "Veneno",
+      "hp": 45,
+      "color": "a4be73",
+      "lore": "Hasta la piedra aprende a sangrar.",
+      "starter": [
+        "rogue_cut",
+        "rogue_cut",
+        "rogue_dodge",
+        "rogue_dodge",
+        "rogue_toxin",
+        "rogue_venom"
+      ]
+    },
+    "mage": {
+      "id": "mage",
+      "name": "Maga",
+      "role": "Ataques múltiples",
+      "hp": 42,
+      "color": "b095d4",
+      "lore": "Una chispa. Mil ecos.",
+      "starter": [
+        "mage_spark",
+        "mage_spark",
+        "mage_ward",
+        "mage_ward",
+        "mage_storm",
+        "mage_missile"
+      ]
+    },
+    "cleric": {
+      "id": "cleric",
+      "name": "Clériga",
+      "role": "Curación",
+      "hp": 48,
+      "color": "e3c887",
+      "lore": "Una luz que se niega a morir.",
+      "starter": [
+        "cleric_light",
+        "cleric_light",
+        "cleric_ward",
+        "cleric_ward",
+        "cleric_heal",
+        "cleric_judgment"
+      ]
+    },
+    "ranger": {
+      "id": "ranger",
+      "name": "Explorador",
+      "role": "Precisión",
+      "hp": 48,
+      "color": "779fc1",
+      "lore": "Siempre encuentra una salida.",
+      "starter": [
+        "ranger_arrow",
+        "ranger_arrow",
+        "ranger_evade",
+        "ranger_evade",
+        "ranger_aim",
+        "ranger_double"
+      ]
+    }
+  },
+  "cards": {
+    "warrior_slash": {
+      "id": "warrior_slash",
+      "owner": "warrior",
+      "name": "Tajo",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_guard": {
+      "id": "warrior_guard",
+      "owner": "warrior",
+      "name": "Guardia de hierro",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 9,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_heavy": {
+      "id": "warrior_heavy",
+      "owner": "warrior",
+      "name": "Golpe pesado",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 19,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_charge": {
+      "id": "warrior_charge",
+      "owner": "warrior",
+      "name": "Embestida",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 7,
+      "block": 4,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_echo": {
+      "id": "warrior_echo",
+      "owner": "warrior",
+      "name": "Filo del retorno",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 25,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "guardian_bash": {
+      "id": "guardian_bash",
+      "owner": "guardian",
+      "name": "Golpe de escudo",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 7,
+      "block": 3,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_guard": {
+      "id": "guardian_guard",
+      "owner": "guardian",
+      "name": "Baluarte",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 12,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_wall": {
+      "id": "guardian_wall",
+      "owner": "guardian",
+      "name": "Muro del alba",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 13,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_strike": {
+      "id": "guardian_strike",
+      "owner": "guardian",
+      "name": "Contraataque",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_echo": {
+      "id": "guardian_echo",
+      "owner": "guardian",
+      "name": "Juramento eterno",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 22,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "rogue_cut": {
+      "id": "rogue_cut",
+      "owner": "rogue",
+      "name": "Puñalada",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_dodge": {
+      "id": "rogue_dodge",
+      "owner": "rogue",
+      "name": "Paso sombrío",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 8,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_toxin": {
+      "id": "rogue_toxin",
+      "owner": "rogue",
+      "name": "Hoja tóxica",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 4,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_venom": {
+      "id": "rogue_venom",
+      "owner": "rogue",
+      "name": "Veneno negro",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 9,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_echo": {
+      "id": "rogue_echo",
+      "owner": "rogue",
+      "name": "Herida perpetua",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 7,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "mage_spark": {
+      "id": "mage_spark",
+      "owner": "mage",
+      "name": "Chispas",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_ward": {
+      "id": "mage_ward",
+      "owner": "mage",
+      "name": "Velo arcano",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 8,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_storm": {
+      "id": "mage_storm",
+      "owner": "mage",
+      "name": "Tormenta",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 10,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_missile": {
+      "id": "mage_missile",
+      "owner": "mage",
+      "name": "Misiles del vacío",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 3,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_echo": {
+      "id": "mage_echo",
+      "owner": "mage",
+      "name": "Constelación rota",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 7,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": true
+    },
+    "cleric_light": {
+      "id": "cleric_light",
+      "owner": "cleric",
+      "name": "Luz cortante",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "cleric_ward": {
+      "id": "cleric_ward",
+      "owner": "cleric",
+      "name": "Fe",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 9,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "cleric_heal": {
+      "id": "cleric_heal",
+      "owner": "cleric",
+      "name": "Restauración",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 0,
+      "heal": 7,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "cleric_judgment": {
+      "id": "cleric_judgment",
+      "owner": "cleric",
+      "name": "Juicio",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 14,
+      "block": 0,
+      "heal": 4,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "cleric_echo": {
+      "id": "cleric_echo",
+      "owner": "cleric",
+      "name": "Luz del retorno",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 5,
+      "heal": 12,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "ranger_arrow": {
+      "id": "ranger_arrow",
+      "owner": "ranger",
+      "name": "Flecha certera",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": false
+    },
+    "ranger_evade": {
+      "id": "ranger_evade",
+      "owner": "ranger",
+      "name": "Retirada",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 8,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "ranger_aim": {
+      "id": "ranger_aim",
+      "owner": "ranger",
+      "name": "Disparo al corazón",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 19,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": false
+    },
+    "ranger_double": {
+      "id": "ranger_double",
+      "owner": "ranger",
+      "name": "Doble disparo",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false
+    },
+    "ranger_echo": {
+      "id": "ranger_echo",
+      "owner": "ranger",
+      "name": "Último horizonte",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 26,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": true
+    }
+  },
+  "enemies": {
+    "rat": {
+      "name": "Rata de cripta",
+      "hp": 22,
+      "color": "b59a86",
+      "pattern": [
+        {
+          "damage": 6
+        },
+        {
+          "damage": 8
+        }
+      ]
+    },
+    "skeleton": {
+      "name": "Centinela hueco",
+      "hp": 30,
+      "color": "d6c9a9",
+      "pattern": [
+        {
+          "damage": 7,
+          "block": 5
+        },
+        {
+          "damage": 11
+        }
+      ]
+    },
+    "cultist": {
+      "name": "Devoto del ciclo",
+      "hp": 28,
+      "color": "b58cc5",
+      "pattern": [
+        {
+          "damage": 6
+        },
+        {
+          "damage": 9
+        },
+        {
+          "damage": 13
+        }
+      ]
+    },
+    "slime": {
+      "name": "Lodo ancestral",
+      "hp": 34,
+      "color": "91b37d",
+      "pattern": [
+        {
+          "damage": 5,
+          "block": 7
+        },
+        {
+          "damage": 9
+        }
+      ]
+    },
+    "elite": {
+      "name": "Caballero sin tiempo",
+      "hp": 78,
+      "color": "bfa873",
+      "pattern": [
+        {
+          "damage": 12,
+          "block": 8
+        },
+        {
+          "damage": 9,
+          "all": true
+        },
+        {
+          "damage": 18
+        }
+      ]
+    },
+    "boss": {
+      "name": "El Guardián del Retorno",
+      "hp": 110,
+      "color": "cf7666",
+      "pattern": [
+        {
+          "damage": 11,
+          "all": true
+        },
+        {
+          "damage": 17,
+          "block": 10
+        },
+        {
+          "damage": 22
+        }
+      ]
+    }
+  },
+  "relics": {
+    "ember": {
+      "name": "Ascua persistente",
+      "description": "Al iniciar cada combate, ambos ganan 4 de bloqueo.",
+      "locked": false
+    },
+    "fang": {
+      "name": "Colmillo de obsidiana",
+      "description": "Cada impacto de tus cartas inflige 1 de daño adicional.",
+      "locked": false
+    },
+    "chalice": {
+      "name": "Cáliz de musgo",
+      "description": "Tras ganar un combate, ambos recuperan 3 de vida.",
+      "locked": false
+    },
+    "hourglass": {
+      "name": "Reloj sin arena",
+      "description": "El primer turno de cada combate tiene 1 de energía adicional.",
+      "locked": true
+    }
+  },
+  "events": {
+    "well": {
+      "name": "El pozo de los ecos",
+      "text": "Una voz pronuncia nombres que todavía no conocés. El agua conserva un calor imposible.",
+      "choices": [
+        "Beber · recuperar 8 de vida ambos",
+        "Seguir adelante"
+      ]
+    },
+    "altar": {
+      "name": "El altar hambriento",
+      "text": "Una hendidura en la piedra espera una ofrenda. Bajo ella brilla un filo intacto.",
+      "choices": [
+        "Ofrendar · perder 5 de vida ambos y mejorar una carta al azar",
+        "Dejar el altar"
+      ]
+    },
+    "library": {
+      "name": "La biblioteca hundida",
+      "text": "Las páginas se deshacen salvo una: describe exactamente tu llegada a esta sala.",
+      "choices": [
+        "Leer · elegir una carta",
+        "Cerrar el libro"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PAIR warrior + guardian: 3/3 victories
+PAIR warrior + rogue: 3/3 victories
+PAIR warrior + mage: 3/3 victories
+PAIR warrior + cleric: 3/3 victories
+PAIR warrior + ranger: 3/3 victories
+PAIR guardian + rogue: 3/3 victories
+PAIR guardian + mage: 3/3 victories
+PAIR guardian + cleric: 3/3 victories
+PAIR guardian + ranger: 3/3 victories
+PAIR rogue + mage: 3/3 victories
+PAIR rogue + cleric: 3/3 victories
+PAIR rogue + ranger: 3/3 victories
+PAIR mage + cleric: 3/3 victories
+PAIR mage + ranger: 2/3 victories
+PAIR cleric + ranger: 3/3 victories
+SIMULATIONS: 44/45 victories
+CHECKS: 137 | FAILURES: 0
