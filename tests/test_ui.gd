@@ -17,8 +17,8 @@ func run_checks() -> void:
 		app.continue_run()
 		await process_frame
 		await process_frame
-		for child in app.layer.get_children():
-			if child is Button and child.position.y == 444:
+		for child in app.layer.get_node("CombatHand").get_child(0).get_children():
+			if child is Button and child.has_meta("card_id"):
 				for label in child.get_children():
 					if label is Label:
 						checks += 1
@@ -28,9 +28,9 @@ func run_checks() -> void:
 	# Native mouse events use the same Godot button actions as emulated touch.
 	app.open_selection()
 	await process_frame
-	click(Vector2(130, 300))
+	click(app.CAMP_POSITIONS[0] - Vector2(0, 50))
 	await process_frame
-	click(Vector2(950, 300))
+	click(app.CAMP_POSITIONS[4] - Vector2(0, 50))
 	await process_frame
 	checks += 1
 	if app.selected_party != ["warrior", "cleric"]:

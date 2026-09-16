@@ -1,0 +1,22 @@
+{
+  "relics": {
+    "vital_amulet": {"name":"Amuleto Vital","icon":0,"effect":"max_hp","value":10,"description":"+10 de vida máxima e inicial para su portador durante la aventura."},
+    "vigor_ring": {"name":"Anillo del Vigor","icon":1,"effect":"energy","value":1,"description":"Si su portador está vivo: +1 de energía compartida en el primer turno de cada combate."},
+    "phoenix_idol": {"name":"Ídolo del Fénix","icon":2,"effect":"phoenix","value":1,"description":"Su portador sobrevive con 1 de vida al primer golpe fatal. Una vez por aventura."},
+    "poison_fang": {"name":"Colmillo Envenenado","icon":3,"effect":"poison","value":2,"description":"Las cartas de su portador que aplican veneno añaden 2 acumulaciones adicionales."},
+    "arcane_orb": {"name":"Orbe Arcano","icon":4,"effect":"magic","value":2,"description":"+2 de daño por impacto en cartas ofensivas de maga o clériga. Solo afecta a su portador."},
+    "wind_boots": {"name":"Botas del Viento","icon":5,"effect":"block","value":3,"description":"Su portador gana 3 de bloqueo al inicio de cada turno del equipo."},
+    "pilgrim_shield": {"name":"Escudo del Peregrino","icon":6,"effect":"armor","value":2,"description":"Reduce en 2 cada ataque enemigo contra su portador, antes del bloqueo."},
+    "merchant_coin": {"name":"Moneda del Mercader","icon":7,"effect":"reward","value":1,"description":"En cada recompensa, mejora una carta de su portador si aparece en la oferta."}
+  },
+  "items": {
+    "healing_potion":{"name":"Poción de Curación","icon":8,"effect":"heal","value":12,"target":"living","description":"Recupera 12 de vida de un aliado vivo."},
+    "energy_flask":{"name":"Frasco de Energía","icon":9,"effect":"energy","value":2,"target":"team","description":"Añade 2 de energía compartida para este turno."},
+    "phoenix_feather":{"name":"Pluma Fénix","icon":10,"effect":"revive","value":25,"target":"fallen","description":"Revive a un aliado caído con el 25 % de su vida máxima. Sus cartas vuelven al descarte."},
+    "strength_tonic":{"name":"Tónico de Fuerza","icon":11,"effect":"strength","value":3,"target":"living","description":"Un aliado obtiene +3 de daño por impacto de sus cartas durante este turno."},
+    "concentrated_poison":{"name":"Veneno Concentrado","icon":12,"effect":"poison","value":6,"target":"enemy","description":"Aplica 6 acumulaciones de veneno a un enemigo."},
+    "arcane_elixir":{"name":"Elixir Arcano","icon":13,"effect":"magic","value":2,"target":"caster","description":"Maga o clériga obtiene +2 de daño por impacto de sus cartas durante este turno."},
+    "agility_brew":{"name":"Brebaje de Agilidad","icon":14,"effect":"draw","value":2,"target":"team","description":"Roba 2 cartas adicionales del mazo compartido."},
+    "defense_balm":{"name":"Bálsamo de Defensa","icon":15,"effect":"block","value":12,"target":"living","description":"Otorga 12 de bloqueo a un aliado vivo hasta el siguiente turno."}
+  }
+}

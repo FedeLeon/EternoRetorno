@@ -1,0 +1,394 @@
+{
+  "crypt_bandit": {
+    "name": "Bandido saqueador",
+    "sheet": 1,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "crypt_wolf": {
+    "name": "Lobo salvaje",
+    "sheet": 1,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "crypt_slime": {
+    "name": "Baba ácida",
+    "sheet": 1,
+    "index": 2,
+    "motion": "ooze",
+    "floor": 1
+  },
+  "crypt_lancer": {
+    "name": "Esqueleto lancero",
+    "sheet": 1,
+    "index": 3,
+    "motion": "ground",
+    "floor": 1
+  },
+  "crypt_shaman": {
+    "name": "Chamán de ceniza",
+    "sheet": 1,
+    "index": 4,
+    "motion": "ground",
+    "floor": 1
+  },
+  "crypt_beetle": {
+    "name": "Escarabajo coraza",
+    "sheet": 1,
+    "index": 5,
+    "motion": "ground",
+    "floor": 0
+  },
+  "crypt_automaton": {
+    "name": "Autómata roto",
+    "sheet": 1,
+    "index": 6,
+    "motion": "ground",
+    "floor": 1
+  },
+  "crypt_bat": {
+    "name": "Murciélago nocturno",
+    "sheet": 1,
+    "index": 7,
+    "motion": "fly",
+    "floor": 1
+  },
+  "beast_0": {
+    "name": "Lobo gris",
+    "sheet": 2,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_1": {
+    "name": "Jabalí salvaje",
+    "sheet": 2,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_2": {
+    "name": "Murciélago gigante",
+    "sheet": 2,
+    "index": 2,
+    "motion": "fly",
+    "floor": 0
+  },
+  "beast_3": {
+    "name": "Escorpión de roca",
+    "sheet": 2,
+    "index": 3,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_4": {
+    "name": "Sapo venenoso",
+    "sheet": 2,
+    "index": 4,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_5": {
+    "name": "Oso de cueva",
+    "sheet": 2,
+    "index": 5,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_6": {
+    "name": "Serpiente de hielo",
+    "sheet": 2,
+    "index": 6,
+    "motion": "ground",
+    "floor": 0
+  },
+  "beast_7": {
+    "name": "Cuervo carroñero",
+    "sheet": 2,
+    "index": 7,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_0": {
+    "name": "Esqueleto guerrero",
+    "sheet": 3,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_1": {
+    "name": "Esqueleto lancero acorazado",
+    "sheet": 3,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_2": {
+    "name": "Esqueleto arquero",
+    "sheet": 3,
+    "index": 2,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_3": {
+    "name": "Esqueleto escudero",
+    "sheet": 3,
+    "index": 3,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_4": {
+    "name": "Esqueleto chamán",
+    "sheet": 3,
+    "index": 4,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_5": {
+    "name": "Esqueleto berserker",
+    "sheet": 3,
+    "index": 5,
+    "motion": "ground",
+    "floor": 0
+  },
+  "skeleton_6": {
+    "name": "Esqueleto guardián",
+    "sheet": 3,
+    "index": 6,
+    "motion": "ground",
+    "floor": 1
+  },
+  "skeleton_7": {
+    "name": "Esqueleto corcel",
+    "sheet": 3,
+    "index": 7,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_0": {
+    "name": "Goblin guerrero",
+    "sheet": 4,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_1": {
+    "name": "Goblin lancero",
+    "sheet": 4,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_2": {
+    "name": "Goblin arquero",
+    "sheet": 4,
+    "index": 2,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_3": {
+    "name": "Goblin chamán",
+    "sheet": 4,
+    "index": 3,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_4": {
+    "name": "Goblin bombardero",
+    "sheet": 4,
+    "index": 4,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_5": {
+    "name": "Goblin saqueador",
+    "sheet": 4,
+    "index": 5,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_6": {
+    "name": "Goblin jinete",
+    "sheet": 4,
+    "index": 6,
+    "motion": "ground",
+    "floor": 0
+  },
+  "goblin_7": {
+    "name": "Goblin jefe",
+    "sheet": 4,
+    "index": 7,
+    "motion": "ground",
+    "floor": 0
+  },
+  "elemental_0": {
+    "name": "Elemental de fuego",
+    "sheet": 5,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "elemental_1": {
+    "name": "Elemental de hielo",
+    "sheet": 5,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "elemental_2": {
+    "name": "Elemental de roca",
+    "sheet": 5,
+    "index": 2,
+    "motion": "ground",
+    "floor": 0
+  },
+  "elemental_3": {
+    "name": "Elemental de tormenta",
+    "sheet": 5,
+    "index": 3,
+    "motion": "fly",
+    "floor": 0
+  },
+  "elemental_4": {
+    "name": "Elemental de veneno",
+    "sheet": 5,
+    "index": 4,
+    "motion": "ooze",
+    "floor": 0
+  },
+  "elemental_5": {
+    "name": "Elemental de arena",
+    "sheet": 5,
+    "index": 5,
+    "motion": "fly",
+    "floor": 0
+  },
+  "elemental_6": {
+    "name": "Elemental de raíces",
+    "sheet": 5,
+    "index": 6,
+    "motion": "ground",
+    "floor": 0
+  },
+  "elemental_7": {
+    "name": "Elemental de sombra",
+    "sheet": 5,
+    "index": 7,
+    "motion": "fly",
+    "floor": 0
+  },
+  "bandit_0": {
+    "name": "Bandido cuchillero",
+    "sheet": 6,
+    "index": 0,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_1": {
+    "name": "Bandido lancero",
+    "sheet": 6,
+    "index": 1,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_2": {
+    "name": "Bandido arquero",
+    "sheet": 6,
+    "index": 2,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_3": {
+    "name": "Bandido escudero",
+    "sheet": 6,
+    "index": 3,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_4": {
+    "name": "Bandido bombardero",
+    "sheet": 6,
+    "index": 4,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_5": {
+    "name": "Bandido bruto",
+    "sheet": 6,
+    "index": 5,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_6": {
+    "name": "Bandido cazador",
+    "sheet": 6,
+    "index": 6,
+    "motion": "ground",
+    "floor": 0
+  },
+  "bandit_7": {
+    "name": "Jefe bandido",
+    "sheet": 6,
+    "index": 7,
+    "motion": "ground",
+    "floor": 0
+  },
+  "flying_0": {
+    "name": "Murciélago nocturno de bosque",
+    "sheet": 7,
+    "index": 0,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_1": {
+    "name": "Murciélago alfa",
+    "sheet": 7,
+    "index": 1,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_2": {
+    "name": "Cría de dragón",
+    "sheet": 7,
+    "index": 2,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_3": {
+    "name": "Wyvern joven",
+    "sheet": 7,
+    "index": 3,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_4": {
+    "name": "Avispa gigante",
+    "sheet": 7,
+    "index": 4,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_5": {
+    "name": "Escarabajo alado",
+    "sheet": 7,
+    "index": 5,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_6": {
+    "name": "Cuervo carroñero volador",
+    "sheet": 7,
+    "index": 6,
+    "motion": "fly",
+    "floor": 0
+  },
+  "flying_7": {
+    "name": "Búho vigía",
+    "sheet": 7,
+    "index": 7,
+    "motion": "fly",
+    "floor": 0
+  }
+}

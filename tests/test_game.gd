@@ -67,7 +67,7 @@ func paths_end_at_boss(node: int) -> bool:
 
 func card_rules() -> void:
 	var g = combat()
-	check(g.run.combat.energy == 3 and g.run.combat.hand.size() == 5, "3 energy / 5 cards")
+	check(g.run.combat.energy == 3 and g.run.combat.hand.size() == 6, "3 energy / 6 cards")
 	set_hand(g, ["warrior_slash", "warrior_heavy"])
 	var e = g.run.combat.enemies[0]
 	e.hp = 100; e.max_hp = 100; e.block = 4

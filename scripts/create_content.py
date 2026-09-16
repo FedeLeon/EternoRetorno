@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 classes = [
- ('warrior','Guerrero','Daño directo',58,'c66d58','Acero contra el olvido.'),
+ ('warrior','Guerrero','Daño directo',58,'b65aa8','Portador Maldito.\nAcero y maldición.'),
  ('guardian','Guardiana','Protección',64,'80b4b3','Nadie cae a sus espaldas.'),
  ('rogue','Pícaro','Veneno',45,'a4be73','Hasta la piedra aprende a sangrar.'),
  ('mage','Maga','Ataques múltiples',42,'b095d4','Una chispa. Mil ecos.'),
@@ -54,6 +54,11 @@ enemies={
  'slime':dict(name='Lodo ancestral',hp=34,color='91b37d',pattern=[dict(damage=5,block=7),dict(damage=9)]),
  'elite':dict(name='Caballero sin tiempo',hp=78,color='bfa873',pattern=[dict(damage=12,block=8),dict(damage=9,all=True),dict(damage=18)]),
  'boss':dict(name='El Guardián del Retorno',hp=110,color='cf7666',pattern=[dict(damage=11,all=True),dict(damage=17,block=10),dict(damage=22)])}
+# Visual identities retain stable encounter IDs and combat balance.
+for key, visual in {'rat': 'crypt_bat', 'skeleton': 'crypt_lancer', 'cultist': 'crypt_shaman', 'slime': 'crypt_slime', 'elite': 'skeleton_6', 'boss': 'crypt_automaton'}.items():
+ enemies[key]["visual"] = visual
+ enemies[key]["name"] = json.loads(Path("data/enemy_visuals.json").read_text())[visual]["name"]
+
 relics={
  'ember':dict(name='Ascua persistente',description='Al iniciar cada combate, ambos ganan 4 de bloqueo.',locked=False),
  'fang':dict(name='Colmillo de obsidiana',description='Cada impacto de tus cartas inflige 1 de daño adicional.',locked=False),

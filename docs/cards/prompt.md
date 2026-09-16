@@ -1,0 +1,6 @@
+# Prompt de generación
+
+Referencia: `/home/fede/Escritorio/EternoRetornoConceptArt/cartas.png`.
+Herramienta: imagegen integrada. Salida seleccionada: `generated-frames.png`.
+
+Use case: stylized-concept. Generate production pixel art card FRAME assets based on reference. Exactly THREE columns TWO rows of SIX separate empty upright rectangular frames, same size and proportions. Row1: dark red warrior frame with tiny sword crest; dark teal guardian frame with small shield crest; moss green rogue frame with small crossed DAGGERS crest (no guns). Row2: purple mage frame crescent crest; antique gold cleric frame sun crest; slate blue ranger frame arrow crest. Preserve worn stone/metal gothic pixel-art edging from reference. Each frame outer shape simple rectangular, portrait2:3, generous empty transparent gutters. Interiors uniform flat very dark charcoal, NO parchment panels, NO title ribbons, NO medallions, NO characters or illustrations, NO text or numbers. Only ornate outer border and small crest centered at top, keep center entirely empty. No protruding edges crossing cells. TRUE transparent RGBA outside frames. Complete six frames, not a concept presentation. UI will overlay title parchment, artwork, effect parchment and energy medallion separately.

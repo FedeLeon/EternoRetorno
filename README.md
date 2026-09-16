@@ -26,7 +26,7 @@ conservan. No se publica en Google Play.
 2. Tocá una sala iluminada del mapa. Las ramas vuelven a unirse antes del jefe.
 3. Tocá una carta y luego un objetivo iluminado. Para cartas sobre su dueño o
    todo el grupo/enemigos, confirmá tocando al personaje dueño de la carta.
-4. Compartís 3 de energía y robás 5 cartas por turno. El coste está arriba a la
+4. Compartís 3 de energía y robás 6 cartas por turno. El coste está arriba a la
    izquierda; las cartas sin energía suficiente se desactivan.
 5. Al terminar el turno descartás tu mano; el descarte se mezcla al agotar el
    mazo. El bloqueo absorbe daño y expira al comienzo del siguiente turno aliado.

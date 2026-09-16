@@ -5,8 +5,8 @@
       "name": "Guerrero",
       "role": "Daño directo",
       "hp": 58,
-      "color": "c66d58",
-      "lore": "Acero contra el olvido.",
+      "color": "b65aa8",
+      "lore": "Portador Maldito.\nAcero y maldición.",
       "starter": [
         "warrior_slash",
         "warrior_slash",
@@ -521,7 +521,7 @@
   },
   "enemies": {
     "rat": {
-      "name": "Rata de cripta",
+      "name": "Murciélago nocturno",
       "hp": 22,
       "color": "b59a86",
       "pattern": [
@@ -531,10 +531,11 @@
         {
           "damage": 8
         }
-      ]
+      ],
+      "visual": "crypt_bat"
     },
     "skeleton": {
-      "name": "Centinela hueco",
+      "name": "Esqueleto lancero",
       "hp": 30,
       "color": "d6c9a9",
       "pattern": [
@@ -545,10 +546,11 @@
         {
           "damage": 11
         }
-      ]
+      ],
+      "visual": "crypt_lancer"
     },
     "cultist": {
-      "name": "Devoto del ciclo",
+      "name": "Chamán de ceniza",
       "hp": 28,
       "color": "b58cc5",
       "pattern": [
@@ -561,10 +563,11 @@
         {
           "damage": 13
         }
-      ]
+      ],
+      "visual": "crypt_shaman"
     },
     "slime": {
-      "name": "Lodo ancestral",
+      "name": "Baba ácida",
       "hp": 34,
       "color": "91b37d",
       "pattern": [
@@ -575,10 +578,11 @@
         {
           "damage": 9
         }
-      ]
+      ],
+      "visual": "crypt_slime"
     },
     "elite": {
-      "name": "Caballero sin tiempo",
+      "name": "Esqueleto guardián",
       "hp": 78,
       "color": "bfa873",
       "pattern": [
@@ -593,10 +597,11 @@
         {
           "damage": 18
         }
-      ]
+      ],
+      "visual": "skeleton_6"
     },
     "boss": {
-      "name": "El Guardián del Retorno",
+      "name": "Autómata roto",
       "hp": 110,
       "color": "cf7666",
       "pattern": [
@@ -611,7 +616,8 @@
         {
           "damage": 22
         }
-      ]
+      ],
+      "visual": "crypt_automaton"
     }
   },
   "relics": {

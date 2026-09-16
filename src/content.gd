@@ -6,6 +6,8 @@ var cards: Dictionary
 var enemies: Dictionary
 var relics: Dictionary
 var events: Dictionary
+var equipment: Dictionary
+var items: Dictionary
 
 func _init() -> void:
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json"))
@@ -14,6 +16,9 @@ func _init() -> void:
 	enemies = data.enemies
 	relics = data.relics
 	events = data.events
+	var objects = JSON.parse_string(FileAccess.get_file_as_string("res://data/equipment.json"))
+	equipment = objects.relics
+	items = objects.items
 
 func card(instance: Dictionary) -> Dictionary:
 	var result = cards[instance.id].duplicate(true)
@@ -26,8 +31,8 @@ func card(instance: Dictionary) -> Dictionary:
 			result.poison += 2
 	return result
 
-func describe(instance: Dictionary) -> String:
-	var c = card(instance)
+func describe(instance: Dictionary, effective: Dictionary = {}) -> String:
+	var c = card(instance) if effective.is_empty() else effective
 	var lines: Array[String] = []
 	if c.damage > 0:
 		lines.append("%d de daño%s%s." % [c.damage, " × %d" % c.hits if c.hits > 1 else "", " penetrante" if c.pierce else ""])

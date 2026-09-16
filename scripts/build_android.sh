@@ -10,6 +10,7 @@ python3 scripts/configure_android.py
 "$godot_bin" --headless --path . --import
 "$godot_bin" --headless --path . --script tests/test_game.gd
 "$godot_bin" --headless --path . --script tests/test_ui.gd
+"$godot_bin" --headless --path . --script tests/test_warrior.gd
 "$godot_bin" --headless --path . --export-debug Android builds/EternoRetorno-0.1.0-debug.apk
 .tools/android/build-tools/36.0.0/apksigner verify --verbose builds/EternoRetorno-0.1.0-debug.apk
 sha256sum builds/EternoRetorno-0.1.0-debug.apk > builds/SHA256SUMS

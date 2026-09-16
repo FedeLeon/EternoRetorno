@@ -30,22 +30,34 @@ func checkpoint() -> void:
 	if save_enabled and not store.write(profile, run):
 		message = store.last_error
 
-func new_run(party: Array, seed_value: int = -1) -> bool:
+func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> bool:
 	if party.size() != 2 or party[0] == party[1]:
 		return false
 	for id in party:
 		if not content.heroes.has(id):
 			return false
+	if not valid_equipment(party, equipment):
+		return false
 	if seed_value == -1:
 		rng.randomize()
 	else:
 		rng.seed = seed_value
 	var initial_seed = rng.seed
 	run = {"seed": initial_seed, "rng_state": rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": Dungeon.create(rng), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
+	run.inventory = {}
+	for item_id in content.items:
+		run.inventory[item_id] = 1
 	for id in party:
 		run.heroes.append({"id": id, "hp": int(content.heroes[id].hp), "max_hp": int(content.heroes[id].hp), "block": 0})
+		var hero = run.heroes.back()
+		hero.equipped_relic = equipment.get(id, "")
+		hero.phoenix_used = false
+		if relic_bonus(hero, "max_hp") > 0:
+			hero.max_hp += relic_bonus(hero, "max_hp")
+			hero.hp = hero.max_hp
 		for card_id in content.heroes[id].starter:
 			run.deck.append({"id": card_id, "upgraded": false})
+	profile.erase("preparation")
 	profile.attempts += 1
 	message = ""
 	checkpoint()
@@ -106,9 +118,11 @@ func _start_combat(encounter: Array) -> void:
 func _start_turn() -> void:
 	var battle = run.combat
 	battle.turn += 1
-	battle.energy = 3 + (1 if battle.turn == 1 and "hourglass" in run.relics else 0)
+	battle.energy = turn_energy()
 	for h in run.heroes:
-		h.block = 0
+		h.block = relic_bonus(h, "block") if h.hp > 0 else 0
+		h.turn_strength = 0
+		h.turn_magic = 0
 	for enemy in battle.enemies:
 		if enemy.hp <= 0:
 			continue
@@ -117,7 +131,7 @@ func _start_turn() -> void:
 		var living = living_heroes()
 		intent.target = living[rng.randi_range(0, living.size() - 1)]
 		enemy.intent = intent
-	_draw(5)
+	_draw(6)
 
 func _draw(count: int) -> void:
 	var b = run.combat
@@ -139,7 +153,7 @@ func valid_targets(hand_index: int) -> Array:
 	if run.is_empty() or run.phase != "combat" or hand_index < 0 or hand_index >= run.combat.hand.size():
 		return []
 	var instance = run.combat.hand[hand_index]
-	var c = content.card(instance)
+	var c = effective_card(instance)
 	var owner = owner_index(instance)
 	if run.heroes[owner].hp <= 0 or c.cost > run.combat.energy:
 		return []
@@ -158,7 +172,7 @@ func play_card(hand_index: int, target: int) -> bool:
 		return false
 	var b = run.combat
 	var instance = b.hand[hand_index]
-	var c = content.card(instance)
+	var c = effective_card(instance)
 	var owner = owner_index(instance)
 	b.energy -= int(c.cost)
 	b.hand.remove_at(hand_index)
@@ -192,9 +206,16 @@ func play_card(hand_index: int, target: int) -> bool:
 	return true
 
 func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
+	if unit.has("equipped_relic"):
+		amount = maxi(0, amount - relic_bonus(unit, "armor"))
+	var was_alive = unit.hp > 0
 	var absorbed = 0 if pierce else mini(unit.block, amount)
 	unit.block -= absorbed
 	unit.hp = maxi(0, unit.hp - (amount - absorbed))
+	if was_alive and unit.hp == 0 and relic_bonus(unit, "phoenix") > 0 and not unit.get("phoenix_used", false):
+		unit.hp = 1
+		unit.phoenix_used = true
+		_log("El Ídolo del Fénix evita un golpe fatal.")
 
 func end_turn() -> bool:
 	if run.is_empty() or run.phase != "combat":
@@ -249,6 +270,8 @@ func _check_combat_end() -> bool:
 		if "chalice" in run.relics:
 			h.hp = mini(h.max_hp, h.hp + 3)
 		h.block = 0
+		h.turn_strength = 0
+		h.turn_magic = 0
 	var kind = run.nodes[run.current].kind
 	if kind == "elite":
 		if "hourglass" not in profile.unlocked_relics:
@@ -270,6 +293,12 @@ func _make_reward() -> void:
 			pool.append({"id": id, "upgraded": false})
 	_shuffle(pool)
 	run.reward = pool.slice(0, 3)
+	for hero in run.heroes:
+		if relic_bonus(hero, "reward") > 0:
+			for offered in run.reward:
+				if content.cards[offered.id].owner == hero.id:
+					offered.upgraded = true
+					break
 	run.phase = "reward"
 
 func choose_reward(index: int) -> bool:
@@ -368,6 +397,11 @@ func _finish(won: bool) -> void:
 		profile.history.resize(30)
 	# A concluded run only retains its summary, not its acquired deck or relics.
 	run.summary_cards = run.deck.size()
+	run.inventory = {}
+	for hero in run.heroes:
+		hero.equipped_relic = ""
+		hero.turn_strength = 0
+		hero.turn_magic = 0
 	run.deck = []
 	run.relics = []
 	run.combat = {}
@@ -377,3 +411,83 @@ func _log(line: String) -> void:
 	run.log.append(line)
 	if run.log.size() > 5:
 		run.log.pop_front()
+
+func valid_equipment(party: Array, equipment: Dictionary) -> bool:
+	var used: Array = []
+	for hero_id in equipment:
+		var id = equipment[hero_id]
+		if hero_id not in party or not content.equipment.has(id) or id in used:
+			return false
+		used.append(id)
+	return true
+
+func relic_bonus(hero: Dictionary, effect: String) -> int:
+	var relic = content.equipment.get(hero.get("equipped_relic", ""), {})
+	return int(relic.get("value", 0)) if relic.get("effect", "") == effect else 0
+
+func turn_energy() -> int:
+	var amount = 3
+	if run.combat.turn == 1:
+		amount += 1 if "hourglass" in run.relics else 0
+		for hero in run.heroes:
+			if hero.hp > 0:
+				amount += relic_bonus(hero, "energy")
+	return amount
+
+func effective_card(instance: Dictionary) -> Dictionary:
+	var c = content.card(instance)
+	if run.is_empty() or c.owner not in run.party:
+		return c
+	var hero = run.heroes[run.party.find(c.owner)]
+	if c.damage > 0:
+		c.damage += int(hero.get("turn_strength", 0))
+		if c.owner in ["mage", "cleric"]:
+			c.damage += relic_bonus(hero, "magic") + int(hero.get("turn_magic", 0))
+	if c.poison > 0:
+		c.poison += relic_bonus(hero, "poison")
+	return c
+
+func item_targets(id: String) -> Array:
+	if run.is_empty() or run.phase != "combat" or not content.items.has(id) or run.get("inventory", {}).get(id, 0) <= 0:
+		return []
+	var target = content.items[id].target
+	if target == "team":
+		return [0]
+	var result: Array = []
+	if target == "enemy":
+		for i in range(run.combat.enemies.size()):
+			if run.combat.enemies[i].hp > 0:
+				result.append(i)
+	else:
+		for i in range(run.heroes.size()):
+			var hero = run.heroes[i]
+			if target == "fallen" and hero.hp <= 0:
+				result.append(i)
+			elif hero.hp > 0 and (target == "living" or (target == "caster" and hero.id in ["mage", "cleric"])):
+				result.append(i)
+	return result
+
+func use_item(id: String, target: int) -> bool:
+	if target not in item_targets(id):
+		return false
+	var item = content.items[id]
+	var value = int(item.value)
+	match item.effect:
+		"energy": run.combat.energy += value
+		"draw": _draw(value)
+		"poison": run.combat.enemies[target].poison += value
+		"heal": run.heroes[target].hp = mini(run.heroes[target].max_hp, run.heroes[target].hp + value)
+		"block": run.heroes[target].block += value
+		"strength": run.heroes[target].turn_strength = int(run.heroes[target].get("turn_strength", 0)) + value
+		"magic": run.heroes[target].turn_magic = int(run.heroes[target].get("turn_magic", 0)) + value
+		"revive":
+			run.heroes[target].hp = maxi(1, int(ceil(run.heroes[target].max_hp * value / 100.0)))
+			var inactive = run.combat.inactive
+			for i in range(inactive.size() - 1, -1, -1):
+				if owner_index(inactive[i]) == target:
+					run.combat.discard.append(inactive[i])
+					inactive.remove_at(i)
+	run.inventory[id] -= 1
+	_log("Usaste " + item.name + ".")
+	checkpoint()
+	return true
