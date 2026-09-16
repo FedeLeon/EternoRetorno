@@ -1,6 +1,7 @@
 class_name ERContent
 extends RefCounted
 
+var synergies: Array
 var heroes: Dictionary
 var cards: Dictionary
 var enemies: Dictionary
@@ -10,6 +11,7 @@ var equipment: Dictionary
 var items: Dictionary
 
 func _init() -> void:
+	synergies = JSON.parse_string(FileAccess.get_file_as_string("res://data/synergies.json"))
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json"))
 	heroes = data.heroes
 	cards = data.cards

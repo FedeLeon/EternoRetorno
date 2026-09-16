@@ -1,6 +1,8 @@
 class_name ERGame
 extends RefCounted
 
+const Synergies = preload("res://src/rules/card_synergies.gd")
+const Progression = preload("res://src/rules/camp_progression.gd")
 const Treasure = preload("res://src/rules/treasure.gd")
 const Content = preload("res://src/content.gd")
 const Dungeon = preload("res://src/dungeon.gd")
@@ -24,6 +26,19 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 			if not run.is_empty():
 				rng.state = run.rng_state
 		message = store.last_error
+
+	if Progression.migrate(profile):
+		checkpoint()
+
+func build_market() -> bool:
+	if not Progression.build(profile): return false
+	checkpoint()
+	return true
+
+func buy_market_card(id: String) -> bool:
+	if not Progression.buy(profile, content.cards, id): return false
+	checkpoint()
+	return true
 
 func checkpoint() -> void:
 	if not run.is_empty():
@@ -167,6 +182,50 @@ func valid_targets(hand_index: int) -> Array:
 			targets.append(i)
 	return targets
 
+func available_synergies() -> Array:
+	var combos = Synergies.available(run, content.synergies)
+	for combo in combos:
+		var poison_bonus = 0
+		for hero in run.heroes:
+			combo.damage += attack_bonus(hero, hero.id)
+			poison_bonus = maxi(poison_bonus, relic_bonus(hero, "poison"))
+		if combo.poison > 0: combo.poison += poison_bonus
+		if "fang" in run.relics: combo.damage += 1
+	return combos
+
+func synergy_targets(id: String) -> Array:
+	for combo in available_synergies():
+		if combo.id == id and run.combat.energy >= combo.cost:
+			var targets: Array = []
+			for i in range(run.combat.enemies.size()):
+				if run.combat.enemies[i].hp > 0: targets.append(i)
+			return targets
+	return []
+
+func play_synergy(id: String, target: int) -> bool:
+	if target not in synergy_targets(id): return false
+	var combo: Dictionary = {}
+	for candidate in available_synergies():
+		if candidate.id == id: combo = candidate
+	var b = run.combat
+	b.energy -= int(combo.cost)
+	# Descending indices preserve both exact instances, including upgrades.
+	var indices: Array = combo.indices.duplicate()
+	indices.sort()
+	indices.reverse()
+	for index in indices:
+		b.discard.append(b.hand[index])
+		b.hand.remove_at(index)
+	_damage(b.enemies[target], int(combo.damage), combo.pierce)
+	b.enemies[target].poison += int(combo.poison)
+	for hero in run.heroes:
+		hero.block += int(combo.block)
+		hero.hp = mini(hero.max_hp, hero.hp + int(combo.heal))
+	_log("Sinergia: %s." % combo.name)
+	_check_combat_end()
+	checkpoint()
+	return true
+
 func play_card(hand_index: int, target: int) -> bool:
 	if target not in valid_targets(hand_index):
 		return false
@@ -261,6 +320,7 @@ func _remove_inactive() -> void:
 				b[pile].remove_at(i)
 
 func _check_combat_end() -> bool:
+	if run.phase != "combat": return false
 	for enemy in run.combat.enemies:
 		if enemy.hp > 0:
 			return false
@@ -272,6 +332,7 @@ func _check_combat_end() -> bool:
 		h.block = 0
 		h.turn_strength = 0
 		h.turn_magic = 0
+	Progression.award(profile, run)
 	var kind = run.nodes[run.current].kind
 	if kind == "elite":
 		if "hourglass" not in profile.unlocked_relics:
@@ -289,7 +350,7 @@ func _make_reward() -> void:
 	var pool: Array = []
 	for id in content.cards:
 		var c = content.cards[id]
-		if c.owner in run.party and (not c.locked or id in profile.unlocked_cards):
+		if c.owner in run.party and Progression.available(profile, c):
 			pool.append({"id": id, "upgraded": false})
 	_shuffle(pool)
 	run.reward = pool.slice(0, 3)
@@ -443,17 +504,21 @@ func turn_energy() -> int:
 					break
 	return amount
 
+func attack_bonus(hero: Dictionary, owner: String) -> int:
+	var bonus = int(hero.get("turn_strength", 0))
+	if run.get("team_relic", "") != "" or owner in ["mage", "cleric"]:
+		bonus += relic_bonus(hero, "magic")
+	if owner in ["mage", "cleric"]:
+		bonus += int(hero.get("turn_magic", 0))
+	return bonus
+
 func effective_card(instance: Dictionary) -> Dictionary:
 	var c = content.card(instance)
 	if run.is_empty() or c.owner not in run.party:
 		return c
 	var hero = run.heroes[run.party.find(c.owner)]
 	if c.damage > 0:
-		c.damage += int(hero.get("turn_strength", 0))
-		if run.get("team_relic", "") != "" or c.owner in ["mage", "cleric"]:
-			c.damage += relic_bonus(hero, "magic")
-		if c.owner in ["mage", "cleric"]:
-			c.damage += int(hero.get("turn_magic", 0))
+		c.damage += attack_bonus(hero, c.owner)
 	if c.poison > 0:
 		c.poison += relic_bonus(hero, "poison")
 	return c

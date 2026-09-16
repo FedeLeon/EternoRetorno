@@ -1,0 +1,452 @@
+{
+  "warrior_slash": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      7,
+      293,
+      156
+    ]
+  },
+  "warrior_guard": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      7,
+      293,
+      156
+    ]
+  },
+  "warrior_heavy": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      7,
+      293,
+      156
+    ]
+  },
+  "warrior_charge": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      7,
+      293,
+      156
+    ]
+  },
+  "warrior_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      7,
+      293,
+      156
+    ]
+  },
+  "guardian_bash": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      177,
+      293,
+      156
+    ]
+  },
+  "guardian_guard": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      177,
+      293,
+      156
+    ]
+  },
+  "guardian_wall": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      177,
+      293,
+      156
+    ]
+  },
+  "guardian_strike": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      177,
+      293,
+      156
+    ]
+  },
+  "guardian_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      177,
+      293,
+      156
+    ]
+  },
+  "rogue_cut": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      348,
+      293,
+      156
+    ]
+  },
+  "rogue_dodge": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      348,
+      293,
+      156
+    ]
+  },
+  "rogue_toxin": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      348,
+      293,
+      156
+    ]
+  },
+  "rogue_venom": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      348,
+      293,
+      156
+    ]
+  },
+  "rogue_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      348,
+      293,
+      156
+    ]
+  },
+  "mage_spark": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      519,
+      293,
+      156
+    ]
+  },
+  "mage_ward": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      519,
+      293,
+      156
+    ]
+  },
+  "mage_storm": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      519,
+      293,
+      156
+    ]
+  },
+  "mage_missile": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      519,
+      293,
+      156
+    ]
+  },
+  "mage_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      519,
+      293,
+      156
+    ]
+  },
+  "cleric_light": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      689,
+      293,
+      156
+    ]
+  },
+  "cleric_ward": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      689,
+      293,
+      156
+    ]
+  },
+  "cleric_heal": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      689,
+      293,
+      156
+    ]
+  },
+  "cleric_judgment": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      689,
+      293,
+      156
+    ]
+  },
+  "cleric_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      689,
+      293,
+      156
+    ]
+  },
+  "ranger_arrow": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      7,
+      860,
+      293,
+      156
+    ]
+  },
+  "ranger_evade": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      314,
+      860,
+      293,
+      156
+    ]
+  },
+  "ranger_aim": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      621,
+      860,
+      293,
+      156
+    ]
+  },
+  "ranger_double": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      928,
+      860,
+      293,
+      156
+    ]
+  },
+  "ranger_echo": {
+    "source": "res://assets/cards/art/originals.png",
+    "region": [
+      1235,
+      860,
+      293,
+      156
+    ]
+  },
+  "warrior_pommel": {
+    "source": "res://assets/cards/art/warrior_pommel.png"
+  },
+  "warrior_brace": {
+    "source": "res://assets/cards/art/warrior_brace.png"
+  },
+  "warrior_cleave": {
+    "source": "res://assets/cards/art/warrior_cleave.png"
+  },
+  "warrior_riposte": {
+    "source": "res://assets/cards/art/warrior_riposte.png"
+  },
+  "warrior_execution": {
+    "source": "res://assets/cards/art/warrior_execution.png"
+  },
+  "warrior_onslaught": {
+    "source": "res://assets/cards/art/warrior_onslaught.png"
+  },
+  "warrior_blood_oath": {
+    "source": "res://assets/cards/art/warrior_blood_oath.png"
+  },
+  "warrior_fortress": {
+    "source": "res://assets/cards/art/warrior_fortress.png"
+  },
+  "warrior_rift": {
+    "source": "res://assets/cards/art/warrior_rift.png"
+  },
+  "warrior_final_edge": {
+    "source": "res://assets/cards/art/warrior_final_edge.png"
+  },
+  "guardian_tap": {
+    "source": "res://assets/cards/art/guardian_tap.png"
+  },
+  "guardian_shelter": {
+    "source": "res://assets/cards/art/guardian_shelter.png"
+  },
+  "guardian_iron_chain": {
+    "source": "res://assets/cards/art/guardian_iron_chain.png"
+  },
+  "guardian_circle": {
+    "source": "res://assets/cards/art/guardian_circle.png"
+  },
+  "guardian_sentinel": {
+    "source": "res://assets/cards/art/guardian_sentinel.png"
+  },
+  "guardian_ram": {
+    "source": "res://assets/cards/art/guardian_ram.png"
+  },
+  "guardian_sanctuary": {
+    "source": "res://assets/cards/art/guardian_sanctuary.png"
+  },
+  "guardian_reprisal": {
+    "source": "res://assets/cards/art/guardian_reprisal.png"
+  },
+  "guardian_aegis": {
+    "source": "res://assets/cards/art/guardian_aegis.png"
+  },
+  "guardian_unbroken": {
+    "source": "res://assets/cards/art/guardian_unbroken.png"
+  },
+  "rogue_nick": {
+    "source": "res://assets/cards/art/rogue_nick.png"
+  },
+  "rogue_cover": {
+    "source": "res://assets/cards/art/rogue_cover.png"
+  },
+  "rogue_double_fang": {
+    "source": "res://assets/cards/art/rogue_double_fang.png"
+  },
+  "rogue_toxic_mist": {
+    "source": "res://assets/cards/art/rogue_toxic_mist.png"
+  },
+  "rogue_venom_dance": {
+    "source": "res://assets/cards/art/rogue_venom_dance.png"
+  },
+  "rogue_plague": {
+    "source": "res://assets/cards/art/rogue_plague.png"
+  },
+  "rogue_assassin": {
+    "source": "res://assets/cards/art/rogue_assassin.png"
+  },
+  "rogue_dark_cloak": {
+    "source": "res://assets/cards/art/rogue_dark_cloak.png"
+  },
+  "rogue_black_blood": {
+    "source": "res://assets/cards/art/rogue_black_blood.png"
+  },
+  "rogue_silent_end": {
+    "source": "res://assets/cards/art/rogue_silent_end.png"
+  },
+  "mage_shard": {
+    "source": "res://assets/cards/art/mage_shard.png"
+  },
+  "mage_veil": {
+    "source": "res://assets/cards/art/mage_veil.png"
+  },
+  "mage_prism": {
+    "source": "res://assets/cards/art/mage_prism.png"
+  },
+  "mage_hail": {
+    "source": "res://assets/cards/art/mage_hail.png"
+  },
+  "mage_comet": {
+    "source": "res://assets/cards/art/mage_comet.png"
+  },
+  "mage_barrage": {
+    "source": "res://assets/cards/art/mage_barrage.png"
+  },
+  "mage_starfall": {
+    "source": "res://assets/cards/art/mage_starfall.png"
+  },
+  "mage_mirror": {
+    "source": "res://assets/cards/art/mage_mirror.png"
+  },
+  "mage_nova": {
+    "source": "res://assets/cards/art/mage_nova.png"
+  },
+  "mage_singularity": {
+    "source": "res://assets/cards/art/mage_singularity.png"
+  },
+  "cleric_candle": {
+    "source": "res://assets/cards/art/cleric_candle.png"
+  },
+  "cleric_mend": {
+    "source": "res://assets/cards/art/cleric_mend.png"
+  },
+  "cleric_blessing": {
+    "source": "res://assets/cards/art/cleric_blessing.png"
+  },
+  "cleric_dawn": {
+    "source": "res://assets/cards/art/cleric_dawn.png"
+  },
+  "cleric_radiance": {
+    "source": "res://assets/cards/art/cleric_radiance.png"
+  },
+  "cleric_mercy": {
+    "source": "res://assets/cards/art/cleric_mercy.png"
+  },
+  "cleric_covenant": {
+    "source": "res://assets/cards/art/cleric_covenant.png"
+  },
+  "cleric_purging_ray": {
+    "source": "res://assets/cards/art/cleric_purging_ray.png"
+  },
+  "cleric_refuge": {
+    "source": "res://assets/cards/art/cleric_refuge.png"
+  },
+  "cleric_rebirth": {
+    "source": "res://assets/cards/art/cleric_rebirth.png"
+  },
+  "ranger_quick_arrow": {
+    "source": "res://assets/cards/art/ranger_quick_arrow.png"
+  },
+  "ranger_sidestep": {
+    "source": "res://assets/cards/art/ranger_sidestep.png"
+  },
+  "ranger_volley": {
+    "source": "res://assets/cards/art/ranger_volley.png"
+  },
+  "ranger_piercing_shot": {
+    "source": "res://assets/cards/art/ranger_piercing_shot.png"
+  },
+  "ranger_triple_shot": {
+    "source": "res://assets/cards/art/ranger_triple_shot.png"
+  },
+  "ranger_eagle_eye": {
+    "source": "res://assets/cards/art/ranger_eagle_eye.png"
+  },
+  "ranger_rain": {
+    "source": "res://assets/cards/art/ranger_rain.png"
+  },
+  "ranger_withdraw": {
+    "source": "res://assets/cards/art/ranger_withdraw.png"
+  },
+  "ranger_silver_arrow": {
+    "source": "res://assets/cards/art/ranger_silver_arrow.png"
+  },
+  "ranger_horizon": {
+    "source": "res://assets/cards/art/ranger_horizon.png"
+  }
+}

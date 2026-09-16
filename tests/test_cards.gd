@@ -62,7 +62,8 @@ func run_tests() -> void:
 	app.continue_run()
 	await process_frame
 	await click(Vector2(640, 630))
-	check(app.selected_card == -1, "Unaffordable card stays inactive")
+	check(app.selected_card == 0, "Unaffordable card remains selectable")
+	check(app.game.valid_targets(0).is_empty() and not app.game.play_card(0, 0), "Unaffordable card cannot be played")
 	print("CARD CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)
 func click(point: Vector2) -> void:

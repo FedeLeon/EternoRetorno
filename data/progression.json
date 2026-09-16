@@ -1,0 +1,5 @@
+{
+  "market_cost": 300,
+  "battle_souls": {"combat": 30, "elite": 80, "boss": 150},
+  "test_grant": {"id": "market_playtest_1", "amount": 5000, "enabled": true}
+}

@@ -44,9 +44,14 @@ card('ranger','evade','Retirada',1,'self',block=8)
 card('ranger','aim','Disparo al corazón',2,'enemy',damage=19,pierce=True)
 card('ranger','double','Doble disparo',1,'enemy',damage=4,hits=2)
 card('ranger','echo','Último horizonte',2,'enemy',damage=26,pierce=True,locked=True)
-for i in heroes:
- basic=[k for k,v in cards.items() if v['owner']==i and not v['locked']]
- heroes[i]['starter']=[basic[0],basic[0],basic[1],basic[1],basic[2],basic[3]]
+# Expanded catalog is maintained as data; this generator also updates the starters.
+original_basics = {hero: [k for k,v in cards.items() if v['owner']==hero and not v['locked']] for hero in heroes}
+cards.update(json.loads(Path('data/additional_cards.json').read_text()))
+for hero in heroes:
+ basic = original_basics[hero]
+ modest = [k for k,v in cards.items() if v['owner']==hero and v.get('tier')=='starter']
+ # Ten per hero: repeated core attack/defense, plus two modest class cards.
+ heroes[hero]['starter']=[basic[0]] * 4 + [basic[1]] * 4 + modest
 enemies={
  'rat':dict(name='Rata de cripta',hp=22,color='b59a86',pattern=[dict(damage=6),dict(damage=8)]),
  'skeleton':dict(name='Centinela hueco',hp=30,color='d6c9a9',pattern=[dict(damage=7,block=5),dict(damage=11)]),

@@ -288,3 +288,122 @@ no se atribuyen horas ni fechas de compilación que no estén verificadas.
 - `test_combat_layout.gd`: ocho comprobaciones renderizadas sin fallos; abanico
   y carta seleccionada revisados visualmente. Capturas eliminadas después de revisar.
 - `git diff --check` correcto. Sin exportar APK ni probar Android.
+
+## 16/09/2026 — Cartas completas y PV encima de los actores
+
+- Mano elevada con textos completos; abanico más suave (±3°, paso 160 px).
+  Se mantiene elevación y ampliación al seleccionar, y scroll para manos grandes.
+- PV encima de héroes/enemigos; estados e intenciones arriba de los PV.
+  Eliminados nombres de héroes en combate; nombre enemigo sobre su intención.
+- Terminar turno a la izquierda, encima de energía, sin tapar cartas ni actores.
+- Actualizados `main.gd`, `hand_layout.gd` y documentación de cartas/mazmorra.
+- Layout: 33 comprobaciones renderizadas; UI: 121 headless; sin fallos.
+  Revisión visual local y diff correctos. Capturas retiradas después de revisar.
+- Sin exportación Web/APK ni pruebas en navegador o Android.
+
+## 16/09/2026 — Nombre de carta debajo del coste y tipo
+
+- Eliminada la etiqueta del héroe de las cartas; el nombre de carta ocupa esa fila.
+- Espada/escudo junto al número de coste, ambos horizontales en cartas mixtas.
+- Constructor compartido y componente de iconos actualizados; sin cambios de reglas.
+- Layout: 33 comprobaciones renderizadas; UI: 91 headless, sin fallos.
+  Revisión visual local correcta; capturas temporales eliminadas y diff correcto.
+- Sin exportación Web ni APK.
+
+## 16/09/2026 — Seleccionar cartas sin energía suficiente
+
+- Cartas de la mano siempre seleccionables para inspección; apariencia atenuada
+  si no son jugables. Objetivos y motor siguen validando coste y energía.
+- `main.gd` y documentación de cartas actualizados. Regresión en layout:
+  selección con energía cero, rechazo sin mutar aventura y deselección.
+- 36 comprobaciones headless sin fallos; diff correcto. Sin exportar Web/APK.
+
+## 16/09/2026 — Halo de objetivo, botón ilustrado y accesos juntos
+
+- Flecha de objetivo sustituida por resplandor dorado pulsante detrás del sprite;
+  solo objetivos válidos, oculto al resolver la acción.
+- Asset propio para Terminar turno integrado con texto nativo y estados visuales.
+  Prompt/procedencia conservados en docs/hud/end-turn-prompt.md.
+- Iconos de mazo y bolsa contiguos en la barra superior, 12 px entre controles.
+- Componentes de presentación separados y documentación actualizada.
+- Layout: 38 comprobaciones renderizadas; HUD: 92 headless, sin fallos. Selector
+  de estados del test corregido para excluir intenciones. Revisión visual local
+  a 1280×720; capturas temporales retiradas; diff correcto.
+- Sin exportación Web/APK ni pruebas Android/navegador.
+
+## Mercado, almas y 60 cartas nuevas (16/09/2026)
+
+- 10 cartas nuevas por clase: 90 en total. Nuevos mazos iniciales más modestos;
+  no se reemplazan cartas de aventuras ya guardadas. Catálogo completo en
+  `docs/cards/CATALOGO.md`; datos adicionales incorporados por el generador.
+- Solar 1: construir mercado por 300 almas; seis categorías de héroes y seis
+  cartas comprables por categoría. Compra permanente que habilita recompensas,
+  sin añadir cartas directamente al mazo. Interior nuevo con mercader generado
+  mediante imagegen; prompt y procedencia en `docs/market/prompts.md`.
+- Almas por victoria: 30 normal, 80 élite y 150 jefe. Saldo permanente visible en
+  campamento, mapa, combate y mercado. Se conceden 5.000 almas de prueba una vez
+  por perfil; configurable en `data/progression.json`.
+- Economía separada en `src/rules/camp_progression.gd`; pantalla nueva de mercado
+  y extracción del campamento a `src/ui/screens/base_camp_screen.gd`.
+  Migración aditiva; saldo y recompensa se guardan juntos antes de animar.
+- Inclusión `data/*.json` en preset Web para los catálogos/configuración.
+- Actualizadas dos expectativas antiguas de pruebas: carta sin energía sigue
+  seleccionable y la moneda mejora cartas del portador cuando son ofrecidas,
+  sin depender del resultado exacto de una semilla con el catálogo anterior.
+- Pruebas actuales locales: reglas 137, progresión 795, mercado UI 34,
+  campamento 19, equipamiento 90, cartas 544, mapa 21, HUD 92, UI 271,
+  distribución de combate 38 y tesoros 22; sin fallos. Simulaciones: 42/45
+  victorias, al menos una por cada una de las 15 parejas.
+- Revisión renderizada del interior en Linux; capturas temporales eliminadas.
+  Importación Godot sin errores. Sin exportación APK/Web ni validación nueva
+  en navegador, emulador o teléfono. Balance humano, otros edificios, venta de
+  consumibles y mejoras de héroes permanecen pendientes.
+
+## Sinergias de cartas entre héroes (16/09/2026)
+
+- Variante aplicada: dos cartas reutilizables por clase, 12 participantes del
+  catálogo existente y un especial por cada una de las 15 parejas. Se usan
+  cartas de recompensa, manteniendo modestos los mazos iniciales.
+- Botón Combinar al reunir ambas en mano; coste 2, consume ambas cartas, permite
+  elegir enemigo y conserva el turno. ENLACE identifica las cartas; pistas y
+  previsualización muestran efectos. Se conserva el juego individual.
+- Mejoras, bonos de ataque y veneno contemplados; se exige que ambos héroes
+  estén vivos. Resolución y guardado antes de animar; sin migración de partidas.
+- Recetas en data/synergies.json, reglas en card_synergies.gd y presentación en
+  synergy_view.gd. Documentación completa en docs/synergies/README.md.
+- Pruebas locales: sinergias 481, UI con clics 11, reglas generales 137,
+  cartas 568, distribución 38, equipamiento 90 y progresión 795, sin fallos.
+  Interior de combate revisado renderizado, capturas temporales eliminadas.
+  Sin APK/Web exportada ni pruebas Android/navegador. Balance humano pendiente.
+
+## Ilustraciones minimalistas para las 90 cartas (16/09/2026)
+
+- Integradas las 30 ilustraciones de `conceptoCartasImagen.png` como regiones
+  de un atlas original sin editar. Generadas 60 ilustraciones individuales con
+  imagegen integrado, una por cada carta nueva, siguiendo siluetas y paletas
+  de la referencia. Prompts y fuentes por ID en `docs/cards/art/`.
+- `data/card_art.json` asigna imágenes; `ui/components/card_art.gd` carga y
+  reutiliza texturas. Mano, mazo, mejoras y recompensas utilizan la fábrica
+  compartida. El mercado incluye miniaturas. ENLACE lleva placa de contraste.
+- Márgenes y proporción conservados; corrección del tamaño mínimo de TextureRect
+  antes de cargar imágenes. Importación de conceptos nuevos limitada a 512 px
+  en el juego, conservando PNG originales de mayor resolución.
+- Galería HTML local filtrable por héroe en `docs/cards/art/galeria.html`.
+  Se preservan IDs, efectos, sinergias y guardados; no cambió el balance.
+- Pruebas locales: arte 571, cartas 544, distribución 38, mercado 34, UI 271,
+  sinergias 481 y progresión 795; sin fallos. Revisión renderizada de las seis
+  clases, combate normal/seleccionado y mercado. Capturas temporales eliminadas.
+- Sin exportación APK/Web ni validación nueva en Android o navegador del juego.
+
+## Inicio de aventuras con 20 cartas (16/09/2026)
+
+- Cada héroe aporta 10 cartas: cuatro copias de su ataque básico, cuatro de su
+  defensa básica y dos cartas modestas distintas, una copia de cada una.
+  La pareja empieza con 20; se conservan 6 robos por turno y 3 de energía.
+- Actualizados `scripts/create_content.py` y `data/content.json`. No cambian
+  efectos, IDs ni la carga de aventuras existentes; no se reconstruyen sus mazos.
+- Pruebas locales headless: reglas 155, progresión 819 y distribución de combate
+  38, sin fallos. Las 15 parejas completan al menos una simulación; 42/45
+  victorias en total. Se verifican repeticiones, básicos, caída y recuperación.
+- Documentación de cartas, mercado e inicio actualizada. Sin exportación APK/Web
+  ni nueva revisión visual, emulador o dispositivo físico para este cambio de datos.

@@ -1,5 +1,6 @@
 extends Control
 
+const TargetGlow = preload("res://src/ui/components/target_glow.gd")
 const CombatEffects = preload("res://src/presentation/combat_effects.gd")
 const EnemyIntent = preload("res://src/ui/components/enemy_intent.gd")
 const BattleBackground = preload("res://src/ui/components/battle_background.gd")
@@ -33,6 +34,8 @@ var equipped: Dictionary = {}
 var selected_item = ""
 var screen = "home"
 var selected_party: Array = []
+const SynergyView = preload("res://src/ui/components/synergy_view.gd")
+var selected_synergy = ""
 var selected_card = -1
 var hand_scroll = 0
 var layer: Control
@@ -167,6 +170,7 @@ func render() -> void:
 		"home": home()
 		"options": options_view()
 		"base_camp": base_camp_view()
+		"market": market_view()
 		"select": selection()
 		"equipment": equipment_view()
 		"items": items_view()
@@ -255,6 +259,31 @@ func options_view() -> void:
 		label_at("Android utiliza pantalla completa.", 390, 437, 500, 26, 16, MUTED)
 	title_button("Volver", 470, false, func(): screen = "home"; render())
 
+var market_hero = "warrior"
+
+func open_market() -> void:
+	screen = "market"
+	render()
+
+func market_view() -> void:
+	preload("res://src/ui/screens/market_screen.gd").build(self, game.content, game.profile.duplicate(true), market_hero, {
+		"back": open_base_camp,
+		"category": func(id): market_hero = id; render(),
+		"buy": func(id): game.buy_market_card(id); render()})
+
+func market_plot() -> void:
+	if game.profile.buildings.get("market", false):
+		open_market()
+		return
+	var cost = int(game.Progression.config().market_cost)
+	if game.profile.souls < cost:
+		show_modal("Mercado", "Necesitás %d almas. Ganá batallas para reunirlas." % cost, "Entendido", close_modal)
+		return
+	show_modal("Construir mercado", "Construir en el solar 1 cuesta %d almas. Permite comprar cartas para futuras recompensas." % cost, "Construir", func():
+		if game.build_market():
+			close_modal()
+			open_market())
+
 func open_base_camp() -> void:
 	screen = "base_camp"
 	game.message = ""
@@ -272,27 +301,12 @@ func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable) ->
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func base_camp_view() -> void:
-	panel(24, 20, 570, 92)
-	label_at("ETERNO RETORNO · EL CAMPAMENTO", 42, 28, 530, 26, 17, GOLD)
-	label_at("Un lugar al que volver", 42, 56, 530, 40, 28, TEXT)
-	button("Menú", 1134, 30, 110, 48, func(): screen = "home"; render())
-	camp_hotspot("CampExit", Rect2(960, 115, 155, 135), "Preparar aventura →", func():
-		if active_run():
-			confirm_new()
-		else:
-			open_selection())
-	var plots = [Rect2(110, 279, 276, 47), Rect2(836, 299, 256, 40), Rect2(75, 414, 319, 59), Rect2(933, 476, 284, 56)]
-	for i in range(plots.size()):
-		camp_hotspot("Plot%d" % i, plots[i], "Solar %d · Sin construir" % (i + 1), func():
-			show_modal("Solar disponible", "Aquí podrás construir un edificio para tu campamento.\nLas construcciones y sus ventajas todavía no están disponibles.", "Entendido", close_modal))
-	camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", func():
-		show_modal("Refugio de personajes", "Este será el lugar para mejorar a tus personajes entre aventuras.\nLas mejoras todavía no están disponibles.", "Entendido", close_modal))
-	panel(24, 647, 1232, 65)
-	label_at("Tocá el arco de piedra para preparar una nueva aventura.", 42, 657, 775, 42, 20, TEXT)
-	if active_run():
-		button("Continuar aventura →", 916, 657, 320, 44, continue_run)
-	else:
-		label_at("%d aventuras · %d victorias" % [game.profile.attempts, game.profile.victories], 926, 657, 308, 42, 17, GOLD)
+	preload("res://src/ui/screens/base_camp_screen.gd").build(self, game.profile.duplicate(true), active_run(), {
+		"home": func(): screen = "home"; render(),
+		"prepare": func():
+			if active_run(): confirm_new()
+			else: open_selection(),
+		"market": market_plot, "continue_run": continue_run, "close_modal": close_modal})
 
 func open_selection() -> void:
 	var draft = game.profile.get("preparation", {})
@@ -377,6 +391,7 @@ func begin() -> void:
 func continue_run() -> void:
 	screen = game.run.phase
 	selected_card = -1
+	selected_synergy = ""
 	upgrade_mode = false
 	render()
 
@@ -394,6 +409,7 @@ func map_view() -> void:
 	view.run_seed = game.run.seed
 	view.boss_defeated = game.run.boss_defeated
 	view.deck_count = game.run.deck.size()
+	view.souls = game.profile.souls
 	view.relics = equipped_relics()
 	for id in game.run.relics:
 		var relic = game.content.relics[id].duplicate()
@@ -416,12 +432,9 @@ func health_bar(unit: Dictionary, x: float, y: float, width: float, parent: Cont
 	rect(bar, x, y, width, 25, parent)
 	return bar
 
-func combat_target_style(target: Button, valid: bool) -> void:
+func combat_target_style(target: Button) -> void:
 	for state in ["normal", "disabled", "hover", "pressed", "focus"]:
 		target.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-	if valid:
-		var marker = label_at("▼", 70, -4, 70, 30, 24, GOLD, target)
-		marker.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func equipped_relics() -> Array:
 	var result: Array = []
@@ -451,6 +464,7 @@ func combat_view() -> void:
 	hud.name = "CombatHUD"
 	hud.turn = b.turn
 	hud.energy = b.energy
+	hud.souls = game.profile.souls
 	hud.relics = equipped_relics()
 	hud.bag_requested.connect(func():
 		if not combat_busy:
@@ -468,35 +482,37 @@ func combat_view() -> void:
 	if selected_card >= 0 and selected_card < b.hand.size():
 		c = game.content.card(b.hand[selected_card])
 		targets = game.valid_targets(selected_card)
+	if selected_synergy != "":
+		c = {"target": "enemy"}
+		targets = game.synergy_targets(selected_synergy)
 	for i in range(2):
 		var h = game.run.heroes[i]
-		var def = game.content.heroes[h.id]
 		var x = 80 + i * 234
 		var valid = not c.is_empty() and c.target != "enemy" and i in targets
 		var target = button("", x, 150, 204, 348, func(): target_clicked(i), valid)
-		combat_target_style(target, valid)
+		combat_target_style(target)
 		var visual = art(h.id, 30, 123, 144, 136, target)
 		# Enlarge combat artwork by 25%, keeping the grounded baseline.
 		visual.pivot_offset = Vector2(visual.size.x / 2, visual.size.y)
 		visual.scale = Vector2.ONE * 1.25
+		TargetGlow.attach(visual, valid)
 		hero_art[i] = visual
 		if h.id in ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
-		label_at(def.name, 10, 269, 184, 29, 22, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		hero_health[i] = health_bar(h, 16, 303, 172, target)
+		hero_health[i] = health_bar(h, 16, 128, 172, target)
 		if h.hp > 0:
 			var effects = StatusEffects.new()
 			effects.unit = h
-			rect(effects, 10, 328, 184, 28, target)
+			rect(effects, 10, 91, 184, 28, target)
 		else:
-			label_at("Vuelve si ganás", 10, 329, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			label_at("Vuelve si ganás", 10, 91, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = game.content.enemies[e.id]
 		var x = 768 + i * 234 if b.enemies.size() > 1 else 884
 		var valid = not c.is_empty() and c.target == "enemy" and i in targets
 		var target = button("", x, 150, 214, 348, func(): target_clicked(i), valid)
-		combat_target_style(target, valid)
+		combat_target_style(target)
 		var enemy_visual = EnemySprite.new()
 		enemy_visual.visual_id = def.visual
 		enemy_visual.fallen = e.hp <= 0
@@ -504,36 +520,46 @@ func combat_view() -> void:
 		# Imported enemy pixels end at y=60 in a 64px frame (native scale 2).
 		enemy_visual.pivot_offset = Vector2(enemy_visual.size.x / 2, enemy_visual.size.y - 8)
 		enemy_visual.scale = Vector2.ONE * 1.25
+		TargetGlow.attach(enemy_visual, valid)
 		enemy_art[i] = enemy_visual
-		label_at(def.name, 7, 265, 200, 36, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		enemy_health[i] = health_bar(e, 16, 303, 182, target)
+		label_at(def.name, 7, 8, 200, 26, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		enemy_health[i] = health_bar(e, 16, 128, 182, target)
 		var effects = StatusEffects.new()
 		effects.unit = e
-		rect(effects, 7, 328, 200, 28, target)
+		rect(effects, 7, 91, 200, 28, target)
 		if e.hp > 0:
 			var intent_view = EnemyIntent.new()
 			intent_view.name = "EnemyIntent%d" % i
 			intent_view.intent = e.intent.duplicate(true)
 			intent_view.heroes = game.run.heroes.duplicate(true)
-			rect(intent_view, x - 12, 176, 240, 42)
+			rect(intent_view, x - 12, 190, 240, 42)
 
+	if selected_card >= 0 and selected_card < b.hand.size() and game.available_synergies().is_empty():
+		SynergyView.hint(self, b.hand[selected_card].id, game.content.synergies, game.run.party, game.content.cards)
+	SynergyView.build(self, game.available_synergies(), selected_synergy, b.energy, game.content.cards, func(id):
+		selected_synergy = "" if selected_synergy == id else id
+		selected_card = -1
+		render())
 	label_at("Mazo %d · Descarte %d · Inactivas %d" % [b.draw.size(), b.discard.size(), b.inactive.size()], 24, 76, 500, 28, 16, MUTED)
 	var count = b.hand.size()
 	var scroll = ScrollContainer.new()
 	scroll.name = "CombatHand"
-	rect(scroll, 170, 406, 1086, 314)
+	rect(scroll, 170, 350, 1086, 370)
 	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
 	var contents = Control.new()
-	contents.custom_minimum_size = Vector2(HandLayout.content_width(count), 300)
+	contents.custom_minimum_size = Vector2(HandLayout.content_width(count), 354)
 	scroll.add_child(contents)
 	scroll.set_deferred("scroll_horizontal", hand_scroll)
 	for i in range(count):
-		var card = card_panel(b.hand[i], 0, 0, 218 if i == selected_card else 174, 290, func(): select_card(i), i == selected_card, not game.valid_targets(i).is_empty(), contents)
+		var card = card_panel(b.hand[i], 0, 0, 218 if i == selected_card else 174, 278, func(): select_card(i), i == selected_card, not game.valid_targets(i).is_empty(), contents)
+		# Inspection is always allowed; valid_targets/play_card still gate playing.
+		card.disabled = false
 		HandLayout.arrange(card, i, count, i == selected_card)
 	if count == 0:
 		label_at("Terminá el turno para robar cartas.", 380, 590, 640, 70, 24, MUTED)
-	button("Terminar turno →", 1038, 508, 218, 48, func(): animate_combat_action())
+	var end_turn = button("Terminar turno", 16, 478, 174, 52, func(): animate_combat_action())
+	preload("res://src/ui/components/end_turn_button.gd").decorate(end_turn)
 
 func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, chosen: bool = false, enabled: bool = true, parent: Control = null) -> Button:
 	var c = game.content.card(instance)
@@ -556,9 +582,9 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	rect(frame, 3, 3, w - 6, h - 6, b)
 	if not enabled:
 		frame.modulate = Color(0.65, 0.65, 0.65)
-	var banner = panel(47, 12, w - 88, 42, accent, b)
+	var banner = panel(12, 50, w - 24, 25, accent, b)
 	banner.add_theme_stylebox_override("panel", box(Color("b9aa8c"), Color("564a39"), 2))
-	var title = label_at(c.name, 50, 12, w - 94, 42, 12 if w < 190 else 14, Color("211b19"), b)
+	var title = label_at(c.name, 16, 50, w - 32, 25, 12 if w < 190 else 14, Color("211b19"), b)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var medallion = panel(10, 10, 35, 35, accent, b)
 	var round_style = box(accent.darkened(0.55), GOLD if chosen else accent.lightened(0.25), 3)
@@ -568,18 +594,20 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	cost.name = "CostNumber"
 	cost.value = int(c.cost)
 	rect(cost, 13, 13, 29, 29, b)
-	preload("res://src/ui/components/card_type_icons.gd").attach(b, c, w)
-	label_at(def.name.to_upper(), 12, 53, w - 24, 19, 12, accent.lightened(0.6), b).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	preload("res://src/ui/components/card_type_icons.gd").attach(b, c)
 	var picture_area = panel(18, 80, w - 36, maxf(22, h - 186), accent, b)
 	picture_area.name = "IllustrationSpace"
 	picture_area.add_theme_stylebox_override("panel", box(Color("14151c"), accent.darkened(0.3), 1))
+	preload("res://src/ui/components/card_art.gd").attach(picture_area, instance.id, Rect2(3, 3, picture_area.size.x - 6, picture_area.size.y - 6))
 	var parchment = panel(18, h - 92, w - 36, 74, accent, b)
 	parchment.add_theme_stylebox_override("panel", box(Color("b9aa8c") if enabled else Color("8b8375"), Color("564a39"), 2))
 	var description = label_at(game.content.describe(instance, game.effective_card(instance)), 24, h - 87, w - 48, 64, 12 if w < 190 else 14, Color("211b19"), b)
 	description.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	SynergyView.mark(self, b, instance.id, game.content.synergies, game.content.cards)
 	return b
 
 func select_card(index: int) -> void:
+	selected_synergy = ""
 	var hand = layer.get_node_or_null("CombatHand")
 	if hand != null:
 		hand_scroll = hand.scroll_horizontal
@@ -587,10 +615,12 @@ func select_card(index: int) -> void:
 	render()
 
 func target_clicked(index: int) -> void:
-	if selected_card >= 0:
+	if selected_synergy != "":
+		animate_combat_action(-1, index, selected_synergy)
+	elif selected_card >= 0:
 		animate_combat_action(selected_card, index)
 
-func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void:
+func animate_combat_action(hand_index: int = -1, target_index: int = -1, synergy_id: String = "") -> void:
 	if combat_busy or game.run.phase != "combat":
 		return
 	var before = game.run.heroes.duplicate(true)
@@ -615,10 +645,22 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void
 		if instance.id == "rogue_venom":
 			motion = "poison"
 	# Resolve and persist first. Closing Android during the animation never replays it.
-	var accepted = game.play_card(hand_index, target_index) if hand_index >= 0 else game.end_turn()
+	var accepted: bool
+	if synergy_id != "":
+		accepted = game.play_synergy(synergy_id, target_index)
+	else:
+		accepted = game.play_card(hand_index, target_index) if hand_index >= 0 else game.end_turn()
 	if not accepted:
 		return
 	combat_busy = true
+	for actor in hero_art.values() + enemy_art.values():
+		var glow = actor.get_node_or_null("TargetGlow")
+		if glow != null:
+			glow.hide()
+	if synergy_id != "":
+		CombatEffects.attack_flash(layer)
+		for actor in hero_art.values():
+			await actor.play_once("attack")
 	if owner >= 0 and game.run.party[owner] in ANIMATED_HEROES:
 		if offensive:
 			CombatEffects.attack_flash(layer)
@@ -635,7 +677,7 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void
 				await enemy_art[i].play_once("death")
 			elif current_enemies[i].hp < old_enemies[i].hp:
 				await enemy_art[i].play_once("hurt")
-			if hand_index < 0 and current_enemies[i].hp > 0 and old_enemies[i].intent.get("damage", 0) > 0:
+			if hand_index < 0 and synergy_id == "" and current_enemies[i].hp > 0 and old_enemies[i].intent.get("damage", 0) > 0:
 				CombatEffects.attack_flash(layer)
 				await enemy_art[i].play_once("attack")
 	for i in range(before.size()):
@@ -671,6 +713,7 @@ func flash_hit(visual: Control) -> void:
 
 func reward_view() -> void:
 	header("Un eco para tu mazo", "Elegí una carta. También podés seguir con un mazo más pequeño.")
+	label_at("+%d almas · Total: %d" % [game.run.get("last_souls", 0), game.profile.souls], 36, 103, 750, 30, 20, GOLD)
 	for i in range(game.run.reward.size()):
 		var instance = game.run.reward[i]
 		var c = game.content.card(instance)
@@ -852,7 +895,7 @@ func back() -> void:
 	elif screen == "equipment":
 		screen = "select"
 		render()
-	elif screen == "select":
+	elif screen in ["select", "market"]:
 		open_base_camp()
 	elif screen in ["base_camp", "collection", "options"]:
 		screen = "home"
@@ -861,8 +904,9 @@ func back() -> void:
 		screen = return_screen
 		upgrade_mode = false
 		render()
-	elif screen == "combat" and selected_card >= 0:
+	elif screen == "combat" and (selected_card >= 0 or selected_synergy != ""):
 		selected_card = -1
+		selected_synergy = ""
 		render()
 	else:
 		pause_menu()

@@ -320,3 +320,40 @@ Los seis héroes siempre usan sus componentes animados. Sin cambios de IDs ni gu
 `src/ui/components/hand_layout.gd` calcula anchura del contenido, posición,
 pivote y rotación del abanico. `main.gd` conserva la construcción compartida
  de cartas y conecta la selección. No interviene en reglas ni guardado.
+
+## Resplandor de objetivos y botón de turno (16/09/2026)
+
+`ui/components/target_glow.gd` añade un halo detrás del actor elegible con
+`assets/ui/shaders/target_glow.gdshader`; la decisión sigue en `valid_targets()`.
+`ui/components/end_turn_button.gd` decora el botón que conecta `main.gd` a la acción.
+Ambos componentes son presentación; no guardan ni modifican estado de combate.
+
+## Mercado y economía persistente (16/09/2026)
+
+Extracción terminada del campamento a `src/ui/screens/base_camp_screen.gd`;
+mercado nuevo en `src/ui/screens/market_screen.gd`. Ambas vistas reciben datos
+y callbacks, reutilizan la fábrica visual existente y no conceden compras.
+`src/rules/camp_progression.gd` concentra costes, migración y disponibilidad;
+`game.gd` coordina el guardado atómico. `main.gd` conecta navegación y acciones.
+`data/progression.json` configura economía y entrega de pruebas;
+`data/additional_cards.json` alimenta el generador del catálogo.
+La extracción completa de la fábrica visual de main sigue pendiente.
+[Contratos de perfil/run y pruebas](market/README.md).
+
+## Sinergias (16/09/2026)
+
+`data/synergies.json` declara recetas separadas del catálogo de cartas.
+`rules/card_synergies.gd` calcula posibilidades sin mutaciones; Game valida
+objetivos/energía y resuelve descartes, efectos, victoria y guardado.
+`ui/components/synergy_view.gd` presenta señales y efectos sin calcular daño.
+Main coordina selección y reutiliza la animación posterior al checkpoint.
+No se agregan campos persistentes: la mano guardada determina las oportunidades.
+[Contrato y recetas](synergies/README.md).
+
+## Ilustraciones de cartas (16/09/2026)
+
+`data/card_art.json` separa asignaciones visuales del catálogo de reglas.
+`ui/components/card_art.gd` carga texturas con caché y usa regiones de atlas para
+las 30 ilustraciones originales. La fábrica de cartas y el mercado lo consumen
+sin duplicar lógica. Las imágenes no interceptan entrada ni modifican estado.
+[Fuentes y mantenimiento](cards/art/README.md).

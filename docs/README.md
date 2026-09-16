@@ -8,16 +8,18 @@ Prototipo de un piso, seis clases y parejas de dos héroes. Campamento inicial,
 selección alrededor de la fogata, equipamiento previo, mapa en espiral, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
-- Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de 12.
+- Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de **20 cartas (10 por héroe)**.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
-- Cartas: seis colores; espacio de ilustración vacío, reservado para arte futuro.
+- Cartas: seis marcos por clase e ilustraciones minimalistas asignadas por ID.
 - Equipamiento: ocho reliquias disponibles, una sola elegida por pareja que beneficia a ambos héroes; ocho consumibles.
 - Actores: seis héroes y 56 enemigos con sprites de 128×128; seis enemigos activos
   con ciclos nuevos de ocho poses y ataques diferenciados.
-- Campamento: solares y refugio interactivos de presentación. Construcciones,
-  costes, ventajas de edificios y mejoras permanentes de héroes **no implementados**.
+- Campamento: mercado construible en solar 1 por 300 almas, con 36 cartas comprables.
+  Almas persistentes por victoria; otras construcciones y mejoras de héroes pendientes.
+- Cartas: 90 en total, 15 por héroe; mazos iniciales modestos y desbloqueos de mercado.
+- Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
 La APK existente corresponde a una entrega anterior. Los cambios recientes se
@@ -41,7 +43,9 @@ Android histórica no certifica la interfaz actual.
 | Explorador | [Explorador](ranger/README.md) |
 | Selección y fogata animada | [Campamento de selección](camp/README.md) |
 | Campamento previo y solares | [Campamento base](base_camp/README.md) |
+| Mercado, almas y cartas desbloqueables | [Mercado](market/README.md) |
 | Reliquias y consumibles: valores y guardado | [Objetos](objects/README.md) |
+| Sinergias entre héroes | [Sinergias](synergies/README.md) |
 | Marcos y colores de cartas | [Cartas](cards/README.md) |
 | Inicio, botones y opciones | [Inicio](title/README.md) |
 | Calidad de actores, atlas de 128 px y vista previa animada | [Actores](quality/README.md) |

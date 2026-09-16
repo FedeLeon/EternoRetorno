@@ -48,7 +48,7 @@ func run_tests() -> void:
 	app.back()
 	await process_frame
 	hud = app.layer.get_node("CombatHUD")
-	var indicators = app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator)
+	var indicators = app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd"))
 	check(indicators.size() == 4 and indicators.all(func(n): return n.amount > 0), "Only active statuses shown")
 	check(indicators.any(func(n): return n.amount == 12) and indicators.any(func(n): return n.amount == 7), "Hero and enemy block amounts")
 	for indicator in indicators:
@@ -97,7 +97,7 @@ func run_tests() -> void:
 	app.game.run.combat.turn = 12
 	app.continue_run()
 	await process_frame
-	check(app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator).is_empty(), "Indicators disappear when statuses expire")
+	check(app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd")).is_empty(), "Indicators disappear when statuses expire")
 	hud = app.layer.get_node("CombatHUD")
 	check(hud.get_node("EnergyNumber").value == 0, "Zero energy visible")
 	check(hud.get_node("TurnNumber").get_child_count() == 2, "Multi-digit turn")

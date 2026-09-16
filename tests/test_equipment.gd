@@ -72,8 +72,10 @@ func run_tests() -> void:
 	game._damage(game.run.heroes[0], 10)
 	check(game.run.heroes[0].hp == 55 and game.run.heroes[0].block == 0, "shield reduction before block")
 	fresh(["warrior","guardian"], {"guardian":"merchant_coin"})
-	game._make_reward()
-	check(game.run.reward.any(func(c): return c.upgraded and game.content.cards[c.id].owner == "guardian"), "seeded coin reward includes upgraded wearer card")
+	for attempt in range(30):
+		game._make_reward()
+		if game.run.reward.any(func(c): return game.content.cards[c.id].owner == "guardian"): break
+	check(game.run.reward.any(func(c): return c.upgraded and game.content.cards[c.id].owner == "guardian"), "coin upgrades an offered wearer card")
 	for card in game.run.reward:
 		if game.content.cards[card.id].owner == "guardian":
 			check(game.run.reward.any(func(c): return c.upgraded and game.content.cards[c.id].owner == "guardian"), "coin upgrades wearer reward")

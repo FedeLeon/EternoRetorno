@@ -18,6 +18,7 @@ var relics: Array = []
 var boss_defeated = false
 var deck_count = 0
 var run_seed = 0
+var souls = 0
 
 func place(node: Control, area: Rect2, parent: Node = self) -> void:
 	node.position = area.position
@@ -66,6 +67,7 @@ func _ready() -> void:
 	label("La cripta de los ecos", Rect2(54, 30, 700, 48), 30, GOLD)
 	action("Menú", Rect2(1130, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
 	draw_route()
+	label("Almas: %d" % souls, Rect2(810, 32, 300, 40), 24, GOLD)
 	label("EL GRUPO", Rect2(798, 91, 420, 30), 18, GOLD)
 	for i in range(heroes.size()):
 		show_hero(heroes[i], i)

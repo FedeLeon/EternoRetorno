@@ -11,7 +11,7 @@ No se crean nuevos tipos de sala ni mecánicas de trampas en este cambio.
 - Orbe celeste con la energía disponible abajo a la izquierda. Seis cartas al inicio de cada turno.
 - Mano asomada desde el borde inferior; tocar una carta la eleva y amplía
   para leerla, tocar el objetivo la juega. Más cartas permiten desplazamiento.
-- Zona de ilustración vacía con márgenes; pergamino de efectos también con
+- Ilustración de cada carta con márgenes; pergamino de efectos también con
   márgenes internos. Diseño compartido con recompensas, mazo y mejoras.
 - Las partidas existentes reciben seis cartas en el próximo robo normal;
   no se modifica una mano ya guardada al continuar.
@@ -62,3 +62,19 @@ estable al volver a la sala y sin alterar el generador aleatorio de reglas.
 Fuentes generadas con imagegen; [prompts](../treasure/prompts.md).
 Capturas actuales: cripta (archivo retirado en la limpieza),
 acueducto (archivo retirado en la limpieza). Revisadas en escritorio a 1280×720.
+
+## PV superiores y mano completa — 16/09/2026
+
+PV de ambos bandos en y=278, encima de los sprites. Bloqueo y veneno en y=241;
+intención enemiga en y=190. Se retiran los nombres de los héroes de combate;
+el nombre enemigo se conserva sobre su intención. Los personajes siguen en
+su posición de suelo y los contadores de vida conservan sus animaciones.
+
+La mano se muestra completa con arco y superposición suaves; la seleccionada
+se eleva. Terminar turno pasa al lateral izquierdo (16,478) sobre la energía.
+Cambios en `main.gd` y `ui/components/hand_layout.gd`; sin cambios de reglas.
+
+Validación actual: layout 33 comprobaciones renderizadas, UI 121 headless,
+sin fallos. Bordes de las seis cartas comprobados dentro del alto visible;
+revisión visual de textos y PV en Linux a 1280×720. Sin APK ni prueba web/Android.
+Capturas temporales retiradas después de revisar.

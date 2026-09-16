@@ -1,5 +1,10 @@
 # Campamento previo a la aventura
 
+**Estado actual (16/09/2026):** el solar 1 permite construir el [mercado](../market/README.md)
+por 300 almas y entrar a comprar cartas. El saldo y la construcción son permanentes.
+Los restantes solares y el refugio siguen reservados. La descripción inferior
+corresponde a la primera etapa, anterior a las construcciones.
+
 Fondo original del usuario `campamentoConstruccion.png`, copiado sin editar a
 `assets/base_camp/background.png`. No se generaron imágenes nuevas.
 

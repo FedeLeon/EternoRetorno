@@ -40,11 +40,11 @@ func _initialize() -> void:
 
 func content_and_map() -> void:
 	var g = fresh()
-	check(g.content.heroes.size() == 6 and g.content.cards.size() == 30, "6 classes / 30 cards")
+	check(g.content.heroes.size() == 6 and g.content.cards.size() == 90, "6 classes / 90 cards")
 	check(g.content.enemies.size() == 6 and g.content.events.size() == 3 and g.content.relics.size() == 4, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
-	check(g.run.deck.size() == 12, "12 starter instances")
+	check(g.run.deck.size() == 20, "20 starter instances")
 	check(not g.enter_node(11), "cannot jump to boss")
 	check(not g.descend(), "staircase initially locked")
 	check(g.run.nodes.size() == 12, "12 nodes")
@@ -52,11 +52,15 @@ func content_and_map() -> void:
 	var same = fresh()
 	check(g.run.nodes == same.run.nodes, "seed reproduces encounters")
 	for id in g.content.heroes:
-		check(g.content.heroes[id].starter.size() == 6, "six starter cards " + id)
+		check(g.content.heroes[id].starter.size() == 10, "ten starter cards " + id)
 		var unique: Array = []
 		for c in g.content.heroes[id].starter:
 			if c not in unique: unique.append(c)
 		check(unique.size() == 4, "four basic definitions " + id)
+		var starter = g.content.heroes[id].starter
+		check(starter.count(starter[0]) == 4 and starter.count(starter[4]) == 4, "four copies of each core basic " + id)
+		check(g.content.cards[starter[0]].damage > 0 and g.content.cards[starter[4]].block > 0, "repeated attack and defense " + id)
+		check(starter.all(func(key): return g.content.cards[key].cost == 1 and not g.content.cards[key].locked and g.content.cards[key].get("market_price", 0) == 0), "only modest unlocked starters " + id)
 
 func paths_end_at_boss(node: int) -> bool:
 	if node == 11: return true
@@ -136,19 +140,19 @@ func death_rules() -> void:
 	check(g.run.phase == "combat" and g.run.heroes[0].hp == 0, "one death does not end run")
 	for pile in ["draw", "hand", "discard"]:
 		check(g.run.combat[pile].all(func(c): return g.content.cards[c.id].owner != "warrior"), "dead owner removed from " + pile)
-	check(g.run.combat.inactive.size() == 6, "six inactive cards conserved")
+	check(g.run.combat.inactive.size() == 10, "ten inactive cards conserved")
 	check(e.intent.target == 1, "intent only targets living heroes")
 	g.run.combat.energy = 3
 	set_hand(g, ["cleric_light"])
 	e.hp = 1
 	g.play_card(0, 0)
 	check(g.run.phase == "reward" and g.run.heroes[0].hp == 15, "fallen revives with ceil 25 percent")
-	check(g.run.deck.size() == 12, "inactive cards remain in permanent run deck")
+	check(g.run.deck.size() == 20, "inactive cards remain in permanent run deck")
 	g.choose_reward(-1)
 	g.run.current = 1 # Reach joined treasure, then another fight.
 	g.enter_node(3); g.take_treasure(); g.leave_treasure(); g.enter_node(5)
 	var total = g.run.combat.draw + g.run.combat.hand
-	check(total.filter(func(c): return g.content.cards[c.id].owner == "warrior").size() == 6, "revived cards return next combat")
+	check(total.filter(func(c): return g.content.cards[c.id].owner == "warrior").size() == 10, "revived cards return next combat")
 	g = combat()
 	g.run.heroes[0].hp = 1; g.run.heroes[1].hp = 1
 	g.run.combat.enemies[0].intent = {"damage": 2, "target": 0, "all": true}
@@ -213,7 +217,7 @@ func reward_and_rooms() -> void:
 	check(g.profile.victories == 1 and g.profile.unlocked_cards.size() == 2, "pair victory unlocks")
 	check(not g.descend() and g.profile.victories == 1, "victory cannot duplicate")
 	g.new_run(["mage", "rogue"], 100)
-	check(g.profile.unlocked_cards.size() == 2 and g.run.deck.size() == 12 and g.run.relics.is_empty(), "new run preserves only profile")
+	check(g.profile.unlocked_cards.size() == 2 and g.run.deck.size() == 20 and g.run.relics.is_empty(), "new run preserves only profile")
 
 func persistence() -> void:
 	var path = "user://test-transaction.save"

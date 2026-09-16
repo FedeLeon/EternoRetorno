@@ -178,3 +178,26 @@ renderizadas (objetivo, área, defensa, victoria, recuperación y derrota);
 `test_cards.gd` 243, `test_ui.gd` 121 y `test_combat_layout.gd` 8 headless.
 Sin fallos; intenciones/cartas revisadas en escritorio a 1280×720. Capturas
 eliminadas después de revisar. No se exportó APK ni se probó Android.
+
+## Objetivos iluminados y botón de turno — 16/09/2026
+
+Se reemplaza la flecha de objetivo por un halo dorado pulsante detrás del sprite.
+`target_glow.gd` recibe elegibilidad del controlador y usa `target_glow.gdshader`;
+no intercepta toques ni calcula objetivos. Sin energía no aparece. Se oculta al
+resolver una acción, antes de las animaciones. Los marcadores del mapa no cambian.
+
+Mazo y bolsa quedan separados por 12 px entre áreas táctiles de 56 px
+(mazo x=829, bolsa x=897). Conservan sus acciones y tooltips.
+
+`end_turn_button.gd` aplica `assets/ui/end_turn.png`, generado con imagegen:
+marco metálico, detalles dorados y gemas violetas. Texto nativo para legibilidad;
+estados de hover/pulsación modulados. [Procedencia y prompt](end-turn-prompt.md).
+
+Pruebas actuales: layout 38 renderizadas y HUD 92 headless, sin fallos.
+Se precisó el selector del test de estados para no contar los indicadores de
+intención como bloqueo/veneno ya activos. Revisión visual de halo, botón y barra
+en Linux a 1280×720; capturas temporales retiradas. Sin exportación Web/APK.
+
+## Almas (16/09/2026)
+
+El HUD de combate recibe también `souls` como dato de presentación y muestra el saldo permanente. No calcula premios.

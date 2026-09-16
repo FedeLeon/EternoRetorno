@@ -41,3 +41,7 @@ No se guardan copias redundantes. [Prompts y procedencia](prompts.md).
 - Revisión visual del mapa con dos héroes y reliquias inicial/hallada. Capturas
   temporales en `artifacts/map/`, eliminadas tras revisar.
 - Importación y `git diff --check` correctos. Sin APK ni pruebas en Android.
+
+## Almas (16/09/2026)
+
+La barra del mapa muestra el saldo permanente de almas, enviado por el controlador.

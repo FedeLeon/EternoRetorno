@@ -1,6 +1,6 @@
 extends RefCounted
 
-static func attach(card: Control, data: Dictionary, width: float) -> void:
+static func attach(card: Control, data: Dictionary) -> void:
 	var attack = data.damage > 0 or data.poison > 0
 	var icons: Array[Texture2D] = []
 	if attack:
@@ -19,7 +19,7 @@ static func attach(card: Control, data: Dictionary, width: float) -> void:
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		icon.position = Vector2(width - 38, 12 + i * 28)
+		icon.position = Vector2(52 + i * 32, 14)
 		icon.size = Vector2(27, 27)
 		card.add_child(icon)
 
