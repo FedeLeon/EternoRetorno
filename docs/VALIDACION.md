@@ -1,6 +1,21 @@
 # Validación — 15 de septiembre de 2026
 
-## Resultado
+## Última comprobación local del combate
+
+La revisión de distribución y robo de seis cartas pasó **584 comprobaciones**:
+lógica 137, interfaz 121, cartas 243, equipamiento 64, interfaz de equipamiento 11
+y distribución 8. Hubo 45 victorias en 45 simulaciones de las 15 parejas.
+Se revisaron capturas locales en Linux. No se compiló APK ni se probó en Android
+esta revisión. Ver [estado actual](README.md) e [historial](HISTORIAL.md).
+
+## Informe histórico del prototipo inicial
+
+**Todo lo que sigue corresponde a la entrega inicial**, antes de los cambios
+posteriores de arte, campamento, equipamiento y distribución del combate.
+Sus cifras y capturas se conservan como evidencia histórica. El controlador
+Android debe revisarse para la interfaz actual antes de reutilizarlo.
+
+### Resultado
 
 APK de depuración generada, firmada, instalada y jugada hasta completar el piso
 sobre **Android 15/API 35**, emulador Pixel 5 x86_64, pantalla **2340 × 1080 en

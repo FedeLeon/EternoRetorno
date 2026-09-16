@@ -1,5 +1,10 @@
 # Cartas por héroe
 
+**Actualización:** la distribución vigente se describe en
+[Combate de mazmorra](../dungeon/README.md). Ahora se roban seis cartas,
+la mano se asoma desde abajo y las ilustraciones se reservan vacías.
+La explicación y galería siguientes conservan el diseño de la etapa inicial.
+
 Marcos derivados del concepto `cartas.png` mediante imagegen. Guerrero rojo,
 guardiana verde azulado, pícaro verde, maga violeta, clériga dorada y explorador
 azul. El pistolero del concepto se adapta al pícaro existente.

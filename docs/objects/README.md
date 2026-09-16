@@ -36,7 +36,7 @@ energía, se consumen una vez y no se reponen al cambiar de sala.
 | Tónico de Fuerza | +3 daño por impacto de cartas del aliado durante este turno |
 | Veneno Concentrado | Aplica 6 acumulaciones a un enemigo |
 | Elixir Arcano | +2 daño por impacto este turno, para maga o clériga |
-| Brebaje de Agilidad | Roba 2 cartas; mano desplazable si supera cinco |
+| Brebaje de Agilidad | Roba 2 cartas; mano desplazable si supera seis |
 | Bálsamo de Defensa | +12 bloqueo a un aliado hasta el siguiente turno |
 
 Los potenciadores se acumulan con las reliquias y se limpian al comenzar otro
