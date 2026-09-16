@@ -1,5 +1,11 @@
 # Guardiana
 
+> **Actualización 16/09/2026:** los actores ahora usan cuadros de **128×128**,
+> reimportados desde las fuentes originales. Se mantienen tamaño en pantalla,
+> diseños y alineación. Ver [calidad actual, archivos y pruebas](../quality/README.md).
+> Las medidas de 64 px y comprobaciones que siguen documentan la versión inicial.
+
+
 Sprites basados en el concept del usuario: trenza castaña, armadura plateada
 con bordes dorados, manto verde azulado, escudo grande y mangual.
 

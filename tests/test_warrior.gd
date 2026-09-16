@@ -17,7 +17,7 @@ func shot(name: String) -> void:
 		return
 	await process_frame
 	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://docs/warrior/" + name + ".png")
+	root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("warrior/" + name + ".png"))
 func settled() -> void:
 	while app.combat_busy:
 		await process_frame
@@ -32,22 +32,22 @@ func run_tests() -> void:
 		check(Warrior.frames().get_frame_count(animation) == 6, "six frames for " + animation)
 		check(Warrior.frames().get_animation_loop(animation) == (animation == "idle"), "loop policy " + animation)
 	var atlas = Warrior.SHEET.get_image()
-	check(atlas.get_size() == Vector2i(384, 320), "64px atlas grid")
+	check(atlas.get_size() == Vector2i(768, 640), "128px atlas grid")
 	check(atlas.get_pixel(0, 0).a == 0, "true transparent alpha")
 	for row in range(5):
 		for column in range(6):
-			var frame = atlas.get_region(Rect2i(column * 64, row * 64, 64, 64))
+			var frame = atlas.get_region(Rect2i(column * 128, row * 128, 128, 128))
 			var bounds = frame.get_used_rect()
 			if row == 0:
 				# Check visible boots, not the transparent fringe that caused a jump.
 				var bottom = 0
-				for y in range(64):
-					for x in range(64):
+				for y in range(128):
+					for x in range(128):
 						if frame.get_pixel(x, y).a >= 0.5:
 							bottom = y + 1
-				check(bottom == 60, "idle visible foot baseline, frame %d" % column)
+				check(bottom == 120, "idle visible foot baseline, frame %d" % column)
 			else:
-				check(bounds.end.y == 60 and bounds.size.x > 0, "common grounded baseline")
+				check(bounds.end.y == 120 and bounds.size.x > 0, "common grounded baseline")
 	app.open_selection()
 	await create_timer(0.2).timeout
 	await shot("selection")
@@ -59,7 +59,10 @@ func run_tests() -> void:
 	app.continue_run()
 	await create_timer(0.2).timeout
 	await shot("idle")
+	var enemy_steps: Array = []
+	app.enemy_health[0].value_changed.connect(func(value): enemy_steps.append(value))
 	app.animate_combat_action(0, 0)
+	check(app.enemy_health[0].displayed_hp == 100, "old health visible before impact")
 	check(app.combat_busy, "input locked during attack")
 	check(app.hero_art[0].sprite.animation == "attack", "slash uses attack")
 	var hp = app.game.run.combat.enemies[0].hp
@@ -70,6 +73,8 @@ func run_tests() -> void:
 	await shot("attack")
 	await settled()
 	check(not app.combat_busy and app.hero_art[0].sprite.animation == "idle", "returns to idle")
+	check(enemy_steps == range(99, hp - 1, -1), "enemy health descends every integer")
+	check(app.enemy_health[0].displayed_hp == hp, "enemy bar settles at committed health")
 	app.game.run.combat.energy = 3
 	app.game.run.combat.hand = [{"id": "warrior_heavy", "upgraded": false}]
 	app.continue_run()
@@ -79,12 +84,18 @@ func run_tests() -> void:
 	await shot("heavy")
 	await settled()
 	app.game.run.combat.enemies[0].intent = {"damage": 8, "target": 0}
+	var hero_steps: Array = []
+	var hero_before = app.game.run.heroes[0].hp
+	app.hero_health[0].value_changed.connect(func(value): hero_steps.append(value))
 	app.animate_combat_action()
 	await reaction("hurt")
 	check(app.hero_art[0].sprite.animation == "hurt", "enemy damage triggers hurt")
+	check(app.hero_art[0].modulate.g < app.hero_art[0].modulate.r, "hero flashes red on damage")
 	await create_timer(0.1).timeout
 	await shot("hurt")
 	await settled()
+	check(hero_steps == range(hero_before - 1, app.game.run.heroes[0].hp - 1, -1), "hero health descends every integer")
+	check(app.hero_art[0].modulate == Color.WHITE, "red flash clears")
 	app.game.run.heroes[0].hp = 1
 	app.game.run.combat.enemies[0].intent = {"damage": 8, "target": 0}
 	app.continue_run()

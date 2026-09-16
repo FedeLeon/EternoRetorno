@@ -33,17 +33,35 @@ func run_tests() -> void:
 		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		gallery.add_child(name_label)
 		var img = v.sprite.texture.get_image()
-		check(img.get_size() == Vector2i(64, 64), id + " dimensions")
+		check(img.get_size() == Vector2i(1024 if v.has_motion_frames else 128, 128), id + " HD dimensions")
+		check(v.has_motion_frames == (int(Visual.entries()[id].floor) == 1), id + " first-floor motion coverage")
+		if v.has_motion_frames:
+			var unique: Array = []
+			for frame_index in range(8):
+				var frame = img.get_region(Rect2i(frame_index * 128, 0, 128, 128))
+				check(frame.get_used_rect().size.x > 20 and frame.get_pixel(0, 0).a == 0, id + " motion frame content and alpha")
+				var fingerprint = hash(frame.get_data())
+				if fingerprint not in unique:
+					unique.append(fingerprint)
+				if id != "crypt_bat":
+					var bottom = 0
+					for y in range(128):
+						for x in range(128):
+							if frame.get_pixel(x, y).a >= 0.5:
+								bottom = y + 1
+					check(bottom == 120, id + " stable grounded motion")
+			check(unique.size() == 8, id + " eight distinct drawn poses")
 		check(img.get_pixel(0, 0).a == 0 and img.get_used_rect().size.x > 10, id + " transparency and content")
 		index += 1
 	await create_timer(0.3).timeout
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/enemies/gallery.png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("enemies/gallery.png"))
 	for v in visuals:
 		var scale_before = v.sprite.scale
+		var frame_before = v.sprite.frame
 		v._process(0.2)
-		check(v.sprite.scale != scale_before, v.visual_id + " idle changes")
+		check(v.sprite.scale != scale_before or v.sprite.frame != frame_before, v.visual_id + " idle changes")
 		v.play_once("attack")
 	await create_timer(0.5).timeout
 	for v in visuals:
@@ -74,7 +92,7 @@ func run_tests() -> void:
 		check(app.enemy_art[0] is Visual and app.enemy_art[0].visual_id == def.visual, id + " live mapping")
 		if DisplayServer.get_name() != "headless":
 			await RenderingServer.frame_post_draw
-			root.get_texture().get_image().save_png("res://docs/enemies/combat-" + id + ".png")
+			root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("enemies/combat-" + id + ".png"))
 		await app.animate_combat_action(0, 0)
 		check(not app.combat_busy and app.game.run.combat.enemies[0].hp < def.hp, id + " damage and unlock")
 	print("ENEMY CHECKS: %d | FAILURES: %d" % [checks, failures])

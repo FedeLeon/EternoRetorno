@@ -1,6 +1,7 @@
 class_name ERGame
 extends RefCounted
 
+const Treasure = preload("res://src/rules/treasure.gd")
 const Content = preload("res://src/content.gd")
 const Dungeon = preload("res://src/dungeon.gd")
 const SaveStore = preload("res://src/save_store.gd")
@@ -44,13 +45,12 @@ func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> 
 		rng.seed = seed_value
 	var initial_seed = rng.seed
 	run = {"seed": initial_seed, "rng_state": rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": Dungeon.create(rng), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
+	run.team_relic = equipment.get("team", "")
 	run.inventory = {}
-	for item_id in content.items:
-		run.inventory[item_id] = 1
 	for id in party:
 		run.heroes.append({"id": id, "hp": int(content.heroes[id].hp), "max_hp": int(content.heroes[id].hp), "block": 0})
 		var hero = run.heroes.back()
-		hero.equipped_relic = equipment.get(id, "")
+		hero.equipped_relic = equipment.get("team", equipment.get(id, ""))
 		hero.phoenix_used = false
 		if relic_bonus(hero, "max_hp") > 0:
 			hero.max_hp += relic_bonus(hero, "max_hp")
@@ -80,7 +80,7 @@ func enter_node(index: int) -> bool:
 		run.phase = "room"
 		run.room_note = ""
 		if node.kind == "treasure":
-			run.treasure = _roll_relic()
+			run.treasure = Treasure.prepare(rng, content.items.keys())
 	checkpoint()
 	return true
 
@@ -320,10 +320,14 @@ func _roll_relic() -> String:
 	return "" if pool.is_empty() else pool[rng.randi_range(0, pool.size() - 1)]
 
 func take_treasure() -> bool:
-	if not _room_is("treasure"):
+	if not _room_is("treasure") or not Treasure.open(run):
 		return false
-	if run.treasure != "" and run.treasure not in run.relics:
-		run.relics.append(run.treasure)
+	checkpoint()
+	return true
+
+func leave_treasure() -> bool:
+	if not _room_is("treasure") or not Treasure.state(run.treasure).get("opened", false):
+		return false
 	run.phase = "map"
 	checkpoint()
 	return true
@@ -403,6 +407,7 @@ func _finish(won: bool) -> void:
 		hero.turn_strength = 0
 		hero.turn_magic = 0
 	run.deck = []
+	run.team_relic = ""
 	run.relics = []
 	run.combat = {}
 	run.reward = []
@@ -413,10 +418,12 @@ func _log(line: String) -> void:
 		run.log.pop_front()
 
 func valid_equipment(party: Array, equipment: Dictionary) -> bool:
+	if equipment.size() > 1:
+		return false
 	var used: Array = []
 	for hero_id in equipment:
 		var id = equipment[hero_id]
-		if hero_id not in party or not content.equipment.has(id) or id in used:
+		if (hero_id != "team" and hero_id not in party) or not content.equipment.has(id) or id in used:
 			return false
 		used.append(id)
 	return true
@@ -432,6 +439,8 @@ func turn_energy() -> int:
 		for hero in run.heroes:
 			if hero.hp > 0:
 				amount += relic_bonus(hero, "energy")
+				if run.get("team_relic", "") != "":
+					break
 	return amount
 
 func effective_card(instance: Dictionary) -> Dictionary:
@@ -441,8 +450,10 @@ func effective_card(instance: Dictionary) -> Dictionary:
 	var hero = run.heroes[run.party.find(c.owner)]
 	if c.damage > 0:
 		c.damage += int(hero.get("turn_strength", 0))
+		if run.get("team_relic", "") != "" or c.owner in ["mage", "cleric"]:
+			c.damage += relic_bonus(hero, "magic")
 		if c.owner in ["mage", "cleric"]:
-			c.damage += relic_bonus(hero, "magic") + int(hero.get("turn_magic", 0))
+			c.damage += int(hero.get("turn_magic", 0))
 	if c.poison > 0:
 		c.poison += relic_bonus(hero, "poison")
 	return c

@@ -6,3 +6,6 @@ builds/*.idsig
 *.tmp
 __pycache__/
 *.pyc
+
+# Disposable captures, videos and test logs
+/artifacts/

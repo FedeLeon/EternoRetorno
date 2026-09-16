@@ -29,7 +29,7 @@ conservan. No se publica en Google Play.
 ### Controles y reglas
 
 1. Desde el campamento, elegí dos personajes diferentes y equipá una reliquia
-   distinta a cada uno antes de entrar en la cripta.
+   compartida antes de entrar en la cripta: sus efectos benefician a ambos.
 2. Tocá una sala iluminada del mapa. Las ramas vuelven a unirse antes del jefe.
 3. Tocá una carta y luego un objetivo iluminado. Para cartas sobre su dueño o
    todo el grupo/enemigos, confirmá tocando al personaje dueño de la carta.
@@ -63,8 +63,8 @@ la mano, los enemigos, las intenciones y las recompensas pendientes.
 | Enemigos | 4 comunes, Esqueleto guardián (élite), Autómata roto (jefe); 50 sprites reservados |
 | Eventos | Pozo, altar y biblioteca |
 | Reliquias de grupo | Ascua, colmillo, cáliz y reloj desbloqueable |
-| Equipamiento | 8 reliquias personales; una distinta por héroe |
-| Consumibles | 8 tipos; una unidad de cada uno al iniciar una aventura |
+| Equipamiento | 8 opciones; una sola reliquia por pareja |
+| Consumibles | 8 tipos; bolsa vacía al iniciar, se encuentran en cofres |
 
 Ganar el piso con una clase desbloquea su quinta carta para futuras recompensas.
 Vencer al élite desbloquea el reloj inmediatamente, aunque luego pierdas la
@@ -101,7 +101,7 @@ actualizar una instalación de prueba sin cambiar su firma.
 ./scripts/run.sh --headless --script tests/test_game.gd
 
 # Capturas de todas las pantallas, con un servidor gráfico disponible
-./scripts/run.sh --script tests/capture_screens.gd
+./scripts/run.sh --script tests/test_combat_layout.gd
 ```
 
 Exportamos con plantillas precompiladas; este flujo no requiere compilar Godot,
@@ -120,8 +120,8 @@ responsabilidades actuales, estructura objetivo y criterios de separación.
 - `src/save_store.gd`: persistencia con versión, archivo temporal y copia anterior.
 - `src/main.gd`: interfaz táctil y pantallas; `src/*_sprite.gd`: animaciones.
 - `data/equipment.json` y `data/enemy_visuals.json`: objetos y biblioteca visual.
-- `assets/`: imágenes utilizadas; `docs/`: decisiones, prompts, fuentes y capturas.
-- `tests/`: reglas, partidas completas, capturas y recorrido de la APK por ADB.
+- `assets/`: imágenes utilizadas; `docs/`: decisiones, prompts y fuentes de arte.
+- `tests/`: pruebas de reglas, partidas completas e interfaz.
 
 ### Guardado e interfaces
 
@@ -141,8 +141,11 @@ combate y recompensas adquiridas, conservando su resumen y el perfil.
 
 ## Validación y límites
 
-Ver [docs/VALIDACION.md](docs/VALIDACION.md) para los resultados y capturas.
+Ver [docs/VALIDACION.md](docs/VALIDACION.md) para los resultados y límites de validación.
 La dificultad y el arte son una base inicial: las simulaciones no sustituyen
 el balance con jugadores. Esta entrega tiene un solo piso, sin audio, cuentas,
 compras, sincronización ni contenido descargable. Las proporciones se conservan
 con bandas laterales en pantallas más anchas que 16:9.
+
+Las capturas de desarrollo se generan en `artifacts/`, ignorado por Git y Godot.
+Se puede borrar esa carpeta. Ver [limpieza y mantenimiento](docs/LIMPIEZA.md).

@@ -1,5 +1,15 @@
 # Validación — 15 de septiembre de 2026
 
+## Última comprobación: limpieza (16/09/2026)
+
+19 suites headless, 1717 comprobaciones sin fallos. Enemigos (498) y tesoros (8)
+también renderizados en Linux/llvmpipe; galería y combate revisados. Importación,
+referencias de recursos y diff correctos. Capturas temporales retiradas al terminar.
+Sin APK ni validación Android nueva. Detalle en [LIMPIEZA.md](LIMPIEZA.md).
+Los apartados siguientes describen entregas anteriores; sus capturas fueron
+eliminadas y sus resultados no sustituyen una prueba actual en dispositivo.
+
+
 ## Última comprobación local del combate
 
 La revisión de distribución y robo de seis cartas pasó **584 comprobaciones**:
@@ -12,7 +22,7 @@ esta revisión. Ver [estado actual](README.md) e [historial](HISTORIAL.md).
 
 **Todo lo que sigue corresponde a la entrega inicial**, antes de los cambios
 posteriores de arte, campamento, equipamiento y distribución del combate.
-Sus cifras y capturas se conservan como evidencia histórica. El controlador
+Sus cifras se conservan como registro histórico; las capturas fueron retiradas en la limpieza. El controlador
 Android debe revisarse para la interfaz actual antes de reutilizarlo.
 
 ### Resultado
@@ -44,7 +54,7 @@ validar allí.
 
 ## Recorrido de Android mediante toques
 
-El controlador `tests/android_smoke.py` usa toques ADB en la APK instalada. Lee
+El antiguo controlador `tests/android_smoke.py` (retirado por coordenadas obsoletas) usaba toques ADB en la APK instalada. Lee
 el guardado de la aplicación de depuración para decidir jugadas y comprobar
 resultados; **no lo modifica ni altera estadísticas**. Se ejecutó con Wi-Fi y
 datos móviles desactivados en el emulador.
@@ -66,21 +76,21 @@ Recorrido validado:
 9. Tras reiniciar: exactamente **1 victoria, 1 entrada de historial y 2 cartas
    desbloqueadas**. No se duplicó el resultado.
 
-El controlador terminó con `PASS`; registro en [android-smoke.log](android-smoke.log).
+El controlador terminó con `PASS`; registro en android-smoke.log (archivo retirado en la limpieza).
 Se inspeccionaron capturas renderizadas, incluidas selección, mapa, combate,
 recompensa, descanso, mejora y victoria. Los registros de la versión final no
 mostraron errores de GDScript ni cierres Java.
 
 ## Capturas
 
-- [Selección de personajes](android-02-personajes.png)
-- [Combate en Android](android-04-combate.png)
-- [Pausa con Atrás](android-05-pausa.png)
-- [Recompensa](android-06-recompensa.png)
-- [Descanso](android-07-descanso.png)
-- [Mejora de carta](android-08-mejora.png)
-- [Escalera desbloqueada](android-09-escalera.png)
-- [Victoria y desbloqueos](android-10-victory.png)
+- Selección de personajes (archivo retirado en la limpieza)
+- Combate en Android (archivo retirado en la limpieza)
+- Pausa con Atrás (archivo retirado en la limpieza)
+- Recompensa (archivo retirado en la limpieza)
+- Descanso (archivo retirado en la limpieza)
+- Mejora de carta (archivo retirado en la limpieza)
+- Escalera desbloqueada (archivo retirado en la limpieza)
+- Victoria y desbloqueos (archivo retirado en la limpieza)
 
 ## Reproducir las pruebas de Android
 
@@ -100,7 +110,7 @@ export ANDROID_HOME="$PWD/.tools/android"
 Una vez iniciado el emulador, instalar la APK, abrirla desde su icono y ejecutar:
 
 ```bash
-python3 tests/android_smoke.py --serial emulator-5554
+# Recorrido ADB antiguo retirado: requiere un controlador adaptado a la interfaz actual.
 ```
 
 El recorrido nuevo requiere la pantalla inicial sin aventura activa. El argumento
@@ -116,3 +126,14 @@ El prototipo es intencionalmente accesible y necesita balance con jugadores.
 Las 15 parejas se probaron en lógica; el recorrido nativo completo usó guerrero y
 clériga. No se ensayaron todos los fabricantes, tamaños ni versiones de Android,
 y el rendimiento del emulador no representa el de un teléfono físico.
+
+## Actualización local: escenarios y tesoros (16/09/2026)
+
+Último cambio: dos escenarios adicionales y cofres con consumibles/trampas.
+Pruebas de esta entrega: `test_treasure.gd` 22, `test_game.gd` 137 y 45 aventuras,
+`test_equipment.gd` 90, `test_equipment_ui.gd` 12, `test_hud.gd` 92,
+`test_treasure_ui.gd` 8: **361 comprobaciones, cero fallos**.
+Los cinco primeros se ejecutaron headless; tesoros UI se ejecutó renderizado
+con entrada de ratón en Linux/llvmpipe. Capturas de ambos fondos, cofre cerrado
+y modal normal/trampa revisadas. Importación de Godot y `git diff --check` correctos.
+No se compiló APK ni se probó esta entrega en Android.

@@ -21,7 +21,7 @@ func click(point: Vector2) -> void:
 func shot(name: String) -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/dungeon/" + name + ".png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("dungeon/" + name + ".png"))
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
 	app = load("res://main.tscn").instantiate()
@@ -34,13 +34,13 @@ func run_tests() -> void:
 	check(app.game.run.combat.hand.size() == 6, "Six cards drawn")
 	await shot("combat")
 	var cards = app.layer.get_node("CombatHand").get_child(0).get_children()
-	check(cards.size() == 6 and cards[0].global_position.y == 570, "Six peeking cards")
+	check(cards.size() == 6 and cards[2].position.y < cards[0].position.y and cards[0].rotation < 0 and cards[5].rotation > 0, "Six cards form a raised fan")
 	var index = 0
 	for i in range(6):
 		if not app.game.valid_targets(i).is_empty():
 			index = i
 			break
-	await click(cards[index].global_position + Vector2(65, 55))
+	await click(cards[index].get_global_transform() * Vector2(55, 45))
 	check(app.selected_card == index, "Touch selects peeking card")
 	var selected = app.layer.get_node("CombatHand").get_child(0).get_child(index)
 	check(selected.global_position.y == 414 and selected.global_position.y + selected.size.y <= 720, "Selected card fully visible")

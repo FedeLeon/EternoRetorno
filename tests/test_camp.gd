@@ -21,7 +21,7 @@ func click(index: int) -> void:
 func capture(name: String) -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/camp/" + name + ".png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("camp/" + name + ".png"))
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
 	app = load("res://main.tscn").instantiate()

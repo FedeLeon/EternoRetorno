@@ -26,6 +26,7 @@ func run_tests() -> void:
 			for upgraded in [false, true]:
 				var card = app.card_panel({"id": id, "upgraded": upgraded}, 0, 0, 218, 244, func(): pass, false, true, gallery)
 				await process_frame
+				check(card.get_node("CostNumber").value == int(app.game.content.card({"id": id, "upgraded": upgraded}).cost), "Sprite cost: " + id)
 				for node in card.get_children():
 					if node is Label:
 						check(node.get_line_count() * node.get_line_height() <= node.size.y + 1, "Text clipped: " + node.text)
@@ -42,7 +43,7 @@ func run_tests() -> void:
 	await process_frame
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/cards/gallery.png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("cards/gallery.png"))
 	gallery.free()
 	app.game.new_run(["warrior", "cleric"], 12)
 	app.game.enter_node(0)

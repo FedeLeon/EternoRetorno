@@ -146,7 +146,7 @@ func death_rules() -> void:
 	check(g.run.deck.size() == 12, "inactive cards remain in permanent run deck")
 	g.choose_reward(-1)
 	g.run.current = 1 # Reach joined treasure, then another fight.
-	g.enter_node(3); g.take_treasure(); g.enter_node(5)
+	g.enter_node(3); g.take_treasure(); g.leave_treasure(); g.enter_node(5)
 	var total = g.run.combat.draw + g.run.combat.hand
 	check(total.filter(func(c): return g.content.cards[c.id].owner == "warrior").size() == 6, "revived cards return next combat")
 	g = combat()
@@ -173,9 +173,10 @@ func reward_and_rooms() -> void:
 	check(g.run.deck.size() == size_before + 1 and not g.choose_reward(0), "reward cannot be claimed twice")
 	g.run.current = 2
 	g.enter_node(3)
-	var relic = g.run.treasure
+	var item = g.run.treasure.item
 	g.take_treasure()
-	check(relic in g.run.relics and not g.take_treasure(), "treasure once")
+	check(g.run.inventory.get(item, 0) == 1 and not g.take_treasure(), "treasure once")
+	g.leave_treasure()
 	g.run.current = 5
 	g.enter_node(6)
 	g.run.heroes[0].hp = 1
@@ -194,6 +195,7 @@ func reward_and_rooms() -> void:
 	g.choose_event(0)
 	check(g.run.phase == "reward", "library shares reward transaction")
 	g.choose_reward(-1)
+	g.run.relics.append("ember") # Existing group relic: elite must grant another.
 	g.run.current = 3; g.enter_node(4)
 	g.run.combat.enemies[0].hp = 0
 	g._check_combat_end()
@@ -262,7 +264,9 @@ func autoplay(g: RefCounted) -> bool:
 			"room":
 				match g.run.nodes[g.run.current].kind:
 					"rest": g.rest(true)
-					"treasure": g.take_treasure()
+					"treasure":
+						g.take_treasure()
+						g.leave_treasure()
 					"event":
 						if not g.choose_event(0): g.choose_event(1)
 			"reward": g.choose_reward(-1)

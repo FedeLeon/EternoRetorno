@@ -1,30 +1,40 @@
 # Reliquias equipables y consumibles
 
-Flujo: campamento → elegir dos personajes → equipar una reliquia distinta a
-cada uno → iniciar aventura. Las ocho están disponibles desde el principio.
-Cambiar de personaje elimina su asignación. La preparación se guarda en el
-perfil y las reliquias elegidas se copian a los héroes de la aventura.
+## Regla actual: una reliquia compartida (16/09/2026)
 
-## Valores iniciales de reliquias
+Campamento → dos personajes → elegir directamente una reliquia → iniciar.
+No hay botones para asignar portador. Las ocho opciones están disponibles;
+otra elección reemplaza la anterior y la interfaz exige exactamente una.
 
-| Reliquia | Efecto del portador |
+| Reliquia | Efecto compartido |
 | --- | --- |
-| Amuleto Vital | +10 de vida inicial y máxima |
-| Anillo del Vigor | +1 energía compartida al primer turno de cada combate, si está vivo |
-| Ídolo del Fénix | Sobrevive a un golpe fatal con 1 PV, una sola vez por aventura |
-| Colmillo Envenenado | +2 acumulaciones en cartas que aplican veneno |
-| Orbe Arcano | +2 daño por impacto de cartas ofensivas de maga o clériga |
-| Botas del Viento | 3 bloqueo al inicio de cada turno |
-| Escudo del Peregrino | Reduce cada ataque enemigo en 2 antes de absorber bloqueo |
-| Moneda del Mercader | Mejora una carta suya en cada oferta si aparece alguna |
+| Amuleto Vital | +10 vida inicial y máxima a cada héroe |
+| Anillo del Vigor | +1 energía compartida en el primer turno, una sola vez por combate |
+| Ídolo del Fénix | Una protección fatal por héroe y aventura, queda con 1 PV |
+| Colmillo Envenenado | +2 acumulaciones en cartas que ya aplican veneno, de cualquier héroe |
+| Orbe Arcano | +2 daño por impacto en cartas ofensivas de ambos, de cualquier clase |
+| Botas del Viento | +3 bloqueo a cada héroe vivo al inicio del turno |
+| Escudo del Peregrino | Reduce 2 de cada ataque recibido por cualquiera, antes del bloqueo |
+| Moneda del Mercader | Mejora una carta por héroe representado en la oferta |
 
-Las cuatro reliquias de grupo que ya se encontraban en la mazmorra permanecen
-con sus reglas anteriores; no ocupan estos espacios personales. No se han
-añadido oro, tiendas, velocidad ni una estadística nueva de poder mágico.
+El alcance se guarda en `run.team_relic`; se copia el ID a cada
+`hero.equipped_relic` para reutilizar las reglas por actor. Energía compartida
+se aplica una sola vez. `phoenix_used` permanece independiente por héroe.
+Preparación: `relics: {"team": id}`. Una preparación personal anterior se convierte
+a compartida al abrir la selección; aventuras iniciadas conservan efectos
+personales, sin recalcular vida. La API antigua por héroe sigue siendo compatible.
+Las reliquias halladas dentro de la mazmorra conservan sus reglas anteriores.
+
+Validación actual: equipamiento 90, interfaz 11 y HUD 85 headless, sin fallos.
+Incluye las 15 parejas con bloqueo para ambos, efectos compartidos, energía sin
+duplicación, Fénix por héroe y guardado. Selección renderizada en escritorio y
+captura `loadout.png` revisada. Sin APK ni pruebas Android.
 
 ## Bolsa compartida
 
-Para esta primera versión, cada aventura nueva recibe una unidad de cada ítem.
+Las aventuras nuevas empiezan con la bolsa vacía. Cada cofre entrega una unidad
+de un consumible aleatorio; consultar [Tesoros](../treasure/README.md).
+Los inventarios de aventuras ya guardadas se conservan.
 Se usan durante combate desde «Bolsa», eligiendo un objetivo válido. No cuestan
 energía, se consumen una vez y no se reponen al cambiar de sala.
 
@@ -59,7 +69,7 @@ Partidas antiguas continúan sin equipamiento ni consumibles retroactivos.
 Iniciar una nueva aventura permite usar este contenido. No se necesita cambiar
 la versión del archivo de guardado: los campos nuevos tienen valores opcionales.
 
-## Validación
+## Validación histórica de la incorporación inicial
 
 64 comprobaciones de reglas nuevas y 11 de interfaz, además de las pruebas
 existentes de reglas (137), interfaz (121), personajes (404), selección (47) y
@@ -72,3 +82,22 @@ temporales y navegación con eventos de entrada reales de Godot.
 
 Capturas de escritorio: `loadout.png`, `bag.png`, `expanded-hand.png`.
 No se compiló APK ni se probó este cambio en Android.
+
+
+## Histórico: elección de portador y bloqueo gráfico (reemplazado por selección compartida)
+
+La selección visual vive en `src/ui/screens/equipment_screen.gd`; recibe datos y
+callbacks. `main.gd` coordina la sustitución, el guardado y la navegación.
+
+`src/ui/components/block_indicator.gd` presenta bloqueo de héroes vivos y enemigos:
+escudo de `assets/objects/icons.png` (índice 6, región 128,64 de 64×64) y
+`NumberView`. Se reutiliza el arte del Escudo del Peregrino, sin generar ni
+modificar imágenes. Se muestra también cero y el indicador no intercepta objetivos.
+
+Validación actual: reglas de equipamiento 70, interfaz 11, HUD 76 y distribución
+de combate 8: **165 comprobaciones locales sin fallos**. Incluyen las 15 parejas,
+rechazo de dos reliquias distintas, transferencia, sustitución, persistencia,
+compatibilidad de aventuras antiguas y bloqueo gráfico en ambos bandos.
+Equipamiento y HUD también ejecutados con renderizado de escritorio; capturas
+`loadout.png` y `../hud/combat.png` revisadas visualmente.
+Sin exportar APK ni probar en emulador/dispositivo Android.

@@ -22,7 +22,7 @@ func shot(name: String) -> void:
 	await create_timer(0.2).timeout
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/objects/" + name + ".png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("objects/" + name + ".png"))
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
 	app = load("res://main.tscn").instantiate()
@@ -35,14 +35,12 @@ func run_tests() -> void:
 	await click(Vector2(1060, 675))
 	check(app.screen == "equipment", "selection opens loadout")
 	await click(Vector2(1060, 675))
-	check(app.screen == "equipment" and app.game.run.is_empty(), "cannot begin without two relics")
+	check(app.screen == "equipment" and app.game.run.is_empty(), "cannot begin without a relic")
 	await click(Vector2(160, 300))
-	check(app.equipped.get("warrior") == "vital_amulet", "equip by pointer")
-	await click(Vector2(960, 165))
-	await click(Vector2(160, 300))
-	check(not app.equipped.has("mage"), "duplicate disabled in UI")
+	check(app.equipped == {"team":"vital_amulet"}, "choose team relic by pointer")
+	check(not app.layer.find_children("*", "Button", true, false).any(func(n): return "Sin reliquia" in n.text or "Guerrero ·" in n.text), "No hero assignment buttons")
 	await click(Vector2(160, 470))
-	check(app.equipped.get("mage") == "arcane_orb", "equip second hero")
+	check(app.equipped == {"team":"arcane_orb"}, "replace single shared relic")
 	await shot("loadout")
 	var draft = app.game.profile.preparation.duplicate(true)
 	app.back()
@@ -52,7 +50,9 @@ func run_tests() -> void:
 	app.open_equipment()
 	await process_frame
 	await click(Vector2(1060, 675))
-	check(app.screen == "map" and app.game.run.heroes[0].max_hp == 68, "loadout applied to adventure")
+	check(app.screen == "map" and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
+	check(app.game.run.inventory.is_empty(), "new adventure has no consumables")
+	app.game.run.inventory["agility_brew"] = 1 # Explicit UI fixture for bag use.
 	app.game.enter_node(0)
 	app.continue_run()
 	await process_frame

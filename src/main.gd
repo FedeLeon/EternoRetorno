@@ -1,5 +1,15 @@
 extends Control
 
+const CombatEffects = preload("res://src/presentation/combat_effects.gd")
+const EnemyIntent = preload("res://src/ui/components/enemy_intent.gd")
+const BattleBackground = preload("res://src/ui/components/battle_background.gd")
+const TreasureScreen = preload("res://src/ui/screens/treasure_screen.gd")
+const HealthBar = preload("res://src/ui/components/health_bar.gd")
+const StatusEffects = preload("res://src/ui/components/status_effects.gd")
+const EquipmentScreen = preload("res://src/ui/screens/equipment_screen.gd")
+const CombatHUD = preload("res://src/ui/components/combat_hud.gd")
+const HandLayout = preload("res://src/ui/components/hand_layout.gd")
+const NumberView = preload("res://src/ui/components/number_view.gd")
 const Game = preload("res://src/game.gd")
 const Art = preload("res://src/pixel_art.gd")
 const EnemySprite = preload("res://src/enemy_sprite.gd")
@@ -11,7 +21,7 @@ const Cleric = preload("res://src/cleric_sprite.gd")
 const Ranger = preload("res://src/ranger_sprite.gd")
 const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage, "cleric": Cleric, "ranger": Ranger}
 const Campfire = preload("res://src/campfire.gd")
-const CAMP_FRONT = preload("res://assets/camp/front-64.png")
+const CAMP_FRONT = preload("res://assets/camp/front-128.png")
 const CAMP_POSITIONS = [Vector2(450, 375), Vector2(830, 375), Vector2(245, 485), Vector2(1035, 485), Vector2(430, 585), Vector2(850, 585)]
 const Dungeon = preload("res://src/dungeon.gd")
 const GOLD = Color("d8b779")
@@ -20,7 +30,6 @@ const TEXT = Color("ebe2d0")
 const MUTED = Color("9299ab")
 var game = Game.new()
 var equipped: Dictionary = {}
-var equipment_hero = 0
 var selected_item = ""
 var screen = "home"
 var selected_party: Array = []
@@ -31,6 +40,8 @@ var overlay: Control
 var upgrade_mode = false
 var return_screen = "home"
 var combat_busy = false
+var hero_health: Dictionary = {}
+var enemy_health: Dictionary = {}
 var hero_art: Dictionary = {}
 var enemy_art: Dictionary = {}
 
@@ -97,21 +108,17 @@ func panel(x: float, y: float, w: float, h: float, border: Color = Color("343b4d
 	rect(p, x, y, w, h, parent)
 	return p
 
-func art(kind: String, color: Color, x: float, y: float, w: float, h: float, parent: Control = null) -> Control:
-	if kind in ANIMATED_HEROES:
-		var visual = ANIMATED_HEROES[kind].new()
-		rect(visual, x - w * 0.18, y, w * 1.36, h, parent)
-		return visual
-	var a = Art.new()
-	a.kind = kind
-	a.tint = color
-	rect(a, x, y, w, h, parent)
-	return a
+func art(kind: String, x: float, y: float, w: float, h: float, parent: Control = null) -> Control:
+	var visual = ANIMATED_HEROES[kind].new()
+	rect(visual, x - w * 0.18, y, w * 1.36, h, parent)
+	return visual
 
 func background() -> void:
+	if screen == "map":
+		return # MapScreen owns its background.
 	if screen == "combat":
 		var room = TextureRect.new()
-		room.texture = load("res://assets/dungeon/combat.png")
+		room.texture = load(BattleBackground.path_for(game.run.seed, game.run.current))
 		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		rect(room, 0, 64, 1280, 656)
@@ -138,7 +145,6 @@ func background() -> void:
 		rect(camp, 0, 0, 1280, 720)
 		return
 	var bg = Art.new()
-	bg.scene_art = true
 	rect(bg, 0, 0, 1280, 720)
 	var shade = ColorRect.new()
 	shade.color = Color(0.025, 0.035, 0.06, 0.44)
@@ -146,6 +152,8 @@ func background() -> void:
 	rect(shade, 0, 0, 1280, 720)
 
 func render() -> void:
+	hero_health.clear()
+	enemy_health.clear()
 	hero_art.clear()
 	enemy_art.clear()
 	if is_instance_valid(layer):
@@ -199,11 +207,11 @@ func title_button(caption: String, y: float, primary: bool, action: Callable) ->
 	return b
 
 func home() -> void:
-	title_button("Continuar aventura" if active_run() else "Iniciar juego", 538, true, continue_run if active_run() else open_base_camp).name = "StartGame"
-	title_button("Opciones", 606, false, func(): screen = "options"; render()).name = "Options"
+	title_button("Continuar aventura" if active_run() else "Iniciar juego", 510 if active_run() else 538, true, continue_run if active_run() else open_base_camp).name = "StartGame"
+	title_button("Opciones", 638 if active_run() else 606, false, func(): screen = "options"; render()).name = "Options"
 	button("Colección", 62, 620, 170, 48, open_collection)
 	if active_run():
-		button("Campamento", 1048, 620, 170, 48, open_base_camp)
+		title_button("Campamento", 574, true, open_base_camp).name = "Camp"
 
 func apply_options() -> void:
 	var settings: Dictionary = game.profile.get("settings", {})
@@ -290,7 +298,11 @@ func open_selection() -> void:
 	var draft = game.profile.get("preparation", {})
 	selected_party = draft.get("party", []).duplicate()
 	equipped = draft.get("relics", {}).duplicate()
-	if selected_party.size() != 2 or not game.valid_equipment(selected_party, equipped):
+	if not game.valid_equipment(selected_party, equipped):
+		equipped = {}
+	if equipped.size() == 1:
+		equipped = {"team": equipped.values()[0]}
+	if selected_party.size() != 2:
 		selected_party = []
 		equipped = {}
 	screen = "select"
@@ -324,7 +336,7 @@ func selection() -> void:
 		var sprite = TextureRect.new()
 		var texture = AtlasTexture.new()
 		texture.atlas = CAMP_FRONT
-		texture.region = Rect2(i * 64, 0, 64, 64)
+		texture.region = Rect2(i * 128, 0, 128, 128)
 		sprite.texture = texture
 		sprite.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -342,7 +354,7 @@ func selection() -> void:
 	for id in selected_party:
 		names.append(game.content.heroes[id].name)
 	label_at(" + ".join(names), 405, 669, 440, 30, 20, TEXT)
-	button("Preparar reliquias  →", 894, 659, 350, 46, open_equipment, selected_party.size() == 2)
+	button("Elegir reliquia  →", 894, 659, 350, 46, open_equipment, selected_party.size() == 2)
 
 func toggle_hero(id: String) -> void:
 	if id in selected_party:
@@ -354,7 +366,7 @@ func toggle_hero(id: String) -> void:
 	render()
 
 func begin() -> void:
-	if not game.valid_equipment(selected_party, equipped) or (screen == "equipment" and equipped.size() != 2):
+	if not game.valid_equipment(selected_party, equipped) or (screen == "equipment" and equipped.size() != 1):
 		return
 	# Abandon only after a valid replacement party has been chosen.
 	if active_run():
@@ -373,65 +385,36 @@ func act(callback: Callable) -> void:
 	continue_run()
 
 func map_view() -> void:
-	header("La cripta de los ecos", "PISO I   ·   Seguí las conexiones iluminadas hasta la escalera central.")
-	panel(36, 140, 720, 524)
-	var offset = Vector2(66, 151)
-	var available = game.available_nodes()
-	for node in game.run.nodes:
-		for next in node.next:
-			var line = Line2D.new()
-			line.width = 3
-			line.default_color = GOLD.darkened(0.3) if next in available and node.id == game.run.current else Color("353c4d")
-			line.add_point(Dungeon.POSITIONS[node.id] + offset)
-			line.add_point(Dungeon.POSITIONS[next] + offset)
-			layer.add_child(line)
-	for node in game.run.nodes:
-		var pos = Dungeon.POSITIONS[node.id] + offset
-		var reachable = node.id in available
-		var visited = node.id in game.run.visited
-		var symbol = {"combat": "×", "event": "?", "treasure": "◇", "elite": "!", "rest": "+", "boss": "Ω"}[node.kind]
-		var b = button(symbol, pos.x - 27, pos.y - 27, 54, 54, func(): act(func(): game.enter_node(node.id)), reachable)
-		b.add_theme_font_size_override("font_size", 27)
-		var border = GOLD if reachable else (Color("6c978d") if visited else Color("3b4354"))
-		b.add_theme_stylebox_override("disabled" if not reachable else "normal", box(Color("252c3a") if visited or reachable else INK, border, 2))
-		b.add_theme_color_override("font_disabled_color", Color("8ba49e") if visited else MUTED)
-		var l = label_at("%02d · %s" % [node.id + 1, Dungeon.LABELS[node.kind]], pos.x - 62, pos.y + 28, 124, 26, 14, GOLD if reachable else MUTED)
-		l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("EL GRUPO", 792, 140, 440, 30, 18, GOLD)
-	for i in range(2):
-		map_hero(i, 792, 184 + i * 102)
-	label_at("RELIQUIAS", 792, 400, 420, 28, 17, GOLD)
-	var relic_text = "Todavía no encontraste reliquias."
-	if not game.run.relics.is_empty():
-		relic_text = "\n".join(game.run.relics.map(func(id): return game.content.relics[id].name + " · " + game.content.relics[id].description))
-	label_at(relic_text, 792, 435, 442, 128, 17, MUTED)
-	button("Ver mazo · %d cartas" % game.run.deck.size(), 792, 587, 440, 54, open_deck)
-	if game.run.boss_defeated:
-		button("Bajar por la escalera  →", 217, 582, 358, 60, func(): act(game.descend))
-	label_at("Salas recorridas: %d  /  Semilla: %s" % [game.run.visited.size(), str(game.run.seed)], 36, 676, 1030, 25, 15, MUTED)
+	var view = preload("res://src/ui/screens/map_screen.gd").new()
+	view.name = "MapScreen"
+	view.nodes = game.run.nodes.duplicate(true)
+	view.available = game.available_nodes()
+	view.visited = game.run.visited.duplicate()
+	view.current = game.run.current
+	view.run_seed = game.run.seed
+	view.boss_defeated = game.run.boss_defeated
+	view.deck_count = game.run.deck.size()
+	view.relics = equipped_relics()
+	for id in game.run.relics:
+		var relic = game.content.relics[id].duplicate()
+		relic.owner = "Hallada"
+		view.relics.append(relic)
+	for hero in game.run.heroes:
+		var snapshot = hero.duplicate()
+		snapshot.title = game.content.heroes[hero.id].name
+		snapshot.visual = ANIMATED_HEROES[hero.id]
+		view.heroes.append(snapshot)
+	view.room_requested.connect(func(id): act(func(): game.enter_node(id)))
+	view.deck_requested.connect(open_deck)
+	view.menu_requested.connect(pause_menu)
+	view.descend_requested.connect(func(): act(game.descend))
+	rect(view, 0, 0, 1280, 720)
 
-func map_hero(i: int, x: float, y: float) -> void:
-	var h = game.run.heroes[i]
-	var def = game.content.heroes[h.id]
-	panel(x, y, 440, 94)
-	art(h.id, Color(def.color), x + 8, y + 5, 68, 80)
-	label_at(def.name, x + 90, y + 6, 320, 32, 23)
-	health_bar(h, x + 90, y + 50, 326)
-
-func health_bar(unit: Dictionary, x: float, y: float, width: float, parent: Control = null) -> void:
-	var back = ColorRect.new()
-	back.color = Color("35252f")
-	back.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	rect(back, x, y, width, 25, parent)
-	var fill = ColorRect.new()
-	fill.color = Color("98605f") if unit.hp > 0 else Color("35252f")
-	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	rect(fill, x, y, width * float(unit.hp) / unit.max_hp, 25, parent)
-	var text = "%d / %d" % [unit.hp, unit.max_hp]
-	if unit.hp <= 0:
-		text = "CAÍDO"
-	var l = label_at(text, x, y, width, 25, 17, TEXT, parent)
-	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+func health_bar(unit: Dictionary, x: float, y: float, width: float, parent: Control = null) -> Control:
+	var bar = HealthBar.new()
+	bar.set_health(int(unit.hp), int(unit.max_hp))
+	rect(bar, x, y, width, 25, parent)
+	return bar
 
 func combat_target_style(target: Button, valid: bool) -> void:
 	for state in ["normal", "disabled", "hover", "pressed", "focus"]:
@@ -440,20 +423,46 @@ func combat_target_style(target: Button, valid: bool) -> void:
 		var marker = label_at("▼", 70, -4, 70, 30, 24, GOLD, target)
 		marker.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
+func equipped_relics() -> Array:
+	var result: Array = []
+	var team_relic = game.run.get("team_relic", "")
+	if game.content.equipment.has(team_relic):
+		var relic = game.content.equipment[team_relic].duplicate()
+		relic.owner = "Equipo"
+		if team_relic == "phoenix_idol":
+			for hero in game.run.heroes:
+				relic.description += "\n" + game.content.heroes[hero.id].name + (": utilizado." if hero.get("phoenix_used", false) else ": disponible.")
+		result.append(relic)
+	else:
+		# Preserve personal equipment in adventures saved before team relics.
+		for hero in game.run.heroes:
+			var relic_id = hero.get("equipped_relic", "")
+			if game.content.equipment.has(relic_id):
+				var relic = game.content.equipment[relic_id].duplicate()
+				relic.owner = game.content.heroes[hero.id].name
+				relic.description += "\nPartida anterior: efecto personal."
+				relic.description += "\nFénix ya utilizado." if hero.get("phoenix_used", false) else ""
+				result.append(relic)
+	return result
+
 func combat_view() -> void:
 	var b = game.run.combat
-	var node = game.run.nodes[game.run.current]
-	panel(0, 0, 1280, 64)
-	label_at("Sala %02d" % (node.id + 1), 24, 12, 180, 40, 20, GOLD)
-	button("Ver mazo", 690, 8, 150, 48, open_deck)
-	var bag = button("     Bolsa", 850, 8, 150, 48, func(): selected_item = ""; screen = "items"; render())
-	var icon = TextureRect.new()
-	icon.texture = load("res://assets/dungeon/bag.png")
-	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	rect(icon, 8, 4, 40, 40, bag)
-	button("Menú", 1010, 8, 110, 48, pause_menu)
-	label_at("TURNO %d" % b.turn, 1134, 12, 140, 40, 19, GOLD)
+	var hud = CombatHUD.new()
+	hud.name = "CombatHUD"
+	hud.turn = b.turn
+	hud.energy = b.energy
+	hud.relics = equipped_relics()
+	hud.bag_requested.connect(func():
+		if not combat_busy:
+			selected_item = ""; screen = "items"; render())
+	hud.menu_requested.connect(func():
+		if not combat_busy: pause_menu())
+	hud.deck_requested.connect(func():
+		if not combat_busy: open_deck())
+	hud.relic_requested.connect(func(index):
+		if not combat_busy:
+			hud.show_relic(index))
+	rect(hud, 0, 0, 1280, 720)
 	var targets: Array = []
 	var c: Dictionary = {}
 	if selected_card >= 0 and selected_card < b.hand.size():
@@ -464,45 +473,50 @@ func combat_view() -> void:
 		var def = game.content.heroes[h.id]
 		var x = 80 + i * 234
 		var valid = not c.is_empty() and c.target != "enemy" and i in targets
-		var target = button("", x, 280, 204, 218, func(): target_clicked(i), valid)
+		var target = button("", x, 150, 204, 348, func(): target_clicked(i), valid)
 		combat_target_style(target, valid)
-		var visual = art(h.id, Color(def.color) if h.hp > 0 else Color("4f505d"), 30 if h.id in ANIMATED_HEROES else 48, -7 if h.id in ANIMATED_HEROES else 5, 144 if h.id in ANIMATED_HEROES else 108, 136 if h.id in ANIMATED_HEROES else 132, target)
+		var visual = art(h.id, 30, 123, 144, 136, target)
+		# Enlarge combat artwork by 25%, keeping the grounded baseline.
+		visual.pivot_offset = Vector2(visual.size.x / 2, visual.size.y)
+		visual.scale = Vector2.ONE * 1.25
 		hero_art[i] = visual
 		if h.id in ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
-		label_at(def.name, 10, 139, 184, 29, 22, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		health_bar(h, 16, 173, 172, target)
-		label_at("Bloqueo %d" % h.block if h.hp > 0 else "Vuelve si ganás", 10, 199, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	for i in range(2):
-		var h = game.run.heroes[i]
-		var relic_id = h.get("equipped_relic", "")
-		if game.content.equipment.has(relic_id):
-			var relic = game.content.equipment[relic_id]
-			var relic_button = button("", 80 + i * 234, 245, 32, 32, func(): show_modal(relic.name, relic.description + ("\nFénix ya utilizado." if h.get("phoenix_used", false) else ""), "Cerrar", close_modal))
-			object_icon(relic.icon, 0, 0, 32, relic_button)
+		label_at(def.name, 10, 269, 184, 29, 22, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		hero_health[i] = health_bar(h, 16, 303, 172, target)
+		if h.hp > 0:
+			var effects = StatusEffects.new()
+			effects.unit = h
+			rect(effects, 10, 328, 184, 28, target)
+		else:
+			label_at("Vuelve si ganás", 10, 329, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = game.content.enemies[e.id]
 		var x = 768 + i * 234 if b.enemies.size() > 1 else 884
 		var valid = not c.is_empty() and c.target == "enemy" and i in targets
-		var target = button("", x, 280, 214, 218, func(): target_clicked(i), valid)
+		var target = button("", x, 150, 214, 348, func(): target_clicked(i), valid)
 		combat_target_style(target, valid)
 		var enemy_visual = EnemySprite.new()
 		enemy_visual.visual_id = def.visual
 		enemy_visual.fallen = e.hp <= 0
-		rect(enemy_visual, 43, 0, 128, 132, target)
+		rect(enemy_visual, 43, 130, 128, 132, target)
+		# Imported enemy pixels end at y=60 in a 64px frame (native scale 2).
+		enemy_visual.pivot_offset = Vector2(enemy_visual.size.x / 2, enemy_visual.size.y - 8)
+		enemy_visual.scale = Vector2.ONE * 1.25
 		enemy_art[i] = enemy_visual
-		label_at(def.name, 7, 135, 200, 36, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		health_bar(e, 16, 173, 182, target)
-		label_at("Bloq. %d  ·  Veneno %d" % [e.block, e.poison], 9, 199, 196, 24, 15, Color("b9b5a1"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		var intent_text = "Derrotado"
+		label_at(def.name, 7, 265, 200, 36, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		enemy_health[i] = health_bar(e, 16, 303, 182, target)
+		var effects = StatusEffects.new()
+		effects.unit = e
+		rect(effects, 7, 328, 200, 28, target)
 		if e.hp > 0:
-			var dest = "ambos" if e.intent.get("all", false) else game.content.heroes[game.run.party[e.intent.target]].name
-			intent_text = "Ataca %d → %s%s" % [e.intent.damage, dest, "  · +%d bloq." % e.intent.block if e.intent.get("block", 0) > 0 else ""]
-		label_at(intent_text, x - 12, 240, 240, 34, 15, Color("e59a87")).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	panel(16, 582, 142, 112, GOLD)
-	label_at("ENERGÍA", 24, 593, 126, 30, 18, GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("%d / %d" % [b.energy, game.turn_energy()], 24, 630, 126, 48, 32, GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			var intent_view = EnemyIntent.new()
+			intent_view.name = "EnemyIntent%d" % i
+			intent_view.intent = e.intent.duplicate(true)
+			intent_view.heroes = game.run.heroes.duplicate(true)
+			rect(intent_view, x - 12, 176, 240, 42)
+
 	label_at("Mazo %d · Descarte %d · Inactivas %d" % [b.draw.size(), b.discard.size(), b.inactive.size()], 24, 76, 500, 28, 16, MUTED)
 	var count = b.hand.size()
 	var scroll = ScrollContainer.new()
@@ -511,14 +525,12 @@ func combat_view() -> void:
 	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
 	var contents = Control.new()
-	contents.custom_minimum_size = Vector2(maxi(1086, count * 178 - 4), 300)
+	contents.custom_minimum_size = Vector2(HandLayout.content_width(count), 300)
 	scroll.add_child(contents)
 	scroll.set_deferred("scroll_horizontal", hand_scroll)
-	var start = maxf(0, (1086 - (count * 178 - 4)) / 2.0)
 	for i in range(count):
-		var card = card_panel(b.hand[i], minf(start + i * 178, contents.custom_minimum_size.x - 218) if i == selected_card else start + i * 178, 8 if i == selected_card else 164, 218 if i == selected_card else 174, 290, func(): select_card(i), i == selected_card, not game.valid_targets(i).is_empty(), contents)
-		if i == selected_card:
-			card.z_index = 10
+		var card = card_panel(b.hand[i], 0, 0, 218 if i == selected_card else 174, 290, func(): select_card(i), i == selected_card, not game.valid_targets(i).is_empty(), contents)
+		HandLayout.arrange(card, i, count, i == selected_card)
 	if count == 0:
 		label_at("Terminá el turno para robar cartas.", 380, 590, 640, 70, 24, MUTED)
 	button("Terminar turno →", 1038, 508, 218, 48, func(): animate_combat_action())
@@ -544,15 +556,19 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	rect(frame, 3, 3, w - 6, h - 6, b)
 	if not enabled:
 		frame.modulate = Color(0.65, 0.65, 0.65)
-	var banner = panel(11, 12, w - 62, 42, accent, b)
+	var banner = panel(47, 12, w - 88, 42, accent, b)
 	banner.add_theme_stylebox_override("panel", box(Color("b9aa8c"), Color("564a39"), 2))
-	var title = label_at(c.name, 16, 12, w - 72, 42, 14 if w < 190 else 16, Color("211b19"), b)
+	var title = label_at(c.name, 50, 12, w - 94, 42, 12 if w < 190 else 14, Color("211b19"), b)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	var medallion = panel(w - 45, 10, 35, 35, accent, b)
+	var medallion = panel(10, 10, 35, 35, accent, b)
 	var round_style = box(accent.darkened(0.55), GOLD if chosen else accent.lightened(0.25), 3)
 	round_style.set_corner_radius_all(18)
 	medallion.add_theme_stylebox_override("panel", round_style)
-	label_at(str(int(c.cost)), w - 45, 10, 35, 35, 23, Color("fff0cf"), b).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var cost = NumberView.new()
+	cost.name = "CostNumber"
+	cost.value = int(c.cost)
+	rect(cost, 13, 13, 29, 29, b)
+	preload("res://src/ui/components/card_type_icons.gd").attach(b, c, w)
 	label_at(def.name.to_upper(), 12, 53, w - 24, 19, 12, accent.lightened(0.6), b).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var picture_area = panel(18, 80, w - 36, maxf(22, h - 186), accent, b)
 	picture_area.name = "IllustrationSpace"
@@ -580,10 +596,12 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void
 	var before = game.run.heroes.duplicate(true)
 	var old_enemies = game.run.combat.enemies.duplicate(true)
 	var owner = -1
+	var offensive = false
 	var motion = "attack"
 	if hand_index >= 0:
 		var instance = game.run.combat.hand[hand_index]
 		var card = game.content.card(instance)
+		offensive = card.damage > 0 or card.poison > 0
 		owner = game.owner_index(instance)
 		motion = "heavy" if card.cost >= 2 else "attack"
 		if card.owner == "mage":
@@ -602,23 +620,30 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void
 		return
 	combat_busy = true
 	if owner >= 0 and game.run.party[owner] in ANIMATED_HEROES:
+		if offensive:
+			CombatEffects.attack_flash(layer)
 		await hero_art[owner].play_once(motion)
 	# The committed result can already be reward/defeat; show the old arena until
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = game.run.combat.get("enemies", [])
 	for i in range(old_enemies.size()):
 		if i < current_enemies.size() and old_enemies[i].hp > 0:
+			if current_enemies[i].hp < old_enemies[i].hp:
+				enemy_health[i].animate_to(current_enemies[i].hp)
 			if current_enemies[i].hp <= 0:
+				flash_hit(enemy_art[i])
 				await enemy_art[i].play_once("death")
 			elif current_enemies[i].hp < old_enemies[i].hp:
 				await enemy_art[i].play_once("hurt")
-			if hand_index < 0 and current_enemies[i].hp > 0:
+			if hand_index < 0 and current_enemies[i].hp > 0 and old_enemies[i].intent.get("damage", 0) > 0:
+				CombatEffects.attack_flash(layer)
 				await enemy_art[i].play_once("attack")
 	for i in range(before.size()):
 		var after = game.run.heroes[i]
+		hero_health[i].animate_to(after.hp)
+		if after.hp < before[i].hp:
+			flash_hit(hero_art[i])
 		if game.run.party[i] not in ANIMATED_HEROES:
-			if after.hp < before[i].hp:
-				flash_hit(hero_art[i])
 			continue
 		if before[i].hp > 0 and after.hp <= 0:
 			await hero_art[i].play_once("death")
@@ -628,14 +653,21 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1) -> void
 			await hero_art[i].play_once("hurt")
 		elif hand_index < 0 and after.block < before[i].block:
 			await hero_art[i].play_once("guard")
+	for bar in hero_health.values() + enemy_health.values():
+		if bar.animating:
+			await bar.animation_finished
 	await get_tree().create_timer(0.18).timeout
+	if game.run.phase == "reward":
+		await CombatEffects.leave_room(layer, hero_art.values())
 	combat_busy = false
 	continue_run()
 
 func flash_hit(visual: Control) -> void:
-	var tween = create_tween()
-	tween.tween_property(visual, "modulate", Color(1.7, 0.65, 1.3), 0.06)
-	tween.tween_property(visual, "modulate", Color.WHITE, 0.12)
+	var original = visual.modulate
+	visual.modulate = Color(1.6, 0.5, 0.5)
+	var tween = visual.create_tween()
+	tween.tween_interval(0.10)
+	tween.tween_property(visual, "modulate", original, 0.20)
 
 func reward_view() -> void:
 	header("Un eco para tu mazo", "Elegí una carta. También podés seguir con un mazo más pequeño.")
@@ -643,7 +675,7 @@ func reward_view() -> void:
 		var instance = game.run.reward[i]
 		var c = game.content.card(instance)
 		var x = 250 + i * 268
-		art(c.owner, Color(game.content.heroes[c.owner].color), x + 75, 136, 92, 112)
+		art(c.owner, x + 75, 136, 92, 112)
 		card_panel(instance, x, 268, 244, 272, func(): act(func(): game.choose_reward(i)))
 	button("Saltar recompensa  →", 461, 590, 358, 60, func(): act(func(): game.choose_reward(-1)))
 	if not game.run.new_unlocks.is_empty():
@@ -651,6 +683,17 @@ func reward_view() -> void:
 
 func room_view() -> void:
 	var node = game.run.nodes[game.run.current]
+	if node.kind == "treasure":
+		var view = TreasureScreen.new()
+		view.name = "TreasureScreen"
+		view.result = treasure_display()
+		view.open_requested.connect(func():
+			if game.take_treasure():
+				view.reveal(treasure_display()))
+		view.continue_requested.connect(func(): act(game.leave_treasure))
+		view.menu_requested.connect(pause_menu)
+		rect(view, 0, 0, 1280, 720)
+		return
 	header("%s  /  Sala %02d" % [Dungeon.LABELS[node.kind], node.id + 1])
 	panel(212, 154, 856, 458, Color("62533e"))
 	match node.kind:
@@ -660,12 +703,6 @@ func room_view() -> void:
 			button("Recuperar 30 % de vida", 264, 422, 355, 64, func(): act(func(): game.rest(true)))
 			button("Mejorar una carta", 645, 422, 355, 64, func(): upgrade_mode = true; return_screen = "room"; screen = "deck"; render())
 			label_at("Guerreros vivos: " + "  ·  ".join(game.run.heroes.map(func(h): return "%s %d/%d" % [game.content.heroes[h.id].name, h.hp, h.max_hp])), 264, 520, 730, 43, 18, MUTED)
-		"treasure":
-			var id = game.run.treasure
-			label_at("Lo que el tiempo dejó atrás", 264, 195, 760, 62, 36, GOLD)
-			label_at(game.content.relics[id].name if id != "" else "Un cofre vacío", 264, 280, 742, 46, 28)
-			label_at(game.content.relics[id].description if id != "" else "Ya poseés todas las reliquias disponibles.", 264, 337, 730, 80, 24, MUTED)
-			button("Tomar y continuar  →" if id != "" else "Continuar", 430, 482, 420, 66, func(): act(game.take_treasure))
 		"event":
 			var event = game.content.events[node.event]
 			label_at(event.name, 264, 195, 760, 62, 36, GOLD)
@@ -675,6 +712,23 @@ func room_view() -> void:
 				can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)
 			for i in range(2):
 				button(event.choices[i], 264, 414 + i * 80, 742, 64, func(): act(func(): game.choose_event(i)), can_offer or i == 1)
+
+func treasure_display() -> Dictionary:
+	var state = game.Treasure.state(game.run.treasure)
+	var data = game.content.items.get(state.get("item", ""), {})
+	if state.has("legacy_relic"):
+		data = game.content.relics.get(state.legacy_relic, {})
+	var text = data.get("description", "")
+	if state.get("opened", false):
+		if state.has("legacy_relic"):
+			text += "\nReliquia conservada de tu partida anterior."
+		else:
+			text += "\nAñadido a la bolsa: 1."
+		if state.trapped:
+			text += "\n¡Era una trampa!"
+			for i in range(state.losses.size()):
+				text += "\n%s: −%d de vida." % [game.content.heroes[game.run.heroes[i].id].name, state.losses[i]]
+	return {"opened": state.opened, "trapped": state.trapped, "title": data.get("name", "Cofre vacío"), "description": text, "icon": data.get("icon", -1)}
 
 func open_deck() -> void:
 	return_screen = screen
@@ -778,7 +832,16 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 func back() -> void:
+	var hud = layer.get_node_or_null("CombatHUD")
+	if is_instance_valid(hud) and hud.close_relic():
+		return
 	if combat_busy:
+		return
+	var treasure = layer.get_node_or_null("TreasureScreen")
+	if is_instance_valid(treasure) and treasure.busy:
+		return
+	if is_instance_valid(treasure) and treasure.result.get("opened", false) and not is_instance_valid(overlay):
+		treasure.continue_requested.emit()
 		return
 	if is_instance_valid(overlay):
 		close_modal()
@@ -818,7 +881,6 @@ func object_icon(index: int, x: float, y: float, side: float, parent: Control = 
 func open_equipment() -> void:
 	if selected_party.size() != 2:
 		return
-	equipment_hero = 0
 	screen = "equipment"
 	save_preparation()
 	render()
@@ -828,37 +890,18 @@ func save_preparation() -> void:
 	game.checkpoint()
 
 func equip_relic(id: String) -> void:
-	var hero = selected_party[equipment_hero]
-	var other = selected_party[1 - equipment_hero]
-	if equipped.get(other, "") == id or not game.content.equipment.has(id):
+	if not game.content.equipment.has(id):
 		return
-	equipped[hero] = id
+	equipped = {"team": id}
 	save_preparation()
 	render()
 
 func equipment_view() -> void:
-	header("Reliquias para el descenso", "Una distinta por héroe. Sus efectos duran esta aventura. Bolsa inicial: una unidad de cada consumible.")
-	for i in range(2):
-		var hero = selected_party[i]
-		var id = equipped.get(hero, "")
-		var title = game.content.heroes[hero].name + " · " + (game.content.equipment[id].name if id != "" else "Sin reliquia")
-		var tab = button(title, 36 + i * 614, 136, 594, 66, func(): equipment_hero = i; render())
-		if equipment_hero == i:
-			tab.add_theme_stylebox_override("normal", box(Color("343044"), GOLD, 2))
-	var ids = game.content.equipment.keys()
-	for i in range(ids.size()):
-		var id = ids[i]
-		var relic = game.content.equipment[id]
-		var other = equipped.get(selected_party[1 - equipment_hero], "") == id
-		var chosen = equipped.get(selected_party[equipment_hero], "") == id
-		var b = button("", 36 + (i % 4) * 306, 221 + (i / 4) * 191, 290, 178, func(): equip_relic(id), not other)
-		b.name = "Equip_" + id
-		object_icon(relic.icon, 8, 8, 48, b)
-		label_at(relic.name, 62, 8, 220, 48, 19, GOLD if chosen else TEXT, b)
-		label_at(relic.description, 12, 61, 266, 88, 16, TEXT, b)
-		label_at("Equipado" if chosen else ("Lo lleva tu compañero" if other else "Tocar para equipar"), 12, 150, 266, 23, 14, GOLD if chosen else MUTED, b)
-	button("← Personajes", 36, 647, 250, 54, func(): screen = "select"; render())
-	button("Iniciar aventura →", 904, 647, 340, 54, begin, equipped.size() == 2 and game.valid_equipment(selected_party, equipped))
+	EquipmentScreen.build(self, game.content.equipment, equipped, equipped.size() == 1 and game.valid_equipment(selected_party, equipped), {
+		"equip": equip_relic,
+		"back": func(): screen = "select"; render(),
+		"start": begin,
+	})
 
 func items_view() -> void:
 	header("Bolsa compartida", "Consumibles: no cuestan energía. Se gastan al usarlos y no se reponen al cambiar de sala.")
@@ -883,5 +926,11 @@ func items_view() -> void:
 			button(title, 340 + i * 300, 624, 280, 62, func():
 				if game.use_item(selected_item, target):
 					selected_item = ""
+					if game.run.phase == "reward":
+						screen = "combat"
+						render()
+						combat_busy = true
+						await CombatEffects.leave_room(layer, hero_art.values())
+						combat_busy = false
 					continue_run())
 	button("← Combate", 36, 638, 250, 54, continue_run)

@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Revisión: **15/09/2026**. Este documento distingue la estructura que existe de
+Revisión: **16/09/2026**. Este documento distingue la estructura que existe de
 la organización objetivo. Las carpetas propuestas todavía no implican una
 refactorización realizada.
 
@@ -11,6 +11,9 @@ refactorización realizada.
 | `main.tscn` | Escena de entrada; instancia el Control asociado a `src/main.gd` |
 | `src/main.gd` | Navegación, pantallas, componentes de interfaz, opciones y coordinación de animaciones |
 | `src/game.gd` | Estado de aventura/perfil, acciones, reglas, recompensas, equipamiento y coordinación del guardado |
+| `src/rules/treasure.gd` | Sorteo, concesión única y daño no letal de cofres; sin UI ni persistencia |
+| `src/ui/screens/treasure_screen.gd` | Cofre animado y modal; emite acciones, recibe estado ya resuelto |
+| `src/ui/components/battle_background.gd` | Selección visual estable de escenario por semilla y sala, sin consumir RNG |
 | `src/content.gd` | Carga de catálogos, valores de cartas mejoradas y descripciones |
 | `src/dungeon.gd` | Recorrido, conexiones y encuentros determinados por semilla |
 | `src/save_store.gd` | Lectura/escritura, formato versionado, archivo temporal y copia de respaldo |
@@ -23,7 +26,7 @@ refactorización realizada.
 | `docs/` | Explicaciones, decisiones, prompts, fuentes gráficas y evidencias |
 | `builds/`, `.tools/` | Entregables y herramientas locales; no son código de juego |
 
-Al revisar este documento, `main.gd` tiene **887 líneas** y `game.gd`, **493**.
+En la revisión inicial del 15/09/2026, `main.gd` tenía **887 líneas** y `game.gd`, **493**.
 Son puntos de concentración que conviene dividir. Estas cifras son una
 instantánea, no límites verificados automáticamente.
 
@@ -43,6 +46,24 @@ flowchart LR
 La aventura se resuelve y guarda **antes** de presentar la animación. Durante
 la animación se bloquean acciones duplicadas. Una interrupción no debe repetir
 el daño, el consumo de un objeto ni la entrega de una recompensa.
+
+## Extracción realizada: barra y números (16/09/2026)
+
+Ya existen `src/ui/components/combat_hud.gd` y `number_view.gd`. La barra recibe
+datos y emite señales; el contador compone dígitos a partir de un entero.
+`main.gd` conserva la conexión a reglas y navegación; se retiraron de él la barra,
+los iconos de reliquias y el panel de energía. No se ha extraído aún toda la
+pantalla de combate. Ver [contratos y assets](hud/README.md).
+
+## Extracción realizada: equipamiento y bloqueo (16/09/2026)
+
+- `src/ui/screens/equipment_screen.gd`: construye selección de reliquia compartida
+  con datos y callbacks explícitos. Reutiliza la fábrica visual de `main.gd`
+  durante la transición; no accede a reglas ni persistencia.
+- `src/ui/components/block_indicator.gd`: escudo y dígitos, solo presentación.
+- `main.gd`: reemplaza la elección, guarda preparación y conecta callbacks.
+- `game.gd::valid_equipment`: límite de una asignación para nuevas aventuras;
+  la carga mantiene aventuras antiguas sin migrar sus estadísticas.
 
 ## 2. Organización objetivo
 
@@ -150,7 +171,7 @@ no obligan a reorganizar todo el proyecto.
   separados. No están generados por `create_content.py`, aunque este consulta
   el catálogo visual para los nombres y apariencias de enemigos.
 - Conservar las imágenes usadas por el juego en `assets/<sistema>/`; originales
-  generados, prompts y capturas de revisión en `docs/<sistema>/` por ahora.
+  generados y prompts en `docs/<sistema>/`; capturas desechables en `artifacts/`.
 - Los importadores deben permitir reproducir recortes, tamaño y alineación.
   Si se necesita otra estructura de fuentes de arte, migrarla explícitamente
   junto con las rutas de esos scripts.
@@ -214,3 +235,88 @@ qué causó una regresión. No se ha ejecutado esta reorganización en esta entr
 - Actualizar este mapa y [el historial](HISTORIAL.md) con los movimientos realmente
   realizados. No presentar la estructura objetivo como implementada.
 - No compilar APK salvo pedido explícito del usuario.
+
+## Componentes visuales del HUD (16/09/2026, revisión posterior)
+
+- `src/ui/components/relic_popover.gd`: cuadro anclado, únicamente presentación.
+- `combat_hud.gd`: apertura, sustitución y cierre del cuadro; captura del toque
+  exterior. El controlador mantiene el bloqueo de acciones durante animaciones.
+- `assets/ui/shaders/energy_flow.gdshader`: movimiento procedural del interior
+  del orbe; contador separado para mantener el texto estable.
+- `main.gd`: conecta la petición de información y delega Atrás; escala de los
+  actores de combate reducida a 1. Sin modificaciones en reglas ni guardado.
+
+## Reliquia compartida (16/09/2026)
+
+La pantalla de equipamiento recibe catálogo, elección y callbacks; ya no recibe
+héroes ni portador. El controlador guarda una clave `team` y el motor registra
+`run.team_relic`, además del ID por actor para reutilizar efectos. La energía
+compartida se cuenta una sola vez. El HUD presenta un único icono de equipo.
+Guardados sin ese campo conservan el comportamiento personal anterior.
+
+## Fila de estados activos (16/09/2026)
+
+`src/ui/components/status_effects.gd` recibe una instantánea del actor y compone
+solo bloqueo/veneno positivos para actores vivos. Reutiliza `block_indicator.gd`
+con textura configurable; no calcula efectos ni guarda estado. La calavera
+vectorial está en `assets/ui/poison.svg`. `main.gd` únicamente coloca la fila
+para ambos bandos y conserva la coordinación de la pantalla.
+
+## Barra de vida con presentación diferida (16/09/2026)
+
+`src/ui/components/health_bar.gd` reemplaza los ColorRect/Label creados en
+`main.gd`. Recibe vida/máximo y un objetivo visual; emite `value_changed` y
+`animation_finished`. No cambia unidades ni guarda. El controlador registra
+barras por índice de héroe/enemigo, conserva el escenario anterior mientras
+reaccionan los actores y espera todos los contadores antes de `continue_run()`.
+La resolución y persistencia permanecen antes de cualquier espera visual.
+
+
+## Atlas de actores de 128 px y movimiento enemigo (16/09/2026)
+
+- Importadores existentes de héroes/selección/biblioteca ahora producen recursos
+  de 128 px desde originales grandes. Atlas antiguos de 64 px retirados en la limpieza.
+- `src/*_sprite.gd`: héroes recortan 128 px y compensan escala y línea base.
+- `src/enemy_sprite.gd`: usa atlas de ocho poses si existe en
+  `assets/enemies/animations/`; si no, sprite de `assets/enemies/hd/`.
+  Mismo contrato público `play_once`/`set_fallen`, sin acceso a reglas.
+- `scripts/import_enemy_animations.gd`: recorte, escala uniforme y anclajes de
+  los seis ciclos nuevos. `scripts/preview_actors.gd`: herramienta de desarrollo
+  separada de la interfaz del juego.
+- Fuentes y prompts en `docs/enemies/animations/`; explicación y validación
+  actuales en [quality/README.md](quality/README.md). Sin cambios de IDs/guardados.
+
+## Limpieza y salidas de desarrollo (16/09/2026)
+
+`tests/artifacts.gd` centraliza destinos de capturas en `artifacts/<sistema>/`.
+La carpeta se crea bajo demanda con `.gdignore`, está ignorada por Git y excluida
+de exportaciones. `docs/` conserva texto y fuentes que permiten reimportar assets.
+`src/pixel_art.gd` conserva su UID y solo dibuja el fondo procedural usado por
+mapa, recompensas y colección; se retiraron los personajes dibujados en bloques.
+Los seis héroes siempre usan sus componentes animados. Sin cambios de IDs ni guardados.
+
+## Extracción terminada: mapa de aventura (16/09/2026)
+
+- `src/ui/screens/map_screen.gd`: fondo, rutas, iconos de salas, héroes/PV,
+  lista desplazable de reliquias y navegación. Recibe instantáneas; emite señales.
+- `main.gd::map_view()`: coordina datos y acciones; retirados diseño anterior y
+  `map_hero()`. `equipped_relics()` prepara el mismo alcance/estado de reliquia
+  para mapa y combate, preservando equipos personales legados.
+- `assets/map/`: fondo y atlas final de seis iconos, recortado en ejecución.
+- Reglas de avance, resolución y persistencia permanecen en `game.gd`.
+
+## Presentación de intención, tipos de carta y salida (16/09/2026)
+
+- `ui/components/enemy_intent.gd`: instantánea de intención y héroes; iconos,
+  números existentes y caras desde atlas frontal, sin tocar reglas.
+- `ui/components/card_type_icons.gd`: añade iconos según daño/veneno/bloqueo.
+- `presentation/combat_effects.gd`: flash y carrera de salida procedural;
+  no importa `Game`, no escribe guardados ni modifica unidades.
+- `main.gd` coordina resolver/guardar → ataques/reacciones/PV → salida si hay
+  recompensa → navegación. `combat_busy` permanece activo durante la salida.
+
+## Distribución de la mano (16/09/2026)
+
+`src/ui/components/hand_layout.gd` calcula anchura del contenido, posición,
+pivote y rotación del abanico. `main.gd` conserva la construcción compartida
+ de cartas y conecta la selección. No interviene en reglas ni guardado.

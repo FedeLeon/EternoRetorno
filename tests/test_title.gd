@@ -26,7 +26,7 @@ func run_tests() -> void:
 	check(app.screen == "home" and app.layer.get_node("StartGame").text == "Iniciar juego", "Initial menu")
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/title/home.png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("title/home.png"))
 	await click(Vector2(640, 635))
 	check(app.screen == "options", "Options button")
 	app.layer.get_node("Volume").value = 0
@@ -45,7 +45,7 @@ func run_tests() -> void:
 		check(DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_WINDOWED, "Windowed mode restored")
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/title/options.png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("title/options.png"))
 	app.back()
 	check(app.screen == "home", "Back returns to title")
 	await process_frame
@@ -56,7 +56,14 @@ func run_tests() -> void:
 	app.back()
 	await process_frame
 	check(app.layer.get_node("StartGame").text == "Continuar aventura", "Saved adventure label")
-	await click(Vector2(640, 565))
+	if DisplayServer.get_name() != "headless":
+		await RenderingServer.frame_post_draw
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("title/active-run.png"))
+	await click(Vector2(640, 603))
+	check(app.screen == "base_camp" and app.game.run == before, "Main camp button preserves adventure")
+	app.back()
+	await process_frame
+	await click(Vector2(640, 539))
 	check(app.screen == "map" and app.game.run == before, "Continue preserves adventure")
 	app.game.profile.settings.volume = 1.0
 	app.apply_options()

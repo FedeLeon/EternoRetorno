@@ -1,5 +1,12 @@
 # Biblioteca de enemigos
 
+> **Actualización 16/09/2026:** los 56 enemigos usan sprites de **128×128**
+> desde `assets/enemies/hd/`. Los seis de la cripta tienen ciclos nuevos de
+> ocho poses en `assets/enemies/animations/` y ataques diferenciados.
+> Ver [estado actual, fuentes, prompts y pruebas](../quality/README.md).
+> El contenido siguiente describe la primera incorporación a 64 px.
+
+
 56 sprites RGBA de 64 × 64 derivados de las siete plantillas del usuario.
 Los originales generados se conservan como `sheet-1.png` a `sheet-7.png`.
 `scripts/import_enemies.gd` separa las figuras, mantiene su proporción y las

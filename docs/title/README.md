@@ -22,3 +22,15 @@ Validación local: `tests/test_title.gd` prueba clics, volumen, persistencia,
 pantalla completa/ventana y continuación. `tests/test_base_camp.gd` comprueba
 la navegación del campamento. Capturas renderizadas: `home.png`, `options.png`.
 Motor Godot 4.7.2, Compatibility, Linux. Sin compilar APK ni probar Android.
+
+## Campamento como botón principal — 16/09/2026
+
+Con una aventura activa, el menú central muestra «Continuar aventura»,
+«Campamento» y «Opciones», en ese orden. Campamento reutiliza la placa principal
+con igual ancho y altura; reemplaza el acceso lateral anterior. Sin aventura
+activa, «Iniciar juego» sigue abriendo el campamento.
+
+Cambio localizado en `src/main.gd::home()`. Prueba actual renderizada:
+`tests/test_title.gd`, 13 comprobaciones sin fallos, incluyendo ir al campamento
+y continuar conservando la aventura. Diseño revisado a 1280×720 en Linux.
+Captura temporal eliminada después de revisar. Sin APK ni prueba Android.

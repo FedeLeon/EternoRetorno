@@ -11,6 +11,9 @@ func check(ok: bool, message: String) -> void:
 		printerr("FAIL: " + message)
 func fresh(party: Array, relics: Dictionary = {}) -> void:
 	check(game.new_run(party, 42, relics), "create equipped run")
+	# Explicit inventory fixture for consumable-effect tests. Runs start empty.
+	for id in game.content.items:
+		game.run.inventory[id] = 1
 	game.enter_node(0)
 	game.run.combat.enemies[0].hp = 200
 	game.run.combat.enemies[0].max_hp = 200
@@ -24,8 +27,9 @@ func run_tests() -> void:
 	for suffix in ["", ".bak", ".tmp"]:
 		DirAccess.remove_absolute(SAVE + suffix)
 	game = Game.new(SAVE, true)
-	fresh(["warrior", "mage"], {"warrior":"vital_amulet", "mage":"vigor_ring"})
+	fresh(["warrior", "mage"], {"warrior":"vital_amulet"})
 	check(game.run.heroes[0].max_hp == 68 and game.run.heroes[0].hp == 68 and game.run.heroes[1].max_hp == 42, "amulet only affects wearer")
+	fresh(["warrior", "mage"], {"mage":"vigor_ring"})
 	check(game.run.combat.energy == 4, "ring grants shared opening energy")
 	game.end_turn()
 	check(game.run.combat.energy == 3, "ring not every turn")
@@ -33,10 +37,12 @@ func run_tests() -> void:
 	check(game.run.combat.energy == 4, "ring resets next combat")
 	var snapshot = game.run.duplicate(true)
 	check(not game.new_run(["warrior","mage"], 1, {"warrior":"vital_amulet","mage":"vital_amulet"}) and game.run == snapshot, "duplicate equipment rejected atomically")
+	check(not game.new_run(["warrior","mage"], 1, {"warrior":"vital_amulet","mage":"vigor_ring"}) and game.run == snapshot, "two distinct relics rejected atomically")
 	check(not game.new_run(["warrior","mage"], 1, {"warrior":"missing"}), "unknown relic rejected")
 	check(not game.new_run(["warrior","mage"], 1, {"rogue":"wind_boots"}), "non-party equipment rejected")
-	fresh(["warrior","mage"], {"warrior":"phoenix_idol","mage":"wind_boots"})
+	fresh(["warrior","mage"], {"mage":"wind_boots"})
 	check(game.run.heroes[1].block == 3, "boots start block")
+	fresh(["warrior","mage"], {"warrior":"phoenix_idol"})
 	game._damage(game.run.heroes[0], 999)
 	check(game.run.heroes[0].hp == 1 and game.run.heroes[0].phoenix_used, "phoenix saves fatal hit")
 	game.checkpoint()
@@ -53,17 +59,19 @@ func run_tests() -> void:
 	game._start_combat(["rat"])
 	game._damage(game.run.heroes[0], 999)
 	check(game.run.heroes[0].hp == 0, "phoenix not reset next combat")
-	fresh(["rogue","mage"], {"rogue":"poison_fang","mage":"arcane_orb"})
+	fresh(["rogue","mage"], {"rogue":"poison_fang"})
 	play("rogue_toxin")
 	check(game.run.combat.enemies[0].poison == 6, "fang adds poison stacks")
+	fresh(["rogue","mage"], {"mage":"arcane_orb"})
 	var hp = game.run.combat.enemies[0].hp
 	play("mage_spark")
 	check(game.run.combat.enemies[0].hp == hp - 12, "orb affects each magical hit")
 	check(game.effective_card({"id":"rogue_cut"}).damage == 8, "orb does not affect companion")
-	fresh(["warrior","guardian"], {"warrior":"pilgrim_shield","guardian":"merchant_coin"})
+	fresh(["warrior","guardian"], {"warrior":"pilgrim_shield"})
 	game.run.heroes[0].block = 5
 	game._damage(game.run.heroes[0], 10)
 	check(game.run.heroes[0].hp == 55 and game.run.heroes[0].block == 0, "shield reduction before block")
+	fresh(["warrior","guardian"], {"guardian":"merchant_coin"})
 	game._make_reward()
 	check(game.run.reward.any(func(c): return c.upgraded and game.content.cards[c.id].owner == "guardian"), "seeded coin reward includes upgraded wearer card")
 	for card in game.run.reward:
@@ -97,8 +105,8 @@ func run_tests() -> void:
 	check(game.run.inventory.healing_potion == 0, "new room does not refill bag")
 	game._finish(false)
 	check(game.run.inventory.is_empty(), "defeat clears inventory")
-	fresh(["warrior","mage"])
-	check(game.run.inventory.healing_potion == 1 and game.run.heroes[0].max_hp == 58, "new adventure resets inventory and hp")
+	check(game.new_run(["warrior","mage"], 42) and game.enter_node(0), "new empty adventure")
+	check(game.run.inventory.is_empty() and game.run.heroes[0].max_hp == 58, "new adventure starts empty and resets hp")
 	# Simulate old save fields, retaining all original game state.
 	game.run.erase("inventory")
 	for hero in game.run.heroes:
@@ -107,15 +115,51 @@ func run_tests() -> void:
 	game.checkpoint()
 	game = Game.new(SAVE, true)
 	check(game.item_targets("healing_potion").is_empty() and game.end_turn(), "legacy save remains playable without granting items")
-	game.profile.preparation = {"party":["warrior","mage"], "relics":{"warrior":"vital_amulet","mage":"arcane_orb"}}
+	game.profile.preparation = {"party":["warrior","mage"], "relics":{"mage":"arcane_orb"}}
 	game.checkpoint()
 	game = Game.new(SAVE, true)
 	check(game.profile.preparation.relics.mage == "arcane_orb", "preparation survives reopening")
+	# Existing adventures keep legacy equipment when reopened.
+	game.run.heroes[0].equipped_relic = "vital_amulet"
+	game.run.heroes[1].equipped_relic = "arcane_orb"
+	game.checkpoint()
+	snapshot = game.run.duplicate(true)
+	game = Game.new(SAVE, true)
+	check(game.run == snapshot, "legacy two-relic adventure preserved")
+	fresh(["warrior","mage"], {"team":"vital_amulet"})
+	check(game.run.heroes[0].max_hp == 68 and game.run.heroes[1].max_hp == 52, "team amulet affects both")
+	fresh(["warrior","mage"], {"team":"vigor_ring"})
+	check(game.run.combat.energy == 4, "team ring grants only one energy")
+	game.run.heroes[0].hp = 0
+	check(game.turn_energy() == 4, "survivor retains team ring")
+	fresh(["warrior","mage"], {"team":"phoenix_idol"})
+	for hero in game.run.heroes:
+		game._damage(hero, 999)
+		check(hero.hp == 1 and hero.phoenix_used, "independent phoenix protection")
+	game.checkpoint()
+	snapshot = game.run.duplicate(true)
+	game = Game.new(SAVE, true)
+	check(game.run == snapshot, "team relic and per-hero phoenix persist")
+	fresh(["warrior","mage"], {"team":"arcane_orb"})
+	check(game.effective_card({"id":"warrior_slash"}).damage == 11 and game.effective_card({"id":"mage_spark"}).damage == 6, "orb boosts both classes")
+	fresh(["warrior","mage"], {"team":"pilgrim_shield"})
+	for hero in game.run.heroes:
+		var before = hero.hp
+		game._damage(hero, 5)
+		check(hero.hp == before - 3, "shield protects each hero")
+	fresh(["rogue","mage"], {"team":"poison_fang"})
+	play("rogue_toxin")
+	check(game.run.combat.enemies[0].poison == 6, "shared fang boosts poison cards")
+	fresh(["warrior","mage"], {"team":"merchant_coin"})
+	game._make_reward()
+	for hero in game.run.heroes:
+		var offered = game.run.reward.filter(func(c): return game.content.cards[c.id].owner == hero.id)
+		check(offered.is_empty() or offered.any(func(c): return c.upgraded), "coin upgrades each represented hero")
 	var ids = game.content.heroes.keys()
 	for i in range(ids.size()):
 		for j in range(i + 1, ids.size()):
-			var equipment = {ids[i]:"vital_amulet", ids[j]:"wind_boots"}
-			check(game.new_run([ids[i], ids[j]], 42, equipment) and game.enter_node(0) and game.run.heroes[1].block == 3, "equipped pair %s + %s" % [ids[i], ids[j]])
+			var equipment = {"team":"wind_boots"}
+			check(game.new_run([ids[i], ids[j]], 42, equipment) and game.enter_node(0) and game.run.heroes.all(func(h): return h.block == 3), "equipped pair %s + %s" % [ids[i], ids[j]])
 	for suffix in ["", ".bak", ".tmp"]:
 		DirAccess.remove_absolute(SAVE + suffix)
 	print("EQUIPMENT CHECKS: %d | FAILURES: %d" % [checks, failures])

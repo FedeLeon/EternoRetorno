@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **15/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **16/09/2026**.
 
 ## Estado actual
 
@@ -11,9 +11,11 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de 12.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
+- Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
 - Cartas: seis colores; espacio de ilustración vacío, reservado para arte futuro.
-- Equipamiento: ocho reliquias disponibles, una distinta por héroe; ocho consumibles.
-- Enemigos: seis apariencias activas y 50 reservadas, con animaciones sencillas.
+- Equipamiento: ocho reliquias disponibles, una sola elegida por pareja que beneficia a ambos héroes; ocho consumibles.
+- Actores: seis héroes y 56 enemigos con sprites de 128×128; seis enemigos activos
+  con ciclos nuevos de ocho poses y ataques diferenciados.
 - Campamento: solares y refugio interactivos de presentación. Construcciones,
   costes, ventajas de edificios y mejoras permanentes de héroes **no implementados**.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
@@ -28,6 +30,7 @@ Android histórica no certifica la interfaz actual.
 | --- | --- |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
 | Arquitectura actual, organización objetivo y límites entre módulos | [ARQUITECTURA.md](ARQUITECTURA.md) |
+| Limpieza y archivos temporales | [LIMPIEZA.md](LIMPIEZA.md) |
 | Historial y decisiones | [HISTORIAL.md](HISTORIAL.md) |
 | Última comprobación local e informe Android histórico | [VALIDACION.md](VALIDACION.md) |
 | Guerrero y alineación del reposo | [Guerrero](warrior/README.md) |
@@ -41,12 +44,16 @@ Android histórica no certifica la interfaz actual.
 | Reliquias y consumibles: valores y guardado | [Objetos](objects/README.md) |
 | Marcos y colores de cartas | [Cartas](cards/README.md) |
 | Inicio, botones y opciones | [Inicio](title/README.md) |
+| Calidad de actores, atlas de 128 px y vista previa animada | [Actores](quality/README.md) |
 | Biblioteca de 56 enemigos | [Enemigos](enemies/README.md) |
+| Barra, reliquias, orbe y dígitos gráficos | [HUD de combate](hud/README.md) |
+| Cofres, premios y trampas | [Tesoros](treasure/README.md) |
+| Mapa ilustrado, grupo y reliquias | [Mapa](map/README.md) |
 | Distribución actual del combate | [Mazmorra](dungeon/README.md) |
 
-Las carpetas de cada sistema contienen sus prompts, fuentes generadas y capturas.
-Las capturas muestran el estado cuando se tomaron; las antiguas no representan
-necesariamente la interfaz actual. Ante una diferencia visual, consultar la
+Las carpetas de cada sistema contienen sus prompts y fuentes generadas.
+Las capturas se generan en `artifacts/` y se pueden eliminar; las históricas
+fueron retiradas durante la limpieza. Los resultados escritos se conservan. Ante una diferencia visual, consultar la
 entrada más reciente del historial y el documento del sistema correspondiente.
 
 ## Próximos trabajos identificados

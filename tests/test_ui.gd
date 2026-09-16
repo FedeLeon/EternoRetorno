@@ -19,6 +19,10 @@ func run_checks() -> void:
 		await process_frame
 		for child in app.layer.get_node("CombatHand").get_child(0).get_children():
 			if child is Button and child.has_meta("card_id"):
+				checks += 1
+				if child.get_node("CostNumber").value != int(app.game.content.card({"id": id, "upgraded": true}).cost):
+					failures += 1
+					printerr("Wrong sprite cost: ", id)
 				for label in child.get_children():
 					if label is Label:
 						checks += 1

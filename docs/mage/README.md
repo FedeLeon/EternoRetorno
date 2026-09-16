@@ -1,5 +1,11 @@
 # Maga
 
+> **Actualización 16/09/2026:** los actores ahora usan cuadros de **128×128**,
+> reimportados desde las fuentes originales. Se mantienen tamaño en pantalla,
+> diseños y alineación. Ver [calidad actual, archivos y pruebas](../quality/README.md).
+> Las medidas de 64 px y comprobaciones que siguen documentan la versión inicial.
+
+
 Diseño basado en el concept del usuario: cabello plateado, capucha azul,
 túnica blanca y azul con detalles dorados y bastón con cristales flotantes.
 

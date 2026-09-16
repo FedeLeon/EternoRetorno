@@ -29,7 +29,7 @@ func run_tests() -> void:
 	await create_timer(0.2).timeout
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/base_camp/base-camp.png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("base_camp/base-camp.png"))
 	var profile = app.game.profile.duplicate(true)
 	for id in ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent"]:
 		var area = app.layer.get_node(id).get_global_rect()

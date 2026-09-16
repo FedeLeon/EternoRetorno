@@ -1,7 +1,7 @@
 class_name ERRogueSprite
 extends Control
 
-const SHEET = preload("res://assets/rogue/rogue-64.png")
+const SHEET = preload("res://assets/rogue/rogue-128.png")
 const ROWS = {"idle": 0, "attack": 1, "poison": 2, "guard": 3, "hurt": 4, "death": 5}
 const SPEEDS = {"idle": 6.0, "attack": 12.0, "poison": 12.0, "guard": 10.0, "hurt": 15.0, "death": 8.0}
 static var frames_cache: SpriteFrames
@@ -20,7 +20,7 @@ static func frames() -> SpriteFrames:
 		for index in range(6):
 			var texture = AtlasTexture.new()
 			texture.atlas = SHEET
-			texture.region = Rect2(index * 64, ROWS[animation] * 64, 64, 64)
+			texture.region = Rect2(index * 128, ROWS[animation] * 128, 128, 128)
 			frames_cache.add_frame(animation, texture)
 	frames_cache.add_animation("revive")
 	frames_cache.set_animation_speed("revive", 9.0)
@@ -45,10 +45,10 @@ func _ready() -> void:
 		sprite.frame = int(Time.get_ticks_msec() / 167) % 6
 
 func _place() -> void:
-	# All frames share a fixed baseline. Integer scaling keeps pixels sharp.
-	var factor = maxf(1.0, floor(minf(size.x / 64.0, size.y / 48.0)))
+	# Double-resolution frames retain the established on-screen size and baseline.
+	var factor = maxf(1.0, floor(minf(size.x / 64.0, size.y / 48.0))) / 2.0
 	sprite.scale = Vector2.ONE * factor
-	sprite.position = Vector2(round((size.x - 64 * factor) / 2), round(size.y - 60 * factor))
+	sprite.position = Vector2(round((size.x - 128 * factor) / 2), round(size.y - 120 * factor))
 
 func set_fallen(value: bool) -> void:
 	fallen = value

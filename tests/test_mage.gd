@@ -17,7 +17,7 @@ func shot(name: String) -> void:
 		return
 	await process_frame
 	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://docs/mage/" + name + ".png")
+	root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("mage/" + name + ".png"))
 func settled() -> void:
 	while app.combat_busy:
 		await process_frame
@@ -32,19 +32,19 @@ func run_tests() -> void:
 		check(Mage.frames().get_frame_count(animation) == 6, "six frames for " + animation)
 		check(Mage.frames().get_animation_loop(animation) == (animation == "idle"), "loop policy " + animation)
 	var atlas = Mage.SHEET.get_image()
-	check(atlas.get_size() == Vector2i(384, 384), "64px atlas grid")
+	check(atlas.get_size() == Vector2i(768, 768), "128px atlas grid")
 	check(atlas.get_pixel(0, 0).a == 0, "true transparent alpha")
 	for row in range(6):
 		for column in range(6):
-			var frame = atlas.get_region(Rect2i(column * 64, row * 64, 64, 64))
+			var frame = atlas.get_region(Rect2i(column * 128, row * 128, 128, 128))
 			var bounds = frame.get_used_rect()
 			# Visible pixels anchor the pose; ignore nearly transparent specks.
 			var bottom = 0
-			for y in range(64):
-				for x in range(64):
+			for y in range(128):
+				for x in range(128):
 					if frame.get_pixel(x, y).a >= 0.5:
 						bottom = y + 1
-			check(bottom == 60 and bounds.size.x > 0, "visible baseline row %d frame %d" % [row, column])
+			check(bottom == 120 and bounds.size.x > 0, "visible baseline row %d frame %d" % [row, column])
 	app.open_selection()
 	await create_timer(0.2).timeout
 	await shot("selection")

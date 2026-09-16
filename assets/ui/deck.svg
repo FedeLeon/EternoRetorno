@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<!-- Three overlapping card backs, matching the game's dark gold frames. -->
+<g stroke-linejoin="round">
+<g transform="rotate(-19 24 35)">
+<rect x="7" y="12" width="29" height="43" rx="2" fill="#181b25" stroke="#b89c6c" stroke-width="2"/>
+<rect x="11" y="16" width="21" height="35" fill="#394e66" stroke="#71674f"/>
+<path d="M21.5 23l6 10.5-6 10.5-6-10.5z" fill="#8ba2b1"/>
+</g>
+<g transform="rotate(19 42 35)">
+<rect x="28" y="12" width="29" height="43" rx="2" fill="#181b25" stroke="#b89c6c" stroke-width="2"/>
+<rect x="32" y="16" width="21" height="35" fill="#53374f" stroke="#71674f"/>
+<path d="M42.5 23l6 10.5-6 10.5-6-10.5z" fill="#a783a3"/>
+</g>
+<rect x="18" y="14" width="29" height="44" rx="2" fill="#171b24" stroke="#d8bb84" stroke-width="2"/>
+<rect x="22" y="18" width="21" height="36" fill="#283d3b" stroke="#8e805b"/>
+<path d="M32.5 24l7 12-7 12-7-12z" fill="#b99c65"/>
+<path d="M32.5 29v14M29 36h7" stroke="#f0dbab" stroke-width="2"/>
+<path d="M23 19h4M38 53h4" stroke="#e7c68a"/>
+</g>
+</svg>
