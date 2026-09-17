@@ -66,3 +66,10 @@ Interfaz de mercado: 34 comprobaciones y revisión renderizada de su interior.
 Campamento: 19; equipamiento: 90; cartas: 544; mapa: 21; HUD: 92; UI: 271.
 No probado en navegador, emulador ni teléfono en esta entrega. Sin APK nueva.
 Capturas de revisión temporales eliminadas después de inspeccionarlas.
+
+## Presentación del campamento (17/09/2026)
+
+El saldo solo se muestra en el campamento y sus edificios, con `soul_counter.gd`
+y los dígitos existentes. Ya no aparece en mapa, combate o recompensas.
+El solar construido muestra `assets/base_camp/market_building.png`, pulsable para
+entrar al mercado. Ver [campamento](../base_camp/README.md) para assets y pruebas.

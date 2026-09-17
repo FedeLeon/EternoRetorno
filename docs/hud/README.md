@@ -198,6 +198,15 @@ Se precisó el selector del test de estados para no contar los indicadores de
 intención como bloqueo/veneno ya activos. Revisión visual de halo, botón y barra
 en Linux a 1280×720; capturas temporales retiradas. Sin exportación Web/APK.
 
-## Almas (16/09/2026)
+## Almas (actualizado 17/09/2026)
 
-El HUD de combate recibe también `souls` como dato de presentación y muestra el saldo permanente. No calcula premios.
+Retirado el saldo del HUD de combate. Solo se muestra en campamento y edificios;
+las reglas siguen concediendo almas al ganar.
+
+## Vida, intenciones y turno circular (17/09/2026)
+
+Vida elevada para no tapar actores, intención enemiga inmediatamente encima.
+Botón Terminar turno circular a la derecha de la mano. Asset generado con
+imagegen integrado: `assets/ui/end_turn_round.png`; [prompt y procedencia](end-turn-round.json).
+`end_turn_button.gd` aplica estados; `round_button.gd` limita el área pulsable al
+círculo y conserva interacción de teclado. La barra de combate no muestra almas.

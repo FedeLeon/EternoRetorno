@@ -42,6 +42,14 @@ No se guardan copias redundantes. [Prompts y procedencia](prompts.md).
   temporales en `artifacts/map/`, eliminadas tras revisar.
 - Importación y `git diff --check` correctos. Sin APK ni pruebas en Android.
 
-## Almas (16/09/2026)
+## Almas (actualizado 17/09/2026)
 
-La barra del mapa muestra el saldo permanente de almas, enviado por el controlador.
+Retirado el saldo del mapa: solo es visible en campamento y edificios.
+
+## Título centrado (17/09/2026)
+
+«La cripta de los ecos» se centra horizontalmente dentro del bloque izquierdo
+(ancho 770 px), no respecto de toda la pantalla. Verificado que el mapa actual
+no muestra saldo ni icono de almas; su eliminación ya estaba implementada.
+Prueba local renderizada `test_map.gd`: 21 comprobaciones sin fallos y revisión
+visual a 1280×720. Captura temporal retirada; sin exportar APK/Web.

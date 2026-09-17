@@ -2,17 +2,32 @@ extends RefCounted
 
 # Shared UI factory + explicit view data and actions; no rule or save mutations.
 static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_start: bool, actions: Dictionary) -> void:
-	ui.header("Reliquias para el descenso", "Elegí una sola reliquia para ambos héroes. Cambiarla reemplaza la anterior.")
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tu reliquia · Prepará el descenso", actions.menu)
+	ui.label_at("Elegí una sola reliquia para ambos héroes. Cambiarla reemplaza la anterior.", 28, 88, 1100, 35, 18, ui.TEXT)
 	var ids = relics.keys()
 	for i in range(ids.size()):
 		var id = ids[i]
 		var relic = relics[id]
-		var chosen = equipped.get("team", "") == id
-		var b = ui.button("", 36 + (i % 4) * 306, 151 + (i / 4) * 211, 290, 178, func(): actions.equip.call(id), true)
+		var angle = -PI / 2.0 + TAU * i / ids.size()
+		var center = Vector2(640, 378) + Vector2(cos(angle), sin(angle)) * 190.0
+		var b = ui.button("", center.x - 66, center.y - 66, 132, 132, func(): actions.equip.call(id))
 		b.name = "Equip_" + id
-		ui.object_icon(relic.icon, 8, 8, 48, b)
-		ui.label_at(relic.name, 62, 8, 220, 48, 19, ui.GOLD if chosen else ui.TEXT, b)
-		ui.label_at(relic.description, 12, 61, 266, 88, 16, ui.TEXT, b)
-		ui.label_at("Elegida para ambos" if chosen else "Tocar para elegir", 12, 150, 266, 23, 14, ui.GOLD if chosen else ui.MUTED, b)
-	ui.button("← Personajes", 36, 647, 250, 54, actions.back)
-	ui.button("Iniciar aventura →", 904, 647, 340, 54, actions.start, can_start)
+		if equipped.get("team", "") == id:
+			preload("res://src/ui/components/equipment_description.gd").attach(ui, relic, center)
+		for state in ["normal", "hover", "pressed", "disabled"]:
+			b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+		ui.object_icon(relic.icon, 0, 0, 132, b)
+		b.mouse_entered.connect(func(): b.modulate = Color(1.2, 1.2, 1.2))
+		b.mouse_exited.connect(func(): b.modulate = Color.WHITE)
+	var selected = equipped.get("team", "")
+	var caption = "Tocá una reliquia\npara ver su poder"
+	if relics.has(selected):
+		caption = relics[selected].name + "\nElegida para ambos"
+	var summary = ui.label_at(caption, 518, 330, 244, 100, 22, ui.GOLD)
+	summary.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var back = ui.button("Volver a personajes", 36, 647, 320, 54, actions.back)
+	back.name = "BackToCharacters"
+	var start = ui.button("Iniciar aventura", 904, 647, 340, 54, actions.start, can_start)
+	start.name = "StartAdventure"
+	preload("res://src/ui/components/button_skin.gd").decorate(back, "back_party")
+	preload("res://src/ui/components/button_skin.gd").decorate(start, "start_adventure")

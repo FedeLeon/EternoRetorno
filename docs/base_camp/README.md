@@ -1,26 +1,45 @@
 # Campamento previo a la aventura
 
-**Estado actual (16/09/2026):** el solar 1 permite construir el [mercado](../market/README.md)
-por 300 almas y entrar a comprar cartas. El saldo y la construcción son permanentes.
-Los restantes solares y el refugio siguen reservados. La descripción inferior
-corresponde a la primera etapa, anterior a las construcciones.
+Estado actual: **17/09/2026**.
 
-Fondo original del usuario `campamentoConstruccion.png`, copiado sin editar a
-`assets/base_camp/background.png`. No se generaron imágenes nuevas.
+## Navegación e interfaz
 
-Flujo: inicio → campamento → arco de piedra → selección de dos personajes →
-aventura. Tras victoria o derrota se puede regresar al campamento.
-Atrás desde selección vuelve al campamento; desde campamento vuelve al inicio.
+- Barra superior: «El Campamento, un lugar al que volver...», almas con icono
+  y números gráficos existentes, y botón Menú para regresar al inicio.
+- No hay barra inferior. Tocar el arco de piedra abre Continuar aventura,
+  Nueva aventura y Volver. Continuar queda desactivado si no existe una run.
+- Nueva aventura pide confirmación cuando hay otra activa. Cancelar conserva
+  la partida; la sustitución solo ocurre al iniciar la nueva pareja.
+- El saldo de almas solo se muestra en el campamento y dentro del mercado.
+  Se siguen concediendo almas al ganar combates, sin mostrar saldo ni premio
+  de almas en combate, mapa o recompensa.
+- El solar 1 permite construir el [mercado](../market/README.md) por 300 almas.
+  Una vez construido muestra el edificio; tocarlo abre el mercado. La construcción
+  y el saldo son persistentes. Otros solares y mejoras del refugio quedan pendientes.
 
-Cuatro solares y la tienda tienen zonas pulsables con información. La tienda
-reserva el lugar para futuras mejoras de personajes. No se han definido tipos
-de edificio, recursos, costes, mejoras ni ventajas pasivas. Tampoco se modifica
-el perfil o la estructura del guardado: no hay construcciones persistentes aún.
+## Archivos y assets
 
-Con aventura activa hay un botón para continuar. Preparar una nueva exige la
-confirmación existente; la anterior solo termina al iniciar la nueva pareja.
-Visitar el campamento o cancelar la preparación conserva la aventura actual.
+- `src/ui/screens/base_camp_screen.gd`: escenario, barra y zonas interactivas.
+- `src/ui/components/soul_counter.gd`: icono y dígitos, sin reglas económicas.
+- `src/ui/components/dialog_view.gd`: presentación de diálogos con acciones.
+- `src/ui/components/modal_frame.gd`: marco compartido de diálogos y tesoros.
+- `src/main.gd`: conecta acciones y mantiene la navegación y confirmaciones.
 
-Pruebas: `./scripts/run.sh --script tests/test_base_camp.gd` (19 comprobaciones)
-y pruebas de selección (47) e interfaz (121), todas sin fallos. Captura local
-`base-camp.png`, tomada en Godot. Sin compilación de APK ni prueba en Android.
+El fondo original del usuario `campamentoConstruccion.png` se conserva en
+`assets/base_camp/background.png`. Assets nuevos generados con imagegen integrado:
+
+- `assets/base_camp/market_building.png`: edificio aislado para el solar 1.
+- `assets/ui/soul.png`: alma celeste con fondo transparente.
+- `assets/ui/modal_frame.png`: marco ornamental de hierro y oro, interior oscuro.
+
+Prompts completos en [assets-2026-09-17.json](assets-2026-09-17.json), procedencia
+por archivo en [sources-2026-09-17.json](sources-2026-09-17.json).
+El pequeño cuadro anclado de reliquias conserva su presentación independiente.
+
+## Validación de este cambio
+
+Pruebas locales Godot: campamento 33, mercado 34, tesoro UI 8, HUD 92,
+mapa 21, reglas de tesoro 22 e interfaz general 271; todas sin fallos.
+Campamento, arco, confirmación, mercado y recompensa de tesoro revisados
+renderizados en Linux a 1280×720. Capturas temporales eliminadas tras revisar.
+Sin exportar APK/Web ni probar este cambio en navegador, emulador o dispositivo físico.

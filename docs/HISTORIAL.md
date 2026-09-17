@@ -407,3 +407,84 @@ no se atribuyen horas ni fechas de compilación que no estén verificadas.
   victorias en total. Se verifican repeticiones, básicos, caída y recuperación.
 - Documentación de cartas, mercado e inicio actualizada. Sin exportación APK/Web
   ni nueva revisión visual, emulador o dispositivo físico para este cambio de datos.
+
+## Campamento, navegación y marcos de diálogo (17/09/2026)
+
+- Barra superior con «El Campamento, un lugar al que volver...», icono de alma,
+  dígitos existentes y Menú. Retirada la barra inferior. Saldo visible únicamente
+  en campamento y mercado; se siguen concediendo almas al ganar combates.
+- Arco de piedra abre Continuar aventura, Nueva aventura y Volver; continuar
+  queda desactivado sin partida. Confirmar/cancelar conserva el flujo de guardado.
+- El mercado construido aparece sobre el solar 1 y todo el edificio es pulsable.
+- Generados edificio, alma celeste y marco ornamental mediante imagegen integrado.
+  Prompts y procedencia en `docs/base_camp/`; marco aplicado a diálogos y tesoros,
+  con márgenes ajustados para el contenido de la recompensa y trampas.
+- Extraídos `dialog_view.gd`, `modal_frame.gd` y `soul_counter.gd`: presentación
+  reutilizable, sin reglas económicas ni persistencia. Formato de guardado intacto.
+- Pruebas locales: campamento 33, mercado 34, HUD 92, mapa 21, tesoros 22,
+  tesoro UI 8 e interfaz general 271, sin fallos. Revisados campamento construido,
+  menú del arco, confirmación, mercado y recompensa/trampa renderizados en Linux.
+  Capturas temporales retiradas. `git diff --check` correcto.
+- Sin exportar APK/Web ni validar en navegador, emulador o dispositivo físico.
+
+## Botones y barras de preparación (17/09/2026)
+
+- Generados tres assets: botón común de hierro/oro, botón de reliquia con gema
+  celeste y panel inferior ornamental. Prompts y fuentes en `docs/ui_buttons/`.
+- Tema heredado por botones comunes; conservados los diseños específicos de
+  inicio, turno, cartas y zonas interactivas sin fondo. Estados hover, pulsado,
+  desactivado y foco de teclado mantienen su respuesta.
+- Selección y equipamiento comparten barra superior con campamento y muestran
+  su título. Campamento en selección se renombra Volver; nuevo panel para pareja
+  elegida y asset de Elegir reliquia. Sin cambio de reglas o formato de guardado.
+- Extraída selección de `main.gd`; componentes `preparation_header.gd` y
+  `button_skin.gd` centralizan presentación. Ajustados márgenes de fichas de reliquia.
+- Validación local: selección 47, equipamiento 12, campamento 33 e interfaz 271,
+  sin fallos. Revisión renderizada Linux de selección/equipamiento. Capturas
+  temporales eliminadas y diff sin errores de espacios. Sin exportar APK/Web;
+  sin nueva validación en navegador, emulador o dispositivo físico.
+
+## Reliquias circulares y navegación propia (17/09/2026)
+
+- Ocho reliquias grandes sin recuadros, en círculo. Centro con selección actual.
+  Tocar abre nombre y efecto en el marco ornamental compartido; confirmar elige,
+  cancelar conserva la anterior. Se mantiene una reliquia para ambos héroes.
+- Conservada barra superior y creados assets propios para Volver a personajes
+  e Iniciar aventura. Prompts y fuentes en `docs/ui_buttons/relic-navigation-*.json`.
+- Presentación en `equipment_screen.gd`, coordinación en `inspect_equipment`;
+  sin cambios de reglas económicas, IDs ni formato de guardado.
+- Pruebas locales: equipamiento UI 14, interfaz general 271; sin fallos. Revisión
+  renderizada de círculo y diálogo a 1280×720. Capturas retiradas; diff limpio.
+  Sin exportar APK/Web ni comprobar en emulador, dispositivo físico o navegador.
+
+## Título del mapa centrado (17/09/2026)
+
+- Centrado el título dentro del bloque de recorrido de 770 px en `map_screen.gd`.
+- Confirmado en código y vista renderizada que no se muestran almas en el mapa;
+  el saldo ya estaba retirado. No se modificó la economía ni el guardado.
+- Pruebas locales de mapa: 21 sin fallos. Revisión visual Linux a 1280×720,
+  captura temporal eliminada. Sin exportación APK/Web ni prueba Android/navegador.
+
+## Vida elevada, abanico y turno circular (17/09/2026)
+
+- Vida de ambos bandos elevada, intenciones enemigas a 3 px encima de sus barras;
+  estados activos separados. Verificado HUD sin almas, ya retiradas anteriormente.
+- Abanico con inclinación máxima de 7°, curva de 18 px y base 14 px más baja.
+  Solo se recorta parte del borde inferior; selección conserva elevación y lectura.
+- Nuevo asset circular de terminar turno a la derecha de las cartas, con hit testing
+  circular y estados visuales. Prompt/fuente en `docs/hud/end-turn-round.json`.
+- Pruebas locales de distribución 38, HUD 92 e interfaz general 271 sin fallos, revisión visual Linux
+  normal/seleccionada a 1280×720. Capturas temporales retiradas. Sin exportación
+  APK/Web ni pruebas en navegador, emulador o dispositivo físico.
+
+## Selección inmediata y descripción exterior de reliquias (17/09/2026)
+
+- Tocar selecciona y guarda la reliquia compartida directamente. Descripción
+  ornamental persistente en el lateral exterior del círculo, sin modal ni botones
+  de confirmación. Tocar otra reemplaza selección y descripción; fondo no la cierra.
+- `equipment_description.gd` separa presentación y ubicación del cuadro; retirado
+  `inspect_equipment`. Guardado y reglas reutilizados sin modificar su formato.
+- Equipamiento UI: 46 comprobaciones locales sin fallos, cubriendo las ocho
+  reliquias y límites del cuadro. Interfaz general: 271 sin fallos. Revisados ambos
+  laterales renderizados en Linux. Capturas temporales eliminadas. Sin exportar
+  APK/Web ni pruebas nuevas en navegador, emulador o dispositivo físico.

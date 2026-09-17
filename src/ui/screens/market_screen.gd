@@ -9,7 +9,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	ui.rect(background, 0, 0, 1280, 720)
 	ui.panel(24, 18, 1232, 66)
 	ui.label_at("EL MERCADO DE LOS ECOS", 42, 28, 550, 42, 26, ui.GOLD)
-	ui.label_at("Almas: %d" % profile.souls, 776, 28, 270, 42, 24, ui.GOLD)
+	preload("res://src/ui/components/soul_counter.gd").attach(ui, profile.souls, Vector2(810, 25))
 	ui.button("Campamento", 1070, 28, 166, 44, actions.back)
 	ui.label_at("Elegí un héroe", 576, 100, 210, 30, 21, ui.GOLD)
 	var ids = content.heroes.keys()

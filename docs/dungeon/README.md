@@ -78,3 +78,18 @@ Validación actual: layout 33 comprobaciones renderizadas, UI 121 headless,
 sin fallos. Bordes de las seis cartas comprobados dentro del alto visible;
 revisión visual de textos y PV en Linux a 1280×720. Sin APK ni prueba web/Android.
 Capturas temporales retiradas después de revisar.
+
+## Espacio de combate y mano (17/09/2026)
+
+Barras de vida a y=205 para ambos bandos, separadas de los sprites. Intenciones
+ a y=160 (42 px de alto), con 3 px hasta la vida enemiga. Estados activos encima
+ de las intenciones; héroes mantienen sus estados sobre la vida.
+Mano a x=160, ancho 938: paso 132 px, inclinación máxima 7° y curva de 18 px.
+Cartas en reposo 14 px más abajo, con borde inferior parcialmente fuera de pantalla;
+las descripciones permanecen visibles verticalmente. Selección sigue elevando y
+enderezando la carta. Manos mayores conservan desplazamiento horizontal.
+Terminar turno ocupa un círculo de 136 px a la derecha (1120,568); no recibe clics
+ en esquinas transparentes. El HUD sigue sin almas.
+
+Validación local: distribución 38, HUD 92, sin fallos; revisión renderizada de
+mano normal y seleccionada a 1280×720. Sin exportación APK/Web ni Android/navegador.

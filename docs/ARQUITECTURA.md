@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Revisión: **16/09/2026**. Este documento distingue la estructura que existe de
+Revisión: **17/09/2026**. Este documento distingue la estructura que existe de
 la organización objetivo. Las carpetas propuestas todavía no implican una
 refactorización realizada.
 
@@ -357,3 +357,40 @@ No se agregan campos persistentes: la mano guardada determina las oportunidades.
 las 30 ilustraciones originales. La fábrica de cartas y el mercado lo consumen
 sin duplicar lógica. Las imágenes no interceptan entrada ni modifican estado.
 [Fuentes y mantenimiento](cards/art/README.md).
+
+## Extracción terminada: diálogos y saldo del campamento (17/09/2026)
+
+- `ui/components/dialog_view.gd`: construye el cuadro de acciones y su contenido;
+  recibe callbacks y estados habilitados, sin decidir navegación ni guardar.
+- `ui/components/modal_frame.gd`: decoración compartida para diálogos y tesoros.
+- `ui/components/soul_counter.gd`: muestra una cantidad con icono y `number_view.gd`.
+- `main.gd` delega la presentación de `show_modal` y conecta las tres acciones
+  del arco. Mantiene confirmación de nueva aventura y continuidad del guardado.
+- Campamento y mercado reciben instantáneas del perfil; mapa y HUD ya no reciben
+  almas. Construcción, costes y concesiones siguen en las reglas existentes.
+
+No cambia el formato de guardado. El edificio se dibuja según `profile.buildings.market`.
+
+## Extracción terminada: selección y botones (17/09/2026)
+
+- `ui/screens/selection_screen.gd`: presentación de pareja, fogata y panel inferior;
+  extraída de `main.gd`. Los callbacks conservan navegación y guardado en el controlador.
+- `ui/components/preparation_header.gd`: barra común de campamento, personajes y
+  equipamiento. El saldo es opcional y se pasa exclusivamente desde campamento.
+- `ui/components/button_skin.gd`: tema raster compartido, estados y regiones de
+  textura. Las superficies con assets específicos mantienen sus overrides.
+- Recursos y procedencia en `assets/ui/buttons/` y `docs/ui_buttons/`.
+
+### Elección circular de reliquias (17/09/2026)
+
+`equipment_screen.gd` recibe el callback `equip` y muestra iconos en círculo.
+`main.gd::equip_relic` selecciona y guarda inmediatamente.
+`ui/components/equipment_description.gd` presenta el efecto persistente fuera
+del círculo, sin overlay ni acciones. Se retiró `inspect_equipment` al eliminar
+la confirmación modal. La vista no modifica el perfil.
+
+### Botón circular y mano de combate (17/09/2026)
+
+`ui/components/round_button.gd` limita hit testing al círculo. `end_turn_button.gd`
+lo aplica junto al asset y estados, sin resolver turnos. `hand_layout.gd` mantiene
+cálculos de abanico y selección; `main.gd` conserva acciones y coordinación.

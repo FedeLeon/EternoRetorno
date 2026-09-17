@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **16/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **17/09/2026**.
 
 ## Estado actual
 
@@ -17,7 +17,9 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Actores: seis héroes y 56 enemigos con sprites de 128×128; seis enemigos activos
   con ciclos nuevos de ocho poses y ataques diferenciados.
 - Campamento: mercado construible en solar 1 por 300 almas, con 36 cartas comprables.
-  Almas persistentes por victoria; otras construcciones y mejoras de héroes pendientes.
+  Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
+  con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
+  Otras construcciones y mejoras de héroes pendientes.
 - Cartas: 90 en total, 15 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
@@ -47,6 +49,7 @@ Android histórica no certifica la interfaz actual.
 | Reliquias y consumibles: valores y guardado | [Objetos](objects/README.md) |
 | Sinergias entre héroes | [Sinergias](synergies/README.md) |
 | Marcos y colores de cartas | [Cartas](cards/README.md) |
+| Botones compartidos y barras de preparación | [Botones](ui_buttons/README.md) |
 | Inicio, botones y opciones | [Inicio](title/README.md) |
 | Calidad de actores, atlas de 128 px y vista previa animada | [Actores](quality/README.md) |
 | Biblioteca de 56 enemigos | [Enemigos](enemies/README.md) |

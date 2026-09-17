@@ -36,9 +36,9 @@ func run_tests() -> void:
 	var cards = app.layer.get_node("CombatHand").get_child(0).get_children()
 	check(cards.size() == 6 and cards[2].position.y < cards[0].position.y and cards[0].rotation < 0 and cards[5].rotation > 0, "Six cards form a raised fan")
 	for card in cards:
-		for corner in [Vector2.ZERO, Vector2(card.size.x, 0), card.size, Vector2(0, card.size.y)]:
+		for corner in [Vector2.ZERO, Vector2(card.size.x, 0), Vector2(card.size.x - 24, card.size.y - 23), Vector2(24, card.size.y - 23)]:
 			var point = card.get_global_transform() * corner
-			check(point.y >= 350 and point.y <= 720, "Entire rotated card fits vertically")
+			check(point.y >= 350 and point.y <= 720, "Card text remains within screen despite cropped lower rim")
 	check(app.hero_health[0].global_position.y < app.hero_art[0].global_position.y + app.hero_art[0].size.y / 2, "Hero health above artwork")
 	var index = 0
 	for i in range(6):
@@ -71,10 +71,10 @@ func run_tests() -> void:
 	app.selected_card = -1
 	app.render()
 	await process_frame
-	await click(Vector2(100, 500))
+	await click(app.layer.get_node("EndTurn").get_global_rect().get_center())
 	while app.combat_busy:
 		await process_frame
-	check(app.game.run.combat.turn == 2 and app.game.run.combat.hand.size() == 6, "End turn accessible above hand; draws six again")
+	check(app.game.run.combat.turn == 2 and app.game.run.combat.hand.size() == 6, "End turn accessible beside hand; draws six again")
 	await click(Vector2(925, 32))
 	check(app.screen == "items", "Top bag opens")
 	app.back()

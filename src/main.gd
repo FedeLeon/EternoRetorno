@@ -56,11 +56,8 @@ func _ready() -> void:
 	ui_theme.set_color("font_color", "Button", TEXT)
 	ui_theme.set_color("font_disabled_color", "Button", Color("666b79"))
 	ui_theme.set_color("font_hover_color", "Button", Color("fff0c4"))
-	ui_theme.set_stylebox("normal", "Button", box(Color("202532"), Color("495062")))
-	ui_theme.set_stylebox("hover", "Button", box(Color("303544"), GOLD))
-	ui_theme.set_stylebox("pressed", "Button", box(Color("393748"), GOLD))
+	preload("res://src/ui/components/button_skin.gd").install(ui_theme)
 	ui_theme.set_stylebox("focus", "Button", box(Color(0, 0, 0, 0), GOLD, 2))
-	ui_theme.set_stylebox("disabled", "Button", box(Color("151a25"), Color("2c3240")))
 	theme = ui_theme
 	apply_options()
 	render()
@@ -300,13 +297,21 @@ func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable) ->
 	var title = label_at(caption, 5, 0, 198, 34, 16, GOLD, plaque)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
-func base_camp_view() -> void:
-	preload("res://src/ui/screens/base_camp_screen.gd").build(self, game.profile.duplicate(true), active_run(), {
-		"home": func(): screen = "home"; render(),
-		"prepare": func():
+func camp_adventures() -> void:
+	close_modal()
+	overlay = preload("res://src/ui/components/dialog_view.gd").build(self, "Más allá del campamento", "Elegí cómo querés seguir tu viaje.", [
+		{"id": "ContinueAdventure", "text": "Continuar aventura", "enabled": active_run(), "callback": func(): close_modal(); continue_run()},
+		{"id": "NewAdventure", "text": "Nueva aventura", "callback": func():
+			close_modal()
 			if active_run(): confirm_new()
-			else: open_selection(),
-		"market": market_plot, "continue_run": continue_run, "close_modal": close_modal})
+			else: open_selection()},
+		{"id": "BackToCamp", "text": "Volver", "callback": close_modal}])
+
+func base_camp_view() -> void:
+	preload("res://src/ui/screens/base_camp_screen.gd").build(self, game.profile.duplicate(true), {
+		"home": func(): screen = "home"; render(),
+		"prepare": camp_adventures,
+		"market": market_plot, "close_modal": close_modal})
 
 func open_selection() -> void:
 	var draft = game.profile.get("preparation", {})
@@ -328,47 +333,10 @@ func confirm_new() -> void:
 		open_selection())
 
 func selection() -> void:
-	panel(24, 18, 1016, 100)
-	label_at("ETERNO RETORNO · EL FUEGO NOS REÚNE", 42, 27, 960, 25, 17, GOLD)
-	label_at("Elegí dos almas", 42, 54, 900, 35, 28, TEXT)
-	label_at("Tocá a los personajes para formar tu pareja de aventura.", 42, 90, 960, 24, 17, MUTED)
-	button("Menú", 1134, 30, 110, 48, func(): screen = "home"; render())
-	var fire = Campfire.new()
-	fire.name = "Campfire"
-	rect(fire, 640, 471, 1, 1)
-	var ids = game.content.heroes.keys()
-	for i in range(ids.size()):
-		var id = ids[i]
-		var h = game.content.heroes[id]
-		var pos = CAMP_POSITIONS[i]
-		var chosen = id in selected_party
-		var b = button("", pos.x - 90, pos.y - 140, 180, 198, func(): toggle_hero(id))
-		b.name = "CampHero_" + id
-		b.tooltip_text = h.name + " · " + h.role + "\n" + h.lore
-		for state in ["normal", "hover", "pressed", "focus"]:
-			b.add_theme_stylebox_override(state, box(Color(0.1, 0.08, 0.04, 0.22) if chosen else Color(0, 0, 0, 0), GOLD if chosen or state == "focus" else Color(0, 0, 0, 0), 2))
-		var sprite = TextureRect.new()
-		var texture = AtlasTexture.new()
-		texture.atlas = CAMP_FRONT
-		texture.region = Rect2(i * 128, 0, 128, 128)
-		sprite.texture = texture
-		sprite.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-		sprite.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		rect(sprite, -6, -40, 192, 192, b)
-		panel(0, 141, 180, 57, Color("343b4d"), b)
-		var name_label = label_at(("✓ " if chosen else "") + h.name, 4, 143, 172, 27, 21, GOLD if chosen else TEXT, b)
-		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		var detail = label_at("%s · %d PV" % [h.role, h.hp], 2, 172, 176, 22, 14, Color(h.color), b)
-		detail.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	panel(24, 653, 1232, 59)
-	button("Campamento", 36, 659, 145, 46, open_base_camp)
-	label_at("%d / 2 elegidos" % selected_party.size(), 185, 669, 210, 30, 20, GOLD)
-	var names: Array[String] = []
-	for id in selected_party:
-		names.append(game.content.heroes[id].name)
-	label_at(" + ".join(names), 405, 669, 440, 30, 20, TEXT)
-	button("Elegir reliquia  →", 894, 659, 350, 46, open_equipment, selected_party.size() == 2)
+	preload("res://src/ui/screens/selection_screen.gd").build(self, {
+		"toggle": toggle_hero, "back": open_base_camp, "equipment": open_equipment,
+		"menu": func(): screen = "home"; render(),
+	})
 
 func toggle_hero(id: String) -> void:
 	if id in selected_party:
@@ -409,7 +377,6 @@ func map_view() -> void:
 	view.run_seed = game.run.seed
 	view.boss_defeated = game.run.boss_defeated
 	view.deck_count = game.run.deck.size()
-	view.souls = game.profile.souls
 	view.relics = equipped_relics()
 	for id in game.run.relics:
 		var relic = game.content.relics[id].duplicate()
@@ -464,7 +431,6 @@ func combat_view() -> void:
 	hud.name = "CombatHUD"
 	hud.turn = b.turn
 	hud.energy = b.energy
-	hud.souls = game.profile.souls
 	hud.relics = equipped_relics()
 	hud.bag_requested.connect(func():
 		if not combat_busy:
@@ -499,13 +465,13 @@ func combat_view() -> void:
 		hero_art[i] = visual
 		if h.id in ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
-		hero_health[i] = health_bar(h, 16, 128, 172, target)
+		hero_health[i] = health_bar(h, 16, 55, 172, target)
 		if h.hp > 0:
 			var effects = StatusEffects.new()
 			effects.unit = h
-			rect(effects, 10, 91, 184, 28, target)
+			rect(effects, 10, 18, 184, 28, target)
 		else:
-			label_at("Vuelve si ganás", 10, 91, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			label_at("Vuelve si ganás", 10, 18, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = game.content.enemies[e.id]
@@ -522,17 +488,17 @@ func combat_view() -> void:
 		enemy_visual.scale = Vector2.ONE * 1.25
 		TargetGlow.attach(enemy_visual, valid)
 		enemy_art[i] = enemy_visual
-		label_at(def.name, 7, 8, 200, 26, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		enemy_health[i] = health_bar(e, 16, 128, 182, target)
+		label_at(def.name, 7, -48, 200, 26, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		enemy_health[i] = health_bar(e, 16, 55, 182, target)
 		var effects = StatusEffects.new()
 		effects.unit = e
-		rect(effects, 7, 91, 200, 28, target)
+		rect(effects, 7, -20, 200, 28, target)
 		if e.hp > 0:
 			var intent_view = EnemyIntent.new()
 			intent_view.name = "EnemyIntent%d" % i
 			intent_view.intent = e.intent.duplicate(true)
 			intent_view.heroes = game.run.heroes.duplicate(true)
-			rect(intent_view, x - 12, 190, 240, 42)
+			rect(intent_view, x - 12, 160, 240, 42)
 
 	if selected_card >= 0 and selected_card < b.hand.size() and game.available_synergies().is_empty():
 		SynergyView.hint(self, b.hand[selected_card].id, game.content.synergies, game.run.party, game.content.cards)
@@ -544,11 +510,11 @@ func combat_view() -> void:
 	var count = b.hand.size()
 	var scroll = ScrollContainer.new()
 	scroll.name = "CombatHand"
-	rect(scroll, 170, 350, 1086, 370)
+	rect(scroll, 160, 350, 938, 370)
 	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
 	var contents = Control.new()
-	contents.custom_minimum_size = Vector2(HandLayout.content_width(count), 354)
+	contents.custom_minimum_size = Vector2(HandLayout.content_width(count), 370)
 	scroll.add_child(contents)
 	scroll.set_deferred("scroll_horizontal", hand_scroll)
 	for i in range(count):
@@ -558,7 +524,7 @@ func combat_view() -> void:
 		HandLayout.arrange(card, i, count, i == selected_card)
 	if count == 0:
 		label_at("Terminá el turno para robar cartas.", 380, 590, 640, 70, 24, MUTED)
-	var end_turn = button("Terminar turno", 16, 478, 174, 52, func(): animate_combat_action())
+	var end_turn = button("Terminar\nturno", 1120, 568, 136, 136, func(): animate_combat_action())
 	preload("res://src/ui/components/end_turn_button.gd").decorate(end_turn)
 
 func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, chosen: bool = false, enabled: bool = true, parent: Control = null) -> Button:
@@ -713,7 +679,6 @@ func flash_hit(visual: Control) -> void:
 
 func reward_view() -> void:
 	header("Un eco para tu mazo", "Elegí una carta. También podés seguir con un mazo más pequeño.")
-	label_at("+%d almas · Total: %d" % [game.run.get("last_souls", 0), game.profile.souls], 36, 103, 750, 30, 20, GOLD)
 	for i in range(game.run.reward.size()):
 		var instance = game.run.reward[i]
 		var c = game.content.card(instance)
@@ -841,17 +806,9 @@ func result_view() -> void:
 
 func show_modal(title: String, text: String, action_text: String, callback: Callable) -> void:
 	close_modal()
-	overlay = Control.new()
-	add_child(overlay)
-	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var dim = ColorRect.new()
-	dim.color = Color(0.02, 0.025, 0.04, 0.9)
-	rect(dim, 0, 0, 1280, 720, overlay)
-	panel(290, 173, 700, 375, GOLD.darkened(0.4), overlay)
-	label_at(title, 330, 203, 620, 60, 34, GOLD, overlay)
-	label_at(text, 330, 282, 620, 102, 23, TEXT, overlay)
-	button(action_text, 330, 412, 620, 55, callback, true, overlay)
-	button("Volver", 330, 478, 620, 48, close_modal, true, overlay)
+	overlay = preload("res://src/ui/components/dialog_view.gd").build(self, title, text, [
+		{"text": action_text, "callback": callback},
+		{"text": "Volver", "callback": close_modal}])
 
 func close_modal() -> void:
 	if is_instance_valid(overlay):
@@ -943,6 +900,7 @@ func equip_relic(id: String) -> void:
 func equipment_view() -> void:
 	EquipmentScreen.build(self, game.content.equipment, equipped, equipped.size() == 1 and game.valid_equipment(selected_party, equipped), {
 		"equip": equip_relic,
+		"menu": pause_menu,
 		"back": func(): screen = "select"; render(),
 		"start": begin,
 	})

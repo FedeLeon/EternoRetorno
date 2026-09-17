@@ -15,7 +15,6 @@ signal relic_requested(index: int)
 var relics: Array = []
 var turn = 1
 var energy = 3
-var souls = 0
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -30,10 +29,6 @@ func _ready() -> void:
 		texture.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
 		var target = icon_button(texture, Rect2(20 + i * 68, 4, 56, 56), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
 		target.name = "Relic%d" % i
-	var balance = Label.new()
-	balance.text = "Almas: %d" % souls
-	balance.add_theme_font_size_override("font_size", 20)
-	place(balance, Rect2(530, 18, 280, 36))
 	var bag = icon_button(load("res://assets/dungeon/bag.png"), Rect2(897, 4, 56, 56), "Bolsa de objetos", func(): bag_requested.emit())
 	bag.name = "Bag"
 	var deck = icon_button(preload("res://assets/ui/deck.svg"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())

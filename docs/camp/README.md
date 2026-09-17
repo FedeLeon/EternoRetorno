@@ -33,3 +33,9 @@ límite de dos, deselección e inicio de aventura. Capturas reales en esta carpe
 `camp-first.png`, `camp-second.png`, `camp-selected.png`.
 La prueba de interfaz usa las nuevas posiciones del campamento.
 No se compiló APK ni se probó este cambio en Android.
+
+## Barra y acciones (17/09/2026)
+
+Selección usa ahora `selection_screen.gd` y la barra común del campamento con
+«Elegí tus personajes · El fuego nos reúne». Volver lleva al campamento.
+Panel inferior y botón de reliquia con assets nuevos: [botones](../ui_buttons/README.md).

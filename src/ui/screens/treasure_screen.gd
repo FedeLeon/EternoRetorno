@@ -89,14 +89,9 @@ func show_reward() -> void:
 	shade.color = Color(0, 0, 0, 0.6)
 	place(shade, Rect2(0, 0, 1280, 720))
 	var panel = Panel.new()
-	var style = StyleBoxFlat.new()
-	style.bg_color = Color("19212e")
-	style.border_color = Color("b59660")
-	style.set_border_width_all(2)
-	style.set_corner_radius_all(8)
-	panel.add_theme_stylebox_override("panel", style)
+	preload("res://src/ui/components/modal_frame.gd").decorate(panel)
 	place(panel, Rect2(340, 135, 600, 480), shade)
-	label(result.title, Rect2(25, 22, 550, 48), 28, panel)
+	label(result.title, Rect2(35, 48, 530, 48), 28, panel)
 	if result.icon >= 0:
 		var icon = TextureRect.new()
 		var texture = AtlasTexture.new()
@@ -105,10 +100,11 @@ func show_reward() -> void:
 		icon.texture = texture
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-		place(icon, Rect2(244, 73, 112, 112), panel)
-	label(result.description, Rect2(35, 192, 530, 190), 21, panel)
+		place(icon, Rect2(256, 94, 88, 88), panel)
+	var description = label(result.description, Rect2(45, 188, 510, 177), 19, panel)
+	description.add_theme_constant_override("line_spacing", 0)
 	var accept = Button.new()
 	accept.name = "Continue"
 	accept.text = "Continuar"
 	accept.pressed.connect(func(): continue_requested.emit())
-	place(accept, Rect2(170, 400, 260, 55), panel)
+	place(accept, Rect2(170, 375, 260, 52), panel)

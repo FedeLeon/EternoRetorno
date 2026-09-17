@@ -101,3 +101,37 @@ compatibilidad de aventuras antiguas y bloqueo gráfico en ambos bandos.
 Equipamiento y HUD también ejecutados con renderizado de escritorio; capturas
 `loadout.png` y `../hud/combat.png` revisadas visualmente.
 Sin exportar APK ni probar en emulador/dispositivo Android.
+
+## Presentación de preparación (17/09/2026)
+
+La elección de reliquia comparte la barra superior del campamento con título
+propio. Botones y fichas usan el tema ornamental común; se conserva la selección
+única para ambos héroes. Ver [botones y validación](../ui_buttons/README.md).
+
+## Reliquias en círculo (17/09/2026)
+
+La preparación muestra ocho iconos de 132×132 en un círculo de radio 190 px,
+centrado en (640, 378). No hay fichas rectangulares ni descripciones alrededor.
+El centro indica la reliquia elegida para ambos héroes. La barra superior conserva
+el título y Menú, sin saldo de almas.
+
+Tocar una reliquia la selecciona inmediatamente y muestra nombre y efecto en
+un cuadro ornamental no modal hacia el exterior del círculo. Permanece visible
+hasta elegir otra y no se cierra al tocar el fondo. La selección se guarda.
+Iniciar aventura sigue desactivado mientras no haya una reliquia válida.
+
+`equipment_screen.gd` calcula posiciones y emite `equip`; `main.gd` conecta la
+selección a las reglas existentes. `equipment_description.gd` dibuja el cuadro
+en el espacio lateral exterior, ajustando altura para no tapar la barra ni botones. Assets nuevos en
+`assets/ui/buttons/back_party.png` y `start_adventure.png`, generados con imagegen
+integrado. [Prompts](../ui_buttons/relic-navigation-prompts.json) y
+[fuentes](../ui_buttons/relic-navigation-sources.json).
+
+Validación local de esta revisión: equipamiento UI 14 e interfaz general 271,
+sin fallos. Revisados círculo y diálogo renderizados en Linux a 1280×720.
+Capturas temporales eliminadas. Sin exportación APK/Web ni pruebas Android/navegador.
+
+Última revisión (17/09/2026): selección inmediata y cuadro persistente. Pruebas
+locales de equipamiento UI 46 e interfaz general 271, sin fallos. Se verifican
+las ocho posiciones, cambio de reliquia, persistencia al tocar fondo y ausencia
+de modal. Revisión visual Linux de cuadros a derecha e izquierda; capturas retiradas.
