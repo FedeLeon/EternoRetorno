@@ -9,3 +9,6 @@ __pycache__/
 
 # Disposable captures, videos and test logs
 /artifacts/
+
+# Web exports uploaded manually to the server
+/TestWeb/
