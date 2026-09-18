@@ -1,0 +1,331 @@
+[
+  {
+    "id": 0,
+    "kind": "combat",
+    "next": [
+      1,
+      2,
+      3
+    ],
+    "position": [
+      120,
+      540
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 1,
+    "kind": "event",
+    "next": [
+      4
+    ],
+    "position": [
+      270,
+      450
+    ]
+  },
+  {
+    "id": 2,
+    "kind": "combat",
+    "next": [
+      4
+    ],
+    "position": [
+      270,
+      540
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 3,
+    "kind": "treasure",
+    "next": [
+      4
+    ],
+    "position": [
+      270,
+      620
+    ]
+  },
+  {
+    "id": 4,
+    "kind": "rest",
+    "next": [
+      5
+    ],
+    "position": [
+      420,
+      540
+    ]
+  },
+  {
+    "id": 5,
+    "kind": "combat",
+    "next": [
+      6,
+      7,
+      8
+    ],
+    "position": [
+      565,
+      540
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 6,
+    "kind": "event",
+    "next": [
+      9
+    ],
+    "position": [
+      710,
+      450
+    ]
+  },
+  {
+    "id": 7,
+    "kind": "elite",
+    "next": [
+      9
+    ],
+    "position": [
+      710,
+      540
+    ]
+  },
+  {
+    "id": 8,
+    "kind": "combat",
+    "next": [
+      9
+    ],
+    "position": [
+      710,
+      620
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 9,
+    "kind": "rest",
+    "next": [
+      10
+    ],
+    "position": [
+      865,
+      540
+    ]
+  },
+  {
+    "id": 10,
+    "kind": "combat",
+    "next": [
+      11,
+      12,
+      13
+    ],
+    "position": [
+      1040,
+      540
+    ],
+    "enemy_count": 2
+  },
+  {
+    "id": 11,
+    "kind": "combat",
+    "next": [
+      14
+    ],
+    "position": [
+      950,
+      345
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 12,
+    "kind": "treasure",
+    "next": [
+      14
+    ],
+    "position": [
+      1060,
+      345
+    ]
+  },
+  {
+    "id": 13,
+    "kind": "combat",
+    "next": [
+      14
+    ],
+    "position": [
+      1170,
+      345
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 14,
+    "kind": "rest",
+    "next": [
+      15
+    ],
+    "position": [
+      1060,
+      190
+    ]
+  },
+  {
+    "id": 15,
+    "kind": "combat",
+    "next": [
+      16,
+      17,
+      18
+    ],
+    "position": [
+      880,
+      190
+    ],
+    "enemy_count": 2
+  },
+  {
+    "id": 16,
+    "kind": "combat",
+    "next": [
+      19
+    ],
+    "position": [
+      700,
+      110
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 17,
+    "kind": "event",
+    "next": [
+      19
+    ],
+    "position": [
+      700,
+      190
+    ]
+  },
+  {
+    "id": 18,
+    "kind": "combat",
+    "next": [
+      19
+    ],
+    "position": [
+      700,
+      270
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 19,
+    "kind": "rest",
+    "next": [
+      20
+    ],
+    "position": [
+      520,
+      190
+    ]
+  },
+  {
+    "id": 20,
+    "kind": "combat",
+    "next": [
+      21,
+      22,
+      23
+    ],
+    "position": [
+      350,
+      190
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 21,
+    "kind": "combat",
+    "next": [
+      24
+    ],
+    "position": [
+      160,
+      110
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 22,
+    "kind": "event",
+    "next": [
+      24
+    ],
+    "position": [
+      160,
+      190
+    ]
+  },
+  {
+    "id": 23,
+    "kind": "combat",
+    "next": [
+      24
+    ],
+    "position": [
+      160,
+      270
+    ],
+    "enemy_count": 1
+  },
+  {
+    "id": 24,
+    "kind": "rest",
+    "next": [
+      25
+    ],
+    "position": [
+      160,
+      365
+    ]
+  },
+  {
+    "id": 25,
+    "kind": "elite",
+    "next": [
+      26
+    ],
+    "position": [
+      350,
+      365
+    ]
+  },
+  {
+    "id": 26,
+    "kind": "rest",
+    "next": [
+      27
+    ],
+    "position": [
+      545,
+      365
+    ]
+  },
+  {
+    "id": 27,
+    "kind": "boss",
+    "next": [],
+    "position": [
+      735,
+      365
+    ]
+  }
+]

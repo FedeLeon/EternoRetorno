@@ -62,3 +62,16 @@ Procedencia del asset compartido: [wood-assets.json](../ui_buttons/wood-assets.j
 Validación de este ajuste: `test_forge_ui.gd`, 46 comprobaciones sin fallos,
 incluyendo clics en ambos carteles. Revisión visual del campamento en Linux
 a 1280×720. Sin exportar APK/Web ni probar en dispositivo.
+
+## Edificios sin recuadro y cartel del mercado arriba — 18/09/2026
+
+`main.gd::camp_hotspot` usa StyleBoxEmpty para normal, hover, pulsado, foco
+y deshabilitado, retirando el rectángulo amarillo sobre los edificios.
+La opción `caption_above` coloca el tablón encima y extiende hacia arriba
+el área de clic. `base_camp_screen.gd` la activa para el mercado construido;
+el solar sin construir conserva el cartel inferior. El mercado queda rotulado
+sobre el tejado y separado de la herrería. Se conserva el asset de madera.
+
+Validación actual: `test_forge_ui.gd`, 46 comprobaciones sin fallos, incluyendo
+clics en ambos carteles. Revisión visual Linux a 1280×720. Capturas temporales
+eliminadas. Sin exportar APK/Web ni probar en dispositivo.

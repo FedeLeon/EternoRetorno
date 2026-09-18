@@ -2,6 +2,13 @@ extends RefCounted
 
 # Shared UI factory + explicit view data and actions; no rule or save mutations.
 static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_start: bool, actions: Dictionary) -> void:
+	var background = TextureRect.new()
+	background.name = "ValhallaBackground"
+	background.texture = preload("res://assets/equipment/valhalla.png")
+	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tu reliquia · Prepará el descenso", actions.menu)
 	var ids = relics.keys()
 	for i in range(ids.size()):
@@ -22,5 +29,10 @@ static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_sta
 	back.name = "BackToCharacters"
 	var start = ui.button("Iniciar aventura", 904, 647, 340, 54, actions.start, can_start)
 	start.name = "StartAdventure"
-	preload("res://src/ui/components/button_skin.gd").decorate(back, "back_party")
-	preload("res://src/ui/components/button_skin.gd").decorate(start, "start_adventure")
+	start.icon = preload("res://assets/equipment/door.png")
+	start.expand_icon = true
+	start.alignment = HORIZONTAL_ALIGNMENT_LEFT
+	start.add_theme_constant_override("icon_max_width", 38)
+	start.add_theme_constant_override("h_separation", 12)
+	preload("res://src/ui/components/button_skin.gd").decorate(back, "wood_button")
+	preload("res://src/ui/components/button_skin.gd").decorate(start, "wood_button")

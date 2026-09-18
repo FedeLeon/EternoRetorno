@@ -1,5 +1,5 @@
 extends RefCounted
-# Presentation only; controller owns party changes and preparation saves.
+# Presentation only; controller owns the current, non-persistent preparation.
 static func build(ui: Control, actions: Dictionary) -> void:
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tus personajes · El fuego nos reúne", actions.menu)
 	ui.label_at("Tocá a dos personajes para formar tu pareja de aventura.", 28, 88, 1100, 30, 18, ui.TEXT)
@@ -16,7 +16,12 @@ static func build(ui: Control, actions: Dictionary) -> void:
 		b.name = "CampHero_" + id
 		b.tooltip_text = h.name + " · " + h.role + "\n" + h.lore
 		for state in ["normal", "hover", "pressed", "focus"]:
-			b.add_theme_stylebox_override(state, ui.box(Color(0.1, 0.08, 0.04, 0.22) if chosen else Color(0, 0, 0, 0), ui.GOLD if chosen or state == "focus" else Color(0, 0, 0, 0), 2))
+			b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+		preload("res://src/ui/components/target_glow.gd").attach(b, chosen)
+		if chosen:
+			var glow = b.get_node("TargetGlow")
+			glow.position = Vector2(-6, -40)
+			glow.size = Vector2(192, 192)
 		var sprite = TextureRect.new()
 		var texture = AtlasTexture.new()
 		texture.atlas = ui.CAMP_FRONT
@@ -36,11 +41,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 	footer.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("party_panel"))
 	ui.button("Volver", 36, 659, 145, 46, actions.back)
 	ui.label_at("%d / 2 elegidos" % ui.selected_party.size(), 185, 669, 210, 30, 20, ui.GOLD)
-	var names: Array[String] = []
-	for id in ui.selected_party:
-		names.append(ui.game.content.heroes[id].name)
-	ui.label_at(" + ".join(names), 405, 669, 440, 30, 20, ui.TEXT)
 	var choose = ui.button("Elegir reliquia  →", 894, 659, 350, 46, actions.equipment, ui.selected_party.size() == 2)
 
 	choose.name = "ChooseRelic"
-	preload("res://src/ui/components/button_skin.gd").decorate(choose, "relic_button")
+	preload("res://src/ui/components/button_skin.gd").decorate(choose, "wood_button")

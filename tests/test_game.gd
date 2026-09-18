@@ -45,10 +45,10 @@ func content_and_map() -> void:
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")
-	check(not g.enter_node(11), "cannot jump to boss")
+	check(not g.enter_node(27), "cannot jump to boss")
 	check(not g.descend(), "staircase initially locked")
-	check(g.run.nodes.size() == 12, "12 nodes")
-	check(paths_end_at_boss(0), "every branch terminates at boss")
+	check(g.run.nodes.size() == 28, "28 nodes")
+	check(paths_end_at_boss(g.run.nodes, 0), "every branch terminates at boss")
 	var same = fresh()
 	check(g.run.nodes == same.run.nodes, "seed reproduces encounters")
 	for id in g.content.heroes:
@@ -62,11 +62,11 @@ func content_and_map() -> void:
 		check(g.content.cards[starter[0]].damage > 0 and g.content.cards[starter[4]].block > 0, "repeated attack and defense " + id)
 		check(starter.all(func(key): return g.content.cards[key].cost == 1 and not g.content.cards[key].locked and g.content.cards[key].get("market_price", 0) == 0), "only modest unlocked starters " + id)
 
-func paths_end_at_boss(node: int) -> bool:
-	if node == 11: return true
-	if Dungeon.LINKS[node].is_empty(): return false
-	for next in Dungeon.LINKS[node]:
-		if next <= node or not paths_end_at_boss(next): return false
+func paths_end_at_boss(nodes: Array, node: int) -> bool:
+	if nodes[node].kind == "boss": return nodes[node].next.is_empty()
+	if nodes[node].next.is_empty(): return false
+	for next in nodes[node].next:
+		if next <= node or not paths_end_at_boss(nodes, next): return false
 	return true
 
 func card_rules() -> void:
@@ -149,8 +149,8 @@ func death_rules() -> void:
 	check(g.run.phase == "reward" and g.run.heroes[0].hp == 15, "fallen revives with ceil 25 percent")
 	check(g.run.deck.size() == 20, "inactive cards remain in permanent run deck")
 	g.choose_reward(-1)
-	g.run.current = 1 # Reach joined treasure, then another fight.
-	g.enter_node(3); g.take_treasure(); g.leave_treasure(); g.enter_node(5)
+	g.run.current = 0 # Reach treasure, then the joined fight.
+	g.enter_node(3); g.take_treasure(); g.leave_treasure(); g.run.current = 4; g.enter_node(5)
 	var total = g.run.combat.draw + g.run.combat.hand
 	check(total.filter(func(c): return g.content.cards[c.id].owner == "warrior").size() == 10, "revived cards return next combat")
 	g = combat()
@@ -175,18 +175,18 @@ func reward_and_rooms() -> void:
 	var size_before = g.run.deck.size()
 	g.choose_reward(0)
 	check(g.run.deck.size() == size_before + 1 and not g.choose_reward(0), "reward cannot be claimed twice")
-	g.run.current = 2
+	g.run.current = 0
 	g.enter_node(3)
 	var item = g.run.treasure.item
 	g.take_treasure()
 	check(g.run.inventory.get(item, 0) == 1 and not g.take_treasure(), "treasure once")
 	g.leave_treasure()
-	g.run.current = 5
-	g.enter_node(6)
+	g.run.current = 8
+	g.enter_node(9)
 	g.run.heroes[0].hp = 1
 	g.rest(true)
 	check(g.run.heroes[0].hp == 19 and not g.rest(true), "rest heals ceil 30 percent once")
-	g.run.current = 5; g.enter_node(6)
+	g.run.current = 8; g.enter_node(9)
 	g.rest(false, 0)
 	check(g.run.deck[0].upgraded, "rest upgrades")
 	g.run.current = 0; g.enter_node(1)
@@ -200,13 +200,13 @@ func reward_and_rooms() -> void:
 	check(g.run.phase == "reward", "library shares reward transaction")
 	g.choose_reward(-1)
 	g.run.relics.append("ember") # Existing group relic: elite must grant another.
-	g.run.current = 3; g.enter_node(4)
+	g.run.current = 5; g.enter_node(7)
 	g.run.combat.enemies[0].hp = 0
 	g._check_combat_end()
 	check("hourglass" in g.profile.unlocked_relics, "elite permanently unlocks relic")
 	check(g.run.relics.size() == 2, "elite grants distinct relic")
 	g.choose_reward(-1)
-	g.run.current = 10; g.enter_node(11)
+	g.run.current = 26; g.enter_node(27)
 	g.run.heroes[0].hp = 20
 	g.run.relics = ["chalice"]
 	g.run.combat.enemies[0].hp = 0

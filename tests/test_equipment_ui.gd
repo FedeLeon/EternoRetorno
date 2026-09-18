@@ -53,11 +53,16 @@ func run_tests() -> void:
 	await click(app.layer.get_node("Equip_arcane_orb").get_global_rect().get_center())
 	check(app.equipped == {"team":"arcane_orb"}, "replace single shared relic")
 	await shot("loadout")
-	var draft = app.game.profile.preparation.duplicate(true)
+	var party = app.selected_party.duplicate()
+	check(not app.game.profile.has("preparation"), "preparation not persisted")
 	app.back()
+	check(app.selected_party == party and app.equipped == {"team":"arcane_orb"}, "back preserves current preparation")
 	app.open_base_camp()
+	app.game.profile.preparation = {"party": party, "relics": {"team":"arcane_orb"}}
 	app.open_selection()
-	check(app.equipped == draft.relics and app.selected_party == draft.party, "preparation restored")
+	check(app.equipped.is_empty() and app.selected_party.is_empty() and not app.game.profile.has("preparation"), "new adventure clears legacy selection")
+	for id in party: app.toggle_hero(id)
+	app.equip_relic("arcane_orb")
 	app.open_equipment()
 	await process_frame
 	await click(Vector2(1060, 675))

@@ -53,9 +53,17 @@ func run_tests() -> void:
 	app.render()
 	await process_frame
 	check(app.layer.get_node("CombatHand").get_child(0).get_child(0).has_node("CardType0"), "attack card has symbol")
+	battle.energy = 0
+	app.animate_combat_action(0, 0)
+	check(not app.layer.has_node("CardAsh") and not app.layer.has_node("HeroCutIn") and battle.hand.size() == 1, "rejected play keeps card without ashes")
+	battle.energy = 9
 	app.animate_combat_action(0, 0)
 	check(app.game.run.phase == "reward" and app.combat_busy, "victory resolves before effects")
+	check(app.layer.has_node("HeroCutIn"), "offensive play shows hero comic after commit")
 	check(app.layer.has_node("AttackFlash"), "attack creates white flash")
+	check(app.layer.has_node("CardAsh") and not app.layer.get_node("CombatHand").get_child(0).get_child(0).visible, "accepted play hides original and creates ash effect")
+	await create_timer(0.4).timeout
+	await shot("card-ash")
 	var actor = app.hero_art[0]
 	var initial = actor.global_position.x
 	var moved = false
@@ -83,5 +91,34 @@ func run_tests() -> void:
 			fled = fled or doomed.global_position.x > starting_x + 100
 		await process_frame
 	check(not fled and app.game.run.phase == "defeat", "defeat does not run to another room")
+	var combo = app.game.content.synergies[0]
+	app.game.new_run(combo.heroes, 42)
+	app.game.enter_node(0)
+	app.game.run.combat.hand = combo.cards.map(func(id): return {"id": id, "upgraded": false})
+	app.game.run.combat.energy = 9
+	app.continue_run()
+	await process_frame
+	app.animate_combat_action(-1, 0, combo.id)
+	var effects = app.layer.get_children().filter(func(node): return node.get_script() == preload("res://src/presentation/card_ash.gd"))
+	check(effects.size() == 2 and app.game.run.combat.hand.is_empty(), "synergy consumes and animates both cards")
+	while app.combat_busy: await process_frame
+	check(effects.all(func(effect): return not is_instance_valid(effect)), "ash effects cleaned after animation")
+	app.game.new_run(["warrior", "guardian"], 42)
+	app.game.enter_node(0)
+	var defense_id = ""
+	for id in app.game.content.cards:
+		var data = app.game.content.cards[id]
+		if data.owner == "warrior" and data.block > 0 and data.damage == 0 and data.poison == 0:
+			defense_id = id
+			break
+	app.game.run.combat.hand = [{"id": defense_id, "upgraded": false}]
+	app.game.run.combat.energy = 9
+	app.continue_run()
+	await process_frame
+	app.animate_combat_action(0, app.game.valid_targets(0)[0])
+	var defense = app.layer.get_node_or_null("HeroCutIn")
+	check(defense != null and defense.action == "defense", "blocking card uses defensive illustration")
+	check(app.game.run.heroes[0].block > 0, "block committed before defense cut-in")
+	while app.combat_busy: await process_frame
 	print("PRESENTATION CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

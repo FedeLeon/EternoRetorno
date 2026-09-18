@@ -1,0 +1,42 @@
+{
+  "method": "Copias sin editar de ilustraciones aportadas por el usuario. Efectos y movimiento generados por Godot; sin generacion de imagenes adicional.",
+  "reference": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/conceptosAtaques.png",
+  "assets": [
+    {
+      "hero": "warrior",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/guerreroComic.png",
+      "asset": "assets/comic/warrior.png",
+      "sha256": "9c224bc1036ffd12ca3c1565a97e24486ca69c86b3d2a0f4de9645eed0377570"
+    },
+    {
+      "hero": "guardian",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/guardianaComic.png",
+      "asset": "assets/comic/guardian.png",
+      "sha256": "af6ca922d2b7143933e014a0114ab3a2ee638211cc3146caccd318c6d70195f3"
+    },
+    {
+      "hero": "rogue",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/picaroComic.png",
+      "asset": "assets/comic/rogue.png",
+      "sha256": "62ba9d2c7da035b9e120c96b2fa8ce86f9d95413c663976366b272ab93d173b6"
+    },
+    {
+      "hero": "mage",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/magaComic.png",
+      "asset": "assets/comic/mage.png",
+      "sha256": "d552cd17d9e3b52c1045b311e8bf2a8cfbd7153620eb6bcccb18f2bb86bf950a"
+    },
+    {
+      "hero": "cleric",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/clerigaComic.png",
+      "asset": "assets/comic/cleric.png",
+      "sha256": "7cfecdd4281388c2881188df419a130f2d5e74658257b2b6436cd8214de29346"
+    },
+    {
+      "hero": "ranger",
+      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/exploradorComic.png",
+      "asset": "assets/comic/ranger.png",
+      "sha256": "14a81b998291a854f408dee7663e010a7d86de085d1dd3cf4f832d32d795e4d3"
+    }
+  ]
+}

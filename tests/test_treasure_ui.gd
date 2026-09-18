@@ -29,7 +29,7 @@ func run_tests() -> void:
 	app.game = Game.new("user://unused-treasure-ui.save", false)
 	root.add_child(app)
 	app.game.new_run(["warrior", "cleric"], 42)
-	app.game.run.current = 2
+	app.game.run.current = 0
 	app.game.enter_node(3)
 	app.game.run.treasure.trapped = false
 	app.continue_run()
@@ -54,7 +54,7 @@ func run_tests() -> void:
 	await click(Vector2(640, 560))
 	await process_frame
 	check(app.screen == "map", "continue returns to map")
-	app.game.run.current = 2
+	app.game.run.current = 0
 	app.game.enter_node(3)
 	app.game.run.treasure.trapped = true
 	app.game.run.heroes[0].hp = 2

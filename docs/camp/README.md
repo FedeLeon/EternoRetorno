@@ -39,3 +39,19 @@ No se compiló APK ni se probó este cambio en Android.
 Selección usa ahora `selection_screen.gd` y la barra común del campamento con
 «Elegí tus personajes · El fuego nos reúne». Volver lleva al campamento.
 Panel inferior y botón de reliquia con assets nuevos: [botones](../ui_buttons/README.md).
+
+## Preparación nueva y selección con resplandor — 18/09/2026
+
+Cada entrada a Nueva aventura comienza sin pareja ni reliquia. `open_selection`
+limpia las variables de preparación y elimina el borrador legado del perfil,
+sin alterar la aventura activa. Elegir héroes/reliquia ya no guarda un borrador;
+volver desde reliquias conserva la pareja de esta preparación en memoria.
+
+`selection_screen.gd` reemplaza el borde amarillo por el shader compartido
+de `target_glow.gd`, detrás del héroe elegido. La barra inferior conserva
+el contador y los botones, sin repetir nombres. Los nombres debajo de cada
+héroe y su marca de selección permanecen.
+
+Prueba local renderizada: campamento 47 comprobaciones, incluidas las 15 parejas;
+reliquias 48, incluido descarte del borrador legado y retorno a personajes,
+sin fallos. Revisión visual Linux 1280×720. Sin exportar APK/Web ni dispositivo.

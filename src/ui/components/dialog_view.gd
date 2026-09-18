@@ -2,6 +2,9 @@ extends RefCounted
 # UI only: callers own navigation and persistence.
 static func build(ui: Control, title: String, text: String, actions: Array) -> Control:
 	var overlay = Control.new()
+	# Above raised cards, their cost digits and arena effects, including the dimmer.
+	overlay.z_as_relative = false
+	overlay.z_index = 200
 	ui.add_child(overlay)
 	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var dim = ColorRect.new()

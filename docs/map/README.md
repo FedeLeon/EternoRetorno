@@ -53,3 +53,50 @@ Retirado el saldo del mapa: solo es visible en campamento y edificios.
 no muestra saldo ni icono de almas; su eliminación ya estaba implementada.
 Prueba local renderizada `test_map.gd`: 21 comprobaciones sin fallos y revisión
 visual a 1280×720. Captura temporal retirada; sin exportar APK/Web.
+
+## Mapa completo y grupo desplegable — 18/09/2026
+
+El mapa ocupa 1280×720. Se reutiliza la zona izquierda del fondo existente
+a todo el ancho, sin división fija, y se amplía horizontalmente el recorrido.
+El título queda centrado en la vista completa. IDs, rutas y disponibilidad
+de salas permanecen intactos.
+
+`src/ui/components/map_group_drawer.gd` presenta héroes/PV, equipo mejorado,
+reliquias iniciales y halladas y acceso al mazo. Comienza cerrado; la pestaña
+se desliza con el panel desde la derecha hacia la izquierda en 0,28 s y permite
+cerrarlo nuevamente. El panel intercepta clics sobre las salas que cubre;
+el menú superior permanece accesible. No guarda estado ni modifica la aventura.
+
+Pestaña: `assets/map/group_tab.png`, icono de tres aventureros sobre tablón
+generado con image_gen integrado. [Prompt y procedencia](group-tab.json).
+
+Validación actual: `test_map.gd`, 25 comprobaciones sin fallos; apertura/cierre,
+intercepción de clics, acceso al mazo, rutas, jefe y reliquias legadas.
+Revisión renderizada Linux a 1280×720, panel abierto/cerrado. Capturas temporales
+eliminadas. Sin exportar APK/Web ni verificar en dispositivo.
+
+## Papiro y recorrido ampliado — 18/09/2026
+
+Nuevas aventuras: 28 salas y 18 salas por ruta, con cinco bifurcaciones de
+tres opciones que vuelven a unirse (243 rutas completas). Distribución:
+13 combates normales, cuatro eventos, dos tesoros, seis descansos, dos élites
+y guardián. El primer élite es opcional; todas las rutas pasan por el segundo,
+un descanso final y el guardián. Hay combates dobles en salas 11 y 16; los
+otros normales tienen un enemigo. Los descansos compensan la duración adicional.
+
+`data/dungeon_floor1.json` define tipos, conexiones, posiciones y cantidad de
+enemigos. `dungeon.gd` genera encuentros con la semilla y guarda las posiciones
+en cada nodo. Aventuras antiguas conservan su grafo de 12 salas; los nodos sin
+posición usan las coordenadas legadas. No se migra una aventura en curso.
+
+Fondo de papiro y seis iconos minimalistas de tinta sepia/pixel art en
+`assets/map/minimal/`, generados con image_gen integrado.
+[Prompts y procedencia](minimal-assets.json). El mapa mantiene pestaña de grupo,
+menú, acceso a salas disponibles y escalera habilitada tras ganar al guardián.
+
+Validación local: reglas generales 155, recorrido/compatibilidad 66, mapa UI 41,
+tesoro 22 y tesoro UI 8, sin fallos. Se verifican las 243 rutas y el guardado
+legado. Simulación de 45 aventuras: 41 victorias; las 15 parejas ganan al menos
+una, usando mazo inicial y omitiendo recompensas. No equivale a una validación
+manual exhaustiva del balance. Revisión visual Linux 1280×720; sin exportar
+APK/Web ni probar en dispositivo. Capturas temporales eliminadas.

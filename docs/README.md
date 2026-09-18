@@ -1,10 +1,10 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **17/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **18/09/2026**.
 
 ## Estado actual
 
-Prototipo de un piso, seis clases y parejas de dos héroes. Campamento inicial,
+Prototipo de un piso de 28 salas, seis clases y parejas de dos héroes. Campamento inicial,
 selección alrededor de la fogata, equipamiento previo, mapa en espiral, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
@@ -12,7 +12,8 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
-- Cartas: seis marcos por clase e ilustraciones minimalistas asignadas por ID.
+- Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
+  ataque/defensa e ilustraciones minimalistas asignadas por ID.
 - Equipamiento: ocho reliquias disponibles, una sola elegida por pareja que beneficia a ambos héroes; ocho consumibles.
 - Actores: seis héroes y 56 enemigos con sprites de 128×128; seis enemigos activos
   con ciclos nuevos de ocho poses y ataques diferenciados.
@@ -28,6 +29,9 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 La APK existente corresponde a una entrega anterior. Los cambios recientes se
 probaron localmente; **no se exporta una APK por cada cambio**. La validación
 Android histórica no certifica la interfaz actual.
+
+Auditoría del 18/09: [limpieza y separación de módulos](cleanup/2026-09-18.md),
+con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 ## Guías por sistema
 
@@ -58,6 +62,8 @@ Android histórica no certifica la interfaz actual.
 | Barra, reliquias, orbe y dígitos gráficos | [HUD de combate](hud/README.md) |
 | Cofres, premios y trampas | [Tesoros](treasure/README.md) |
 | Mapa ilustrado, grupo y reliquias | [Mapa](map/README.md) |
+| Elección de carta tras la batalla | [Recompensas](reward/README.md) |
+| Primeros planos de ataque en cómic | [Cómic](comic/README.md) |
 | Distribución actual del combate | [Mazmorra](dungeon/README.md) |
 
 Las carpetas de cada sistema contienen sus prompts y fuentes generadas.

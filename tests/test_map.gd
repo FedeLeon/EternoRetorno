@@ -18,10 +18,10 @@ func click(point: Vector2) -> void:
 		event.position = point
 		root.push_input(event)
 	await process_frame
-func shot() -> void:
+func shot(file: String = "initial") -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("map/initial.png"))
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("map/" + file + ".png"))
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
 	app = load("res://main.tscn").instantiate()
@@ -34,19 +34,37 @@ func run_tests() -> void:
 	await process_frame
 	var view = app.layer.get_node("MapScreen")
 	check(view.relics.size() == 2 and view.relics[0].name == "Amuleto Vital", "equipped and found relics shown")
-	check(view.get_node("Hero0").size.y > 80 and view.get_node("Health0") != null, "larger actor with health")
+	check(view.get_node("GroupDrawer/Hero0").size.y > 80 and view.get_node("GroupDrawer/Health0") != null, "larger actor with health")
 	check(not view.has_node("Descend"), "stairs hidden before boss victory")
-	for i in range(12):
+	for i in range(28):
 		check(view.get_node("Room%d" % i).disabled == (i != 0), "only reachable rooms enabled")
 	var before = app.game.run.duplicate(true)
 	await shot()
-	await click(Vector2(383, 407))
+	await click(view.get_node("Room27").get_global_rect().get_center())
 	check(app.screen == "map" and app.game.run == before, "unreachable boss click has no effect")
-	await click(Vector2(832, 667))
+	var drawer = view.get_node("GroupDrawer")
+	check(not drawer.opened and drawer.position.x == 1280, "group starts collapsed")
+	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await create_timer(0.35).timeout
+	check(drawer.opened and drawer.position.x == 770, "group slides left")
+	await shot("group-open")
+	var covered = view.get_node("Room13")
+	covered.disabled = false # Test input interception independently of route rules.
+	var received: Array = []
+	view.room_requested.connect(func(id): received.append(id))
+	await click(covered.get_global_rect().get_center())
+	check(received.is_empty() and app.game.run == before, "drawer blocks covered map")
+	covered.disabled = true
+	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await create_timer(0.35).timeout
+	check(not drawer.opened and drawer.position.x == 1280, "tab closes group")
+	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await create_timer(0.35).timeout
+	await click(drawer.get_node("Deck").get_global_rect().get_center())
 	check(app.screen == "deck" and app.game.run == before, "deck asset opens without changing run")
 	app.back()
 	await process_frame
-	await click(Vector2(152, 563))
+	await click(app.layer.get_node("MapScreen/Room0").get_global_rect().get_center())
 	check(app.screen == "combat" and app.game.run.current == 0, "room art click enters available encounter")
 	app.game.run.phase = "map"
 	app.game.run.current = 0

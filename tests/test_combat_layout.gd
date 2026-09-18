@@ -52,6 +52,14 @@ func run_tests() -> void:
 	check(selected.global_position.y == 358 and selected.global_position.y + selected.size.y <= 720, "Selected card fully visible")
 	check(selected.get_node("IllustrationSpace").position.x == 18, "Illustration has side margins")
 	await shot("selected-card")
+	app.pause_menu()
+	await process_frame
+	check(not app.overlay.z_as_relative and app.overlay.z_index > selected.z_index + selected.get_node("CostNumber").z_index, "Pause covers raised card and energy digits")
+	await shot("pause-selected")
+	await click(selected.get_global_transform() * Vector2(55, 45))
+	check(app.selected_card == index and is_instance_valid(app.overlay), "Modal blocks clicks on underlying card")
+	await click(app.overlay.get_node("DialogAction1").get_global_rect().get_center())
+	check(not is_instance_valid(app.overlay) and app.selected_card == index, "Return closes menu and preserves selection")
 	var energy_before = app.game.run.combat.energy
 	app.game.run.combat.energy = 0
 	app.selected_card = -1

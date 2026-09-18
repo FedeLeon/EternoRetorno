@@ -12,6 +12,20 @@ static func attach(card: Control, data: Dictionary) -> void:
 		var bounds = shield.atlas.get_image().get_region(cell).get_used_rect()
 		shield.region = Rect2(cell.position + bounds.position, bounds.size)
 		icons.append(shield)
+	if icons.is_empty(): return
+	var width = 12 + icons.size() * 24
+	var pill = Panel.new()
+	pill.name = "CardTypePill"
+	pill.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	pill.position = Vector2(12, card.size.y - 29)
+	pill.size = Vector2(width, 24)
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color("242127")
+	style.border_color = Color("a58d64")
+	style.set_border_width_all(1)
+	style.set_corner_radius_all(8)
+	pill.add_theme_stylebox_override("panel", style)
+	card.add_child(pill)
 	for i in range(icons.size()):
 		var icon = TextureRect.new()
 		icon.name = "CardType%d" % i
@@ -19,7 +33,7 @@ static func attach(card: Control, data: Dictionary) -> void:
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		icon.position = Vector2(52 + i * 32, 14)
-		icon.size = Vector2(27, 27)
+		icon.position = pill.position + Vector2(6 + i * 24, 1)
+		icon.size = Vector2(22, 22)
 		card.add_child(icon)
 

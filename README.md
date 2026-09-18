@@ -60,7 +60,7 @@ la mano, los enemigos, las intenciones y las recompensas pendientes.
 | --- | --- |
 | Clases | Guerrero, guardiana, pícaro, maga, clériga, explorador |
 | Cartas | 24 básicas y 6 desbloqueables; 6 instancias iniciales por personaje |
-| Mapa | 12 salas con conexiones dirigidas en espiral; 9 salas en cada ruta |
+| Mapa | 28 salas, cinco bifurcaciones de tres opciones; 18 salas por ruta y dos élites posibles |
 | Enemigos | 4 comunes, Esqueleto guardián (élite), Autómata roto (jefe); 50 sprites reservados |
 | Eventos | Pozo, altar y biblioteca |
 | Reliquias de grupo | Ascua, colmillo, cáliz y reloj desbloqueable |

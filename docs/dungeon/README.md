@@ -113,3 +113,17 @@ Pruebas locales de esta revisión: distribución 38 y HUD 92 sin fallos (ajustad
 la expectativa antigua de escala). Revisión renderizada Linux de las seis clases
 en tres parejas; capturas temporales retiradas. Sin exportación APK/Web ni pruebas
 nuevas en navegador, emulador o dispositivo físico.
+
+## Separación de responsabilidades — 18/09/2026
+
+La composición de combate vive ahora en `src/ui/screens/combat_screen.gd`;
+`src/ui/combat_flow.gd` coordina acciones y animaciones. `main.gd` delega y el
+guardado continúa ocurriendo antes de animar.
+
+Validación: batería local completa de 30 scripts aprobada.
+[Detalle de la auditoría](../cleanup/2026-09-18.md).
+
+## Primeros planos de ataque — 18/09/2026
+
+Las cartas ofensivas válidas presentan una viñeta del héroe antes de la animación
+del actor. [Comportamiento, límites y pruebas](../comic/README.md).

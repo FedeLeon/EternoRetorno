@@ -541,46 +541,10 @@ func effective_card(instance: Dictionary) -> Dictionary:
 	return c
 
 func item_targets(id: String) -> Array:
-	if run.is_empty() or run.phase != "combat" or not content.items.has(id) or run.get("inventory", {}).get(id, 0) <= 0:
-		return []
-	var target = content.items[id].target
-	if target == "team":
-		return [0]
-	var result: Array = []
-	if target == "enemy":
-		for i in range(run.combat.enemies.size()):
-			if run.combat.enemies[i].hp > 0:
-				result.append(i)
-	else:
-		for i in range(run.heroes.size()):
-			var hero = run.heroes[i]
-			if target == "fallen" and hero.hp <= 0:
-				result.append(i)
-			elif hero.hp > 0 and (target == "living" or (target == "caster" and hero.id in ["mage", "cleric"])):
-				result.append(i)
-	return result
+	return preload("res://src/rules/items.gd").targets(self, id)
 
 func use_item(id: String, target: int) -> bool:
-	if target not in item_targets(id):
+	if not preload("res://src/rules/items.gd").apply(self, id, target):
 		return false
-	var item = content.items[id]
-	var value = int(item.value)
-	match item.effect:
-		"energy": run.combat.energy += value
-		"draw": _draw(value)
-		"poison": run.combat.enemies[target].poison += value
-		"heal": run.heroes[target].hp = mini(run.heroes[target].max_hp, run.heroes[target].hp + value)
-		"block": run.heroes[target].block += value
-		"strength": run.heroes[target].turn_strength = int(run.heroes[target].get("turn_strength", 0)) + value
-		"magic": run.heroes[target].turn_magic = int(run.heroes[target].get("turn_magic", 0)) + value
-		"revive":
-			run.heroes[target].hp = maxi(1, int(ceil(run.heroes[target].max_hp * value / 100.0)))
-			var inactive = run.combat.inactive
-			for i in range(inactive.size() - 1, -1, -1):
-				if owner_index(inactive[i]) == target:
-					run.combat.discard.append(inactive[i])
-					inactive.remove_at(i)
-	run.inventory[id] -= 1
-	_log("Usaste " + item.name + ".")
 	checkpoint()
 	return true

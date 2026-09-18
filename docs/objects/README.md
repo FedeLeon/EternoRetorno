@@ -144,3 +144,28 @@ reliquia seleccionada. No cambia la selección compartida ni el guardado.
 
 Retirado también el subtítulo «Elegí una sola reliquia para ambos héroes…»
 (17/09/2026). Se conserva el título de la barra superior.
+
+## Valhalla y preparación temporal — 18/09/2026
+
+La selección de reliquias usa `assets/equipment/valhalla.png`: nubes, columnas
+y ornamentos laterales. Iniciar aventura incluye `assets/equipment/door.png`
+como icono de entrada de mazmorra junto al texto. Recursos creados con image_gen
+integrado; [prompts y procedencia](../equipment/assets-2026-09-18.json).
+
+La preparación ahora vive solo en memoria. Nueva aventura vacía pareja/reliquia
+y retira `profile.preparation` antiguo; Volver a personajes conserva la elección
+actual. Las aventuras guardadas conservan sus héroes y reliquia. Sustituye el
+comportamiento histórico de restaurar el borrador descrito arriba.
+
+Validación actual: reliquias UI 48 comprobaciones sin fallos, recorrido selección,
+reliquia, retorno e inicio; revisión visual Linux del fondo y puerta. Campamento
+47 comprobaciones sin fallos. Sin exportar APK/Web ni probar en dispositivo.
+
+## Separación de responsabilidades — 18/09/2026
+
+Los objetivos y efectos de consumibles viven ahora en `src/rules/items.gd`.
+`game.gd` conserva la interfaz pública y guarda únicamente tras una aplicación
+válida; no cambiaron valores ni formato de inventario.
+
+Validación: batería local completa de 30 scripts aprobada.
+[Detalle de la auditoría](../cleanup/2026-09-18.md).

@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-18",
+  "tool": "image_gen built-in",
+  "reference": "/home/fede/Escritorio/EternoRetornoConceptArt/cartas.png",
+  "assets": [
+    {
+      "file": "assets/cards/frames/warrior.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-2bf5a98f-6190-4060-95d9-f3ca44d0862a.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. muted crimson red, upright sword emblem. Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    },
+    {
+      "file": "assets/cards/frames/guardian.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-53bb4bd3-76f5-4c5f-a2b3-d3f652c4ad2b.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. muted teal turquoise, heraldic shield emblem. Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    },
+    {
+      "file": "assets/cards/frames/rogue.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-f95b81e1-cb63-4c67-9ed0-53f4d3d04b2e.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. muted olive green, crossed daggers emblem (NOT guns). Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    },
+    {
+      "file": "assets/cards/frames/cleric.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-84542011-1819-44c5-8189-0762a134c38a.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. antique gold ochre, radiant cross emblem. Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    },
+    {
+      "file": "assets/cards/frames/ranger.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-fca2b7a5-03e7-495d-b4c3-769c1fea4bf9.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. muted slate blue, eye and arrow compass emblem. Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    },
+    {
+      "file": "assets/cards/frames/mage.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-b19f4fc7-511b-42d0-aa2b-27c8af308981.png",
+      "prompt": "Use case: ui-mockup. Create ONE isolated empty playable card frame for Eterno Retorno, closely matching the supplied reference's blank class card frames. muted violet purple, crescent moon emblem. Portrait 2:3 aspect ratio. Real transparent exterior. Frame fills canvas with only 2% outer transparent padding. Dark distressed pixel art gothic metal, restrained ornamentation exactly like reference, NOT elaborate filigree. Centered class emblem protrudes at top occupying top 8%. Blank parchment title strip at y=12%-23%, circular empty cost medallion upper RIGHT centered x=87%,y=16%. Dark empty rectangular illustration well x=10%-90%,y=27%-61%. Large blank parchment description panel x=10%-90%,y=65%-94%. Thin worn colored borders, small corner ornaments. No text, no numbers, no illustration, no watermark. Front flat orthographic UI asset. All six class variants must use this identical geometry."
+    }
+  ]
+}

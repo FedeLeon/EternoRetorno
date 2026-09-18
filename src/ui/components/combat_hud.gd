@@ -15,6 +15,7 @@ signal relic_requested(index: int)
 var relics: Array = []
 var turn = 1
 var energy = 3
+var show_energy = true
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -42,6 +43,8 @@ func _ready() -> void:
 	place(title, Rect2(1134, 12, 65, 40))
 	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_number(turn, Rect2(1200, 16, 68, 32), "TurnNumber")
+	if not show_energy:
+		return
 	var orb = TextureRect.new()
 	orb.name = "EnergyOrb"
 	var flow = ShaderMaterial.new()

@@ -575,3 +575,163 @@ no se atribuyen horas ni fechas de compilación que no estén verificadas.
 - Prueba local renderizada `test_forge_ui.gd`: 46 comprobaciones, cero fallos;
   campamento revisado visualmente a 1280×720. Capturas temporales retiradas.
 - Sin exportaciones APK/Web ni validación en dispositivo.
+
+## Cartas según concepto y saldo de pruebas — 18/09/2026
+
+- Seis marcos nuevos con emblemas; verde adaptado al pícaro y turquesa con
+  escudo para la guardiana. Coste superior derecho y pastilla inferior derecha
+  de espada/escudo; ilustraciones y efectos existentes conservados.
+- Presentación extraída de main a `ui/components/card_view.gd`. Assets y
+  prompts en `assets/cards/frames/` y `docs/cards/frames/provenance.json`.
+- Saldo del perfil local fijado en 100.000 almas mediante ejecución explícita
+  de `scripts/set_test_souls.gd`; aventura conservada y lectura posterior
+  verificada. No modifica saldos de partidas Web ni reinicia el saldo al abrir.
+- Validación actual: distribución 38, presentación 10 y mercado 34, sin fallos.
+  Revisión visual Linux de combate, mercado y seis clases. Capturas retiradas.
+  Sin compilar/exportar APK/Web ni probar en dispositivo.
+
+## Cartas que se convierten en cenizas — 18/09/2026
+
+- Desintegración procedural del contenido completo al jugar una carta; borde
+  de brasa y cenizas ascendentes. También para ambas cartas de una sinergia.
+- Componente `presentation/card_ash.gd` y shader `assets/shaders/card_ash.gdshader`;
+  integración posterior a resolución/guardado, sin alterar daño ni descarte.
+- Presentación renderizada: 12 comprobaciones sin fallos y captura intermedia
+  revisada en Linux. Capturas temporales eliminadas. Sin exportar APK/Web.
+
+Prueba adicional headless: 14 comprobaciones sin fallos, incluyendo consumo
+y animación de ambas cartas de sinergia, rechazo sin energía y limpieza del efecto.
+
+## Mano más separada y pastilla izquierda — 18/09/2026
+
+- Paso de cartas 160 px en lugar de 132, zona de mano ampliada y extremos
+  elevados ligeramente para ver costes y pastillas dentro de la pantalla.
+- Pastilla de espada/escudo en borde inferior izquierdo; dígitos del coste
+  sobre el solapamiento. Archivos: `hand_layout.gd`, `card_type_icons.gd`,
+  `card_view.gd` y coordinación en `main.gd`.
+- Distribución: 38 comprobaciones sin fallos y revisión visual Linux 1280×720.
+  Capturas eliminadas. Sin exportar APK/Web ni probar en dispositivo.
+
+## Carta seleccionada sin recuadro — 18/09/2026
+
+`src/ui/components/card_view.gd` usa estilos vacíos en todos los estados del
+botón para retirar el rectángulo amarillo exterior, incluido el foco.
+Se conservan el marco ilustrado, el tamaño ampliado y la elevación al seleccionar.
+Validación actual: 38 comprobaciones de distribución sin fallos y revisión
+renderizada de la carta seleccionada en Linux a 1280×720. Capturas temporales
+eliminadas; sin exportar APK/Web ni verificar en dispositivo.
+
+## Menú por encima de la mano — 18/09/2026
+
+`dialog_view.gd` coloca el diálogo completo, incluido el oscurecimiento, en
+z absoluto 200, por encima de cartas seleccionadas (10), dígitos y efectos
+del combate (hasta 100). No cambia la selección al abrir/cerrar el menú.
+Validación local actual: 41 comprobaciones de distribución sin fallos; incluye
+abrir el menú con carta seleccionada, bloqueo de clics sobre la carta y Volver
+conservando la selección. Revisión renderizada Linux a 1280×720; capturas
+temporales eliminadas. Sin exportar APK/Web ni probar en dispositivo.
+
+## Edificios sin recuadro y cartel del mercado arriba — 18/09/2026
+
+`main.gd::camp_hotspot` usa StyleBoxEmpty para normal, hover, pulsado, foco
+y deshabilitado, retirando el rectángulo amarillo sobre los edificios.
+La opción `caption_above` coloca el tablón encima y extiende hacia arriba
+el área de clic. `base_camp_screen.gd` la activa para el mercado construido;
+el solar sin construir conserva el cartel inferior. El mercado queda rotulado
+sobre el tejado y separado de la herrería. Se conserva el asset de madera.
+
+Validación actual: `test_forge_ui.gd`, 46 comprobaciones sin fallos, incluyendo
+clics en ambos carteles. Revisión visual Linux a 1280×720. Capturas temporales
+eliminadas. Sin exportar APK/Web ni probar en dispositivo.
+
+## Preparación sin selección anterior y Valhalla — 18/09/2026
+
+- Nueva aventura vacía pareja/reliquia; borrador legado retirado sin cambiar
+  partidas activas. Preparación en memoria y retorno interno conservado.
+- Héroes elegidos con resplandor detrás, sin rectángulo; barra inferior sin nombres.
+- Fondo de reliquias Valhalla e icono de puerta en Iniciar aventura, generados
+  con image_gen. Assets en `assets/equipment/`, prompts en `docs/equipment/`.
+- Campamento 47 y equipamiento UI 48 comprobaciones sin fallos; revisión visual
+  Linux 1280×720. Capturas temporales retiradas. Sin exportar APK/Web ni dispositivo.
+
+## Mapa completo y pestaña del grupo — 18/09/2026
+
+- Fondo y recorrido ampliados a toda la vista. Información del grupo extraída
+  a `map_group_drawer.gd`, panel deslizante desde el borde derecho, cerrado
+  inicialmente, con PV, reliquias y mazo.
+- Asset de pestaña con tres aventureros en `assets/map/group_tab.png`; generado
+  con image_gen, procedencia y prompt en `docs/map/group-tab.json`.
+- Pruebas del mapa: 25 sin fallos; revisión visual Linux abierto/cerrado.
+  Capturas temporales retiradas. Sin exportar APK/Web ni probar en dispositivo.
+
+## Primera mazmorra extendida sobre papiro — 18/09/2026
+
+- 28 salas, cinco bifurcaciones de tres caminos y 243 rutas de 18 salas.
+  13 combates, cuatro eventos, dos tesoros, seis descansos, élite opcional,
+  segundo élite obligatorio y guardián. Ajustados descansos y encuentros
+  dobles tras detectar derrotas excesivas de algunas parejas en el recorrido largo.
+- Grafo/posiciones/encuentros declarados en `data/dungeon_floor1.json`;
+  nuevas posiciones guardadas por nodo y fallback para aventuras de 12 salas.
+- Papiro e iconos sepia minimalistas en `assets/map/minimal/`, generados con
+  image_gen. Prompts y procedencia en `docs/map/minimal-assets.json`.
+- Pruebas finales: reglas 155, recorrido/guardado legado 66, mapa 41, tesoros 22
+  y tesoro UI 8, sin fallos. Simulaciones: 41/45 victorias, al menos una por
+  cada pareja. Revisión visual Linux 1280×720; sin exportar APK/Web ni dispositivo.
+
+## Limpieza y arquitectura — 18/09/2026
+
+- Retirados 15 archivos obsoletos (~8,6 MiB): mapa anterior, botones reemplazados
+  y metadatos de imágenes Web exportadas. Conservadas pruebas útiles y fuentes.
+- Extraídos `ui/screens/combat_screen.gd`, `ui/combat_flow.gd` y `rules/items.gd`;
+  `main.gd` baja a 702 líneas y `game.gd` a 550. Interfaces y guardado conservados.
+- Arquitectura actual abreviada; narrativa anterior en `architecture/EVOLUCION.md`.
+  Pendiente continuar extrayendo pantallas y reducir dependencia del controlador.
+- Presets excluyen recursos de desarrollo; `TestWeb/.gdignore` evita reimportarlos.
+- Validación de este cambio: importación local y 30/30 pruebas automatizadas;
+  revisión visual local de reliquias/cenizas. Capturas temporales eliminadas.
+  Sin exportar APK/Web ni probar emulador/dispositivo.
+- [Inventario, criterios y próximos pasos](cleanup/2026-09-18.md).
+
+## Primeros planos de ataque — 18/09/2026
+
+- Seis concepts individuales integrados sin editar en `assets/comic/`.
+- `presentation/hero_cut_in.gd`: viñeta breve con movimiento, líneas de velocidad
+  y color por héroe; invocada desde `ui/combat_flow.gd` tras confirmar el ataque.
+- Reglas, guardados y sprites conservados. Defensa/curación y sinergias mantienen
+  sus efectos previos. Una pose por héroe; equipo de herrería no cambia esta imagen.
+- Pruebas locales de ciclo de vida y presentación de combate; revisión visual
+  local. Sin APK/Web ni dispositivo. [Detalle y procedencia](comic/README.md).
+
+## Cómic transparente y ajuste de cartas — 18/09/2026
+
+- Apariciones sin banda ni oscurecimiento, ancladas abajo a la izquierda sobre
+  escenario y HUD. `presentation/hero_cut_in.gd` conserva duración y capas.
+- Centro del coste específico por marco en `card_view.gd`; pastilla e iconos
+  agrandados en `card_type_icons.gd`. Sin cambios de reglas o guardado.
+- Prueba renderizada de los seis cómics y anclaje; 41 comprobaciones de layout
+  aprobadas; revisión visual de galería de seis clases y cómic sobre mazmorra.
+  Capturas temporales retiradas. Sin exportar APK/Web ni probar dispositivo.
+
+## Recompensa y contadores del mazo — 18/09/2026
+
+- Contadores retirados del escenario y trasladados al visor del mazo en combate.
+- Pantalla `ui/screens/reward_screen.gd` extraída: cartas de 414 px de alto, sin
+  héroes animados encima, barra superior compartida y fondo oscuro con energía.
+- Asset `assets/reward/background.png` generado con imagegen; prompt/procedencia
+  en `docs/reward/background.json`. Bolsa vuelve a la recompensa con texto Volver.
+- Prueba renderizada de recompensa sin fallos y 41 comprobaciones de layout
+  aprobadas; inspección visual local. Sin exportación ni pruebas en dispositivo.
+
+## Defensas en cómic — 18/09/2026
+
+- Generados seis PNG transparentes con poses defensivas propias de cada héroe
+  y su arma/escudo, usando el ataque existente como referencia de identidad.
+- Integrados en cartas de bloqueo sin daño/veneno; cartas mixtas conservan ataque.
+  Mismo primer plano inferior izquierdo y resolución/guardado antes de animar.
+- Recursos en `assets/comic/defense/`; prompts exactos en `docs/comic/defense.json`.
+- Sin exportación APK/Web ni prueba en dispositivo.
+
+Validación actual: prueba renderizada local de las 12 apariciones (ataque y
+defensa de seis héroes), anclaje y limpieza sin fallos; 17 comprobaciones de
+presentación de combate aprobadas. Inspección visual de los seis assets y
+del guerrero defensivo sobre la mazmorra. Sin APK/Web ni dispositivo.

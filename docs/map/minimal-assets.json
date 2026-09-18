@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen built-in",
+  "assets": [
+    {
+      "file": "assets/map/minimal/parchment.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-5b26059c-7e83-4166-9ea3-a1cf71a40324.png",
+      "prompt": "A full screen 16:9 ancient papyrus map background for dark fantasy pixel art game Eterno Retorno. Warm aged cream parchment, restrained worn curled edges, thin dark brown engraved medieval border, small faded compass ornament in corners, tiny dark gold flourishes. Entire center blank calm paper, no routes, no labels, no text, no symbols in center. Polished pixel art texture not photorealistic, readable light parchment without excessive noise. Horizontal usable canvas with narrow border, no table or surrounding scene."
+    },
+    {
+      "file": "assets/map/minimal/combat.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-82254349-a9ef-4559-aa60-1ad37fd47f86.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: two crossed short swords. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    },
+    {
+      "file": "assets/map/minimal/event.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-f7d3ff2a-5f20-4366-b1dd-656ddca4c85e.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: a question mark above a small four-point sparkle. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    },
+    {
+      "file": "assets/map/minimal/treasure.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-00e779ef-0c10-4dac-b19b-2df2f4074d33.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: a small closed treasure chest. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    },
+    {
+      "file": "assets/map/minimal/elite.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-1981b5c4-51a1-4050-8593-5ab472e313e6.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: a horned skull. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    },
+    {
+      "file": "assets/map/minimal/rest.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-9532b95c-a18a-4ea3-bbef-af902934b69d.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: a small campfire with two logs. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    },
+    {
+      "file": "assets/map/minimal/boss.png",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-201dad05-15b1-4312-a037-4822169789f8.png",
+      "prompt": "One minimalist map icon for Eterno Retorno pixel art medieval dark fantasy game: a crowned skull with a small pointed arch behind. Flat dark sepia nearly black ink silhouette with just 2 or 3 muted bronze highlight pixels, strong clear readable symbol at 40 pixels. Isolated centered on real transparent background, square composition almost filled by symbol. NO border NO plaque NO circle NO background NO text except question mark for event. Extremely simple chunky pixel art, not detailed illustration, cohesive icon set for an aged parchment map."
+    }
+  ]
+}

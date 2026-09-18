@@ -120,3 +120,89 @@ Referencia: https://docs.godotengine.org/en/stable/classes/class_fontfile.html
 Validación local: distribución 38 e interfaz 271, sin fallos. Revisión renderizada
 Linux a 1280×720 de texto inclinado. Capturas temporales eliminadas. Sin exportación
 APK/Web; legibilidad en navegador y dispositivos aún no comprobada en esta revisión.
+
+## Marcos fieles al concepto — 18/09/2026
+
+Seis nuevos marcos en `assets/cards/frames/`, generados con image_gen integrado
+a partir de `cartas.png`. [Prompts y procedencia](frames/provenance.json).
+Colores/emblemas: guerrero rojo/espada, guardiana turquesa/escudo, pícaro
+verde/dagas cruzadas, maga violeta/luna, clériga dorado/cruz y explorador azul/ojo.
+La referencia del pistolero se adapta al pícaro; no agrega otra clase.
+
+`src/ui/components/card_view.gd` presenta la carta completa: título sobre
+pergamino, coste arriba a la derecha, ilustración con márgenes, texto inferior
+y pastilla de espada/escudo (ambos si corresponde). Curación sin ataque ni
+bloqueo no muestra esa pastilla. Conserva MSDF, selección y elevación.
+`main.gd::card_panel` delega la presentación; reglas y persistencia no cambian.
+Los marcos antiguos siguen usados por las categorías del mercado.
+
+Validación local: distribución de combate 38, presentación 10 y mercado 34
+comprobaciones sin fallos. Revisión renderizada Linux 1280×720 de combate,
+mercado y galería de los seis héroes. `scripts/preview_cards.gd` permite repetir
+la galería sin tocar guardados. Capturas temporales eliminadas. Sin exportar
+APK/Web ni pruebas en navegador o dispositivo.
+
+## Desintegración al jugar — 18/09/2026
+
+Cada carta aceptada se desintegra de abajo hacia arriba en unos 0,85 segundos,
+con borde de brasa y partículas de ceniza ascendentes. Se captura la carta
+completa (marco, ilustración, textos y números) en un SubViewport y se aplica
+`assets/shaders/card_ash.gdshader`. Las partículas y el shader son procedurales,
+creados en código para este efecto; no usan imágenes generadas adicionales.
+
+`src/presentation/card_ash.gd` solo presenta y libera sus recursos. Main conserva
+los índices antes de resolver, guarda primero y anima después. Las jugadas
+rechazadas no producen cenizas; las sinergias animan las dos cartas consumidas.
+El descarte de fin de turno no activa el efecto. La interfaz espera su limpieza
+antes de reconstruir la pantalla. En headless se prueba el ciclo de vida sin GPU.
+
+Validación: presentación renderizada Linux, 12 comprobaciones sin fallos y
+revisión de captura durante la desintegración. Sin exportar APK/Web ni probar
+en dispositivo.
+
+Prueba adicional headless: 14 comprobaciones sin fallos, incluyendo consumo
+y animación de ambas cartas de sinergia, rechazo sin energía y limpieza del efecto.
+
+## Separación y pastilla izquierda — 18/09/2026
+
+`hand_layout.gd` aumenta el paso horizontal de 132 a 160 px. La zona de mano
+en `main.gd` ocupa x=100, ancho=1014; los márgenes internos se reducen para
+mostrar las seis cartas. Se conservan inclinación y elevación al seleccionar;
+los extremos suben 12 px para mantener visible la pastilla inferior izquierda.
+`card_type_icons.gd` sitúa la pastilla a 12 px del borde izquierdo.
+Los dígitos de coste de `card_view.gd` se dibujan por encima del solapamiento.
+
+Validación de este ajuste: 38 comprobaciones de distribución sin fallos,
+revisión renderizada Linux a 1280×720. Capturas temporales eliminadas.
+Sin exportar APK/Web ni comprobar en dispositivo.
+
+## Carta seleccionada sin recuadro — 18/09/2026
+
+`src/ui/components/card_view.gd` usa estilos vacíos en todos los estados del
+botón para retirar el rectángulo amarillo exterior, incluido el foco.
+Se conservan el marco ilustrado, el tamaño ampliado y la elevación al seleccionar.
+Validación actual: 38 comprobaciones de distribución sin fallos y revisión
+renderizada de la carta seleccionada en Linux a 1280×720. Capturas temporales
+eliminadas; sin exportar APK/Web ni verificar en dispositivo.
+
+## Menú por encima de la mano — 18/09/2026
+
+`dialog_view.gd` coloca el diálogo completo, incluido el oscurecimiento, en
+z absoluto 200, por encima de cartas seleccionadas (10), dígitos y efectos
+del combate (hasta 100). No cambia la selección al abrir/cerrar el menú.
+Validación local actual: 41 comprobaciones de distribución sin fallos; incluye
+abrir el menú con carta seleccionada, bloqueo de clics sobre la carta y Volver
+conservando la selección. Revisión renderizada Linux a 1280×720; capturas
+temporales eliminadas. Sin exportar APK/Web ni probar en dispositivo.
+
+## Costes por marco y pastilla mayor — 18/09/2026
+
+`card_view.gd::COST_CENTERS` define el centro normalizado del círculo de cada
+marco. Se conserva el del guerrero y se ajustan guardiana, pícaro, maga, clériga
+y explorador según su ilustración. El componente compartido aplica el ajuste
+a combate, mercado y demás vistas de cartas. No se modifica el valor del coste.
+`card_type_icons.gd`: pastilla de 24 px de alto (antes 20), iconos de 22 px
+(antes 18), paso de 24 px; conserva el borde inferior izquierdo y separación.
+
+Validación actual: 41 comprobaciones de distribución sin fallos y galería
+renderizada de seis héroes, ataque/defensa, a 1280×720. Sin exportar.

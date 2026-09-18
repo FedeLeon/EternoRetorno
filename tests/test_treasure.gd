@@ -15,7 +15,7 @@ func _initialize() -> void:
 	g.new_run(["warrior", "cleric"], 42)
 	check(g.run.inventory.is_empty(), "new run has empty inventory")
 	check(not g.take_treasure() and not g.leave_treasure(), "room actions require treasure")
-	g.run.current = 2
+	g.run.current = 0
 	g.enter_node(3)
 	var rolled = g.run.treasure.duplicate(true)
 	var saved_rng = g.rng.state
@@ -31,7 +31,7 @@ func _initialize() -> void:
 	check(g.leave_treasure() and not g.leave_treasure(), "acknowledge pending result once")
 	for trapped in [false, true]:
 		g.new_run(["warrior", "cleric"], 23)
-		g.run.current = 2
+		g.run.current = 0
 		g.enter_node(3)
 		g.run.treasure.trapped = trapped
 		g.run.heroes[0].hp = 2
@@ -42,7 +42,7 @@ func _initialize() -> void:
 		check(g.run.phase == "room" and g.run.treasure.opened, "result remains pending")
 	g.new_run(["warrior", "cleric"], 11)
 	g.run.inventory = {"healing_potion": 3}
-	g.run.current = 2
+	g.run.current = 0
 	g.enter_node(3)
 	g.run.treasure.item = "healing_potion"
 	g.run.treasure.trapped = false
@@ -52,7 +52,7 @@ func _initialize() -> void:
 	g = Game.new(SAVE, true)
 	check(g.run.inventory.healing_potion == 4, "old inventory survives loading")
 	g.leave_treasure()
-	g.run.current = 2
+	g.run.current = 0
 	g.enter_node(3)
 	g.run.treasure = "ember"
 	g.checkpoint()

@@ -32,7 +32,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 				hotspot.passthrough_areas.append(market_caption)
 			continue
 		if i == 0:
-			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market)
+			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market, profile.buildings.get("market", false))
 			continue
 		ui.camp_hotspot("Plot%d" % i, plots[i], "Solar %d · Sin construir" % (i + 1), func():
 			ui.show_modal("Solar disponible", "Aquí podrás construir un edificio para tu campamento.\nLas construcciones y sus ventajas todavía no están disponibles.", "Entendido", actions.close_modal))

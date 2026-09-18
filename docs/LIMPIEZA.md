@@ -1,4 +1,12 @@
-# Limpieza del proyecto — 16/09/2026
+# Limpieza del proyecto
+
+## Auditoría actual — 18/09/2026
+
+[Informe e inventario de archivos retirados](cleanup/2026-09-18.md): 15 archivos
+obsoletos, aproximadamente 8,6 MiB. Extracción de pantalla/flujo de combate y
+reglas de consumibles; 30/30 pruebas automatizadas aprobadas.
+
+## Registro histórico — 16/09/2026
 
 ## Criterio
 
