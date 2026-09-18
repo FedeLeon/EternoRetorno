@@ -173,3 +173,24 @@ visual por héroe entre cuatro texturas, fuera de persistencia y del RNG de
 juego. `combat_flow.gd` evita duplicar la introducción cuando reproduce recibos.
 Los 18 PNG nuevos y sus prompts viven en `assets/comic/attacks/` y
 `docs/comic/attacks/`, respectivamente. No se amplió `main.gd`.
+
+## Refugio y mazos iniciales — 18/09/2026
+
+Implementado: `rules/starter_decks.gd` valida repartos de básicas y compone
+mazos; `game.configure_starter` guarda mediante checkpoint y `new_run` toma
+la configuración del perfil. `ui/refuge_navigation.gd` prepara datos/callbacks;
+`ui/screens/refuge_screen.gd` mantiene el borrador de edición y galería;
+`ui/components/refuge_portrait.gd` encuadra los cómics existentes con AtlasTexture.
+El nuevo campo opcional `profile.starter_attacks` no cambia IDs ni versión
+de guardado ni el contenido de runs existentes. La pantalla no aplica reglas
+ni escribe guardados. Detalles en `docs/refuge/README.md`.
+
+## Carrera de héroes — 18/09/2026
+`presentation/hero_run.gd` registra ocho cuadros en los SpriteFrames de cada
+héroe y administra escala/inicio/fin; `combat_effects.leave_room` solo desplaza
+mientras se reproduce el bucle. `hero_equipment.gd` conserva esa animación al
+sustituir las acciones de equipo. Atlas finales pequeños separados en
+`assets/heroes/running`; fuentes, prompts e importador documentados en
+`docs/running/README.md`. Un ciclo visual por héroe compartido entre niveles
+de equipo; variantes específicas por nivel pendientes. Sin reglas/guardados
+en los componentes de presentación ni ampliación de main.gd.

@@ -117,3 +117,44 @@ No se generaron nuevos assets. `test_map.gd` adaptado a la pestaña fija:
 41 comprobaciones aprobadas con render Linux/llvmpipe a 1280×720;
 revisión visual abierto/cerrado y `git diff --check` sin problemas.
 Capturas temporales eliminadas; sin exportación ni prueba en dispositivo.
+
+
+## 18/09/2026 — Salas sin rótulos y fichas de papiro
+
+Se eliminan los nombres/números debajo de cada sala y los nombres de tipo del
+tooltip: este solo informa disponibilidad, visita o sala actual. Los iconos
+permiten descubrir los encuentros jugando. Los círculos se reemplazan por
+`assets/map/minimal/room_papyrus.png`, papiro cuadrado de 96×96 con transparencia,
+dibujado a 56×56 y teñido para contrastar con el fondo. Disponible: tinta intensa;
+pendiente: tinta atenuada; actual: papiro verdoso. Hover/foco aclaran la ficha.
+
+La flecha actual usa `current_room.svg`, sin glifos Unicode. Es hija de la ficha,
+con el mismo centro horizontal que su icono; no depende de métricas de fuente.
+Presentación en `src/ui/screens/map_screen.gd`; no cambian rutas, IDs ni guardados.
+[Prompt, fuente y procesamiento](room_papyrus.json); original en
+`docs/map/sources/room_papyrus.png`, fuera de los recursos finales.
+
+Validación de este cambio: `tests/test_map.gd`, **101 comprobaciones sin fallos**,
+ejecutadas localmente con render Linux/llvmpipe. Revisión visual a 1280×720 de
+la sala actual, papiros y ausencia de rótulos. Capturas temporales eliminadas.
+Sin exportación ni prueba Web/Android.
+
+
+## 18/09/2026 — Grupo compacto y mazo en la barra lateral
+
+Retirado «EL GRUPO». Las reliquias se presentan en una grilla de iconos de 64 px,
+sin efecto permanente a la vista. Las reliquias halladas antiguas sin icono en el
+catálogo conservan su nombre como acceso visible. Al tocar una se reutiliza
+`relic_popover.gd` con nombre, alcance y efecto, anclado encima del acceso.
+Tocar otra cambia el detalle; repetir, tocar fuera, desplazar la lista o cerrar
+Grupo lo cierra. Escape también cierra el detalle.
+
+Mazo usa el asset existente de tres cartas como segundo acceso fijo debajo de
+Grupo en `SideRail`, disponible con el panel abierto o cerrado. Se retira el
+acceso inferior y el contador del panel; la cantidad permanece en su tooltip.
+Cambios de presentación en `map_group_drawer.gd`, sin reglas ni guardados.
+
+Validación actual: `test_map.gd`, 105 comprobaciones sin fallos en Linux con
+render llvmpipe; clics de detalle, cambio/cierre de reliquia, navegación al mazo,
+rutas y panel. Revisión visual local a 1280×720. Sin exportar ni probar Web o
+Android; capturas temporales retiradas.

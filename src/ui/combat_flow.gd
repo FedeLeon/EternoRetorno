@@ -92,6 +92,8 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 	for i in range(before.size()):
 		var after = ui.game.run.heroes[i]
 		ui.hero_health[i].animate_to(after.hp)
+		if hand_index < 0 and synergy_id == "":
+			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
 		if after.hp < before[i].hp:
 			ui.flash_hit(ui.hero_art[i])
 		if ui.game.run.party[i] not in ui.ANIMATED_HEROES:

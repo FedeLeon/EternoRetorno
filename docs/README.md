@@ -22,6 +22,7 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
   por héroe, permanentes y aplicados al iniciar cada aventura. Otras construcciones pendientes.
+- Refugio: preparación persistente del mazo inicial por héroe; cambios solo para aventuras nuevas.
 - Cartas: 90 en total, 15 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
@@ -38,6 +39,8 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Tema | Documentación |
 | --- | --- |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
+| Carrera de héroes | [Sprites y ciclos](running/README.md) |
+| Refugio y preparación del mazo | [Refugio](refuge/README.md) |
 | Arquitectura actual, organización objetivo y límites entre módulos | [ARQUITECTURA.md](ARQUITECTURA.md) |
 | Limpieza y archivos temporales | [LIMPIEZA.md](LIMPIEZA.md) |
 | Historial y decisiones | [HISTORIAL.md](HISTORIAL.md) |

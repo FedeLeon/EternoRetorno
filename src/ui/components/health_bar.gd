@@ -9,6 +9,7 @@ var animating = false
 var elapsed = 0.0
 var fill: ColorRect
 var caption: Label
+var heart: TextureRect
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -23,12 +24,20 @@ func _ready() -> void:
 	add_child(fill)
 	caption = Label.new()
 	caption.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	caption.offset_left = 30
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	caption.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	caption.add_theme_font_size_override("font_size", 17)
 	caption.add_theme_color_override("font_color", Color("e0dbcf"))
 	caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(caption)
+	heart = TextureRect.new()
+	heart.name = "Heart"
+	heart.texture = preload("res://assets/ui/heart.svg")
+	heart.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	heart.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	heart.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(heart)
 	resized.connect(refresh)
 	refresh()
 
@@ -60,5 +69,7 @@ func _process(delta: float) -> void:
 		animation_finished.emit()
 
 func refresh() -> void:
+	heart.position = Vector2(4, (size.y - 24) / 2)
+	heart.size = Vector2(24, 24)
 	fill.size = Vector2(size.x * displayed_hp / float(maximum_hp), size.y)
 	caption.text = "%d / %d" % [displayed_hp, maximum_hp] if displayed_hp > 0 else "CAÍDO"

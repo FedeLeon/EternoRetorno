@@ -98,3 +98,15 @@ más clic final en Salir que termina el proceso con código 0. Se comprobaron
 opciones, volumen, persistencia, pantalla completa, navegación/continuación.
 Revisión visual 1280×720; captura temporal eliminada. Importación y diff
 correctos. Rama Web sin ejecutar en navegador; no se exportó.
+
+## Flechas gráficas para Web — 18/09/2026
+
+`assets/ui/arrow_left.svg` y `arrow_right.svg`: assets vectoriales originales,
+dibujados en código con contorno oscuro, dorado y bordes escalonados. No hubo
+generación con IA ni fuentes externas. Sustituyen flechas Unicode de navegación
+en Aventuras, Elegir reliquia, Saltar recompensa, Bajar por la escalera,
+Volver e Inicio. No dependen de glifos ni fuentes de respaldo del sistema.
+
+`button_skin.arrow` usa el icono nativo de Button, heredando estados y sin
+interceptar clics. `plaque_arrow` centra texto e icono en el cartel del arco.
+Los textos y tooltips quedan sin flechas Unicode. No cambian las acciones.

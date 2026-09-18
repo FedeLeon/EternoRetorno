@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Edit this running sprite sheet for cleric. Keep exactly 8 frames in 4 columns x 2 rows, real transparent background, identical character, colors, pixel art, cell dimensions, right-facing direction. CORRECT THE ARMS: the current sheet keeps the hands in nearly the same pose. Make a CLEAR human counter-swing of the near arm, visibly separated from the torso and cloak in every frame. At frame1 and2 the near elbow and hand swing BEHIND the waist; at frame3 the hand passes the hip; frame4 hand swings forward; at frame5 and6 the near hand and bent elbow are AHEAD of the chest; frame7 passes the hip; frame8 swings back. Opposite far arm alternates in counterphase. Hold the hanging censer in the far hand; the near hand is EMPTY, clenched loosely and clearly swings back and forward throughout. Do not hide the near arm in the cape or behind the torso. Legs also must exchange front/back: near leg extends forward in frame1; near leg extends backward in frame5. Preserve airborne/pass/contact phases. One character per equal grid cell. No background, glow backdrop, letters, lines or shadows. This is a movement correction, not a new costume.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-23965e97-2083-4b8b-96f3-1691f961ceeb.png",
+  "reference": "first generated cleric sheet; original output path recorded in cleric.json",
+  "target": "docs/running/sources/cleric.png"
+}

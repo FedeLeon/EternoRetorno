@@ -288,3 +288,21 @@ muerte del atacante o del objetivo interrumpe los golpes restantes; los
 contraataques conservan su lugar entre golpes. No hay una viñeta introductoria
 adicional. Para ataques de área no se duplica la viñeta del mismo golpe por
 objetivo. Detalles y assets en [cómic](../comic/README.md).
+
+### Caducidad del bloqueo de héroes — 18/09/2026
+
+El bloqueo protege durante toda la respuesta enemiga. El sobrante se descarta
+al comenzar el siguiente turno, incluso si nadie atacó al héroe. Esta regla
+ya existía en `_start_turn`; la reliquia de bloqueo concede una bonificación
+nueva y no conserva el sobrante. `combat_flow.gd` sincroniza ahora también el
+escudo visible al terminar las animaciones enemigas, antes de las reacciones
+finales y de reconstruir la mano. Reutiliza `card_impacts.update_block`.
+
+### Objetivos de ataques de área — 18/09/2026
+
+Las cartas `all_enemies` iluminan todos los enemigos vivos y se confirman
+tocando cualquiera de ellos. No habilitan ni iluminan héroes propios.
+`game.valid_targets` devuelve índices enemigos vivos y `combat_screen`
+distingue explícitamente objetivos aliados de objetivos enemigos. El efecto
+sigue resolviéndose sobre todos los enemigos; el clic solo confirma la acción.
+Se conservan las restricciones de energía y de dueño vivo.

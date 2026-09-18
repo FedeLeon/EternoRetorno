@@ -3,7 +3,7 @@ extends RefCounted
 # Camp presentation; construction and navigation are controller callbacks.
 static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void:
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Campamento, un lugar al que volver...", actions.home, profile.souls)
-	ui.camp_hotspot("CampExit", Rect2(960, 115, 155, 135), "Aventuras →", actions.prepare)
+	ui.camp_hotspot("CampExit", Rect2(960, 115, 155, 135), "Aventuras", actions.prepare)
 	if profile.buildings.get("market", false):
 		var building = TextureRect.new()
 		building.name = "MarketBuilding"
@@ -36,5 +36,4 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 			continue
 		ui.camp_hotspot("Plot%d" % i, plots[i], "Solar %d · Sin construir" % (i + 1), func():
 			ui.show_modal("Solar disponible", "Aquí podrás construir un edificio para tu campamento.\nLas construcciones y sus ventajas todavía no están disponibles.", "Entendido", actions.close_modal))
-	ui.camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", func():
-		ui.show_modal("Refugio de personajes", "Las armas y armaduras se mejoran en la herrería del solar 3.\nMás adelante habrá otras mejoras de personaje en el refugio.", "Entendido", actions.close_modal))
+	ui.camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", actions.refuge)

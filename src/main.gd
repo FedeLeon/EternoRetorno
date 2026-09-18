@@ -93,6 +93,8 @@ func label_at(text: String, x: float, y: float, w: float, h: float, font_size: i
 func button(text: String, x: float, y: float, w: float, h: float, callback: Callable, enabled: bool = true, parent: Control = null) -> Button:
 	var b = Button.new()
 	b.text = text
+	if text in ["Volver", "Inicio", "Elegir reliquia", "Saltar recompensa"]:
+		preload("res://src/ui/components/button_skin.gd").arrow(b, text in ["Volver", "Inicio"])
 	if text == "Menú":
 		preload("res://src/ui/components/button_skin.gd").decorate(b, "wood_menu")
 	b.disabled = not enabled
@@ -117,7 +119,7 @@ func art(kind: String, x: float, y: float, w: float, h: float, parent: Control =
 	return visual
 
 func background() -> void:
-	if screen in ["map", "equipment"]:
+	if screen in ["map", "equipment", "refuge"]:
 		return # These screens own their backgrounds.
 	if screen == "combat":
 		var room = TextureRect.new()
@@ -175,6 +177,7 @@ func render() -> void:
 		"options": options_view()
 		"base_camp": base_camp_view()
 		"market": market_view()
+		"refuge": preload("res://src/ui/refuge_navigation.gd").build(self)
 		"forge": preload("res://src/ui/forge_navigation.gd").build(self)
 		"select": selection()
 		"equipment": equipment_view()
@@ -297,6 +300,7 @@ func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable, ca
 	plaque.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("wood_button"))
 	var title = label_at(caption, 5, 0, 198, 34, 16, GOLD, plaque)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if id == "CampExit": preload("res://src/ui/components/button_skin.gd").plaque_arrow(title)
 	b.set_meta("caption_rect", plaque.get_rect())
 	return b
 
@@ -314,6 +318,7 @@ func base_camp_view() -> void:
 	preload("res://src/ui/screens/base_camp_screen.gd").build(self, game.profile.duplicate(true), {
 		"home": func(): screen = "home"; render(),
 		"prepare": camp_adventures,
+		"refuge": func(): screen = "refuge"; render(),
 		"market": market_plot, "forge": func(): preload("res://src/ui/forge_navigation.gd").plot(self), "close_modal": close_modal})
 
 func open_selection() -> void:
@@ -538,7 +543,7 @@ func deck_view() -> void:
 		var b = card_panel(instance, (i % 5) * 238, (i / 5) * 260, 224, 244, func(): pass, false, true, contents)
 		b.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	contents.custom_minimum_size.y = ceil(game.run.deck.size() / 5.0) * 260
-	button("← Volver", 36, 646, 230, 54, func(): screen = return_screen; upgrade_mode = false; render())
+	button("Volver", 36, 646, 230, 54, func(): screen = return_screen; upgrade_mode = false; render())
 
 func open_collection() -> void:
 	screen = "collection"
@@ -567,7 +572,7 @@ func collection() -> void:
 		var h = game.profile.history[i]
 		label_at("%s  ·  %s + %s  ·  %d salas" % ["VICTORIA" if h.won else "DERROTA", game.content.heroes[h.party[0]].name, game.content.heroes[h.party[1]].name, h.rooms], 0, 452 + i * 42, 1168, 38, 20, MUTED, contents)
 	contents.custom_minimum_size.y = maxf(500, 460 + game.profile.history.size() * 42)
-	button("← Inicio", 36, 646, 230, 54, func(): screen = "home"; render())
+	button("Inicio", 36, 646, 230, 54, func(): screen = "home"; render())
 
 func result_view() -> void:
 	var won = screen == "victory"
@@ -622,6 +627,8 @@ func back() -> void:
 		close_modal()
 	elif screen == "home":
 		show_modal("Cerrar el libro", "Tu progreso está guardado.", "Salir del juego", func(): game.checkpoint(); get_tree().quit())
+	elif screen == "refuge":
+		layer.get_node("RefugeScreen").go_back()
 	elif screen == "items":
 		continue_run()
 	elif screen == "equipment":

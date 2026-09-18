@@ -41,7 +41,8 @@ func run_tests() -> void:
 					for i in range(frames.get_frame_count(animation)):
 						var texture = frames.get_frame_texture(animation, i)
 						check(texture.region == original.get_frame_texture(animation, i).region, "same animation region")
-						check(not image.get_region(texture.region).is_invisible(), "nonempty frame")
+						var frame_image = texture.atlas.get_image() if animation == "run" else image
+						check(not frame_image.get_region(texture.region).is_invisible(), "nonempty frame")
 				actor.set_fallen(true)
 				check(actor.sprite.frame == 5 and actor.sprite.animation == "death", "fallen pose")
 				Gear.apply(actor, hero, {"weapon": weapon, "armor": armor})

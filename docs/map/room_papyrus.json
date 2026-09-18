@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Create ONE small square torn papyrus paper tile for a pixel art dungeon map UI. Reference is style and parchment palette only. Single SQUARE piece viewed straight from above, slightly jagged stepped pixel edges, subtle worn fibers and darker ochre tan paper (#bb945c approximately), darker than the pale reference map. Blank calm center for a black encounter icon overlay. No text, illustrations, glyphs, frame ornament, circles, compass or icons. Tile fills 90 percent of square canvas with real transparent alpha outside the irregular edge, very restrained thin edge shadow. Crisp pixel art like the reference, readable at 64x64 px, simple silhouette, not a rolled scroll. Square output.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-62bb54a7-fba3-424b-982d-b69c25d58124.png",
+  "reference": "assets/map/minimal/parchment.png",
+  "target": "assets/map/minimal/room_papyrus.png",
+  "processing": "Godot Image.get_used_rect(), get_region(), resize(96,96,INTERPOLATE_NEAREST), save_png. Alpha preservado.",
+  "marker": "assets/map/minimal/current_room.svg: vector original de flecha descendente pixelada, 24x20."
+}

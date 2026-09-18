@@ -37,7 +37,10 @@ func run_tests() -> void:
 	check(view.get_node("GroupDrawer/Hero0").size.y > 80 and view.get_node("GroupDrawer/Health0") != null, "larger actor with health")
 	check(not view.has_node("Descend"), "stairs hidden before boss victory")
 	for i in range(28):
-		check(view.get_node("Room%d" % i).disabled == (i != 0), "only reachable rooms enabled")
+		var room = view.get_node("Room%d" % i)
+		check(room.disabled == (i != 0), "only reachable rooms enabled")
+		check(room.get_theme_stylebox("normal") is StyleBoxTexture, "room uses papyrus asset")
+		check(not room.tooltip_text.contains(preload("res://src/dungeon.gd").LABELS[view.nodes[i].kind]), "tooltip does not reveal room type")
 	var before = app.game.run.duplicate(true)
 	await shot()
 	await click(view.get_node("Room27").get_global_rect().get_center())
@@ -47,7 +50,16 @@ func run_tests() -> void:
 	await click(view.get_node("SideRail/GroupTab").get_global_rect().get_center())
 	await create_timer(0.35).timeout
 	check(drawer.opened and drawer.position.x == 686, "group slides left")
+	check(not drawer.has_node("Deck"), "deck moved out of drawer")
+	var relic_button = drawer.find_child("Relic0", true, false)
+	await click(relic_button.get_global_rect().get_center())
+	check(drawer.has_node("RelicPopover"), "relic click opens detail")
 	await shot("group-open")
+	await click(relic_button.get_global_rect().get_center())
+	check(not drawer.has_node("RelicPopover"), "same relic closes detail")
+	await click(relic_button.get_global_rect().get_center())
+	await click(drawer.find_child("Relic1", true, false).get_global_rect().get_center())
+	check(drawer.selected_relic.name == "Relic1", "another relic changes detail")
 	var covered = view.get_node("Room13")
 	covered.disabled = false # Test input interception independently of route rules.
 	var received: Array = []
@@ -60,7 +72,7 @@ func run_tests() -> void:
 	check(not drawer.opened and drawer.position.x == 1280, "tab closes group")
 	await click(view.get_node("SideRail/GroupTab").get_global_rect().get_center())
 	await create_timer(0.35).timeout
-	await click(drawer.get_node("Deck").get_global_rect().get_center())
+	await click(view.get_node("SideRail/Deck").get_global_rect().get_center())
 	check(app.screen == "deck" and app.game.run == before, "deck asset opens without changing run")
 	app.back()
 	await process_frame
@@ -72,6 +84,14 @@ func run_tests() -> void:
 	await process_frame
 	view = app.layer.get_node("MapScreen")
 	check(not view.get_node("Room1").disabled and not view.get_node("Room2").disabled, "branch availability retained")
+	var marker = view.get_node("Room0/CurrentRoomMarker")
+	var icon = view.get_node("Room0/RoomIcon")
+	check(is_equal_approx(marker.get_global_rect().get_center().x, icon.get_global_rect().get_center().x), "current marker centered above icon")
+	check(marker.get_global_rect().end.y < icon.get_global_rect().position.y, "marker above room")
+	for child in view.get_children():
+		if child is Label:
+			check(not child.text.contains(" · "), "no room captions")
+	await shot("current-room")
 	app.game.run.boss_defeated = true
 	app.continue_run()
 	await process_frame

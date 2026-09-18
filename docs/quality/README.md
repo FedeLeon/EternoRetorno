@@ -125,3 +125,8 @@ comprobaciones de enemigos, 18 de presentación y 10626 de recursos de herrería
 aprobadas en headless. Capturas locales revisadas; comparación de dos instantes
 confirma movimiento visible en los seis héroes. Capturas temporales eliminadas.
 Sin exportación APK/Web, emulador ni dispositivo físico.
+
+## Carrera con sprites dedicados — 18/09/2026
+La salida victoriosa sustituye el movimiento procedural de pose fija por
+ocho cuadros `run` por héroe. Se conservan tiempos de salida y flujo de
+resultados. [Assets, alcance y pruebas actuales](../running/README.md).

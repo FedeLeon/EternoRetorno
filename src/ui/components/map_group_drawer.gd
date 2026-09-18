@@ -5,6 +5,8 @@ var host: Control
 var opened = false
 var motion: Tween
 var tab: Button
+var popover: PanelContainer
+var selected_relic: Button
 
 func place(node: Control, area: Rect2, parent: Node = self) -> void:
 	host.place(node, area, parent)
@@ -22,17 +24,9 @@ func _ready() -> void:
 	var panel = Panel.new()
 	preload("res://src/ui/components/modal_frame.gd").decorate(panel)
 	place(panel, Rect2(0, 48, 510, 672))
-	label("EL GRUPO", Rect2(28, 104, 420, 30), 18)
 	for i in range(host.heroes.size()): show_hero(host.heroes[i], i)
 	label("RELIQUIAS", Rect2(28, 437, 320, 28), 18)
 	show_relics()
-	var deck = host.action("", Rect2(30, 641, 64, 58), func(): host.deck_requested.emit(), self)
-	deck.name = "Deck"
-	deck.tooltip_text = "Ver mazo · %d cartas" % host.deck_count
-	for state in ["normal", "hover", "pressed", "focus"]:
-		deck.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-	picture(preload("res://assets/ui/deck.svg"), Rect2(0, 0, 64, 58), deck)
-	label("%d cartas" % host.deck_count, Rect2(112, 657, 160, 30), 18)
 	# Fixed rail stays at the viewport edge while the group panel slides beneath it.
 	var rail = Panel.new()
 	rail.name = "SideRail"
@@ -57,8 +51,17 @@ func _ready() -> void:
 	var caption = host.label("Grupo", Rect2(0, 91, 76, 24), 16, Color("ead3a0"), tab)
 	caption.name = "Caption"
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var deck = host.action("", Rect2(4, 246, 76, 94), func(): host.deck_requested.emit(), rail)
+	deck.name = "Deck"
+	deck.tooltip_text = "Ver mazo · %d cartas" % host.deck_count
+	for state in ["normal", "hover", "pressed", "focus"]:
+		deck.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+	picture(preload("res://assets/ui/deck.svg"), Rect2(6, 0, 64, 58), deck)
+	var deck_caption = host.label("Mazo", Rect2(0, 62, 76, 24), 16, Color("ead3a0"), deck)
+	deck_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func toggle() -> void:
+	close_relic()
 	opened = not opened
 	tab.tooltip_text = "Cerrar grupo" if opened else "Abrir grupo"
 	tab.get_node("Caption").modulate = Color("fff1c6") if opened else Color.WHITE
@@ -84,26 +87,67 @@ func show_relics() -> void:
 	scroll.name = "Relics"
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	place(scroll, Rect2(26, 473, 434, 161))
-	var column = VBoxContainer.new()
-	column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	scroll.add_child(column)
+	var grid = GridContainer.new()
+	grid.columns = 5
+	grid.add_theme_constant_override("h_separation", 18)
+	grid.add_theme_constant_override("v_separation", 14)
+	scroll.add_child(grid)
+	scroll.get_v_scroll_bar().value_changed.connect(func(_value): close_relic())
 	if host.relics.is_empty():
 		var empty = Label.new()
 		empty.text = "Sin reliquias."
-		column.add_child(empty)
+		grid.add_child(empty)
 	for relic in host.relics:
-		var row = HBoxContainer.new()
-		row.add_theme_constant_override("separation", 10)
-		column.add_child(row)
+		var button = Button.new()
+		button.name = "Relic%d" % grid.get_child_count()
+		button.custom_minimum_size = Vector2(64, 64)
+		button.tooltip_text = relic.name
+		button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		for state in ["normal", "hover", "pressed", "focus"]:
+			button.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+		grid.add_child(button)
 		if relic.get("icon", -1) >= 0:
 			var texture = AtlasTexture.new()
 			texture.atlas = load("res://assets/objects/icons.png")
 			texture.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
-			var icon = picture(texture, Rect2(0, 0, 56, 56), row)
-			icon.custom_minimum_size = Vector2(56, 56)
-		var text = Label.new()
-		text.text = relic.name + " · " + relic.owner + "\n" + relic.description
-		text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		text.add_theme_font_size_override("font_size", 16)
-		text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		row.add_child(text)
+			picture(texture, Rect2(0, 0, 64, 64), button)
+		else:
+			# Older found relics have no artwork in the catalog: keep them visible.
+			var caption = host.label(relic.name, Rect2(0, 0, 64, 64), 13, Color("ead3a0"), button)
+			caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			caption.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		button.pressed.connect(func(): show_relic(relic, button))
+
+func show_relic(relic: Dictionary, button: Button) -> void:
+	var same = selected_relic == button
+	close_relic()
+	if same: return
+	selected_relic = button
+	var anchor = Rect2(button.global_position - global_position, button.size)
+	popover = preload("res://src/ui/components/relic_popover.gd").new()
+	popover.setup(relic, anchor)
+	add_child(popover)
+	popover.reset_size()
+	popover.position = Vector2(clampf(anchor.position.x, 16, size.x - popover.size.x - 16), anchor.position.y - popover.size.y - 10)
+	# Point down toward the selected icon; keep the detail inside the drawer.
+	var tip = anchor.get_center().x - popover.position.x
+	for child in popover.get_children():
+		if child is Polygon2D:
+			child.polygon = PackedVector2Array([Vector2(tip - 10, popover.size.y), Vector2(tip, popover.size.y + 9), Vector2(tip + 10, popover.size.y)])
+
+func close_relic() -> void:
+	if is_instance_valid(popover):
+		remove_child(popover)
+		popover.queue_free()
+	popover = null
+	selected_relic = null
+
+func _input(event: InputEvent) -> void:
+	if not is_instance_valid(popover): return
+	if event is InputEventMouseButton and event.pressed:
+		var point = get_global_mouse_position()
+		if not popover.get_global_rect().has_point(point) and not selected_relic.get_global_rect().has_point(point):
+			close_relic()
+	elif event.is_action_pressed("ui_cancel"):
+		close_relic()
+		get_viewport().set_input_as_handled()

@@ -298,3 +298,15 @@ También se ejecutaron renderizados `test_enemies.gd` (498) y `test_treasure_ui.
 en `docs/`. Se revisaron galería y combate y después se borraron esas capturas.
 Importación y revisión de referencias sin recursos faltantes; `git diff --check`
 correcto. No se compiló APK ni se probó Android.
+
+
+## 18/09/2026 — Exportación Web local
+
+`/TestWeb/` se ignora por completo en Git. Sus archivos previamente versionados
+se retiraron del índice con `git rm -r --cached -- TestWeb`, conservando las
+copias locales. El usuario exporta allí y sube los archivos manualmente al
+servidor. No usar Git LFS para estos entregables ni volver a agregarlos con
+`git add -f`. El preset `export_presets.cfg` permanece versionado.
+
+Verificado: ningún archivo de TestWeb permanece en el índice, los archivos
+locales existen y las reglas de exclusión se aplican. No se hizo commit ni push.

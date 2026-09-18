@@ -1,6 +1,10 @@
 class_name ERNumberView
 extends Control
 
+# All glyphs end at source row 46, except 5 (40) and 6 (41).
+# Compensate transparent source padding without changing the glyph artwork.
+const BASELINE_OFFSET = {"5": 6.0, "6": 5.0}
+
 var value: int = 0:
 	set(next):
 		value = maxi(0, next)
@@ -27,6 +31,7 @@ func refresh() -> void:
 		glyph.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		glyph.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		glyph.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		glyph.position = Vector2(left + i * width, (size.y - height) / 2)
+		var glyph_scale = minf(width / 32.0, height / 48.0)
+		glyph.position = Vector2(left + i * width, (size.y - height) / 2 + BASELINE_OFFSET.get(digits[i], 0.0) * glyph_scale)
 		glyph.size = Vector2(width, height)
 		add_child(glyph)

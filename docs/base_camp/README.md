@@ -96,3 +96,8 @@ píxeles en follaje, agua y fuego, con una región del suelo idéntica; conserva
 pruebas de solares, refugio, arco y regreso/continuación. Revisión de captura
 renderizada; captura temporal eliminada. No implica revisión temporal manual
 exhaustiva ni validación de rendimiento Web/Android. Sin exportación.
+
+## Refugio funcional — 18/09/2026
+La carpa abre la galería de seis héroes y el editor de cartas iniciales,
+reemplazando el aviso de mejoras futuras. La preparación se aplica solo a
+nuevas aventuras. [Reglas, assets y pruebas](../refuge/README.md).

@@ -18,7 +18,7 @@ func _ready() -> void:
 	scroll.add_child(contents)
 	confirm = ui.button("Mejorar", 920, 646, 324, 54, commit, false, self)
 	confirm.name = "ConfirmUpgrade"
-	ui.button("← Volver", 36, 646, 230, 54, func():
+	ui.button("Volver", 36, 646, 230, 54, func():
 		ui.screen = ui.return_screen
 		ui.upgrade_mode = false
 		ui.render(), true, self)

@@ -45,6 +45,8 @@ func picture(texture: Texture2D, area: Rect2, parent: Node = self) -> TextureRec
 func action(text: String, area: Rect2, callback: Callable, parent: Node = self) -> Button:
 	var node = Button.new()
 	node.text = text
+	if text == "Bajar por la escalera":
+		preload("res://src/ui/components/button_skin.gd").arrow(node)
 	if text == "Menú":
 		preload("res://src/ui/components/button_skin.gd").decorate(node, "wood_menu")
 	node.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
@@ -70,7 +72,7 @@ func _ready() -> void:
 	label("Salas recorridas: %d" % visited.size(), Rect2(54, 671, 560, 25), 15, Color("614932"))
 	tooltip_text = "Semilla: %s" % run_seed
 	if boss_defeated:
-		action("Bajar por la escalera →", Rect2(461, 596, 358, 54), func(): descend_requested.emit()).name = "Descend"
+		action("Bajar por la escalera", Rect2(461, 596, 358, 54), func(): descend_requested.emit()).name = "Descend"
 
 func draw_route() -> void:
 	for node in nodes:
@@ -88,23 +90,25 @@ func draw_route() -> void:
 		var target = action("", Rect2(center - Vector2(28, 28), Vector2(56, 56)), func(): room_requested.emit(node.id))
 		target.name = "Room%d" % node.id
 		target.disabled = not reachable
-		target.tooltip_text = Dungeon.LABELS[node.kind] + (" · disponible" if reachable else (" · visitada" if done else " · sin acceso"))
+		target.tooltip_text = "Sala actual" if node.id == current else ("Sala disponible" if reachable else ("Sala visitada" if done else "Sin acceso"))
 		for state in ["normal", "disabled", "hover", "pressed", "focus"]:
-			var style = StyleBoxFlat.new()
-			style.bg_color = Color(0, 0, 0, 0)
-			style.set_corner_radius_all(28)
-			style.set_border_width_all(2 if reachable or node.id == current else 0)
-			style.border_color = Color("a14e20") if reachable else Color("49705a")
+			var style = StyleBoxTexture.new()
+			style.texture = preload("res://assets/map/minimal/room_papyrus.png")
+			style.modulate_color = Color("bda079") if reachable else Color("cfb58e")
+			if node.id == current:
+				style.modulate_color = Color("b4c19c")
 			if state in ["hover", "focus"]:
-				style.bg_color = Color(0.6, 0.35, 0.12, 0.18)
+				style.modulate_color = Color("edc285")
+			if state == "pressed":
+				style.modulate_color = Color("b18b62")
 			target.add_theme_stylebox_override(state, style)
 		var texture = load("res://assets/map/minimal/" + node.kind + ".png")
 		var icon = picture(texture, Rect2(4, 4, 48, 48), target)
 		icon.modulate = Color.WHITE if reachable or node.id == current else Color(1, 1, 1, 0.65)
-		var caption = label("%02d · %s" % [node.id + 1, Dungeon.LABELS[node.kind]], Rect2(center + Vector2(-62, 28), Vector2(124, 23)), 12, Color("733813") if reachable else Color("59452f"))
-		caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		icon.name = "RoomIcon"
 		if node.id == current:
-			label("▼", Rect2(center + Vector2(-12, -49), Vector2(24, 24)), 20, Color("733813"))
+			var marker = picture(preload("res://assets/map/minimal/current_room.svg"), Rect2(16, -23, 24, 20), target)
+			marker.name = "CurrentRoomMarker"
 
 func route_position(node: Dictionary) -> Vector2:
 	var point = Dungeon.map_position(node)

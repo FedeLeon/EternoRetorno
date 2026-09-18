@@ -45,7 +45,7 @@ func run_tests() -> void:
 	for id in ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent"]:
 		var area = app.layer.get_node(id).get_global_rect()
 		await click(area.get_center())
-		check(is_instance_valid(app.overlay), id + " responds to input")
+		check(app.screen == "refuge" if id == "CampTent" else is_instance_valid(app.overlay), id + " responds to input")
 		app.back()
 		check(app.screen == "base_camp", "back closes information")
 	check(app.game.profile == profile, "placeholders do not grant upgrades")

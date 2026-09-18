@@ -30,7 +30,7 @@ static func build(ui: Control) -> void:
 	for i in range(2):
 		var h = ui.game.run.heroes[i]
 		var x = 80 + i * 234
-		var valid = not c.is_empty() and c.target != "enemy" and i in targets
+		var valid = not c.is_empty() and c.target in ["self", "ally", "all_allies"] and i in targets
 		var target = ui.button("", x, 150, 204, 348, func(): ui.target_clicked(i), valid)
 		ui.combat_target_style(target)
 		var visual = ui.art(h.id, 30, 123, 144, 136, target, h.get("forge", {}))
@@ -52,7 +52,7 @@ static func build(ui: Control) -> void:
 		var e = b.enemies[i]
 		var def = ui.game.content.enemies[e.id]
 		var x = 768 + i * 234 if b.enemies.size() > 1 else 884
-		var valid = not c.is_empty() and c.target == "enemy" and i in targets
+		var valid = not c.is_empty() and c.target in ["enemy", "all_enemies"] and i in targets
 		var target = ui.button("", x, 150, 214, 348, func(): ui.target_clicked(i), valid)
 		ui.combat_target_style(target)
 		var enemy_visual = ui.EnemySprite.new()

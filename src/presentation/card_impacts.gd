@@ -13,7 +13,7 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			ui.CombatEffects.attack_flash(ui.layer)
 			ui.flash_hit(ui.enemy_art[event.enemy])
 			var bar = ui.enemy_health[event.enemy]
-			_update_block(bar, event.block)
+			update_block(bar, event.block)
 			bar.animate_to(event.hp)
 			if bar.animating: await bar.animation_finished
 		else:
@@ -21,13 +21,13 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			ui.CombatEffects.attack_flash(ui.layer)
 			ui.flash_hit(ui.hero_art[event.owner])
 			var bar = ui.hero_health[event.owner]
-			_update_block(bar, event.block)
+			update_block(bar, event.block)
 			bar.animate_to(event.hp)
 			if bar.animating: await bar.animation_finished
 			if event.hp > 0: await ui.hero_art[event.owner].play_once("hurt")
 
 
-static func _update_block(bar: Control, amount: int) -> void:
+static func update_block(bar: Control, amount: int) -> void:
 	for sibling in bar.get_parent().get_children():
 		if sibling.get_script() == preload("res://src/ui/components/status_effects.gd"):
 			var indicator = sibling.get_node_or_null("Block")

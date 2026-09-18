@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Use case: stylized-concept. Create ONE game background for Eterno Retorno: interior of a medieval adventurers' campaign tent, a simple cot bed with wool blanket at the back left, travel packs, boots, rolled maps, wooden chest, lantern and small table along the sides. Reference image is STYLE ONLY: match its detailed pixel-art fantasy environment, sharp textured pixels, muted warm brown palette and golden lantern lighting; do NOT include forge, fire furnace or blacksmith. Spacious tent canvas ceiling and walls, cozy refuge, empty middle/lower foreground so six tall hero selection cards can overlay it. Bed and props remain visible above/around overlay area. Wide 16:9 landscape 1536x864. No people, text, symbols, cards, interface, logos, or frames.",
+  "reference": "assets/forge/interior.png",
+  "source": "Generated images are saved to /home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249 as /home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-dfacef5c-40b7-4d31-8981-6fc86344e411.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "target": "assets/refuge/interior.png"
+}

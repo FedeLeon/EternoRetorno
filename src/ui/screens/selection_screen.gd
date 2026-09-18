@@ -41,7 +41,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 	footer.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("party_panel"))
 	ui.button("Volver", 36, 659, 145, 46, actions.back)
 	ui.label_at("%d / 2 elegidos" % ui.selected_party.size(), 185, 669, 210, 30, 20, ui.GOLD)
-	var choose = ui.button("Elegir reliquia  →", 894, 659, 350, 46, actions.equipment, ui.selected_party.size() == 2)
+	var choose = ui.button("Elegir reliquia", 894, 659, 350, 46, actions.equipment, ui.selected_party.size() == 2)
 
 	choose.name = "ChooseRelic"
 	preload("res://src/ui/components/button_skin.gd").decorate(choose, "wood_button")

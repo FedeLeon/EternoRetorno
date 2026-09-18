@@ -263,3 +263,24 @@ una posición opcional del veneno sin alterar el valor predeterminado.
 Validación: `test_hud.gd` renderizado, 108 comprobaciones sin fallos,
 incluyendo posición, ausencia de solapamiento, clics y ocultación. Revisión
 visual Linux 1280×720; captura temporal eliminada. Sin exportación.
+
+## Corazón en las barras de vida — 18/09/2026
+
+`health_bar.gd` muestra `assets/ui/heart.svg` al inicio izquierdo de todas
+las barras de combate, tanto héroes como enemigos. Icono de 24×24, sin
+interceptar clics; el texto reserva 30 píxeles a la izquierda. Se conservan
+la animación de vida, el relleno y los indicadores de bloqueo. Asset vectorial
+original dibujado en código, rojo con luces y contorno oscuro escalonado;
+sin IA ni dependencia de símbolos de fuente.
+
+Validación local renderizada Linux/llvmpipe: 108 comprobaciones del HUD sin
+fallos y revisión visual del corazón en ambos bandos. Sin exportación Web.
+
+## Línea de base de los dígitos — 18/09/2026
+
+El dibujo opaco del 5 termina en la fila 40 de su PNG 32×48 y el 6 en la 41;
+el resto termina en la 46. `number_view.gd` compensa 6 y 5 píxeles de origen,
+respectivamente, escalados según la textura dibujada. Esto alinea la base en
+almas y demás contadores compartidos, sin editar los assets ni sus importadores.
+Revisión renderizada local de 85260 y todos los dígitos, a alturas 36 y 48;
+sin exportación ni revisión Web.

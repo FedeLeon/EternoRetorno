@@ -27,9 +27,11 @@ static func frames() -> SpriteFrames:
 	frames_cache.set_animation_loop("revive", false)
 	for index in range(5, -1, -1):
 		frames_cache.add_frame("revive", frames_cache.get_frame_texture("death", index))
+	preload("res://src/presentation/hero_run.gd").add_animation(frames_cache, "warrior")
 	return frames_cache
 
 func _ready() -> void:
+	set_meta("hero_id", "warrior")
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	sprite = AnimatedSprite2D.new()

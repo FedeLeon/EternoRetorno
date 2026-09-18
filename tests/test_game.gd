@@ -93,6 +93,11 @@ func card_rules() -> void:
 	e.intent = {"damage": 3, "target": 0}
 	g.end_turn()
 	check(g.run.heroes[0].hp == 27 and g.run.heroes[0].block == 0, "block protects enemy phase then expires")
+	g.run.heroes[0].block = 20
+	g.run.heroes[1].block = 20
+	e.intent = {"damage": 0, "target": 0}
+	g.end_turn()
+	check(g.run.heroes.all(func(h): return h.block == 0), "unused block expires even without incoming attacks")
 	g = combat(["ranger", "rogue"])
 	e = g.run.combat.enemies[0]; e.hp = 100; e.max_hp = 100; e.block = 30
 	set_hand(g, ["ranger_arrow", "rogue_toxin"])

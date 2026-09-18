@@ -1103,3 +1103,134 @@ aprobadas, incluyendo rechazo, victoria, derrota, defensa y sinergia.
 Revisión visual de los 18 assets y captura del guerrero sobre la mazmorra;
 transparencia RGBA comprobada. Capturas temporales eliminadas. No se exportó
 APK/Web ni se probó en dispositivo físico; rendimiento de esos destinos pendiente.
+
+## 18/09/2026 — Sincronización visual del bloqueo al terminar turno
+
+Confirmado que `_start_turn` ya descarta el bloqueo sobrante de ambos héroes;
+se mantiene el bloqueo nuevo que pueda conceder una reliquia. No se modificó
+el balance ni la persistencia. `combat_flow.gd` actualiza el escudo y número
+al terminar las animaciones enemigas mediante `card_impacts.update_block`,
+sin esperar a reconstruir la pantalla tras las reacciones finales.
+Prueba adicional de reglas: el bloqueo de ambos héroes vence también cuando
+el enemigo no ataca. Validación headless local de reglas y presentación;
+sin revisión visual ni exportación para este ajuste.
+
+## 18/09/2026 — Selección correcta para ataques a todos los enemigos
+
+Corregido `game.valid_targets`: `all_enemies` devuelve enemigos vivos en lugar
+del dueño de la carta. `ui/screens/combat_screen.gd` ilumina y habilita los
+objetivos enemigos para cartas individuales y de área; los héroes solo se
+habilitan para efectos aliados. Tocar cualquier enemigo vivo confirma el
+ataque sobre todos. No cambia el daño ni los guardados.
+
+Validación local Linux/llvmpipe: `test_cards.gd`, 557 comprobaciones sin fallos,
+incluidos clics sobre cada uno de dos enemigos, daño a ambos, halos enemigos,
+héroes deshabilitados, enemigos muertos excluidos y cartas sin energía.
+`test_game.gd` headless: 156 comprobaciones sin fallos. Captura de galería
+generada por el test eliminada; sin revisión visual manual ni exportación Web.
+
+## 18/09/2026 — Assets de flechas en navegación
+
+Sustituidas las flechas Unicode de botones y del cartel Aventuras por dos
+assets SVG dorados originales (`assets/ui/arrow_left.svg`, `arrow_right.svg`).
+Procedencia: dibujo vectorial en código, sin IA. `button_skin.gd` concentra
+iconos nativos de Button y composición del cartel; `main.gd` y pantallas de
+mapa, selección, recompensa y mejora usan textos sin flechas tipográficas.
+Sin cambios a navegación o guardados.
+
+Importación y diff correctos. Validación local Linux/llvmpipe: campamento
+37 comprobaciones sin fallos y revisión visual del cartel, ajustando el
+centrado conjunto de texto e icono. Mapa headless: 41 comprobaciones sin
+fallos. Búsqueda de flechas Unicode en src/data sin coincidencias. Sin
+exportación ni prueba en navegador; requiere volver a exportar para Web.
+
+## 18/09/2026 — Corazones en barras de vida
+
+Nuevo asset original vectorial `assets/ui/heart.svg`, dibujado en código.
+`ui/components/health_bar.gd` lo coloca a la izquierda dentro de las barras
+de héroes y enemigos, con espacio reservado para evitar solapar los números.
+No altera valores, animaciones ni selección de objetivos.
+Importación y diff correctos. `test_hud.gd` renderizado: 108 comprobaciones
+sin fallos; revisión visual de ambos bandos. Capturas temporales eliminadas.
+Sin exportación ni prueba Web/dispositivo para este cambio.
+
+## 18/09/2026 — Refugio: retratos cómic y preparación del mazo
+
+Nuevo interior de carpa generado con imagegen (cama, equipaje, mapas y faroles),
+en `assets/refuge/interior.png`, con prompt/procedencia en `docs/refuge/interior.json`.
+Galería de seis retratos ampliados de los cómics existentes, sin duplicar sus
+assets. Tocar un héroe abre cuatro cartas completas con cantidad de copias.
+
+Se permite intercambiar hasta dos básicas desde el reparto original: 2–6
+ataques y defensas complementarias hasta ocho, más dos cartas de clase fijas.
+Guardar y restaurar original con confirmación explícita; borradores locales,
+configuración gratis y persistente por héroe. Cada nueva aventura conserva
+20 cartas; la run actual y sus mejoras no se modifican. Guardados anteriores
+sin configuración usan el mazo original.
+
+Módulos nuevos de reglas, navegación, pantalla y retratos descritos en la
+arquitectura y `docs/refuge/README.md`; `main.gd` solo conecta acceso/regreso.
+Validación local Linux/llvmpipe: test_refuge 159 comprobaciones, inspección de
+galería/editor; test_game 156 y test_base_camp 33 headless, sin fallos. Importación
+y diff correctos. Capturas de esta tarea eliminadas. Sin exportación ni prueba
+Web/Android. Balance exhaustivo de las distribuciones queda para playtesting.
+
+## 18/09/2026 — Alineación de 5 y 6 en números gráficos
+
+Analizado el canal alfa de los diez assets 32×48: 5 y 6 tienen márgenes
+internos diferentes. `ui/components/number_view.gd` compensa la posición
+vertical según la escala efectiva para compartir la línea de base. Se aplica
+a almas, costes y otros contadores sin cambiar valores ni imágenes.
+Validación renderizada Linux/llvmpipe de 85260 y 1234567890 a tamaños 36/48,
+revisión visual y diff correctos. Script/captura temporales eliminados;
+sin exportación ni prueba Web para este ajuste.
+
+## 18/09/2026 — Ocho sprites de carrera por héroe
+
+Seis hojas generadas con imagegen tomando los atlas existentes como referencia
+de identidad y estilo. Corrección adicional de brazos en guerrero, maga y
+clériga. Fuentes y prompts en docs/running; importador reproducible de recorte,
+alineación y reducción a 128 px. Seis atlas finales suman aproximadamente
+804 KiB; fuentes grandes excluidas por el preset de exportación.
+
+Nuevo helper hero_run registra y reproduce `run`. Los seis actores lo incorporan;
+hero_equipment preserva el atlas independiente. La salida victoriosa usa estos
+cuadros en lugar del rebote/rotación de pose fija; mantiene 2,5/2,62 s y resolución
+previa al efecto. Un diseño de carrera por héroe, compartido por los niveles de
+equipo: las variantes visuales de carrera por herrería quedan pendientes.
+
+Validación local Linux/llvmpipe: test_running 181 comprobaciones y revisión
+de cuadros en escenario; test_combat_presentation 18 y test_forge_assets 12450
+headless, sin fallos. Importación y diff correctos. Corregido un uso inválido
+de hash en la primera ejecución del test nuevo. Capturas temporales eliminadas.
+Sin exportación ni pruebas Web/Android.
+
+
+## 18/09/2026 — Papiros para las salas del mapa
+
+- Retirados rótulos de sala y tipos de encuentro en tooltips.
+- Nuevo asset cuadrado de papiro transparente; reemplaza los círculos y conserva
+  los estados disponible/actual/pendiente.
+- Flecha gráfica centrada sobre la sala actual, sin depender de la fuente.
+- Cambios en map_screen.gd y test_map.gd; prompt/procedencia en docs/map.
+- Validación local renderizada: 101 comprobaciones sin fallos y revisión visual.
+  Capturas retiradas; sin exportar ni verificar Web/Android.
+
+
+## 18/09/2026 — Reliquias desplegables y acceso lateral al mazo
+
+- Grupo sin título «EL GRUPO» y con detalles de reliquia al tocar cada acceso,
+  reutilizando el cuadro de diálogo existente.
+- Mazo movido al segundo item de la barra derecha, debajo de Grupo.
+- map_group_drawer.gd y test_map.gd; documentación en docs/map/README.md.
+- 105 comprobaciones locales renderizadas sin fallos y revisión visual.
+  Sin exportación Web/APK ni validación en dispositivo.
+
+
+## 18/09/2026 — Ignorar TestWeb en Git
+
+- `.gitignore`: exclusión completa de `/TestWeb/`.
+- Retirados sus diez archivos del índice, sin borrarlos del disco.
+- Documentado el despliegue manual en `docs/LIMPIEZA.md`.
+- Verificados índice vacío para esa carpeta y exclusión de los archivos locales.
+  Sin commit, push ni exportación.

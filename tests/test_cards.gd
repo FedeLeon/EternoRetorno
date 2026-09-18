@@ -64,6 +64,33 @@ func run_tests() -> void:
 	await click(Vector2(640, 630))
 	check(app.selected_card == 0, "Unaffordable card remains selectable")
 	check(app.game.valid_targets(0).is_empty() and not app.game.play_card(0, 0), "Unaffordable card cannot be played")
+	# Offensive area cards highlight enemies and accept either living enemy.
+	for chosen in [0, 1]:
+		app.game.new_run(["mage", "warrior"], 12)
+		app.game.enter_node(0)
+		var battle = app.game.run.combat
+		battle.enemies = [battle.enemies[0].duplicate(true), battle.enemies[0].duplicate(true)]
+		for enemy in battle.enemies:
+			enemy.hp = 100
+			enemy.max_hp = 100
+			enemy.block = 0
+		battle.hand = [{"id":"mage_storm", "upgraded":false}]
+		battle.energy = 9
+		app.continue_run()
+		app.select_card(0)
+		await process_frame
+		check(app.game.valid_targets(0) == [0, 1], "Area accepts either living enemy")
+		for actor in app.hero_art.values():
+			check(actor.get_node_or_null("TargetGlow") == null and actor.get_parent().disabled, "Area never highlights/enables own heroes")
+		for actor in app.enemy_art.values():
+			check(actor.get_node_or_null("TargetGlow") != null and not actor.get_parent().disabled, "Area highlights/enables every living enemy")
+		await click(Vector2(875 + chosen * 234, 330))
+		while app.combat_busy: await process_frame
+		check(battle.enemies.all(func(e): return e.hp < 100), "Clicking either enemy applies area damage to both")
+	app.game.run.combat.hand = [{"id":"mage_storm", "upgraded":false}]
+	app.game.run.combat.energy = 9
+	app.game.run.combat.enemies[0].hp = 0
+	check(app.game.valid_targets(0) == [1], "Area excludes dead enemies")
 	print("CARD CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)
 func click(point: Vector2) -> void:

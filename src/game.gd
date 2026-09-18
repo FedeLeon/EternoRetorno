@@ -35,6 +35,11 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 	if Forge.migrate(profile) or migrated:
 		checkpoint()
 
+func configure_starter(hero: String, attacks: int) -> bool:
+	if not preload("res://src/rules/starter_decks.gd").configure(content, profile, hero, attacks): return false
+	checkpoint()
+	return true
+
 func build_forge() -> bool:
 	if not Forge.build(profile):
 		return false
@@ -88,7 +93,7 @@ func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> 
 		if relic_bonus(hero, "max_hp") > 0:
 			hero.max_hp += relic_bonus(hero, "max_hp")
 			hero.hp = hero.max_hp
-		for card_id in content.heroes[id].starter:
+		for card_id in preload("res://src/rules/starter_decks.gd").deck(content, profile, id):
 			run.deck.append({"id": card_id, "upgraded": false})
 	profile.erase("preparation")
 	profile.attempts += 1
@@ -190,8 +195,8 @@ func valid_targets(hand_index: int) -> Array:
 	var owner = owner_index(instance)
 	if run.heroes[owner].hp <= 0 or c.cost > run.combat.energy:
 		return []
-	if c.target in ["self", "all_allies", "all_enemies"]:
-		return [owner] # Explicit confirmation on owner for area/self cards.
+	if c.target in ["self", "all_allies"]:
+		return [owner] # Confirm self/party effects on the owner; offensive area cards use enemies.
 	if c.target == "ally":
 		return living_heroes()
 	var targets: Array = []

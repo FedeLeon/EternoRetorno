@@ -21,6 +21,7 @@ static func apply(actor: Control, hero: String, gear: Dictionary) -> void:
 		var frames = actor.frames().duplicate(true)
 		var atlas = load(path)
 		for animation in frames.get_animation_names():
+			if animation == "run": continue # Running has its own atlas, not a forge action row.
 			for i in range(frames.get_frame_count(animation)):
 				var old = frames.get_frame_texture(animation, i)
 				var texture = AtlasTexture.new()
