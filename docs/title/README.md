@@ -34,3 +34,8 @@ Cambio localizado en `src/main.gd::home()`. Prueba actual renderizada:
 `tests/test_title.gd`, 13 comprobaciones sin fallos, incluyendo ir al campamento
 y continuar conservando la aventura. Diseño revisado a 1280×720 en Linux.
 Captura temporal eliminada después de revisar. Sin APK ni prueba Android.
+
+## Botones de madera (17/09/2026)
+
+Las acciones del inicio usan ahora el tablón del [tema compartido](../ui_buttons/README.md).
+Textos y navegación se conservan. Validación local de inicio/opciones: 13 sin fallos.

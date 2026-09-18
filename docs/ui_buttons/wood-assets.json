@@ -1,0 +1,13 @@
+{
+  "tool": "imagegen integrado",
+  "prompts": {
+    "wood_button": "Production UI asset for Eterno Retorno dark medieval pixel art RPG. ONE empty wide rectangular button made of dark weathered oak plank, rich brown subtle horizontal grain, small black wrought iron corner brackets and gold nailheads. Empty dark central surface for readable text rendered later. Width to height 5:1. Front orthographic view. Crisp detailed pixel art, dark gothic craftsmanship matching antique iron and gold UI. No words, no symbols, no scenery. Transparent exterior. Fill canvas width.",
+    "wood_menu": "Production UI asset for Eterno Retorno dark medieval pixel art RPG. ONE compact wooden tavern sign button, width to height 2.3:1, dark weathered oak plank with irregular bevel edges, two small forged iron hanging loops at upper corners, gold nail heads. Empty dark brown central surface to overlay Menu label at runtime. Front orthographic, detailed crisp pixel art, antique gothic iron and gold accents. No words, no scenery, no extra objects. Transparent exterior.",
+    "header_frame": "Production UI asset Eterno Retorno gothic pixel art RPG. ONE long low horizontal header frame, ratio 12:1, width fills canvas. Opaque dark navy charcoal interior for overlaid game title and buttons. Thin weathered iron rim with antique gold filigree only at far corners, subtle bottom gold edge. Restrained tiny diamond ornaments at ends. Flat front orthographic view, crisp detailed pixel art, empty central area. No text, no icons, no scenery. Transparent exterior."
+  },
+  "sources": {
+    "wood_button": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-21942dd7-f4ee-46de-92e0-be113cf48dfd.png",
+    "wood_menu": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-a8c9df48-a749-4af3-a3cb-116258a44a4c.png",
+    "header_frame": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-7feaa9a9-8006-4b27-8fe8-85bb433c3edf.png"
+  }
+}

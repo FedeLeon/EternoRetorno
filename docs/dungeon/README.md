@@ -93,3 +93,23 @@ Terminar turno ocupa un círculo de 136 px a la derecha (1120,568); no recibe cl
 
 Validación local: distribución 38, HUD 92, sin fallos; revisión renderizada de
 mano normal y seleccionada a 1280×720. Sin exportación APK/Web ni Android/navegador.
+
+## Actores ampliados y contraste (17/09/2026)
+
+En combate los enemigos pasan de escala 1,25 a 1,5625 (+25 %). Los héroes usan
+altura visible común de 142,19 px: la silueta mayor anterior (guardiana, 91 px
+opacos × 1,25) ampliada un 25 %. Los más bajos reciben además compensación por
+márgenes transparentes. La escala es uniforme en ambos ejes y fija por clase,
+con pivote en los pies; no cambia entre frames. La postura, armas y efectos
+propios conservan sus diferencias. Solo cambia la presentación de combate.
+
+Medidas máximas de siluetas en los seis frames idle de los atlas de 128 px,
+con alfa > 0,5: guerrero 78, guardiana 91, pícaro 87, maga 90, clériga 85,
+explorador 81. Recalibrar `combat_actor_scale.gd` si se reemplazan los atlas.
+Nombre e intención enemigos llevan placas oscuras al 65 % de opacidad, sin
+interceptar toques. `combat_backplate.gd` comparte el estilo.
+
+Pruebas locales de esta revisión: distribución 38 y HUD 92 sin fallos (ajustada
+la expectativa antigua de escala). Revisión renderizada Linux de las seis clases
+en tres parejas; capturas temporales retiradas. Sin exportación APK/Web ni pruebas
+nuevas en navegador, emulador o dispositivo físico.

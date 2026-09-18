@@ -38,6 +38,7 @@ func _ready() -> void:
 	hint = label("Tocá el cofre para abrirlo", Rect2(330, 635, 620, 40))
 	var menu = Button.new()
 	menu.text = "Menú"
+	preload("res://src/ui/components/button_skin.gd").decorate(menu, "wood_menu")
 	menu.pressed.connect(func(): if not busy: menu_requested.emit())
 	place(menu, Rect2(1100, 24, 140, 50))
 	chest = Button.new()

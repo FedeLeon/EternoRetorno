@@ -49,3 +49,30 @@ circular de reliquia. PNG originales intactos, regiones en `button_skin.gd`.
 Generados con imagegen integrado: [prompts](relic-navigation-prompts.json),
 [fuentes](relic-navigation-sources.json). Sustituye las fichas descritas arriba;
 ver [estado actual de reliquias](../objects/README.md).
+
+## Estilo actual: tablones y cabeceras (17/09/2026)
+
+Esta revisión reemplaza el estilo metálico de los botones de texto por madera
+oscura con herrajes. Incluye inicio, navegación, compras, acciones de preparación
+ y diálogos; Menú utiliza su propio cartel con anillas. Cartas, iconos sin fondo
+ y el botón circular de terminar turno mantienen sus diseños específicos.
+Las tres barras de campamento/personajes/reliquias usan un marco de hierro y oro,
+con margen interior para que el título no pise las filigranas.
+Títulos y cuerpos de diálogos generales centrados; los tesoros ya usaban centrado.
+
+Assets generados mediante imagegen integrado, originales conservados e importación
+limitada a 512 px:
+
+- `assets/ui/buttons/wood_button.png`: tablón compartido.
+- `assets/ui/buttons/wood_menu.png`: cartel específico de Menú.
+- `assets/ui/buttons/header_frame.png`: marco de la cabecera.
+
+[Prompts completos y procedencia](wood-assets.json). Regiones y estados en
+`button_skin.gd`, cabecera en `preparation_header.gd`, centrado en `dialog_view.gd`.
+Los assets anteriores quedan como fuentes históricas; las acciones de preparación
+usan ahora la madera compartida para mantener coherencia.
+
+Pruebas locales de esta revisión: campamento 33, selección 47, equipamiento 46,
+inicio/opciones 13 e interfaz general 271; sin fallos. Revisión renderizada de
+cabeceras, selección y modal del arco en Linux a 1280×720. Capturas temporales
+eliminadas. Sin exportar APK/Web ni validar en navegador, emulador o Android físico.

@@ -1,5 +1,10 @@
 # Actores con mayor detalle — 16/09/2026
 
+Actualización 17/09/2026: la [herrería](../forge/README.md) añade 96 atlas de equipo
+(16 por héroe), de 128 px por cuadro, reutilizando las animaciones existentes.
+Los atlas de esta guía se conservan como referencia y para aventuras anteriores.
+La normalización de altura de las variantes usa `data/forge_visuals.json`.
+
 ## Resultado actual
 
 - Seis héroes: atlas de **128×128 por cuadro**, 210 cuadros originales en total.

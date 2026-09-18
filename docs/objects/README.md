@@ -135,3 +135,12 @@ Capturas temporales eliminadas. Sin exportación APK/Web ni pruebas Android/nave
 locales de equipamiento UI 46 e interfaz general 271, sin fallos. Se verifican
 las ocho posiciones, cambio de reliquia, persistencia al tocar fondo y ausencia
 de modal. Revisión visual Linux de cuadros a derecha e izquierda; capturas retiradas.
+
+### Centro despejado (17/09/2026)
+
+El centro del círculo queda vacío: se retiraron el nombre, «Elegida para ambos»
+y la indicación inicial. Nombre y efecto permanecen en el cuadro exterior de la
+reliquia seleccionada. No cambia la selección compartida ni el guardado.
+
+Retirado también el subtítulo «Elegí una sola reliquia para ambos héroes…»
+(17/09/2026). Se conserva el título de la barra superior.

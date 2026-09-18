@@ -23,27 +23,42 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		frame.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(frame, 0, 0, 122, 82, b)
-		ui.label_at(hero.name, 5, 26, 112, 38, 17, ui.GOLD if selected == id else ui.TEXT, b)
+		var portrait = TextureRect.new()
+		portrait.name = "HeroPortrait"
+		portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		var crop = AtlasTexture.new()
+		crop.atlas = ui.CAMP_FRONT
+		crop.region = Rect2(i * 128, 0, 128, 128)
+		portrait.texture = crop
+		ui.rect(portrait, 19, -3, 84, 66, b)
+		var caption = ui.label_at(hero.name, 5, 55, 112, 24, 16, ui.GOLD if selected == id else ui.TEXT, b)
+		caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	ui.panel(728, 104, 528, 570)
 	ui.label_at(content.heroes[selected].name + " · Nuevas cartas", 744, 112, 488, 32, 23, ui.GOLD)
 	ui.label_at("Comprar habilita su aparición tras ganar batallas.", 744, 148, 488, 32, 16, ui.TEXT)
 	var scroll = ScrollContainer.new()
 	ui.rect(scroll, 744, 190, 494, 465)
-	var list = VBoxContainer.new()
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	scroll.name = "MarketCards"
+	var list = GridContainer.new()
+	list.columns = 2
 	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	list.add_theme_constant_override("separation", 10)
+	list.add_theme_constant_override("h_separation", 14)
+	list.add_theme_constant_override("v_separation", 18)
 	scroll.add_child(list)
 	for id in content.cards:
 		var card = content.cards[id]
 		if card.owner != selected or int(card.get("market_price", 0)) <= 0: continue
-		var row = PanelContainer.new()
-		row.custom_minimum_size = Vector2(470, 196)
-		list.add_child(row)
 		var body = Control.new()
-		row.add_child(body)
-		ui.label_at(card.name, 12, 6, 440, 32, 21, ui.GOLD, body)
-		preload("res://src/ui/components/card_art.gd").attach(body, id, Rect2(12, 44, 116, 72))
-		ui.label_at("Energía: %d · %s" % [card.cost, content.describe({"id": id, "upgraded": false}).replace("\n", " · ")], 140, 40, 312, 98, 16, ui.TEXT, body)
+		body.custom_minimum_size = Vector2(228, 364)
+		list.add_child(body)
+		var preview = ui.card_panel({"id": id, "upgraded": false}, 4, 0, 220, 300, func(): pass, false, true, body, true)
+		preview.name = "MarketCard_" + id
+		preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		preview.focus_mode = Control.FOCUS_NONE
 		var owned = id in profile.market_cards
 		var buy = Button.new()
 		buy.name = "Buy_" + id
@@ -51,4 +66,5 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		buy.disabled = owned or profile.souls < card.market_price
 		buy.tooltip_text = "Ya disponible en recompensas" if owned else "Se conserva entre aventuras"
 		buy.pressed.connect(func(): actions.buy.call(id))
-		ui.rect(buy, 12, 148, 440, 40, body)
+		buy.add_theme_font_size_override("font_size", 16)
+		ui.rect(buy, 0, 312, 228, 48, body)

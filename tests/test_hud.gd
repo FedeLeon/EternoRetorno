@@ -80,8 +80,13 @@ func run_tests() -> void:
 	app.back()
 	check(not is_instance_valid(hud.popover) and app.screen == "combat", "Back dismisses description")
 	check(hud.get_node("EnergyOrb").material is ShaderMaterial, "Energy flow shader attached")
-	for actor in app.hero_art.values() + app.enemy_art.values():
-		check(actor.scale == Vector2.ONE * 1.25, "Combat actors enlarged by 25 percent")
+	for actor in app.enemy_art.values():
+		check(actor.scale == Vector2.ONE * 1.5625, "Enemies enlarged by another 25 percent")
+	for i in app.hero_art:
+		var actor = app.hero_art[i]
+		var height = preload("res://src/ui/components/combat_actor_scale.gd").IDLE_HEIGHT[app.game.run.heroes[i].id]
+		height = float(actor.get_meta("idle_height", height))
+		check(is_equal_approx(actor.scale.y * height, 142.1875), "Hero silhouettes have common enlarged height")
 	await click(Vector2(925, 32))
 	check(app.screen == "items", "Icon bag opens")
 	app.back()

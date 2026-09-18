@@ -47,6 +47,8 @@ func picture(texture: Texture2D, area: Rect2, parent: Node = self) -> TextureRec
 func action(text: String, area: Rect2, callback: Callable) -> Button:
 	var node = Button.new()
 	node.text = text
+	if text == "Menú":
+		preload("res://src/ui/components/button_skin.gd").decorate(node, "wood_menu")
 	node.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	node.pressed.connect(callback)
 	place(node, area)
@@ -128,6 +130,7 @@ func show_hero(hero: Dictionary, index: int) -> void:
 	var actor = hero.visual.new()
 	actor.name = "Hero%d" % index
 	place(actor, Rect2(788, top, 152, 128))
+	preload("res://src/presentation/hero_equipment.gd").apply(actor, hero.id, hero.get("forge", {}))
 	actor.set_fallen(hero.hp <= 0)
 	label(hero.title, Rect2(955, top + 25, 274, 40), 24)
 	var health = HealthBar.new()

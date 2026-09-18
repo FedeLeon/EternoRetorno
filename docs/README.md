@@ -19,7 +19,8 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Campamento: mercado construible en solar 1 por 300 almas, con 36 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
-  Otras construcciones y mejoras de héroes pendientes.
+  Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
+  por héroe, permanentes y aplicados al iniciar cada aventura. Otras construcciones pendientes.
 - Cartas: 90 en total, 15 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
@@ -46,6 +47,7 @@ Android histórica no certifica la interfaz actual.
 | Selección y fogata animada | [Campamento de selección](camp/README.md) |
 | Campamento previo y solares | [Campamento base](base_camp/README.md) |
 | Mercado, almas y cartas desbloqueables | [Mercado](market/README.md) |
+| Herrería, equipo permanente y variantes animadas | [Herrería](forge/README.md) |
 | Reliquias y consumibles: valores y guardado | [Objetos](objects/README.md) |
 | Sinergias entre héroes | [Sinergias](synergies/README.md) |
 | Marcos y colores de cartas | [Cartas](cards/README.md) |
@@ -66,7 +68,7 @@ entrada más reciente del historial y el documento del sistema correspondiente.
 ## Próximos trabajos identificados
 
 - Ilustraciones individuales de cartas.
-- Definir y desarrollar edificios y mejoras permanentes del campamento.
+- Definir los edificios restantes y balancear las mejoras permanentes de herrería.
 - Diseñar siguientes pisos y asignar estadísticas a los enemigos reservados.
 - Balancear seis cartas por turno, equipamiento y consumibles con partidas humanas.
 - Incorporar audio; el control de volumen ya existe, pero no hay música añadida.

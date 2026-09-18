@@ -73,3 +73,17 @@ El saldo solo se muestra en el campamento y sus edificios, con `soul_counter.gd`
 y los dígitos existentes. Ya no aparece en mapa, combate o recompensas.
 El solar construido muestra `assets/base_camp/market_building.png`, pulsable para
 entrar al mercado. Ver [campamento](../base_camp/README.md) para assets y pruebas.
+
+## Catálogo visual (17/09/2026)
+
+- Los seis selectores muestran el sprite frontal del héroe y su nombre; reutilizan
+  `assets/camp/front-128.png` sin generar imágenes adicionales.
+- Catálogo con desplazamiento vertical y dos cartas completas por fila, usando
+  la misma presentación de combate: marco, coste, tipo, nombre, imagen y efecto.
+- Cada carta tiene debajo su botón «Comprar · N almas»; las adquiridas indican
+  «Habilitada». Se conservan las validaciones de saldo y compra única.
+- La previsualización muestra valores base, sin bonificaciones de una aventura
+  activa. Comprar sigue desbloqueando futuras recompensas, sin añadir cartas al mazo.
+- Validación de este cambio: mercado renderizado en Linux (34 comprobaciones,
+  seis categorías y compras), UI general headless (271); sin fallos. Revisada la
+  captura del catálogo y retirada después. Sin exportar ni probar en Web/Android.

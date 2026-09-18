@@ -15,6 +15,8 @@ func _ready() -> void:
 				targets.append(heroes[i].id)
 	var width = (68 + targets.size() * 39 if damage > 0 else 0) + (72 if block > 0 else 0)
 	var x = (size.x - width) / 2.0
+	if width > 0:
+		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(x - 6, -1, width + 12, 43))
 	if damage > 0:
 		var attack = BlockIndicator.new()
 		attack.name = "Attack"

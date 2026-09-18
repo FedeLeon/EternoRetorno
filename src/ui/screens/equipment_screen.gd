@@ -3,7 +3,6 @@ extends RefCounted
 # Shared UI factory + explicit view data and actions; no rule or save mutations.
 static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_start: bool, actions: Dictionary) -> void:
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tu reliquia · Prepará el descenso", actions.menu)
-	ui.label_at("Elegí una sola reliquia para ambos héroes. Cambiarla reemplaza la anterior.", 28, 88, 1100, 35, 18, ui.TEXT)
 	var ids = relics.keys()
 	for i in range(ids.size()):
 		var id = ids[i]
@@ -19,12 +18,6 @@ static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_sta
 		ui.object_icon(relic.icon, 0, 0, 132, b)
 		b.mouse_entered.connect(func(): b.modulate = Color(1.2, 1.2, 1.2))
 		b.mouse_exited.connect(func(): b.modulate = Color.WHITE)
-	var selected = equipped.get("team", "")
-	var caption = "Tocá una reliquia\npara ver su poder"
-	if relics.has(selected):
-		caption = relics[selected].name + "\nElegida para ambos"
-	var summary = ui.label_at(caption, 518, 330, 244, 100, 22, ui.GOLD)
-	summary.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var back = ui.button("Volver a personajes", 36, 647, 320, 54, actions.back)
 	back.name = "BackToCharacters"
 	var start = ui.button("Iniciar aventura", 904, 647, 340, 54, actions.start, can_start)

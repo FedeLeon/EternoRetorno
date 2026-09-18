@@ -10,8 +10,8 @@ static func build(ui: Control, title: String, text: String, actions: Array) -> C
 	var panel = ui.panel(280, 142, 720, 432, ui.GOLD, overlay)
 	panel.name = "ModalFrame"
 	preload("res://src/ui/components/modal_frame.gd").decorate(panel)
-	ui.label_at(title, 330, 185, 620, 62, 32, ui.GOLD, overlay)
-	ui.label_at(text, 330, 254, 620, 100 if actions.size() < 3 else 62, 22, ui.TEXT, overlay)
+	ui.label_at(title, 330, 185, 620, 62, 32, ui.GOLD, overlay).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at(text, 330, 254, 620, 100 if actions.size() < 3 else 62, 22, ui.TEXT, overlay).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(actions.size()):
 		var action = actions[i]
 		var y = (412 if actions.size() < 3 else 344) + i * 66

@@ -68,6 +68,8 @@ func add_number(amount: int, area: Rect2, id: String) -> void:
 func text_button(caption: String, area: Rect2, action: Callable) -> void:
 	var target = Button.new()
 	target.text = caption
+	if caption == "Menú":
+		preload("res://src/ui/components/button_skin.gd").decorate(target, "wood_menu")
 	target.pressed.connect(action)
 	place(target, area)
 

@@ -107,3 +107,16 @@ cuestan 1 de energía. Las cartas de mercado, victoria y ENLACE se siguen
 consiguiendo después. Se mantienen seis cartas robadas por turno y tres de
 energía. Solo cambia el inicio de nuevas aventuras; las guardadas conservan
 sus instancias. La fuente es `scripts/create_content.py` y su catálogo generado.
+
+## Texto legible en cartas inclinadas (17/09/2026)
+
+`ui/components/card_typography.gd` aplica una copia compartida de la fuente
+integrada de Godot con MSDF y filtrado lineal a las etiquetas de cada carta
+(nombre, descripción y ENLACE). Se evita heredar nearest del arte pixelado al
+rotar letras pequeñas. No cambia la fuente global, los marcos, las ilustraciones,
+los dígitos gráficos, tamaños ni el abanico. Se usa la fábrica común de cartas.
+
+Referencia: https://docs.godotengine.org/en/stable/classes/class_fontfile.html
+Validación local: distribución 38 e interfaz 271, sin fallos. Revisión renderizada
+Linux a 1280×720 de texto inclinado. Capturas temporales eliminadas. Sin exportación
+APK/Web; legibilidad en navegador y dispositivos aún no comprobada en esta revisión.

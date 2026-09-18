@@ -13,11 +13,28 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 		building.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(building, 91, 111, 310, 235)
 	var plots = [Rect2(110, 279, 276, 47), Rect2(836, 299, 256, 40), Rect2(75, 414, 319, 59), Rect2(933, 476, 284, 56)]
+	if profile.buildings.get("forge", false):
+		var forge = TextureRect.new()
+		forge.name = "ForgeBuilding"
+		forge.texture = preload("res://assets/forge/building.png")
+		forge.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		forge.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		forge.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		ui.rect(forge, 50, 289, 370, 224)
 	for i in range(plots.size()):
+		if i == 2:
+			var hotspot = ui.camp_hotspot("Plot2", Rect2(50, 289, 370, 224) if profile.buildings.get("forge", false) else plots[2], "Herrería" if profile.buildings.get("forge", false) else "Solar 3 · Herrería", actions.forge)
+			if profile.buildings.get("forge", false):
+				hotspot.set_script(preload("res://src/ui/components/building_hotspot.gd"))
+				hotspot.configure(preload("res://assets/forge/building.png"), Vector2(370, 224))
+				var market_caption: Rect2 = ui.layer.get_node("Plot0").get_meta("caption_rect")
+				market_caption.position -= hotspot.position
+				hotspot.passthrough_areas.append(market_caption)
+			continue
 		if i == 0:
-			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado · Entrar" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market)
+			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market)
 			continue
 		ui.camp_hotspot("Plot%d" % i, plots[i], "Solar %d · Sin construir" % (i + 1), func():
 			ui.show_modal("Solar disponible", "Aquí podrás construir un edificio para tu campamento.\nLas construcciones y sus ventajas todavía no están disponibles.", "Entendido", actions.close_modal))
 	ui.camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", func():
-		ui.show_modal("Refugio de personajes", "Este será el lugar para mejorar a tus personajes entre aventuras.\nLas mejoras todavía no están disponibles.", "Entendido", actions.close_modal))
+		ui.show_modal("Refugio de personajes", "Las armas y armaduras se mejoran en la herrería del solar 3.\nMás adelante habrá otras mejoras de personaje en el refugio.", "Entendido", actions.close_modal))

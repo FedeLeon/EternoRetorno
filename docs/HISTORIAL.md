@@ -488,3 +488,90 @@ no se atribuyen horas ni fechas de compilación que no estén verificadas.
   reliquias y límites del cuadro. Interfaz general: 271 sin fallos. Revisados ambos
   laterales renderizados en Linux. Capturas temporales eliminadas. Sin exportar
   APK/Web ni pruebas nuevas en navegador, emulador o dispositivo físico.
+
+## Marcos superiores, tablones y diálogos centrados (17/09/2026)
+
+- Marco ornamental compartido en campamento, personajes y reliquias. Margen
+  del título ajustado para despejar las esquinas del asset.
+- Generados tablón común, cartel Menú y marco superior; fuentes y prompts en
+  `docs/ui_buttons/wood-assets.json`. Aplicados tablones a botones generales,
+  inicio y acciones de preparación. Menú consistente en mapa, combate y tesoro.
+- Títulos y cuerpos de modales centrados en el constructor común; tesoros ya
+  centrados. Preservados iconos, cartas y terminar turno circular.
+- Pruebas locales: campamento 33, selección 47, equipamiento 46, inicio 13 y
+  UI general 271, todas sin fallos. Revisión visual Linux de cabeceras y modal
+  del arco; capturas temporales retiradas. Diff limpio. Sin exportar APK/Web,
+  ni nuevas pruebas en navegador, emulador o dispositivo físico.
+
+## Centro del círculo sin textos (17/09/2026)
+
+- Retiradas las etiquetas centrales de `equipment_screen.gd`; se conserva el
+  cuadro exterior con nombre y efecto y la selección inmediata persistente.
+- Revisión del código y `git diff --check`; sin prueba visual nueva ni exportación
+  APK/Web para esta eliminación de etiquetas.
+
+## Selección de reliquia sin subtítulo (17/09/2026)
+
+- Eliminada la indicación «Elegí una sola reliquia para ambos héroes…» de
+  `equipment_screen.gd`. Sin cambios de comportamiento.
+- Revisión del código y `git diff --check`; sin prueba visual nueva ni exportación APK/Web.
+
+## Corrección de letras al rotar cartas (17/09/2026)
+
+- Texto de cartas con MSDF y filtro lineal, aislado en `card_typography.gd`.
+  Corrige el muestreo nearest heredado, conservando abanico, tamaños y pixel art.
+- Pruebas locales: distribución 38 e interfaz general 271 sin fallos. Revisión
+  visual Linux a 1280×720, capturas temporales retiradas. Sin exportar APK/Web
+  ni comprobar esta revisión en navegador, emulador o dispositivo físico.
+
+## Actores mayores y datos enemigos con contraste (17/09/2026)
+
+- Enemigos +25 % sobre escala previa. Héroes con altura visible común usando
+  la guardiana ampliada un 25 % como referencia; compensación de los sprites
+  menores, escalado uniforme y pies anclados. Sin modificar atlas o animaciones.
+- Placas oscuras semitransparentes para nombre e intención de enemigos.
+- Nuevos componentes `combat_actor_scale.gd` y `combat_backplate.gd`.
+- Distribución 38 y HUD 92 locales sin fallos tras actualizar la expectativa
+  anterior de escala. Revisión visual de los seis héroes en Linux a 1280×720;
+  capturas retiradas. Sin exportar APK/Web ni validar en navegador/Android.
+
+## Mercado con retratos y cartas completas (17/09/2026)
+
+- `market_screen.gd`: imagen frontal de cada héroe en su selector, catálogo de
+  dos cartas completas por fila y botón de compra con precio debajo de cada una.
+- Reutilizada la fábrica `main.gd::card_panel`, con opción de valores base para
+  que el catálogo no herede bonificaciones de una aventura activa. Sin cambios
+  de precios, reglas de compra, IDs ni guardados.
+- Mercado renderizado local: 34 comprobaciones; interfaz general headless: 271;
+  todas sin fallos. Revisada captura del interior y retirada. Sin exportar APK/Web
+  ni comprobar este cambio en navegador, emulador o dispositivo físico.
+
+## Herrería en solar 3 y equipo permanente (17/09/2026)
+
+- Construcción por 400 almas, edificio visible e interior con herrero; seis
+  categorías con vista previa. Tres niveles independientes de arma y armadura
+  por héroe, a 150/300/600 almas por rama: +1 fuerza o +2 bloqueo por nivel.
+- Perfil conserva compras; cada nueva run toma una instantánea. Las aventuras
+  anteriores mantienen estadísticas y aspecto. Compras duplicadas o sin saldo
+  rechazadas; derrota no elimina el equipo permanente.
+- Generados con image_gen integrado edificio, interior y 96 atlas (3.360 cuadros),
+  cubriendo equipo inicial y todas las combinaciones. Prompts y fuentes en
+  `docs/forge/`; importador reproducible, métricas de altura y caché de ocho variantes.
+- Nuevos módulos de reglas, navegación, pantalla y presentación; main conecta
+  callbacks. Apariencia actual en combate, mapa y recompensas; perfil en herrería.
+  Hit testing por alfa y prioridad del cartel vecino evitan tapar el mercado.
+- Pruebas locales: herrería/reglas 330, assets/animaciones 10.626, herrería/UI 46;
+  reglas generales 155, progresión 819, campamento 33, UI 271, HUD 92,
+  distribución 38 y mapa 21, sin fallos. Revisión visual Linux de las seis galerías,
+  interior, edificios, mapa y seis héroes con equipo máximo en combate.
+- Capturas temporales retiradas; documentación y procedencia conservadas. Sin
+  exportar APK/Web ni verificar en navegador/emulador/dispositivo físico.
+
+## Carteles del campamento — 17/09/2026
+
+- Paneles de `main.gd::camp_hotspot` con el tablón de madera compartido.
+- `base_camp_screen.gd`: edificios construidos rotulados «Mercado» y «Herrería»,
+  sin «Entrar»; se preservan las zonas de clic existentes.
+- Prueba local renderizada `test_forge_ui.gd`: 46 comprobaciones, cero fallos;
+  campamento revisado visualmente a 1280×720. Capturas temporales retiradas.
+- Sin exportaciones APK/Web ni validación en dispositivo.

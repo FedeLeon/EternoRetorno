@@ -93,6 +93,8 @@ func label_at(text: String, x: float, y: float, w: float, h: float, font_size: i
 func button(text: String, x: float, y: float, w: float, h: float, callback: Callable, enabled: bool = true, parent: Control = null) -> Button:
 	var b = Button.new()
 	b.text = text
+	if text == "Menú":
+		preload("res://src/ui/components/button_skin.gd").decorate(b, "wood_menu")
 	b.disabled = not enabled
 	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	b.pressed.connect(func():
@@ -108,9 +110,10 @@ func panel(x: float, y: float, w: float, h: float, border: Color = Color("343b4d
 	rect(p, x, y, w, h, parent)
 	return p
 
-func art(kind: String, x: float, y: float, w: float, h: float, parent: Control = null) -> Control:
+func art(kind: String, x: float, y: float, w: float, h: float, parent: Control = null, gear: Dictionary = {}) -> Control:
 	var visual = ANIMATED_HEROES[kind].new()
 	rect(visual, x - w * 0.18, y, w * 1.36, h, parent)
+	preload("res://src/presentation/hero_equipment.gd").apply(visual, kind, gear)
 	return visual
 
 func background() -> void:
@@ -168,6 +171,7 @@ func render() -> void:
 		"options": options_view()
 		"base_camp": base_camp_view()
 		"market": market_view()
+		"forge": preload("res://src/ui/forge_navigation.gd").build(self)
 		"select": selection()
 		"equipment": equipment_view()
 		"items": items_view()
@@ -196,15 +200,7 @@ func active_run() -> bool:
 func title_button(caption: String, y: float, primary: bool, action: Callable) -> Button:
 	var b = button(caption, 440, y, 400, 58, action)
 	b.add_theme_font_size_override("font_size", 23)
-	for state in ["normal", "hover", "pressed"]:
-		var style = StyleBoxTexture.new()
-		style.texture = load("res://assets/title/" + ("start.png" if primary else "options.png"))
-		style.texture_margin_left = 28
-		style.texture_margin_right = 28
-		style.texture_margin_top = 12
-		style.texture_margin_bottom = 12
-		style.modulate_color = Color("c8b6e4") if state == "hover" else (Color("857293") if state == "pressed" else Color.WHITE)
-		b.add_theme_stylebox_override(state, style)
+	preload("res://src/ui/components/button_skin.gd").decorate(b, "wood_button")
 	return b
 
 func home() -> void:
@@ -257,6 +253,7 @@ func options_view() -> void:
 	title_button("Volver", 470, false, func(): screen = "home"; render())
 
 var market_hero = "warrior"
+var forge_hero = "warrior"
 
 func open_market() -> void:
 	screen = "market"
@@ -286,7 +283,7 @@ func open_base_camp() -> void:
 	game.message = ""
 	render()
 
-func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable) -> void:
+func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable) -> Button:
 	var b = button("", area.position.x, area.position.y, area.size.x, area.size.y + 34, action)
 	b.name = id
 	b.tooltip_text = caption
@@ -294,8 +291,11 @@ func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable) ->
 	for state in ["hover", "pressed", "focus"]:
 		b.add_theme_stylebox_override(state, box(Color(0.9, 0.75, 0.35, 0.12), GOLD, 2))
 	var plaque = panel(area.position.x + (area.size.x - 208) / 2, area.end.y, 208, 34)
+	plaque.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("wood_button"))
 	var title = label_at(caption, 5, 0, 198, 34, 16, GOLD, plaque)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	b.set_meta("caption_rect", plaque.get_rect())
+	return b
 
 func camp_adventures() -> void:
 	close_modal()
@@ -311,7 +311,7 @@ func base_camp_view() -> void:
 	preload("res://src/ui/screens/base_camp_screen.gd").build(self, game.profile.duplicate(true), {
 		"home": func(): screen = "home"; render(),
 		"prepare": camp_adventures,
-		"market": market_plot, "close_modal": close_modal})
+		"market": market_plot, "forge": func(): preload("res://src/ui/forge_navigation.gd").plot(self), "close_modal": close_modal})
 
 func open_selection() -> void:
 	var draft = game.profile.get("preparation", {})
@@ -457,10 +457,8 @@ func combat_view() -> void:
 		var valid = not c.is_empty() and c.target != "enemy" and i in targets
 		var target = button("", x, 150, 204, 348, func(): target_clicked(i), valid)
 		combat_target_style(target)
-		var visual = art(h.id, 30, 123, 144, 136, target)
-		# Enlarge combat artwork by 25%, keeping the grounded baseline.
-		visual.pivot_offset = Vector2(visual.size.x / 2, visual.size.y)
-		visual.scale = Vector2.ONE * 1.25
+		var visual = art(h.id, 30, 123, 144, 136, target, h.get("forge", {}))
+		preload("res://src/ui/components/combat_actor_scale.gd").hero(visual, h.id)
 		TargetGlow.attach(visual, valid)
 		hero_art[i] = visual
 		if h.id in ANIMATED_HEROES:
@@ -483,11 +481,10 @@ func combat_view() -> void:
 		enemy_visual.visual_id = def.visual
 		enemy_visual.fallen = e.hp <= 0
 		rect(enemy_visual, 43, 130, 128, 132, target)
-		# Imported enemy pixels end at y=60 in a 64px frame (native scale 2).
-		enemy_visual.pivot_offset = Vector2(enemy_visual.size.x / 2, enemy_visual.size.y - 8)
-		enemy_visual.scale = Vector2.ONE * 1.25
+		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
 		TargetGlow.attach(enemy_visual, valid)
 		enemy_art[i] = enemy_visual
+		preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -50, 208, 30))
 		label_at(def.name, 7, -48, 200, 26, 18, TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		enemy_health[i] = health_bar(e, 16, 55, 182, target)
 		var effects = StatusEffects.new()
@@ -527,14 +524,15 @@ func combat_view() -> void:
 	var end_turn = button("Terminar\nturno", 1120, 568, 136, 136, func(): animate_combat_action())
 	preload("res://src/ui/components/end_turn_button.gd").decorate(end_turn)
 
-func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, chosen: bool = false, enabled: bool = true, parent: Control = null) -> Button:
+func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, chosen: bool = false, enabled: bool = true, parent: Control = null, base_values: bool = false) -> Button:
 	var c = game.content.card(instance)
+	var card_description = game.content.describe(instance, c if base_values else game.effective_card(instance))
 	var def = game.content.heroes[c.owner]
 	var colors = {"warrior": Color("98483f"), "guardian": Color("438b89"), "rogue": Color("72864a"), "mage": Color("8f65b4"), "cleric": Color("c09a55"), "ranger": Color("507ba6")}
 	var accent: Color = colors[c.owner]
 	var b = button("", x, y, w, h, callback, enabled, parent)
 	b.set_meta("card_id", instance.id)
-	b.tooltip_text = c.name + " · " + def.name + "\n" + game.content.describe(instance, game.effective_card(instance))
+	b.tooltip_text = c.name + " · " + def.name + "\n" + card_description
 	for state in ["normal", "disabled", "hover", "pressed", "focus"]:
 		b.add_theme_stylebox_override(state, box(Color("101117"), GOLD if chosen or state == "focus" else accent, 3 if chosen else 1))
 	var frame = NinePatchRect.new()
@@ -567,9 +565,10 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	preload("res://src/ui/components/card_art.gd").attach(picture_area, instance.id, Rect2(3, 3, picture_area.size.x - 6, picture_area.size.y - 6))
 	var parchment = panel(18, h - 92, w - 36, 74, accent, b)
 	parchment.add_theme_stylebox_override("panel", box(Color("b9aa8c") if enabled else Color("8b8375"), Color("564a39"), 2))
-	var description = label_at(game.content.describe(instance, game.effective_card(instance)), 24, h - 87, w - 48, 64, 12 if w < 190 else 14, Color("211b19"), b)
+	var description = label_at(card_description, 24, h - 87, w - 48, 64, 12 if w < 190 else 14, Color("211b19"), b)
 	description.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	SynergyView.mark(self, b, instance.id, game.content.synergies, game.content.cards)
+	preload("res://src/ui/components/card_typography.gd").apply(b)
 	return b
 
 func select_card(index: int) -> void:
@@ -683,7 +682,7 @@ func reward_view() -> void:
 		var instance = game.run.reward[i]
 		var c = game.content.card(instance)
 		var x = 250 + i * 268
-		art(c.owner, x + 75, 136, 92, 112)
+		art(c.owner, x + 75, 136, 92, 112, null, game.run.heroes[game.run.party.find(c.owner)].get("forge", {}))
 		card_panel(instance, x, 268, 244, 272, func(): act(func(): game.choose_reward(i)))
 	button("Saltar recompensa  →", 461, 590, 358, 60, func(): act(func(): game.choose_reward(-1)))
 	if not game.run.new_unlocks.is_empty():
@@ -852,7 +851,7 @@ func back() -> void:
 	elif screen == "equipment":
 		screen = "select"
 		render()
-	elif screen in ["select", "market"]:
+	elif screen in ["select", "market", "forge"]:
 		open_base_camp()
 	elif screen in ["base_camp", "collection", "options"]:
 		screen = "home"

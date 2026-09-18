@@ -394,3 +394,56 @@ la confirmación modal. La vista no modifica el perfil.
 `ui/components/round_button.gd` limita hit testing al círculo. `end_turn_button.gd`
 lo aplica junto al asset y estados, sin resolver turnos. `hand_layout.gd` mantiene
 cálculos de abanico y selección; `main.gd` conserva acciones y coordinación.
+
+### Tema de madera y marco superior (17/09/2026)
+
+`button_skin.gd` centraliza tablón común, cartel Menú, regiones y estados.
+`preparation_header.gd` aplica el marco a campamento/selección/equipamiento.
+Las fábricas independientes de mapa, HUD y tesoro aplican el mismo cartel Menú.
+`dialog_view.gd` centra título y cuerpo sin modificar acciones. Sin cambios de
+reglas, formato de guardado ni nuevas responsabilidades en los componentes visuales.
+
+### Tipografía de cartas (17/09/2026)
+
+`ui/components/card_typography.gd` mantiene una única copia MSDF de la fuente
+integrada y aplica filtrado lineal solo a Labels dentro de la carta. La fábrica
+`main.gd::card_panel` lo ejecuta tras añadir todas las etiquetas; no altera el
+tema global ni las texturas de pixel art. No requiere recursos externos de fuentes.
+
+### Escala y contraste de combate (17/09/2026)
+
+`ui/components/combat_actor_scale.gd` centraliza altura visible común por clase
+y aumento enemigo, con pivotes al suelo. Métricas fijas de atlas, no se recalcula
+al animar. `combat_backplate.gd` aporta fondo semitransparente sin capturar input;
+lo reutilizan nombre e intención. No cambia datos de combate ni guardado.
+
+### Catálogo del mercado (17/09/2026)
+
+`ui/screens/market_screen.gd` organiza los retratos existentes y una cuadrícula
+de dos columnas con desplazamiento vertical. Reutiliza `main.gd::card_panel`
+para evitar una segunda implementación de cartas. El parámetro opcional final
+`base_values` permite mostrar el catálogo sin bonificaciones de la run; los
+consumidores anteriores conservan el comportamiento predeterminado. La compra
+sigue pasando por callbacks hacia Game/Progression, sin reglas en la vista.
+
+### Herrería y apariencias de equipo (17/09/2026)
+
+- `rules/forge_progression.gd`: construcción, compras por rama/nivel y migración.
+  Configuración en `data/forge.json`; Game coordina checkpoints atómicos.
+- `ui/forge_navigation.gd`: conecta construcción y navegación, extraído para no
+  acumular otra pantalla en main. `ui/screens/forge_screen.gd` recibe datos y callbacks.
+- `profile.forge_upgrades` conserva niveles; `run.heroes[].forge` guarda una
+  instantánea por aventura. Las runs antiguas sin campo mantienen reglas y aspecto.
+- `presentation/hero_equipment.gd`: caché de SpriteFrames por combinación,
+  sustituyendo solo atlas y conservando nombres, duración, bucles y pose actual.
+  Caché limitada a ocho variantes. Combate, mapa y recompensas usan la instantánea;
+  la herrería muestra los niveles del perfil, pasados explícitamente a la fábrica visual.
+- `scripts/import_forge.gd`: normaliza fuentes de equipo al contrato de 128 px
+  y escribe alturas visibles en `data/forge_visuals.json`. La escala de combate
+  lee esas métricas para mantener igual altura entre clases y variantes.
+- `ui/components/building_hotspot.gd`: hit testing por alfa de la herrería;
+  deja pasar clics en márgenes transparentes y en el cartel del mercado vecino.
+  `camp_hotspot` devuelve el botón y expone la geometría del cartel como metadato.
+
+No se ha completado la extracción del resto de pantallas de main. Los nuevos
+componentes visuales no compran, calculan daño ni escriben guardados.

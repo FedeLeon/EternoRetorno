@@ -3,6 +3,7 @@ extends RefCounted
 
 const Synergies = preload("res://src/rules/card_synergies.gd")
 const Progression = preload("res://src/rules/camp_progression.gd")
+const Forge = preload("res://src/rules/forge_progression.gd")
 const Treasure = preload("res://src/rules/treasure.gd")
 const Content = preload("res://src/content.gd")
 const Dungeon = preload("res://src/dungeon.gd")
@@ -27,8 +28,21 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 				rng.state = run.rng_state
 		message = store.last_error
 
-	if Progression.migrate(profile):
+	var migrated = Progression.migrate(profile)
+	if Forge.migrate(profile) or migrated:
 		checkpoint()
+
+func build_forge() -> bool:
+	if not Forge.build(profile):
+		return false
+	checkpoint()
+	return true
+
+func buy_forge_upgrade(hero: String, track: String, expected_level: int) -> bool:
+	if not Forge.buy(profile, hero, track, expected_level):
+		return false
+	checkpoint()
+	return true
 
 func build_market() -> bool:
 	if not Progression.build(profile): return false
@@ -65,6 +79,7 @@ func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> 
 	for id in party:
 		run.heroes.append({"id": id, "hp": int(content.heroes[id].hp), "max_hp": int(content.heroes[id].hp), "block": 0})
 		var hero = run.heroes.back()
+		hero.forge = Forge.snapshot(profile, id)
 		hero.equipped_relic = equipment.get("team", equipment.get(id, ""))
 		hero.phoenix_used = false
 		if relic_bonus(hero, "max_hp") > 0:
@@ -505,7 +520,7 @@ func turn_energy() -> int:
 	return amount
 
 func attack_bonus(hero: Dictionary, owner: String) -> int:
-	var bonus = int(hero.get("turn_strength", 0))
+	var bonus = int(hero.get("turn_strength", 0)) + int(hero.get("forge", {}).get("strength", 0))
 	if run.get("team_relic", "") != "" or owner in ["mage", "cleric"]:
 		bonus += relic_bonus(hero, "magic")
 	if owner in ["mage", "cleric"]:
@@ -519,6 +534,8 @@ func effective_card(instance: Dictionary) -> Dictionary:
 	var hero = run.heroes[run.party.find(c.owner)]
 	if c.damage > 0:
 		c.damage += attack_bonus(hero, c.owner)
+	if c.block > 0:
+		c.block += int(hero.get("forge", {}).get("block", 0))
 	if c.poison > 0:
 		c.poison += relic_bonus(hero, "poison")
 	return c
