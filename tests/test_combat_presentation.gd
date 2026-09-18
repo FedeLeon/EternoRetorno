@@ -85,6 +85,7 @@ func run_tests() -> void:
 	var doomed = app.hero_art[0]
 	var starting_x = doomed.global_position.x
 	app.animate_combat_action()
+	check(app.layer.has_node("EnemyCutIn"), "enemy turn shows foreground attack")
 	var fled = false
 	while app.combat_busy:
 		if is_instance_valid(doomed):

@@ -169,3 +169,38 @@ válida; no cambiaron valores ni formato de inventario.
 
 Validación: batería local completa de 30 scripts aprobada.
 [Detalle de la auditoría](../cleanup/2026-09-18.md).
+
+## Bolsa circular — 18/09/2026
+
+La bolsa dispone los ocho objetos en un círculo de radio 190 px. Cada icono
+permanece consultable incluso con cero unidades y muestra debajo la cantidad
+real mediante `number_view.gd`. La barra superior comparte el marco de preparación.
+
+Al tocar un objeto se selecciona y abre un cuadro anclado fuera del círculo,
+con nombre, efecto y acciones Consumir por objetivo válido (o un único botón
+para objetos de equipo). Si no hay unidades, objetivo o combate activo, la
+acción queda deshabilitada. La cantidad se indica solo con el número bajo el objeto;
+los avisos de falta de objetivo o de combate se muestran cuando hay unidades. Tocar otro icono reemplaza el
+cuadro. No hay modal que bloquee la consulta del resto de objetos.
+
+`ui/screens/items_screen.gd` recibe catálogo, inventario y acciones;
+`ui/components/item_popover.gd` dibuja el cuadro. `ui/items_navigation.gd`
+consulta objetivos y llama a `game.use_item`, que sigue validando, resolviendo
+y guardando. `main.gd::items_view` ahora delega. Tras consumir vuelve al combate;
+Volver respeta la fase actual, incluida una recompensa pendiente. Reglas y
+formato de guardado no cambian. Se reutilizan atlas, dígitos y marco existentes.
+
+Validación actual: `test_bag_ui.gd` renderizado sin fallos (ocho posiciones,
+consulta con cero, cantidades, cuadros exteriores, consumo único, bloqueo
+fuera de combate y retorno a recompensa); 48 comprobaciones de equipamiento
+UI y prueba de recompensa aprobadas en headless. Revisión Linux 1280×720;
+captura temporal eliminada. Sin exportación APK/Web ni prueba en dispositivo.
+
+## 18/09/2026 — Menos texto en la bolsa
+
+Retirados «No tenés unidades» del cuadro de objeto y «Tocá un objeto para ver
+su efecto» del pie de la vista. Las cantidades permanecen exclusivamente en
+los dígitos bajo cada icono. Consumir sigue deshabilitado cuando no hay stock.
+Archivos: `ui/components/item_popover.gd` y `ui/screens/items_screen.gd`.
+Validación local headless: `test_bag_ui.gd` sin fallos y `git diff --check`
+correcto. Sin revisión visual manual ni exportación.

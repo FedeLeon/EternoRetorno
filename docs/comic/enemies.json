@@ -1,0 +1,41 @@
+{
+  "tool": "image_gen.imagegen",
+  "assets": [
+    {
+      "id": "crypt_bat",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Nocturnal monstrous bat diving to the LEFT with open fanged mouth, red eyes, purple black body and broad red-purple membranous wings, violet air slash trails. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-f1a5d615-7200-4e9d-a6df-2ac467f4be04.png",
+      "asset": "assets/comic/enemies/crypt_bat.png"
+    },
+    {
+      "id": "crypt_lancer",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Undead skeleton lancer lunging LEFT with a long spear thrust, round battered wooden shield on other arm, red cloth scraps, bare skull. Spear tip far left, pale steel impact streaks. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-97793b7a-5bb2-44b4-a565-55f2bb71bc87.png",
+      "asset": "assets/comic/enemies/crypt_lancer.png"
+    },
+    {
+      "id": "crypt_shaman",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Ash shaman, sinister skull masked hunched occult humanoid in ragged brown red robes, thrusting his flame-tipped wooden staff LEFT and casting a curling orange ash-fire blast to the LEFT. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-96858209-2fe0-458f-87ff-9bec88f54c8c.png",
+      "asset": "assets/comic/enemies/crypt_shaman.png"
+    },
+    {
+      "id": "crypt_slime",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Acid slime monster surging LEFT, amorphous translucent lime green blob with bright yellow green core, launching a jet of acid LEFT with scattered suspended green droplets. No humanoid limbs. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-72882d6a-e835-487a-81bd-39d6707a7161.png",
+      "asset": "assets/comic/enemies/crypt_slime.png"
+    },
+    {
+      "id": "skeleton_6",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Elite skeleton guardian attacking LEFT with a broad steel sword slash, battered dark plate armor and helmet, torn deep blue cape, visible skeletal face, steel blue slash arc going LEFT. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-11e9c2a3-270b-480e-9ad4-6c8db9705225.png",
+      "asset": "assets/comic/enemies/skeleton_6.png"
+    },
+    {
+      "id": "crypt_automaton",
+      "prompt": "Create a single full-body dark fantasy COMIC foreground attack cut-in for Eterno Retorno. Reference 1 is the exact enemy identity (pixel sprite): preserve its anatomy, equipment and colors but redraw in detailed inked comic illustration. Reference 2 is STYLE ONLY, do not include its human character: match its white sticker outline, crisp black inks and painterly highlights. Broken ancient bronze iron automaton attacking LEFT with one massive mechanical arm punching LEFT, round glowing orange eye, rusty bulky torso and articulated metal limbs, orange sparks and shockwave at its left facing fist. Clearly face and attack from RIGHT TO LEFT; attack point and gaze LEFT, trailing cloak/wings/effects to the RIGHT. Landscape 3:2, full silhouette and weapon visible with generous padding. One enemy only, no heroes or victims, no text. Truly TRANSPARENT RGBA background, no opaque matte, no scenery or panel. Sparse colored attack energy and sparks around the enemy, empty transparent gaps. This will overlay the lower right of a game screen.",
+      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-1c8fdf07-9448-4ae0-b039-f13120151abd.png",
+      "asset": "assets/comic/enemies/crypt_automaton.png"
+    }
+  ]
+}

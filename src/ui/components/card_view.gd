@@ -8,6 +8,7 @@ const COST_CENTERS = {
 }
 static func build(ui: Control, instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, _chosen: bool, enabled: bool, parent: Control, base_values: bool) -> Button:
 	var c = ui.game.content.card(instance)
+	var linked = ui.game.content.synergies.any(func(recipe): return instance.id in recipe.cards)
 	var card_description = ui.game.content.describe(instance, c if base_values else ui.game.effective_card(instance))
 	var def = ui.game.content.heroes[c.owner]
 	var colors = {"warrior": Color("98483f"), "guardian": Color("438b89"), "rogue": Color("72864a"), "mage": Color("8f65b4"), "cleric": Color("c09a55"), "ranger": Color("507ba6")}
@@ -33,7 +34,7 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 	cost.value = int(c.cost)
 	var cost_center: Vector2 = COST_CENTERS[c.owner]
 	ui.rect(cost, w * (cost_center.x - 0.08), h * (cost_center.y - 0.05), w * 0.16, h * 0.10, b)
-	preload("res://src/ui/components/card_type_icons.gd").attach(b, c)
+	preload("res://src/ui/components/card_type_icons.gd").attach(b, c, linked)
 	var picture_area = ui.panel(18, h * 0.27, w - 36, h * 0.34, accent, b)
 	picture_area.name = "IllustrationSpace"
 	picture_area.add_theme_stylebox_override("panel", ui.box(Color("14151c"), accent.darkened(0.3), 1))
@@ -41,5 +42,6 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 	var description = ui.label_at(card_description, w * 0.13, h * 0.655, w * 0.74, h * 0.245, 12 if w < 190 else 14, Color("211b19"), b)
 	description.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	preload("res://src/ui/components/synergy_view.gd").mark(ui, b, instance.id, ui.game.content.synergies, ui.game.content.cards)
+	preload("res://src/presentation/card_finish.gd").attach(b, frame, linked)
 	preload("res://src/ui/components/card_typography.gd").apply(b)
 	return b

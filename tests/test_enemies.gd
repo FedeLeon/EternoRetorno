@@ -71,9 +71,9 @@ func run_tests() -> void:
 	for v in visuals:
 		check(not v.acting and v.sprite.modulate == Color.WHITE, v.visual_id + " hurt returns")
 		v.play_once("death")
-	await create_timer(0.4).timeout
+	await create_timer(1.5).timeout
 	for v in visuals:
-		check(v.fallen and not v.acting, v.visual_id + " death holds")
+		check(v.fallen and not v.acting and not v.sprite.visible, v.visual_id + " death holds")
 	gallery.free()
 	root.size = Vector2i(1280, 720)
 	root.content_scale_size = Vector2i(1280, 720)

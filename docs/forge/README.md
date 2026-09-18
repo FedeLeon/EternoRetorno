@@ -93,3 +93,81 @@ en escritorio; las capturas se escriben en `artifacts/forge/` y son desechables.
   Capturas temporales retiradas tras revisarlas. Prompts/fuentes conservados.
 - Sin exportar APK/Web. No probado en navegador, emulador o dispositivo físico;
   el balance de las mejoras sigue pendiente de partidas humanas.
+
+## 18/09/2026 — Equipo mejorado en el HUD de combate
+
+Armas y armaduras con nivel 1–3 aparecen después de las reliquias en la barra
+superior del combate y de su recompensa. Cada icono lleva el nivel con los
+dígitos existentes; al tocarlo abre el cuadro compartido con héroe, nivel y
+bonificación de fuerza por golpe o bloqueo en cartas defensivas. Se conserva
+el cierre por segundo toque, toque exterior y Volver. Los niveles 0 no aparecen.
+
+Se muestran los valores de `run.heroes[].forge`, aplicados al inicio de la
+aventura, sin recalcular desde el perfil ni modificar partidas en curso.
+`src/presentation/equipment_badges.gd` prepara descripciones y texturas;
+`combat_hud.gd` presenta reliquias y equipo en la misma fila, ajustando
+separación si fuera necesario. Las pantallas de combate/recompensa suministran
+la instantánea. La interfaz no concede mejoras ni guarda.
+
+Assets nuevos: `assets/forge/icons/`, 21 SVG transparentes dibujados en código
+como extensión de los iconos vectoriales existentes: seis armas (espada,
+escudo de guardiana, dagas, báculo arcano, báculo sagrado y arco) y armadura,
+cada una en tres niveles con metales y gemas distintos. Son iconos de HUD;
+los atlas de personajes conservan su arte actual. Sin generación de imágenes.
+
+Validación actual: `test_forge_ui.gd`, 97 comprobaciones renderizadas locales
+sin fallos, incluyendo los cuatro equipos de cada pareja, apertura/cambio de
+cuadro, héroe/nivel y bonos +3/+6; `test_hud.gd`, 107 headless sin fallos.
+Importación y `git diff --check` correctos. Revisión visual Linux 1280×720;
+capturas temporales eliminadas. Sin exportación ni prueba en dispositivo.
+
+## 18/09/2026 — Regreso al campamento desde la barra de herrería
+
+La herrería muestra únicamente «Campamento» como acción de navegación en la
+barra superior: reemplaza «Menú» y elimina «Volver al campamento» inferior.
+Mantiene marco y almas, desplazando el contador para dar espacio al botón.
+`preparation_header.gd` admite una etiqueta opcional; las demás pantallas
+conservan «Menú» por defecto. `forge_screen.gd` conecta la acción de regreso;
+se retira el callback de menú sin uso en `forge_navigation.gd`.
+
+Validación local headless: `test_forge_ui.gd`, 97 comprobaciones sin fallos,
+incluido clic en Campamento superior y retorno. `git diff --check` correcto.
+Sin revisión visual manual de este cambio ni exportación.
+
+## 18/09/2026 — Categorías visuales de héroe en herrería
+
+La columna de selección reutiliza miniatura frontal, nombre y marco del color
+de cada clase del mercado. Se extrae `ui/components/hero_category.gd` para
+que ambas tiendas compartan la presentación; IDs y callbacks se conservan.
+La vista previa animada de equipo aumenta un 25 % (área de 124 a 155 px),
+reposicionada en la esquina derecha del bloque sin tapar textos ni compras.
+Se reutilizan `assets/cards/<hero>.png` y el atlas frontal; sin assets nuevos.
+
+Validación actual: herrería renderizada en Linux 1280×720, 97 comprobaciones
+sin fallos; mercado headless, 34 sin fallos. Revisión visual del interior con
+las seis categorías y personaje ampliado; `git diff --check` correcto.
+Capturas temporales eliminadas. Sin exportación ni prueba en dispositivo.
+
+## 18/09/2026 — Sustitución del arte de equipo del HUD
+
+Los 21 SVG simples de armas/armadura se reemplazan por PNG transparentes de
+128×128 en `assets/forge/icons/`. Tres niveles para cada arma (espada violeta,
+escudo turquesa, dagas verdes, báculo azul, báculo sagrado y arco azul) y tres
+armaduras comunes. Metal desgastado, grabados, gemas y acabados progresivos
+siguen el pixel art detallado de las reliquias. Dígitos y cuadros siguen siendo
+componentes de interfaz; no se pintan números ni marcos sobre los assets.
+
+Generados con image_gen integrado, usando `assets/objects/icons.png` como
+referencia estilística; edición posterior mediante la misma herramienta para
+extraer fondo transparente. Prompts completos, fuentes y procedencia:
+`docs/forge/hud-icons.json`; cuatro hojas finales en `hud-sources/`.
+`scripts/import_equipment_icons.gd` recorta celdas y normaliza la silueta a
+112 px dentro de un lienzo de 128 px, preservando alfa; ignora alfa residual
+inferior a 0,25 solo para calcular los límites del recorte. No recalcula reglas.
+`presentation/equipment_badges.gd` carga PNG. SVG sustituidos eliminados.
+
+Validación: 21 PNG comprobados por tamaño, canal alfa, transparencia de borde
+y contenido; importación Godot y diff sin errores. Prueba de herrería/HUD
+renderizada local con 97 comprobaciones aprobadas; revisión visual de iconos
+y cuadro de efecto en combate. Sin exportación ni dispositivo físico.
+Capturas temporales eliminadas; fuentes y prompts se conservan.

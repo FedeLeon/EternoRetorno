@@ -1,10 +1,12 @@
 extends RefCounted
 
-static func attach(card: Control, data: Dictionary) -> void:
+static func attach(card: Control, data: Dictionary, linked: bool = false) -> void:
 	var attack = data.damage > 0 or data.poison > 0
 	var icons: Array[Texture2D] = []
 	if attack:
 		icons.append(preload("res://assets/ui/sword.svg"))
+	if data.poison > 0:
+		icons.append(preload("res://assets/ui/poison.svg"))
 	if data.block > 0:
 		var shield = AtlasTexture.new()
 		shield.atlas = preload("res://assets/objects/icons.png")
@@ -12,6 +14,10 @@ static func attach(card: Control, data: Dictionary) -> void:
 		var bounds = shield.atlas.get_image().get_region(cell).get_used_rect()
 		shield.region = Rect2(cell.position + bounds.position, bounds.size)
 		icons.append(shield)
+	if data.get("heal", 0) > 0:
+		icons.append(preload("res://assets/ui/heal.svg"))
+	if linked:
+		icons.append(preload("res://assets/ui/chain.svg"))
 	if icons.is_empty(): return
 	var width = 12 + icons.size() * 24
 	var pill = Panel.new()
@@ -28,7 +34,7 @@ static func attach(card: Control, data: Dictionary) -> void:
 	card.add_child(pill)
 	for i in range(icons.size()):
 		var icon = TextureRect.new()
-		icon.name = "CardType%d" % i
+		icon.name = "CardLinkIcon" if linked and i == icons.size() - 1 else "CardType%d" % i
 		icon.texture = icons[i]
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -36,4 +42,3 @@ static func attach(card: Control, data: Dictionary) -> void:
 		icon.position = pill.position + Vector2(6 + i * 24, 1)
 		icon.size = Vector2(22, 22)
 		card.add_child(icon)
-

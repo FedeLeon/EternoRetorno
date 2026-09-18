@@ -15,27 +15,8 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	var ids = content.heroes.keys()
 	for i in range(ids.size()):
 		var id = ids[i]
-		var hero = content.heroes[id]
-		var b = ui.button("", 582, 142 + i * 90, 122, 82, func(): actions.category.call(id))
-		b.name = "Category_" + id
-		var frame = TextureRect.new()
-		frame.texture = load("res://assets/cards/%s.png" % id)
-		frame.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		ui.rect(frame, 0, 0, 122, 82, b)
-		var portrait = TextureRect.new()
-		portrait.name = "HeroPortrait"
-		portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-		var crop = AtlasTexture.new()
-		crop.atlas = ui.CAMP_FRONT
-		crop.region = Rect2(i * 128, 0, 128, 128)
-		portrait.texture = crop
-		ui.rect(portrait, 19, -3, 84, 66, b)
-		var caption = ui.label_at(hero.name, 5, 55, 112, 24, 16, ui.GOLD if selected == id else ui.TEXT, b)
-		caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		var category = preload("res://src/ui/components/hero_category.gd").build(ui, content.heroes[id], id, i, Vector2(582, 142 + i * 90), selected == id, func(): actions.category.call(id))
+		category.name = "Category_" + id
 	ui.panel(728, 104, 528, 570)
 	ui.label_at(content.heroes[selected].name + " · Nuevas cartas", 744, 112, 488, 32, 23, ui.GOLD)
 	ui.label_at("Comprar habilita su aparición tras ganar batallas.", 744, 148, 488, 32, 16, ui.TEXT)

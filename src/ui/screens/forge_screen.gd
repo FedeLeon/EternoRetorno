@@ -6,19 +6,17 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
-	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Herrería · Acero que perdura", actions.menu, profile.souls)
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Herrería · Acero que perdura", actions.back, profile.souls, "Campamento")
 	var ids = content.heroes.keys()
 	for i in range(ids.size()):
 		var id = ids[i]
-		var button = ui.button(content.heroes[id].name, 446, 116 + i * 80, 166, 62, func(): actions.category.call(id))
+		var button = preload("res://src/ui/components/hero_category.gd").build(ui, content.heroes[id], id, i, Vector2(470, 110 + i * 90), selected == id, func(): actions.category.call(id))
 		button.name = "ForgeHero_" + id
-		if id == selected:
-			button.add_theme_color_override("font_color", ui.GOLD)
 	ui.panel(628, 102, 626, 536)
 	var title = ui.label_at(content.heroes[selected].name, 646, 112, 390, 40, 27, ui.GOLD)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	ui.label_at("Mejoras permanentes. Se aplican al iniciar una nueva aventura.", 650, 156, 380, 58, 18, ui.TEXT)
-	var preview = ui.art(selected, 1070, 100, 124, 124, null, levels)
+	var preview = ui.art(selected, 1054, 86, 155, 155, null, levels)
 	preview.name = "ForgePreview"
 	preview.tooltip_text = "Equipo actual"
 	for i in range(2):
@@ -32,4 +30,3 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		var caption = "Mejora máxima" if level == 3 else "Mejorar (+%d) · %d almas" % [amount, price]
 		var buy = ui.button(caption, 656, y + 83, 562, 54, func(): actions.buy.call(track, level + 1), level < 3 and profile.souls >= price)
 		buy.name = "Upgrade_" + track
-	ui.button("Volver al campamento", 846, 656, 380, 48, actions.back)

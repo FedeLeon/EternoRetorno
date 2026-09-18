@@ -12,6 +12,7 @@ static func build(ui: Control) -> void:
 	hud.turn = ui.game.run.combat.get("turn", 1)
 	hud.show_energy = false
 	hud.relics = ui.equipped_relics()
+	hud.equipment = preload("res://src/presentation/equipment_badges.gd").entries(ui.game.run.heroes, ui.game.content.heroes)
 	hud.deck_requested.connect(ui.open_deck)
 	hud.menu_requested.connect(ui.pause_menu)
 	hud.bag_requested.connect(func(): ui.selected_item = ""; ui.screen = "items"; ui.render())

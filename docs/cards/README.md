@@ -206,3 +206,85 @@ a combate, mercado y demás vistas de cartas. No se modifica el valor del coste.
 
 Validación actual: 41 comprobaciones de distribución sin fallos y galería
 renderizada de seis héroes, ataque/defensa, a 1280×720. Sin exportar.
+
+## Icono de enlace y acabado de cartas — 18/09/2026
+
+Se elimina la etiqueta ENLACE de encima de la ilustración. `card_view.gd` detecta
+si la carta participa en alguna receta y pasa esa información a
+`card_type_icons.gd`: añade `assets/ui/chain.svg` al final de la pastilla inferior,
+junto a espada/escudo, ampliando la pastilla. El tooltip conserva las combinaciones.
+
+`presentation/card_finish.gd` añade resplandor dorado discreto a los enlaces y
+un barrido de reflejo a todas las cartas del componente compartido (combate,
+recompensas, mercado, mazo). Shaders en `assets/shaders/card_link_glow.gdshader`
+y `card_sheen.gdshader`; se enmascaran con la transparencia del marco. Los
+efectos no capturan eventos ni cambian textos/reglas. Cadena SVG y shaders
+creados en código, sin generación de imágenes adicional.
+
+Cada carta utiliza un RNG visual independiente: primera espera entre 0,8 y
+7 segundos, barrido de 0,85 s y siguientes pausas entre 4 y 11 s. No hay
+disparo global sincronizado; coincidencias casuales pueden ocurrir. Al
+reconstruir la vista se crean temporizadores nuevos. No consume RNG de partida
+ni requiere persistir estados decorativos; se libera junto con la carta.
+
+Validación de este cambio: 19 comprobaciones de sinergia UI renderizada y
+18 de presentación de combate headless aprobadas. Incluyen cadena/resplandor,
+ausencia de etiqueta, temporizadores distintos, inicio/reprogramación del
+barrido y conservación del RNG de juego. Revisión visual local de cartas de
+enlace en combate. Sin exportación APK/Web ni prueba en dispositivo.
+
+## Impactos múltiples — 18/09/2026
+Los ataques de varios golpes reproducen cada golpe y su reducción de vida por separado. Un enemigo con postura de contraataque devuelve 4 por impacto si sobrevive; caer cancela la secuencia. Consultar [Enemigos](../enemies/README.md).
+
+## 18/09/2026 — Cruz roja para cartas de sanación
+
+`src/ui/components/card_type_icons.gd` añade una cruz roja cuando `heal > 0`
+a la pastilla inferior compartida de combate, mazo, mercado y recompensas.
+Las cartas mixtas conservan espada/escudo y los enlaces conservan la cadena;
+la pastilla adapta su ancho. Asset nuevo `assets/ui/heal.svg`, vector dibujado
+en código con contorno claro y sombreado escalonado siguiendo los iconos
+existentes; sin generación de imágenes ni cambios de reglas.
+
+Validación local headless: `test_cards.gd`, 544 comprobaciones sin fallos;
+importación del editor y `git diff --check` correctos. Sin revisión visual
+manual de este cambio ni exportación.
+
+## 18/09/2026 — Espada y calavera para cartas de veneno
+
+La pastilla inferior incorpora espada seguida de calavera verde cuando
+`poison > 0`, incluso sin daño directo. Se reutiliza `assets/ui/poison.svg`,
+el mismo icono del estado de veneno en combate. El componente compartido
+`src/ui/components/card_type_icons.gd` conserva los demás iconos y adapta
+el ancho en combate, mazo, mercado y recompensas. Sin cambios de reglas
+ni assets nuevos.
+
+Validación local headless: `test_cards.gd`, 544 comprobaciones sin fallos;
+`git diff --check` correcto. Sin revisión visual manual ni exportación.
+
+## 18/09/2026 — Vista previa y confirmación de mejora de cartas
+
+En el descanso, tocar una carta sin mejorar selecciona una copia mejorada
+para mostrar sus valores y un resplandor. Solo hay una seleccionada; tocar
+otra restaura la anterior. El botón inferior «Mejorar» empieza deshabilitado
+y confirma la selección. Volver descarta la vista previa. Cartas ya mejoradas
+no son seleccionables. Previsualizar no cambia el mazo, consume el descanso
+ni guarda; confirmar llama a `game.rest(false, index)`, que valida y guarda.
+
+Se extrae `src/ui/screens/card_upgrade_screen.gd` con selección local y copia
+del mazo; `main.gd::deck_view` delega el modo de mejora. Se reutilizan marcos,
+shader de resplandor y botón de madera existentes, sin assets nuevos.
+
+Validación: prueba dedicada por clics para botón inicial, selección/cambio,
+valores mejorados, mazo intacto en vista previa, carta ya mejorada bloqueada
+y confirmación de una única instancia. Revisión visual Linux 1280×720;
+HUD: 107 comprobaciones headless sin fallos tras la extracción del modo de
+mejora. `git diff --check` correcto. Captura temporal eliminada. Sin exportar.
+
+### Primeros planos por impacto — 18/09/2026
+
+Las cartas de dos/tres golpes muestran dos/tres viñetas ofensivas distintas,
+una antes de cada impacto resuelto. Cada héroe rota entre cuatro poses. La
+muerte del atacante o del objetivo interrumpe los golpes restantes; los
+contraataques conservan su lugar entre golpes. No hay una viñeta introductoria
+adicional. Para ataques de área no se duplica la viñeta del mismo golpe por
+objetivo. Detalles y assets en [cómic](../comic/README.md).

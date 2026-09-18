@@ -34,6 +34,7 @@ func run_tests() -> void:
 	app.game.run.heroes[0].poison = 2
 	app.game.run.combat.enemies[0].block = 7
 	app.game.run.combat.enemies[0].poison = 4
+	app.game.run.combat.enemies[0].intent.counter = 4
 	app.continue_run()
 	await process_frame
 	var hud = app.layer.get_node("CombatHUD")
@@ -52,10 +53,32 @@ func run_tests() -> void:
 	check(indicators.size() == 4 and indicators.all(func(n): return n.amount > 0), "Only active statuses shown")
 	check(indicators.any(func(n): return n.amount == 12) and indicators.any(func(n): return n.amount == 7), "Hero and enemy block amounts")
 	for indicator in indicators:
-		check(indicator.mouse_filter == Control.MOUSE_FILTER_IGNORE, "Block does not intercept targeting")
+		check(indicator.mouse_filter == (Control.MOUSE_FILTER_STOP if indicator.name == "Block" else Control.MOUSE_FILTER_IGNORE), "Block can be inspected independently of targeting")
 		check(indicator.get_child(1).value == indicator.amount, "Block digits match state")
 	check(indicators.filter(func(n): return n.name == "Poison").size() == 2, "Poison icon on hero and enemy")
 	check(indicators.filter(func(n): return n.name == "Poison").all(func(n): return n.icon_texture != null), "Poison has dedicated icon")
+	for indicator in indicators.filter(func(n): return n.name == "Block"):
+		var actor_button = indicator.get_parent().get_parent()
+		var bar = actor_button.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/components/health_bar.gd"))[0]
+		if bar in app.hero_health.values():
+			check(indicator.global_position.y + 30 < bar.global_position.y, "hero block above life")
+			var poison = indicator.get_parent().get_node_or_null("Poison")
+			check(poison == null or not indicator.get_global_rect().intersects(poison.get_global_rect()), "hero status icons do not overlap")
+		else:
+			check(indicator.global_position.x + 70 < bar.global_position.x, "enemy block remains left of life")
+			check(absf(indicator.global_position.y - bar.global_position.y) < 2, "enemy block remains aligned to life")
+		check(indicator.get_child(1).size.y == 18, "active block uses smaller digits")
+	var intent = app.layer.get_node("EnemyIntent0")
+	check(intent.get_node("Block").has_node("BlockUp"), "block intention includes green arrow")
+	check(intent.get_node("Block").position.x > intent.get_node("Attack").position.x, "block intent beside attack")
+	for indicator in indicators.filter(func(n): return n.name == "Block") + [intent.get_node("Attack"), intent.get_node("Block"), intent.get_node("Counter")]:
+		await click(indicator.get_global_rect().get_center())
+		var tips = get_nodes_in_group("combat_tip")
+		check(tips.size() == 1 and tips[0].anchor == indicator, "Click opens anchored combat explanation")
+	await click(Vector2(600, 250))
+	check(get_nodes_in_group("combat_tip").is_empty(), "Outside click closes combat explanation")
+	var menu_style = preload("res://src/ui/components/button_skin.gd").style("wood_menu")
+	check(menu_style.content_margin_top == menu_style.content_margin_bottom, "menu vertical margins balanced")
 	await shot("combat")
 	if DisplayServer.get_name() != "headless":
 		var before = root.get_texture().get_image().get_region(Rect2i(16, 572, 140, 140))

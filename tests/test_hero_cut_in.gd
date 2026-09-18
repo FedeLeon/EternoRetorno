@@ -22,14 +22,28 @@ func run_tests() -> void:
 			await create_timer(0.24).timeout
 			if effect.picture.position.x > host.size.x * 0.03 or not is_equal_approx(effect.picture.position.y + effect.picture.size.y, host.size.y):
 				failures += 1
-			if DisplayServer.get_name() != "headless" and hero == "warrior" and kind == "defense":
+			if DisplayServer.get_name() != "headless" and hero == "warrior" and kind == "attack":
 				await RenderingServer.frame_post_draw
 				root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat/comic.png"))
 			await effect.finished
 			await process_frame
 			if is_instance_valid(effect):
 				failures += 1
+	# Four attacks per hero rotate without repeating within a two/three-hit combo.
+	for hero in CutIn.COLORS:
+		var paths: Array = []
+		for index in range(5):
+			var effect = CutIn.play(host, hero)
+			await process_frame
+			if effect.picture.texture == null: failures += 1
+			paths.append(effect.texture_path)
+			effect.queue_free()
+			await process_frame
+		if paths.slice(0, 4).size() != 4 or paths[0] != paths[4]: failures += 1
+		for first in range(4):
+			for second in range(first + 1, 4):
+				if paths[first] == paths[second]: failures += 1
 	if CutIn.play(host, "missing") != null:
 		failures += 1
-	print("COMIC: 6 heroes, attack + defense, cleanup, missing ID | FAILURES: ", failures)
+	print("COMIC: 6 heroes, 4 attack variants + defense, rotation, cleanup, missing ID | FAILURES: ", failures)
 	quit(1 if failures else 0)

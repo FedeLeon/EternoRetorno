@@ -51,3 +51,44 @@ Pruebas locales con Godot 4.7.2 Compatibility en Linux. Sin APK ni prueba Androi
 Para reutilizar un enemigo, asignar un ID de `enemy_visuals.json` al campo
 `visual` de su definición de combate. Las estadísticas de futuras mazmorras
 todavía no están definidas.
+
+## Ataques en primer plano — 18/09/2026
+
+Los seis enemigos activos de la cripta tienen ilustraciones de ataque en cómic
+con transparencia y dirección derecha → izquierda. Se presentan abajo a la
+derecha durante ataques realmente resueltos. [Assets, arquitectura y pruebas](../comic/README.md#enemigos-de-la-primera-mazmorra).
+
+## Muerte en cenizas — 18/09/2026
+
+Los enemigos ahora se disuelven con brasas y cenizas durante 1,3 s en total,
+y luego se ocultan. Reemplaza la caída lateral atenuada. Delegación visual en
+`presentation/enemy_ash.gd`; 498 comprobaciones de enemigos aprobadas y revisión
+renderizada local. [Detalles](../quality/README.md).
+
+
+## Contraataque y golpes independientes — 18/09/2026
+
+El lancero (`skeleton`) adopta contraataque cada tercer turno; el guardián
+(`elite`) y autómata (`boss`) cada cuarto. Es un patrón recurrente,
+sin azar adicional. El guardián además anuncia 6 de bloqueo futuro.
+La espada con flecha de retorno y número 4 marca una postura **ya activa**
+durante el turno del jugador; desaparece cuando cambia la intención.
+
+Cada impacto directo recibido devuelve 4 de daño al héroe atacante si el
+enemigo sobrevive, incluso si su bloqueo absorbió el golpe. Se aplican las
+mitigaciones y Fénix normales del héroe. Veneno periódico y aplicaciones de
+veneno sin impacto no disparan esta respuesta. Un golpe mortal no genera
+contraataque. La muerte del atacante cancela los impactos restantes; si ambos
+héroes caen se resuelve derrota. Las cartas del héroe caído quedan inactivas.
+
+Los ataques múltiples resuelven impacto/respuesta uno por uno. Por ejemplo,
+3×5 produce tres impactos de 5 alternados con tres respuestas de 4.
+Una sinergia es un impacto conjunto: su respuesta se atribuye al primer héroe
+de la receta. Los consumibles conservan su resolución actual y no cuentan
+como golpes de carta.
+
+`rules/card_hits.gd` aplica la secuencia mediante las operaciones del juego.
+`game.resolved_card_hits` es un recibo transitorio; el estado final se guarda
+antes de animar. `presentation/card_impacts.gd` reproduce cada ataque, flash,
+vida decreciente y bloqueo restante. No se cambia el formato de guardado:
+intenciones ya guardadas continúan hasta el siguiente turno.

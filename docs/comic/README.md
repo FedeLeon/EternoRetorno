@@ -3,15 +3,16 @@
 Cada héroe tiene una ilustración estática propia en primer plano, tomada de los
 concepts individuales del usuario. Se conservan la transparencia RGBA y el contorno blanco originales.
 Las líneas de velocidad se dibujan detrás de la ilustración.
-La hoja `conceptosAtaques.png` es referencia de dirección artística; esta primera
-versión usa una pose por héroe, no las tres variantes de la hoja.
+La hoja `conceptosAtaques.png` es referencia de dirección artística. Cada héroe
+dispone ahora de la pose original y tres variantes ofensivas nuevas.
 
 ## Comportamiento
 
 - Cartas aceptadas con daño o veneno: aparición abajo a la izquierda sobre la escena, entrada lateral, líneas de velocidad del
   color del héroe, leve acercamiento y salida por transparencia en 0,72 segundos.
 - Luego continúa la animación del actor y la reacción del objetivo.
-- Curación, consumibles y turno enemigo conservan la presentación previa.
+- Curación y consumibles conservan la presentación previa.
+  El turno enemigo usa las apariciones de ataque descritas abajo.
   Las cartas de bloqueo usan las ilustraciones defensivas descritas abajo.
   Las sinergias conservan sus animaciones conjuntas sin viñetas adicionales.
 - Las reglas y el checkpoint se ejecutan antes del efecto. Una carta rechazada
@@ -37,9 +38,8 @@ Sin exportación APK/Web ni prueba en dispositivo físico.
 
 ## Posibles ampliaciones
 
-Poses diferentes para ataques especiales, viñetas de sinergia y variantes de
-armamento de herrería. Hoy cada héroe usa su concept aportado, independientemente
-del nivel de equipo. El efecto no consume números aleatorios de la aventura.
+Viñetas de sinergia y variantes de armamento de herrería. Las poses actuales
+no cambian con el nivel de equipo. El efecto no consume números aleatorios de la aventura.
 
 ## Superposición transparente — 18/09/2026
 
@@ -81,3 +81,83 @@ Validación actual: prueba renderizada local de las 12 apariciones (ataque y
 defensa de seis héroes), anclaje y limpieza sin fallos; 17 comprobaciones de
 presentación de combate aprobadas. Inspección visual de los seis assets y
 del guerrero defensivo sobre la mazmorra. Sin APK/Web ni dispositivo.
+
+## Enemigos de la primera mazmorra — 18/09/2026
+
+Seis nuevos PNG RGBA transparentes en `assets/comic/enemies/`, generados con
+imagegen. Cada sprite de `assets/enemies/hd/` sirve de referencia de identidad;
+el cómic del guerrero solo como referencia de estilo.
+[Prompts exactos, fuentes y destinos](enemies.json).
+
+| ID visual | Ataque en primer plano |
+| --- | --- |
+| crypt_bat | Picado y colmillos, estela violeta |
+| crypt_lancer | Estocada de lanza hacia la izquierda |
+| crypt_shaman | Llamarada de ceniza desde el bastón |
+| crypt_slime | Chorro de ácido verde |
+| skeleton_6 | Corte de espada con estela azul |
+| crypt_automaton | Puñetazo mecánico con chispas anaranjadas |
+
+Entran desde la derecha, quedan anclados abajo a la derecha y atacan hacia
+la izquierda. Ilustración estática animada por desplazamiento/acercamiento y
+líneas de velocidad, durante 0,72 segundos. No oscurecen la mazmorra.
+
+`comic_cut_in.gd` contiene la presentación común; `hero_cut_in.gd` y
+`enemy_cut_in.gd` solo configuran catálogo, textura, color y dirección.
+Se mantienen la API y las dos variantes de héroes, bajo la capa de diálogos.
+
+El flujo espera cada aparición antes de la animación del sprite enemigo.
+`game.resolved_enemy_attacks` es un recibo transitorio de índices realmente
+ejecutados al resolver `end_turn`: no se guarda ni calcula daño. Esto evita
+apariciones de enemigos muertos por veneno, intenciones de bloqueo sin daño o
+enemigos cuyo turno se canceló al caer el equipo. El estado se resuelve y guarda
+antes de las animaciones; recargar no repite ataques ni consume RNG visual.
+
+Validación local: prueba renderizada de los seis enemigos, transparencia, entrada
+hacia la izquierda, anclaje y limpieza; veneno, bloqueo puro y derrota antes
+del segundo atacante sin fallos. Regresión de las 12 apariciones de héroes
+aprobada. Revisión de los seis assets y captura del lancero sobre mazmorra.
+Sin APK/Web, emulador o dispositivo físico.
+
+Validación final de esta integración: 18 comprobaciones de presentación
+aprobadas, incluido primer plano del ataque letal; 155 comprobaciones de
+reglas aprobadas (41/45 victorias simuladas entre las 15 parejas). El último
+ataque sigue mostrándose aunque la derrota haya limpiado el estado del combate.
+
+## Variantes ofensivas y combos — 18/09/2026
+
+18 PNG nuevos RGBA de 1536×1024 en `assets/comic/attacks/`, tres por héroe.
+Se generaron individualmente con imagegen tomando el cómic original de cada
+personaje como referencia. Prompts exactos y procedencia: [carpeta attacks](attacks/).
+
+| Héroe | Variante 1 | Variante 2 | Variante 3 |
+| --- | --- | --- | --- |
+| Guerrero | Corte ascendente | Tajo descendente | Estocada |
+| Guardiana | Embestida con escudo | Golpe ascendente de escudo | Golpe descendente |
+| Pícaro | Estocada baja | Corte cruzado | Puñalada descendente |
+| Maga | Lanza de hielo | Abanico de cristales | Orbe arcano |
+| Clériga | Lanza sagrada | Arco de luz ascendente | Estallido de luz |
+| Explorador | Disparo arrodillado | Disparo en salto | Abanico de flechas |
+
+`hero_cut_in.gd` rota por héroe entre las tres variantes y la original, sin
+consumir RNG de la aventura ni guardar esa elección visual. No se repiten
+poses dentro de un combo de dos o tres golpes; la siguiente carta continúa
+la rotación. Defensa conserva su ilustración propia.
+
+`rules/card_hits.gd` añade `hit_index` al recibo transitorio existente.
+`presentation/card_impacts.gd` muestra una viñeta por golpe realmente resuelto,
+seguida por el sprite, el impacto y el descenso de vida. Los contraataques se
+reproducen entre golpes. Si muere el objetivo o el atacante, no se inventan
+golpes adicionales. En ataques de área, el mismo índice de golpe no repite
+viñeta por cada objetivo. Se conserva el orden de resolución por objetivo.
+
+`combat_flow.gd` omite la viñeta introductoria cuando hay recibos de impactos,
+evitando una aparición extra. Veneno sin daño y defensa siguen mostrando una
+aparición. Reglas, checkpoint y consumo de cartas siguen anteriores a toda
+animación. Las sinergias mantienen su presentación previa.
+
+Validación: importación local; revisión visual de los 18 PNG y comprobación
+de transparencia real. Prueba de rotación de cuatro poses para los seis
+héroes, carga, anclaje y limpieza; prueba de combos de dos y tres golpes con
+poses distintas y reducciones de vida/contraataques separados. Resultados
+concretos de ejecución en el historial. Sin exportación ni dispositivo físico.

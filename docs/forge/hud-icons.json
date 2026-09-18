@@ -1,0 +1,50 @@
+{
+  "tool": "image_gen built-in",
+  "style_reference": "assets/objects/icons.png",
+  "date": "2026-09-18",
+  "sheets": [
+    {
+      "index": 1,
+      "prompt": "Create one production game UI sprite atlas on a genuinely transparent alpha background, 1536x1024. Three equally sized columns, two rows, SIX isolated item icons, no text or numbers, no frames. The reference atlas is STYLE ONLY: rich detailed pixel art dark fantasy inventory, crisp pixel clusters, dark outlines, golden metal specular highlights, readable at 56px. This atlas is for warrior and guardian equipment progression. Top row three distinct greatswords pointing upper right: level1 forged dark iron with purple wrap, level2 polished steel engraved gold crossguard purple gem, level3 ornate blackened silver greatsword glowing violet edge and elaborate gold guard. Bottom row three guardian shields: level1 worn steel teal center, level2 silver gold rim teal enamel, level3 elaborate gold silver kite shield teal jewel sun crest. Each object entirely contained in its own exact 512x512 cell with 60px transparent padding on all edges, same optical size. No ground, backdrop, UI frames, lettering, baked shadow or halos outside silhouette. Actual transparency. Make icons beautiful painted pixel art matching reference, not flat vector geometric symbols.",
+      "generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-8f4cf893-49d1-4d2d-b114-65d9c0cce147.png",
+      "types": [
+        "warrior",
+        "guardian"
+      ],
+      "alpha_generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-c137cdef-9a39-4756-ba9d-60e2f3043106.png",
+      "local_source": "docs/forge/hud-sources/sheet1.png"
+    },
+    {
+      "index": 2,
+      "prompt": "Generate a production game inventory sprite atlas with genuine transparent alpha background. 1536x1024 canvas exact 3 columns x 2 rows, each cell 512x512, SIX isolated icons. Style reference is STYLE ONLY: richly shaded detailed pixel art fantasy inventory, golden worn metal highlights, dark outlines and crisp pixel clusters, readable at 56 pixels, not simple flat vector. Top row: three progression levels of a PAIR of rogue daggers, each icon has two crossed daggers: level1 iron green leather handles, level2 steel bronze fittings poisonous green edge, level3 ornate silver and gold daggers glowing emerald blades. Bottom row: three mage staff progression icons: level1 wooden staff with small blue crystal; level2 silver staff with gold fittings and larger blue crystal orb; level3 elaborate gold/silver arcane staff with spectacular icy blue gem. Diagonal staffs from bottom left to top right, fully visible. Each item centered in its own 512 square cell with 60px transparent margin, all six optical sizes consistent. No text numbers grid or frame, no background or ground, no cast shadow beyond item silhouette. Actual transparency.",
+      "generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-13ab7154-ea8a-4d13-9e28-b0b43c75161d.png",
+      "types": [
+        "rogue",
+        "mage"
+      ],
+      "alpha_generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-da9c523d-fa8c-4523-8120-67fb08c13401.png",
+      "local_source": "docs/forge/hud-sources/sheet2.png"
+    },
+    {
+      "index": 3,
+      "prompt": "Create a production dark fantasy pixel art equipment sprite atlas on genuine transparent alpha background. Exact canvas1536x1024, 3 columns and 2 rows each cell512x512. Reference only sets rich detailed pixel art style, realistic metallic highlights expressed as crisp pixels, aged gold and silver, black outlines, beautiful game loot icons readable at56px. SIX standalone icons with NO numbers text frames labels backdrop floor. Top row three cleric sacred staff upgrades: iron and brass staff with small golden cross head; silver/gold staff with ornate sun cross; ornate brilliant gold ivory staff with sun wheel and golden jewel. Bottom row three ranger bow upgrades: dark wooden longbow with blue wrap; recurved silver tipped bow with gold fittings cyan string; elaborate silver/gold runic bow with luminous icy blue string and blue gemstones. Keep each full item inside its own exact512px cell with60px padding, equal apparent size. Each staff angled bottomleft to topright. Actual alpha transparency, no checkerboard painted in, no colored background. More polished detailed illustrated pixel art, never flat vector symbols.",
+      "generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-59c87e80-4a9b-4e53-881e-f9c97d961033.png",
+      "types": [
+        "cleric",
+        "ranger"
+      ],
+      "alpha_generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-2e9294a0-089e-4936-a4f9-414f4427475c.png",
+      "local_source": "docs/forge/hud-sources/sheet3.png"
+    },
+    {
+      "index": 4,
+      "prompt": "Create ONE game armor progression sprite sheet, exact1536x1024 transparent alpha canvas, THREE icons across the central horizontal row at x256,768,1280 and y512. Each armor fills at most390x430 pixels within its512-wide slot, generous transparent space no overlap. Reference is STYLE ONLY, detailed premium dark fantasy pixel art inventory, aged metal with sophisticated pixel highlights and dark outline, readable at56px, absolutely not flat vector icons. Three standalone wearable empty breastplate armor icons with shoulder pauldrons NO body or head: level1 rugged iron breastplate with brown leather straps, level2 polished blue-gray steel breastplate with ornate bronze-gold edging, level3 masterwork silver and dark steel breastplate with engraved gold trims and teal center jewel. Clear escalating craftsmanship and silhouette detail. Consistent frontal three quarter perspective, equal optical size. No text, level numbers, labels, UI frame, circle, environment, ground, checkerboard, or shadow outside silhouettes. Truly transparent background.",
+      "generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-f498dc55-507b-4bdc-978e-53eb91905a70.png",
+      "types": [
+        "armor"
+      ],
+      "alpha_generated_source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-352d1134-89ea-466c-ae6a-ba1f924928f4.png",
+      "local_source": "docs/forge/hud-sources/sheet4.png"
+    }
+  ]
+}

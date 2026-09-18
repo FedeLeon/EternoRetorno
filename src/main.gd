@@ -136,6 +136,10 @@ func background() -> void:
 	if screen == "base_camp":
 		var camp = TextureRect.new()
 		camp.texture = preload("res://assets/base_camp/background.png")
+		camp.name = "DayCampBackground"
+		var ambience = ShaderMaterial.new()
+		ambience.shader = preload("res://assets/shaders/camp_day.gdshader")
+		camp.material = ambience
 		camp.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		camp.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		rect(camp, 0, 0, 1280, 720)
@@ -205,7 +209,7 @@ func title_button(caption: String, y: float, primary: bool, action: Callable) ->
 
 func home() -> void:
 	title_button("Continuar aventura" if active_run() else "Iniciar juego", 510 if active_run() else 538, true, continue_run if active_run() else open_base_camp).name = "StartGame"
-	title_button("Opciones", 638 if active_run() else 606, false, func(): screen = "options"; render()).name = "Options"
+	preload("res://src/ui/components/title_actions.gd").build(self, 638 if active_run() else 606)
 	button("Colección", 62, 620, 170, 48, open_collection)
 	if active_run():
 		title_button("Campamento", 574, true, open_base_camp).name = "Camp"
@@ -515,21 +519,24 @@ func scroll_area() -> Control:
 	return contents
 
 func deck_view() -> void:
-	header("Templar una carta" if upgrade_mode else "El mazo compartido", "Elegí una carta sin mejorar. Esta será la acción de descanso." if upgrade_mode else "")
-	if not upgrade_mode:
-		var battle = game.run.combat
-		var detail = "Total: %d cartas" % game.run.deck.size()
-		if game.run.phase == "combat":
-			detail += " · Mazo: %d · Mano: %d · Descarte: %d · Inactivas: %d" % [battle.draw.size(), battle.hand.size(), battle.discard.size(), battle.inactive.size()]
-		var summary = label_at(detail, 36, 108, 1208, 28, 17, GOLD)
-		summary.name = "DeckSummary"
+	if upgrade_mode:
+		var view = preload("res://src/ui/screens/card_upgrade_screen.gd").new()
+		view.ui = self
+		view.name = "CardUpgradeScreen"
+		rect(view, 0, 0, 1280, 720)
+		return
+	header("El mazo compartido", "")
+	var battle = game.run.combat
+	var detail = "Total: %d cartas" % game.run.deck.size()
+	if game.run.phase == "combat":
+		detail += " · Mazo: %d · Mano: %d · Descarte: %d · Inactivas: %d" % [battle.draw.size(), battle.hand.size(), battle.discard.size(), battle.inactive.size()]
+	var summary = label_at(detail, 36, 108, 1208, 28, 17, GOLD)
+	summary.name = "DeckSummary"
 	var contents = scroll_area()
 	for i in range(game.run.deck.size()):
 		var instance = game.run.deck[i]
-		var callback = func(): act(func(): game.rest(false, i))
-		var b = card_panel(instance, (i % 5) * 238, (i / 5) * 260, 224, 244, callback if upgrade_mode else func(): pass, false, not instance.upgraded if upgrade_mode else true, contents)
-		if not upgrade_mode:
-			b.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		var b = card_panel(instance, (i % 5) * 238, (i / 5) * 260, 224, 244, func(): pass, false, true, contents)
+		b.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	contents.custom_minimum_size.y = ceil(game.run.deck.size() / 5.0) * 260
 	button("← Volver", 36, 646, 230, 54, func(): screen = return_screen; upgrade_mode = false; render())
 
@@ -668,33 +675,4 @@ func equipment_view() -> void:
 	})
 
 func items_view() -> void:
-	header("Bolsa compartida", "Consumibles: no cuestan energía. Se gastan al usarlos y no se reponen al cambiar de sala.")
-	var ids = game.content.items.keys()
-	for i in range(ids.size()):
-		var id = ids[i]
-		var item = game.content.items[id]
-		var amount = game.run.get("inventory", {}).get(id, 0)
-		var b = button("", 36 + (i % 4) * 306, 139 + (i / 4) * 210, 290, 196, func(): selected_item = id; render(), not game.item_targets(id).is_empty())
-		b.name = "Item_" + id
-		object_icon(item.icon, 8, 8, 48, b)
-		label_at(item.name, 63, 8, 215, 48, 19, GOLD if selected_item == id else TEXT, b)
-		label_at(item.description, 12, 62, 266, 100, 17, TEXT if amount > 0 else MUTED, b)
-		label_at("Quedan %d%s" % [amount, " · Sin objetivo válido" if amount > 0 and game.item_targets(id).is_empty() else ""], 12, 166, 266, 25, 15, MUTED, b)
-	if selected_item != "":
-		var item = game.content.items[selected_item]
-		label_at("Usar " + item.name + " en:", 36, 565, 1000, 32, 21, GOLD)
-		var targets = game.item_targets(selected_item)
-		for i in range(targets.size()):
-			var target = targets[i]
-			var title = "Equipo" if item.target == "team" else (game.content.enemies[game.run.combat.enemies[target].id].name if item.target == "enemy" else game.content.heroes[game.run.heroes[target].id].name)
-			button(title, 340 + i * 300, 624, 280, 62, func():
-				if game.use_item(selected_item, target):
-					selected_item = ""
-					if game.run.phase == "reward":
-						screen = "combat"
-						render()
-						combat_busy = true
-						await CombatEffects.leave_room(layer, hero_art.values())
-						combat_busy = false
-					continue_run())
-	button("← Combate" if game.run.phase == "combat" else "← Volver", 36, 638, 250, 54, continue_run)
+	preload("res://src/ui/items_navigation.gd").build(self)

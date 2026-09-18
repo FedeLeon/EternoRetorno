@@ -44,9 +44,9 @@ func run_tests() -> void:
 	check(app.screen == "map" and app.game.run == before, "unreachable boss click has no effect")
 	var drawer = view.get_node("GroupDrawer")
 	check(not drawer.opened and drawer.position.x == 1280, "group starts collapsed")
-	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await click(view.get_node("SideRail/GroupTab").get_global_rect().get_center())
 	await create_timer(0.35).timeout
-	check(drawer.opened and drawer.position.x == 770, "group slides left")
+	check(drawer.opened and drawer.position.x == 686, "group slides left")
 	await shot("group-open")
 	var covered = view.get_node("Room13")
 	covered.disabled = false # Test input interception independently of route rules.
@@ -55,10 +55,10 @@ func run_tests() -> void:
 	await click(covered.get_global_rect().get_center())
 	check(received.is_empty() and app.game.run == before, "drawer blocks covered map")
 	covered.disabled = true
-	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await click(view.get_node("SideRail/GroupTab").get_global_rect().get_center())
 	await create_timer(0.35).timeout
 	check(not drawer.opened and drawer.position.x == 1280, "tab closes group")
-	await click(drawer.get_node("GroupTab").get_global_rect().get_center())
+	await click(view.get_node("SideRail/GroupTab").get_global_rect().get_center())
 	await create_timer(0.35).timeout
 	await click(drawer.get_node("Deck").get_global_rect().get_center())
 	check(app.screen == "deck" and app.game.run == before, "deck asset opens without changing run")

@@ -55,9 +55,14 @@ func action(text: String, area: Rect2, callback: Callable, parent: Node = self) 
 func _ready() -> void:
 	var background = picture(preload("res://assets/map/minimal/parchment.png"), Rect2(0, 0, 1280, 720))
 	background.stretch_mode = TextureRect.STRETCH_SCALE
-	var title = label("La cripta de los ecos", Rect2(220, 24, 840, 48), 30, Color("493021"))
+	var title_frame = Panel.new()
+	title_frame.name = "DungeonTitleFrame"
+	title_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_frame.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("header_frame"))
+	place(title_frame, Rect2(360, 16, 560, 64))
+	var title = label("La cripta de los ecos", Rect2(380, 24, 520, 48), 30, GOLD)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	action("Menú", Rect2(1130, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
+	action("Menú", Rect2(1068, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
 	draw_route()
 	var drawer = preload("res://src/ui/components/map_group_drawer.gd").new()
 	drawer.host = self
@@ -73,11 +78,11 @@ func draw_route() -> void:
 			var line = Line2D.new()
 			line.width = 2
 			line.default_color = Color("a14e20") if next in available and node.id == current else Color("917858")
-			line.add_point(Dungeon.map_position(node))
-			line.add_point(Dungeon.map_position(nodes[next]))
+			line.add_point(route_position(node))
+			line.add_point(route_position(nodes[next]))
 			add_child(line)
 	for node in nodes:
-		var center = Dungeon.map_position(node)
+		var center = route_position(node)
 		var reachable = node.id in available
 		var done = node.id in visited
 		var target = action("", Rect2(center - Vector2(28, 28), Vector2(56, 56)), func(): room_requested.emit(node.id))
@@ -100,3 +105,9 @@ func draw_route() -> void:
 		caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if node.id == current:
 			label("▼", Rect2(center + Vector2(-12, -49), Vector2(24, 24)), 20, Color("733813"))
+
+func route_position(node: Dictionary) -> Vector2:
+	var point = Dungeon.map_position(node)
+	# Reserve room for the permanent rail without altering saved map coordinates.
+	point.x = 54 + (point.x - 54) * 0.93
+	return point

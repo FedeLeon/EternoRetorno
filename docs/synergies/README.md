@@ -72,3 +72,13 @@ Regresión: reglas 137 (42/45 victorias simuladas; el bot no utiliza sinergias),
 cartas 568, distribución 38, equipamiento 90, progresión/mercado 795.
 Sin exportar APK/Web ni probar esta entrega en navegador o Android.
 El equilibrio de los especiales queda pendiente de partidas humanas.
+
+## Identificación visual — 18/09/2026
+
+Las cartas de enlace se reconocen por cadena en la pastilla inferior y
+resplandor dorado. Se retira la etiqueta ENLACE sobre la imagen. Los tooltips
+conservan las recetas; elegibilidad, costes y daño permanecen iguales.
+[Acabado visual y validación](../cards/README.md#icono-de-enlace-y-acabado-de-cartas--18092026).
+
+## Interacción con contraataque — 18/09/2026
+El ataque conjunto cuenta como un único impacto. Si el objetivo sobrevive con postura de contraataque, responde por 4 contra el primer héroe de `combo.heroes`; bloqueo y mitigación normales se aplican. No se conceden curación ni bloqueo de la sinergia a un héroe que haya caído en esa respuesta.

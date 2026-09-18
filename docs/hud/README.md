@@ -210,3 +210,56 @@ Botón Terminar turno circular a la derecha de la mano. Asset generado con
 imagegen integrado: `assets/ui/end_turn_round.png`; [prompt y procedencia](end-turn-round.json).
 `end_turn_button.gd` aplica estados; `round_button.gd` limita el área pulsable al
 círculo y conserva interacción de teclado. La barra de combate no muestra almas.
+
+## Bloqueo junto a la vida — 18/09/2026
+
+- `status_effects.gd` coloca el bloqueo activo a la izquierda de la barra de vida
+  con escudo de 32 px y dígitos de 18 px (antes 24). `combat_screen.gd` proporciona
+  la posición relativa a cada barra; veneno permanece arriba. Solo aparecen
+  valores positivos en unidades vivas.
+- `enemy_intent.gd`: espada, escudo de bloqueo previsto y retrato del objetivo,
+  en ese orden. El escudo previsto añade `assets/ui/block_up.svg`, flecha verde
+  ascendente dibujada en SVG para reutilizar el escudo existente. Número de 18 px.
+  La intención de ataque conserva su tamaño; intenciones sin daño no muestran espada.
+- `block_indicator.gd` comparte dimensiones configurables y flecha opcional.
+- `button_skin.gd`: márgenes verticales simétricos (8/8) para centrar Menú
+  en todas las barras que utilizan el tablón compartido.
+- No cambian valores de bloqueo, reglas, estados ni guardado.
+
+Revisión visual local de combate a 1280×720 y prueba HUD renderizada: 93
+comprobaciones aprobadas. Sin exportación APK/Web ni dispositivo.
+
+
+## Consulta de bloqueo e intenciones — 18/09/2026
+
+Tocar el escudo de bloqueo activo de cualquier unidad abre un cuadro pequeño
+anclado con su cantidad y funcionamiento. Las intenciones de ataque, bloqueo
+futuro y contraataque también son pulsables. Solo hay un cuadro abierto;
+otro icono lo reemplaza, otro toque sobre el mismo lo cierra y tocar afuera
+lo descarta. Los eventos no se propagan al objetivo de una carta.
+El cuadro queda debajo de los modales y se cierra al comenzar una acción.
+
+Implementación: `combat_tip.gd`, `block_indicator.gd`, `status_effects.gd`
+y `enemy_intent.gd`, dentro de `src/ui/components/`.
+El nuevo `assets/ui/counter.svg` es un vector creado en código para esta
+petición: espada y flecha naranja de retorno, siguiendo los iconos existentes;
+no procede de un generador de imágenes.
+
+## Equipo mejorado — 18/09/2026
+La barra comparte la fila y cuadros de reliquias con armas y armaduras mejoradas de los héroes. Icono por tipo/nivel y dígitos de nivel; solo niveles positivos de la instantánea de aventura. [Detalles y validación](../forge/README.md).
+
+### Arte de equipo renovado — 18/09/2026
+Las insignias usan ahora los PNG detallados de `assets/forge/icons/`, con tres niveles por tipo. Se mantienen dígitos y cuadros de efecto. [Prompts/procedencia](../forge/hud-icons.json).
+
+## 18/09/2026 — Bloqueo de héroes encima de la vida
+
+Solo en héroes, escudo y número de bloqueo activo vuelven a la fila encima
+de la barra de vida. Sin veneno se centran; con veneno se distribuyen ambos
+indicadores sin solaparse. Los enemigos conservan sus posiciones anteriores.
+Se mantiene la consulta al tocar y la ocultación cuando no hay bloqueo.
+`combat_screen.gd` aporta posiciones de héroes; `status_effects.gd` admite
+una posición opcional del veneno sin alterar el valor predeterminado.
+
+Validación: `test_hud.gd` renderizado, 108 comprobaciones sin fallos,
+incluyendo posición, ausencia de solapamiento, clics y ocultación. Revisión
+visual Linux 1280×720; captura temporal eliminada. Sin exportación.

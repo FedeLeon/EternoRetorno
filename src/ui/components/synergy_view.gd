@@ -22,15 +22,13 @@ static func build(ui: Control, combos: Array, selected: String, energy: int, car
 			ui.panel(530, 185, 228, 151)
 			ui.label_at(note, 534, 189, 220, 143, 17, ui.GOLD)
 
-static func mark(ui: Control, button: Button, card_id: String, recipes: Array, cards: Dictionary) -> void:
+static func mark(_ui: Control, button: Button, card_id: String, recipes: Array, cards: Dictionary) -> void:
 	var partners: Array[String] = []
 	for combo in recipes:
 		if card_id not in combo.cards: continue
 		var other = combo.cards[1] if card_id == combo.cards[0] else combo.cards[0]
 		partners.append("%s + %s: %s (%d energía)" % [cards[card_id].name, cards[other].name, combo.name, combo.cost])
 	if partners.is_empty(): return
-	var badge = ui.panel(22, 82, 60, 22, ui.GOLD.darkened(0.5), button)
-	ui.label_at("ENLACE", 4, 0, 54, 22, 12, ui.GOLD, badge)
 	button.tooltip_text += "\nSinergias (ambas cartas en mano):\n" + "\n".join(partners)
 
 static func hint(ui: Control, card_id: String, recipes: Array, party: Array, cards: Dictionary) -> void:

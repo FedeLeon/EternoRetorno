@@ -52,7 +52,8 @@ func set_fallen(value: bool) -> void:
 	fallen = value
 	if sprite == null:
 		return
-	sprite.modulate = Color(0.5, 0.5, 0.5, 0.35) if fallen else Color.WHITE
+	sprite.visible = not fallen
+	sprite.modulate = Color.WHITE
 	sprite.rotation = -PI / 2 if fallen else 0.0
 	sprite.scale = Vector2.ONE * base_scale * (0.6 if fallen else 1.0)
 
@@ -61,15 +62,15 @@ func play_once(animation: String) -> void:
 		return
 	acting = true
 	_place()
+	if animation == "death":
+		await preload("res://src/presentation/enemy_ash.gd").play(self)
+		acting = false
+		set_fallen(true)
+		return
 	tween = create_tween()
 	match animation:
 		"attack":
 			attack_motion()
-		"death":
-			tween.set_parallel(true)
-			tween.tween_property(sprite, "rotation", -PI / 2, 0.30)
-			tween.tween_property(sprite, "scale", Vector2.ONE * base_scale * 0.6, 0.30)
-			tween.tween_property(sprite, "modulate", Color(0.5, 0.5, 0.5, 0.35), 0.30)
 		_:
 			sprite.modulate = Color(1.6, 0.5, 0.5)
 			tween.tween_property(sprite, "position:x", size.x / 2 + 7, 0.08)
@@ -77,8 +78,6 @@ func play_once(animation: String) -> void:
 			tween.parallel().tween_property(sprite, "modulate", Color.WHITE, 0.12)
 	await tween.finished
 	acting = false
-	if animation == "death":
-		set_fallen(true)
 
 
 func attack_motion() -> void:

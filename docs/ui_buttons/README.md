@@ -76,3 +76,25 @@ Pruebas locales de esta revisión: campamento 33, selección 47, equipamiento 46
 inicio/opciones 13 e interfaz general 271; sin fallos. Revisión renderizada de
 cabeceras, selección y modal del arco en Linux a 1280×720. Capturas temporales
 eliminadas. Sin exportar APK/Web ni validar en navegador, emulador o Android físico.
+
+## Centrado de Menú — 18/09/2026
+
+El estilo `wood_menu` usa márgenes superior/inferior de 8 px, eliminando el
+desplazamiento hacia abajo causado por 16/4. Revisado en combate renderizado
+Linux 1280×720; se aplica al estilo compartido de barras superiores.
+
+## 18/09/2026 — Salir y engranaje de opciones en inicio
+
+«Salir del juego» reemplaza a Opciones en la columna de botones principales.
+Opciones pasa a un botón cuadrado de 70×70 en la esquina superior derecha,
+sin texto visible, con engranaje metálico y tooltip. `assets/ui/settings.svg`
+se dibujó en código siguiendo la paleta oscura/dorada de la interfaz.
+`ui/components/title_actions.gd` compone ambas acciones; `main.gd::home` delega.
+La salida realiza checkpoint y cierra la aplicación nativa. En Web muestra
+un cuadro indicando que se puede cerrar la pestaña, sin intentar cerrarla.
+
+Validación local Linux/llvmpipe: `test_title.gd`, 13 comprobaciones aprobadas
+más clic final en Salir que termina el proceso con código 0. Se comprobaron
+opciones, volumen, persistencia, pantalla completa, navegación/continuación.
+Revisión visual 1280×720; captura temporal eliminada. Importación y diff
+correctos. Rama Web sin ejecutar en navegador; no se exportó.

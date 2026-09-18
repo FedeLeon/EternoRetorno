@@ -95,3 +95,33 @@ revisaron capturas de combate y la vista conjunta. La nueva vista previa incluye
 los ataques diferenciados de la revisión final. Importación y `git diff --check`
 correctos. No se compiló APK ni se midió rendimiento en Android; las texturas de
 128 px requieren más memoria que las anteriores.
+
+## Reposo estable, salida lenta y cenizas — 18/09/2026
+
+Los seis actores usan `presentation/hero_idle.gd`: congela el cuadro 0 del
+reposo y aplica `assets/shaders/hero_idle.gdshader`. El shader desplaza levemente
+regiones laterales de capa/ropa y mano/arma; mantiene zona central del torso,
+cabeza y pies sin escalado/traslación del actor. Es deformación localizada de
+una pose, no nuevos cuadros dibujados ni articulaciones independientes. Los
+atlas previos se conservan para acciones y compatibilidad. El helper detecta
+cambios de atlas de herrería y desactiva la deformación durante otras acciones.
+La selección frontal del campamento ya era estática y se conserva.
+
+`combat_effects.gd`: salida victoriosa en 2,5 s (antes 1,25), segundo héroe con
+desfase de 0,12 s, conservando desplazamiento y pasos procedurales.
+
+`enemy_sprite.gd` delega muerte en `presentation/enemy_ash.gd`: disolución
+ascendente con ruido, borde de brasa y partículas de ceniza. El shader
+`assets/shaders/enemy_ash.gdshader` normaliza el cuadro actual del atlas.
+Dura 1 s más 0,3 de cola; al terminar el sprite queda oculto, también al
+reconstruir un enemigo ya caído. No queda cuerpo tumbado. Los héroes caídos
+conservan su animación/cuerpo y la recuperación anterior. Reglas y guardado
+siguen precediendo a la presentación. Shaders y partículas hechos en código,
+sin nuevos assets generados ni modificación de atlas.
+
+Validación actual: `test_actor_motion.gd` renderizado sin fallos (seis héroes
+con equipo nivel 3, reposo fijo, retorno desde ataque y cenizas); 498
+comprobaciones de enemigos, 18 de presentación y 10626 de recursos de herrería
+aprobadas en headless. Capturas locales revisadas; comparación de dos instantes
+confirma movimiento visible en los seis héroes. Capturas temporales eliminadas.
+Sin exportación APK/Web, emulador ni dispositivo físico.

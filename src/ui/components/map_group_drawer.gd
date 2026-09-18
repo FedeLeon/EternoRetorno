@@ -4,6 +4,7 @@ const HealthBar = preload("res://src/ui/components/health_bar.gd")
 var host: Control
 var opened = false
 var motion: Tween
+var tab: Button
 
 func place(node: Control, area: Rect2, parent: Node = self) -> void:
 	host.place(node, area, parent)
@@ -32,19 +33,38 @@ func _ready() -> void:
 		deck.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 	picture(preload("res://assets/ui/deck.svg"), Rect2(0, 0, 64, 58), deck)
 	label("%d cartas" % host.deck_count, Rect2(112, 657, 160, 30), 18)
-	var tab = host.action("", Rect2(-68, 100, 68, 88), toggle, self)
+	# Fixed rail stays at the viewport edge while the group panel slides beneath it.
+	var rail = Panel.new()
+	rail.name = "SideRail"
+	rail.z_index = 41
+	var rail_style = StyleBoxFlat.new()
+	rail_style.bg_color = Color("111923")
+	rail_style.border_color = Color("ba995f")
+	rail_style.border_width_left = 2
+	rail.add_theme_stylebox_override("panel", rail_style)
+	host.place(rail, Rect2(1196, 0, 84, 720))
+	var ornament = Panel.new()
+	ornament.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ornament.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("header_frame"))
+	place(ornament, Rect2(84, 0, 720, 84), rail)
+	ornament.rotation = PI / 2
+	tab = host.action("", Rect2(4, 106, 76, 116), toggle, rail)
 	tab.name = "GroupTab"
 	tab.tooltip_text = "Abrir grupo"
 	for state in ["normal", "hover", "pressed", "focus"]:
 		tab.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-	picture(preload("res://assets/map/group_tab.png"), Rect2(0, 0, 68, 88), tab)
+	picture(preload("res://assets/map/group_tab.png"), Rect2(0, 0, 76, 94), tab)
+	var caption = host.label("Grupo", Rect2(0, 91, 76, 24), 16, Color("ead3a0"), tab)
+	caption.name = "Caption"
+	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func toggle() -> void:
 	opened = not opened
-	get_node("GroupTab").tooltip_text = "Cerrar grupo" if opened else "Abrir grupo"
+	tab.tooltip_text = "Cerrar grupo" if opened else "Abrir grupo"
+	tab.get_node("Caption").modulate = Color("fff1c6") if opened else Color.WHITE
 	if motion != null: motion.kill()
 	motion = create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
-	motion.tween_property(self, "position:x", 770.0 if opened else 1280.0, 0.28)
+	motion.tween_property(self, "position:x", 686.0 if opened else 1280.0, 0.28)
 
 func show_hero(hero: Dictionary, index: int) -> void:
 	var top = 124 + index * 152

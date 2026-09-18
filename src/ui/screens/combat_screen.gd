@@ -7,6 +7,7 @@ static func build(ui: Control) -> void:
 	hud.turn = b.turn
 	hud.energy = b.energy
 	hud.relics = ui.equipped_relics()
+	hud.equipment = preload("res://src/presentation/equipment_badges.gd").entries(ui.game.run.heroes, ui.game.content.heroes)
 	hud.bag_requested.connect(func():
 		if not ui.combat_busy:
 			ui.selected_item = ""; ui.screen = "items"; ui.render())
@@ -42,6 +43,8 @@ static func build(ui: Control) -> void:
 		if h.hp > 0:
 			var effects = ui.StatusEffects.new()
 			effects.unit = h
+			effects.block_position = Vector2(6 if h.get("poison", 0) > 0 else 54, 0)
+			if h.block > 0: effects.poison_position = Vector2(100, 0)
 			ui.rect(effects, 10, 18, 184, 28, target)
 		else:
 			ui.label_at("Vuelve si ganás", 10, 18, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -64,6 +67,7 @@ static func build(ui: Control) -> void:
 		ui.enemy_health[i] = ui.health_bar(e, 16, 55, 182, target)
 		var effects = ui.StatusEffects.new()
 		effects.unit = e
+		effects.block_position = Vector2(-69, 75)
 		ui.rect(effects, 7, -20, 200, 28, target)
 		if e.hp > 0:
 			var intent_view = ui.EnemyIntent.new()

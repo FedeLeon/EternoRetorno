@@ -42,7 +42,8 @@ func _ready() -> void:
 		set_fallen(true)
 	else:
 		sprite.play("idle")
-		sprite.frame = int(Time.get_ticks_msec() / 167) % 6
+		sprite.frame = 0
+	preload("res://src/presentation/hero_idle.gd").attach(self, "guardian")
 
 func _place() -> void:
 	# Double-resolution frames retain the established on-screen size and baseline.

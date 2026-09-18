@@ -75,3 +75,24 @@ sobre el tejado y separado de la herrería. Se conserva el asset de madera.
 Validación actual: `test_forge_ui.gd`, 46 comprobaciones sin fallos, incluyendo
 clics en ambos carteles. Revisión visual Linux a 1280×720. Capturas temporales
 eliminadas. Sin exportar APK/Web ni probar en dispositivo.
+
+## 18/09/2026 — Ambientación animada del campamento diurno
+
+El fondo diurno usa `assets/shaders/camp_day.gdshader`: brisa suave localizada
+en las copas laterales, ondulación/reflejos del lago, flujo discreto de la
+cascada izquierda y oscilación/brillo de las llamas centrales. Máscaras suaves
+por coordenadas y color limitan el movimiento sobre la ilustración original.
+No es animación esquelética ni un nuevo atlas; no se modifica el PNG fuente.
+Edificios, carteles, interfaz y zonas interactivas conservan sus posiciones.
+Solo se aplica a `base_camp`; el fondo nocturno de selección no cambia.
+
+`main.gd::background` asigna el material al nodo `DayCampBackground`. Efecto
+puramente visual mediante tiempo de shader, sin RNG de juego ni persistencia.
+No se generan assets con IA: shader escrito en código y fondo existente.
+
+Validación local Linux/llvmpipe 1280×720: `test_base_camp.gd`, 37 comprobaciones
+sin fallos. Comparación de cuadros separados por 0,45 s confirma cambio de
+píxeles en follaje, agua y fuego, con una región del suelo idéntica; conserva
+pruebas de solares, refugio, arco y regreso/continuación. Revisión de captura
+renderizada; captura temporal eliminada. No implica revisión temporal manual
+exhaustiva ni validación de rendimiento Web/Android. Sin exportación.

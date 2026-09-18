@@ -13,11 +13,11 @@ siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.
 | `src/dungeon.gd` | Encuentros por semilla y coordenadas compatibles con guardados anteriores |
 | `src/save_store.gd` | Persistencia atómica, versión y copia de respaldo |
 | `src/rules/` | Reglas de progresión, herrería, tesoros, sinergias y consumibles |
-| `src/ui/screens/` | Composición de pantallas; selección, reliquias, mapa, mercado, herrería, tesoro, recompensa y combate |
+| `src/ui/screens/` | Composición de pantallas; selección, reliquias, mapa, mercado, herrería, tesoro, recompensa, bolsa y combate |
 | `src/ui/components/` | Cartas, barras, números, paneles, botones y elementos reutilizables |
 | `src/ui/combat_flow.gd` | Coordinación de una acción de combate resuelta con sus animaciones |
 | `src/ui/forge_navigation.gd` | Construcción, acceso y acciones de la herrería |
-| `src/presentation/` | Efectos visuales, viñetas de ataque (`hero_cut_in.gd`) y selección de apariencia del equipo |
+| `src/presentation/` | Efectos visuales, viñetas compartidas (`comic_cut_in.gd`, adaptadores de héroes/enemigos) y selección de apariencia del equipo |
 | `src/*_sprite.gd` | Animaciones de actores; se mantienen rutas/UIDs actuales |
 | `assets/` | Recursos finales usados por el juego, agrupados por sistema |
 | `docs/` | Documentación, prompts, procedencia y fuentes que permiten regenerar arte |
@@ -68,7 +68,7 @@ separación completa. `main.gd` y `game.gd` siguen por encima de la guía de tam
 
 En orden de prioridad, al trabajar en esas funciones:
 
-1. Extraer inventario, descanso/evento, mazo, colección y resultados a pantallas
+1. Extraer descanso/evento, mazo, colección y resultados a pantallas
    propias, pasando instantáneas y callbacks como en mapa y tesoros.
 2. Extraer tema/helpers visuales de `main.gd` a componentes concretos, sin crear
    otra clase gigante con todos los helpers.
@@ -104,3 +104,72 @@ permite reutilizar la barra sin mostrar el orbe fuera del combate.
 `ui/combat_flow.gd` selecciona el tipo según la carta ya resuelta; el componente
 visual no consulta el juego ni modifica bloqueo/guardados. Assets finales en
 `assets/comic/defense/`, prompts y procedencia en `docs/comic/defense.json`.
+
+## Primer plano enemigo — 18/09/2026
+
+La animación común se extrajo a `presentation/comic_cut_in.gd` para evitar
+duplicar entrada, duración, transparencia y liberación. `enemy_cut_in.gd`
+configura seis IDs visuales y entrada derecha; el adaptador de héroes conserva
+su API. `game.resolved_enemy_attacks` entrega los índices ejecutados al flujo
+visual; es transitorio, no forma parte del guardado.
+
+## Acabado visual de cartas — 18/09/2026
+
+`presentation/card_finish.gd` administra resplandor de enlaces y reflejo
+individual; `card_view.gd` le entrega el marco y un booleano. RNG local visual,
+sin acceso al juego ni guardados. `card_type_icons.gd` reúne los iconos inferiores
+de ataque, bloqueo y cadena; `synergy_view.gd` conserva tooltips y selección.
+
+## Presentación de actores — 18/09/2026
+
+`presentation/hero_idle.gd` comparte reposo localizado entre los seis scripts
+de héroes, incluidas sustituciones de atlas de herrería. `enemy_ash.gd` encapsula
+muerte visual y limpieza de partículas; `enemy_sprite.gd` conserva el estado
+fallen. Ambos usan shaders propios, sin reglas ni persistencia.
+
+## Bolsa extraída — 18/09/2026
+
+`items_screen.gd` y `item_popover.gd` presentan datos/acciones explícitos.
+`ui/items_navigation.gd` prepara objetivos y ejecuta la API pública `use_item`.
+El controlador principal delega; reglas de consumibles y guardado permanecen
+en sus módulos actuales. La extracción de inventario ya está terminada.
+
+
+## Resolución y presentación de impactos — 18/09/2026
+
+- `rules/card_hits.gd`: impactos de cartas y respuestas de contraataque,
+  detiene secuencias al caer atacante u objetivo; no guarda.
+- `game.gd`: valida, consume carta/energía, resuelve fin de combate y guarda.
+  Expone recibos transitorios ordenados de impactos, nunca persistidos.
+- `presentation/card_impacts.gd`: reproduce los recibos con actores,
+  barras y escudos, sin modificar reglas ni estado guardado.
+- `ui/components/combat_tip.gd`: cuadro anclado compartido para consulta
+  de bloqueo/intenciones, con cierre por toque externo.
+
+Son extracciones implementadas; se mantiene pendiente la separación más
+amplia del controlador de reglas descrita arriba.
+
+## Insignias de equipo — 18/09/2026
+`presentation/equipment_badges.gd` convierte la instantánea de equipo de los héroes en descripciones/texturas para `combat_hud.gd`. Combate y recompensa aportan los datos; el HUD reutiliza su cuadro de reliquias. No consulta el perfil ni aplica mejoras.
+
+## Mejora de cartas — 18/09/2026
+Extracción terminada: `ui/screens/card_upgrade_screen.gd` mantiene selección y vista previa sobre una copia del mazo. `main.gd::deck_view` delega este modo y conserva la consulta normal del mazo. La confirmación usa `game.rest` y el checkpoint existente; la pantalla no aplica reglas ni guarda.
+
+## Categorías de héroes compartidas — 18/09/2026
+`ui/components/hero_category.gd` presenta miniatura, nombre y marco de clase en mercado y herrería. Recibe datos y callback; conserva IDs de botones y no gestiona compras. Extracción completada desde `market_screen.gd`.
+
+## Ambientación diurna — 18/09/2026
+`assets/shaders/camp_day.gdshader` anima zonas del fondo del campamento. `main.gd::background` solo asigna el material; máscaras y movimiento permanecen en el shader, sin afectar reglas, guardados o hitboxes.
+
+## Acciones de inicio — 18/09/2026
+`ui/components/title_actions.gd` compone Salir y el engranaje de Opciones. Delega la navegación en el controlador y el guardado en `game.checkpoint`; distingue salida nativa y mensaje Web.
+
+### Variación visual de ataques — 18/09/2026
+
+`rules/card_hits.gd` incorpora el índice de golpe al recibo transitorio;
+`presentation/card_impacts.gd` lo usa para reproducir una viñeta por golpe
+sin calcular daño ni alterar su orden. `hero_cut_in.gd` mantiene la rotación
+visual por héroe entre cuatro texturas, fuera de persistencia y del RNG de
+juego. `combat_flow.gd` evita duplicar la introducción cuando reproduce recibos.
+Los 18 PNG nuevos y sus prompts viven en `assets/comic/attacks/` y
+`docs/comic/attacks/`, respectivamente. No se amplió `main.gd`.

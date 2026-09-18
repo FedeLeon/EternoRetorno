@@ -71,8 +71,9 @@ func run_tests() -> void:
 	app.render()
 	await process_frame
 	check(app.layer.get_node("Upgrade_weapon").disabled and app.layer.get_node("Upgrade_armor").disabled, "both maximum tiers disabled")
-	app.back()
-	check(app.screen == "base_camp", "back to camp")
+	var back_button = app.layer.find_children("*", "Button", true, false).filter(func(button): return button.text == "Campamento")[0]
+	await click(back_button.get_global_rect().get_center())
+	check(app.screen == "base_camp", "top camp button returns to camp")
 	for pair in [["warrior", "guardian"], ["rogue", "mage"], ["cleric", "ranger"]]:
 		for id in pair:
 			app.game.profile.forge_upgrades[id] = {"weapon": 3, "armor": 3}
@@ -86,6 +87,17 @@ func run_tests() -> void:
 		for i in range(2):
 			var texture = app.hero_art[i].sprite.sprite_frames.get_frame_texture("idle", 0)
 			check(texture.atlas.resource_path.ends_with("%s_w3_a3.png" % pair[i]), "battle displays upgraded gear " + pair[i])
+
+		var hud = app.layer.get_node("CombatHUD")
+		check(hud.equipment.size() == 4, "both upgraded tracks of each hero in HUD")
+		for i in range(4):
+			var entry = hud.equipment[i]
+			check(entry.level == 3 and entry.texture != null, "level-specific equipment asset")
+			await click(hud.get_node("Relic%d" % (hud.relics.size() + i)).get_global_rect().get_center())
+			check(is_instance_valid(hud.popover), "equipment opens anchored description")
+			var labels = hud.popover.find_children("*", "Label", true, false)
+			check(labels[0].text.contains(entry.owner) and labels[0].text.contains("Nivel 3"), "description identifies owner and level")
+			check(labels[1].text.contains("+3" if i % 2 == 0 else "+6"), "description uses applied bonus")
 		await capture("combat-" + pair[0] + ".png")
 	print("FORGE UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

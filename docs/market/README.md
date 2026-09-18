@@ -87,3 +87,6 @@ entrar al mercado. Ver [campamento](../base_camp/README.md) para assets y prueba
 - Validación de este cambio: mercado renderizado en Linux (34 comprobaciones,
   seis categorías y compras), UI general headless (271); sin fallos. Revisada la
   captura del catálogo y retirada después. Sin exportar ni probar en Web/Android.
+
+## Categorías compartidas — 18/09/2026
+El selector visual mantiene su aspecto y pasa a `ui/components/hero_category.gd`, reutilizado por la herrería. Regresión de mercado: 34 comprobaciones headless aprobadas.

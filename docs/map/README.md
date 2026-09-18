@@ -100,3 +100,20 @@ legado. Simulación de 45 aventuras: 41 victorias; las 15 parejas ganan al menos
 una, usando mazo inicial y omitiendo recompensas. No equivale a una validación
 manual exhaustiva del balance. Revisión visual Linux 1280×720; sin exportar
 APK/Web ni probar en dispositivo. Capturas temporales eliminadas.
+
+## 18/09/2026 — Título enmarcado y columna lateral fija del mapa
+
+El título centrado reutiliza `assets/ui/buttons/header_frame.png` con fondo
+oscuro y letras doradas. La columna derecha ocupa 84 px y toda la altura;
+reutiliza el mismo marco girado y el icono existente `assets/map/group_tab.png`.
+El botón Grupo permanece fijo y abre/cierra el panel hacia la izquierda.
+La columna intercepta clics y reserva espacio para futuras pestañas; Menú
+permanece accesible a su izquierda. El recorrido se comprime horizontalmente
+solo al dibujarlo para evitar que la columna tape salas o textos.
+
+Archivos: `src/ui/screens/map_screen.gd` y
+`src/ui/components/map_group_drawer.gd`. No cambian nodos ni coordenadas guardadas.
+No se generaron nuevos assets. `test_map.gd` adaptado a la pestaña fija:
+41 comprobaciones aprobadas con render Linux/llvmpipe a 1280×720;
+revisión visual abierto/cerrado y `git diff --check` sin problemas.
+Capturas temporales eliminadas; sin exportación ni prueba en dispositivo.

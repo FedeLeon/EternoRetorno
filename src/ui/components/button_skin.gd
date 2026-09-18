@@ -26,8 +26,8 @@ static func style(kind: String = "wood_button", tint: Color = Color.WHITE) -> St
 	result.content_margin_top = 8
 	result.content_margin_bottom = 8
 	if kind == "wood_menu":
-		result.content_margin_top = 16
-		result.content_margin_bottom = 4
+		result.content_margin_top = 8
+		result.content_margin_bottom = 8
 	return result
 
 static func install(ui_theme: Theme) -> void:

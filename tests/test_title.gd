@@ -27,7 +27,7 @@ func run_tests() -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("title/home.png"))
-	await click(Vector2(640, 635))
+	await click(app.layer.get_node("Options").get_global_rect().get_center())
 	check(app.screen == "options", "Options button")
 	app.layer.get_node("Volume").value = 0
 	check(AudioServer.is_bus_mute(0) and app.game.profile.settings.volume == 0, "Mute and store setting")
@@ -68,4 +68,13 @@ func run_tests() -> void:
 	app.game.profile.settings.volume = 1.0
 	app.apply_options()
 	print("TITLE CHECKS: %d | FAILURES: %d" % [checks, failures])
-	quit(1 if failures else 0)
+	if failures:
+		quit(1)
+		return
+	app.screen = "home"
+	app.render()
+	await process_frame
+	await click(app.layer.get_node("ExitGame").get_global_rect().get_center())
+	await create_timer(1.0).timeout
+	printerr("Exit button did not close the native application")
+	quit(1)

@@ -39,3 +39,19 @@ Captura temporal eliminada después de revisar. Sin APK ni prueba Android.
 
 Las acciones del inicio usan ahora el tablón del [tema compartido](../ui_buttons/README.md).
 Textos y navegación se conservan. Validación local de inicio/opciones: 13 sin fallos.
+
+## 18/09/2026 — Salir y engranaje de opciones en inicio
+
+«Salir del juego» reemplaza a Opciones en la columna de botones principales.
+Opciones pasa a un botón cuadrado de 70×70 en la esquina superior derecha,
+sin texto visible, con engranaje metálico y tooltip. `assets/ui/settings.svg`
+se dibujó en código siguiendo la paleta oscura/dorada de la interfaz.
+`ui/components/title_actions.gd` compone ambas acciones; `main.gd::home` delega.
+La salida realiza checkpoint y cierra la aplicación nativa. En Web muestra
+un cuadro indicando que se puede cerrar la pestaña, sin intentar cerrarla.
+
+Validación local Linux/llvmpipe: `test_title.gd`, 13 comprobaciones aprobadas
+más clic final en Salir que termina el proceso con código 0. Se comprobaron
+opciones, volumen, persistencia, pantalla completa, navegación/continuación.
+Revisión visual 1280×720; captura temporal eliminada. Importación y diff
+correctos. Rama Web sin ejecutar en navegador; no se exportó.

@@ -735,3 +735,371 @@ Validación actual: prueba renderizada local de las 12 apariciones (ataque y
 defensa de seis héroes), anclaje y limpieza sin fallos; 17 comprobaciones de
 presentación de combate aprobadas. Inspección visual de los seis assets y
 del guerrero defensivo sobre la mazmorra. Sin APK/Web ni dispositivo.
+
+## Ataques enemigos en cómic — 18/09/2026
+
+- Seis assets transparentes nuevos en `assets/comic/enemies/`, orientados hacia
+  la izquierda, con prompts/procedencia en `docs/comic/enemies.json`.
+- Animación común extraída a `comic_cut_in.gd`; adaptadores de héroes y enemigos
+  conservan catálogo separado y entrada desde lados opuestos.
+- Recibo transitorio `resolved_enemy_attacks` evita ataques visuales no ejecutados
+  por veneno, bloqueo puro o derrota anticipada. Guardado y reglas conservados.
+- Prueba renderizada de los seis enemigos y regresión de héroes aprobadas;
+  revisión visual de assets y lancero sobre escenario. Sin APK/Web ni dispositivo.
+
+Validación final de esta integración: 18 comprobaciones de presentación
+aprobadas, incluido primer plano del ataque letal; 155 comprobaciones de
+reglas aprobadas (41/45 victorias simuladas entre las 15 parejas). El último
+ataque sigue mostrándose aunque la derrota haya limpiado el estado del combate.
+
+## Bloqueo junto a la vida — 18/09/2026
+
+- `status_effects.gd` coloca el bloqueo activo a la izquierda de la barra de vida
+  con escudo de 32 px y dígitos de 18 px (antes 24). `combat_screen.gd` proporciona
+  la posición relativa a cada barra; veneno permanece arriba. Solo aparecen
+  valores positivos en unidades vivas.
+- `enemy_intent.gd`: espada, escudo de bloqueo previsto y retrato del objetivo,
+  en ese orden. El escudo previsto añade `assets/ui/block_up.svg`, flecha verde
+  ascendente dibujada en SVG para reutilizar el escudo existente. Número de 18 px.
+  La intención de ataque conserva su tamaño; intenciones sin daño no muestran espada.
+- `block_indicator.gd` comparte dimensiones configurables y flecha opcional.
+- `button_skin.gd`: márgenes verticales simétricos (8/8) para centrar Menú
+  en todas las barras que utilizan el tablón compartido.
+- No cambian valores de bloqueo, reglas, estados ni guardado.
+
+Revisión visual local de combate a 1280×720 y prueba HUD renderizada: 93
+comprobaciones aprobadas. Sin exportación APK/Web ni dispositivo.
+
+## Icono de enlace y acabado de cartas — 18/09/2026
+
+Se elimina la etiqueta ENLACE de encima de la ilustración. `card_view.gd` detecta
+si la carta participa en alguna receta y pasa esa información a
+`card_type_icons.gd`: añade `assets/ui/chain.svg` al final de la pastilla inferior,
+junto a espada/escudo, ampliando la pastilla. El tooltip conserva las combinaciones.
+
+`presentation/card_finish.gd` añade resplandor dorado discreto a los enlaces y
+un barrido de reflejo a todas las cartas del componente compartido (combate,
+recompensas, mercado, mazo). Shaders en `assets/shaders/card_link_glow.gdshader`
+y `card_sheen.gdshader`; se enmascaran con la transparencia del marco. Los
+efectos no capturan eventos ni cambian textos/reglas. Cadena SVG y shaders
+creados en código, sin generación de imágenes adicional.
+
+Cada carta utiliza un RNG visual independiente: primera espera entre 0,8 y
+7 segundos, barrido de 0,85 s y siguientes pausas entre 4 y 11 s. No hay
+disparo global sincronizado; coincidencias casuales pueden ocurrir. Al
+reconstruir la vista se crean temporizadores nuevos. No consume RNG de partida
+ni requiere persistir estados decorativos; se libera junto con la carta.
+
+Validación de este cambio: 19 comprobaciones de sinergia UI renderizada y
+18 de presentación de combate headless aprobadas. Incluyen cadena/resplandor,
+ausencia de etiqueta, temporizadores distintos, inicio/reprogramación del
+barrido y conservación del RNG de juego. Revisión visual local de cartas de
+enlace en combate. Sin exportación APK/Web ni prueba en dispositivo.
+
+## Reposo estable, salida lenta y cenizas — 18/09/2026
+
+Los seis actores usan `presentation/hero_idle.gd`: congela el cuadro 0 del
+reposo y aplica `assets/shaders/hero_idle.gdshader`. El shader desplaza levemente
+regiones laterales de capa/ropa y mano/arma; mantiene zona central del torso,
+cabeza y pies sin escalado/traslación del actor. Es deformación localizada de
+una pose, no nuevos cuadros dibujados ni articulaciones independientes. Los
+atlas previos se conservan para acciones y compatibilidad. El helper detecta
+cambios de atlas de herrería y desactiva la deformación durante otras acciones.
+La selección frontal del campamento ya era estática y se conserva.
+
+`combat_effects.gd`: salida victoriosa en 2,5 s (antes 1,25), segundo héroe con
+desfase de 0,12 s, conservando desplazamiento y pasos procedurales.
+
+`enemy_sprite.gd` delega muerte en `presentation/enemy_ash.gd`: disolución
+ascendente con ruido, borde de brasa y partículas de ceniza. El shader
+`assets/shaders/enemy_ash.gdshader` normaliza el cuadro actual del atlas.
+Dura 1 s más 0,3 de cola; al terminar el sprite queda oculto, también al
+reconstruir un enemigo ya caído. No queda cuerpo tumbado. Los héroes caídos
+conservan su animación/cuerpo y la recuperación anterior. Reglas y guardado
+siguen precediendo a la presentación. Shaders y partículas hechos en código,
+sin nuevos assets generados ni modificación de atlas.
+
+Validación actual: `test_actor_motion.gd` renderizado sin fallos (seis héroes
+con equipo nivel 3, reposo fijo, retorno desde ataque y cenizas); 498
+comprobaciones de enemigos, 18 de presentación y 10626 de recursos de herrería
+aprobadas en headless. Capturas locales revisadas; comparación de dos instantes
+confirma movimiento visible en los seis héroes. Capturas temporales eliminadas.
+Sin exportación APK/Web, emulador ni dispositivo físico.
+
+## Bolsa circular — 18/09/2026
+
+La bolsa dispone los ocho objetos en un círculo de radio 190 px. Cada icono
+permanece consultable incluso con cero unidades y muestra debajo la cantidad
+real mediante `number_view.gd`. La barra superior comparte el marco de preparación.
+
+Al tocar un objeto se selecciona y abre un cuadro anclado fuera del círculo,
+con nombre, efecto y acciones Consumir por objetivo válido (o un único botón
+para objetos de equipo). Si no hay unidades, objetivo o combate activo, la
+acción queda deshabilitada y explica el motivo. Tocar otro icono reemplaza el
+cuadro. No hay modal que bloquee la consulta del resto de objetos.
+
+`ui/screens/items_screen.gd` recibe catálogo, inventario y acciones;
+`ui/components/item_popover.gd` dibuja el cuadro. `ui/items_navigation.gd`
+consulta objetivos y llama a `game.use_item`, que sigue validando, resolviendo
+y guardando. `main.gd::items_view` ahora delega. Tras consumir vuelve al combate;
+Volver respeta la fase actual, incluida una recompensa pendiente. Reglas y
+formato de guardado no cambian. Se reutilizan atlas, dígitos y marco existentes.
+
+Validación actual: `test_bag_ui.gd` renderizado sin fallos (ocho posiciones,
+consulta con cero, cantidades, cuadros exteriores, consumo único, bloqueo
+fuera de combate y retorno a recompensa); 48 comprobaciones de equipamiento
+UI y prueba de recompensa aprobadas en headless. Revisión Linux 1280×720;
+captura temporal eliminada. Sin exportación APK/Web ni prueba en dispositivo.
+
+
+## 18/09/2026 — Explicaciones de combate, contraataques y golpes separados
+
+Se añadieron cuadros pequeños al tocar bloqueo activo de héroes/enemigos e
+intenciones de ataque, bloqueo y contraataque. Nuevo icono vectorial de espada
+con flecha de retorno; procedencia en `docs/hud/README.md`.
+Tres enemigos alternan turnos de contraataque de 4 por impacto recibido.
+Los golpes múltiples ahora muestran ataques y reducciones de vida separados;
+el bloqueo se actualiza en cada impacto. Caer interrumpe la secuencia y puede
+resolver derrota. Se preservan guardado previo a efectos e IDs.
+
+Reglas extraídas a `rules/card_hits.gd`, reproducción a
+`presentation/card_impacts.gd`; mapa de arquitectura y reglas de enemigos
+actualizados. Sinergias provocan una respuesta contra el primer héroe de receta.
+Balance de frecuencia/daño pendiente de partidas humanas.
+
+Validación local actual: `test_counter.gd` sin fallos (3×5/3×4,
+absorción por bloqueo, interrupción por muerte, derrota y tres escalones
+visuales de vida); `test_hud.gd`: 107 comprobaciones headless sin fallos,
+incluidos clics reales en los cinco tipos de indicadores; reglas generales:
+155 comprobaciones, 42/45 simulaciones ganadas; sinergias: 481 comprobaciones;
+presentación: 18 comprobaciones, repetidas tras el ajuste final del escudo.
+Las pruebas generales y de sinergias se ejecutaron antes de ese ajuste visual,
+sin cambios posteriores en sus reglas. Importación del editor completada.
+Revisión visual pendiente: no se dispone de xvfb-run en este entorno.
+Sin exportación APK/Web ni prueba en dispositivo.
+
+## 18/09/2026 — Título enmarcado y columna lateral fija del mapa
+
+El título centrado reutiliza `assets/ui/buttons/header_frame.png` con fondo
+oscuro y letras doradas. La columna derecha ocupa 84 px y toda la altura;
+reutiliza el mismo marco girado y el icono existente `assets/map/group_tab.png`.
+El botón Grupo permanece fijo y abre/cierra el panel hacia la izquierda.
+La columna intercepta clics y reserva espacio para futuras pestañas; Menú
+permanece accesible a su izquierda. El recorrido se comprime horizontalmente
+solo al dibujarlo para evitar que la columna tape salas o textos.
+
+Archivos: `src/ui/screens/map_screen.gd` y
+`src/ui/components/map_group_drawer.gd`. No cambian nodos ni coordenadas guardadas.
+No se generaron nuevos assets. `test_map.gd` adaptado a la pestaña fija:
+41 comprobaciones aprobadas con render Linux/llvmpipe a 1280×720;
+revisión visual abierto/cerrado y `git diff --check` sin problemas.
+Capturas temporales eliminadas; sin exportación ni prueba en dispositivo.
+
+## 18/09/2026 — Cruz roja para cartas de sanación
+
+`src/ui/components/card_type_icons.gd` añade una cruz roja cuando `heal > 0`
+a la pastilla inferior compartida de combate, mazo, mercado y recompensas.
+Las cartas mixtas conservan espada/escudo y los enlaces conservan la cadena;
+la pastilla adapta su ancho. Asset nuevo `assets/ui/heal.svg`, vector dibujado
+en código con contorno claro y sombreado escalonado siguiendo los iconos
+existentes; sin generación de imágenes ni cambios de reglas.
+
+Validación local headless: `test_cards.gd`, 544 comprobaciones sin fallos;
+importación del editor y `git diff --check` correctos. Sin revisión visual
+manual de este cambio ni exportación.
+
+## 18/09/2026 — Espada y calavera para cartas de veneno
+
+La pastilla inferior incorpora espada seguida de calavera verde cuando
+`poison > 0`, incluso sin daño directo. Se reutiliza `assets/ui/poison.svg`,
+el mismo icono del estado de veneno en combate. El componente compartido
+`src/ui/components/card_type_icons.gd` conserva los demás iconos y adapta
+el ancho en combate, mazo, mercado y recompensas. Sin cambios de reglas
+ni assets nuevos.
+
+Validación local headless: `test_cards.gd`, 544 comprobaciones sin fallos;
+`git diff --check` correcto. Sin revisión visual manual ni exportación.
+
+## 18/09/2026 — Equipo mejorado en el HUD de combate
+
+Armas y armaduras con nivel 1–3 aparecen después de las reliquias en la barra
+superior del combate y de su recompensa. Cada icono lleva el nivel con los
+dígitos existentes; al tocarlo abre el cuadro compartido con héroe, nivel y
+bonificación de fuerza por golpe o bloqueo en cartas defensivas. Se conserva
+el cierre por segundo toque, toque exterior y Volver. Los niveles 0 no aparecen.
+
+Se muestran los valores de `run.heroes[].forge`, aplicados al inicio de la
+aventura, sin recalcular desde el perfil ni modificar partidas en curso.
+`src/presentation/equipment_badges.gd` prepara descripciones y texturas;
+`combat_hud.gd` presenta reliquias y equipo en la misma fila, ajustando
+separación si fuera necesario. Las pantallas de combate/recompensa suministran
+la instantánea. La interfaz no concede mejoras ni guarda.
+
+Assets nuevos: `assets/forge/icons/`, 21 SVG transparentes dibujados en código
+como extensión de los iconos vectoriales existentes: seis armas (espada,
+escudo de guardiana, dagas, báculo arcano, báculo sagrado y arco) y armadura,
+cada una en tres niveles con metales y gemas distintos. Son iconos de HUD;
+los atlas de personajes conservan su arte actual. Sin generación de imágenes.
+
+Validación actual: `test_forge_ui.gd`, 97 comprobaciones renderizadas locales
+sin fallos, incluyendo los cuatro equipos de cada pareja, apertura/cambio de
+cuadro, héroe/nivel y bonos +3/+6; `test_hud.gd`, 107 headless sin fallos.
+Importación y `git diff --check` correctos. Revisión visual Linux 1280×720;
+capturas temporales eliminadas. Sin exportación ni prueba en dispositivo.
+
+## 18/09/2026 — Regreso al campamento desde la barra de herrería
+
+La herrería muestra únicamente «Campamento» como acción de navegación en la
+barra superior: reemplaza «Menú» y elimina «Volver al campamento» inferior.
+Mantiene marco y almas, desplazando el contador para dar espacio al botón.
+`preparation_header.gd` admite una etiqueta opcional; las demás pantallas
+conservan «Menú» por defecto. `forge_screen.gd` conecta la acción de regreso;
+se retira el callback de menú sin uso en `forge_navigation.gd`.
+
+Validación local headless: `test_forge_ui.gd`, 97 comprobaciones sin fallos,
+incluido clic en Campamento superior y retorno. `git diff --check` correcto.
+Sin revisión visual manual de este cambio ni exportación.
+
+## 18/09/2026 — Vista previa y confirmación de mejora de cartas
+
+En el descanso, tocar una carta sin mejorar selecciona una copia mejorada
+para mostrar sus valores y un resplandor. Solo hay una seleccionada; tocar
+otra restaura la anterior. El botón inferior «Mejorar» empieza deshabilitado
+y confirma la selección. Volver descarta la vista previa. Cartas ya mejoradas
+no son seleccionables. Previsualizar no cambia el mazo, consume el descanso
+ni guarda; confirmar llama a `game.rest(false, index)`, que valida y guarda.
+
+Se extrae `src/ui/screens/card_upgrade_screen.gd` con selección local y copia
+del mazo; `main.gd::deck_view` delega el modo de mejora. Se reutilizan marcos,
+shader de resplandor y botón de madera existentes, sin assets nuevos.
+
+Validación: prueba dedicada por clics para botón inicial, selección/cambio,
+valores mejorados, mazo intacto en vista previa, carta ya mejorada bloqueada
+y confirmación de una única instancia. Revisión visual Linux 1280×720;
+HUD: 107 comprobaciones headless sin fallos tras la extracción del modo de
+mejora. `git diff --check` correcto. Captura temporal eliminada. Sin exportar.
+
+## 18/09/2026 — Categorías visuales de héroe en herrería
+
+La columna de selección reutiliza miniatura frontal, nombre y marco del color
+de cada clase del mercado. Se extrae `ui/components/hero_category.gd` para
+que ambas tiendas compartan la presentación; IDs y callbacks se conservan.
+La vista previa animada de equipo aumenta un 25 % (área de 124 a 155 px),
+reposicionada en la esquina derecha del bloque sin tapar textos ni compras.
+Se reutilizan `assets/cards/<hero>.png` y el atlas frontal; sin assets nuevos.
+
+Validación actual: herrería renderizada en Linux 1280×720, 97 comprobaciones
+sin fallos; mercado headless, 34 sin fallos. Revisión visual del interior con
+las seis categorías y personaje ampliado; `git diff --check` correcto.
+Capturas temporales eliminadas. Sin exportación ni prueba en dispositivo.
+
+## 18/09/2026 — Menos texto en la bolsa
+
+Retirados «No tenés unidades» del cuadro de objeto y «Tocá un objeto para ver
+su efecto» del pie de la vista. Las cantidades permanecen exclusivamente en
+los dígitos bajo cada icono. Consumir sigue deshabilitado cuando no hay stock.
+Archivos: `ui/components/item_popover.gd` y `ui/screens/items_screen.gd`.
+Validación local headless: `test_bag_ui.gd` sin fallos y `git diff --check`
+correcto. Sin revisión visual manual ni exportación.
+
+## 18/09/2026 — Sustitución del arte de equipo del HUD
+
+Los 21 SVG simples de armas/armadura se reemplazan por PNG transparentes de
+128×128 en `assets/forge/icons/`. Tres niveles para cada arma (espada violeta,
+escudo turquesa, dagas verdes, báculo azul, báculo sagrado y arco azul) y tres
+armaduras comunes. Metal desgastado, grabados, gemas y acabados progresivos
+siguen el pixel art detallado de las reliquias. Dígitos y cuadros siguen siendo
+componentes de interfaz; no se pintan números ni marcos sobre los assets.
+
+Generados con image_gen integrado, usando `assets/objects/icons.png` como
+referencia estilística; edición posterior mediante la misma herramienta para
+extraer fondo transparente. Prompts completos, fuentes y procedencia:
+`docs/forge/hud-icons.json`; cuatro hojas finales en `hud-sources/`.
+`scripts/import_equipment_icons.gd` recorta celdas y normaliza la silueta a
+112 px dentro de un lienzo de 128 px, preservando alfa; ignora alfa residual
+inferior a 0,25 solo para calcular los límites del recorte. No recalcula reglas.
+`presentation/equipment_badges.gd` carga PNG. SVG sustituidos eliminados.
+
+Validación: 21 PNG comprobados por tamaño, canal alfa, transparencia de borde
+y contenido; importación Godot y diff sin errores. Prueba de herrería/HUD
+renderizada local con 97 comprobaciones aprobadas; revisión visual de iconos
+y cuadro de efecto en combate. Sin exportación ni dispositivo físico.
+Capturas temporales eliminadas; fuentes y prompts se conservan.
+
+## 18/09/2026 — Bloqueo de héroes encima de la vida
+
+Solo en héroes, escudo y número de bloqueo activo vuelven a la fila encima
+de la barra de vida. Sin veneno se centran; con veneno se distribuyen ambos
+indicadores sin solaparse. Los enemigos conservan sus posiciones anteriores.
+Se mantiene la consulta al tocar y la ocultación cuando no hay bloqueo.
+`combat_screen.gd` aporta posiciones de héroes; `status_effects.gd` admite
+una posición opcional del veneno sin alterar el valor predeterminado.
+
+Validación: `test_hud.gd` renderizado, 108 comprobaciones sin fallos,
+incluyendo posición, ausencia de solapamiento, clics y ocultación. Revisión
+visual Linux 1280×720; captura temporal eliminada. Sin exportación.
+
+## 18/09/2026 — Ambientación animada del campamento diurno
+
+El fondo diurno usa `assets/shaders/camp_day.gdshader`: brisa suave localizada
+en las copas laterales, ondulación/reflejos del lago, flujo discreto de la
+cascada izquierda y oscilación/brillo de las llamas centrales. Máscaras suaves
+por coordenadas y color limitan el movimiento sobre la ilustración original.
+No es animación esquelética ni un nuevo atlas; no se modifica el PNG fuente.
+Edificios, carteles, interfaz y zonas interactivas conservan sus posiciones.
+Solo se aplica a `base_camp`; el fondo nocturno de selección no cambia.
+
+`main.gd::background` asigna el material al nodo `DayCampBackground`. Efecto
+puramente visual mediante tiempo de shader, sin RNG de juego ni persistencia.
+No se generan assets con IA: shader escrito en código y fondo existente.
+
+Validación local Linux/llvmpipe 1280×720: `test_base_camp.gd`, 37 comprobaciones
+sin fallos. Comparación de cuadros separados por 0,45 s confirma cambio de
+píxeles en follaje, agua y fuego, con una región del suelo idéntica; conserva
+pruebas de solares, refugio, arco y regreso/continuación. Revisión de captura
+renderizada; captura temporal eliminada. No implica revisión temporal manual
+exhaustiva ni validación de rendimiento Web/Android. Sin exportación.
+
+## 18/09/2026 — Salir y engranaje de opciones en inicio
+
+«Salir del juego» reemplaza a Opciones en la columna de botones principales.
+Opciones pasa a un botón cuadrado de 70×70 en la esquina superior derecha,
+sin texto visible, con engranaje metálico y tooltip. `assets/ui/settings.svg`
+se dibujó en código siguiendo la paleta oscura/dorada de la interfaz.
+`ui/components/title_actions.gd` compone ambas acciones; `main.gd::home` delega.
+La salida realiza checkpoint y cierra la aplicación nativa. En Web muestra
+un cuadro indicando que se puede cerrar la pestaña, sin intentar cerrarla.
+
+Validación local Linux/llvmpipe: `test_title.gd`, 13 comprobaciones aprobadas
+más clic final en Salir que termina el proceso con código 0. Se comprobaron
+opciones, volumen, persistencia, pantalla completa, navegación/continuación.
+Revisión visual 1280×720; captura temporal eliminada. Importación y diff
+correctos. Rama Web sin ejecutar en navegador; no se exportó.
+
+
+## 18/09/2026 — Tres poses ofensivas nuevas por héroe y combos por golpe
+
+Generados 18 PNG RGBA (1536×1024), tres por cada uno de los seis héroes,
+en `assets/comic/attacks/`. Referencia: cómic original de cada héroe; prompts,
+fuentes y destinos individuales en `docs/comic/attacks/`. Poses diferentes de
+arma/escudo y efectos del color propio, con transparencia real. Se conserva
+la original como cuarta pose; rotación visual por héroe sin RNG de aventura.
+
+El recibo de `rules/card_hits.gd` incorpora `hit_index`.
+`presentation/card_impacts.gd` reproduce una viñeta distinta por golpe real,
+con impacto, descenso de vida y contraataque intercalados. `combat_flow.gd`
+evita la viñeta introductoria adicional. Dos/tres golpes producen dos/tres
+viñetas salvo interrupción por muerte; varios objetivos no duplican la viñeta
+del mismo índice. Se conserva resolución y checkpoint antes de animar.
+
+Validación local: importación Godot y `git diff --check` correctos. Prueba
+renderizada Linux/llvmpipe `test_hero_cut_in.gd`: cuatro poses por héroe,
+rotación sin repetición, defensa, carga, anclaje y limpieza sin fallos.
+`test_counter.gd` renderizada: combos de dos/tres apariciones distintas,
+vida 95/90/85, tres contraataques, bloqueo y muertes sin fallos. Se corrigió
+la reconexión del observador del test al reconstruir la pantalla para el
+segundo combo. `test_combat_presentation.gd` headless: 18 comprobaciones
+aprobadas, incluyendo rechazo, victoria, derrota, defensa y sinergia.
+Revisión visual de los 18 assets y captura del guerrero sobre la mazmorra;
+transparencia RGBA comprobada. Capturas temporales eliminadas. No se exportó
+APK/Web ni se probó en dispositivo físico; rendimiento de esos destinos pendiente.

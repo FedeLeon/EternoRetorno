@@ -31,6 +31,21 @@ func run_tests() -> void:
 	app.continue_run()
 	await process_frame
 	check(app.layer.has_node("Synergy_" + recipe.id), "combination offered")
+	var hand = app.layer.get_node("CombatHand").get_child(0)
+	var timings: Array = []
+	for card in hand.get_children():
+		check(card.has_node("CardLinkIcon") and card.has_node("LinkGlow"), "linked card chain and glow")
+		check(not card.find_children("*", "Label", true, false).any(func(label): return label.text == "ENLACE"), "no text badge")
+		timings.append(card.get_node("CardSheen").remaining)
+	check(timings[0] != timings[1], "independent reflection timing")
+	var rng_before = app.game.rng.state
+	var finish = hand.get_child(0).get_node("CardSheen")
+	finish.remaining = 0.0
+	finish._process(0.01)
+	check(finish.sweeping, "reflection starts")
+	finish._process(1.0)
+	check(not finish.sweeping and finish.remaining >= 4.0 and finish.remaining <= 11.0, "reflection reschedules")
+	check(app.game.rng.state == rng_before, "visual effect preserves gameplay RNG")
 	await click(Vector2(640, 145))
 	check(app.selected_synergy == recipe.id, "click selects combination")
 	check(app.enemy_art[0].has_node("TargetGlow"), "enemy highlighted")

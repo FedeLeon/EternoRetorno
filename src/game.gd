@@ -1,5 +1,8 @@
 class_name ERGame
 extends RefCounted
+# Transient receipt for presentation; never persisted or used to calculate damage.
+var resolved_enemy_attacks: Array[int] = []
+var resolved_card_hits: Array = []
 
 const Synergies = preload("res://src/rules/card_synergies.gd")
 const Progression = preload("res://src/rules/camp_progression.gd")
@@ -218,6 +221,7 @@ func synergy_targets(id: String) -> Array:
 	return []
 
 func play_synergy(id: String, target: int) -> bool:
+	resolved_card_hits.clear()
 	if target not in synergy_targets(id): return false
 	var combo: Dictionary = {}
 	for candidate in available_synergies():
@@ -232,8 +236,13 @@ func play_synergy(id: String, target: int) -> bool:
 		b.discard.append(b.hand[index])
 		b.hand.remove_at(index)
 	_damage(b.enemies[target], int(combo.damage), combo.pierce)
+	if b.enemies[target].hp > 0 and int(b.enemies[target].intent.get("counter", 0)) > 0:
+		var attacker = run.party.find(combo.heroes[0])
+		_damage(run.heroes[attacker], 4)
+		resolved_card_hits.append({"kind":"counter", "enemy":target, "owner":attacker, "hp":run.heroes[attacker].hp, "block":run.heroes[attacker].block, "damage":4})
 	b.enemies[target].poison += int(combo.poison)
 	for hero in run.heroes:
+		if hero.hp <= 0: continue
 		hero.block += int(combo.block)
 		hero.hp = mini(hero.max_hp, hero.hp + int(combo.heal))
 	_log("Sinergia: %s." % combo.name)
@@ -242,6 +251,7 @@ func play_synergy(id: String, target: int) -> bool:
 	return true
 
 func play_card(hand_index: int, target: int) -> bool:
+	resolved_card_hits.clear()
 	if target not in valid_targets(hand_index):
 		return false
 	var b = run.combat
@@ -264,14 +274,10 @@ func play_card(hand_index: int, target: int) -> bool:
 		"ally": ally_targets = [target]
 		"all_allies": ally_targets = living_heroes()
 		"self": ally_targets = [owner]
-	for i in enemy_targets:
-		var enemy = b.enemies[i]
-		for hit in range(int(c.hits)):
-			if c.damage > 0:
-				_damage(enemy, int(c.damage) + (1 if "fang" in run.relics else 0), c.pierce)
-		enemy.poison += int(c.poison)
+	resolved_card_hits = preload("res://src/rules/card_hits.gd").resolve(self, c, owner, enemy_targets)
 	for i in ally_targets:
 		var hero = run.heroes[i]
+		if hero.hp <= 0: continue
 		hero.block += int(c.block)
 		hero.hp = mini(hero.max_hp, hero.hp + int(c.heal))
 	_log("%s: %s." % [content.heroes[run.party[owner]].name, c.name])
@@ -292,6 +298,7 @@ func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 		_log("El Ídolo del Fénix evita un golpe fatal.")
 
 func end_turn() -> bool:
+	resolved_enemy_attacks.clear()
 	if run.is_empty() or run.phase != "combat":
 		return false
 	var b = run.combat
@@ -305,11 +312,14 @@ func end_turn() -> bool:
 	if _check_combat_end():
 		checkpoint()
 		return true
-	for enemy in b.enemies:
+	for enemy_index in range(b.enemies.size()):
+		var enemy = b.enemies[enemy_index]
 		if enemy.hp <= 0:
 			continue
 		enemy.block = 0
 		var intent = enemy.intent
+		if int(intent.get("damage", 0)) > 0:
+			resolved_enemy_attacks.append(enemy_index)
 		enemy.block += int(intent.get("block", 0))
 		var targets = living_heroes() if intent.get("all", false) else [intent.target]
 		if not intent.get("all", false) and run.heroes[targets[0]].hp <= 0:
@@ -336,6 +346,10 @@ func _remove_inactive() -> void:
 
 func _check_combat_end() -> bool:
 	if run.phase != "combat": return false
+	if living_heroes().is_empty():
+		_finish(false)
+		return true
+	_remove_inactive()
 	for enemy in run.combat.enemies:
 		if enemy.hp > 0:
 			return false

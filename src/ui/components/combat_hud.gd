@@ -13,6 +13,8 @@ signal relic_requested(index: int)
 
 # Presentation snapshot supplied by the controller; no game or save dependency.
 var relics: Array = []
+var equipment: Array = []
+var entries: Array = []
 var turn = 1
 var energy = 3
 var show_energy = true
@@ -23,13 +25,25 @@ func _ready() -> void:
 	bar.color = Color("10141f")
 	place(bar, Rect2(0, 0, 1280, 64))
 	bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	for i in range(relics.size()):
-		var relic = relics[i]
-		var texture = AtlasTexture.new()
-		texture.atlas = load("res://assets/objects/icons.png")
-		texture.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
-		var target = icon_button(texture, Rect2(20 + i * 68, 4, 56, 56), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
+	entries = relics + equipment
+	var spacing = minf(68, 792.0 / maxi(1, entries.size()))
+	for i in range(entries.size()):
+		var relic = entries[i]
+		var texture: Texture2D = relic.get("texture")
+		if texture == null:
+			var atlas = AtlasTexture.new()
+			atlas.atlas = load("res://assets/objects/icons.png")
+			atlas.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
+			texture = atlas
+		var target = icon_button(texture, Rect2(20 + i * spacing, 4, minf(56, spacing - 4), 56), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
 		target.name = "Relic%d" % i
+		if relic.has("level"):
+			var number = NumberView.new()
+			number.value = relic.level
+			number.position = Vector2(38, 34)
+			number.size = Vector2(18, 22)
+			number.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			target.add_child(number)
 	var bag = icon_button(load("res://assets/dungeon/bag.png"), Rect2(897, 4, 56, 56), "Bolsa de objetos", func(): bag_requested.emit())
 	bag.name = "Bag"
 	var deck = icon_button(preload("res://assets/ui/deck.svg"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())
@@ -106,7 +120,7 @@ func show_relic(index: int) -> void:
 		return
 	open_relic = index
 	popover = RelicPopover.new()
-	popover.setup(relics[index], get_node("Relic%d" % index).get_rect())
+	popover.setup(entries[index], get_node("Relic%d" % index).get_rect())
 	add_child(popover)
 
 func close_relic() -> bool:
@@ -126,7 +140,7 @@ func _input(event: InputEvent) -> void:
 		if popover.get_rect().has_point(point):
 			return
 		# Let relic buttons toggle or switch the description.
-		for i in range(relics.size()):
+		for i in range(entries.size()):
 			if get_node("Relic%d" % i).get_rect().has_point(point):
 				return
 		close_relic()

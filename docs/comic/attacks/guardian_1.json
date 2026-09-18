@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Create ONE new attack cut-in illustration for this exact hero. Reference supplies character identity, clothing, weapon and detailed inked fantasy comic style; KEEP those features. NEW POSE: Driving forward shoulder and shield bash at chest height toward right, golden impact sparks. Single full hero with weapon and colored attack effects, facing and attacking toward RIGHT. Landscape 1536x1024, entirely inside canvas with 5 percent padding, dynamic close-up full-body foreshortening, strong clean outline like reference. This is combo strike 1, it must have substantially different body/weapon silhouette from reference. Real transparent alpha background outside hero and tight attack effects. No environment, gradient backdrop, floor, frame, text, letters, enemies or additional figures. No opaque glow rectangle; dungeon must remain visible around the cutout.",
+  "reference": "assets/comic/guardian.png",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-1733a7c9-4f2c-40e7-bfef-3a2bbb8f90b6.png",
+  "target": "assets/comic/attacks/guardian_1.png"
+}

@@ -30,6 +30,17 @@ func run_tests() -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("base_camp/base-camp.png"))
+
+	if DisplayServer.get_name() != "headless":
+		await RenderingServer.frame_post_draw
+		var first = root.get_texture().get_image()
+		await create_timer(0.45).timeout
+		await RenderingServer.frame_post_draw
+		var second = root.get_texture().get_image()
+		for area in [Rect2i(24, 84, 110, 100), Rect2i(640, 212, 150, 25), Rect2i(626, 354, 35, 42)]:
+			check(first.get_region(area).get_data() != second.get_region(area).get_data(), "foliage, water and fire animate")
+		var ground = Rect2i(440, 550, 110, 60)
+		check(first.get_region(ground).get_data() == second.get_region(ground).get_data(), "ground remains still")
 	var profile = app.game.profile.duplicate(true)
 	for id in ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent"]:
 		var area = app.layer.get_node(id).get_global_rect()

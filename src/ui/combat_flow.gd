@@ -39,7 +39,9 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		accepted = ui.game.play_card(hand_index, target_index) if hand_index >= 0 else ui.game.end_turn()
 	if not accepted:
 		return
+	var impacts: Array = ui.game.resolved_card_hits.duplicate(true) if hand_index >= 0 or synergy_id != "" else []
 	ui.combat_busy = true
+	for tip in ui.get_tree().get_nodes_in_group("combat_tip"): tip.queue_free()
 	var ash_effects: Array = []
 	var hand_view = ui.layer.get_node_or_null("CombatHand")
 	if hand_view != null:
@@ -55,14 +57,19 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		ui.CombatEffects.attack_flash(ui.layer)
 		for actor in ui.hero_art.values():
 			await actor.play_once("attack")
+		if not impacts.is_empty():
+			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)
 	if owner >= 0 and ui.game.run.party[owner] in ui.ANIMATED_HEROES:
 		if offensive:
 			ui.CombatEffects.attack_flash(ui.layer)
-		if offensive or defensive:
+		if (offensive or defensive) and impacts.is_empty():
 			var cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer, ui.game.run.party[owner], "attack" if offensive else "defense")
 			if cut_in != null:
 				await cut_in.finished
-		await ui.hero_art[owner].play_once(motion)
+		if impacts.is_empty():
+			await ui.hero_art[owner].play_once(motion)
+		else:
+			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)
 	# The committed result can already be reward/defeat; show the old arena until
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = ui.game.run.combat.get("enemies", [])
@@ -73,11 +80,15 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			if current_enemies[i].hp <= 0:
 				ui.flash_hit(ui.enemy_art[i])
 				await ui.enemy_art[i].play_once("death")
-			elif current_enemies[i].hp < old_enemies[i].hp:
+			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty():
 				await ui.enemy_art[i].play_once("hurt")
-			if hand_index < 0 and synergy_id == "" and current_enemies[i].hp > 0 and old_enemies[i].intent.get("damage", 0) > 0:
-				ui.CombatEffects.attack_flash(ui.layer)
-				await ui.enemy_art[i].play_once("attack")
+		if hand_index < 0 and synergy_id == "" and i in ui.game.resolved_enemy_attacks:
+			ui.CombatEffects.attack_flash(ui.layer)
+			var visual = ui.game.content.enemies[old_enemies[i].id].visual
+			var cut_in = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer, visual)
+			if cut_in != null:
+				await cut_in.finished
+			await ui.enemy_art[i].play_once("attack")
 	for i in range(before.size()):
 		var after = ui.game.run.heroes[i]
 		ui.hero_health[i].animate_to(after.hp)
@@ -89,7 +100,7 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			await ui.hero_art[i].play_once("death")
 		elif before[i].hp <= 0 and after.hp > 0:
 			await ui.hero_art[i].play_once("revive")
-		elif after.hp < before[i].hp:
+		elif after.hp < before[i].hp and impacts.is_empty():
 			await ui.hero_art[i].play_once("hurt")
 		elif hand_index < 0 and after.block < before[i].block:
 			await ui.hero_art[i].play_once("guard")
