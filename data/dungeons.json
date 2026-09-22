@@ -1,0 +1,51 @@
+{
+  "1": {
+    "name": "La cripta de los ecos",
+    "common": [
+      "rat",
+      "skeleton",
+      "cultist",
+      "slime",
+      "skeleton_warrior",
+      "skeleton_archer",
+      "skeleton_shielder",
+      "skeleton_berserker",
+      "rock_elemental",
+      "shadow_elemental"
+    ],
+    "elite": "elite",
+    "boss": "boss",
+    "escort": "rat",
+    "distinct_common": true,
+    "min_stage": {
+      "skeleton_shielder": 2,
+      "skeleton_berserker": 4,
+      "rock_elemental": 5,
+      "shadow_elemental": 5
+    }
+  },
+  "2": {
+    "name": "El Bosque de las Raíces",
+    "common": [
+      "goblin_warrior",
+      "goblin_archer",
+      "goblin_shaman",
+      "forest_wolf",
+      "forest_boar",
+      "goblin_lancer",
+      "goblin_bomber",
+      "goblin_raider",
+      "goblin_rider",
+      "forest_bat",
+      "forest_raven"
+    ],
+    "elite": "forest_elite",
+    "boss": "forest_boss",
+    "escort": "goblin_warrior",
+    "distinct_common": true,
+    "min_stage": {
+      "goblin_bomber": 2,
+      "goblin_rider": 4
+    }
+  }
+}

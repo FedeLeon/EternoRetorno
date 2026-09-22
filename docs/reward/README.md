@@ -21,3 +21,14 @@ combate. Fuera de combate el visor muestra el total, sin pilas de una batalla pa
 - `test_combat_layout.gd`: 41 comprobaciones aprobadas.
 - Revisión visual Linux 1280×720 de recompensa; captura temporal eliminada.
 - Sin exportación APK/Web ni prueba en emulador/dispositivo.
+
+
+## Recompensa de élite — 22/09/2026
+
+La reliquia aleatoria se concede y guarda al ganar. `run.reward_relic` conserva
+su ID mientras se elige la carta; el panel `elite_relic_reward.gd` muestra icono,
+nombre, efecto y confirmación de adquisición a la izquierda. Las tres cartas
+mantienen su tamaño y se desplazan a la derecha. Elegir/saltar la carta limpia
+el recibo, pero conserva la reliquia. Menú, bolsa, mazo y recarga no repiten el
+sorteo ni la adquisición. [Catálogo, arte y pruebas](../relics/README.md).
+La barra superior incluye las reliquias iniciales y las encontradas.

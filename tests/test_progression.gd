@@ -27,7 +27,7 @@ func _initialize() -> void:
 			if int(c.get("market_price", 0)) > 0:
 				market += 1
 				check(not P.available(g.profile, c), "unbought excluded " + id)
-		check(total == 15 and market == 6, "15 cards / 6 market " + hero)
+		check(total == 19 and market == 10, "19 cards / 10 market " + hero)
 		for id in g.content.heroes[hero].starter:
 			check(g.content.cards[id].get("market_price", 0) == 0, "starter excludes market")
 	var id = ""
@@ -84,7 +84,7 @@ func _initialize() -> void:
 			check(battle.play_card(0, 0), "new card playable " + card_id)
 			check(battle.run.combat.energy == 3 - effect.cost, "energy " + card_id)
 			if effect.damage > 0:
-				check(battle.run.combat.enemies[0].hp == 200 - effect.damage * effect.hits + (0 if effect.pierce else 2), "damage " + card_id)
+				check(battle.run.combat.enemies[0].hp == 200 - effect.damage * effect.hits + (0 if effect.pierce else (1 if effect.get("fracture_pct", 0) > 0 else 2)), "damage " + card_id)
 			if effect.poison > 0:
 				check(battle.run.combat.enemies[0].poison == effect.poison, "poison " + card_id)
 			if effect.block > 0: check(battle.run.heroes[0].block == effect.block, "block " + card_id)

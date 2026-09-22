@@ -171,3 +171,37 @@ y contenido; importación Godot y diff sin errores. Prueba de herrería/HUD
 renderizada local con 97 comprobaciones aprobadas; revisión visual de iconos
 y cuadro de efecto en combate. Sin exportación ni dispositivo físico.
 Capturas temporales eliminadas; fuentes y prompts se conservan.
+
+
+## 22/09/2026 — Selección mediante tarjetas de héroes
+
+Al entrar se muestran seis tarjetas de cara y torso, reutilizando
+`refuge_portrait.gd` y el arte comic existente. No hay héroe preseleccionado.
+`building_hero_picker.gd` comparte la galería entre mercado y herrería.
+
+Al tocar una tarjeta desaparece la galería y aparece el bloque de operaciones
+exclusivo de ese héroe. Comprar conserva la selección y actualiza saldo/estado.
+«Volver a héroes» restaura la galería; Atrás/Escape sigue ese mismo recorrido.
+El botón superior Campamento sale directamente del edificio. Entrar otra vez
+siempre comienza en la galería. Sin cambios en precios, compras ni guardados.
+
+Se retiró hero_category.gd y su constante CAMP_FRONT, ya sin consumidores.
+El atlas frontal se conserva para retratos de intención de combate.
+
+Validación actual: mercado 49 y herrería 110 comprobaciones renderizadas sin
+fallos, con los seis héroes, compras y regreso a la galería. Campamento: 33
+comprobaciones headless aprobadas. Revisión visual Linux 1280×720 de galería y
+paneles; capturas retiradas. Sin exportación Web/APK ni prueba en dispositivo.
+
+
+## 22/09/2026 — Galería a la derecha
+
+Las seis tarjetas de héroes se distribuyen en dos columnas y tres filas en el
+sector derecho (desde x=738 en el lienzo 1280×720), dejando libre al personaje
+del edificio a la izquierda. Tarjetas compactas de 244×166, nombres legibles
+y encuadres de cara/torso ajustados por héroe sobre los assets comic existentes.
+
+`building_hero_picker.gd` admite el modo `right_grid`, activado solo por Mercado
+y Herrería; `refuge_portrait.gd` aporta el formato compacto y sus recortes.
+Validación actual: mercado 49/49 y herrería 110/110 con render local, revisión
+visual de galerías a 1280×720. Capturas temporales retiradas. Sin exportaciones.

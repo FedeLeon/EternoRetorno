@@ -1,6 +1,6 @@
 # Mapa de aventura — 16/09/2026
 
-## Presentación actual
+## Presentación inicial (histórico; ver actualizaciones al final)
 
 - Fondo propio de piedra oscura, bordes dorados envejecidos y detalles violetas.
 - Seis iconos interactivos: espadas (combate), santuario (encuentro), cofre,
@@ -158,3 +158,39 @@ Validación actual: `test_map.gd`, 105 comprobaciones sin fallos en Linux con
 render llvmpipe; clics de detalle, cambio/cierre de reliquia, navegación al mazo,
 rutas y panel. Revisión visual local a 1280×720. Sin exportar ni probar Web o
 Android; capturas temporales retiradas.
+
+
+## 18/09/2026 — Resplandor de ubicación e inicio
+
+`map_screen.gd` dibuja un halo dorado detrás del papiro de la sala actual.
+Antes de entrar en la primera sala (current < 0), ilumina la entrada disponible.
+Pulsa entre 72 % y 100 % de opacidad cada 1,1 s, sin apagarse ni requerir hover.
+El papiro destacado es más luminoso; se conserva la flecha de ubicación.
+Efecto procedural con StyleBoxFlat, sin nuevos recursos raster ni reglas de juego.
+El halo ignora el ratón; el panel de Grupo queda por encima.
+
+La comprobación renderizada detectó además un cierre inconsistente de reliquias:
+map_group_drawer.gd ahora usa la posición del evento de clic, transformada al
+canvas, en lugar del cursor global para decidir si el clic fue fuera del cuadro.
+Validación final: test_map.gd, 109 comprobaciones sin fallos, render local Linux.
+Revisión visual del inicio a 1280×720; capturas retiradas. Sin exportar Web/APK.
+
+## Pisos aleatorios — 22/09/2026
+
+Cada piso nuevo conserva 28 salas: 13 combates, 6 descansos, 4 encuentros,
+2 tesoros, 2 élites y 1 guardián. Cambian la distribución de tipos, conexiones,
+anchos de las bifurcaciones, posiciones y enemigos con la semilla. Se mantienen
+hasta tres opciones por bifurcación y un recorrido serpenteante legible. Todas
+las salas son accesibles y ninguna termina en un callejón sin salida. El primer
+élite está en una rama opcional; el segundo precede obligatoriamente al guardián.
+No se visitan las 28 salas en un único recorrido.
+
+El nombre depende del piso. Al vencer al guardián de la cripta, la salida lleva
+al bosque conservando el grupo y sus adquisiciones. Las partidas ya guardadas
+conservan exactamente su grafo y su final anterior de un piso. Las cifras de
+caminos de las secciones históricas describen el mapa fijo anterior.
+
+Pruebas actuales: 200 mapas (100 semillas por piso), determinismo, inventario de
+salas, accesibilidad, ausencia de ciclos, variación y posiciones dentro del mapa.
+`test_forest.gd`: 20.414 comprobaciones; `test_map.gd`: 109 comprobaciones
+renderizadas. Revisión visual local del mapa del bosque a 1280×720.

@@ -4,6 +4,7 @@ signal continue_requested
 signal menu_requested
 
 var result: Dictionary = {}
+var background_path = "res://assets/dungeon/combat_columns.png"
 var busy = false
 var picture: TextureRect
 var chest: Button
@@ -26,7 +27,7 @@ func label(text: String, area: Rect2, font_size: int = 22, parent: Node = self) 
 
 func _ready() -> void:
 	var background = TextureRect.new()
-	background.texture = load("res://assets/dungeon/combat_columns.png")
+	background.texture = load(background_path)
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(background, Rect2(0, 0, 1280, 720))

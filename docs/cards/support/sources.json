@@ -1,0 +1,127 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/cards/art/originals.png",
+  "generated_on": "2026-09-22",
+  "assets": {
+    "warrior_rally": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-bd6fc153-b55a-459e-a974-2737a6abb6f8.png",
+      "source": "docs/cards/support/sources/warrior_rally.png",
+      "final": "assets/cards/art/warrior_rally.png"
+    },
+    "warrior_second_wind": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-05c39303-7664-406a-a573-10cba79e6a30.png",
+      "source": "docs/cards/support/sources/warrior_second_wind.png",
+      "final": "assets/cards/art/warrior_second_wind.png"
+    },
+    "warrior_crush_armor": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-300b17a7-d866-4ae1-9a84-33cc478ec446.png",
+      "source": "docs/cards/support/sources/warrior_crush_armor.png",
+      "final": "assets/cards/art/warrior_crush_armor.png"
+    },
+    "warrior_disarm": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-5eba3179-3f03-48dd-a105-b0af80b64610.png",
+      "source": "docs/cards/support/sources/warrior_disarm.png",
+      "final": "assets/cards/art/warrior_disarm.png"
+    },
+    "guardian_lay_hands": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-9b790895-4b90-4f27-8cd0-80dc5bdf0dc3.png",
+      "source": "docs/cards/support/sources/guardian_lay_hands.png",
+      "final": "assets/cards/art/guardian_lay_hands.png"
+    },
+    "guardian_inspire": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-a3bbb827-0bf8-403b-8c5a-c987d307415e.png",
+      "source": "docs/cards/support/sources/guardian_inspire.png",
+      "final": "assets/cards/art/guardian_inspire.png"
+    },
+    "guardian_shield_break": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-66b62d8b-c472-427d-affc-9595d805f5df.png",
+      "source": "docs/cards/support/sources/guardian_shield_break.png",
+      "final": "assets/cards/art/guardian_shield_break.png"
+    },
+    "guardian_rebuke": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-dae53d57-40a0-4e2d-a238-c30ea16fa453.png",
+      "source": "docs/cards/support/sources/guardian_rebuke.png",
+      "final": "assets/cards/art/guardian_rebuke.png"
+    },
+    "rogue_enervating": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-0914c37a-9bb6-4002-8c0f-f6143cadc05e.png",
+      "source": "docs/cards/support/sources/rogue_enervating.png",
+      "final": "assets/cards/art/rogue_enervating.png"
+    },
+    "rogue_corrosive": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-b2efbb87-232b-4ab1-a0e1-59b67b8e2dab.png",
+      "source": "docs/cards/support/sources/rogue_corrosive.png",
+      "final": "assets/cards/art/rogue_corrosive.png"
+    },
+    "rogue_adrenaline": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-ef2a6127-e135-4843-84cd-ce86a1528478.png",
+      "source": "docs/cards/support/sources/rogue_adrenaline.png",
+      "final": "assets/cards/art/rogue_adrenaline.png"
+    },
+    "rogue_exposed": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-20b2ec53-8f0a-46cd-b9d8-5840fc2d019b.png",
+      "source": "docs/cards/support/sources/rogue_exposed.png",
+      "final": "assets/cards/art/rogue_exposed.png"
+    },
+    "mage_focus": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-6ca100e7-4db7-4622-a93c-421a4abf4d41.png",
+      "source": "docs/cards/support/sources/mage_focus.png",
+      "final": "assets/cards/art/mage_focus.png"
+    },
+    "mage_frost_bind": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-e8f2197b-ee34-4b33-ab76-361f9921a039.png",
+      "source": "docs/cards/support/sources/mage_frost_bind.png",
+      "final": "assets/cards/art/mage_frost_bind.png"
+    },
+    "mage_shatter": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-b434d0b3-8a74-4e49-af53-df6eb05959e3.png",
+      "source": "docs/cards/support/sources/mage_shatter.png",
+      "final": "assets/cards/art/mage_shatter.png"
+    },
+    "mage_siphon": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-56892895-6c7a-4d75-b751-ab92e86c6581.png",
+      "source": "docs/cards/support/sources/mage_siphon.png",
+      "final": "assets/cards/art/mage_siphon.png"
+    },
+    "cleric_benediction": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-7fb8e8ff-5a8f-4362-9e62-8e496087602c.png",
+      "source": "docs/cards/support/sources/cleric_benediction.png",
+      "final": "assets/cards/art/cleric_benediction.png"
+    },
+    "cleric_absolution": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-cd1bdd9c-2d0a-472d-a13f-93ac58af762c.png",
+      "source": "docs/cards/support/sources/cleric_absolution.png",
+      "final": "assets/cards/art/cleric_absolution.png"
+    },
+    "cleric_censure": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-6a79bba7-e7fa-49d7-8d31-f3b95f967147.png",
+      "source": "docs/cards/support/sources/cleric_censure.png",
+      "final": "assets/cards/art/cleric_censure.png"
+    },
+    "ranger_field_aid": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-bf5426b5-b633-48e8-9e00-2868a27709e1.png",
+      "source": "docs/cards/support/sources/ranger_field_aid.png",
+      "final": "assets/cards/art/ranger_field_aid.png"
+    },
+    "ranger_hunters_focus": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-aa8fe376-dba8-4062-8f8e-05caa3cb870b.png",
+      "source": "docs/cards/support/sources/ranger_hunters_focus.png",
+      "final": "assets/cards/art/ranger_hunters_focus.png"
+    },
+    "ranger_tendon_shot": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-d31d58df-3ed6-4217-8111-1079f9c3e36c.png",
+      "source": "docs/cards/support/sources/ranger_tendon_shot.png",
+      "final": "assets/cards/art/ranger_tendon_shot.png"
+    },
+    "ranger_split_arrow": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-4dbf327c-36a7-4d1f-b63c-2095937f5d23.png",
+      "source": "docs/cards/support/sources/ranger_split_arrow.png",
+      "final": "assets/cards/art/ranger_split_arrow.png"
+    },
+    "cleric_radiant_judgment": {
+      "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-c4c44728-ca73-4904-a5e0-4d840f8d71e7.png",
+      "source": "docs/cards/support/sources/cleric_radiant_judgment.png",
+      "final": "assets/cards/art/cleric_radiant_judgment.png"
+    }
+  }
+}

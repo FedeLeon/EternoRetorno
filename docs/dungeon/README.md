@@ -127,3 +127,17 @@ Validación: batería local completa de 30 scripts aprobada.
 
 Las cartas ofensivas válidas presentan una viñeta del héroe antes de la animación
 del actor. [Comportamiento, límites y pruebas](../comic/README.md).
+
+## Selector temporal de mazmorra — 22/09/2026
+
+Al tocar Iniciar aventura se elige Mazmorra 1 (Cripta) o Mazmorra 2
+(Bosque). El diálogo avisa que es para pruebas y se eliminará en la versión
+final. Volver conserva la preparación y cualquier aventura activa. Solo
+confirmar un destino reemplaza la aventura. No recuerda la última elección.
+Ambas opciones crean una run con 20 cartas, inventario vacío, reliquia y
+mejoras iniciales normales. El bosque comienza sin simular premios de la cripta.
+Terminar el bosque conserva el flujo normal de victoria y desbloqueos.
+
+Retirada futura: quitar la llamada a `ui/development_start.gd` de `begin()`
+y llamar directamente a `begin_on_floor(1)`. Selector también disponible en
+builds exportados durante desarrollo; no depende de OS.is_debug_build().

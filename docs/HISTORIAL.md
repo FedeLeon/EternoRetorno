@@ -1234,3 +1234,304 @@ Sin exportación ni pruebas Web/Android.
 - Documentado el despliegue manual en `docs/LIMPIEZA.md`.
 - Verificados índice vacío para esa carpeta y exclusión de los archivos locales.
   Sin commit, push ni exportación.
+
+
+## 18/09/2026 — Inicio y sala actual iluminados
+
+- Halo dorado persistente con pulso suave detrás de la sala actual y, antes
+  del primer encuentro, de la entrada disponible. Papiro destacado más luminoso.
+- Ajuste del cierre de detalles de reliquias para usar la posición del clic.
+- Documentado en docs/map; prueba renderizada local: 109 comprobaciones aprobadas.
+  Revisión visual del inicio, sin exportación ni pruebas Web/Android.
+
+
+## 22/09/2026 — Fondo para estados de héroes
+
+Bloqueo y veneno sobre la vida reutilizan combat_backplate.gd: fondo oscuro
+al 65 %, con esquinas suaves. status_effects.gd recibe show_backplates desde
+combat_screen.gd solo para héroes. El fondo se oculta con el indicador y no
+intercepta clics. Enemigos sin cambios.
+
+Validación: test_hud.gd, 108 comprobaciones aprobadas con render Linux/llvmpipe
+y revisión visual a 1280×720. Capturas retiradas. Sin exportación Web/APK.
+
+
+## 22/09/2026 — Descanso junto a la fogata
+
+- Nuevo fondo de mazmorra oscura con fogata central, seis poses sentadas con
+  transparencia y barras de vida encima de los dos héroes de la aventura.
+- Dos tarjetas ilustradas: recuperar 30 % de vida y mejorar una carta.
+  La mejora se deshabilita si no quedan cartas elegibles.
+- Pantalla extraída a rest_screen.gd; main.gd conecta sus señales a las reglas
+  existentes, sin cambiar curación, guardado ni consumo del descanso.
+- Nueve assets generados con image_gen integrado, fuentes/prompts en docs/rest
+  y finales optimizados en assets/rest. Importador scripts/import_rest.gd.
+- 37 comprobaciones de descanso aprobadas con render local y prueba headless
+  de mejora sin fallos. Revisión visual de los seis héroes en tres parejas.
+  Capturas retiradas, sin exportar Web/APK ni modificar guardados reales.
+
+
+## 22/09/2026 — Selección de héroes sentados junto al fuego
+
+- Reutilizadas las seis poses del descanso; orientación hacia la fogata y fila
+  superior separada de los personajes inferiores.
+- Nueva llama de ocho cuadros 128×128 generada con image_gen integrado. Prompts,
+  fuente e importador documentados en docs/camp.
+- Luz cálida animada compartida entre selección y descanso, sin deformar héroes.
+- Pruebas renderizadas: selección 66 y descanso 37, sin fallos. Revisión visual
+  y comparación de fotogramas. Capturas retiradas; sin exportar Web/APK.
+
+
+## 22/09/2026 — Fogata diurna con atlas detallado
+
+base_camp_screen.gd reutiliza campfire.gd y fire-128.png: ocho fotogramas a
+9 FPS, chispas y resplandor, anclados en (643, 396) a escala 0,62 sobre la
+fogata del fondo. No se duplican assets. El shader camp_day conserva el viento
+y el agua; se retira su deformación anterior de la llama.
+
+Validación local renderizada: test_base_camp.gd, 37 comprobaciones sin fallos
+y revisión visual a 1280×720. Capturas temporales retiradas; sin exportar.
+
+
+## 22/09/2026 — Tarjetas de héroes en mercado y herrería
+
+- Galería inicial de seis tarjetas comic reutilizadas del refugio. Al elegir,
+  se oculta y se presenta el bloque de compras o mejoras de ese héroe.
+- Volver a héroes y Atrás restauran la galería; Campamento sale del edificio.
+- Componente building_hero_picker compartido; retirado hero_category sin usos.
+- Pruebas: mercado 49 y herrería 110 renderizadas; campamento 33 headless,
+  sin fallos. Revisión visual local y capturas retiradas. Sin exportación.
+
+
+## Puesto de expediciones e Iglesia — 22/09/2026
+
+- Solar 4: puesto construible por 500 almas; treinta contratos, uno activo por aventura,
+  tres ofertas persistentes que se renuevan sin repetir las anteriores al finalizar.
+  Quince parejas, seis victorias por héroe y nueve objetivos de progreso.
+- Contadores de combate/élites/guardián, combates sin bajas, cofres y mejoras de descanso;
+  liquidación única junto al fin de aventura y conservación del resultado.
+- Solar 2: Iglesia por 600 almas; galería de seis retratos compartida y dos especializaciones
+  por héroe. Requieren victoria completa con ese héroe y compra de 450 almas. Una activa,
+  intercambio gratuito, snapshot para próximas aventuras y migración de victorias retenidas.
+- Veintidós assets generados: dos edificios transparentes, dos interiores, seis ilustraciones
+  de contratos y doce de especializaciones. Fuentes/prompts conservados en docs; finales
+  reducidos con importador Godot. No se agregaron fuentes a la exportación.
+- Pantallas/controlador/reglas/datos separados; resultado final extraído de main.gd.
+  Estructura y decisiones en ARQUITECTURA.md y docs/expeditions, docs/church.
+- Pruebas actuales: expansión 192/192, UI 30/30 renderizada localmente; juego 156/156,
+  progresión 819/819, campamento 33/33. Revisión visual 1280×720 y ajuste de posiciones,
+  ilustraciones sin recortar los rostros. Capturas temporales eliminadas después de revisar.
+  Sin APK/Web, emulador ni dispositivo físico. Balance pendiente de partidas reales.
+
+
+## Mercado y Herrería: tarjetas a la derecha — 22/09/2026
+
+- Galería de seis héroes en tres filas de dos tarjetas, con retratos compactos
+  y encuadres individuales. Quedan visibles el mercader y el herrero.
+- Se extendieron los componentes compartidos `building_hero_picker.gd` y
+  `refuge_portrait.gd`; ambas pantallas activan la nueva variante.
+- Pruebas renderizadas actuales: Mercado 49/49, Herrería 110/110; revisión
+  visual local 1280×720. Capturas retiradas; sin APK/Web ni pruebas móviles.
+
+
+## Reliquias de élite: veinte nuevos efectos y assets — 22/09/2026
+
+- Se amplió el catálogo de aventura de 4 a 24 reliquias, conservando IDs y
+  efectos anteriores. Cada élite concede una aleatoria no poseída en esa aventura.
+- Veinte efectos nuevos de cartas, bloqueo inicial/por turno, curación tras
+  victoria, vida máxima y robo inicial; reglas separadas en `run_relics.gd`.
+- Recibo persistente `run.reward_relic`: icono, nombre y efecto a la izquierda
+  de la elección de cartas. La concesión precede a la UI y sobrevive a recarga
+  o salto de carta. Reliquias halladas visibles en HUD y Grupo con popover.
+- Veinte iconos generados con imagegen, transparentes, finales 192×192; 833049
+  bytes de PNGs. Fuentes y prompts en docs/relics; importador propio y catálogo
+  en data/elite_relics.json. Arquitectura e índice actualizados.
+- Validación actual: reliquias 134/134, juego 156/156, equipamiento 90/90,
+  expansión 192/192, mapa 109/109 (también renderizado). Recompensa renderizada
+  sin fallos; revisión visual de pantalla y veinte iconos. Importación y diff
+  sin errores; capturas retiradas. Sin exportar ni validar en Web/APK/dispositivo.
+
+
+## Cartas no utilizadas en cenizas al finalizar turno — 22/09/2026
+
+- `combat_flow.gd` reutiliza la animación de cartas jugadas sobre toda la mano
+  saliente al terminar el turno. Captura los índices antes del descarte y robo;
+  la acción se resuelve y guarda antes de presentar los efectos.
+- La mano siguiente aparece tras terminar las animaciones. Se conserva el
+  bloqueo de entrada durante la secuencia y se admite una mano vacía.
+- Presentación de combate: 25/25 comprobaciones con render local y revisión
+  visual de las cenizas de seis cartas. `git diff --check` sin errores.
+  Capturas temporales retiradas; sin exportación ni pruebas móviles/web.
+
+## Pisos aleatorios y bosque — 22/09/2026
+
+- Aventuras nuevas con cripta y El Bosque de las Raíces, 28 salas por piso.
+  Se conserva la cantidad de cada tipo, variando conexiones, tipos, posiciones
+  y encuentros según el RNG guardado. Primer élite opcional y segundo obligatorio.
+- Más combates dobles y triples, con triples en tramos tardíos. Siete enemigos
+  forestales activos: tres goblins comunes, lobo, jabalí, oso élite y jefe goblin.
+  Ajuste de posiciones y HUD para tres enemigos dentro de 1280×720.
+- 17 assets: dos escenarios de batalla, descanso forestal, siete atlas de ocho
+  poses y siete ataques transparentes en primer plano de derecha a izquierda.
+  Fuentes/prompts/importador en `docs/forest/` y `scripts/import_forest.gd`.
+- Separación: `rules/dungeon_generator.gd` construye el grafo;
+  `rules/dungeon_progression.gd` cambia de piso; `game.gd` confirma y guarda.
+  Catálogos `data/dungeons.json` y `data/forest_enemies.json`. Sin migrar ni
+  regenerar mapas antiguos; conservan su final de un piso. Contratos y victoria
+  de especialización se liquidan al final del bosque para aventuras nuevas.
+- Pruebas locales sin fallos: generación/transición 20.414 (200 mapas), interfaz
+  forestal 36 renderizadas, enemigos 631, reglas generales 142, mazmorra 66,
+  tesoros 22, mapa 109 renderizadas, tesoro UI 8, reliquias 134, campamento 192
+  y equipo 90. Importación y `git diff --check` correctos.
+- Revisión visual local de mapa, grupos de tres, ataques transparentes y descanso.
+  Capturas temporales retiradas. No se exportó Web/APK ni se probó en dispositivo.
+- Pendiente: balance con partidas humanas. Bot simple: 15 victorias en 45
+  aventuras; no compra ni incorpora premios. Se adapta su prueba anterior de
+  victorias mínimas por pareja al nuevo recorrido de dos pisos, manteniendo
+  la comprobación de terminación. Detalle en `docs/forest/README.md`.
+
+## 24 cartas de apoyo y debilitamiento — 22/09/2026
+
+- Cuatro cartas por héroe, catálogo total 114 y mercado con 60 cartas (10 por
+  héroe). Precios nuevos de 160–240 almas. Compra permanente que habilita
+  recompensas; no altera mazos iniciales, cartas anteriores ni guardados existentes.
+- Fuerza temporal +25% de daño, debilidad -25% al ataque normal de la próxima
+  acción y fractura -25% al bloqueo actual y a su siguiente ganancia. No se
+  acumulan; porcentajes mejorados del 35%. Contraataque conserva cuatro por golpe.
+- Nuevas opciones de curación para guerrero, guardiana, maga y explorador, además
+  de clériga. Se respetan objetivos vivos y límite de vida máxima.
+- `data/support_cards.json`, `rules/combat_modifiers.gd` y componente visual
+  `combat_modifier_badges.gd` separan catálogo, reglas y presentación. Estados
+  opcionales guardados durante combate; intenciones enemigas muestran los valores
+  efectivos. Pastillas con símbolos de fuerza, debilidad y fractura.
+- 24 ilustraciones únicas generadas con imagegen integrado, finales de 512 px en
+  `assets/cards/art/`. Fuentes, prompts y procedencia en `docs/cards/support/`;
+  importador `scripts/import_support_cards.gd`. Galería HTML local y catálogo
+  de precios/efectos. Ningún arte anterior reemplazado.
+- Ajustes de títulos largos y texto en las cartas nuevas, verificados en cuatro
+  tamaños, normales/mejoradas. Se mantiene el espacio original de la ilustración.
+- Pruebas locales sin fallos: apoyo 1.922, UI de apoyo 609 renderizadas (incluye
+  clic real en indicador), arte 715, progresión 989, mercado UI 49, cartas UI 701,
+  reglas generales 142, enlaces 481, reliquias 134 y equipo 90.
+- Revisión visual Linux/llvmpipe 1280×720: las seis galerías, mano de combate,
+  explicación de estados y mercado. Capturas temporales retiradas. Importación y
+  `git diff --check` correctos. No se exportó Web/APK ni se probó en móvil.
+- Pendiente: balance mediante partidas humanas; las pruebas técnicas no lo certifican.
+
+## Más variedad de enemigos en la primera mazmorra — 22/09/2026
+
+- Incorporados desde los conceptos existentes cuatro esqueletos (guerrero,
+  arquero, escudero y berserker) y dos elementales (roca y sombra). La cripta
+  pasa de cuatro a diez tipos comunes, conservando su élite y guardián.
+- Grupos comunes de dos y tres con tipos distintos; escudero desde etapa 2,
+  berserker desde 4 y elementales desde 5. No se cambia el recorrido guardado:
+  la variedad aparece al generar una aventura nueva. Bosque sin cambios.
+- Seis atlas nuevos de ocho poses (cuatro de reposo y cuatro de ataque),
+  compatibles con daño y muerte en cenizas existentes; seis ilustraciones
+  transparentes para ataques en primer plano de derecha a izquierda.
+- Assets generados con imagegen integrado a partir de los diseños existentes.
+  Se corrigió el espaciado de las fuentes para evitar armas que invadieran
+  cuadros vecinos. Prompts, fuentes y procedencia en
+  `docs/enemies/crypt_expansion/`; finales en `assets/enemies/animations/` y
+  `assets/comic/enemies/`.
+- Reglas en `data/crypt_enemies.json`, configuración progresiva en
+  `data/dungeons.json` y registro visual compartido. Se extrajo
+  `scripts/enemy_art_import.gd` para ambos importadores de enemigos; comparación
+  de píxeles contra un atlas previo del bosque correcta. Arquitectura actualizada.
+- Pruebas locales sin fallos: variedad de cripta 5.161, enemigos 745, generación
+  de mazmorras 20.414, reglas generales 142 y mazmorra 66. Importación y
+  `git diff --check` correctos.
+- Revisión renderizada Linux/llvmpipe a 1280×720 de poses, seis ataques en
+  primer plano y grupo mixto de tres. Capturas temporales retiradas. No se
+  exportó Web/APK ni se probó en dispositivo físico. Balance humano pendiente;
+  el bot simple terminó 45 aventuras con 19 victorias, sin certificar balance.
+
+## Más variedad en la segunda mazmorra — 22/09/2026
+
+- Se añaden goblins lancero, bombardero, saqueador y jinete; murciélago gigante
+  y cuervo carroñero. Bosque con once tipos comunes, oso élite y Gorvak; total
+  de 25 enemigos activos entre ambos pisos.
+- Grupos comunes de tipos distintos usando la configuración del generador
+  existente. Bombardero desde etapa 2 y jinete desde etapa 4. Mapas ya guardados
+  intactos; nuevos bosques, incluidos los generados al descender desde una
+  cripta en curso, reciben esta variedad.
+- Seis atlas con cuatro poses de reposo y cuatro de ataque, y seis ataques
+  transparentes en primer plano desde la derecha hacia la izquierda. Conservan
+  el diseño de los sprites existentes. Se corrigió espaciado de cuatro fuentes
+  para evitar que lanzas o alas invadieran otras celdas.
+- Arte generado con imagegen integrado. Fuentes, prompts y procedencia en
+  `docs/forest/expansion/`. Importador `import_forest_expansion.gd` reutiliza el
+  empaquetador compartido. Datos en `forest_enemies.json` y `dungeons.json`;
+  presentación en los registros existentes, sin nuevas responsabilidades en main.
+- Pruebas locales sin fallos: mapas/bosque 24.615, reglas generales 142, enemigos
+  859 (headless), interfaz del bosque 146 (renderizada Linux/llvmpipe 1280×720).
+  Importación y `git diff --check` correctos. Revisadas las seis hojas, los seis
+  ataques en primer plano y un grupo mixto de jinete/murciélago/cuervo.
+- Capturas temporales retiradas. No se exportó Web/APK ni se probó en móvil.
+  Balance humano pendiente: el bot simple completó 45 simulaciones, 17 victorias;
+  no incorpora premios y no certifica equilibrio.
+
+## Secuencia de descarte y acciones enemigas — 22/09/2026
+
+- Al terminar turno, se espera a que desaparezcan todas las cartas en cenizas
+  antes de reproducir reacciones y acciones enemigas. Las cartas jugadas
+  individualmente conservan su presentación anterior.
+- Cada enemigo muestra primero su bloqueo activo, con una pausa de 0,30 s si
+  gana bloqueo, y luego ataca. Defensa sola no dispara animación de ataque.
+- Recibo transitorio `resolved_enemy_blocks` en `game.gd` registra únicamente
+  acciones ejecutadas. Indicador oculto a cero en `status_effects.gd` permite
+  mostrar ganancias sin reconstruir la escena. Guardado previo a animaciones
+  y cálculo de combate intactos; sin cambios al formato de partidas.
+- Prueba renderizada local `test_turn_sequence.gd`: 98 comprobaciones sin fallos
+  (incluye observaciones por cuadro). Reglas generales 142 sin fallos y
+  contraataques sin fallos. `git diff --check` correcto. No se exportó Web/APK
+  ni se probó en dispositivo físico. Documentación en `docs/hud/README.md`.
+
+## Terminar aventura desde pausa — 22/09/2026
+
+- Opción «Terminar aventura» durante una run activa, con confirmación y retorno
+  directo al campamento. Cancelar conserva la partida; ir al inicio permite
+  continuar como antes.
+- Cierre sin victoria reutilizado mediante `game.end_adventure()`: liquidación
+  del contrato según progreso, tres ofertas nuevas, selección liberada y guardado.
+  Conserva almas/mejoras permanentes y evita repetir la liquidación.
+- Navegación separada en `ui/pause_navigation.gd`, sin ampliar main con diálogos.
+- Prueba local renderizada `test_end_adventure.gd` sin fallos: botones reales,
+  cancelación, cierre, retorno, persistencia, ofertas distintas, nueva selección
+  e idempotencia. Regresión `test_camp_expansion.gd` sin fallos. No se exportó
+  Web/APK ni se validó en dispositivo físico.
+
+## Ataques de héroes con cuadros dibujados — 22/09/2026
+
+- 24 hojas transparentes: cuatro variantes por héroe y cuatro cuadros por ataque
+  (96 dibujos). Espadas, escudos, dagas, arco y poderes cambian de pose.
+- Reproducción de 0,72 s por secuencia; primer plano inferior izquierdo sobre
+  el nivel, con rotación entre golpes y sin modificar resolución o guardado.
+- Atlas opcional en `comic_cut_in.gd`, selección en `hero_cut_in.gd` e importador
+  con recorte común para conservar posiciones relativas. Prompts, referencias,
+  fuentes y correcciones de separación en `docs/comic/motion/`.
+- Revisión de las 24 hojas y capturas renderizadas de los seis héroes sobre
+  la mazmorra: transparencia y colocación comprobadas. Capturas temporales
+  eliminadas; se conservan fuentes y assets finales.
+- Validación local: importación sin errores; movimiento 1421 comprobaciones
+  sin fallos; viñetas de héroes, enemigos y contraataques sin fallos; presentación
+  de combate 25 comprobaciones sin fallos. Se actualizó la espera de una prueba
+  antigua de ataque enemigo al orden vigente (primero cenizas de la mano).
+- `git diff --check` correcto. Sin exportación Web/APK ni prueba física.
+
+## Flecha de Volver junto al texto — 22/09/2026
+
+- Ajuste compartido en `ui/components/button_skin.gd`: flecha de «Volver»
+  junto a la palabra, con separación de 8 px, en lugar del borde izquierdo.
+- Verificación visual local del menú a 1280×720 y ejecución sin errores;
+  `git diff --check` correcto. Captura temporal retirada, sin exportar Web/APK.
+
+## Elegir mazmorra al iniciar para pruebas — 22/09/2026
+
+- Selector Cripta/Bosque tras elegir reliquia, con aviso de retirada y Volver.
+  No altera la aventura hasta confirmar. Interfaz temporal separada.
+- Inicio con héroes, reliquia y mazo iniciales; guardado compatible.
+- `test_development_start.gd` sin fallos: botones, cancelación, ambos destinos,
+  entrada al bosque, estado inicial, guardado y piso inválido.
+  `test_forest.gd`: 24615 comprobaciones sin fallos. Revisión visual local
+  del diálogo y diff correcto. Sin exportar Web/APK ni validar en móvil.

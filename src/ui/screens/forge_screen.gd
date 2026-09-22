@@ -7,11 +7,10 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Herrería · Acero que perdura", actions.back, profile.souls, "Campamento")
-	var ids = content.heroes.keys()
-	for i in range(ids.size()):
-		var id = ids[i]
-		var button = preload("res://src/ui/components/hero_category.gd").build(ui, content.heroes[id], id, i, Vector2(470, 110 + i * 90), selected == id, func(): actions.category.call(id))
-		button.name = "ForgeHero_" + id
+	if selected == "":
+		preload("res://src/ui/components/building_hero_picker.gd").build(ui, content.heroes, "Elegí un héroe para mejorar su equipo", "ForgeHero_", actions.category, true)
+		return
+	ui.button("Volver a héroes", 32, 106, 250, 50, func(): actions.category.call("")).name = "BackToHeroes"
 	ui.panel(628, 102, 626, 536)
 	var title = ui.label_at(content.heroes[selected].name, 646, 112, 390, 40, 27, ui.GOLD)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

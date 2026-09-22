@@ -1,0 +1,182 @@
+{
+  "duelist_seal": {
+    "name": "Sello del duelista",
+    "description": "Las cartas de un solo impacto infligen +2 de daño.",
+    "locked": false,
+    "condition": "single",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/duelist_seal.png"
+  },
+  "storm_drum": {
+    "name": "Tambor de tormenta",
+    "description": "Cada golpe de las cartas con varios impactos inflige +1 de daño.",
+    "locked": false,
+    "condition": "multi",
+    "stat": "damage",
+    "value": 1,
+    "icon_path": "res://assets/relics/storm_drum.png"
+  },
+  "star_shard": {
+    "name": "Fragmento estelar",
+    "description": "Las cartas que atacan a todos los enemigos infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "area",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/star_shard.png"
+  },
+  "drill_tusk": {
+    "name": "Colmillo perforante",
+    "description": "Las cartas que atraviesan bloqueo infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "pierce",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/drill_tusk.png"
+  },
+  "titan_hammer": {
+    "name": "Martillo del titán",
+    "description": "Las cartas de coste 2 o más infligen +3 de daño por impacto.",
+    "locked": false,
+    "condition": "costly",
+    "stat": "damage",
+    "value": 3,
+    "icon_path": "res://assets/relics/titan_hammer.png"
+  },
+  "blood_ruby": {
+    "name": "Rubí de sangre",
+    "description": "Con la mitad de vida o menos, las cartas del héroe infligen +3 de daño por impacto.",
+    "locked": false,
+    "condition": "wounded",
+    "stat": "damage",
+    "value": 3,
+    "icon_path": "res://assets/relics/blood_ruby.png"
+  },
+  "ivory_mirror": {
+    "name": "Espejo de marfil",
+    "description": "Con toda la vida, las cartas del héroe otorgan +3 de bloqueo.",
+    "locked": false,
+    "condition": "healthy",
+    "stat": "block",
+    "value": 3,
+    "icon_path": "res://assets/relics/ivory_mirror.png"
+  },
+  "iron_knot": {
+    "name": "Nudo de hierro",
+    "description": "Las cartas que dan bloqueo otorgan +2 de bloqueo.",
+    "locked": false,
+    "condition": "always",
+    "stat": "block",
+    "value": 2,
+    "icon_path": "res://assets/relics/iron_knot.png"
+  },
+  "dawn_bell": {
+    "name": "Campana del alba",
+    "description": "Las cartas de curación restauran +2 de vida.",
+    "locked": false,
+    "condition": "always",
+    "stat": "heal",
+    "value": 2,
+    "icon_path": "res://assets/relics/dawn_bell.png"
+  },
+  "viper_tooth": {
+    "name": "Diente de víbora",
+    "description": "Las cartas que aplican veneno añaden +1 de veneno.",
+    "locked": false,
+    "condition": "always",
+    "stat": "poison",
+    "value": 1,
+    "icon_path": "res://assets/relics/viper_tooth.png"
+  },
+  "rune_chisel": {
+    "name": "Cincel rúnico",
+    "description": "Las cartas mejoradas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "upgraded",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/rune_chisel.png"
+  },
+  "turtle_charm": {
+    "name": "Talismán de tortuga",
+    "description": "Las cartas de bloqueo dirigidas a su dueño otorgan +3 de bloqueo.",
+    "locked": false,
+    "condition": "self",
+    "stat": "block",
+    "value": 3,
+    "icon_path": "res://assets/relics/turtle_charm.png"
+  },
+  "silver_thread": {
+    "name": "Hilo de plata",
+    "description": "Las cartas que curan a un aliado o a ambos héroes restauran +3 de vida.",
+    "locked": false,
+    "condition": "ally",
+    "stat": "heal",
+    "value": 3,
+    "icon_path": "res://assets/relics/silver_thread.png"
+  },
+  "sun_spark": {
+    "name": "Chispa solar",
+    "description": "Durante el primer turno, las cartas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "opening",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/sun_spark.png"
+  },
+  "ancient_cog": {
+    "name": "Engranaje antiguo",
+    "description": "Desde el tercer turno, las cartas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "late",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/ancient_cog.png"
+  },
+  "sentinel_mask": {
+    "name": "Máscara centinela",
+    "description": "Al empezar un combate, cada héroe vivo gana 6 de bloqueo.",
+    "locked": false,
+    "condition": "start_block",
+    "stat": "",
+    "value": 6,
+    "icon_path": "res://assets/relics/sentinel_mask.png"
+  },
+  "oath_chain": {
+    "name": "Cadena del juramento",
+    "description": "Al empezar cada turno, cada héroe vivo gana 2 de bloqueo.",
+    "locked": false,
+    "condition": "turn_block",
+    "stat": "",
+    "value": 2,
+    "icon_path": "res://assets/relics/oath_chain.png"
+  },
+  "spring_seed": {
+    "name": "Semilla del manantial",
+    "description": "Tras ganar un combate, ambos héroes recuperan 4 de vida.",
+    "locked": false,
+    "condition": "victory_heal",
+    "stat": "",
+    "value": 4,
+    "icon_path": "res://assets/relics/spring_seed.png"
+  },
+  "giant_heart": {
+    "name": "Corazón de gigante",
+    "description": "Al obtenerla, ambos héroes ganan 6 de vida máxima y recuperan 6 de vida durante esta aventura.",
+    "locked": false,
+    "condition": "max_hp",
+    "stat": "",
+    "value": 6,
+    "icon_path": "res://assets/relics/giant_heart.png"
+  },
+  "raven_quill": {
+    "name": "Pluma del cuervo",
+    "description": "Robás una carta adicional en el primer turno de cada combate.",
+    "locked": false,
+    "condition": "opening_draw",
+    "stat": "",
+    "value": 1,
+    "icon_path": "res://assets/relics/raven_quill.png"
+  }
+}

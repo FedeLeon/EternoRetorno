@@ -106,10 +106,8 @@ func show_relics() -> void:
 		for state in ["normal", "hover", "pressed", "focus"]:
 			button.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 		grid.add_child(button)
-		if relic.get("icon", -1) >= 0:
-			var texture = AtlasTexture.new()
-			texture.atlas = load("res://assets/objects/icons.png")
-			texture.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
+		if relic.get("icon", -1) >= 0 or relic.has("icon_path"):
+			var texture = preload("res://src/presentation/relic_art.gd").texture(relic)
 			picture(texture, Rect2(0, 0, 64, 64), button)
 		else:
 			# Older found relics have no artwork in the catalog: keep them visible.
@@ -145,7 +143,7 @@ func close_relic() -> void:
 func _input(event: InputEvent) -> void:
 	if not is_instance_valid(popover): return
 	if event is InputEventMouseButton and event.pressed:
-		var point = get_global_mouse_position()
+		var point = get_canvas_transform().affine_inverse() * event.position
 		if not popover.get_global_rect().has_point(point) and not selected_relic.get_global_rect().has_point(point):
 			close_relic()
 	elif event.is_action_pressed("ui_cancel"):

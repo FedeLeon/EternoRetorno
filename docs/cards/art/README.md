@@ -52,3 +52,10 @@ para evitar que las imágenes ocuparan su tamaño original fuera del marco.
 No se exportó APK/Web ni se probó esta entrega en Android o navegador del juego.
 Las capturas de pruebas se guardan temporalmente en `artifacts/card_art/` y se
 eliminan tras revisarlas. Las ilustraciones y sus prompts son recursos finales.
+
+## Ampliación de apoyo — 22/09/2026
+
+Se incorporan 24 ilustraciones individuales adicionales con la misma referencia
+y paleta; ahora hay 84 imágenes individuales y 30 regiones del concepto inicial.
+[Prompts, procedencia, galería y pruebas](../support/README.md). Cada PNG nuevo
+se reduce a 512 px de ancho antes de importarlo; las fuentes quedan en documentación.

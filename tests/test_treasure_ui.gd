@@ -30,7 +30,7 @@ func run_tests() -> void:
 	root.add_child(app)
 	app.game.new_run(["warrior", "cleric"], 42)
 	app.game.run.current = 0
-	app.game.enter_node(3)
+	preload("res://tests/room_fixture.gd").enter(app.game, "treasure")
 	app.game.run.treasure.trapped = false
 	app.continue_run()
 	await process_frame
@@ -55,7 +55,7 @@ func run_tests() -> void:
 	await process_frame
 	check(app.screen == "map", "continue returns to map")
 	app.game.run.current = 0
-	app.game.enter_node(3)
+	preload("res://tests/room_fixture.gd").enter(app.game, "treasure")
 	app.game.run.treasure.trapped = true
 	app.game.run.heroes[0].hp = 2
 	app.continue_run()

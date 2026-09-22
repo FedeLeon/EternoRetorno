@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Create ONE isolated game sprite of the same hero as reference in a NEW RESTING SEATED pose: female blonde cleric, ivory white hooded robe and golden embroidery, white cape, ornate gold sun staff resting beside shoulder. Full body sitting on a small low rough stone, knees bent naturally, feet on ground, relaxed arms resting on knees or weapon. Three quarter side view facing RIGHT, looking toward campfire off image to right. True transparent alpha background outside hero and small stone, no rectangular background, no floor, no fire, no scenery, no colored backdrop, no fake checkerboard. Warm subtle orange rim lighting from right. Detailed crisp pixel art matching reference character identity and outfit; readable at 256px tall. One character only centered with 8% transparent margin, complete head, cape, stone and feet visible. Square canvas. Reference is a run sheet for identity only; DO NOT create a sheet or multiple poses. Static seated sprite suitable to flip horizontally for opposite side of campfire.",
+  "reference": "assets/heroes/running/cleric.png",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-4e1b08f5-dd5d-4b3d-ba2f-f95382d822b3.png"
+}

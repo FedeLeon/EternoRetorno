@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Create a polished detailed pixel-art FIRE ANIMATION sprite sheet for a medieval dungeon RPG. True transparent alpha background. Exactly 8 frames in a precise 4 columns by 2 rows grid, equal square cells, no gaps between cells, each flame with 15 percent clear transparent margin. Every frame is the same small campfire flame at successive times: bright ivory yellow core, curling gold and orange tongues, ember red outer tips, tiny rising sparks. Organic lively flame silhouettes clearly DIFFERENT between frames, smoothly cycling through leaning left, splitting, rising, leaning right, merging. Fixed base anchor at 85 percent cell height, width and overall height stable; tongues evolve, no position jitter. ONLY flames and ember glow, NO logs, rocks, ground, scene, border, numbers, captions, shadows, black background or checkerboard. Rich fine pixel detail suitable for 128x128 per frame, crisp square pixels. Source reference is previous flame animation: redesign it with substantially more detail and eight frames rather than six. Entire sheet landscape 2:1, exact uniform grid.",
+  "reference": "assets/camp/fire-64.png",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-ea7fb5a3-90f3-4b7f-8054-75ed6790a5be.png",
+  "target": "assets/camp/fire-128.png"
+}

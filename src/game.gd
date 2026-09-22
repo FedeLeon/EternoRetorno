@@ -2,12 +2,18 @@ class_name ERGame
 extends RefCounted
 # Transient receipt for presentation; never persisted or used to calculate damage.
 var resolved_enemy_attacks: Array[int] = []
+var resolved_enemy_blocks: Dictionary = {}
 var resolved_card_hits: Array = []
 
 const Synergies = preload("res://src/rules/card_synergies.gd")
 const Progression = preload("res://src/rules/camp_progression.gd")
+const CampExpansion = preload("res://src/rules/camp_expansion.gd")
+const Expeditions = preload("res://src/rules/expeditions.gd")
+const Specializations = preload("res://src/rules/specializations.gd")
 const Forge = preload("res://src/rules/forge_progression.gd")
 const Treasure = preload("res://src/rules/treasure.gd")
+const RunRelics = preload("res://src/rules/run_relics.gd")
+const Modifiers = preload("res://src/rules/combat_modifiers.gd")
 const Content = preload("res://src/content.gd")
 const Dungeon = preload("res://src/dungeon.gd")
 const SaveStore = preload("res://src/save_store.gd")
@@ -32,8 +38,15 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 		message = store.last_error
 
 	var migrated = Progression.migrate(profile)
-	if Forge.migrate(profile) or migrated:
+	var forge_migrated = Forge.migrate(profile)
+	var expansion_migrated = CampExpansion.migrate(profile)
+	if forge_migrated or expansion_migrated or migrated:
 		checkpoint()
+
+func camp_action(action: String, payload: Dictionary) -> bool:
+	if not CampExpansion.transact(profile, run, action, payload): return false
+	checkpoint()
+	return true
 
 func configure_starter(hero: String, attacks: int) -> bool:
 	if not preload("res://src/rules/starter_decks.gd").configure(content, profile, hero, attacks): return false
@@ -68,7 +81,9 @@ func checkpoint() -> void:
 	if save_enabled and not store.write(profile, run):
 		message = store.last_error
 
-func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> bool:
+func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1) -> bool:
+	if starting_floor not in [1, 2]:
+		return false
 	if party.size() != 2 or party[0] == party[1]:
 		return false
 	for id in party:
@@ -81,13 +96,18 @@ func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}) -> 
 	else:
 		rng.seed = seed_value
 	var initial_seed = rng.seed
-	run = {"seed": initial_seed, "rng_state": rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": Dungeon.create(rng), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
+	run = {"seed": initial_seed, "rng_state": rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": Dungeon.create(rng, starting_floor), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
 	run.team_relic = equipment.get("team", "")
+	run.floor = starting_floor
+	run.floor_count = 2
+	run.rooms_completed = 0
 	run.inventory = {}
+	Expeditions.start(profile, run)
 	for id in party:
 		run.heroes.append({"id": id, "hp": int(content.heroes[id].hp), "max_hp": int(content.heroes[id].hp), "block": 0})
 		var hero = run.heroes.back()
 		hero.forge = Forge.snapshot(profile, id)
+		hero.specialization = Specializations.snapshot(profile, id)
 		hero.equipped_relic = equipment.get("team", equipment.get(id, ""))
 		hero.phoenix_used = false
 		if relic_bonus(hero, "max_hp") > 0:
@@ -141,11 +161,14 @@ func _shuffle(array: Array) -> void:
 
 func _start_combat(encounter: Array) -> void:
 	run.phase = "combat"
+	for hero in run.heroes: Modifiers.clear(hero)
+	run.reward_relic = ""
 	var enemies: Array = []
 	for id in encounter:
 		var def = content.enemies[id]
 		enemies.append({"id": id, "hp": int(def.hp), "max_hp": int(def.hp), "block": 0, "poison": 0, "intent": {}})
 	run.combat = {"enemies": enemies, "draw": run.deck.duplicate(true), "hand": [], "discard": [], "inactive": [], "energy": 0, "turn": 0}
+	run.combat.hero_fell = false
 	run.log = ["El silencio se rompe."]
 	_shuffle(run.combat.draw)
 	_start_turn()
@@ -159,17 +182,22 @@ func _start_turn() -> void:
 	battle.energy = turn_energy()
 	for h in run.heroes:
 		h.block = relic_bonus(h, "block") if h.hp > 0 else 0
+		Modifiers.clear(h)
+		if h.hp > 0:
+			h.block += RunRelics.amount(run, content.relics, "turn_block")
+			if battle.turn == 1: h.block += RunRelics.amount(run, content.relics, "start_block")
 		h.turn_strength = 0
 		h.turn_magic = 0
 	for enemy in battle.enemies:
 		if enemy.hp <= 0:
 			continue
+		Modifiers.clear(enemy)
 		var pattern = content.enemies[enemy.id].pattern
 		var intent = pattern[(battle.turn - 1) % pattern.size()].duplicate(true)
 		var living = living_heroes()
 		intent.target = living[rng.randi_range(0, living.size() - 1)]
 		enemy.intent = intent
-	_draw(6)
+	_draw(6 + (RunRelics.amount(run, content.relics, "opening_draw") if battle.turn == 1 else 0))
 
 func _draw(count: int) -> void:
 	var b = run.combat
@@ -214,6 +242,10 @@ func available_synergies() -> Array:
 			poison_bonus = maxi(poison_bonus, relic_bonus(hero, "poison"))
 		if combo.poison > 0: combo.poison += poison_bonus
 		if "fang" in run.relics: combo.damage += 1
+		# Each participant empowers their half of the combined strike.
+		var base_damage = int(combo.damage)
+		var first_share = base_damage / 2
+		combo.damage = Modifiers.damage(first_share, run.heroes[0]) + Modifiers.damage(base_damage - first_share, run.heroes[1])
 	return combos
 
 func synergy_targets(id: String) -> Array:
@@ -279,10 +311,12 @@ func play_card(hand_index: int, target: int) -> bool:
 		"ally": ally_targets = [target]
 		"all_allies": ally_targets = living_heroes()
 		"self": ally_targets = [owner]
+	for i in enemy_targets: Modifiers.debuff(b.enemies[i], c)
 	resolved_card_hits = preload("res://src/rules/card_hits.gd").resolve(self, c, owner, enemy_targets)
 	for i in ally_targets:
 		var hero = run.heroes[i]
 		if hero.hp <= 0: continue
+		Modifiers.empower(hero, c)
 		hero.block += int(c.block)
 		hero.hp = mini(hero.max_hp, hero.hp + int(c.heal))
 	_log("%s: %s." % [content.heroes[run.party[owner]].name, c.name])
@@ -301,9 +335,12 @@ func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 		unit.hp = 1
 		unit.phoenix_used = true
 		_log("El Ídolo del Fénix evita un golpe fatal.")
+	if was_alive and unit.hp == 0 and unit.has("equipped_relic") and run.phase == "combat":
+		run.combat.hero_fell = true
 
 func end_turn() -> bool:
 	resolved_enemy_attacks.clear()
+	resolved_enemy_blocks.clear()
 	if run.is_empty() or run.phase != "combat":
 		return false
 	var b = run.combat
@@ -322,10 +359,11 @@ func end_turn() -> bool:
 		if enemy.hp <= 0:
 			continue
 		enemy.block = 0
-		var intent = enemy.intent
+		var intent = Modifiers.intent(enemy)
 		if int(intent.get("damage", 0)) > 0:
 			resolved_enemy_attacks.append(enemy_index)
 		enemy.block += int(intent.get("block", 0))
+		resolved_enemy_blocks[enemy_index] = enemy.block
 		var targets = living_heroes() if intent.get("all", false) else [intent.target]
 		if not intent.get("all", false) and run.heroes[targets[0]].hp <= 0:
 			targets = [living_heroes()[0]]
@@ -358,14 +396,21 @@ func _check_combat_end() -> bool:
 	for enemy in run.combat.enemies:
 		if enemy.hp > 0:
 			return false
+	Expeditions.add(run, "battles")
+	var room_kind = run.nodes[run.current].kind
+	if room_kind == "elite": Expeditions.add(run, "elites")
+	if room_kind == "boss": Expeditions.add(run, "bosses")
+	if not run.combat.get("hero_fell", true): Expeditions.add(run, "clean_battles")
 	for h in run.heroes:
 		if h.hp <= 0:
 			h.hp = maxi(1, int(ceil(h.max_hp * 0.25)))
 		if "chalice" in run.relics:
 			h.hp = mini(h.max_hp, h.hp + 3)
+		h.hp = mini(h.max_hp, h.hp + RunRelics.amount(run, content.relics, "victory_heal"))
 		h.block = 0
 		h.turn_strength = 0
 		h.turn_magic = 0
+		Modifiers.clear(h)
 	Progression.award(profile, run)
 	var kind = run.nodes[run.current].kind
 	if kind == "elite":
@@ -373,8 +418,8 @@ func _check_combat_end() -> bool:
 			profile.unlocked_relics.append("hourglass")
 			run.new_unlocks.append(content.relics.hourglass.name)
 		var relic = _roll_relic()
-		if relic != "":
-			run.relics.append(relic)
+		if RunRelics.grant(run, content.relics, relic):
+			run.reward_relic = relic
 	if kind == "boss":
 		run.boss_defeated = true
 	_make_reward()
@@ -402,21 +447,19 @@ func choose_reward(index: int) -> bool:
 	if index >= 0:
 		run.deck.append(run.reward[index].duplicate(true))
 	run.reward = []
+	run.reward_relic = ""
 	run.combat = {}
 	run.phase = "map"
 	checkpoint()
 	return true
 
 func _roll_relic() -> String:
-	var pool: Array = []
-	for id in content.relics:
-		if id not in run.relics and (not content.relics[id].locked or id in profile.unlocked_relics):
-			pool.append(id)
-	return "" if pool.is_empty() else pool[rng.randi_range(0, pool.size() - 1)]
+	return RunRelics.roll(run, profile, content.relics, rng)
 
 func take_treasure() -> bool:
 	if not _room_is("treasure") or not Treasure.open(run):
 		return false
+	Expeditions.add(run, "treasures")
 	checkpoint()
 	return true
 
@@ -440,6 +483,7 @@ func rest(heal: bool, card_index: int = -1) -> bool:
 		if card_index < 0 or card_index >= run.deck.size() or run.deck[card_index].upgraded:
 			return false
 		run.deck[card_index].upgraded = true
+		Expeditions.add(run, "upgrades")
 	run.phase = "map"
 	checkpoint()
 	return true
@@ -477,7 +521,17 @@ func choose_event(index: int) -> bool:
 func descend() -> bool:
 	if run.is_empty() or run.phase != "map" or not run.boss_defeated:
 		return false
-	_finish(true)
+	if int(run.get("floor", 1)) < int(run.get("floor_count", 1)):
+		preload("res://src/rules/dungeon_progression.gd").advance(run, rng)
+	else:
+		_finish(true)
+	checkpoint()
+	return true
+
+func end_adventure() -> bool:
+	if run.is_empty() or run.phase in ["victory", "defeat"]:
+		return false
+	_finish(false)
 	checkpoint()
 	return true
 
@@ -485,13 +539,15 @@ func _finish(won: bool) -> void:
 	if run.phase in ["victory", "defeat"]:
 		return
 	run.phase = "victory" if won else "defeat"
+	Expeditions.finish(profile, run, won)
 	if won:
+		Specializations.victory(profile, run.party)
 		profile.victories += 1
 		for id in content.cards:
 			if content.cards[id].locked and content.cards[id].owner in run.party and id not in profile.unlocked_cards:
 				profile.unlocked_cards.append(id)
 				run.new_unlocks.append(content.cards[id].name)
-	profile.history.push_front({"won": won, "party": run.party.duplicate(), "rooms": run.visited.size(), "seed": run.seed})
+	profile.history.push_front({"won": won, "party": run.party.duplicate(), "rooms": int(run.get("rooms_completed", 0)) + run.visited.size(), "seed": run.seed})
 	if profile.history.size() > 30:
 		profile.history.resize(30)
 	# A concluded run only retains its summary, not its acquired deck or relics.
@@ -557,6 +613,9 @@ func effective_card(instance: Dictionary) -> Dictionary:
 		c.block += int(hero.get("forge", {}).get("block", 0))
 	if c.poison > 0:
 		c.poison += relic_bonus(hero, "poison")
+	Specializations.apply(c, hero, int(run.get("combat", {}).get("turn", 0)))
+	RunRelics.apply(c, instance, hero, run, content.relics)
+	if c.damage > 0: c.damage = Modifiers.damage(int(c.damage), hero)
 	return c
 
 func item_targets(id: String) -> Array:

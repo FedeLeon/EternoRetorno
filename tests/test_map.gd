@@ -41,6 +41,9 @@ func run_tests() -> void:
 		check(room.disabled == (i != 0), "only reachable rooms enabled")
 		check(room.get_theme_stylebox("normal") is StyleBoxTexture, "room uses papyrus asset")
 		check(not room.tooltip_text.contains(preload("res://src/dungeon.gd").LABELS[view.nodes[i].kind]), "tooltip does not reveal room type")
+	check(view.has_node("RoomGlow0"), "entry illuminated before first encounter")
+	check(view.get_node("RoomGlow0").mouse_filter == Control.MOUSE_FILTER_IGNORE, "entry glow does not block clicks")
+	check(not view.has_node("RoomGlow1"), "unreachable room has no glow")
 	var before = app.game.run.duplicate(true)
 	await shot()
 	await click(view.get_node("Room27").get_global_rect().get_center())
@@ -84,6 +87,7 @@ func run_tests() -> void:
 	await process_frame
 	view = app.layer.get_node("MapScreen")
 	check(not view.get_node("Room1").disabled and not view.get_node("Room2").disabled, "branch availability retained")
+	check(view.has_node("RoomGlow0") and not view.has_node("RoomGlow1"), "current room illuminated instead of next branch")
 	var marker = view.get_node("Room0/CurrentRoomMarker")
 	var icon = view.get_node("Room0/RoomIcon")
 	check(is_equal_approx(marker.get_global_rect().get_center().x, icon.get_global_rect().get_center().x), "current marker centered above icon")

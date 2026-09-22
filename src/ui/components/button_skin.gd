@@ -47,6 +47,14 @@ static func decorate(button: Button, kind: String) -> void:
 
 # Native button icons inherit hover/disabled colors and need no font glyph.
 static func arrow(button: Button, left: bool = false) -> Button:
+	if left and button.text == "Volver":
+		# Keep the native centered label; position the asset beside it, not at the edge.
+		button.draw.connect(func():
+			var font = button.get_theme_font("font")
+			var width = font.get_string_size(button.text, HORIZONTAL_ALIGNMENT_LEFT, -1, button.get_theme_font_size("font_size")).x
+			var state = "font_disabled_color" if button.disabled else ("font_pressed_color" if button.is_pressed() else ("font_hover_color" if button.is_hovered() else "font_color"))
+			button.draw_texture_rect(preload("res://assets/ui/arrow_left.svg"), Rect2(Vector2((button.size.x - width) / 2.0 - 32, (button.size.y - 24) / 2.0), Vector2(24, 24)), false, button.get_theme_color(state)))
+		return button
 	button.icon = load("res://assets/ui/arrow_left.svg" if left else "res://assets/ui/arrow_right.svg")
 	button.icon_alignment = HORIZONTAL_ALIGNMENT_LEFT if left else HORIZONTAL_ALIGNMENT_RIGHT
 	button.add_theme_constant_override("icon_max_width", 24)

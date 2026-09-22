@@ -39,5 +39,31 @@ func run_tests() -> void:
 	ui.layer.get_node("RewardCard0").pressed.emit()
 	check(ui.game.run.deck.size() == old_size + 1 and ui.game.run.reward.is_empty(), "one reward granted")
 	check(not ui.game.choose_reward(0), "cannot duplicate reward")
+	ui.game.new_run(["warrior", "guardian"], 42, {"team":"vital_amulet"})
+	for node in ui.game.run.nodes:
+		if node.kind != "elite": continue
+		ui.game.run.current = node.id
+		ui.game._start_combat(node.encounter)
+		break
+	for enemy in ui.game.run.combat.enemies: enemy.hp = 0
+	ui.game._check_combat_end()
+	var dropped = ui.game.run.reward_relic
+	ui.continue_run()
+	await process_frame
+	check(ui.layer.has_node("EliteRelicReward/RelicArtwork"), "elite relic displayed alongside cards")
+	check(ui.layer.get_node("RewardCard0").position.x > ui.layer.get_node("EliteRelicReward").get_rect().end.x, "relic does not overlap cards")
+	check(ui.layer.get_node("CombatHUD").relics.size() == 2, "equipped and dropped relic in toolbar")
+	ui.layer.get_node("CombatHUD/Relic1").pressed.emit()
+	check(ui.layer.get_node("CombatHUD").popover != null, "dropped relic tooltip")
+	ui.layer.get_node("CombatHUD").close_relic()
+	ui.open_deck()
+	ui.screen = ui.return_screen
+	ui.render()
+	check(ui.game.run.reward_relic == dropped and ui.layer.has_node("EliteRelicReward"), "return from deck keeps relic receipt")
+	if DisplayServer.get_name() != "headless":
+		await RenderingServer.frame_post_draw
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("reward/elite.png"))
+	ui.layer.get_node("RewardCard0").pressed.emit()
+	check(dropped in ui.game.run.relics and ui.game.run.reward_relic == "", "choosing card retains relic and clears receipt")
 	print("REWARD UI FAILURES: ", failures)
 	quit(1 if failures else 0)

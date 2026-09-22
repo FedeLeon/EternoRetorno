@@ -1,0 +1,8 @@
+{
+  "id": "dawn_bell",
+  "prompt": "Use case: stylized-concept. Create ONE isolated inventory relic icon for Eterno Retorno, a dark medieval fantasy pixel-art card roguelike. Subject: a golden ceremonial handbell with a white glowing pearl clapper. Polished detailed pixel art, crisp clustered pixels, dark readable outline, warm metallic highlights, strong distinct silhouette, readable at 48 pixels, limited palette. Centered square icon, object occupies 80 percent of canvas, no cropping. Genuine transparent background with alpha, no environment, no tile, no frame, no labels, no letters, no watermark. Reference image is style guidance only: create this one new object, never copy the icon grid. Output one square PNG icon.",
+  "tool": "imagegen built-in",
+  "reference": "assets/objects/icons.png",
+  "source": "sources/dawn_bell.png",
+  "output": "assets/relics/dawn_bell.png"
+}

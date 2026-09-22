@@ -85,12 +85,15 @@ func run_tests() -> void:
 	var doomed = app.hero_art[0]
 	var starting_x = doomed.global_position.x
 	app.animate_combat_action()
-	check(app.layer.has_node("EnemyCutIn"), "enemy turn shows foreground attack")
+	# The outgoing hand dissolves before the enemy begins its attack.
+	var saw_enemy_attack = false
 	var fled = false
 	while app.combat_busy:
+		saw_enemy_attack = saw_enemy_attack or app.layer.has_node("EnemyCutIn")
 		if is_instance_valid(doomed):
 			fled = fled or doomed.global_position.x > starting_x + 100
 		await process_frame
+	check(saw_enemy_attack, "enemy turn shows foreground attack after hand dissolves")
 	check(not fled and app.game.run.phase == "defeat", "defeat does not run to another room")
 	var combo = app.game.content.synergies[0]
 	app.game.new_run(combo.heroes, 42)
@@ -120,6 +123,32 @@ func run_tests() -> void:
 	var defense = app.layer.get_node_or_null("HeroCutIn")
 	check(defense != null and defense.action == "defense", "blocking card uses defensive illustration")
 	check(app.game.run.heroes[0].block > 0, "block committed before defense cut-in")
+	while app.combat_busy: await process_frame
+	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.enter_node(0)
+	app.game.run.combat.enemies[0].intent = {"damage":0, "block":2, "target":0}
+	app.continue_run()
+	await process_frame
+	var outgoing = app.layer.get_node("CombatHand").get_child(0).get_children()
+	var previous_turn = app.game.run.combat.turn
+	app.animate_combat_action()
+	var discarded_effects = app.layer.get_children().filter(func(node): return node.get_script() == preload("res://src/presentation/card_ash.gd"))
+	check(discarded_effects.size() == outgoing.size() and outgoing.size() == 6, "end turn animates every unused card")
+	check(outgoing.all(func(card): return not card.visible), "outgoing hand hidden under ash snapshots")
+	check(app.game.run.combat.turn == previous_turn + 1, "turn resolved before discard animation")
+	app.animate_combat_action()
+	check(app.game.run.combat.turn == previous_turn + 1, "double end turn rejected while ashes play")
+	await create_timer(0.4).timeout
+	await shot("hand-ash")
+	while app.combat_busy: await process_frame
+	check(discarded_effects.all(func(effect): return not is_instance_valid(effect)), "discard ashes cleaned")
+	check(app.layer.get_node("CombatHand").get_child(0).get_children().all(func(card): return card.visible), "new hand visible after ashes")
+	app.game.run.combat.hand.clear()
+	app.game.run.combat.enemies[0].intent = {"damage":0, "block":2, "target":0}
+	app.render()
+	await process_frame
+	app.animate_combat_action()
+	check(not app.layer.has_node("CardAsh"), "empty hand has no phantom ash")
 	while app.combat_busy: await process_frame
 	print("PRESENTATION CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

@@ -2,7 +2,7 @@
 
 [Sinergias: cartas participantes y combinaciones](../synergies/README.md).
 
-90 cartas. Valores normales; al mejorar: +3 daño/bloqueo/curación y +2 veneno.
+114 cartas. Las 24 nuevas tienen su [tabla de efectos, precios e IDs](support/README.md#catálogo-añadido). Valores normales; al mejorar: +3 daño/bloqueo/curación y +2 veneno; los nuevos porcentajes pasan de 25% a 35%.
 Los golpes múltiples aplican el daño indicado en cada golpe. Los efectos de bloqueo y curación de ataques individuales benefician al dueño.
 
 ## Guerrero

@@ -24,6 +24,11 @@ static func build(ui: Control) -> void:
 	var width = 248.0
 	var gap = 40.0
 	var left = (1280 - count * width - maxi(0, count - 1) * gap) / 2.0
+	var relic_id = ui.game.run.get("reward_relic", "")
+	if ui.game.content.relics.has(relic_id):
+		preload("res://src/ui/components/elite_relic_reward.gd").build(ui, ui.game.content.relics[relic_id])
+		gap = 20.0
+		left = 418.0 + (838.0 - count * width - maxi(0, count - 1) * gap) / 2.0
 	for i in range(count):
 		var card = ui.card_panel(ui.game.run.reward[i], left + i * (width + gap), 160, width, 414, func(): ui.act(func(): ui.game.choose_reward(i)))
 		card.name = "RewardCard%d" % i

@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen built-in",
+  "id": "background",
+  "prompt": "Wide 16:9 pixel art game background for a dark medieval dungeon rest screen, Eterno Retorno. Detailed crisp pixel art, dark blue-gray stone vaults and ruined arches, warmly glowing orange campfire centered at x50%, y53% of scene on flagstone floor. Fire is small, occupies center 15% width, flames from y38% to y57%. Empty clear floor spaces at x25% and x75%, y42-64%, for two seated hero sprites added later. No people, no seats, no text, no UI. Bottom 30% subdued dark stone floor for overlay choice cards. Top 18% quiet dark stone for header. Cozy refuge in dangerous ancient crypt, elegant game artwork, strong readable silhouettes, atmospheric subtle embers. Full-bleed landscape.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-814bff8b-c0f9-4e70-8303-007cfa76efc9.png"
+}

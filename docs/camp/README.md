@@ -55,3 +55,29 @@ héroe y su marca de selección permanecen.
 Prueba local renderizada: campamento 47 comprobaciones, incluidas las 15 parejas;
 reliquias 48, incluido descarte del borrador legado y retorno a personajes,
 sin fallos. Revisión visual Linux 1280×720. Sin exportar APK/Web ni dispositivo.
+
+
+## 22/09/2026 — Héroes sentados y luz de fogata
+
+La selección reutiliza los seis PNG de `assets/rest/`, sin duplicarlos. Los
+personajes de la derecha se invierten para mirar hacia el centro. Se mantiene
+el halo de selección, los nombres, funciones y PV. La fila superior sube 30 px
+para no solaparse con las poses inferiores. El atlas frontal sigue usándose en
+categorías e intenciones de combate; no fue retirado.
+
+`assets/camp/fire-128.png` contiene ocho fotogramas de 128×128, reproducidos a
+9 FPS por `src/campfire.gd`; reemplaza visualmente la llama de seis cuadros de
+64 px. Conserva resplandor y chispas. Generado con image_gen integrado:
+[Prompt y procedencia](fire-detailed.json), fuente en `sources/fire-detailed.png`.
+`scripts/import_campfire.gd` transforma la grilla 4×2 en una tira de ocho cuadros,
+sin recortes individuales que cambien el anclaje de las llamas.
+
+`src/presentation/firelight.gd` aplica `assets/shaders/firelight.gdshader` sobre
+los sprites sentados, en selección y descanso. La luz cálida fluctúa con el
+tiempo y recorre suavemente su superficie; conserva alfa, orientación y color
+del personaje. No deforma la figura ni consume aleatoriedad del juego.
+
+Validación actual: `test_camp.gd`, 66 comprobaciones renderizadas aprobadas;
+`test_rest.gd`, 37 aprobadas. Revisión visual Linux a 1280×720. Comparación de dos
+fotogramas: variación visible en llama y sprites de guerrero/guardiana.
+Capturas retiradas; sin exportación Web/APK ni pruebas en dispositivo físico.

@@ -161,3 +161,10 @@ de transparencia real. Prueba de rotación de cuatro poses para los seis
 héroes, carga, anclaje y limpieza; prueba de combos de dos y tres golpes con
 poses distintas y reducciones de vida/contraataques separados. Resultados
 concretos de ejecución en el historial. Sin exportación ni dispositivo físico.
+
+## Movimiento de los ataques — 22/09/2026
+
+Las 24 variantes ofensivas de héroes ahora disponen de secuencias de cuatro
+cuadros, con movimiento dibujado de armas y lanzamiento de proyectiles.
+[Assets, reproducción y procedencia](motion/README.md). La descripción anterior
+de ilustraciones estáticas corresponde a la entrega previa.

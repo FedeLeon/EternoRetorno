@@ -45,10 +45,13 @@ func run_tests() -> void:
 	await click(app.layer.get_node("Plot2").get_meta("caption_rect").get_center())
 	await process_frame
 	check(app.screen == "forge", "enter forge")
+	check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "forge starts in portrait gallery")
+	await capture("gallery.png")
 	for id in app.game.content.heroes:
 		app.layer.get_node("ForgeHero_" + id).pressed.emit()
 		await process_frame
 		check(app.forge_hero == id, "select " + id)
+		check(not app.layer.has_node("ForgeHero_" + id), "gallery hidden in forge detail")
 		var before = app.game.profile.souls
 		app.layer.get_node("Upgrade_weapon").pressed.emit()
 		await process_frame
@@ -58,6 +61,8 @@ func run_tests() -> void:
 		app.layer.get_node("Upgrade_armor").pressed.emit()
 		await process_frame
 		check(app.game.Forge.levels(app.game.profile, id).armor == 1, "armor level " + id)
+		await click(app.layer.get_node("BackToHeroes").get_global_rect().get_center())
+		check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "back to forge hero cards")
 	app.forge_hero = "warrior"
 	app.render()
 	await create_timer(0.2).timeout

@@ -92,3 +92,19 @@ como golpes de carta.
 antes de animar. `presentation/card_impacts.gd` reproduce cada ataque, flash,
 vida decreciente y bloqueo restante. No se cambia el formato de guardado:
 intenciones ya guardadas continúan hasta el siguiente turno.
+
+## Enemigos del bosque — 22/09/2026
+
+Se activan siete apariencias existentes con reglas nuevas en
+`data/forest_enemies.json`: goblin guerrero, arquero, chamán y jefe, lobo, jabalí
+y oso ancestral. Tienen atlas de ocho poses (cuatro reposo y cuatro ataque) y
+viñetas transparentes desde la derecha. [Assets, importación y pruebas](../forest/README.md).
+La cripta conserva sus ciclos anteriores. Los combates de tres enemigos usan
+espaciado y barras adaptadas para mantener todo el HUD dentro de la pantalla.
+
+## Esqueletos y elementales de la cripta — 22/09/2026
+
+Seis diseños existentes ahora activos: esqueletos guerrero, arquero, escudero y
+berserker; elementales de roca y sombra. Diez tipos comunes para la primera
+mazmorra, grupos mixtos y apariciones por etapa. [Catálogo, assets, procedencia
+y organización](crypt_expansion/README.md). Mapas guardados intactos.

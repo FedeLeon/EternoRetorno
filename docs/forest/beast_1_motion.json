@@ -1,0 +1,7 @@
+{
+  "prompt": "Create a production sprite sheet for a dark fantasy pixel art RPG. Character reference attached: preserve the identity, colors and equipment of this brown wild boar with bristly mane and large ivory tusks, improve detail. EXACTLY 8 separate full-body poses in an evenly spaced 4-column by 2-row grid, identical size and baseline in every cell, generous transparent gutters. Each character faces LEFT. Top row: four subtle idle animation keyframes, feet remain planted, hands/weapon/fur/cloak subtly moving, no body stretching. Bottom row: four consecutive attack keyframes: anticipation leaning right, windup, full strike or bite or arrow/spell release towards LEFT, recovery. Anatomically clear differing limb poses, consistent silhouette size, no duplicated frames. Crisp detailed pixel art matching reference, no text, no grid lines, no cell borders, no background. Genuine transparent alpha. Landscape 1536x1024 sprite sheet, all poses and weapons entirely inside individual cells.",
+  "reference": "assets/enemies/hd/beast_1.png",
+  "tool": "imagegen built-in",
+  "source": "sources/beast_1_motion.png",
+  "output": "assets/enemies/animations/beast_1.png"
+}

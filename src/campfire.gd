@@ -1,6 +1,6 @@
 extends Control
 
-const SHEET = preload("res://assets/camp/fire-64.png")
+const SHEET = preload("res://assets/camp/fire-128.png")
 var flame: AnimatedSprite2D
 var elapsed = 0.0
 
@@ -10,15 +10,15 @@ func _ready() -> void:
 	flame = AnimatedSprite2D.new()
 	var frames = SpriteFrames.new()
 	frames.set_animation_speed("default", 9.0)
-	for i in range(6):
+	for i in range(8):
 		var texture = AtlasTexture.new()
 		texture.atlas = SHEET
-		texture.region = Rect2(i * 64, 0, 64, 64)
+		texture.region = Rect2(i * 128, 0, 128, 128)
 		frames.add_frame("default", texture)
 	flame.sprite_frames = frames
 	flame.centered = false
-	flame.scale = Vector2(3, 3)
-	flame.position = Vector2(-96, -180)
+	flame.scale = Vector2(1.5, 1.5)
+	flame.position = Vector2(-96, -168)
 	add_child(flame)
 	flame.play()
 

@@ -448,5 +448,77 @@
   },
   "ranger_horizon": {
     "source": "res://assets/cards/art/ranger_horizon.png"
+  },
+  "warrior_rally": {
+    "source": "res://assets/cards/art/warrior_rally.png"
+  },
+  "warrior_second_wind": {
+    "source": "res://assets/cards/art/warrior_second_wind.png"
+  },
+  "warrior_crush_armor": {
+    "source": "res://assets/cards/art/warrior_crush_armor.png"
+  },
+  "warrior_disarm": {
+    "source": "res://assets/cards/art/warrior_disarm.png"
+  },
+  "guardian_lay_hands": {
+    "source": "res://assets/cards/art/guardian_lay_hands.png"
+  },
+  "guardian_inspire": {
+    "source": "res://assets/cards/art/guardian_inspire.png"
+  },
+  "guardian_shield_break": {
+    "source": "res://assets/cards/art/guardian_shield_break.png"
+  },
+  "guardian_rebuke": {
+    "source": "res://assets/cards/art/guardian_rebuke.png"
+  },
+  "rogue_enervating": {
+    "source": "res://assets/cards/art/rogue_enervating.png"
+  },
+  "rogue_corrosive": {
+    "source": "res://assets/cards/art/rogue_corrosive.png"
+  },
+  "rogue_adrenaline": {
+    "source": "res://assets/cards/art/rogue_adrenaline.png"
+  },
+  "rogue_exposed": {
+    "source": "res://assets/cards/art/rogue_exposed.png"
+  },
+  "mage_focus": {
+    "source": "res://assets/cards/art/mage_focus.png"
+  },
+  "mage_frost_bind": {
+    "source": "res://assets/cards/art/mage_frost_bind.png"
+  },
+  "mage_shatter": {
+    "source": "res://assets/cards/art/mage_shatter.png"
+  },
+  "mage_siphon": {
+    "source": "res://assets/cards/art/mage_siphon.png"
+  },
+  "cleric_benediction": {
+    "source": "res://assets/cards/art/cleric_benediction.png"
+  },
+  "cleric_absolution": {
+    "source": "res://assets/cards/art/cleric_absolution.png"
+  },
+  "cleric_censure": {
+    "source": "res://assets/cards/art/cleric_censure.png"
+  },
+  "ranger_field_aid": {
+    "source": "res://assets/cards/art/ranger_field_aid.png"
+  },
+  "ranger_hunters_focus": {
+    "source": "res://assets/cards/art/ranger_hunters_focus.png"
+  },
+  "ranger_tendon_shot": {
+    "source": "res://assets/cards/art/ranger_tendon_shot.png"
+  },
+  "ranger_split_arrow": {
+    "source": "res://assets/cards/art/ranger_split_arrow.png"
+  },
+  "cleric_radiant_judgment": {
+    "source": "res://assets/cards/art/cleric_radiant_judgment.png"
   }
 }

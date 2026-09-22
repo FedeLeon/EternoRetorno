@@ -8,6 +8,7 @@ const COST_CENTERS = {
 }
 static func build(ui: Control, instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, _chosen: bool, enabled: bool, parent: Control, base_values: bool) -> Button:
 	var c = ui.game.content.card(instance)
+	var support = c.get("support", false)
 	var linked = ui.game.content.synergies.any(func(recipe): return instance.id in recipe.cards)
 	var card_description = ui.game.content.describe(instance, c if base_values else ui.game.effective_card(instance))
 	var def = ui.game.content.heroes[c.owner]
@@ -28,6 +29,13 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 		frame.modulate = Color(0.65, 0.65, 0.65)
 	var title = ui.label_at(c.name, w * 0.12, h * 0.145, w * 0.62, h * 0.085, 12 if w < 190 else 14, Color("211b19"), b)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if support:
+		title.name = "CardTitle"
+		title.autowrap_mode = TextServer.AUTOWRAP_OFF
+		var font_size = title.get_theme_font_size("font_size")
+		while font_size > 9 and title.get_theme_font("font").get_string_size(c.name, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > w * 0.62:
+			font_size -= 1
+		title.add_theme_font_size_override("font_size", font_size)
 	var cost = preload("res://src/ui/components/number_view.gd").new()
 	cost.name = "CostNumber"
 	cost.z_index = 1 # Keep the energy digits above the small overlap between neighbours.
@@ -39,7 +47,8 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 	picture_area.name = "IllustrationSpace"
 	picture_area.add_theme_stylebox_override("panel", ui.box(Color("14151c"), accent.darkened(0.3), 1))
 	preload("res://src/ui/components/card_art.gd").attach(picture_area, instance.id, Rect2(3, 3, picture_area.size.x - 6, picture_area.size.y - 6))
-	var description = ui.label_at(card_description, w * 0.13, h * 0.655, w * 0.74, h * 0.245, 12 if w < 190 else 14, Color("211b19"), b)
+	var description = ui.label_at(card_description, w * 0.13, h * (0.63 if support else 0.655), w * 0.74, h * 0.245, (10 if h < 260 else 11) if support else (12 if w < 190 else 14), Color("211b19"), b)
+	description.name = "CardDescription"
 	description.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	preload("res://src/ui/components/synergy_view.gd").mark(ui, b, instance.id, ui.game.content.synergies, ui.game.content.cards)
 	preload("res://src/presentation/card_finish.gd").attach(b, frame, linked)

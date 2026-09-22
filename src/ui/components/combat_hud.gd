@@ -29,12 +29,7 @@ func _ready() -> void:
 	var spacing = minf(68, 792.0 / maxi(1, entries.size()))
 	for i in range(entries.size()):
 		var relic = entries[i]
-		var texture: Texture2D = relic.get("texture")
-		if texture == null:
-			var atlas = AtlasTexture.new()
-			atlas.atlas = load("res://assets/objects/icons.png")
-			atlas.region = Rect2((int(relic.icon) % 4) * 64, (int(relic.icon) / 4) * 64, 64, 64)
-			texture = atlas
+		var texture = preload("res://src/presentation/relic_art.gd").texture(relic)
 		var target = icon_button(texture, Rect2(20 + i * spacing, 4, minf(56, spacing - 4), 56), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
 		target.name = "Relic%d" % i
 		if relic.has("level"):

@@ -1,0 +1,7 @@
+{
+  "prompt": "Production background for Eterno Retorno dark fantasy pixel art RPG. Wide 16:9 battle scene: sheltered dark forest clearing at night, a small warmly glowing campfire exactly at horizontal center near 55 percent height, empty dark spaces on both sides for two seated heroes, huge trees and mossy stones framing the sides. Match the attached dungeon reference in rendering detail, pixel clusters, side-view stage perspective and ground line, but completely outdoors in a forest. The flat walkable ground begins about 48 percent down and fills the lower half. Keep center and both fighting areas clear of obstacles, no characters, no enemies, no UI, no writing. Detailed atmospheric layered environment. Landscape 1536x1024 or 16:9. Full bleed opaque background.",
+  "reference": "assets/dungeon/combat.png",
+  "tool": "imagegen built-in",
+  "source": "sources/rest.png",
+  "output": "assets/forest/rest.png"
+}

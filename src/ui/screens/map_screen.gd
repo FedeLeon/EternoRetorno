@@ -16,6 +16,8 @@ var relics: Array = []
 var boss_defeated = false
 var deck_count = 0
 var run_seed = 0
+var dungeon_name = "La cripta de los ecos"
+var exit_caption = "Bajar por la escalera"
 
 func place(node: Control, area: Rect2, parent: Node = self) -> void:
 	node.position = area.position
@@ -45,7 +47,7 @@ func picture(texture: Texture2D, area: Rect2, parent: Node = self) -> TextureRec
 func action(text: String, area: Rect2, callback: Callable, parent: Node = self) -> Button:
 	var node = Button.new()
 	node.text = text
-	if text == "Bajar por la escalera":
+	if text in ["Bajar por la escalera", "Entrar al bosque", "Completar aventura"]:
 		preload("res://src/ui/components/button_skin.gd").arrow(node)
 	if text == "Menú":
 		preload("res://src/ui/components/button_skin.gd").decorate(node, "wood_menu")
@@ -62,7 +64,7 @@ func _ready() -> void:
 	title_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_frame.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("header_frame"))
 	place(title_frame, Rect2(360, 16, 560, 64))
-	var title = label("La cripta de los ecos", Rect2(380, 24, 520, 48), 30, GOLD)
+	var title = label(dungeon_name, Rect2(380, 24, 520, 48), 30, GOLD)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	action("Menú", Rect2(1068, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
 	draw_route()
@@ -72,7 +74,7 @@ func _ready() -> void:
 	label("Salas recorridas: %d" % visited.size(), Rect2(54, 671, 560, 25), 15, Color("614932"))
 	tooltip_text = "Semilla: %s" % run_seed
 	if boss_defeated:
-		action("Bajar por la escalera", Rect2(461, 596, 358, 54), func(): descend_requested.emit()).name = "Descend"
+		action(exit_caption, Rect2(461, 626, 358, 44), func(): descend_requested.emit()).name = "Descend"
 
 func draw_route() -> void:
 	for node in nodes:
@@ -87,6 +89,9 @@ func draw_route() -> void:
 		var center = route_position(node)
 		var reachable = node.id in available
 		var done = node.id in visited
+		var highlighted = node.id == current or (current < 0 and reachable and not done)
+		if highlighted:
+			add_room_glow(center, node.id)
 		var target = action("", Rect2(center - Vector2(28, 28), Vector2(56, 56)), func(): room_requested.emit(node.id))
 		target.name = "Room%d" % node.id
 		target.disabled = not reachable
@@ -95,8 +100,8 @@ func draw_route() -> void:
 			var style = StyleBoxTexture.new()
 			style.texture = preload("res://assets/map/minimal/room_papyrus.png")
 			style.modulate_color = Color("bda079") if reachable else Color("cfb58e")
-			if node.id == current:
-				style.modulate_color = Color("b4c19c")
+			if highlighted:
+				style.modulate_color = Color("ffe6a1")
 			if state in ["hover", "focus"]:
 				style.modulate_color = Color("edc285")
 			if state == "pressed":
@@ -109,6 +114,22 @@ func draw_route() -> void:
 		if node.id == current:
 			var marker = picture(preload("res://assets/map/minimal/current_room.svg"), Rect2(16, -23, 24, 20), target)
 			marker.name = "CurrentRoomMarker"
+
+func add_room_glow(center: Vector2, room_id: int) -> void:
+	# Draw before the room button, below the parchment and without intercepting clicks.
+	var glow = Panel.new()
+	glow.name = "RoomGlow%d" % room_id
+	glow.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(1.0, 0.82, 0.30, 0.8)
+	style.shadow_color = Color(1.0, 0.73, 0.16, 0.85)
+	style.shadow_size = 20
+	style.set_corner_radius_all(4)
+	glow.add_theme_stylebox_override("panel", style)
+	place(glow, Rect2(center - Vector2(30, 30), Vector2(60, 60)))
+	var pulse = create_tween().set_loops().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	pulse.tween_property(glow, "modulate:a", 0.72, 1.1)
+	pulse.tween_property(glow, "modulate:a", 1.0, 1.1)
 
 func route_position(node: Dictionary) -> Vector2:
 	var point = Dungeon.map_position(node)

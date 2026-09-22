@@ -1,0 +1,7 @@
+{
+  "tool": "imagegen built-in",
+  "prompt": "Correct this sprite sheet layout while preserving the exact goblin design and all eight poses. EXACT 4 columns by 2 rows, eight full body goblins facing LEFT. Make every figure smaller, maximum 65% of each cell width and 70% of cell height, same scale for all poses. Essential: all swords, shields and capes entirely inside their own cell, including the extended sword in bottom row third column. Large EMPTY transparent gutters between every sprite. Top row four subtle idle frames, bottom row windup and sword slash toward left then recovery. Genuine transparent background, no color backdrop, no glow behind poses, no grid or text. 1536x1024.",
+  "reference": "sources/goblin_0_motion.png (primera versión de esta entrega)",
+  "output": "sources/goblin_0_motion.png",
+  "reason": "Separar la espada extendida de la celda vecina antes de importar los ocho cuadros."
+}

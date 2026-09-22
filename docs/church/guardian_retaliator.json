@@ -1,0 +1,9 @@
+{
+  "hero": "guardian",
+  "id": "retaliator",
+  "name": "Vindicadora",
+  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: brown-haired female guardian in gold plate and teal cape striking from behind a bright shield, golden sword riposte. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Vindicadora.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-1d58e177-c2bd-4c04-9308-62a7a81223b2.png",
+  "reference": "assets/rest/guardian.png",
+  "tool": "image_gen built-in"
+}

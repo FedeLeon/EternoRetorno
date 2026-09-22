@@ -30,6 +30,12 @@ func run_tests() -> void:
 	app.open_selection()
 	await create_timer(0.2).timeout
 	var fire = app.layer.get_node("Campfire")
+	check(fire.flame.sprite_frames.get_frame_count("default") == 8, "detailed fire has eight frames")
+	for id in app.game.content.heroes:
+		var seat = app.layer.get_node("CampHero_" + id + "/SeatedHero")
+		check(seat.texture.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
+		check(seat.material is ShaderMaterial, "seated hero receives animated firelight")
+		check(seat.flip_h == (seat.get_parent().position.x > 640), "seated hero faces the fire")
 	var first = fire.flame.frame
 	await capture("camp-first")
 	await create_timer(0.27).timeout

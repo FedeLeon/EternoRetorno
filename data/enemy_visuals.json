@@ -60,21 +60,27 @@
     "sheet": 2,
     "index": 0,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "beast_1": {
     "name": "Jabalí salvaje",
     "sheet": 2,
     "index": 1,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "beast_2": {
     "name": "Murciélago gigante",
     "sheet": 2,
     "index": 2,
     "motion": "fly",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "beast_3": {
     "name": "Escorpión de roca",
@@ -95,7 +101,9 @@
     "sheet": 2,
     "index": 5,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "beast_6": {
     "name": "Serpiente de hielo",
@@ -109,14 +117,18 @@
     "sheet": 2,
     "index": 7,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "skeleton_0": {
     "name": "Esqueleto guerrero",
     "sheet": 3,
     "index": 0,
     "motion": "ground",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "skeleton_1": {
     "name": "Esqueleto lancero acorazado",
@@ -130,14 +142,18 @@
     "sheet": 3,
     "index": 2,
     "motion": "ground",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "skeleton_3": {
     "name": "Esqueleto escudero",
     "sheet": 3,
     "index": 3,
     "motion": "ground",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "skeleton_4": {
     "name": "Esqueleto chamán",
@@ -151,7 +167,9 @@
     "sheet": 3,
     "index": 5,
     "motion": "ground",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "skeleton_6": {
     "name": "Esqueleto guardián",
@@ -172,56 +190,72 @@
     "sheet": 4,
     "index": 0,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_1": {
     "name": "Goblin lancero",
     "sheet": 4,
     "index": 1,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_2": {
     "name": "Goblin arquero",
     "sheet": 4,
     "index": 2,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_3": {
     "name": "Goblin chamán",
     "sheet": 4,
     "index": 3,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_4": {
     "name": "Goblin bombardero",
     "sheet": 4,
     "index": 4,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_5": {
     "name": "Goblin saqueador",
     "sheet": 4,
     "index": 5,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_6": {
     "name": "Goblin jinete",
     "sheet": 4,
     "index": 6,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "goblin_7": {
     "name": "Goblin jefe",
     "sheet": 4,
     "index": 7,
     "motion": "ground",
-    "floor": 0
+    "floor": 2,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "elemental_0": {
     "name": "Elemental de fuego",
@@ -242,7 +276,9 @@
     "sheet": 5,
     "index": 2,
     "motion": "ground",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "elemental_3": {
     "name": "Elemental de tormenta",
@@ -277,7 +313,9 @@
     "sheet": 5,
     "index": 7,
     "motion": "fly",
-    "floor": 0
+    "floor": 1,
+    "idle_frames": 4,
+    "attack_frames": 4
   },
   "bandit_0": {
     "name": "Bandido cuchillero",

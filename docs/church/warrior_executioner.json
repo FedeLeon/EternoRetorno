@@ -1,0 +1,9 @@
+{
+  "hero": "warrior",
+  "id": "executioner",
+  "name": "Verdugo",
+  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: black armored knight with purple cape raising a huge two-handed sword for a single devastating purple strike. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Verdugo.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-cb9b1d7b-d752-494f-9a63-75ab8eff2530.png",
+  "reference": "assets/rest/warrior.png",
+  "tool": "image_gen built-in"
+}

@@ -110,3 +110,11 @@ Volver e Inicio. No dependen de glifos ni fuentes de respaldo del sistema.
 `button_skin.arrow` usa el icono nativo de Button, heredando estados y sin
 interceptar clics. `plaque_arrow` centra texto e icono en el cartel del arco.
 Los textos y tooltips quedan sin flechas Unicode. No cambian las acciones.
+
+## Flecha junto a Volver — 22/09/2026
+
+`button_skin.arrow` dibuja la flecha de «Volver» a 8 px del texto nativo
+centrado, calculando su ancho con la fuente actual. Conserva los colores de
+interacción y toda el área pulsable. Las otras flechas no cambian.
+Revisión local renderizada del menú a 1280×720, sin errores.
+Sin exportación ni validación Web/móvil en este cambio.

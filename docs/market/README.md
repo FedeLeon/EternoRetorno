@@ -3,13 +3,14 @@
 Implementado el 16/09/2026. Campamento → solar 1 → construir → mercado.
 Construir cuesta **300 almas** y se hace una sola vez. Con el mercado construido,
 el mismo solar abre su interior. Atrás vuelve al campamento sin alterar la run.
-Las otras construcciones y mejoras de héroes siguen pendientes.
+Herrería, refugio, iglesia y expediciones tienen sus propias guías en el índice.
 
 ## Economía inicial
 
 - Victoria normal: **30 almas**; élite: **80**; jefe: **150**.
 - Saldo permanente: se conserva al perder, ganar o iniciar otra aventura.
-- Seis cartas comprables por héroe, precios **100, 140, 180, 220, 260 y 320**.
+- Diez cartas comprables por héroe: seis anteriores y cuatro nuevas de apoyo.
+  Las nuevas cuestan entre **160 y 240 almas**; las anteriores conservan su precio.
 - Comprar desbloquea una carta para el conjunto de recompensas de su clase;
   no la añade al mazo actual ni al inicial, y no garantiza que salga al ganar.
 - Las recompensas siguen ofreciendo tres cartas compatibles con la pareja.
@@ -26,7 +27,8 @@ Esto no elimina almas ya concedidas. No cambiar el ID para cada actualización.
 
 ## Cartas y balance
 
-90 cartas: las 30 originales más **10 nuevas por cada héroe**. De esas diez,
+114 cartas: 30 originales, 60 de la primera ampliación y 24 de apoyo/debilitamiento.
+De las diez añadidas inicialmente a cada héroe,
 dos son básicas para el mazo inicial, dos se obtienen libremente en recompensas
 y seis se desbloquean en el mercado. Se conservan las seis cartas originales
 que se desbloquean con la primera victoria de cada clase.
@@ -90,3 +92,44 @@ entrar al mercado. Ver [campamento](../base_camp/README.md) para assets y prueba
 
 ## Categorías compartidas — 18/09/2026
 El selector visual mantiene su aspecto y pasa a `ui/components/hero_category.gd`, reutilizado por la herrería. Regresión de mercado: 34 comprobaciones headless aprobadas.
+
+
+## 22/09/2026 — Selección mediante tarjetas de héroes
+
+Al entrar se muestran seis tarjetas de cara y torso, reutilizando
+`refuge_portrait.gd` y el arte comic existente. No hay héroe preseleccionado.
+`building_hero_picker.gd` comparte la galería entre mercado y herrería.
+
+Al tocar una tarjeta desaparece la galería y aparece el bloque de operaciones
+exclusivo de ese héroe. Comprar conserva la selección y actualiza saldo/estado.
+«Volver a héroes» restaura la galería; Atrás/Escape sigue ese mismo recorrido.
+El botón superior Campamento sale directamente del edificio. Entrar otra vez
+siempre comienza en la galería. Sin cambios en precios, compras ni guardados.
+
+Se retiró hero_category.gd y su constante CAMP_FRONT, ya sin consumidores.
+El atlas frontal se conserva para retratos de intención de combate.
+
+Validación actual: mercado 49 y herrería 110 comprobaciones renderizadas sin
+fallos, con los seis héroes, compras y regreso a la galería. Campamento: 33
+comprobaciones headless aprobadas. Revisión visual Linux 1280×720 de galería y
+paneles; capturas retiradas. Sin exportación Web/APK ni prueba en dispositivo.
+
+
+## 22/09/2026 — Galería a la derecha
+
+Las seis tarjetas de héroes se distribuyen en dos columnas y tres filas en el
+sector derecho (desde x=738 en el lienzo 1280×720), dejando libre al personaje
+del edificio a la izquierda. Tarjetas compactas de 244×166, nombres legibles
+y encuadres de cara/torso ajustados por héroe sobre los assets comic existentes.
+
+`building_hero_picker.gd` admite el modo `right_grid`, activado solo por Mercado
+y Herrería; `refuge_portrait.gd` aporta el formato compacto y sus recortes.
+Validación actual: mercado 49/49 y herrería 110/110 con render local, revisión
+visual de galerías a 1280×720. Capturas temporales retiradas. Sin exportaciones.
+
+## Cartas de apoyo — 22/09/2026
+
+24 cartas nuevas, cuatro por categoría, visibles sin reconstruir el mercado ni
+reiniciar el perfil. Comprarlas guarda el desbloqueo permanente y las habilita
+para recompensas. No se conceden por ganar una aventura ni se insertan en el
+mazo inicial. [Lista completa y efectos](../cards/support/README.md).

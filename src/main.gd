@@ -22,8 +22,7 @@ const Cleric = preload("res://src/cleric_sprite.gd")
 const Ranger = preload("res://src/ranger_sprite.gd")
 const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage, "cleric": Cleric, "ranger": Ranger}
 const Campfire = preload("res://src/campfire.gd")
-const CAMP_FRONT = preload("res://assets/camp/front-128.png")
-const CAMP_POSITIONS = [Vector2(450, 375), Vector2(830, 375), Vector2(245, 485), Vector2(1035, 485), Vector2(430, 585), Vector2(850, 585)]
+const CAMP_POSITIONS = [Vector2(450, 345), Vector2(830, 345), Vector2(245, 485), Vector2(1035, 485), Vector2(430, 585), Vector2(850, 585)]
 const Dungeon = preload("res://src/dungeon.gd")
 const GOLD = Color("d8b779")
 const INK = Color("10141f")
@@ -121,9 +120,9 @@ func art(kind: String, x: float, y: float, w: float, h: float, parent: Control =
 func background() -> void:
 	if screen in ["map", "equipment", "refuge"]:
 		return # These screens own their backgrounds.
-	if screen == "combat":
+	if screen == "combat" or (screen == "room" and int(game.run.get("floor", 1)) == 2):
 		var room = TextureRect.new()
-		room.texture = load(BattleBackground.path_for(game.run.seed, game.run.current))
+		room.texture = load(BattleBackground.path_for(game.run.seed, game.run.current, int(game.run.get("floor", 1))))
 		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		rect(room, 0, 64, 1280, 656)
@@ -177,6 +176,8 @@ func render() -> void:
 		"options": options_view()
 		"base_camp": base_camp_view()
 		"market": market_view()
+		"expeditions": preload("res://src/ui/camp_expansion_navigation.gd").expeditions(self)
+		"church": preload("res://src/ui/camp_expansion_navigation.gd").church(self)
 		"refuge": preload("res://src/ui/refuge_navigation.gd").build(self)
 		"forge": preload("res://src/ui/forge_navigation.gd").build(self)
 		"select": selection()
@@ -259,10 +260,12 @@ func options_view() -> void:
 		label_at("Android utiliza pantalla completa.", 390, 437, 500, 26, 16, MUTED)
 	title_button("Volver", 470, false, func(): screen = "home"; render())
 
-var market_hero = "warrior"
-var forge_hero = "warrior"
+var market_hero = ""
+var forge_hero = ""
+var church_hero = ""
 
 func open_market() -> void:
+	market_hero = ""
 	screen = "market"
 	render()
 
@@ -319,6 +322,8 @@ func base_camp_view() -> void:
 		"home": func(): screen = "home"; render(),
 		"prepare": camp_adventures,
 		"refuge": func(): screen = "refuge"; render(),
+		"expeditions": func(): preload("res://src/ui/camp_expansion_navigation.gd").plot(self, "expeditions"),
+		"church": func(): preload("res://src/ui/camp_expansion_navigation.gd").plot(self, "church"),
 		"market": market_plot, "forge": func(): preload("res://src/ui/forge_navigation.gd").plot(self), "close_modal": close_modal})
 
 func open_selection() -> void:
@@ -351,10 +356,14 @@ func toggle_hero(id: String) -> void:
 func begin() -> void:
 	if not game.valid_equipment(selected_party, equipped) or (screen == "equipment" and equipped.size() != 1):
 		return
+	preload("res://src/ui/development_start.gd").open(self, begin_on_floor)
+
+func begin_on_floor(starting_floor: int) -> void:
+	close_modal()
 	# Abandon only after a valid replacement party has been chosen.
 	if active_run():
 		game._finish(false)
-	if game.new_run(selected_party, -1, equipped):
+	if game.new_run(selected_party, -1, equipped, starting_floor):
 		continue_run()
 
 func continue_run() -> void:
@@ -377,12 +386,10 @@ func map_view() -> void:
 	view.current = game.run.current
 	view.run_seed = game.run.seed
 	view.boss_defeated = game.run.boss_defeated
+	view.dungeon_name = Dungeon.definition(int(game.run.get("floor", 1))).name
+	view.exit_caption = "Entrar al bosque" if int(game.run.get("floor", 1)) < int(game.run.get("floor_count", 1)) else "Completar aventura"
 	view.deck_count = game.run.deck.size()
 	view.relics = equipped_relics()
-	for id in game.run.relics:
-		var relic = game.content.relics[id].duplicate()
-		relic.owner = "Hallada"
-		view.relics.append(relic)
 	for hero in game.run.heroes:
 		var snapshot = hero.duplicate()
 		snapshot.title = game.content.heroes[hero.id].name
@@ -424,6 +431,10 @@ func equipped_relics() -> Array:
 				relic.description += "\nPartida anterior: efecto personal."
 				relic.description += "\nFénix ya utilizado." if hero.get("phoenix_used", false) else ""
 				result.append(relic)
+	for id in game.run.get("relics", []):
+		var relic = game.content.relics[id].duplicate()
+		relic.owner = "Hallada"
+		result.append(relic)
 	return result
 
 func combat_view() -> void:
@@ -463,6 +474,7 @@ func room_view() -> void:
 	var node = game.run.nodes[game.run.current]
 	if node.kind == "treasure":
 		var view = TreasureScreen.new()
+		if int(game.run.get("floor", 1)) == 2: view.background_path = BattleBackground.path_for(game.run.seed, game.run.current, 2)
 		view.name = "TreasureScreen"
 		view.result = treasure_display()
 		view.open_requested.connect(func():
@@ -472,15 +484,19 @@ func room_view() -> void:
 		view.menu_requested.connect(pause_menu)
 		rect(view, 0, 0, 1280, 720)
 		return
+	if node.kind == "rest":
+		var view = preload("res://src/ui/screens/rest_screen.gd").new()
+		if int(game.run.get("floor", 1)) == 2: view.background_path = "res://assets/forest/rest.png"
+		view.heroes = game.run.heroes.duplicate(true)
+		view.can_upgrade = game.run.deck.any(func(card): return not card.upgraded)
+		view.heal_requested.connect(func(): act(func(): game.rest(true)))
+		view.upgrade_requested.connect(func(): upgrade_mode = true; return_screen = "room"; screen = "deck"; render())
+		view.menu_requested.connect(pause_menu)
+		rect(view, 0, 0, 1280, 720)
+		return
 	header("%s  /  Sala %02d" % [Dungeon.LABELS[node.kind], node.id + 1])
 	panel(212, 154, 856, 458, Color("62533e"))
 	match node.kind:
-		"rest":
-			label_at("Una brasa en la oscuridad", 264, 195, 760, 62, 36, GOLD)
-			label_at("Por un momento, el tiempo deja de perseguirlos.\nDescansá o templá una carta antes de continuar.", 264, 280, 742, 92, 24)
-			button("Recuperar 30 % de vida", 264, 422, 355, 64, func(): act(func(): game.rest(true)))
-			button("Mejorar una carta", 645, 422, 355, 64, func(): upgrade_mode = true; return_screen = "room"; screen = "deck"; render())
-			label_at("Guerreros vivos: " + "  ·  ".join(game.run.heroes.map(func(h): return "%s %d/%d" % [game.content.heroes[h.id].name, h.hp, h.max_hp])), 264, 520, 730, 43, 18, MUTED)
 		"event":
 			var event = game.content.events[node.event]
 			label_at(event.name, 264, 195, 760, 62, 36, GOLD)
@@ -575,14 +591,7 @@ func collection() -> void:
 	button("Inicio", 36, 646, 230, 54, func(): screen = "home"; render())
 
 func result_view() -> void:
-	var won = screen == "victory"
-	label_at("EL CICLO CONTINÚA" if won else "EL CICLO RECOMIENZA", 170, 99, 940, 50, 20, GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("La escalera espera" if won else "La cripta los recuerda", 100, 166, 1080, 100, 55).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("Completaste el primer piso de Eterno Retorno.\nEl siguiente descenso llegará en una próxima versión." if won else "Ambos compañeros han caído.\nOtra pareja. Otro mazo. Una nueva oportunidad.", 180, 282, 920, 105, 25, MUTED).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("%d salas recorridas  ·  %d cartas al final" % [game.run.visited.size(), game.run.summary_cards], 180, 408, 920, 40, 21, TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("Ecos desbloqueados: " + ", ".join(game.run.new_unlocks) if not game.run.new_unlocks.is_empty() else "Tus desbloqueos anteriores se conservan.", 170, 470, 940, 65, 22, GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	button("Volver al campamento", 322, 581, 310, 64, open_base_camp)
-	button("Colección de ecos", 650, 581, 310, 64, open_collection)
+	preload("res://src/ui/screens/run_result_screen.gd").build(self)
 
 func show_modal(title: String, text: String, action_text: String, callback: Callable) -> void:
 	close_modal()
@@ -597,8 +606,7 @@ func close_modal() -> void:
 	overlay = null
 
 func pause_menu() -> void:
-	game.checkpoint()
-	show_modal("Un respiro", "Tu avance queda guardado automáticamente.\nPodés volver a la aventura desde el inicio.", "Ir al inicio", func(): close_modal(); screen = "home"; render())
+	preload("res://src/ui/pause_navigation.gd").open(self)
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_PAUSED:
@@ -634,7 +642,16 @@ func back() -> void:
 	elif screen == "equipment":
 		screen = "select"
 		render()
-	elif screen in ["select", "market", "forge"]:
+	elif screen == "market" and market_hero != "":
+		market_hero = ""
+		render()
+	elif screen == "forge" and forge_hero != "":
+		forge_hero = ""
+		render()
+	elif screen == "church" and church_hero != "":
+		church_hero = ""
+		render()
+	elif screen in ["select", "market", "forge", "church", "expeditions"]:
 		open_base_camp()
 	elif screen in ["base_camp", "collection", "options"]:
 		screen = "home"

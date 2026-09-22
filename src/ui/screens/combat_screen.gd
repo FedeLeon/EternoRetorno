@@ -40,9 +40,11 @@ static func build(ui: Control) -> void:
 		if h.id in ui.ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
 		ui.hero_health[i] = ui.health_bar(h, 16, 55, 172, target)
+		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, h, Rect2(54, 88, 184, 28))
 		if h.hp > 0:
 			var effects = ui.StatusEffects.new()
 			effects.unit = h
+			effects.show_backplates = true
 			effects.block_position = Vector2(6 if h.get("poison", 0) > 0 else 54, 0)
 			if h.block > 0: effects.poison_position = Vector2(100, 0)
 			ui.rect(effects, 10, 18, 184, 28, target)
@@ -51,7 +53,7 @@ static func build(ui: Control) -> void:
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = ui.game.content.enemies[e.id]
-		var x = 768 + i * 234 if b.enemies.size() > 1 else 884
+		var x = (570 + i * 226) if b.enemies.size() >= 3 else (768 + i * 234 if b.enemies.size() > 1 else 884)
 		var valid = not c.is_empty() and c.target in ["enemy", "all_enemies"] and i in targets
 		var target = ui.button("", x, 150, 214, 348, func(): ui.target_clicked(i), valid)
 		ui.combat_target_style(target)
@@ -62,17 +64,19 @@ static func build(ui: Control) -> void:
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
-		preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -50, 208, 30))
-		ui.label_at(def.name, 7, -48, 200, 26, 18, ui.TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		ui.enemy_health[i] = ui.health_bar(e, 16, 55, 182, target)
+		preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -58, 208, 44))
+		ui.label_at(def.name, 7, -56, 200, 40, 18, ui.TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		var crowded = b.enemies.size() >= 3
+		ui.enemy_health[i] = ui.health_bar(e, 66 if crowded else 16, 55, 142 if crowded else 182, target)
+		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, e, Rect2(20, 88, 184, 28))
 		var effects = ui.StatusEffects.new()
 		effects.unit = e
-		effects.block_position = Vector2(-69, 75)
+		effects.block_position = Vector2(-7 if crowded else -69, 75)
 		ui.rect(effects, 7, -20, 200, 28, target)
 		if e.hp > 0:
 			var intent_view = ui.EnemyIntent.new()
 			intent_view.name = "EnemyIntent%d" % i
-			intent_view.intent = e.intent.duplicate(true)
+			intent_view.intent = preload("res://src/rules/combat_modifiers.gd").intent(e)
 			intent_view.heroes = ui.game.run.heroes.duplicate(true)
 			ui.rect(intent_view, x - 12, 160, 240, 42)
 

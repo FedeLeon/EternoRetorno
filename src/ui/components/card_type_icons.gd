@@ -16,6 +16,9 @@ static func attach(card: Control, data: Dictionary, linked: bool = false) -> voi
 		icons.append(shield)
 	if data.get("heal", 0) > 0:
 		icons.append(preload("res://assets/ui/heal.svg"))
+	for effect in ["strength", "weak", "fracture"]:
+		if data.get(effect + "_pct", 0) > 0:
+			icons.append(load("res://assets/ui/" + effect + ".svg"))
 	if linked:
 		icons.append(preload("res://assets/ui/chain.svg"))
 	if icons.is_empty(): return

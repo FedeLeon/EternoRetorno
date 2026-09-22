@@ -16,7 +16,7 @@ func _initialize() -> void:
 	check(g.run.inventory.is_empty(), "new run has empty inventory")
 	check(not g.take_treasure() and not g.leave_treasure(), "room actions require treasure")
 	g.run.current = 0
-	g.enter_node(3)
+	preload("res://tests/room_fixture.gd").enter(g, "treasure")
 	var rolled = g.run.treasure.duplicate(true)
 	var saved_rng = g.rng.state
 	check(not g.leave_treasure(), "cannot acknowledge unopened chest")
@@ -32,7 +32,7 @@ func _initialize() -> void:
 	for trapped in [false, true]:
 		g.new_run(["warrior", "cleric"], 23)
 		g.run.current = 0
-		g.enter_node(3)
+		preload("res://tests/room_fixture.gd").enter(g, "treasure")
 		g.run.treasure.trapped = trapped
 		g.run.heroes[0].hp = 2
 		g.run.heroes[1].hp = 20
@@ -43,7 +43,7 @@ func _initialize() -> void:
 	g.new_run(["warrior", "cleric"], 11)
 	g.run.inventory = {"healing_potion": 3}
 	g.run.current = 0
-	g.enter_node(3)
+	preload("res://tests/room_fixture.gd").enter(g, "treasure")
 	g.run.treasure.item = "healing_potion"
 	g.run.treasure.trapped = false
 	g.take_treasure()
@@ -53,7 +53,7 @@ func _initialize() -> void:
 	check(g.run.inventory.healing_potion == 4, "old inventory survives loading")
 	g.leave_treasure()
 	g.run.current = 0
-	g.enter_node(3)
+	preload("res://tests/room_fixture.gd").enter(g, "treasure")
 	g.run.treasure = "ember"
 	g.checkpoint()
 	g = Game.new(SAVE, true)

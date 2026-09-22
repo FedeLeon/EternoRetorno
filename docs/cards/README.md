@@ -1,8 +1,7 @@
 # Cartas por héroe
 
-**Contenido actual:** 90 cartas, 15 por héroe. [Catálogo](CATALOGO.md) y
-[progresión del mercado](../market/README.md). Se añadieron 60 cartas y se
-redujo la potencia del mazo inicial sin modificar partidas ya iniciadas.
+**Contenido actual:** 114 cartas, 19 por héroe. [Catálogo](CATALOGO.md) y
+[progresión del mercado](../market/README.md). A las 60 incorporaciones anteriores se suman [24 cartas de apoyo y debilitamiento](support/README.md), todas comprables en el mercado. El mazo inicial conserva sus cartas básicas.
 
 **Actualización:** la distribución vigente se describe en
 [Combate de mazmorra](../dungeon/README.md). Ahora se roban seis cartas,
@@ -306,3 +305,24 @@ tocando cualquiera de ellos. No habilitan ni iluminan héroes propios.
 distingue explícitamente objetivos aliados de objetivos enemigos. El efecto
 sigue resolviéndose sobre todos los enemigos; el clic solo confirma la acción.
 Se conservan las restricciones de energía y de dueño vivo.
+
+
+### Cenizas al terminar el turno — 22/09/2026
+
+`ui/combat_flow.gd` captura los índices de toda la mano saliente antes de
+resolver `end_turn`. Tras la resolución/guardado, reutiliza `card_ash.gd` para
+desintegrar simultáneamente todas las cartas no utilizadas, con el mismo shader
+y partículas que una carta jugada. Espera la limpieza de los efectos antes de
+reconstruir la siguiente mano. Una mano vacía no genera efectos.
+
+Validación actual: `test_combat_presentation.gd` renderizado localmente,
+25 comprobaciones sin fallos: carta individual, enlace, mano completa,
+rechazo de doble fin de turno, limpieza y nueva mano visible. Revisión visual
+de seis cartas convirtiéndose en cenizas; capturas temporales retiradas.
+Sin nuevos assets ni cambios de reglas/guardado. Sin exportación Web/APK.
+
+## Apoyo y debilitamiento — 22/09/2026
+
+Cuatro cartas adicionales por héroe, con 24 ilustraciones nuevas. Fuerza temporal,
+debilidad y fractura del 25% (35% al mejorar), sin acumulación. Curación nueva
+para guerrero, guardiana, maga y explorador. [Catálogo, reglas y pruebas](support/README.md).

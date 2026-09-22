@@ -284,3 +284,32 @@ respectivamente, escalados según la textura dibujada. Esto alinea la base en
 almas y demás contadores compartidos, sin editar los assets ni sus importadores.
 Revisión renderizada local de 85260 y todos los dígitos, a alturas 36 y 48;
 sin exportación ni revisión Web.
+
+
+## 22/09/2026 — Fondo para estados de héroes
+
+Bloqueo y veneno sobre la vida reutilizan combat_backplate.gd: fondo oscuro
+al 65 %, con esquinas suaves. status_effects.gd recibe show_backplates desde
+combat_screen.gd solo para héroes. El fondo se oculta con el indicador y no
+intercepta clics. Enemigos sin cambios.
+
+Validación: test_hud.gd, 108 comprobaciones aprobadas con render Linux/llvmpipe
+y revisión visual a 1280×720. Capturas retiradas. Sin exportación Web/APK.
+
+## Secuencia del fin de turno — 22/09/2026
+
+`ui/combat_flow.gd` espera a que terminen las cenizas de toda la mano descartada
+antes de presentar reacciones por veneno o acciones enemigas. Para cada enemigo
+que actuó, actualiza su bloqueo activo y deja 0,30 s para leerlo si es positivo,
+luego reproduce su ataque. Los enemigos que solo bloquean no muestran ataque.
+
+Las reglas y el guardado siguen resolviéndose antes de la presentación.
+`game.resolved_enemy_blocks` es un recibo transitorio, igual que el registro de
+ataques, y no se guarda: evita presentar bloqueos de enemigos muertos por veneno
+o que no llegaron a actuar por derrota del grupo. `status_effects.gd` mantiene
+un indicador de bloqueo oculto a cero que puede actualizarse sin reconstruir
+la pantalla. No aparece un escudo mientras no haya bloqueo activo.
+
+Prueba renderizada `test_turn_sequence.gd`: observa cenizas, bloqueo y ataque
+cuadro a cuadro; verifica ausencia de superposición, defensa sin ataque, muerte
+por veneno y acciones interrumpidas por derrota.

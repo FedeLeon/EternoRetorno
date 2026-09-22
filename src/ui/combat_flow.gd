@@ -31,6 +31,9 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		for combo in ui.game.available_synergies():
 			if combo.id == synergy_id:
 				spent_indices = combo.indices.duplicate()
+	elif hand_index < 0:
+		# Snapshot the outgoing hand before end_turn discards it and draws another.
+		spent_indices = range(ui.game.run.combat.hand.size())
 	# Resolve and persist first. Closing Android during the animation never replays it.
 	var accepted: bool
 	if synergy_id != "":
@@ -53,6 +56,10 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		var glow = actor.get_node_or_null("TargetGlow")
 		if glow != null:
 			glow.hide()
+	# End-turn discard finishes before poison reactions or enemy actions begin.
+	if hand_index < 0 and synergy_id == "":
+		while ash_effects.any(func(effect): return is_instance_valid(effect)):
+			await ui.get_tree().process_frame
 	if synergy_id != "":
 		ui.CombatEffects.attack_flash(ui.layer)
 		for actor in ui.hero_art.values():
@@ -82,6 +89,11 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 				await ui.enemy_art[i].play_once("death")
 			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty():
 				await ui.enemy_art[i].play_once("hurt")
+		if hand_index < 0 and synergy_id == "" and ui.game.resolved_enemy_blocks.has(i):
+			var block = int(ui.game.resolved_enemy_blocks[i])
+			preload("res://src/presentation/card_impacts.gd").update_block(ui.enemy_health[i], block)
+			if block > 0:
+				await ui.get_tree().create_timer(0.30).timeout
 		if hand_index < 0 and synergy_id == "" and i in ui.game.resolved_enemy_attacks:
 			ui.CombatEffects.attack_flash(ui.layer)
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual

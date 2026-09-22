@@ -41,7 +41,7 @@ func _process(delta: float) -> void:
 		return
 	clock += delta
 	if has_motion_frames:
-		sprite.frame = int(clock * (9.0 if entries()[visual_id].motion == "fly" else 6.0)) % 8
+		sprite.frame = int(clock * (9.0 if entries()[visual_id].motion == "fly" else 6.0)) % int(entries()[visual_id].get("idle_frames", 8))
 	var kind = entries()[visual_id].motion
 	var wave = sin(clock * (4.5 if kind == "fly" else 2.6))
 	# Bottom pivot keeps grounded feet fixed throughout breathing.
@@ -83,12 +83,15 @@ func play_once(animation: String) -> void:
 func attack_motion() -> void:
 	# Family-specific anticipation and impact, layered over the drawn motion poses.
 	var origin = sprite.position
+	var drawn_attack = has_motion_frames and int(entries()[visual_id].get("attack_frames", 0)) == 4
+	if drawn_attack: sprite.frame = 4
 	var reach = 16.0
 	if visual_id == "crypt_lancer":
 		reach = 24.0
 	elif visual_id == "crypt_automaton":
 		reach = 20.0
 	tween.tween_property(sprite, "position:x", origin.x + 5, 0.10)
+	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 5, 0.10)
 	match visual_id:
 		"crypt_slime":
 			tween.parallel().tween_property(sprite, "scale", Vector2(1.12, 0.82) * base_scale, 0.10)
@@ -99,6 +102,7 @@ func attack_motion() -> void:
 		"crypt_automaton", "skeleton_6":
 			tween.parallel().tween_property(sprite, "rotation", 0.08, 0.10)
 	tween.tween_property(sprite, "position:x", origin.x - reach, 0.12)
+	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 6, 0.12)
 	match visual_id:
 		"crypt_slime":
 			tween.parallel().tween_property(sprite, "scale", Vector2(0.9, 1.08) * base_scale, 0.12)
@@ -108,6 +112,7 @@ func attack_motion() -> void:
 		"crypt_automaton", "skeleton_6":
 			tween.parallel().tween_property(sprite, "rotation", -0.1, 0.12)
 	tween.tween_property(sprite, "position", origin, 0.16)
+	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 7, 0.16)
 	tween.parallel().tween_property(sprite, "scale", Vector2.ONE * base_scale, 0.16)
 	tween.parallel().tween_property(sprite, "rotation", 0.0, 0.16)
 	tween.parallel().tween_property(sprite, "modulate", Color.WHITE, 0.16)

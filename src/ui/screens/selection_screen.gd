@@ -23,14 +23,15 @@ static func build(ui: Control, actions: Dictionary) -> void:
 			glow.position = Vector2(-6, -40)
 			glow.size = Vector2(192, 192)
 		var sprite = TextureRect.new()
-		var texture = AtlasTexture.new()
-		texture.atlas = ui.CAMP_FRONT
-		texture.region = Rect2(i * 128, 0, 128, 128)
-		sprite.texture = texture
+		sprite.name = "SeatedHero"
+		sprite.texture = load("res://assets/rest/%s.png" % id)
+		sprite.flip_h = pos.x > 640
+		sprite.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		preload("res://src/presentation/firelight.gd").attach(sprite, i * 0.6)
 		sprite.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		sprite.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		ui.rect(sprite, -6, -40, 192, 192, b)
+		ui.rect(sprite, -24, -42, 228, 182, b)
 		ui.panel(0, 141, 180, 57, Color("343b4d"), b)
 		var name_label = ui.label_at(("✓ " if chosen else "") + h.name, 4, 143, 172, 27, 21, ui.GOLD if chosen else ui.TEXT, b)
 		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

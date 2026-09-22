@@ -1,11 +1,11 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **18/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **22/09/2026**.
 
 ## Estado actual
 
-Prototipo de un piso de 28 salas, seis clases y parejas de dos héroes. Campamento inicial,
-selección alrededor de la fogata, equipamiento previo, mapa en espiral, combate,
+Aventuras nuevas de dos pisos aleatorios de 28 salas: cripta y bosque; seis clases y parejas de dos héroes. Campamento inicial,
+selección alrededor de la fogata, equipamiento previo, mapa con caminos variables, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
 - Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de **20 cartas (10 por héroe)**.
@@ -14,16 +14,20 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
 - Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
   ataque/defensa e ilustraciones minimalistas asignadas por ID.
-- Equipamiento: ocho reliquias disponibles, una sola elegida por pareja que beneficia a ambos héroes; ocho consumibles.
-- Actores: seis héroes y 56 enemigos con sprites de 128×128; seis enemigos activos
-  con ciclos nuevos de ocho poses y ataques diferenciados.
-- Campamento: mercado construible en solar 1 por 300 almas, con 36 cartas comprables.
+- Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
+  Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
+  de 24 (20 nuevas), visible junto a la elección de carta.
+- Actores: seis héroes y 56 enemigos con sprites de 128×128; veinticinco enemigos activos. Los seis añadidos a la cripta y los trece del bosque tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
+- Ataques de héroes en primer plano: 24 secuencias de cuatro cuadros dibujados,
+  con movimiento de armas y poderes; [assets y reproducción](comic/motion/README.md).
+- Campamento: mercado construible en solar 1 por 300 almas, con 60 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
-  por héroe, permanentes y aplicados al iniciar cada aventura. Otras construcciones pendientes.
+  por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 2 (600 almas), con doce especializaciones; puesto de expediciones
+  en solar 4 (500 almas), con treinta contratos y tres ofertas por aventura.
 - Refugio: preparación persistente del mazo inicial por héroe; cambios solo para aventuras nuevas.
-- Cartas: 90 en total, 15 por héroe; mazos iniciales modestos y desbloqueos de mercado.
+- Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
@@ -39,7 +43,14 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Tema | Documentación |
 | --- | --- |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
+| 24 cartas nuevas de apoyo y debilitamiento | [Catálogo, imágenes y reglas](cards/support/README.md) |
+| Nueva variedad de la primera mazmorra | [Esqueletos y elementales](enemies/crypt_expansion/README.md) |
+| Pisos aleatorios y segunda mazmorra | [Bosque y generación](forest/README.md) |
+| Descansos | [Escena, poses y opciones](rest/README.md) |
 | Carrera de héroes | [Sprites y ciclos](running/README.md) |
+| Reliquias de élite y catálogo de efectos | [Reliquias de aventura](relics/README.md) |
+| Contratos y puesto de expediciones | [Expediciones](expeditions/README.md) |
+| Iglesia y especializaciones | [Iglesia](church/README.md) |
 | Refugio y preparación del mazo | [Refugio](refuge/README.md) |
 | Arquitectura actual, organización objetivo y límites entre módulos | [ARQUITECTURA.md](ARQUITECTURA.md) |
 | Limpieza y archivos temporales | [LIMPIEZA.md](LIMPIEZA.md) |

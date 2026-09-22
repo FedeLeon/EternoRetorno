@@ -11,12 +11,10 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	ui.label_at("EL MERCADO DE LOS ECOS", 42, 28, 550, 42, 26, ui.GOLD)
 	preload("res://src/ui/components/soul_counter.gd").attach(ui, profile.souls, Vector2(810, 25))
 	ui.button("Campamento", 1070, 28, 166, 44, actions.back)
-	ui.label_at("Elegí un héroe", 576, 100, 210, 30, 21, ui.GOLD)
-	var ids = content.heroes.keys()
-	for i in range(ids.size()):
-		var id = ids[i]
-		var category = preload("res://src/ui/components/hero_category.gd").build(ui, content.heroes[id], id, i, Vector2(582, 142 + i * 90), selected == id, func(): actions.category.call(id))
-		category.name = "Category_" + id
+	if selected == "":
+		preload("res://src/ui/components/building_hero_picker.gd").build(ui, content.heroes, "Elegí un héroe para descubrir nuevas cartas", "Category_", actions.category, true)
+		return
+	ui.button("Volver a héroes", 32, 106, 250, 50, func(): actions.category.call("")).name = "BackToHeroes"
 	ui.panel(728, 104, 528, 570)
 	ui.label_at(content.heroes[selected].name + " · Nuevas cartas", 744, 112, 488, 32, 23, ui.GOLD)
 	ui.label_at("Comprar habilita su aparición tras ganar batallas.", 744, 148, 488, 32, 16, ui.TEXT)

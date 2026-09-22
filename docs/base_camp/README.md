@@ -101,3 +101,24 @@ exhaustiva ni validación de rendimiento Web/Android. Sin exportación.
 La carpa abre la galería de seis héroes y el editor de cartas iniciales,
 reemplazando el aviso de mejoras futuras. La preparación se aplica solo a
 nuevas aventuras. [Reglas, assets y pruebas](../refuge/README.md).
+
+
+## 22/09/2026 — Fogata diurna con atlas detallado
+
+base_camp_screen.gd reutiliza campfire.gd y fire-128.png: ocho fotogramas a
+9 FPS, chispas y resplandor, anclados en (643, 396) a escala 0,62 sobre la
+fogata del fondo. No se duplican assets. El shader camp_day conserva el viento
+y el agua; se retira su deformación anterior de la llama.
+
+Validación local renderizada: test_base_camp.gd, 37 comprobaciones sin fallos
+y revisión visual a 1280×720. Capturas temporales retiradas; sin exportar.
+
+
+## Nuevos solares — 22/09/2026
+
+Solar 2: [Iglesia](../church/README.md), 600 almas, dos especializaciones por héroe.
+Solar 4: [Puesto de expediciones](../expeditions/README.md), 500 almas, treinta contratos.
+Ambos edificios usan assets transparentes y carteles de madera. Sus zonas de toque
+respetan la silueta y dejan pasar los clics hacia los carteles vecinos. Construcción,
+precios y compras se validan en reglas y se guardan desde `game.camp_action`.
+Pruebas y procedencia de arte detalladas en los documentos de cada edificio.
