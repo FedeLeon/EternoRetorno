@@ -19,6 +19,8 @@ static func play(parent: Control, hero: String, kind: String = "attack", variant
 	if kind == "defense":
 		effect.texture_path = "res://assets/comic/defense/%s.png" % hero
 	else:
+		effect.framing_scale = 1.18
+		effect.framing_offset = Vector2(-0.07, 0.08)
 		# Visual rotation only: never consumes the adventure RNG or repeats adjacent hits.
 		effect.attack_variant = (int(last_variant.get(hero, 0)) + 1) % 4 if variant < 0 else clampi(variant, 0, 3)
 		last_variant[hero] = effect.attack_variant

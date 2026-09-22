@@ -1,6 +1,6 @@
 # Puesto de expediciones
 
-Implementado el 22/09/2026. Solar 4, construcción por **500 almas**.
+Implementado el 22/09/2026. Solar 2, construcción por **500 almas**.
 
 ## Funcionamiento
 

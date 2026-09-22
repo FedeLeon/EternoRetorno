@@ -130,3 +130,7 @@ Sin exportación APK/Web, emulador ni dispositivo físico.
 La salida victoriosa sustituye el movimiento procedural de pose fija por
 ocho cuadros `run` por héroe. Se conservan tiempos de salida y flujo de
 resultados. [Assets, alcance y pruebas actuales](../running/README.md).
+
+## Peso de texturas — 22/09/2026
+
+Compresión selectiva, límites de resolución y exclusiones auditadas: [informe](import_optimization/README.md). Texturas incluidas estimadas de 236,54 a 96,19 MiB; sin exportación.

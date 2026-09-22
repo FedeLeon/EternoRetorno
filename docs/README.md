@@ -24,8 +24,8 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
-  por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 2 (600 almas), con doce especializaciones; puesto de expediciones
-  en solar 4 (500 almas), con treinta contratos y tres ofertas por aventura.
+  por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con doce especializaciones; puesto de expediciones
+  en solar 2 (500 almas), con treinta contratos y tres ofertas por aventura.
 - Refugio: preparación persistente del mazo inicial por héroe; cambios solo para aventuras nuevas.
 - Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.

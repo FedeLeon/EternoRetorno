@@ -204,3 +204,14 @@ los dígitos bajo cada icono. Consumir sigue deshabilitado cuando no hay stock.
 Archivos: `ui/components/item_popover.gd` y `ui/screens/items_screen.gd`.
 Validación local headless: `test_bag_ui.gd` sin fallos y `git diff --check`
 correcto. Sin revisión visual manual ni exportación.
+
+## Cantidad sobre la bolsa — 22/09/2026
+
+`combat_hud.gd` muestra `BagCount` sobre la esquina superior derecha de la
+bolsa con los dígitos gráficos y fondo oscuro. Combate y recompensa suministran
+la suma de unidades del inventario; incluye copias repetidas, no solo tipos.
+Se actualiza al reconstruir la vista después de obtener/consumir objetos y
+se oculta cuando no queda ninguno. No intercepta clics ni cambia persistencia.
+
+Comprobación local headless: vacío, suma 2+3=5, reducción a 4 y ocultación al
+vaciar correctos. Diff sin errores. Sin exportación ni prueba visual Web/móvil.

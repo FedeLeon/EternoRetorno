@@ -1,9 +1,9 @@
 extends RefCounted
 # Soft fan with enough exposed width for touch input; extra cards can scroll.
 const CARD_WIDTH = 174.0
-const STEP = 160.0
+const STEP = 146.0
 static func content_width(count: int) -> float:
-	return maxf(1014, maxf(0, count - 1) * STEP + CARD_WIDTH + 40)
+	return maxf(954, maxf(0, count - 1) * STEP + CARD_WIDTH + 40)
 
 static func arrange(card: Control, index: int, count: int, selected: bool) -> void:
 	var spread = maxf(0, count - 1) * STEP + CARD_WIDTH

@@ -1,6 +1,6 @@
 # Iglesia y especializaciones
 
-Implementado el 22/09/2026. Solar 2, construcción por **600 almas**.
+Implementado el 22/09/2026. Solar 4, construcción por **600 almas**.
 
 ## Acceso y decisiones
 

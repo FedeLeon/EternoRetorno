@@ -313,3 +313,26 @@ la pantalla. No aparece un escudo mientras no haya bloqueo activo.
 Prueba renderizada `test_turn_sequence.gd`: observa cenizas, bloqueo y ataque
 cuadro a cuadro; verifica ausencia de superposición, defensa sin ataque, muerte
 por veneno y acciones interrumpidas por derrota.
+
+## Ocultar vida y nombre de enemigos caídos — 22/09/2026
+
+`combat_screen.gd` oculta la barra de vida, el nombre y su placa de contraste
+cuando la vida mostrada llega a cero. Mantiene la cuenta descendente del daño
+y la animación de cenizas. Al reconstruir el combate, los enemigos ya caídos
+empiezan con estos elementos ocultos. No modifica la información de los héroes.
+
+Comprobación local headless: barra animada de 2 a 0, nombre/placa ocultos,
+héroes visibles y reconstrucción con enemigo caído correctos; diff sin errores.
+Sin exportación ni revisión visual en navegador/dispositivo.
+
+## Más espacio para actores y energía — 22/09/2026
+
+- Nombres enemigos de 18 a 14 px, placa más baja; barras e intenciones 35 px
+  hacia arriba. Bloqueo acompaña a su barra; veneno enemigo debajo de la vida
+  para no superponerlo con la intención, modificadores debajo si hay veneno.
+- Escala de combate aumenta 16 %, manteniendo pies y altura normalizada de héroes.
+- Paso horizontal de cartas 160 → 146 px; mano empieza en x=160, ancho 954.
+  Conserva abanico, elevación al seleccionar y desplazamiento para manos largas.
+- Vista local con tres enemigos y seis cartas revisada; comprobaciones de
+  posiciones y espacio libre para energía, incluida primera carta seleccionada,
+  correctas. Diff sin errores. Sin exportar ni validar en navegador/móvil.

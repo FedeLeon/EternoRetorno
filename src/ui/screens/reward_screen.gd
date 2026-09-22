@@ -8,6 +8,7 @@ static func build(ui: Control) -> void:
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
 	var hud = ui.CombatHUD.new()
+	hud.item_count = ui.game.run.get("inventory", {}).values().reduce(func(total, amount): return total + maxi(0, int(amount)), 0)
 	hud.name = "CombatHUD"
 	hud.turn = ui.game.run.combat.get("turn", 1)
 	hud.show_energy = false

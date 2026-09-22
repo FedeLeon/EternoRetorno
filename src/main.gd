@@ -273,7 +273,11 @@ func market_view() -> void:
 	preload("res://src/ui/screens/market_screen.gd").build(self, game.content, game.profile.duplicate(true), market_hero, {
 		"back": open_base_camp,
 		"category": func(id): market_hero = id; render(),
-		"buy": func(id): game.buy_market_card(id); render()})
+		"buy": func(id):
+			var scroll_position = layer.get_node("MarketCards").scroll_vertical
+			game.buy_market_card(id)
+			render()
+			layer.get_node("MarketCards").set_deferred("scroll_vertical", scroll_position)})
 
 func market_plot() -> void:
 	if game.profile.buildings.get("market", false):

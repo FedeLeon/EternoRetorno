@@ -4,6 +4,8 @@ signal finished
 const DURATION = 0.72
 var texture_path: String
 var from_right = false
+var framing_scale = 1.0
+var framing_offset = Vector2.ZERO # Relative to the viewport; adapter-owned framing.
 var elapsed = 0.0
 var accent: Color
 var picture: TextureRect
@@ -43,9 +45,9 @@ func _ready() -> void:
 func _layout() -> void:
 	if picture == null:
 		return
-	var height = minf(size.y * 0.72, size.x * 0.62 / 1.5)
+	var height = minf(size.y * 0.72, size.x * 0.62 / 1.5) * framing_scale
 	picture.size = Vector2(height * 1.5, height)
-	picture.position = Vector2(_rest_x(), size.y - height)
+	picture.position = Vector2(_rest_x(), size.y - height + size.y * framing_offset.y)
 
 func _process(delta: float) -> void:
 	elapsed += delta
@@ -68,7 +70,7 @@ func _draw() -> void:
 		draw_line(Vector2(x, y), Vector2(x - length if from_right else x + length, y - 12), Color(accent, 0.65), 1 + i % 3)
 
 func _rest_x() -> float:
-	return size.x * 0.985 - picture.size.x if from_right else size.x * 0.015
+	return (size.x * 0.985 - picture.size.x if from_right else size.x * 0.015) + size.x * framing_offset.x
 
 func _update_frame() -> void:
 	if frame_texture == null: return

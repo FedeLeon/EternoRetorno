@@ -35,11 +35,18 @@ func run_tests() -> void:
 		check(not app.layer.has_node("Category_" + hero), "gallery hidden in shop detail")
 		var purchases = app.layer.find_children("Buy_*", "Button", true, false)
 		check(purchases.size() == 10, "ten purchasable cards")
-		var buy = purchases[0]
+		var scroll = app.layer.get_node("MarketCards")
+		scroll.scroll_vertical = 650
+		await process_frame
+		var scroll_position = scroll.scroll_vertical
+		check(scroll_position > 0, "list scrolled before buying")
+		var buy = purchases[4]
 		var id = String(buy.name).trim_prefix("Buy_")
 		var balance = app.game.profile.souls
 		buy.pressed.emit()
 		await process_frame
+		await process_frame
+		check(app.layer.get_node("MarketCards").scroll_vertical == scroll_position, "purchase preserves scroll " + hero)
 		check(id in app.game.profile.market_cards, "purchase " + hero)
 		check(app.game.profile.souls == balance - app.game.content.cards[id].market_price, "balance updated")
 		check(app.layer.find_child("Buy_" + id, true, false).disabled, "owned disabled")

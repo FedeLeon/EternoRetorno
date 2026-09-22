@@ -116,9 +116,20 @@ y revisión visual a 1280×720. Capturas temporales retiradas; sin exportar.
 
 ## Nuevos solares — 22/09/2026
 
-Solar 2: [Iglesia](../church/README.md), 600 almas, dos especializaciones por héroe.
-Solar 4: [Puesto de expediciones](../expeditions/README.md), 500 almas, treinta contratos.
+Solar 4: [Iglesia](../church/README.md), 600 almas, dos especializaciones por héroe.
+Solar 2: [Puesto de expediciones](../expeditions/README.md), 500 almas, treinta contratos.
 Ambos edificios usan assets transparentes y carteles de madera. Sus zonas de toque
 respetan la silueta y dejan pasar los clics hacia los carteles vecinos. Construcción,
 precios y compras se validan en reglas y se guardan desde `game.camp_action`.
 Pruebas y procedencia de arte detalladas en los documentos de cada edificio.
+
+## Intercambio de iglesia y expediciones — 22/09/2026
+
+Iglesia pasa al solar 4 (abajo a la derecha) y Expediciones al solar 2
+(arriba a la derecha). Cambian juntos edificio, cartel y acción de acceso o
+construcción. Los IDs de perfil se conservan: ninguna construcción, mejora
+o contrato se pierde, sin migración de partidas.
+
+`test_camp_expansion_ui.gd`: 30 comprobaciones headless aprobadas con las
+nuevas ubicaciones; conserva pasos de clic de carteles vecinos. Diff correcto.
+Sin exportación ni revisión visual en navegador/dispositivo en este cambio.

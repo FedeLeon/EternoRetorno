@@ -340,3 +340,10 @@ persistencia ni coordinación de golpes. Importador y fuentes en
 `main.begin_on_floor` coordina reemplazo y navegación; `game.new_run` valida
 el piso opcional antes de mutar estado y genera directamente su mapa.
 Valor por defecto 1, sin campos nuevos de guardado ni premios simulados.
+
+## Política de importación — 22/09/2026
+
+`scripts/optimize_texture_imports.py` configura compresión y límites por familia
+solo en importadores. Fuentes intactas, informe separado en docs/quality.
+La exclusión explícita de cómics estáticos reemplazados conserva las cargas
+dinámicas de cartas, enemigos y variantes de equipo. No cambia el runtime.

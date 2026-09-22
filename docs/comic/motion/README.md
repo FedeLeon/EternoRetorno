@@ -50,3 +50,15 @@ distintos, regiones válidas y reproducción de los cuatro cuadros en orden.
 Las regresiones de viñetas y contraataques verifican rotación, anclaje, limpieza
 y combos de dos/tres golpes. Resultados ejecutados en `docs/HISTORIAL.md`.
 No exportar Web/APK salvo pedido explícito; validación local separada de móvil.
+
+## Encuadre de ataques ampliado — 22/09/2026
+
+Los ataques de héroes se muestran un 18 % más grandes. El encuadre se desplaza
+7 % del ancho hacia la izquierda y 8 % de la altura hacia abajo, permitiendo
+un leve recorte en los bordes. Parámetros de presentación opcionales en
+`comic_cut_in.gd`, configurados solo en la rama de ataque de `hero_cut_in.gd`.
+Defensa y enemigos conservan su encuadre. Duración, cuadros y daño intactos.
+
+Pruebas locales: 24 secuencias, 823 comprobaciones sin fallos; prueba de viñetas
+de héroes y defensa sin fallos. Capturas de guerrero y explorador revisadas;
+capturas temporales eliminadas. Sin exportación ni validación Web/móvil.

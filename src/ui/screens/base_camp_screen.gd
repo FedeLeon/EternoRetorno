@@ -38,13 +38,13 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 		if i == 0:
 			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market, profile.buildings.get("market", false))
 			continue
-		var id = "church" if i == 1 else "expeditions"
+		var id = "expeditions" if i == 1 else "church"
 		var built = profile.buildings.get(id, false)
 		var area = Rect2(742, 212, 296, 176) if i == 1 else Rect2(888, 350, 342, 216)
-		var title = "Iglesia" if i == 1 else "Expediciones"
+		var title = "Iglesia" if id == "church" else "Expediciones"
 		if built:
 			var building = TextureRect.new()
-			building.name = "ChurchBuilding" if i == 1 else "ExpeditionsBuilding"
+			building.name = "ChurchBuilding" if id == "church" else "ExpeditionsBuilding"
 			building.texture = load("res://assets/%s/building.png" % id)
 			building.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 			building.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED

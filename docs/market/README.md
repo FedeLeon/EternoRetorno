@@ -133,3 +133,14 @@ visual de galerías a 1280×720. Capturas temporales retiradas. Sin exportacione
 reiniciar el perfil. Comprarlas guarda el desbloqueo permanente y las habilita
 para recompensas. No se conceden por ganar una aventura ni se insertan en el
 mazo inicial. [Lista completa y efectos](../cards/support/README.md).
+
+## Conservar desplazamiento al comprar — 22/09/2026
+
+El controlador `main.market_view` toma la posición de MarketCards antes de
+comprar y la restaura de forma diferida tras reconstruir el listado. Saldo y
+botón Habilitada se actualizan sin volver al inicio. Cambiar héroe o salir
+sigue abriendo el listado desde arriba; no se agrega estado al guardado.
+
+`test_market_ui.gd`: 61 comprobaciones headless sin fallos, incluyendo compra
+con scroll en las seis categorías, saldo y botón actualizado. Diff correcto.
+Sin exportación ni validación visual/navegador/dispositivo en este cambio.

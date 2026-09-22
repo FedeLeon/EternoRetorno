@@ -1535,3 +1535,83 @@ y revisión visual a 1280×720. Capturas temporales retiradas; sin exportar.
   entrada al bosque, estado inicial, guardado y piso inválido.
   `test_forest.gd`: 24615 comprobaciones sin fallos. Revisión visual local
   del diálogo y diff correcto. Sin exportar Web/APK ni validar en móvil.
+
+## Reducir peso sin exportar — 22/09/2026
+
+- Lossy 0,85 para ilustraciones y fondos; sprites, números y marcos Lossless.
+- Límites de resolución en cartas, fondos e iconos grandes; atlas fijos intactos.
+- Presets excluyen 18 cómics estáticos reemplazados. Originales conservados.
+- Recursos PNG importados incluidos: estimación 236,54 → 96,19 MiB (−59,3 %).
+  No es el peso de un PCK nuevo. No se exportó ni modificó TestWeb.
+- Card art 715, forge assets 12450, mapa 109 y movimiento cómic 1134 sin fallos;
+  comparación visual local y seis cartas revisadas. Prueba extensa de UI de
+  cartas de apoyo interrumpida sin resultado; límites en informe de calidad.
+- Política y mediciones en docs/quality/import_optimization; diff correcto.
+
+## Encuadre de ataques ampliado — 22/09/2026
+
+Los ataques de héroes se muestran un 18 % más grandes. El encuadre se desplaza
+7 % del ancho hacia la izquierda y 8 % de la altura hacia abajo, permitiendo
+un leve recorte en los bordes. Parámetros de presentación opcionales en
+`comic_cut_in.gd`, configurados solo en la rama de ataque de `hero_cut_in.gd`.
+Defensa y enemigos conservan su encuadre. Duración, cuadros y daño intactos.
+
+Pruebas locales: 24 secuencias, 823 comprobaciones sin fallos; prueba de viñetas
+de héroes y defensa sin fallos. Capturas de guerrero y explorador revisadas;
+capturas temporales eliminadas. Sin exportación ni validación Web/móvil.
+
+## Ocultar vida y nombre de enemigos caídos — 22/09/2026
+
+`combat_screen.gd` oculta la barra de vida, el nombre y su placa de contraste
+cuando la vida mostrada llega a cero. Mantiene la cuenta descendente del daño
+y la animación de cenizas. Al reconstruir el combate, los enemigos ya caídos
+empiezan con estos elementos ocultos. No modifica la información de los héroes.
+
+Comprobación local headless: barra animada de 2 a 0, nombre/placa ocultos,
+héroes visibles y reconstrucción con enemigo caído correctos; diff sin errores.
+Sin exportación ni revisión visual en navegador/dispositivo.
+
+## Más espacio para actores y energía — 22/09/2026
+
+- Nombres enemigos de 18 a 14 px, placa más baja; barras e intenciones 35 px
+  hacia arriba. Bloqueo acompaña a su barra; veneno enemigo debajo de la vida
+  para no superponerlo con la intención, modificadores debajo si hay veneno.
+- Escala de combate aumenta 16 %, manteniendo pies y altura normalizada de héroes.
+- Paso horizontal de cartas 160 → 146 px; mano empieza en x=160, ancho 954.
+  Conserva abanico, elevación al seleccionar y desplazamiento para manos largas.
+- Vista local con tres enemigos y seis cartas revisada; comprobaciones de
+  posiciones y espacio libre para energía, incluida primera carta seleccionada,
+  correctas. Diff sin errores. Sin exportar ni validar en navegador/móvil.
+
+## Cantidad sobre la bolsa — 22/09/2026
+
+`combat_hud.gd` muestra `BagCount` sobre la esquina superior derecha de la
+bolsa con los dígitos gráficos y fondo oscuro. Combate y recompensa suministran
+la suma de unidades del inventario; incluye copias repetidas, no solo tipos.
+Se actualiza al reconstruir la vista después de obtener/consumir objetos y
+se oculta cuando no queda ninguno. No intercepta clics ni cambia persistencia.
+
+Comprobación local headless: vacío, suma 2+3=5, reducción a 4 y ocultación al
+vaciar correctos. Diff sin errores. Sin exportación ni prueba visual Web/móvil.
+
+## Conservar desplazamiento al comprar — 22/09/2026
+
+El controlador `main.market_view` toma la posición de MarketCards antes de
+comprar y la restaura de forma diferida tras reconstruir el listado. Saldo y
+botón Habilitada se actualizan sin volver al inicio. Cambiar héroe o salir
+sigue abriendo el listado desde arriba; no se agrega estado al guardado.
+
+`test_market_ui.gd`: 61 comprobaciones headless sin fallos, incluyendo compra
+con scroll en las seis categorías, saldo y botón actualizado. Diff correcto.
+Sin exportación ni validación visual/navegador/dispositivo en este cambio.
+
+## Intercambio de iglesia y expediciones — 22/09/2026
+
+Iglesia pasa al solar 4 (abajo a la derecha) y Expediciones al solar 2
+(arriba a la derecha). Cambian juntos edificio, cartel y acción de acceso o
+construcción. Los IDs de perfil se conservan: ninguna construcción, mejora
+o contrato se pierde, sin migración de partidas.
+
+`test_camp_expansion_ui.gd`: 30 comprobaciones headless aprobadas con las
+nuevas ubicaciones; conserva pasos de clic de carteles vecinos. Diff correcto.
+Sin exportación ni revisión visual en navegador/dispositivo en este cambio.

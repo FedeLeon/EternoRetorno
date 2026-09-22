@@ -3,6 +3,7 @@ extends RefCounted
 static func build(ui: Control) -> void:
 	var b = ui.game.run.combat
 	var hud = ui.CombatHUD.new()
+	hud.item_count = ui.game.run.get("inventory", {}).values().reduce(func(total, amount): return total + maxi(0, int(amount)), 0)
 	hud.name = "CombatHUD"
 	hud.turn = b.turn
 	hud.energy = b.energy
@@ -39,17 +40,17 @@ static func build(ui: Control) -> void:
 		ui.hero_art[i] = visual
 		if h.id in ui.ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
-		ui.hero_health[i] = ui.health_bar(h, 16, 55, 172, target)
-		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, h, Rect2(54, 88, 184, 28))
+		ui.hero_health[i] = ui.health_bar(h, 16, 20, 172, target)
+		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, h, Rect2(54, 53, 184, 28))
 		if h.hp > 0:
 			var effects = ui.StatusEffects.new()
 			effects.unit = h
 			effects.show_backplates = true
 			effects.block_position = Vector2(6 if h.get("poison", 0) > 0 else 54, 0)
 			if h.block > 0: effects.poison_position = Vector2(100, 0)
-			ui.rect(effects, 10, 18, 184, 28, target)
+			ui.rect(effects, 10, -17, 184, 28, target)
 		else:
-			ui.label_at("Vuelve si ganás", 10, 18, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			ui.label_at("Vuelve si ganás", 10, -17, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = ui.game.content.enemies[e.id]
@@ -64,21 +65,31 @@ static func build(ui: Control) -> void:
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
-		preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -58, 208, 44))
-		ui.label_at(def.name, 7, -56, 200, 40, 18, ui.TEXT, target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		var name_plate = preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -66, 208, 28))
+		var enemy_name = ui.label_at(def.name, 7, -65, 200, 26, 14, ui.TEXT, target)
+		enemy_name.name = "EnemyName"
+		enemy_name.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		var crowded = b.enemies.size() >= 3
-		ui.enemy_health[i] = ui.health_bar(e, 66 if crowded else 16, 55, 142 if crowded else 182, target)
-		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, e, Rect2(20, 88, 184, 28))
+		ui.enemy_health[i] = ui.health_bar(e, 66 if crowded else 16, 20, 142 if crowded else 182, target)
+		var health = ui.enemy_health[i]
+		var update_visibility = func(hp: int):
+			health.visible = hp > 0
+			enemy_name.visible = hp > 0
+			name_plate.visible = hp > 0
+		health.value_changed.connect(update_visibility)
+		update_visibility.call(e.hp)
+		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, e, Rect2(20, 88 if e.get("poison", 0) > 0 else 53, 184, 28))
 		var effects = ui.StatusEffects.new()
 		effects.unit = e
-		effects.block_position = Vector2(-7 if crowded else -69, 75)
+		effects.block_position = Vector2(-7 if crowded else -69, 40)
+		effects.poison_position = Vector2(62, 73)
 		ui.rect(effects, 7, -20, 200, 28, target)
 		if e.hp > 0:
 			var intent_view = ui.EnemyIntent.new()
 			intent_view.name = "EnemyIntent%d" % i
 			intent_view.intent = preload("res://src/rules/combat_modifiers.gd").intent(e)
 			intent_view.heroes = ui.game.run.heroes.duplicate(true)
-			ui.rect(intent_view, x - 12, 160, 240, 42)
+			ui.rect(intent_view, x - 12, 125, 240, 42)
 
 	if ui.selected_card >= 0 and ui.selected_card < b.hand.size() and ui.game.available_synergies().is_empty():
 		ui.SynergyView.hint(ui, b.hand[ui.selected_card].id, ui.game.content.synergies, ui.game.run.party, ui.game.content.cards)
@@ -89,7 +100,7 @@ static func build(ui: Control) -> void:
 	var count = b.hand.size()
 	var scroll = ScrollContainer.new()
 	scroll.name = "CombatHand"
-	ui.rect(scroll, 100, 350, 1014, 370)
+	ui.rect(scroll, 160, 350, 954, 370)
 	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
 	var contents = Control.new()

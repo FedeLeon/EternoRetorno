@@ -20,7 +20,10 @@ func run_tests() -> void:
 			if effect.picture.texture == null or effect.size.x <= 0 or effect.z_index >= 200:
 				failures += 1
 			await create_timer(0.24).timeout
-			if effect.picture.position.x > host.size.x * 0.03 or not is_equal_approx(effect.picture.position.y + effect.picture.size.y, host.size.y):
+			var expected_bottom = host.size.y * (1.08 if kind == "attack" else 1.0)
+			if effect.picture.position.x > host.size.x * 0.03 or not is_equal_approx(effect.picture.position.y + effect.picture.size.y, expected_bottom):
+				failures += 1
+			if kind == "attack" and effect.picture.position.x >= 0:
 				failures += 1
 			if DisplayServer.get_name() != "headless" and hero == "warrior" and kind == "attack":
 				await RenderingServer.frame_post_draw
