@@ -42,6 +42,17 @@ func run_tests() -> void:
 	offers[0].pressed.emit()
 	await process_frame
 	check(app.game.profile.expeditions.selected != "", "contract selected")
+	offers = app.layer.find_children("AcceptContract", "Button", true, false)
+	check(not offers[0].disabled and offers[1].disabled and offers[2].disabled, "only selected contract allows cancellation")
+	offers[0].pressed.emit()
+	await process_frame
+	check(app.game.profile.expeditions.selected == "", "contract cancelled")
+	offers = app.layer.find_children("AcceptContract", "Button", true, false)
+	for button in offers: check(not button.disabled, "cancellation unlocks all offers")
+	offers[1].pressed.emit()
+	await process_frame
+	offers = app.layer.find_children("AcceptContract", "Button", true, false)
+	check(offers[0].disabled and not offers[1].disabled and offers[2].disabled, "another contract can be selected after cancellation")
 	await capture("contracts")
 	app.back()
 	app.layer.get_node("Plot3").pressed.emit()

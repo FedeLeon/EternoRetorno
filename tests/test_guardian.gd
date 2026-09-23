@@ -58,6 +58,7 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
+	await reaction("attack")
 	check(app.hero_art[0].sprite.animation == "attack", "counterattack uses flail")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
@@ -71,6 +72,7 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "guardian_bash", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
+	await reaction("bash")
 	check(app.hero_art[0].sprite.animation == "bash", "shield bash uses bash animation")
 	await create_timer(0.36).timeout
 	await shot("bash")
@@ -80,6 +82,7 @@ func run_tests() -> void:
 		app.game.run.combat.hand = [{"id": card_id, "upgraded": false}]
 		app.continue_run()
 		app.animate_combat_action(0, 0)
+		await reaction("guard")
 		check(app.hero_art[0].sprite.animation == "guard", card_id + " uses shield defense")
 		await create_timer(0.25).timeout
 		await shot("guard")

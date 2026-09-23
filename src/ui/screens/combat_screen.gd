@@ -46,8 +46,7 @@ static func build(ui: Control) -> void:
 			var effects = ui.StatusEffects.new()
 			effects.unit = h
 			effects.show_backplates = true
-			effects.block_position = Vector2(6 if h.get("poison", 0) > 0 else 54, 0)
-			if h.block > 0: effects.poison_position = Vector2(100, 0)
+			effects.block_position = Vector2(-15, 30)
 			ui.rect(effects, 10, -17, 184, 28, target)
 		else:
 			ui.label_at("Vuelve si ganás", 10, -17, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -81,7 +80,7 @@ static func build(ui: Control) -> void:
 		preload("res://src/ui/components/combat_modifier_badges.gd").attach(target, e, Rect2(20, 88 if e.get("poison", 0) > 0 else 53, 184, 28))
 		var effects = ui.StatusEffects.new()
 		effects.unit = e
-		effects.block_position = Vector2(-7 if crowded else -69, 40)
+		effects.block_position = Vector2(38 if crowded else -12, 33)
 		effects.poison_position = Vector2(62, 73)
 		ui.rect(effects, 7, -20, 200, 28, target)
 		if e.hp > 0:

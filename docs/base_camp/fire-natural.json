@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-23",
+  "tool": "image_gen built-in",
+  "prompt": "Create a COMPLETELY NEW realistic pixel-art FIRE ANIMATION SPRITESHEET for a dark medieval game. Exactly 24 consecutive chronological frames in a precisely regular 6-column by 4-row grid, no visible grid, on REAL TRANSPARENT alpha background. Wide 3:2 canvas 1536x1024, square cells256x256. No text. This is NOT an icon, NOT a cartoon flame or teardrop. Natural low campfire burning: broad irregular low base of dim red embers, 4 to 6 SEPARATE slender translucent orange and pale straw-yellow flame ribbons rising asymmetrically, dark gaps between tongues, thin tapering flickering tips, tiny hints of blue at roots. No thick orange outline, no solid white core blob, no smooth vector curves, no round magical aura. Fine crisp deliberate pixel clusters like high-quality realistic 2D pixel art. Fire only, no logs or stones. Same camera and fixed base CENTERED at 88% of each cell height, total flame maximum75% cellheight and55% cellwidth. Flames should feel physically turbulent, airy, sparse, less saturated and less dense than cartoon fire. 24 subtly different sequential frames of ONE fire: tongues elongate upward gradually, curl, thin and dissipate while new tongues appear at base; no overall translation, scale change or random unrelated poses. Loop seam last to first gradual. All frames keep generous transparent padding and all fire contained in own cell. Transparent between tongues where possible. Intended rendered small over an existing campfire pit.",
+  "edit_prompt": "Remove brown background and broad glow; preserve 24 flames and exact 6x4 grid, genuine alpha transparency.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-5649c748-7a87-4261-b2db-d3f4640654d6.png",
+  "asset": "assets/camp/fire-natural.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "grid": [
+    6,
+    4
+  ],
+  "frames": 24,
+  "fps": 14,
+  "alpha_zero_fraction": 0.681,
+  "baseline_method": "Last cell row with over25 pixels alpha>127; offsets anchored at row239."
+}

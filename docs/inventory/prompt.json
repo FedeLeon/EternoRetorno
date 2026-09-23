@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-23",
+  "tool": "image_gen",
+  "prompt": "Use case: stylized-concept. Create one production-ready landscape 16:9 background asset for both the deck viewer and inventory bag screens of Eterno Retorno, a dark gothic pixel-art fantasy card roguelike. Detailed refined pixel art, charcoal and midnight violet, worn stone and dark leather tabletop in an ancient dungeon archive. The central 80 percent must be nearly empty, dark low-contrast subtly textured surface to place real interactive cards or a circular arrangement of objects. Restrict evocative decorations to outer corners and narrow side margins: worn leather satchel bottom right, a small stack of face-down ornate cards bottom left, stone architectural fragments and very faint cool magical dust at edges. No people, no letters, no text, no numbers, no UI panels or buttons, no drawn selectable icons, no bright central objects. Subtle metallic gray highlights, restrained muted gold touches, vignette, beautifully atmospheric yet highly legible as a game inventory backdrop. Landscape composition, edge-to-edge background.",
+  "asset": "assets/inventory/background.png",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-a386dd54-a8d3-41ed-8d3f-6293449d88da.png"
+}

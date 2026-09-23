@@ -24,7 +24,7 @@ const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogu
 const Campfire = preload("res://src/campfire.gd")
 const CAMP_POSITIONS = [Vector2(450, 345), Vector2(830, 345), Vector2(245, 485), Vector2(1035, 485), Vector2(430, 585), Vector2(850, 585)]
 const Dungeon = preload("res://src/dungeon.gd")
-const GOLD = Color("d8b779")
+const GOLD = preload("res://src/ui/components/dark_skin.gd").ACCENT
 const INK = Color("10141f")
 const TEXT = Color("ebe2d0")
 const MUTED = Color("9299ab")
@@ -54,9 +54,9 @@ func _ready() -> void:
 	ui_theme.set_color("font_color", "Label", TEXT)
 	ui_theme.set_color("font_color", "Button", TEXT)
 	ui_theme.set_color("font_disabled_color", "Button", Color("666b79"))
-	ui_theme.set_color("font_hover_color", "Button", Color("fff0c4"))
+	ui_theme.set_color("font_hover_color", "Button", Color("eee5fa"))
 	preload("res://src/ui/components/button_skin.gd").install(ui_theme)
-	ui_theme.set_stylebox("focus", "Button", box(Color(0, 0, 0, 0), GOLD, 2))
+	ui_theme.set_stylebox("focus", "Button", preload("res://src/ui/components/dark_skin.gd").focus())
 	theme = ui_theme
 	apply_options()
 	render()
@@ -92,8 +92,8 @@ func label_at(text: String, x: float, y: float, w: float, h: float, font_size: i
 func button(text: String, x: float, y: float, w: float, h: float, callback: Callable, enabled: bool = true, parent: Control = null) -> Button:
 	var b = Button.new()
 	b.text = text
-	if text in ["Volver", "Inicio", "Elegir reliquia", "Saltar recompensa"]:
-		preload("res://src/ui/components/button_skin.gd").arrow(b, text in ["Volver", "Inicio"])
+	if text in ["Inicio", "Elegir reliquia", "Saltar recompensa"]:
+		preload("res://src/ui/components/button_skin.gd").arrow(b, text == "Inicio")
 	if text == "Menú":
 		preload("res://src/ui/components/button_skin.gd").decorate(b, "wood_menu")
 	b.disabled = not enabled
@@ -106,7 +106,7 @@ func button(text: String, x: float, y: float, w: float, h: float, callback: Call
 
 func panel(x: float, y: float, w: float, h: float, border: Color = Color("343b4d"), parent: Control = null) -> Panel:
 	var p = Panel.new()
-	p.add_theme_stylebox_override("panel", box(Color("141a27"), border))
+	p.add_theme_stylebox_override("panel", preload("res://src/ui/components/dark_skin.gd").frame(h < 90) if w >= 250 and h >= 50 else box(Color("101016"), border))
 	p.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	rect(p, x, y, w, h, parent)
 	return p
@@ -297,13 +297,18 @@ func open_base_camp() -> void:
 	game.message = ""
 	render()
 
-func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable, caption_above: bool = false) -> Button:
+func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable, caption_above: bool = false, caption_offset: Vector2 = Vector2.ZERO) -> Button:
 	var b = button("", area.position.x, area.position.y - (34 if caption_above else 0), area.size.x, area.size.y + 34, action)
 	b.name = id
 	b.tooltip_text = caption
 	for state in ["normal", "hover", "pressed", "focus", "disabled"]:
 		b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 	var plaque = panel(area.position.x + (area.size.x - 208) / 2, area.position.y - 34 if caption_above else area.end.y, 208, 34)
+	plaque.position += caption_offset
+	if caption_offset != Vector2.ZERO:
+		var clickable = b.get_rect().merge(plaque.get_rect())
+		b.position = clickable.position
+		b.size = clickable.size
 	plaque.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("wood_button"))
 	var title = label_at(caption, 5, 0, 198, 34, 16, GOLD, plaque)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -550,20 +555,7 @@ func deck_view() -> void:
 		view.name = "CardUpgradeScreen"
 		rect(view, 0, 0, 1280, 720)
 		return
-	header("El mazo compartido", "")
-	var battle = game.run.combat
-	var detail = "Total: %d cartas" % game.run.deck.size()
-	if game.run.phase == "combat":
-		detail += " · Mazo: %d · Mano: %d · Descarte: %d · Inactivas: %d" % [battle.draw.size(), battle.hand.size(), battle.discard.size(), battle.inactive.size()]
-	var summary = label_at(detail, 36, 108, 1208, 28, 17, GOLD)
-	summary.name = "DeckSummary"
-	var contents = scroll_area()
-	for i in range(game.run.deck.size()):
-		var instance = game.run.deck[i]
-		var b = card_panel(instance, (i % 5) * 238, (i / 5) * 260, 224, 244, func(): pass, false, true, contents)
-		b.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	contents.custom_minimum_size.y = ceil(game.run.deck.size() / 5.0) * 260
-	button("Volver", 36, 646, 230, 54, func(): screen = return_screen; upgrade_mode = false; render())
+	preload("res://src/ui/screens/deck_screen.gd").build(self, func(): screen = return_screen; upgrade_mode = false; render())
 
 func open_collection() -> void:
 	screen = "collection"

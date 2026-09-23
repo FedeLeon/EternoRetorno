@@ -215,3 +215,16 @@ se oculta cuando no queda ninguno. No intercepta clics ni cambia persistencia.
 
 Comprobación local headless: vacío, suma 2+3=5, reducción a 4 y ocultación al
 vaciar correctos. Diff sin errores. Sin exportación ni prueba visual Web/móvil.
+
+## Fondo de bolsa — 23/09/2026
+
+La bolsa reutiliza el nuevo [fondo oscuro de inventario](../inventory/README.md)
+con el visor del mazo. La distribución circular y sus acciones se conservan.
+
+## Volver en la barra superior — 23/09/2026
+
+La bolsa reemplaza Menú por Volver arriba a la derecha y elimina el botón
+inferior. `items_screen.gd` reutiliza `preparation_header.gd`, que devuelve el
+botón creado para conservar el ID `BackFromBag`. La acción de regreso no cambia.
+Prueba local headless `test_bag_ui.gd` sin fallos, incluido retorno a recompensa.
+Sin nueva revisión renderizada ni exportación.

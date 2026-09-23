@@ -9,35 +9,27 @@ var animating = false
 var elapsed = 0.0
 var fill: ColorRect
 var caption: Label
-var heart: TextureRect
+var liquid: ShaderMaterial
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var back = ColorRect.new()
-	back.color = Color("35252f")
-	back.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	back.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	add_child(back)
 	fill = ColorRect.new()
-	fill.color = Color("98605f")
 	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	liquid = ShaderMaterial.new()
+	liquid.shader = preload("res://assets/shaders/health_liquid.gdshader")
+	liquid.set_shader_parameter("phase", float(get_instance_id() % 101) * 0.37)
+	fill.material = liquid
 	add_child(fill)
 	caption = Label.new()
 	caption.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	caption.offset_left = 30
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	caption.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	caption.add_theme_font_size_override("font_size", 17)
 	caption.add_theme_color_override("font_color", Color("e0dbcf"))
 	caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(caption)
-	heart = TextureRect.new()
-	heart.name = "Heart"
-	heart.texture = preload("res://assets/ui/heart.svg")
-	heart.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	heart.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	heart.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(heart)
+	caption.add_theme_color_override("font_outline_color", Color("100b12"))
+	caption.add_theme_constant_override("outline_size", 3)
 	resized.connect(refresh)
 	refresh()
 
@@ -69,7 +61,7 @@ func _process(delta: float) -> void:
 		animation_finished.emit()
 
 func refresh() -> void:
-	heart.position = Vector2(4, (size.y - 24) / 2)
-	heart.size = Vector2(24, 24)
-	fill.size = Vector2(size.x * displayed_hp / float(maximum_hp), size.y)
+	fill.size = size
+	liquid.set_shader_parameter("tube_size", size)
+	liquid.set_shader_parameter("level", displayed_hp / float(maximum_hp))
 	caption.text = "%d / %d" % [displayed_hp, maximum_hp] if displayed_hp > 0 else "CAÍDO"

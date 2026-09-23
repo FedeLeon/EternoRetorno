@@ -12,7 +12,6 @@ static func build(ui: Control) -> void:
 				title = ui.game.content.heroes[ui.game.run.heroes[index].id].name
 			targets.append({"index": index, "name": title})
 	preload("res://src/ui/screens/items_screen.gd").build(ui, ui.game.content.items, ui.game.run.get("inventory", {}), ui.selected_item, targets, ui.game.run.phase == "combat", {
-		"menu": ui.pause_menu,
 		"back": ui.continue_run,
 		"select": func(id): ui.selected_item = id; ui.render(),
 		"consume": func(index):

@@ -59,6 +59,7 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
+	await reaction("attack")
 	check(app.hero_art[0].sprite.animation == "attack", "arrow uses bow")
 	check(app.game.run.combat.enemies[0].hp == 92 and app.game.run.combat.enemies[0].block == 20, "arrow pierces block")
 	var hp = app.game.run.combat.enemies[0].hp
@@ -73,6 +74,7 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "ranger_aim", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
+	await reaction("heavy")
 	check(app.hero_art[0].sprite.animation == "heavy", "aim uses powerful shot")
 	await create_timer(0.36).timeout
 	await shot("heavy")
@@ -86,6 +88,7 @@ func run_tests() -> void:
 		var old_hp = app.game.run.combat.enemies[0].hp
 		app.animate_combat_action(0, 0)
 		var expected = {"ranger_evade": "guard", "ranger_double": "attack", "ranger_echo": "heavy"}[card_id]
+		await reaction(expected)
 		check(app.hero_art[0].sprite.animation == expected, card_id + " animation")
 		if card_id == "ranger_double":
 			check(app.game.run.combat.enemies[0].hp == old_hp - 3 and app.game.run.combat.enemies[0].block == 0, "double shot resolves both hits against block")

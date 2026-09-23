@@ -133,3 +133,50 @@ o contrato se pierde, sin migración de partidas.
 `test_camp_expansion_ui.gd`: 30 comprobaciones headless aprobadas con las
 nuevas ubicaciones; conserva pasos de clic de carteles vecinos. Diff correcto.
 Sin exportación ni revisión visual en navegador/dispositivo en este cambio.
+
+## Separación de carteles — 23/09/2026
+
+El cartel del Mercado construido baja 20 px y Aventuras se desplaza 90 px a la
+derecha, sin mover edificios. `camp_hotspot` admite un desplazamiento opcional
+del cartel y amplía el área pulsable para incluirlo; la geometría publicada en
+`caption_rect` sigue sirviendo para evitar interferencias entre edificios.
+El botón Menú superior pasa a 102×40, centrado verticalmente con más espacio
+respecto del marco (también en el HUD de batalla).
+Revisión renderizada local a 1280×720 con todos los edificios construidos;
+prueba headless de expansión: 36 comprobaciones sin fallos. Sin exportar.
+
+## Fuego detallado de 16 cuadros — 23/09/2026
+
+`campfire.gd` usa `assets/camp/fire-detailed.png`, generado con fondo transparente
+real, cuadrícula 4×4 y 16 poses. Original 1254×1254 conservado, importación sin
+pérdida y sin reducir el atlas. Prompt y procedencia en `fire-detailed.json`.
+Las regiones usan límites enteros para repartir los 1254 px entre cuatro celdas.
+La base de la llama se compensa por cuadro (±1 px), excluyendo pequeñas chispas
+sueltas de la medición. Ciclo de 1,6 s a 10 cuadros/s, frente a 8/9 s del anterior.
+El pulso ambiental baja de 7 a 2,4 rad/s y su variación de 15 % a 8 %.
+El componente compartido aplica el nuevo fuego en todas sus vistas consumidoras.
+
+Validación local: ejecución renderizada de 150 frames, con los 16 cuadros de fuego
+observados; captura del campamento diurno revisada para transparencia, tamaño y
+apoyo en la fogata. `git diff --check` sin errores. Sin exportación ni validación
+web/móvil. Assets anteriores conservados como fuentes históricas.
+
+## Fuego natural, rediseño completo — 23/09/2026
+
+Reemplazo visual activo: `assets/camp/fire-natural.png`, creado de cero con
+image_gen y una segunda pasada para transparencia. Procedencia y prompts en
+`fire-natural.json`. Atlas de 1536×1024, 6×4 celdas de 256 px, 24 cuadros;
+importación sin pérdida y tamaño original para preservar las regiones.
+
+La silueta utiliza lenguas finas separadas, zonas transparentes, raíces azuladas
+suaves y una base irregular de brasas. Sustituye el fuego anterior de contorno
+compacto. `campfire.gd` reproduce a 14 fps (ciclo de unos 1,71 s), con offsets de
+base medidos por cuadro; conserva la luz suave. Las chispas procedurales pasan
+de 16 originales / 8 actuales, y son menores (1–2 px), con menor opacidad.
+El cambio se comparte entre campamento y selección de héroes.
+
+Validación local: atlas RGBA, 68,1 % de píxeles completamente transparentes;
+ejecución renderizada durante 2,2 s con los 24 cuadros observados, y revisión de
+captura del campamento para integración sin recuadro y apoyo de brasas.
+`git diff --check` limpio. Sin exportación ni prueba web/móvil. El atlas anterior
+queda conservado, pero ya no es el utilizado por el componente.

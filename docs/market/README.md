@@ -144,3 +144,14 @@ sigue abriendo el listado desde arriba; no se agrega estado al guardado.
 `test_market_ui.gd`: 61 comprobaciones headless sin fallos, incluyendo compra
 con scroll en las seis categorías, saldo y botón actualizado. Diff correcto.
 Sin exportación ni validación visual/navegador/dispositivo en este cambio.
+
+## Volver a héroes en el encabezado — 23/09/2026
+
+Mercado y Herrería ubican el botón dentro del panel derecho, a la derecha del
+título. El mercado reserva ancho para el nombre y Nuevas cartas; la herrería
+baja la vista del héroe y sus mejoras para evitar superposiciones. Se conserva
+el estilo de tablón y la navegación existente.
+
+Pruebas headless: mercado 61 y herrería 110 comprobaciones sin fallos.
+Revisión visual local de ambas vistas a 1280×720; capturas temporales retiradas.
+Sin exportación ni validación Web/móvil.

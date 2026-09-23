@@ -27,12 +27,13 @@ func _ready() -> void:
 			indicator.icon_texture = POISON_ICON
 		indicator.position = poison_position if effect == "poison" and poison_position.x >= 0 else Vector2((size.x - 76) / 2, 0)
 		if effect == "block":
+			indicator.overlay_number = true
 			indicator.position = block_position
 			indicator.number_height = 18
 			indicator.explanation = "Bloqueo activo"
 		indicator.size = Vector2(76, 28)
 		add_child(indicator)
-		if show_backplates:
+		if show_backplates and effect != "block":
 			var plate = preload("res://src/ui/components/combat_backplate.gd").attach(indicator, Rect2(-4, -5, 84, 38))
 			plate.show_behind_parent = true
 		if effect == "block": indicator.update_active_block(indicator.amount)

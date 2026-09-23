@@ -58,6 +58,7 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
+	await reaction("attack")
 	check(app.hero_art[0].sprite.animation == "attack", "sparks uses projectile cast")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
@@ -72,6 +73,7 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "mage_storm", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
+	await reaction("heavy")
 	check(app.hero_art[0].sprite.animation == "heavy", "storm uses area cast")
 	await create_timer(0.36).timeout
 	await shot("heavy")
@@ -85,6 +87,7 @@ func run_tests() -> void:
 		var other_hp = app.game.run.combat.enemies[1].hp
 		app.animate_combat_action(0, 0)
 		var expected = {"mage_ward": "guard", "mage_missile": "attack", "mage_echo": "heavy"}[card_id]
+		await reaction(expected)
 		check(app.hero_art[0].sprite.animation == expected, card_id + " animation")
 		if card_id == "mage_missile":
 			check(app.game.run.combat.enemies[0].hp == old_hp - 15 and app.game.run.combat.enemies[1].hp == other_hp, "three missiles hit only target")

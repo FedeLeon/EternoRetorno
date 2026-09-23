@@ -3,6 +3,8 @@ extends RefCounted
 # Transient receipt for presentation; never persisted or used to calculate damage.
 var resolved_enemy_attacks: Array[int] = []
 var resolved_enemy_blocks: Dictionary = {}
+var resolved_hero_defenses: Dictionary = {}
+var resolved_hero_blocks: Dictionary = {}
 var resolved_card_hits: Array = []
 
 const Synergies = preload("res://src/rules/card_synergies.gd")
@@ -341,6 +343,8 @@ func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 func end_turn() -> bool:
 	resolved_enemy_attacks.clear()
 	resolved_enemy_blocks.clear()
+	resolved_hero_defenses.clear()
+	resolved_hero_blocks.clear()
 	if run.is_empty() or run.phase != "combat":
 		return false
 	var b = run.combat
@@ -368,7 +372,15 @@ func end_turn() -> bool:
 		if not intent.get("all", false) and run.heroes[targets[0]].hp <= 0:
 			targets = [living_heroes()[0]]
 		for i in targets:
+			var block_before: int = run.heroes[i].block
 			_damage(run.heroes[i], int(intent.damage))
+			if int(intent.damage) > 0:
+				if not resolved_hero_blocks.has(enemy_index): resolved_hero_blocks[enemy_index] = {}
+				resolved_hero_blocks[enemy_index][i] = run.heroes[i].block
+			if run.heroes[i].block < block_before:
+				if not resolved_hero_defenses.has(enemy_index):
+					resolved_hero_defenses[enemy_index] = []
+				resolved_hero_defenses[enemy_index].append(i)
 		_log("%s ataca por %d." % [content.enemies[enemy.id].name, intent.damage])
 		if living_heroes().is_empty():
 			_finish(false)

@@ -205,3 +205,14 @@ y encuadres de cara/torso ajustados por héroe sobre los assets comic existentes
 y Herrería; `refuge_portrait.gd` aporta el formato compacto y sus recortes.
 Validación actual: mercado 49/49 y herrería 110/110 con render local, revisión
 visual de galerías a 1280×720. Capturas temporales retiradas. Sin exportaciones.
+
+## Volver a héroes en el encabezado — 23/09/2026
+
+Mercado y Herrería ubican el botón dentro del panel derecho, a la derecha del
+título. El mercado reserva ancho para el nombre y Nuevas cartas; la herrería
+baja la vista del héroe y sus mejoras para evitar superposiciones. Se conserva
+el estilo de tablón y la navegación existente.
+
+Pruebas headless: mercado 61 y herrería 110 comprobaciones sin fallos.
+Revisión visual local de ambas vistas a 1280×720; capturas temporales retiradas.
+Sin exportación ni validación Web/móvil.

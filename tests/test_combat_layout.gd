@@ -58,7 +58,7 @@ func run_tests() -> void:
 	await shot("pause-selected")
 	await click(selected.get_global_transform() * Vector2(55, 45))
 	check(app.selected_card == index and is_instance_valid(app.overlay), "Modal blocks clicks on underlying card")
-	await click(app.overlay.get_node("DialogAction1").get_global_rect().get_center())
+	await click(app.overlay.get_node("ResumeAdventure").get_global_rect().get_center())
 	check(not is_instance_valid(app.overlay) and app.selected_card == index, "Return closes menu and preserves selection")
 	var energy_before = app.game.run.combat.energy
 	app.game.run.combat.energy = 0

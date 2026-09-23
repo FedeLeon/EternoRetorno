@@ -7,11 +7,7 @@ func setup(relic: Dictionary, anchor: Rect2) -> void:
 	custom_minimum_size = Vector2(340, 0)
 	size.x = 340
 	z_index = 50
-	var style = StyleBoxFlat.new()
-	style.bg_color = Color("171d29")
-	style.border_color = Color("b99b65")
-	style.set_border_width_all(1)
-	style.set_corner_radius_all(5)
+	var style = preload("res://src/ui/components/dark_skin.gd").dialog()
 	style.content_margin_left = 14
 	style.content_margin_right = 14
 	style.content_margin_top = 12
@@ -28,8 +24,8 @@ func setup(relic: Dictionary, anchor: Rect2) -> void:
 		label.add_theme_font_size_override("font_size", 17)
 		label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		column.add_child(label)
-	column.get_child(0).add_theme_color_override("font_color", Color("e5c48d"))
+	column.get_child(0).add_theme_color_override("font_color", Color("b6adbf"))
 	var pointer = Polygon2D.new()
 	pointer.polygon = PackedVector2Array([Vector2(18, 0), Vector2(28, -9), Vector2(38, 0)])
-	pointer.color = Color("b99b65")
+	pointer.color = Color("5b5568")
 	add_child(pointer)

@@ -336,3 +336,113 @@ Sin exportación ni revisión visual en navegador/dispositivo.
 - Vista local con tres enemigos y seis cartas revisada; comprobaciones de
   posiciones y espacio libre para energía, incluida primera carta seleccionada,
   correctas. Diff sin errores. Sin exportar ni validar en navegador/móvil.
+
+## Defensa del objetivo real — 23/09/2026
+
+La pose de defensa se reproduce después del ataque enemigo únicamente para los
+héroes cuyo bloqueo absorbió ese golpe. El reinicio del bloqueo al empezar el
+siguiente turno ya no dispara defensas de héroes que no fueron atacados.
+Los ataques de área pueden activar ambas defensas si consumen ambos escudos.
+`game.gd` registra `resolved_hero_defenses` por enemigo como resultado transitorio,
+sin guardarlo; `combat_flow.gd` lo usa para presentar la reacción, sin calcular daño.
+Prueba local headless `test_turn_sequence.gd`: 170 comprobaciones sin fallos
+(incluye un objetivo con ambos escudos activos, ataque de área y limpieza entre
+turnos). Sin revisión visual nueva ni exportación.
+
+## Alineación de acciones con el suelo — 23/09/2026
+
+`src/presentation/hero_grounding.gd`, conectado desde `hero_idle.gd`, compensa el
+margen transparente inferior de cada cuadro de acción respecto del reposo del
+mismo atlas. Usa la silueta con alfa mayor que 0,5 y cachea su borde inferior por
+atlas/región. Se actualiza al cambiar cuadro, animación o equipo, sin modificar
+los PNG ni la escala. Reposo, carrera, muerte y resurrección conservan sus offsets
+originales. La referencia es el borde de la silueta, incluyendo armas/efectos;
+no es detección anatómica de los pies.
+
+Validación local: `test_hero_grounding.gd`, 486 comprobaciones sin fallos para
+los seis héroes originales y variantes de equipo 0/0 y 3/3, incluyendo restauración
+del offset. `test_turn_sequence.gd`: 170 comprobaciones sin fallos. Comparación
+renderizada local de reposo y tres cuadros de ataque del guerrero equipado.
+Sin exportación ni validación web/móvil.
+
+## Energía inmediata al jugar — 23/09/2026
+
+`combat_flow.gd` actualiza el contador mediante `CombatHUD.update_energy` justo
+tras aceptar y guardar una carta o enlace, antes de iniciar las animaciones.
+Se muestra el saldo resuelto por las reglas, sin recalcular costes en la interfaz.
+Las cartas rechazadas no modifican el contador; el cambio de turno conserva su
+actualización al terminar la secuencia enemiga.
+Prueba local headless `test_energy_timing.gd`: cinco comprobaciones sin fallos,
+incluyendo descuento visible durante la animación y rechazo por falta de energía.
+Sin exportación ni revisión visual nueva.
+
+## Restauración de Terminar turno — 23/09/2026
+
+Por preferencia visual, `end_turn_button.gd` vuelve al asset circular
+`assets/ui/end_turn_round.png`, con sus tintes originales de hover/pulsación y
+foco dorado. Es una excepción al estilo general de botones oscuros simplificados.
+Se conserva el área pulsable circular y la posición. Verificación del diff contra
+la implementación anterior y `git diff --check`; sin nueva revisión renderizada
+ni exportación.
+
+## Reliquias separadas del marco — 23/09/2026
+
+La barra superior utiliza el marco común recortado hasta su perímetro metálico,
+sin franja negra exterior. Reliquias y mejoras de equipo se colocan desde x32/y8,
+con altura 48 y niveles reposicionados. Revisión renderizada local con una
+reliquia y cuatro mejoras, y prueba de equipo: 48 comprobaciones sin fallos.
+Detalles de presentación en `docs/ui_buttons/dark/README.md`. Sin exportación.
+
+## Bloqueo superpuesto en escudo gris — 23/09/2026
+
+El bloqueo activo se ancla al extremo izquierdo de la barra de vida de héroes y
+enemigos. Nuevo asset vectorial `assets/ui/block_active.svg`, dibujado en código:
+escudo gris con bisel claro y centro oscuro para superponer los dígitos existentes.
+`block_indicator.gd` agrega modo `overlay_number` (42×42, número centrado) y
+referencia visual a la barra; `status_effects.gd` lo usa solo para bloqueo activo.
+Las intenciones y el veneno mantienen su presentación. Se conserva el cuadro de
+explicación al pulsar. Con bloqueo cero desaparece el escudo y vuelve a verse el
+corazón; mientras está activo el corazón se oculta para evitar superposición.
+`combat_screen.gd` ancla ambos tipos de actores, incluidos tres enemigos.
+
+Validación: captura local renderizada a 1280×720 con dos héroes y tres enemigos,
+bloqueos de 15 y 8; secuencia de turno headless, 171 comprobaciones sin fallos.
+`git diff --check` limpio. Sin exportación ni validación web/móvil.
+
+## Tubo de vida con líquido — 23/09/2026
+
+`health_bar.gd` sustituye los rectángulos planos por
+`assets/shaders/health_liquid.gdshader`: tubo redondeado, borde metálico gris/violeta,
+reflejo de vidrio, líquido rojo con variación suave y siete burbujas ascendentes.
+Cada barra tiene un desfase temporal. El nivel horizontal sigue la vida mostrada,
+con vacío a cero y llenado completo al máximo. El texto queda centrado, con
+contorno oscuro. Se elimina el corazón en el componente compartido, también en
+las otras vistas que lo reutilizan. El bloqueo gris conserva su posición y diálogo;
+se retira su dependencia del corazón.
+
+Arte procedural dibujado en shader, sin imágenes generadas ni nuevos atlas.
+No calcula daño: recibe proporción y tamaño desde presentación. Se conserva el
+conteo gradual punto a punto y las señales existentes de salud.
+Validación local: secuencia de turno headless, 170 comprobaciones sin fallos;
+shader compilado en Compatibility/OpenGL y captura renderizada de combate a
+1280×720 con vida parcial/completa y bloqueo. Sin errores de compilación del
+shader. Sin exportación ni pruebas web/móvil.
+
+## Bloqueo consumido en cenizas — 23/09/2026
+
+Al pasar de bloqueo positivo a cero, `block_indicator.gd` crea una copia visual
+sin lógica del escudo y su número, y reutiliza `card_ash.gd` (shader y partículas
+de cartas). El indicador activo desaparece; el snapshot se elimina al terminar.
+La reducción parcial solo actualiza el número. Repetir cero no crea otro efecto;
+un bloqueo nuevo puede aparecer mientras termina el snapshot anterior.
+
+`game.gd` registra `resolved_hero_blocks` por ataque enemigo, como recibo transitorio
+sin persistencia. `combat_flow.gd` lo presenta después de cada ataque y espera los
+efectos del grupo `block_ash` antes de reconstruir la pantalla. La expiración al
+cambiar de turno usa el mismo mecanismo. Los golpes de cartas y contraataques
+reutilizan la actualización existente en `card_impacts.gd`.
+
+Validación local: `test_block_ash.gd`, 5 comprobaciones sin fallos tanto headless
+como con render Compatibility; `test_turn_sequence.gd`, 171 sin fallos.
+Comprueba reducción parcial, cero, no duplicación, nuevo bloqueo y limpieza.
+Sin captura revisada ni exportación/web/móvil.

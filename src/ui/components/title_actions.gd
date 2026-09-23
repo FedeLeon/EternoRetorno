@@ -8,7 +8,7 @@ static func build(ui: Control, exit_y: float) -> void:
 	for state in ["normal", "hover", "pressed", "focus"]:
 		var style = StyleBoxFlat.new()
 		style.bg_color = Color("292a30") if state in ["hover", "focus"] else Color("141822")
-		style.border_color = Color("e0c28a") if state in ["hover", "focus"] else Color("98794d")
+		style.border_color = Color("c7bbd6") if state in ["hover", "focus"] else Color("5b5568")
 		style.set_border_width_all(2)
 		style.set_corner_radius_all(7)
 		options.add_theme_stylebox_override(state, style)

@@ -347,3 +347,37 @@ Valor por defecto 1, sin campos nuevos de guardado ni premios simulados.
 solo en importadores. Fuentes intactas, informe separado en docs/quality.
 La exclusión explícita de cómics estáticos reemplazados conserva las cargas
 dinámicas de cartas, enemigos y variantes de equipo. No cambia el runtime.
+
+## Tema gótico compartido — 23/09/2026
+
+`ui/components/dark_skin.gd` concentra el marco escalable y foco. Adaptadores
+`button_skin.gd` y `modal_frame.gd` reutilizan dos texturas en assets/ui/dark.
+Las pantallas mantienen acciones y reglas; el cambio solo afecta presentación.
+Los IDs históricos de estilos se mantienen por compatibilidad.
+
+### Alineación visual de héroes (23/09/2026)
+
+`presentation/hero_grounding.gd` mantiene el borde inferior de los cuadros de
+acción alineado con el reposo mediante `AnimatedSprite2D.offset`. Se conecta desde
+`hero_idle.gd` para los seis actores existentes y responde a sustituciones de
+atlas de herrería. No modifica recursos, posiciones de combate ni reglas.
+
+### Fondo de inventario (23/09/2026)
+
+`ui/components/inventory_background.gd` compone el fondo compartido de consulta
+ de mazo y bolsa. No captura entradas ni depende del estado de la aventura.
+Asset, procedencia e importación documentados en `docs/inventory/README.md`.
+
+### Consulta del mazo extraída (23/09/2026)
+
+`ui/screens/deck_screen.gd` contiene encabezado, contadores y galería de consulta.
+`main.deck_view` delega esta composición y conserva la navegación de vuelta;
+`card_upgrade_screen.gd` sigue siendo la vista de mejora independiente.
+
+### Auditoría de limpieza (23/09/2026)
+
+Se retiraron recursos sustituidos y auxiliares sin consumidores, sin cambiar
+los límites entre reglas, presentación y persistencia. Véase el
+[informe e inventario](cleanup/2026-09-23.md). `main.gd` y `game.gd` siguen
+por encima de la guía de tamaño; próximas extracciones deben centrarse en
+responsabilidades completas, acompañadas de pruebas de navegación y combate.

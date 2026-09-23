@@ -66,6 +66,8 @@ func run_tests() -> void:
 	app.open_equipment()
 	await process_frame
 	await click(Vector2(1060, 675))
+	app.overlay.get_node("StartDungeon1").pressed.emit()
+	await process_frame
 	check(app.screen == "map" and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
 	check(app.game.run.inventory.is_empty(), "new adventure has no consumables")
 	app.game.run.inventory["agility_brew"] = 1 # Explicit UI fixture for bag use.

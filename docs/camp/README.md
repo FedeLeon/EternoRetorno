@@ -1,5 +1,10 @@
 # Campamento de selección
 
+## Limpieza del 23/09/2026
+
+La fogata activa usa `assets/camp/fire-natural.png` (24 cuadros). Se retiraron `fire-64.png`, `fire-128.png`, `fire-detailed.png` y el importador antiguo. Las descripciones anteriores se conservan como historial y procedencia.
+Véase el [inventario de limpieza](../cleanup/2026-09-23.md).
+
 > **Actualización 16/09/2026:** los actores ahora usan cuadros de **128×128**,
 > reimportados desde las fuentes originales. Se mantienen tamaño en pantalla,
 > diseños y alineación. Ver [calidad actual, archivos y pruebas](../quality/README.md).

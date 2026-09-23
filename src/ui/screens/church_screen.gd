@@ -8,9 +8,19 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Iglesia · Elegí tu camino", actions.back, snapshot.souls, "Campamento")
 	if snapshot.hero == "":
+		var heading_frame = Panel.new()
+		heading_frame.name = "ChurchHeadingFrame"
+		heading_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		heading_frame.add_theme_stylebox_override("panel", preload("res://src/ui/components/dark_skin.gd").frame(true))
+		ui.rect(heading_frame, 180, 114, 920, 72)
 		preload("res://src/ui/components/building_hero_picker.gd").build(ui, snapshot.heroes, "Una victoria abre nuevos caminos para cada héroe", "ChurchHero_", actions.hero)
 		return
 	ui.button("Volver a héroes", 32, 92, 248, 48, func(): actions.hero.call("")).name = "BackToHeroes"
+	var specialization_heading = Panel.new()
+	specialization_heading.name = "SpecializationHeadingFrame"
+	specialization_heading.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	specialization_heading.add_theme_stylebox_override("panel", preload("res://src/ui/components/dark_skin.gd").dialog())
+	ui.rect(specialization_heading, 290, 92, 800, 48)
 	ui.label_at(snapshot.heroes[snapshot.hero].name + " · Especializaciones", 290, 92, 800, 48, 27, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(snapshot.options.size()):
 		var spec: Dictionary = snapshot.options[i]

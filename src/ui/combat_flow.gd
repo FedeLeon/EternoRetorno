@@ -42,6 +42,8 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		accepted = ui.game.play_card(hand_index, target_index) if hand_index >= 0 else ui.game.end_turn()
 	if not accepted:
 		return
+	if hand_index >= 0 or synergy_id != "":
+		ui.layer.get_node("CombatHUD").update_energy(ui.game.run.combat.energy)
 	var impacts: Array = ui.game.resolved_card_hits.duplicate(true) if hand_index >= 0 or synergy_id != "" else []
 	ui.combat_busy = true
 	for tip in ui.get_tree().get_nodes_in_group("combat_tip"): tip.queue_free()
@@ -101,6 +103,11 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			if cut_in != null:
 				await cut_in.finished
 			await ui.enemy_art[i].play_once("attack")
+			for hero_index in ui.game.resolved_hero_blocks.get(i, {}):
+				preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[hero_index], ui.game.resolved_hero_blocks[i][hero_index])
+			for hero_index in ui.game.resolved_hero_defenses.get(i, []):
+				if ui.game.run.party[hero_index] in ui.ANIMATED_HEROES:
+					await ui.hero_art[hero_index].play_once("guard")
 	for i in range(before.size()):
 		var after = ui.game.run.heroes[i]
 		ui.hero_health[i].animate_to(after.hp)
@@ -116,12 +123,12 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			await ui.hero_art[i].play_once("revive")
 		elif after.hp < before[i].hp and impacts.is_empty():
 			await ui.hero_art[i].play_once("hurt")
-		elif hand_index < 0 and after.block < before[i].block:
-			await ui.hero_art[i].play_once("guard")
 	for bar in ui.hero_health.values() + ui.enemy_health.values():
 		if bar.animating:
 			await bar.animation_finished
 	while ash_effects.any(func(effect): return is_instance_valid(effect)):
+		await ui.get_tree().process_frame
+	while not ui.get_tree().get_nodes_in_group("block_ash").is_empty():
 		await ui.get_tree().process_frame
 	await ui.get_tree().create_timer(0.18).timeout
 	if ui.game.run.phase == "reward":

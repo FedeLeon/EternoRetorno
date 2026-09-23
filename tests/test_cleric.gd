@@ -58,6 +58,7 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
+	await reaction("attack")
 	check(app.hero_art[0].sprite.animation == "attack", "light uses attack")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
@@ -72,6 +73,7 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "cleric_judgment", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
+	await reaction("attack")
 	check(app.hero_art[0].sprite.animation == "attack", "judgment uses light attack")
 	await create_timer(0.36).timeout
 	await shot("judgment")
@@ -87,6 +89,7 @@ func run_tests() -> void:
 		app.continue_run()
 		app.animate_combat_action(0, 1 if card_id != "cleric_echo" else 0)
 		var expected = "guard" if card_id == "cleric_ward" else "heal"
+		await reaction(expected)
 		check(app.hero_art[0].sprite.animation == expected, card_id + " animation")
 		if card_id == "cleric_ward":
 			check(app.game.run.heroes[1].block == 9 and app.game.run.heroes[0].block == 0, "faith protects chosen ally")

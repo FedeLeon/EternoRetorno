@@ -6,10 +6,11 @@ var number_height = 24.0
 var gaining_block = false
 var icon_texture: Texture2D
 var explanation = ""
+var overlay_number = false
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP if explanation != "" else Control.MOUSE_FILTER_IGNORE
 	if explanation != "":
-		size = Vector2(70, 30)
+		size = Vector2(42, 42) if overlay_number else Vector2(70, 30)
 		mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 		gui_input.connect(func(event):
 			if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -37,6 +38,12 @@ func _ready() -> void:
 	number.position = Vector2(35, (28 - number_height) / 2)
 	number.size = Vector2(minf(35 if number_height < 24 else 41, str(maxi(0, amount)).length() * number_height * 0.65), number_height)
 	add_child(number)
+	if overlay_number:
+		shield.texture = preload("res://assets/ui/block_active.svg")
+		shield.position = Vector2.ZERO
+		shield.size = Vector2(42, 42)
+		number.position = Vector2(4, 9)
+		number.size = Vector2(34, 24)
 
 	if gaining_block:
 		var arrow = TextureRect.new()
@@ -49,7 +56,34 @@ func _ready() -> void:
 		add_child(arrow)
 
 func update_active_block(value: int) -> void:
+	if amount > 0 and value <= 0 and is_visible_in_tree():
+		_dissolve()
 	amount = value
 	visible = amount > 0
 	get_child(1).value = amount
 	explanation = "Bloqueo activo: absorberá hasta %d de daño de los próximos golpes, salvo ataques penetrantes. El sobrante se pierde al comenzar el siguiente turno de esta unidad." % amount
+
+func _dissolve() -> void:
+	# Plain visual snapshot: no indicator script, input callbacks or state mutation.
+	var snapshot = Control.new()
+	snapshot.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	snapshot.position = position
+	snapshot.size = size
+	get_parent().add_child(snapshot)
+	var shield = TextureRect.new()
+	shield.texture = get_child(0).texture
+	shield.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	shield.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	shield.position = get_child(0).position
+	shield.size = get_child(0).size
+	snapshot.add_child(shield)
+	var number = NumberView.new()
+	number.value = amount
+	number.position = get_child(1).position
+	number.size = get_child(1).size
+	snapshot.add_child(number)
+	var ashes = preload("res://src/presentation/card_ash.gd").play(get_parent(), snapshot)
+	ashes.name = "BlockAsh"
+	ashes.add_to_group("block_ash")
+	ashes.tree_exited.connect(func():
+		if is_instance_valid(snapshot): snapshot.queue_free())

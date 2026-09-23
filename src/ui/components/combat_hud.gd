@@ -22,21 +22,21 @@ var show_energy = true
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var bar = ColorRect.new()
-	bar.color = Color("10141f")
+	var bar = Panel.new()
+	bar.add_theme_stylebox_override("panel", preload("res://src/ui/components/dark_skin.gd").frame(true))
 	place(bar, Rect2(0, 0, 1280, 64))
 	bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	entries = relics + equipment
-	var spacing = minf(68, 792.0 / maxi(1, entries.size()))
+	var spacing = minf(68, 780.0 / maxi(1, entries.size()))
 	for i in range(entries.size()):
 		var relic = entries[i]
 		var texture = preload("res://src/presentation/relic_art.gd").texture(relic)
-		var target = icon_button(texture, Rect2(20 + i * spacing, 4, minf(56, spacing - 4), 56), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
+		var target = icon_button(texture, Rect2(32 + i * spacing, 8, minf(52, spacing - 4), 48), relic.owner + " · " + relic.name, func(): relic_requested.emit(i))
 		target.name = "Relic%d" % i
 		if relic.has("level"):
 			var number = NumberView.new()
 			number.value = relic.level
-			number.position = Vector2(38, 34)
+			number.position = Vector2(34, 28)
 			number.size = Vector2(18, 22)
 			number.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			target.add_child(number)
@@ -47,11 +47,11 @@ func _ready() -> void:
 		add_number(item_count, Rect2(933, 1, 36, 25), "BagCount")
 	var deck = icon_button(preload("res://assets/ui/deck.svg"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())
 	deck.name = "Deck"
-	text_button("Menú", Rect2(1010, 8, 110, 48), func(): menu_requested.emit())
+	text_button("Menú", Rect2(1014, 12, 102, 40), func(): menu_requested.emit())
 	var title = Label.new()
 	title.text = "TURNO"
 	title.add_theme_font_size_override("font_size", 16)
-	title.add_theme_color_override("font_color", Color("d8b779"))
+	title.add_theme_color_override("font_color", Color("b6adbf"))
 	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	place(title, Rect2(1134, 12, 65, 40))
 	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -69,6 +69,12 @@ func _ready() -> void:
 	orb.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(orb, Rect2(16, 572, 140, 140))
 	add_number(energy, Rect2(49, 615, 74, 52), "EnergyNumber")
+
+func update_energy(amount: int) -> void:
+	energy = amount
+	var display = get_node_or_null("EnergyNumber")
+	if display != null:
+		display.value = amount
 
 func place(node: Control, area: Rect2) -> void:
 	node.position = area.position

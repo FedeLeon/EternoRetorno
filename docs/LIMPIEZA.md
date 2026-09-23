@@ -1,6 +1,11 @@
 # Limpieza del proyecto
 
-## Auditoría actual — 18/09/2026
+## Auditoría actual — 23/09/2026
+
+[Informe y manifiesto](cleanup/2026-09-23.md): recursos visuales reemplazados,
+capturas y código auxiliar sin uso. Se conservan las pruebas de regresión útiles.
+
+## Auditoría anterior — 18/09/2026
 
 [Informe e inventario de archivos retirados](cleanup/2026-09-18.md): 15 archivos
 obsoletos, aproximadamente 8,6 MiB. Extracción de pantalla/flujo de combate y
@@ -32,7 +37,8 @@ no forman parte del juego exportado. No se borran por ser archivos de prueba.
 Los `.gd.uid` y los `.import` de recursos activos son metadatos de Godot.
 Se conservan 28 fuentes PNG usadas por importadores y los prompts de procedencia.
 Los 56 enemigos actuales incluyen los reservados para futuras mazmorras.
-La fogata sigue usando `fire-64.png`: no tiene un reemplazo y permanece activa.
+En esa fecha la fogata usaba `fire-64.png`; el 23/09 se retiró tras ser
+reemplazado por `fire-natural.png`.
 
 ## Para no volver a acumular capturas
 

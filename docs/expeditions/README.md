@@ -97,3 +97,12 @@ el resultado como una aventura no ganada.
 
 La navegación está en `src/ui/pause_navigation.gd`; `main.gd` delega allí. Se
 impide abrir el menú durante acciones de combate en reproducción.
+
+## Selección exclusiva — 23/09/2026
+
+Al elegir un contrato, los botones de los otros dos quedan deshabilitados. El
+contrato elegido conserva «Elegido · Cancelar»: al cancelarlo se habilitan las tres
+ofertas. Durante una aventura siguen bloqueados todos los contratos.
+Implementado en `src/ui/screens/expeditions_screen.gd`, sin cambios de guardado.
+Validación local headless: `tests/test_camp_expansion_ui.gd`, 36 comprobaciones sin
+fallos, incluyendo selección, cancelación y elección de otro contrato. Sin exportación.

@@ -1615,3 +1615,206 @@ o contrato se pierde, sin migración de partidas.
 `test_camp_expansion_ui.gd`: 30 comprobaciones headless aprobadas con las
 nuevas ubicaciones; conserva pasos de clic de carteles vecinos. Diff correcto.
 Sin exportación ni revisión visual en navegador/dispositivo en este cambio.
+
+## Volver a héroes en el encabezado — 23/09/2026
+
+Mercado y Herrería ubican el botón dentro del panel derecho, a la derecha del
+título. El mercado reserva ancho para el nombre y Nuevas cartas; la herrería
+baja la vista del héroe y sus mejoras para evitar superposiciones. Se conserva
+el estilo de tablón y la navegación existente.
+
+Pruebas headless: mercado 61 y herrería 110 comprobaciones sin fallos.
+Revisión visual local de ambas vistas a 1280×720; capturas temporales retiradas.
+Sin exportación ni validación Web/móvil.
+
+## Interfaz oscura basada en el inicio — 23/09/2026
+
+- Dos assets nuevos de metal gris gótico y fondo carbón, con matices violetas.
+  Integrados en botones, barras, carteles, paneles, modales y descripciones.
+- Estilos compartidos en dark_skin, foco visible y estados de interacción.
+  Márgenes del mercado ajustados y círculo de terminar turno en nueva paleta.
+- Prompts/procedencia y alcance en docs/ui_buttons/dark. Importación a 512 px
+  sin pérdida. Ilustraciones, cartas y colores por héroe conservados.
+- Pruebas locales: mercado 61, herrería 110, equipo 48, mapa 109 y bolsa sin
+  fallos. Revisión visual de cinco vistas; diff correcto. Prueba de equipo
+  actualizada al selector de mazmorra existente. Sin exportación Web/APK.
+
+## 23/09/2026 — Marco del encabezado de la iglesia
+
+- `church_screen.gd`: fondo y marco oscuro compartido detrás de «Una victoria abre
+  nuevos caminos para cada héroe», para separarlo del interior de la iglesia.
+- Documentación: `docs/church/README.md`.
+- Verificación: vista renderizada local a 1280×720 y `git diff --check`; sin exportar.
+
+## 23/09/2026 — Contratos alternativos deshabilitados
+
+- Expediciones: elegir un contrato deshabilita las otras dos ofertas hasta cancelar
+  el seleccionado; aclaración visible del flujo. Se conserva el bloqueo durante la run.
+- Archivos: `src/ui/screens/expeditions_screen.gd`, `tests/test_camp_expansion_ui.gd`
+  y `docs/expeditions/README.md`.
+- Validación local headless: 36 comprobaciones, 0 fallos; `git diff --check` limpio.
+  Sin revisión visual nueva ni exportación.
+
+## 23/09/2026 — Defensa solo del héroe atacado
+
+- Corregido el disparo de la pose de defensa por la expiración general del bloqueo.
+  Ahora responde al bloqueo consumido por cada ataque real, respetando sus objetivos.
+- `src/game.gd` emite resultados transitorios por enemigo;
+  `src/ui/combat_flow.gd` reproduce esas defensas después del ataque.
+- Documentado en `docs/hud/README.md`. Prueba local headless
+  `tests/test_turn_sequence.gd`: 170 comprobaciones, 0 fallos;
+  `git diff --check` limpio. Sin exportar ni nueva revisión visual.
+
+## 23/09/2026 — El héroe mantiene el suelo al atacar
+
+- Compensación por cuadro del margen transparente que elevaba los ataques frente
+  al reposo, compatible con los seis héroes y sus atlas de equipo.
+- Nuevo `src/presentation/hero_grounding.gd`, integrado desde `hero_idle.gd`;
+  documentación en HUD y arquitectura. No se modifican los assets originales.
+- Pruebas locales: alineación 486 y secuencia de turno 170 comprobaciones sin
+  fallos; revisión renderizada del guerrero equipado en reposo y ataque.
+  Sin exportar ni validar en web/móvil.
+
+## 23/09/2026 — Descuento inmediato de energía visible
+
+- El contador de batalla refleja el coste de cartas y enlaces aceptados antes de
+  sus animaciones, mediante `combat_flow.gd` y `combat_hud.gd`.
+- Documentado en `docs/hud/README.md`; prueba local headless
+  `tests/test_energy_timing.gd`: 5 comprobaciones sin fallos.
+- `git diff --check` limpio. Sin exportación ni revisión visual nueva.
+
+## 23/09/2026 — Marcos limpios en botones pequeños
+
+- `dark_skin.gd` incorpora un estilo de botón con fondo uniforme y borde de 2 px;
+  `button_skin.gd` lo comparte entre controles y carteles pequeños, manteniendo
+  los marcos ornamentales de encabezados y bloques grandes.
+- Documentado en `docs/ui_buttons/README.md`. Revisión renderizada local del
+  campamento a 1280×720 y `git diff --check` limpio. Sin exportación.
+
+## 23/09/2026 — Restaurar el botón circular de terminar turno
+
+- `end_turn_button.gd` recupera `end_turn_round.png` y sus estados visuales previos
+  al rediseño oscuro. Documentado en `docs/hud/README.md`.
+- Verificado contra la implementación anterior y con `git diff --check`.
+  Sin nueva revisión visual ni exportación.
+
+## 23/09/2026 — Modales limpios y detalle metálico en botones
+
+- Dos assets SVG nuevos: `button_trim.svg` y `dialog_trim.svg`; contornos
+  discretos y detalles contenidos en el borde, sin cruzarse con los textos.
+- `dark_skin.gd` centraliza las variantes; modales, reliquias e intenciones
+  usan el marco fino. Se conservan los marcos grandes y el botón circular de turno.
+- Procedencia y documentación en `docs/ui_buttons/dark/README.md`.
+- Revisión renderizada local del Escudo del Peregrino y botones de campamento;
+  prueba headless de bolsa sin fallos, `git diff --check` limpio. Sin exportar.
+
+## 23/09/2026 — Marco del título de especializaciones
+
+- `church_screen.gd`: marco oscuro fino tras «Héroe · Especializaciones»,
+  reutilizando `DarkSkin.dialog` y conservando posición y navegación.
+- Documentado en `docs/church/README.md`. Revisión renderizada local con
+  Explorador a 1280×720 y `git diff --check` limpio. Sin exportar.
+
+## 23/09/2026 — Fondo para ver mazo y bolsa
+
+- Generado `assets/inventory/background.png`: fondo gótico oscuro con centro
+  libre y decoraciones de cartas y bolsa en los extremos.
+- Integrado mediante `inventory_background.gd` en mazo e inventario, con
+  importación Lossy 0,85 / 1280 px. Prompt y procedencia en `docs/inventory`.
+- Ambas vistas revisadas renderizadas a 1280×720; prueba local headless de bolsa
+  sin fallos; `git diff --check`. Sin exportación.
+
+## 23/09/2026 — Ajustes de botones y carteles del campamento
+
+- Menú superior más pequeño (102×40); Mercado construido 20 px más abajo;
+  Aventuras 90 px a la derecha. Áreas pulsables y exclusiones de carteles actualizadas.
+- Archivos: `preparation_header.gd`, `combat_hud.gd`, `base_camp_screen.gd` y
+  helper `camp_hotspot` de `main.gd`. Documentación en campamento y botones.
+- Revisión local renderizada a 1280×720 con edificios construidos, 36 comprobaciones
+  de expansión sin fallos y `git diff --check` limpio. Sin exportar.
+
+## 23/09/2026 — Nueva secuencia de fuego pixel art
+
+- Generado `assets/camp/fire-detailed.png`: 16 cuadros transparentes en 4×4.
+- `campfire.gd` reproduce un ciclo de 1,6 s, estabiliza la base de cada pose y
+  suaviza el pulso de luz. Documentación y prompt en `docs/base_camp`.
+- Ejecución local renderizada: se observaron los 16 cuadros; revisión del
+  campamento diurno y `git diff --check` limpio. Sin exportar.
+
+## 23/09/2026 — Marco al borde y reliquias despejadas
+
+- `dark_skin.gd`: región de textura ajustada al perímetro metálico, sin la franja
+  negra externa; esquinas menos invasivas en encabezados y paneles compartidos.
+- `combat_hud.gd`: iconos de reliquia/equipo y niveles dentro del interior libre.
+- Documentado en HUD y tema oscuro. Revisión renderizada local a 1280×720,
+  prueba headless de equipo (48 comprobaciones sin fallos), `git diff --check`.
+  Sin exportación ni validación web/móvil.
+
+## 23/09/2026 — Fogata pixel art de apariencia más natural
+
+- Nuevo atlas `assets/camp/fire-natural.png`, 24 cuadros de llamas delgadas y
+  brasas, creado con image_gen. Sustituye la secuencia de 16 cuadros en `campfire.gd`.
+- Ciclo de 1,71 s a 14 fps, alineación de base y chispas menores y menos numerosas.
+- Prompt y procedencia en `docs/base_camp/fire-natural.json`; documentación del
+  sistema actualizada. Verificación RGBA y reproducción local de los 24 cuadros,
+  revisión renderizada en campamento y `git diff --check`. Sin exportar.
+
+## 23/09/2026 — Vista de mazo más vertical y legible
+
+- Extraída la galería a `deck_screen.gd`: cartas 224×336, contadores enmarcados,
+  sin marca Eterno Retorno ni Menú; Volver arriba a la derecha.
+- Documentados inventario y arquitectura. Revisión renderizada local a 1280×720,
+  verificadas 20 cartas y retorno al combate; `git diff --check`. Sin exportar.
+
+## 23/09/2026 — Volver arriba en la bolsa
+
+- `items_screen.gd`: Volver sustituye Menú en el encabezado; eliminado el botón
+  inferior. `preparation_header.gd` admite el ancho de navegación y retorna su botón.
+- Documentación de objetos actualizada; prueba headless de bolsa sin fallos y
+  `git diff --check` limpio. Sin exportar ni nueva revisión visual.
+
+## 23/09/2026 — Escudo gris con bloqueo sobre la vida
+
+- Asset nuevo `block_active.svg`, gris con número superpuesto; posición al extremo
+  izquierdo de la barra para héroes y enemigos. Mantiene explicación al tocarlo.
+- Cambios en `block_indicator.gd`, `status_effects.gd` y `combat_screen.gd`;
+  documentación y procedencia vectorial en `docs/hud/README.md`.
+- Revisión renderizada local con dos héroes/tres enemigos y prueba de secuencia
+  de turno (171 comprobaciones sin fallos); `git diff --check`. Sin exportar.
+
+## 23/09/2026 — Barra de vida como tubo de sangre
+
+- `health_bar.gd` aplica nuevo `health_liquid.gdshader`: líquido rojo animado,
+  burbujas, reflejo y contorno metálico. Eliminado el corazón, texto centrado.
+- Conserva decremento gradual y escudo; se retiran referencias al corazón desde
+  bloqueo/estados/pantalla. Documentado en `docs/hud/README.md`.
+- Validación: 170 comprobaciones de secuencia de turno sin fallos, render local
+  Compatibility con vida completa/parcial y escudo, `git diff --check` limpio.
+  Sin exportar ni verificar web/móvil.
+
+## 23/09/2026 — Botones Volver sin icono
+
+- Quitada la flecha de Volver desde el helper compartido y eliminado su dibujo
+  específico en `button_skin.gd`. Textos y callbacks conservados.
+- Documentado en `docs/ui_buttons/README.md`; prueba headless de bolsa sin fallos,
+  revisión de referencias y `git diff --check`. Sin exportar.
+
+## 23/09/2026 — Bloqueo que se esfuma en cenizas
+
+- Escudo y número usan el efecto de cartas cuando el bloqueo llega a cero;
+  las reducciones parciales no lo disparan. Copia visual sin callbacks de juego.
+- Recibos de bloqueo por ataque enemigo y espera de efectos antes de reconstruir
+  combate. Documentado en `docs/hud/README.md`.
+- Prueba de cenizas: 5 comprobaciones sin fallos headless y Compatibility;
+  secuencia de turno: 171 sin fallos. `git diff --check`. Sin exportar.
+
+## Limpieza de recursos y pruebas — 23/09/2026
+
+- Retirados 66 archivos (62,61 MiB): ataques estáticos reemplazados, marcos y
+  botones anteriores, fuegos antiguos, importador obsoleto y capturas temporales.
+- Eliminadas referencias auxiliares sin uso y exclusiones de rutas retiradas.
+- Conservados recursos dinámicos, procedencia de arte, guardados y TestWeb.
+- Actualizadas nueve pruebas: selección/fogata, HUD, seis héroes y disposición
+  de combate; 55/55 scripts aprobados localmente en headless tras las correcciones.
+- Importación y referencias verificadas; sin exportación ni nueva revisión visual.
+- [Informe, decisiones e inventario](cleanup/2026-09-23.md).

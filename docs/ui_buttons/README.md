@@ -1,5 +1,10 @@
 # Botones y preparación de aventura — 17/09/2026
 
+## Limpieza del 23/09/2026
+
+Se retiraron los cuatro PNG restantes del estilo de madera, el marco de modal anterior, `end_turn.png` y `heart.svg`, sin consumidores actuales. Se conservan el estilo oscuro activo y `end_turn_round.png`.
+Véase el [inventario de limpieza](../cleanup/2026-09-23.md).
+
 ## Comportamiento actual
 
 - Tema compartido de botones de acción con marco de hierro oscuro y oro.
@@ -118,3 +123,44 @@ centrado, calculando su ancho con la fuente actual. Conserva los colores de
 interacción y toda el área pulsable. Las otras flechas no cambian.
 Revisión local renderizada del menú a 1280×720, sin errores.
 Sin exportación ni validación Web/móvil en este cambio.
+
+## Estética vigente — 23/09/2026
+
+La interfaz usa negro carbón y metal gris con matiz violeta, siguiendo el inicio.
+Reemplaza visualmente los tablones/marcos dorados descritos en entradas anteriores.
+[Assets, integración y validación](dark/README.md).
+
+## Botones compactos legibles — 23/09/2026
+
+Los botones y carteles pequeños usan `DarkSkin.button`: fondo oscuro uniforme,
+borde de 2 px pegado al perímetro y esquinas de 3 px. El centro queda libre de
+ornamentos para no interferir con los textos. Conservan sus estados de hover,
+pulsado, deshabilitado y foco. `ButtonSkin.style` retorna `StyleBox` para admitir
+ambos estilos; `header_frame` y `party_panel` siguen usando el asset ornamental,
+al igual que los paneles grandes y modales mediante `DarkSkin.frame`.
+
+Revisión visual local del campamento a 1280×720: carteles, Refugio y botón Menú
+legibles; marco superior conservado. `git diff --check` sin errores.
+Sin exportar ni verificar web/móvil.
+
+### Refinamiento de bordes — 23/09/2026
+
+Los botones compactos ahora usan un SVG de borde metálico biselado con pequeños
+remaches, manteniendo libre el centro. Modales y cuadros emergentes usan otro
+SVG de contorno fino sin ornamentos invasivos. Implementación y procedencia:
+[marcos oscuros](dark/README.md#marcos-contenidos-y-botones-metálicos--23092026).
+
+### Separación del botón Menú — 23/09/2026
+
+En encabezados de preparación/campamento y combate, Menú mide 102×40 y queda
+centrado con mayor separación del marco. El botón Campamento del encabezado
+compartido conserva su ancho y adopta también la altura de 40 px.
+
+### Volver sin flecha — 23/09/2026
+
+El helper común `main.button` deja de aplicar icono a «Volver», incluyendo
+navegación y modales. Se elimina el dibujo especial de su flecha en `button_skin`.
+Las variantes «Volver a héroes/personajes/campamento» ya eran solo texto.
+Se conserva `arrow_left.svg` porque sigue usándose en Inicio.
+Prueba local headless de bolsa sin fallos (incluye regreso); búsqueda de usos y
+`git diff --check` limpio. Sin nueva revisión visual ni exportación.

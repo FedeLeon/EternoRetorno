@@ -66,3 +66,19 @@ Referencias de identidad: `assets/rest/<hero>.png`. Empaquetado con `scripts/imp
 Validación local compartida: [pruebas de la expansión](../expeditions/README.md#validación-y-pendientes).
 Se revisaron las pantallas renderizadas y las ilustraciones; no hubo exportación ni prueba móvil/web.
 Precios y bonos son valores iniciales para probar y ajustar.
+
+## Legibilidad del encabezado — 23/09/2026
+
+La galería de héroes muestra «Una victoria abre nuevos caminos para cada héroe»
+sobre un marco gótico oscuro compartido (`dark_skin.gd`), colocado en
+`church_screen.gd`. El texto permanece centrado y el marco no captura pulsaciones.
+Revisión visual local a 1280×720: texto legible y tarjetas libres de superposiciones.
+Sin exportación ni validación web/móvil para este ajuste.
+
+### Título de especializaciones — 23/09/2026
+
+El encabezado «Héroe · Especializaciones» también tiene fondo oscuro y marco
+fino compartido (`DarkSkin.dialog`), en `SpecializationHeadingFrame`. Conserva
+su posición centrada y deja separado el botón de volver a héroes. El panel no
+captura eventos del ratón. Revisión renderizada local a 1280×720 con Explorador:
+título legible, sin superposición con tarjetas ni navegación. Sin exportación.

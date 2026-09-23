@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **22/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **23/09/2026**.
 
 ## Estado actual
 
@@ -35,7 +35,9 @@ La APK existente corresponde a una entrega anterior. Los cambios recientes se
 probaron localmente; **no se exporta una APK por cada cambio**. La validación
 Android histórica no certifica la interfaz actual.
 
-Auditoría del 18/09: [limpieza y separación de módulos](cleanup/2026-09-18.md),
+Limpieza actual: [auditoría del 23/09](cleanup/2026-09-23.md).
+
+Auditoría histórica del 18/09: [limpieza y separación de módulos](cleanup/2026-09-18.md),
 con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 ## Guías por sistema

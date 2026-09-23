@@ -15,11 +15,7 @@ static func show_for(source: Control, message: String) -> void:
 	popup.z_as_relative = false
 	popup.z_index = 180
 	popup.add_to_group("combat_tip")
-	var style = StyleBoxFlat.new()
-	style.bg_color = Color("151c29")
-	style.border_color = Color("c4a467")
-	style.set_border_width_all(2)
-	style.set_corner_radius_all(7)
+	var style = preload("res://src/ui/components/dark_skin.gd").dialog()
 	style.content_margin_left = 14
 	style.content_margin_right = 14
 	style.content_margin_top = 12

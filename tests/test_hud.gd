@@ -39,7 +39,7 @@ func run_tests() -> void:
 	await process_frame
 	var hud = app.layer.get_node("CombatHUD")
 	check(hud.relics.size() == 1, "One equipped relic in toolbar")
-	check(hud.get_node("Relic0").global_position.y == 4, "Relics at top left")
+	check(hud.get_node("Relic0").global_position.y == 8, "Relics at top left")
 	for key in ["Relic0", "Bag", "Deck"]:
 		var target = hud.get_node(key)
 		check(target.text == "" and target.get_theme_stylebox("normal") is StyleBoxEmpty, key + " image only")
@@ -49,7 +49,7 @@ func run_tests() -> void:
 	app.back()
 	await process_frame
 	hud = app.layer.get_node("CombatHUD")
-	var indicators = app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd"))
+	var indicators = app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.visible and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd"))
 	check(indicators.size() == 4 and indicators.all(func(n): return n.amount > 0), "Only active statuses shown")
 	check(indicators.any(func(n): return n.amount == 12) and indicators.any(func(n): return n.amount == 7), "Hero and enemy block amounts")
 	for indicator in indicators:
@@ -60,14 +60,9 @@ func run_tests() -> void:
 	for indicator in indicators.filter(func(n): return n.name == "Block"):
 		var actor_button = indicator.get_parent().get_parent()
 		var bar = actor_button.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/components/health_bar.gd"))[0]
-		if bar in app.hero_health.values():
-			check(indicator.global_position.y + 30 < bar.global_position.y, "hero block above life")
-			var poison = indicator.get_parent().get_node_or_null("Poison")
-			check(poison == null or not indicator.get_global_rect().intersects(poison.get_global_rect()), "hero status icons do not overlap")
-		else:
-			check(indicator.global_position.x + 70 < bar.global_position.x, "enemy block remains left of life")
-			check(absf(indicator.global_position.y - bar.global_position.y) < 2, "enemy block remains aligned to life")
-		check(indicator.get_child(1).size.y == 18, "active block uses smaller digits")
+		check(is_equal_approx(indicator.get_global_rect().get_center().x, bar.global_position.x), "active shield centered on left end of life")
+		check(absf(indicator.get_global_rect().get_center().y - bar.get_global_rect().get_center().y) < 2, "active shield aligned to life")
+		check(indicator.get_child(1).size.y == 24 and indicator.overlay_number, "active block digits overlay shield")
 	var intent = app.layer.get_node("EnemyIntent0")
 	check(intent.get_node("Block").has_node("BlockUp"), "block intention includes green arrow")
 	check(intent.get_node("Block").position.x > intent.get_node("Attack").position.x, "block intent beside attack")
@@ -92,7 +87,7 @@ func run_tests() -> void:
 	check(is_instance_valid(hud.popover) and not is_instance_valid(app.overlay), "Anchored description without modal")
 	check(hud.popover.find_children("*", "Label", true, false).any(func(n): return "Clériga" in n.text), "Phoenix state identifies each hero")
 	check(hud.popover.find_children("*", "Button", true, false).is_empty(), "Description has no buttons")
-	check(hud.popover.position.y == 70, "Description below relic")
+	check(hud.popover.position.y == hud.get_node("Relic0").get_rect().end.y + 10, "Description below relic")
 	await shot("relic-popover")
 	await click(Vector2(600, 250))
 	check(not is_instance_valid(hud.popover), "Outside touch closes description")
@@ -104,12 +99,12 @@ func run_tests() -> void:
 	check(not is_instance_valid(hud.popover) and app.screen == "combat", "Back dismisses description")
 	check(hud.get_node("EnergyOrb").material is ShaderMaterial, "Energy flow shader attached")
 	for actor in app.enemy_art.values():
-		check(actor.scale == Vector2.ONE * 1.5625, "Enemies enlarged by another 25 percent")
+		check(actor.scale == Vector2.ONE * 1.8125, "Enemies use current combat scale")
 	for i in app.hero_art:
 		var actor = app.hero_art[i]
 		var height = preload("res://src/ui/components/combat_actor_scale.gd").IDLE_HEIGHT[app.game.run.heroes[i].id]
 		height = float(actor.get_meta("idle_height", height))
-		check(is_equal_approx(actor.scale.y * height, 142.1875), "Hero silhouettes have common enlarged height")
+		check(is_equal_approx(actor.scale.y * height, 164.9375), "Hero silhouettes have common enlarged height")
 	await click(Vector2(925, 32))
 	check(app.screen == "items", "Icon bag opens")
 	app.back()
@@ -125,7 +120,7 @@ func run_tests() -> void:
 	app.game.run.combat.turn = 12
 	app.continue_run()
 	await process_frame
-	check(app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd")).is_empty(), "Indicators disappear when statuses expire")
+	check(app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.visible and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd")).is_empty(), "Indicators disappear when statuses expire")
 	hud = app.layer.get_node("CombatHUD")
 	check(hud.get_node("EnergyNumber").value == 0, "Zero energy visible")
 	check(hud.get_node("TurnNumber").get_child_count() == 2, "Multi-digit turn")

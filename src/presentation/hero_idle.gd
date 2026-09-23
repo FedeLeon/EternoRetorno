@@ -5,6 +5,7 @@ var clock = 0.0
 var material: ShaderMaterial
 
 static func attach(owner_actor: Control, hero: String) -> void:
+	preload("res://src/presentation/hero_grounding.gd").attach(owner_actor.sprite)
 	var effect = new()
 	effect.name = "SteadyIdle"
 	effect.actor = owner_actor

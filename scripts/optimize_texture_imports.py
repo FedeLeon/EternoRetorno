@@ -16,7 +16,7 @@ def policy(path):
         return 1, 0.85, 0  # Keep animation frames and portrait crops unchanged.
     if path.startswith('assets/cards/art/'):
         return 1, 0.85, 0 if path.endswith('/originals.png') else 512
-    if path.startswith('assets/ui/buttons/'):
+    if path.startswith('assets/ui/dark/'):
         return 0, 0.7, 512
     if path.startswith('assets/cards/frames/'):
         return 0, 0.7, 768
@@ -45,14 +45,9 @@ def main():
     if report_only:
         (REPORT / 'after.json').write_text(json.dumps(rows, indent=2)+'\n')
         total = sum(r['bytes'] for r in rows)
-        excluded = sum(r['bytes'] for r in rows if r['asset'].startswith('assets/comic/attacks/'))
-        print(f'Imported PNGs: {total / 1048576:.2f} MiB; included after exclusions: {(total-excluded) / 1048576:.2f} MiB')
+        print(f'Imported PNGs: {total / 1048576:.2f} MiB')
         return
     if not baseline.exists(): baseline.write_text(json.dumps(rows, indent=2)+'\n')
-    presets = ROOT / 'export_presets.cfg'
-    text = presets.read_text()
-    text = re.sub(r'^exclude_filter="([^"]*)"', lambda m: 'exclude_filter="'+m[1]+('' if 'assets/comic/attacks/*' in m[1] else ',assets/comic/attacks/*')+'"', text, flags=re.M)
-    presets.write_text(text)
     print('Policy applied; originals untouched. Reimport in Godot, no export needed.')
 
 if __name__ == '__main__': main()

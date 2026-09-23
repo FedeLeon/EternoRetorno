@@ -30,7 +30,7 @@ func run_tests() -> void:
 	app.open_selection()
 	await create_timer(0.2).timeout
 	var fire = app.layer.get_node("Campfire")
-	check(fire.flame.sprite_frames.get_frame_count("default") == 8, "detailed fire has eight frames")
+	check(fire.flame.sprite_frames.get_frame_count("default") == 24, "natural fire has twenty-four frames")
 	for id in app.game.content.heroes:
 		var seat = app.layer.get_node("CampHero_" + id + "/SeatedHero")
 		check(seat.texture.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
@@ -59,6 +59,7 @@ func run_tests() -> void:
 	await create_timer(0.2).timeout
 	await capture("camp-selected")
 	app.begin()
+	app.overlay.get_node("StartDungeon1").pressed.emit()
 	check(app.screen == "map" and app.game.run.party == ["warrior", "cleric"], "chosen pair enters dungeon")
 	print("CAMP CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

@@ -7,7 +7,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 	ui.rect(fire, 643, 396, 1, 1)
 	fire.scale = Vector2(0.62, 0.62)
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Campamento, un lugar al que volver...", actions.home, profile.souls)
-	ui.camp_hotspot("CampExit", Rect2(960, 115, 155, 135), "Aventuras", actions.prepare)
+	ui.camp_hotspot("CampExit", Rect2(960, 115, 155, 135), "Aventuras", actions.prepare, false, Vector2(90, 0))
 	if profile.buildings.get("market", false):
 		var building = TextureRect.new()
 		building.name = "MarketBuilding"
@@ -36,7 +36,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 				hotspot.passthrough_areas.append(market_caption)
 			continue
 		if i == 0:
-			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market, profile.buildings.get("market", false))
+			ui.camp_hotspot("Plot0", Rect2(91, 111, 310, 235) if profile.buildings.get("market", false) else plots[0], "Mercado" if profile.buildings.get("market", false) else "Solar 1 · Mercado", actions.market, profile.buildings.get("market", false), Vector2(0, 20) if profile.buildings.get("market", false) else Vector2.ZERO)
 			continue
 		var id = "expeditions" if i == 1 else "church"
 		var built = profile.buildings.get(id, false)

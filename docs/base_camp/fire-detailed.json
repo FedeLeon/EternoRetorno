@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-23",
+  "tool": "image_gen",
+  "prompt": "Production game sprite sheet, transparent background with real alpha, no checkerboard drawn. Pixel art detailed campfire FLAMES ONLY no logs no ground no stones no shadows. Exactly 16 animation frames arranged precisely in an evenly spaced 4 columns by 4 rows grid, equal square cells, read left to right top to bottom. Each cell contains the SAME small bright golden-orange campfire with luminous cream core, amber layered tongues and dark orange tips, high quality detailed pixel art with clean crisp pixel clusters and nuanced color ramps. Every flame anchored exactly at bottom center of its cell with base at 88 percent cell height, same base width about 40 percent cell width, peak about 15 percent cell height. Fully contained within each cell with generous transparent padding, no detached particles outside silhouette. Animation storyboard: a single smooth slow continuous looping flame cycle over 16 frames, minor tongues drift upward and sideways incrementally, NO sudden changes of shape or scale, base stable, small tongues split and merge gradually, final frame transitions naturally to first. Flames roughly equally tall across all frames. No labels, no text, no outlines around cells, no grid lines, no decorative icons. Square image, ideally 1024x1024, cells equal 256x256. Intended for a dark fantasy pixel art game's campfire.",
+  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-567ec35c-ecb1-4500-a75a-ebb2d2c05b0b.png",
+  "asset": "assets/camp/fire-detailed.png",
+  "grid": [
+    4,
+    4
+  ],
+  "size": [
+    1254,
+    1254
+  ],
+  "fps": 10,
+  "baseline_method": "Last row containing over 30 pixels with alpha > 0.5 in each cell; sprite offset compensates +/-1 pixel."
+}

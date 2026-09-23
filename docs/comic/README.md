@@ -1,5 +1,10 @@
 # Apariciones de ataque en cómic — 18/09/2026
 
+## Limpieza del 23/09/2026
+
+Las 18 imágenes estáticas adicionales de `assets/comic/attacks/` se retiraron: el juego utiliza las 24 secuencias de `assets/comic/motion/`. Los retratos base se conservan para otras pantallas.
+Véase el [inventario de limpieza](../cleanup/2026-09-23.md).
+
 Cada héroe tiene una ilustración estática propia en primer plano, tomada de los
 concepts individuales del usuario. Se conservan la transparencia RGBA y el contorno blanco originales.
 Las líneas de velocidad se dibujan detrás de la ilustración.
