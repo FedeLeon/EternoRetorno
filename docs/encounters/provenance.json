@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-30",
+  "tool": "image_gen (built-in)",
+  "assets": [
+    {
+      "id": "well",
+      "asset": "assets/encounters/well.png",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-09319615-37af-4225-b494-5ae305387efe.png",
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 full-screen background for Eterno Retorno, a mature dark medieval fantasy pixel-art RPG. Detailed crisp pixel art, charcoal stone, restrained jewel colors, gothic atmosphere consistent with a dark fantasy dungeon and ancient forest ruins. No characters, no text, no lettering, no UI, no frames, no watermark. Composition is crucial: the encounter focal object and magical light must be in the upper middle at x=50%, y=38% of the frame; lower 40% is dim uncluttered stone floor reserved for a compact game dialog overlay. Wider environmental architecture at left and right. Landscape 16:9. Scene: an ancient circular stone wishing well in a ruined vaulted chamber overgrown with moss and thin roots. Clearly visible oval turquoise water surface on the well at x50%, y38%, with a gentle warm mystical glow and delicate wisps above the water. Broken stone archways, weathered columns, wet stone reflections, subdued candlelight. The well is broad and seen from a slightly elevated angle so the water surface is visible. Mysterious and inviting."
+    },
+    {
+      "id": "altar",
+      "asset": "assets/encounters/altar.png",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dac9a824-9c56-43bb-afed-d90714fb469c.png",
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 full-screen background for Eterno Retorno, a mature dark medieval fantasy pixel-art RPG. Detailed crisp pixel art, charcoal stone, restrained jewel colors, gothic atmosphere consistent with a dark fantasy dungeon and ancient forest ruins. No characters, no text, no lettering, no UI, no frames, no watermark. Composition is crucial: the encounter focal object and magical light must be in the upper middle at x=50%, y=38% of the frame; lower 40% is dim uncluttered stone floor reserved for a compact game dialog overlay. Wider environmental architecture at left and right. Landscape 16:9. Scene: a low ancient sacrificial altar carved from cracked black stone, upper center of composition. A narrow glowing crimson-purple fissure in its top slab at x50%, y38%; within the fissure a single intact silver blade catches the light. Small red ritual embers and worn runic carvings without readable lettering. Heavy stone pillars, roots entering through ancient masonry, deep shadows. Ominous but no blood and no corpses."
+    },
+    {
+      "id": "library",
+      "asset": "assets/encounters/library.png",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-54d68134-c1e9-40c1-ad26-c52205363498.png",
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 full-screen background for Eterno Retorno, a mature dark medieval fantasy pixel-art RPG. Detailed crisp pixel art, charcoal stone, restrained jewel colors, gothic atmosphere consistent with a dark fantasy dungeon and ancient forest ruins. No characters, no text, no lettering, no UI, no frames, no watermark. Composition is crucial: the encounter focal object and magical light must be in the upper middle at x=50%, y=38% of the frame; lower 40% is dim uncluttered stone floor reserved for a compact game dialog overlay. Wider environmental architecture at left and right. Landscape 16:9. Scene: a sunken ruined medieval library inside an ancient vaulted ruin. Towering broken bookcases and roots flank both sides. A stone reading lectern holds one large open luminous book at x50%, y38%. Worn loose parchment fragments nearby and gentle gold-violet dust in moonbeams, dark still shallow water at the distant edges. The precious open book stands out. No readable writing on pages. Quiet, melancholic and magical."
+    }
+  ]
+}

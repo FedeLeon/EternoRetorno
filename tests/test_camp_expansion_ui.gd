@@ -13,13 +13,24 @@ func capture(file: String) -> void:
 	if DisplayServer.get_name() == "headless": return
 	await RenderingServer.frame_post_draw
 	root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("camp_expansion/" + file + ".png"))
+func click_caption(id: String) -> void:
+	var area: Rect2 = app.layer.get_node(id).get_meta("caption_rect")
+	for pressed in [true, false]:
+		var event = InputEventMouseButton.new()
+		event.button_index = MOUSE_BUTTON_LEFT
+		event.pressed = pressed
+		event.position = area.get_center()
+		root.push_input(event)
+	await process_frame
 func run_tests() -> void:
 	root.size = Vector2i(1280,720)
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-expansion-ui.save", false)
 	root.add_child(app)
 	app.open_base_camp()
-	app.layer.get_node("Plot1").pressed.emit()
+	await process_frame
+	await capture("empty-plots")
+	await click_caption("Plot1")
 	check(is_instance_valid(app.overlay), "expeditions construction dialog")
 	app.close_modal()
 	app.game.camp_action("build", {"id":"expeditions"})
@@ -29,12 +40,19 @@ func run_tests() -> void:
 	app.open_base_camp()
 	await process_frame
 	check(app.layer.has_node("ChurchBuilding") and app.layer.has_node("ExpeditionsBuilding"), "both buildings")
+	var expedition_rect: Rect2 = app.layer.get_node("ExpeditionsBuilding").get_rect()
+	check(expedition_rect.position.y > app.layer.get_node("DayCampfire").position.y and absf(expedition_rect.get_center().x - 640) < 20, "expeditions centered below fire")
+	check(not expedition_rect.intersects(app.layer.get_node("CampExit").get_global_rect()), "expeditions clear of adventure arch and caption")
 	for pair in [["Plot1", "CampExit"], ["Plot3", "Plot1"]]:
 		var building = app.layer.get_node(pair[0])
 		var caption: Rect2 = app.layer.get_node(pair[1]).get_meta("caption_rect")
 		check(not building._has_point(caption.get_center() - building.position), "neighbouring caption receives input")
 	await capture("camp")
-	app.layer.get_node("Plot1").pressed.emit()
+	await click_caption("CampExit")
+	check(is_instance_valid(app.overlay) and app.overlay.has_node("NewAdventure"), "adventure caption opens adventure choices")
+	app.close_modal()
+	await process_frame
+	await click_caption("Plot1")
 	await process_frame
 	check(app.screen == "expeditions", "open expeditions")
 	var offers = app.layer.find_children("AcceptContract", "Button", true, false)

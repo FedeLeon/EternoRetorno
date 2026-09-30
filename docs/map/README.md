@@ -194,3 +194,21 @@ Pruebas actuales: 200 mapas (100 semillas por piso), determinismo, inventario de
 salas, accesibilidad, ausencia de ciclos, variación y posiciones dentro del mapa.
 `test_forest.gd`: 20.414 comprobaciones; `test_map.gd`: 109 comprobaciones
 renderizadas. Revisión visual local del mapa del bosque a 1280×720.
+
+## 30/09/2026 — Resplandor de todas las salas disponibles
+
+Cada destino disponible tiene un halo verde animado detrás de su cuadrado de
+papiro, también en bifurcaciones de dos o tres opciones. Pulsa suavemente entre
+45 % y 100 % de opacidad, con 1,1 segundos por transición, sin apagarse ni
+requerir hover. La sala actual conserva el halo dorado y la flecha de ubicación.
+Las salas sin acceso no se iluminan. Al reconstruir el mapa tras avanzar se
+actualizan los destinos a partir de `available`, sin cambiar rutas ni guardados.
+
+Se reutiliza el efecto procedural `add_room_glow` de `map_screen.gd`: no se
+agregan imágenes. El halo ignora entradas y se dibuja detrás del botón, con el
+panel de grupo por encima. `test_map.gd` verifica los destinos iluminados,
+colores distintos, orden de dibujo y variación temporal de la opacidad.
+
+Validación de este cambio: **141 comprobaciones sin fallos** tanto headless como
+con render Linux/llvmpipe. Revisión visual a 1280×720 de la bifurcación iluminada.
+Sin exportación ni pruebas Web/Android nuevas.

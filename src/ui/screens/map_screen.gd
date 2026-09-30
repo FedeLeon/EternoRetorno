@@ -89,9 +89,9 @@ func draw_route() -> void:
 		var center = route_position(node)
 		var reachable = node.id in available
 		var done = node.id in visited
-		var highlighted = node.id == current or (current < 0 and reachable and not done)
+		var highlighted = node.id == current or (reachable and not done)
 		if highlighted:
-			add_room_glow(center, node.id)
+			add_room_glow(center, node.id, node.id == current)
 		var target = action("", Rect2(center - Vector2(28, 28), Vector2(56, 56)), func(): room_requested.emit(node.id))
 		target.name = "Room%d" % node.id
 		target.disabled = not reachable
@@ -101,7 +101,7 @@ func draw_route() -> void:
 			style.texture = preload("res://assets/map/minimal/room_papyrus.png")
 			style.modulate_color = Color("bda079") if reachable else Color("cfb58e")
 			if highlighted:
-				style.modulate_color = Color("ffe6a1")
+				style.modulate_color = Color("ffe6a1") if node.id == current else Color("d8efb2")
 			if state in ["hover", "focus"]:
 				style.modulate_color = Color("edc285")
 			if state == "pressed":
@@ -115,20 +115,20 @@ func draw_route() -> void:
 			var marker = picture(preload("res://assets/map/minimal/current_room.svg"), Rect2(16, -23, 24, 20), target)
 			marker.name = "CurrentRoomMarker"
 
-func add_room_glow(center: Vector2, room_id: int) -> void:
+func add_room_glow(center: Vector2, room_id: int, is_current: bool) -> void:
 	# Draw before the room button, below the parchment and without intercepting clicks.
 	var glow = Panel.new()
 	glow.name = "RoomGlow%d" % room_id
 	glow.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var style = StyleBoxFlat.new()
-	style.bg_color = Color(1.0, 0.82, 0.30, 0.8)
-	style.shadow_color = Color(1.0, 0.73, 0.16, 0.85)
-	style.shadow_size = 20
+	style.bg_color = Color(1.0, 0.82, 0.30, 0.8) if is_current else Color(0.44, 0.88, 0.69, 0.8)
+	style.shadow_color = Color(1.0, 0.73, 0.16, 0.85) if is_current else Color(0.16, 0.66, 0.44, 0.85)
+	style.shadow_size = 20 if is_current else 18
 	style.set_corner_radius_all(4)
 	glow.add_theme_stylebox_override("panel", style)
 	place(glow, Rect2(center - Vector2(30, 30), Vector2(60, 60)))
 	var pulse = create_tween().set_loops().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-	pulse.tween_property(glow, "modulate:a", 0.72, 1.1)
+	pulse.tween_property(glow, "modulate:a", 0.72 if is_current else 0.45, 1.1)
 	pulse.tween_property(glow, "modulate:a", 1.0, 1.1)
 
 func route_position(node: Dictionary) -> Vector2:

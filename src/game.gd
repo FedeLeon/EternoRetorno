@@ -7,6 +7,7 @@ var resolved_hero_defenses: Dictionary = {}
 var resolved_hero_blocks: Dictionary = {}
 var resolved_card_hits: Array = []
 
+const Achievements = preload("res://src/rules/achievements.gd")
 const Synergies = preload("res://src/rules/card_synergies.gd")
 const Progression = preload("res://src/rules/camp_progression.gd")
 const CampExpansion = preload("res://src/rules/camp_expansion.gd")
@@ -42,7 +43,8 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 	var migrated = Progression.migrate(profile)
 	var forge_migrated = Forge.migrate(profile)
 	var expansion_migrated = CampExpansion.migrate(profile)
-	if forge_migrated or expansion_migrated or migrated:
+	var achievements_migrated = Achievements.sync(profile, run)
+	if forge_migrated or expansion_migrated or migrated or achievements_migrated:
 		checkpoint()
 
 func camp_action(action: String, payload: Dictionary) -> bool:
@@ -78,6 +80,7 @@ func buy_market_card(id: String) -> bool:
 	return true
 
 func checkpoint() -> void:
+	Achievements.sync(profile, run)
 	if not run.is_empty():
 		run.rng_state = rng.state
 	if save_enabled and not store.write(profile, run):

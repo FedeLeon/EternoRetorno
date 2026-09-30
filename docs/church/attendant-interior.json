@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "tool": "image_gen integrated",
+  "asset": "assets/church/interior.png",
+  "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-99d3468f-e7e8-4418-ad0a-091a351f78f0.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/church/interior.png",
+    "/var/www/html/EternoRetorno/assets/market/interior.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create a replacement 16:9 game background for a dark fantasy pixel-art church shop interface. Image 1 is the reference for church architecture, sun emblems, blue/gold colors, candles and stained glass. Image 2 is the reference for rendering style and shopkeeper composition. A kindly elderly priestess, silver hair, ivory hood and blue-gold vestments, stands in medium-close view behind a carved stone lectern on the LEFT THIRD, face around x24% y38%, body entirely within x5%-37%. She holds a glowing prayer book and welcomes adventurers. Rich detailed pixel-art with crisp pixels matching the merchant reference, warm candlelight and cool stone shadows. Keep the RIGHT 60% quiet and dark, mostly stone wall with subtle columns, suitable for overlaying cards. No person or focal object on right. Top 12% will be covered by game header. Lower left foreground available for a small dialogue bubble. No text, UI, cards, borders, speech bubbles or watermark painted into the asset. Landscape 16:9."
+}

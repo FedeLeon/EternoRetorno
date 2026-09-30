@@ -11,7 +11,13 @@ def imported_bytes(text):
     return sum((ROOT / p).stat().st_size for p in re.findall(r'^path(?:\.\w+)?="res://([^"]+)"', text, re.M) if (ROOT / p).exists())
 
 def policy(path):
+    if path == 'assets/base_camp/built_ground.png':
+        return 1, 0.85, 1280
     # Atlas regions in sprites and original card art use fixed pixel coordinates.
+    if path.startswith('assets/encounters/'):
+        return 1, 0.85, 1280
+    if path.startswith('assets/collection/icons/'):
+        return 0, 0.85, 256
     if path.startswith('assets/comic/'):
         return 1, 0.85, 0  # Keep animation frames and portrait crops unchanged.
     if path.startswith('assets/cards/art/'):

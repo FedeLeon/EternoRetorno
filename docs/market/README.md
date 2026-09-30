@@ -155,3 +155,9 @@ el estilo de tablón y la navegación existente.
 Pruebas headless: mercado 61 y herrería 110 comprobaciones sin fallos.
 Revisión visual local de ambas vistas a 1280×720; capturas temporales retiradas.
 Sin exportación ni validación Web/móvil.
+
+## Diálogo del mercader — 30/09/2026
+
+Cinco frases ambientales alternadas en un globo abajo a la izquierda, tanto en
+la galería como en la compra de cartas. Reutiliza el fondo y no captura clics.
+[Componente y validación actual](../base_camp/attendants.md).

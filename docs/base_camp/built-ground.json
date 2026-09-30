@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-30",
+  "tool": "image_gen integrated",
+  "input": "assets/base_camp/background.png",
+  "asset": "assets/base_camp/built_ground.png",
+  "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5bffa3ad-25e5-491e-8b5c-b85612d125a8.png",
+  "prompt": "Use case: precise-object-edit. Edit this exact camp background only by removing ALL FOUR empty construction plot outlines: upper left, lower left, bottom center below fire, and lower right. Remove every straight rectangular stone border, every corner wooden marker stake, and the visibly rectangular flat dirt patches. Replace each former plot with naturally continuous irregular grass-and-packed-earth terrain matching the surrounding campsite, enough open earthy ground for a building to stand on but NO rectangular borders or rectangles remaining. CRITICAL preserve exact camera, dimensions/aspect ratio, and positions of tent, fire ring, fire and sitting logs, crates, cart, fences, big rocks, trees, arch, lake, waterfall and distant castle. Do not move any object. Do not add any building, person, marker, text, UI or sign. Keep identical detailed daylight pixel-art style and colors. This is a clean terrain layer for compositing precisely onto the original at the four plot locations."
+}

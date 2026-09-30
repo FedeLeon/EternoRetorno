@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Estado revisado el **22/09/2026**. Esta página describe el código actual y los
+Estado revisado el **30/09/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
@@ -70,8 +70,8 @@ separación completa. `main.gd` y `game.gd` siguen por encima de la guía de tam
 
 En orden de prioridad, al trabajar en esas funciones:
 
-1. Extraer descanso/evento, mazo, colección y resultados a pantallas
-   propias, pasando instantáneas y callbacks como en mapa y tesoros.
+1. Continuar separando las composiciones restantes de pantalla mediante
+   instantáneas y señales, como mapa, tesoros y encuentros ya extraídos.
 2. Extraer tema/helpers visuales de `main.gd` a componentes concretos, sin crear
    otra clase gigante con todos los helpers.
 3. Separar resolución de combate y recompensas de `game.gd`, manteniendo allí
@@ -381,3 +381,33 @@ los límites entre reglas, presentación y persistencia. Véase el
 [informe e inventario](cleanup/2026-09-23.md). `main.gd` y `game.gd` siguen
 por encima de la guía de tamaño; próximas extracciones deben centrarse en
 responsabilidades completas, acompañadas de pruebas de navegación y combate.
+
+### Colección y logros (30/09/2026)
+
+La colección sale de `main.gd` hacia `ui/screens/collection_screen.gd`, con
+instantáneas preparadas por `ui/collection_navigation.gd`. La pantalla es de
+consulta: no recibe condiciones secretas ni modifica partidas. El catálogo
+vive en `data/achievements.json`; `rules/achievements.gd` acumula y migra estado.
+`game.gd` sincroniza logros al cargar y antes del checkpoint atómico existente.
+Los recibos de aventura evitan contar dos veces al reabrir o cambiar de piso.
+No se cambia la versión del guardado ni se añaden recompensas de poder.
+
+### Encuentros ilustrados (30/09/2026)
+
+`ui/screens/encounter_screen.gd` reemplaza la composición de eventos de
+`main.gd::room_view`. Recibe ID, textos y disponibilidad de la ofrenda; emite
+señales de elección y menú. `Game.choose_event` conserva validación, efectos y
+checkpoint. La pantalla no consulta ni modifica el guardado.
+
+`assets/shaders/encounter_atmosphere.gdshader` anima regiones calibradas de tres
+fondos en `assets/encounters/`. No mueve el cuadro ni el escenario completo.
+La extracción de encuentros está terminada; sus reglas permanecen en Game.
+
+### Encargados del campamento — 30/09/2026
+
+`ui/components/attendant_dialogue.gd` comparte el globo ambiental entre mercado,
+herrería, iglesia y expediciones. Frases en `data/camp_dialogue.json`; reloj y RNG
+visuales independientes de Game y del guardado. Vive dentro de la pantalla,
+ignora entradas y se libera con ella. Iglesia reutiliza la galería derecha de
+`building_hero_picker.gd`; contratos y especializaciones conservan el componente
+`camp_offer_card.gd`, adaptado al espacio disponible. No se añaden reglas a la UI.

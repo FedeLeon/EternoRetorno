@@ -106,3 +106,17 @@ ofertas. Durante una aventura siguen bloqueados todos los contratos.
 Implementado en `src/ui/screens/expeditions_screen.gd`, sin cambios de guardado.
 Validación local headless: `tests/test_camp_expansion_ui.gd`, 36 comprobaciones sin
 fallos, incluyendo selección, cancelación y elección de otro contrato. Sin exportación.
+
+## Ubicación en el campamento — 30/09/2026
+
+El solar 2 y el puesto construido están ahora en el centro, debajo de la fogata.
+El terreno junto al arco queda libre. Edificio y contratos conservan sus IDs;
+no requiere reconstruir el puesto en partidas guardadas.
+[Fondo editado, geometría y validación](../base_camp/README.md#expediciones-debajo-de-la-fogata--30092026).
+
+## Encargado visible y contratos a la derecha — 30/09/2026
+
+Interior nuevo con veterano en primer plano a la izquierda y tres tarjetas de
+contratos de 240×474 a la derecha. Conserva las ilustraciones por tipo, datos y
+selección exclusiva. El encargado muestra globos temporales con cinco frases.
+[Arte, implementación y validación](../base_camp/attendants.md).

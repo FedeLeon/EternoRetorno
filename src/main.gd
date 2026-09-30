@@ -118,7 +118,9 @@ func art(kind: String, x: float, y: float, w: float, h: float, parent: Control =
 	return visual
 
 func background() -> void:
-	if screen in ["map", "equipment", "refuge"]:
+	if screen == "room" and game.run.nodes[game.run.current].kind == "event":
+		return # Encounter scenes provide their own illustrated background.
+	if screen in ["map", "equipment", "refuge", "collection"]:
 		return # These screens own their backgrounds.
 	if screen == "combat" or (screen == "room" and int(game.run.get("floor", 1)) == 2):
 		var room = TextureRect.new()
@@ -503,18 +505,15 @@ func room_view() -> void:
 		view.menu_requested.connect(pause_menu)
 		rect(view, 0, 0, 1280, 720)
 		return
-	header("%s  /  Sala %02d" % [Dungeon.LABELS[node.kind], node.id + 1])
-	panel(212, 154, 856, 458, Color("62533e"))
-	match node.kind:
-		"event":
-			var event = game.content.events[node.event]
-			label_at(event.name, 264, 195, 760, 62, 36, GOLD)
-			label_at(event.text, 264, 273, 742, 100, 24)
-			var can_offer = true
-			if node.event == "altar":
-				can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)
-			for i in range(2):
-				button(event.choices[i], 264, 414 + i * 80, 742, 64, func(): act(func(): game.choose_event(i)), can_offer or i == 1)
+	if node.kind == "event":
+		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
+		view.event_id = node.event
+		view.event = game.content.events[node.event].duplicate(true)
+		if node.event == "altar":
+			view.can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)
+		view.choice_requested.connect(func(index): act(func(): game.choose_event(index)))
+		view.menu_requested.connect(pause_menu)
+		rect(view, 0, 0, 1280, 720)
 
 func treasure_display() -> Dictionary:
 	var state = game.Treasure.state(game.run.treasure)
@@ -562,29 +561,7 @@ func open_collection() -> void:
 	render()
 
 func collection() -> void:
-	header("La colección de ecos", "Los desbloqueos amplían las recompensas de próximas aventuras.")
-	var contents = scroll_area()
-	var index = 0
-	for id in game.content.cards:
-		var c = game.content.cards[id]
-		if not c.locked:
-			continue
-		var unlocked = id in game.profile.unlocked_cards
-		var x = (index % 3) * 394
-		var y = (index / 3) * 136
-		panel(x, y, 380, 120, GOLD.darkened(0.4) if unlocked else Color("343b4d"), contents)
-		label_at(c.name, x + 16, y + 8, 350, 37, 23, GOLD if unlocked else MUTED, contents)
-		label_at("DESBLOQUEADO" if unlocked else "Ganá con " + game.content.heroes[c.owner].name, x + 16, y + 51, 350, 47, 18, TEXT, contents)
-		index += 1
-	panel(0, 286, 1168, 97, Color("343b4d"), contents)
-	label_at("Reloj sin arena", 16, 295, 1090, 35, 23, GOLD, contents)
-	label_at("DESBLOQUEADO · Primer turno: +1 de energía." if "hourglass" in game.profile.unlocked_relics else "Derrotá al Caballero sin tiempo para desbloquear esta reliquia.", 16, 339, 1090, 33, 18, MUTED, contents)
-	label_at("ÚLTIMOS RETORNOS", 0, 408, 1120, 36, 18, GOLD, contents)
-	for i in range(game.profile.history.size()):
-		var h = game.profile.history[i]
-		label_at("%s  ·  %s + %s  ·  %d salas" % ["VICTORIA" if h.won else "DERROTA", game.content.heroes[h.party[0]].name, game.content.heroes[h.party[1]].name, h.rooms], 0, 452 + i * 42, 1168, 38, 20, MUTED, contents)
-	contents.custom_minimum_size.y = maxf(500, 460 + game.profile.history.size() * 42)
-	button("Inicio", 36, 646, 230, 54, func(): screen = "home"; render())
+	preload("res://src/ui/collection_navigation.gd").build(self)
 
 func result_view() -> void:
 	preload("res://src/ui/screens/run_result_screen.gd").build(self)

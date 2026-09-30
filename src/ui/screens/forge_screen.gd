@@ -6,6 +6,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
+	preload("res://src/ui/components/attendant_dialogue.gd").attach(ui, "forge")
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Herrería · Acero que perdura", actions.back, profile.souls, "Campamento")
 	if selected == "":
 		preload("res://src/ui/components/building_hero_picker.gd").build(ui, content.heroes, "Elegí un héroe para mejorar su equipo", "ForgeHero_", actions.category, true)

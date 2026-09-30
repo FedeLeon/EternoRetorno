@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **23/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **30/09/2026**.
 
 ## Estado actual
 
@@ -12,6 +12,7 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
+- Encuentros: pozo, altar y biblioteca con fondos propios, efectos localizados y cuadro de decisiones compacto.
 - Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
   ataque/defensa e ilustraciones minimalistas asignadas por ID.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
@@ -25,9 +26,10 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
   por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con doce especializaciones; puesto de expediciones
-  en solar 2 (500 almas), con treinta contratos y tres ofertas por aventura.
+  en solar 2, debajo de la fogata (500 almas), con treinta contratos y tres ofertas por aventura.
 - Refugio: preparación persistente del mazo inicial por héroe; cambios solo para aventuras nuevas.
 - Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
+- Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
@@ -44,11 +46,13 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 | Tema | Documentación |
 | --- | --- |
+| Colección y 30 logros | [Vista, progreso y assets](collection/README.md) |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
 | 24 cartas nuevas de apoyo y debilitamiento | [Catálogo, imágenes y reglas](cards/support/README.md) |
 | Nueva variedad de la primera mazmorra | [Esqueletos y elementales](enemies/crypt_expansion/README.md) |
 | Pisos aleatorios y segunda mazmorra | [Bosque y generación](forest/README.md) |
 | Descansos | [Escena, poses y opciones](rest/README.md) |
+| Salas de encuentro | [Fondos, animación y decisiones](encounters/README.md) |
 | Carrera de héroes | [Sprites y ciclos](running/README.md) |
 | Reliquias de élite y catálogo de efectos | [Reliquias de aventura](relics/README.md) |
 | Contratos y puesto de expediciones | [Expediciones](expeditions/README.md) |
@@ -66,6 +70,7 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Explorador | [Explorador](ranger/README.md) |
 | Selección y fogata animada | [Campamento de selección](camp/README.md) |
 | Campamento previo y solares | [Campamento base](base_camp/README.md) |
+| Encargados y globos ambientales | [Interiores y diálogos](base_camp/attendants.md) |
 | Mercado, almas y cartas desbloqueables | [Mercado](market/README.md) |
 | Herrería, equipo permanente y variantes animadas | [Herrería](forge/README.md) |
 | Reliquias y consumibles: valores y guardado | [Objetos](objects/README.md) |

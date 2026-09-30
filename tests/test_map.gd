@@ -87,7 +87,16 @@ func run_tests() -> void:
 	await process_frame
 	view = app.layer.get_node("MapScreen")
 	check(not view.get_node("Room1").disabled and not view.get_node("Room2").disabled, "branch availability retained")
-	check(view.has_node("RoomGlow0") and not view.has_node("RoomGlow1"), "current room illuminated instead of next branch")
+	check(view.has_node("RoomGlow0"), "current room retains its glow")
+	for node in view.nodes:
+		check(view.has_node("RoomGlow%d" % node.id) == (node.id == view.current or node.id in view.available), "only current and available rooms glow")
+	var next_glow = view.get_node("RoomGlow1")
+	check(next_glow.mouse_filter == Control.MOUSE_FILTER_IGNORE, "available glow ignores input")
+	check(next_glow.get_index() < view.get_node("Room1").get_index(), "available glow behind papyrus")
+	check(next_glow.get_theme_stylebox("panel").shadow_color != view.get_node("RoomGlow0").get_theme_stylebox("panel").shadow_color, "available and current have distinct colors")
+	var alpha = next_glow.modulate.a
+	await create_timer(0.45).timeout
+	check(not is_equal_approx(alpha, next_glow.modulate.a) and next_glow.modulate.a > 0, "available halo pulses without disappearing")
 	var marker = view.get_node("Room0/CurrentRoomMarker")
 	var icon = view.get_node("Room0/RoomIcon")
 	check(is_equal_approx(marker.get_global_rect().get_center().x, icon.get_global_rect().get_center().x), "current marker centered above icon")

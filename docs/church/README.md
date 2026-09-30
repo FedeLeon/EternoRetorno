@@ -82,3 +82,24 @@ fino compartido (`DarkSkin.dialog`), en `SpecializationHeadingFrame`. Conserva
 su posición centrada y deja separado el botón de volver a héroes. El panel no
 captura eventos del ratón. Revisión renderizada local a 1280×720 con Explorador:
 título legible, sin superposición con tarjetas ni navegación. Sin exportación.
+
+### Espaciado de las tarjetas — 30/09/2026
+
+Se compacta el bloque de título, efecto y requisito en las doce especializaciones.
+El botón Aprender/Activar sube 12 px y deja 22 px hasta el borde inferior de la
+tarjeta; el requisito queda separado del botón. Textos, tamaños de fuente y arte
+se conservan. `camp_offer_card.gd` ajusta solo la variante vertical usada por la
+Iglesia; `church_screen.gd` coloca el estado y la acción.
+
+Validación local: `test_camp_expansion_ui.gd`, 39 comprobaciones sin fallos con
+renderizado X11/Compatibility. Revisión visual a 1280×720 de Clériga y Guardiana,
+incluidos requisitos de dos líneas. `git diff --check` limpio. Sin exportación
+ni nueva prueba Web/Android.
+
+## Sacerdotisa y tarjetas a la derecha — 30/09/2026
+
+Nuevo `assets/church/interior.png` con sacerdotisa a la izquierda. Galería de
+héroes en dos columnas/tres filas a la derecha; las dos especializaciones,
+encabezado y Volver a héroes también pasan a esa zona. Tarjetas de 358×512,
+textos centrados y acción a 28 px del borde inferior. Globos con cinco frases.
+[Componente, procedencia y pruebas actuales](../base_camp/attendants.md).

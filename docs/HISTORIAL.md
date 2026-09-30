@@ -1818,3 +1818,85 @@ Sin exportación ni validación Web/móvil.
   de combate; 55/55 scripts aprobados localmente en headless tras las correcciones.
 - Importación y referencias verificadas; sin exportación ni nueva revisión visual.
 - [Informe, decisiones e inventario](cleanup/2026-09-23.md).
+
+## Colección y 30 logros — 30/09/2026
+
+- Fondo gótico propio y treinta iconos individuales generados con image_gen;
+  prompts/procedencia conservados en `docs/collection/`.
+- Colección extraída a pantalla propia: Logros, Desbloqueos y Últimos retornos.
+  Inicio con flecha hacia atrás en el encabezado reemplaza Menú y el botón inferior.
+- Treinta logros permanentes, veinticinco visibles y cinco secretos sin condiciones
+  en la interfaz. Detalle al seleccionar, estado, progreso y emblema oculto.
+- Migración compatible del perfil, recuperación de hechos históricos verificables
+  y recibos por aventura para evitar duplicar contadores al reabrir.
+- 57/57 pruebas locales headless aprobadas. Nueva prueba de reglas: 121 checks;
+  nueva prueba de interfaz: 41 checks también con renderizado X11, revisión visual
+  local de capturas a 1280×720. Sin exportación ni validación Web/Android nueva.
+- Iconos importados a 256 px y fondo a 1280 px: aproximadamente 2,45 MiB importados.
+  [Sistema, catálogo y archivos](collection/README.md).
+
+## Destinos del mapa iluminados — 30/09/2026
+
+- Todas las salas disponibles para avanzar muestran un resplandor verde animado
+  detrás del papiro; la ubicación actual mantiene su halo dorado y flecha.
+- Se amplía el efecto existente de `map_screen.gd`, sin assets adicionales,
+  cambios de reglas, rutas ni guardados; no intercepta los clics.
+- `test_map.gd`: 141 comprobaciones aprobadas en headless y con render local.
+  Revisión visual de la bifurcación a 1280×720. Sin exportar Web/APK.
+
+## Encuentros con escena propia — 30/09/2026
+
+- Tres fondos nuevos: pozo de los ecos, altar hambriento y biblioteca hundida.
+  Agua animada, luz pulsante y motas localizadas según la situación. Prompts y
+  procedencia en `docs/encounters/`; importación a 1280 px con calidad 0,85.
+- Pantalla de encuentro extraída de main; sin títulos superiores ni número de
+  sala. Cuadro inferior de 660×280, todos sus textos centrados y menú accesible.
+- IDs, decisiones, costes, premios y guardados conservados.
+- Prueba nueva: 41 comprobaciones headless y 47 renderizadas, sin fallos;
+  revisión visual de las tres escenas a 1280×720. Regresiones de juego (142) y
+  bosque (146) aprobadas; importación y `git diff --check` sin errores.
+- Sin exportar Web/APK ni validar navegador o dispositivo físico.
+
+## Expediciones en el centro inferior del campamento — 30/09/2026
+
+- Editado `assets/base_camp/background.png` con image_gen: solar 2 debajo de la
+  fogata, terreno despejado junto al arco; prompt/procedencia en
+  `docs/base_camp/expeditions-relocation.json`.
+- Reubicados edificio, cartel y zona de clic desde `base_camp_screen.gd`.
+  Se conserva el edificio existente, su ID, construcciones y contratos guardados.
+- Pruebas con renderizado local: expansión 39 comprobaciones y campamento 37,
+  sin fallos; clics reales y revisión de capturas vacío/construido a 1280×720.
+  Importación y `git diff --check` limpios. Sin exportación ni pruebas Web/Android.
+
+## Espaciado de especializaciones — 30/09/2026
+
+- Compactados título, efecto y requisito de las tarjetas de Iglesia; Aprender/
+  Activar sube 12 px y conserva 22 px de separación con el borde inferior.
+- Ajustes en `camp_offer_card.gd` (variante vertical) y `church_screen.gd`.
+  Documentado en `docs/church/README.md`; sin cambios de reglas ni guardado.
+- Prueba de expansión renderizada: 39 comprobaciones aprobadas. Revisión visual
+  local de Clériga y Guardiana a 1280×720; `git diff --check` limpio. Sin exportar.
+
+## Encargados y globos ambientales — 30/09/2026
+
+- Nuevos interiores de Iglesia y Expediciones con encargado a la izquierda y
+  tarjetas a la derecha. Fondos generados con image_gen; prompts/procedencia
+  en `docs/church/attendant-interior.json` y `docs/expeditions/attendant-interior.json`.
+- Componente compartido de globos para los cuatro encargados: veinte frases,
+  entrada/salida gradual, pausas y selección local sin repetir consecutivamente.
+- Documentado en `docs/base_camp/attendants.md`. Reglas, compras y guardados intactos.
+- 187 comprobaciones nuevas renderizadas aprobadas; regresiones headless de
+  expansión (39), herrería (110) y mercado (61), sin fallos. Revisión de capturas
+  locales a 1280×720 y `git diff --check`. Sin exportación ni prueba Web/Android.
+
+## Solares ocultos al construir — 30/09/2026
+
+- Nuevo terreno sin marcas `assets/base_camp/built_ground.png`, editado con
+  image_gen; prompt/procedencia en `docs/base_camp/built-ground.json`.
+- El shader diurno sustituye solo el terreno de edificios construidos, según
+  la instantánea del perfil. Los solares vacíos mantienen contorno y estacas.
+- Posiciones, navegación, animaciones y guardados conservados. Documentado en
+  `docs/base_camp/README.md`; importación a 1280 px y calidad 0,85.
+- 30 comprobaciones nuevas renderizadas, campamento 37 renderizadas y expansión
+  39 headless, sin fallos. Revisión visual local de construcción parcial/completa;
+  importación y `git diff --check` limpios. Sin exportar ni probar Web/Android.

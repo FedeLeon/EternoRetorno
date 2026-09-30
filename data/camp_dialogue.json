@@ -1,0 +1,30 @@
+{
+  "market": [
+    "Mirá con calma. Una buena carta puede cambiar el viaje.",
+    "Las almas van y vienen. Un buen trato permanece.",
+    "Siempre guardo algo para quienes consiguen volver.",
+    "¿Buscás un golpe certero o una segunda oportunidad?",
+    "Lo que compres aquí podrá aparecer en tus próximas recompensas."
+  ],
+  "forge": [
+    "Acercate. Todavía queda calor en la fragua.",
+    "Un filo bien templado también necesita una mano firme.",
+    "Traé tu armadura. Prefiero reparar acero que despedir héroes.",
+    "Mis mejoras te acompañarán en cada nueva aventura.",
+    "El martillo no descansa mientras haya alguien por volver."
+  ],
+  "church": [
+    "Cada victoria abre un camino. Elegí el tuyo con calma.",
+    "La luz no pelea por vos, pero puede guiar tu mano.",
+    "Dos caminos, una elección. Ningún héroe aprende todo de una vez.",
+    "Tu nueva especialización te acompañará al volver a partir.",
+    "Que tu fuerza alcance también para cuidar a tu compañero."
+  ],
+  "expeditions": [
+    "Un buen viaje empieza con un propósito.",
+    "Revisá los contratos. Solo podés llevar uno por aventura.",
+    "A veces, el mejor plan empieza con un compañero distinto.",
+    "Los mapas señalan el camino. Volver depende de ustedes.",
+    "Cuando termine tu aventura, habrá nuevos encargos esperando."
+  ]
+}

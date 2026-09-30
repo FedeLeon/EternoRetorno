@@ -2,6 +2,13 @@ extends RefCounted
 
 # Camp presentation; construction and navigation are controller callbacks.
 static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void:
+	var ground: ShaderMaterial = ui.layer.get_node("DayCampBackground").material
+	ground.set_shader_parameter("built_ground", preload("res://assets/base_camp/built_ground.png"))
+	ground.set_shader_parameter("built_plots", Vector4(
+		1.0 if profile.buildings.get("market", false) else 0.0,
+		1.0 if profile.buildings.get("expeditions", false) else 0.0,
+		1.0 if profile.buildings.get("forge", false) else 0.0,
+		1.0 if profile.buildings.get("church", false) else 0.0))
 	var fire = preload("res://src/campfire.gd").new()
 	fire.name = "DayCampfire"
 	ui.rect(fire, 643, 396, 1, 1)
@@ -16,7 +23,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 		building.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		building.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(building, 91, 111, 310, 235)
-	var plots = [Rect2(110, 279, 276, 47), Rect2(836, 299, 256, 40), Rect2(75, 414, 319, 59), Rect2(933, 476, 284, 56)]
+	var plots = [Rect2(110, 279, 276, 47), Rect2(500, 537, 280, 44), Rect2(75, 414, 319, 59), Rect2(933, 476, 284, 56)]
 	if profile.buildings.get("forge", false):
 		var forge = TextureRect.new()
 		forge.name = "ForgeBuilding"
@@ -40,7 +47,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 			continue
 		var id = "expeditions" if i == 1 else "church"
 		var built = profile.buildings.get(id, false)
-		var area = Rect2(742, 212, 296, 176) if i == 1 else Rect2(888, 350, 342, 216)
+		var area = Rect2(480, 422, 320, 190) if i == 1 else Rect2(888, 350, 342, 216)
 		var title = "Iglesia" if id == "church" else "Expediciones"
 		if built:
 			var building = TextureRect.new()

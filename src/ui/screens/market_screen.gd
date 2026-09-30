@@ -7,6 +7,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
+	preload("res://src/ui/components/attendant_dialogue.gd").attach(ui, "market")
 	ui.panel(24, 18, 1232, 66)
 	ui.label_at("EL MERCADO DE LOS ECOS", 68, 28, 524, 42, 26, ui.GOLD)
 	preload("res://src/ui/components/soul_counter.gd").attach(ui, profile.souls, Vector2(810, 25))

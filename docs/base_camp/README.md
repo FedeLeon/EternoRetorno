@@ -1,6 +1,6 @@
 # Campamento previo a la aventura
 
-Estado actual: **17/09/2026**.
+Estado actual: **30/09/2026**. Las secciones fechadas conservan el historial de cambios.
 
 ## Navegación e interfaz
 
@@ -18,7 +18,8 @@ Estado actual: **17/09/2026**.
   y el saldo son persistentes.
 - El solar 3 permite construir la [herrería](../forge/README.md) por 400 almas.
   Su edificio abre mejoras independientes de arma y armadura para cada héroe.
-  Los solares 2 y 4 y las otras mejoras del refugio quedan pendientes.
+  El solar 2, centrado debajo de la fogata, permite construir Expediciones;
+  el solar 4, abajo a la derecha, permite construir la Iglesia.
 
 ## Archivos y assets
 
@@ -28,8 +29,9 @@ Estado actual: **17/09/2026**.
 - `src/ui/components/modal_frame.gd`: marco compartido de diálogos y tesoros.
 - `src/main.gd`: conecta acciones y mantiene la navegación y confirmaciones.
 
-El fondo original del usuario `campamentoConstruccion.png` se conserva en
-`assets/base_camp/background.png`. Assets nuevos generados con imagegen integrado:
+El fondo `assets/base_camp/background.png` deriva del original del usuario
+`campamentoConstruccion.png`; el 30/09 se editó para trasladar el solar de
+Expediciones (la versión previa permanece en Git). Assets generados con imagegen integrado:
 
 - `assets/base_camp/market_building.png`: edificio aislado para el solar 1.
 - `assets/forge/building.png`: herrería aislada para el solar 3; [procedencia](../forge/building.json).
@@ -180,3 +182,51 @@ ejecución renderizada durante 2,2 s con los 24 cuadros observados, y revisión 
 captura del campamento para integración sin recuadro y apoyo de brasas.
 `git diff --check` limpio. Sin exportación ni prueba web/móvil. El atlas anterior
 queda conservado, pero ya no es el utilizado por el componente.
+
+## Expediciones debajo de la fogata — 30/09/2026
+
+El solar 2 se traslada al centro inferior. El fondo editado elimina el solar
+anterior junto al arco y recupera allí el terreno y el camino; dibuja el nuevo
+solar debajo de la fogata y desplaza la carreta fuera de él. Se conservan las
+posiciones de la fogata, carpa, arco, otros solares y máscaras de viento/agua.
+
+`base_camp_screen.gd` mueve edificio, cartel y zona de clic. El edificio reutiliza
+`assets/expeditions/building.png`, ahora en `Rect2(480, 422, 320, 190)`; el solar
+sin construir y su cartel también usan el centro inferior. No se cambia el ID
+`expeditions`, el número de solar, las construcciones ni los contratos guardados.
+
+Edición con **image_gen integrado** sobre `assets/base_camp/background.png`;
+[prompt y procedencia](expeditions-relocation.json). Se conserva el UID y la
+importación a 1280 px con calidad 0,85. El original generado se copia al proyecto.
+
+Validación actual: `test_camp_expansion_ui.gd` (39 comprobaciones) y
+`test_base_camp.gd` (37), sin fallos con renderizado local X11/Compatibility.
+Clics reales en los carteles de construcción, Expediciones y Aventuras; revisión
+visual a 1280×720 tanto vacío como con los cuatro edificios construidos.
+La prueba de campamento también verifica viento, agua y fuego. Importación sin
+errores y `git diff --check` limpio. Sin exportar ni probar Web/Android.
+
+## Ocultar solares construidos — 30/09/2026
+
+Los bordes de piedra, estacas y rectángulos de tierra desaparecen al construir
+cada edificio. Los solares vacíos conservan su dibujo original. También se aplica
+a edificios ya construidos al abrir una partida anterior, sin reconstruirlos.
+
+`assets/base_camp/built_ground.png` es una versión del terreno sin marcas,
+editada con image_gen integrado a partir del fondo actual. [Prompt y procedencia](built-ground.json).
+El fondo original se mantiene. `camp_day.gdshader` mezcla el terreno nuevo solo
+en las regiones construidas, con transición de 12 px; `base_camp_screen.gd` le
+entrega cuatro indicadores desde la instantánea del perfil. No cambia posiciones,
+carteles, zonas de clic, reglas de construcción ni guardados. Agua, árboles y
+fogata conservan sus animaciones.
+
+Importación del nuevo fondo a 1280 px y calidad 0,85, registrada en
+`scripts/optimize_texture_imports.py`. Un recurso adicional compartido por las
+cuatro construcciones, sin crear fondos para cada combinación posible.
+
+Validación actual: `test_camp_plot_ground.gd`, 30 comprobaciones renderizadas
+sin fallos; compras mediante la API pública y comparación de regiones de solares
+vacíos/construidos. Revisión visual local de estados parciales y completos a
+1280×720. Regresiones: campamento 37 comprobaciones renderizadas, expansión 39
+headless, sin fallos. Importación y `git diff --check` limpios. Sin exportación
+ni nueva validación Web/Android.

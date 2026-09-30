@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "tool": "image_gen integrated",
+  "asset": "assets/expeditions/interior.png",
+  "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-bc1a22ff-fa05-4c78-b027-6bde8851181a.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/expeditions/interior.png",
+    "/var/www/html/EternoRetorno/assets/market/interior.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create a replacement 16:9 game background for a dark fantasy pixel-art expedition lodge interface. Image 1 is the reference for lodge materials, blue banners with compass symbols, maps and expedition equipment. Image 2 is the reference for rendering style and CLOSE shopkeeper composition. A weathered bearded veteran expedition master in a fur-trimmed dark blue leather coat on the LEFT THIRD, face around x23% y38%, medium-close torso view behind a desk of maps, compass and rolled charts. Entire character inside x5%-37%, large and welcoming, one hand on map. Warm lanterns, wooden beams, stone walls, detailed crisp pixel-art consistent with references. Keep RIGHT 60% quiet and dark, a simple background wall for UI cards, no character or important focal object on right. Top 12% covered by game header. Lower left foreground available for a small dialogue bubble. No text, UI, cards, speech bubbles or watermark baked into image. Landscape 16:9."
+}
