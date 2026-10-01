@@ -1,5 +1,9 @@
 # Biblioteca de enemigos
 
+> Estado actual 30/09/2026: seis enemigos adicionales y 30 secuencias de héroes
+> con ocho cuadros. Ver [ampliación y formato vigente](../combat_expansion/README.md).
+> Las secciones fechadas anteriores describen versiones históricas.
+
 > **Actualización 16/09/2026:** los 56 enemigos usan sprites de **128×128**
 > desde `assets/enemies/hd/`. Los seis de la cripta tienen ciclos nuevos de
 > ocho poses en `assets/enemies/animations/` y ataques diferenciados.

@@ -52,7 +52,7 @@ func _initialize() -> void:
 			edge_orders[str(nodes.map(func(n): return n.next))] = true
 			signatures[str(nodes)] = true
 	check(kind_orders.size() > 90 and edge_orders.size() > 90 and signatures.size() == 200, "seeds change rooms and routes, floors differ")
-	check(forest_types.size() == 11, "all eleven forest common enemies appear across seeds")
+	check(forest_types.size() == 14, "all fourteen forest common enemies appear across seeds")
 	var path = "user://forest-transition-test.save"
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	var g = Game.new(path, true)

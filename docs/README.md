@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **30/09/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **01/10/2026**.
 
 ## Estado actual
 
@@ -18,9 +18,9 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 (20 nuevas), visible junto a la elección de carta.
-- Actores: seis héroes y 56 enemigos con sprites de 128×128; veinticinco enemigos activos. Los seis añadidos a la cripta y los trece del bosque tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
-- Ataques de héroes en primer plano: 24 secuencias de cuatro cuadros dibujados,
-  con movimiento de armas y poderes; [assets y reproducción](comic/motion/README.md).
+- Actores: seis héroes y 56 enemigos con sprites de 128×128; treinta y un enemigos activos. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
+- Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
+  con luces y partículas locales; [assets y reproducción](comic/smooth/README.md).
 - Campamento: mercado construible en solar 1 por 300 almas, con 60 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
@@ -49,6 +49,7 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Colección y 30 logros | [Vista, progreso y assets](collection/README.md) |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
 | 24 cartas nuevas de apoyo y debilitamiento | [Catálogo, imágenes y reglas](cards/support/README.md) |
+| Ampliación de ambas mazmorras y cómics de ocho cuadros | [Catálogo, assets y presentación](combat_expansion/README.md) |
 | Nueva variedad de la primera mazmorra | [Esqueletos y elementales](enemies/crypt_expansion/README.md) |
 | Pisos aleatorios y segunda mazmorra | [Bosque y generación](forest/README.md) |
 | Descansos | [Escena, poses y opciones](rest/README.md) |

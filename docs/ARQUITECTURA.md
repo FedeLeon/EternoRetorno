@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Estado revisado el **30/09/2026**. Esta página describe el código actual y los
+Estado revisado el **01/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
@@ -57,6 +57,20 @@ su recorrido de 12 salas y nuevas aventuras reciben 28.
 
 Los métodos públicos anteriores permanecen como delegaciones para conservar
 llamadores y pruebas. No cambiaron IDs, formato de guardado ni reglas.
+
+## Ampliación de combate — 30/09/2026
+
+`data/enemy_expansion.json` amplía el catálogo a través de `content.gd`; los
+pisos siguen usando el generador existente. `hero_cut_in.gd` configura 16
+cuadros y encuadre para ataque/defensa sobre `comic_cut_in.gd`.
+`hero_comic_fx.gd` separa las luces y partículas analíticas de la reproducción;
+no usa RNG del juego, reglas ni persistencia. El reloj visual compartido limita
+el avance de héroes a un cuadro por renderizado para evitar saltos ante una pausa
+de carga. `import_hero_motion.gd` empaqueta las 30 hojas 4×4 con recorte común;
+los importadores anteriores delegan en él. [Formato vigente](comic/smooth/README.md).
+`scripts/import_combat_expansion.gd` empaqueta los recursos; reutiliza
+`enemy_art_import.gd` para enemigos. No agrega responsabilidades a `main.gd`
+ni a persistencia. [Detalles y fuentes](combat_expansion/README.md).
 
 ## Acoplamiento que todavía existe
 

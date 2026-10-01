@@ -1900,3 +1900,58 @@ Sin exportación ni validación Web/móvil.
 - 30 comprobaciones nuevas renderizadas, campamento 37 renderizadas y expansión
   39 headless, sin fallos. Revisión visual local de construcción parcial/completa;
   importación y `git diff --check` limpios. Sin exportar ni probar Web/Android.
+
+## Seis enemigos y animaciones de héroes ampliadas — 30/09/2026
+
+- Cripta: chamán esqueleto, elemental de fuego y escarabajo coraza. Bosque:
+  bandido arquero, sapo venenoso y elemental de raíces. Se reutilizan seis
+  conceptos existentes, con ocho poses de escenario y un cómic de ataque
+  transparente hacia la izquierda por enemigo. Catálogo activo: 31 enemigos.
+- Datos separados en `data/enemy_expansion.json`, integrados mediante
+  `content.gd` y `dungeons.json`; apariciones progresivas, sin regenerar salas
+  guardadas. Se reutilizan daño, bloqueo, contraataque y ataque al grupo;
+  el sapo produce daño directo, sin introducir veneno persistente en héroes.
+- 24 ataques y seis defensas de héroes ampliados a ocho cuadros cada uno:
+  240 dibujos. Duración de 0,72 s conservada, con halo, chispas y destellos.
+  Encuadre compartido 1,28 y desplazamiento (-0,10; 0,12), hacia abajo e izquierda.
+  Adaptadores y `comic_cut_in.gd` mantienen presentación separada de reglas.
+- 42 assets finales generados; se corrigió el margen interno de 28 hojas para
+  evitar efectos cortados entre celdas. Prompts, referencias, procedencia,
+  fuentes y formato en `docs/combat_expansion/`. Importación reproducible en
+  `scripts/import_combat_expansion.gd`; el importador anterior delega en este.
+- Validación final de las 30 secuencias: 3332 comprobaciones headless y 1483
+  renderizadas, cero fallos; ocho cuadros diferentes reproducidos en orden,
+  transparencia y limpieza. Los 240 cuadros fuente tienen bordes libres.
+  Encuadre de seis héroes y combos/contraataques: cero fallos tras reimportar.
+- Nuevos enemigos: 2137 comprobaciones renderizadas, incluidos 100 seeds por
+  mazmorra, apariciones, poses y patrones. Regresiones headless de bosque
+  (24615), cripta/guardados (5161), sprites enemigos (973), secuencia de turno
+  (167), presentación (25) y cómics enemigos aprobadas, sin fallos.
+- Revisión visual local a 1280×720 de los seis héroes y enemigos incorporados,
+  sobre sus escenarios; Godot Compatibility/Mesa llvmpipe. La primera prueba
+  de cuadros perdió dos observaciones al leer imágenes durante la animación;
+  se movió ese trabajo fuera del intervalo medido y la ejecución final pasó.
+- Importación y `git diff --check` limpios. Sin exportar Web/APK ni validar
+  navegador, emulador o dispositivo físico. Balance de partidas completas pendiente.
+
+
+## 01/10/2026 — Más sprites y efectos en los héroes en primer plano
+
+- Las 24 variantes ofensivas y seis defensas pasan de ocho a 16 dibujos cada
+  una: 480 cuadros RGBA en 30 atlas 4×4. Generados con image_gen.imagegen;
+  prompts, fuentes, correcciones de márgenes y hashes en `docs/comic/smooth/`.
+- `hero_comic_fx.gd` separa halos, arcos de impacto, partículas escalonadas y
+  estelas aditivas. `hero_cut_in.gd` configura las nuevas hojas; conserva el
+  encuadre grande y parcialmente fuera de la esquina inferior izquierda.
+- `comic_cut_in.gd` usa un reloj común para poses, entrada, luces y salida.
+  Limita el avance visual de héroes durante pausas de renderizado y corrige el
+  redondeo que podía saltar un cuadro. La duración nominal sigue en 0,72 s;
+  se extiende si el dispositivo no puede renderizar todos los cuadros a tiempo.
+- `import_hero_motion.gd` empaqueta con recorte común. Los importadores anteriores
+  delegan para no restaurar accidentalmente el formato viejo. IDs y guardados
+  permanecen compatibles; las reglas siguen resueltas antes de la presentación.
+- Validación actual: prueba nativa de 30 secuencias, **2669 comprobaciones / 0
+  fallos**; cinco regresiones headless de héroes/enemigos, contraataques, turnos
+  (171) y presentación (25), sin fallos. Capturas de los seis héroes revisadas.
+  JSON y `git diff --check` correctos. Sin exportaciones ni pruebas web/móviles.
+- [Documentación, procedencia y límites](comic/smooth/README.md).

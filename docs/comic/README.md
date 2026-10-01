@@ -1,5 +1,9 @@
 # Apariciones de ataque en cómic — 18/09/2026
 
+> Estado actual 01/10/2026: 30 secuencias de héroes de **16 cuadros**, luces
+> y partículas. Ver [formato vigente](smooth/README.md).
+> Las secciones fechadas siguientes describen versiones históricas.
+
 ## Limpieza del 23/09/2026
 
 Las 18 imágenes estáticas adicionales de `assets/comic/attacks/` se retiraron: el juego utiliza las 24 secuencias de `assets/comic/motion/`. Los retratos base se conservan para otras pantallas.

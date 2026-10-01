@@ -1,0 +1,114 @@
+{
+  "skeleton_mage": {
+    "name": "Chamán esqueleto",
+    "hp": 25,
+    "color": "b566eb",
+    "visual": "skeleton_4",
+    "pattern": [
+      {
+        "damage": 4,
+        "all": true
+      },
+      {
+        "damage": 8
+      },
+      {
+        "damage": 0,
+        "block": 6
+      }
+    ]
+  },
+  "fire_elemental": {
+    "name": "Elemental de fuego",
+    "hp": 30,
+    "color": "ff8533",
+    "visual": "elemental_0",
+    "pattern": [
+      {
+        "damage": 5,
+        "all": true
+      },
+      {
+        "damage": 10
+      },
+      {
+        "damage": 6
+      }
+    ]
+  },
+  "armored_beetle": {
+    "name": "Escarabajo coraza",
+    "hp": 32,
+    "color": "db9b51",
+    "visual": "crypt_beetle",
+    "pattern": [
+      {
+        "damage": 4,
+        "block": 8
+      },
+      {
+        "damage": 8
+      },
+      {
+        "damage": 0,
+        "block": 10
+      }
+    ]
+  },
+  "bandit_archer": {
+    "name": "Bandido arquero",
+    "hp": 27,
+    "color": "c99968",
+    "visual": "bandit_2",
+    "pattern": [
+      {
+        "damage": 9
+      },
+      {
+        "damage": 12
+      },
+      {
+        "damage": 0,
+        "counter": 4
+      }
+    ]
+  },
+  "poison_toad": {
+    "name": "Sapo venenoso",
+    "hp": 26,
+    "color": "9ec64f",
+    "visual": "beast_4",
+    "pattern": [
+      {
+        "damage": 4,
+        "all": true
+      },
+      {
+        "damage": 7,
+        "block": 3
+      },
+      {
+        "damage": 10
+      }
+    ]
+  },
+  "root_elemental": {
+    "name": "Elemental de raíces",
+    "hp": 38,
+    "color": "88bf65",
+    "visual": "elemental_6",
+    "pattern": [
+      {
+        "damage": 5,
+        "block": 8
+      },
+      {
+        "damage": 9
+      },
+      {
+        "damage": 4,
+        "all": true
+      }
+    ]
+  }
+}

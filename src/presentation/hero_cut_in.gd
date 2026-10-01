@@ -16,16 +16,18 @@ static func play(parent: Control, hero: String, kind: String = "attack", variant
 	effect.hero_id = hero
 	effect.action = kind
 	effect.accent = COLORS[hero]
+	effect.framing_scale = 1.28
+	effect.framing_offset = Vector2(-0.10, 0.12)
+	effect.frame_grid = Vector2i(4, 4)
+	effect.enhanced_lights = true
+	effect.defensive_effect = kind == "defense"
 	if kind == "defense":
-		effect.texture_path = "res://assets/comic/defense/%s.png" % hero
+		effect.texture_path = "res://assets/comic/motion/%s_defense.png" % hero
 	else:
-		effect.framing_scale = 1.18
-		effect.framing_offset = Vector2(-0.07, 0.08)
 		# Visual rotation only: never consumes the adventure RNG or repeats adjacent hits.
 		effect.attack_variant = (int(last_variant.get(hero, 0)) + 1) % 4 if variant < 0 else clampi(variant, 0, 3)
 		last_variant[hero] = effect.attack_variant
 		effect.texture_path = "res://assets/comic/motion/%s_%d.png" % [hero, effect.attack_variant]
-		effect.frame_grid = Vector2i(2, 2)
 	effect.name = "HeroCutIn"
 	parent.add_child(effect)
 	return effect

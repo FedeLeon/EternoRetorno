@@ -19,31 +19,44 @@ func run_tests() -> void:
 	backdrop.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	host.add_child(backdrop)
 	for hero in CutIn.COLORS:
-		for variant in range(4):
-			var id = "%s_%d" % [hero,variant]
-			var effect = CutIn.play(host,hero,"attack",variant)
-			check(effect.frame_grid == Vector2i(2,2), "animated " + id)
-			var atlas = effect.frame_texture.atlas.get_image()
-			check(atlas.get_size() == Vector2i(1200,800), "atlas dimensions " + id)
+		for variant in range(5):
+			var id = "%s_%d" % [hero,variant] if variant < 4 else hero + "_defense"
+			if not OS.get_cmdline_user_args().is_empty() and id not in OS.get_cmdline_user_args(): continue
+			# CPU/GPU image reads and hashes must not stall the animation under test.
+			var atlas = load("res://assets/comic/motion/" + id + ".png").get_image()
+			check(atlas.get_size() == Vector2i(2400,1600), "atlas dimensions " + id)
 			var fingerprints: Array = []
-			for i in range(4):
-				var cell = atlas.get_region(Rect2i(i%2*600,i/2*400,600,400))
+			for i in range(16):
+				var cell = atlas.get_region(Rect2i(i%4*600,i/4*400,600,400))
 				fingerprints.append(hash(cell.get_data()))
 				check(cell.get_pixel(0,0).a == 0 and cell.get_used_rect().size.x > 100, "transparent populated frame " + id)
-			check(fingerprints.all(func(h): return fingerprints.count(h) == 1), "four distinct drawings " + id)
+				var clear = 0
+				var samples = 0
+				for y in range(20, 380, 20):
+					for x in range(20, 580, 20):
+						samples += 1
+						if cell.get_pixel(x, y).a < 0.05: clear += 1
+				check(float(clear) / samples > 0.20, "no opaque rectangular backdrop " + id)
+			check(fingerprints.all(func(h): return fingerprints.count(h) == 1), "sixteen distinct drawings " + id)
+			await process_frame
+			var effect = CutIn.play(host,hero,"attack" if variant < 4 else "defense",mini(variant,3))
+			check(effect.frame_grid == Vector2i(4,4), "animated " + id)
+			check(effect.hero_fx != null and effect.hero_fx.mouse_filter == Control.MOUSE_FILTER_IGNORE, "nonblocking hero particles " + id)
+			check(effect.defensive_effect == (variant == 4), "effect follows action " + id)
 			var observed: Array = []
 			var captured = false
+			var capture: Image
 			while is_instance_valid(effect) and not effect.is_queued_for_deletion():
 				if effect.frame_index not in observed: observed.append(effect.frame_index)
-				check(effect.frame_texture.region.end.x <= 1200 and effect.frame_texture.region.end.y <= 800, "atlas region valid")
-				if effect.frame_index == 2 and not captured and DisplayServer.get_name() != "headless":
+				check(effect.frame_texture.region.end.x <= 2400 and effect.frame_texture.region.end.y <= 1600, "atlas region valid")
+				if effect.frame_index == 8 and not captured and DisplayServer.get_name() != "headless":
 					await RenderingServer.frame_post_draw
-					root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("comic_motion/"+id+".png"))
+					capture = root.get_texture().get_image()
 					captured = true
+					continue # frame_post_draw already yielded; do not skip the next frame.
 				await process_frame
-			check(observed == [0,1,2,3], "all four frames play in order " + id)
-	var defense = CutIn.play(host,"guardian","defense")
-	check(defense.frame_texture == null and defense.frame_grid == Vector2i.ONE, "defense keeps its artwork")
-	await defense.finished
+			check(observed == range(16), "all sixteen frames play in order " + id + ": " + str(observed))
+			if capture != null:
+				capture.save_png(preload("res://tests/artifacts.gd").path("comic_motion/"+id+".png"))
 	print("COMIC MOTION: %d checks / %d failures" % [checks,failures])
 	quit(1 if failures else 0)

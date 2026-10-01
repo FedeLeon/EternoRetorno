@@ -19,6 +19,7 @@ func _init() -> void:
 	enemies = data.enemies
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/crypt_enemies.json")))
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/forest_enemies.json")))
+	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/enemy_expansion.json")))
 	relics = data.relics
 	relics.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/elite_relics.json")))
 	var legacy_icons = {"ember":2, "fang":3, "chalice":0, "hourglass":7}

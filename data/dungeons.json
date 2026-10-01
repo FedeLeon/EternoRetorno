@@ -11,7 +11,10 @@
       "skeleton_shielder",
       "skeleton_berserker",
       "rock_elemental",
-      "shadow_elemental"
+      "shadow_elemental",
+      "skeleton_mage",
+      "fire_elemental",
+      "armored_beetle"
     ],
     "elite": "elite",
     "boss": "boss",
@@ -21,7 +24,10 @@
       "skeleton_shielder": 2,
       "skeleton_berserker": 4,
       "rock_elemental": 5,
-      "shadow_elemental": 5
+      "shadow_elemental": 5,
+      "skeleton_mage": 3,
+      "fire_elemental": 5,
+      "armored_beetle": 2
     }
   },
   "2": {
@@ -37,7 +43,10 @@
       "goblin_raider",
       "goblin_rider",
       "forest_bat",
-      "forest_raven"
+      "forest_raven",
+      "bandit_archer",
+      "poison_toad",
+      "root_elemental"
     ],
     "elite": "forest_elite",
     "boss": "forest_boss",
@@ -45,7 +54,10 @@
     "distinct_common": true,
     "min_stage": {
       "goblin_bomber": 2,
-      "goblin_rider": 4
+      "goblin_rider": 4,
+      "bandit_archer": 1,
+      "poison_toad": 2,
+      "root_elemental": 4
     }
   }
 }

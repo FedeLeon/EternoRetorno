@@ -1,5 +1,9 @@
 # Movimiento dibujado en los ataques en primer plano
 
+> Estado actual 01/10/2026: 30 secuencias de héroes de **16 cuadros**, luces
+> y partículas. Ver [formato vigente](../smooth/README.md).
+> Las secciones fechadas siguientes describen versiones históricas.
+
 ## Alcance
 
 24 secuencias, cuatro variantes por cada uno de los seis héroes. Cada secuencia
