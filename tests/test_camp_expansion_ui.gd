@@ -97,5 +97,9 @@ func run_tests() -> void:
 	app.game.new_run(["warrior","cleric"], 3)
 	app.layer.get_node("Plot1").pressed.emit()
 	for button in app.layer.find_children("AcceptContract", "Button", true, false): check(button.disabled, "contracts locked during run")
+	await create_timer(0.3).timeout
+	app.queue_free()
+	await process_frame
+	await create_timer(0.3).timeout
 	print("CAMP EXPANSION UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

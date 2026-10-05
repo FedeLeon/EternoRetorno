@@ -1,4 +1,5 @@
 extends RefCounted
+const BattleAudio = preload("res://src/audio/battle_audio.gd")
 # Coordinates committed actions and their presentation; save precedes animation.
 static func run(ui: Control, hand_index: int = -1, target_index: int = -1, synergy_id: String = "") -> void:
 	if ui.combat_busy or ui.game.run.phase != "combat":
@@ -8,12 +9,16 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 	var owner = -1
 	var offensive = false
 	var defensive = false
+	var healing = false
+	var poisonous = false
 	var motion = "attack"
 	if hand_index >= 0:
 		var instance = ui.game.run.combat.hand[hand_index]
 		var card = ui.game.content.card(instance)
 		offensive = card.damage > 0 or card.poison > 0
 		defensive = card.block > 0
+		healing = card.heal > 0
+		poisonous = card.poison > 0
 		owner = ui.game.owner_index(instance)
 		motion = "heavy" if card.cost >= 2 else "attack"
 		if card.owner == "mage":
@@ -41,7 +46,11 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 	else:
 		accepted = ui.game.play_card(hand_index, target_index) if hand_index >= 0 else ui.game.end_turn()
 	if not accepted:
+		ui.audio.play_sfx("error")
 		return
+	ui.audio.play_sfx("card_use" if hand_index >= 0 or synergy_id != "" else "ash", -6)
+	if healing: ui.audio.play_sfx("heal")
+	if poisonous: ui.audio.play_sfx("poison", -4)
 	if hand_index >= 0 or synergy_id != "":
 		ui.layer.get_node("CombatHUD").update_energy(ui.game.run.combat.energy)
 	var impacts: Array = ui.game.resolved_card_hits.duplicate(true) if hand_index >= 0 or synergy_id != "" else []
@@ -72,6 +81,7 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		if offensive:
 			ui.CombatEffects.attack_flash(ui.layer)
 		if (offensive or defensive) and impacts.is_empty():
+			BattleAudio.hero(ui.audio, ui.game.run.party[owner], "attack" if offensive else "defense")
 			var cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer, ui.game.run.party[owner], "attack" if offensive else "defense")
 			if cut_in != null:
 				await cut_in.finished
@@ -87,6 +97,8 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			if current_enemies[i].hp < old_enemies[i].hp:
 				ui.enemy_health[i].animate_to(current_enemies[i].hp)
 			if current_enemies[i].hp <= 0:
+				ui.audio.play_sfx("death")
+				ui.audio.play_sfx("ash", -8)
 				ui.flash_hit(ui.enemy_art[i])
 				await ui.enemy_art[i].play_once("death")
 			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty():
@@ -95,10 +107,12 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			var block = int(ui.game.resolved_enemy_blocks[i])
 			preload("res://src/presentation/card_impacts.gd").update_block(ui.enemy_health[i], block)
 			if block > 0:
+				ui.audio.play_sfx("block", -4)
 				await ui.get_tree().create_timer(0.30).timeout
 		if hand_index < 0 and synergy_id == "" and i in ui.game.resolved_enemy_attacks:
 			ui.CombatEffects.attack_flash(ui.layer)
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual
+			BattleAudio.enemy(ui.audio, visual)
 			var cut_in = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer, visual)
 			if cut_in != null:
 				await cut_in.finished
@@ -106,6 +120,7 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 			for hero_index in ui.game.resolved_hero_blocks.get(i, {}):
 				preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[hero_index], ui.game.resolved_hero_blocks[i][hero_index])
 			for hero_index in ui.game.resolved_hero_defenses.get(i, []):
+				ui.audio.play_sfx("block")
 				if ui.game.run.party[hero_index] in ui.ANIMATED_HEROES:
 					await ui.hero_art[hero_index].play_once("guard")
 	for i in range(before.size()):
@@ -114,6 +129,7 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 		if hand_index < 0 and synergy_id == "":
 			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
 		if after.hp < before[i].hp:
+			ui.audio.play_sfx("hurt", -5)
 			ui.flash_hit(ui.hero_art[i])
 		if ui.game.run.party[i] not in ui.ANIMATED_HEROES:
 			continue

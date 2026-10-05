@@ -41,5 +41,8 @@ func run_tests() -> void:
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("cards/upgrade-preview.png"))
 	await click(view.confirm)
 	check(app.game.run.phase == "map" and app.game.run.deck[1].upgraded and not app.game.run.deck[0].upgraded, "only confirmed card is upgraded and rest ends")
+	app.queue_free()
+	await process_frame
+	await create_timer(0.1).timeout
 	print("UPGRADE FAILURES: ", failures)
 	quit(1 if failures else 0)

@@ -1,6 +1,10 @@
 # Héroes en primer plano: 16 sprites por acción — 01/10/2026
 
-## Resultado actual
+> Actualización 05/10/2026: las poses fueron reconstruidas en mayor resolución.
+> Ver [fuentes HD y formato vigente](../hd/README.md). Esta página conserva el
+> formato y las pruebas históricas del 01/10.
+
+## Resultado del 01/10/2026
 
 Los seis héroes tienen cuatro variantes de ataque y una defensa, cada una con
 16 dibujos consecutivos: **30 secuencias y 480 cuadros**. Sustituyen las hojas de

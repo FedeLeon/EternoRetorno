@@ -22,4 +22,6 @@ static func build(ui: Control) -> void:
 	preload("res://src/ui/screens/forge_screen.gd").build(ui, ui.game.content, ui.game.profile.duplicate(true), ui.forge_hero, ui.game.Forge.config(), ui.game.Forge.levels(ui.game.profile, ui.forge_hero) if ui.forge_hero != "" else {}, {
 		"back": ui.open_base_camp,
 		"category": func(id): ui.forge_hero = id; ui.render(),
-		"buy": func(track, level): ui.game.buy_forge_upgrade(ui.forge_hero, track, level); ui.render()})
+		"buy": func(track, level):
+			if ui.game.buy_forge_upgrade(ui.forge_hero, track, level): ui.audio.play_sfx("upgrade")
+			ui.render()})

@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Estado revisado el **01/10/2026**. Esta página describe el código actual y los
+Estado revisado el **05/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
@@ -19,6 +19,7 @@ siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.
 | `src/ui/components/` | Cartas, barras, números, paneles, botones y elementos reutilizables |
 | `src/ui/combat_flow.gd` | Coordinación de una acción de combate resuelta con sus animaciones |
 | `src/ui/forge_navigation.gd` | Construcción, acceso y acciones de la herrería |
+| `src/audio/` | Gestor persistente, contextos y efectos de acciones resueltas; RNG independiente, sin reglas ni persistencia |
 | `src/presentation/` | Efectos visuales, viñetas compartidas (`comic_cut_in.gd`, adaptadores de héroes/enemigos) y selección de apariencia del equipo |
 | `src/*_sprite.gd` | Animaciones de actores; se mantienen rutas/UIDs actuales |
 | `assets/` | Recursos finales usados por el juego, agrupados por sistema |
@@ -66,8 +67,11 @@ cuadros y encuadre para ataque/defensa sobre `comic_cut_in.gd`.
 `hero_comic_fx.gd` separa las luces y partículas analíticas de la reproducción;
 no usa RNG del juego, reglas ni persistencia. El reloj visual compartido limita
 el avance de héroes a un cuadro por renderizado para evitar saltos ante una pausa
-de carga. `import_hero_motion.gd` empaqueta las 30 hojas 4×4 con recorte común;
-los importadores anteriores delegan en él. [Formato vigente](comic/smooth/README.md).
+de carga. `import_hero_motion.gd` empaqueta 30 atlas 4×4 de 3072×2048 con recorte común;
+los importadores anteriores delegan en él. Desde el 05/10 consume cuatro hojas
+HD 2×2 por secuencia en `docs/comic/hd/sources/`. El utilitario
+`prepare_hero_hd_refs.gd` recompone referencias desde las fuentes históricas,
+sin generar poses. [Formato vigente y procedencia](comic/hd/README.md).
 `scripts/import_combat_expansion.gd` empaqueta los recursos; reutiliza
 `enemy_art_import.gd` para enemigos. No agrega responsabilidades a `main.gd`
 ni a persistencia. [Detalles y fuentes](combat_expansion/README.md).
@@ -425,3 +429,16 @@ visuales independientes de Game y del guardado. Vive dentro de la pantalla,
 ignora entradas y se libera con ella. Iglesia reutiliza la galería derecha de
 `building_hero_picker.gd`; contratos y especializaciones conservan el componente
 `camp_offer_card.gd`, adaptado al espacio disponible. No se añaden reglas a la UI.
+
+### Audio y opciones — 05/10/2026
+
+`audio/audio_manager.gd` vive bajo el controlador y permanece cuando se reconstruyen
+las pantallas. Lee `data/audio.json`, administra buses y voces, fundidos musicales
+y sonidos de botones. `audio/screen_audio.gd` selecciona ambientes por pantalla y piso;
+`audio/battle_audio.gd` asigna efectos por familia de héroe/enemigo. La presentación
+los reproduce después de que Game confirma la acción: no consumen RNG de la aventura,
+no resuelven impactos ni escriben guardados.
+
+La vista de opciones sale de `main.gd` a `ui/screens/options_screen.gd`. El controlador
+conserva `set_option` y el checkpoint existente; agrega música y efectos al diccionario
+de ajustes sin migración. Rutas y recursos de descarga en [Audio](audio/README.md).

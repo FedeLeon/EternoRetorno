@@ -1955,3 +1955,49 @@ Sin exportación ni validación Web/móvil.
   (171) y presentación (25), sin fallos. Capturas de los seis héroes revisadas.
   JSON y `git diff --check` correctos. Sin exportaciones ni pruebas web/móviles.
 - [Documentación, procedencia y límites](comic/smooth/README.md).
+
+## 05/10/2026 — Mayor definición en los primeros planos de héroes
+
+- Corregida la causa de la imagen borrosa: las fuentes anteriores tenían solo
+  384×256 píxeles por pose y se ampliaban. Se regeneraron con ImageGen las 480
+  poses de los seis héroes en hojas de cuatro dibujos, a 768×512 por pose.
+  Se mantienen cuatro ataques y una defensa por héroe, con 16 fotogramas cada una.
+- Los 30 atlas de `assets/comic/motion/` pasan a 3072×2048. Conservan rutas,
+  UIDs, transparencia, combos, encuadre inferior izquierdo, luces y partículas.
+  Sin cambios en reglas, guardados ni temporización de combate.
+- `scripts/import_hero_motion.gd` reúne cuatro fuentes HD por secuencia;
+  `prepare_hero_hd_refs.gd` recompone las referencias históricas sin redibujarlas.
+  El importador de expansión delega al formato vigente. Documentación de sistema,
+  arquitectura e índice actualizados; prompts, fuentes y hashes en `docs/comic/hd/`.
+- Validación local actual: importación correcta, 120 fuentes transparentes
+  auditadas y prueba nativa de 30 secuencias con **2685 comprobaciones / 0 fallos**.
+  Cinco regresiones headless (primeros planos de héroes/enemigos, contraataques,
+  turnos y presentación), sin fallos. Capturas revisadas de los seis héroes a
+  1280×720 en Godot Compatibility/Mesa llvmpipe.
+- Coste: PNG de runtime 140,0 → 270,6 MiB; recursos importados finales 54,1 MiB.
+  Sin medir exportación ni validar web/móviles. Mayor consumo de memoria de textura;
+  detalles y reproducción en [primeros planos HD](comic/hd/README.md).
+
+## 05/10/2026 — Música, ambientes y efectos de sonido
+
+- Descargados e integrados 48 recursos CC0: cinco músicas, cuatro ambientes y
+  39 efectos. Inicio oscuro, campamento tranquilo y edificios con sonidos propios,
+  cripta/bosque y combate; botones, armas, magia, criaturas, bloqueo, curación,
+  veneno, cenizas, compras, mejoras y premios. Cada golpe de combo tiene su sonido.
+- Vorbis normalizado: 7,37 MiB finales. Catálogo en `data/audio.json`, procedencia,
+  licencias y hashes por archivo en `docs/audio/`; preparación reproducible en
+  `scripts/prepare_audio.py`. No se requieren red ni descargas durante la partida.
+- Gestor persistente en `src/audio/`, fundidos de música sin reiniciar al reconstruir
+  vistas y RNG propio. Bolsa/mazo conservan el contexto de aventura. La presentación
+  acompaña acciones confirmadas; no cambia reglas ni el orden de guardado.
+- Opciones extraídas a una pantalla propia: volumen general, música y efectos/ambiente;
+  valores persistentes compatibles con ajustes anteriores, sin migración.
+- Validación actual: audio 78 comprobaciones headless y 79 nativas, cero fallos;
+  mercado 61, herrería 110 e inicio 11; secuencia de turno, contraataques, mejora
+  de cartas e iglesia/expediciones sin fallos. Los tests de UI liberan sus nodos y
+  esperan al mezclador para evitar recursos Ogg pendientes al cerrar.
+- Mezcla nativa grabada con señal real y pico máximo −3,37 dBFS, sin saturación en
+  el recorrido probado. Opciones revisadas visualmente a 1280×720 en Mesa llvmpipe.
+  Verificados los 48 hashes y rutas. No se validó por altavoces, navegador, emulador
+  ni dispositivo físico; no se exportó el juego. Selección musical ajustable tras
+  escuchar partidas humanas. [Documentación y fuentes](audio/README.md).

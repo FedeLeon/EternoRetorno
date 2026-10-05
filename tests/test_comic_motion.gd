@@ -24,16 +24,16 @@ func run_tests() -> void:
 			if not OS.get_cmdline_user_args().is_empty() and id not in OS.get_cmdline_user_args(): continue
 			# CPU/GPU image reads and hashes must not stall the animation under test.
 			var atlas = load("res://assets/comic/motion/" + id + ".png").get_image()
-			check(atlas.get_size() == Vector2i(2400,1600), "atlas dimensions " + id)
+			check(atlas.get_size() == Vector2i(3072,2048), "atlas dimensions " + id)
 			var fingerprints: Array = []
 			for i in range(16):
-				var cell = atlas.get_region(Rect2i(i%4*600,i/4*400,600,400))
+				var cell = atlas.get_region(Rect2i(i%4*768,i/4*512,768,512))
 				fingerprints.append(hash(cell.get_data()))
 				check(cell.get_pixel(0,0).a == 0 and cell.get_used_rect().size.x > 100, "transparent populated frame " + id)
 				var clear = 0
 				var samples = 0
-				for y in range(20, 380, 20):
-					for x in range(20, 580, 20):
+				for y in range(20, 492, 20):
+					for x in range(20, 748, 20):
 						samples += 1
 						if cell.get_pixel(x, y).a < 0.05: clear += 1
 				check(float(clear) / samples > 0.20, "no opaque rectangular backdrop " + id)
@@ -48,7 +48,7 @@ func run_tests() -> void:
 			var capture: Image
 			while is_instance_valid(effect) and not effect.is_queued_for_deletion():
 				if effect.frame_index not in observed: observed.append(effect.frame_index)
-				check(effect.frame_texture.region.end.x <= 2400 and effect.frame_texture.region.end.y <= 1600, "atlas region valid")
+				check(effect.frame_texture.region.end.x <= 3072 and effect.frame_texture.region.end.y <= 2048, "atlas region valid")
 				if effect.frame_index == 8 and not captured and DisplayServer.get_name() != "headless":
 					await RenderingServer.frame_post_draw
 					capture = root.get_texture().get_image()

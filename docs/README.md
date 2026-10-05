@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **01/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **05/10/2026**.
 
 ## Estado actual
 
@@ -20,7 +20,7 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   de 24 (20 nuevas), visible junto a la elección de carta.
 - Actores: seis héroes y 56 enemigos con sprites de 128×128; treinta y un enemigos activos. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
 - Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
-  con luces y partículas locales; [assets y reproducción](comic/smooth/README.md).
+  con poses HD, luces y partículas locales; [assets y reproducción](comic/hd/README.md).
 - Campamento: mercado construible en solar 1 por 300 almas, con 60 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
@@ -31,6 +31,7 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
+- Audio: cinco músicas, cuatro ambientes y 39 efectos CC0; volumen general, música y efectos ajustables. [Sistema y fuentes](audio/README.md).
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
 La APK existente corresponde a una entrega anterior. Los cambios recientes se
@@ -79,6 +80,7 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Marcos y colores de cartas | [Cartas](cards/README.md) |
 | Botones compartidos y barras de preparación | [Botones](ui_buttons/README.md) |
 | Inicio, botones y opciones | [Inicio](title/README.md) |
+| Música, efectos, ambientes y licencias | [Audio](audio/README.md) |
 | Calidad de actores, atlas de 128 px y vista previa animada | [Actores](quality/README.md) |
 | Biblioteca de 56 enemigos | [Enemigos](enemies/README.md) |
 | Barra, reliquias, orbe y dígitos gráficos | [HUD de combate](hud/README.md) |
@@ -99,7 +101,7 @@ entrada más reciente del historial y el documento del sistema correspondiente.
 - Definir los edificios restantes y balancear las mejoras permanentes de herrería.
 - Diseñar siguientes pisos y asignar estadísticas a los enemigos reservados.
 - Balancear seis cartas por turno, equipamiento y consumibles con partidas humanas.
-- Incorporar audio; el control de volumen ya existe, pero no hay música añadida.
+- Ajustar la selección musical y los efectos después de escucharlos en partidas humanas.
 - Cuando se solicite una nueva APK: actualizar el recorrido de interfaz de Android,
   exportar y comprobar controles táctiles, reanudación, legibilidad y rendimiento.
   Las pruebas antiguas basadas en posiciones no validan automáticamente el diseño nuevo.

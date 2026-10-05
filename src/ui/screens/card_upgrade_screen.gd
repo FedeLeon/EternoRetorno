@@ -57,4 +57,5 @@ func select(index: int) -> void:
 func commit() -> void:
 	if selected < 0: return
 	confirm.disabled = true
+	ui.audio.play_sfx("upgrade")
 	ui.act(func(): ui.game.rest(false, selected))

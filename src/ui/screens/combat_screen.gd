@@ -11,6 +11,7 @@ static func build(ui: Control) -> void:
 	hud.equipment = preload("res://src/presentation/equipment_badges.gd").entries(ui.game.run.heroes, ui.game.content.heroes)
 	hud.bag_requested.connect(func():
 		if not ui.combat_busy:
+			ui.audio.play_sfx("bag", -5)
 			ui.selected_item = ""; ui.screen = "items"; ui.render())
 	hud.menu_requested.connect(func():
 		if not ui.combat_busy: ui.pause_menu())

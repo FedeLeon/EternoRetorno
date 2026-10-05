@@ -82,5 +82,8 @@ func run_tests() -> void:
 	game.run.combat.enemies[0].intent = {"damage":0,"block":5,"target":0}
 	game.end_turn()
 	check(game.resolved_hero_defenses.is_empty(), "defense receipts cleared on next turn")
+	app.queue_free()
+	await process_frame
+	await create_timer(0.1).timeout
 	print("TURN SEQUENCE: %d checks / %d failures" % [checks,failures])
 	quit(1 if failures else 0)

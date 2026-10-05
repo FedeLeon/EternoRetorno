@@ -29,6 +29,7 @@ const INK = Color("10141f")
 const TEXT = Color("ebe2d0")
 const MUTED = Color("9299ab")
 var game = Game.new()
+var audio = preload("res://src/audio/audio_manager.gd").new()
 var equipped: Dictionary = {}
 var selected_item = ""
 var screen = "home"
@@ -58,6 +59,7 @@ func _ready() -> void:
 	preload("res://src/ui/components/button_skin.gd").install(ui_theme)
 	ui_theme.set_stylebox("focus", "Button", preload("res://src/ui/components/dark_skin.gd").focus())
 	theme = ui_theme
+	add_child(audio)
 	apply_options()
 	render()
 
@@ -162,6 +164,7 @@ func background() -> void:
 	rect(shade, 0, 0, 1280, 720)
 
 func render() -> void:
+	audio.select_screen(screen, game.run, return_screen)
 	hero_health.clear()
 	enemy_health.clear()
 	hero_art.clear()
@@ -222,9 +225,7 @@ func home() -> void:
 
 func apply_options() -> void:
 	var settings: Dictionary = game.profile.get("settings", {})
-	var volume = float(settings.get("volume", 1.0))
-	AudioServer.set_bus_volume_db(0, linear_to_db(maxf(0.0001, volume)))
-	AudioServer.set_bus_mute(0, volume == 0)
+	audio.apply_settings(settings)
 	if not OS.has_feature("mobile") and DisplayServer.get_name() != "headless":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if settings.get("fullscreen", false) else DisplayServer.WINDOW_MODE_WINDOWED)
 
@@ -236,31 +237,7 @@ func set_option(key: String, value: Variant) -> void:
 	game.checkpoint()
 
 func options_view() -> void:
-	var shade = ColorRect.new()
-	shade.color = Color(0, 0, 0, 0.75)
-	shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	rect(shade, 0, 0, 1280, 720)
-	panel(350, 190, 580, 350, Color("8a799b"))
-	label_at("Opciones", 390, 211, 500, 46, 32).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label_at("Volumen general", 390, 281, 280, 38)
-	var volume = HSlider.new()
-	volume.name = "Volume"
-	volume.min_value = 0
-	volume.max_value = 100
-	volume.step = 1
-	volume.value = float(game.profile.get("settings", {}).get("volume", 1.0)) * 100
-	rect(volume, 390, 328, 500, 40)
-	volume.value_changed.connect(func(value): set_option("volume", value / 100.0))
-	var fullscreen = CheckButton.new()
-	fullscreen.name = "Fullscreen"
-	fullscreen.text = "Pantalla completa"
-	fullscreen.button_pressed = game.profile.get("settings", {}).get("fullscreen", false)
-	fullscreen.disabled = OS.has_feature("mobile")
-	rect(fullscreen, 390, 386, 500, 48)
-	fullscreen.toggled.connect(func(value): set_option("fullscreen", value))
-	if OS.has_feature("mobile"):
-		label_at("Android utiliza pantalla completa.", 390, 437, 500, 26, 16, MUTED)
-	title_button("Volver", 470, false, func(): screen = "home"; render())
+	preload("res://src/ui/screens/options_screen.gd").build(self)
 
 var market_hero = ""
 var forge_hero = ""
@@ -277,7 +254,7 @@ func market_view() -> void:
 		"category": func(id): market_hero = id; render(),
 		"buy": func(id):
 			var scroll_position = layer.get_node("MarketCards").scroll_vertical
-			game.buy_market_card(id)
+			if game.buy_market_card(id): audio.play_sfx("coins")
 			render()
 			layer.get_node("MarketCards").set_deferred("scroll_vertical", scroll_position)})
 
@@ -385,7 +362,9 @@ func continue_run() -> void:
 	render()
 
 func act(callback: Callable) -> void:
+	var previous_room = game.run.get("current", -1)
 	callback.call()
+	if game.run.get("current", -1) != previous_room: audio.play_sfx("step", -7)
 	continue_run()
 
 func map_view() -> void:
@@ -455,6 +434,7 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	return preload("res://src/ui/components/card_view.gd").build(self, instance, x, y, w, h, callback, chosen, enabled, parent, base_values)
 
 func select_card(index: int) -> void:
+	audio.play_sfx("card_select", -5)
 	selected_synergy = ""
 	var hand = layer.get_node_or_null("CombatHand")
 	if hand != null:
@@ -490,6 +470,7 @@ func room_view() -> void:
 		view.result = treasure_display()
 		view.open_requested.connect(func():
 			if game.take_treasure():
+				audio.play_sfx("treasure")
 				view.reveal(treasure_display()))
 		view.continue_requested.connect(func(): act(game.leave_treasure))
 		view.menu_requested.connect(pause_menu)
@@ -500,7 +481,7 @@ func room_view() -> void:
 		if int(game.run.get("floor", 1)) == 2: view.background_path = "res://assets/forest/rest.png"
 		view.heroes = game.run.heroes.duplicate(true)
 		view.can_upgrade = game.run.deck.any(func(card): return not card.upgraded)
-		view.heal_requested.connect(func(): act(func(): game.rest(true)))
+		view.heal_requested.connect(func(): audio.play_sfx("heal"); act(func(): game.rest(true)))
 		view.upgrade_requested.connect(func(): upgrade_mode = true; return_screen = "room"; screen = "deck"; render())
 		view.menu_requested.connect(pause_menu)
 		rect(view, 0, 0, 1280, 720)

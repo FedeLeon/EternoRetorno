@@ -14,7 +14,7 @@ func _initialize() -> void:
 		var ok = false
 		if job.type == "hero":
 			ok = preload("res://scripts/import_hero_motion.gd").pack_hero(
-				"res://docs/comic/smooth/sources/%s.png" % job.id,
+				job.id,
 				"res://assets/comic/motion/%s.png" % job.id)
 		elif job.type == "enemy_motion":
 			ok = Art.motion(source, "res://assets/enemies/animations/%s.png" % job.visual)

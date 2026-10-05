@@ -65,5 +65,8 @@ func run_tests() -> void:
 	check(app.screen == "base_camp", "back from gallery returns to camp")
 	app.open_market()
 	check(app.market_hero == "", "reenter market starts with hero cards")
+	app.queue_free()
+	await process_frame
+	await create_timer(0.1).timeout
 	print("MARKET UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

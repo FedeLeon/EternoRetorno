@@ -1,7 +1,7 @@
 # Movimiento dibujado en los ataques en primer plano
 
-> Estado actual 01/10/2026: 30 secuencias de héroes de **16 cuadros**, luces
-> y partículas. Ver [formato vigente](../smooth/README.md).
+> Estado actual 05/10/2026: 30 secuencias de héroes de **16 cuadros HD**, luces
+> y partículas. Ver [formato vigente](../hd/README.md).
 > Las secciones fechadas siguientes describen versiones históricas.
 
 ## Alcance

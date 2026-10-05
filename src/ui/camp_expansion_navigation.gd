@@ -47,5 +47,7 @@ static func church(ui: Control) -> void:
 	preload("res://src/ui/screens/church_screen.gd").build(ui, {"souls":ui.game.profile.souls, "heroes":ui.game.content.heroes, "hero":ui.church_hero, "options":options, "eligible":ui.church_hero in state.victorious, "active":state.active.get(ui.church_hero, "")}, {
 		"back":ui.open_base_camp,
 		"hero":func(id): ui.church_hero = id; ui.render(),
-		"buy":func(id): ui.game.camp_action("buy_specialization", {"id":id}); ui.render(),
+		"buy":func(id):
+			if ui.game.camp_action("buy_specialization", {"id":id}): ui.audio.play_sfx("upgrade")
+			ui.render(),
 		"activate":func(id): ui.game.camp_action("activate_specialization", {"hero":ui.church_hero, "id":id}); ui.render()})

@@ -1,0 +1,443 @@
+{
+  "files": {
+    "ui_click": "res://assets/audio/sfx/ui_click.ogg",
+    "ui_hover": "res://assets/audio/sfx/ui_hover.ogg",
+    "ui_back": "res://assets/audio/sfx/ui_back.ogg",
+    "ui_open": "res://assets/audio/sfx/ui_open.ogg",
+    "error": "res://assets/audio/sfx/error.ogg",
+    "confirm": "res://assets/audio/sfx/confirm.ogg",
+    "card_select": "res://assets/audio/sfx/card_select.ogg",
+    "card_use": "res://assets/audio/sfx/card_use.ogg",
+    "coins": "res://assets/audio/sfx/coins.ogg",
+    "door": "res://assets/audio/sfx/door.ogg",
+    "bag": "res://assets/audio/sfx/bag.ogg",
+    "paper": "res://assets/audio/sfx/paper.ogg",
+    "cloth": "res://assets/audio/sfx/cloth.ogg",
+    "blade_swish": "res://assets/audio/sfx/blade_swish.ogg",
+    "blade_swish_2": "res://assets/audio/sfx/blade_swish_2.ogg",
+    "step": "res://assets/audio/sfx/step.ogg",
+    "block": "res://assets/audio/sfx/block.ogg",
+    "block_2": "res://assets/audio/sfx/block_2.ogg",
+    "hit": "res://assets/audio/sfx/hit.ogg",
+    "hit_2": "res://assets/audio/sfx/hit_2.ogg",
+    "hammer": "res://assets/audio/sfx/hammer.ogg",
+    "bell": "res://assets/audio/sfx/bell.ogg",
+    "bones": "res://assets/audio/sfx/bones.ogg",
+    "magic": "res://assets/audio/sfx/magic.ogg",
+    "magic_2": "res://assets/audio/sfx/magic_2.ogg",
+    "fire_spell": "res://assets/audio/sfx/fire_spell.ogg",
+    "ash": "res://assets/audio/sfx/ash.ogg",
+    "heal": "res://assets/audio/sfx/heal.ogg",
+    "upgrade": "res://assets/audio/sfx/upgrade.ogg",
+    "poison": "res://assets/audio/sfx/poison.ogg",
+    "monster": "res://assets/audio/sfx/monster.ogg",
+    "monster_2": "res://assets/audio/sfx/monster_2.ogg",
+    "hurt": "res://assets/audio/sfx/hurt.ogg",
+    "death": "res://assets/audio/sfx/death.ogg",
+    "goblin": "res://assets/audio/sfx/goblin.ogg",
+    "bow": "res://assets/audio/sfx/bow.ogg",
+    "treasure": "res://assets/audio/sfx/treasure.ogg",
+    "victory": "res://assets/audio/sfx/victory.ogg",
+    "defeat": "res://assets/audio/sfx/defeat.ogg",
+    "title": "res://assets/audio/music/title.ogg",
+    "camp": "res://assets/audio/music/camp.ogg",
+    "battle": "res://assets/audio/music/battle.ogg",
+    "crypt": "res://assets/audio/music/crypt.ogg",
+    "forest": "res://assets/audio/music/forest.ogg",
+    "fire": "res://assets/audio/ambience/fire.ogg",
+    "wind": "res://assets/audio/ambience/wind.ogg",
+    "birds": "res://assets/audio/ambience/birds.ogg",
+    "cave": "res://assets/audio/ambience/cave.ogg"
+  },
+  "events": {
+    "ui_click": {
+      "files": [
+        "ui_click"
+      ]
+    },
+    "ui_hover": {
+      "files": [
+        "ui_hover"
+      ]
+    },
+    "ui_back": {
+      "files": [
+        "ui_back"
+      ]
+    },
+    "ui_open": {
+      "files": [
+        "ui_open"
+      ]
+    },
+    "error": {
+      "files": [
+        "error"
+      ]
+    },
+    "confirm": {
+      "files": [
+        "confirm"
+      ]
+    },
+    "card_select": {
+      "files": [
+        "card_select"
+      ]
+    },
+    "card_use": {
+      "files": [
+        "card_use"
+      ]
+    },
+    "coins": {
+      "files": [
+        "coins"
+      ]
+    },
+    "door": {
+      "files": [
+        "door"
+      ]
+    },
+    "bag": {
+      "files": [
+        "bag"
+      ]
+    },
+    "paper": {
+      "files": [
+        "paper"
+      ]
+    },
+    "cloth": {
+      "files": [
+        "cloth"
+      ]
+    },
+    "blade_swish": {
+      "files": [
+        "blade_swish"
+      ]
+    },
+    "blade_swish_2": {
+      "files": [
+        "blade_swish_2"
+      ]
+    },
+    "step": {
+      "files": [
+        "step"
+      ]
+    },
+    "block": {
+      "files": [
+        "block",
+        "block_2"
+      ]
+    },
+    "block_2": {
+      "files": [
+        "block_2"
+      ]
+    },
+    "hit": {
+      "files": [
+        "hit",
+        "hit_2"
+      ],
+      "db": -4
+    },
+    "hit_2": {
+      "files": [
+        "hit_2"
+      ]
+    },
+    "hammer": {
+      "files": [
+        "hammer"
+      ]
+    },
+    "bell": {
+      "files": [
+        "bell"
+      ]
+    },
+    "bones": {
+      "files": [
+        "bones"
+      ]
+    },
+    "magic": {
+      "files": [
+        "magic",
+        "magic_2"
+      ],
+      "db": -4
+    },
+    "magic_2": {
+      "files": [
+        "magic_2"
+      ]
+    },
+    "fire_spell": {
+      "files": [
+        "fire_spell"
+      ]
+    },
+    "ash": {
+      "files": [
+        "ash"
+      ]
+    },
+    "heal": {
+      "files": [
+        "heal"
+      ],
+      "vary_pitch": false
+    },
+    "upgrade": {
+      "files": [
+        "upgrade"
+      ],
+      "vary_pitch": false
+    },
+    "poison": {
+      "files": [
+        "poison"
+      ]
+    },
+    "monster": {
+      "files": [
+        "monster",
+        "monster_2"
+      ],
+      "db": -5
+    },
+    "monster_2": {
+      "files": [
+        "monster_2"
+      ]
+    },
+    "hurt": {
+      "files": [
+        "hurt"
+      ]
+    },
+    "death": {
+      "files": [
+        "death"
+      ]
+    },
+    "goblin": {
+      "files": [
+        "goblin"
+      ]
+    },
+    "bow": {
+      "files": [
+        "bow"
+      ]
+    },
+    "treasure": {
+      "files": [
+        "treasure"
+      ]
+    },
+    "victory": {
+      "files": [
+        "victory"
+      ],
+      "vary_pitch": false
+    },
+    "defeat": {
+      "files": [
+        "defeat"
+      ]
+    },
+    "click": {
+      "files": [
+        "ui_click"
+      ],
+      "db": -8
+    },
+    "hover": {
+      "files": [
+        "ui_hover"
+      ],
+      "db": -16
+    },
+    "back": {
+      "files": [
+        "ui_back"
+      ],
+      "db": -8
+    },
+    "open": {
+      "files": [
+        "ui_open"
+      ],
+      "db": -8
+    },
+    "blade": {
+      "files": [
+        "blade_swish",
+        "blade_swish_2"
+      ]
+    }
+  },
+  "contexts": {
+    "title": {
+      "music": "title",
+      "music_db": -1,
+      "ambience": [
+        {
+          "id": "wind",
+          "db": -18
+        }
+      ],
+      "idle": []
+    },
+    "camp": {
+      "music": "camp",
+      "music_db": -1,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -6
+        },
+        {
+          "id": "birds",
+          "db": -12
+        },
+        {
+          "id": "wind",
+          "db": -20
+        }
+      ],
+      "idle": []
+    },
+    "market": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [],
+      "idle": [
+        "coins",
+        "cloth"
+      ]
+    },
+    "forge": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -9
+        }
+      ],
+      "idle": [
+        "hammer"
+      ]
+    },
+    "church": {
+      "music": "camp",
+      "music_db": -7,
+      "ambience": [
+        {
+          "id": "wind",
+          "db": -22
+        }
+      ],
+      "idle": [
+        "bell"
+      ]
+    },
+    "refuge": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -16
+        }
+      ],
+      "idle": [
+        "cloth"
+      ]
+    },
+    "expeditions": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "wind",
+          "db": -20
+        }
+      ],
+      "idle": [
+        "paper"
+      ]
+    },
+    "rest": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -4
+        }
+      ],
+      "idle": []
+    },
+    "crypt": {
+      "music": "crypt",
+      "music_db": -1,
+      "ambience": [
+        {
+          "id": "cave",
+          "db": -12
+        }
+      ],
+      "idle": []
+    },
+    "forest": {
+      "music": "forest",
+      "music_db": -1,
+      "ambience": [
+        {
+          "id": "birds",
+          "db": -12
+        },
+        {
+          "id": "wind",
+          "db": -20
+        }
+      ],
+      "idle": []
+    },
+    "combat": {
+      "music": "battle",
+      "music_db": -2,
+      "ambience": [],
+      "idle": []
+    },
+    "reward": {
+      "music": "battle",
+      "music_db": -8,
+      "ambience": [],
+      "idle": []
+    },
+    "victory": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [],
+      "idle": []
+    },
+    "defeat": {
+      "music": "title",
+      "music_db": -7,
+      "ambience": [],
+      "idle": []
+    }
+  }
+}

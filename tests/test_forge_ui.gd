@@ -104,5 +104,8 @@ func run_tests() -> void:
 			check(labels[0].text.contains(entry.owner) and labels[0].text.contains("Nivel 3"), "description identifies owner and level")
 			check(labels[1].text.contains("+3" if i % 2 == 0 else "+6"), "description uses applied bonus")
 		await capture("combat-" + pair[0] + ".png")
+	app.queue_free()
+	await process_frame
+	await create_timer(0.1).timeout
 	print("FORGE UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)
