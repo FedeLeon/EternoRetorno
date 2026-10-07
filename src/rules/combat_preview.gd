@@ -12,6 +12,12 @@ static func describe(game: RefCounted, hand_index: int, target: int) -> String:
 	var card = game.effective_card(game.run.combat.hand[hand_index])
 	copy.play_card(hand_index, target)
 	var lines: Array[String] = []
+	if card.get("charge", false): lines.append("Prepara %d daño para el próximo turno; no golpea ahora." % card.damage)
+	if card.get("interrupt", false): lines.append("Cancela resurrección, brasas o contraataque del objetivo.")
+	for i in range(before.size()):
+		var previous_roots = int(before[i].get("root_hp", 0))
+		var next_roots = int(copy.run.combat.get("enemies", before)[i].get("root_hp", 0))
+		if next_roots < previous_roots: lines.append("Raíces: %d daño · quedan %d PV" % [previous_roots-next_roots,next_roots])
 	for i in range(before.size()):
 		var hits = copy.resolved_card_hits.filter(func(hit): return hit.kind == "hit" and hit.enemy == i)
 		if not hits.is_empty():

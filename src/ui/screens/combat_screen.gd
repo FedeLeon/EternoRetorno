@@ -21,6 +21,8 @@ static func build(ui: Control) -> void:
 		if not ui.combat_busy:
 			hud.show_relic(index))
 	ui.rect(hud, 0, 0, 1280, 720)
+	preload("res://src/ui/components/tactical_badges.gd").toolbar(ui)
+	if ui.game.run.get("training", false): preload("res://src/ui/training_navigation.gd").toolbar(ui)
 	var targets: Array = []
 	var c: Dictionary = {}
 	if ui.selected_card >= 0 and ui.selected_card < b.hand.size():
@@ -38,10 +40,14 @@ static func build(ui: Control) -> void:
 		ui.combat_target_style(target)
 		if valid and ui.selected_card >= 0:
 			target.tooltip_text = preload("res://src/rules/combat_preview.gd").describe(ui.game, ui.selected_card, i)
-		var visual = ui.art(h.id, 30, 123, 144, 136, target, h.get("forge", {}))
+		var visual = preload("res://src/presentation/detailed_hero.gd").new()
+		visual.hero_id = h.id
+		visual.gear = h.get("forge", {})
+		ui.rect(visual, 4, 123, 196, 136, target)
 		preload("res://src/ui/components/combat_actor_scale.gd").hero(visual, h.id)
 		ui.TargetGlow.attach(visual, valid)
 		ui.hero_art[i] = visual
+		preload("res://src/ui/components/tactical_badges.gd").hero(ui, target, i)
 		if h.id in ui.ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
 		ui.hero_health[i] = ui.health_bar(h, 16, 20, 172, target)
@@ -68,9 +74,18 @@ static func build(ui: Control) -> void:
 		enemy_visual.visual_id = def.visual
 		enemy_visual.fallen = e.hp <= 0
 		ui.rect(enemy_visual, 43, 130, 128, 132, target)
+		if ui.game.run.get("training", false):
+			enemy_visual.has_motion_frames = false
+			enemy_visual.sprite.hframes = 1
+			enemy_visual.sprite.texture = preload("res://assets/combat_depth/dummy.png")
+			enemy_visual.set_process(false)
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
+		preload("res://src/ui/components/tactical_badges.gd").enemy(ui, target, e)
+		if e.get("rear", false):
+			enemy_visual.scale *= 0.86
+			enemy_visual.position.y -= 12
 		var name_plate = preload("res://src/ui/components/combat_backplate.gd").attach(target, Rect2(3, -66, 208, 28))
 		var caption: String = def.name + (" · Fase II" if e.get("enraged", false) else "")
 		var enemy_name = ui.label_at(caption, 7, -65, 200, 26, 12 if caption.length() > 26 else 14, ui.TEXT, target)

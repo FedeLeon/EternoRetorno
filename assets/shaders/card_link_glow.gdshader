@@ -1,6 +1,8 @@
 shader_type canvas_item;
+uniform float intensity = 1.0;
+uniform float halo_width = 22.0;
 void fragment() {
-	vec2 step_uv = TEXTURE_PIXEL_SIZE * 22.0;
+	vec2 step_uv = TEXTURE_PIXEL_SIZE * halo_width;
 	float halo = 0.0;
 	for (int x = -1; x <= 1; x++) {
 		for (int y = -1; y <= 1; y++) {
@@ -9,5 +11,5 @@ void fragment() {
 	}
 	float core = texture(TEXTURE, UV).a;
 	float pulse = 0.72 + 0.15 * sin(TIME * 2.0);
-	COLOR = vec4(0.95, 0.68, 0.3, max(halo - core, 0.0) * pulse);
+	COLOR = vec4(0.95, 0.68, 0.3, max(halo - core, 0.0) * pulse * intensity);
 }

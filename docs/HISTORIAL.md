@@ -2082,3 +2082,47 @@ Sin exportación ni validación Web/móvil.
   correcciones anteriores de audio y los demás cambios existentes del usuario.
 
 [Alcance, reglas, archivos, prompts y límites](expansion_2026_10/README.md).
+
+## 07/10/2026 — Combate táctico, entrenamiento y héroes detallados
+
+- Seis héroes de batalla redibujados en 42 hojas de doce poses: 504 cuadros nuevos,
+  normalizados a 256×256, con defensa, manos/capas en reposo, anclaje de pies,
+  transiciones cortas y partículas locales. Equipo conserva niveles/efectos y distingue
+  las 16 combinaciones con material; se mantienen las variantes clásicas para otros usos.
+- Todas las cartas tienen dos decisiones de mejora, preview y confirmación;
+  guardados anteriores conservan Potencia. Doce cartas nuevas de preparación/interrupción,
+  ilustraciones propias y compra en mercado: 126 cartas/72 comprables.
+- Formación protegida, cuatro parejas de reliquias, tres modificadores de élite,
+  resurrección de cripta, raíces del bosque y brasas de fortaleza; explicación visible,
+  daño por impacto, preparación guardada y ejecución animada posterior a enemigos.
+- Mercader con tres consumibles/intercambio de reliquia, un evento por piso;
+  consecuencias encadenadas de campamento abandonado, espíritu y biblioteca.
+- Entrenamiento separado sin persistencia/gasto, niveles 0–3 y selector de cartas;
+  bestiario descubierto, historia con mazo/reliquias/causante y registro desplazable.
+- Extracción de acciones a `card_actions.gd`; nuevas reglas/presentación/pantallas
+  independientes. `main.gd` 638 líneas y `game.gd` 481; IDs/UIDs y límites de pisos
+  guardados permanecen. Fuente, prompts y hashes de 58 imágenes registrados.
+- Reglas y regresiones verificadas con Godot local; interacción/arte/secuencia
+  revisados con renderizado Mesa/llvmpipe. Pruebas headless y gráficas se documentan
+  por separado; no se exportó Web/APK ni se probó emulador/dispositivo.
+- Ajuste normal inicial en pisos posteriores, raíces restringidas a etapas;
+  bot sin recompensas/consumibles: 4/45 victorias sin equipo, 17/45 con equipo nivel 3.
+  Falta evaluación humana de equilibrio; esos resultados no representan jugadores.
+
+[Implementación, procedencia, pruebas y límites](combat_depth_2026_10/README.md).
+
+## 07/10/2026 — Limpieza de assets y archivos temporales
+
+- Retirados 331 archivos previos, 244,59 MiB: catorce assets sustituidos y metadatos,
+  importadores exclusivos, generador inicial obsoleto, datos duplicados/mapa fijo,
+  120 referencias HD reproducibles, capturas/logs/ensayos y cachés correspondientes.
+- Se conservan todos los atlas animados activos, equipo, enemigos, fuentes útiles,
+  prompts, guardados y las 69 suites GDScript. Las referencias HD intermedias ahora
+  se ignoran en Git y pueden regenerarse; no se borran originales únicos.
+- Verificación posterior: importación, auditoría de referencias/metadatos, 23/23
+  suites headless y 7/7 suites gráficas locales aprobadas; revisión visual nueva de
+  primeros planos y entrenamiento. Capturas de verificación eliminadas al terminar.
+- No se cambian reglas ni formato de guardado; no se exportó ni se probó Web/Android.
+  Reducción del árbol local, no una medición del exportado ni del historial Git.
+
+[Criterios, inventario y pruebas](cleanup/2026-10-07.md).

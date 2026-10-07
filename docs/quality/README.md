@@ -1,3 +1,10 @@
+# Actualización — 07/10/2026
+
+Los héroes **durante la batalla** ahora usan [actores detallados de 256 px](../combat_depth_2026_10/README.md),
+con doce poses por acción. Los seis sprites clásicos y las variantes de equipo
+de esta guía siguen usándose fuera de batalla. No se presentan las pruebas
+históricas siguientes como validación de la entrega nueva.
+
 # Actores con mayor detalle — 16/09/2026
 
 Actualización 17/09/2026: la [herrería](../forge/README.md) añade 96 atlas de equipo

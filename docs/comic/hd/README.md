@@ -22,9 +22,10 @@ El resultado mantiene 24 ataques y seis defensas, 16 dibujos por secuencia.
 
 Generación mediante la herramienta integrada `image_gen.imagegen`, modo edición
 con fondo transparente, sin API externa. `prompts.json` conserva las 120
-instrucciones exactas y la referencia de cada hoja. `references/` contiene
-grupos consecutivos de cuatro poses, recompuestos con Godot desde
-`docs/comic/smooth/sources/`, sin redimensionar ni dibujar imágenes nuevas.
+instrucciones exactas y la referencia de cada hoja. `references/` es una carpeta
+temporal ignorada por Git; sus 120 imágenes derivadas se retiraron el 07/10.
+Se regeneran con `prepare_hero_hd_refs.gd` desde `docs/comic/smooth/sources/`,
+sin redimensionar ni dibujar imágenes nuevas. Las 120 fuentes HD finales permanecen.
 
 `sources.json` registra los originales generados y sus SHA-256. Los originales
 permanecen en la carpeta de generación; las copias del proyecto son reproducibles

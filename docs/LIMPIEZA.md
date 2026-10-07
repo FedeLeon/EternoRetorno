@@ -1,6 +1,13 @@
 # Limpieza del proyecto
 
-## Auditoría actual — 23/09/2026
+## Auditoría actual — 07/10/2026
+
+[Informe y manifiesto](cleanup/2026-10-07.md): 331 archivos retirados, 244,59 MiB.
+Incluye catorce assets sustituidos, importadores obsoletos, datos duplicados,
+referencias de imagen reproducibles y capturas/logs/ensayos temporales.
+Las 69 suites GDScript y la prueba de audio Web se conservan.
+
+## Auditoría anterior — 23/09/2026
 
 [Informe y manifiesto](cleanup/2026-09-23.md): recursos visuales reemplazados,
 capturas y código auxiliar sin uso. Se conservan las pruebas de regresión útiles.

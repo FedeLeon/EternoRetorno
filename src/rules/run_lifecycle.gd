@@ -16,6 +16,8 @@ static func start(game: RefCounted, party: Array, seed_value: int, equipment: Di
 		game.rng.seed = seed_value
 	var initial_seed = game.rng.seed
 	game.run = {"seed": initial_seed, "rng_state": game.rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": game.Dungeon.create(game.rng, starting_floor), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
+	game.run.tactics_version = 1
+	game.run.event_flags = {}
 	game.run.team_relic = equipment.get("team", "")
 	game.run.floor = starting_floor
 	game.run.floor_count = 3
@@ -55,7 +57,7 @@ static func finish(game: RefCounted, won: bool) -> void:
 				game.profile.unlocked_cards.append(id)
 				game.run.new_unlocks.append(game.content.cards[id].name)
 	preload("res://src/rules/adventure_extensions.gd").settle(game, won)
-	game.profile.history.push_front({"won": won, "party": game.run.party.duplicate(), "rooms": int(game.run.get("rooms_completed", 0)) + game.run.visited.size(), "seed": game.run.seed})
+	game.profile.history.push_front({"won": won, "party": game.run.party.duplicate(), "rooms": int(game.run.get("rooms_completed", 0)) + game.run.visited.size(), "seed": game.run.seed, "deck":game.run.deck.duplicate(true), "relics":game.run.relics.duplicate(), "killer":game.run.get("killer", ""), "summary":game.run.get("adventure_summary", {}).duplicate(true), "floor":game.run.get("floor", 1), "abandoned":game.run.get("abandoned", false)})
 	if game.profile.history.size() > 30:
 		game.profile.history.resize(30)
 	# A concluded run only retains its summary, not its acquired deck or relics.
@@ -66,6 +68,8 @@ static func finish(game: RefCounted, won: bool) -> void:
 		hero.turn_strength = 0
 		hero.turn_magic = 0
 	game.run.deck = []
+	game.run.tactics_version = 1
+	game.run.event_flags = {}
 	game.run.team_relic = ""
 	game.run.relics = []
 	game.run.combat = {}

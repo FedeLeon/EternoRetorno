@@ -27,7 +27,7 @@ func _initialize() -> void:
 			if int(c.get("market_price", 0)) > 0:
 				market += 1
 				check(not P.available(g.profile, c), "unbought excluded " + id)
-		check(total == 19 and market == 10, "19 cards / 10 market " + hero)
+		check(total == 21 and market == 12, "21 cards / 12 market " + hero)
 		for id in g.content.heroes[hero].starter:
 			check(g.content.cards[id].get("market_price", 0) == 0, "starter excludes market")
 	var id = ""

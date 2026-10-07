@@ -15,6 +15,7 @@ func _init() -> void:
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json"))
 	heroes = data.heroes
 	cards = data.cards
+	cards.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/tactical_cards.json")))
 	cards.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/support_cards.json")))
 	enemies = data.enemies
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/crypt_enemies.json")))
@@ -26,6 +27,7 @@ func _init() -> void:
 	var legacy_icons = {"ember":2, "fang":3, "chalice":0, "hourglass":7}
 	for id in legacy_icons: relics[id].icon = legacy_icons[id]
 	events = data.events
+	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/travel_events.json")))
 	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/adventure_events.json")))
 	var objects = JSON.parse_string(FileAccess.get_file_as_string("res://data/equipment.json"))
 	equipment = objects.relics
@@ -33,15 +35,7 @@ func _init() -> void:
 
 func card(instance: Dictionary) -> Dictionary:
 	var result = cards[instance.id].duplicate(true)
-	if instance.get("upgraded", false):
-		result.name += " +"
-		for stat in ["damage", "block", "heal"]:
-			if result[stat] > 0:
-				result[stat] += 3
-		if result.poison > 0:
-			result.poison += 2
-		for stat in preload("res://src/rules/combat_modifiers.gd").KEYS:
-			if result.get(stat, 0) > 0: result[stat] += 10
+	preload("res://src/rules/card_upgrades.gd").apply(result, instance)
 	return result
 
 func describe(instance: Dictionary, effective: Dictionary = {}) -> String:
@@ -59,6 +53,8 @@ func describe(instance: Dictionary, effective: Dictionary = {}) -> String:
 		lines.append("Cura %d %s." % [c.heal, "al dueño" if c.target == "enemy" else "de vida"])
 	if c.poison > 0:
 		lines.append("Aplica %d de veneno." % c.poison)
+	if c.get("charge", false): lines.append("Se ejecuta al comenzar tu próximo turno.")
+	if c.get("interrupt", false): lines.append("Interrumpe intención especial y contraataque.")
 	lines.append_array(preload("res://src/rules/combat_modifiers.gd").description(c))
 	var targets = {"enemy": "Un enemigo", "ally": "Un aliado vivo", "self": "Su dueño", "all_allies": "Ambos aliados vivos", "all_enemies": "Todos los enemigos"}
 	lines.append(targets[c.target])

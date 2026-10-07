@@ -5,6 +5,9 @@ static var metrics: Dictionary = {}
 const MAX_CACHED_VARIANTS = 8
 
 static func apply(actor: Control, hero: String, gear: Dictionary) -> void:
+	if actor.has_meta("detailed"):
+		actor.apply_gear(gear)
+		return
 	if gear.is_empty() or not actor.get("sprite"):
 		return # Legacy runs retain their original appearance.
 	var key = "%s_w%d_a%d" % [hero, int(gear.get("weapon", 0)), int(gear.get("armor", 0))]

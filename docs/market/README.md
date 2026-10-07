@@ -38,9 +38,10 @@ cuatro de su defensa base y una de cada nueva carta básica. La pareja suma 20. 
 cartas originales se siguen consiguiendo en recompensas. Las mejoras mantienen
 +3 a daño/bloqueo/curación y +2 a veneno. Las partidas ya iniciadas conservan su mazo.
 
-[Catálogo completo](../cards/CATALOGO.md). Fuente de las nuevas definiciones:
-`data/additional_cards.json`; `scripts/create_content.py` las incorpora a
-`data/content.json`. Cambiar la fuente y regenerar, no solo el resultado.
+[Catálogo completo](../cards/CATALOGO.md). Las sesenta definiciones originales
+de mercado están en `data/content.json`; se retiró su copia idéntica
+`additional_cards.json` junto al generador inicial el 07/10. Las ampliaciones
+se mantienen en `support_cards.json` y `tactical_cards.json`.
 Son valores iniciales: requieren partidas humanas para ajustar dificultad.
 
 ## Archivos y guardado

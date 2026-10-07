@@ -19,10 +19,12 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	var healing = false
 	var poisonous = false
 	var motion = "attack"
+	var prepared = false
 	if hand_index >= 0:
 		var instance = ui.game.run.combat.hand[hand_index]
 		var card = ui.game.content.card(instance)
-		offensive = card.damage > 0 or card.poison > 0
+		prepared = card.get("charge", false)
+		offensive = (card.damage > 0 or card.poison > 0) and not prepared
 		defensive = card.block > 0
 		healing = card.heal > 0
 		poisonous = card.poison > 0
@@ -84,6 +86,7 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 			await actor.play_once("attack")
 		if not impacts.is_empty():
 			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)
+	if prepared: motion = "guard"
 	if owner >= 0 and ui.game.run.party[owner] in ui.ANIMATED_HEROES:
 		if offensive:
 			ui.CombatEffects.attack_flash(ui.layer)
@@ -100,6 +103,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = ui.game.run.combat.get("enemies", [])
 	for i in range(old_enemies.size()):
+		if i < current_enemies.size() and old_enemies[i].hp <= 0 and current_enemies[i].hp > 0:
+			ui.enemy_art[i].set_fallen(false)
+			ui.enemy_health[i].animate_to(current_enemies[i].hp)
 		if i < current_enemies.size() and old_enemies[i].hp > 0:
 			if current_enemies[i].hp < old_enemies[i].hp:
 				ui.enemy_health[i].animate_to(current_enemies[i].hp)
@@ -119,10 +125,13 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		if hand_index < 0 and synergy_id == "" and i in ui.game.resolved_enemy_attacks:
 			ui.CombatEffects.attack_flash(ui.layer)
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual
-			BattleAudio.enemy(ui.audio, visual)
-			var cut_in = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer, visual)
-			if cut_in != null:
-				await cut_in.finished
+			if ui.game.run.get("training", false):
+				ui.audio.play_sfx("hit", -5)
+			else:
+				BattleAudio.enemy(ui.audio, visual)
+				var cut_in = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer, visual)
+				if cut_in != null:
+					await cut_in.finished
 			await ui.enemy_art[i].play_once("attack")
 			for hero_index in ui.game.resolved_hero_blocks.get(i, {}):
 				preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[hero_index], ui.game.resolved_hero_blocks[i][hero_index])
@@ -130,6 +139,8 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 				ui.audio.play_sfx("block")
 				if ui.game.run.party[hero_index] in ui.ANIMATED_HEROES:
 					await ui.hero_art[hero_index].play_once("guard")
+	if hand_index < 0 and synergy_id == "" and not ui.game.resolved_prepared_hits.is_empty():
+		await preload("res://src/presentation/card_impacts.gd").play(ui, ui.game.resolved_prepared_hits, "heavy")
 	for i in range(before.size()):
 		var after = ui.game.run.heroes[i]
 		ui.hero_health[i].animate_to(after.hp)

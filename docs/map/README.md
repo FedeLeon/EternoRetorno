@@ -84,8 +84,10 @@ y guardián. El primer élite es opcional; todas las rutas pasan por el segundo,
 un descanso final y el guardián. Hay combates dobles en salas 11 y 16; los
 otros normales tienen un enemigo. Los descansos compensan la duración adicional.
 
-`data/dungeon_floor1.json` define tipos, conexiones, posiciones y cantidad de
-enemigos. `dungeon.gd` genera encuentros con la semilla y guarda las posiciones
+En esta etapa, `data/dungeon_floor1.json` definía tipos, conexiones, posiciones y
+cantidad de enemigos. Se retiró el 07/10 por estar sustituido por
+`data/dungeons.json` y `rules/dungeon_generator.gd`. `dungeon.gd` genera encuentros
+con la semilla y guarda las posiciones
 en cada nodo. Aventuras antiguas conservan su grafo de 12 salas; los nodos sin
 posición usan las coordenadas legadas. No se migra una aventura en curso.
 

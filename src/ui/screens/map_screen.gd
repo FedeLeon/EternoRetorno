@@ -95,7 +95,11 @@ func draw_route() -> void:
 		var target = action("", Rect2(center - Vector2(28, 28), Vector2(56, 56)), func(): room_requested.emit(node.id))
 		target.name = "Room%d" % node.id
 		target.disabled = not reachable
+		if node.kind == "elite" and node.has("elite_modifier"):
+			var elite_data = preload("res://src/rules/combat_depth.gd").ELITES[node.elite_modifier]
+			target.set_meta("elite_description", elite_data.name + ": " + elite_data.description)
 		target.tooltip_text = "Sala actual" if node.id == current else ("Sala disponible" if reachable else ("Sala visitada" if done else "Sin acceso"))
+		if target.has_meta("elite_description"): target.tooltip_text += "\n" + target.get_meta("elite_description")
 		for state in ["normal", "disabled", "hover", "pressed", "focus"]:
 			var style = StyleBoxTexture.new()
 			style.texture = preload("res://assets/map/minimal/room_papyrus.png")

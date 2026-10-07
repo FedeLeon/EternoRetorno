@@ -4,10 +4,11 @@ El fondo original del usuario se conserva en `assets/title/background.png`.
 Se utiliza tanto en el splash nativo de Godot durante el arranque como en el
 menú inicial; no se añade una espera artificial ni una barra de progreso ficticia.
 
-Los botones se generaron con imagegen a partir de la misma referencia. El original
-está en `generated-buttons.png` y el prompt en `prompt.md`. `scripts/import_title.gd`
-recorta las placas rectangulares y las escala con vecino más cercano; sus textos
-se dibujan en Godot para mantener legibilidad y permitir «Continuar aventura».
+Los primeros botones se generaron con imagegen a partir de la misma referencia.
+Su original está en `generated-buttons.png` y el prompt en `prompt.md`.
+Las placas antiguas y su importador se retiraron el 07/10 por no tener consumidores;
+el inicio usa el tema compartido oscuro de `ui/components/button_skin.gd`.
+Sus textos se dibujan en Godot para mantener legibilidad y permitir «Continuar aventura».
 Los estados de puntero y pulsación cambian el tono; teclado tiene borde de foco.
 
 - Iniciar juego abre el campamento.

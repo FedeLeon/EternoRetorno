@@ -23,6 +23,7 @@ const SaveStore = preload("res://src/save_store.gd")
 var content = Content.new()
 var store: RefCounted
 var rng = RandomNumberGenerator.new()
+var resolved_prepared_hits: Array = []
 var profile: Dictionary = {"unlocked_cards": [], "unlocked_relics": [], "history": [], "victories": 0, "attempts": 0}
 var run: Dictionary = {}
 var save_enabled = true
@@ -107,6 +108,10 @@ func enter_node(index: int) -> bool:
 	else:
 		run.phase = "room"
 		run.room_note = ""
+		if node.kind == "event" and node.event == "wandering_merchant":
+			run.phase = "merchant"
+			preload("res://src/rules/travel_encounters.gd").prepare(self)
+		preload("res://src/rules/travel_encounters.gd").apply_room(self, node.kind)
 		if node.kind == "treasure":
 			run.treasure = Treasure.prepare(rng, content.items.keys())
 	checkpoint()
@@ -141,6 +146,7 @@ func _start_combat(encounter: Array) -> void:
 	run.combat = {"enemies": enemies, "draw": run.deck.duplicate(true), "hand": [], "discard": [], "inactive": [], "energy": 0, "turn": 0}
 	run.combat.hero_fell = false
 	run.log = ["El silencio se rompe."]
+	preload("res://src/rules/combat_depth.gd").initialize(self)
 	_shuffle(run.combat.draw)
 	_start_turn()
 	if "ember" in run.relics:
@@ -182,7 +188,7 @@ func valid_targets(hand_index: int) -> Array:
 	for i in range(run.combat.enemies.size()):
 		if run.combat.enemies[i].hp > 0:
 			targets.append(i)
-	return targets
+	return preload("res://src/rules/combat_depth.gd").targets(self, c, targets)
 
 func available_synergies() -> Array:
 	var combos = Synergies.available(run, content.synergies)
@@ -226,7 +232,8 @@ func play_synergy(id: String, target: int) -> bool:
 	for index in indices:
 		b.discard.append(b.hand[index])
 		b.hand.remove_at(index)
-	_damage(b.enemies[target], int(combo.damage), combo.pierce)
+	if not preload("res://src/rules/combat_depth.gd").root_hit(self, b.enemies[target], int(combo.damage)):
+		_damage(b.enemies[target], int(combo.damage), combo.pierce)
 	if b.enemies[target].hp > 0 and int(b.enemies[target].intent.get("counter", 0)) > 0:
 		var attacker = run.party.find(combo.heroes[0])
 		_damage(run.heroes[attacker], 4)
@@ -242,41 +249,9 @@ func play_synergy(id: String, target: int) -> bool:
 	return true
 
 func play_card(hand_index: int, target: int) -> bool:
-	resolved_card_hits.clear()
-	if target not in valid_targets(hand_index):
-		return false
-	var b = run.combat
-	var instance = b.hand[hand_index]
-	var c = effective_card(instance)
-	var owner = owner_index(instance)
-	b.energy -= int(c.cost)
-	b.hand.remove_at(hand_index)
-	b.discard.append(instance)
-	var enemy_targets: Array = []
-	var ally_targets: Array = []
-	match c.target:
-		"enemy":
-			enemy_targets = [target]
-			ally_targets = [owner]
-		"all_enemies":
-			for i in range(b.enemies.size()):
-				if b.enemies[i].hp > 0:
-					enemy_targets.append(i)
-		"ally": ally_targets = [target]
-		"all_allies": ally_targets = living_heroes()
-		"self": ally_targets = [owner]
-	for i in enemy_targets: Modifiers.debuff(b.enemies[i], c)
-	resolved_card_hits = preload("res://src/rules/card_hits.gd").resolve(self, c, owner, enemy_targets)
-	for i in ally_targets:
-		var hero = run.heroes[i]
-		if hero.hp <= 0: continue
-		Modifiers.empower(hero, c)
-		hero.block += int(c.block)
-		hero.hp = mini(hero.max_hp, hero.hp + int(c.heal))
-	_log("%s: %s." % [content.heroes[run.party[owner]].name, c.name])
-	_check_combat_end()
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/card_actions.gd").play(self, hand_index, target)
+	if accepted: checkpoint()
+	return accepted
 
 func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 	if unit.has("equipped_relic"):
@@ -286,6 +261,7 @@ func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 	var absorbed = 0 if pierce else mini(unit.block, amount)
 	unit.block -= absorbed
 	unit.hp = maxi(0, unit.hp - (amount - absorbed))
+	if run.get("phase", "") == "combat": preload("res://src/rules/combat_depth.gd").record(self, unit, amount, absorbed, hp_before - unit.hp)
 	if unit.has("equipped_relic"):
 		preload("res://src/rules/adventure_extensions.gd").statistic(run, "damage_taken", hp_before - unit.hp)
 	if was_alive and unit.hp == 0 and relic_bonus(unit, "phoenix") > 0 and not unit.get("phoenix_used", false):
@@ -340,28 +316,35 @@ func leave_treasure() -> bool:
 func _room_is(kind: String) -> bool:
 	return not run.is_empty() and run.phase == "room" and run.nodes[run.current].kind == kind
 
-func rest(heal: bool, card_index: int = -1) -> bool:
+func rest(heal: bool, card_index: int = -1, variant: String = "power") -> bool:
 	if not _room_is("rest"):
 		return false
 	if heal:
+		var extra = preload("res://src/rules/travel_encounters.gd").rest_bonus(self)
 		for h in run.heroes:
-			h.hp = mini(h.max_hp, h.hp + int(ceil(h.max_hp * 0.3)))
+			h.hp = mini(h.max_hp, h.hp + int(ceil(h.max_hp * 0.3)) + extra)
 	else:
 		if card_index < 0 or card_index >= run.deck.size() or run.deck[card_index].upgraded:
 			return false
+		var choices = preload("res://src/rules/card_upgrades.gd").choices(content.cards[run.deck[card_index].id])
+		if not choices.any(func(choice): return choice.id == variant): return false
 		run.deck[card_index].upgraded = true
+		run.deck[card_index].upgrade_variant = variant
 		Expeditions.add(run, "upgrades")
 	run.phase = "map"
 	checkpoint()
 	return true
 
 func choose_event(index: int) -> bool:
+	if run.get("phase", "") == "merchant" and index == 1: return merchant_action("leave")
 	if not _room_is("event") or index not in [0, 1]:
 		return false
 	var event_id = run.nodes[run.current].event
 	if event_id not in ["well", "altar", "library"]:
 		var applied = preload("res://src/rules/expanded_events.gd").choose(self, event_id, index)
-		if applied: checkpoint()
+		if applied:
+			if index == 0: preload("res://src/rules/travel_encounters.gd").chain(self, event_id)
+			checkpoint()
 		return applied
 	if index == 0:
 		match event_id:
@@ -382,6 +365,7 @@ func choose_event(index: int) -> bool:
 					h.hp -= 5
 				run.deck[candidates[rng.randi_range(0, candidates.size() - 1)]].upgraded = true
 			"library":
+				preload("res://src/rules/travel_encounters.gd").chain(self, event_id)
 				_make_reward()
 				checkpoint()
 				return true
@@ -411,6 +395,9 @@ func _finish(won: bool) -> void:
 	preload("res://src/rules/run_lifecycle.gd").finish(self, won)
 
 func _log(line: String) -> void:
+	if run.get("phase", "") == "combat":
+		run.combat.get_or_add("journal", []).append(line)
+		if run.combat.journal.size() > 200: run.combat.journal.pop_front()
 	run.log.append(line)
 	if run.log.size() > 5:
 		run.log.pop_front()
@@ -485,5 +472,10 @@ func configure_bond(party: Array, variant: String) -> bool:
 	if int(profile.get("bonds", {}).get(key, 0)) < 1: return false
 	if not profile.has("bond_variants"): profile.bond_variants = {}
 	profile.bond_variants[key] = variant
+	checkpoint()
+	return true
+
+func merchant_action(action: String, index: int = -1) -> bool:
+	if not preload("res://src/rules/travel_encounters.gd").transact(self, action, index): return false
 	checkpoint()
 	return true

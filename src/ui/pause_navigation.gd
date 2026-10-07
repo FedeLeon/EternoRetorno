@@ -2,6 +2,9 @@ extends RefCounted
 const Dialog = preload("res://src/ui/components/dialog_view.gd")
 static func open(ui: Control) -> void:
 	if ui.combat_busy: return
+	if ui.game.run.get("training", false):
+		preload("res://src/ui/training_navigation.gd").leave(ui)
+		return
 	ui.game.checkpoint()
 	ui.close_modal()
 	var actions: Array = [

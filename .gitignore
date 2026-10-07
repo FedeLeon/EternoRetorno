@@ -10,5 +10,8 @@ __pycache__/
 # Disposable captures, videos and test logs
 /artifacts/
 
+# Reproducible four-pose references; regenerate with prepare_hero_hd_refs.gd
+/docs/comic/hd/references/
+
 # Web exports uploaded manually to the server
 /TestWeb/

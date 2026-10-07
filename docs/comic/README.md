@@ -4,6 +4,14 @@
 > y partículas. Ver [formato vigente](hd/README.md).
 > Las secciones fechadas siguientes describen versiones históricas.
 
+## Limpieza del 07/10/2026
+
+Las seis defensas estáticas de `assets/comic/defense/` se retiraron por no tener
+consumidores. El runtime usa `assets/comic/motion/<hero>_defense.png` para las
+defensas y cuatro variantes animadas por héroe para los ataques. Se conservan
+los treinta atlas, sus fuentes HD, retratos base y prompts. Las referencias
+intermedias HD se pueden regenerar; véase la [auditoría](../cleanup/2026-10-07.md).
+
 ## Limpieza del 23/09/2026
 
 Las 18 imágenes estáticas adicionales de `assets/comic/attacks/` se retiraron: el juego utiliza las 24 secuencias de `assets/comic/motion/`. Los retratos base se conservan para otras pantallas.

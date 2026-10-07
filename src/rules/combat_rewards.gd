@@ -2,6 +2,12 @@ extends RefCounted
 # Rules only. Game facade retains public API and owns checkpoints.
 static func check_end(game: RefCounted) -> bool:
 	if game.run.phase != "combat": return false
+	if game.run.get("training", false):
+		for hero in game.run.heroes:
+			if hero.hp <= 0: hero.hp = hero.max_hp
+		for enemy in game.run.combat.enemies:
+			if enemy.hp <= 0: enemy.hp = enemy.max_hp
+		return false
 	if game.living_heroes().is_empty():
 		game._finish(false)
 		return true

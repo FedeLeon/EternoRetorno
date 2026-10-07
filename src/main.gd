@@ -28,6 +28,8 @@ const GOLD = preload("res://src/ui/components/dark_skin.gd").ACCENT
 const INK = Color("10141f")
 const TEXT = Color("ebe2d0")
 const MUTED = Color("9299ab")
+var training_original: RefCounted
+
 var game = Game.new()
 var audio = preload("res://src/audio/audio_manager.gd").new()
 var equipped: Dictionary = {}
@@ -137,6 +139,9 @@ func render() -> void:
 	background()
 	match screen:
 		"home": home()
+		"merchant": preload("res://src/ui/screens/merchant_screen.gd").build(self)
+		"bestiary": preload("res://src/ui/screens/bestiary_screen.gd").build(self)
+		"training_setup": preload("res://src/ui/screens/training_screen.gd").build(self)
 		"options": options_view()
 		"base_camp": base_camp_view()
 		"market": market_view()
@@ -460,6 +465,8 @@ func room_view() -> void:
 		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
 		view.event_id = node.event
 		view.event = game.content.events[node.event].duplicate(true)
+		var chains = {"forest_hunter":"Además, las provisiones esconden una contraseña de descuento para el mercader errante.", "forest_spirit":"Además, el siguiente descanso restaurará 5 PV extra.", "library":"Además, el siguiente cofre ocultará otra poción de curación."}
+		if chains.has(node.event): view.event.text += " " + chains[node.event]
 		if node.event == "lava_bridge": view.can_offer = game.run.heroes.all(func(h): return h.hp > 8)
 		if node.event == "altar":
 			view.can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)

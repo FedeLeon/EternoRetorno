@@ -520,5 +520,41 @@
   },
   "cleric_radiant_judgment": {
     "source": "res://assets/cards/art/cleric_radiant_judgment.png"
+  },
+  "warrior_prepared": {
+    "source": "res://assets/cards/art/warrior_prepared.png"
+  },
+  "warrior_interrupt": {
+    "source": "res://assets/cards/art/warrior_interrupt.png"
+  },
+  "guardian_prepared": {
+    "source": "res://assets/cards/art/guardian_prepared.png"
+  },
+  "guardian_interrupt": {
+    "source": "res://assets/cards/art/guardian_interrupt.png"
+  },
+  "rogue_prepared": {
+    "source": "res://assets/cards/art/rogue_prepared.png"
+  },
+  "rogue_interrupt": {
+    "source": "res://assets/cards/art/rogue_interrupt.png"
+  },
+  "mage_prepared": {
+    "source": "res://assets/cards/art/mage_prepared.png"
+  },
+  "mage_interrupt": {
+    "source": "res://assets/cards/art/mage_interrupt.png"
+  },
+  "cleric_prepared": {
+    "source": "res://assets/cards/art/cleric_prepared.png"
+  },
+  "cleric_interrupt": {
+    "source": "res://assets/cards/art/cleric_interrupt.png"
+  },
+  "ranger_prepared": {
+    "source": "res://assets/cards/art/ranger_prepared.png"
+  },
+  "ranger_interrupt": {
+    "source": "res://assets/cards/art/ranger_interrupt.png"
   }
 }

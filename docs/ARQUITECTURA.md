@@ -288,8 +288,9 @@ reciben nombre/fondo por composición. `enemy_sprite.gd` interpreta los recuento
 de poses de `enemy_visuals.json`; la presentación no altera las reglas del ataque.
 `scripts/import_forest.gd` convierte fuentes en atlas y recursos finales;
 [procedencia y contrato de los recursos](forest/README.md).
-`data/dungeon_floor1.json` queda como referencia del diseño fijo anterior, sin
-uso en la generación actual; los guardados antiguos ya contienen sus nodos.
+`data/dungeon_floor1.json` fue retirado el 07/10/2026: el diseño fijo anterior
+no se utiliza; los guardados antiguos ya contienen sus nodos. Se conservan
+las coordenadas de respaldo en `dungeon.gd` para esos guardados.
 
 ## Porcentajes temporales de combate — 22/09/2026
 
@@ -470,3 +471,46 @@ La siguiente extracción sigue siendo la resolución de cartas de `game.gd` y la
 navegación de salas de `main.gd`; ambos aún superan la guía de tamaño. No se hizo
 una migración masiva. Guardados con uno/dos pisos conservan su límite; los nuevos
 contienen tres. [Alcance y validación](expansion_2026_10/README.md).
+
+## Combate táctico y actores detallados — 07/10/2026
+
+Estado actual: `main.gd` 638 líneas, `game.gd` 481. Se extrajo la resolución de
+cartas a `rules/card_actions.gd`; `card_upgrades.gd`, `combat_depth.gd`,
+`relic_sets.gd` y `travel_encounters.gd` mantienen reglas y estado serializable.
+`Game` valida/delega y confirma el guardado; la UI reproduce recibos de impactos,
+incluidos los preparados que se ejecutan al comenzar el siguiente turno.
+
+Pantallas nuevas en archivos propios: entrenamiento, bestiario y mercader.
+`training_navigation.gd` conserva la instancia original y usa otra sin persistencia,
+con copia del perfil; salir restaura exactamente la referencia original. Avisos
+`components/tactical_badges.gd` y lector `reading_dialog.gd` solo presentan datos.
+La colección consume snapshots enriquecidos de historia.
+
+`presentation/detailed_hero.gd` reemplaza el actor de batalla, conserva la interfaz
+`sprite`, `play_once`, `set_fallen` y usa doce cuadros de 256 px por acción.
+Equipo se presenta mediante shader independiente para los dos niveles; las variantes
+clásicas de atlas permanecen para campamento y herrería. Importación y métricas en
+`scripts/import_detailed_heroes.gd` y `data/detailed_heroes.json`. Los actores,
+fundidos y partículas no calculan daño, premios o persistencia.
+
+Compatibilidad: `tactics_version`, `upgrade_variant`, bestiario e historia ampliada
+son opcionales. Los gráficos nuevos pueden representar una aventura antigua, sin
+cambiar su grafo, nivel de equipo o efecto de mejoras anteriores.
+
+Propuesta futura, aún no realizada: extraer los helpers generales/navegación restantes
+de `main.gd` y acciones de sala de `game.gd` cuando vuelva a crecer esa responsabilidad.
+[Reglas, assets y validación de esta entrega](combat_depth_2026_10/README.md).
+
+## Limpieza de recursos — 07/10/2026
+
+Sin reorganizar código de ejecución ni modificar IDs/UIDs activos. Se retiraron
+los importadores exclusivos de marcos/botones sustituidos y el generador inicial
+que ya no reproducía los enemigos vigentes. `data/content.json` es la fuente
+declarativa de los datos base; `additional_cards.json` era una copia exacta de
+sesenta definiciones ya incluidas allí. Las ampliaciones conservan sus archivos.
+El grafo se genera únicamente con `dungeon_generator.gd` y `data/dungeons.json`.
+
+Las referencias de cuatro poses del proceso HD son salidas regenerables de
+`prepare_hero_hd_refs.gd`, ignoradas por Git. Fuentes finales, prompts y procedencia
+permanecen en `docs/comic/hd/`; los treinta atlas de primer plano siguen activos.
+[Inventario, criterios y pruebas de esta limpieza](cleanup/2026-10-07.md).

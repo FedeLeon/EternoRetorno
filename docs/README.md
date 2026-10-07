@@ -14,33 +14,40 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
-- Encuentros: nueve situaciones, tres por piso; fondos propios, decisiones de mazo y beneficios según pareja.
+- Encuentros: diez situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
 - Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
   ataque/defensa e ilustraciones minimalistas asignadas por ID.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 (20 nuevas), visible junto a la elección de carta.
-- Actores: seis héroes y 56 enemigos con sprites de 128×128; 45 definiciones activas con 44 apariencias. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
+- Actores: héroes de batalla redibujados a 256×256 con doce poses por acción; seis héroes clásicos y 56 enemigos con sprites de 128×128; 45 definiciones activas con 44 apariencias. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
 - Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
   con poses HD, luces y partículas locales; [assets y reproducción](comic/hd/README.md).
-- Campamento: mercado construible en solar 1 por 300 almas, con 60 cartas comprables.
+- Campamento: mercado construible en solar 1 por 300 almas, con 72 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
   por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con doce especializaciones; puesto de expediciones
   en solar 2, debajo de la fogata (500 almas), con treinta contratos y tres ofertas por aventura.
 - Refugio: preparación persistente del mazo inicial y vínculos entre las quince parejas, historias y variantes de enlace; cambios solo para aventuras nuevas.
-- Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
+- Cartas: 126 en total, 21 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
 - Audio: cinco músicas, cuatro ambientes y 39 efectos CC0; volumen general, música y efectos ajustables; canales compatibles con Web. [Sistema y fuentes](audio/README.md).
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
+- [Combate táctico y héroes detallados](combat_depth_2026_10/README.md): mejoras alternativas,
+  preparación/interrupción, formación, parejas de reliquias, élites con modificadores,
+  mecánicas propias de piso, encuentros encadenados, entrenamiento aislado, registro,
+  historia detallada y bestiario descubierto.
+
 La APK existente corresponde a una entrega anterior. Los cambios recientes se
 probaron localmente; **no se exporta una APK por cada cambio**. La validación
 Android histórica no certifica la interfaz actual.
 
-Limpieza actual: [auditoría del 23/09](cleanup/2026-09-23.md).
+Limpieza actual: [auditoría del 07/10](cleanup/2026-10-07.md).
+Se retiraron recursos sustituidos, referencias regenerables y resultados temporales;
+se mantienen las animaciones activas y las pruebas de regresión.
 
 Auditoría histórica del 18/09: [limpieza y separación de módulos](cleanup/2026-09-18.md),
 con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.

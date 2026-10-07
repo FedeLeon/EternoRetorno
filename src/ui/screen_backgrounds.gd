@@ -17,7 +17,7 @@ static func build(ui: Control) -> void:
 		return # These screens own their backgrounds.
 	if ui.screen == "combat" or (ui.screen == "room" and int(ui.game.run.get("floor", 1)) == 2):
 		var room = TextureRect.new()
-		room.texture = load(ui.BattleBackground.path_for(ui.game.run.seed, ui.game.run.current, int(ui.game.run.get("floor", 1))))
+		room.texture = load("res://assets/combat_depth/training.png" if ui.game.run.get("training", false) else ui.BattleBackground.path_for(ui.game.run.seed, ui.game.run.current, int(ui.game.run.get("floor", 1))))
 		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(room, 0, 64, 1280, 656)

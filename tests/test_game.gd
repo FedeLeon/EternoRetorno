@@ -40,8 +40,8 @@ func _initialize() -> void:
 
 func content_and_map() -> void:
 	var g = fresh()
-	check(g.content.heroes.size() == 6 and g.content.cards.size() == 114, "6 classes / 114 cards")
-	check(g.content.enemies.size() == 45 and g.content.events.size() == 9 and g.content.relics.size() == 24, "enemy / event / relic catalog")
+	check(g.content.heroes.size() == 6 and g.content.cards.size() == 126, "6 classes / 126 cards")
+	check(g.content.enemies.size() == 45 and g.content.events.size() == 10 and g.content.relics.size() == 24, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")
@@ -288,6 +288,7 @@ func autoplay(g: RefCounted) -> bool:
 						if not g.choose_event(0): g.choose_event(1)
 			"event_cards": g.modify_event_card(-1)
 			"reward": g.choose_reward(-1)
+			"merchant": g.merchant_action("leave")
 			"combat":
 				var best_score = -1.0
 				var best_card = -1

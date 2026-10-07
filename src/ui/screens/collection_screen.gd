@@ -140,6 +140,24 @@ func _history() -> void:
 	for i in range(snapshot.history.size()):
 		var entry: Dictionary = snapshot.history[i]
 		var row = _frame(Rect2(0, i * 88, 1188, 76), contents)
+		ui.button("Ver", 885, 18, 80, 38, func(): history_detail(entry), true, row)
 		ui.label_at("VICTORIA" if entry.won else "RETORNO", 20, 14, 160, 48, 20, ui.GOLD if entry.won else ui.MUTED, row)
 		ui.label_at(entry.party_names, 190, 14, 690, 48, 22, ui.TEXT, row)
 		ui.label_at("%d salas" % entry.rooms, 980, 14, 180, 48, 20, ui.MUTED, row)
+
+func history_detail(entry: Dictionary) -> void:
+	var lines: Array[String] = [entry.party_names, "Semilla: %s · %d salas · piso %d" % [entry.get("seed", "?"), entry.rooms, entry.get("floor", 1)]]
+	if not entry.get("killer", "").is_empty(): lines.append("Último golpe fatal: " + entry.killer)
+	if entry.get("abandoned", false): lines.append("Aventura terminada voluntariamente.")
+	lines.append("\nReliquias:")
+	for id in entry.get("relics", []): lines.append(ui.game.content.relics.get(id, {"name":id}).name)
+	lines.append("\nMazo final:")
+	for card in entry.get("deck", []):
+		if ui.game.content.cards.has(card.id):
+			var variants = {"power":"Potencia", "efficient":"Eficiencia", "shared":"Amparo compartido"}
+			var suffix = " · " + variants.get(card.get("upgrade_variant", "power"), "Mejora") if card.get("upgraded", false) else ""
+			lines.append(ui.game.content.card(card).name + suffix)
+	if not entry.has("deck"): lines.append("Esta aventura antigua solo conserva su resumen.")
+	var labels = {"battles":"Combates", "elites":"Élites", "bosses":"Guardianes", "souls":"Almas ganadas", "damage_taken":"Daño recibido", "fallen":"Caídas", "cards_removed":"Cartas retiradas"}
+	for stat in entry.get("summary", {}).get("statistics", {}): lines.append(labels.get(stat, stat) + ": " + str(entry.summary.statistics[stat]))
+	preload("res://src/ui/components/reading_dialog.gd").open(ui, "Historia del retorno", "\n".join(lines))

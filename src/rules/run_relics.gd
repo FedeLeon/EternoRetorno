@@ -24,6 +24,7 @@ static func grant(run: Dictionary, catalog: Dictionary, id: String) -> bool:
 	return true
 
 static func apply(card: Dictionary, instance: Dictionary, hero: Dictionary, run: Dictionary, catalog: Dictionary) -> void:
+	preload("res://src/rules/relic_sets.gd").apply(card, run)
 	var turn = int(run.get("combat", {}).get("turn", 0))
 	for id in run.get("relics", []):
 		var relic: Dictionary = catalog.get(id, {})

@@ -1,0 +1,524 @@
+[
+  {
+    "id": "card_cleric_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_cleric_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_cleric_interrupt.png",
+    "runtime": "assets/cards/art/cleric_interrupt.png",
+    "source_sha256": "f6e637b951c30b3d7a0720be8addbdaa9fefeb88bb35501180383f844ddaedae",
+    "runtime_sha256": "f6e637b951c30b3d7a0720be8addbdaa9fefeb88bb35501180383f844ddaedae"
+  },
+  {
+    "id": "card_cleric_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_cleric_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_cleric_prepared.png",
+    "runtime": "assets/cards/art/cleric_prepared.png",
+    "source_sha256": "3f7c6abf58b549acbc1f096ac83999a489834ae4afb6c33ea1f58373eed457bb",
+    "runtime_sha256": "3f7c6abf58b549acbc1f096ac83999a489834ae4afb6c33ea1f58373eed457bb"
+  },
+  {
+    "id": "card_guardian_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_guardian_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_guardian_interrupt.png",
+    "runtime": "assets/cards/art/guardian_interrupt.png",
+    "source_sha256": "f722137e380baefbfb1f2bb3ddaab3457fdd5a4ddd221e608dbe3bef3b8df3ee",
+    "runtime_sha256": "f722137e380baefbfb1f2bb3ddaab3457fdd5a4ddd221e608dbe3bef3b8df3ee"
+  },
+  {
+    "id": "card_guardian_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_guardian_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_guardian_prepared.png",
+    "runtime": "assets/cards/art/guardian_prepared.png",
+    "source_sha256": "49f05c6534f5d3140d43d5df1812cbaf9842aa6efb11ba1f0de45b3fa334c6d8",
+    "runtime_sha256": "49f05c6534f5d3140d43d5df1812cbaf9842aa6efb11ba1f0de45b3fa334c6d8"
+  },
+  {
+    "id": "card_mage_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_mage_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_mage_interrupt.png",
+    "runtime": "assets/cards/art/mage_interrupt.png",
+    "source_sha256": "8601cf91e734877af6179b4a9d8f9010d2f1bd629a9fe9e2b4526c9698858928",
+    "runtime_sha256": "8601cf91e734877af6179b4a9d8f9010d2f1bd629a9fe9e2b4526c9698858928"
+  },
+  {
+    "id": "card_mage_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_mage_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_mage_prepared.png",
+    "runtime": "assets/cards/art/mage_prepared.png",
+    "source_sha256": "2b2e6524235728a84c182021ffb1ee51b4257648b12c17e2c54cdccea1817efb",
+    "runtime_sha256": "2b2e6524235728a84c182021ffb1ee51b4257648b12c17e2c54cdccea1817efb"
+  },
+  {
+    "id": "card_ranger_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_ranger_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_ranger_interrupt.png",
+    "runtime": "assets/cards/art/ranger_interrupt.png",
+    "source_sha256": "329592f6f1047a0fc388b033e92aa86b95248fd880bf13b1eeb06e879e09d9e4",
+    "runtime_sha256": "329592f6f1047a0fc388b033e92aa86b95248fd880bf13b1eeb06e879e09d9e4"
+  },
+  {
+    "id": "card_ranger_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_ranger_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_ranger_prepared.png",
+    "runtime": "assets/cards/art/ranger_prepared.png",
+    "source_sha256": "dcd872f99d2b896b4fa2de856afafc538078488ef528bea1401a4a16b0df6c3c",
+    "runtime_sha256": "dcd872f99d2b896b4fa2de856afafc538078488ef528bea1401a4a16b0df6c3c"
+  },
+  {
+    "id": "card_rogue_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_rogue_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_rogue_interrupt.png",
+    "runtime": "assets/cards/art/rogue_interrupt.png",
+    "source_sha256": "6f9ce1d3f4915280010433b5f878f526e108e4d7555f1a921f524dce623c9429",
+    "runtime_sha256": "6f9ce1d3f4915280010433b5f878f526e108e4d7555f1a921f524dce623c9429"
+  },
+  {
+    "id": "card_rogue_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_rogue_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_rogue_prepared.png",
+    "runtime": "assets/cards/art/rogue_prepared.png",
+    "source_sha256": "88d78ea15fc14135faa06f6790f9a25944c2f3d9afe08ed47bbf6ec76f5dc685",
+    "runtime_sha256": "88d78ea15fc14135faa06f6790f9a25944c2f3d9afe08ed47bbf6ec76f5dc685"
+  },
+  {
+    "id": "card_warrior_interrupt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_warrior_interrupt.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_warrior_interrupt.png",
+    "runtime": "assets/cards/art/warrior_interrupt.png",
+    "source_sha256": "d60b96a2d49c3d47646866bfece7de1c6d939727c66fe0139ca65d600bb81256",
+    "runtime_sha256": "d60b96a2d49c3d47646866bfece7de1c6d939727c66fe0139ca65d600bb81256"
+  },
+  {
+    "id": "card_warrior_prepared",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/card_warrior_prepared.txt",
+    "source": "docs/combat_depth_2026_10/sources/card_warrior_prepared.png",
+    "runtime": "assets/cards/art/warrior_prepared.png",
+    "source_sha256": "991d53596acd0f9af95364e1d8aca5f2dec09de791b0c3033f4527765d118b6d",
+    "runtime_sha256": "991d53596acd0f9af95364e1d8aca5f2dec09de791b0c3033f4527765d118b6d"
+  },
+  {
+    "id": "cleric_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_attack.png",
+    "runtime": "assets/heroes/detail/cleric_attack.png",
+    "source_sha256": "cdd2d82915d2245e6592715e4e19c4a68643bb1eeae195d5f249a7e49d2e4e46",
+    "runtime_sha256": "ba5602d8b92b4e8dea82dd802157e326b766fe3f32aff617cfe522ec3af780a5"
+  },
+  {
+    "id": "cleric_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_death.png",
+    "runtime": "assets/heroes/detail/cleric_death.png",
+    "source_sha256": "282eb6aacbfb502768da21a2df330fa94ca108cbf5a2e05636a63670f7245cb5",
+    "runtime_sha256": "a9c93b16bb6fbb074ff94fa8651729a4bd6c14bb9ee7065ce23aa8839512b831"
+  },
+  {
+    "id": "cleric_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_guard.png",
+    "runtime": "assets/heroes/detail/cleric_guard.png",
+    "source_sha256": "454b7a3d9f2220db9a0c5df337148f9f64cf6253bf07dbc314fc816eef721bfa",
+    "runtime_sha256": "aadd93a3b683228313f85b9568e412d29d8838282bb18ec403acb5e4533f8a97"
+  },
+  {
+    "id": "cleric_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_hurt.png",
+    "runtime": "assets/heroes/detail/cleric_hurt.png",
+    "source_sha256": "d04d9d8b0595c643aa4da45aaa7581ed4dc195c254a1e4f2714a2cee16bdfe21",
+    "runtime_sha256": "f6d2814cfbd01909253c20d64fb7ee9e90736f7d4280931787f048db2bf29d29"
+  },
+  {
+    "id": "cleric_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_idle.png",
+    "runtime": "assets/heroes/detail/cleric_idle.png",
+    "source_sha256": "4c363fe2249c298cff073565d3ed9a2d717a14645d6ba844fe6db981fca9f50f",
+    "runtime_sha256": "c383ecb277d0f2ac4353195aa67754b0dc5cfd3a2c353e2ce406ffa11edaaab3"
+  },
+  {
+    "id": "cleric_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_run.png",
+    "runtime": "assets/heroes/detail/cleric_run.png",
+    "source_sha256": "4643274a8170b8b141fdbaad321ed4013f3bf96eec262c58c228bb72ad718c27",
+    "runtime_sha256": "3be1f62fd61fde1fdd69e039734cb38e595aa07303a8af119c26cf15d1f397df"
+  },
+  {
+    "id": "cleric_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/cleric_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/cleric_skill.png",
+    "runtime": "assets/heroes/detail/cleric_skill.png",
+    "source_sha256": "38cea6a488743e6ffd9aac17f65d9fb1675a6d4949498a593ecc16f37c075cb8",
+    "runtime_sha256": "f88b2b75d1104dd80cf566f3686ed08e43abab7f24454b399fd614079b4fa4a7"
+  },
+  {
+    "id": "dummy",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/dummy.txt",
+    "source": "docs/combat_depth_2026_10/sources/dummy.png",
+    "runtime": "assets/combat_depth/dummy.png",
+    "source_sha256": "7ded48ccbb1bf010dbacb304d459b33685f80072a50ea371b8c0463d03e30bfb",
+    "runtime_sha256": "06d7613635c577538e5e8eaf1b66ab7a736f8e01c014670ff70757e1964099f9"
+  },
+  {
+    "id": "guardian_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_attack.png",
+    "runtime": "assets/heroes/detail/guardian_attack.png",
+    "source_sha256": "5c31c79aefc834382218977daa232c9343e2e436f1c3e22b068985b42a43cbc3",
+    "runtime_sha256": "635fb59f3ce109b7ae4f7aafdd36745142b88bbebc6d52181e477d2defea327f"
+  },
+  {
+    "id": "guardian_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_death.png",
+    "runtime": "assets/heroes/detail/guardian_death.png",
+    "source_sha256": "5aa2b2385317dbfe0c04b209e1d6932b50b1d0226491e696c9d6b405a26598ea",
+    "runtime_sha256": "280742e54eb8093dea562faf71aa07c77592b0ca82500a49e51ad06ae3d53c07"
+  },
+  {
+    "id": "guardian_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_guard.png",
+    "runtime": "assets/heroes/detail/guardian_guard.png",
+    "source_sha256": "53f6cc5cec3603628cffbadd097211ec78fd02a06ff93ed62f39e61727e2a7a6",
+    "runtime_sha256": "e03db58f34a334ee9b8b8da1067f6f8571434f4bcfe5198a134184a2cfa95686"
+  },
+  {
+    "id": "guardian_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_hurt.png",
+    "runtime": "assets/heroes/detail/guardian_hurt.png",
+    "source_sha256": "583ae22cecaa4d605ab318eb849da3a2644e7cfd6784a577690c76bc9b570a59",
+    "runtime_sha256": "0d2eb05c69468836d3195465f2ca7cbd486f04f0b7e896e74cbb2059ef8477fc"
+  },
+  {
+    "id": "guardian_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_idle.png",
+    "runtime": "assets/heroes/detail/guardian_idle.png",
+    "source_sha256": "4e181ce1961a1e24a69cc544e5755485eadae89f3cd52dc46d6913a4b99210a6",
+    "runtime_sha256": "f759982681c4e49decda70a4c536734211ca9796a5acd392a9d8df307ccd942d"
+  },
+  {
+    "id": "guardian_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_run.png",
+    "runtime": "assets/heroes/detail/guardian_run.png",
+    "source_sha256": "bdb63b2d9bd8d08042a379a6c38df0406ab2ce2b96191222b569ee7b021fed68",
+    "runtime_sha256": "96b56a3f0ba677d4c0b27a375f5d921afd2d11598f07e28243f09da55276d5c5"
+  },
+  {
+    "id": "guardian_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/guardian_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/guardian_skill.png",
+    "runtime": "assets/heroes/detail/guardian_skill.png",
+    "source_sha256": "78727eec3cca797b6940be3f49eeb315284b4440a8be834b89a7a24876a44e0f",
+    "runtime_sha256": "ffc6a9a08ccf8c4771858ed48cd8a733163ee368d84d586f95c43b1c3c46e37a"
+  },
+  {
+    "id": "mage_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_attack.png",
+    "runtime": "assets/heroes/detail/mage_attack.png",
+    "source_sha256": "1b3c25b56ed850250a9bbc814c0e4e1b9e3b25066503828169971bb90fc3ca26",
+    "runtime_sha256": "a6a3e2c7a73b604316c79319266ae7dbf5c3b1f8847580c522d4e94f23d2b6a4"
+  },
+  {
+    "id": "mage_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_death.png",
+    "runtime": "assets/heroes/detail/mage_death.png",
+    "source_sha256": "c5ffb08ccedaa7d663bda7b33f7a9b904897b15e1337dfa9a82b877a939e5556",
+    "runtime_sha256": "00765771be0ae952580ce82b6af6a6d78e0051813f50108a6314e368f6fa455b"
+  },
+  {
+    "id": "mage_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_guard.png",
+    "runtime": "assets/heroes/detail/mage_guard.png",
+    "source_sha256": "b367c0d66da9cef1d5996f1e80203010e9459157c247a39f606eec1b43233e84",
+    "runtime_sha256": "fa00a4f9812c55020e72aa8b66c748c47d3782861aa8b55706e7d44593090d77"
+  },
+  {
+    "id": "mage_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_hurt.png",
+    "runtime": "assets/heroes/detail/mage_hurt.png",
+    "source_sha256": "75854e0125e1097f8fdcbb4b598aab7ae4a75632462e4dc74a8725b6a7a5c204",
+    "runtime_sha256": "2d49b1f1f2ba436779b286afb02b65c86b7051186df9380add926f87c0351ea4"
+  },
+  {
+    "id": "mage_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_idle.png",
+    "runtime": "assets/heroes/detail/mage_idle.png",
+    "source_sha256": "5dc9a6186c6d4bb20b1dfa56993df334433f77e063e159a15ce2cac3794e039c",
+    "runtime_sha256": "450e17eaf1df11e8a9a86f5fe5d3a48829d6c887444b464d79e8a7451dc15d6a"
+  },
+  {
+    "id": "mage_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_run.png",
+    "runtime": "assets/heroes/detail/mage_run.png",
+    "source_sha256": "9839b21d53c0b7cc9f2c9f173e802e1a6e1b42d684b5d941a7ab65e54c03ecd8",
+    "runtime_sha256": "58cb7299ea8c165a5058e76708f4a8cb39ba3a3033a52fac28dc1c56db38771f"
+  },
+  {
+    "id": "mage_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/mage_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/mage_skill.png",
+    "runtime": "assets/heroes/detail/mage_skill.png",
+    "source_sha256": "52f6abe01073cc1439d3f5013611395e6cb08051e3d6d531fdc867a5abfc466d",
+    "runtime_sha256": "1e582b410171d7d8fc19a7b9f944a5f9c518982e784ee63e25ec07ef03ac4af2"
+  },
+  {
+    "id": "merchant",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/merchant.txt",
+    "source": "assets/combat_depth/merchant.png",
+    "runtime": "assets/combat_depth/merchant.png",
+    "source_sha256": "5730804a96560329254308596fe79af051d37180e59354ebdf19ea955ef502bf",
+    "runtime_sha256": "5730804a96560329254308596fe79af051d37180e59354ebdf19ea955ef502bf"
+  },
+  {
+    "id": "ranger_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_attack.png",
+    "runtime": "assets/heroes/detail/ranger_attack.png",
+    "source_sha256": "7a200950a6919bb5f517e40d91ba803b129a83625360d6201da9379f7bcf7429",
+    "runtime_sha256": "bb14bcb85e2a6565136eb64aab5e9dd11ff89fab7e820110bcc71be59886bebd"
+  },
+  {
+    "id": "ranger_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_death.png",
+    "runtime": "assets/heroes/detail/ranger_death.png",
+    "source_sha256": "fecc3c9649f7d983884ae4756827e7a7ca7ea8cf8a8c9bb3b98ad9ab9ed81aae",
+    "runtime_sha256": "5aab0be1edca6527dd1299b69defc1ec52fd9e1eea5955b1aded15b641e802b7"
+  },
+  {
+    "id": "ranger_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_guard.png",
+    "runtime": "assets/heroes/detail/ranger_guard.png",
+    "source_sha256": "80079856e8d17035f77fe2a756a99bcbd1df703a339cdf7ef23e83ba87166b34",
+    "runtime_sha256": "9fadfdf1c24380ba0ebc8ddeee4ad5f5c01ad063448c63b4e1b5f0b5d499b8db"
+  },
+  {
+    "id": "ranger_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_hurt.png",
+    "runtime": "assets/heroes/detail/ranger_hurt.png",
+    "source_sha256": "ec4fe3df67bd82a6171ea18df08e717fe5760a772514e1d75a5a38218cccc694",
+    "runtime_sha256": "e129d4e3f091268b49f06d9495d4b6da14c64e710455036383899d7c15d617d2"
+  },
+  {
+    "id": "ranger_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_idle.png",
+    "runtime": "assets/heroes/detail/ranger_idle.png",
+    "source_sha256": "87c088a11178c24f206b557dee5847d41a81cebb387019ff6e1a72261bfce6d9",
+    "runtime_sha256": "daf5c6c6f8b7813d66a9c994a641b4fcd58a44df447b292cf339fcbeba798b50"
+  },
+  {
+    "id": "ranger_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_run.png",
+    "runtime": "assets/heroes/detail/ranger_run.png",
+    "source_sha256": "8a6ea88f867d4510d11cee3fde2ba7c81faaa77f878e7893fb2d71499ed668fa",
+    "runtime_sha256": "1575edbedf3c6846a9836631c453a2f6268470169247a1f1a9761eed301129c9"
+  },
+  {
+    "id": "ranger_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/ranger_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/ranger_skill.png",
+    "runtime": "assets/heroes/detail/ranger_skill.png",
+    "source_sha256": "a3c9cf178b0cacdb4d725648c2bb1feaf93b96c323d6047bcaae543174e40260",
+    "runtime_sha256": "d3b208bb51adeca94e1f6a0e6b25d4eadc3484327e5d6c3977f5dad8b543c128"
+  },
+  {
+    "id": "rogue_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_attack.png",
+    "runtime": "assets/heroes/detail/rogue_attack.png",
+    "source_sha256": "12eb6b05fe95abed71e4cb3b1e965076d5a08fd4386f1396e785094f2249086b",
+    "runtime_sha256": "604e0ca408442e02d71e6981408e3bbba69ec933160f777eb6c0e70552494c47"
+  },
+  {
+    "id": "rogue_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_death.png",
+    "runtime": "assets/heroes/detail/rogue_death.png",
+    "source_sha256": "9fe6843f10255850bcc4d770e990357e447f0f40ff79f8b3144fae13c06999fc",
+    "runtime_sha256": "0803e15e6a57db90286a64a5ed13c163e6f81627c30718c31d64691c202c893d"
+  },
+  {
+    "id": "rogue_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_guard.png",
+    "runtime": "assets/heroes/detail/rogue_guard.png",
+    "source_sha256": "19ddc8cde83ca833c63985d7852e0fd8add933670bf3dd53293419382692b958",
+    "runtime_sha256": "3be5c61cb44e780c0e20a42ceeb8b22cb52a70a01e09447670945d2589c90992"
+  },
+  {
+    "id": "rogue_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_hurt.png",
+    "runtime": "assets/heroes/detail/rogue_hurt.png",
+    "source_sha256": "084f25e2b4a19dcd15e741e519de1d8e30212847480567a7583c395bc93703d1",
+    "runtime_sha256": "f88cb0dfd3c1d1c1fdeca4f56e396cf976a769f22c58dfaea771b97537c82b60"
+  },
+  {
+    "id": "rogue_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_idle.png",
+    "runtime": "assets/heroes/detail/rogue_idle.png",
+    "source_sha256": "1c7e311fdda7c27a099647efae566160549364b359c402eb8ccac11c4df430b9",
+    "runtime_sha256": "aa2c0a03913011d9b9a8d4481f7d892cda614fdd182ba917543228cdfffd0b9c"
+  },
+  {
+    "id": "rogue_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_run.png",
+    "runtime": "assets/heroes/detail/rogue_run.png",
+    "source_sha256": "83f8f6ccbef598daab670001b74df2d0c1d24a92e74b650334b838260a16acf2",
+    "runtime_sha256": "d24fdd579ca8e444b68fc82c6fe50410ac08739c7ecd2937312b53f006e75f9e"
+  },
+  {
+    "id": "rogue_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/rogue_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/rogue_skill.png",
+    "runtime": "assets/heroes/detail/rogue_skill.png",
+    "source_sha256": "abdd632832372bb836b09a468f32c448d4035b55acd9760eb965b2cdc94133ad",
+    "runtime_sha256": "30ca14b61ff3f0aaadeb4e245286848527dc8af7b986ec5033a3927491ee209a"
+  },
+  {
+    "id": "roots",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/roots.txt",
+    "source": "assets/combat_depth/roots.png",
+    "runtime": "assets/combat_depth/roots.png",
+    "source_sha256": "4f8e971691307edca1628fbb5fdc2f52ae98fc18e16a3a7355e29a739faea505",
+    "runtime_sha256": "4f8e971691307edca1628fbb5fdc2f52ae98fc18e16a3a7355e29a739faea505"
+  },
+  {
+    "id": "training",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/training.txt",
+    "source": "assets/combat_depth/training.png",
+    "runtime": "assets/combat_depth/training.png",
+    "source_sha256": "ed46cc3a999525eeb3c1b9a8539fe17b4e105106f814be0823687c0547403dff",
+    "runtime_sha256": "ed46cc3a999525eeb3c1b9a8539fe17b4e105106f814be0823687c0547403dff"
+  },
+  {
+    "id": "warrior_attack",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_attack.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_attack.png",
+    "runtime": "assets/heroes/detail/warrior_attack.png",
+    "source_sha256": "8dbda8c9adfe81e06a16a6f2f64aa79bdba5d0a48a88bb2880da2d3ebe7b17d5",
+    "runtime_sha256": "6c0ee1182e4201c64a3f2b00caa96466b5a9b62a2c7b10e0ce8dd1ace4805d59"
+  },
+  {
+    "id": "warrior_death",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_death.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_death.png",
+    "runtime": "assets/heroes/detail/warrior_death.png",
+    "source_sha256": "3f6238e79dda09c4a3f55fefb066516372a2870384681f3d6d0029551ab055d8",
+    "runtime_sha256": "573e1cd385388819178aebc2ba17dc34aed7e3f36038a559bff1f5090273a816"
+  },
+  {
+    "id": "warrior_guard",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_guard.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_guard.png",
+    "runtime": "assets/heroes/detail/warrior_guard.png",
+    "source_sha256": "3eab88f432a3f5d1249f5bc663a2dcb8d6ffeb8602817c7b9cb6d19215c32d16",
+    "runtime_sha256": "e1f270a8bab5c6bd9017c862452ef5ac86c0c90ac369d25391fc3dd3827ce69e"
+  },
+  {
+    "id": "warrior_hurt",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_hurt.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_hurt.png",
+    "runtime": "assets/heroes/detail/warrior_hurt.png",
+    "source_sha256": "0201f68d5746c4bbc3774547c9b7e2506d4366a67a1db437fa9da9be8538cdda",
+    "runtime_sha256": "dcd93feaf0cba02ccf158072f261fca3c287fb33a8cd206734e19552f363365b"
+  },
+  {
+    "id": "warrior_idle",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_idle.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_idle.png",
+    "runtime": "assets/heroes/detail/warrior_idle.png",
+    "source_sha256": "f0b18253c0803c3810a07ec0e5c617bb42af74c61085cbfc5dc8d57d218eb9de",
+    "runtime_sha256": "019a965eaf9f5f1ee8183e5f239a6fcc7f7f3d4e33b998c4d916a67509483b36"
+  },
+  {
+    "id": "warrior_run",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_run.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_run.png",
+    "runtime": "assets/heroes/detail/warrior_run.png",
+    "source_sha256": "2239655f376cd1f8cc2a17aab2102c0e22a68e7630fec1d958b4664dcbab2a3a",
+    "runtime_sha256": "898256aed77bac4291e45a711283c6c38541419cc5c99e8a2e30a4871efcfa0f"
+  },
+  {
+    "id": "warrior_skill",
+    "generator": "builtin_imagegen",
+    "prompt": "docs/combat_depth_2026_10/prompts/warrior_skill.txt",
+    "source": "docs/combat_depth_2026_10/sources/warrior_skill.png",
+    "runtime": "assets/heroes/detail/warrior_skill.png",
+    "source_sha256": "67dfb0ca280130696ca9eec79467ed5f9c61b445f6c207375314b0b6618ad1ff",
+    "runtime_sha256": "7ac00db848ebc7227aebb1529608f31b2e5be554090778fdd5b7f020e26894d2"
+  }
+]

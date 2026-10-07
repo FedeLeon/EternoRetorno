@@ -1,6 +1,6 @@
 # Cartas por héroe
 
-**Contenido actual:** 114 cartas, 19 por héroe. [Catálogo](CATALOGO.md) y
+**Contenido actual:** 126 cartas, 21 por héroe. Incluye [doce cartas tácticas](../combat_depth_2026_10/README.md). [Catálogo](CATALOGO.md) y
 [progresión del mercado](../market/README.md). A las 60 incorporaciones anteriores se suman [24 cartas de apoyo y debilitamiento](support/README.md), todas comprables en el mercado. El mazo inicial conserva sus cartas básicas.
 
 **Actualización:** la distribución vigente se describe en
@@ -13,10 +13,10 @@ Marcos derivados del concepto `cartas.png` mediante imagegen. Guerrero rojo,
 guardiana verde azulado, pícaro verde, maga violeta, clériga dorada y explorador
 azul. El pistolero del concepto se adapta al pícaro existente.
 
-`generated-frames.png` conserva la generación original. `scripts/import_cards.gd`
-recorta los seis marcos y los escala con vecino más cercano a 96 × 144 en
-`assets/cards/`. La generación no entregó transparencia exterior: se usan
-recortes rectangulares del marco, sin el fondo de presentación.
+`generated-frames.png` conserva la generación original de la etapa inicial.
+Los seis recortes de 96 × 144 y su importador se retiraron el 07/10 por no
+tener consumidores. Los marcos vigentes están en `assets/cards/frames/` y se
+cargan desde `ui/components/card_view.gd`.
 
 `src/main.gd::card_panel` comparte el diseño entre mano, mazo, mejoras y
 recompensas. Los nombres, costes y efectos son texto de Godot, calculados desde
@@ -105,7 +105,8 @@ básica y una de cada una de sus otras dos cartas iniciales modestas. Todas
 cuestan 1 de energía. Las cartas de mercado, victoria y ENLACE se siguen
 consiguiendo después. Se mantienen seis cartas robadas por turno y tres de
 energía. Solo cambia el inicio de nuevas aventuras; las guardadas conservan
-sus instancias. La fuente es `scripts/create_content.py` y su catálogo generado.
+sus instancias. Los datos vigentes se mantienen directamente en `data/content.json`;
+el generador inicial fue retirado por no reproducir los enemigos actuales.
 
 ## Texto legible en cartas inclinadas (17/09/2026)
 

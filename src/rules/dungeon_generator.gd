@@ -77,11 +77,14 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 			else:
 				for i in range(count): node.encounter.append(config.common[rng.randi_range(0, config.common.size() - 1)])
 		elif node.kind == "elite":
+			node.elite_modifier = preload("res://src/rules/combat_depth.gd").ELITES.keys()[rng.randi_range(0, 2)]
 			node.encounter = [config.elite]
 			if floor_number == 2 and node.stage == 8: node.encounter.append("forest_wolf")
 		elif node.kind == "boss":
 			node.encounter = [config.boss]
 			if floor_number >= 2: node.encounter.append(config.escort)
+	var event_nodes: Array = nodes.filter(func(node): return node.kind == "event")
+	if not event_nodes.is_empty(): event_nodes[rng.randi_range(0, event_nodes.size() - 1)].event = "wandering_merchant"
 	return nodes
 
 static func connect_rooms(nodes: Array, from: int, to: int) -> void:

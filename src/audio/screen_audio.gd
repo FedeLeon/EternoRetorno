@@ -5,7 +5,8 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 		screen = run.get("phase", return_screen)
 	elif screen == "deck":
 		screen = return_screen
-	if screen == "bonds": return "refuge"
+	if screen in ["bonds", "training_setup", "bestiary"]: return "refuge"
+	if screen == "merchant": return "market"
 	if screen in ["home", "options", "collection"]: return "title"
 	if screen in ["base_camp", "select", "equipment"]: return "camp"
 	if screen in ["market", "forge", "church", "expeditions", "refuge"]: return screen

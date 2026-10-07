@@ -65,4 +65,6 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 			var caption: Rect2 = other.get_meta("caption_rect")
 			caption.position -= hotspot.position
 			hotspot.passthrough_areas.append(caption)
+	ui.button("Entrenamiento", 40, 648, 220, 44, func(): ui.screen = "training_setup"; ui.render())
+	ui.button("Bestiario", 1020, 648, 220, 44, func(): ui.screen = "bestiary"; ui.render())
 	ui.camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", actions.refuge)

@@ -118,7 +118,7 @@ responsabilidades actuales, estructura objetivo y criterios de separación.
 
 - `src/game.gd`: estado y reglas; cada acción pública valida la fase y guarda.
 - `src/content.gd` y `data/content.json`: catálogo con identificadores estables,
-  efectos y descripción de cartas. `scripts/create_content.py` reproduce los datos.
+  efectos y descripción de cartas; JSON declarativo mantenido directamente.
 - `src/dungeon.gd`: grafo acíclico, posiciones y encuentros con semilla.
 - `src/save_store.gd`: persistencia con versión, archivo temporal y copia anterior.
 - `src/main.gd`: interfaz táctil y pantallas; `src/*_sprite.gd`: animaciones.

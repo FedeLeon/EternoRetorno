@@ -25,17 +25,18 @@ func run_tests():
 	app.game.run.combat.hand=[{"id":"warrior_slash","upgraded":false}]
 	# Find the actual first attack ID rather than relying on historical card names.
 	app.game.run.combat.hand[0].id=app.game.run.deck[0].id
-	app.game.run.combat.enemies[0].hp=200;app.game.run.combat.enemies[0].max_hp=200
+	for enemy in app.game.run.combat.enemies: enemy.hp=200;enemy.max_hp=200
 	app.continue_run();await process_frame
 	await capture("fortress-combat")
 	var drag=app.layer.get_node("CardDrag")
 	var card=app.layer.get_node("CombatHand").get_child(0).get_child(0)
 	var start=card.get_global_rect().get_center()
-	var target=app.layer.get_node("EnemyTarget0").get_global_rect().get_center()
+	var target_index=app.game.valid_targets(0)[0]
+	var target=app.layer.get_node("EnemyTarget%d" % target_index).get_global_rect().get_center()
 	var energy=app.game.run.combat.energy
 	await mouse(start,true);await move(target)
 	check(drag.dragging,"mouse lifts card")
-	check(drag.hover_target==0,"mouse recognizes enemy")
+	check(drag.hover_target==target_index,"mouse recognizes eligible enemy")
 	check(app.game.run.combat.energy==energy,"lifting does not spend energy")
 	await capture("drag-preview")
 	await mouse(target,false)
@@ -50,7 +51,7 @@ func run_tests():
 	app.render();await process_frame;drag=app.layer.get_node("CardDrag");card=app.layer.get_node("CombatHand").get_child(0).get_child(0)
 	var press=InputEventScreenTouch.new();press.index=2;press.pressed=true;press.position=card.get_global_rect().get_center();root.push_input(press); await process_frame
 	var motion=InputEventScreenDrag.new();motion.index=2;motion.position=target;root.push_input(motion); await process_frame
-	check(drag.dragging and drag.hover_target==0,"touch supports target and preview")
+	check(drag.dragging and drag.hover_target==target_index,"touch supports target and preview")
 	var touch_energy = app.game.run.combat.energy
 	var release=InputEventScreenTouch.new(); release.index=2;release.pressed=false;release.position=target;root.push_input(release);await process_frame
 	check(app.game.run.combat.energy < touch_energy,"touch release spends energy once")

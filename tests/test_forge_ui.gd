@@ -91,7 +91,7 @@ func run_tests() -> void:
 		await create_timer(0.2).timeout
 		for i in range(2):
 			var texture = app.hero_art[i].sprite.sprite_frames.get_frame_texture("idle", 0)
-			check(texture.atlas.resource_path.ends_with("%s_w3_a3.png" % pair[i]), "battle displays upgraded gear " + pair[i])
+			check(texture.atlas.resource_path.ends_with("%s_idle.png" % pair[i]) and app.hero_art[i].sprite.material.get_shader_parameter("weapon_rank") == 3.0 and app.hero_art[i].sprite.material.get_shader_parameter("armor_rank") == 3.0, "battle displays detailed upgraded gear " + pair[i])
 
 		var hud = app.layer.get_node("CombatHUD")
 		check(hud.equipment.size() == 4, "both upgraded tracks of each hero in HUD")

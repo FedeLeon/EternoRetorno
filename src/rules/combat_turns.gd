@@ -3,7 +3,7 @@ extends RefCounted
 static func start(game: RefCounted) -> void:
 	var battle = game.run.combat
 	battle.turn += 1
-	battle.energy = game.turn_energy()
+	battle.energy = 99 if game.run.get("training", false) else game.turn_energy()
 	for h in game.run.heroes:
 		h.block = game.relic_bonus(h, "block") if h.hp > 0 else 0
 		game.Modifiers.clear(h)
@@ -19,11 +19,16 @@ static func start(game: RefCounted) -> void:
 		var intent = preload("res://src/rules/adventure_extensions.gd").intent(enemy, game.content.enemies[enemy.id], battle.turn, battle.enemies)
 		var living = game.living_heroes()
 		intent.target = living[game.rng.randi_range(0, living.size() - 1)]
+		preload("res://src/rules/combat_depth.gd").plan(game, enemy, intent)
+		if game.run.get("training", false): intent = {"damage":6,"block":0,"counter":0}
 		enemy.intent = intent
+	preload("res://src/rules/combat_depth.gd").release(game)
+	if game._check_combat_end(): return
 	game._draw(6 + (game.RunRelics.amount(game.run, game.content.relics, "opening_draw") if battle.turn == 1 else 0))
 
 
 static func end(game: RefCounted) -> bool:
+	game.resolved_prepared_hits.clear()
 	game.resolved_enemy_attacks.clear()
 	game.resolved_enemy_blocks.clear()
 	game.resolved_hero_defenses.clear()
@@ -47,10 +52,17 @@ static func end(game: RefCounted) -> bool:
 		if enemy.hp <= 0:
 			continue
 		var intent = game.Modifiers.intent(enemy)
+		game.run.attacker_name = game.content.enemies[enemy.id].name
+		preload("res://src/rules/combat_depth.gd").action(game, enemy, intent)
+		if game.living_heroes().is_empty():
+			game._finish(false)
+			return true
+		var health_before: int = game.run.heroes.reduce(func(total, hero): return total + int(hero.hp), 0)
 		if int(intent.get("damage", 0)) > 0:
 			game.resolved_enemy_attacks.append(enemy_index)
 		preload("res://src/rules/adventure_extensions.gd").role_support(game, enemy_index, intent)
 		enemy.block += int(intent.get("block", 0))
+		if int(intent.get("block", 0)) > 0: game._log("%s obtiene %d de bloqueo." % [game.content.enemies[enemy.id].name, intent.block])
 		game.resolved_enemy_blocks[enemy_index] = enemy.block
 		var targets = game.living_heroes() if intent.get("all", false) else [intent.target]
 		if not intent.get("all", false) and game.run.heroes[targets[0]].hp <= 0:
@@ -65,6 +77,7 @@ static func end(game: RefCounted) -> bool:
 				if not game.resolved_hero_defenses.has(enemy_index):
 					game.resolved_hero_defenses[enemy_index] = []
 				game.resolved_hero_defenses[enemy_index].append(i)
+		if enemy.get("modifier", "") == "vampiric" and game.run.heroes.reduce(func(total, hero): return total + int(hero.hp), 0) < health_before: enemy.hp = mini(enemy.max_hp, enemy.hp + 3)
 		game._log("%s ataca por %d." % [game.content.enemies[enemy.id].name, intent.damage])
 		if game.living_heroes().is_empty():
 			game._finish(false)
