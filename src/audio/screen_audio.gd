@@ -5,6 +5,7 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 		screen = run.get("phase", return_screen)
 	elif screen == "deck":
 		screen = return_screen
+	if screen == "bonds": return "refuge"
 	if screen in ["home", "options", "collection"]: return "title"
 	if screen in ["base_camp", "select", "equipment"]: return "camp"
 	if screen in ["market", "forge", "church", "expeditions", "refuge"]: return screen
@@ -13,6 +14,6 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 		var current = int(run.get("current", -1))
 		var nodes: Array = run.get("nodes", [])
 		if current >= 0 and current < nodes.size() and nodes[current].kind == "rest": return "rest"
-	if screen in ["map", "room"]:
-		return "forest" if int(run.get("floor", 1)) == 2 else "crypt"
+	if screen in ["map", "room", "event_cards"]:
+		return "volcano" if int(run.get("floor", 1)) == 3 else ("forest" if int(run.get("floor", 1)) == 2 else "crypt")
 	return ""

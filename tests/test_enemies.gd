@@ -34,7 +34,7 @@ func run_tests() -> void:
 		gallery.add_child(name_label)
 		var img = v.sprite.texture.get_image()
 		check(img.get_size() == Vector2i(1024 if v.has_motion_frames else 128, 128), id + " HD dimensions")
-		check(v.has_motion_frames == (int(Visual.entries()[id].floor) in [1, 2]), id + " active-floor motion coverage")
+		check(v.has_motion_frames == (int(Visual.entries()[id].floor) in [1, 2, 3]), id + " active-floor motion coverage")
 		if v.has_motion_frames:
 			var unique: Array = []
 			for frame_index in range(8):

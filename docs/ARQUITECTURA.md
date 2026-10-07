@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Estado revisado el **05/10/2026**. Esta página describe el código actual y los
+Estado revisado el **07/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
@@ -442,3 +442,31 @@ no resuelven impactos ni escriben guardados.
 La vista de opciones sale de `main.gd` a `ui/screens/options_screen.gd`. El controlador
 conserva `set_option` y el checkpoint existente; agrega música y efectos al diccionario
 de ajustes sin migración. Rutas y recursos de descarga en [Audio](audio/README.md).
+
+## Ampliación de aventura — 07/10/2026
+
+Extracciones terminadas, sin cambiar la API pública ni los IDs/UIDs existentes:
+
+| Módulo | Líneas actuales | Responsabilidad |
+| --- | ---: | --- |
+| `src/main.gd` | 631 | Composición/navegación; delega fondos y pantallas nuevas |
+| `src/game.gd` | 489 | Fachada, estado y checkpoints; delega ciclo, turno y premios |
+| `rules/run_lifecycle.gd` | 74 | Crear/finalizar aventura y conservar resumen |
+| `rules/combat_turns.gd` | 75 | Inicio/fin de turno e intenciones |
+| `rules/combat_rewards.gd` | 83 | Fin de combate y elección/rechazo de premio |
+| `rules/adventure_extensions.gd` | 72 | Dificultad, condición, fases, roles, vínculos y estadísticas |
+| `rules/expanded_events.gd` | 51 | Encuentros propios y modificaciones de mazo |
+| `rules/combat_preview.gd` | 31 | Predicción usando copia aislada del motor de reglas |
+| `ui/screen_backgrounds.gd` | 56 | Composición compartida de fondos |
+| `ui/components/card_drag.gd` | 111 | Gesto mouse/táctil, preview y objetivos visuales |
+
+Pantallas `run_setup`, `bonds`, `event_cards` y opciones ampliadas viven en archivos
+propios. `presentation/preferences.gd` entrega preferencias a efectos, sin persistir.
+El arrastre solicita una acción normal al controlador: no descuenta energía por su
+cuenta. La vista previa usa `Game(false)` y copia perfil/aventura/RNG; los premios de
+esa copia no afectan el perfil real. Las reglas extraídas nunca llaman checkpoint.
+
+La siguiente extracción sigue siendo la resolución de cartas de `game.gd` y la
+navegación de salas de `main.gd`; ambos aún superan la guía de tamaño. No se hizo
+una migración masiva. Guardados con uno/dos pisos conservan su límite; los nuevos
+contienen tres. [Alcance y validación](expansion_2026_10/README.md).

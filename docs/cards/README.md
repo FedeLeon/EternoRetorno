@@ -326,3 +326,9 @@ Sin nuevos assets ni cambios de reglas/guardado. Sin exportación Web/APK.
 Cuatro cartas adicionales por héroe, con 24 ilustraciones nuevas. Fuerza temporal,
 debilidad y fractura del 25% (35% al mejorar), sin acumulación. Curación nueva
 para guerrero, guardiana, maga y explorador. [Catálogo, reglas y pruebas](support/README.md).
+
+## Ampliación del 07/10/2026
+
+En combate se puede arrastrar con mouse/táctil sobre un objetivo válido, con preview de resultado. Soltar afuera cancela, sin gastar energía; tocar carta/objetivo sigue disponible. Encuentros permiten retirar, intercambiar o transformar una instancia elegida.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

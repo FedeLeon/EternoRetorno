@@ -82,7 +82,7 @@ func rect(node: Control, x: float, y: float, w: float, h: float, parent: Control
 
 func label_at(text: String, x: float, y: float, w: float, h: float, font_size: int = 20, color: Color = TEXT, parent: Control = null) -> Label:
 	var label = Label.new()
-	label.add_theme_font_size_override("font_size", font_size)
+	label.add_theme_font_size_override("font_size", roundi(font_size * (preload("res://src/presentation/preferences.gd").text_scale() if font_size >= 16 else 1.0)))
 	label.add_theme_color_override("font_color", color)
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -120,48 +120,7 @@ func art(kind: String, x: float, y: float, w: float, h: float, parent: Control =
 	return visual
 
 func background() -> void:
-	if screen == "room" and game.run.nodes[game.run.current].kind == "event":
-		return # Encounter scenes provide their own illustrated background.
-	if screen in ["map", "equipment", "refuge", "collection"]:
-		return # These screens own their backgrounds.
-	if screen == "combat" or (screen == "room" and int(game.run.get("floor", 1)) == 2):
-		var room = TextureRect.new()
-		room.texture = load(BattleBackground.path_for(game.run.seed, game.run.current, int(game.run.get("floor", 1))))
-		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		rect(room, 0, 64, 1280, 656)
-		return
-	if screen in ["home", "options"]:
-		var title = TextureRect.new()
-		title.texture = preload("res://assets/title/background.png")
-		title.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		title.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		rect(title, 0, 0, 1280, 720)
-		return
-	if screen == "base_camp":
-		var camp = TextureRect.new()
-		camp.texture = preload("res://assets/base_camp/background.png")
-		camp.name = "DayCampBackground"
-		var ambience = ShaderMaterial.new()
-		ambience.shader = preload("res://assets/shaders/camp_day.gdshader")
-		camp.material = ambience
-		camp.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		camp.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		rect(camp, 0, 0, 1280, 720)
-		return
-	if screen == "select":
-		var camp = TextureRect.new()
-		camp.texture = preload("res://assets/camp/background.png")
-		camp.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		camp.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		rect(camp, 0, 0, 1280, 720)
-		return
-	var bg = Art.new()
-	rect(bg, 0, 0, 1280, 720)
-	var shade = ColorRect.new()
-	shade.color = Color(0.025, 0.035, 0.06, 0.44)
-	shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	rect(shade, 0, 0, 1280, 720)
+	preload("res://src/ui/screen_backgrounds.gd").build(self)
 
 func render() -> void:
 	audio.select_screen(screen, game.run, return_screen)
@@ -183,6 +142,7 @@ func render() -> void:
 		"market": market_view()
 		"expeditions": preload("res://src/ui/camp_expansion_navigation.gd").expeditions(self)
 		"church": preload("res://src/ui/camp_expansion_navigation.gd").church(self)
+		"bonds": preload("res://src/ui/screens/bonds_screen.gd").build(self, func(): screen = "refuge"; render())
 		"refuge": preload("res://src/ui/refuge_navigation.gd").build(self)
 		"forge": preload("res://src/ui/forge_navigation.gd").build(self)
 		"select": selection()
@@ -193,8 +153,11 @@ func render() -> void:
 		"map": map_view()
 		"combat": combat_view()
 		"room": room_view()
+		"event_cards": preload("res://src/ui/screens/event_cards_screen.gd").build(self)
 		"reward": reward_view()
 		"victory", "defeat": result_view()
+	if screen == "combat" and game.run.combat.turn == 1:
+		preload("res://src/ui/tutorial_navigation.gd").maybe.call_deferred(self)
 	if game.message != "":
 		label_at(game.message, 36, 682, 960, 32, 17, Color("f3a58d"))
 	layer.modulate.a = 0.65
@@ -225,6 +188,8 @@ func home() -> void:
 
 func apply_options() -> void:
 	var settings: Dictionary = game.profile.get("settings", {})
+	preload("res://src/presentation/preferences.gd").settings = settings
+	theme.default_font_size = roundi(20 * preload("res://src/presentation/preferences.gd").text_scale())
 	audio.apply_settings(settings)
 	if not OS.has_feature("mobile") and DisplayServer.get_name() != "headless":
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if settings.get("fullscreen", false) else DisplayServer.WINDOW_MODE_WINDOWED)
@@ -344,7 +309,7 @@ func toggle_hero(id: String) -> void:
 func begin() -> void:
 	if not game.valid_equipment(selected_party, equipped) or (screen == "equipment" and equipped.size() != 1):
 		return
-	preload("res://src/ui/development_start.gd").open(self, begin_on_floor)
+	preload("res://src/ui/development_start.gd").open(self, func(floor): preload("res://src/ui/screens/run_setup_screen.gd").open(self, floor, begin_on_floor))
 
 func begin_on_floor(starting_floor: int) -> void:
 	close_modal()
@@ -377,7 +342,7 @@ func map_view() -> void:
 	view.run_seed = game.run.seed
 	view.boss_defeated = game.run.boss_defeated
 	view.dungeon_name = Dungeon.definition(int(game.run.get("floor", 1))).name
-	view.exit_caption = "Entrar al bosque" if int(game.run.get("floor", 1)) < int(game.run.get("floor_count", 1)) else "Completar aventura"
+	view.exit_caption = ("Entrar al bosque" if int(game.run.get("floor", 1)) == 1 else "Entrar a la fortaleza") if int(game.run.get("floor", 1)) < int(game.run.get("floor_count", 1)) else "Completar aventura"
 	view.deck_count = game.run.deck.size()
 	view.relics = equipped_relics()
 	for hero in game.run.heroes:
@@ -434,6 +399,8 @@ func card_panel(instance: Dictionary, x: float, y: float, w: float, h: float, ca
 	return preload("res://src/ui/components/card_view.gd").build(self, instance, x, y, w, h, callback, chosen, enabled, parent, base_values)
 
 func select_card(index: int) -> void:
+	var drag = layer.get_node_or_null("CardDrag")
+	if drag != null and drag.dragging: return
 	audio.play_sfx("card_select", -5)
 	selected_synergy = ""
 	var hand = layer.get_node_or_null("CombatHand")
@@ -441,6 +408,9 @@ func select_card(index: int) -> void:
 		hand_scroll = hand.scroll_horizontal
 	selected_card = -1 if selected_card == index else index
 	render()
+
+func _exit_tree() -> void:
+	Engine.time_scale = 1.0
 
 func target_clicked(index: int) -> void:
 	if selected_synergy != "":
@@ -465,7 +435,7 @@ func room_view() -> void:
 	var node = game.run.nodes[game.run.current]
 	if node.kind == "treasure":
 		var view = TreasureScreen.new()
-		if int(game.run.get("floor", 1)) == 2: view.background_path = BattleBackground.path_for(game.run.seed, game.run.current, 2)
+		if int(game.run.get("floor", 1)) >= 2: view.background_path = BattleBackground.path_for(game.run.seed, game.run.current, game.run.floor)
 		view.name = "TreasureScreen"
 		view.result = treasure_display()
 		view.open_requested.connect(func():
@@ -478,7 +448,7 @@ func room_view() -> void:
 		return
 	if node.kind == "rest":
 		var view = preload("res://src/ui/screens/rest_screen.gd").new()
-		if int(game.run.get("floor", 1)) == 2: view.background_path = "res://assets/forest/rest.png"
+		if int(game.run.get("floor", 1)) >= 2: view.background_path = "res://assets/forest/rest.png" if game.run.floor == 2 else "res://assets/volcano/rest.png"
 		view.heroes = game.run.heroes.duplicate(true)
 		view.can_upgrade = game.run.deck.any(func(card): return not card.upgraded)
 		view.heal_requested.connect(func(): audio.play_sfx("heal"); act(func(): game.rest(true)))
@@ -490,6 +460,7 @@ func room_view() -> void:
 		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
 		view.event_id = node.event
 		view.event = game.content.events[node.event].duplicate(true)
+		if node.event == "lava_bridge": view.can_offer = game.run.heroes.all(func(h): return h.hp > 8)
 		if node.event == "altar":
 			view.can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)
 		view.choice_requested.connect(func(index): act(func(): game.choose_event(index)))
@@ -560,6 +531,8 @@ func close_modal() -> void:
 	overlay = null
 
 func pause_menu() -> void:
+	var drag = layer.get_node_or_null("CardDrag")
+	if drag != null: drag.cancel()
 	preload("res://src/ui/pause_navigation.gd").open(self)
 
 func _notification(what: int) -> void:
@@ -589,6 +562,8 @@ func back() -> void:
 		close_modal()
 	elif screen == "home":
 		show_modal("Cerrar el libro", "Tu progreso está guardado.", "Salir del juego", func(): game.checkpoint(); get_tree().quit())
+	elif screen == "bonds":
+		screen = "refuge"; render()
 	elif screen == "refuge":
 		layer.get_node("RefugeScreen").go_back()
 	elif screen == "items":

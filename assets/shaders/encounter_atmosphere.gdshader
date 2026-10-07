@@ -3,6 +3,7 @@ shader_type canvas_item;
 uniform int encounter_kind = 0;
 uniform vec2 focus = vec2(0.5, 0.38);
 uniform vec2 radius = vec2(0.11, 0.04);
+uniform vec3 effect_color = vec3(-1.0);
 
 void fragment() {
 	vec2 uv = UV;
@@ -15,6 +16,7 @@ void fragment() {
 	}
 	vec4 base = texture(TEXTURE, uv);
 	vec3 tint = encounter_kind == 0 ? vec3(0.15, 0.85, 0.7) : (encounter_kind == 1 ? vec3(0.95, 0.18, 0.35) : vec3(0.8, 0.63, 0.3));
+	if (effect_color.x >= 0.0) { tint = effect_color; }
 	float light = 0.0;
 	if (encounter_kind == 0) {
 		light = pow(max(0.0, sin(distance * 24.0 - TIME * 1.8)), 10.0) * mask * 0.065;

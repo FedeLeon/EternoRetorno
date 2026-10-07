@@ -36,11 +36,22 @@ func _ready() -> void:
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var effect = ShaderMaterial.new()
 	effect.shader = Atmosphere
-	effect.set_shader_parameter("encounter_kind", ["well", "altar", "library"].find(event_id))
+	effect.set_shader_parameter("encounter_kind", ["well", "altar", "library"].find(event_id) if event_id in ["well","altar","library"] else 1)
 	# Calibrated against the actual generated water, fissure and book positions.
 	var focus = {"well": Vector2(0.5, 0.312), "altar": Vector2(0.503, 0.335), "library": Vector2(0.5, 0.289)}
-	effect.set_shader_parameter("focus", focus[event_id])
+	effect.set_shader_parameter("focus", focus.get(event_id, Vector2(0.5, 0.33)))
 	effect.set_shader_parameter("radius", Vector2(0.108, 0.025) if event_id == "well" else Vector2(0.12, 0.10))
+	var expanded = {
+		"forest_spring": [0, Vector2(0.5,0.49), Vector2(0.17,0.055), Vector3(0.15,0.65,1.0)],
+		"forest_hunter": [2, Vector2(0.546,0.441), Vector2(0.052,0.058), Vector3(1.0,0.45,0.1)],
+		"forest_spirit": [2, Vector2(0.5,0.264), Vector2(0.16,0.2), Vector3(1.0,0.8,0.25)],
+		"forge_altar": [2, Vector2(0.5,0.204), Vector2(0.07,0.15), Vector3(1.0,0.35,0.08)],
+		"ash_archive": [2, Vector2(0.5,0.305), Vector2(0.08,0.10), Vector3(0.9,0.55,0.2)],
+		"lava_bridge": [0, Vector2(0.5,0.52), Vector2(0.32,0.055), Vector3(1.0,0.22,0.04)]
+	}
+	if expanded.has(event_id):
+		var parameters: Array = expanded[event_id]
+		for i in range(4): effect.set_shader_parameter(["encounter_kind","focus","radius","effect_color"][i],parameters[i])
 	background.material = effect
 	place(background, Rect2(0, 0, 1280, 720))
 	var menu = Button.new()

@@ -1,0 +1,258 @@
+[
+  {
+    "id": "skeleton_1",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: armored skeleton lancer with pointed metal helmet, red ragged waistcloth and long spear. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos3.png",
+    "source": "docs/expansion_2026_10/sources/skeleton_1_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-57323244-90b4-478f-a5e7-fee92f4b5850.png"
+  },
+  {
+    "id": "skeleton_1",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY armored skeleton lancer with pointed metal helmet, red ragged waistcloth and long spear lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos3.png",
+    "source": "docs/expansion_2026_10/sources/skeleton_1_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f515310b-8e41-4b66-a131-2dc917e81936.png"
+  },
+  {
+    "id": "skeleton_7",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: skeletal undead horse with red tattered caparison. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos3.png",
+    "source": "docs/expansion_2026_10/sources/skeleton_7_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-942e752a-209f-4dcc-955d-4211f2f2709a.png"
+  },
+  {
+    "id": "skeleton_7",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY skeletal undead horse with red tattered caparison lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos3.png",
+    "source": "docs/expansion_2026_10/sources/skeleton_7_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4d3557e8-5340-4e7e-aaac-b5e533517c44.png"
+  },
+  {
+    "id": "elemental_1",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: humanoid blue ice crystal elemental with sharp frozen arms. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos5.png",
+    "source": "docs/expansion_2026_10/sources/elemental_1_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-34aa2014-a7de-459f-835e-85ebaead526d.png"
+  },
+  {
+    "id": "elemental_1",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY humanoid blue ice crystal elemental with sharp frozen arms lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos5.png",
+    "source": "docs/expansion_2026_10/sources/elemental_1_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2b2e99c2-1246-43b6-87da-2ae194ef8a25.png"
+  },
+  {
+    "id": "flying_0",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: small dark purple nocturnal bat with red eyes. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_0_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5afd6d78-32a5-4a8e-9439-45204e2c5907.png"
+  },
+  {
+    "id": "flying_0",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY small dark purple nocturnal bat with red eyes lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_0_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-cb7d7cb8-4365-412e-a33e-6dc773f0ce32.png"
+  },
+  {
+    "id": "flying_4",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: giant yellow black wasp with translucent wings and sharp stinger. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_4_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-95d8d36c-f094-4d41-9bb8-afb9533da39a.png"
+  },
+  {
+    "id": "flying_4",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY giant yellow black wasp with translucent wings and sharp stinger lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_4_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b514ecf3-5c8e-40a6-bb6c-37cf46d6de80.png"
+  },
+  {
+    "id": "flying_7",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: brown white vigilant owl with golden eyes. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_7_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1ecc7ba2-db23-477e-8699-498e9a1f0dbc.png"
+  },
+  {
+    "id": "flying_7",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY brown white vigilant owl with golden eyes lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_7_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-566db8e0-fb49-4e2f-9ac5-a52b5f0741b0.png"
+  },
+  {
+    "id": "bandit_0",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: hooded masked bandit with short curved dagger and red scarf. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_0_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-61c0a9ac-786a-45a4-9b9c-ddb2f2e7c01a.png"
+  },
+  {
+    "id": "bandit_0",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY hooded masked bandit with short curved dagger and red scarf lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_0_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-52d264b6-bc62-4f51-a39e-240b78debdc0.png"
+  },
+  {
+    "id": "bandit_1",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: red headband bandit with improvised long spear. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_1_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4f529494-57e1-4c11-98c6-59429fd85915.png"
+  },
+  {
+    "id": "bandit_1",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY red headband bandit with improvised long spear lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_1_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c0b09f55-1a18-4ea0-b9b7-5a274d155373.png"
+  },
+  {
+    "id": "bandit_3",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: helmeted bandit with round wooden shield and short sword. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_3_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-27fb4f2d-affa-4d20-b98a-25554f745010.png"
+  },
+  {
+    "id": "bandit_3",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY helmeted bandit with round wooden shield and short sword lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_3_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c2a013b2-9cff-4c78-8020-8dac0acbca4f.png"
+  },
+  {
+    "id": "bandit_5",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: large muscular bald bearded brute with heavy spiked mace. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_5_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c8998230-0b46-41c5-8327-b5dd0faddf73.png"
+  },
+  {
+    "id": "bandit_5",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY large muscular bald bearded brute with heavy spiked mace lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos6.png",
+    "source": "docs/expansion_2026_10/sources/bandit_5_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-32ce2d38-8952-40ba-a420-a03cc37d4cf7.png"
+  },
+  {
+    "id": "flying_2",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: small red fire dragon hatchling with beige wings breathing fire. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_2_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-25d0a0b9-b006-444f-975b-d58115dc5211.png"
+  },
+  {
+    "id": "flying_2",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY small red fire dragon hatchling with beige wings breathing fire lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_2_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6f97af1f-8013-497d-a2b5-7c758d9ddffe.png"
+  },
+  {
+    "id": "elemental_5",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: humanoid whirling golden sand elemental with claw hands. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos5.png",
+    "source": "docs/expansion_2026_10/sources/elemental_5_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-26cbf0da-d05f-488c-948b-5739c8f6e9c0.png"
+  },
+  {
+    "id": "elemental_5",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY humanoid whirling golden sand elemental with claw hands lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos5.png",
+    "source": "docs/expansion_2026_10/sources/elemental_5_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-540d8c3e-22c3-457a-a124-e3434662763a.png"
+  },
+  {
+    "id": "flying_3",
+    "kind": "motion",
+    "prompt": "Use case stylized-concept. Game asset for Eterno Retorno. Reference is ONLY identity/style from supplied concept page: large teal green wyvern with beige leathery wings and sharp talons. Create a transparent sprite sheet EXACTLY 4 columns and 2 rows, eight evenly spaced cells with full body character facing LEFT. Top row FOUR subtle idle poses moving limbs/wings/cloth, bottom row FOUR attack poses anticipation, windup, strike LEFT, recovery. Keep identical size, baseline and design in every cell, enough transparent gutter, no text, no background, no grid lines, no other creatures. Detailed polished pixel art, crisp readable forms matching reference. Each figure completely contained in its cell, consistent body proportions.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_3_motion.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-245b472c-cb49-4c10-b232-c62ae16e8794.png"
+  },
+  {
+    "id": "flying_3",
+    "kind": "cutin",
+    "prompt": "Use case stylized-concept. Foreground enemy attack cut-in for Eterno Retorno. Using concept page only as identity/style reference, draw ONLY large teal green wyvern with beige leathery wings and sharp talons lunging and attacking from RIGHT toward LEFT, dynamic close-up face torso weapon or claws, sweeping energy streaks and particles following attack. Polished high-definition inked dark fantasy comic illustration, rich shading, crisp details matching our hero comic cut-ins. Dramatic foreshortening. Entire image genuinely TRANSPARENT with no colored background, no text, no panel, no border. Wide 3:2 composition. Subject and effects only.",
+    "reference": "Enemigos/enemigos7.png",
+    "source": "docs/expansion_2026_10/sources/flying_3_cutin.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-09a5dff1-a270-440d-b06c-4c4d87307f09.png"
+  },
+  {
+    "id": "forest_spring",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of an enchanted woodland spring with glowing blue water and mushrooms among ancient roots. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/forest_spring.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-bb2e6940-53ed-43ea-8ada-0b0c4e3e3cb3.png"
+  },
+  {
+    "id": "forest_hunter",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of an abandoned hunter camp with a bow and quiver hanging from a tree, a small chest. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/forest_hunter.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-bf7e50e5-2c48-4b12-8a36-1bdb69c5b878.png"
+  },
+  {
+    "id": "forest_spirit",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of an ancient living tree spirit with a kind carved face and luminous leaves. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/forest_spirit.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-38abe836-227e-4147-ade5-5c34fc18f668.png"
+  },
+  {
+    "id": "forge_altar",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of a ruined volcanic altar with a floating orange rune over a cracked anvil. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/forge_altar.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-19beaab3-1b6e-497a-bba4-739411889b31.png"
+  },
+  {
+    "id": "ash_archive",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of a ruined fortress library with black stone shelves and ember-lit books. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/ash_archive.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-74a152e2-d32a-4dbd-aeb5-0c1bc525d542.png"
+  },
+  {
+    "id": "lava_bridge",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of a broken bridge over glowing lava with a chained treasure on the far side. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/lava_bridge.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-741996b0-6155-49a0-be08-aece42db03df.png"
+  },
+  {
+    "id": "rest",
+    "prompt": "Use case: stylized-concept. Asset type: Eterno Retorno dark fantasy pixel art encounter background. Wide 1536x1024 detailed polished pixel art illustration of a small quiet campfire in the middle of a dark basalt dungeon refuge, empty spaces on left and right for seated heroes. Main focal point in upper middle, no heroes, no UI, no text. Bottom third dark uncluttered to show small dialogue overlay. Crisp pixels, rich gothic fantasy lighting and atmosphere, consistent style with existing ruined dungeon and forest. Final game asset.",
+    "source": "docs/expansion_2026_10/sources/rest.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a9a9f4e4-be9d-4785-8b5e-c2332e0f61bf.png"
+  },
+  {
+    "id": "volcano_combat",
+    "source": "assets/volcano/combat.png",
+    "generated": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0bda70dc-9db8-4944-9c19-99cb2da02de5.png",
+    "prompt": "Dark fantasy pixel art volcanic fortress ruins, empty foreground for combat, no characters or text, detailed basalt and lava, wide composition."
+  }
+]

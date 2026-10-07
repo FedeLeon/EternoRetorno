@@ -17,11 +17,12 @@ const COLORS = {
 var visual_id: String
 
 static func play(parent: Control, visual: String) -> Control:
-	if not COLORS.has(visual):
+	if not preload("res://src/presentation/preferences.gd").cutins(): return null
+	if not COLORS.has(visual) and not ResourceLoader.exists("res://assets/comic/enemies/%s.png" % visual):
 		return null
 	var effect = new()
 	effect.visual_id = visual
-	effect.accent = COLORS[visual]
+	effect.accent = COLORS.get(visual, Color("eca864"))
 	effect.texture_path = "res://assets/comic/enemies/%s.png" % visual
 	effect.from_right = true
 	effect.name = "EnemyCutIn"

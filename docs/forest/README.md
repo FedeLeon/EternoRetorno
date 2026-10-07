@@ -70,3 +70,9 @@ Seis enemigos adicionales, grupos comunes con tipos distintos y nuevas
 animaciones/viñetas: [catálogo, assets y pruebas](expansion/README.md).
 El bosque tiene ahora once comunes más élite y guardián; los resultados de la
 entrega original anteriores son históricos.
+
+## Ampliación del 07/10/2026
+
+Las aventuras nuevas ahora siguen cripta → bosque → fortaleza → victoria. Los guardados anteriores conservan su límite de uno/dos pisos. Bosque tiene 18 comunes y tres encuentros propios.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

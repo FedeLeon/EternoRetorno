@@ -52,7 +52,7 @@ func _layout() -> void:
 func _process(delta: float) -> void:
 	# First-use texture uploads or a slow frame must not skip the new hero poses.
 	# Fade and lifetime follow this same visual clock, including on slow devices.
-	elapsed += minf(delta, DURATION / (frame_grid.x * frame_grid.y)) if enhanced_lights else delta
+	elapsed += minf(delta, DURATION / (frame_grid.x * frame_grid.y) * preload("res://src/presentation/preferences.gd").speed()) if enhanced_lights else delta
 	modulate.a = minf(clampf(elapsed / 0.10, 0.0, 1.0), clampf((DURATION - elapsed) / 0.16, 0.0, 1.0))
 	# Frame animation and framing share the same clock.
 	_update_frame()
@@ -73,7 +73,7 @@ func _process(delta: float) -> void:
 func _draw() -> void:
 	# Only streaks: no dimmer, opaque panel or frame over the dungeon.
 	var area = Rect2(picture.position, picture.size)
-	for i in range(14 if enhanced_lights else 22):
+	for i in range(5 if preload("res://src/presentation/preferences.gd").low_quality() else (14 if enhanced_lights else 22)):
 		var y = area.position.y + fmod(i * 37.0, area.size.y)
 		var travel = fmod(i * 173.0 + elapsed * 1200.0, area.size.x)
 		var x = area.end.x - travel if from_right else area.position.x + travel

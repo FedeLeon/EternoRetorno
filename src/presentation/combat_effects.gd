@@ -3,7 +3,7 @@ extends RefCounted
 static func attack_flash(parent: Control) -> void:
 	var light = ColorRect.new()
 	light.name = "AttackFlash"
-	light.color = Color(1, 1, 1, 0.18)
+	light.color = Color(1, 1, 1, 0.18 * preload("res://src/presentation/preferences.gd").flashes())
 	light.size = Vector2(1280, 720)
 	light.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	light.z_index = 100

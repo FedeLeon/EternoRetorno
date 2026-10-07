@@ -15,7 +15,6 @@ var voices: Array[AudioStreamPlayer] = []
 var streams: Dictionary = {}
 var rng = RandomNumberGenerator.new()
 var idle_seconds = 4.0
-var last_hover = 0
 var played_count = 0
 
 func _ready() -> void:
@@ -24,7 +23,9 @@ func _ready() -> void:
 	rng.randomize()
 	for bus in BUSES:
 		if AudioServer.get_bus_index(bus) < 0:
-			AudioServer.add_bus()
+			# Godot 4.7.2 Web Sample mishandles add_bus(-1), shifting Master.
+			# Growing the layout appends without reordering the browser graph.
+			AudioServer.set_bus_count(AudioServer.bus_count + 1)
 			AudioServer.set_bus_name(AudioServer.bus_count - 1, bus)
 			AudioServer.set_bus_send(AudioServer.bus_count - 1, "Master")
 	for i in range(12): voices.append(player("SFX"))
@@ -60,7 +61,7 @@ func apply_settings(settings: Dictionary) -> void:
 	set_volume("Master", float(settings.get("volume", 1.0)))
 	set_volume("Music", float(settings.get("music_volume", 0.75)))
 	set_volume("SFX", float(settings.get("sfx_volume", 0.85)))
-	set_volume("Ambience", float(settings.get("sfx_volume", 0.85)))
+	set_volume("Ambience", float(settings.get("sfx_volume", 0.85)) * float(settings.get("ambience_volume", 1.0)))
 
 func set_volume(bus: String, value: float) -> void:
 	var index = AudioServer.get_bus_index(bus)
@@ -158,11 +159,6 @@ func bind_button(instance_id: int) -> void:
 	var button = instance_from_id(instance_id) as BaseButton
 	if not is_instance_valid(button) or button.has_meta("audio_bound"): return
 	button.set_meta("audio_bound", true)
-	button.mouse_entered.connect(func():
-		var now = Time.get_ticks_msec()
-		if not button.disabled and now - last_hover > 120:
-			last_hover = now
-			play_sfx("hover"))
 	button.pressed.connect(func():
 		var caption = button.text if button is Button else ""
 		play_sfx("back" if caption in ["Volver", "Inicio", "Campamento", "Volver a héroes"] else "click"))

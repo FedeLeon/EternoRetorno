@@ -10,7 +10,7 @@ static func build(ui: Control, title: String, text: String, actions: Array) -> C
 	var dim = ColorRect.new()
 	dim.color = Color(0.02, 0.025, 0.04, 0.82)
 	ui.rect(dim, 0, 0, 1280, 720, overlay)
-	var panel = ui.panel(280, 142, 720, 432, ui.GOLD, overlay)
+	var panel = ui.panel(280, 142, 720, 498 if actions.size() > 3 else 432, ui.GOLD, overlay)
 	panel.name = "ModalFrame"
 	preload("res://src/ui/components/modal_frame.gd").decorate(panel)
 	ui.label_at(title, 330, 185, 620, 62, 32, ui.GOLD, overlay).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

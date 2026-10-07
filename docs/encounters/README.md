@@ -58,3 +58,9 @@ shader, sin atlas de animación adicionales.
   `test_forest_ui.gd` **146**, sin fallos. `git diff --check` limpio.
 - Capturas temporales en `artifacts/encounters/`. Sin exportación Web/APK;
   sin nueva validación de navegador, emulador ni dispositivo físico.
+
+## Ampliación del 07/10/2026
+
+Se agregan seis fondos/situaciones para bosque y fortaleza, con agua, brasas o luces localizadas según cada ilustración; textos/opciones conservan el cuadro compacto. Las modificaciones de mazo se eligen y confirman en una pantalla propia.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

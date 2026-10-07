@@ -87,44 +87,9 @@ func checkpoint() -> void:
 		message = store.last_error
 
 func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1) -> bool:
-	if starting_floor not in [1, 2]:
-		return false
-	if party.size() != 2 or party[0] == party[1]:
-		return false
-	for id in party:
-		if not content.heroes.has(id):
-			return false
-	if not valid_equipment(party, equipment):
-		return false
-	if seed_value == -1:
-		rng.randomize()
-	else:
-		rng.seed = seed_value
-	var initial_seed = rng.seed
-	run = {"seed": initial_seed, "rng_state": rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": Dungeon.create(rng, starting_floor), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
-	run.team_relic = equipment.get("team", "")
-	run.floor = starting_floor
-	run.floor_count = 2
-	run.rooms_completed = 0
-	run.inventory = {}
-	Expeditions.start(profile, run)
-	for id in party:
-		run.heroes.append({"id": id, "hp": int(content.heroes[id].hp), "max_hp": int(content.heroes[id].hp), "block": 0})
-		var hero = run.heroes.back()
-		hero.forge = Forge.snapshot(profile, id)
-		hero.specialization = Specializations.snapshot(profile, id)
-		hero.equipped_relic = equipment.get("team", equipment.get(id, ""))
-		hero.phoenix_used = false
-		if relic_bonus(hero, "max_hp") > 0:
-			hero.max_hp += relic_bonus(hero, "max_hp")
-			hero.hp = hero.max_hp
-		for card_id in preload("res://src/rules/starter_decks.gd").deck(content, profile, id):
-			run.deck.append({"id": card_id, "upgraded": false})
-	profile.erase("preparation")
-	profile.attempts += 1
-	message = ""
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/run_lifecycle.gd").start(self, party, seed_value, equipment, starting_floor)
+	if accepted: checkpoint()
+	return accepted
 
 func available_nodes() -> Array:
 	if run.is_empty() or run.phase != "map" or run.boss_defeated:
@@ -172,6 +137,7 @@ func _start_combat(encounter: Array) -> void:
 	for id in encounter:
 		var def = content.enemies[id]
 		enemies.append({"id": id, "hp": int(def.hp), "max_hp": int(def.hp), "block": 0, "poison": 0, "intent": {}})
+	preload("res://src/rules/adventure_extensions.gd").strengthen(run, enemies, content)
 	run.combat = {"enemies": enemies, "draw": run.deck.duplicate(true), "hand": [], "discard": [], "inactive": [], "energy": 0, "turn": 0}
 	run.combat.hero_fell = false
 	run.log = ["El silencio se rompe."]
@@ -182,27 +148,7 @@ func _start_combat(encounter: Array) -> void:
 			h.block += 4
 
 func _start_turn() -> void:
-	var battle = run.combat
-	battle.turn += 1
-	battle.energy = turn_energy()
-	for h in run.heroes:
-		h.block = relic_bonus(h, "block") if h.hp > 0 else 0
-		Modifiers.clear(h)
-		if h.hp > 0:
-			h.block += RunRelics.amount(run, content.relics, "turn_block")
-			if battle.turn == 1: h.block += RunRelics.amount(run, content.relics, "start_block")
-		h.turn_strength = 0
-		h.turn_magic = 0
-	for enemy in battle.enemies:
-		if enemy.hp <= 0:
-			continue
-		Modifiers.clear(enemy)
-		var pattern = content.enemies[enemy.id].pattern
-		var intent = pattern[(battle.turn - 1) % pattern.size()].duplicate(true)
-		var living = living_heroes()
-		intent.target = living[rng.randi_range(0, living.size() - 1)]
-		enemy.intent = intent
-	_draw(6 + (RunRelics.amount(run, content.relics, "opening_draw") if battle.turn == 1 else 0))
+	preload("res://src/rules/combat_turns.gd").start(self)
 
 func _draw(count: int) -> void:
 	var b = run.combat
@@ -248,6 +194,9 @@ func available_synergies() -> Array:
 		if combo.poison > 0: combo.poison += poison_bonus
 		if "fang" in run.relics: combo.damage += 1
 		# Each participant empowers their half of the combined strike.
+		var bond = run.get("bond_variant", "balanced")
+		if bond == "aggressive": combo.damage += 4; combo.block = maxi(0, int(combo.block) - 3)
+		if bond == "protective": combo.damage = maxi(0, int(combo.damage) - 4); combo.block += 4
 		var base_damage = int(combo.damage)
 		var first_share = base_damage / 2
 		combo.damage = Modifiers.damage(first_share, run.heroes[0]) + Modifiers.damage(base_damage - first_share, run.heroes[1])
@@ -333,66 +282,24 @@ func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 	if unit.has("equipped_relic"):
 		amount = maxi(0, amount - relic_bonus(unit, "armor"))
 	var was_alive = unit.hp > 0
+	var hp_before: int = unit.hp
 	var absorbed = 0 if pierce else mini(unit.block, amount)
 	unit.block -= absorbed
 	unit.hp = maxi(0, unit.hp - (amount - absorbed))
+	if unit.has("equipped_relic"):
+		preload("res://src/rules/adventure_extensions.gd").statistic(run, "damage_taken", hp_before - unit.hp)
 	if was_alive and unit.hp == 0 and relic_bonus(unit, "phoenix") > 0 and not unit.get("phoenix_used", false):
 		unit.hp = 1
 		unit.phoenix_used = true
 		_log("El Ídolo del Fénix evita un golpe fatal.")
 	if was_alive and unit.hp == 0 and unit.has("equipped_relic") and run.phase == "combat":
 		run.combat.hero_fell = true
+		preload("res://src/rules/adventure_extensions.gd").statistic(run, "fallen")
 
 func end_turn() -> bool:
-	resolved_enemy_attacks.clear()
-	resolved_enemy_blocks.clear()
-	resolved_hero_defenses.clear()
-	resolved_hero_blocks.clear()
-	if run.is_empty() or run.phase != "combat":
-		return false
-	var b = run.combat
-	b.discard.append_array(b.hand)
-	b.hand.clear()
-	# Poison ticks simultaneously before enemy actions, bypassing block.
-	for enemy in b.enemies:
-		if enemy.hp > 0 and enemy.poison > 0:
-			_damage(enemy, enemy.poison, true)
-			enemy.poison = maxi(0, enemy.poison - 1)
-	if _check_combat_end():
-		checkpoint()
-		return true
-	for enemy_index in range(b.enemies.size()):
-		var enemy = b.enemies[enemy_index]
-		if enemy.hp <= 0:
-			continue
-		enemy.block = 0
-		var intent = Modifiers.intent(enemy)
-		if int(intent.get("damage", 0)) > 0:
-			resolved_enemy_attacks.append(enemy_index)
-		enemy.block += int(intent.get("block", 0))
-		resolved_enemy_blocks[enemy_index] = enemy.block
-		var targets = living_heroes() if intent.get("all", false) else [intent.target]
-		if not intent.get("all", false) and run.heroes[targets[0]].hp <= 0:
-			targets = [living_heroes()[0]]
-		for i in targets:
-			var block_before: int = run.heroes[i].block
-			_damage(run.heroes[i], int(intent.damage))
-			if int(intent.damage) > 0:
-				if not resolved_hero_blocks.has(enemy_index): resolved_hero_blocks[enemy_index] = {}
-				resolved_hero_blocks[enemy_index][i] = run.heroes[i].block
-			if run.heroes[i].block < block_before:
-				if not resolved_hero_defenses.has(enemy_index):
-					resolved_hero_defenses[enemy_index] = []
-				resolved_hero_defenses[enemy_index].append(i)
-		_log("%s ataca por %d." % [content.enemies[enemy.id].name, intent.damage])
-		if living_heroes().is_empty():
-			_finish(false)
-			checkpoint()
-			return true
-	_remove_inactive()
-	_start_turn()
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/combat_turns.gd").end(self)
+	if accepted: checkpoint()
+	return accepted
 
 func _remove_inactive() -> void:
 	var b = run.combat
@@ -403,70 +310,15 @@ func _remove_inactive() -> void:
 				b[pile].remove_at(i)
 
 func _check_combat_end() -> bool:
-	if run.phase != "combat": return false
-	if living_heroes().is_empty():
-		_finish(false)
-		return true
-	_remove_inactive()
-	for enemy in run.combat.enemies:
-		if enemy.hp > 0:
-			return false
-	Expeditions.add(run, "battles")
-	var room_kind = run.nodes[run.current].kind
-	if room_kind == "elite": Expeditions.add(run, "elites")
-	if room_kind == "boss": Expeditions.add(run, "bosses")
-	if not run.combat.get("hero_fell", true): Expeditions.add(run, "clean_battles")
-	for h in run.heroes:
-		if h.hp <= 0:
-			h.hp = maxi(1, int(ceil(h.max_hp * 0.25)))
-		if "chalice" in run.relics:
-			h.hp = mini(h.max_hp, h.hp + 3)
-		h.hp = mini(h.max_hp, h.hp + RunRelics.amount(run, content.relics, "victory_heal"))
-		h.block = 0
-		h.turn_strength = 0
-		h.turn_magic = 0
-		Modifiers.clear(h)
-	Progression.award(profile, run)
-	var kind = run.nodes[run.current].kind
-	if kind == "elite":
-		if "hourglass" not in profile.unlocked_relics:
-			profile.unlocked_relics.append("hourglass")
-			run.new_unlocks.append(content.relics.hourglass.name)
-		var relic = _roll_relic()
-		if RunRelics.grant(run, content.relics, relic):
-			run.reward_relic = relic
-	if kind == "boss":
-		run.boss_defeated = true
-	_make_reward()
-	return true
+	return preload("res://src/rules/combat_rewards.gd").check_end(self)
 
 func _make_reward() -> void:
-	var pool: Array = []
-	for id in content.cards:
-		var c = content.cards[id]
-		if c.owner in run.party and Progression.available(profile, c):
-			pool.append({"id": id, "upgraded": false})
-	_shuffle(pool)
-	run.reward = pool.slice(0, 3)
-	for hero in run.heroes:
-		if relic_bonus(hero, "reward") > 0:
-			for offered in run.reward:
-				if content.cards[offered.id].owner == hero.id:
-					offered.upgraded = true
-					break
-	run.phase = "reward"
+	preload("res://src/rules/combat_rewards.gd").make(self)
 
 func choose_reward(index: int) -> bool:
-	if run.is_empty() or run.phase != "reward" or index < -1 or index >= run.reward.size():
-		return false
-	if index >= 0:
-		run.deck.append(run.reward[index].duplicate(true))
-	run.reward = []
-	run.reward_relic = ""
-	run.combat = {}
-	run.phase = "map"
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/combat_rewards.gd").choose(self, index)
+	if accepted: checkpoint()
+	return accepted
 
 func _roll_relic() -> String:
 	return RunRelics.roll(run, profile, content.relics, rng)
@@ -507,6 +359,10 @@ func choose_event(index: int) -> bool:
 	if not _room_is("event") or index not in [0, 1]:
 		return false
 	var event_id = run.nodes[run.current].event
+	if event_id not in ["well", "altar", "library"]:
+		var applied = preload("res://src/rules/expanded_events.gd").choose(self, event_id, index)
+		if applied: checkpoint()
+		return applied
 	if index == 0:
 		match event_id:
 			"well":
@@ -546,37 +402,13 @@ func descend() -> bool:
 func end_adventure() -> bool:
 	if run.is_empty() or run.phase in ["victory", "defeat"]:
 		return false
+	run.abandoned = true
 	_finish(false)
 	checkpoint()
 	return true
 
 func _finish(won: bool) -> void:
-	if run.phase in ["victory", "defeat"]:
-		return
-	run.phase = "victory" if won else "defeat"
-	Expeditions.finish(profile, run, won)
-	if won:
-		Specializations.victory(profile, run.party)
-		profile.victories += 1
-		for id in content.cards:
-			if content.cards[id].locked and content.cards[id].owner in run.party and id not in profile.unlocked_cards:
-				profile.unlocked_cards.append(id)
-				run.new_unlocks.append(content.cards[id].name)
-	profile.history.push_front({"won": won, "party": run.party.duplicate(), "rooms": int(run.get("rooms_completed", 0)) + run.visited.size(), "seed": run.seed})
-	if profile.history.size() > 30:
-		profile.history.resize(30)
-	# A concluded run only retains its summary, not its acquired deck or relics.
-	run.summary_cards = run.deck.size()
-	run.inventory = {}
-	for hero in run.heroes:
-		hero.equipped_relic = ""
-		hero.turn_strength = 0
-		hero.turn_magic = 0
-	run.deck = []
-	run.team_relic = ""
-	run.relics = []
-	run.combat = {}
-	run.reward = []
+	preload("res://src/rules/run_lifecycle.gd").finish(self, won)
 
 func _log(line: String) -> void:
 	run.log.append(line)
@@ -639,5 +471,19 @@ func item_targets(id: String) -> Array:
 func use_item(id: String, target: int) -> bool:
 	if not preload("res://src/rules/items.gd").apply(self, id, target):
 		return false
+	checkpoint()
+	return true
+
+func modify_event_card(index: int) -> bool:
+	if not preload("res://src/rules/expanded_events.gd").modify(self, index): return false
+	checkpoint()
+	return true
+
+func configure_bond(party: Array, variant: String) -> bool:
+	if variant not in ["balanced", "aggressive", "protective"] or party.size() != 2: return false
+	var key = preload("res://src/rules/adventure_extensions.gd").pair_key(party)
+	if int(profile.get("bonds", {}).get(key, 0)) < 1: return false
+	if not profile.has("bond_variants"): profile.bond_variants = {}
+	profile.bond_variants[key] = variant
 	checkpoint()
 	return true

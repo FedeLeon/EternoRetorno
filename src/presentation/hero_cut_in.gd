@@ -10,6 +10,7 @@ var hero_id: String
 var action = "attack"
 
 static func play(parent: Control, hero: String, kind: String = "attack", variant: int = -1) -> Control:
+	if not preload("res://src/presentation/preferences.gd").cutins(): return null
 	if not COLORS.has(hero) or kind not in ["attack", "defense"]:
 		return null
 	var effect = new()

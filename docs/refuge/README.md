@@ -50,3 +50,9 @@ Pendiente fuera de esta primera versión: especializaciones, vínculos, estadís
 por héroe y elección alternativa de las dos cartas de clase. El límite 2–6 es una
 decisión inicial de equilibrio que puede ajustarse tras jugar; no fue balanceado
 exhaustivamente con todas las combinaciones personalizadas.
+
+## Ampliación del 07/10/2026
+
+El botón Vínculos abre las quince parejas, victorias compartidas, conversaciones y selección de una variante de enlace para aventuras nuevas. Se desbloquea con una victoria conjunta.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

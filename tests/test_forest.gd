@@ -52,7 +52,7 @@ func _initialize() -> void:
 			edge_orders[str(nodes.map(func(n): return n.next))] = true
 			signatures[str(nodes)] = true
 	check(kind_orders.size() > 90 and edge_orders.size() > 90 and signatures.size() == 200, "seeds change rooms and routes, floors differ")
-	check(forest_types.size() == 14, "all fourteen forest common enemies appear across seeds")
+	check(forest_types.size() == Dungeon.definition(2).common.size(), "all configured forest common enemies appear across seeds")
 	var path = "user://forest-transition-test.save"
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	var g = Game.new(path, true)
@@ -85,6 +85,10 @@ func _initialize() -> void:
 	g.choose_reward(-1)
 	Room.enter(g, "boss")
 	check(g.run.combat.enemies.size() == 2, "forest guardian has escort")
+	for enemy in g.run.combat.enemies: enemy.hp = 0
+	g._check_combat_end(); g.choose_reward(-1)
+	check(g.descend() and g.run.floor == 3 and g.profile.victories == 0, "forest leads to fortress")
+	Room.enter(g, "boss")
 	for enemy in g.run.combat.enemies: enemy.hp = 0
 	g._check_combat_end(); g.choose_reward(-1)
 	check(g.descend() and g.run.phase == "victory" and g.profile.victories == 1, "forest completes adventure")

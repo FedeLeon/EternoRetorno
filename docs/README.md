@@ -1,24 +1,26 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **05/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **07/10/2026**.
 
 ## Estado actual
 
-Aventuras nuevas de dos pisos aleatorios de 28 salas: cripta y bosque; seis clases y parejas de dos héroes. Campamento inicial,
+Aventuras nuevas de tres pisos aleatorios de 28 salas: cripta, bosque y fortaleza volcánica; seis clases y parejas de dos héroes. Campamento inicial,
 selección alrededor de la fogata, equipamiento previo, mapa con caminos variables, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
+- Controles: arrastrar o tocar cartas; preview, tutorial, velocidad 1–2× y efectos ajustables.
+- Aventura: dificultades desbloqueables, condiciones, rechazo de carta por almas y resumen final.
 - Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de **20 cartas (10 por héroe)**.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
-- Encuentros: pozo, altar y biblioteca con fondos propios, efectos localizados y cuadro de decisiones compacto.
+- Encuentros: nueve situaciones, tres por piso; fondos propios, decisiones de mazo y beneficios según pareja.
 - Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
   ataque/defensa e ilustraciones minimalistas asignadas por ID.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 (20 nuevas), visible junto a la elección de carta.
-- Actores: seis héroes y 56 enemigos con sprites de 128×128; treinta y un enemigos activos. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
+- Actores: seis héroes y 56 enemigos con sprites de 128×128; 45 definiciones activas con 44 apariencias. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
 - Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
   con poses HD, luces y partículas locales; [assets y reproducción](comic/hd/README.md).
 - Campamento: mercado construible en solar 1 por 300 almas, con 60 cartas comprables.
@@ -27,11 +29,11 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
   por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con doce especializaciones; puesto de expediciones
   en solar 2, debajo de la fogata (500 almas), con treinta contratos y tres ofertas por aventura.
-- Refugio: preparación persistente del mazo inicial por héroe; cambios solo para aventuras nuevas.
+- Refugio: preparación persistente del mazo inicial y vínculos entre las quince parejas, historias y variantes de enlace; cambios solo para aventuras nuevas.
 - Cartas: 114 en total, 19 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
-- Audio: cinco músicas, cuatro ambientes y 39 efectos CC0; volumen general, música y efectos ajustables. [Sistema y fuentes](audio/README.md).
+- Audio: cinco músicas, cuatro ambientes y 39 efectos CC0; volumen general, música y efectos ajustables; canales compatibles con Web. [Sistema y fuentes](audio/README.md).
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
 La APK existente corresponde a una entrega anterior. Los cambios recientes se
@@ -47,8 +49,10 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 | Tema | Documentación |
 | --- | --- |
+| Tercera mazmorra, arrastre, vínculos, dificultad y opciones | [Ampliación del 07/10](expansion_2026_10/README.md) |
 | Colección y 30 logros | [Vista, progreso y assets](collection/README.md) |
 | Ejecutar, reglas y compilación | [README principal](../README.md) |
+| Plantillas y errores de exportación Web | [Exportación Web](export/README.md) |
 | 24 cartas nuevas de apoyo y debilitamiento | [Catálogo, imágenes y reglas](cards/support/README.md) |
 | Ampliación de ambas mazmorras y cómics de ocho cuadros | [Catálogo, assets y presentación](combat_expansion/README.md) |
 | Nueva variedad de la primera mazmorra | [Esqueletos y elementales](enemies/crypt_expansion/README.md) |
@@ -98,8 +102,8 @@ entrada más reciente del historial y el documento del sistema correspondiente.
 ## Próximos trabajos identificados
 
 - Ilustraciones individuales de cartas.
-- Definir los edificios restantes y balancear las mejoras permanentes de herrería.
-- Diseñar siguientes pisos y asignar estadísticas a los enemigos reservados.
+- Balancear las mejoras permanentes, nuevas formaciones y tres pisos con partidas humanas.
+- Evaluar nuevas familias entre los enemigos todavía reservados después de probar la fortaleza.
 - Balancear seis cartas por turno, equipamiento y consumibles con partidas humanas.
 - Ajustar la selección musical y los efectos después de escucharlos en partidas humanas.
 - Cuando se solicite una nueva APK: actualizar el recorrido de interfaz de Android,

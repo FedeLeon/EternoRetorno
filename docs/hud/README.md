@@ -446,3 +446,9 @@ Validación local: `test_block_ash.gd`, 5 comprobaciones sin fallos tanto headle
 como con render Compatibility; `test_turn_sequence.gd`, 171 sin fallos.
 Comprueba reducción parcial, cero, no duplicación, nuevo bloqueo y limpieza.
 Sin captura revisada ni exportación/web/móvil.
+
+## Ampliación del 07/10/2026
+
+Arrastrar una carta ilumina sus objetivos válidos y muestra daño efectivo/bloqueo/golpes/contraataques antes de soltar. La energía se consume mediante Game al confirmar, antes de la animación.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

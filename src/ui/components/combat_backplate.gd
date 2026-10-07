@@ -4,6 +4,7 @@ static func attach(parent: Control, area: Rect2) -> Panel:
 	var plate = Panel.new()
 	plate.name = "CombatBackplate"
 	plate.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	plate.show_behind_parent = true
 	plate.position = area.position
 	plate.size = area.size
 	var style = StyleBoxFlat.new()

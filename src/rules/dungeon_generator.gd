@@ -31,7 +31,7 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 			var column = stage if stage < 7 else 13 - stage
 			var x = 140 + column * 142 + rng.randi_range(-9, 9)
 			var y = (252 if stage < 7 else 525) + (lane - (widths[stage] - 1) / 2.0) * 82 + rng.randi_range(-6, 6)
-			nodes.append({"id":id,"kind":kind,"next":[],"position":[x,y],"encounter":[],"event":["well","altar","library"][rng.randi_range(0,2)],"stage":stage})
+			nodes.append({"id":id,"kind":kind,"next":[],"position":[x,y],"encounter":[],"event":config.get("events", ["well","altar","library"])[rng.randi_range(0,2)],"stage":stage})
 			layer.append(id)
 		layers.append(layer)
 	# The early elite is an optional branch; the later elite guards every route.
@@ -59,13 +59,21 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 	var triples: Array = common_nodes.filter(func(id): return nodes[id].stage >= 6).slice(0, 2 if floor_number == 1 else 3)
 	for node in nodes:
 		if node.kind == "combat":
-			var count = 3 if node.id in triples else (2 if node.id in doubles or floor_number == 2 else 1)
+			var count = 3 if node.id in triples else (2 if node.id in doubles or floor_number >= 2 else 1)
 			if node.id == 0: count = 1 if floor_number == 1 else 2
 			if config.get("distinct_common", false):
 				# Configured floors mix types and introduce tougher families later.
 				var eligible: Array = config.common.filter(func(id): return node.stage >= int(config.get("min_stage", {}).get(id, 0)))
 				shuffle(eligible, rng)
-				node.encounter = eligible.slice(0, count)
+				var chosen: Array = []
+				if count >= 2 and node.stage >= 2:
+					var support: Array = eligible.filter(func(id): return config.get("roles", {}).get(id, "attacker") in ["protector", "support"])
+					var attackers: Array = eligible.filter(func(id): return config.get("roles", {}).get(id, "attacker") == "attacker")
+					if not support.is_empty() and not attackers.is_empty(): chosen = [attackers[0], support[0]]
+				for candidate in eligible:
+					if chosen.size() >= count: break
+					if candidate not in chosen: chosen.append(candidate)
+				node.encounter = chosen
 			else:
 				for i in range(count): node.encounter.append(config.common[rng.randi_range(0, config.common.size() - 1)])
 		elif node.kind == "elite":
@@ -73,7 +81,7 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 			if floor_number == 2 and node.stage == 8: node.encounter.append("forest_wolf")
 		elif node.kind == "boss":
 			node.encounter = [config.boss]
-			if floor_number == 2: node.encounter.append(config.escort)
+			if floor_number >= 2: node.encounter.append(config.escort)
 	return nodes
 
 static func connect_rooms(nodes: Array, from: int, to: int) -> void:

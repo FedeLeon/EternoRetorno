@@ -141,3 +141,9 @@ Terminar el bosque conserva el flujo normal de victoria y desbloqueos.
 Retirada futura: quitar la llamada a `ui/development_start.gd` de `begin()`
 y llamar directamente a `begin_on_floor(1)`. Selector también disponible en
 builds exportados durante desarrollo; no depende de OS.is_debug_build().
+
+## Ampliación del 07/10/2026
+
+Nuevas aventuras tienen tres pisos; guardianes cambian de patrón a mitad de vida. Normal/Retorno I–III y condiciones opcionales se fijan antes de partir. Las formaciones combinan daño con protección o curación cuando hay tipos disponibles.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

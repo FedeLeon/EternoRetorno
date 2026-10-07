@@ -82,3 +82,9 @@ conservan las recetas; elegibilidad, costes y daño permanecen iguales.
 
 ## Interacción con contraataque — 18/09/2026
 El ataque conjunto cuenta como un único impacto. Si el objetivo sobrevive con postura de contraataque, responde por 4 contra el primer héroe de `combo.heroes`; bloqueo y mitigación normales se aplican. No se conceden curación ni bloqueo de la sinergia a un héroe que haya caído en esa respuesta.
+
+## Ampliación del 07/10/2026
+
+Una victoria de pareja permite elegir Equilibrado, Ofensivo (+4 daño/−3 bloqueo) o Protector (−4 daño/+4 bloqueo) desde Refugio → Vínculos. Se fija al empezar una aventura y no acumula bonos.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

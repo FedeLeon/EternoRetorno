@@ -24,7 +24,8 @@ la partida. Esta selección se puede reemplazar conservando los IDs del catálog
 | Victoria / derrota | Campamento / inicio | Efecto de resultado |
 
 Botones compartidos y botones creados directamente por las pantallas tienen
-sonido al pasar el mouse y pulsarlos, incluidos cofres y encuentros. Hay efectos
+sonido solo al pulsarlos, incluidos cofres y encuentros. Pasar el mouse
+por los botones no reproduce efectos. Hay efectos
 para selección y uso de carta, descarte en cenizas, cada golpe de un combo,
 contraataques, defensa, veneno, curación, muerte, compras, mejoras y consumibles.
 Los esqueletos usan sonidos secos de huesos; goblins y bestias, voces de criatura;
@@ -93,6 +94,12 @@ de streams que usa el gestor; los efectos de una sola ejecución no se repiten.
 
 ## Validación y pendientes
 
+Cambio de botones del 05/10/2026: eliminada la conexión de audio a `mouse_entered`
+y su temporizador; se conserva `pressed`. Prueba headless de audio posterior:
+78 comprobaciones sin fallos. Sin nueva revisión auditiva, prueba Web o exportación.
+
+Resultados de la integración anterior (previos a quitar el sonido de hover):
+
 - Prueba de audio: 78 comprobaciones headless y 79 nativas, sin fallos. Verifica
   los 48 streams, continuidad musical, limpieza de canales, volúmenes y guardado,
   bolsa real durante combate, botones y sonidos individuales por golpe de combo.
@@ -115,3 +122,52 @@ políticas de autoplay del navegador; ver
 No se usan efectos de audio de Godot en runtime, lo que evita depender de esos
 efectos en el modo Sample de Web. La grabación del mezclador pertenece solo al test
 nativo y no forma parte del juego.
+
+## Silencio en Web: canales dinámicos — 05/10/2026
+
+Reproducido con el `TestWeb/` exportado por el usuario en Chromium local: los
+48 recursos y el catálogo están incluidos, AudioContext está `running`, los
+volúmenes no están muteados y el mezclador entrega cero. Por tanto, el caso
+observado no se explica por la restricción de autoplay.
+
+La ruta Sample de Godot 4.7.2 recibe `-1` desde `AudioServer.add_bus()`, pero su
+`Bus.addAt(-1)` mueve el nuevo canal mediante índices negativos. Master deja de
+estar primero, los envíos quedan desalineados y forman un circuito sin salida.
+Fuentes del motor: [AudioServer.add_bus](https://github.com/godotengine/godot/blob/4.7.2-stable/servers/audio/audio_server.cpp)
+y [Bus.addAt/move de Web](https://github.com/godotengine/godot/blob/4.7.2-stable/platform/web/js/libs/library_godot_audio.js).
+
+El gestor ahora crece la lista con `AudioServer.set_bus_count(bus_count + 1)`
+antes de nombrar cada canal. Esa ruta crea canales al final sin mover Master.
+Mantiene Sample, los mismos volúmenes, pistas y fundidos; no fuerza Stream ni
+requiere threads o cabeceras nuevas del servidor.
+
+### Comprobación y reproducción
+
+`tests/test_web_audio.cjs` usa una exportación existente servida por HTTP y
+Playwright. Intercepta `index.js` **solo en memoria durante la prueba** para
+comparar la ruta original con la operación equivalente a `set_bus_count`.
+No exporta, no escribe en `TestWeb/` y no valida un nuevo paquete del proyecto.
+Genera el informe `artifacts/audio/web_bus_probe.json`.
+
+```sh
+python3 -m http.server 8766 --bind 127.0.0.1 --directory TestWeb
+# En otra terminal, con Playwright disponible en node_modules/NODE_PATH:
+node tests/test_web_audio.cjs
+```
+
+Resultado: la ruta original entrega cero; la corregida entrega señal no nula,
+Master conserva salida al navegador y los otros tres canales apuntan a Master.
+Las pruebas del código actualizado también pasan: 78 comprobaciones headless y
+79 nativas, sin fallos. Sin evaluación por altavoces ni nueva exportación.
+
+Para incorporar la corrección, el usuario debe volver a exportar y subir todos
+los archivos generados, incluidos `.pck`, `.js`, `.wasm` y los dos worklets de
+audio. Después recargar sin caché. El clic inicial puede seguir siendo necesario
+por la política de autoplay. Si persiste, comprobar volumen del juego/pestaña y
+los errores o respuestas 404 de la consola/red del navegador.
+
+## Ampliación del 07/10/2026
+
+Fortaleza reutiliza música de cripta con ambiente de fuego/viento. El nuevo control ambiental multiplica el nivel previo de efectos para conservar preferencias anteriores; no se descargaron músicas nuevas en esta entrega.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

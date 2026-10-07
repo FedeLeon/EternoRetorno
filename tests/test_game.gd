@@ -41,7 +41,7 @@ func _initialize() -> void:
 func content_and_map() -> void:
 	var g = fresh()
 	check(g.content.heroes.size() == 6 and g.content.cards.size() == 114, "6 classes / 114 cards")
-	check(g.content.enemies.size() == 25 and g.content.events.size() == 3 and g.content.relics.size() == 24, "enemy / event / relic catalog")
+	check(g.content.enemies.size() == 45 and g.content.events.size() == 9 and g.content.relics.size() == 24, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")
@@ -223,6 +223,10 @@ func reward_and_rooms() -> void:
 	preload("res://tests/room_fixture.gd").enter(g, "boss")
 	for enemy in g.run.combat.enemies: enemy.hp = 0
 	g._check_combat_end(); g.choose_reward(-1); g.descend()
+	check(g.run.floor == 3 and g.profile.victories == 0, "second floor continues to fortress")
+	preload("res://tests/room_fixture.gd").enter(g, "boss")
+	for enemy in g.run.combat.enemies: enemy.hp = 0
+	g._check_combat_end(); g.choose_reward(-1); g.descend()
 	check(g.profile.victories == 1 and g.profile.unlocked_cards.size() == 2, "pair victory unlocks")
 	check(not g.descend() and g.profile.victories == 1, "victory cannot duplicate")
 	g.new_run(["mage", "rogue"], 100)
@@ -282,6 +286,7 @@ func autoplay(g: RefCounted) -> bool:
 						g.leave_treasure()
 					"event":
 						if not g.choose_event(0): g.choose_event(1)
+			"event_cards": g.modify_event_card(-1)
 			"reward": g.choose_reward(-1)
 			"combat":
 				var best_score = -1.0

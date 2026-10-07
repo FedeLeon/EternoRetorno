@@ -1,6 +1,6 @@
 # Eterno Retorno
 
-Prototipo jugable de rol y cartas para Android. Una mazmorra, seis personajes,
+Prototipo jugable de rol y cartas para Android. Tres mazmorras, seis personajes,
 parejas de dos, mazo compartido y desbloqueos permanentes. Interfaz en español,
 pixel art basado en los conceptos del usuario, sprites y funcionamiento sin conexión.
 
@@ -31,8 +31,9 @@ conservan. No se publica en Google Play.
 1. Desde el campamento, elegí dos personajes diferentes y equipá una reliquia
    compartida antes de entrar en la cripta: sus efectos benefician a ambos.
 2. Tocá una sala iluminada del mapa. Las ramas vuelven a unirse antes del jefe.
-3. Tocá una carta y luego un objetivo iluminado. Para cartas sobre su dueño o
-   todo el grupo/enemigos, confirmá tocando al personaje dueño de la carta.
+3. Arrastrá una carta hasta un objetivo iluminado o tocá carta y objetivo.
+   Defensa propia va sobre su dueño; ataque grupal sobre cualquier enemigo vivo.
+   Soltar afuera cancela y conserva la energía.
 4. Empezás con 20 cartas (10 por héroe), con ataques y defensas básicos repetidos.
    Compartís 3 de energía y robás 6 cartas por turno. El coste está arriba a la
    derecha; las cartas sin energía suficiente se desactivan.
@@ -43,11 +44,12 @@ conservan. No se publica en Google Play.
 7. Un aliado caído pierde acceso a sus cartas durante ese combate. Si ganás,
    vuelve con el 25 % de vida máxima, redondeado hacia arriba. Si caen ambos,
    termina la aventura.
-8. Elegí una carta después de ganar o saltá la recompensa. En los descansos podés
+8. Elegí una carta después de ganar o rechazala por 12 almas. En los descansos podés
    curar el 30 % de vida o mejorar una carta (+3 a daño/bloqueo/curación positivos,
    +2 a veneno). Cada instancia admite una mejora.
 9. Derrotá al jefe, resolvé la recompensa y tocá **Bajar por la escalera**.
-   Completar el primer piso termina esta versión de prueba.
+   Las aventuras nuevas recorren cripta, bosque y fortaleza volcánica;
+   los guardados anteriores conservan su límite de pisos.
 
 El botón Atrás cancela una selección de carta, vuelve desde el mazo o abre una
 pausa. Desde el inicio permite salir con confirmación. El avance se guarda tras
@@ -59,10 +61,10 @@ la mano, los enemigos, las intenciones y las recompensas pendientes.
 | Sistema | Contenido inicial |
 | --- | --- |
 | Clases | Guerrero, guardiana, pícaro, maga, clériga, explorador |
-| Cartas | 24 básicas y 6 desbloqueables; 6 instancias iniciales por personaje |
+| Cartas | 114, 19 por héroe; 10 instancias iniciales por héroe |
 | Mapa | 28 salas, cinco bifurcaciones de tres opciones; 18 salas por ruta y dos élites posibles |
-| Enemigos | 4 comunes, Esqueleto guardián (élite), Autómata roto (jefe); 50 sprites reservados |
-| Eventos | Pozo, altar y biblioteca |
+| Enemigos | 45 definiciones activas entre tres pisos, con élites y guardianes |
+| Eventos | Nueve situaciones: tres por mazmorra, incluyendo decisiones de mazo |
 | Reliquias de grupo | Ascua, colmillo, cáliz y reloj desbloqueable |
 | Equipamiento | 8 opciones; una sola reliquia por pareja |
 | Consumibles | 8 tipos; bolsa vacía al iniciar, se encuentran en cofres |

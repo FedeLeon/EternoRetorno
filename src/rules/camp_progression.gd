@@ -43,6 +43,7 @@ static func award(profile: Dictionary, run: Dictionary) -> int:
 	var kind = run.nodes[run.current].kind
 	var amount = int(config().battle_souls.get(kind, 0))
 	if amount <= 0: return 0
+	amount = ceili(amount * (1.0 + int(run.get("difficulty", 0)) * 0.15 + (0.25 if run.get("variant", "normal") == "dangerous" else 0.0)))
 	profile.souls += amount
 	run.soul_rooms.append(run.current)
 	run.last_souls = amount

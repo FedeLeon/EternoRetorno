@@ -1,0 +1,50 @@
+{
+  "forest_spring": {
+    "name": "Manantial entre las raíces",
+    "text": "El agua brilla. La Clériga reconoce una bendición que restaura aún más vida.",
+    "choices": [
+      "Beber · +8 PV por héroe (+12 con Clériga)",
+      "Seguir el sendero"
+    ]
+  },
+  "forest_hunter": {
+    "name": "El campamento abandonado",
+    "text": "Dejar una carga atrás permite caminar más ligero. Conservá al menos doce cartas y cuatro por héroe.",
+    "choices": [
+      "Elegir una carta para retirar",
+      "No cambiar el mazo"
+    ]
+  },
+  "forest_spirit": {
+    "name": "La memoria del bosque",
+    "text": "El espíritu reconoce al Explorador y al Pícaro. Ofrece descanso y un puñado de almas.",
+    "choices": [
+      "Aceptar · +5 PV (+10 con Explorador o Pícaro) y 15 almas",
+      "Continuar"
+    ]
+  },
+  "forge_altar": {
+    "name": "El altar del último herrero",
+    "text": "El fuego puede transformar una carta en otra de su héroe, de coste 0–1 y mejorada. El resultado es incierto.",
+    "choices": [
+      "Elegir carta para transformar",
+      "Conservar tu mazo"
+    ]
+  },
+  "ash_archive": {
+    "name": "El archivo de cenizas",
+    "text": "Una página perdida puede reemplazar una carta por otra distinta de su héroe y coste 0–1.",
+    "choices": [
+      "Elegir carta para intercambiar",
+      "Cerrar el libro"
+    ]
+  },
+  "lava_bridge": {
+    "name": "El puente de las brasas",
+    "text": "Al otro lado hay 45 almas. Cruzar cuesta 8 PV a cada héroe; ambos deben sobrevivir.",
+    "choices": [
+      "Cruzar · -8 PV por héroe, +45 almas",
+      "Tomar el camino seguro"
+    ]
+  }
+}

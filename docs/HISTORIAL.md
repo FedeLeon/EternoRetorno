@@ -2001,3 +2001,84 @@ Sin exportación ni validación Web/móvil.
   Verificados los 48 hashes y rutas. No se validó por altavoces, navegador, emulador
   ni dispositivo físico; no se exportó el juego. Selección musical ajustable tras
   escuchar partidas humanas. [Documentación y fuentes](audio/README.md).
+
+## 05/10/2026 — Botones con sonido solo al presionar
+
+- Retirada la conexión de `mouse_entered` y el temporizador de hover en
+  `src/audio/audio_manager.gd`. Todos los botones conservan sonido en `pressed`.
+- Actualizada la documentación de audio. Prueba local headless de audio:
+  78 comprobaciones sin fallos; `git diff --check` correcto. Sin exportación
+  ni nueva prueba auditiva o en navegador.
+
+## 05/10/2026 — Plantillas Web faltantes
+
+- El editor local es Godot 4.7.2.stable y el directorio de plantillas del usuario
+  estaba vacío. El preset Web busca `web_nothreads_debug.zip` y
+  `web_nothreads_release.zip` allí; las plantillas Android personalizadas no cubren Web.
+- Descargado el paquete oficial de `godotengine/godot-builds`, verificado contra
+  su SHA-512 publicado y extraídas las ocho variantes Web y `version.txt` en
+  `~/.local/share/godot/export_templates/4.7.2.stable/`. CRC de los ZIP correcto.
+- Guía de reparación en `docs/export/README.md` e índice actualizado. Sin cambiar
+  el preset, sin exportar el juego ni probar una compilación en navegador.
+
+## 05/10/2026 — Corrección de silencio de audio en Web
+
+- Reproducido con la exportación Web existente: recursos incluidos, AudioContext
+  activo y canales no muteados, pero señal de salida cero. `add_bus(-1)` de
+  Godot 4.7.2 desordena canales de Sample y desconecta Master de la salida.
+- `src/audio/audio_manager.gd` crea canales con `set_bus_count(count + 1)`;
+  conserva Sample, volumen, pistas y reproducción nativa. No cambia el preset.
+- Prueba Chromium de la exportación existente, con interceptación temporal del
+  JS en memoria: la operación equivalente corregida mantiene Master como salida,
+  conecta los otros tres canales a él y produce señal real no nula. Prueba en
+  `tests/test_web_audio.cjs`, informe en `artifacts/audio/web_bus_probe.json`.
+- Código actualizado: prueba de audio headless 78 y nativa 79 comprobaciones,
+  sin fallos. Documentación de audio/exportación e índice actualizados.
+- No se generó una nueva exportación, no se modificó `TestWeb/` ni se publicó.
+  La siguiente exportación del usuario debe incorporar el nuevo gestor; no se
+  presenta la prueba con interceptación como validación de ese nuevo paquete.
+
+## 07/10/2026 — Arrastre, aventura ampliada y Fortaleza del Último Fuego
+
+- Implementadas las recomendaciones aprobadas: arrastre mouse/táctil con preview
+  y cancelación, velocidad 1–2×, reducción de efectos/primeros planos, ajustes de
+  legibilidad/destellos/ambiente, tutorial, rechazo de recompensa por almas,
+  decisiones de retirar/intercambiar/transformar cartas, encuentros por piso,
+  vínculos e historias de quince parejas, variantes de enlace, condiciones,
+  dificultades desbloqueables, resumen, formaciones por rol y guardianes con fases.
+- Tercer piso volcánico integrado en generación, transición, audio, fondos, descanso
+  y selector temporal de desarrollo. Nuevas aventuras: tres pisos; guardados anteriores
+  conservan su límite de uno/dos pisos, nodos y RNG.
+- Catorce definiciones nuevas, trece apariencias de las plantillas del usuario;
+  45 definiciones activas / 44 apariencias. Se amplían cripta y bosque a 16/18
+  comunes; fortaleza tiene nueve, élite y wyvern con escolta.
+- 34 imágenes generadas mediante imagegen integrado: trece hojas con 104 poses,
+  trece ataques transparentes HD de derecha a izquierda y ocho fondos. Prompts,
+  fuentes y manifiesto en `docs/expansion_2026_10/`; importador compartido preserva
+  alfa/suelo y compresión revisada. Se mantienen los cómics HD de héroes existentes.
+- Extraídos ciclo de aventura, turnos y premios de `game.gd`; fondos de `main.gd`.
+  Pantallas propias para preparación, vínculos y decisiones de mazo. Checkpoint
+  permanece en Game y ocurre antes de las animaciones. Mapa de arquitectura actualizado.
+- Corregido el bloqueo de aliados protectores: se limpia la guardia previa antes
+  de las acciones, para no borrar lo concedido al aliado que actúa después.
+- Validación local actual: reglas ampliadas 5224; generación/bosque 24616;
+  cripta 5161; dungeon 66; motor 143; enemigos 1222; audio 78; secuencia de turno
+  170; energía inmediata 5; presentación 25; UI compartida 343. Sin fallos de
+  comprobaciones. Contraataque, inicio por piso y cierre de aventura también pasan.
+- Regresiones de esta entrega: ampliación previa de combate 1985; Refugio 159;
+  campamento/contratos/especializaciones 192; sinergias 481; cartas de apoyo 1922;
+  reliquias de élite verificadas. No se usan cifras de validaciones históricas.
+- Godot de escritorio con renderizado X11/Compatibility: UI ampliada 17 y assets
+  78 comprobaciones, sin fallos. Mouse y táctil se inyectan al viewport; no es un
+  ensayo en teléfono. Revisión visual de escenarios, gestos, cómics, descanso,
+  encuentros, opciones, vínculos, preparación y tutorial. Capturas en `artifacts/`.
+- Algunos tests legados imprimen avisos de recursos retenidos al cerrar; no se
+  presentan como ausencia total de avisos del motor. Importación sin errores de
+  scripts/shaders y `git diff --check` revisado.
+- Bot simple termina 45 intentos, con 4 victorias; ignora mejoras/recompensas.
+  Sirve para detectar flujo atascado, no certifica equilibrio humano. Pendientes:
+  partidas humanas, medición móvil y validación de navegador/dispositivo físico.
+- No se exportó Web/APK, no se modificó `TestWeb/` ni se publicó. Se preservan las
+  correcciones anteriores de audio y los demás cambios existentes del usuario.
+
+[Alcance, reglas, archivos, prompts y límites](expansion_2026_10/README.md).

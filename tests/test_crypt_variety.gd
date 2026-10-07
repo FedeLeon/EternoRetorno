@@ -35,7 +35,7 @@ func run_tests() -> void:
 				unique[id] = true
 				encountered[id] = true
 			check(unique.size() == room.encounter.size(), "mixed formations")
-	check(extra.size() == 6 and config.common.size() == 13, "six original additions remain in expanded crypt roster")
+	check(extra.size() == 6 and config.common.size() == 16, "six original additions remain in expanded crypt roster")
 	check(extra.keys().all(func(id): return encountered.has(id)), "all additions appear")
 	check(Dungeon.definition(2).common.all(func(id): return id not in extra), "forest roster unchanged")
 	var path = "user://crypt-variety-test.save"

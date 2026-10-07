@@ -438,6 +438,20 @@
       "music_db": -7,
       "ambience": [],
       "idle": []
+    },
+    "volcano": {
+      "music": "crypt",
+      "music_db": -3,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -14
+        },
+        {
+          "id": "wind",
+          "db": -22
+        }
+      ]
     }
   }
 }

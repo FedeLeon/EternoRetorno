@@ -25,7 +25,8 @@ func _draw() -> void:
 	var impact = exp(-pow((elapsed - 0.39) / 0.065, 2.0))
 	var charge = sin(clampf(elapsed / 0.72, 0.0, 1.0) * PI)
 	# Small nested glows stay local to the weapon; never a full-screen flash.
-	for ring in range(7, 0, -1):
+	var reduced = preload("res://src/presentation/preferences.gd").low_quality()
+	for ring in range(3 if reduced else 7, 0, -1):
 		draw_circle(origin, unit * (0.025 + ring * 0.017), Color(accent, (0.008 * charge + 0.015 * impact)))
 	if elapsed >= 0.32:
 		var age = elapsed - 0.32
@@ -36,7 +37,7 @@ func _draw() -> void:
 		draw_arc(origin, radius, start, end, 28, Color(accent, opacity * 0.5), 2.0, true)
 		draw_arc(origin, radius * 0.89, start + 0.1, end - 0.1, 28, Color(accent, opacity * 0.2), 1.0, true)
 	# Staggered emission, acceleration, fading trails and luminous cores.
-	for i in range(48):
+	for i in range(12 if reduced else 48):
 		var birth = 0.12 + float((i * 17) % 31) * 0.010
 		var age = elapsed - birth
 		var lifetime = 0.17 + float(i % 5) * 0.043

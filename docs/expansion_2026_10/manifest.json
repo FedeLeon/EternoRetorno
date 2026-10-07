@@ -1,0 +1,614 @@
+[
+  {
+    "path": "docs/expansion_2026_10/sources/ash_archive.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2328785,
+    "sha256": "e82a306fdad99cef0cd2208e9dcae0355af7e77cb06f4d2874140de97a844536"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_0_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2750588,
+    "sha256": "6f05e9ae5b2395d9fe083c2cbbd10c487932bc658aa4169925f568b407b2a628"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_0_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 906198,
+    "sha256": "968483712aa697c481d0fa751325e2727a2a3f4a1dd7f822566b2c3f0fd54572"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_1_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2748992,
+    "sha256": "4adc263eccd575dbacb75882d2805a5fa0053bfbab4db4797671de8ddc09b60a"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_1_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 888613,
+    "sha256": "15015c354290de65938c33a49199267ad1d7bf93ed6195817b8dcf799dcefdfa"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_3_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2891570,
+    "sha256": "98cb339a0691351093ba9e7740ced8f950d50a22c29bd7afae91b40881a8838a"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_3_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 999427,
+    "sha256": "954e480f0094a0c84fa92e6732db3ad98f5623060ddb3d82d1823328e007bb53"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_5_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3103425,
+    "sha256": "bd1763822db7fc2d553c39b15ca01fbff88b80b1ad958eaba7615babaea3d096"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/bandit_5_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1189799,
+    "sha256": "1b4339839869663079b9d437519ba9dffaf58798632c54cdc86a401b42329764"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/combat.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2647173,
+    "sha256": "e890d419eddea3c1f9ff8f4cba61949d237ba0a72d0b3540fee5b54111085b7b"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/elemental_1_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3078857,
+    "sha256": "89ab70911d019c865feaadf10e12e380fc60f03e3049f21501673df40a8ae095"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/elemental_1_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1821669,
+    "sha256": "cd3fee7d058b29ecf85d4984922983d5af116a4d7ccaabda35b97c80585080e0"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/elemental_5_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3437889,
+    "sha256": "4a4ee6cd545d8c9274f2672fedd48a14e1bb60616c578690bbb8038049d21f5c"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/elemental_5_motion.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2226288,
+    "sha256": "10f4c2e5b9731b13359ef89e841a5cb93d52d2c87360aeccb45c475f8e4a02ad"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_0_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2618123,
+    "sha256": "3c60658aba9d1e192c94a93a3ebdace899d69cff5d93eacbfdfa4dab991d4f37"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_0_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 890835,
+    "sha256": "807894e1d4334da745598ca53fdbc8443975acffea870ff18e778f12db7e8ae2"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_2_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2978696,
+    "sha256": "50fd4f2771aa96750429eb80af6e50962628db31ee6741a39a1aea1a477d1194"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_2_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1112687,
+    "sha256": "c6f120c67c0b96fb701f1fc86ad7695482803b4b0ca2b3f41603ac5514b41481"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_3_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3189120,
+    "sha256": "4051b8c4e25bd96cd864bb15215e3899c5052b2643ca082ee98dd9cd2f440f32"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_3_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1210142,
+    "sha256": "444c80dac730d09282298a6ad848753f09751e4d1f54bcad64a2eb072ea6fbe1"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_4_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3104260,
+    "sha256": "d83bea628411ee12fd9e98031115a215fcefb26b9b5ae8ccbca7f5cbbc75a40b"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_4_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1161208,
+    "sha256": "855457455d113fb5623bbd6e43041649042667b032e49d60c3ce026e1d5eca69"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_7_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3039933,
+    "sha256": "e5b0c19aebf2997bfb0d0d66c41057f42180e02c7c388563fa72078607df3c14"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/flying_7_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1252185,
+    "sha256": "f60e3fdf578a3af65ab4ab90ddcdbafed79eb948f4a999f7d3d777cc8f455e14"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/forest_hunter.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2385820,
+    "sha256": "068f1c150f42dff528a1854f23ecb1b864e5506f3fdb6895f4ed3e290a0fa6fb"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/forest_spirit.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2872835,
+    "sha256": "2c96ead1760aef9501febdb3bd83a1880eff0c884e910d9f896216fa802627f6"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/forest_spring.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2525955,
+    "sha256": "96b14f9da9a8fe6be7c3d6eebe7ef0f16a4c84ddc8d77b8c36f58e2321cdd559"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/forge_altar.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2337647,
+    "sha256": "a81a8ee8f1ba5a346e0fc6cee4350f6cd2d3f5fb015b4640c271bf78138e0e45"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/lava_bridge.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2243276,
+    "sha256": "868c85ff393baf000bcfec1b1b058401d097a99bf3dbb23bb04ba352bfd64fb0"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/rest.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2122360,
+    "sha256": "26651af2e8b158a6ad2a84390fa73df12b4898ecd52b0f8ab812dd54b37581c9"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/skeleton_1_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2754828,
+    "sha256": "6e39ffa4b0f16435be42bdf2e2a619f94b2f814a4c6523481741b1b14f0faf0b"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/skeleton_1_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1080907,
+    "sha256": "481892a10fee113fb3a5b597b22797511412695690293c7fc32d62d2619e2581"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/skeleton_7_cutin.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3001481,
+    "sha256": "31aea0d33d52801568d90bd1faa73c274dccb07632882b01df7ec3d8dce027b3"
+  },
+  {
+    "path": "docs/expansion_2026_10/sources/skeleton_7_motion.png",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "bytes": 1353220,
+    "sha256": "99b5286aab0df7843c79831209fae2739eca19b45734d402ebdad53dd9eaecf5"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_0.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 95855,
+    "sha256": "b568ed95e824934c4c81e045c279ff141cc077846adfe00f17ac5da6908c0912"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_0.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 996253,
+    "sha256": "cdebdde0c8a7eafc83ac1861d976c859d441a1445d00c594f10f65470de9a091"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_1.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 89571,
+    "sha256": "c1a9af0e6d0fe929090eb1bdcf46123a2d3eb0cb06286c0a2ec2c9a61784ca3d"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_1.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1011339,
+    "sha256": "46b9a01d77f31bf69fd5064a861f9ecf2d8d445095edc0a4713e0dacdea33cf0"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_3.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 108049,
+    "sha256": "cf0aa86ed04bac060aef01b66d6a757c95a9b597b6cdef71ecd15e522eb684b5"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_3.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1045960,
+    "sha256": "fccd0064b9ef3f055592dbd8ad230c785ce1c6711988e5aaee15a14f6cfde52f"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_5.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 115573,
+    "sha256": "ffe24ed181a3df1bda47d3573aaf4499077e57b8e48ba6c5f0e2babdf8a0be24"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_5.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1144163,
+    "sha256": "164ae946b4a835f3c09e5414c89b10be1d8d85a0bf38014c21ece47607d6dd2b"
+  },
+  {
+    "path": "assets/enemies/animations/elemental_1.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 157137,
+    "sha256": "e23b2adeef9c96c17d297aaeb3634536051341d5bbc9b9f75f72f2e087ba5da6"
+  },
+  {
+    "path": "assets/comic/enemies/elemental_1.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1155368,
+    "sha256": "64afaf58bbc26929fce5a7787d6e8167f9e5d1d67f15f3f2d99fb725d97a6ba3"
+  },
+  {
+    "path": "assets/enemies/animations/elemental_5.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 196030,
+    "sha256": "068bc7162164acbcf000324de0ce8c1c245922a4f4f6d0b9416b43cc5257b668"
+  },
+  {
+    "path": "assets/comic/enemies/elemental_5.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1234943,
+    "sha256": "7a48b664aeb50a9bc5c0ec884778851cf8b306b9b1293537e65988e52f67b1bb"
+  },
+  {
+    "path": "assets/enemies/animations/flying_0.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 93329,
+    "sha256": "54e3d4bde095b5faccf2dd1c55893f9240e155206c556b7228f1aa777579f4f0"
+  },
+  {
+    "path": "assets/comic/enemies/flying_0.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 975120,
+    "sha256": "d5a081506a04c45918e382e7a8894002302dc8d4ea0d2ec19bdc931f82c5212e"
+  },
+  {
+    "path": "assets/enemies/animations/flying_2.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 105337,
+    "sha256": "83a0f89837e653d343fb7ab1247c0b264c1845c43deeefc3a3e27400072ce3d9"
+  },
+  {
+    "path": "assets/comic/enemies/flying_2.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1115030,
+    "sha256": "dce2bff3069ab2b752f192cf3d753f3bad8f6722249f91031d20b46806adde39"
+  },
+  {
+    "path": "assets/enemies/animations/flying_3.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 110624,
+    "sha256": "9baea32672314bec221c040347d02f7131556079dacd4ab96f882e547f96a668"
+  },
+  {
+    "path": "assets/comic/enemies/flying_3.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1189165,
+    "sha256": "23911de649fb0ac8eaf8e9e8ddb53c5f9ee161f8d7bd043393cbf0d0a9467550"
+  },
+  {
+    "path": "assets/enemies/animations/flying_4.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 104585,
+    "sha256": "456ba176e3f133bc1df664a46f5b75832673b1f5c66d79f34e5490cbade0506c"
+  },
+  {
+    "path": "assets/comic/enemies/flying_4.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1164484,
+    "sha256": "8d152248742df9f665dcfd154cc034013c7e01dbae5ed1055364d5e05bb7dd43"
+  },
+  {
+    "path": "assets/enemies/animations/flying_7.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 128237,
+    "sha256": "ab6ad8c2f46534696464c5b7adeaef21a1bebfa1eac77df975428bab24cd5843"
+  },
+  {
+    "path": "assets/comic/enemies/flying_7.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1124487,
+    "sha256": "75b1d03afa8ea48243ff21c4b6e73f8ecc190d80f68fcbf250331a1200f1f111"
+  },
+  {
+    "path": "assets/enemies/animations/skeleton_1.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 101089,
+    "sha256": "69cb9a1d795533218fadecfae447cf3fc8063def9b5186072545c0c35591144d"
+  },
+  {
+    "path": "assets/comic/enemies/skeleton_1.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1019162,
+    "sha256": "fa38f1534e24a1885e88556f42938c966eba445b128bcbc95b9ddc041f8cf092"
+  },
+  {
+    "path": "assets/enemies/animations/skeleton_7.png",
+    "dimensions": [
+      1024,
+      128
+    ],
+    "bytes": 123530,
+    "sha256": "5752e69a82b701eff7906ff5121e7b587b9a29dd69b3c33599532ff95ce372ce"
+  },
+  {
+    "path": "assets/comic/enemies/skeleton_7.png",
+    "dimensions": [
+      900,
+      600
+    ],
+    "bytes": 1097420,
+    "sha256": "e8042438f95d5e7c126e0d3406dc487d0b3412d9c18101ad3884c524909b6e1b"
+  },
+  {
+    "path": "assets/encounters/forest_spring.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1453936,
+    "sha256": "ab69cc9ef0c0440470b675d258f8b3a1712264dec9bf891c2107e0056b2bfc9b"
+  },
+  {
+    "path": "assets/encounters/forest_hunter.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1345027,
+    "sha256": "5142aca74828a9be2a6121fd80e61575ee406b308c09126a3b2943dad8c9e879"
+  },
+  {
+    "path": "assets/encounters/forest_spirit.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1630652,
+    "sha256": "f4f6a38cdcf0f34deb86d8252bb5350fa6b6e002fbaddf458df5a63e41667916"
+  },
+  {
+    "path": "assets/encounters/forge_altar.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1353761,
+    "sha256": "9c3038e4729908a04ea375cc8572c7fed09f718337b64adf38d136af7ec7026c"
+  },
+  {
+    "path": "assets/encounters/ash_archive.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1350532,
+    "sha256": "cc135bfb5a6671266be7d292c06c64d1d2d0fae0d95d4c82490e02caa5df53c4"
+  },
+  {
+    "path": "assets/encounters/lava_bridge.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1285849,
+    "sha256": "78f5c79c5d3e535216d394890a748f6276cd050b5e959aa3759a2ec04d43a415"
+  },
+  {
+    "path": "assets/volcano/rest.png",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 1185176,
+    "sha256": "86fafc280461b92d0d42cdd67a8015d61faa3141c96a194f5aa990d20bd0618f"
+  },
+  {
+    "path": "assets/volcano/combat.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 2647173,
+    "sha256": "e890d419eddea3c1f9ff8f4cba61949d237ba0a72d0b3540fee5b54111085b7b"
+  }
+]

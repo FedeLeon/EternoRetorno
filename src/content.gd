@@ -20,11 +20,13 @@ func _init() -> void:
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/crypt_enemies.json")))
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/forest_enemies.json")))
 	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/enemy_expansion.json")))
+	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/adventure_enemies.json")))
 	relics = data.relics
 	relics.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/elite_relics.json")))
 	var legacy_icons = {"ember":2, "fang":3, "chalice":0, "hourglass":7}
 	for id in legacy_icons: relics[id].icon = legacy_icons[id]
 	events = data.events
+	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/adventure_events.json")))
 	var objects = JSON.parse_string(FileAccess.get_file_as_string("res://data/equipment.json"))
 	equipment = objects.relics
 	items = objects.items

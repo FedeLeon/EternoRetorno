@@ -33,6 +33,6 @@ static func build(ui: Control) -> void:
 	for i in range(count):
 		var card = ui.card_panel(ui.game.run.reward[i], left + i * (width + gap), 160, width, 414, func(): ui.act(func(): ui.game.choose_reward(i)))
 		card.name = "RewardCard%d" % i
-	ui.button("Saltar recompensa", 461, 605, 358, 54, func(): ui.act(func(): ui.game.choose_reward(-1)))
+	ui.button("Rechazar carta · +12 almas", 461, 605, 358, 54, func(): ui.act(func(): ui.game.choose_reward(-1)))
 	if not ui.game.run.new_unlocks.is_empty():
 		ui.label_at("Nuevo eco: " + ", ".join(ui.game.run.new_unlocks), 80, 663, 1110, 27, 17, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

@@ -53,7 +53,8 @@
       {
         "damage": 10
       }
-    ]
+    ],
+    "role": "support"
   },
   "forest_wolf": {
     "name": "Lobo gris",
@@ -134,6 +135,21 @@
       {
         "damage": 0,
         "block": 5,
+        "counter": 4
+      }
+    ],
+    "boss": true,
+    "phase_two": [
+      {
+        "damage": 12,
+        "all": true
+      },
+      {
+        "damage": 19
+      },
+      {
+        "damage": 0,
+        "block": 14,
         "counter": 4
       }
     ]

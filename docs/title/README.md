@@ -55,3 +55,9 @@ más clic final en Salir que termina el proceso con código 0. Se comprobaron
 opciones, volumen, persistencia, pantalla completa, navegación/continuación.
 Revisión visual 1280×720; captura temporal eliminada. Importación y diff
 correctos. Rama Web sin ejecutar en navegador; no se exportó.
+
+## Ampliación del 07/10/2026
+
+Opciones incluye velocidad 1–2×, primeros planos reducidos, menos partículas, intensidad de destellos, textos comunes +12%, volumen de ambiente y acceso al tutorial. Preferencias guardadas mediante la API existente.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

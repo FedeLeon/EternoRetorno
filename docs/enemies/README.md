@@ -112,3 +112,9 @@ Seis diseños existentes ahora activos: esqueletos guerrero, arquero, escudero y
 berserker; elementales de roca y sombra. Diez tipos comunes para la primera
 mazmorra, grupos mixtos y apariciones por etapa. [Catálogo, assets, procedencia
 y organización](crypt_expansion/README.md). Mapas guardados intactos.
+
+## Ampliación del 07/10/2026
+
+Catálogo activo: 45 definiciones y 44 apariencias. Se incorporan trece apariencias con ocho poses (cuatro reposo/cuatro ataque) y primer plano transparente; el nuevo élite reutiliza Bruto de las brasas. Grupos mezclan roles y los tres guardianes tienen segunda fase.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

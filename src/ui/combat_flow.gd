@@ -2,6 +2,13 @@ extends RefCounted
 const BattleAudio = preload("res://src/audio/battle_audio.gd")
 # Coordinates committed actions and their presentation; save precedes animation.
 static func run(ui: Control, hand_index: int = -1, target_index: int = -1, synergy_id: String = "") -> void:
+	if ui.combat_busy: return
+	var previous_speed = Engine.time_scale
+	Engine.time_scale = preload("res://src/presentation/preferences.gd").speed()
+	await present(ui, hand_index, target_index, synergy_id)
+	Engine.time_scale = previous_speed
+
+static func present(ui: Control, hand_index: int, target_index: int, synergy_id: String) -> void:
 	if ui.combat_busy or ui.game.run.phase != "combat":
 		return
 	var before = ui.game.run.heroes.duplicate(true)

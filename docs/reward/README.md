@@ -32,3 +32,9 @@ mantienen su tamaño y se desplazan a la derecha. Elegir/saltar la carta limpia
 el recibo, pero conserva la reliquia. Menú, bolsa, mazo y recarga no repiten el
 sorteo ni la adquisición. [Catálogo, arte y pruebas](../relics/README.md).
 La barra superior incluye las reliquias iniciales y las encontradas.
+
+## Ampliación del 07/10/2026
+
+Rechazar la carta concede 12 almas una sola vez. El premio de reliquia de élite se conserva aunque no se elija una carta.
+
+[Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).

@@ -1614,7 +1614,23 @@
           "counter": 4
         }
       ],
-      "visual": "crypt_automaton"
+      "visual": "crypt_automaton",
+      "boss": true,
+      "phase_two": [
+        {
+          "damage": 14,
+          "block": 7
+        },
+        {
+          "damage": 9,
+          "all": true
+        },
+        {
+          "damage": 0,
+          "block": 12,
+          "counter": 4
+        }
+      ]
     }
   },
   "relics": {

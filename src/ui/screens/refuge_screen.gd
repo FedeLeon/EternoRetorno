@@ -35,6 +35,8 @@ func redraw() -> void:
 	if selected == "":
 		var heading = ui.label_at("Elegí un héroe para preparar sus 10 cartas iniciales", 80, 45, 1120, 42, 26, ui.TEXT, body)
 		heading.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		ui.button("Vínculos entre héroes", 460, 100, 360, 46, func():
+			ui.screen = "bonds"; ui.render(), true, body)
 		var ids = heroes.keys()
 		for i in range(ids.size()):
 			var hero = ids[i]
