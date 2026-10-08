@@ -1,0 +1,5055 @@
+{
+  "date": "2026-10-08",
+  "files": [
+    {
+      "path": ".godot/imported/rogue_weapon_3.png-499e370058fb5cfa39dcbf683b937572.ctex",
+      "bytes": 84522,
+      "sha256": "f614ac2202088f44033ab84de3895c0b210bb2b1f25988c74f765b89d3b97395",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_weapon_3.png-499e370058fb5cfa39dcbf683b937572.md5",
+      "bytes": 91,
+      "sha256": "2f08bc00f7dc02461ca3f81518027690e29bb09568e9bb23a948c746c378f8ff",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_3.png.import",
+      "bytes": 972,
+      "sha256": "04c7f86cb3b68798fba456fecd26df3dd73e1d4651c3f6c7cc63d4e43e37b950",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_3.png",
+      "bytes": 102150,
+      "sha256": "dc7656d88865a48e98d142ac769662fd7b277c73c3bbad81af71fb0eeec0a026",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_3.png-fc1d1d6e3b84437832bcff33552d0190.ctex",
+      "bytes": 105868,
+      "sha256": "ed3fd02fa01b20d3daa155d238f948afeb844fc6610adc9c9315fef535dba25e",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_3.png-fc1d1d6e3b84437832bcff33552d0190.md5",
+      "bytes": 91,
+      "sha256": "502e2fd72cbc0171f84caac31b68283ebd1832da6837393f31070734d6e530f6",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_3.png.import",
+      "bytes": 975,
+      "sha256": "da3429b18e7d767c6048bd77531f55eee0084511ec0e21d5d284e31b36e1dbf8",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_3.png",
+      "bytes": 124564,
+      "sha256": "9b94541cd2a34c042f749737b64212d9b86169fda12b3af3781f2ff597ff7666",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_2.png-99f59eb2d3a29ec882a9ee1c3759f70d.ctex",
+      "bytes": 88042,
+      "sha256": "233d155185da2f309b6ce87820e5ff1e62e0d42add6dda48f8dd97bcca8364be",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_2.png-99f59eb2d3a29ec882a9ee1c3759f70d.md5",
+      "bytes": 91,
+      "sha256": "a03b86c5a2198d631e89dd77b04660c41b0c83f5ff57e40acf301cf6d1bd9b07",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_2.png.import",
+      "bytes": 974,
+      "sha256": "52a6193adf141f92f50a0a9b1523f07cee828b329ec64bc712c48140993f7c23",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_2.png",
+      "bytes": 108154,
+      "sha256": "beb02f819e3fdcaa93a92d667959f73ab7297edca95c6a459c10cccd5e4d86d7",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_3.png-75523ca01509b86dc1f7808a805179f3.ctex",
+      "bytes": 98814,
+      "sha256": "434b5c527958351d7b71429c778143c6b058f20989e384107083e0b37d0528a8",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_3.png-75523ca01509b86dc1f7808a805179f3.md5",
+      "bytes": 91,
+      "sha256": "b70fd034686669e69e61dea9f7a36e93981edf165e77c6efd22e1ad85e9339e7",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_3.png.import",
+      "bytes": 981,
+      "sha256": "fa00be3fcaabff2432a70b3ef8eac3dca25d6ee5309d16ae2e1481b8e696a9cf",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_3.png",
+      "bytes": 117316,
+      "sha256": "b82896c9d735708a54a4d6e84c4998bb1ea1065dfb3bc1eb637ad7adf885d63b",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_1.png-c34aacf8850aa8bb90e0d0ce245be2b0.ctex",
+      "bytes": 64002,
+      "sha256": "68b29f5aa99aa1d5e74b96764c70b66c0305004d45fb9d62d6e5859fcfbd3d8c",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_1.png-c34aacf8850aa8bb90e0d0ce245be2b0.md5",
+      "bytes": 91,
+      "sha256": "1da48ae13382775afc8a07c1249a3a99ea82c2113c1f999ca684e55312782e90",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_1.png.import",
+      "bytes": 969,
+      "sha256": "94def62090af7ae02b3157f630287807cfe05b1b1b0ada236391ed70e73adb38",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_1.png",
+      "bytes": 80311,
+      "sha256": "9fb9ac0e61201f9f43c6c6a60efa29220768961f49ee80689bf3cb7db99b8a33",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_2.png-4d99370da3bca3e8ae532199e47cd9fb.ctex",
+      "bytes": 93500,
+      "sha256": "803563a4ded5a722c9847cbbd237ac96a410430fec45fc1d747badff3d1d7618",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_2.png-4d99370da3bca3e8ae532199e47cd9fb.md5",
+      "bytes": 91,
+      "sha256": "da358b30f0e03b7bb29eaea4c73e2f955690c04854f6c6ddb45fed032ea4b4a2",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_2.png.import",
+      "bytes": 972,
+      "sha256": "bb5eb93d860bced614d7ba02fbec99b85b9ba730d6d71ec68a76bc83e1ff7cd4",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_2.png",
+      "bytes": 131163,
+      "sha256": "b8dab3514ab08f46e1dec5b93935f4b928d8b16df845c0a380961297f4168909",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_2.png-dd6a26f90655bef4297ac41edfd8b233.ctex",
+      "bytes": 82070,
+      "sha256": "da45b5126ac6bbda4154dbab78940a750cf22a39fcd76cfc665920a25654b528",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_2.png-dd6a26f90655bef4297ac41edfd8b233.md5",
+      "bytes": 91,
+      "sha256": "ab0ed722a6bbdba99e9165403410e6fa2b922d9c129f5e8c4dbde0aa819b3191",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_2.png.import",
+      "bytes": 981,
+      "sha256": "4347e54579faf98a75415e30b5cde2e6ce3e4f4c395d85c6a64597f6b5d77213",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_2.png",
+      "bytes": 105071,
+      "sha256": "7ba839a21659210e152e2e80edabcde38aa55423d6af01a2e646e4e0297a3ded",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_3.png-813753bca287ec6cbfc5b655e0a0a4a4.ctex",
+      "bytes": 89814,
+      "sha256": "0f3007b5bcc638807ac6a6b3e0fce9d0a520addf5a3d604d1f3b160b965cba88",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_3.png-813753bca287ec6cbfc5b655e0a0a4a4.md5",
+      "bytes": 91,
+      "sha256": "27b19f1988369cc8a3998fbc1e067608c48ece5436903a57f7b9427989d77a5a",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_3.png.import",
+      "bytes": 975,
+      "sha256": "5e2be30489935805f01c1a3b4cd2f65ec70e6467eef84fe115b3130b0b6836e6",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_3.png",
+      "bytes": 118571,
+      "sha256": "bc8b5b1a988ca236dbaa0da90ee28d90b89cb4a3a0dc0474d221d25fa4006ba3",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_3.png-d387c74cc67022b8c6b78a237ae26301.ctex",
+      "bytes": 91404,
+      "sha256": "862e455bc305c609a1a984511d743fc27cdebc4039a83753d2caf5296cb5f669",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_3.png-d387c74cc67022b8c6b78a237ae26301.md5",
+      "bytes": 91,
+      "sha256": "8830c9528e4b5f34e7444e56e604023dcf79c2810749e144506bfb16dfaca4d9",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_3.png.import",
+      "bytes": 974,
+      "sha256": "c748e12d6e698549f9a596b398b9986c199f33fc398b7393deb1ccbc9a8340ff",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_3.png",
+      "bytes": 109458,
+      "sha256": "036943cf330d155637d71eb6fc50e1a779f0ca66d6e81ffb92ba8c2bfc83b55d",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_1.png-98db0a60d953997b2eaa5ca5ac49e860.ctex",
+      "bytes": 79196,
+      "sha256": "9e7889a21b0bf7629baba9cd15fc989617b0d59555d4b1a764cfec64ea1226c6",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_1.png-98db0a60d953997b2eaa5ca5ac49e860.md5",
+      "bytes": 91,
+      "sha256": "5220bd1cd147af4997ae1a9eb54424449917a3d80f56ac4f4b9362d830ddaf82",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_1.png.import",
+      "bytes": 975,
+      "sha256": "2604be882589aa1919cba0d3784a90b28a0d593d00061403988bcf5aef476a31",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_1.png",
+      "bytes": 108831,
+      "sha256": "c0880165f2195fe80e4bed6d580b8054205dbd2dc50b7629b4ae3b9fe1e38331",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/rogue_weapon_2.png-1b8bea1ff121295f3aa5396009fcce96.ctex",
+      "bytes": 76038,
+      "sha256": "75d8c8484339de2b1245d3d96feea3226eaeb150bbdc4486a946e1b46913e415",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_weapon_2.png-1b8bea1ff121295f3aa5396009fcce96.md5",
+      "bytes": 91,
+      "sha256": "b439a8e56d49e8f8132264c67aaf42040539d1eb0861a25d077de789f5f87fca",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_2.png.import",
+      "bytes": 972,
+      "sha256": "98061fe17411abd25f31f4ad2bb3bef92b88ac184568d4f68d602813c1e04f14",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_2.png",
+      "bytes": 92450,
+      "sha256": "24858e8bc080a4c3a7ee0aacab5d2df8e38da12e79427b7e5f7368d9555d2e68",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_3.png-0f15ea912eca5f5dad9c0661e3fda69b.ctex",
+      "bytes": 75974,
+      "sha256": "a4ca62caf9822c9f478f395f40dbad61e20362fe3d2c9834d4ea042accd881e7",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_3.png-0f15ea912eca5f5dad9c0661e3fda69b.md5",
+      "bytes": 91,
+      "sha256": "ad456e67d0ba652c201a2b5208b397d627ba6e4ef3d8a063142ad7468214524a",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_3.png.import",
+      "bytes": 977,
+      "sha256": "56e39b28a295990b1f908e278d3f323c9ee500bdbc02c0fccb6cf17c2154437b",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_3.png",
+      "bytes": 94431,
+      "sha256": "25a17ca1fb77924d7200f6c891e0317e3038c0b35f7f8de06e183383d47e62df",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_2.png-2354260250f5b4c9acb2e643bd6beaab.ctex",
+      "bytes": 82982,
+      "sha256": "2c0c47a3665c6239411ea169f54f40b4f2894d0b701bb0f302f9930ec111301d",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_2.png-2354260250f5b4c9acb2e643bd6beaab.md5",
+      "bytes": 91,
+      "sha256": "faf54e941c51f7a6ed00af5cc5dc09b5179226980301ddf04102caeac5e28597",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_2.png.import",
+      "bytes": 968,
+      "sha256": "f8fa96bf0119ada19ecb602bbdedea504d23fdb466a9380335e5abdb8422cfa6",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_2.png",
+      "bytes": 113080,
+      "sha256": "00a585fbecc47dc8ae01cfd356bf43f9483c62281235c07dda2cab43596bb1c8",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_armor_3.png-86eb2d65594ffd8bfff38ba189db94de.ctex",
+      "bytes": 104142,
+      "sha256": "c382f20737831914781b7a7692449f0fcc56cc4270aa5ff5e55ee9ea73fc12e8",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_armor_3.png-86eb2d65594ffd8bfff38ba189db94de.md5",
+      "bytes": 91,
+      "sha256": "6873239dadeec24b039cd0a7efdd69c58e02c85fda97b58230e6521d8b3ea99c",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_3.png.import",
+      "bytes": 965,
+      "sha256": "0132fbb042a6cfe38647413b3f3f2ccb900563e08c42e0f5c652df2570216988",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_3.png",
+      "bytes": 130654,
+      "sha256": "c3aa960ea062c266ffe275dd3730ecbae57a7c98affc1599eb624ecdcda074bb",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_armor_2.png-17c2098eb1443034134985755453168f.ctex",
+      "bytes": 98616,
+      "sha256": "38726a2e704050fba2a54e07e99a2e53e8f82f0461ce5eec8734fc29595c1757",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_armor_2.png-17c2098eb1443034134985755453168f.md5",
+      "bytes": 91,
+      "sha256": "1952dba42a69efaf50e19ec339c613b7502c97dd2d614559d6909664f8d9e263",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_2.png.import",
+      "bytes": 965,
+      "sha256": "e5158b24dd664a715e9ee26818426d35afc43ac719d62727910f8b7c8d1d4458",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_2.png",
+      "bytes": 126961,
+      "sha256": "c1206725278ba515ae76651b67ef2250310aa3056ade664dd358a78aeafdf310",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_1.png-880bea43b8af6cf36bc128a3323be229.ctex",
+      "bytes": 85270,
+      "sha256": "14d1b4b83c167839cf11ab15d52642df672b722ab33b6973641d76d7959ba648",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_1.png-880bea43b8af6cf36bc128a3323be229.md5",
+      "bytes": 91,
+      "sha256": "24b7b721a977717f25fa0e464596a990333d24426e56598b67da42665fae68db",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_1.png.import",
+      "bytes": 972,
+      "sha256": "26c62c7b942ee800d909c80d0ae6b4e2ae45808ae4ea2b82943077a9acf55eae",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_1.png",
+      "bytes": 112549,
+      "sha256": "e52a1bc879c329462bece8f9af6ad35c6d7b14e3e3b29e1a8256a4390ffd1009",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_2.png-d7507ae63609f6cfd84a319e2a8d2ca7.ctex",
+      "bytes": 90628,
+      "sha256": "61daf9805bbdd4d21916b4d7fc21ae5d668929e95e538dc0fdb0ea8fe21d77ec",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_2.png-d7507ae63609f6cfd84a319e2a8d2ca7.md5",
+      "bytes": 91,
+      "sha256": "9011275a056aa9ad86a4fde19abe26e2c0cdbc5b09144c8fd3de727f1ae801bd",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_2.png.import",
+      "bytes": 977,
+      "sha256": "ad449d49ec22c871e0ffc5c99aebf5ec2cd028307b447a81047c9e8d0565a29d",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_2.png",
+      "bytes": 115156,
+      "sha256": "5d5610d3329129cf7776b0ed23283db82bb96327dd67708cfbeb60baec2ee7c8",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_1.png-fe894a984f001c316941afa0c72dfbab.ctex",
+      "bytes": 86368,
+      "sha256": "310aaf0ac9176584e847f4231209babf3cd5fef4ab65c190d51f9ac4c7c14767",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_1.png-fe894a984f001c316941afa0c72dfbab.md5",
+      "bytes": 91,
+      "sha256": "7da41ab9e777acc1e293db312f0c126b4e6aa86abb608968bdd4f852b0bf0dc6",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_1.png.import",
+      "bytes": 967,
+      "sha256": "774095319c85c81949be25a1f225905cd5985b73a1a28f5d8b2fd08002c4e4ee",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_1.png",
+      "bytes": 117569,
+      "sha256": "3658826560625576c7567e55dbc93bcc766a4cc37f6442ef8f1f1a5e6ec9abc3",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_2.png-8d96a9f73a14d993f6f8cbabd7e3ee3e.ctex",
+      "bytes": 78766,
+      "sha256": "1776a9f306ce64724d49b049e7e49c4a4bae38afa927ec2bf888e3ba94e99c1f",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_2.png-8d96a9f73a14d993f6f8cbabd7e3ee3e.md5",
+      "bytes": 91,
+      "sha256": "87b890d84b77ccce17fe8155915627f44f9698921e979b2b75e2eb5f1423a97b",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_2.png.import",
+      "bytes": 975,
+      "sha256": "31d57b913b52168fbfb78c9ef5e1d700b29b0df27c032d2608dd2652a783a521",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_2.png",
+      "bytes": 95723,
+      "sha256": "b14255d82597edfc4cdc334f85b27c4847d1addb6b965b376a4f075183188bc5",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_3.png-85b1e23ca0654bd73fa363b65a5c5fe4.ctex",
+      "bytes": 105000,
+      "sha256": "894c52e9cfb3746f02b2663778f6f5dc14fefcf8370889c1f7be9ea533c2f934",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_3.png-85b1e23ca0654bd73fa363b65a5c5fe4.md5",
+      "bytes": 91,
+      "sha256": "19a0f325ad2b38288bf5e6f03d2341c0cac04ed1664ca0f0e8b45d34c2faf5f3",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_3.png.import",
+      "bytes": 972,
+      "sha256": "3c811ec58743b170ae56dfde32f656ffa3819d0ae460ee8854901247cdc3c13b",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_3.png",
+      "bytes": 133502,
+      "sha256": "80092b7042d0b8567c6d56d52ade0ea1ffea490e38715d66f8ce4f87ca4f6f24",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_3.png-a862fcdc6d9014273cd335a378be0ea8.ctex",
+      "bytes": 99636,
+      "sha256": "3a56e1cdd45ed0910b0479a70331409e8d386faf7dbbc6214ad8da83fc8574ce",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_armor_3.png-a862fcdc6d9014273cd335a378be0ea8.md5",
+      "bytes": 91,
+      "sha256": "a1aca7a74e6fcfe366d918d2efc95603c533d03ff77c3bd722b39df08e61ae9f",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_3.png.import",
+      "bytes": 969,
+      "sha256": "ae5e8e07dcb941a3210f30d563eb1aeab79f2b34902a720a9c946e3589a0c822",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_armor_3.png",
+      "bytes": 131255,
+      "sha256": "f53447c7ee153077ad2057edc7b7bdabec4411e4c474df589d39bf139fe6d209",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_3.png-a2974500d95b08459b8fda53ddcf1d3d.ctex",
+      "bytes": 104558,
+      "sha256": "4c0b318a32f359be849f6785e332e2722096b01e2f325e1c41881fb6ea74e3c4",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_3.png-a2974500d95b08459b8fda53ddcf1d3d.md5",
+      "bytes": 91,
+      "sha256": "b6d28d717ff5db15dc208b863b642adf6ad06a2e427686edfa3d2ec411008343",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_3.png.import",
+      "bytes": 977,
+      "sha256": "2f016fae6071371fa3a71d6293120832f3a4d0265566d22942ca198c21983a56",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_3.png",
+      "bytes": 128194,
+      "sha256": "36fd98b3a9ffb779db124547ddb50b55859d0d3b758d6478d4eefba72e3e0a9e",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_1.png-a40aeeb840240113b5caff96df95dfa1.ctex",
+      "bytes": 85072,
+      "sha256": "d180cdd4414fa99e3666dc8c2e785e6cee428aa0b2831ba8c39365370b69858c",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_armor_1.png-a40aeeb840240113b5caff96df95dfa1.md5",
+      "bytes": 91,
+      "sha256": "4e959c26a16806f1dfc68054e928633ba6f3d42a018893c32dfa019db8533600",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_1.png.import",
+      "bytes": 978,
+      "sha256": "33cc9a91fe54cd453dc5eebac9f83f1b005f9d36c4dfdeb7a0f4978b866a12e3",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_armor_1.png",
+      "bytes": 111260,
+      "sha256": "5ae7203316d687f3fe35d1a89c81262c440c4e6b358b2a7795a6311a2438f17a",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_1.png-8f0aca54879152adbd92676acb51ae0e.ctex",
+      "bytes": 75118,
+      "sha256": "2af49e1c73383b99299cef216b10dd56d86f33af12ddd600fed52ab9cff4df4d",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_weapon_1.png-8f0aca54879152adbd92676acb51ae0e.md5",
+      "bytes": 91,
+      "sha256": "f398dea40e6147714fbf4b9d225ebd4e2b62010f3fe7cd968e8c4bacd780a2c9",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_1.png.import",
+      "bytes": 975,
+      "sha256": "d5649c29ae03dfc955de24e511d82ade554ec78acb05171e951d6be44acc6ef5",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_weapon_1.png",
+      "bytes": 93935,
+      "sha256": "559784e0f49389fa59c3bf93b3f52e5754be1370c2b82d4760de6b8bc1fe736b",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_2.png-42613f6fdf06e376ea337f17f547a61e.ctex",
+      "bytes": 78178,
+      "sha256": "58abae93c3c3a8e752f2f32fcffdfc8d91ea8bac547bc678816bd3bf3e0755c0",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_armor_2.png-42613f6fdf06e376ea337f17f547a61e.md5",
+      "bytes": 91,
+      "sha256": "a26e5ad30ec500bf9839ec839499fbabe1d69d671c2bec0054b75b40a5070d21",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_2.png.import",
+      "bytes": 975,
+      "sha256": "5b422debfdb3c7a12812e0136367877985c7088c7c088a6bc3450109c9d086d4",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_armor_2.png",
+      "bytes": 107812,
+      "sha256": "5a166add596c75a9229ec53475931a1308fb09ab8ec557a273517386071a35db",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_2.png-b2758014790d3d86cfe50fcaa9def00f.ctex",
+      "bytes": 65180,
+      "sha256": "d06e2b8fd3baed98f7593e670a27e5725e03603b24f964568a87975dcd318db2",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_2.png-b2758014790d3d86cfe50fcaa9def00f.md5",
+      "bytes": 91,
+      "sha256": "a73e6fd93aacbfbdcf9b7f2ed091a0c46d9fafa3824827289294519dfab8c120",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_2.png.import",
+      "bytes": 978,
+      "sha256": "040e88f0e4da75d8215df9502d58e91fa8d9c427812353e70cf2a764e53a9a7f",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_2.png",
+      "bytes": 82680,
+      "sha256": "f4fae0ba6d44e3922d38b5f475fb5190163f2f03ca97956c85f6b75514a0e812",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/rogue_weapon_1.png-1f6f90067a8e218fe2319efec409e49a.ctex",
+      "bytes": 70276,
+      "sha256": "78d0abc973feebad279321d3ccc0338a83b2f100a5adf46e0fafda0f3b273f36",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/rogue_weapon_1.png-1f6f90067a8e218fe2319efec409e49a.md5",
+      "bytes": 91,
+      "sha256": "7dab4e53f08a87b019cd928835d6a6eed459e0d27b7eda4641cbb7ba361f7173",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_1.png.import",
+      "bytes": 972,
+      "sha256": "9e57ae62e8c67088d5b36d8d79edb7e7ac3590ed8e6c9144feb7a79f64f43917",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/rogue_weapon_1.png",
+      "bytes": 87142,
+      "sha256": "76b600795076313d4e323e5492814d6872ea0eb780a7c2f623c8f555d6ac3104",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_1.png-64516c8e69c7e5fe91d2c43162ae3876.ctex",
+      "bytes": 76436,
+      "sha256": "0907521eef798db5f5235d8bf827a86e5c147e1802003c02877df53ddb512f4f",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/guardian_weapon_1.png-64516c8e69c7e5fe91d2c43162ae3876.md5",
+      "bytes": 91,
+      "sha256": "c1ebbdd84fcf0f2c4d40d6e0b38fc9326aa3eba623c0f74c65c2e1b007ad2b76",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_1.png.import",
+      "bytes": 981,
+      "sha256": "e2c0ee0fbdb8453975f44c9d443211ddd2b64356650d8f39e7bb7ab4ee416816",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/guardian_weapon_1.png",
+      "bytes": 102838,
+      "sha256": "b3e980fad78608cb42fcb312dfb28cf492163ebf8dc0cec42d41279d74015018",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_2.png-615b9dee5ce7a4134b227a06c7be887f.ctex",
+      "bytes": 94378,
+      "sha256": "3e03f1f5503c888c6e407c51c4db9f5b1e16e8763303854cc26188fd0f6ac275",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_armor_2.png-615b9dee5ce7a4134b227a06c7be887f.md5",
+      "bytes": 91,
+      "sha256": "28e13c8a91bc481df8fa3f14b30ddaa1c5f50b72d67bf12badaf63e98ad48297",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_2.png.import",
+      "bytes": 972,
+      "sha256": "eef4713aaec8186ae523df900de7185ad38905a3c0c1c1eb6582616f257b27ae",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_armor_2.png",
+      "bytes": 122082,
+      "sha256": "9fabc1ceba21be869ffb122dc9eae9b9fba3d59b469101fda69341d82ec1bcaf",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_3.png-2eff67f95f989bb32e4ac3a3daed4a02.ctex",
+      "bytes": 100892,
+      "sha256": "ac70f1f19d2025215e4f57a4e92a3511d146463169035dc403bb10e6b342e369",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_3.png-2eff67f95f989bb32e4ac3a3daed4a02.md5",
+      "bytes": 91,
+      "sha256": "5c32e9f792b43129a5e58a0487f91ca41d1f87ae9d5d297eb60d61a38b18621a",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_3.png.import",
+      "bytes": 969,
+      "sha256": "921f07655281091590a38dec7eaf16f3b279d1a25baefea21f261f239da0acbb",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_3.png",
+      "bytes": 117281,
+      "sha256": "4e21d5d39819e307d4b8bc847e0ae8cf18edaad9af413b9fe7da182b5a936ead",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_3.png-1f00585e58fc2b3c659d2a93fada77fa.ctex",
+      "bytes": 96184,
+      "sha256": "35738a4151df739931fddb31e1737f44f9e539146e1dda73cca1f8ed600c047b",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_3.png-1f00585e58fc2b3c659d2a93fada77fa.md5",
+      "bytes": 91,
+      "sha256": "2f275a174c27e6810665cac1de3843958e4ae602cd50053ad8138a9f3e446f78",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_3.png.import",
+      "bytes": 972,
+      "sha256": "dd6110b673f84c86f2eb2cecf8d16bd836b0ada20f2ce489543965671d30bd69",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_3.png",
+      "bytes": 129798,
+      "sha256": "49bed1a44ab53b5e03fbf5444e9511046cab77525dc7b1e06f8d9728a9ebe009",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_1.png-0d0b8ceb8673df3f4ac3385d6ed4abec.ctex",
+      "bytes": 64962,
+      "sha256": "c76b8f43f36b72cb8d42c761e77dea448447898e18791360b798ba83bdf81e03",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/warrior_weapon_1.png-0d0b8ceb8673df3f4ac3385d6ed4abec.md5",
+      "bytes": 91,
+      "sha256": "aeae8f2ac2be2844f31170d181ea854bb577a2814220e86432cb9fb4caf4f6ce",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_1.png.import",
+      "bytes": 978,
+      "sha256": "b879099e34ff8b2fdfb4f131f235c4a425a51334c0f0a1c58555ede8480b1cd2",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/warrior_weapon_1.png",
+      "bytes": 83977,
+      "sha256": "32f0f52163d20de14ce840dd6ad32ed5425fa0a7f669ec4acb7e3d3c09bc3bd6",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_1.png-ef359993ce200f157d4871593be8b48f.ctex",
+      "bytes": 88092,
+      "sha256": "5245678484ffb5f8e49c8a3378db34e3caa57c3e21d61397fd8654c9ac5a5483",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/ranger_armor_1.png-ef359993ce200f157d4871593be8b48f.md5",
+      "bytes": 91,
+      "sha256": "e6c6edc2e2513a489c636ff10af365778712d2fd2cdde8e34aa6ace2a14ebc5f",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_1.png.import",
+      "bytes": 972,
+      "sha256": "38d88a1310ef62378d03e703ac2eb4bb581fc148d79680b89b4ca9e7cdd04596",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/ranger_armor_1.png",
+      "bytes": 123506,
+      "sha256": "3c07c236d7800b95eb8785599585fd51e40cbe6f21eb9fd260a45550522177af",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_armor_1.png-8395e8e8735c18876de6f3366145a06c.ctex",
+      "bytes": 89278,
+      "sha256": "f7ed39aaa3aedef33841eca4a2acb52cab26a78450113da0cd30f539596d8451",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_armor_1.png-8395e8e8735c18876de6f3366145a06c.md5",
+      "bytes": 91,
+      "sha256": "839932c053f3c6475306c0842697af11bd1119a589ffc439f1134e3a28f75994",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_1.png.import",
+      "bytes": 966,
+      "sha256": "6e800d7ed914090cc608db3fe751904f0c540b762e70d3884dc02dbe88ecae66",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_armor_1.png",
+      "bytes": 117446,
+      "sha256": "60ee028c55076bc2184a644a81e9f64f14593472523d875734b07a3a382a0c73",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_1.png-03e3b1a1b1c79cf4784a9eab5309ea95.ctex",
+      "bytes": 70658,
+      "sha256": "ea47921894fc7dd5b35f754da78bd0a7316fe7edda06c5c11b5c9fcff2f85870",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/cleric_weapon_1.png-03e3b1a1b1c79cf4784a9eab5309ea95.md5",
+      "bytes": 91,
+      "sha256": "c4c4f5f6cb0fe8f183cc083b9ca3d829d11299878955ab06e276409e6b40b5d2",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_1.png.import",
+      "bytes": 974,
+      "sha256": "0c2b53c75d0e36b4550e092688518fbb1022e6495fcb8a43ddb98f732bf9f230",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/cleric_weapon_1.png",
+      "bytes": 88314,
+      "sha256": "d1437bc6793f988df2864b8b307543e4bfb937de4109ba9f62f244544b0e0899",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_2.png-63e2da02406b9f6c70ea4cfaf1613aed.ctex",
+      "bytes": 83990,
+      "sha256": "342dd2f3af2b9f55aabe5c24801b243d0aadbd87586599e2f6cf40aacfe96d2d",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/mage_weapon_2.png-63e2da02406b9f6c70ea4cfaf1613aed.md5",
+      "bytes": 91,
+      "sha256": "c3c7962cc2ec9c3c50bbe65c32e5dd60708231f48148ac23dfaedfc667eac544",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_2.png.import",
+      "bytes": 969,
+      "sha256": "e355e031a57a84cbaeb815fb5f09ade9c36b9f2131c0b9c8cf87f08e38e30213",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/heroes/equipment/mage_weapon_2.png",
+      "bytes": 103003,
+      "sha256": "52e3d128bdca6e3cfd550850067f5f947f71c3dc834481c37f9ca653055d474c",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/objective_forest.png-cf382621e9a314ed1150c40ef3ea8d46.ctex",
+      "bytes": 69830,
+      "sha256": "9af87c0c7d80c8df8360b94537620a9576ca7378dbac6db92616976496a33cc3",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/objective_forest.png-cf382621e9a314ed1150c40ef3ea8d46.md5",
+      "bytes": 91,
+      "sha256": "80f34756af313c335ca316c2f02f725f0bd3362ef061b3a3d1f501480667a2d3",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_forest.png.import",
+      "bytes": 972,
+      "sha256": "a746cb042db90b7e146909f1c52e129f35f4eadb2145a9c702d5983a0167db12",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_forest.png",
+      "bytes": 86324,
+      "sha256": "fe1394bea03ba03eeb1f960c7fdca35b2a1661a9f796f314acc4bd7351da2e1d",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/objective_fire.png-21a8bad2c4a56ec8137e78bb3b4896fe.ctex",
+      "bytes": 66414,
+      "sha256": "cb83e45acadccd3922f1eb18fd94637fdbb31e118342c20917833a2db11d9daf",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/objective_fire.png-21a8bad2c4a56ec8137e78bb3b4896fe.md5",
+      "bytes": 91,
+      "sha256": "74490f8bd89b2371abd76b5516f958ee58fd03ef7c5486ea79c3e578366cf0af",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_fire.png.import",
+      "bytes": 967,
+      "sha256": "97dca210a0cdaa6b845dd118e23c165a79c62530272b32c915459fd05b69cf42",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_fire.png",
+      "bytes": 79467,
+      "sha256": "1bc7725f4808e0da4d6b2eb22242f73302d4eb15520f6227ab4d478e9433939e",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/objective_crypt.png-188403d576dc63d648364c09d192e666.ctex",
+      "bytes": 63328,
+      "sha256": "2a3bdc28e896f131a71296d7b782acdc65c43ef3a112131d00c62cbf5e06a9c4",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/objective_crypt.png-188403d576dc63d648364c09d192e666.md5",
+      "bytes": 91,
+      "sha256": "274f758db80858b09896a65a2c86b56c21ee11b4ba69d796aee1a519341f9a03",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_crypt.png.import",
+      "bytes": 969,
+      "sha256": "51878eae1ee3637659ecb97fc84f5f2cbe9fe80cca3574fd94756faaa718e294",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/relics/boss/objective_crypt.png",
+      "bytes": 79182,
+      "sha256": "879348756c5f67b3db267d816c932017106a567cfac30a64392a13db00d1858a",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/button_trim.svg-7fa98fef0069ad90684517c3be7172b7.ctex",
+      "bytes": 1064,
+      "sha256": "8b93a6cfe572deb2389f042a2b6fc7141a719c058b82fc2cc0993269ed2464bf",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/button_trim.svg-7fa98fef0069ad90684517c3be7172b7.md5",
+      "bytes": 91,
+      "sha256": "94fc7c6afff9b26653de3715a789a4d2a1c0417931a06ae2d9799f48ed559490",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/ui/dark/button_trim.svg.import",
+      "bytes": 1049,
+      "sha256": "9546be326b9d37bd4e6df6d4aec8572d433130f69ba8b9e4996f282c27ebced8",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/ui/dark/button_trim.svg",
+      "bytes": 871,
+      "sha256": "3ce6073cc4dc424fb39dd963d4bdc5df90f4d6344f7d15395d49d8e92b4c6edc",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": ".godot/imported/dialog_trim.svg-e34ee88418c7fef491b19db5d2ca7543.ctex",
+      "bytes": 354,
+      "sha256": "6cc1140d7c0c89009fec62d99d19b21aeeddc1601ae989a94e6a60cdce48bfd6",
+      "reason": "cache of retired asset"
+    },
+    {
+      "path": ".godot/imported/dialog_trim.svg-e34ee88418c7fef491b19db5d2ca7543.md5",
+      "bytes": 91,
+      "sha256": "76ec4e62ae06f29f8fa91ce30bf770115e245c197d5b38de78d6776f34c20c6c",
+      "reason": "checksum of retired asset"
+    },
+    {
+      "path": "assets/ui/dark/dialog_trim.svg.import",
+      "bytes": 1049,
+      "sha256": "21672732ec673e7ebdda9781f9d173a3d0967a295bd894163a297275d843de3a",
+      "reason": "import metadata of retired asset"
+    },
+    {
+      "path": "assets/ui/dark/dialog_trim.svg",
+      "bytes": 435,
+      "sha256": "3c86b960b3328bd2e77be14ba46edd454a886ecff5d3cb30e694b5b01685583e",
+      "reason": "retired overlay/objective/frame; original source retained in docs"
+    },
+    {
+      "path": "artifacts/boss-navigation-forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/minimal-effects-layout.log",
+      "bytes": 358,
+      "sha256": "f9707c889abd779c664d6e8402da41f435bc638d372a8a6a8b4e3acb21b81985",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/minimal-effects-hud.log",
+      "bytes": 349,
+      "sha256": "eedae1a62a71cf76259f99a90ade0483fb295ccc86cae4c51668beffbdcdc53d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/minimal-effects-import.log",
+      "bytes": 5210,
+      "sha256": "1797dbc87cf1230ac08e58610e537f273a98d15f86d1c79c137cd68c23648da2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-reaction-enemies.log",
+      "bytes": 351,
+      "sha256": "71723fea45102017f2d76074e839356422ecb746b7e89c4327416c2792185a2b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/boss-navigation-import.log",
+      "bytes": 4647,
+      "sha256": "1d8391c8e299984d6ff3702c3a6f2be9960ca2944ca092dc09871cf95526814d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/minimal-effects-test.log",
+      "bytes": 420,
+      "sha256": "f3505e5d32a90651d2c828e42f978e6444fbe3d4ce75fcf1ee054b1a44252ec2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-reaction-flow.log",
+      "bytes": 409,
+      "sha256": "5ac6860dd479f54be9c206615cc0c1ce5d2707fd762c6ba5041ddcd346c77b8a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/boss-navigation-game.log",
+      "bytes": 667,
+      "sha256": "df84e02728548bdd97539c44279e249ad39606ba3a783952f6204dd090e5a0de",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-reaction-size.log",
+      "bytes": 417,
+      "sha256": "a96b84219b6d651a0dea89dd92f2383a4a7be4cde7af9885a7a3ad63e52a9456",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-reaction-counter.log",
+      "bytes": 93,
+      "sha256": "bffee0696b2277b1535b4bc40fd44ad7e092e6982bde9353889c8ef5a4bebc39",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-reaction-turn_sequence.log",
+      "bytes": 112,
+      "sha256": "9ceda2ffd4e8566e4f704f34703848228cdc99e5711c8aeb012e85727191d773",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/minimal-effects-support.log",
+      "bytes": 109,
+      "sha256": "7b942906b157d79518db46474b704e77e8f0bb72ce3d2252f8a411d87c3b1306",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-3.png",
+      "bytes": 1570553,
+      "sha256": "f34aa4274d479635a53c6c714bb772b715e4a915ca533db89b6c68096fd9b5c0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/embers-dialog.png",
+      "bytes": 691858,
+      "sha256": "7a08afb019f0b6e22b62f5921fbed05b068540aed42ab442205af1539f649aac",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-2.png",
+      "bytes": 771182,
+      "sha256": "2ae8a70c592c025614270198289fb59d6c79a6ff49b176b83b16674b1b6a9980",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/hero-stacked.png",
+      "bytes": 1586131,
+      "sha256": "7dd5d86a34ea8d00d61293b74f7a413909a66f909aeac66374ba0eb05978cfaf",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-1.png",
+      "bytes": 747763,
+      "sha256": "f7403950936de79fbdfbaae6915d0018b1979c2a38892d66e629940847cb3b64",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/enemy-stacked.png",
+      "bytes": 1580049,
+      "sha256": "330b0418278f8d0186b4e28063be283bf479f30a61dbf9421833dbfd1d3531f2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/armored_strike.png",
+      "bytes": 1571637,
+      "sha256": "a38daeea6037a22ed01b3c0a7b5e7779124f02166b4d88c2af5f19addc5f8fe3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-3.png",
+      "bytes": 662200,
+      "sha256": "188a439d968073eba118f97c35f3f086b9da041a946c04e58dd25e43a0ad2892",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-effects.png",
+      "bytes": 1604868,
+      "sha256": "39743e1beba99f12c9494a1a0726ba5aeeba2f08506fd6d87623392aca1c531b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/resurrect.png",
+      "bytes": 1571483,
+      "sha256": "7cb82badbbdf7227cdc88af209d532e8f3b685a649ffd8939a11937b55c4e573",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/triple-embers.png",
+      "bytes": 1552861,
+      "sha256": "8ab6ae5156afa9fb7b027a8efddc4895c75fb815ab14362e88c56869b2cb9f17",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/catalogue.png",
+      "bytes": 192695,
+      "sha256": "059cd3987cdc0288e3ab315c3c2b4941605cbe0421a3b13fca602d93b29fcc77",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-dialog.png",
+      "bytes": 726231,
+      "sha256": "3a87f046c96b1f0631ad9ee597ea20cf5b1e19e3c79f395fc389112b6e88930f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-1.png",
+      "bytes": 1753702,
+      "sha256": "241743e1b6772d1b8a3b12fbe480eaf7bf31d30c072f7b84f71ae111a8539f38",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/boss-2.png",
+      "bytes": 1808648,
+      "sha256": "a124c68f0ca37c812079856c6552bb72d06df3186579c9d61e8e122c788f7c50",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/battle_effects/prison.png",
+      "bytes": 1568885,
+      "sha256": "815413508bc4a22cef62bf88a37ce44760adcc93ddd2b828c96eeec520e578ed",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/boss-navigation/after-floor-3.png",
+      "bytes": 341011,
+      "sha256": "8c8790a5066e20537c5fccc73f154bcf53f3fba02a854f7280e32014f9180b53",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/boss-navigation/after-floor-1.png",
+      "bytes": 341407,
+      "sha256": "6c0888b490cfd15769104ad468cede1dea64ce86aaea0790c8500f2aa284e328",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/boss-navigation/after-floor-2.png",
+      "bytes": 337840,
+      "sha256": "8c4f9b61a0ca2639faf051c910aa75f38496d474a3c01c98aa5dbe786fc6579c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_market_ui.log",
+      "bytes": 353,
+      "sha256": "be790e25b7229ca5388db2c9028d5a9d88a5143a5599045fb71c929e827cabbd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/items.png",
+      "bytes": 1102978,
+      "sha256": "af5cc46881d9275559260158864c4373b959d16c93321bc5536f948c796145d3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/refuge-comparison.png",
+      "bytes": 586176,
+      "sha256": "32b08e83f5a0023c973ccb8db61946944f2a8252bb8f01ae1ecff87c66aa7349",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/church.png",
+      "bytes": 1493416,
+      "sha256": "a9ede2a1fb04da043620e7fc19464f09358dd0cd32de59e66a6f64238bef4589",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/deck.png",
+      "bytes": 748945,
+      "sha256": "053eb935db8778531d691f34e26ef770ec592e8ff82322683d98de5a3538e77e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/upgrade-large.png",
+      "bytes": 690554,
+      "sha256": "2b66ca300ada4c35cc7245da78ecea4df599c5a77f1e5bf3c1e50621d33bde3b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_card_upgrade.log",
+      "bytes": 93,
+      "sha256": "5efca2e40c136ec9b030077fe1f8b510bef41c5422d9dcbbc869b80bb35b7128",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/toast-review.gd",
+      "bytes": 1913,
+      "sha256": "6f3a0fb3ce8aa4367fdd30586ffc90afcdb65beeaca74326503c7bf64d6f20ef",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/victory.png",
+      "bytes": 531896,
+      "sha256": "a72a057df0f6c9d71095ceb9813e23803763128e440cdf294de40b55ec68d539",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/select.png",
+      "bytes": 1613780,
+      "sha256": "de4acae7d1c75ce292e686991fac06e05bb223d8151c6649ef4ee4243c1d70c3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_adventure_expansion.log",
+      "bytes": 119,
+      "sha256": "18cc858be5e314de798b7fc6fdaf9b1c1311570453d40000d2b07e21c7f9a3dd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/refuge.png",
+      "bytes": 1432910,
+      "sha256": "4aa9ac8294b4880d34771b15998ca1bca51d0964251ef26606342b965e9ba2f8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/market-cards.png",
+      "bytes": 1174965,
+      "sha256": "587d5d2a8c48213045b2eeb0ff06248e7a87f94f4240c4b656bd1b73789d8f9c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/merchant.png",
+      "bytes": 1019750,
+      "sha256": "994e491f1e155357568c62b93800e6708cdde53a16e4b1a02e5540a2e1e10b93",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/church-detail.png",
+      "bytes": 1278319,
+      "sha256": "2a6837e69ba2b4ce588f94adcbff29b796171870780aed4207b32b2150601fa1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/rest.png",
+      "bytes": 1099526,
+      "sha256": "583e9b79acd3467ea92482c03ae10cbd94957465837f1e7796df9e219590d8a6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/forge.png",
+      "bytes": 1529345,
+      "sha256": "53d2a7f7e1f2e4b07df9abd6af4cc145395cdc4fdcafeb031522433f3a9aa139",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/map-2.png",
+      "bytes": 331426,
+      "sha256": "e2a3299d7703d6e16306f9497070f4627d669a7ee7d69c8a8269b634f9f73e30",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/map-1.png",
+      "bytes": 329559,
+      "sha256": "4b089ec091f7f151ec0387f1744adae3974c5ad6bbc370c72750bcbc1a759681",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/combat-triple.png",
+      "bytes": 1593915,
+      "sha256": "dbd2a6024c1abfa56106029cae7ffb7b90b2752d9714158d92916e97a685f8f9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/boss-objective.png",
+      "bytes": 1586180,
+      "sha256": "2ce89f9c87ed543b56e1d2418c77285c5616503089dbc49a0483419a409f63c1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/card_event.png",
+      "bytes": 9112,
+      "sha256": "1beac561a4a5459e1c2618a2ab678bc2b03aa8dd306b160897d2048e2917d6bc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/home.png",
+      "bytes": 1041647,
+      "sha256": "ad791a77cfe747f1f83876f9217d277be0d6f4c972564f28df0e54e4aceb209d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/reward.png",
+      "bytes": 1010615,
+      "sha256": "50f29981d24f4c700c0251a6656f4e006f0267b2fc4a3293f4ff3f77d7ec45af",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/victory-details-bottom.png",
+      "bytes": 554670,
+      "sha256": "ab10820b49d93c7811b9e54c93648981790c0656731bed0537b9025349f626eb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/options.png",
+      "bytes": 345211,
+      "sha256": "bdb5e2d0ac83d27ed795197be22f0bc18cbad3d25f49924eb395dacebb80fc00",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/review.gd",
+      "bytes": 10204,
+      "sha256": "323a9f888f25eba6e3dc7d52223d99bb0814cb659f169188f97808f34a145861",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/risk-confirmation.png",
+      "bytes": 165176,
+      "sha256": "1a8a5a3fbe3674a2df62a1702b1240b21a4e54847ddaa8d9ab4d26a7cc966fa3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/upgrade-cards.png",
+      "bytes": 689243,
+      "sha256": "d72e48ec73e457021b0c92ee7680de0298196c0746646ff8b15c53d1eda797e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/event-pair_cleric_warrior.png",
+      "bytes": 1185878,
+      "sha256": "4a8de8725141d7632421bd05b16a1406b85bb6abade8214527fcfde7354a6da6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/market.png",
+      "bytes": 1471799,
+      "sha256": "8984f215ebef0d33c828a387fa3e45c053059b6c1a37c585f7996d798cd3a797",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/event_cards.png",
+      "bytes": 532568,
+      "sha256": "bc738ba317457506f4a8c57c1a6c71add9754d34594b2937f5b302ee8cba6ed6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/market-notice.png",
+      "bytes": 1116217,
+      "sha256": "f8ac478d26b60fdd73c619a1c1b2053bb9fc1ea1c53c46b85c8bd023b2fa72ef",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/victory-large.png",
+      "bytes": 538511,
+      "sha256": "5a491482c37467ac898b48fec63ee37973bd3b18c2085820fd2b411f00d82809",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/bonds-unlocked-large.png",
+      "bytes": 325708,
+      "sha256": "6ca46fa03d44eb1b79e468d4a9c2d62fadcba4e071a6f99e5555fcc04b7d590d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/boss_reward.png",
+      "bytes": 543540,
+      "sha256": "06c6137cecd22aeeba0feddcf564886e1f507df935a146b7dc6ab10618f28444",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/regressions.json",
+      "bytes": 510,
+      "sha256": "3e0a5d5b41a73079506862b48d09324e81b537b1d2b6c4e192ae7466e6493118",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/event-well.png",
+      "bytes": 1664132,
+      "sha256": "a19a3d631e83da43691e110b9afcf5f7f8413d4b8cde7ed0866bc0351682c02b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/victory-many-relics.png",
+      "bytes": 569863,
+      "sha256": "d4505cd83eacd580a58fa9d9dc4e00580f24891754a851c5522ab6e9f0bbb0e4",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/map-3.png",
+      "bytes": 331524,
+      "sha256": "1bc57465dc16da28d4069f05d17c81c2b8b81e38ad5c51eb096a1ee364dfe3d4",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/bonds.png",
+      "bytes": 337922,
+      "sha256": "c78753c8be08d16d665576e9761d26886eeebffecfb28271203b5e2ceb705cbf",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_equipment_ui.log",
+      "bytes": 357,
+      "sha256": "1eedcc8f2e41f2acc299f71f606761dbb38be060be2c74b8c3659c447bb3024e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/event-cards-large.png",
+      "bytes": 533555,
+      "sha256": "c4a9bf615c71f07622dac5ecc9914c0c58302c1527f4b1028e5993908d1f7a7f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/merchant-notice.png",
+      "bytes": 951191,
+      "sha256": "1a9c0cd9560d2d9d9ec6b7921a4c411e10dd08090c024ca04747689a2cf68d9d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/collection.png",
+      "bytes": 536098,
+      "sha256": "3de12027a35e26841df0a93127c28ad313b3c7ff379a46ae0c6d7fb6916a3a4c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/risk-map.png",
+      "bytes": 337749,
+      "sha256": "5ba090dc6f94e521646374dcf63a10f122a2b632648399bd15954a731aa1e316",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/ui-audit.json",
+      "bytes": 1126,
+      "sha256": "8c90b075e138ceb681f868c31d6eb7236590de510c7c11d9850c3e5387c2e462",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/projects.png",
+      "bytes": 684282,
+      "sha256": "9020ac85fd7ae8235feb11fedfeb66b6d5279af9b3774d904b213e4634e6c5ad",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/bonds-large.png",
+      "bytes": 336929,
+      "sha256": "3836dc93b9cb089f9c126e7b33d25019689e0c615c8bd755034a96d0493d5a80",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/expeditions.png",
+      "bytes": 1230294,
+      "sha256": "33e028baf7585e97676e4767582aee71d122e6a48c7094795ebdb24e5eb7420b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/defeat.png",
+      "bytes": 530787,
+      "sha256": "6a85e3c8e4992f3d796d09526f77aea1367bab609eb171aaf1394bbabdefcc3a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/final-native.log",
+      "bytes": 421,
+      "sha256": "08424f3262719a18ca001fac0d8885ab2ccea89b1d4b43176bc142ebf3e32ea3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_game.log",
+      "bytes": 667,
+      "sha256": "09ae03fa901ed9ea09c2eae3b4ff7ca6aa2b113558359ab7bb4ce0290648c1cb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/upgrade-selected-large.png",
+      "bytes": 794829,
+      "sha256": "5bbd14bf858cf8d591efc06014e7f0f5347c88cffd50e0d26a78e91142518e3a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/before.log",
+      "bytes": 421,
+      "sha256": "a00175d9760ecc514926dee40b5ba8387c4a0f3df1362e266cbb6120867314b8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/base_camp.png",
+      "bytes": 1819742,
+      "sha256": "e3ae568a61abcfa84b936c5c43d9d7e0e94335ad5d8e68aa3d843600ffbb34b9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/training-group.png",
+      "bytes": 1716255,
+      "sha256": "8e218060c2df0d7f64a35354b363b8238d82dd46334e0d1da6956361e0551fc5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_collection_ui.log",
+      "bytes": 111,
+      "sha256": "140d3883b14a2e977e6bac044c813a22232128387875ad99e0cc75e38b2ec3fb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/toast-native.log",
+      "bytes": 464,
+      "sha256": "97c9bc4ca55c54a8629beed027b1527367ca95364321ce09390af92a38aba45d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/event-pact_blood.png",
+      "bytes": 1398407,
+      "sha256": "a29a90194821a8be27442638e3fe4f6bf7fee59c62f35ed2fd1c4abc1fee4661",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/forge-detail.png",
+      "bytes": 1055305,
+      "sha256": "aca5c8580ed33136d6ab0bcbc0676bb380f830ee4fa089eac958522b34406887",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/training_setup.png",
+      "bytes": 1542514,
+      "sha256": "da9318c06afc290c96347edf08fd39f86ed67f914f1ce50845ede4ff2676ecc9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/upgrade-test.log",
+      "bytes": 93,
+      "sha256": "5efca2e40c136ec9b030077fe1f8b510bef41c5422d9dcbbc869b80bb35b7128",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/merchant-large.png",
+      "bytes": 1025005,
+      "sha256": "d7d7ec78dde24f35b3b947c9e5b6054838dade1d556ce5d8b5a188f1cf8f2cb7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/bestiary.png",
+      "bytes": 383742,
+      "sha256": "c506c4ed6834dbdac17c70c0227da03aa344f29a8d1537a29343721c477da27a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/training-config.png",
+      "bytes": 355163,
+      "sha256": "7c23411ccac57768f00b7ad0cfef685b7dc3f7f09a7ffd3d3812cc21df0f5545",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/equipment.png",
+      "bytes": 1533699,
+      "sha256": "9ff86b48e280cd375351fefbddcdebaada4d39d338bf2ce4d71c803981f141f6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/test_expansion_ui.log",
+      "bytes": 110,
+      "sha256": "15d07678026dcc8f617b59dc70a3c375bef23162dd8dfd9efd148dc825093062",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/layout-review/after.log",
+      "bytes": 421,
+      "sha256": "4fb51412bbeee38329398bf92a64025ae671cadcca216702589b558e618d1a48",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/map/group-open.png",
+      "bytes": 279141,
+      "sha256": "4a85e2fab14687585e4bcc3bf047365160acfc4ba83c6eb0ee179f908c85800a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/map/initial.png",
+      "bytes": 332593,
+      "sha256": "4dfb4ac809a1acdc6d0421eaa7f8f2691763cfcead9be04ebc3f3bc4ea75357f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/map/current-room.png",
+      "bytes": 344150,
+      "sha256": "b17c19a06d41648fa0b2125d41088c8107da38cad7353e2b320e913555e02019",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/base_camp/arch.png",
+      "bytes": 734151,
+      "sha256": "d850c9557f1df2332100fdd14dd8a0367b4756cd0f039aaab7a445ec45c7ac3a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/base_camp/confirmation.png",
+      "bytes": 779356,
+      "sha256": "fa192b761f8f4b48bea0402d64f4c4e8ceb0d065593368cba25cab78e6187c5b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/base_camp/base-camp.png",
+      "bytes": 1751499,
+      "sha256": "a35be94f674eb3391455df3d3fb54d320aa69d3c13843712eb6a093fa271148a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/base_camp/built.png",
+      "bytes": 1774610,
+      "sha256": "c96434890a5118e047a4fdb8f1cfb1f01faa82ba021da1bcd01a493a393cf603",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/geometry.log",
+      "bytes": 488,
+      "sha256": "d7f2cf1b28041cf9412b397b20aaefa23df526bc9114790266aee10ee5495099",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/test_dungeon.log",
+      "bytes": 105,
+      "sha256": "33a5c068f2007f5250b71d96ae2b39a8e32b0e76066d58b8363f040765355d73",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/floor-2.png",
+      "bytes": 334315,
+      "sha256": "32da8445275329a7f40c6e63334db2a4adb4757db5f3d80e697e39ba7b44eec8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/test_enemy_formations.log",
+      "bytes": 117,
+      "sha256": "88eadc5566e258e32f262625a9eb46eeb9d915c296bfacca6ce210c8329767e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/test_spiral_map.log",
+      "bytes": 112,
+      "sha256": "491391b3defd2e8a6e129fc685a4e6973bf7a2a22e0409474f24ad54fc1fda18",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/floor-1.png",
+      "bytes": 338688,
+      "sha256": "540fc5635f04dd859c0e047aac1a867d90926278a3319b9d9b80f0280e09b52b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/review.gd",
+      "bytes": 958,
+      "sha256": "08691170b95bdf8cdbc99a5182b738711af54f8311b0050ebc0d4cc6a2d8979a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/test_forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/map-ui.log",
+      "bytes": 405,
+      "sha256": "530a0c2d5d8bf0c5b5128459479cb2a11106974b13ac59a1b640ad8d28d83a5a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/native.log",
+      "bytes": 452,
+      "sha256": "bf32459035bf74d1051de15faebd4e0ed693e97f07d4d3ae71e33894c66c5612",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/spiral-map/floor-3.png",
+      "bytes": 330406,
+      "sha256": "a6f04ace2437b8cd71476b75c558a8fb6edd9b27a0e7fc6ed7cc53e93fd93701",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/audio/options.png",
+      "bytes": 601949,
+      "sha256": "c7bf8f95aad4c0a0f025c5e23275ab6ebe9fc89e9fc73a76d8156b6e0fd8be89",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/audio/mix.wav",
+      "bytes": 948268,
+      "sha256": "40d92a7bbbf395f5765587e186698521088485fa9b2101f98a8a8a6d934f914a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/energy.log",
+      "bytes": 355,
+      "sha256": "d1542a43a4782d0a4c131dcc50c5e7df4eb82f4983c9d9d5fbb1d7af1dbdc744",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/warrior_cleave.png",
+      "bytes": 1855668,
+      "sha256": "8ad4b4064861eab35c582d70b0ed685f07561b3c3f0f605960cc6ad9e2c63354",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/test_support_cards.log",
+      "bytes": 113,
+      "sha256": "0f950a9a68d731da3af0ea7bfdd4dbbf8d4c3cd21aa8f80fdd5771ef2db1bec8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/warrior_slash-reduced.png",
+      "bytes": 1835970,
+      "sha256": "c8149554dcc79c98d26c90871e2b266b76800015cdb34c627a4bcf1ebc4114f8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/warrior_slash.png",
+      "bytes": 1846288,
+      "sha256": "3fac0b11865460cb8d275a12ca68483d1dc74df3f9837165e26ca491dd9aed3e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/native.log",
+      "bytes": 413,
+      "sha256": "b8cba67c79b6d82e80b301c0310887399b1bd93b3e38f0babeed5908199dbb0d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/warrior_onslaught.png",
+      "bytes": 1874979,
+      "sha256": "5ead8c68bd132f7fd759e0a19f92b2ebd6ae70cfca415728f106aac1c7098c30",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/test_turn_sequence.log",
+      "bytes": 112,
+      "sha256": "9ceda2ffd4e8566e4f704f34703848228cdc99e5711c8aeb012e85727191d773",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/guardian_bash.png",
+      "bytes": 1854848,
+      "sha256": "0955eb22f3923093e59f343d3aabbbd7198de9f254d74e8d09980d045c81fedb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/rogue_double_fang.png",
+      "bytes": 1808626,
+      "sha256": "da049e8d370820308d9361f1c2ed4d87c1a8c1caf9ea1a854a1f32064d62ab22",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/test_energy_timing.log",
+      "bytes": 355,
+      "sha256": "d1542a43a4782d0a4c131dcc50c5e7df4eb82f4983c9d9d5fbb1d7af1dbdc744",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/melee/test_counter.log",
+      "bytes": 93,
+      "sha256": "bffee0696b2277b1535b4bc40fd44ad7e092e6982bde9353889c8ef5a4bebc39",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_warrior-1.png",
+      "bytes": 1320423,
+      "sha256": "d21b45f1700cff489cab217090c02b2bb998eeba3c7d686397473af8d9f0c7a9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_mage-0.png",
+      "bytes": 1149108,
+      "sha256": "79aa2839b8f6ac527d52eb1f0728b7bad59a852a2b6cf39b17946bb7665d0db7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_rogue-0.png",
+      "bytes": 1184181,
+      "sha256": "6881786a56e157b075cc61f800a69b5f758287016743109dba52b4896943eee9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/spiral.log",
+      "bytes": 112,
+      "sha256": "1365e4947c9e4e6dc04c9ef35c6ef9eae43604d19322118aedfc5bbccdb11a7e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_1-1.png",
+      "bytes": 1150864,
+      "sha256": "4495f9a8a7ed06d554d93fbaf6bb926421f81bb783e2ae2ee1c5e72774804bff",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_rogue-1.png",
+      "bytes": 1295816,
+      "sha256": "89b7fa7eae320a9fc37645b6e97cc56feb9e67ca882ad19b4791f1e43abb346e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/refinements-headless.log",
+      "bytes": 123,
+      "sha256": "4022d8361ba88b2757698c9cc4e4a2aeaa6229276dfa08b701cacc4203eab91a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/film-contact-0.jpg",
+      "bytes": 65313,
+      "sha256": "950cdcc00ee1b7e18a10a58fbed5a2f0ad44beb175881380f6f4de8a23c2737b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_2-1.png",
+      "bytes": 1154668,
+      "sha256": "dfd4d3ce87a7f1a2de72875272cfb45944d7bfd9346682d9981cd2287a2fdb2e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/map-legacy-presentation.png",
+      "bytes": 337752,
+      "sha256": "febd564f363e4225c7aa5b609da5eea6bb0589755a7c71ad7e682607db22d02a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_ranger-0.png",
+      "bytes": 1268856,
+      "sha256": "e17e488ea4066b143dcbb933e6a3db7a310114354a42ba41a8b876a39335baba",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/map-clean-1.png",
+      "bytes": 334673,
+      "sha256": "f75544a77058e0481553c9b0fc60eec36da021e7330d6d111039f6004ed452b8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/film-contact-1.jpg",
+      "bytes": 62002,
+      "sha256": "6193dc5735bfa2e833e84ed2879a0a23f4cc75218c728d7b2ed7cf6ba1dddfc9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_warrior-0.png",
+      "bytes": 1194932,
+      "sha256": "113d31c0279f5ceba6a0a8ef931055e3c8c8ad71882a271a3040fdab1d8e11a1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_mage-1.png",
+      "bytes": 1375917,
+      "sha256": "9e6f6de5eb22cfd7a3525f82d3cf90ce6165061274d90bc1b93e0b24bce4eab5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/regression-run.log",
+      "bytes": 153,
+      "sha256": "0c90df55a417d6420eae891a0de386e357a41f887111c39fe5b49b4b2919569a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_1-0.png",
+      "bytes": 1251665,
+      "sha256": "266df53962143f6f2001de944ca7d89fdf84222d663bb2558d9250eef3182035",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-intro-1.png",
+      "bytes": 1278908,
+      "sha256": "723fe7ac5cb05f1b9dd4f82703f3653ae3cb37e3aab5d9043ff7cf4e8ff93178",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_3-0.png",
+      "bytes": 1301614,
+      "sha256": "dee26b3819941b2e1f3e3c0998f1422b4e7f915be1d835076366f115be537b69",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/audio-native.log",
+      "bytes": 405,
+      "sha256": "c5a2fc430242261764c43892ba92af8bab42f878151dd509910c3ce9f418ad6b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_ranger-1.png",
+      "bytes": 1312753,
+      "sha256": "307c0946c0aa1152709962b26a92d0b62aa220b2fd55fc950158528fb0f3e0a9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/uid-import.log",
+      "bytes": 1724,
+      "sha256": "601e94b157cc81a6d6e92fa8bb315c358394c2e060db2376a4b3fbff515ebab7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-intro-0.png",
+      "bytes": 1044711,
+      "sha256": "e33e827ba60cc36329073e95cbc9f4a88c7dae54891cbde4b8ed8f64806a23ff",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_3-1.png",
+      "bytes": 1107383,
+      "sha256": "63fcc150a81814cf36ceaef0725a80ab0d10727dcf418a3e7eb764de05042992",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/camp-built.png",
+      "bytes": 1867540,
+      "sha256": "43f7558fa0499700a1679b8ab13860c05ec0242b451ea6a39a85307820ea56d4",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/map-clean-2.png",
+      "bytes": 336622,
+      "sha256": "f71146269d35c15403b4a8501f1123586560ee7d66a00ab305392061e5869f54",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/camp-unbuilt.png",
+      "bytes": 1751884,
+      "sha256": "f83eb7b1aaee9a294334f3789de8541b3c5435f2c7840687bf3afaf75db15ed2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_cleric-0.png",
+      "bytes": 1239949,
+      "sha256": "91687556d7b45cae08850adb1888aac587afac48f3f03e41bfccd229982567ff",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-intro-2.png",
+      "bytes": 1041195,
+      "sha256": "cdb79083814a4760216146e26b474847cce71f4420a601b21b01653530ac069a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/dungeon-final.log",
+      "bytes": 105,
+      "sha256": "33a5c068f2007f5250b71d96ae2b39a8e32b0e76066d58b8363f040765355d73",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/art-import.log",
+      "bytes": 137,
+      "sha256": "619215f7f7c17981f9c71d91c3e488658277bb3af74977498ffb597d9dc498a2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_guardian-0.png",
+      "bytes": 1342919,
+      "sha256": "3072dcdc6df89ec6716c33e26f5ca9ea8fe909be8966132191e9cc31562b8616",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_guardian-1.png",
+      "bytes": 1367889,
+      "sha256": "c0f1e7be9979e5ee5b71b5c646f22f6722102d4c7478d8dae052a622fe800d33",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/editor-import.log",
+      "bytes": 8426,
+      "sha256": "a8e32bd24f99eb0d9c5eed0d1f03009fc355a3008ab98db0e477b9f88840f768",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/final-import.log",
+      "bytes": 6926,
+      "sha256": "82df0b93aa021dc7e02754ec5171883a5d07e814252dc1e4be07e4352b57b658",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-boss_2-0.png",
+      "bytes": 1307224,
+      "sha256": "dddba1ded5d1bfafa581fa6fafaa22af76ffcb28e1bb6f07b862cf32d936c3b3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/metal-impact.wav",
+      "bytes": 149548,
+      "sha256": "66c23b66ac86a9ecb278d9ed2424cc361712eb53727de2aaf2bcb13db16a7344",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/refinements-native.log",
+      "bytes": 425,
+      "sha256": "00691f4050846dd41cdbfe22391d35eff7c77caad4fcfc042e19c461f77af219",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/map-clean-3.png",
+      "bytes": 336672,
+      "sha256": "1d02493258aa4432969c7786073b13147284ff793c782b1987f895d0c9aab700",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/shot-hero_cleric-1.png",
+      "bytes": 1353445,
+      "sha256": "ad90646bfeaa0bb029dd429a29150171a437b644539489e3f3bdd949b1d4f11d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/film-contact-2.jpg",
+      "bytes": 43471,
+      "sha256": "ee38739867dff8edf706930d993adf155093735e28e30a1b8cd941aa2547d018",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/collection/achievements.png",
+      "bytes": 533488,
+      "sha256": "29a5da8d92e66a1b4153f78b420c7df62c69f3df5b9a714e69a81fc232e65e7b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/collection/unlocks.png",
+      "bytes": 509753,
+      "sha256": "3edfcab4cf1b43cef9adf8e22632b11fc5b7ba57c5ea94ab6d8ba39497b7d6c9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/collection/unlocked.png",
+      "bytes": 546786,
+      "sha256": "ec465a4eaeff1b835b2dd790d9730d2a8474dac9f5a485eb1f74e11689f78023",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/collection/history.png",
+      "bytes": 856536,
+      "sha256": "2616e5c9801b8dd58feb58199c31c33257326a2f6a13ec5bbbb7c26c87fe0bcc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-variety/test_adventure_assets.log",
+      "bytes": 359,
+      "sha256": "463e2e4009b6d450088dac9e488c86434b5279046c47d9b43fab35f053a6671c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-variety/test_dungeon.log",
+      "bytes": 105,
+      "sha256": "33a5c068f2007f5250b71d96ae2b39a8e32b0e76066d58b8363f040765355d73",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-variety/test_enemy_formations.log",
+      "bytes": 117,
+      "sha256": "88eadc5566e258e32f262625a9eb46eeb9d915c296bfacca6ce210c8329767e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-variety/formations.log",
+      "bytes": 117,
+      "sha256": "fdfa3985550a3bcb1667b5f4fd7a941af202d4e06a94c19cec593b82d71dd6be",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-variety/test_forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-ash_wing_beetle-attack.png",
+      "bytes": 1759995,
+      "sha256": "646e891a931d7b1a6ba43e4d1ed37ca67548a73cc3ca41fbb4d3384af4f12f64",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-ash_wing_beetle-cutin.png",
+      "bytes": 1902251,
+      "sha256": "bebbaf29373f1acc3ec91ee389fbaebc83fc585171912c2b746e11baa34753cb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-gallery.png",
+      "bytes": 958867,
+      "sha256": "a53d6337c99eb60e41a257e5b41b90b214e6f1a841110d40879fa1ca9acc4f51",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_rogue.png",
+      "bytes": 1156549,
+      "sha256": "9165ffbb3e1c1e3347df5cc6a8fc38ee81640a8edcd7460d732b68b11eae2a61",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/screens-contact-1.jpg",
+      "bytes": 628344,
+      "sha256": "8c45bbd8766289706c0fbc434c2551b1f701a5f70995891bc18ec017aef3386c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemies-native.log",
+      "bytes": 428,
+      "sha256": "f37fc923a8bc53e99008ff82ea5ea235b296c1d44c128b11adf11c8b8d0e44ae",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/ui-native.log",
+      "bytes": 421,
+      "sha256": "787ceb32e2c2df25a1ccdd50b9a852259b1994c892d3a00fb906cc2bb8abe497",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-ash_bombardier-cutin.png",
+      "bytes": 1853740,
+      "sha256": "0f79aa2e82c7ba33746ccc9dc54f97def44f20564da5fb9975af61dd7c530af6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinematics-contact-0.jpg",
+      "bytes": 345624,
+      "sha256": "4ec1000dd96f5b5f5c281d54f13d66b24ecdecabe053b7d9289dc0bdcaa64ba0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/impact-12.png",
+      "bytes": 1761998,
+      "sha256": "2856710f7b9bfd3662c8fda02a802fa964ccf9b9ebd23267ee8e1e7fedadad3d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-forest_hunter_enemy-attack.png",
+      "bytes": 1747010,
+      "sha256": "24d74a4519c96e8c4ad038e737a264a36c0214782b7d763081ad5aa962d2c5f2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_ranger.png",
+      "bytes": 1176769,
+      "sha256": "ffa72d47edd90f83928c7f159cfc505b3f8c60bf2e4a4f26f99e686483681c88",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinematics-native.log",
+      "bytes": 410,
+      "sha256": "be498ca0c315b565a99d9c8e0b634fc903a4a5da1d4a07eb51625fabe725a853",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-boss_2.png",
+      "bytes": 1348681,
+      "sha256": "221b335aeb164874534b1cfe10ae7d89105071b110ffc46ddbd2b96fc70170b8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/audio-native.log",
+      "bytes": 405,
+      "sha256": "0cdf4d38c23e79b64f84552e96e97bfa0e98336b6b2ccde9ffb408669ced1b3f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions-final.log",
+      "bytes": 20,
+      "sha256": "21f3a706159de5eb2de8d614a90cf62bfce9d36a047e19d712ffc250341b408f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/import-portraits.log",
+      "bytes": 3711,
+      "sha256": "a10eecf3439a093d47b97f01cb058745902a9b6936c5b1b7046bd4955e834684",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/impact-7.png",
+      "bytes": 1762164,
+      "sha256": "bfd2acb95e16ac8686a08ea18cf5a4493ada57a6dcdd3848e08fd54ab20cd3bc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/import-final.log",
+      "bytes": 4820,
+      "sha256": "1a7ecc03890c981327ed9cccf1f00116f171dd501411e4ca5c376c342f1b19b6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-crypt_storm-attack.png",
+      "bytes": 1757559,
+      "sha256": "592d0f969137a4d6cea627a14278e1a99f1a4c785d836990252545516af7020c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_cleric.png",
+      "bytes": 1193831,
+      "sha256": "0f959d14fa78e101277ba2bfce5fa00370846c35928864b8e3bfa916c7672a61",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-crypt_storm-cutin.png",
+      "bytes": 1925878,
+      "sha256": "1ca511586fca953233d569dad8ddb42b1665a02fb00ed3f418129c002b92e61d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/audio-intro.log",
+      "bytes": 3747,
+      "sha256": "80bc79dae9bed52ab968c953e982068d33c3fc572f9604081ecc5cae99aa1176",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-boss_1.png",
+      "bytes": 1225035,
+      "sha256": "64301fc7b47d09022cb8b303fc5212129f9c9e887b64f82a9ebf06857e5d55f0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-forest_miasma-attack.png",
+      "bytes": 1758621,
+      "sha256": "f562f0e87aed568a5f09a5edcef83760ef34e4eb5deaff47173325eebed13751",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-crypt_scorpion-attack.png",
+      "bytes": 1757943,
+      "sha256": "0cc65293f9a0975e55470161eb512a00c3045363aba936998e738d8c86eb4731",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-boss_3.png",
+      "bytes": 1232287,
+      "sha256": "9b8180d885f03706f90c62d71c1dfe99bbdc3afb9e23f8d014f7ef8f18a30963",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions.log",
+      "bytes": 1116,
+      "sha256": "8cdf93c729e7eb2203f92699ea9ed76dd8a38dc5bfb53297c599966b322efc33",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinematics-headless.log",
+      "bytes": 354,
+      "sha256": "253bab63c015f609666468d02453432b1a749f438252bd7eae3fc31e9c857dae",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/import-ready.log",
+      "bytes": 3259,
+      "sha256": "5ab9798424ae00485205be3357415dbdffecad67f9c7a8529bc1d4b01b6ba042",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-crypt_scorpion-cutin.png",
+      "bytes": 1906289,
+      "sha256": "a6f0aab5e611ae1585ca25461156ee7b3623e128dadbf38f1000981704d1aa88",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-forest_hunter_enemy-cutin.png",
+      "bytes": 1814632,
+      "sha256": "40307beed73fc6bb2313610c49f4f3a421a8443897aefd036da1bc91faeab4cf",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-intro.png",
+      "bytes": 1253042,
+      "sha256": "27fc6a5ad7b5d23972d4fd5b2d58fd2418504aae6aa25fa68ef8ddc2f6933562",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_mage.png",
+      "bytes": 1158403,
+      "sha256": "2b7c83162bb8a00fad335da8f809f3ae2efe8bb3bfea3c106a15df0c7d0691fe",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/screens-contact-0.jpg",
+      "bytes": 704186,
+      "sha256": "9664e51d43780a0a813ee8b172ff3e15fa703456277a252fb6d263399104ba95",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/import-optimized.log",
+      "bytes": 4903,
+      "sha256": "cc52951a62692178a3bce0939caa54afb3138cc583f86da5f7afd23543090ae0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/audio-return.log",
+      "bytes": 3430,
+      "sha256": "38fc366c5d9d0b300bb15d60ba077906bf3b4f123ed47f661bea16a7650cde87",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemies-contact-0.jpg",
+      "bytes": 613857,
+      "sha256": "f68fd8a81711722f3d6221dc93d591d1d5c96de7282cffa6843f61e1568d1333",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinematics-verbose.log",
+      "bytes": 42466,
+      "sha256": "8e1a9bf5a62c5b4eeefe0a2c79ad7c2ffd3f6bc1337a994b42a4b3b67666beaf",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/pack.log",
+      "bytes": 117,
+      "sha256": "610ef1d8648b3fcf896a1ede72b09639f4aee61892c805b608c02233638260b4",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_guardian.png",
+      "bytes": 1222541,
+      "sha256": "e8e8e2585ffb03faded9c7cef3e89b9f7590864a20b86bc775cb377f7f35623e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/impact-19.png",
+      "bytes": 1761961,
+      "sha256": "938301c4785d73a66fe6d096cb56a16c2c0d698c515ad43c472104365d6af959",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/import.log",
+      "bytes": 4537,
+      "sha256": "6ee5097ac4dc431ab2523655ba7d8832049af3fec32dcbae5148646c538ea917",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-ash_bombardier-attack.png",
+      "bytes": 1753422,
+      "sha256": "d56363a007727331b1c5347de49419c027604d2176ee8b08ec3c2bd9210bae27",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/enemy-forest_miasma-cutin.png",
+      "bytes": 1915963,
+      "sha256": "0b9f668dd26cf568d27a4b20c72692448111aec99acdbacdcfc6eb730db8a52b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/cinema-hero_warrior.png",
+      "bytes": 1167516,
+      "sha256": "59fb459022b39afe3f816b98efbeeb9a930ba9234645c5e1574da7ac0c8092bb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/damage-feedback/check.gd",
+      "bytes": 1707,
+      "sha256": "96ca828f2d6fe91924a15ab9933b3d2176a0ff18c794637adc09584d77396033",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/damage-feedback/visible-numbers.png",
+      "bytes": 1558969,
+      "sha256": "6e81ae2892b009b5cc0f97c6f7e2e597a140f6a07c7ce18687ef59dd439fbfff",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_market_ui.log",
+      "bytes": 353,
+      "sha256": "e434d97822b6b6776bb45ec7e40d78e97396937dbee4049f1cf0cb43e31b4ed2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_combat_layout.log",
+      "bytes": 384,
+      "sha256": "dddaefd5e0aef297f73779fab9011ae9c3977830c682bdece4c540f89c688b46",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/balance.json",
+      "bytes": 454556,
+      "sha256": "cdf045323bf56c1d78e7ee23adf4b1d955d8f0a9a0272d305b03ce7cdb084709",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/items.png",
+      "bytes": 1102978,
+      "sha256": "af5cc46881d9275559260158864c4373b959d16c93321bc5536f948c796145d3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/game-rerun.log",
+      "bytes": 667,
+      "sha256": "ea30c622ec57205decec85276247c2051b4d4ea03a15cd23a4edf9217da40aa5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-server.log",
+      "bytes": 2036,
+      "sha256": "099cb6ce7519e5097638b4eceb7a3f160acf6ba6fa9dfc2595386bde7b76c3b8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-performance.png",
+      "bytes": 1555345,
+      "sha256": "96f7c2a56a6434eeb661da2dddc57b4f65313fdeaf72d6bf8f33a2caf661e102",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/refuge-comparison.png",
+      "bytes": 586176,
+      "sha256": "32b08e83f5a0023c973ccb8db61946944f2a8252bb8f01ae1ecff87c66aa7349",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/church.png",
+      "bytes": 1493416,
+      "sha256": "a9ede2a1fb04da043620e7fc19464f09358dd0cd32de59e66a6f64238bef4589",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/deck.png",
+      "bytes": 777523,
+      "sha256": "decc87201823720c6c25a911fdf6a658c984eab5aac676bbddc1699886e19467",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/ui-native-audit.json",
+      "bytes": 849,
+      "sha256": "7c23c6cb5a2424be581ce08a5768076433d18bfa9d31edf21fe6648bf51728f2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_adventure_assets.log",
+      "bytes": 359,
+      "sha256": "463e2e4009b6d450088dac9e488c86434b5279046c47d9b43fab35f053a6671c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/rules-rerun.log",
+      "bytes": 110,
+      "sha256": "bc8d6b6e7bd7dfa279d56977014218cc72c1eb7c9d45d2061e15c8d66a07254e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_treasure_ui.log",
+      "bytes": 108,
+      "sha256": "ea1b8feab9d107468c00534a7e78613f3fbddde6814d348ad0b52303bf03f000",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/native-ui-final.log",
+      "bytes": 250,
+      "sha256": "5af042e0fc58b0176505ec7af4118c69b92ca48c3c20c7a0d6565136f46d4625",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/rules.log",
+      "bytes": 110,
+      "sha256": "bc8d6b6e7bd7dfa279d56977014218cc72c1eb7c9d45d2061e15c8d66a07254e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_card_upgrade.log",
+      "bytes": 93,
+      "sha256": "5efca2e40c136ec9b030077fe1f8b510bef41c5422d9dcbbc869b80bb35b7128",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_cards.log",
+      "bytes": 349,
+      "sha256": "143ad7c1d1ecdccf2b4c59488f3acee2b8ec56d5b123ed8712e018b73908d231",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-adventures-menu.png",
+      "bytes": 638635,
+      "sha256": "476c586d4fea00ef523b544b4a5234cff0fa69d24e78f1ea7b9cfc9de773266f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/generated-contact.png",
+      "bytes": 1054059,
+      "sha256": "cfbad7c8f334b8188df9e33f0ab1778fed13c8b8feeb2da945273d22a15778eb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_map.log",
+      "bytes": 349,
+      "sha256": "ba9269462e800d6f2a81a4a736195fbd6b8838967f502d21b1dc89a7b8f6e7d3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/select.png",
+      "bytes": 1614089,
+      "sha256": "52f3842c21cbba677bae73871480ef4b52077c32a0b2a88ebd6fede1eedffdf1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_adventure_expansion.log",
+      "bytes": 119,
+      "sha256": "18cc858be5e314de798b7fc6fdaf9b1c1311570453d40000d2b07e21c7f9a3dd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_combat_presentation.log",
+      "bytes": 356,
+      "sha256": "44e08db6e302f2e23949548fa28d35cc2928b4d87170dd0a02fa8b5d6a161a05",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/first-check.log",
+      "bytes": 110,
+      "sha256": "71b4f82bb7d5cce9e5cfa9b483cef02e1a0a6d37a37bf1f4e45d056aff87958e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_treasure.log",
+      "bytes": 127,
+      "sha256": "99ebd56881a794bf54d6ec19f2910ea69e69e4b60e81d62698e25e61e09d48e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/refuge.png",
+      "bytes": 1433187,
+      "sha256": "4c8fb0f6715488bdac228376c7bce77cbf0522a0a935303075c92dd39a651dc7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_combat_depth.log",
+      "bytes": 110,
+      "sha256": "71b4f82bb7d5cce9e5cfa9b483cef02e1a0a6d37a37bf1f4e45d056aff87958e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_dungeon.log",
+      "bytes": 105,
+      "sha256": "33a5c068f2007f5250b71d96ae2b39a8e32b0e76066d58b8363f040765355d73",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/market-cards.png",
+      "bytes": 1174965,
+      "sha256": "587d5d2a8c48213045b2eeb0ff06248e7a87f94f4240c4b656bd1b73789d8f9c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/editor-final.log",
+      "bytes": 2247,
+      "sha256": "8961afb28352f08f96616503a26f4e432bc728f612f23b724f52f04aa5db5da9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/merchant.png",
+      "bytes": 1060132,
+      "sha256": "9e148a105ada82cf57024a889b3fadd3ee51a1df1d0258b7e8cb9adf1b6f9ed0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_running.log",
+      "bytes": 107,
+      "sha256": "49a0366bc30a854911a396decdfb078f1fd9fd7a1c62fe6d13df31aaaf273bd8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/church-detail.png",
+      "bytes": 1278319,
+      "sha256": "2a6837e69ba2b4ce588f94adcbff29b796171870780aed4207b32b2150601fa1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_achievements.log",
+      "bytes": 111,
+      "sha256": "1dff5326d083b18b01dbf1c328d4f3919e29b602a28f6fde45fe36d6b3f478aa",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/rest.png",
+      "bytes": 1099380,
+      "sha256": "37f14552700ece2ec8aaecdc9fb6d1e48ad5053aa657b4eaf7d43b898b1ce555",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/forge.png",
+      "bytes": 1529345,
+      "sha256": "53d2a7f7e1f2e4b07df9abd6af4cc145395cdc4fdcafeb031522433f3a9aa139",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-probe-final.log",
+      "bytes": 1035,
+      "sha256": "2c0429686f324cd831ba5ffc1623efdf29d99fb61e8c34f3109629b50e2da7dc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_guardian.log",
+      "bytes": 353,
+      "sha256": "864b51e2a4d88c2fac8fbc8906e6a91e55653d83baf09969507aab3b4a65e600",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_camp.log",
+      "bytes": 349,
+      "sha256": "cafa1e9367cf49864a1cbced4db8668b96ae2531b2ee850336913463216ef651",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/map-2.png",
+      "bytes": 331446,
+      "sha256": "eb8460f6e9ec514b30558cdc7502c0c295eaf424d569d9618af74b65c058498a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/map-1.png",
+      "bytes": 329549,
+      "sha256": "1ab40a2abfb01e43892b4cb3971351e8d95c2e941f3eca91269626ce9bb81f2c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_refuge.log",
+      "bytes": 352,
+      "sha256": "27ac46461a678cf27e03977518b5ab257e2a3df8f37502f852884c3e7ee36a9f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_camp_plot_ground.log",
+      "bytes": 360,
+      "sha256": "e4b79bd009edcc58b352f28f0a136580a2ea06181e953f5f1c96dc85bba2caca",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_support_cards.log",
+      "bytes": 113,
+      "sha256": "0f950a9a68d731da3af0ea7bfdd4dbbf8d4c3cd21aa8f80fdd5771ef2db1bec8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_equipment.log",
+      "bytes": 108,
+      "sha256": "637938fecdc3aff633fb9d47ae94a041eb3f38d83683218caaac134bb9f29fae",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/combat-triple.png",
+      "bytes": 1594059,
+      "sha256": "8b49fa222d7debc3a506978f98790f71042d7a6f29466d58de9a962652cdc899",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/boss-objective.png",
+      "bytes": 1585295,
+      "sha256": "31e6a7dd50d78025f0348e0a57b3826acc7545b56bfc5531eb25db7a123a97a2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions-run.log",
+      "bytes": 160,
+      "sha256": "dd5d1f3a190e836c77c8b9c5c2d2aeab71e4d118b842605f2133d11343410cec",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_crypt_variety.log",
+      "bytes": 725,
+      "sha256": "f93bd9814725fe34d8244194bfab1a9e528bd0beed80938563e481d7dec1576a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_bag_ui.log",
+      "bytes": 338,
+      "sha256": "f363cdadfbd71c5cc488bef85084e941633fb6a05b0dab4275d805a1a06d21db",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/native-ui.log",
+      "bytes": 420,
+      "sha256": "8df22dab5716bb3991bb1b17546528bd683046991e52be0c260ae94afdde0904",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_comic_motion.log",
+      "bytes": 112,
+      "sha256": "6579e2c11df71573decaea11a70276046eb2389ddcf10fa875d6f327cfa0e74a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/rerun.json",
+      "bytes": 1977,
+      "sha256": "6bd6245e0cf186c6282991b9c1bf47f72035d52c7f190af2f3db5e1b2fe840d1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_base_camp.log",
+      "bytes": 354,
+      "sha256": "eb2dee425fb3dd8ff72b891c4262759ce5b673814fd4c1d4f420ca3defdf7f83",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_audio.log",
+      "bytes": 103,
+      "sha256": "5ce2f08047c7f52b292385952ae812af6ee873445e6bb887ea7608c757e62ab7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/home.png",
+      "bytes": 1041647,
+      "sha256": "ad791a77cfe747f1f83876f9217d277be0d6f4c972564f28df0e54e4aceb209d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/reward.png",
+      "bytes": 1010615,
+      "sha256": "50f29981d24f4c700c0251a6656f4e006f0267b2fc4a3293f4ff3f77d7ec45af",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_rest.log",
+      "bytes": 349,
+      "sha256": "32fb591eabd5f819442b5a6f8e156844cfff75715f8f95c117cd6dd8a2d90cbc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/options.png",
+      "bytes": 345015,
+      "sha256": "4b9137d22cdd4a76982ffa41d661acbf82f01c4b0c7b3141d9e284d4ec972b10",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_depth_animation_flow.log",
+      "bytes": 352,
+      "sha256": "759487812eff00a7b4bebb647cc006b8b188ec6bc7ec47d6115349db316de1e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/collection-native.log",
+      "bytes": 242,
+      "sha256": "45d8c4f791d472137d1d4046e8cb1e629693b07e001d96d9dda7f0598bf21f9a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_camp_expansion_ui.log",
+      "bytes": 115,
+      "sha256": "cc002bf54a6a487f5252482e274211ff46928325aa71d46bebb518469191b66a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/reimport-optimized.log",
+      "bytes": 62904,
+      "sha256": "80360a43c5d50b7ffd1356c1d3dd2a3f478d6f0fdc19b6805be1419b0a87df64",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_attendant_dialogue.log",
+      "bytes": 355,
+      "sha256": "a08b2ebb2b15cc9bcd7a4f3b6d472a226d9b66fc2d340e25c37562aa7bf390d6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/risk-confirmation.png",
+      "bytes": 165166,
+      "sha256": "b4d77f164c773989c0a7d44ae28181ab23e37a7efbb10bd96b29d2bc1ea8b795",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_encounters_ui.log",
+      "bytes": 356,
+      "sha256": "a90bd672860a4c4b9ffe0819aff165e7eda944b35e0a42da493b1ecf0a368838",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/event-pair_cleric_warrior.png",
+      "bytes": 1185678,
+      "sha256": "a69f1524fed7c3989e5a877c1ff4ecbfce0490e9f088cec980782d55640a2fc2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-sweep.png",
+      "bytes": 1953075,
+      "sha256": "e59716300f2e4a261019a77ccd59598c40ac93780d9f555695dfd32eafab32dc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_mage.log",
+      "bytes": 103,
+      "sha256": "739ccef284abf2791b0d7108c2b324847143f6835d0bdc20903d6750ed22a33f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/ui-verbose.log",
+      "bytes": 127242,
+      "sha256": "4b8f778b27c84ed2ce57c6ab8eb010d6159e3aafc6771d2b119f2ebdeb8bf390",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/ui-shutdown-fixed.log",
+      "bytes": 118,
+      "sha256": "a8a096dfe8f7a7216543ddd6a68e56714c383c4762303bf40360e5cde03a1130",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/market.png",
+      "bytes": 1471799,
+      "sha256": "8984f215ebef0d33c828a387fa3e45c053059b6c1a37c585f7996d798cd3a797",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_forest_ui.log",
+      "bytes": 354,
+      "sha256": "d7bd05560a270d8938d13375465b7cda46249bd17043120a86df3f48b1c700c1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/contact_views.gd",
+      "bytes": 569,
+      "sha256": "5eb2d825ea2989020bea5eac0612f5a3f953645c868a060168904f8aac1ac962",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions-final.log",
+      "bytes": 20,
+      "sha256": "f24eaba9b01a9ee62242ff1e0f37720fcf41fa948c6266ca002ed1509e0430f9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_hud.log",
+      "bytes": 349,
+      "sha256": "416b915947521ab188f5ceac4c62999343b35ee6c386b44ce6806ce7464617a0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/boss_reward.png",
+      "bytes": 543540,
+      "sha256": "06c6137cecd22aeeba0feddcf564886e1f507df935a146b7dc6ab10618f28444",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-native.log",
+      "bytes": 414,
+      "sha256": "cd5e5b750588b7c7d2be012ed3d9aca2fea1278cbd6bd8e54fc4691d26ce9e96",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_hero_cut_in.log",
+      "bytes": 163,
+      "sha256": "20f972d0b3cbc3bdf4d646254c3630195500aba01be3c08c203f7a4aa5d4fae5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-guard.png",
+      "bytes": 1944160,
+      "sha256": "5a730ebac7ce50f0f77d0deaf832eadc4ee12cb901337f812ff47fa8b504bad1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/event-well.png",
+      "bytes": 1664161,
+      "sha256": "6f32df68e54ebe67f70a143c21ac678e84585c0c6f63f452098f7e5ffe220e79",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_support_cards_ui.log",
+      "bytes": 355,
+      "sha256": "888154ea2bf73c47c22e0b3391f23718b4f619cbc4da5e3ac0bfd6822d7f4538",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/import2.log",
+      "bytes": 10742,
+      "sha256": "1637688c143def3d895262c3001a913d95028bd8e2454965f2ecaea3601dec1e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_synergy_ui.log",
+      "bytes": 353,
+      "sha256": "61ba4f57da6b035da32f521bc6a1d7f7e995783aff561a8262dabef652fbc16e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/map-3.png",
+      "bytes": 331527,
+      "sha256": "cdbe9cee1e3c265755ec2d1c7f8cba7d662bdde1c2efc8515904a63e91f7b552",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/parse2.log",
+      "bytes": 318,
+      "sha256": "847719a457eeb7f4a47ff0ceeaf8e6030ad930e859468842bee450e50f927e7b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_equipment_ui.log",
+      "bytes": 357,
+      "sha256": "57a4c72b1804168c514b4e84d0c4ff374a488156abb0168a6a7a005c7810c0a9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/import-final.log",
+      "bytes": 1362,
+      "sha256": "7cf6fbd62c40dbd183ec9dba5250c42c0361b0c0942d4cb539f2a4fa9fc28294",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/views-contact.png",
+      "bytes": 5003284,
+      "sha256": "28a901541463c98d9f9faa4185964aed3c5da285f7c2108a3f4eb1facac1b73b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/editor-check.log",
+      "bytes": 4166,
+      "sha256": "6a89c9a434f10af0221a99eb6e03790592eabb71881323c7d0e039b99e945cbe",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/art-import-final.log",
+      "bytes": 108,
+      "sha256": "1c0f6fdb21ec523df7251cd97a9b6917f83d595a837b9926a37ee3c1f7d46544",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_warrior.log",
+      "bytes": 106,
+      "sha256": "d8fac46234bc3034eea807049968db3164771105e6d2b69068ac57497c1cae48",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-probe.log",
+      "bytes": 1005,
+      "sha256": "e79d7aeae42bc7d14afa2fc6e4edef04c566be7e1e792e7696a50dc17ff1a37f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/collection.png",
+      "bytes": 533488,
+      "sha256": "29a5da8d92e66a1b4153f78b420c7df62c69f3df5b9a714e69a81fc232e65e7b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_synergies.log",
+      "bytes": 107,
+      "sha256": "e65223516f2b6e40332cdd986cc6344c72622a12a34c132e37f9520e7b58ba3a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-thrust.png",
+      "bytes": 1947892,
+      "sha256": "4ef5ce9bc7a777f10e1fd56a59dd8e6193910a46f04c7e2696457131e6579a0f",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-hero-selection.png",
+      "bytes": 1555442,
+      "sha256": "056059cc88ee7553cc2871a96d05c1f0817e9f2b07ecb508f30ea341f9275e74",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/risk-map.png",
+      "bytes": 337732,
+      "sha256": "ae079725ab9b7cda994a1be5e0703c1e75ec0fe50047c249cf1e781de45f6121",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/balance.log",
+      "bytes": 162,
+      "sha256": "b1825dd025e3004765686361957e9adbad306d39573c24a619dd76abdabe60b5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/ui-audit.json",
+      "bytes": 799,
+      "sha256": "eecc182181da6c468a531801fd18241bf9be6b916d4ef7b5ecc3b37d300973a8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_combat_expansion.log",
+      "bytes": 361,
+      "sha256": "d6044fe7721d8e92dd3c3cc599a62a4abcaaa2154c7d00313bdc9305c6e1c570",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_turn_sequence.log",
+      "bytes": 112,
+      "sha256": "9ceda2ffd4e8566e4f704f34703848228cdc99e5711c8aeb012e85727191d773",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/projects.png",
+      "bytes": 684282,
+      "sha256": "9020ac85fd7ae8235feb11fedfeb66b6d5279af9b3774d904b213e4634e6c5ad",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_cleric.log",
+      "bytes": 351,
+      "sha256": "4bbd7607ebd2dde75a0f865abe39864a32cb56d063ca681f444dc3234fd3dbe5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/expeditions.png",
+      "bytes": 1230294,
+      "sha256": "33e028baf7585e97676e4767582aee71d122e6a48c7094795ebdb24e5eb7420b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_ui.log",
+      "bytes": 348,
+      "sha256": "5cb781cdc4566bcad071b62067471ea09df6ef44731efc9a2041d142c02580c9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/font_probe.gd",
+      "bytes": 291,
+      "sha256": "2eb96eb15c4ee706b1b6153d8e635db7b64676f3045d8bfb41781d737bfe4e65",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-charged.png",
+      "bytes": 1947179,
+      "sha256": "f3c5a38a7dbadbb54213e701029f426000389875222de5c92b599cee27b8993a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_enemies.log",
+      "bytes": 351,
+      "sha256": "22626bc10ecfe5b5ff459e38143ddbf631f8f268a72282df3f4fa33272d9c9c0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_block_ash.log",
+      "bytes": 106,
+      "sha256": "76ceb60fbcf69d13b962d0d34c08dfa7a8f484348d8974bc8312667e9a03bd09",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/art-import.log",
+      "bytes": 108,
+      "sha256": "355b5789b4de5fb3f5cac77c31817c2733fba4dfe767bcb906b00bd1f86fa16a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_actor_motion.log",
+      "bytes": 343,
+      "sha256": "409e18ae6789e3e94c16dbef997332e8549f870b3a8774d80d88f7ac14e83fa2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_card_art.log",
+      "bytes": 107,
+      "sha256": "51a250392cb6eadec18bf6c8f3bc5a5f0158a28edf27c7d4025107a895906c13",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/parse.log",
+      "bytes": 884,
+      "sha256": "3c60961a445792301f3d5884b12a089e443f6cfd77adca9aac9d734231682df0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/suite.json",
+      "bytes": 7367,
+      "sha256": "4207839a5202670e4d82d25ffa53846812239ac608d0abbfc76a0decbfc933e8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_rogue.log",
+      "bytes": 350,
+      "sha256": "d885c1261bcaa897362de07c2361206f196957f767c4c8160f48025b8bf473b2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/layout-rerun.log",
+      "bytes": 358,
+      "sha256": "f9707c889abd779c664d6e8402da41f435bc638d372a8a6a8b4e3acb21b81985",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_game.log",
+      "bytes": 667,
+      "sha256": "ea30c622ec57205decec85276247c2051b4d4ea03a15cd23a4edf9217da40aa5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_energy_timing.log",
+      "bytes": 355,
+      "sha256": "d1542a43a4782d0a4c131dcc50c5e7df4eb82f4983c9d9d5fbb1d7af1dbdc744",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-error.png",
+      "bytes": 958189,
+      "sha256": "401ad44a7d0dff217c092a2de6fd7776a449d6afd44971ed4891e42effabb8a5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_title.log",
+      "bytes": 350,
+      "sha256": "f2aeeeef1736169c92a75c6b0551c52059e438062204350435f11d937a538b27",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_elite_relics.log",
+      "bytes": 111,
+      "sha256": "2eeff9e715d046093fc2f3677a5a082822d04eb392f84e355cca20e47bd2c2b7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/final-rules.log",
+      "bytes": 110,
+      "sha256": "145bb5ea92559e188c5397554a65788e3f11f4af89af3835f3944ac4e27808f2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_forge.log",
+      "bytes": 104,
+      "sha256": "3e1ce346f752334ba38f2b668e7ff468866168b1281c66bd679531c4ab309491",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/base_camp.png",
+      "bytes": 1819577,
+      "sha256": "5d399967514f67ad684e0ad394a9c27300b9289b6f41cf0b6a4731cc8195b095",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/training-group.png",
+      "bytes": 1715805,
+      "sha256": "38bdb2b03f007d7e46bedcae58bf665a4827d9d785fa9f2c3ec99fb2739b7110",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_collection_ui.log",
+      "bytes": 357,
+      "sha256": "80eba21f082fca30706e69d31b67749cc4fcc30c20fe94a5481d5c5ff0647229",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/collection-final.log",
+      "bytes": 111,
+      "sha256": "140d3883b14a2e977e6bac044c813a22232128387875ad99e0cc75e38b2ec3fb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/shutdown_probe.gd",
+      "bytes": 301,
+      "sha256": "a4e063ac9a16a485193c895c663243eb3ce052d5d8856c6647c9391dd79c16ce",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_end_adventure.log",
+      "bytes": 99,
+      "sha256": "244501dfc0bbb6dbfd00299a8d34c349240254f7c56246029d6607c7c550142e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_counter.log",
+      "bytes": 93,
+      "sha256": "bffee0696b2277b1535b4bc40fd44ad7e092e6982bde9353889c8ef5a4bebc39",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_enemy_cut_in.log",
+      "bytes": 97,
+      "sha256": "9756e18f851e9573a25a4a4d0b30807f309164b7323dbb70ac7872d75c2c5667",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_polish_rules.log",
+      "bytes": 110,
+      "sha256": "bc8d6b6e7bd7dfa279d56977014218cc72c1eb7c9d45d2061e15c8d66a07254e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/event-pact_blood.png",
+      "bytes": 1398325,
+      "sha256": "ce7cad573480465106dd073b37615666eca84637afca01d9645875a18289387d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/forge-detail.png",
+      "bytes": 1055333,
+      "sha256": "bfc208878c3f47d2cdddb414aae64bf8cb391b776a546342a8ac89c837523beb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/training_setup.png",
+      "bytes": 1542514,
+      "sha256": "da9318c06afc290c96347edf08fd39f86ed67f914f1ce50845ede4ff2676ecc9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_detailed_heroes.log",
+      "bytes": 28543,
+      "sha256": "ac07031c07abef5aa02441d351da522e036659833a486398bc98f32536bed920",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/shutdown-probe.log",
+      "bytes": 23319,
+      "sha256": "9cd3a6393f74637e3c89bf47d535f8194f33ca330dbc8b393210e4a601302346",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/boss-original.wav",
+      "bytes": 21773152,
+      "sha256": "35f75b4381dfbb053992876f7dfc567d9fd959d61b73954d5b1cd519753e7df1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_hero_grounding.log",
+      "bytes": 113,
+      "sha256": "330210750facdae0b53b10071334781b2a5eebc2fdaac8791043856758021d06",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_camp_expansion.log",
+      "bytes": 113,
+      "sha256": "805407ae6acf332bb027a4ab70379b67730c439b1b5994251c869357488703c9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/audio-rerun.log",
+      "bytes": 103,
+      "sha256": "5ce2f08047c7f52b292385952ae812af6ee873445e6bb887ea7608c757e62ab7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/import3.log",
+      "bytes": 12776,
+      "sha256": "596ec5437bb11b3bbe6ff9bdaddec14bd01500c96c8d5ba0e023e21a40ea77aa",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/bestiary.png",
+      "bytes": 383742,
+      "sha256": "c506c4ed6834dbdac17c70c0227da03aa344f29a8d1537a29343721c477da27a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_development_start.log",
+      "bytes": 349,
+      "sha256": "87034ea661139e367bd8165aa8248fcff8bacefc1524e24061346ad018a5fc8b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_forge_ui.log",
+      "bytes": 4252,
+      "sha256": "35285734c789a0f0f19c5368c1126e70853387e9a871e74fdb31a4a2b513c0d1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-performance.json",
+      "bytes": 1465,
+      "sha256": "5467794a7567c5c559332802eef46c98356a135b74b9aeb31a7bff7bd557dfee",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_forge_assets.log",
+      "bytes": 113,
+      "sha256": "606a91cbcb47871831e1d06a0d80306cf5069a56df068cf52a3ce4f7a75266bc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/web-camp.png",
+      "bytes": 1642884,
+      "sha256": "fdad4854149081cad04fc5ed4457954d0b389f1d2e2c711ce9caebc1401a5fa7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/training-config.png",
+      "bytes": 355163,
+      "sha256": "7c23411ccac57768f00b7ad0cfef685b7dc3f7f09a7ffd3d3812cc21df0f5545",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/motion-idle.png",
+      "bytes": 1942446,
+      "sha256": "e366f4b2894e8b59246b6567bdec3400bf175a6f9444daf6daea8d4de2583bb6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/import.log",
+      "bytes": 4582,
+      "sha256": "88415c1ff7d44ace213ef1eb9d81d4048b6ef9b8e02429c8b439e3ced86e4e41",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/equipment.png",
+      "bytes": 1533699,
+      "sha256": "9ff86b48e280cd375351fefbddcdebaada4d39d338bf2ce4d71c803981f141f6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_combat_depth_ui.log",
+      "bytes": 3400,
+      "sha256": "1d6e2097fcad7f32da4f005333dd047c35a372a5c303a85141af2ddab3e2289b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_ranger.log",
+      "bytes": 351,
+      "sha256": "28de852a13f27157634739cbac915a78492cca26848495f01bd25c9efed64fc1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_progression.log",
+      "bytes": 112,
+      "sha256": "53c6eb79bbe473200cd5aacc828ee183d27c95083365913f96af136d53abe549",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_reward_ui.log",
+      "bytes": 341,
+      "sha256": "fc55b834cba41619f527900a7854a884935f374913ca2cddc224bd5e449869fd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/test_expansion_ui.log",
+      "bytes": 110,
+      "sha256": "15d07678026dcc8f617b59dc70a3c375bef23162dd8dfd9efd148dc825093062",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/run-setup/locked.png",
+      "bytes": 294759,
+      "sha256": "67ee2975bb743a1048d432a62c30a130ae3c2aaf9bcf752cf08e7fb37c792e09",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/run-setup/rules.log",
+      "bytes": 119,
+      "sha256": "18cc858be5e314de798b7fc6fdaf9b1c1311570453d40000d2b07e21c7f9a3dd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/run-setup/selected.png",
+      "bytes": 301224,
+      "sha256": "d0cce7a0582c66ef334dfb1fbd7a7c873cc2833370e59caa38999f4de7ee98e6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/run-setup/native.log",
+      "bytes": 415,
+      "sha256": "af646076c349666d3d85d439921c4dbf5b084c3c276a297f79911d090110cf73",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/bestiary-navigation/check.gd",
+      "bytes": 1718,
+      "sha256": "33fb6396684e22980565bfe7d337683eceae6f84d9436be2f3942c185f091aa7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/bestiary-navigation/home.png",
+      "bytes": 1053699,
+      "sha256": "810a13c5f87c4eb52caf62098e81bf303f21cd57d03309ae78933f0496032108",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/camp_expansion/church.png",
+      "bytes": 1494951,
+      "sha256": "85f87cba2839c0bd1298649ee3f9e6705fbf611ab80a0dc34f09374e725c9bbe",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/camp_expansion/empty-plots.png",
+      "bytes": 1752086,
+      "sha256": "da942fdf24424e3427c031b6fd14132bce31b15890bd41054f681e570416c894",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/camp_expansion/specializations.png",
+      "bytes": 1242872,
+      "sha256": "a730ee687c12aa085470f3d51d1535f166f32c9ac20385332a90eff16581c60a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/camp_expansion/contracts.png",
+      "bytes": 1429984,
+      "sha256": "3ab4d97186bf3f06199af48cc67f30837b0f237ab0fb7c143448cbf00883a982",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/camp_expansion/camp.png",
+      "bytes": 1876761,
+      "sha256": "2b4bf01c382c3903456df2569d41807bbcf2199a1887a76c9c98e725864af926",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/elemental_2-ash-start.png",
+      "bytes": 36337,
+      "sha256": "8ecad27fb976b38a3d7f638e5418514489393eda6fafd834a7d3eef8dfdffbb1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/atlas-review.png",
+      "bytes": 631159,
+      "sha256": "be08c11e73c34d96c8003435aa006be3e811349fc5730b0576c7cdb9d3c540b4",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/flying_0-after-hurt.png",
+      "bytes": 28472,
+      "sha256": "28e225a46f8030f814ba81f7e36bae47cc20c81b8ea2f14db7e2ce4538a68599",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/flying_0-ash-start.png",
+      "bytes": 29767,
+      "sha256": "9af6fda9043372b6fd02e057e3fc71223651ca106c5d93ded63e10c8fbfad4e2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/beast_2-before-hurt.png",
+      "bytes": 22486,
+      "sha256": "f83d074fd619248d7bbbd6b7b530a261869f4dda729ce1d03de1333ffb1a9548",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/elemental_2-after-hurt.png",
+      "bytes": 34034,
+      "sha256": "07614764d461304359da5e35ff367114be4d33fc71e701fb2a34a776e2b56630",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/native.log",
+      "bytes": 417,
+      "sha256": "dfb3ca96b9b7e7e9a46620f1cffca3dfd1c5e50ddfa1aae41b49c738aa229dba",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/flying_0-before-hurt.png",
+      "bytes": 28472,
+      "sha256": "28e225a46f8030f814ba81f7e36bae47cc20c81b8ea2f14db7e2ce4538a68599",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/test_turn_sequence.log",
+      "bytes": 112,
+      "sha256": "9ceda2ffd4e8566e4f704f34703848228cdc99e5711c8aeb012e85727191d773",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/test_enemies.log",
+      "bytes": 351,
+      "sha256": "22626bc10ecfe5b5ff459e38143ddbf631f8f268a72282df3f4fa33272d9c9c0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/idle.png",
+      "bytes": 102374,
+      "sha256": "568c2cc0f9535cea707003704664c1902fa09b13dc6f549159e73b833650203a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/elemental_2-before-hurt.png",
+      "bytes": 34034,
+      "sha256": "07614764d461304359da5e35ff367114be4d33fc71e701fb2a34a776e2b56630",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/beast_2-ash-start.png",
+      "bytes": 24370,
+      "sha256": "8a0be8e96a9e5cb7e646154410ef67ec885e73312f9dc22accbd39275f238fdc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/test_counter.log",
+      "bytes": 93,
+      "sha256": "bffee0696b2277b1535b4bc40fd44ad7e092e6982bde9353889c8ef5a4bebc39",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/beast_2-after-hurt.png",
+      "bytes": 22486,
+      "sha256": "f83d074fd619248d7bbbd6b7b530a261869f4dda729ce1d03de1333ffb1a9548",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/attack.png",
+      "bytes": 97920,
+      "sha256": "2a04a46c10805ba01b6f00590584495daf70d53d927c3c0d75d4c078a8127ba2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/enemy-size/enemies.log",
+      "bytes": 351,
+      "sha256": "22626bc10ecfe5b5ff459e38143ddbf631f8f268a72282df3f4fa33272d9c9c0",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/regressions/results.json",
+      "bytes": 13944,
+      "sha256": "321572d650bf3efcf4ba14080cc5e679752eb6dd8abb856faab1ddd5930b4453",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/film-review/regressions/first-pass.json",
+      "bytes": 13829,
+      "sha256": "37a1dad94b3c00a9e2f958fe9e789e2502bee418362ea0e450b5ea30ceb19693",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_cinematics.gd.log",
+      "bytes": 354,
+      "sha256": "a686b46815b23f638567a75c02f8c41a8d88cc3a0ca02988a93205b9ac02005a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_expansion_ui.gd.log",
+      "bytes": 110,
+      "sha256": "15d07678026dcc8f617b59dc70a3c375bef23162dd8dfd9efd148dc825093062",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_polish_ui.gd.log",
+      "bytes": 119,
+      "sha256": "3493a6562796467f9728ca570ae29c01b1ca46a913f1265c35a9ebf979c44dc3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_development_start.gd.log",
+      "bytes": 349,
+      "sha256": "2bbd2c601a32a4324510dee683e5e85fff6449d919a35cf18bb327f18bba54f9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_cinematic_enemies.gd.log",
+      "bytes": 126,
+      "sha256": "45242f764f518bce968900b935c98706ba1fdf54a03af76b531e6b797981ee2c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_game.gd.log",
+      "bytes": 667,
+      "sha256": "09ae03fa901ed9ea09c2eae3b4ff7ca6aa2b113558359ab7bb4ce0290648c1cb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_camp.gd.log",
+      "bytes": 349,
+      "sha256": "2af2f3fd8727a7564636d9b19be995ce1a352a7bdf08b6ce2a3ed4ea7b872117",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/results.json",
+      "bytes": 13647,
+      "sha256": "12244adddbd5667a6e5ad30b50d1b163242e9bb883e0d8a014dcd075bf844eb2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_crypt_variety.gd.log",
+      "bytes": 480,
+      "sha256": "21f7648441d5dca7a45c51bc91bc4f7c8e199836eca60a2f3560848e05d3b199",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_base_camp.gd.log",
+      "bytes": 354,
+      "sha256": "d7414889da70f2a14cb2a65328c774d2c700bbeb93ba3a7dd8707fa86188ebe3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_equipment_ui.gd.log",
+      "bytes": 357,
+      "sha256": "1eedcc8f2e41f2acc299f71f606761dbb38be060be2c74b8c3659c447bb3024e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/integral-review/regressions/test_title.gd.log",
+      "bytes": 351,
+      "sha256": "2f8620c70d3acdac7cb968373fdcadb48c0058c062984ef53724af1c5324f847",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_market_ui.log",
+      "bytes": 353,
+      "sha256": "1ad1da7bf52f032fbbd6ac0c32d2f3ebe92bb6fee9dbcbc0e89b518fcccdeae3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_layout.log",
+      "bytes": 358,
+      "sha256": "f9707c889abd779c664d6e8402da41f435bc638d372a8a6a8b4e3acb21b81985",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_assets.log",
+      "bytes": 359,
+      "sha256": "463e2e4009b6d450088dac9e488c86434b5279046c47d9b43fab35f053a6671c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure_ui.log",
+      "bytes": 353,
+      "sha256": "82ee183488a1fe7b33e80457c206291c6ed0c581fb4054e6128b7af543598248",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_upgrade.log",
+      "bytes": 93,
+      "sha256": "5efca2e40c136ec9b030077fe1f8b510bef41c5422d9dcbbc869b80bb35b7128",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cards.log",
+      "bytes": 104,
+      "sha256": "af464973219c2f5e235313dac3bff6bcb50e8aca00f9e61c1159daebb36be253",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_map.log",
+      "bytes": 349,
+      "sha256": "ba9269462e800d6f2a81a4a736195fbd6b8838967f502d21b1dc89a7b8f6e7d3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_expansion.log",
+      "bytes": 119,
+      "sha256": "18cc858be5e314de798b7fc6fdaf9b1c1311570453d40000d2b07e21c7f9a3dd",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_presentation.log",
+      "bytes": 356,
+      "sha256": "44e08db6e302f2e23949548fa28d35cc2928b4d87170dd0a02fa8b5d6a161a05",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure.log",
+      "bytes": 127,
+      "sha256": "99ebd56881a794bf54d6ec19f2910ea69e69e4b60e81d62698e25e61e09d48e5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth.log",
+      "bytes": 110,
+      "sha256": "71b4f82bb7d5cce9e5cfa9b483cef02e1a0a6d37a37bf1f4e45d056aff87958e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_dungeon.log",
+      "bytes": 127,
+      "sha256": "e6ac70aec9367edab0aff706321921ff402816c2b5acb2915e240305ef293e44",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_presentation_refinements.log",
+      "bytes": 484,
+      "sha256": "301291ff0a13c683a734210c602c57ba0646caeb7fb636dbe9df3620dd88ea6b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_melee_motion.log",
+      "bytes": 357,
+      "sha256": "de344ad57e0e80d01868b1e7b15ff2a46b40d52dcfeb052b99fefd3a79cc5124",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_running.log",
+      "bytes": 107,
+      "sha256": "49a0366bc30a854911a396decdfb078f1fd9fd7a1c62fe6d13df31aaaf273bd8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_motion.log",
+      "bytes": 112,
+      "sha256": "9588963a020084af4273d858b4fc1d7a543ee808fa1940ddedfa87994b0050c1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_achievements.log",
+      "bytes": 111,
+      "sha256": "1dff5326d083b18b01dbf1c328d4f3919e29b602a28f6fde45fe36d6b3f478aa",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematics.log",
+      "bytes": 354,
+      "sha256": "253bab63c015f609666468d02453432b1a749f438252bd7eae3fc31e9c857dae",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_guardian.log",
+      "bytes": 353,
+      "sha256": "864b51e2a4d88c2fac8fbc8906e6a91e55653d83baf09969507aab3b4a65e600",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp.log",
+      "bytes": 349,
+      "sha256": "2af2f3fd8727a7564636d9b19be995ce1a352a7bdf08b6ce2a3ed4ea7b872117",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_formations.log",
+      "bytes": 117,
+      "sha256": "e25fd5b95b337ef080905d64c2cb2d4e7ee77d9bfa69784948c52a5404b2210d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_refuge.log",
+      "bytes": 352,
+      "sha256": "05897c88222fb3d985c199efae2fdd839104d8d9d664115107fc864e349aac1a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_plot_ground.log",
+      "bytes": 360,
+      "sha256": "e4b79bd009edcc58b352f28f0a136580a2ea06181e953f5f1c96dc85bba2caca",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards.log",
+      "bytes": 113,
+      "sha256": "0f950a9a68d731da3af0ea7bfdd4dbbf8d4c3cd21aa8f80fdd5771ef2db1bec8",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment.log",
+      "bytes": 108,
+      "sha256": "637938fecdc3aff633fb9d47ae94a041eb3f38d83683218caaac134bb9f29fae",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_spiral_map.log",
+      "bytes": 112,
+      "sha256": "1365e4947c9e4e6dc04c9ef35c6ef9eae43604d19322118aedfc5bbccdb11a7e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_crypt_variety.log",
+      "bytes": 725,
+      "sha256": "f93bd9814725fe34d8244194bfab1a9e528bd0beed80938563e481d7dec1576a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_bag_ui.log",
+      "bytes": 338,
+      "sha256": "f363cdadfbd71c5cc488bef85084e941633fb6a05b0dab4275d805a1a06d21db",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_comic_motion.log",
+      "bytes": 112,
+      "sha256": "c04bf80b5f03cc52d2b01e20b6dabcd53bde123cf34302c5c60b943942740bcc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_base_camp.log",
+      "bytes": 108,
+      "sha256": "6f615bbcb7b95ecfe516e7abeabef2706c24eaa922c751417c0c066724c63758",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_audio.log",
+      "bytes": 103,
+      "sha256": "9164363ff793231a234ef2a3dbd2015a53de5839ae2b4fb9a760015253b1e34b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rest.log",
+      "bytes": 349,
+      "sha256": "32fb591eabd5f819442b5a6f8e156844cfff75715f8f95c117cd6dd8a2d90cbc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_depth_animation_flow.log",
+      "bytes": 107,
+      "sha256": "078c7f6dbf0f641ec848fbdc1090e5b38353cd6e55cdedd6ddbb7f43812f69ec",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion_ui.log",
+      "bytes": 115,
+      "sha256": "cc002bf54a6a487f5252482e274211ff46928325aa71d46bebb518469191b66a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_attendant_dialogue.log",
+      "bytes": 355,
+      "sha256": "a08b2ebb2b15cc9bcd7a4f3b6d472a226d9b66fc2d340e25c37562aa7bf390d6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_encounters_ui.log",
+      "bytes": 356,
+      "sha256": "a90bd672860a4c4b9ffe0819aff165e7eda944b35e0a42da493b1ecf0a368838",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_mage.log",
+      "bytes": 349,
+      "sha256": "122656c50d56f7d7e6a20141e62b834fdd60d047b5b816b06ab3acba5cc1d8be",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_pose_sizes.log",
+      "bytes": 115,
+      "sha256": "e8da0e595a1501eb919071cb3e4610b4f1cf86e440af51caabb75f404810d43c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest.log",
+      "bytes": 123,
+      "sha256": "64dadfbc67cc0ea18fefde7030d7e6c21f3eeb01974ae1cb2d9105345f6a3440",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest_ui.log",
+      "bytes": 354,
+      "sha256": "d7bd05560a270d8938d13375465b7cda46249bd17043120a86df3f48b1c700c1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hud.log",
+      "bytes": 349,
+      "sha256": "994d9993a867afc9d3757754d155c39ac8e52b19183c18253e9e5474f51dd86a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_cut_in.log",
+      "bytes": 163,
+      "sha256": "20f972d0b3cbc3bdf4d646254c3630195500aba01be3c08c203f7a4aa5d4fae5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards_ui.log",
+      "bytes": 109,
+      "sha256": "7b942906b157d79518db46474b704e77e8f0bb72ce3d2252f8a411d87c3b1306",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergy_ui.log",
+      "bytes": 353,
+      "sha256": "61ba4f57da6b035da32f521bc6a1d7f7e995783aff561a8262dabef652fbc16e",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment_ui.log",
+      "bytes": 111,
+      "sha256": "1e997025c031c4e9c1c117e11f3a3aa1c66314bcb86a1d9fd8c9d71133ad669d",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_run_setup_cards.log",
+      "bytes": 113,
+      "sha256": "5e5546c5dc53b83f6024d5770284a3754d71bef184ec491e9dbff6afc1ed0cdc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematic_enemies.log",
+      "bytes": 126,
+      "sha256": "45242f764f518bce968900b935c98706ba1fdf54a03af76b531e6b797981ee2c",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_warrior.log",
+      "bytes": 352,
+      "sha256": "996ca381a766dbb6d273dd45daa06bf0c7d83aca229052e8b16c59fa4c0339c6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergies.log",
+      "bytes": 107,
+      "sha256": "e65223516f2b6e40332cdd986cc6344c72622a12a34c132e37f9520e7b58ba3a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_expansion.log",
+      "bytes": 361,
+      "sha256": "0bab5de9711d8159b17635d7a25291490105dc6f9de39aea3303ded2cd9cd2b1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_ui.log",
+      "bytes": 119,
+      "sha256": "3493a6562796467f9728ca570ae29c01b1ca46a913f1265c35a9ebf979c44dc3",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_turn_sequence.log",
+      "bytes": 112,
+      "sha256": "9ceda2ffd4e8566e4f704f34703848228cdc99e5711c8aeb012e85727191d773",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cleric.log",
+      "bytes": 351,
+      "sha256": "4bbd7607ebd2dde75a0f865abe39864a32cb56d063ca681f444dc3234fd3dbe5",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ui.log",
+      "bytes": 348,
+      "sha256": "5cb781cdc4566bcad071b62067471ea09df6ef44731efc9a2041d142c02580c9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_battle_effect_icons.log",
+      "bytes": 364,
+      "sha256": "6ad900cba1a8b1262aaceb7cfb51f7d40a9107208e6d39a0c6f519b18a29b1b6",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/results.json",
+      "bytes": 13829,
+      "sha256": "37a1dad94b3c00a9e2f958fe9e789e2502bee418362ea0e450b5ea30ceb19693",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemies.log",
+      "bytes": 351,
+      "sha256": "71723fea45102017f2d76074e839356422ecb746b7e89c4327416c2792185a2b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_block_ash.log",
+      "bytes": 106,
+      "sha256": "76ceb60fbcf69d13b962d0d34c08dfa7a8f484348d8974bc8312667e9a03bd09",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_actor_motion.log",
+      "bytes": 343,
+      "sha256": "409e18ae6789e3e94c16dbef997332e8549f870b3a8774d80d88f7ac14e83fa2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_art.log",
+      "bytes": 107,
+      "sha256": "51a250392cb6eadec18bf6c8f3bc5a5f0158a28edf27c7d4025107a895906c13",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rogue.log",
+      "bytes": 350,
+      "sha256": "d885c1261bcaa897362de07c2361206f196957f767c4c8160f48025b8bf473b2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_game.log",
+      "bytes": 667,
+      "sha256": "df84e02728548bdd97539c44279e249ad39606ba3a783952f6204dd090e5a0de",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_energy_timing.log",
+      "bytes": 355,
+      "sha256": "d1542a43a4782d0a4c131dcc50c5e7df4eb82f4983c9d9d5fbb1d7af1dbdc744",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_title.log",
+      "bytes": 350,
+      "sha256": "d548828561e98cf53a287b4181dd8491c86ec8eb44996f5138d204724c260e9a",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_elite_relics.log",
+      "bytes": 111,
+      "sha256": "2eeff9e715d046093fc2f3677a5a082822d04eb392f84e355cca20e47bd2c2b7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge.log",
+      "bytes": 104,
+      "sha256": "3e1ce346f752334ba38f2b668e7ff468866168b1281c66bd679531c4ab309491",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_collection_ui.log",
+      "bytes": 111,
+      "sha256": "140d3883b14a2e977e6bac044c813a22232128387875ad99e0cc75e38b2ec3fb",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_end_adventure.log",
+      "bytes": 345,
+      "sha256": "6f918bbeae75509078b6392762dce5e12159bc27bc34808b7a2c59c4147d0299",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_counter.log",
+      "bytes": 93,
+      "sha256": "bffee0696b2277b1535b4bc40fd44ad7e092e6982bde9353889c8ef5a4bebc39",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_cut_in.log",
+      "bytes": 97,
+      "sha256": "9756e18f851e9573a25a4a4d0b30807f309164b7323dbb70ac7872d75c2c5667",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_rules.log",
+      "bytes": 110,
+      "sha256": "145bb5ea92559e188c5397554a65788e3f11f4af89af3835f3944ac4e27808f2",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_detailed_heroes.log",
+      "bytes": 115,
+      "sha256": "3e2944b25061579a48687932d0d964d09fcfc43bd07b2a74006c43cc91088c45",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_grounding.log",
+      "bytes": 113,
+      "sha256": "330210750facdae0b53b10071334781b2a5eebc2fdaac8791043856758021d06",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion.log",
+      "bytes": 113,
+      "sha256": "805407ae6acf332bb027a4ab70379b67730c439b1b5994251c869357488703c9",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_development_start.log",
+      "bytes": 349,
+      "sha256": "87034ea661139e367bd8165aa8248fcff8bacefc1524e24061346ad018a5fc8b",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_ui.log",
+      "bytes": 107,
+      "sha256": "baddb63b5e363cbf4c18039981e1ab8ba1777da77b7b41b5037edacbec08cf99",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_assets.log",
+      "bytes": 113,
+      "sha256": "606a91cbcb47871831e1d06a0d80306cf5069a56df068cf52a3ce4f7a75266bc",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_balance_polish.log",
+      "bytes": 162,
+      "sha256": "63d7d8188fd2fe995bee658c001cf8997a4ba0e84c88a1af042df9bfe5fc7f04",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth_ui.log",
+      "bytes": 358,
+      "sha256": "a17df8964423e5ed66ac9745a6d9d8ac4cb9268906a7b770bd6b8230264f3176",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ranger.log",
+      "bytes": 351,
+      "sha256": "28de852a13f27157634739cbac915a78492cca26848495f01bd25c9efed64fc1",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_progression.log",
+      "bytes": 112,
+      "sha256": "53c6eb79bbe473200cd5aacc828ee183d27c95083365913f96af136d53abe549",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_reward_ui.log",
+      "bytes": 95,
+      "sha256": "384816b61fffcebb95274b9d0f2e65b2ced1b05f9599129b1e7bee25337fbdb7",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "artifacts/polish/regressions/test_expansion_ui.log",
+      "bytes": 110,
+      "sha256": "15d07678026dcc8f617b59dc70a3c375bef23162dd8dfd9efd148dc825093062",
+      "reason": "disposable screenshot/log/recording/temporary fixture"
+    },
+    {
+      "path": "assets/ui/dark/button.png.import",
+      "bytes": 939,
+      "sha256": "d5d869c9b7a0def1cdb340d9c07e5a22ade6a42b0e27597628d28f0d38f135b8",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": ".godot/imported/button.png-6e7ec06d137aa1eed59a6855412c8dae.md5",
+      "bytes": 91,
+      "sha256": "baec5e35bb5a4fd529f1c8d5aca3734f667a9bad2a69a25bd37c256f84d9ae52",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": "assets/ui/dark/button.png",
+      "bytes": 1163685,
+      "sha256": "f35ac05734b1febffab34a9d36dbd4ec64ddedfd26101543f4b8ca2dbcb2a5ef",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": ".godot/imported/button.png-6e7ec06d137aa1eed59a6855412c8dae.ctex",
+      "bytes": 70858,
+      "sha256": "a5803ee98b6831f4875237bd8dc4c6b1babc56a811d16ed2a5b51c5bcd14699d",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": ".godot/imported/panel.png-ab2c0292d6ebc4322e3ae9d72f390041.md5",
+      "bytes": 91,
+      "sha256": "f80b5eeca4fbea2a6b4eb4fcb441b984f3fbe63537d7662164410cb970ff9d61",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": "assets/ui/dark/panel.png.import",
+      "bytes": 936,
+      "sha256": "1242391355336ff000f3bb5eb546bb1acbe4c4f186b8809d64c9362fd89d7936",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": "assets/ui/dark/panel.png",
+      "bytes": 1577642,
+      "sha256": "644250ed61bac2cb0f656dc0dcf2e4728a81293cf1fb03cf6a08d81339a349eb",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": ".godot/imported/panel.png-ab2c0292d6ebc4322e3ae9d72f390041.ctex",
+      "bytes": 224688,
+      "sha256": "2c53a5e49ea6ed634660bdeca6fabc6705bbfa0a80c0bb18ea7100b5ba97d8b1",
+      "reason": "retired gothic raster frame; editable original archived in docs"
+    },
+    {
+      "path": "assets/ui/counter.svg.import",
+      "bytes": 1031,
+      "sha256": "357b18c14c54988685483eb5da90deae1b3df3f829c83eb1d78ebf31876947ac",
+      "reason": "legacy counter icon superseded by minimal battle-effect icon; SVG source retained"
+    },
+    {
+      "path": ".godot/imported/counter.svg-2dca460394b2f50326a56e3df0e26355.md5",
+      "bytes": 91,
+      "sha256": "bdca3ab629f242fd80220946c8caa6845a2bb5cf62b5536a99c1e4f52e6520e2",
+      "reason": "legacy counter icon superseded by minimal battle-effect icon; SVG source retained"
+    },
+    {
+      "path": "assets/ui/counter.svg",
+      "bytes": 483,
+      "sha256": "541a457219984dac4fa3d72b988b0fb675cd6262a625e2ddcfb7af6785408653",
+      "reason": "legacy counter icon superseded by minimal battle-effect icon; SVG source retained"
+    },
+    {
+      "path": ".godot/imported/counter.svg-2dca460394b2f50326a56e3df0e26355.ctex",
+      "bytes": 2086,
+      "sha256": "932bcb787fcf0eed30f0b9938efb9a6145874cb58ac27267d2571c9ad5328bc8",
+      "reason": "legacy counter icon superseded by minimal battle-effect icon; SVG source retained"
+    }
+  ],
+  "count": 693,
+  "bytes": 269198920,
+  "preserved": "Active runtime animation assets, original sources/prompts, regression suites, user saves, manual exports TestWeb and builds.",
+  "validation_outputs_discarded": [
+    {
+      "path": "artifacts/battle_effects/boss-3.png",
+      "bytes": 1574728
+    },
+    {
+      "path": "artifacts/battle_effects/embers-dialog.png",
+      "bytes": 691981
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-2.png",
+      "bytes": 771268
+    },
+    {
+      "path": "artifacts/battle_effects/hero-stacked.png",
+      "bytes": 1586039
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-1.png",
+      "bytes": 747761
+    },
+    {
+      "path": "artifacts/battle_effects/enemy-stacked.png",
+      "bytes": 1582673
+    },
+    {
+      "path": "artifacts/battle_effects/armored_strike.png",
+      "bytes": 1571591
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-3.png",
+      "bytes": 662141
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-effects.png",
+      "bytes": 1603754
+    },
+    {
+      "path": "artifacts/battle_effects/resurrect.png",
+      "bytes": 1570899
+    },
+    {
+      "path": "artifacts/battle_effects/triple-embers.png",
+      "bytes": 1552535
+    },
+    {
+      "path": "artifacts/battle_effects/catalogue.png",
+      "bytes": 192695
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-dialog.png",
+      "bytes": 726173
+    },
+    {
+      "path": "artifacts/battle_effects/boss-1.png",
+      "bytes": 1753744
+    },
+    {
+      "path": "artifacts/battle_effects/boss-2.png",
+      "bytes": 1797575
+    },
+    {
+      "path": "artifacts/battle_effects/prison.png",
+      "bytes": 1571044
+    },
+    {
+      "path": "artifacts/combat/comic.png",
+      "bytes": 1963979
+    },
+    {
+      "path": "artifacts/polish/balance.json",
+      "bytes": 454556
+    },
+    {
+      "path": "artifacts/polish/motion-sweep.png",
+      "bytes": 1953115
+    },
+    {
+      "path": "artifacts/polish/motion-guard.png",
+      "bytes": 1944172
+    },
+    {
+      "path": "artifacts/polish/motion-thrust.png",
+      "bytes": 1947941
+    },
+    {
+      "path": "artifacts/polish/ui-audit.json",
+      "bytes": 800
+    },
+    {
+      "path": "artifacts/polish/motion-charged.png",
+      "bytes": 1947113
+    },
+    {
+      "path": "artifacts/polish/motion-idle.png",
+      "bytes": 1942452
+    },
+    {
+      "path": "artifacts/polish/regressions/test_market_ui.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_layout.log",
+      "bytes": 358
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_assets.log",
+      "bytes": 359
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure_ui.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_upgrade.log",
+      "bytes": 93
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cards.log",
+      "bytes": 104
+    },
+    {
+      "path": "artifacts/polish/regressions/test_map.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_expansion.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_presentation.log",
+      "bytes": 356
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure.log",
+      "bytes": 127
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth.log",
+      "bytes": 110
+    },
+    {
+      "path": "artifacts/polish/regressions/test_dungeon.log",
+      "bytes": 105
+    },
+    {
+      "path": "artifacts/polish/regressions/test_presentation_refinements.log",
+      "bytes": 123
+    },
+    {
+      "path": "artifacts/polish/regressions/test_melee_motion.log",
+      "bytes": 357
+    },
+    {
+      "path": "artifacts/polish/regressions/test_running.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_motion.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_achievements.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematics.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_guardian.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp.log",
+      "bytes": 103
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_formations.log",
+      "bytes": 117
+    },
+    {
+      "path": "artifacts/polish/regressions/test_refuge.log",
+      "bytes": 352
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_plot_ground.log",
+      "bytes": 360
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_spiral_map.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_crypt_variety.log",
+      "bytes": 480
+    },
+    {
+      "path": "artifacts/polish/regressions/test_bag_ui.log",
+      "bytes": 338
+    },
+    {
+      "path": "artifacts/polish/regressions/test_comic_motion.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_base_camp.log",
+      "bytes": 354
+    },
+    {
+      "path": "artifacts/polish/regressions/test_audio.log",
+      "bytes": 103
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rest.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_depth_animation_flow.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion_ui.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_attendant_dialogue.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_encounters_ui.log",
+      "bytes": 356
+    },
+    {
+      "path": "artifacts/polish/regressions/test_mage.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_pose_sizes.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest.log",
+      "bytes": 123
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest_ui.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hud.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_cut_in.log",
+      "bytes": 163
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards_ui.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergy_ui.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment_ui.log",
+      "bytes": 357
+    },
+    {
+      "path": "artifacts/polish/regressions/test_boss_relic_navigation.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_run_setup_cards.log",
+      "bytes": 359
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematic_enemies.log",
+      "bytes": 126
+    },
+    {
+      "path": "artifacts/polish/regressions/test_warrior.log",
+      "bytes": 106
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergies.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_expansion.log",
+      "bytes": 361
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_ui.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_turn_sequence.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cleric.log",
+      "bytes": 105
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ui.log",
+      "bytes": 102
+    },
+    {
+      "path": "artifacts/polish/regressions/test_battle_effect_icons.log",
+      "bytes": 364
+    },
+    {
+      "path": "artifacts/polish/regressions/results.json",
+      "bytes": 14012
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemies.log",
+      "bytes": 106
+    },
+    {
+      "path": "artifacts/polish/regressions/test_block_ash.log",
+      "bytes": 106
+    },
+    {
+      "path": "artifacts/polish/regressions/test_actor_motion.log",
+      "bytes": 343
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_art.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rogue.log",
+      "bytes": 350
+    },
+    {
+      "path": "artifacts/polish/regressions/test_game.log",
+      "bytes": 667
+    },
+    {
+      "path": "artifacts/polish/regressions/test_energy_timing.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_title.log",
+      "bytes": 350
+    },
+    {
+      "path": "artifacts/polish/regressions/test_elite_relics.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge.log",
+      "bytes": 104
+    },
+    {
+      "path": "artifacts/polish/regressions/test_collection_ui.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_end_adventure.log",
+      "bytes": 345
+    },
+    {
+      "path": "artifacts/polish/regressions/test_counter.log",
+      "bytes": 93
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_cut_in.log",
+      "bytes": 97
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_rules.log",
+      "bytes": 110
+    },
+    {
+      "path": "artifacts/polish/regressions/test_detailed_heroes.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_grounding.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_development_start.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_ui.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_assets.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_balance_polish.log",
+      "bytes": 162
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth_ui.log",
+      "bytes": 358
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ranger.log",
+      "bytes": 351
+    },
+    {
+      "path": "artifacts/polish/regressions/test_progression.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_reward_ui.log",
+      "bytes": 341
+    },
+    {
+      "path": "artifacts/polish/regressions/test_expansion_ui.log",
+      "bytes": 110
+    },
+    {
+      "path": "artifacts/battle_effects/boss-3.png",
+      "bytes": 1554820
+    },
+    {
+      "path": "artifacts/battle_effects/embers-dialog.png",
+      "bytes": 691823
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-2.png",
+      "bytes": 771270
+    },
+    {
+      "path": "artifacts/battle_effects/hero-stacked.png",
+      "bytes": 1586145
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-1.png",
+      "bytes": 747221
+    },
+    {
+      "path": "artifacts/battle_effects/enemy-stacked.png",
+      "bytes": 1571550
+    },
+    {
+      "path": "artifacts/battle_effects/armored_strike.png",
+      "bytes": 1586517
+    },
+    {
+      "path": "artifacts/battle_effects/boss-dialog-3.png",
+      "bytes": 662428
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-effects.png",
+      "bytes": 1585929
+    },
+    {
+      "path": "artifacts/battle_effects/resurrect.png",
+      "bytes": 1571188
+    },
+    {
+      "path": "artifacts/battle_effects/triple-embers.png",
+      "bytes": 1552628
+    },
+    {
+      "path": "artifacts/battle_effects/catalogue.png",
+      "bytes": 192695
+    },
+    {
+      "path": "artifacts/battle_effects/large-text-dialog.png",
+      "bytes": 726044
+    },
+    {
+      "path": "artifacts/battle_effects/boss-1.png",
+      "bytes": 1747486
+    },
+    {
+      "path": "artifacts/battle_effects/boss-2.png",
+      "bytes": 1793267
+    },
+    {
+      "path": "artifacts/battle_effects/prison.png",
+      "bytes": 1569191
+    },
+    {
+      "path": "artifacts/combat/comic.png",
+      "bytes": 1966018
+    },
+    {
+      "path": "artifacts/polish/balance.json",
+      "bytes": 454556
+    },
+    {
+      "path": "artifacts/polish/motion-sweep.png",
+      "bytes": 1953092
+    },
+    {
+      "path": "artifacts/polish/motion-guard.png",
+      "bytes": 1944180
+    },
+    {
+      "path": "artifacts/polish/motion-thrust.png",
+      "bytes": 1947914
+    },
+    {
+      "path": "artifacts/polish/ui-audit.json",
+      "bytes": 801
+    },
+    {
+      "path": "artifacts/polish/motion-charged.png",
+      "bytes": 1947109
+    },
+    {
+      "path": "artifacts/polish/motion-idle.png",
+      "bytes": 1942442
+    },
+    {
+      "path": "artifacts/polish/regressions/test_market_ui.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_layout.log",
+      "bytes": 358
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_assets.log",
+      "bytes": 359
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure_ui.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_upgrade.log",
+      "bytes": 93
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cards.log",
+      "bytes": 104
+    },
+    {
+      "path": "artifacts/polish/regressions/test_map.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_adventure_expansion.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_presentation.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_treasure.log",
+      "bytes": 127
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth.log",
+      "bytes": 110
+    },
+    {
+      "path": "artifacts/polish/regressions/test_dungeon.log",
+      "bytes": 105
+    },
+    {
+      "path": "artifacts/polish/regressions/test_presentation_refinements.log",
+      "bytes": 123
+    },
+    {
+      "path": "artifacts/polish/regressions/test_melee_motion.log",
+      "bytes": 357
+    },
+    {
+      "path": "artifacts/polish/regressions/test_running.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_motion.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_achievements.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematics.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_guardian.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_formations.log",
+      "bytes": 117
+    },
+    {
+      "path": "artifacts/polish/regressions/test_refuge.log",
+      "bytes": 106
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_plot_ground.log",
+      "bytes": 360
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment.log",
+      "bytes": 108
+    },
+    {
+      "path": "artifacts/polish/regressions/test_spiral_map.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_crypt_variety.log",
+      "bytes": 725
+    },
+    {
+      "path": "artifacts/polish/regressions/test_bag_ui.log",
+      "bytes": 338
+    },
+    {
+      "path": "artifacts/polish/regressions/test_comic_motion.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_base_camp.log",
+      "bytes": 354
+    },
+    {
+      "path": "artifacts/polish/regressions/test_audio.log",
+      "bytes": 103
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rest.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_depth_animation_flow.log",
+      "bytes": 352
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion_ui.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_attendant_dialogue.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_encounters_ui.log",
+      "bytes": 356
+    },
+    {
+      "path": "artifacts/polish/regressions/test_mage.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_pose_sizes.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest.log",
+      "bytes": 123
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forest_ui.log",
+      "bytes": 354
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hud.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_cut_in.log",
+      "bytes": 163
+    },
+    {
+      "path": "artifacts/polish/regressions/test_support_cards_ui.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergy_ui.log",
+      "bytes": 353
+    },
+    {
+      "path": "artifacts/polish/regressions/test_equipment_ui.log",
+      "bytes": 357
+    },
+    {
+      "path": "artifacts/polish/regressions/test_boss_relic_navigation.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_run_setup_cards.log",
+      "bytes": 359
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cinematic_enemies.log",
+      "bytes": 371
+    },
+    {
+      "path": "artifacts/polish/regressions/test_warrior.log",
+      "bytes": 352
+    },
+    {
+      "path": "artifacts/polish/regressions/test_synergies.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_expansion.log",
+      "bytes": 361
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_ui.log",
+      "bytes": 119
+    },
+    {
+      "path": "artifacts/polish/regressions/test_turn_sequence.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_cleric.log",
+      "bytes": 351
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ui.log",
+      "bytes": 348
+    },
+    {
+      "path": "artifacts/polish/regressions/test_battle_effect_icons.log",
+      "bytes": 118
+    },
+    {
+      "path": "artifacts/polish/regressions/results.json",
+      "bytes": 14012
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemies.log",
+      "bytes": 351
+    },
+    {
+      "path": "artifacts/polish/regressions/test_block_ash.log",
+      "bytes": 106
+    },
+    {
+      "path": "artifacts/polish/regressions/test_actor_motion.log",
+      "bytes": 98
+    },
+    {
+      "path": "artifacts/polish/regressions/test_card_art.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_rogue.log",
+      "bytes": 350
+    },
+    {
+      "path": "artifacts/polish/regressions/test_game.log",
+      "bytes": 667
+    },
+    {
+      "path": "artifacts/polish/regressions/test_energy_timing.log",
+      "bytes": 355
+    },
+    {
+      "path": "artifacts/polish/regressions/test_title.log",
+      "bytes": 350
+    },
+    {
+      "path": "artifacts/polish/regressions/test_elite_relics.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge.log",
+      "bytes": 104
+    },
+    {
+      "path": "artifacts/polish/regressions/test_collection_ui.log",
+      "bytes": 111
+    },
+    {
+      "path": "artifacts/polish/regressions/test_end_adventure.log",
+      "bytes": 99
+    },
+    {
+      "path": "artifacts/polish/regressions/test_counter.log",
+      "bytes": 93
+    },
+    {
+      "path": "artifacts/polish/regressions/test_enemy_cut_in.log",
+      "bytes": 97
+    },
+    {
+      "path": "artifacts/polish/regressions/test_polish_rules.log",
+      "bytes": 110
+    },
+    {
+      "path": "artifacts/polish/regressions/test_detailed_heroes.log",
+      "bytes": 115
+    },
+    {
+      "path": "artifacts/polish/regressions/test_hero_grounding.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_camp_expansion.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_development_start.log",
+      "bytes": 349
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_ui.log",
+      "bytes": 107
+    },
+    {
+      "path": "artifacts/polish/regressions/test_forge_assets.log",
+      "bytes": 113
+    },
+    {
+      "path": "artifacts/polish/regressions/test_balance_polish.log",
+      "bytes": 162
+    },
+    {
+      "path": "artifacts/polish/regressions/test_combat_depth_ui.log",
+      "bytes": 358
+    },
+    {
+      "path": "artifacts/polish/regressions/test_ranger.log",
+      "bytes": 105
+    },
+    {
+      "path": "artifacts/polish/regressions/test_progression.log",
+      "bytes": 112
+    },
+    {
+      "path": "artifacts/polish/regressions/test_reward_ui.log",
+      "bytes": 341
+    },
+    {
+      "path": "artifacts/polish/regressions/test_expansion_ui.log",
+      "bytes": 110
+    }
+  ],
+  "archived_sources": [
+    {
+      "path": "docs/ui_buttons/dark/retired/button.png",
+      "bytes": 1163685
+    },
+    {
+      "path": "docs/ui_buttons/dark/retired/panel.png",
+      "bytes": 1577642
+    },
+    {
+      "path": "docs/ui_buttons/dark/retired/button_trim.svg",
+      "bytes": 871
+    },
+    {
+      "path": "docs/ui_buttons/dark/retired/dialog_trim.svg",
+      "bytes": 435
+    },
+    {
+      "path": "docs/battle_effects/minimal/retired/counter.svg",
+      "bytes": 483
+    }
+  ],
+  "net_reclaimed_bytes": 266455804
+}

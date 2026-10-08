@@ -5,11 +5,9 @@ static func build(ui: Control) -> void:
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(bg, 0, 0, 1280, 720)
-	ui.panel(20, 12, 1240, 116)
-	ui.header("Patio de entrenamiento", "Elegí una pareja. Probá todas sus cartas y niveles de equipo sin gastar almas ni alterar la aventura.")
-	for child in ui.layer.get_children():
-		if child is Button and child.text == "Menú": child.hide()
-	ui.button("Campamento", 1020, 22, 220, 42, func(): ui.open_base_camp())
+	preload("res://src/ui/components/preparation_header.gd").build(ui,"Patio de entrenamiento",ui.open_base_camp,-1,"Campamento")
+	ui.panel(36,94,1208,38)
+	ui.label_at("Elegí una pareja. Probá cartas, equipo y rivales sin gastar almas ni alterar la aventura.",54,95,1172,36,18,ui.TEXT)
 	var chosen: Array = []
 	var buttons: Array[Button] = []
 	var weapon = OptionButton.new()
@@ -19,6 +17,7 @@ static func build(ui: Control) -> void:
 		armor.add_item("Armaduras · nivel %d" % level)
 	ui.rect(weapon, 60, 280, 300, 48)
 	ui.rect(armor, 60, 350, 300, 48)
+	ui.button("Configurar rivales",60,410,300,44,func(): preload("res://src/ui/screens/training_config_dialog.gd").open(ui))
 	var start = ui.button("Entrenar", 60, 470, 300, 58, func(): preload("res://src/ui/training_navigation.gd").start(ui, chosen, weapon.selected, armor.selected), false)
 	start.disabled = true
 	var ids = ui.game.content.heroes.keys()

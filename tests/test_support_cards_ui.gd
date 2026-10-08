@@ -58,10 +58,10 @@ func run_tests() -> void:
 	await process_frame
 	var intent = app.layer.get_node("EnemyIntent0")
 	check(intent.get_node("Attack").amount == 9 and intent.get_node("Block").amount == 9, "intent displays effective values")
-	var buff = app.hero_art[0].get_parent().get_node("Modifier_strength_pct")
-	check(buff.text == "25%", "hero buff badge")
-	var enemy_parent = app.enemy_art[0].get_parent()
-	check(enemy_parent.has_node("Modifier_weak_pct") and enemy_parent.has_node("Modifier_fracture_pct"), "both enemy debuffs visible")
+	var buff = app.hero_art[0].get_parent().get_node("HeroEffects/Effect_strength")
+	check(buff.get_meta("battle_effect").value == 25 and buff.get_child(1).text == "25%", "hero buff icon")
+	var enemy_effects = intent.get_node("EnemyEffects")
+	check(enemy_effects.has_node("Effect_weakness") and enemy_effects.has_node("Effect_fracture"), "both enemy debuffs visible")
 	await shot("combat")
 	for pressed in [true, false]:
 		var click = InputEventMouseButton.new()
@@ -71,9 +71,9 @@ func run_tests() -> void:
 		Input.parse_input_event(click)
 		await process_frame
 	await process_frame
-	check(not get_nodes_in_group("combat_tip").is_empty(), "buff explanation opens")
+	check(is_instance_valid(app.overlay), "buff explanation opens")
 	await shot("effect-tip")
-	for tip in get_nodes_in_group("combat_tip"): tip.queue_free()
+	app.close_modal()
 	app.game.profile.buildings.market = true
 	app.game.profile.souls = 10000
 	app.open_market()

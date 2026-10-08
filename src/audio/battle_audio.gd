@@ -1,9 +1,9 @@
 extends RefCounted
 # Sounds accompany presentation of already committed actions.
-static func hero(audio: Node, hero_id: String, action: String = "attack") -> void:
+static func hero(audio: Node, hero_id: String, action: String = "attack", card: Dictionary = {}) -> void:
 	if action == "heal": audio.play_sfx("heal"); return
-	if action == "defense": audio.play_sfx("block"); return
-	var events = {"warrior":"blade", "guardian":"blade", "rogue":"blade", "mage":"magic", "cleric":"magic", "ranger":"bow"}
+	if action == "defense": audio.play_sfx("cloth_guard" if hero_id in ["mage","cleric","ranger","rogue"] else "shield_impact"); return
+	var events = {"warrior":"sword_heavy" if int(card.get("cost",1))>=2 else "blade", "guardian":"shield_bash" if "bash" in card.get("id","") else "blade", "rogue":"dagger", "mage":"frost", "cleric":"radiant", "ranger":"arrow_release"}
 	audio.play_sfx(events.get(hero_id, "blade"))
 
 static func enemy(audio: Node, visual: String) -> void:
@@ -12,4 +12,9 @@ static func enemy(audio: Node, visual: String) -> void:
 	elif visual.begins_with("goblin"): event = "goblin"
 	elif visual.begins_with("elemental"): event = "magic"
 	elif visual.begins_with("bandit"): event = "blade"
+	if visual == "bandit_6": event = "arrow_release"
+	elif visual == "bandit_4": event = "fire_spell"
+	elif visual == "elemental_4": event = "poison"
+	elif visual == "elemental_3": event = "frost"
+	elif visual == "flying_5": event = "wing"
 	audio.play_sfx(event)

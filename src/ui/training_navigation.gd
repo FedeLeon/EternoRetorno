@@ -1,12 +1,13 @@
 extends RefCounted
 static func start(ui: Control, party: Array, weapon: int, armor: int) -> void:
-	if party.size() != 2: return
+	if party.size() != 2 or not preload("res://src/rules/training_config.gd").validate(ui.game,ui.training_config): return
 	if ui.training_original == null: ui.training_original = ui.game
 	var sandbox = preload("res://src/game.gd").new("user://training-never-saved", false)
 	sandbox.profile = ui.training_original.profile.duplicate(true)
 	sandbox.new_run(party, 777)
 	sandbox.run.training = true
-	sandbox.run.tactics_version = 0
+	sandbox.run.tactics_version = 1 if not ui.training_config.get("enemies",[]).is_empty() else 0
+	sandbox.run.training_config = ui.training_config.duplicate(true)
 	for hero in sandbox.run.heroes: hero.forge = {"weapon":weapon, "armor":armor, "strength":weapon * int(ui.game.Forge.config().strength_per_level), "block":armor * int(ui.game.Forge.config().block_per_level)}
 	ui.game = sandbox
 	reset(ui)
@@ -17,14 +18,15 @@ static func reset(ui: Control) -> void:
 	ui.game.run.current = -1
 	ui.game.run.visited = []
 	var id = ui.game.content.enemies.keys()[0]
-	ui.game.run.nodes[0].encounter = [id]
+	var config: Dictionary = ui.game.run.get("training_config",{})
+	ui.game.run.nodes[0].encounter = config.get("enemies",[]).duplicate() if not config.get("enemies",[]).is_empty() else [id]
 	ui.game.enter_node(0)
-	var enemy = ui.game.run.combat.enemies[0]
-	enemy.hp = 500
-	enemy.max_hp = 500
-	enemy.intent = {"damage":6, "block":0, "counter":0, "target":0}
+	if config.get("enemies",[]).is_empty():
+		var enemy = ui.game.run.combat.enemies[0]
+		enemy.hp = 500;enemy.max_hp = 500
+		enemy.intent = preload("res://src/rules/training_config.gd").intent(ui.game,enemy,{"target":0})
 	ui.game.run.combat.energy = 99
-	ui.game.content.enemies[id].name = "Maniquí de práctica"
+	if config.get("enemies",[]).is_empty(): ui.game.content.enemies[id].name = "Maniquí de práctica"
 	ui.screen = "combat"
 	ui.selected_card = -1
 	ui.render()

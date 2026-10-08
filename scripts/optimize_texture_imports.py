@@ -11,8 +11,12 @@ def imported_bytes(text):
     return sum((ROOT / p).stat().st_size for p in re.findall(r'^path(?:\.\w+)?="res://([^"]+)"', text, re.M) if (ROOT / p).exists())
 
 def policy(path):
-    if path.startswith('assets/heroes/detail/'):
-        return 1, 0.9, 0  # Fixed 256px frame coordinates, preserve all twelve poses.
+    if path.startswith('assets/cinematics/'):
+        return 1, 0.9, 1280  # Story art is viewed full-screen with a gentle pan.
+    if path.startswith(('assets/heroes/detail/', 'assets/heroes/actions/')):
+        return 1, 0.9, 0  # Fixed frame coordinates, preserve all twelve poses.
+    if path.startswith('assets/relics/boss/'):
+        return 0, 0.9, 256
     if path.startswith('assets/combat_depth/'):
         return 1, 0.9, 512 if path.endswith('/roots.png') else (0 if path.endswith('/dummy.png') else 1280)
     if path == 'assets/base_camp/built_ground.png':
@@ -26,8 +30,6 @@ def policy(path):
         return 1, 0.85, 0  # Keep animation frames and portrait crops unchanged.
     if path.startswith('assets/cards/art/'):
         return 1, 0.85, 0 if path.endswith('/originals.png') else 512
-    if path.startswith('assets/ui/dark/'):
-        return 0, 0.7, 512
     if path.startswith('assets/cards/frames/'):
         return 0, 0.7, 768
     if path.startswith('assets/map/minimal/'):

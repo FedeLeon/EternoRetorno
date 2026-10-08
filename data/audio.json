@@ -47,7 +47,12 @@
     "fire": "res://assets/audio/ambience/fire.ogg",
     "wind": "res://assets/audio/ambience/wind.ogg",
     "birds": "res://assets/audio/ambience/birds.ogg",
-    "cave": "res://assets/audio/ambience/cave.ogg"
+    "cave": "res://assets/audio/ambience/cave.ogg",
+    "boss_phase2": "res://assets/audio/music/boss_phase2.ogg",
+    "cinematic_intro": "res://assets/audio/music/cinematic_intro.ogg",
+    "cinematic_return": "res://assets/audio/music/cinematic_return.ogg",
+    "metal_clash": "res://assets/audio/sfx/metal_clash.ogg",
+    "metal_clash_2": "res://assets/audio/sfx/metal_clash_2.ogg"
   },
   "events": {
     "ui_click": {
@@ -284,6 +289,92 @@
         "blade_swish",
         "blade_swish_2"
       ]
+    },
+    "sword_heavy": {
+      "files": [
+        "blade_swish_2",
+        "hammer"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "dagger": {
+      "files": [
+        "blade_swish",
+        "blade_swish_2"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "shield_bash": {
+      "files": [
+        "block",
+        "hammer"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "frost": {
+      "files": [
+        "magic",
+        "magic_2"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "radiant": {
+      "files": [
+        "heal",
+        "magic_2"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "arrow_release": {
+      "files": [
+        "bow"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "pierce": {
+      "files": [
+        "blade_swish_2",
+        "hit_2"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "shield_impact": {
+      "files": [
+        "metal_clash",
+        "metal_clash_2"
+      ],
+      "db": -2,
+      "vary_pitch": true
+    },
+    "flesh_impact": {
+      "files": [
+        "hit",
+        "hit_2"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "cloth_guard": {
+      "files": [
+        "cloth",
+        "block"
+      ],
+      "db": -4,
+      "vary_pitch": true
+    },
+    "wing": {
+      "files": [
+        "cloth",
+        "blade_swish"
+      ],
+      "db": -9
     }
   },
   "contexts": {
@@ -452,6 +543,51 @@
           "db": -22
         }
       ]
+    },
+    "combat_phase2": {
+      "music": "boss_phase2",
+      "music_db": -2,
+      "ambience": [],
+      "idle": []
+    },
+    "cinematic_intro": {
+      "music": "cinematic_intro",
+      "music_db": -3,
+      "ambience": [
+        {
+          "id": "wind",
+          "db": -20
+        }
+      ],
+      "idle": []
+    },
+    "cinematic_hero": {
+      "music": "camp",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "fire",
+          "db": -18
+        }
+      ],
+      "idle": []
+    },
+    "cinematic_victory": {
+      "music": "cinematic_return",
+      "music_db": -4,
+      "ambience": [
+        {
+          "id": "wind",
+          "db": -20
+        }
+      ],
+      "idle": []
+    },
+    "combat_boss": {
+      "music": "boss_phase2",
+      "music_db": -4,
+      "ambience": [],
+      "idle": []
     }
   }
 }

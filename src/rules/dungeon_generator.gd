@@ -28,10 +28,8 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 		for lane in range(widths[stage]):
 			var id = nodes.size()
 			var kind = "combat" if stage == 0 else ("boss" if stage == 12 else ("elite" if stage in [4,8] else pool.pop_back()))
-			var column = stage if stage < 7 else 13 - stage
-			var x = 140 + column * 142 + rng.randi_range(-9, 9)
-			var y = (252 if stage < 7 else 525) + (lane - (widths[stage] - 1) / 2.0) * 82 + rng.randi_range(-6, 6)
-			nodes.append({"id":id,"kind":kind,"next":[],"position":[x,y],"encounter":[],"event":config.get("events", ["well","altar","library"])[rng.randi_range(0,2)],"stage":stage})
+			var point = preload("res://src/map_geometry.gd").position(stage, lane, widths[stage], rng)
+			nodes.append({"id":id,"kind":kind,"next":[],"position":[point.x,point.y],"layout":"spiral","layout_version":2,"encounter":[],"event":config.get("events", ["well","altar","library"])[rng.randi_range(0,2)],"stage":stage})
 			layer.append(id)
 		layers.append(layer)
 	# The early elite is an optional branch; the later elite guards every route.
@@ -44,11 +42,12 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 		var here: Array = layers[stage]
 		var following: Array = layers[stage + 1]
 		# Cover all nodes on both sides, then add seed-dependent alternate paths.
-		for i in range(maxi(here.size(), following.size())):
-			connect_rooms(nodes, here[i % here.size()], following[i % following.size()])
-		for from in here:
-			for to in following:
-				if rng.randf() < 0.40: connect_rooms(nodes, from, to)
+		var slots = maxi(here.size(), following.size())
+		for i in range(slots):
+			connect_rooms(nodes,here[roundi(i*float(here.size()-1)/maxi(1,slots-1))],following[roundi(i*float(following.size()-1)/maxi(1,slots-1))])
+		for i in range(here.size()):
+			for j in range(following.size()):
+				if rng.randf() < 0.40 and ordered_connection(nodes,here,following,i,j): connect_rooms(nodes,here[i],following[j])
 		for from in here: nodes[from].next.sort()
 	var common_nodes: Array = []
 	for node in nodes:
@@ -57,23 +56,13 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 	shuffle(common_nodes, rng)
 	var doubles: Array = common_nodes.slice(0, 7)
 	var triples: Array = common_nodes.filter(func(id): return nodes[id].stage >= 6).slice(0, 2 if floor_number == 1 else 3)
+	var enemy_usage: Dictionary = {}
 	for node in nodes:
 		if node.kind == "combat":
 			var count = 3 if node.id in triples else (2 if node.id in doubles or floor_number >= 2 else 1)
 			if node.id == 0: count = 1 if floor_number == 1 else 2
 			if config.get("distinct_common", false):
-				# Configured floors mix types and introduce tougher families later.
-				var eligible: Array = config.common.filter(func(id): return node.stage >= int(config.get("min_stage", {}).get(id, 0)))
-				shuffle(eligible, rng)
-				var chosen: Array = []
-				if count >= 2 and node.stage >= 2:
-					var support: Array = eligible.filter(func(id): return config.get("roles", {}).get(id, "attacker") in ["protector", "support"])
-					var attackers: Array = eligible.filter(func(id): return config.get("roles", {}).get(id, "attacker") == "attacker")
-					if not support.is_empty() and not attackers.is_empty(): chosen = [attackers[0], support[0]]
-				for candidate in eligible:
-					if chosen.size() >= count: break
-					if candidate not in chosen: chosen.append(candidate)
-				node.encounter = chosen
+				node.encounter = preload("res://src/rules/enemy_formations.gd").choose(nodes, node, count, config, enemy_usage, rng)
 			else:
 				for i in range(count): node.encounter.append(config.common[rng.randi_range(0, config.common.size() - 1)])
 		elif node.kind == "elite":
@@ -89,3 +78,10 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 
 static func connect_rooms(nodes: Array, from: int, to: int) -> void:
 	if to not in nodes[from].next: nodes[from].next.append(to)
+
+static func ordered_connection(nodes: Array, here: Array, following: Array, source: int, target: int) -> bool:
+	# Alternate branches share endpoints, rather than crossing opposite lanes.
+	for i in range(here.size()):
+		for next in nodes[here[i]].next:
+			if (source-i)*(target-following.find(next)) < 0: return false
+	return true

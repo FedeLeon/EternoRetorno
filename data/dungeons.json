@@ -17,7 +17,9 @@
       "armored_beetle",
       "crypt_lancer_new",
       "crypt_horse",
-      "ice_elemental"
+      "ice_elemental",
+      "crypt_storm",
+      "crypt_scorpion"
     ],
     "elite": "elite",
     "boss": "boss",
@@ -30,7 +32,9 @@
       "shadow_elemental": 5,
       "skeleton_mage": 3,
       "fire_elemental": 5,
-      "armored_beetle": 2
+      "armored_beetle": 2,
+      "crypt_storm": 3,
+      "crypt_scorpion": 1
     },
     "events": [
       "well",
@@ -53,7 +57,9 @@
       "armored_beetle": "attacker",
       "crypt_lancer_new": "attacker",
       "crypt_horse": "attacker",
-      "ice_elemental": "protector"
+      "ice_elemental": "protector",
+      "crypt_storm": "support",
+      "crypt_scorpion": "attacker"
     }
   },
   "2": {
@@ -76,7 +82,9 @@
       "forest_nightbat",
       "giant_wasp",
       "watch_owl",
-      "forest_cutthroat"
+      "forest_cutthroat",
+      "forest_miasma",
+      "forest_hunter_enemy"
     ],
     "elite": "forest_elite",
     "boss": "forest_boss",
@@ -87,7 +95,9 @@
       "goblin_rider": 4,
       "bandit_archer": 1,
       "poison_toad": 2,
-      "root_elemental": 4
+      "root_elemental": 4,
+      "forest_miasma": 3,
+      "forest_hunter_enemy": 1
     },
     "events": [
       "forest_spring",
@@ -112,7 +122,9 @@
       "forest_nightbat": "attacker",
       "giant_wasp": "attacker",
       "watch_owl": "support",
-      "forest_cutthroat": "attacker"
+      "forest_cutthroat": "attacker",
+      "forest_miasma": "support",
+      "forest_hunter_enemy": "attacker"
     }
   },
   "3": {
@@ -126,7 +138,14 @@
       "fire_elemental",
       "shadow_elemental",
       "skeleton_mage",
-      "goblin_bomber"
+      "goblin_bomber",
+      "skeleton_warrior",
+      "skeleton_archer",
+      "skeleton_berserker",
+      "rock_elemental",
+      "crypt_horse",
+      "ash_bombardier",
+      "ash_wing_beetle"
     ],
     "elite": "ash_brute_elite",
     "boss": "volcano_boss",
@@ -135,7 +154,12 @@
     "min_stage": {
       "ash_brute": 3,
       "dragon_hatchling": 4,
-      "sand_elemental": 4
+      "sand_elemental": 4,
+      "skeleton_berserker": 2,
+      "rock_elemental": 3,
+      "crypt_horse": 2,
+      "ash_bombardier": 2,
+      "ash_wing_beetle": 1
     },
     "events": [
       "forge_altar",
@@ -151,7 +175,14 @@
       "fire_elemental": "attacker",
       "shadow_elemental": "attacker",
       "skeleton_mage": "support",
-      "goblin_bomber": "attacker"
+      "goblin_bomber": "attacker",
+      "skeleton_warrior": "attacker",
+      "skeleton_archer": "attacker",
+      "skeleton_berserker": "attacker",
+      "rock_elemental": "protector",
+      "crypt_horse": "attacker",
+      "ash_bombardier": "attacker",
+      "ash_wing_beetle": "protector"
     }
   }
 }

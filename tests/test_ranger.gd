@@ -59,8 +59,8 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
-	await reaction("attack")
-	check(app.hero_art[0].sprite.animation == "attack", "arrow uses bow")
+	await reaction("thrust")
+	check(app.hero_art[0].sprite.animation == "thrust", "arrow uses bow")
 	check(app.game.run.combat.enemies[0].hp == 92 and app.game.run.combat.enemies[0].block == 20, "arrow pierces block")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
@@ -74,8 +74,8 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "ranger_aim", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
-	await reaction("heavy")
-	check(app.hero_art[0].sprite.animation == "heavy", "aim uses powerful shot")
+	await reaction("charged")
+	check(app.hero_art[0].sprite.animation == "charged", "aim uses powerful shot")
 	await create_timer(0.36).timeout
 	await shot("heavy")
 	await settled()
@@ -87,7 +87,7 @@ func run_tests() -> void:
 		app.continue_run()
 		var old_hp = app.game.run.combat.enemies[0].hp
 		app.animate_combat_action(0, 0)
-		var expected = {"ranger_evade": "guard", "ranger_double": "attack", "ranger_echo": "heavy"}[card_id]
+		var expected = {"ranger_evade": "guard", "ranger_double": "thrust", "ranger_echo": "charged"}[card_id]
 		await reaction(expected)
 		check(app.hero_art[0].sprite.animation == expected, card_id + " animation")
 		if card_id == "ranger_double":
@@ -113,7 +113,7 @@ func run_tests() -> void:
 	await reaction("death")
 	check(app.hero_art[0].sprite.animation == "death", "lethal hit triggers death")
 	await settled()
-	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == 5 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
+	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == app.hero_art[0].sprite.sprite_frames.get_frame_count("death") - 1 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
 	await shot("fallen")
 	app.game.run.combat.enemies[0].hp = 1
 	app.game.run.combat.energy = 3

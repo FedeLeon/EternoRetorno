@@ -56,14 +56,21 @@ func run_tests() -> void:
 	app.game.profile.victories = 1
 	app.game.profile.attempts = 3
 	app.game.profile.history = [{"won": true, "party": ["warrior", "guardian"], "rooms": 40}]
+	app.game.profile.boss_relics=["crypt_blood"]
 	app.game.checkpoint()
 	app.open_collection()
 	await create_timer(0.2).timeout
 	screen = app.layer.get_node("CollectionScreen")
+	await click(screen.get_node("UnlocksTab"))
+	var relic_name:String=app.game.content.relics.crypt_blood.name
+	check(screen.find_children("*", "Label", true, false).any(func(l):return l.text==relic_name),"boss relic discovery is visible in collection")
+	check(screen.find_children("*", "Label", true, false).any(func(l):return l.text.begins_with("DESCUBIERTA")),"discovery explains current-run effect without granting future power")
+	await click(screen.get_node("AchievementsTab"))
 	screen.find_child("Achievement_warrior_victory", true, false).pressed.emit()
 	await shot("unlocked")
 	await click(screen.get_node("HistoryTab"))
 	check(screen.find_children("*", "Label", true, false).any(func(l): return l.text == "Guerrero + Guardiana"), "historic hero names retained")
 	await shot("history")
+	app.queue_free();await process_frame;await create_timer(0.15).timeout
 	print("COLLECTION UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

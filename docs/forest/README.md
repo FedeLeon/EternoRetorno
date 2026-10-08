@@ -1,5 +1,27 @@
 # El Bosque de las Raíces y pisos aleatorios
 
+## Paso directo tras la reliquia del guardián — 08/10/2026
+
+Al elegir la reliquia exclusiva, se abre directamente el mapa del siguiente
+piso: cripta → bosque → fortaleza. No aparece el mapa del piso vencido ni hace
+falta tocar «Entrar al bosque» o la escalera. La primera sala queda disponible.
+La última mazmorra conserva la acción de completar aventura; partidas antiguas
+sin selección de reliquia conservan su transición anterior.
+
+`src/rules/boss_rewards.gd` concede la reliquia y delega el avance a
+`room_actions.gd`/`dungeon_progression.gd`, antes del único checkpoint de
+`Game.polish_action`. Al reanudar se conserva el mapa nuevo y la reliquia sin
+duplicarla. Vida, mazo, inventario y contrato continúan; no se cuenta una victoria
+de aventura al pasar entre pisos. IDs y formato de guardado no cambian.
+
+Validación actual: reglas de pulido 61, bosque/persistencia 24616 y juego 143
+comprobaciones headless sin fallos. Navegación de reliquias: 14 comprobaciones
+en ventana local, con clic real simulado, destino de ambos pisos y final del
+tercero. Mapa del bosque revisado a 1280×720. Sin exportar Web/APK ni probar en
+navegador, emulador o dispositivo físico.
+
+## Implementación inicial — 22/09/2026
+
 Implementado el 22/09/2026. Aventuras nuevas: **cripta → bosque → victoria**.
 Las aventuras anteriores conservan sus nodos y su final de un piso.
 
@@ -76,3 +98,33 @@ entrega original anteriores son históricos.
 Las aventuras nuevas ahora siguen cripta → bosque → fortaleza → victoria. Los guardados anteriores conservan su límite de uno/dos pisos. Bosque tiene 18 comunes y tres encuentros propios.
 
 [Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).
+
+## Variedad de formaciones en los tres pisos — 08/10/2026
+
+La progresión actual es cripta → bosque → fortaleza → victoria. El catálogo común
+contiene 16, 18 y 14 enemigos respectivamente. La fortaleza incorpora cinco tipos
+ya existentes: guerrero y arquero esqueléticos, berserker esquelético, elemental de
+roca y corcel de la cripta, con sus animaciones y ataques en primer plano originales.
+No se generaron assets nuevos ni se duplicaron apariencias.
+
+`rules/enemy_formations.gd` selecciona grupos al generar el mapa: prioriza tipos
+menos usados en el piso y en sus antecesores; penaliza los enemigos de los combates
+comunes más próximos de cada camino. Evita repetir su formación completa, aunque
+el orden de los enemigos sea distinto. Una preferencia moderada por apoyo/protector
+sustituye la obligación de incluirlo en cada grupo. Se mantienen grupos sin duplicados,
+los tamaños de combate y la introducción gradual de enemigos fuertes.
+
+El RNG recibido sigue determinando los desempates. No se cambia el mapa al cargar:
+la mejora se aplica a pisos recién generados (aventura nueva o siguiente piso),
+no a salas que ya forman parte de un guardado. Élites y guardianes mantienen su identidad.
+
+Validación actual headless Godot 4.7.2:
+
+- `test_enemy_formations.gd`: 43.678 comprobaciones, 600 mapas; determinismo,
+  catálogo completo, al menos doce tipos por mapa, debut progresivo, ausencia de
+  formaciones consecutivas repetidas en todos los caminos y recursos de animación/viñeta.
+- `test_forest.gd`: 24.616; guardado/transiciones y grafo. `test_dungeon.gd`: 66.
+- `test_adventure_expansion.gd`: 5.224; progresión, reglas y compatibilidad.
+- `test_adventure_assets.gd`: 78; reproducción de actores/viñetas existentes,
+  sin fallos funcionales; avisos de cuatro instancias y un recurso al cerrar.
+- Sin revisión visual nueva de enemigos, exportación o pruebas Web/móviles.

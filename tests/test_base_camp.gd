@@ -25,6 +25,9 @@ func run_tests() -> void:
 	root.add_child(app)
 	await process_frame
 	await click(Vector2(640, 565))
+	check(app.has_node("CinematicPlayer"),"first start introduces the world")
+	app.get_node("CinematicPlayer").finish()
+	await process_frame
 	check(app.screen == "base_camp", "home opens base camp")
 	await create_timer(0.2).timeout
 	if DisplayServer.get_name() != "headless":

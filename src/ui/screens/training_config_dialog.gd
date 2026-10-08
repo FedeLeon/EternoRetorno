@@ -1,0 +1,33 @@
+extends RefCounted
+static func open(ui: Control) -> void:
+	ui.close_modal()
+	var overlay = Control.new();overlay.z_as_relative=false;overlay.z_index=200
+	ui.rect(overlay,0,0,1280,720,ui);ui.overlay=overlay
+	var shade=ColorRect.new();shade.color=Color(0,0,0,0.86);ui.rect(shade,0,0,1280,720,overlay)
+	ui.panel(170,70,940,580,ui.GOLD,overlay)
+	ui.label_at("Configurar rivales de práctica",210,90,860,52,28,ui.GOLD,overlay)
+	var config: Dictionary = ui.training_config.duplicate(true)
+	var ids: Array = preload("res://src/rules/training_config.gd").available(ui.game)
+	var selectors: Array[OptionButton]=[]
+	for i in range(3):
+		var selector=OptionButton.new();selector.add_item("Sin rival" if i>0 else "Maniquí",0)
+		for id in ids: selector.add_item(ui.game.content.enemies[id].name)
+		var chosen: Array = config.get("enemies",[])
+		if i<chosen.size(): selector.select(ids.find(chosen[i])+1)
+		ui.rect(selector,210,164+i*58,860,46,overlay);selectors.append(selector)
+	var mode=OptionButton.new();mode.add_item("Patrones reales de los enemigos");mode.add_item("Intención personalizada para todos")
+	mode.select(1 if config.get("mode","pattern")=="custom" else 0);ui.rect(mode,210,348,860,46,overlay)
+	var damage=SpinBox.new();damage.min_value=0;damage.max_value=30;damage.value=config.get("damage",6)
+	var block=SpinBox.new();block.min_value=0;block.max_value=20;block.value=config.get("block",0)
+	ui.label_at("Daño",210,414,110,42,20,ui.TEXT,overlay);ui.rect(damage,328,414,136,42,overlay)
+	ui.label_at("Bloqueo",500,414,110,42,20,ui.TEXT,overlay);ui.rect(block,618,414,136,42,overlay)
+	var counter=CheckButton.new();counter.text="Contraataque 4";counter.button_pressed=config.get("counter",false);ui.rect(counter,780,414,290,42,overlay)
+	var all=CheckButton.new();all.text="Atacar a ambos héroes";all.button_pressed=config.get("all",false);ui.rect(all,210,472,400,42,overlay)
+	ui.label_at("Solo aparecen enemigos descubiertos. El entrenamiento no concede premios ni modifica la aventura.",210,528,860,42,17,ui.MUTED,overlay)
+	ui.button("Volver",210,580,300,44,ui.close_modal,true,overlay)
+	ui.button("Aplicar",620,580,450,44,func():
+		var enemies: Array=[]
+		for selector in selectors:
+			if selector.selected>0: enemies.append(ids[selector.selected-1])
+		ui.training_config={"enemies":enemies,"mode":"custom" if mode.selected==1 else "pattern","damage":int(damage.value),"block":int(block.value),"counter":counter.button_pressed,"all":all.button_pressed}
+		ui.close_modal(),true,overlay)

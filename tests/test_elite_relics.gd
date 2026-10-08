@@ -22,7 +22,7 @@ func _initialize() -> void:
 	var definitions: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/elite_relics.json"))
 	check(definitions.size() == 20, "20 new relics")
 	var g = battle()
-	check(g.content.relics.size() == 24, "legacy relics retained")
+	check(g.content.relics.size() == 33, "legacy relics retained")
 	for kind in ["combat", "boss"]:
 		var normal = battle()
 		for node in normal.run.nodes:
@@ -30,6 +30,7 @@ func _initialize() -> void:
 			normal.run.current = node.id
 			normal._start_combat(node.encounter)
 			break
+		preload("res://tests/room_fixture.gd").break_objective(normal)
 		for enemy in normal.run.combat.enemies: enemy.hp = 0
 		normal._check_combat_end()
 		check(normal.run.relics.is_empty() and normal.run.reward_relic == "", "only elite drops relic: " + kind)

@@ -1,5 +1,8 @@
 extends "res://src/presentation/comic_cut_in.gd"
 const COLORS = {
+	"elemental_3": Color("8bbfea"), "elemental_4": Color("8fcc56"),
+	"beast_3": Color("c68657"), "bandit_6": Color("8aa4bc"),
+	"bandit_4": Color("ef9246"), "flying_5": Color("77c8d8"),
 	"skeleton_4": Color("b566eb"), "elemental_0": Color("ff8533"),
 	"crypt_beetle": Color("db9b51"), "bandit_2": Color("c99968"),
 	"beast_4": Color("9ec64f"), "elemental_6": Color("88bf65"),

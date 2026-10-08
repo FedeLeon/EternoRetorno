@@ -130,7 +130,7 @@ func _unlocks() -> void:
 		var tile = _frame(Rect2((i % 3) * 396, (i / 3) * 172, 382, 158), contents)
 		_icon(entry.icon, Rect2(18, 30, 78, 88), tile, Color.WHITE if entry.unlocked else Color(0.5, 0.5, 0.6))
 		ui.label_at(entry.name, 110, 14, 252, 48, 22, ui.GOLD, tile)
-		ui.label_at("DESBLOQUEADO" if entry.unlocked else entry.requirement, 110, 70, 252, 72, 18, ui.TEXT, tile)
+		ui.label_at(entry.get("detail","DESBLOQUEADO") if entry.unlocked else entry.requirement, 110, 70, 252, 72, 18, ui.TEXT, tile)
 
 func _history() -> void:
 	var contents = _scroll(1208, maxf(478, snapshot.history.size() * 88))
@@ -149,6 +149,15 @@ func history_detail(entry: Dictionary) -> void:
 	var lines: Array[String] = [entry.party_names, "Semilla: %s · %d salas · piso %d" % [entry.get("seed", "?"), entry.rooms, entry.get("floor", 1)]]
 	if not entry.get("killer", "").is_empty(): lines.append("Último golpe fatal: " + entry.killer)
 	if entry.get("abandoned", false): lines.append("Aventura terminada voluntariamente.")
+
+	var metrics: Dictionary = entry.get("telemetry", {})
+	if not metrics.is_empty():
+		lines.append("\nRegistro de combate:")
+		for battle in metrics.battles:
+			lines.append("Piso %d · sala %d · %d turnos · %d s · PV finales %s" % [battle.floor,battle.room+1,battle.turns,battle.seconds,str(battle.hp)])
+		for kind in ["cards","picked","unused"]:
+			lines.append({"cards":"Cartas jugadas", "picked":"Recompensas elegidas", "unused":"Cartas descartadas sin usar"}[kind]+":")
+			for id in metrics.get(kind,{}): lines.append("  %s × %d" % [ui.game.content.cards.get(id,{"name":id}).name,metrics[kind][id]])
 	lines.append("\nReliquias:")
 	for id in entry.get("relics", []): lines.append(ui.game.content.relics.get(id, {"name":id}).name)
 	lines.append("\nMazo final:")

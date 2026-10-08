@@ -3,6 +3,7 @@ extends RefCounted
 static func start(game: RefCounted) -> void:
 	var battle = game.run.combat
 	battle.turn += 1
+	preload("res://src/rules/boss_mechanics.gd").new_turn(game)
 	battle.energy = 99 if game.run.get("training", false) else game.turn_energy()
 	for h in game.run.heroes:
 		h.block = game.relic_bonus(h, "block") if h.hp > 0 else 0
@@ -10,8 +11,10 @@ static func start(game: RefCounted) -> void:
 		if h.hp > 0:
 			h.block += game.RunRelics.amount(game.run, game.content.relics, "turn_block")
 			if battle.turn == 1: h.block += game.RunRelics.amount(game.run, game.content.relics, "start_block")
+		if battle.turn == 1: h.block += int(game.run.get("event_flags", {}).get("pair_guard", 0))
 		h.turn_strength = 0
 		h.turn_magic = 0
+	game.run.get("event_flags", {}).erase("pair_guard")
 	for enemy in battle.enemies:
 		if enemy.hp <= 0:
 			continue
@@ -19,8 +22,11 @@ static func start(game: RefCounted) -> void:
 		var intent = preload("res://src/rules/adventure_extensions.gd").intent(enemy, game.content.enemies[enemy.id], battle.turn, battle.enemies)
 		var living = game.living_heroes()
 		intent.target = living[game.rng.randi_range(0, living.size() - 1)]
+		if enemy.get("risky", false): intent.damage += 2
 		preload("res://src/rules/combat_depth.gd").plan(game, enemy, intent)
-		if game.run.get("training", false): intent = {"damage":6,"block":0,"counter":0}
+		preload("res://src/rules/boss_mechanics.gd").plan(game, enemy, intent)
+		preload("res://src/rules/enemy_coordination.gd").plan(game, enemy, intent)
+		if game.run.get("training", false): intent = preload("res://src/rules/training_config.gd").intent(game, enemy, intent)
 		enemy.intent = intent
 	preload("res://src/rules/combat_depth.gd").release(game)
 	if game._check_combat_end(): return
@@ -36,6 +42,8 @@ static func end(game: RefCounted) -> bool:
 	if game.run.is_empty() or game.run.phase != "combat":
 		return false
 	var b = game.run.combat
+	preload("res://src/rules/adventure_choices.gd").end_turn(game)
+	preload("res://src/rules/combat_telemetry.gd").unused(game, b.hand)
 	b.discard.append_array(b.hand)
 	b.hand.clear()
 	# Poison ticks simultaneously before enemy actions, bypassing block.
@@ -51,7 +59,8 @@ static func end(game: RefCounted) -> bool:
 		var enemy = b.enemies[enemy_index]
 		if enemy.hp <= 0:
 			continue
-		var intent = game.Modifiers.intent(enemy)
+		var intent = preload("res://src/rules/enemy_coordination.gd").intent(game, enemy)
+		preload("res://src/rules/boss_mechanics.gd").action(game, enemy, intent)
 		game.run.attacker_name = game.content.enemies[enemy.id].name
 		preload("res://src/rules/combat_depth.gd").action(game, enemy, intent)
 		if game.living_heroes().is_empty():
@@ -85,4 +94,3 @@ static func end(game: RefCounted) -> bool:
 	game._remove_inactive()
 	game._start_turn()
 	return true
-

@@ -1,5 +1,54 @@
 # Historial de desarrollo
 
+## 08/10/2026 — Limpieza de recursos reemplazados y salidas temporales
+
+- 693 archivos/254,11 MiB retirados: piezas de equipo sobre actores, imágenes
+  antiguas de objetivos, bordes sustituidos, sus metadatos/cachés y 517 salidas
+  temporales, incluidos ocho ensayos. Fuentes únicas y prompts conservados.
+- Se elimina `main.scroll_area` sin consumidor y se ajustan importador de
+  pulido/política de texturas para no regenerar piezas retiradas. Las 83 suites
+  vigentes se conservan; se descartan también las capturas de esta verificación.
+- [Inventario, decisiones y pruebas actuales](cleanup/2026-10-08.md): 83/83
+  suites headless, tres nativas y revisión visual local. 34 suites headless
+  informan recursos al cierre. Sin exportar ni modificar `TestWeb/`, guardados
+  o entregables existentes; sin navegador/emulador/dispositivo físico.
+
+## 08/10/2026 — Siguiente mazmorra al elegir la reliquia del jefe
+
+- `boss_rewards.gd` avanza al siguiente piso en la misma transacción de elegir
+  reliquia exclusiva; desaparece el paso manual por el mapa anterior. Conserva
+  el final del último piso, guardados antiguos y progresión de la pareja.
+- [Comportamiento y archivos](forest/README.md#paso-directo-tras-la-reliquia-del-guardián--08102026).
+  Pruebas actuales: pulido 61, bosque/persistencia 24616 y juego 143 headless;
+  navegación 14 con renderizado local, sin fallos. Revisión visual del mapa de
+  destino a 1280×720. Sin exportación ni pruebas Web/Android.
+
+## 08/10/2026 — Evitar encogimiento enemigo al recibir daño o morir
+
+- La escala correctiva se conserva por cuadro, independientemente de `acting`.
+  Ataque vuelve al reposo antes de finalizar; daño/cenizas mantienen la geometría
+  visible y resurrección recupera reposo completo. `src/enemy_sprite.gd`, sin
+  cambios de imágenes, reglas ni guardados.
+- [Decisión y cobertura](enemies/README.md#tamaño-al-recibir-daño-y-morir--08102026).
+  Prueba ampliada `test_enemy_pose_sizes.gd`: 777 comprobaciones con renderizado
+  local, incluidas daño, muerte y resurrección; capturas revisadas a 1280×720.
+- Regresiones actuales sin fallos: enemigos 1336, turno 171 y contraataques
+  headless; flujo de combate 4 comprobaciones en ventana local. La suite de
+  enemigos informa cuatro instancias/un recurso al cerrar. `git diff --check`
+  limpio. Sin exportar ni probar navegador, emulador o dispositivo físico.
+
+## 08/10/2026 — Iconos de batalla minimalistas y todos visibles
+
+- Rediseño de los 36 assets de intenciones/efectos con símbolos simples,
+  contornos oscuros y colores planos. Imágenes ligeramente mayores; filas
+  completas sin desplazamiento horizontal, con vida y bloqueo alineados debajo.
+- `battle_effect_strip.gd`, `enemy_intent.gd`, `block_indicator.gd` y
+  `combat_screen.gd`; fuentes vectoriales, generador e importador documentados
+  en [Efectos de batalla](battle_effects/README.md). Rutas, UIDs y guardados intactos.
+- Validación actual: 883 comprobaciones en ventana local y revisión de capturas
+  a 1280×720; HUD 103, soporte 609 y disposición 41 headless, sin fallos.
+  Dos suites headless avisan de recursos al cierre. Sin exportar ni probar Web/Android.
+
 Registro consolidado el **15/09/2026** a partir de los cambios de esta sesión y
 la documentación del repositorio. El orden refleja las etapas de trabajo;
 no se atribuyen horas ni fechas de compilación que no estén verificadas.
@@ -2126,3 +2175,230 @@ Sin exportación ni validación Web/móvil.
   Reducción del árbol local, no una medición del exportado ni del historial Git.
 
 [Criterios, inventario y pruebas](cleanup/2026-10-07.md).
+
+## 07/10/2026 — Pulido visual y dieciocho mejoras integradas
+
+- Tema compartido de metal oscuro con bordes finos, interiores despejados,
+  foco/hover/estado deshabilitado, Source Sans 3 y Cinzel bajo OFL. Corrección
+  del peso variable con el identificador OpenType numérico; títulos, descripciones
+  y espacios revisados. El botón circular de terminar turno se conserva.
+- 18 atlas de ataque nuevos con 216 poses dibujadas de 384 px; movimientos según
+  carta/combo, proyectiles hasta el objetivo, recoil e impactos ajustables por
+  material. 36 piezas de equipo distinguen tres niveles de arma/armadura por héroe.
+- Guardianes con fuente, prisión y placas; acción por 1 energía y elección de
+  tres reliquias exclusivas después de la carta. Nueve reliquias con iconos,
+  descubrimiento persistente en colección y efectos solo durante la aventura.
+- Seis cartas de riesgo con ilustraciones propias, costes extra atómicos y compra;
+  132 cartas/78 comprables. Tres pactos, maldiciones/limpieza, quince encuentros
+  de parejas y un desvío opcional por piso, con aviso táctil y alternativa desde
+  todos sus accesos. Coordinación de apoyo/bestias comparte regla de intención
+  y resolución; eliminar el apoyo elimina su bonificación anticipada.
+- Proyectos permanentes del campamento: reserva con descuento, renovación del
+  mercader y reconocimiento. Refugio compara mazo guardado/borrador. Entrenamiento
+  de hasta tres enemigos descubiertos, patrones o intenciones personalizadas;
+  retorno exacto al perfil/aventura originales, sin premios ni persistencia.
+- Controles de teclado/mando para cartas, objetivos, enlaces y guardianes.
+  Telemetría local de hasta treinta aventuras, visible en historial; sin red
+  ni consumo de RNG. Eficiencia de ataques gratuitos nuevos mejora valor sin
+  multiplicar golpes; mejoras guardadas anteriores mantienen sus reglas.
+- Nueva música CC0 de fase II del guardián y grupos por material/acción sobre
+  sonidos CC0 existentes. Canales retirados detienen/liberan streams. No hay
+  sonido al pasar el mouse. Licencias y hashes conservados.
+- Extracciones `rules/room_actions.gd` y `ui/room_navigation.gd`, nuevos sistemas
+  y pantallas en archivos propios. Main queda en 598 líneas y Game en 441;
+  separación gradual pendiente, sin cambiar IDs/UIDs ni formato del guardado.
+- 33 generaciones ImageGen, 72 PNG finales y dos marcos SVG. Prompts, fuentes
+  intactas y hashes en `docs/polish_2026_10/`; `.gdignore` evita importar fuentes
+  de regeneración. Política de atlas conserva resolución/coordenadas, caché de
+  héroes limitada a dos. Imports PNG: 170,32 MiB; no equivale al tamaño exportado.
+- 73/73 suites locales aprobadas; reglas nuevas 51, animación 528, interfaz 13
+  y colección 43 comprobaciones. Recorrido gráfico de 36 vistas, sin etiquetas
+  desbordadas, capturas revisadas con Mesa/llvmpipe. Advertencias al cierre de
+  pruebas históricas registradas separadamente; recorrido gráfico nuevo limpio.
+- 90 aventuras automáticas legales: 31/45 victorias sin equipo y 39/45 con
+  nivel 1, con premios/mejoras/objetos. Falta evaluación humana; no se usan esos
+  resultados para declarar balance final. Medición nativa corta documentada.
+- Benchmark Web únicamente sobre `TestWeb/` del 05/10: 3,57 s de carga por HTTP,
+  tres escenarios capturados y sin errores JavaScript. No representa los cambios
+  nuevos. No se exportó Web/APK, modificó TestWeb, publicó ni probó dispositivo.
+
+[Los dieciocho puntos, archivos, controles, procedencia y resultados](polish_2026_10/README.md).
+
+## Iconos de efectos de batalla — 07/10/2026
+
+- Retaguardia, brasas, raíces, preparación, élites, coordinación, maldiciones,
+  combinaciones de reliquias y estados de guardianes pasan de carteles a iconos.
+  Intenciones compactas debajo del nombre; efectos aliados sobre la vida.
+- 36 PNG de 128×128 con alfa, creados mediante ImageGen integrado; 0,76 MiB finales.
+  Prompts, originales y hashes conservados, fuentes documentales fuera de exportación.
+- Cada efecto abre su explicación; fuente/placas/prisión permiten confirmar su
+  acción por 1 energía en el diálogo. Consulta sin gasto ni mutación del estado.
+  Bloqueo activo gris y sus cenizas se conservan junto a la barra.
+- Instantánea/distribución extraídas a componentes propios. Desaparece el texto
+  de segunda fase en el nombre; el icono correspondiente la representa.
+  Hasta dos filas con desplazamiento para casos de más de diez efectos.
+- Diez suites headless sin fallos; recorrido gráfico nuevo con 233 comprobaciones
+  y 16 capturas locales. Avisos de cierre de suites headless registrados aparte.
+  Sin exportación Web/APK ni validación en navegador/emulador/dispositivo.
+
+[Archivos, catálogo, arte y resultados](battle_effects/README.md).
+
+## Corrección de equipo superpuesto en héroes — 07/10/2026
+
+- Se retiran las capas de arma/armadura agregadas sobre las poses de los seis
+  héroes: quedaban flotantes y duplicaban el equipo de la ilustración.
+- `detailed_hero.gd` conserva el shader de niveles; mejoras de combate, guardado
+  e iconos del HUD sin cambios. Se retira el módulo `equipment_layers.gd` y su UID,
+  sin consumidores; fuentes/assets de la entrega previa conservados.
+- Pruebas actuales: actores 1662 y equipamiento UI 48 headless; animaciones 534
+  en ventana local, cinco capturas, reposo/defensa revisados. Sin fallos funcionales.
+  Sin exportación Web/APK ni validación en navegador o dispositivo.
+- [Detalle y límites](polish_2026_10/README.md#corrección-posterior-equipo-duplicado-sobre-héroes--07102026).
+
+## Acceso al bestiario desde Inicio — 07/10/2026
+
+- Botón Bestiario encima de Colección, alineado y con el mismo tamaño/estilo.
+- Encabezado y botón Atrás regresan a Inicio si se abrió allí; el acceso existente
+  desde Campamento conserva su regreso al campamento. Se reutiliza la pantalla.
+- Archivos: `main.gd`, `bestiary_screen.gd`, `base_camp_screen.gd`. Sin reglas nuevas,
+  modificaciones de descubrimiento ni cambios de guardado.
+- Verificación con ventana local Godot 4.7.2/Mesa/llvmpipe: disposición, clic para
+  abrir, regreso mediante Inicio/Atrás y recorrido Campamento → Bestiario → Campamento.
+  Captura revisada en `artifacts/bestiary-navigation/home.png`; sin fallos funcionales.
+  Sin exportación ni comprobación en navegador/emulador/dispositivo.
+
+## Números flotantes de daño más visibles — 07/10/2026
+
+- Cifras de impacto de 17 a 40 px, con contorno oscuro, sombra y permanencia
+  opaca antes del desvanecimiento; bloqueo/penetración con leyendas secundarias.
+- Archivo: `src/presentation/impact_feedback.gd`. Sin cambios de reglas o guardado.
+- Revisión gráfica local de tres tipos de impacto, límites, limpieza y estado
+  intacto; energía headless 5 comprobaciones sin fallos. Avisos de cierre registrados
+  en [documentación del sistema](polish_2026_10/README.md).
+- Sin exportación ni validación en navegador/emulador/dispositivo.
+
+## Más variedad enemiga en los tres pisos — 08/10/2026
+
+- Selección ponderada por uso en el piso, antecedentes y combates anteriores de
+  cada camino; evita repetir la formación completa. Apoyo/protector pasa de
+  obligatorio a preferencia moderada. Fortaleza: de 9 a 14 enemigos comunes.
+- Archivos: `enemy_formations.gd`, `dungeon_generator.gd`, `data/dungeons.json`;
+  cinco enemigos con assets existentes. Pisos ya guardados conservados intactos.
+- Cinco suites headless sin fallos: formaciones 43.678, bosque 24.616, mazmorra 66,
+  expansión 5.224 y assets 78; avisos de cierre de esta última documentados.
+  Sin revisión visual nueva de enemigos ni exportación.
+- [Reglas y compatibilidad](forest/README.md#variedad-de-formaciones-en-los-tres-pisos--08102026).
+
+## Tarjetas para dificultad y condición — 08/10/2026
+
+- Preparación con cuatro tarjetas de dificultad y tres de condición, ilustraciones
+  existentes, efecto visible, selección exclusiva y desbloqueos conservados.
+- `run_setup_screen.gd`: borrador local; cancelar conserva preferencias; empezar
+  confirma la selección a través del flujo previo. Sin cambios de reglas/guardado.
+- `test_run_setup_cards.gd`: 22 comprobaciones gráficas locales y dos capturas
+  revisadas. Regresión de reglas: 5.224 headless sin fallos. Sin exportación.
+- [Diseño, arte reutilizado y pruebas](expansion_2026_10/README.md#preparación-mediante-tarjetas--08102026).
+
+## Mapas de mazmorra en espiral — 08/10/2026
+
+- Entrada exterior y recorrido que gira hacia el guardián central en los tres
+  pisos; 28 salas y bifurcaciones conservadas, conexiones curvas y margen de la
+  columna lateral. Mapas guardados intactos; aplica a pisos recién generados.
+- Geometría extraída a `src/map_geometry.gd`; integración en generador y pantalla
+  de mapa. Sin nuevos assets ni cambios de encuentros, daño o premios.
+- Prueba nueva de 300 mapas: 170.458 comprobaciones headless sin fallos;
+  regresiones de formaciones 43.678, bosque 24.616 y mazmorra 66. Mapa gráfico:
+  141 comprobaciones, más recorrido/capturas locales de los tres pisos.
+- [Geometría, compatibilidad y límites](map/README.md#recorrido-en-espiral--08102026).
+  Sin exportación ni validación Web/móvil.
+
+## Golpes cuerpo a cuerpo junto al enemigo — 08/10/2026
+
+- El sprite de guerrero, guardiana o pícaro avanza junto al objetivo, ejecuta su
+  ataque y vuelve a su ubicación exacta. HD simultáneo abajo a la izquierda.
+  Combos/áreas conservan impactos individuales; tiros y poderes a distancia.
+- Archivos: `presentation/melee_motion.gd` y `card_impacts.gd`. Solo presentación;
+  sin daño duplicado, cambios de reglas/guardado ni nuevos assets.
+- Prueba gráfica de ocho escenarios: 564 comprobaciones sin fallos; revisión
+  de capturas locales. Regresiones headless de contraataque, turnos 171, soporte
+  1.922 y energía 5 sin fallos; avisos de cierre de energía documentados.
+- [Implementación, compatibilidad y pruebas](polish_2026_10/README.md#aproximación-para-ataques-cuerpo-a-cuerpo--08102026).
+  Sin exportación ni comprobación Web/móvil.
+
+## Compensación de poses pequeñas de enemigos — 08/10/2026
+
+- Medición de 44 atlas; compensación conservadora de cuadros pequeños en 12
+  apariencias, preservando la línea de pies y el tamaño externo del actor.
+  Al terminar se restauran escala/offset. PNG y HD originales conservados.
+- Archivos: `src/enemy_sprite.gd`, `data/enemy_pose_sizes.json`, generador de
+  métricas `scripts/audit_enemy_pose_sizes.py`; sin reglas o guardados nuevos.
+- Prueba nativa 628 comprobaciones y revisión de reposo/ataque de seis actores;
+  regresiones headless enemigos 1.222, turnos 171 y contraataques, sin fallos.
+  Avisos de cierre y alcance de la reproducción documentados en
+  [biblioteca de enemigos](enemies/README.md#tamaño-consistente-en-cuadros-de-ataque--08102026).
+- Sin exportación ni validación Web/móvil.
+
+## Cinemáticas, nuevos enemigos y pulido integral — 08/10/2026
+
+- Diez cinemáticas ilustradas: inicio, seis historias personales y tres finales de
+  guardianes, con cámara/partículas, subtítulos, pausa, salto y galería «Historias».
+  Automatismos opcionales y descubrimiento persistente; guardado antes del final
+  de jefe, sin duplicar premios ni cambiar el recorrido de partidas anteriores.
+- Cuatro fondos generados con imagegen, seis retratos derivados de cuadros HD
+  existentes y doce assets nuevos para seis enemigos de plantillas reservadas.
+  Prompts/procedencia/hashes conservados; originales de generación excluidos del export.
+- Enemigos: 18 comunes de cripta, 20 de bosque y 16 de fortaleza; 51 definiciones
+  y 50 apariencias activas. Poses únicas, estelas, desfase de reposo y métricas de
+  apoyo/tamaño regeneradas. Sin reconfigurar salas ya guardadas.
+- Polvo/hojas/brasas detrás del combate, chispas y ondas locales, avisos legibles
+  que desaparecen y títulos compartidos para mercader errante, vínculos y eventos
+  de cartas, eliminando el logo redundante en esos encabezados.
+- Dos arreglos musicales ambientales CC0 locales, mezcla con limitador y reducción
+  temporal de música en impactos. Se conserva el silencio al pasar el mouse.
+- [Sistemas, análisis, archivos y pruebas realmente realizadas](cinematics/README.md).
+  Regresiones de 81 suites y revisión nativa de pantallas/cinemáticas/enemigos;
+  advertencias de cierre y límites de entorno detallados en la auditoría.
+- No se exportó Web ni APK; no hubo validación en navegador, emulador o dispositivo físico.
+
+## 08/10/2026 — Posiciones y legibilidad entre vistas
+
+- Mazo, mejoras y decisiones de cartas con proporciones más verticales; franjas
+  inferiores que separan confirmación/regreso de las listas desplazables.
+- Vínculos con regreso superior, historias separadas de selectores compactos.
+- Mercader errante con iconos de consumibles y descripción de intercambio
+  separada de los controles incluso con texto grande. Avisos de edificios a la
+  izquierda para no cubrir las tarjetas de la derecha.
+- Resumen final con fondo del piso existente, panel oscuro, estadísticas
+  destacadas, detalles desplazables y navegación fija. Reutilización de recursos
+  y encabezados; sin cambios de guardados ni reglas.
+- [Archivos, decisiones y pruebas de esta entrega](ui_layout/README.md):
+  50 variantes capturadas + dos avisos, 14 comprobaciones nativas y 7/7 suites
+  headless aprobadas; sin expansión de altura en etiquetas revisadas.
+  Persisten advertencias de recursos al cierre de dos suites. Sin exportación
+  Web/APK, navegador, emulador ni dispositivo físico.
+
+## 08/10/2026 — Viñetas más lentas, mapa ordenado y escenas de película
+
+- Héroes: ataque/defensa HD de 0,96 s, con fases de poses/luz coordinadas; enemigos
+  mantienen 0,72 s. Mapas con vuelta exterior/retorno interior, nuevas ramas
+  ordenadas, margen inferior corregido y jerarquía visual de caminos.
+- Campamento: taller permanente de Proyectos entre Iglesia/Aventuras, icono
+  cuadrado de entrenamiento y Bestiario solo en Inicio.
+- 21 ilustraciones de capítulos mediante imagegen integrado, fundidos pausables
+  y miniaturas propias. Dos sonidos metálicos Kenney CC0 para bloqueo completo
+  o parcial. Fuentes y prompts conservados; originales fuera del import del juego.
+- [Entrega, archivos y pruebas actuales](presentation_refinements/README.md):
+  142 comprobaciones headless/143 nativas, geometría de 300 mapas, 82/82 suites
+  tras repetir el caso de margen corregido, 84 comprobaciones de audio nativo.
+  Sin exportar Web/APK, sin navegador ni dispositivo físico.
+
+## 08/10/2026 — Ajuste de edificios construidos del campamento
+
+- Expediciones ligeramente más abajo y un 10 % más grande; Iglesia un 10 % más
+  grande y desplazada a la izquierda. Carteles y zonas de clic acompañan el
+  cambio; solares vacíos y guardados conservados.
+- Cambio en `src/ui/screens/base_camp_screen.gd` y documentación en
+  [Campamento](base_camp/README.md#tamaño-y-posición-de-edificios-construidos--08102026).
+- Validación actual local renderizada: expansión 39 y campamento 38
+  comprobaciones sin fallos, revisión visual a 1280×720. Recursos pendientes
+  al cierre de la suite de campamento. Sin exportar ni probar Web/Android.

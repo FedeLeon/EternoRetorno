@@ -16,3 +16,13 @@ static func enter(game: RefCounted, kind: String) -> int:
 		return node.id
 	assert(false, "Missing room kind " + kind)
 	return -1
+
+static func break_objective(game: RefCounted) -> void:
+	var objective: Dictionary = game.run.combat.get("boss_objective", {})
+	if objective.get("kind", "") in ["source", "armor"]:
+		while not objective.broken:
+			assert(game.polish_action("boss_objective"), "Fixture must spend real energy to break objective")
+
+static func collect_boss_relic(game: RefCounted) -> void:
+	if game.run.phase == "boss_reward":
+		assert(game.polish_action("boss_relic", {"id":game.run.boss_offers[0]}))

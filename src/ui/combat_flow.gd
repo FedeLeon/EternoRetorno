@@ -11,6 +11,7 @@ static func run(ui: Control, hand_index: int = -1, target_index: int = -1, syner
 static func present(ui: Control, hand_index: int, target_index: int, synergy_id: String) -> void:
 	if ui.combat_busy or ui.game.run.phase != "combat":
 		return
+	if hand_index >= ui.game.run.combat.hand.size(): return
 	var before = ui.game.run.heroes.duplicate(true)
 	var old_enemies = ui.game.run.combat.enemies.duplicate(true)
 	var owner = -1
@@ -29,18 +30,11 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		healing = card.heal > 0
 		poisonous = card.poison > 0
 		owner = ui.game.owner_index(instance)
-		motion = "heavy" if card.cost >= 2 else "attack"
-		if card.owner == "mage":
-			motion = "heavy" if card.target == "all_enemies" else "attack"
-		if instance.id == "guardian_bash":
-			motion = "bash"
-		if card.damage == 0:
-			motion = "guard"
-		if card.owner == "cleric":
-			motion = "attack" if card.damage > 0 else ("heal" if card.heal > 0 else "guard")
-		if instance.id == "rogue_venom":
-			motion = "poison"
+		motion = preload("res://src/presentation/action_motion.gd").for_card(card)
 	var spent_indices: Array = [hand_index] if hand_index >= 0 else []
+	if hand_index >= 0 and int(ui.game.content.cards[ui.game.run.combat.hand[hand_index].id].get("discard_cost",0)) > 0:
+		var others: Array = range(ui.game.run.combat.hand.size()).filter(func(i):return i != hand_index)
+		if not others.is_empty(): spent_indices.append(others.back())
 	if synergy_id != "":
 		for combo in ui.game.available_synergies():
 			if combo.id == synergy_id:

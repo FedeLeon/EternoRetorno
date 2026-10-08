@@ -1,3 +1,8 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+La documentación y resultados anteriores se conservan como historial.
+
 # Mapa de aventura — 16/09/2026
 
 ## Presentación inicial (histórico; ver actualizaciones al final)
@@ -214,3 +219,48 @@ colores distintos, orden de dibujo y variación temporal de la opacidad.
 Validación de este cambio: **141 comprobaciones sin fallos** tanto headless como
 con render Linux/llvmpipe. Revisión visual a 1280×720 de la bifurcación iluminada.
 Sin exportación ni pruebas Web/Android nuevas.
+
+## Recorrido en espiral — 08/10/2026
+
+Los tres pisos nuevos disponen sus 28 salas siguiendo una espiral: entrada
+exterior arriba a la izquierda, vuelta por el perímetro y tramo interior hasta
+el guardián central. Las trece etapas conservan bifurcaciones de hasta tres salas,
+el élite temprano opcional y el élite tardío obligatorio. Cambian la geometría y
+sus caminos dibujados; la disponibilidad continúa dependiendo del grafo.
+
+- `src/map_geometry.gd`: centros/ramales de la espiral, separación de 70 px,
+  variación de hasta 3 px por eje y curvas Bézier limitadas al área del mapa.
+  Geometría pura, compartida entre generador y presentación.
+- `rules/dungeon_generator.gd` almacena coordenadas y la marca opcional
+  `layout: spiral` en los nodos nuevos. Mantiene inventario de salas, elección
+  aleatoria de rutas/enemigos y restricciones de etapa.
+- `ui/screens/map_screen.gd` dibuja 17 puntos por conexión curva y aplica la
+  misma compresión horizontal a salas/caminos para dejar libre la columna derecha.
+  Conserva brillo, marcador, botones, pestañas y escalera.
+- Guardados previos mantienen coordenadas, conexiones y rectas; los mapas antiguos
+  de doce salas siguen usando su fallback. No se regeneran encuentros al cargar.
+  La espiral aparece al crear una aventura o generar el siguiente piso.
+- No se crearon assets ni se modificaron reglas de daño, recompensas o persistencia.
+
+Validación actual local Godot 4.7.2:
+
+- `test_spiral_map.gd`: 170.458 comprobaciones sobre 300 mapas (100 por piso),
+  determinismo, centro del guardián, límites, tarjetas sin solapamiento, etapas,
+  acceso a todos los nodos y extremos/límites de curvas; caminos antiguos rectos.
+- Regresiones headless: formaciones 43.678, bosque/progresión/guardado 24.616 y
+  mazmorra/compatibilidad legada 66; sin fallos funcionales.
+- `test_map.gd`: 141 comprobaciones gráficas nativas; clics, bloqueo de salas,
+  grupo, mazo, reliquias, brillo/marcador y escalera. La prueba de interceptación
+  del grupo ahora localiza una sala realmente cubierta, sin depender de un ID.
+- Recorrido gráfico de los tres pisos y capturas `artifacts/spiral-map/floor-*.png`
+  revisadas a 1280×720 en Linux/Mesa/llvmpipe. El controlador informa que no admite
+  cambiar VSync. Sin exportación ni pruebas Web/emulador/dispositivo físico.
+
+## Espiral ordenada — 08/10/2026
+
+Capas alineadas en una vuelta exterior y retorno interior; ramas nuevas ordenadas
+sin conexiones entre carriles opuestos. El último tramo curva por debajo de las
+ramas interiores. Caminos futuros tenues, recorrido realizado más oscuro y
+salidas actuales resaltadas. Mapas guardados conservan salas/conexiones/posiciones
+en disco; UI adapta solo una copia de las espirales antiguas. Mapas de doce salas
+siguen como antes. [Archivos y pruebas actuales](../presentation_refinements/README.md).

@@ -10,6 +10,7 @@ var confirm: Button
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	preload("res://src/ui/components/inventory_background.gd").build(ui,self)
 	cards = ui.game.run.deck.duplicate(true)
 	ui.panel(20, 12, 1240, 116, ui.GOLD, self)
 	ui.label_at("Templar una carta", 36, 32, 950, 44, 30, ui.TEXT, self)
@@ -19,8 +20,9 @@ func _ready() -> void:
 	ui.rect(scroll, 36, 140, 1208, 485, self)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	contents = Control.new()
-	contents.custom_minimum_size = Vector2(1180, ceil(cards.size() / 4.0) * 368)
+	contents.custom_minimum_size = Vector2(1180, ceil(cards.size() / 4.0) * 390)
 	scroll.add_child(contents)
+	ui.panel(20,634,1240,78,ui.GOLD,self)
 	confirm = ui.button("Mejorar", 920, 646, 324, 54, commit, false, self)
 	confirm.name = "ConfirmUpgrade"
 	ui.button("Volver", 36, 646, 230, 54, func():
@@ -41,7 +43,8 @@ func refresh() -> void:
 		if i == selected:
 			preview.upgraded = true
 			preview.upgrade_variant = variant
-		var card = ui.card_panel(preview, (i % 4) * 296, (i / 4) * 368, 280, 350,
+			if ui.game.run.get("polish_version",0)>0: preview.upgrade_rules = 2
+		var card = ui.card_panel(preview, 24 + (i % 4) * 296, (i / 4) * 390, 248, 374,
 			func(): select(i), false, not cards[i].upgraded, contents)
 		card.name = "UpgradeCard%d" % i
 		card.set_meta("upgrade_preview", i == selected)

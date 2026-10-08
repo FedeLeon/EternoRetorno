@@ -67,6 +67,11 @@ func run_tests() -> void:
 	await process_frame
 	await click(Vector2(1060, 675))
 	app.overlay.get_node("StartDungeon1").pressed.emit()
+	app.overlay.get_node("StartAdventure").pressed.emit()
+	for hero in party:
+		await process_frame
+		check(app.has_node("CinematicPlayer"),"hero story follows preparation")
+		app.get_node("CinematicPlayer").finish()
 	await process_frame
 	check(app.screen == "map" and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
 	check(app.game.run.inventory.is_empty(), "new adventure has no consumables")

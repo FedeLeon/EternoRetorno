@@ -1,0 +1,92 @@
+{
+  "guardian_warrior": {
+    "name": "Acero y juramento",
+    "text": "La Guardiana cubre la grieta de la armadura del Guerrero. Él abre camino con su espada.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "rogue_warrior": {
+    "name": "La sombra del filo",
+    "text": "El Pícaro marca los puntos débiles mientras el Guerrero mantiene a los rivales ocupados.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "mage_warrior": {
+    "name": "Acero encantado",
+    "text": "La Maga graba una runa helada en la espada del Guerrero.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "cleric_warrior": {
+    "name": "Luz en la grieta",
+    "text": "La Clériga calma el dolor bajo la armadura maldita. El Guerrero renueva su juramento.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "ranger_warrior": {
+    "name": "El camino del hierro",
+    "text": "El Explorador descubre una ruta de flanqueo que el Guerrero puede abrir.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "guardian_rogue": {
+    "name": "Cobertura inesperada",
+    "text": "Un escudo firme deja al Pícaro atacar desde un ángulo imposible.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "guardian_mage": {
+    "name": "Círculo protector",
+    "text": "La Maga dibuja un sello detrás del escudo de la Guardiana.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "cleric_guardian": {
+    "name": "Dos formas de proteger",
+    "text": "La luz de la Clériga alcanza a quienes el escudo de la Guardiana no puede cubrir.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "guardian_ranger": {
+    "name": "Tras el escudo",
+    "text": "El Explorador ensaya su tiro desde la cobertura de la Guardiana.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "mage_rogue": {
+    "name": "Veneno y escarcha",
+    "text": "La Maga enfría una hoja del Pícaro para retrasar a su próximo rival.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "cleric_rogue": {
+    "name": "Un remedio improbable",
+    "text": "El Pícaro ofrece hierbas que la Clériga convierte en un ungüento.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "ranger_rogue": {
+    "name": "Rastros en silencio",
+    "text": "Ambos trazan una emboscada sin dejar huellas.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "cleric_mage": {
+    "name": "La misma fuente",
+    "text": "La Maga y la Clériga reconocen un antiguo símbolo de poder entre sus libros.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "mage_ranger": {
+    "name": "La flecha del invierno",
+    "text": "La Maga talla un cristal para la punta de una flecha del Explorador.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  },
+  "cleric_ranger": {
+    "name": "El sendero seguro",
+    "text": "La Clériga ilumina marcas que solo el Explorador sabe seguir.",
+    "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
+    "background": "forest_hunter"
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "hero": "warrior",
+    "source": "assets/comic/motion/warrior_0.png",
+    "source_sha256": "54e4c1e1bbc12fd258f2667b6d7a3480cb0fbb3815ed38ce757e3beb159177de",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/warrior.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "5d09fd96589864b451be79be181022c3ee271f682dabb661c9ec41dc9b401b20"
+  },
+  {
+    "hero": "guardian",
+    "source": "assets/comic/motion/guardian_0.png",
+    "source_sha256": "54fa2815792a7806986166a43f1729d293ef67608a0d10ad630c413a71f820a9",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/guardian.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "ef5bd91bc988dce79c47e36b910f5d2cb1aedba55330c868629a294bf7d87649"
+  },
+  {
+    "hero": "rogue",
+    "source": "assets/comic/motion/rogue_0.png",
+    "source_sha256": "c865d38517aac054a36ff3a1effbe4144e21c3a6ffe5c9510cd98b32f4bbe9cc",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/rogue.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "2a4d549d863d5f43f8161837117e009840faf2aa63cedc25bdd72a21590f46f0"
+  },
+  {
+    "hero": "mage",
+    "source": "assets/comic/motion/mage_0.png",
+    "source_sha256": "378e2f8b7f76bb9e0c150779ffc41488813efceeebbe92586947ef7d5c0f714f",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/mage.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "6dee455d4384ad84687f353544de65367c0d82218545c5aaa068b77177e95d67"
+  },
+  {
+    "hero": "cleric",
+    "source": "assets/comic/motion/cleric_0.png",
+    "source_sha256": "35d7a2d54b36af9d5961f782116bbc271023384b8d793530b1b56dbd3c925976",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/cleric.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "5abfd6b1d5b8e24dfc75d2871317d0e0dad6e7038a1d869a27ceec177a5f80c7"
+  },
+  {
+    "hero": "ranger",
+    "source": "assets/comic/motion/ranger_0.png",
+    "source_sha256": "ddc48ae10012b4044c7260a8528e3553b2c89e86392823db60302059729cb999",
+    "frame": 5,
+    "region": [
+      768,
+      512,
+      1536,
+      1024
+    ],
+    "output": "assets/cinematics/portraits/ranger.png",
+    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
+    "sha256": "849602f56a30439b40e6d2c23be47889e683a1171a48e2353ba3994cc131a13c"
+  }
+]

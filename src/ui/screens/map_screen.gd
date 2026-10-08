@@ -57,6 +57,19 @@ func action(text: String, area: Rect2, callback: Callable, parent: Node = self) 
 	return node
 
 func _ready() -> void:
+	# Older spiral saves receive the clearer arrangement in a private UI snapshot.
+	# Their paths, encounters and persisted positions remain untouched.
+	nodes = nodes.duplicate(true)
+	var visual_rng = RandomNumberGenerator.new()
+	visual_rng.seed = run_seed
+	for stage in range(13):
+		var layer_nodes = nodes.filter(func(node): return node.get("layout","") == "spiral" and node.get("stage",-1) == stage)
+		for lane in range(layer_nodes.size()):
+			var node: Dictionary = layer_nodes[lane]
+			if int(node.get("layout_version",1)) >= 2: continue
+			var point = preload("res://src/map_geometry.gd").position(stage,lane,layer_nodes.size(),visual_rng)
+			node.position = [point.x,point.y]
+			node.layout_version = 2
 	var background = picture(preload("res://assets/map/minimal/parchment.png"), Rect2(0, 0, 1280, 720))
 	background.stretch_mode = TextureRect.STRETCH_SCALE
 	var title_frame = Panel.new()
@@ -66,6 +79,7 @@ func _ready() -> void:
 	place(title_frame, Rect2(360, 16, 560, 64))
 	var title = label(dungeon_name, Rect2(380, 24, 520, 48), 30, GOLD)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.add_theme_font_override("font",preload("res://src/ui/components/polish_theme.gd").HEADING)
 	action("Menú", Rect2(1068, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
 	draw_route()
 	var drawer = preload("res://src/ui/components/map_group_drawer.gd").new()
@@ -80,10 +94,16 @@ func draw_route() -> void:
 	for node in nodes:
 		for next in node.next:
 			var line = Line2D.new()
-			line.width = 2
-			line.default_color = Color("a14e20") if next in available and node.id == current else Color("917858")
-			line.add_point(route_position(node))
-			line.add_point(route_position(nodes[next]))
+			var active_path = next in available and node.id == current
+			var travelled = node.id in visited and (next in visited or next == current)
+			line.width = 3 if active_path else 2.5 if travelled else 1.5
+			line.default_color = Color("a14e20") if active_path else Color("674322") if travelled else Color(0.43,0.32,0.20,0.45)
+			if node.get("layout", "") == "spiral":
+				for point in preload("res://src/map_geometry.gd").connection(node,nodes[next]):
+					line.add_point(display_point(point))
+			else:
+				line.add_point(route_position(node))
+				line.add_point(route_position(nodes[next]))
 			add_child(line)
 	for node in nodes:
 		var center = route_position(node)
@@ -99,6 +119,8 @@ func draw_route() -> void:
 			var elite_data = preload("res://src/rules/combat_depth.gd").ELITES[node.elite_modifier]
 			target.set_meta("elite_description", elite_data.name + ": " + elite_data.description)
 		target.tooltip_text = "Sala actual" if node.id == current else ("Sala disponible" if reachable else ("Sala visitada" if done else "Sin acceso"))
+		if node.has("risk"): target.tooltip_text += "\n"+node.risk.name+": "+node.risk.warning
+		if node.get("scouted",false): target.tooltip_text += "\nReconocimiento: "+ {"combat":"Combate","elite":"Élite","treasure":"Tesoro","rest":"Descanso","event":"Encuentro","boss":"Guardián"}[node.kind]
 		if target.has_meta("elite_description"): target.tooltip_text += "\n" + target.get_meta("elite_description")
 		for state in ["normal", "disabled", "hover", "pressed", "focus"]:
 			var style = StyleBoxTexture.new()
@@ -136,7 +158,9 @@ func add_room_glow(center: Vector2, room_id: int, is_current: bool) -> void:
 	pulse.tween_property(glow, "modulate:a", 1.0, 1.1)
 
 func route_position(node: Dictionary) -> Vector2:
-	var point = Dungeon.map_position(node)
+	return display_point(Dungeon.map_position(node))
+
+func display_point(point: Vector2) -> Vector2:
 	# Reserve room for the permanent rail without altering saved map coordinates.
 	point.x = 54 + (point.x - 54) * 0.93
 	return point

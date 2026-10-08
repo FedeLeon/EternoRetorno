@@ -3,6 +3,7 @@ extends Control
 
 const CATALOG_PATH = "res://data/enemy_visuals.json"
 static var catalog: Dictionary = {}
+static var pose_sizes: Dictionary = {}
 var visual_id = "crypt_bat"
 var sprite: Sprite2D
 var fallen = false
@@ -19,6 +20,8 @@ static func entries() -> Dictionary:
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Different silhouettes no longer flap or idle in perfect synchrony.
+	clock = float(absi(visual_id.hash())%1000)/137.0
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	sprite = Sprite2D.new()
 	var motion_path = "res://assets/enemies/animations/" + visual_id + ".png"
@@ -26,6 +29,7 @@ func _ready() -> void:
 	sprite.texture = load(motion_path if has_motion_frames else "res://assets/enemies/hd/" + visual_id + ".png")
 	sprite.hframes = 8 if has_motion_frames else 1
 	sprite.offset = Vector2(0, -64)
+	sprite.frame_changed.connect(_size_pose)
 	add_child(sprite)
 	resized.connect(_place)
 	_place()
@@ -35,6 +39,20 @@ func _place() -> void:
 	base_scale = maxf(1, floor(minf(size.x / 64, size.y / 52))) / 2.0
 	sprite.position = Vector2(round(size.x / 2), size.y)
 	sprite.scale = Vector2.ONE * base_scale
+	_size_pose()
+
+func _size_pose() -> void:
+	if not has_motion_frames or sprite == null: return
+	if pose_sizes.is_empty():
+		pose_sizes = JSON.parse_string(FileAccess.get_file_as_string("res://data/enemy_pose_sizes.json"))
+	var metrics: Dictionary = pose_sizes.get(visual_id, {})
+	# Correction belongs to the drawn frame, not to the current action flag.
+	# Reactions and ash playback can freeze the last rendered attack frame.
+	var factor = float(metrics.get("scale", [1,1,1,1,1,1,1,1])[sprite.frame])
+	var bottom = float(metrics.get("bottom", [120,120,120,120,120,120,120,120])[sprite.frame])
+	sprite.scale = Vector2.ONE * base_scale * factor
+	# Keep the original opaque foot baseline while correcting the drawn pose size.
+	sprite.offset.y = 64-bottom + (bottom-128)/factor
 
 func _process(delta: float) -> void:
 	if acting or fallen or sprite == null:
@@ -45,7 +63,8 @@ func _process(delta: float) -> void:
 	var kind = entries()[visual_id].motion
 	var wave = sin(clock * (4.5 if kind == "fly" else 2.6))
 	# Bottom pivot keeps grounded feet fixed throughout breathing.
-	sprite.scale = Vector2.ONE * base_scale if has_motion_frames else Vector2(base_scale * (1.0 + (0.025 * wave if kind == "ooze" else 0.0)), base_scale * (1.0 + wave * (0.04 if kind == "ooze" else 0.015)))
+	if not has_motion_frames:
+		sprite.scale = Vector2(base_scale * (1.0 + (0.025 * wave if kind == "ooze" else 0.0)), base_scale * (1.0 + wave * (0.04 if kind == "ooze" else 0.015)))
 	sprite.position.y = size.y + (round(wave * 3) - 5 if kind == "fly" else 0)
 
 func set_fallen(value: bool) -> void:
@@ -55,13 +74,18 @@ func set_fallen(value: bool) -> void:
 	sprite.visible = not fallen
 	sprite.modulate = Color.WHITE
 	sprite.rotation = -PI / 2 if fallen else 0.0
-	sprite.scale = Vector2.ONE * base_scale * (0.6 if fallen else 1.0)
+	if not fallen:
+		sprite.rotation = 0.0
+		if has_motion_frames: sprite.frame = 0
+		_place()
 
 func play_once(animation: String) -> void:
 	if fallen:
 		return
 	acting = true
-	_place()
+	# Freeze the visible pose for damage/death instead of recalculating its size.
+	if animation == "attack": _place()
+	_size_pose()
 	if animation == "death":
 		await preload("res://src/presentation/enemy_ash.gd").play(self)
 		acting = false
@@ -77,7 +101,11 @@ func play_once(animation: String) -> void:
 			tween.tween_property(sprite, "position:x", size.x / 2, 0.12)
 			tween.parallel().tween_property(sprite, "modulate", Color.WHITE, 0.12)
 	await tween.finished
+	# Return frame and scale together, before a following reaction can start.
+	if animation == "attack" and has_motion_frames:
+		sprite.frame = 0
 	acting = false
+	_size_pose()
 
 
 func attack_motion() -> void:
@@ -94,7 +122,7 @@ func attack_motion() -> void:
 	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 5, 0.10)
 	match visual_id:
 		"crypt_slime":
-			tween.parallel().tween_property(sprite, "scale", Vector2(1.12, 0.82) * base_scale, 0.10)
+			if not drawn_attack: tween.parallel().tween_property(sprite, "scale", Vector2(1.12, 0.82) * base_scale, 0.10)
 		"crypt_bat":
 			tween.parallel().tween_property(sprite, "position:y", origin.y - 9, 0.10)
 		"crypt_shaman":
@@ -105,14 +133,15 @@ func attack_motion() -> void:
 	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 6, 0.12)
 	match visual_id:
 		"crypt_slime":
-			tween.parallel().tween_property(sprite, "scale", Vector2(0.9, 1.08) * base_scale, 0.12)
+			if not drawn_attack: tween.parallel().tween_property(sprite, "scale", Vector2(0.9, 1.08) * base_scale, 0.12)
 			tween.parallel().tween_property(sprite, "position:y", origin.y - 5, 0.12)
 		"crypt_bat":
 			tween.parallel().tween_property(sprite, "position:y", origin.y + 4, 0.12)
 		"crypt_automaton", "skeleton_6":
 			tween.parallel().tween_property(sprite, "rotation", -0.1, 0.12)
-	tween.tween_property(sprite, "position", origin, 0.16)
+	tween.tween_callback(func():preload("res://src/presentation/actor_attack_trail.gd").echo(sprite))
+	tween.tween_property(sprite, "position", origin, 0.16).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	if drawn_attack: tween.parallel().tween_property(sprite, "frame", 7, 0.16)
-	tween.parallel().tween_property(sprite, "scale", Vector2.ONE * base_scale, 0.16)
+	if not drawn_attack: tween.parallel().tween_property(sprite, "scale", Vector2.ONE * base_scale, 0.16)
 	tween.parallel().tween_property(sprite, "rotation", 0.0, 0.16)
 	tween.parallel().tween_property(sprite, "modulate", Color.WHITE, 0.16)

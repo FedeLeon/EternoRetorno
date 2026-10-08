@@ -1,4 +1,17 @@
-# Colección de ecos — 30/09/2026
+# Colección de ecos
+
+## Actualización — 07/10/2026
+
+El tema compartido mejora marcos, tipografía, contraste y pestañas. Desbloqueos
+muestra también las nueve reliquias exclusivas de guardianes: sus descubrimientos
+se conservan en `profile.boss_relics`, sin conceder efectos en aventuras futuras.
+Últimos retornos → Ver incluye métricas locales por carta y combate cuando la
+aventura las registró; los historiales antiguos siguen funcionando sin esos datos.
+43 comprobaciones actuales en headless y Linux/Mesa, con capturas revisadas;
+no se exportó ni probó esta entrega en Web/Android.
+[Alcance y validación](../polish_2026_10/README.md).
+
+## Entrega original — 30/09/2026
 
 ## Vista
 

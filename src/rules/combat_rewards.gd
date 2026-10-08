@@ -12,6 +12,7 @@ static func check_end(game: RefCounted) -> bool:
 		game._finish(false)
 		return true
 	game._remove_inactive()
+	preload("res://src/rules/boss_mechanics.gd").sustain(game)
 	var surviving = false
 	for enemy in game.run.combat.enemies:
 		if enemy.hp > 0:
@@ -21,7 +22,11 @@ static func check_end(game: RefCounted) -> bool:
 				var previous_target = enemy.intent.get("target", 0)
 				enemy.intent = preload("res://src/rules/adventure_extensions.gd").intent(enemy, definition, game.run.combat.turn, game.run.combat.enemies)
 				enemy.intent.target = previous_target
+				if game.run.get("polish_version",0)>0:
+					preload("res://src/rules/combat_depth.gd").plan(game,enemy,enemy.intent)
+					preload("res://src/rules/boss_mechanics.gd").plan(game,enemy,enemy.intent)
 	if surviving: return false
+	preload("res://src/rules/combat_telemetry.gd").battle(game)
 	game.Expeditions.add(game.run, "battles")
 	var room_kind = game.run.nodes[game.run.current].kind
 	if room_kind == "elite": game.Expeditions.add(game.run, "elites")
@@ -37,6 +42,9 @@ static func check_end(game: RefCounted) -> bool:
 		h.turn_strength = 0
 		h.turn_magic = 0
 		game.Modifiers.clear(h)
+	if game.run.nodes[game.run.current].has("risk"):
+		game.profile.souls += 20
+		game.run.inventory.healing_potion = int(game.run.inventory.get("healing_potion", 0)) + 1
 	var souls_awarded = game.Progression.award(game.profile, game.run)
 	preload("res://src/rules/adventure_extensions.gd").statistic(game.run, "souls", souls_awarded)
 	preload("res://src/rules/adventure_extensions.gd").statistic(game.run, "battles")
@@ -70,11 +78,13 @@ static func make(game: RefCounted) -> void:
 					offered.upgraded = true
 					break
 	game.run.phase = "reward"
+	preload("res://src/rules/combat_telemetry.gd").offers(game)
 
 
 static func choose(game: RefCounted, index: int) -> bool:
 	if game.run.is_empty() or game.run.phase != "reward" or index < -1 or index >= game.run.reward.size():
 		return false
+	preload("res://src/rules/combat_telemetry.gd").picked(game, index)
 	if index >= 0:
 		game.run.deck.append(game.run.reward[index].duplicate(true))
 	else:
@@ -84,6 +94,7 @@ static func choose(game: RefCounted, index: int) -> bool:
 	game.run.reward_relic = ""
 	game.run.combat = {}
 	game.run.phase = "map"
+	if game.run.get("polish_version", 0) > 0 and game.run.boss_defeated: preload("res://src/rules/boss_rewards.gd").prepare(game)
 	return true
 
 

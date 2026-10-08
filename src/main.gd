@@ -29,6 +29,8 @@ const INK = Color("10141f")
 const TEXT = Color("ebe2d0")
 const MUTED = Color("9299ab")
 var training_original: RefCounted
+var training_config: Dictionary = {}
+var keyboard_target = -1
 
 var game = Game.new()
 var audio = preload("res://src/audio/audio_manager.gd").new()
@@ -60,6 +62,7 @@ func _ready() -> void:
 	ui_theme.set_color("font_hover_color", "Button", Color("eee5fa"))
 	preload("res://src/ui/components/button_skin.gd").install(ui_theme)
 	ui_theme.set_stylebox("focus", "Button", preload("res://src/ui/components/dark_skin.gd").focus())
+	preload("res://src/ui/components/polish_theme.gd").install(ui_theme)
 	theme = ui_theme
 	add_child(audio)
 	apply_options()
@@ -77,6 +80,7 @@ func box(fill: Color, border: Color = Color("343b4d"), width: int = 1) -> StyleB
 	return style
 
 func rect(node: Control, x: float, y: float, w: float, h: float, parent: Control = null) -> Control:
+	node.set_meta("intended_size",Vector2(w,h))
 	node.position = Vector2(x, y)
 	node.size = Vector2(w, h)
 	(parent if parent != null else layer).add_child(node)
@@ -90,6 +94,7 @@ func label_at(text: String, x: float, y: float, w: float, h: float, font_size: i
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	rect(label, x, y, w, h, parent)
+	if font_size >= 25: label.add_theme_font_override("font", preload("res://src/ui/components/polish_theme.gd").HEADING)
 	label.text = text
 	return label
 
@@ -139,6 +144,9 @@ func render() -> void:
 	background()
 	match screen:
 		"home": home()
+		"cinematics": preload("res://src/ui/screens/cinematics_screen.gd").build(self)
+		"projects": preload("res://src/ui/screens/projects_screen.gd").build(self)
+		"boss_reward": preload("res://src/ui/screens/boss_reward_screen.gd").build(self)
 		"merchant": preload("res://src/ui/screens/merchant_screen.gd").build(self)
 		"bestiary": preload("res://src/ui/screens/bestiary_screen.gd").build(self)
 		"training_setup": preload("res://src/ui/screens/training_screen.gd").build(self)
@@ -164,16 +172,12 @@ func render() -> void:
 	if screen == "combat" and game.run.combat.turn == 1:
 		preload("res://src/ui/tutorial_navigation.gd").maybe.call_deferred(self)
 	if game.message != "":
-		label_at(game.message, 36, 682, 960, 32, 17, Color("f3a58d"))
+		preload("res://src/ui/components/message_toast.gd").show(self,game.message)
 	layer.modulate.a = 0.65
 	create_tween().tween_property(layer, "modulate:a", 1.0, 0.12)
 
 func header(title: String, subtitle: String = "") -> void:
-	label_at("ETERNO RETORNO", 36, 14, 600, 26, 18, GOLD)
-	label_at(title, 36, 43, 950, 44, 30)
-	if subtitle != "":
-		label_at(subtitle, 36, 87, 1110, 34, 18, MUTED)
-	button("Menú", 1134, 30, 110, 48, pause_menu)
+	preload("res://src/ui/components/section_header.gd").build(self,title,subtitle)
 
 func active_run() -> bool:
 	return not game.run.is_empty() and game.run.phase not in ["victory", "defeat"]
@@ -185,8 +189,11 @@ func title_button(caption: String, y: float, primary: bool, action: Callable) ->
 	return b
 
 func home() -> void:
-	title_button("Continuar aventura" if active_run() else "Iniciar juego", 510 if active_run() else 538, true, continue_run if active_run() else open_base_camp).name = "StartGame"
+	title_button("Continuar aventura" if active_run() else "Iniciar juego", 510 if active_run() else 538, true, continue_run if active_run() else func():preload("res://src/ui/cinematic_navigation.gd").enter(self)).name = "StartGame"
+	button("Historias",62,500,170,48,func():screen="cinematics";render()).name = "HomeCinematics"
 	preload("res://src/ui/components/title_actions.gd").build(self, 638 if active_run() else 606)
+	button("Bestiario", 62, 560, 170, 48, func():
+		return_screen = "home"; screen = "bestiary"; render()).name = "HomeBestiary"
 	button("Colección", 62, 620, 170, 48, open_collection)
 	if active_run():
 		title_button("Campamento", 574, true, open_base_camp).name = "Camp"
@@ -322,6 +329,7 @@ func begin_on_floor(starting_floor: int) -> void:
 	if active_run():
 		game._finish(false)
 	if game.new_run(selected_party, -1, equipped, starting_floor):
+		await preload("res://src/ui/cinematic_navigation.gd").party(self)
 		continue_run()
 
 func continue_run() -> void:
@@ -330,6 +338,7 @@ func continue_run() -> void:
 	selected_synergy = ""
 	upgrade_mode = false
 	render()
+	preload("res://src/ui/cinematic_navigation.gd").boss(self)
 
 func act(callback: Callable) -> void:
 	var previous_room = game.run.get("current", -1)
@@ -355,11 +364,13 @@ func map_view() -> void:
 		snapshot.title = game.content.heroes[hero.id].name
 		snapshot.visual = ANIMATED_HEROES[hero.id]
 		view.heroes.append(snapshot)
-	view.room_requested.connect(func(id): act(func(): game.enter_node(id)))
+	view.room_requested.connect(func(id): preload("res://src/ui/map_room_prompt.gd").enter(self,id))
 	view.deck_requested.connect(open_deck)
 	view.menu_requested.connect(pause_menu)
 	view.descend_requested.connect(func(): act(game.descend))
 	rect(view, 0, 0, 1280, 720)
+	if preload("res://src/rules/building_projects.gd").owned(game.profile,"scouting"):
+		button("Reconocer caminos · 20 almas",52,90,340,40,func(): act(func():game.polish_action("scout")),game.profile.souls>=20 and view.available.any(func(i):return not game.run.nodes[i].get("scouted",false)))
 
 func health_bar(unit: Dictionary, x: float, y: float, width: float, parent: Control = null) -> Control:
 	var bar = HealthBar.new()
@@ -437,74 +448,13 @@ func reward_view() -> void:
 	preload("res://src/ui/screens/reward_screen.gd").build(self)
 
 func room_view() -> void:
-	var node = game.run.nodes[game.run.current]
-	if node.kind == "treasure":
-		var view = TreasureScreen.new()
-		if int(game.run.get("floor", 1)) >= 2: view.background_path = BattleBackground.path_for(game.run.seed, game.run.current, game.run.floor)
-		view.name = "TreasureScreen"
-		view.result = treasure_display()
-		view.open_requested.connect(func():
-			if game.take_treasure():
-				audio.play_sfx("treasure")
-				view.reveal(treasure_display()))
-		view.continue_requested.connect(func(): act(game.leave_treasure))
-		view.menu_requested.connect(pause_menu)
-		rect(view, 0, 0, 1280, 720)
-		return
-	if node.kind == "rest":
-		var view = preload("res://src/ui/screens/rest_screen.gd").new()
-		if int(game.run.get("floor", 1)) >= 2: view.background_path = "res://assets/forest/rest.png" if game.run.floor == 2 else "res://assets/volcano/rest.png"
-		view.heroes = game.run.heroes.duplicate(true)
-		view.can_upgrade = game.run.deck.any(func(card): return not card.upgraded)
-		view.heal_requested.connect(func(): audio.play_sfx("heal"); act(func(): game.rest(true)))
-		view.upgrade_requested.connect(func(): upgrade_mode = true; return_screen = "room"; screen = "deck"; render())
-		view.menu_requested.connect(pause_menu)
-		rect(view, 0, 0, 1280, 720)
-		return
-	if node.kind == "event":
-		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
-		view.event_id = node.event
-		view.event = game.content.events[node.event].duplicate(true)
-		var chains = {"forest_hunter":"Además, las provisiones esconden una contraseña de descuento para el mercader errante.", "forest_spirit":"Además, el siguiente descanso restaurará 5 PV extra.", "library":"Además, el siguiente cofre ocultará otra poción de curación."}
-		if chains.has(node.event): view.event.text += " " + chains[node.event]
-		if node.event == "lava_bridge": view.can_offer = game.run.heroes.all(func(h): return h.hp > 8)
-		if node.event == "altar":
-			view.can_offer = game.run.heroes.all(func(h): return h.hp > 5) and game.run.deck.any(func(c): return not c.upgraded)
-		view.choice_requested.connect(func(index): act(func(): game.choose_event(index)))
-		view.menu_requested.connect(pause_menu)
-		rect(view, 0, 0, 1280, 720)
-
-func treasure_display() -> Dictionary:
-	var state = game.Treasure.state(game.run.treasure)
-	var data = game.content.items.get(state.get("item", ""), {})
-	if state.has("legacy_relic"):
-		data = game.content.relics.get(state.legacy_relic, {})
-	var text = data.get("description", "")
-	if state.get("opened", false):
-		if state.has("legacy_relic"):
-			text += "\nReliquia conservada de tu partida anterior."
-		else:
-			text += "\nAñadido a la bolsa: 1."
-		if state.trapped:
-			text += "\n¡Era una trampa!"
-			for i in range(state.losses.size()):
-				text += "\n%s: −%d de vida." % [game.content.heroes[game.run.heroes[i].id].name, state.losses[i]]
-	return {"opened": state.opened, "trapped": state.trapped, "title": data.get("name", "Cofre vacío"), "description": text, "icon": data.get("icon", -1)}
+	preload("res://src/ui/room_navigation.gd").build(self)
 
 func open_deck() -> void:
 	return_screen = screen
 	upgrade_mode = false
 	screen = "deck"
 	render()
-
-func scroll_area() -> Control:
-	var scroll = ScrollContainer.new()
-	rect(scroll, 36, 140, 1208, 485)
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	var contents = Control.new()
-	contents.custom_minimum_size = Vector2(1180, 600)
-	scroll.add_child(contents)
-	return contents
 
 func deck_view() -> void:
 	if upgrade_mode:
@@ -548,6 +498,9 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST or what == NOTIFICATION_WM_CLOSE_REQUEST:
 		back()
 
+func _input(event: InputEvent) -> void:
+	if preload("res://src/ui/combat_input.gd").handle(self, event): get_viewport().set_input_as_handled()
+
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		back()
@@ -587,7 +540,9 @@ func back() -> void:
 	elif screen == "church" and church_hero != "":
 		church_hero = ""
 		render()
-	elif screen in ["select", "market", "forge", "church", "expeditions"]:
+	elif screen == "bestiary" and return_screen == "home":
+		screen = "home"; render()
+	elif screen in ["select", "market", "forge", "church", "expeditions", "projects", "training_setup", "bestiary"]:
 		open_base_camp()
 	elif screen in ["base_camp", "collection", "options"]:
 		screen = "home"

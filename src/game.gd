@@ -53,6 +53,11 @@ func camp_action(action: String, payload: Dictionary) -> bool:
 	checkpoint()
 	return true
 
+func polish_action(action: String, payload: Dictionary = {}) -> bool:
+	if not preload("res://src/rules/polish_actions.gd").transact(self, action, payload): return false
+	checkpoint()
+	return true
+
 func configure_starter(hero: String, attacks: int) -> bool:
 	if not preload("res://src/rules/starter_decks.gd").configure(content, profile, hero, attacks): return false
 	checkpoint()
@@ -148,6 +153,9 @@ func _start_combat(encounter: Array) -> void:
 	run.log = ["El silencio se rompe."]
 	preload("res://src/rules/combat_depth.gd").initialize(self)
 	_shuffle(run.combat.draw)
+	preload("res://src/rules/adventure_choices.gd").risk_enter(self)
+	preload("res://src/rules/boss_mechanics.gd").initialize(self)
+	run.combat.started_at = int(Time.get_unix_time_from_system())
 	_start_turn()
 	if "ember" in run.relics:
 		for h in run.heroes:
@@ -178,7 +186,7 @@ func valid_targets(hand_index: int) -> Array:
 	var instance = run.combat.hand[hand_index]
 	var c = effective_card(instance)
 	var owner = owner_index(instance)
-	if run.heroes[owner].hp <= 0 or c.cost > run.combat.energy:
+	if run.heroes[owner].hp <= 0 or c.cost > run.combat.energy or not preload("res://src/rules/risk_cards.gd").affordable(self, c, owner) or preload("res://src/rules/boss_mechanics.gd").trapped(self, owner):
 		return []
 	if c.target in ["self", "all_allies"]:
 		return [owner] # Confirm self/party effects on the owner; offensive area cards use enemies.
@@ -203,12 +211,15 @@ func available_synergies() -> Array:
 		var bond = run.get("bond_variant", "balanced")
 		if bond == "aggressive": combo.damage += 4; combo.block = maxi(0, int(combo.block) - 3)
 		if bond == "protective": combo.damage = maxi(0, int(combo.damage) - 4); combo.block += 4
+		if run.get("event_flags", {}).get("pair_focus", false): combo.damage += 2
 		var base_damage = int(combo.damage)
 		var first_share = base_damage / 2
 		combo.damage = Modifiers.damage(first_share, run.heroes[0]) + Modifiers.damage(base_damage - first_share, run.heroes[1])
 	return combos
 
 func synergy_targets(id: String) -> Array:
+	if run.get("phase", "") != "combat": return []
+	if run.heroes.any(func(hero): return preload("res://src/rules/boss_mechanics.gd").trapped(self, run.heroes.find(hero))): return []
 	for combo in available_synergies():
 		if combo.id == id and run.combat.energy >= combo.cost:
 			var targets: Array = []
@@ -224,14 +235,17 @@ func play_synergy(id: String, target: int) -> bool:
 	for candidate in available_synergies():
 		if candidate.id == id: combo = candidate
 	var b = run.combat
+	run.get("event_flags", {}).erase("pair_focus")
 	b.energy -= int(combo.cost)
 	# Descending indices preserve both exact instances, including upgrades.
 	var indices: Array = combo.indices.duplicate()
 	indices.sort()
 	indices.reverse()
 	for index in indices:
+		preload("res://src/rules/combat_telemetry.gd").card(self,b.hand[index].id)
 		b.discard.append(b.hand[index])
 		b.hand.remove_at(index)
+	combo.damage = preload("res://src/rules/boss_mechanics.gd").hit(self,b.enemies[target],int(combo.damage),combo.pierce)
 	if not preload("res://src/rules/combat_depth.gd").root_hit(self, b.enemies[target], int(combo.damage)):
 		_damage(b.enemies[target], int(combo.damage), combo.pierce)
 	if b.enemies[target].hp > 0 and int(b.enemies[target].intent.get("counter", 0)) > 0:
@@ -300,88 +314,32 @@ func _roll_relic() -> String:
 	return RunRelics.roll(run, profile, content.relics, rng)
 
 func take_treasure() -> bool:
-	if not _room_is("treasure") or not Treasure.open(run):
-		return false
-	Expeditions.add(run, "treasures")
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/room_actions.gd").take_treasure(self)
+	if accepted: checkpoint()
+	return accepted
 
 func leave_treasure() -> bool:
-	if not _room_is("treasure") or not Treasure.state(run.treasure).get("opened", false):
-		return false
-	run.phase = "map"
-	checkpoint()
-	return true
-
-func _room_is(kind: String) -> bool:
-	return not run.is_empty() and run.phase == "room" and run.nodes[run.current].kind == kind
+	var accepted: bool = preload("res://src/rules/room_actions.gd").leave_treasure(self)
+	if accepted: checkpoint()
+	return accepted
 
 func rest(heal: bool, card_index: int = -1, variant: String = "power") -> bool:
-	if not _room_is("rest"):
-		return false
-	if heal:
-		var extra = preload("res://src/rules/travel_encounters.gd").rest_bonus(self)
-		for h in run.heroes:
-			h.hp = mini(h.max_hp, h.hp + int(ceil(h.max_hp * 0.3)) + extra)
-	else:
-		if card_index < 0 or card_index >= run.deck.size() or run.deck[card_index].upgraded:
-			return false
-		var choices = preload("res://src/rules/card_upgrades.gd").choices(content.cards[run.deck[card_index].id])
-		if not choices.any(func(choice): return choice.id == variant): return false
-		run.deck[card_index].upgraded = true
-		run.deck[card_index].upgrade_variant = variant
-		Expeditions.add(run, "upgrades")
-	run.phase = "map"
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/room_actions.gd").rest(self, heal, card_index, variant)
+	if accepted: checkpoint()
+	return accepted
 
 func choose_event(index: int) -> bool:
-	if run.get("phase", "") == "merchant" and index == 1: return merchant_action("leave")
-	if not _room_is("event") or index not in [0, 1]:
-		return false
-	var event_id = run.nodes[run.current].event
-	if event_id not in ["well", "altar", "library"]:
-		var applied = preload("res://src/rules/expanded_events.gd").choose(self, event_id, index)
-		if applied:
-			if index == 0: preload("res://src/rules/travel_encounters.gd").chain(self, event_id)
-			checkpoint()
-		return applied
-	if index == 0:
-		match event_id:
-			"well":
-				for h in run.heroes:
-					h.hp = mini(h.max_hp, h.hp + 8)
-			"altar":
-				for h in run.heroes:
-					if h.hp <= 5:
-						return false
-				var candidates: Array = []
-				for i in range(run.deck.size()):
-					if not run.deck[i].upgraded:
-						candidates.append(i)
-				if candidates.is_empty():
-					return false
-				for h in run.heroes:
-					h.hp -= 5
-				run.deck[candidates[rng.randi_range(0, candidates.size() - 1)]].upgraded = true
-			"library":
-				preload("res://src/rules/travel_encounters.gd").chain(self, event_id)
-				_make_reward()
-				checkpoint()
-				return true
-	run.phase = "map"
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/room_actions.gd").choose_event(self, index)
+	if accepted: checkpoint()
+	return accepted
 
 func descend() -> bool:
-	if run.is_empty() or run.phase != "map" or not run.boss_defeated:
-		return false
-	if int(run.get("floor", 1)) < int(run.get("floor_count", 1)):
-		preload("res://src/rules/dungeon_progression.gd").advance(run, rng)
-	else:
-		_finish(true)
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/room_actions.gd").descend(self)
+	if accepted: checkpoint()
+	return accepted
+
+func _room_is(kind: String) -> bool:
+	return preload("res://src/rules/room_actions.gd").room_is(self, kind)
 
 func end_adventure() -> bool:
 	if run.is_empty() or run.phase in ["victory", "defeat"]:
@@ -418,7 +376,7 @@ func relic_bonus(hero: Dictionary, effect: String) -> int:
 	return int(relic.get("value", 0)) if relic.get("effect", "") == effect else 0
 
 func turn_energy() -> int:
-	var amount = 3
+	var amount = 3 + RunRelics.amount(run, content.relics, "extra_energy")
 	if run.combat.turn == 1:
 		amount += 1 if "hourglass" in run.relics else 0
 		for hero in run.heroes:
@@ -426,6 +384,7 @@ func turn_energy() -> int:
 				amount += relic_bonus(hero, "energy")
 				if run.get("team_relic", "") != "":
 					break
+	if run.combat.turn == 1 and "burden" in run.get("curses", []): amount = maxi(0, amount - 1)
 	return amount
 
 func attack_bonus(hero: Dictionary, owner: String) -> int:
@@ -449,6 +408,7 @@ func effective_card(instance: Dictionary) -> Dictionary:
 		c.poison += relic_bonus(hero, "poison")
 	Specializations.apply(c, hero, int(run.get("combat", {}).get("turn", 0)))
 	RunRelics.apply(c, instance, hero, run, content.relics)
+	if c.heal > 0 and "scar" in run.get("curses", []): c.heal = maxi(1, c.heal - 2)
 	if c.damage > 0: c.damage = Modifiers.damage(int(c.damage), hero)
 	return c
 

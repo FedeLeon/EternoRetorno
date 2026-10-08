@@ -6,10 +6,14 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 	elif screen == "deck":
 		screen = return_screen
 	if screen in ["bonds", "training_setup", "bestiary"]: return "refuge"
+	if screen == "projects": return "camp"
+	if screen == "boss_reward": return "reward"
 	if screen == "merchant": return "market"
-	if screen in ["home", "options", "collection"]: return "title"
+	if screen in ["home", "options", "collection", "cinematics"]: return "title"
 	if screen in ["base_camp", "select", "equipment"]: return "camp"
 	if screen in ["market", "forge", "church", "expeditions", "refuge"]: return screen
+	if screen == "combat" and run.get("combat",{}).get("enemies",[]).any(func(e):return e.get("enraged",false) and e.hp>0): return "combat_phase2"
+	if screen == "combat" and int(run.get("current",-1)) >= 0 and run.get("nodes",[]).size() > int(run.current) and run.nodes[int(run.current)].kind == "boss": return "combat_boss"
 	if screen in ["combat", "reward", "victory", "defeat"]: return screen
 	if screen == "room" and not run.is_empty():
 		var current = int(run.get("current", -1))

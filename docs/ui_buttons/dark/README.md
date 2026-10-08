@@ -38,6 +38,10 @@ atribuyen los resultados de la optimización anterior a estos assets nuevos.
 
 ## Marcos contenidos y botones metálicos — 23/09/2026
 
+Nota histórica 08/10: ambos SVG fueron sustituidos por los marcos de
+`assets/ui/polished/`. Sus fuentes editables están en `retired/`; se retiran
+del runtime con sus importaciones en la [limpieza actual](../../cleanup/2026-10-08.md).
+
 - `assets/ui/dark/dialog_trim.svg`: marco fino angular para modales y cuadros
   de reliquias, objetos e intenciones; decoración limitada a los primeros 10 px.
 - `assets/ui/dark/button_trim.svg`: borde metálico gris/violeta, doble filete,
@@ -67,3 +71,10 @@ En `combat_hud.gd` los iconos de reliquias/equipo empiezan en x32/y8 con altura
 48; sus niveles se recolocan dentro del espacio disponible. Revisión renderizada
 local a 1280×720 con reliquia y cuatro mejoras: ninguna cruza el marco.
 Prueba headless de equipo: 48 comprobaciones sin fallos. Sin exportar.
+
+## Fuentes retiradas del runtime — 08/10/2026
+
+`button.png`, `panel.png`, `button_trim.svg` y `dialog_trim.svg` se conservan
+como originales históricos en `retired/`, fuera del import/export del juego.
+El componente vigente carga `assets/ui/polished/button.svg` y `panel.svg`.
+Prompts anteriores conservados; [limpieza y validación](../../cleanup/2026-10-08.md).

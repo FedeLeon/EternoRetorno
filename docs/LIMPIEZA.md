@@ -1,6 +1,14 @@
 # Limpieza del proyecto
 
-## Auditoría actual — 07/10/2026
+## Auditoría actual — 08/10/2026
+
+[Informe y manifiesto](cleanup/2026-10-08.md): 693 archivos retirados y
+254,11 MiB liberados, principalmente salidas de pruebas. Se retiran recursos
+reemplazados y una función sin llamadas, manteniendo animaciones y fuentes.
+83/83 suites headless y tres suites nativas aprobadas; capturas de validación
+también descartadas, sin exportación.
+
+## Auditoría anterior — 07/10/2026
 
 [Informe y manifiesto](cleanup/2026-10-07.md): 331 archivos retirados, 244,59 MiB.
 Incluye catorce assets sustituidos, importadores obsoletos, datos duplicados,

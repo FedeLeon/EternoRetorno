@@ -35,4 +35,4 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 		var enabled = not active and (spec.owned or (snapshot.eligible and snapshot.souls >= spec.cost))
 		var button = ui.button(caption, 22, 436, 314, 48, func(): actions.activate.call(spec.id) if spec.owned else actions.buy.call(spec.id), enabled, body)
 		button.name = "LearnSpecialization"
-	ui.label_at("Una activa por héroe. Aprender cuesta almas; cambiar entre aprendidas es gratis.\nSe aplica al iniciar una aventura nueva.", 528, 668, 724, 46, 16, ui.TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at("Una activa por héroe. Aprender cuesta almas; cambiar entre aprendidas es gratis.\nSe aplica al iniciar una aventura nueva.", 528, 664, 724, 52, 15, ui.TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

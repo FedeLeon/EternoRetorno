@@ -47,7 +47,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 			continue
 		var id = "expeditions" if i == 1 else "church"
 		var built = profile.buildings.get(id, false)
-		var area = Rect2(480, 422, 320, 190) if i == 1 else Rect2(888, 350, 342, 216)
+		var area = Rect2(464, 442, 352, 210) if i == 1 else Rect2(850, 350, 376, 238)
 		var title = "Iglesia" if id == "church" else "Expediciones"
 		if built:
 			var building = TextureRect.new()
@@ -65,6 +65,18 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 			var caption: Rect2 = other.get_meta("caption_rect")
 			caption.position -= hotspot.position
 			hotspot.passthrough_areas.append(caption)
-	ui.button("Entrenamiento", 40, 648, 220, 44, func(): ui.screen = "training_setup"; ui.render())
-	ui.button("Bestiario", 1020, 648, 220, 44, func(): ui.screen = "bestiary"; ui.render())
+	var projects = TextureRect.new()
+	projects.name = "ProjectsBuilding"
+	projects.texture = preload("res://assets/base_camp/projects_building.png")
+	projects.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	projects.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	projects.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ui.rect(projects,800,218,184,134)
+	ui.camp_hotspot("ProjectsEntrance",Rect2(800,218,184,134),"Proyectos",func(): ui.screen = "projects"; ui.render(),true)
+	var training = ui.button("",40,620,76,76,func(): ui.screen = "training_setup"; ui.render())
+	training.name = "TrainingEntrance"
+	training.tooltip_text = "Entrenamiento contra el muñeco"
+	training.icon = preload("res://assets/base_camp/training_icon.png")
+	training.expand_icon = true
+	training.add_theme_constant_override("icon_max_width",62)
 	ui.camp_hotspot("CampTent", Rect2(427, 240, 180, 107), "Refugio de personajes", actions.refuge)

@@ -104,3 +104,25 @@ preferencias, estadísticas y vínculos se guardan en los checkpoints existentes
 - Falta validación humana del equilibrio, rendimiento en móvil y controles en
   navegador/dispositivo real. No se hizo exportación ni se presenta la prueba táctil
   sintética como una prueba física.
+
+## Preparación mediante tarjetas — 08/10/2026
+
+`src/ui/screens/run_setup_screen.gd` reemplaza los dos desplegables por cuatro
+pequeñas tarjetas de dificultad y tres de condición. Cada una reutiliza un dibujo
+RGBA existente de `assets/battle_effects/`: guardia, ataque, contraataque, furia,
+preparación, profanación y frenesí. La procedencia permanece en
+[efectos de batalla](../battle_effects/README.md); no se generó arte nuevo.
+
+Las tarjetas muestran nombre, efectos y estado «Elegida». Cada fila permite una
+única selección mediante ButtonGroup. Los niveles bloqueados se ven atenuados y
+explican qué aventura ganar; no pueden seleccionarse. Cancelar conserva las
+preferencias; iniciar confirma dificultad/condición y utiliza el flujo previo,
+con la configuración fija de esa aventura. No cambia el formato de guardado.
+
+Pruebas actuales: `test_run_setup_cards.gd`, 22 comprobaciones en ventana Linux
+Godot 4.7.2/Mesa/llvmpipe; clics reales, exclusividad, bloqueos, cancelar, dibujos,
+límites de tarjetas y valores aplicados al empezar el piso tres. Capturas
+`artifacts/run-setup/{locked,selected}.png` revisadas visualmente. Regresión de
+reglas `test_adventure_expansion.gd`: 5.224 comprobaciones headless sin fallos.
+La ventana informa solamente que no puede cambiar VSync. Sin exportación Web/APK
+ni validación en navegador, emulador o dispositivo físico.

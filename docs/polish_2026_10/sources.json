@@ -1,0 +1,299 @@
+[
+  {
+    "id": "warrior_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/warrior.png",
+    "prompt": "prompts/warrior_thrust.txt",
+    "source": "sources/warrior_thrust.png",
+    "sha256": "36e5bb770a69586228ccb341e06260ecd26f6f70540b02f130bc6b1fd929de48",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "warrior_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/warrior.png",
+    "prompt": "prompts/warrior_sweep.txt",
+    "source": "sources/warrior_sweep.png",
+    "sha256": "4272b635a3ec50935daac1c4f1e9b2e82df5394eaeae3d6d06dff0a9863ddb37",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "warrior_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/warrior.png",
+    "prompt": "prompts/warrior_charged.txt",
+    "source": "sources/warrior_charged.png",
+    "sha256": "ae7067ba499194685ff05d714190ac7c7fd7db9f971b4c3020be2cc988e2b4b6",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "warrior_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/warrior.png",
+    "prompt": "prompts/warrior_equipment.txt",
+    "source": "sources/warrior_equipment.png",
+    "sha256": "7b2f9a3a6cf345d6e05bd71dba0d84b7260fef12f70c13b119f59226cc9239f3",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "guardian_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/guardian.png",
+    "prompt": "prompts/guardian_thrust.txt",
+    "source": "sources/guardian_thrust.png",
+    "sha256": "963245f26216a7ea79aa560f551f4c06b719f9597102f87343c620c3ce676b40",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "guardian_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/guardian.png",
+    "prompt": "prompts/guardian_sweep.txt",
+    "source": "sources/guardian_sweep.png",
+    "sha256": "ad2471d1d1335ea6e40d0a4b0e4029f908e455118039658647cbad6513f3a7a5",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "guardian_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/guardian.png",
+    "prompt": "prompts/guardian_charged.txt",
+    "source": "sources/guardian_charged.png",
+    "sha256": "1cae4d313befcd14a6f56db51477967429bf0170017297b5d758761e1553b8b7",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "guardian_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/guardian.png",
+    "prompt": "prompts/guardian_equipment.txt",
+    "source": "sources/guardian_equipment.png",
+    "sha256": "58aaf572f100a84a42fde2a8e1bc4f68ccf5b7530ab41bb24e207810845b18e6",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "rogue_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/rogue.png",
+    "prompt": "prompts/rogue_thrust.txt",
+    "source": "sources/rogue_thrust.png",
+    "sha256": "47b9ca88df6f75bf8aed31733c3be34725fab3b1af4859798f892e17d369215e",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "rogue_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/rogue.png",
+    "prompt": "prompts/rogue_sweep.txt",
+    "source": "sources/rogue_sweep.png",
+    "sha256": "8b23307cd898353e20008244feaea6c09ddb1b03189604bd7565d5c7b77bec98",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "rogue_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/rogue.png",
+    "prompt": "prompts/rogue_charged.txt",
+    "source": "sources/rogue_charged.png",
+    "sha256": "36e74707deb49b2198f9a570b96e521a99522743b90b6bbace47faf3e15c292c",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "rogue_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/rogue.png",
+    "prompt": "prompts/rogue_equipment.txt",
+    "source": "sources/rogue_equipment.png",
+    "sha256": "db343b4e295f16f15b464ab52e2545c98a0693f88713d22f9205bb4d10b83b37",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "mage_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/mage.png",
+    "prompt": "prompts/mage_thrust.txt",
+    "source": "sources/mage_thrust.png",
+    "sha256": "e3e0e248eb6cd1abea526706c0fa1c5aa06f86dde25383a66edf3d2943117fbb",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "mage_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/mage.png",
+    "prompt": "prompts/mage_sweep.txt",
+    "source": "sources/mage_sweep.png",
+    "sha256": "476bcfd03d5f926edd0e12d58fe5c1bd3235b2f9def001b1b54c545bdbb041df",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "mage_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/mage.png",
+    "prompt": "prompts/mage_charged.txt",
+    "source": "sources/mage_charged.png",
+    "sha256": "f4e492247a686a2c4994c48dd218ab89c1a88dd87a5167a421cf4b81e559e17a",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "mage_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/mage.png",
+    "prompt": "prompts/mage_equipment.txt",
+    "source": "sources/mage_equipment.png",
+    "sha256": "4fcd592a78c5036336473952850b2e5fa324fbf4ee0483b3c33818cc071b0a1a",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "cleric_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/cleric.png",
+    "prompt": "prompts/cleric_thrust.txt",
+    "source": "sources/cleric_thrust.png",
+    "sha256": "e0b8246f12d9cab1767ca19fc999f52e6fb771de5a2dc3ca42792916865626ee",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "cleric_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/cleric.png",
+    "prompt": "prompts/cleric_sweep.txt",
+    "source": "sources/cleric_sweep.png",
+    "sha256": "63b889775c8682411d2b03096eb742ce89e07feb26aac4611e87c3ece0604089",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "cleric_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/cleric.png",
+    "prompt": "prompts/cleric_charged.txt",
+    "source": "sources/cleric_charged.png",
+    "sha256": "e2837cc240e4ef88da2d7d53d9edad6a4566f08e34021b052840064a3a3f00f9",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "cleric_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/cleric.png",
+    "prompt": "prompts/cleric_equipment.txt",
+    "source": "sources/cleric_equipment.png",
+    "sha256": "a10270172b08b60d71bd94471fbf38ef724c7b308114306164bc5a1de8d766cb",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "ranger_thrust",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/ranger.png",
+    "prompt": "prompts/ranger_thrust.txt",
+    "source": "sources/ranger_thrust.png",
+    "sha256": "9753dd0827aed10bbc3f1f188ffc7160eab34fdcd76c5c77c92de1032b901d3e",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "ranger_sweep",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/ranger.png",
+    "prompt": "prompts/ranger_sweep.txt",
+    "source": "sources/ranger_sweep.png",
+    "sha256": "0e37e0186ee3f0cf644e4befb26d7b5fe47a5049e95f72d51be5e3fa365a5558",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "ranger_charged",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/ranger.png",
+    "prompt": "prompts/ranger_charged.txt",
+    "source": "sources/ranger_charged.png",
+    "sha256": "8dd52caa4f9be33dedde6fe1c395e16681003936bbc432b799c2e806d1313285",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "ranger_equipment",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/comic/ranger.png",
+    "prompt": "prompts/ranger_equipment.txt",
+    "source": "sources/ranger_equipment.png",
+    "sha256": "2f2fbf2b64f9768440fa94716222369a1b02a504fc7911035eeffc856b666c9d",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "boss_crypt",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": null,
+    "prompt": "prompts/boss_crypt.txt",
+    "source": "sources/boss_crypt.png",
+    "sha256": "10fc4e790d435ad02098ba4534e2a43da99bb80fc85a4f038297814455864e11",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "boss_forest",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": null,
+    "prompt": "prompts/boss_forest.txt",
+    "source": "sources/boss_forest.png",
+    "sha256": "2f89e3877ab6d7e44e4ae81bbdbaa170b42edceca1c8ee534ded76b23d08e7a6",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "boss_fire",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": null,
+    "prompt": "prompts/boss_fire.txt",
+    "source": "sources/boss_fire.png",
+    "sha256": "79f72bf247f99bf0a6378ac60ed183d170e43ae4235322faf472517483ef1baa",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "warrior_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/warrior_risk.txt",
+    "source": "sources/warrior_risk.png",
+    "sha256": "9381c163f66868852c24a1ffcdbe2dc77ce12d91fc47a787c2586bd1b6a954f3",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "guardian_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/guardian_risk.txt",
+    "source": "sources/guardian_risk.png",
+    "sha256": "28df7a9616a0d96ea2fbb50945d3ba6bca0520e9d02a0fe8a856b09a02595590",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "rogue_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/rogue_risk.txt",
+    "source": "sources/rogue_risk.png",
+    "sha256": "cc4f7d7f88b07a9d7623e647c06a0b548752fa0410941087f61bca9db3682086",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "mage_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/mage_risk.txt",
+    "source": "sources/mage_risk.png",
+    "sha256": "61a94fdd7c74b0ee244ca9f7376fcc2daaa574319b6656717ff2148dbf7ae36d",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "cleric_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/cleric_risk.txt",
+    "source": "sources/cleric_risk.png",
+    "sha256": "01575d7c3548231b267e8970aa42db9dee52b7a018a1642d91878f2327027b1a",
+    "date": "2026-10-07"
+  },
+  {
+    "id": "ranger_risk",
+    "generator": "Built-in image_gen.imagegen, ChatGPT authentication, no API key",
+    "reference": "assets/cards/art/originals.png",
+    "prompt": "prompts/ranger_risk.txt",
+    "source": "sources/ranger_risk.png",
+    "sha256": "d1ac652ef09ded7bb78ffb8e6f4fe9d931828097e4fc4c201e59e0b95e89e387",
+    "date": "2026-10-07"
+  }
+]

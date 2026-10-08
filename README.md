@@ -5,7 +5,8 @@ parejas de dos, mazo compartido y desbloqueos permanentes. Interfaz en español,
 pixel art basado en los conceptos del usuario, sprites y funcionamiento sin conexión.
 
 **Documentación:** [índice y estado actual](docs/README.md) ·
-[historial de desarrollo](docs/HISTORIAL.md).
+[historial de desarrollo](docs/HISTORIAL.md) ·
+[pulido visual y táctico del 07/10](docs/polish_2026_10/README.md).
 
 Durante el desarrollo se ejecuta y prueba localmente. Se exporta una nueva APK
 solo cuando se solicita; la APK existente no incluye necesariamente los últimos cambios.
@@ -36,7 +37,7 @@ conservan. No se publica en Google Play.
    Soltar afuera cancela y conserva la energía.
 4. Empezás con 20 cartas (10 por héroe), con ataques y defensas básicos repetidos.
    Compartís 3 de energía y robás 6 cartas por turno. El coste está arriba a la
-   derecha; las cartas sin energía suficiente se desactivan.
+   derecha; las cartas sin energía suficiente se pueden inspeccionar pero no jugar.
 5. Al terminar el turno descartás tu mano; el descarte se mezcla al agotar el
    mazo. El bloqueo absorbe daño y expira al comienzo del siguiente turno aliado.
 6. El veneno daña antes de actuar los enemigos, ignora bloqueo y pierde un punto
@@ -45,11 +46,17 @@ conservan. No se publica en Google Play.
    vuelve con el 25 % de vida máxima, redondeado hacia arriba. Si caen ambos,
    termina la aventura.
 8. Elegí una carta después de ganar o rechazala por 12 almas. En los descansos podés
-   curar el 30 % de vida o mejorar una carta (+3 a daño/bloqueo/curación positivos,
-   +2 a veneno). Cada instancia admite una mejora.
+   curar el 30 % de vida o mejorar una carta, eligiendo entre Potencia y Eficiencia
+   con una vista previa. Cada instancia admite una mejora.
 9. Derrotá al jefe, resolvé la recompensa y tocá **Bajar por la escalera**.
    Las aventuras nuevas recorren cripta, bosque y fortaleza volcánica;
    los guardados anteriores conservan su límite de pisos.
+
+En aventuras nuevas cada guardián tiene un objetivo propio que cuesta 1 energía
+por acción: fuente de resurrección, prisión o placas de armadura. Después de la
+carta de recompensa elegís una de tres reliquias exclusivas. Pactos y desvíos de
+riesgo anuncian sus costes antes de aceptarlos. Los controles completos de
+teclado/mando y las opciones de efectos están en la [guía de pulido](docs/polish_2026_10/README.md#controles).
 
 El botón Atrás cancela una selección de carta, vuelve desde el mazo o abre una
 pausa. Desde el inicio permite salir con confirmación. El avance se guarda tras
@@ -58,18 +65,18 @@ la mano, los enemigos, las intenciones y las recompensas pendientes.
 
 ## Contenido
 
-| Sistema | Contenido inicial |
+| Sistema | Contenido actual de nuevas aventuras |
 | --- | --- |
 | Clases | Guerrero, guardiana, pícaro, maga, clériga, explorador |
-| Cartas | 114, 19 por héroe; 10 instancias iniciales por héroe |
+| Cartas | 132, 22 por héroe; 78 comprables y 10 instancias iniciales por héroe |
 | Mapa | 28 salas, cinco bifurcaciones de tres opciones; 18 salas por ruta y dos élites posibles |
 | Enemigos | 45 definiciones activas entre tres pisos, con élites y guardianes |
-| Eventos | Nueve situaciones: tres por mazmorra, incluyendo decisiones de mazo |
-| Reliquias de grupo | Ascua, colmillo, cáliz y reloj desbloqueable |
+| Eventos | 28 definiciones, con pactos, historias de parejas y decisiones de mazo |
+| Reliquias de aventura | 24 generales y 9 exclusivas de guardianes |
 | Equipamiento | 8 opciones; una sola reliquia por pareja |
 | Consumibles | 8 tipos; bolsa vacía al iniciar, se encuentran en cofres |
 
-Ganar el piso con una clase desbloquea su quinta carta para futuras recompensas.
+Ganar una aventura con una clase desbloquea su carta de victoria para futuras recompensas.
 Vencer al élite desbloquea el reloj inmediatamente, aunque luego pierdas la
 aventura. Las reliquias de grupo no se repiten dentro de la misma aventura. El altar exige
 más de 5 de vida en ambos personajes y una carta todavía mejorable; nunca mata.
@@ -152,3 +159,10 @@ con bandas laterales en pantallas más anchas que 16:9.
 
 Las capturas de desarrollo se generan en `artifacts/`, ignorado por Git y Godot.
 Se puede borrar esa carpeta. Ver [limpieza y mantenimiento](docs/LIMPIEZA.md).
+
+### Cinemáticas y pulido integral · 08/10/2026
+
+Inicio, seis historias de héroes y tres finales de guardianes con galería, pausa
+y salto; seis enemigos adicionales, atmósferas/impactos locales y mezcla de audio
+mejorada. [Assets, compatibilidad, análisis y pruebas](docs/cinematics/README.md).
+Sin exportación; la publicación Web sigue siendo manual.

@@ -3,7 +3,7 @@ extends RefCounted
 static func choices(card: Dictionary) -> Array:
 	if int(card.heal) > 0 and int(card.damage) == 0 and int(card.poison) == 0 and card.target != "all_allies":
 		return [{"id":"power", "name":"Restauración", "description":"Más curación sobre el objetivo."}, {"id":"shared", "name":"Amparo compartido", "description":"Cura a ambos héroes con menor potencia individual."}]
-	return [{"id":"power", "name":"Potencia", "description":"Aumenta los valores de la carta."}, {"id":"efficient", "name":"Eficiencia", "description":"Reduce el coste en 1; las cartas gratuitas ganan bloqueo o un golpe adicional."}]
+	return [{"id":"power", "name":"Potencia", "description":"Aumenta los valores de la carta."}, {"id":"efficient", "name":"Eficiencia", "description":"Reduce el coste en 1; las gratuitas mejoran su valor sin añadir golpes."}]
 
 static func apply(card: Dictionary, instance: Dictionary) -> void:
 	if not instance.get("upgraded", false): return
@@ -11,7 +11,9 @@ static func apply(card: Dictionary, instance: Dictionary) -> void:
 	card.name += " +"
 	if variant == "efficient":
 		if int(card.cost) > 0: card.cost = maxi(0, int(card.cost) - 1)
-		elif int(card.damage) > 0: card.hits += 1
+		elif int(card.damage) > 0:
+			if instance.get("upgrade_rules",1)>=2: card.damage += 2
+			else: card.hits += 1
 		else: card.block += 3
 		return
 	if variant == "shared" and int(card.heal) > 0 and int(card.damage) == 0:

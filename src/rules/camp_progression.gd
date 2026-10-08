@@ -26,10 +26,11 @@ static func build(profile: Dictionary) -> bool:
 
 static func buy(profile: Dictionary, cards: Dictionary, id: String) -> bool:
 	if not profile.buildings.get("market", false) or not cards.has(id): return false
-	var price = int(cards[id].get("market_price", 0))
+	var price = preload("res://src/rules/building_projects.gd").price(profile, cards[id]) if cards[id].has("market_price") else 0
 	if price <= 0 or id in profile.market_cards or profile.souls < price: return false
 	profile.souls -= price
 	profile.market_cards.append(id)
+	if profile.get("reserved_card", "") == id: profile.erase("reserved_card")
 	return true
 
 static func available(profile: Dictionary, card: Dictionary) -> bool:

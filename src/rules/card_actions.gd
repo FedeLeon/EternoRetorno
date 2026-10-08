@@ -11,6 +11,8 @@ static func play(game: RefCounted, hand_index: int, target: int) -> bool:
 	b.energy -= int(c.cost)
 	b.hand.remove_at(hand_index)
 	b.discard.append(instance)
+	preload("res://src/rules/risk_cards.gd").pay(game, c, owner)
+	preload("res://src/rules/combat_telemetry.gd").card(game, instance.id)
 	var enemy_targets: Array = []
 	var ally_targets: Array = []
 	match c.target:

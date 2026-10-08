@@ -11,6 +11,11 @@ static func build(ui: Control) -> void:
 			"icon": "res://assets/collection/icons/%s_victory.png" % card.owner})
 	snapshot.unlocks.append({"name": "Reloj sin arena", "unlocked": "hourglass" in ui.game.profile.unlocked_relics,
 		"requirement": "Derrotá a un élite. Primer turno: +1 de energía.", "icon": "res://assets/collection/icons/ten_victories.png"})
+
+	for id in ui.game.content.relics:
+		var relic: Dictionary=ui.game.content.relics[id]
+		if not relic.get("boss_only",false):continue
+		snapshot.unlocks.append({"name":relic.name,"unlocked":id in ui.game.profile.get("boss_relics",[]),"requirement":"Elegila al derrotar al guardián del piso %d." % relic.floor,"detail":"DESCUBIERTA · "+relic.description,"icon":relic.asset})
 	for entry in ui.game.profile.history:
 		var row: Dictionary = entry.duplicate(true)
 		var names: Array[String] = []

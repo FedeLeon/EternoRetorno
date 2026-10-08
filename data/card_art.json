@@ -556,5 +556,23 @@
   },
   "ranger_interrupt": {
     "source": "res://assets/cards/art/ranger_interrupt.png"
+  },
+  "warrior_risk": {
+    "source": "res://assets/cards/art/warrior_risk.png"
+  },
+  "guardian_risk": {
+    "source": "res://assets/cards/art/guardian_risk.png"
+  },
+  "rogue_risk": {
+    "source": "res://assets/cards/art/rogue_risk.png"
+  },
+  "mage_risk": {
+    "source": "res://assets/cards/art/mage_risk.png"
+  },
+  "cleric_risk": {
+    "source": "res://assets/cards/art/cleric_risk.png"
+  },
+  "ranger_risk": {
+    "source": "res://assets/cards/art/ranger_risk.png"
   }
 }

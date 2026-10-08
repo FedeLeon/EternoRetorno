@@ -1,0 +1,410 @@
+[
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.633733867378727,
+		"source": "res://docs/polish_2026_10/sources/warrior_thrust.png",
+		"target": "res://assets/heroes/actions/warrior_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.62497256967303,
+		"source": "res://docs/polish_2026_10/sources/warrior_sweep.png",
+		"target": "res://assets/heroes/actions/warrior_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.600084281500211,
+		"source": "res://docs/polish_2026_10/sources/warrior_charged.png",
+		"target": "res://assets/heroes/actions/warrior_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/warrior_equipment.png",
+		"target": "res://assets/heroes/equipment/warrior_armor_3.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.650811199958861,
+		"source": "res://docs/polish_2026_10/sources/guardian_thrust.png",
+		"target": "res://assets/heroes/actions/guardian_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.712158157332033,
+		"source": "res://docs/polish_2026_10/sources/guardian_sweep.png",
+		"target": "res://assets/heroes/actions/guardian_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.648382799959015,
+		"source": "res://docs/polish_2026_10/sources/guardian_charged.png",
+		"target": "res://assets/heroes/actions/guardian_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/guardian_equipment.png",
+		"target": "res://assets/heroes/equipment/guardian_armor_3.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.787472035794183,
+		"source": "res://docs/polish_2026_10/sources/rogue_thrust.png",
+		"target": "res://assets/heroes/actions/rogue_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.736290255471415,
+		"source": "res://docs/polish_2026_10/sources/rogue_sweep.png",
+		"target": "res://assets/heroes/actions/rogue_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.710098111996148,
+		"source": "res://docs/polish_2026_10/sources/rogue_charged.png",
+		"target": "res://assets/heroes/actions/rogue_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/rogue_equipment.png",
+		"target": "res://assets/heroes/equipment/rogue_armor_3.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.467966573816156,
+		"source": "res://docs/polish_2026_10/sources/mage_thrust.png",
+		"target": "res://assets/heroes/actions/mage_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.498516320474777,
+		"source": "res://docs/polish_2026_10/sources/mage_sweep.png",
+		"target": "res://assets/heroes/actions/mage_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.498516320474777,
+		"source": "res://docs/polish_2026_10/sources/mage_charged.png",
+		"target": "res://assets/heroes/actions/mage_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/mage_equipment.png",
+		"target": "res://assets/heroes/equipment/mage_armor_3.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.4539384531993,
+		"source": "res://docs/polish_2026_10/sources/cleric_thrust.png",
+		"target": "res://assets/heroes/actions/cleric_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.596709418318435,
+		"source": "res://docs/polish_2026_10/sources/cleric_sweep.png",
+		"target": "res://assets/heroes/actions/cleric_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.468303594123328,
+		"source": "res://docs/polish_2026_10/sources/cleric_charged.png",
+		"target": "res://assets/heroes/actions/cleric_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/cleric_equipment.png",
+		"target": "res://assets/heroes/equipment/cleric_armor_3.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.703417943270342,
+		"source": "res://docs/polish_2026_10/sources/ranger_thrust.png",
+		"target": "res://assets/heroes/actions/ranger_thrust.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.678385276250045,
+		"source": "res://docs/polish_2026_10/sources/ranger_sweep.png",
+		"target": "res://assets/heroes/actions/ranger_sweep.png"
+	},
+	{
+		"cell": 384,
+		"foot": 368,
+		"frames": 12,
+		"ratio": 0.597574490991419,
+		"source": "res://docs/polish_2026_10/sources/ranger_charged.png",
+		"target": "res://assets/heroes/actions/ranger_charged.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_weapon_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_weapon_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_weapon_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_armor_1.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_armor_2.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/ranger_equipment.png",
+		"target": "res://assets/heroes/equipment/ranger_armor_3.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_crypt.png",
+		"target": "res://assets/relics/boss/crypt_blood.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_crypt.png",
+		"target": "res://assets/relics/boss/crypt_seal.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_crypt.png",
+		"target": "res://assets/relics/boss/crypt_lantern.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_crypt.png",
+		"target": "res://assets/relics/boss/objective_crypt.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_forest.png",
+		"target": "res://assets/relics/boss/forest_thorn.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_forest.png",
+		"target": "res://assets/relics/boss/forest_heart.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_forest.png",
+		"target": "res://assets/relics/boss/forest_eye.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_forest.png",
+		"target": "res://assets/relics/boss/objective_forest.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_fire.png",
+		"target": "res://assets/relics/boss/fire_crown.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_fire.png",
+		"target": "res://assets/relics/boss/fire_ward.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_fire.png",
+		"target": "res://assets/relics/boss/fire_spark.png"
+	},
+	{
+		"cell": 256,
+		"source": "res://docs/polish_2026_10/sources/boss_fire.png",
+		"target": "res://assets/relics/boss/objective_fire.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/warrior_risk.png",
+		"target": "res://assets/cards/art/warrior_risk.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/guardian_risk.png",
+		"target": "res://assets/cards/art/guardian_risk.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/rogue_risk.png",
+		"target": "res://assets/cards/art/rogue_risk.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/mage_risk.png",
+		"target": "res://assets/cards/art/mage_risk.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/cleric_risk.png",
+		"target": "res://assets/cards/art/cleric_risk.png"
+	},
+	{
+		"source": "res://docs/polish_2026_10/sources/ranger_risk.png",
+		"target": "res://assets/cards/art/ranger_risk.png"
+	}
+]

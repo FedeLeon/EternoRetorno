@@ -10,7 +10,7 @@ static func amount(run: Dictionary, catalog: Dictionary, effect: String) -> int:
 static func roll(run: Dictionary, profile: Dictionary, catalog: Dictionary, rng: RandomNumberGenerator) -> String:
 	var pool: Array = []
 	for id in catalog:
-		if id not in run.relics and (not catalog[id].locked or id in profile.unlocked_relics): pool.append(id)
+		if not catalog[id].get("boss_only", false) and id not in run.relics and (not catalog[id].locked or id in profile.unlocked_relics): pool.append(id)
 	return "" if pool.is_empty() else pool[rng.randi_range(0, pool.size() - 1)]
 
 static func grant(run: Dictionary, catalog: Dictionary, id: String) -> bool:

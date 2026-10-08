@@ -1,0 +1,86 @@
+[
+  {
+    "visual": "elemental_3",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/elemental_3_motion.png",
+    "output": "assets/enemies/animations/elemental_3.png",
+    "sha256": "863a8ebeddb15b85952793efe52370b0daf689febcee67a5151e28207845d9d6"
+  },
+  {
+    "visual": "elemental_3",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/elemental_3_cutin.png",
+    "output": "assets/comic/enemies/elemental_3.png",
+    "sha256": "e03f345dd44956ba92a444a8e0684aa25952bef0ea21053a2d6fa25d575e49a3"
+  },
+  {
+    "visual": "beast_3",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/beast_3_motion.png",
+    "output": "assets/enemies/animations/beast_3.png",
+    "sha256": "ef70ad96cab8fac24e7a651e45575de1b5e3ee0f3005319b8da9377ff6ba8991"
+  },
+  {
+    "visual": "beast_3",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/beast_3_cutin.png",
+    "output": "assets/comic/enemies/beast_3.png",
+    "sha256": "9b04cc381e214217be40f23480c838781d9e504282317a46c69e6914d96f8a74"
+  },
+  {
+    "visual": "elemental_4",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/elemental_4_motion.png",
+    "output": "assets/enemies/animations/elemental_4.png",
+    "sha256": "f86d481eb43f88e7b1332708dcf7f50286f343c8361ee9f615bc29039fb0a59d"
+  },
+  {
+    "visual": "elemental_4",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/elemental_4_cutin.png",
+    "output": "assets/comic/enemies/elemental_4.png",
+    "sha256": "c67524637551d39fe0fa69b239ca4da5e17f1329dcaba478c9ee372f4505465c"
+  },
+  {
+    "visual": "bandit_6",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/bandit_6_motion.png",
+    "output": "assets/enemies/animations/bandit_6.png",
+    "sha256": "754a7644fcf1c725a3732dd2bbdf832a0122c9ca61a6de97a65a463707fddb1b"
+  },
+  {
+    "visual": "bandit_6",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/bandit_6_cutin.png",
+    "output": "assets/comic/enemies/bandit_6.png",
+    "sha256": "3cb61eb61fcfb2f78d806a6bf72ce7d22bb4b7cfe4127457326e3794d415dba6"
+  },
+  {
+    "visual": "bandit_4",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/bandit_4_motion.png",
+    "output": "assets/enemies/animations/bandit_4.png",
+    "sha256": "6678d6fd3e65253b723839e5d60b06b6e482fcd202e43041877bf4c4f988c6cc"
+  },
+  {
+    "visual": "bandit_4",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/bandit_4_cutin.png",
+    "output": "assets/comic/enemies/bandit_4.png",
+    "sha256": "63205cd2309e98375e2a5119a27e085be194705ddc6b4db244723a2db2cf3121"
+  },
+  {
+    "visual": "flying_5",
+    "kind": "motion",
+    "source": "docs/enemies/cinematic_expansion/sources/flying_5_motion.png",
+    "output": "assets/enemies/animations/flying_5.png",
+    "sha256": "c1dbe04057d3e14318c73bdf4122660da1f010b3533540bcf9aa7f276545f602"
+  },
+  {
+    "visual": "flying_5",
+    "kind": "cutin",
+    "source": "docs/enemies/cinematic_expansion/sources/flying_5_cutin.png",
+    "output": "assets/comic/enemies/flying_5.png",
+    "sha256": "68d5f3917a495fd7b8bd9bf3ebcdec4f8dfac9a212f2a037daa1ccef97a4284a"
+  }
+]

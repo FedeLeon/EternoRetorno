@@ -49,13 +49,21 @@ func redraw() -> void:
 		return
 	ui.panel(90, 10, 1100, 610, Color("67573d"), body)
 	ui.label_at(heroes[selected].name + " · Mazo inicial · 10 / 10 cartas", 150, 24, 980, 38, 27, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	ui.label_at("Elegí de 2 a 6 ataques; completá 8 básicas con defensas y conservá 2 de clase.", 150, 66, 980, 30, 19, ui.TEXT, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var draft: Array = []
+	var saved_deck: Array = []
+	for i in range(10):
+		var starter: Array = choices[selected].starter
+		draft.append({"id":starter[0] if i < attacks else starter[4] if i < 8 else starter[i],"upgraded":false})
+		var saved_count: int = choices[selected].attacks
+		saved_deck.append({"id":starter[0] if i < saved_count else starter[4] if i < 8 else starter[i],"upgraded":false})
+	var analyzer=preload("res://src/rules/deck_analysis.gd")
+	ui.label_at("Guardado: "+analyzer.format(analyzer.summarize(ui.game.content,saved_deck))+"\nBorrador: "+analyzer.format(analyzer.summarize(ui.game.content,draft)),150,62,980,48,16,ui.TEXT,body).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	var original: Array = choices[selected].starter
 	var ids = [original[0], original[4], original[8], original[9]]
 	var counts = [attacks, 8 - attacks, 1, 1]
 	for i in range(4):
 		var x = 156 + i * 244
-		var card = ui.card_panel({"id":ids[i], "upgraded":false}, x, 102, 230, 308, func(): pass, false, true, body, true)
+		var card = ui.card_panel({"id":ids[i], "upgraded":false}, x, 116, 230, 308, func(): pass, false, true, body, true)
 		card.name = "StarterCard%d" % i
 		var count = ui.label_at("%d copias" % counts[i] if counts[i] > 1 else "1 copia", x, 421, 230, 32, 23, ui.GOLD, body)
 		count.name = "Copies%d" % i

@@ -1,9 +1,14 @@
 # Arquitectura y organización del código
 
-Estado revisado el **07/10/2026**. Esta página describe el código actual y los
+Estado revisado el **08/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
+
+Auditoría 08/10: los 176 módulos de `src/` tienen consumidores desde la entrada
+del juego. Se retiró únicamente el helper sin llamadas `main.scroll_area`;
+`main.gd` queda en 593 líneas y `game.gd` en 441. No se reorganizan sistemas ni
+se cambian UIDs/guardados durante la [limpieza actual](cleanup/2026-10-08.md).
 
 | Ubicación | Responsabilidad |
 | --- | --- |
@@ -11,6 +16,7 @@ siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.
 | `src/game.gd` | API pública de acciones, estado de aventura/perfil y puntos de guardado |
 | `src/content.gd`, `data/` | Catálogos y diseño declarativo de la mazmorra |
 | `src/dungeon.gd` | Fachada de definición/generación de pisos y coordenadas compatibles con guardados anteriores |
+| `src/map_geometry.gd` | Geometría pura de la espiral y conexiones curvas; sin mutación de partidas |
 | `src/rules/dungeon_generator.gd` | Grafo acíclico, distribución de salas y encuentros mediante RNG recibido |
 | `src/rules/dungeon_progression.gd` | Transición entre pisos conservando el progreso de la aventura; no guarda ni concede victoria |
 | `src/save_store.gd` | Persistencia atómica, versión y copia de respaldo |
@@ -514,3 +520,129 @@ Las referencias de cuatro poses del proceso HD son salidas regenerables de
 `prepare_hero_hd_refs.gd`, ignoradas por Git. Fuentes finales, prompts y procedencia
 permanecen en `docs/comic/hd/`; los treinta atlas de primer plano siguen activos.
 [Inventario, criterios y pruebas de esta limpieza](cleanup/2026-10-07.md).
+
+## Pulido y objetivos — 07/10/2026
+
+Extracciones terminadas: `rules/room_actions.gd` concentra transacciones de salas
+sin guardado; `ui/room_navigation.gd` construye tesoro, descanso y encuentros.
+`main.gd` delega composición y Game conserva API/checkpoint. Las pantallas nuevas
+proyectos/reliquias de guardián y el modal de entrenamiento tienen archivos propios.
+
+Nuevas reglas: `risk_cards`, `boss_mechanics`, `boss_rewards`, `adventure_choices`,
+`enemy_coordination`, `building_projects`, `deck_analysis`, `training_config`,
+`combat_telemetry`; `polish_actions` despacha validaciones. Presentación:
+`action_motion`, `battle_projectile`, `impact_feedback`. La capa de equipo
+`equipment_layers` se retiró en la corrección visual posterior de este día.
+`combat_input` y `map_room_prompt` coordinan entrada y confirmación sin conceder
+premios ni guardar. `polish_theme` comparte tipografía y estilos.
+
+La versión de estas reglas se guarda por aventura. Assets de acciones son atlas
+por héroe/acción; caché máxima de dos héroes. No se mezcla arte/reglas/persistencia.
+El tamaño actual es 598 líneas en main y 441 en Game; siguiente extracción
+recomendada es resolver enlaces en un módulo de reglas, manteniendo la fachada.
+[Alcance, procedencia y pruebas](polish_2026_10/README.md).
+
+## Efectos de batalla mediante iconos — 07/10/2026
+
+Extracción terminada de los carteles de `tactical_badges.gd`:
+`ui/components/battle_effect_snapshot.gd` lee estado confirmado y prepara
+descripciones; `battle_effect_strip.gd` solo distribuye iconos/valores y abre
+consulta. `enemy_intent.gd` integra la tira junto a las intenciones compactas;
+`combat_screen.gd` la compone también en héroes y adapta la altura de vida.
+
+`data/battle_effects.json` contiene títulos/textos; artwork separado en
+`assets/battle_effects/`. `combat_modifier_badges.gd` entrega datos en vez de
+crear botones de porcentaje. `status_effects.gd` conserva la API del bloqueo
+activo requerida por `card_impacts.gd`; veneno pasa a la tira común. El componente
+`boss_objective.gd` prepara la acción del modal, delegando transacción/checkpoint
+a Game. Ningún componente calcula daño ni concede efectos/recompensas.
+
+No se cambian persistencia, IDs/UIDs existentes ni responsabilidades de reglas.
+Main/Game mantienen sus tamaños; las extracciones futuras propuestas anteriormente
+siguen pendientes. [Sistema, procedencia y validación](battle_effects/README.md).
+
+### Corrección de capas de equipo — 07/10/2026
+
+Se elimina la instanciación y API privada de `equipment_layers` en
+`presentation/detailed_hero.gd`. El módulo y su UID no tienen otros consumidores
+activos y se retiran. El actor conserva `gear`, `apply_gear` y el shader de nivel;
+`equipment_badges.gd` sigue presentando las mejoras en el HUD. No cambia la
+arquitectura de reglas, persistencia ni las interfaces de reproducción del actor.
+
+### Navegación del bestiario desde Inicio — 07/10/2026
+
+Se reutiliza `bestiary_screen.gd`, sin pantalla nueva. `main.home` registra Inicio
+como origen en `return_screen`; el acceso de `base_camp_screen.gd` registra Campamento.
+El encabezado delega en `main.back`, que conserva el origen. No cambia el catálogo,
+las reglas de descubrimiento ni la persistencia.
+
+## Generación de formaciones — 08/10/2026
+
+`rules/enemy_formations.gd` extrae la elección del grupo de `dungeon_generator.gd`.
+Recibe grafo, sala, catálogo, contador temporal y RNG; consulta antecesores y
+formaciones cercanas. No lee perfil, guarda, calcula daño ni cambia mapas cargados.
+La fachada `dungeon.gd` y las transiciones mantienen sus APIs.
+
+`ui/screens/run_setup_screen.gd` mantiene en memoria la selección previa mediante
+ButtonGroup y siete tarjetas. Confirma preferencias únicamente al iniciar; reglas
+de dificultad/condición y persistencia permanecen en sus colaboradores anteriores.
+
+## Geometría de mapa compartida — 08/10/2026
+
+El generador delega posiciones en `map_geometry.gd` y guarda la marca opcional de
+espiral con cada nodo nuevo. La pantalla consulta el mismo módulo para muestrear
+curvas y comprime sus coordenadas igual que las salas. No cambia relaciones,
+permisos de navegación ni mapas cargados. Los nodos anteriores conservan su
+presentación recta y el fallback de doce salas en `dungeon.gd`.
+
+## Aproximación de actores cuerpo a cuerpo — 08/10/2026
+
+`presentation/melee_motion.gd` encapsula clasificación visual y traslado temporal
+sin mover barras o controles del objetivo. Conserva/restaura el padre, coordenadas,
+escala y orden del actor. `card_impacts.gd` coordina la visita, la pose, el impacto
+confirmado y el regreso, con HD simultáneo. Resolución, energía y checkpoint siguen
+en las reglas/Game antes de estas animaciones. Los proyectiles mantienen su módulo.
+
+## Cinemáticas y pulido integral — 08/10/2026
+
+Extracciones terminadas:
+
+- `presentation/cinematic_player.gd`: reproducción ilustrada sin mutación de juego;
+  `ui/cinematic_navigation.gd`: entradas, descubrimientos y restauración de contexto;
+  `ui/screens/cinematics_screen.gd`: galería. Catálogo en `data/cinematics.json`.
+- `audio/audio_mix.gd`: limitador y reducción temporal de música, independiente
+  del RNG de aventura y del volumen persistido.
+- `presentation/impact_burst.gd`, `actor_attack_trail.gd` y `battle_atmosphere.gd`:
+  presentación local, duración acotada y opciones de efectos respetadas.
+- `ui/components/message_toast.gd` y `section_header.gd`: mensajes/títulos legibles
+  y compartidos; el helper de encabezado del orquestador solo delega.
+- `data/cinematic_enemies.json` amplía el catálogo mediante la misma fachada
+  `content.gd`; IDs y guardados anteriores permanecen válidos.
+
+El final de jefe se marca y guarda en el controlador **antes** de reproducir;
+las cinemáticas no conceden premios. [Auditoría y propuesta futura](cinematics/AUDITORIA.md).
+No se convierte esta entrega en una reorganización masiva: los dos archivos
+más grandes siguen siendo `main.gd` y `game.gd`, mientras los módulos nuevos
+permanecen separados por responsabilidad.
+
+## Revisión de composición — 08/10/2026
+
+Las pantallas de mazo, mejora, decisiones de cartas, vínculos, mercader y resultado
+conservan archivos propios. `run_result_screen.gd` compone el resumen confirmado
+con métricas y detalles desplazables, sin conceder premios. `section_header.gd`
+acepta acción/ancho opcionales y `inventory_background.gd` un padre opcional;
+sus valores predeterminados conservan los consumidores existentes.
+No se añadieron responsabilidades a `main.gd` ni cambios de reglas/persistencia.
+[Decisiones visuales y validación actual](ui_layout/README.md).
+
+## Geometría versionada y planos de relato — 08/10/2026
+
+`map_geometry.gd` conserva centros legados y añade geometría 2; el generador guarda
+`layout_version` en mapas nuevos y ordena conexiones alternativas. `map_screen.gd`
+adapta espirales anteriores en copia profunda sin modificar partidas. Los
+capítulos de `data/cinematics.json` tienen `image` opcional y el presentador
+resuelve cambio/fundido/cámara; no concede premios ni guarda. Duración de viñeta
+configurable por adaptador, conservando el valor anterior como predeterminado.
+El taller permanente se compone en la pantalla de campamento, con navegación
+al sistema de proyectos existente, sin nueva construcción/regla/persistencia.
+[Archivos, assets y validación](presentation_refinements/README.md).

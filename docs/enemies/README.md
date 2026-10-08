@@ -1,5 +1,27 @@
 # Biblioteca de enemigos
 
+## Tamaño al recibir daño y morir — 08/10/2026
+
+La compensación de tamaño pertenece al cuadro dibujado, aunque el enemigo haya
+terminado de actuar o quede congelado durante una reacción. Antes, `acting=false`
+retiraba la compensación mientras el último cuadro de ataque seguía visible;
+el reposo también sobrescribía esa escala. Esto producía un salto en las
+transiciones hacia daño/muerte, especialmente con poses de ataque pequeñas.
+
+`src/enemy_sprite.gd` mantiene la compensación del cuadro y vuelve al cuadro 0
+al terminar un ataque, antes de liberar la acción. Daño y cenizas congelan la
+geometría visible sin recolocar ni recalcular el tamaño base. Resurrección
+restaura reposo y escala juntos; no se aplica una reducción oculta al caer.
+No cambian atlas, factores, tamaño externo, reglas ni guardados.
+
+Validación actual: `test_enemy_pose_sizes.gd`, 777 comprobaciones en ventana
+local Godot 4.7.2/Compatibility, sin fallos. Cobertura de todos los atlas medidos,
+regreso real de ataque y transiciones de daño/cenizas/resurrección en elemental,
+bestia y volador. Capturas de elemental antes/después de daño y comienzo de
+cenizas revisadas a 1280×720; la disolución elimina píxeles sin encoger el sprite.
+Regresiones adicionales y límites se registran en el historial de esta entrega.
+Sin exportación ni validación Web/Android.
+
 > Estado actual 30/09/2026: seis enemigos adicionales y 30 secuencias de héroes
 > con ocho cuadros. Ver [ampliación y formato vigente](../combat_expansion/README.md).
 > Las secciones fechadas anteriores describen versiones históricas.
@@ -118,3 +140,45 @@ y organización](crypt_expansion/README.md). Mapas guardados intactos.
 Catálogo activo: 45 definiciones y 44 apariencias. Se incorporan trece apariencias con ocho poses (cuatro reposo/cuatro ataque) y primer plano transparente; el nuevo élite reutiliza Bruto de las brasas. Grupos mezclan roles y los tres guardianes tienen segunda fase.
 
 [Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).
+
+## Tamaño consistente en cuadros de ataque — 08/10/2026
+
+Se midieron los 44 atlas de movimiento actuales. Algunas poses ocupan menos
+altura/superficie que las de reposo aunque el Control conserva su escala; esto
+hace que el actor parezca encogerse. Se compensan 12 apariencias con cuadros de
+ataque pequeños, sin modificar los PNG o las animaciones HD en primer plano.
+
+- `scripts/audit_enemy_pose_sizes.py`: lectura de alfa opaco (≥128), comparación
+  con la mediana de reposo y corrección conservadora solo en atlas con cuatro
+  cuadros de ataque declarados. Las alas pueden plegarse y las poses agacharse;
+  no se intenta imponer una altura idéntica a toda silueta.
+- `data/enemy_pose_sizes.json`: factores y límites inferiores por cuadro, más
+  SHA-256 de cada atlas. Regenerar con `python3 scripts/audit_enemy_pose_sizes.py`
+  después de cambiar atlas o sus metadatos; requiere Pillow. No edita imágenes.
+- `src/enemy_sprite.gd`: aplica la compensación al cambiar cuadro, sin reducir
+  el tamaño base. Ampliación limitada a 1,3× y ajuste del offset para conservar
+  la línea de apoyo original; fin del ataque restaura escala/offset normales.
+  Los tweens de poses dibujadas no pisan esa escala; deformación de sprites
+  antiguos sin ataque dibujado permanece en su flujo anterior.
+- Tabla cargada una vez en caché; no analiza píxeles durante combates. Sin cambios
+  de daño, intenciones, RNG, catálogo o guardados.
+
+Validación actual local Godot 4.7.2:
+
+- `test_enemy_pose_sizes.gd`: 628 comprobaciones nativas, sin fallos; 44 atlas,
+  correspondencia de hashes, factores, escala externa, línea de apoyo y regreso.
+  Seis actores reproducidos y capturas de reposo/ataque revisadas en
+  `artifacts/enemy-size/`. Linux/Mesa/llvmpipe, 1280×720; aviso de VSync del driver.
+- Regresiones headless actuales sin fallos: enemigos 1.222, secuencia de turno 171
+  y contraataques. Enemigos informa cuatro instancias y un recurso al cerrar.
+- No se exportó ni validó en Web, emulador o dispositivo físico. La identificación
+  de esta entrega corresponde al sprite del escenario; no hubo una reproducción
+  aportada por el usuario que identificara un enemigo concreto o la viñeta HD.
+
+## Incorporaciones y presentación — 08/10/2026
+
+[Seis apariencias reservadas incorporadas a las tres mazmorras](cinematic_expansion/README.md):
+tormenta, escorpión, pantano, cazador, bombardero y escarabajo alado.
+Ocho poses únicas y un ataque HD por apariencia, reposo desfasado y estela al
+golpear. Métricas actualizadas: 50 atlas, compensación en 14 apariencias;
+se conserva el apoyo y nunca se reduce la escala externa del actor.

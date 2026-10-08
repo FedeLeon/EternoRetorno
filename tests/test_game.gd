@@ -40,8 +40,8 @@ func _initialize() -> void:
 
 func content_and_map() -> void:
 	var g = fresh()
-	check(g.content.heroes.size() == 6 and g.content.cards.size() == 126, "6 classes / 126 cards")
-	check(g.content.enemies.size() == 45 and g.content.events.size() == 10 and g.content.relics.size() == 24, "enemy / event / relic catalog")
+	check(g.content.heroes.size() == 6 and g.content.cards.size() == 132, "6 classes / 132 cards")
+	check(g.content.enemies.size() == 51 and g.content.events.size() == 28 and g.content.relics.size() == 33, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")
@@ -212,21 +212,24 @@ func reward_and_rooms() -> void:
 	check(g.run.relics.size() == 2, "elite grants distinct relic")
 	g.choose_reward(-1)
 	g.run.current = 26; preload("res://tests/room_fixture.gd").enter(g, "boss")
+	preload("res://tests/room_fixture.gd").break_objective(g)
 	g.run.heroes[0].hp = 20
 	g.run.relics = ["chalice"]
 	g.run.combat.enemies[0].hp = 0
 	g._check_combat_end()
 	check(g.run.heroes[0].hp == 23, "chalice victory heal")
 	check(not g.descend(), "must resolve boss reward before staircase")
-	g.choose_reward(-1); g.descend()
+	g.choose_reward(-1); preload("res://tests/room_fixture.gd").collect_boss_relic(g); g.descend()
 	check(g.run.floor == 2 and g.profile.victories == 0, "first floor continues adventure")
 	preload("res://tests/room_fixture.gd").enter(g, "boss")
+	preload("res://tests/room_fixture.gd").break_objective(g)
 	for enemy in g.run.combat.enemies: enemy.hp = 0
-	g._check_combat_end(); g.choose_reward(-1); g.descend()
+	g._check_combat_end(); g.choose_reward(-1); preload("res://tests/room_fixture.gd").collect_boss_relic(g); g.descend()
 	check(g.run.floor == 3 and g.profile.victories == 0, "second floor continues to fortress")
 	preload("res://tests/room_fixture.gd").enter(g, "boss")
+	preload("res://tests/room_fixture.gd").break_objective(g)
 	for enemy in g.run.combat.enemies: enemy.hp = 0
-	g._check_combat_end(); g.choose_reward(-1); g.descend()
+	g._check_combat_end(); g.choose_reward(-1); preload("res://tests/room_fixture.gd").collect_boss_relic(g); g.descend()
 	check(g.profile.victories == 1 and g.profile.unlocked_cards.size() == 2, "pair victory unlocks")
 	check(not g.descend() and g.profile.victories == 1, "victory cannot duplicate")
 	g.new_run(["mage", "rogue"], 100)
@@ -288,8 +291,12 @@ func autoplay(g: RefCounted) -> bool:
 						if not g.choose_event(0): g.choose_event(1)
 			"event_cards": g.modify_event_card(-1)
 			"reward": g.choose_reward(-1)
+			"boss_reward": g.polish_action("boss_relic", {"id":g.run.boss_offers[0]})
 			"merchant": g.merchant_action("leave")
 			"combat":
+				var objective: Dictionary = g.run.combat.get("boss_objective", {})
+				if (objective.get("kind", "") in ["source", "armor"] and not objective.broken) or objective.get("trapped", -1) >= 0:
+					if g.polish_action("boss_objective"): continue
 				var best_score = -1.0
 				var best_card = -1
 				var best_target = -1

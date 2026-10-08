@@ -1,3 +1,8 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+La documentación y resultados anteriores se conservan como historial.
+
 # Audio — 05/10/2026
 
 ## Alcance
@@ -171,3 +176,25 @@ los errores o respuestas 404 de la consola/red del navegador.
 Fortaleza reutiliza música de cripta con ambiente de fuego/viento. El nuevo control ambiental multiplica el nivel previo de efectos para conservar preferencias anteriores; no se descargaron músicas nuevas en esta entrega.
 
 [Reglas, assets y pruebas actuales](../expansion_2026_10/README.md).
+
+## Mezcla y cinemáticas — 08/10/2026
+
+Dos arreglos ambientales CC0 de fuentes ya presentes: inicio (40 s) y retorno
+(36 s), en `assets/audio/music/cinematic_*.ogg`; procedencia en `sources.json`.
+Guardianes usan música propia desde el principio; sus finales y las historias
+tienen contextos diferenciados. Limitador de picos y reducción suave de 3 dB de
+música al impactar, con recuperación del volumen del usuario; voces saturadas
+reutilizan la más antigua. Nada de sonido por hover.
+
+[Implementación y pruebas locales](../cinematics/README.md). No se escuchó ni
+validó esta entrega en Web o dispositivo físico; los recursos y la reproducción
+local se verificaron automáticamente.
+
+## Choques contra bloqueo — 08/10/2026
+
+Dos nuevos impactos metálicos CC0 de Kenney: `metal_clash` y `metal_clash_2`,
+con filtro, realce de agudos y resonancia corta. `shield_impact` usa estas variantes
+tanto para bloqueo completo como parcial; sin absorción conserva `flesh_impact`.
+Procedencia/hashes en `sources.json`, originales en `metal/sources/` con `.gdignore`.
+Catálogo actual: ocho músicas/arreglos, cuatro ambientes y 41 efectos.
+[Validación nativa y detalles](../presentation_refinements/README.md).

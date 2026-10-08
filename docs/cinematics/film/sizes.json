@@ -1,0 +1,107 @@
+[
+  {
+    "file": "assets/cinematics/shots/hero_ranger_1.png",
+    "source_bytes": 1614604,
+    "imported_bytes": 293538
+  },
+  {
+    "file": "assets/cinematics/shots/hero_mage_1.png",
+    "source_bytes": 1713443,
+    "imported_bytes": 312150
+  },
+  {
+    "file": "assets/cinematics/shots/hero_ranger_0.png",
+    "source_bytes": 1572515,
+    "imported_bytes": 281626
+  },
+  {
+    "file": "assets/cinematics/shots/intro_0.png",
+    "source_bytes": 1485809,
+    "imported_bytes": 228848
+  },
+  {
+    "file": "assets/cinematics/shots/boss_1_1.png",
+    "source_bytes": 1548849,
+    "imported_bytes": 258630
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_0.png",
+    "source_bytes": 1555498,
+    "imported_bytes": 268806
+  },
+  {
+    "file": "assets/cinematics/shots/boss_1_0.png",
+    "source_bytes": 1577580,
+    "imported_bytes": 258822
+  },
+  {
+    "file": "assets/cinematics/shots/hero_warrior_1.png",
+    "source_bytes": 1579378,
+    "imported_bytes": 279892
+  },
+  {
+    "file": "assets/cinematics/shots/intro_2.png",
+    "source_bytes": 1394854,
+    "imported_bytes": 216220
+  },
+  {
+    "file": "assets/cinematics/shots/hero_mage_0.png",
+    "source_bytes": 1439728,
+    "imported_bytes": 227502
+  },
+  {
+    "file": "assets/cinematics/shots/hero_rogue_1.png",
+    "source_bytes": 1559940,
+    "imported_bytes": 283562
+  },
+  {
+    "file": "assets/cinematics/shots/boss_2_1.png",
+    "source_bytes": 1537574,
+    "imported_bytes": 261104
+  },
+  {
+    "file": "assets/cinematics/shots/hero_guardian_1.png",
+    "source_bytes": 1664210,
+    "imported_bytes": 310830
+  },
+  {
+    "file": "assets/cinematics/shots/hero_rogue_0.png",
+    "source_bytes": 1484956,
+    "imported_bytes": 271786
+  },
+  {
+    "file": "assets/cinematics/shots/boss_3_1.png",
+    "source_bytes": 1497717,
+    "imported_bytes": 246338
+  },
+  {
+    "file": "assets/cinematics/shots/hero_warrior_0.png",
+    "source_bytes": 1457111,
+    "imported_bytes": 237930
+  },
+  {
+    "file": "assets/cinematics/shots/boss_3_0.png",
+    "source_bytes": 1689263,
+    "imported_bytes": 298916
+  },
+  {
+    "file": "assets/cinematics/shots/boss_2_0.png",
+    "source_bytes": 1669213,
+    "imported_bytes": 302340
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_1.png",
+    "source_bytes": 1563625,
+    "imported_bytes": 278268
+  },
+  {
+    "file": "assets/cinematics/shots/intro_1.png",
+    "source_bytes": 1584643,
+    "imported_bytes": 280880
+  },
+  {
+    "file": "assets/cinematics/shots/hero_guardian_0.png",
+    "source_bytes": 1737646,
+    "imported_bytes": 336544
+  }
+]

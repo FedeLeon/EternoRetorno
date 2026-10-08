@@ -16,6 +16,7 @@ var streams: Dictionary = {}
 var rng = RandomNumberGenerator.new()
 var idle_seconds = 4.0
 var played_count = 0
+var mix = preload("res://src/audio/audio_mix.gd").new()
 
 func _ready() -> void:
 	name = "GameAudio"
@@ -30,6 +31,7 @@ func _ready() -> void:
 			AudioServer.set_bus_send(AudioServer.bus_count - 1, "Master")
 	for i in range(12): voices.append(player("SFX"))
 	get_tree().node_added.connect(node_added)
+	preload("res://src/audio/audio_mix.gd").install_limiter()
 
 func _exit_tree() -> void:
 	if music_tween != null and music_tween.is_valid(): music_tween.kill()
@@ -58,6 +60,7 @@ func stream(id: String, loop: bool = false) -> AudioStream:
 	return streams[key]
 
 func apply_settings(settings: Dictionary) -> void:
+	mix.configure(settings)
 	set_volume("Master", float(settings.get("volume", 1.0)))
 	set_volume("Music", float(settings.get("music_volume", 0.75)))
 	set_volume("SFX", float(settings.get("sfx_volume", 0.85)))
@@ -79,8 +82,7 @@ func set_context(id: String) -> void:
 	current_context = id
 	change_music(definition.get("music", ""), float(definition.get("music_db", -1)))
 	for channel in ambience:
-		channel.stop()
-		channel.queue_free()
+		retire(channel)
 	ambience.clear()
 	for entry in definition.get("ambience", []):
 		var channel = player("Ambience")
@@ -98,14 +100,13 @@ func change_music(id: String, gain: float) -> void:
 	if id == music_id:
 		if music_tween != null and music_tween.is_valid(): music_tween.kill()
 		if is_instance_valid(fading_music):
-			fading_music.queue_free()
+			retire(fading_music)
 			fading_music = null
 		if music != null: music.volume_db = gain
 		return # Buying, hovering or rebuilding a screen never restarts its theme.
 	if music_tween != null and music_tween.is_valid(): music_tween.kill()
 	if is_instance_valid(fading_music):
-		fading_music.stop()
-		fading_music.queue_free()
+		retire(fading_music)
 		fading_music = null
 	fading_music = music
 	music = null
@@ -123,7 +124,12 @@ func change_music(id: String, gain: float) -> void:
 	if is_instance_valid(fading_music):
 		var outgoing = fading_music
 		music_tween.chain().tween_callback(func():
-			if is_instance_valid(outgoing): outgoing.queue_free())
+			if is_instance_valid(outgoing): retire(outgoing))
+
+func retire(channel: AudioStreamPlayer) -> void:
+	channel.stop()
+	channel.stream = null
+	channel.queue_free()
 
 func play_sfx(event: String, gain: float = 0.0, bus: String = "SFX") -> void:
 	var definition: Dictionary = catalog.events.get(event, {})
@@ -135,16 +141,20 @@ func play_sfx(event: String, gain: float = 0.0, bus: String = "SFX") -> void:
 		if not available.playing:
 			voice = available
 			break
+		if int(available.get_meta("started",0)) < int(voice.get_meta("started",0)): voice = available
 	voice.stop()
 	voice.bus = bus
 	voice.stream = stream(id)
 	voice.volume_db = float(definition.get("db", 0.0)) + gain
 	voice.pitch_scale = rng.randf_range(0.96, 1.04) if definition.get("vary_pitch", true) else 1.0
 	voice.play()
+	voice.set_meta("started",Time.get_ticks_msec())
+	mix.accent(event)
 	played_count += 1
 	sound_played.emit(event)
 
 func _process(delta: float) -> void:
+	mix.update(delta/maxf(0.01,Engine.time_scale))
 	if current_context.is_empty(): return
 	idle_seconds -= delta
 	if idle_seconds > 0: return

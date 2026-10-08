@@ -1,7 +1,14 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+La documentación y resultados anteriores se conservan como historial.
+
 # Actualización — 07/10/2026
 
 Los héroes **durante la batalla** ahora usan [actores detallados de 256 px](../combat_depth_2026_10/README.md),
-con doce poses por acción. Los seis sprites clásicos y las variantes de equipo
+con doce poses por acción, más tres ataques nuevos por héroe de 384 px.
+Las nuevas capas de equipo distinguen forma de arma/armadura en niveles 1–3.
+Los seis sprites clásicos y las variantes de equipo
 de esta guía siguen usándose fuera de batalla. No se presentan las pruebas
 históricas siguientes como validación de la entrega nueva.
 

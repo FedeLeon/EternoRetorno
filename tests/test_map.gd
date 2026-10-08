@@ -63,7 +63,8 @@ func run_tests() -> void:
 	await click(relic_button.get_global_rect().get_center())
 	await click(drawer.find_child("Relic1", true, false).get_global_rect().get_center())
 	check(drawer.selected_relic.name == "Relic1", "another relic changes detail")
-	var covered = view.get_node("Room13")
+	var drawer_area = Rect2(drawer.global_position + Vector2(0,48),Vector2(510,672))
+	var covered: Button = view.get_children().filter(func(child): return child is Button and child.name.begins_with("Room") and drawer_area.has_point(child.get_global_rect().get_center()))[0]
 	covered.disabled = false # Test input interception independently of route rules.
 	var received: Array = []
 	view.room_requested.connect(func(id): received.append(id))

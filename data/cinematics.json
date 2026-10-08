@@ -1,0 +1,214 @@
+{
+  "intro": {
+    "title": "El fuego nos reúne",
+    "background": "intro",
+    "context": "cinematic_intro",
+    "color": "7ba9ca",
+    "chapters": [
+      {
+        "title": "Un mundo que vuelve",
+        "text": "Las puertas se cierran. Los nombres se olvidan. Pero una brasa siempre sobrevive.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/intro_0.png"
+      },
+      {
+        "title": "Seis caminos, una fogata",
+        "text": "Quienes regresan al campamento no buscan la eternidad. Buscan una salida.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/intro_1.png"
+      },
+      {
+        "title": "Eterno Retorno",
+        "text": "Elegí a tus compañeros. Descendé a las profundidades. Y traé de vuelta algo más que cicatrices.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/intro_2.png"
+      }
+    ]
+  },
+  "hero_warrior": {
+    "title": "El filo del abismo",
+    "background": "intro",
+    "portrait": "warrior",
+    "context": "cinematic_hero",
+    "color": "bd75df",
+    "chapters": [
+      {
+        "title": "El filo del abismo",
+        "text": "Juró no volver a levantar aquella espada. El retorno convirtió su juramento en una carga.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_warrior_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "Ahora avanza por quienes ya no pueden hacerlo. Cada golpe abre un camino para su compañero.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_warrior_1.png"
+      }
+    ]
+  },
+  "hero_guardian": {
+    "title": "El último escudo",
+    "background": "intro",
+    "portrait": "guardian",
+    "context": "cinematic_hero",
+    "color": "e3c68a",
+    "chapters": [
+      {
+        "title": "El último escudo",
+        "text": "Cuando cayó la muralla, ella fue la última en dejar su puesto. Aún recuerda cada nombre.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_guardian_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "Su escudo no promete invulnerabilidad. Promete que nadie deberá resistir a solas.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_guardian_1.png"
+      }
+    ]
+  },
+  "hero_rogue": {
+    "title": "Bajo la máscara",
+    "background": "intro",
+    "portrait": "rogue",
+    "context": "cinematic_hero",
+    "color": "8ab75b",
+    "chapters": [
+      {
+        "title": "Bajo la máscara",
+        "text": "Aprendió a sobrevivir sin dejar huellas. El campamento fue el primer lugar donde alguien notó su ausencia.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_rogue_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "Sus venenos compran tiempo. Sus dagas lo devuelven. Esta vez tiene a quién proteger.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_rogue_1.png"
+      }
+    ]
+  },
+  "hero_mage": {
+    "title": "Fragmentos de memoria",
+    "background": "intro",
+    "portrait": "mage",
+    "context": "cinematic_hero",
+    "color": "8ba8ea",
+    "chapters": [
+      {
+        "title": "Fragmentos de memoria",
+        "text": "En cada regreso encuentra una página distinta del mismo libro. Ninguna explica quién escribió su nombre.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_mage_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "Reúne los fragmentos, domina el frío y la luz. Tal vez la respuesta esté detrás de la última puerta.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_mage_1.png"
+      }
+    ]
+  },
+  "hero_cleric": {
+    "title": "Una luz que permanece",
+    "background": "intro",
+    "portrait": "cleric",
+    "context": "cinematic_hero",
+    "color": "f0d59a",
+    "chapters": [
+      {
+        "title": "Una luz que permanece",
+        "text": "Sus plegarias no detuvieron el desastre. Aun así, volvió a encender las velas.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_cleric_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "No cura para borrar las heridas, sino para dar otra oportunidad a quienes todavía pueden caminar.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_cleric_1.png"
+      }
+    ]
+  },
+  "hero_ranger": {
+    "title": "Más allá del horizonte",
+    "background": "intro",
+    "portrait": "ranger",
+    "context": "cinematic_hero",
+    "color": "8eb3cf",
+    "chapters": [
+      {
+        "title": "Más allá del horizonte",
+        "text": "Conocía cada sendero del bosque. Hasta que las raíces comenzaron a cambiar de lugar.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_ranger_0.png"
+      },
+      {
+        "title": "Su próximo retorno",
+        "text": "Ahora sigue señales que nadie más ve. Una flecha certera puede marcar el camino de regreso.",
+        "duration": 5.5,
+        "image": "res://assets/cinematics/shots/hero_ranger_1.png"
+      }
+    ]
+  },
+  "boss_1": {
+    "title": "Los ecos se apagan",
+    "background": "crypt",
+    "context": "cinematic_victory",
+    "color": "84c0e7",
+    "chapters": [
+      {
+        "title": "Los ecos se apagan",
+        "text": "La fuente se quiebra. Por primera vez, los huesos de la cripta dejan de responder al llamado.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_1_0.png"
+      },
+      {
+        "title": "El camino continúa",
+        "text": "Más allá de la puerta, el bosque respira. La victoria es un paso, no el final del camino.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_1_1.png"
+      }
+    ]
+  },
+  "boss_2": {
+    "title": "La raíz se libera",
+    "background": "forest",
+    "context": "cinematic_victory",
+    "color": "a1cb7b",
+    "chapters": [
+      {
+        "title": "La raíz se libera",
+        "text": "El guardián cae y las raíces aflojan su prisión. La luz alcanza un suelo que llevaba siglos esperando.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_2_0.png"
+      },
+      {
+        "title": "El camino continúa",
+        "text": "En el horizonte arde la fortaleza. Allí duerme el último fuego de este retorno.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_2_1.png"
+      }
+    ]
+  },
+  "boss_3": {
+    "title": "Después del último fuego",
+    "background": "volcano",
+    "context": "cinematic_victory",
+    "color": "efb477",
+    "chapters": [
+      {
+        "title": "Después del último fuego",
+        "text": "Las alas del guardián dejan de oscurecer el cielo. Entre las cenizas, la fortaleza guarda silencio.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_3_0.png"
+      },
+      {
+        "title": "Un lugar al que volver",
+        "text": "El campamento sigue allí. Dos sombras vuelven a la fogata, llevando una historia que el olvido no podrá borrar.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_3_1.png"
+      }
+    ]
+  }
+}

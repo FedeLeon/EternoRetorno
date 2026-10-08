@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-07",
+  "engine": "Godot 4.7.2 stable",
+  "headless_suites": 10,
+  "native_suite_checks": 233,
+  "native_renderer": "Linux OpenGL Compatibility, Mesa llvmpipe",
+  "native_viewport": [
+    1280,
+    720
+  ],
+  "captures": [
+    "armored_strike.png",
+    "boss-1.png",
+    "boss-2.png",
+    "boss-3.png",
+    "boss-dialog-1.png",
+    "boss-dialog-2.png",
+    "boss-dialog-3.png",
+    "catalogue.png",
+    "embers-dialog.png",
+    "enemy-stacked.png",
+    "hero-stacked.png",
+    "large-text-dialog.png",
+    "large-text-effects.png",
+    "prison.png",
+    "resurrect.png",
+    "triple-embers.png"
+  ],
+  "exported_web": false,
+  "exported_apk": false,
+  "browser_validated": false,
+  "emulator_validated": false,
+  "physical_device_validated": false,
+  "results": [
+    {
+      "test": "test_hud.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "HUD CHECKS: 103 | FAILURES: 0",
+      "shutdown_resource_warning": true,
+      "mode": "headless"
+    },
+    {
+      "test": "test_support_cards_ui.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "SUPPORT UI: 609 checks / 0 failures",
+      "shutdown_resource_warning": true,
+      "mode": "headless"
+    },
+    {
+      "test": "test_combat_presentation.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "PRESENTATION CHECKS: 25 | FAILURES: 0",
+      "shutdown_resource_warning": false,
+      "mode": "headless"
+    },
+    {
+      "test": "test_combat_layout.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "COMBAT LAYOUT CHECKS: 41 | FAILURES: 0",
+      "shutdown_resource_warning": true,
+      "mode": "headless"
+    },
+    {
+      "test": "test_block_ash.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "BLOCK ASH: 5 checks / 0 failures",
+      "shutdown_resource_warning": false,
+      "mode": "headless"
+    },
+    {
+      "test": "test_energy_timing.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "ENERGY TIMING: 5 checks / 0 failures",
+      "shutdown_resource_warning": true,
+      "mode": "headless"
+    },
+    {
+      "test": "test_combat_depth_ui.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "COMBAT DEPTH UI: 7 checks / 0 failures",
+      "shutdown_resource_warning": true,
+      "mode": "headless"
+    },
+    {
+      "test": "test_polish_rules.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "POLISH RULES: 51 checks / 0 failures",
+      "shutdown_resource_warning": false,
+      "mode": "headless"
+    },
+    {
+      "test": "test_turn_sequence.gd",
+      "exit": 0,
+      "script_errors": false,
+      "failure": false,
+      "summary": "TURN SEQUENCE: 171 checks / 0 failures",
+      "shutdown_resource_warning": false,
+      "mode": "headless"
+    },
+    {
+      "test": "test_battle_effect_icons.gd",
+      "mode": "headless",
+      "summary": "BATTLE EFFECT ICONS: 233 checks / 0 failures",
+      "script_errors": false,
+      "shutdown_resource_warning": true
+    },
+    {
+      "test": "test_battle_effect_icons.gd",
+      "mode": "native",
+      "summary": "BATTLE EFFECT ICONS: 233 checks / 0 failures",
+      "script_errors": false,
+      "shutdown_resource_warning": false
+    }
+  ]
+}

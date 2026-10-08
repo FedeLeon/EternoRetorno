@@ -22,7 +22,7 @@ func play(g: RefCounted, id: String, target: int = 0, upgraded: bool = false) ->
 func _initialize() -> void:
 	var additions = JSON.parse_string(FileAccess.get_file_as_string("res://data/support_cards.json"))
 	var g = battle()
-	check(additions.size() == 24 and g.content.cards.size() == 126, "24 unique additions")
+	check(additions.size() == 24 and g.content.cards.size() == 132, "24 unique additions")
 	var originals = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json")).cards
 	check(additions.keys().all(func(id): return not originals.has(id)), "no existing ID overwritten")
 	for hero in g.content.heroes:

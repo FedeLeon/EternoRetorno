@@ -2,6 +2,7 @@ extends RefCounted
 const STEPS = [
 	["Tu pareja, una energía compartida", "Cada turno robás seis cartas. El coste está arriba a la derecha. La energía se descuenta al jugar; una carta sin energía no se puede usar."],
 	["Arrastrá o tocá para jugar", "Arrastrá un ataque hasta un enemigo o una defensa hasta su héroe. Se iluminan los objetivos válidos. Soltar afuera cancela. También podés tocar carta y objetivo."],
+	["Teclado y mando", "1–9 o flechas izquierda/derecha: elegir carta. Arriba/abajo: cambiar objetivo. Enter: jugar. Espacio: terminar turno. L: enlace; O: objetivo del guardián. Mando: LB/RB cartas, cruceta objetivo, A jugar, Y terminar, B volver, X objetivo del guardián, pulsar stick izquierdo enlace, Start menú."],
 	["Anticipá el próximo ataque", "Las intenciones anuncian daño, bloqueo y contraataque. El bloqueo absorbe daño durante el turno. Cada golpe de un combo puede provocar una respuesta."],
 	["Elegí cómo crecer", "Podés aceptar una carta o rechazarla por almas. Las reliquias del élite cambian tu aventura. El campamento conserva equipo, mazos y especializaciones entre intentos."]
 ]

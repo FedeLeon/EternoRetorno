@@ -2,7 +2,10 @@ extends RefCounted
 # Shared deterministic packing for 4x2 motion sheets and transparent cut-ins.
 static func motion(source_path: String, output_path: String) -> bool:
 	var source = Image.load_from_file(source_path)
-	if source == null or source.get_width() % 4 != 0 or source.get_height() % 2 != 0: return false
+	if source == null: return false
+	# Generated sheets can have odd dimensions; normalize the grid before slicing.
+	if source.get_width()%4 != 0 or source.get_height()%2 != 0:
+		source.resize(ceili(source.get_width()/4.0)*4,ceili(source.get_height()/2.0)*2,Image.INTERPOLATE_NEAREST)
 	var cells: Array[Image] = []
 	var widest = 1
 	var tallest = 1

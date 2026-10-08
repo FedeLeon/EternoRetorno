@@ -1,3 +1,8 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+La documentación y resultados anteriores se conservan como historial.
+
 # Salas de encuentro — 30/09/2026
 
 ## Presentación

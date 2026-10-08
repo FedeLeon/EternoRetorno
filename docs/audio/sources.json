@@ -622,5 +622,78 @@
     "sha256": "297500bb74b20ce48dbb239efe6a1f398ffe115c5b99285073f0c39aa038e178",
     "processing": "ffmpeg loudnorm I=-25, TP=-2, 44100Hz, Vorbis",
     "downloaded": "2026-10-05"
+  },
+  {
+    "id": "boss_phase2",
+    "file": "assets/audio/music/boss_phase2.ogg",
+    "author": "Juhani Junkala / SubspaceAudio",
+    "page": "https://opengameart.org/content/boss-battle-music",
+    "download": "https://opengameart.org/sites/default/files/Juhani%20Junkala%20-%20Epic%20Boss%20Battle%20%5BSeamlessly%20Looping%5D.wav",
+    "archive_member": null,
+    "license": "CC0-1.0",
+    "original_sha256": "35f75b4381dfbb053992876f7dfc567d9fd959d61b73954d5b1cd519753e7df1",
+    "sha256": "cec8a1a76be7d672e494730578bd8d349b868f8e83fa776cc6be19c0dac387a2",
+    "processing": "ffmpeg loudnorm I=-20 TP=-2 LRA=9, 44100Hz, Vorbis q3",
+    "downloaded": "2026-10-07"
+  },
+  {
+    "id": "cinematic_intro",
+    "file": "assets/audio/music/cinematic_intro.ogg",
+    "author": "Arreglo local de fuentes CC0 existentes",
+    "license": "CC0-1.0",
+    "derived_from": [
+      "title",
+      "crypt"
+    ],
+    "source_pages": [
+      "https://opengameart.org/content/dark-intro",
+      "https://opengameart.org/content/dungeon-ambience"
+    ],
+    "processing": "ffmpeg: mezcla 80/20 o 85/15, ambiente con lowpass, loudnorm I=-20 TP=-2, fades y Vorbis q4 44100Hz",
+    "sha256": "74612c4ffdcbe8292cf63a2fd71309baa2f622e76332aa6fae2bf692b3185a1a",
+    "created": "2026-10-08"
+  },
+  {
+    "id": "cinematic_return",
+    "file": "assets/audio/music/cinematic_return.ogg",
+    "author": "Arreglo local de fuentes CC0 existentes",
+    "license": "CC0-1.0",
+    "derived_from": [
+      "camp",
+      "forest"
+    ],
+    "source_pages": [
+      "https://opengameart.org/content/a-small-fire-will-do-calming-loop",
+      "https://opengameart.org/content/forest-ambience"
+    ],
+    "processing": "ffmpeg: mezcla 80/20 o 85/15, ambiente con lowpass, loudnorm I=-20 TP=-2, fades y Vorbis q4 44100Hz",
+    "sha256": "b992f134a399d086e601d3f89f5a51d850bfef44267b6d978530789a6b78913b",
+    "created": "2026-10-08"
+  },
+  {
+    "id": "metal_clash",
+    "file": "assets/audio/sfx/metal_clash.ogg",
+    "author": "Kenney",
+    "page": "https://kenney.nl/assets/impact-sounds",
+    "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "archive_member": "Audio/impactMetal_heavy_001.ogg",
+    "license": "CC0-1.0",
+    "original_sha256": "83554049f81f4db9209379e103c30bfa63f65c42189a03f300b045c2c82e23ae",
+    "sha256": "6d9172d6adbc5ad5e2aa47784b2ae36738fb1bbbceb0aedaa67062ad16382bf6",
+    "processing": "ffmpeg highpass 300Hz, EQ 2800Hz +4dB, 29/53ms short metal resonance, fade, loudnorm -18 LUFS -2dBTP, 44100Hz Vorbis",
+    "downloaded": "2026-10-08"
+  },
+  {
+    "id": "metal_clash_2",
+    "file": "assets/audio/sfx/metal_clash_2.ogg",
+    "author": "Kenney",
+    "page": "https://kenney.nl/assets/impact-sounds",
+    "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "archive_member": "Audio/impactMetal_heavy_004.ogg",
+    "license": "CC0-1.0",
+    "original_sha256": "6d65b463c0555dd5be16b8db6d2cbe23a94e07a4637779b8ad17d0db3e500a87",
+    "sha256": "b719feb79ba3efa8dceb92b27649a535e8b63ebd2bfab09182f1bb838d20cce6",
+    "processing": "ffmpeg highpass 300Hz, EQ 2800Hz +4dB, 29/53ms short metal resonance, fade, loudnorm -18 LUFS -2dBTP, 44100Hz Vorbis",
+    "downloaded": "2026-10-08"
   }
 ]

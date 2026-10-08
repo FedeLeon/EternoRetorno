@@ -60,6 +60,12 @@ func run_tests() -> void:
 	await capture("camp-selected")
 	app.begin()
 	app.overlay.get_node("StartDungeon1").pressed.emit()
+	app.overlay.get_node("StartAdventure").pressed.emit()
+	for hero in ["warrior","cleric"]:
+		await process_frame
+		check(app.has_node("CinematicPlayer"),"story shown for chosen hero")
+		app.get_node("CinematicPlayer").finish()
+	await process_frame
 	check(app.screen == "map" and app.game.run.party == ["warrior", "cleric"], "chosen pair enters dungeon")
 	print("CAMP CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

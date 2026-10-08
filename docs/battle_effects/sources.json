@@ -1,0 +1,511 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "date": "2026-10-07",
+  "transparent_background": true,
+  "assets": [
+    {
+      "id": "rear_guard",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-937c661a-7565-420a-885e-10f770981dce.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A large teal and aged-silver shield in front, with a small golden bow and arrow partially protected behind it, clearly communicates a ranged enemy in a protected rear formation.",
+      "source_file": "docs/battle_effects/sources/rear_guard.png",
+      "source_sha256": "74e320986ce65cccf9932965422c7355f17ba3dcd7e80fd905202db7c15c1342",
+      "asset": "assets/battle_effects/rear_guard.png",
+      "asset_sha256": "1d282371f499b9b9d4b0e04d763ecd73214429ad23fe445586796c6ad59a51f6",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "roots",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-15a1a7dd-c990-4515-b45e-a6bc0f68c4cf.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A dense protective knot of glowing emerald roots curled around a small cracked stone shield. Living roots as a protective barrier, readable silhouette.",
+      "source_file": "docs/battle_effects/sources/roots.png",
+      "source_sha256": "f74334300b97b48953178c15e2f59fc0e35e38cd544b75390731499fb09813eb",
+      "asset": "assets/battle_effects/roots.png",
+      "asset_sha256": "d3b826341fde4621c599c9554d52a60382b0255aa437f05b572308de069f5b44",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "resurrection",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-be539eea-9cb4-4480-a084-0cbe3b23ccf2.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A violet spectral skull rising above a small gravestone with an upward curling violet magical wisp. Communicates bringing a fallen ally back to life.",
+      "source_file": "docs/battle_effects/sources/resurrection.png",
+      "source_sha256": "95a66807e10bc20484504c71891b336859f2a74691b7dd0ef0e3920302489d76",
+      "asset": "assets/battle_effects/resurrection.png",
+      "asset_sha256": "b4cfd2b12f9d535605791d383371b628ad720389474490f7ce7fdfd77e988d1a",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "embers",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-661a4403-1fd0-4755-9838-3f16d75fe489.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Three glowing orange-red embers and a small jagged flame, ash and sparks curling upward. Communicates burning ground that damages both heroes.",
+      "source_file": "docs/battle_effects/sources/embers.png",
+      "source_sha256": "5b276d95a168517d7d74141ca9d711630a09b74d86ebdedc0d2585483a2ab110",
+      "asset": "assets/battle_effects/embers.png",
+      "asset_sha256": "278cda01b25203a933a74f6814f3f30e86d9bf27bc46adf8259106490c73bd7b",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "imprisonment",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9a615cd7-da83-4c31-83d3-11fb0d8d2d18.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A pair of luminous green thorny vines forming a barred cage around a small silver chain ring. Communicates a trapped hero.",
+      "source_file": "docs/battle_effects/sources/imprisonment.png",
+      "source_sha256": "3704d8ece1af079d9fcc63a34e9e2cb7b028c3c1c44f50fc861f3b4baa26cb3a",
+      "asset": "assets/battle_effects/imprisonment.png",
+      "asset_sha256": "361b56aa3d5b2bbda89e2329de2f726c3c8dbc147ef158a16a116318936c8686",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "charged_strike",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-68789953-9e71-4ed9-bf56-36f7c0953369.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A heavy aged silver sword held diagonally, surrounded by a compact arc of blazing gold power, ready for a powerful charged strike.",
+      "source_file": "docs/battle_effects/sources/charged_strike.png",
+      "source_sha256": "816732fee6fdd5a1aec705e411202800adab234e1afb06496990c388d7aec48e",
+      "asset": "assets/battle_effects/charged_strike.png",
+      "asset_sha256": "daf03aad6458b19ae726c7042e692039688f0c2ed0900e5fc7d3e2f57455ec9a",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "vampiric",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2b99b188-5090-44c9-bdfc-efc7bef9fa03.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Dark crimson fangs framing one bright ruby blood droplet. Distinct life-stealing vampire symbol.",
+      "source_file": "docs/battle_effects/sources/vampiric.png",
+      "source_sha256": "5a7186e9a4cb79e11064109113ac22a29882c6edbd4fcb98a2da866c9790769f",
+      "asset": "assets/battle_effects/vampiric.png",
+      "asset_sha256": "838f6c7ff0b8afdcd5644ff1c010e7c3bcca7f3333f2637d98669d1d84b2ebd0",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "bulwark",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d5fd5514-f029-4a80-85b3-3f3d28a41b71.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A heavy fortified silver shield with three small stone battlements along its top edge, deep midnight blue center. A defensive elite that gains increasing block.",
+      "source_file": "docs/battle_effects/sources/bulwark.png",
+      "source_sha256": "445e3a913ed1532d4bab9dfbcb1cde89bfc8f7a9af1b3857f0fc484ef9b4c161",
+      "asset": "assets/battle_effects/bulwark.png",
+      "asset_sha256": "60dc565df130729bf82730321268141578e8fec5d74ce7d7bdeaeb468b714f07",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "frenzy",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-99386885-0f74-44d6-8d4e-effd05431d53.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A snarling bronze-red beast mask with two jagged crimson claw marks, powerful and compact. Frenzied enemy.",
+      "source_file": "docs/battle_effects/sources/frenzy.png",
+      "source_sha256": "01e39a67a837a75501bbc98ab07781cf401d041bb868c5c0946fd122f3d26b5e",
+      "asset": "assets/battle_effects/frenzy.png",
+      "asset_sha256": "8e975c6a20d1609e2d6f9d140a6b9ee006255314f954d527d1bd61a7d7139a5e",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "beast_command",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-65af609d-8b05-4f2f-b880-dca5183f512a.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A golden hunting horn next to a vivid green wolf paw print, green magical accents. A shaman commanding and strengthening beasts.",
+      "source_file": "docs/battle_effects/sources/beast_command.png",
+      "source_sha256": "59e482ec8029dc06de05ab4ff5ff9c54aca74a3e671c71e164d9aa8007174dd4",
+      "asset": "assets/battle_effects/beast_command.png",
+      "asset_sha256": "77543ff43af1064feb1f5382c321e4ecc72417c1301f029a74ef9fa49e3fc056",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "grief",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1c137caa-5fd4-4482-be63-0cfba9b021b5.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A cracked iron battle helmet above a small crimson flame, one torn black ribbon. A furious enemy after losing its companion.",
+      "source_file": "docs/battle_effects/sources/grief.png",
+      "source_sha256": "31a2cc11f5cc3531a8403fa6a342ddf71442da0727cf44bab2a4cb2ef16ac307",
+      "asset": "assets/battle_effects/grief.png",
+      "asset_sha256": "3050491064514cdc0b4c8e0f930f41b65bbf816655c885e35e057dc955a37206",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "protector",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d416de74-7bf4-4b44-8307-ef185c020a3e.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two overlapping small silver and gold shields with a warm teal protective sparkle. Protecting and granting shields to allies.",
+      "source_file": "docs/battle_effects/sources/protector.png",
+      "source_sha256": "175e457be97b7a3ab7dcbcc701561f70cb508ff25e19295276e01f32af77bc5e",
+      "asset": "assets/battle_effects/protector.png",
+      "asset_sha256": "8b0030f99164ffd3884cd55734a84ec2f1d4c3cbb125844c4b434c56a3120e25",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "healer",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4699fb8f-e0bf-4978-8205-8bd875fbf2a0.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A small antique golden healing staff ending in a luminous green plus-shaped crystal, surrounded by two leaf-like green sparks. Enemy heals allies.",
+      "source_file": "docs/battle_effects/sources/healer.png",
+      "source_sha256": "bd5774907eae9ec26ed7334c125d408394ec856bd1693b43523f47f3e3088fbd",
+      "asset": "assets/battle_effects/healer.png",
+      "asset_sha256": "2b5b0b04bba16d1af0c8f9b851e46d9a58151b4beb3487547a20141fad090d13",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "prepared",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0ef778cb-485d-48d1-ad72-c1b1711f5281.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A compact bronze hourglass crossed diagonally by a drawn silver dagger with a violet glow. A delayed attack prepared for next turn.",
+      "source_file": "docs/battle_effects/sources/prepared.png",
+      "source_sha256": "dc28563f015965b070029b41681c781a0ad9415390a1c172d56f1e7dc9cc05d0",
+      "asset": "assets/battle_effects/prepared.png",
+      "asset_sha256": "f04086ac6f6ab24bf29e10d35058fa9ad106d7bec6fdf04d021ace022dabe482",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "armor_plates",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1ff379d0-a673-497f-9980-b03efc338ded.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two thick silver armor plates overlapping with angular gold rivets, orange edge highlights. Heavy boss armor halves damage.",
+      "source_file": "docs/battle_effects/sources/armor_plates.png",
+      "source_sha256": "4884f63dc297441edd9acc8b0286ca49105a8eadcef716d9b83209b2f64ed954",
+      "asset": "assets/battle_effects/armor_plates.png",
+      "asset_sha256": "36f6a4be3fb0781d9020be6feb5ad98d5a9ffcc7b9e905eb3a7f9126fe499053",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "source",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-beb6fff3-d4c7-4904-a9b4-15ced955d439.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A small cracked stone basin emitting a vertical violet soul flame with a tiny spectral skull in the flame. A resurrection source sustaining a guardian.",
+      "source_file": "docs/battle_effects/sources/source.png",
+      "source_sha256": "2a6b325364211806ff57cfaeda81280bae258baf27437af1e4be290218be4b60",
+      "asset": "assets/battle_effects/source.png",
+      "asset_sha256": "ea85d5d6694329a179e2d0b19889c4ac9dad8a4cbb008d07e0e2f11e3e0df629",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "enraged",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-730b090e-c23e-4e2c-ab1e-43d1a9a359d3.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A jagged red flame crown around a silver demon-like helmet silhouette. Boss second phase.",
+      "source_file": "docs/battle_effects/sources/enraged.png",
+      "source_sha256": "8bd52e9b0c766c01a8accbea4240958dbfcf9b0a454967edc95f4ca198b7d2d3",
+      "asset": "assets/battle_effects/enraged.png",
+      "asset_sha256": "48722d63bb6ea2feb5327d9425e16358854f0fc75802c70e64801d040448f307",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "ambush",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1d7058f7-8cdf-4858-aab6-5680d9d13583.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two worn silver daggers crossed over a small red warning spark, dark orange highlights. Optional dangerous combat and empowered enemies.",
+      "source_file": "docs/battle_effects/sources/ambush.png",
+      "source_sha256": "00286601a6fc919eced1714a50b824ca58b71b6314d694b6b105ad27762792e7",
+      "asset": "assets/battle_effects/ambush.png",
+      "asset_sha256": "8af4eb95ea8b28d01433c0fdaa5bdfa6afabb61ed694f8f2e7583fed7687c577",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "tainted",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6bfd19e4-95ad-4490-b492-7ced2ed36a5f.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A dark iron shield with a swirling sickly violet-green aura and a small upward purple magical shard. Tainted enemy gains guard periodically.",
+      "source_file": "docs/battle_effects/sources/tainted.png",
+      "source_sha256": "96124589e1ac2154ed2199962a97db51c0432f008e333a5ee709c56707dc3e8c",
+      "asset": "assets/battle_effects/tainted.png",
+      "asset_sha256": "f2d8290305746d34d347d8a77d24e8b1b8a1524ef242a185a9ba4cc1e12f9255",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "strength",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-267d55ad-c5f3-4560-8977-764cd777363b.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A muscular armored golden fist held upward with a red magical glow. Temporary increased card attack damage.",
+      "source_file": "docs/battle_effects/sources/strength.png",
+      "source_sha256": "4edffdac68ef0449427ce9c98e8c4e46af01bbcebb4362dcb8a4ecd949ea5a63",
+      "asset": "assets/battle_effects/strength.png",
+      "asset_sha256": "45a9a41001a3ad67056e2060431a818f81dd3bad00844fb99e7aea979f36db53",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "weakness",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6badefdd-4093-48a8-99a7-2710c5bf0dbf.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A chipped silver sword drooping downward, dim blue smoke and a small broken red spark. Weakened enemy attack.",
+      "source_file": "docs/battle_effects/sources/weakness.png",
+      "source_sha256": "e01a1152005e9c26cac776fc46eb8e68e373cea017a11455c3f12897f9c5b9a4",
+      "asset": "assets/battle_effects/weakness.png",
+      "asset_sha256": "0bbd52d8045e41d3404ea89190a732ce2f272e5ccb1d798b186850c16110679c",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "fracture",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ed0b3800-44cf-46fc-bc53-539cd8ce9514.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A visibly cracked silver shield split by a jagged magenta fissure. Reduced enemy defense.",
+      "source_file": "docs/battle_effects/sources/fracture.png",
+      "source_sha256": "c68347cb4526d94b1cdbe20b31a32bf091151bbf4b11fe0d742dc21c2c023207",
+      "asset": "assets/battle_effects/fracture.png",
+      "asset_sha256": "8a414880a0790cab78b11febcf890c6fb584a7d8e6490e445e0c9c48829c9570",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "poison",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fa362a73-7756-4967-bd41-f96ce197577f.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A luminous acid-green skull and a single emerald toxin droplet. Poison status.",
+      "source_file": "docs/battle_effects/sources/poison.png",
+      "source_sha256": "065bc4ef775a9b426942c962b1533b961d8b29d50be0b0c667130631564860ef",
+      "asset": "assets/battle_effects/poison.png",
+      "asset_sha256": "7276dd0144e8a76b1f2667f6785c3eb531c96d52d0b1b0757e57c8b06f1d54f4",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "weapon_boost",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-134733bc-1e4d-4e0e-b091-8b2c07de7b21.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A silver sword over a compact orange glowing potion droplet, golden spark at the blade tip. Weapon attack damage boosted this turn.",
+      "source_file": "docs/battle_effects/sources/weapon_boost.png",
+      "source_sha256": "042851c60744fbea88d8e97f76157a5a868ecdc2351eea333cbd434a8cc1fdf2",
+      "asset": "assets/battle_effects/weapon_boost.png",
+      "asset_sha256": "f25f6003eebb1b7d8165fdbb607ce1b2344f2a864157cffb39147f7c7e5b4f68",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "magic_boost",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-772490ed-66b6-40f4-8a97-2eb52cf20075.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A radiant blue-violet magical orb gripped by a small golden staff head, two tiny floating crystals. Spell attack damage boosted this turn.",
+      "source_file": "docs/battle_effects/sources/magic_boost.png",
+      "source_sha256": "051ff7e29f140700bd8b79697fd858238145df83918e29caf44315cfe2ee8c62",
+      "asset": "assets/battle_effects/magic_boost.png",
+      "asset_sha256": "c0d39a807fb703413a45cb861b02f3ee0c256c01490c92b0cf6ec2fa046d8311",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "bond_focus",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f4a1ec1f-09d2-42cd-bb3e-3f0666de826f.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two interlocking antique gold chain links glowing violet and teal, one little bright star where the links join. Hero pair next linked attack empowered.",
+      "source_file": "docs/battle_effects/sources/bond_focus.png",
+      "source_sha256": "fc3b475787d6ce57a0c52625fb656669257f0a54c6a6fc042fb6b0644d0469da",
+      "asset": "assets/battle_effects/bond_focus.png",
+      "asset_sha256": "bd33ef2da51b7fac6726a79af37faf1bb498a8b9c7565897c807299d1a605f0e",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "curse_blood",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-73479252-567f-4a96-baa4-b7537ee61a4e.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A deep red bleeding heart crossed with a black thorn, one red falling droplet. Blood debt curse.",
+      "source_file": "docs/battle_effects/sources/curse_blood.png",
+      "source_sha256": "447621b81a9929e7686039926f902f5c56318925d929b40d63ef05907f880caf",
+      "asset": "assets/battle_effects/curse_blood.png",
+      "asset_sha256": "d47356670cfa8ce5901c5d1d51fc660889a148d0f8188b6738335dc8967eaf14",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "curse_burden",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-e2a783b0-f7c4-41e4-aab9-14e06d7aae12.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A heavy dark iron weight tied with a chain beneath a dim blue energy crystal. Reduced opening-turn energy curse.",
+      "source_file": "docs/battle_effects/sources/curse_burden.png",
+      "source_sha256": "f3a868a1dd8ab0b69f0dc3e591634ff362c89237c4ac3ce0e6d902cfef000f13",
+      "asset": "assets/battle_effects/curse_burden.png",
+      "asset_sha256": "c2fbf0835b7104c4427bf6b4c02c8d4b53efd21fc4159467ee0d75b77d469c24",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "curse_scar",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-e9eba9fc-1d05-44c5-a41e-714bb89119e7.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A golden healing plus symbol visibly scored by a diagonal dark crimson scar, faint red glow. Reduced healing curse.",
+      "source_file": "docs/battle_effects/sources/curse_scar.png",
+      "source_sha256": "fd1c098fa1fabc3e0220c6ce1b7fce6ee6e2d8dde46dc50dc1599b941828517b",
+      "asset": "assets/battle_effects/curse_scar.png",
+      "asset_sha256": "991e0b0dac7823b83f6a4e98a075b8974e646d693f55e80b383a58b1225c5887",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "set_multi",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0e9a663d-927f-49de-819e-9969f06ad601.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two crossed silver swords joined by an antique gold chain link, three small red strike streaks. Multiple-hit damage relic synergy.",
+      "source_file": "docs/battle_effects/sources/set_multi.png",
+      "source_sha256": "37adb1a32f3564885627fbae62222416ed5c2eb88403834f00297bd751c8cdbe",
+      "asset": "assets/battle_effects/set_multi.png",
+      "asset_sha256": "e8d080248f89b21eb66dcf315fce67e214d1dc0e8345a01c53c4bf4732b5584b",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "set_poison",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0689e7aa-406f-4bfa-a109-fbe36fe92606.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A green snake fang curled around a silver drill-like fang, a golden chain joining the two. Poison-enhancing relic synergy.",
+      "source_file": "docs/battle_effects/sources/set_poison.png",
+      "source_sha256": "284f89a1d64db6b587503a7cbf06df068133780b1a1f23415f209155fd43d1d1",
+      "asset": "assets/battle_effects/set_poison.png",
+      "asset_sha256": "d0583d54f2af4ca7e8be0287e0ea87e63d2ddf7ff00e11e6300ce2b68b4b7e45",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "set_block",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b4b1f19c-6e39-4402-b558-3538b2c3d1ff.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: An ivory crescent mirror behind a teal turtle-shell shield, joined by a small golden chain. Defense relic synergy.",
+      "source_file": "docs/battle_effects/sources/set_block.png",
+      "source_sha256": "4b8999e2feef9b7ab45fd1af3ca5ca500ba57f76adc6c70e546a0babe0d7dbe1",
+      "asset": "assets/battle_effects/set_block.png",
+      "asset_sha256": "3b182c5b50a145948f4dd620b084ba49a34f903b2101d514de29d023f194ebad",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "set_heal",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6b82a944-feff-4717-99ad-b9ff47fae07e.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A small gold chalice and an ornate dawn bell joined by a golden chain, warm healing glow. Healing relic synergy.",
+      "source_file": "docs/battle_effects/sources/set_heal.png",
+      "source_sha256": "5996210b221143c39f6e217c898f354ff29c0f451a25a4a31a34f4c035e83370",
+      "asset": "assets/battle_effects/set_heal.png",
+      "asset_sha256": "8799fdaccb6758efa2e83ed16e7bad0e5fce0981128c3501037774e3fc9bedf6",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "attack",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a3fe8dc0-a13e-4ab9-8678-b94f956eef45.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: One worn silver short sword angled up to the right, a leather-wrapped brown grip, antique gold guard, clearly readable sharp blade. Standard attack intention icon.",
+      "source_file": "docs/battle_effects/sources/attack.png",
+      "source_sha256": "bd810e8f0156b6307198900787f5d57433d66293affad9ef6a8a8ba9fb5987c7",
+      "asset": "assets/battle_effects/attack.png",
+      "asset_sha256": "3ad2605360f9824e732aa98989db1562cb48509056e5543fffe5f1b6cfe0fa74",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "guard",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-64ca7420-c5eb-4b27-b281-91ca47fe46b2.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: A simple sturdy grey-silver shield with aged gold rivets, blue-gray highlights and uncluttered dark center. Standard intention to gain block.",
+      "source_file": "docs/battle_effects/sources/guard.png",
+      "source_sha256": "93212f4e57b63f5a6447186277fd0c5d6b6c2263b635bd549d56f26d4712dc8b",
+      "asset": "assets/battle_effects/guard.png",
+      "asset_sha256": "b410eee2687b801678e13e2b1350a77165576f5b7e245197a1459d1c443ff97f",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    },
+    {
+      "id": "counter",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-241c3f2e-0ab9-4fd3-963b-f95f8ce09d29.png",
+      "prompt": "Use case: stylized-concept\nAsset type: single compact battle-status icon for the dark fantasy pixel-art game Eterno Retorno.\nStyle/medium: detailed hand-painted pixel art with crisp blocky edges, readable silhouette at 36 pixels, rich metal and magical highlights, matching classic dark fantasy game inventory icons. Actual pixel art, not flat vector, not a photorealistic object. One centered symbol only. Tarnished silver and muted antique gold edging, dark charcoal shadows, effect-specific accent color.\nComposition: square 1024x1024 canvas, icon occupies central 75% with generous transparent padding, no frame, no tile, no backdrop, no cast ground shadow. Genuine transparent alpha background.\nConstraints: no words, no letters, no digits, no watermark, no multiple panels or sprite sheet.\nSubject: Two opposing curved silver daggers forming a compact circular retaliatory arrow, little crimson spark in center. Counterattack intention.",
+      "source_file": "docs/battle_effects/sources/counter.png",
+      "source_sha256": "f631d97eb3e1e8180f9d76d323b6b098f23f4baf88d7f933a5429ff4bfb01ef0",
+      "asset": "assets/battle_effects/counter.png",
+      "asset_sha256": "1b177d94063f94443a833dccbf701549a4ec72f3400c677dab4a2481c4ddcb47",
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: alpha crop, aspect fit to 116 px, transparent 128 px canvas; Lanczos resize"
+    }
+  ]
+}

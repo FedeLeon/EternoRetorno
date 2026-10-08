@@ -58,8 +58,8 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
-	await reaction("attack")
-	check(app.hero_art[0].sprite.animation == "attack", "light uses attack")
+	await reaction("sweep")
+	check(app.hero_art[0].sprite.animation == "sweep", "light uses attack")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
 	check(app.game.run.combat.enemies[0].hp == hp, "duplicate input ignored")
@@ -73,8 +73,8 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "cleric_judgment", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
-	await reaction("attack")
-	check(app.hero_art[0].sprite.animation == "attack", "judgment uses light attack")
+	await reaction("charged")
+	check(app.hero_art[0].sprite.animation == "charged", "judgment uses charged attack")
 	await create_timer(0.36).timeout
 	await shot("judgment")
 	check(app.game.run.heroes[0].hp == 24, "judgment heals its caster")
@@ -115,7 +115,7 @@ func run_tests() -> void:
 	await reaction("death")
 	check(app.hero_art[0].sprite.animation == "death", "lethal hit triggers death")
 	await settled()
-	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == 5 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
+	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == app.hero_art[0].sprite.sprite_frames.get_frame_count("death") - 1 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
 	await shot("fallen")
 	app.game.run.combat.enemies[0].hp = 1
 	app.game.run.combat.energy = 3

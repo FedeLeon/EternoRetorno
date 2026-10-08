@@ -50,6 +50,9 @@ func run_tests() -> void:
 	check(app.screen == "home", "Back returns to title")
 	await process_frame
 	await click(Vector2(640, 565))
+	check(app.has_node("CinematicPlayer"),"first start has an intro")
+	app.get_node("CinematicPlayer").finish()
+	await process_frame
 	check(app.screen == "base_camp", "Start opens camp")
 	app.game.new_run(["warrior", "cleric"], 42)
 	var before = app.game.run.duplicate(true)

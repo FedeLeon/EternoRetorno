@@ -8,7 +8,7 @@ const COST_CENTERS = {
 }
 static func build(ui: Control, instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, _chosen: bool, enabled: bool, parent: Control, base_values: bool) -> Button:
 	var c = ui.game.content.card(instance)
-	var support = c.get("support", false)
+	var support = c.get("support", false) or c.get("risk", false) or c.get("charge",false) or c.get("interrupt",false)
 	var linked = ui.game.content.synergies.any(func(recipe): return instance.id in recipe.cards)
 	var card_description = ui.game.content.describe(instance, c if base_values else ui.game.effective_card(instance))
 	var def = ui.game.content.heroes[c.owner]

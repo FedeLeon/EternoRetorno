@@ -133,6 +133,7 @@ func _initialize() -> void:
 			g._start_combat(node.encounter)
 			break
 		g.run.combat.hero_fell = true
+		preload("res://tests/room_fixture.gd").break_objective(g)
 		for enemy in g.run.combat.enemies: enemy.hp = 0
 		g._check_combat_end()
 		check(g.run.expedition_stats.get("elites" if kind == "elite" else "bosses", 0) == 1, "objective hook " + kind)

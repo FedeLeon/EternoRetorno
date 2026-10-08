@@ -31,6 +31,11 @@ func run_tests():
  app.begin()
  app.overlay.get_node("StartDungeon2").pressed.emit()
  app.overlay.get_node("StartAdventure").pressed.emit()
+ for hero in ["warrior","cleric"]:
+  await process_frame
+  check(app.has_node("CinematicPlayer"),"selected hero is introduced")
+  app.get_node("CinematicPlayer").finish()
+ await process_frame
  check(game.run.floor == 2 and game.run.current == -1 and game.available_nodes() == [0], "forest starts at entrance")
  check(game.run.deck.size() == 20 and game.run.inventory.is_empty() and game.run.visited.is_empty(), "fresh starter state")
  check(game.run.team_relic == "vital_amulet" and app.screen == "map", "relic and map preserved")

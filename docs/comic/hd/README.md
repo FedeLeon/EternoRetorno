@@ -69,3 +69,10 @@ Los PNG de runtime pasan de 140,0 a 270,6 MiB. Los recursos importados de estos
 del tamaño de exportación. Cada atlas RGBA sin comprimir ocupa 24 MiB frente a
 14,65 MiB antes; la mayor definición consume más memoria de textura. La restauración
 es generativa y puede introducir pequeñas variaciones de detalle entre poses.
+
+## Ritmo de presentación — 08/10/2026
+
+Ataques y defensas de héroes duran 0,96 s frente a los 0,72 s anteriores. Cuadros
+y partículas comparten fase normalizada; se conservan transparencia, encuadre,
+combos y preferencia de velocidad. Enemigos conservan duración anterior.
+[Pruebas actuales](../../presentation_refinements/README.md).

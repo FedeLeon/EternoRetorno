@@ -58,8 +58,8 @@ func run_tests() -> void:
 	await shot("idle")
 	app.animate_combat_action(0, 0)
 	check(app.combat_busy, "input locked during attack")
-	await reaction("attack")
-	check(app.hero_art[0].sprite.animation == "attack", "cut uses daggers")
+	await reaction("sweep")
+	check(app.hero_art[0].sprite.animation == "sweep", "cut uses daggers")
 	var hp = app.game.run.combat.enemies[0].hp
 	app.animate_combat_action(0, 0)
 	check(app.game.run.combat.enemies[0].hp == hp, "duplicate input ignored")
@@ -72,8 +72,8 @@ func run_tests() -> void:
 	app.game.run.combat.hand = [{"id": "rogue_venom", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
-	await reaction("poison")
-	check(app.hero_art[0].sprite.animation == "poison", "venom uses poison throw")
+	await reaction("skill")
+	check(app.hero_art[0].sprite.animation == "skill", "venom uses poison throw")
 	await create_timer(0.36).timeout
 	await shot("poison")
 	await settled()
@@ -83,7 +83,7 @@ func run_tests() -> void:
 		app.continue_run()
 		var old_poison = app.game.run.combat.enemies[0].poison
 		app.animate_combat_action(0, 0)
-		var expected = "guard" if card_id == "rogue_dodge" else "attack"
+		var expected = "guard" if card_id == "rogue_dodge" else "sweep"
 		await reaction(expected)
 		check(app.hero_art[0].sprite.animation == expected, card_id + " animation")
 		if card_id != "rogue_dodge":
@@ -107,7 +107,7 @@ func run_tests() -> void:
 	await reaction("death")
 	check(app.hero_art[0].sprite.animation == "death", "lethal hit triggers death")
 	await settled()
-	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == 5 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
+	check(app.hero_art[0].fallen and app.hero_art[0].sprite.frame == app.hero_art[0].sprite.sprite_frames.get_frame_count("death") - 1 and not app.hero_art[0].sprite.is_playing(), "corpse persists while companion plays")
 	await shot("fallen")
 	app.game.run.combat.enemies[0].hp = 1
 	app.game.run.combat.energy = 3

@@ -33,7 +33,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 		sprite.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(sprite, -24, -42, 228, 182, b)
 		ui.panel(0, 141, 180, 57, Color("343b4d"), b)
-		var name_label = ui.label_at(("✓ " if chosen else "") + h.name, 4, 143, 172, 27, 21, ui.GOLD if chosen else ui.TEXT, b)
+		var name_label = ui.label_at(("✓ " if chosen else "") + h.name, 4, 143, 172, 32, 20, ui.GOLD if chosen else ui.TEXT, b)
 		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		var detail = ui.label_at("%s · %d PV" % [h.role, h.hp], 2, 172, 176, 22, 14, Color(h.color), b)
 		detail.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

@@ -230,3 +230,26 @@ vacíos/construidos. Revisión visual local de estados parciales y completos a
 1280×720. Regresiones: campamento 37 comprobaciones renderizadas, expansión 39
 headless, sin fallos. Importación y `git diff --check` limpios. Sin exportación
 ni nueva validación Web/Android.
+
+## Taller permanente y accesos — 08/10/2026
+
+Proyectos tiene un pequeño edificio permanente a la derecha de la fogata, entre
+Iglesia y Aventuras. Acceso gratuito sin construcción, con sus mejoras internas
+y requisitos anteriores. Entrenamiento usa un botón cuadrado con el muñeco; se
+retira Bestiario del campamento y queda en Inicio.
+[Assets, prompts y pruebas actuales](../presentation_refinements/README.md).
+
+## Tamaño y posición de edificios construidos — 08/10/2026
+
+Expediciones baja 20 px y crece aproximadamente un 10 %: su área pasa a
+`Rect2(464, 442, 352, 210)`, manteniendo el centro horizontal bajo la fogata.
+Iglesia crece un 10 % y su centro se desplaza 21 px a la izquierda, con área
+`Rect2(850, 350, 376, 238)`. Carteles y máscaras de clic se ajustan con los
+edificios en `src/ui/screens/base_camp_screen.gd`. Los solares vacíos conservan
+sus ubicaciones; se reutilizan assets y no se modifican guardados.
+
+Validación actual: expansión de campamento, 39 comprobaciones, y campamento,
+38 comprobaciones, sin fallos con renderizado local X11/Compatibility.
+Revisión visual del campamento construido a 1280×720; carteles separados y
+completamente visibles. La suite de campamento informa recursos pendientes al
+cierre. Sin exportación ni pruebas Web/Android.

@@ -34,7 +34,7 @@ func run_tests() -> void:
 		check(app.market_hero == hero, "category " + hero)
 		check(not app.layer.has_node("Category_" + hero), "gallery hidden in shop detail")
 		var purchases = app.layer.find_children("Buy_*", "Button", true, false)
-		check(purchases.size() == 10, "ten purchasable cards")
+		check(purchases.size() == 13, "thirteen purchasable cards")
 		var scroll = app.layer.get_node("MarketCards")
 		scroll.scroll_vertical = 650
 		await process_frame

@@ -1,4 +1,47 @@
-# Validación — 15 de septiembre de 2026
+# Validación
+
+## Última comprobación: equipo superpuesto en héroes (07/10/2026)
+
+Actores: 1662 comprobaciones headless; equipo UI: 48 headless. Animación actual:
+534 en ventana local Godot 4.7.2/Linux/Mesa/llvmpipe, seis héroes con niveles 1–3;
+reposo/defensa revisados y tres ataques capturados. Sin fallos de script/aserciones.
+Se conservan avisos de recursos al cierre de la prueba UI, separados del resultado.
+No se exportó ni se probó navegador, emulador o dispositivo físico.
+[Corrección y pruebas](polish_2026_10/README.md#corrección-posterior-equipo-duplicado-sobre-héroes--07102026).
+
+## Última comprobación: iconos de efectos de batalla (07/10/2026)
+
+Diez suites headless sin errores de script/aserciones. Suite nueva: 233
+comprobaciones, también aprobadas en ventana local Linux/Mesa/llvmpipe a 1280×720;
+16 capturas de catálogo, combate triple, guardianes, diálogos y estados acumulados.
+Se verifica consulta sin mutar estado/RNG, acciones por energía, bloqueo, caída,
+interrupción/cobertura y distribución con texto ampliado.
+
+Avisos de ObjectDB/recursos al cierre de algunas suites headless se distinguen
+de los resultados funcionales; el recorrido gráfico nuevo termina sin ellos.
+No se exportó Web/APK ni se probó navegador, emulador o dispositivo físico.
+[Detalle y límites](battle_effects/README.md#pruebas-realizadas),
+[resumen verificable](battle_effects/validation.json).
+
+## Última comprobación: pulido y expansión táctica (07/10/2026)
+
+73 suites locales aprobadas. Las nuevas reglas pasan 51 comprobaciones, actores
+528, interfaz 13 y colección 43. Recorrido gráfico de 36 vistas en Godot 4.7.2,
+Linux/Mesa/llvmpipe a 1280×720: capturas revisadas y ninguna etiqueta desbordando
+su altura asignada. Guardados de pruebas separados del progreso del usuario.
+
+90 aventuras automáticas con decisiones legales, premios, consumibles y mejoras:
+31/45 victorias sin equipo y 39/45 con equipo nivel 1. No sustituye balance humano.
+Las advertencias de cierre de suites históricas se registran separadas de errores
+de script/aserciones y del recorrido gráfico nuevo, que termina sin ellas.
+
+La medición Web corresponde únicamente al exportado existente del 05/10 servido
+por HTTP; no contiene estos cambios. No se exportó Web/APK, no se publicó ni se
+probó esta entrega en emulador/dispositivo físico.
+[Resultados y límites detallados](polish_2026_10/README.md#pruebas-y-límites),
+[informe reproducible](polish_2026_10/validation.json).
+
+## Validaciones históricas
 
 ## Última comprobación: limpieza (16/09/2026)
 

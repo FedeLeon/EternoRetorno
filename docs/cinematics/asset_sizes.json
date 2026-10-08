@@ -1,0 +1,134 @@
+[
+  {
+    "path": "assets/cinematics/forest.png",
+    "bytes": 1745064,
+    "imported_bytes": 353248,
+    "sha256": "341140d32dd655f00d8e5f69dca7151356939ee6b953b5f575a5187c5bbe0e48"
+  },
+  {
+    "path": "assets/cinematics/crypt.png",
+    "bytes": 1637802,
+    "imported_bytes": 281924,
+    "sha256": "405a84ecc23b4ca1087d3638ece47364b1dbff5916cdd966464084e192e4af6d"
+  },
+  {
+    "path": "assets/cinematics/intro.png",
+    "bytes": 1713333,
+    "imported_bytes": 330174,
+    "sha256": "17c47368112508cfb3a938bf0796b509d87996d5312282c034603113b1678c58"
+  },
+  {
+    "path": "assets/cinematics/volcano.png",
+    "bytes": 1582847,
+    "imported_bytes": 298732,
+    "sha256": "ae5a5b9c86e4549208d9a163a4aeb925fc2f50e89f8c10d0c07d480114a070c7"
+  },
+  {
+    "path": "assets/cinematics/portraits/warrior.png",
+    "bytes": 572269,
+    "imported_bytes": 135372,
+    "sha256": "5d09fd96589864b451be79be181022c3ee271f682dabb661c9ec41dc9b401b20"
+  },
+  {
+    "path": "assets/cinematics/portraits/mage.png",
+    "bytes": 551740,
+    "imported_bytes": 129862,
+    "sha256": "6dee455d4384ad84687f353544de65367c0d82218545c5aaa068b77177e95d67"
+  },
+  {
+    "path": "assets/cinematics/portraits/ranger.png",
+    "bytes": 579264,
+    "imported_bytes": 131966,
+    "sha256": "849602f56a30439b40e6d2c23be47889e683a1171a48e2353ba3994cc131a13c"
+  },
+  {
+    "path": "assets/cinematics/portraits/cleric.png",
+    "bytes": 599807,
+    "imported_bytes": 149292,
+    "sha256": "5abfd6b1d5b8e24dfc75d2871317d0e0dad6e7038a1d869a27ceec177a5f80c7"
+  },
+  {
+    "path": "assets/cinematics/portraits/guardian.png",
+    "bytes": 697820,
+    "imported_bytes": 171840,
+    "sha256": "ef5bd91bc988dce79c47e36b910f5d2cb1aedba55330c868629a294bf7d87649"
+  },
+  {
+    "path": "assets/cinematics/portraits/rogue.png",
+    "bytes": 535538,
+    "imported_bytes": 117600,
+    "sha256": "2a4d549d863d5f43f8161837117e009840faf2aa63cedc25bdd72a21590f46f0"
+  },
+  {
+    "path": "assets/enemies/animations/elemental_3.png",
+    "bytes": 162030,
+    "imported_bytes": 149316,
+    "sha256": "863a8ebeddb15b85952793efe52370b0daf689febcee67a5151e28207845d9d6"
+  },
+  {
+    "path": "assets/enemies/animations/beast_3.png",
+    "bytes": 111244,
+    "imported_bytes": 102644,
+    "sha256": "ef70ad96cab8fac24e7a651e45575de1b5e3ee0f3005319b8da9377ff6ba8991"
+  },
+  {
+    "path": "assets/enemies/animations/elemental_4.png",
+    "bytes": 114463,
+    "imported_bytes": 111008,
+    "sha256": "f86d481eb43f88e7b1332708dcf7f50286f343c8361ee9f615bc29039fb0a59d"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_6.png",
+    "bytes": 84836,
+    "imported_bytes": 70548,
+    "sha256": "754a7644fcf1c725a3732dd2bbdf832a0122c9ca61a6de97a65a463707fddb1b"
+  },
+  {
+    "path": "assets/enemies/animations/bandit_4.png",
+    "bytes": 93844,
+    "imported_bytes": 81274,
+    "sha256": "6678d6fd3e65253b723839e5d60b06b6e482fcd202e43041877bf4c4f988c6cc"
+  },
+  {
+    "path": "assets/enemies/animations/flying_5.png",
+    "bytes": 110773,
+    "imported_bytes": 99290,
+    "sha256": "c1dbe04057d3e14318c73bdf4122660da1f010b3533540bcf9aa7f276545f602"
+  },
+  {
+    "path": "assets/comic/enemies/elemental_3.png",
+    "bytes": 1165449,
+    "imported_bytes": 301850,
+    "sha256": "e03f345dd44956ba92a444a8e0684aa25952bef0ea21053a2d6fa25d575e49a3"
+  },
+  {
+    "path": "assets/comic/enemies/beast_3.png",
+    "bytes": 1011038,
+    "imported_bytes": 269906,
+    "sha256": "9b04cc381e214217be40f23480c838781d9e504282317a46c69e6914d96f8a74"
+  },
+  {
+    "path": "assets/comic/enemies/elemental_4.png",
+    "bytes": 1077855,
+    "imported_bytes": 282014,
+    "sha256": "c67524637551d39fe0fa69b239ca4da5e17f1329dcaba478c9ee372f4505465c"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_6.png",
+    "bytes": 556680,
+    "imported_bytes": 156512,
+    "sha256": "3cb61eb61fcfb2f78d806a6bf72ce7d22bb4b7cfe4127457326e3794d415dba6"
+  },
+  {
+    "path": "assets/comic/enemies/bandit_4.png",
+    "bytes": 1006275,
+    "imported_bytes": 247116,
+    "sha256": "63205cd2309e98375e2a5119a27e085be194705ddc6b4db244723a2db2cf3121"
+  },
+  {
+    "path": "assets/comic/enemies/flying_5.png",
+    "bytes": 1027105,
+    "imported_bytes": 266720,
+    "sha256": "68d5f3917a495fd7b8bd9bf3ebcdec4f8dfac9a212f2a037daa1ccef97a4284a"
+  }
+]

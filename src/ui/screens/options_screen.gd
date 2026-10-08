@@ -28,5 +28,18 @@ static func build(ui: Control) -> void:
 		toggle.disabled = row[0] == "fullscreen" and OS.has_feature("mobile")
 		ui.rect(toggle,680,row[2],390,46)
 		toggle.toggled.connect(func(value): ui.set_option("text_scale" if row[0] == "large_text" else row[0], (1.12 if value else 1.0) if row[0] == "large_text" else value))
-	ui.button("Cómo jugar",680,530,390,42,func(): preload("res://src/ui/tutorial_navigation.gd").open(ui))
+	var impact=CheckButton.new();impact.text="Pausas breves en golpes fuertes";impact.button_pressed=settings.get("hit_pause",true)
+	var cinematic = CheckButton.new()
+	cinematic.name = "AutoCinematics"
+	cinematic.text = "Cinemáticas automáticas"
+	cinematic.button_pressed = settings.get("auto_cinematics",true)
+	ui.rect(cinematic,210,552,395,42)
+	cinematic.toggled.connect(func(value):ui.set_option("auto_cinematics",value))
+	ui.rect(impact,680,515,390,42);impact.toggled.connect(func(value):ui.set_option("hit_pause",value))
+
+	var force=OptionButton.new();force.name="ImpactStrength"
+	for caption in ["Impactos sin sacudidas", "Impactos suaves", "Impactos intensos"]: force.add_item(caption)
+	force.select(0 if float(settings.get("impact_strength",0.65))==0 else 2 if float(settings.get("impact_strength",0.65))>=1 else 1)
+	ui.rect(force,680,562,390,34);force.item_selected.connect(func(index):ui.set_option("impact_strength",[0.0,0.65,1.0][index]))
+	ui.button("Cómo jugar",905,105,172,38,func(): preload("res://src/ui/tutorial_navigation.gd").open(ui)).add_theme_font_size_override("font_size",17)
 	ui.button("Volver",350,602,580,48,func(): ui.screen = "home"; ui.render())

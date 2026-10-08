@@ -1,3 +1,8 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+La documentación y resultados anteriores se conservan como historial.
+
 # Cartas por héroe
 
 **Contenido actual:** 126 cartas, 21 por héroe. Incluye [doce cartas tácticas](../combat_depth_2026_10/README.md). [Catálogo](CATALOGO.md) y

@@ -6,11 +6,9 @@ static func build(ui: Control) -> void:
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(bg, 0, 0, 1280, 720)
-	ui.panel(20, 12, 1240, 116)
-	ui.header("Bestiario descubierto", "Las criaturas revelan su información al encontrarlas.")
-	for child in ui.layer.get_children():
-		if child is Button and child.text == "Menú": child.hide()
-	ui.button("Campamento", 1020, 22, 220, 42, func(): ui.open_base_camp())
+	preload("res://src/ui/components/preparation_header.gd").build(ui,"Bestiario descubierto",ui.back,-1,"Inicio" if ui.return_screen == "home" else "Campamento")
+	ui.panel(36,94,1208,38)
+	ui.label_at("Las criaturas revelan su información al encontrarlas.",54,95,1172,36,18,ui.TEXT)
 	var scroll = ScrollContainer.new()
 	ui.rect(scroll, 36, 145, 1208, 540)
 	var body = Control.new()
@@ -32,6 +30,6 @@ static func build(ui: Control) -> void:
 		var damage: Array[String] = []
 		var guard: Array[String] = []
 		for intent in def.pattern:
-			damage.append(str(intent.get("damage", 0))); guard.append(str(intent.get("block", 0)))
+			damage.append(str(int(intent.get("damage", 0)))); guard.append(str(int(intent.get("block", 0))))
 		var roles = {"protector":"Protege a sus aliados con bloqueo.","support":"Cura a sus aliados.","attacker":"Ataca según su intención."}
 		ui.label_at("%d PV base · %s\n%s\nEncontrado %d · derrotado %d" % [def.hp, "Guardián" if def.get("boss", false) else "Criatura", roles.get(def.get("role", "attacker"), "Observá su intención.") + "\nAtaque " + "/".join(damage) + " · bloqueo " + "/".join(guard), record.encounters, record.kills], 110, 54, 253, 106, 16, ui.TEXT, row)

@@ -50,13 +50,14 @@ func run_tests() -> void:
 	await process_frame
 	hud = app.layer.get_node("CombatHUD")
 	var indicators = app.layer.find_children("*", "", true, false).filter(func(n): return n is BlockIndicator and n.visible and n.get_parent().get_script() == preload("res://src/ui/components/status_effects.gd"))
-	check(indicators.size() == 4 and indicators.all(func(n): return n.amount > 0), "Only active statuses shown")
+	check(indicators.size() == 2 and indicators.all(func(n): return n.amount > 0), "Only active block shown beside health")
 	check(indicators.any(func(n): return n.amount == 12) and indicators.any(func(n): return n.amount == 7), "Hero and enemy block amounts")
 	for indicator in indicators:
 		check(indicator.mouse_filter == (Control.MOUSE_FILTER_STOP if indicator.name == "Block" else Control.MOUSE_FILTER_IGNORE), "Block can be inspected independently of targeting")
 		check(indicator.get_child(1).value == indicator.amount, "Block digits match state")
-	check(indicators.filter(func(n): return n.name == "Poison").size() == 2, "Poison icon on hero and enemy")
-	check(indicators.filter(func(n): return n.name == "Poison").all(func(n): return n.icon_texture != null), "Poison has dedicated icon")
+	var poison_icons = app.layer.find_children("Effect_poison", "Button", true, false)
+	check(poison_icons.size() == 2, "Poison icon on hero and enemy")
+	check(poison_icons.all(func(n): return n.get_child(0).texture != null and n.get_meta("battle_effect").value > 0), "Poison has dedicated inspectable icon")
 	for indicator in indicators.filter(func(n): return n.name == "Block"):
 		var actor_button = indicator.get_parent().get_parent()
 		var bar = actor_button.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/components/health_bar.gd"))[0]

@@ -93,7 +93,7 @@ func run_tests() -> void:
 	await process_frame
 	await app.animate_combat_action(0, 0)
 	check(played.count("blade") == 2, "one weapon sound per combo hit")
-	check(played.has("card_use") and played.has("hit"), "card and impact sounds accompany committed action")
+	check(played.has("card_use") and played.has("flesh_impact"), "card and impact sounds accompany committed action")
 	battle = app.game.run.combat
 	battle.enemies[0].intent = {"damage":2, "block":4, "target":0}
 	app.render()

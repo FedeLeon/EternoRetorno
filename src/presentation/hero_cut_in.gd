@@ -15,6 +15,7 @@ static func play(parent: Control, hero: String, kind: String = "attack", variant
 		return null
 	var effect = new()
 	effect.hero_id = hero
+	effect.duration = 0.96 # +33% presentation time; gameplay and enemy cut-ins unchanged.
 	effect.action = kind
 	effect.accent = COLORS[hero]
 	effect.framing_scale = 1.28

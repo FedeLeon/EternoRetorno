@@ -1,3 +1,10 @@
+## Actualización de pulido — 07/10/2026
+
+[Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).
+[Representación actual de efectos mediante iconos y diálogos](../battle_effects/README.md):
+sustituye carteles de estado y botón colectivo de sinergias durante batalla.
+La documentación y resultados anteriores se conservan como historial.
+
 # Combate táctico y héroes detallados — 07/10/2026
 
 ## Alcance entregado
@@ -22,7 +29,7 @@
 | Entrenamiento | Entrada desde campamento, pareja y niveles 0–3, maniquí, energía 99, selector de todas las cartas de la pareja, reinicio y salida. Usa otra instancia sin persistencia; restaura exactamente la aventura/perfil originales |
 | Registro | Diálogo desplazable; daño, absorción, PV perdidos, recuperación, bloqueo y efectos en orden; conserva hasta 200 entradas del combate |
 | Historia | «Ver» en Últimos retornos: pareja, semilla, piso, mazo final con variantes, reliquias, estadísticas, abandono y último causante de golpe fatal |
-| Bestiario | Entrada desde campamento; solo revela arte, vida base, patrón y comportamiento al encontrar la criatura. Registra encuentros y derrotas |
+| Bestiario | Botón en Inicio, encima de Colección; también accesible desde Campamento. Regresa al lugar desde el que se abrió. Solo revela arte, vida base, patrón y comportamiento al encontrar la criatura. Registra encuentros y derrotas |
 
 Catálogo: **126 cartas**, **72 comprables**, **10 tipos de encuentro**. Los mazos
 iniciales siguen teniendo diez cartas por héroe; las tácticas necesitan compra
@@ -89,3 +96,12 @@ consumibles, elegir recompensas ni mejorar en descansos: **4/45** victorias sin
 equipo y **17/45** con armas/armaduras de nivel 3. Es una observación inicial,
 **no una tasa esperada de jugadores**. Falta evaluación humana de equilibrio,
 especialmente de mejoras gratuitas, cartas preparadas y parejas sin curación inicial.
+
+### Acceso desde Inicio — 07/10/2026
+
+Bestiario queda encima de Colección en la pantalla inicial (x=62, y=560,
+170×48). El controlador conserva en `return_screen` el origen Inicio/Campamento;
+la pantalla delega el botón superior a `back()`. No modifica descubrimientos.
+Verificación actual en ventana local: alineación, clic de acceso y los dos destinos
+al volver, incluida la acción Atrás desde Inicio. Captura del inicio revisada;
+sin exportación Web/APK ni validación en dispositivo.

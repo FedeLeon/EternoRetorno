@@ -7,10 +7,11 @@ var gaining_block = false
 var icon_texture: Texture2D
 var explanation = ""
 var overlay_number = false
+var compact = false
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP if explanation != "" else Control.MOUSE_FILTER_IGNORE
 	if explanation != "":
-		size = Vector2(42, 42) if overlay_number else Vector2(70, 30)
+		size = Vector2(42, 42) if overlay_number else Vector2(52 if compact else 70, 34 if compact else 30)
 		mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 		gui_input.connect(func(event):
 			if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -38,6 +39,11 @@ func _ready() -> void:
 	number.position = Vector2(35, (28 - number_height) / 2)
 	number.size = Vector2(minf(35 if number_height < 24 else 41, str(maxi(0, amount)).length() * number_height * 0.65), number_height)
 	add_child(number)
+	if compact:
+		shield.position = Vector2(0, 2)
+		shield.size = Vector2(30, 30)
+		number.position = Vector2(32, (32 - number_height) / 2)
+		number.size.x = 20
 	if overlay_number:
 		shield.texture = preload("res://assets/ui/block_active.svg")
 		shield.position = Vector2.ZERO
@@ -51,7 +57,7 @@ func _ready() -> void:
 		arrow.texture = preload("res://assets/ui/block_up.svg")
 		arrow.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		arrow.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		arrow.position = Vector2(20, -5)
+		arrow.position = Vector2(16 if compact else 20, -5)
 		arrow.size = Vector2(14, 22)
 		add_child(arrow)
 
