@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-08",
+  "environment": {
+    "godot": "4.7.2",
+    "os": "Linux",
+    "renderer": "Compatibility / Mesa llvmpipe",
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  "native": {
+    "whole_game_polish": {
+      "checks": 125,
+      "failures": 0,
+      "log": "artifacts/whole-game-native.log"
+    },
+    "enemy_pose_sizes": {
+      "checks": 867,
+      "failures": 0,
+      "log": "artifacts/whole-game-test_enemy_pose_sizes.log"
+    },
+    "ui": {
+      "checks": 13,
+      "views": 36,
+      "failures": 0,
+      "log": "artifacts/whole-game-test_polish_ui.log"
+    },
+    "audio": {
+      "checks": 86,
+      "failures": 0,
+      "log": "artifacts/whole-game-audio.log",
+      "recording": "artifacts/whole-game/dungeon-mix.wav",
+      "signal": {
+        "seconds": 3.541,
+        "peak": 0.8912,
+        "rms": 0.0959
+      }
+    }
+  },
+  "visual_review": [
+    "six normalized enemy atlases: eight complete poses, no square-cut weapons/tails/wings",
+    "six transparent HD cut-ins",
+    "native enemy strikes with serpent tail and warlord weapon intact",
+    "bestiary search and filters",
+    "framed map counter and paths",
+    "volume values and per-target impact numbers"
+  ],
+  "assets": {
+    "runtime_png_bytes": 6853775,
+    "music_ogg_bytes": 5071119,
+    "poses": 48,
+    "cut_ins": 6,
+    "hash_manifest": "sources.json"
+  },
+  "warnings": [
+    "Native whole-game suite reports six ObjectDB instances and five resources still in use at shutdown; no script/assertion failures.",
+    "Mesa driver does not support changing VSync.",
+    "Headless whole-game suite reports 72 ObjectDB instances and 15 resources still in use at shutdown; assertion count remains 125/0."
+  ],
+  "exported": false,
+  "web_tested": false,
+  "emulator_tested": false,
+  "physical_device_tested": false,
+  "pending": [
+    "Human balance sessions for new patterns",
+    "Human music/ambience preference review",
+    "Browser audio unlock and device memory/FPS"
+  ],
+  "headless": {
+    "suites": 84,
+    "passed": 84,
+    "shutdown_warning_suites": 34,
+    "results": "artifacts/polish/regressions/results.json",
+    "log": "artifacts/whole-game-regressions.log"
+  },
+  "git_diff_check": "passed"
+}

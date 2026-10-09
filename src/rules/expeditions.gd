@@ -1,7 +1,7 @@
 extends RefCounted
 # Contracts: deterministic offers independent from the adventure RNG, paid once at finish.
 static func catalog() -> Array:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/camp_expansion.json")).contracts
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_expansion.json").contracts
 
 static func definition(id: String) -> Dictionary:
 	for contract in catalog():

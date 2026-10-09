@@ -60,8 +60,13 @@ func run_tests() -> void:
 	for v in visuals:
 		var scale_before = v.sprite.scale
 		var frame_before = v.sprite.frame
-		v._process(0.2)
-		check(v.sprite.scale != scale_before or v.sprite.frame != frame_before, v.visual_id + " idle changes")
+		var position_before = v.sprite.position
+		var changed = false
+		# Ping-pong can revisit the same frame after a single sample; observe a cycle.
+		for sample in range(5):
+			v._process(0.13)
+			changed = changed or v.sprite.scale != scale_before or v.sprite.frame != frame_before or v.sprite.position != position_before
+		check(changed, v.visual_id + " idle changes")
 		v.play_once("attack")
 	await create_timer(0.5).timeout
 	for v in visuals:

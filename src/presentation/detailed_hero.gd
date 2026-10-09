@@ -30,7 +30,7 @@ func frames() -> SpriteFrames:
 func _ready() -> void:
 	set_meta("hero_id",hero_id)
 	set_meta("detailed",true)
-	var metrics = JSON.parse_string(FileAccess.get_file_as_string("res://data/detailed_heroes.json"))
+	var metrics = preload("res://src/data/json_catalog.gd").dictionary("res://data/detailed_heroes.json")
 	set_meta("idle_height",metrics[hero_id].idle_height)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-09",
+  "engine": "Godot 4.7.2",
+  "headless": {
+    "suites": 85,
+    "passed": 85,
+    "shutdown_warning_suites": 30,
+    "results": "artifacts/technical/regressions/results.json"
+  },
+  "content_audit": {
+    "checks": 1858,
+    "errors": [],
+    "counts": {
+      "heroes": 6,
+      "cards": 132,
+      "enemies": 57,
+      "relics": 33,
+      "events": 28
+    }
+  },
+  "validator_tests": {
+    "tests": 8,
+    "failures": 0,
+    "log": "artifacts/technical/regressions/content-tests.log"
+  },
+  "integrity": {
+    "checks": 28,
+    "failures": 0,
+    "log": "artifacts/technical/regressions/test_technical_integrity.log",
+    "expected_failure_log": "DirAccess.copy reports an error for intentionally obstructed .bak; committed state remains intact."
+  },
+  "native": {
+    "checks": 13,
+    "views": 36,
+    "failures": 0,
+    "display": [
+      1280,
+      720
+    ],
+    "renderer": "Compatibility / Mesa llvmpipe",
+    "log": "artifacts/technical-ui.log",
+    "visual_review": [
+      "home.png",
+      "combat-triple.png",
+      "market-cards.png"
+    ],
+    "captures": "artifacts/polish/"
+  },
+  "microbenchmark": {
+    "cached_queries": 1001,
+    "disk_reads": 1,
+    "cached_us": 25268,
+    "previous_uncached_reads": 1001,
+    "previous_uncached_us": 181532,
+    "limitations": "Local lookup benchmark only; no claim of FPS/Web/device speed."
+  },
+  "modules": {
+    "before": 180,
+    "after": 184,
+    "main_before_lines": 593,
+    "main_after_lines": 549,
+    "game_before_lines": 442,
+    "game_after_lines": 369
+  },
+  "import": {
+    "errors": 0,
+    "log": "artifacts/technical-final-import.log"
+  },
+  "git_diff_check": "passed",
+  "exported": false,
+  "web_tested": false,
+  "emulator_tested": false,
+  "physical_device_tested": false,
+  "remaining": [
+    "Controller screen factories still depend on ui/game facade",
+    "Save validation checks envelope, not full run schema",
+    "Static resource shutdown warnings still exist",
+    "Device/Web performance and human gameplay balance unverified"
+  ]
+}

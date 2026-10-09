@@ -6,7 +6,7 @@ const POSITIONS = [Vector2(86, 418), Vector2(58, 254), Vector2(162, 315), Vector
 const LABELS = {"combat": "Combate", "event": "Encuentro", "treasure": "Tesoro", "elite": "Élite", "rest": "Descanso", "boss": "Guardián"}
 
 static func definition(floor_number: int) -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/dungeons.json"))[str(floor_number)]
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/dungeons.json")[str(floor_number)]
 
 static func create(rng: RandomNumberGenerator, floor_number: int = 1) -> Array:
 	return preload("res://src/rules/dungeon_generator.gd").create(rng, floor_number, definition(floor_number))

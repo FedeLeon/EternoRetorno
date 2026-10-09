@@ -19,7 +19,9 @@
       "crypt_horse",
       "ice_elemental",
       "crypt_storm",
-      "crypt_scorpion"
+      "crypt_scorpion",
+      "crypt_tomb_raider",
+      "crypt_frost_serpent"
     ],
     "elite": "elite",
     "boss": "boss",
@@ -34,7 +36,9 @@
       "fire_elemental": 5,
       "armored_beetle": 2,
       "crypt_storm": 3,
-      "crypt_scorpion": 1
+      "crypt_scorpion": 1,
+      "crypt_tomb_raider": 1,
+      "crypt_frost_serpent": 3
     },
     "events": [
       "well",
@@ -59,7 +63,9 @@
       "crypt_horse": "attacker",
       "ice_elemental": "protector",
       "crypt_storm": "support",
-      "crypt_scorpion": "attacker"
+      "crypt_scorpion": "attacker",
+      "crypt_tomb_raider": "attacker",
+      "crypt_frost_serpent": "attacker"
     }
   },
   "2": {
@@ -84,7 +90,9 @@
       "watch_owl",
       "forest_cutthroat",
       "forest_miasma",
-      "forest_hunter_enemy"
+      "forest_hunter_enemy",
+      "forest_alpha_bat",
+      "forest_dark_raven"
     ],
     "elite": "forest_elite",
     "boss": "forest_boss",
@@ -97,7 +105,9 @@
       "poison_toad": 2,
       "root_elemental": 4,
       "forest_miasma": 3,
-      "forest_hunter_enemy": 1
+      "forest_hunter_enemy": 1,
+      "forest_alpha_bat": 3,
+      "forest_dark_raven": 1
     },
     "events": [
       "forest_spring",
@@ -124,7 +134,9 @@
       "watch_owl": "support",
       "forest_cutthroat": "attacker",
       "forest_miasma": "support",
-      "forest_hunter_enemy": "attacker"
+      "forest_hunter_enemy": "attacker",
+      "forest_alpha_bat": "attacker",
+      "forest_dark_raven": "attacker"
     }
   },
   "3": {
@@ -145,7 +157,9 @@
       "rock_elemental",
       "crypt_horse",
       "ash_bombardier",
-      "ash_wing_beetle"
+      "ash_wing_beetle",
+      "ash_cinder_wolf",
+      "ash_warlord"
     ],
     "elite": "ash_brute_elite",
     "boss": "volcano_boss",
@@ -159,7 +173,9 @@
       "rock_elemental": 3,
       "crypt_horse": 2,
       "ash_bombardier": 2,
-      "ash_wing_beetle": 1
+      "ash_wing_beetle": 1,
+      "ash_cinder_wolf": 1,
+      "ash_warlord": 4
     },
     "events": [
       "forge_altar",
@@ -182,7 +198,9 @@
       "rock_elemental": "protector",
       "crypt_horse": "attacker",
       "ash_bombardier": "attacker",
-      "ash_wing_beetle": "protector"
+      "ash_wing_beetle": "protector",
+      "ash_cinder_wolf": "attacker",
+      "ash_warlord": "protector"
     }
   }
 }

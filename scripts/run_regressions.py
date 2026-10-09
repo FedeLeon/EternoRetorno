@@ -5,14 +5,28 @@ import json
 from pathlib import Path
 import subprocess
 import time
+import sys
+from audit_content import audit
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--jobs', type=int, default=3)
 parser.add_argument('--godot', default=str(ROOT / '.tools/Godot_v4.7.2-stable_linux.x86_64'))
+parser.add_argument('--output', type=Path, default=ROOT / 'artifacts/polish/regressions')
 args = parser.parse_args()
-output = ROOT / 'artifacts/polish/regressions'
+output = args.output
 output.mkdir(parents=True, exist_ok=True)
+catalogue = audit(ROOT)
+(output / 'content.json').write_text(json.dumps(catalogue, indent=2) + '\n')
+if catalogue['errors']:
+    print('Content validation failed:', *catalogue['errors'], sep='\n')
+    raise SystemExit(1)
+validation_tests = subprocess.run([sys.executable, str(ROOT / 'tests/test_content_audit.py')],
+                                capture_output=True, text=True, timeout=30)
+(output / 'content-tests.log').write_text(validation_tests.stdout + validation_tests.stderr)
+if validation_tests.returncode:
+    print('Content validator tests failed; see content-tests.log')
+    raise SystemExit(1)
 
 def run(test):
     start = time.monotonic()

@@ -5,15 +5,15 @@ static func play(ui: Control, target: Control, event: Dictionary) -> void:
 	var pierced: bool = event.get("pierce",false)
 	ui.audio.play_sfx("pierce" if pierced else "shield_impact" if absorbed>0 else "flesh_impact")
 	var strength = float(preload("res://src/presentation/preferences.gd").settings.get("impact_strength",0.65))
-	if strength <= 0: return
-	preload("res://src/presentation/impact_burst.gd").play(ui.layer,target,event)
-	var original = target.position
-	var recoil = target.create_tween()
-	recoil.tween_property(target,"position:x",original.x + (5 if absorbed>0 and lost==0 else 11)*strength,0.055)
-	recoil.tween_property(target,"position",original,0.13).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
-	ui.flash_hit(target)
+	if strength > 0:
+		preload("res://src/presentation/impact_burst.gd").play(ui.layer,target,event)
+		var original = target.position
+		var recoil = target.create_tween()
+		recoil.tween_property(target,"position:x",original.x + (5 if absorbed>0 and lost==0 else 11)*strength,0.055)
+		recoil.tween_property(target,"position",original,0.13).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+		ui.flash_hit(target)
 	var blocked = lost == 0 and absorbed > 0
-	var label = Label.new(); label.text = str(absorbed) if blocked else "-%d" % lost
+	var label = Label.new(); label.text = str(absorbed) if blocked else "0" if lost == 0 else "-%d" % lost
 	label.name = "FloatingDamage"
 	label.add_theme_font_size_override("font_size",40)
 	label.add_theme_constant_override("outline_size",6)
@@ -41,7 +41,7 @@ static func play(ui: Control, target: Control, event: Dictionary) -> void:
 	tween.tween_property(label,"position:y",label.position.y-38,0.8).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 	tween.tween_property(label,"modulate:a",0.0,0.5).set_delay(0.3)
 	tween.chain().tween_callback(label.queue_free)
-	if int(event.get("damage",0))>=16 and preload("res://src/presentation/preferences.gd").settings.get("hit_pause",true):
+	if strength > 0 and int(event.get("damage",0))>=16 and preload("res://src/presentation/preferences.gd").settings.get("hit_pause",true):
 		# Freeze the target pose only; music and the rest of the arena keep running.
 		var processing=target.is_processing()
 		target.set_process(false)

@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-08",
+  "engine": "Godot 4.7.2",
+  "import_completed": true,
+  "native_renderer": "Compatibility Mesa llvmpipe",
+  "resolution": [
+    1280,
+    720
+  ],
+  "suites": [
+    {
+      "suite": "test_battle_effect_icons",
+      "mode": "native",
+      "checks": 883,
+      "assertion_failures": 0,
+      "command": ".tools/Godot_v4.7.2-stable_linux.x86_64 --path . --script tests/test_battle_effect_icons.gd",
+      "shutdown_resource_warning": false,
+      "log_sha256": "f3505e5d32a90651d2c828e42f978e6444fbe3d4ce75fcf1ee054b1a44252ec2"
+    },
+    {
+      "suite": "test_hud",
+      "mode": "headless",
+      "checks": 103,
+      "assertion_failures": 0,
+      "command": ".tools/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script tests/test_hud.gd",
+      "shutdown_resource_warning": true,
+      "log_sha256": "994d9993a867afc9d3757754d155c39ac8e52b19183c18253e9e5474f51dd86a"
+    },
+    {
+      "suite": "test_support_cards_ui",
+      "mode": "headless",
+      "checks": 609,
+      "assertion_failures": 0,
+      "command": ".tools/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script tests/test_support_cards_ui.gd",
+      "shutdown_resource_warning": true,
+      "log_sha256": "888154ea2bf73c47c22e0b3391f23718b4f619cbc4da5e3ac0bfd6822d7f4538"
+    },
+    {
+      "suite": "test_combat_layout",
+      "mode": "headless",
+      "checks": 41,
+      "assertion_failures": 0,
+      "command": ".tools/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script tests/test_combat_layout.gd",
+      "shutdown_resource_warning": true,
+      "log_sha256": "f9707c889abd779c664d6e8402da41f435bc638d372a8a6a8b4e3acb21b81985"
+    }
+  ],
+  "visual_review": [
+    "36 icons, full catalogue and 36 px samples",
+    "three enemies with attack, block and counter intentions",
+    "multiple rows of accumulated hero and enemy states",
+    "boss intention and effect rows"
+  ],
+  "screenshots": "artifacts/battle_effects/ (disposable, ignored)",
+  "exports": false,
+  "browser_validation": false,
+  "emulator_validation": false,
+  "physical_device_validation": false
+}

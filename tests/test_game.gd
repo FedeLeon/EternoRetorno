@@ -41,7 +41,7 @@ func _initialize() -> void:
 func content_and_map() -> void:
 	var g = fresh()
 	check(g.content.heroes.size() == 6 and g.content.cards.size() == 132, "6 classes / 132 cards")
-	check(g.content.enemies.size() == 51 and g.content.events.size() == 28 and g.content.relics.size() == 33, "enemy / event / relic catalog")
+	check(g.content.enemies.size() == 57 and g.content.events.size() == 28 and g.content.relics.size() == 33, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")

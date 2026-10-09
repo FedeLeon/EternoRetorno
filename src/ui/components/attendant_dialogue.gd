@@ -12,7 +12,7 @@ var text_label: Label
 static func attach(ui: Control, attendant: String) -> Control:
 	var bubble = new()
 	bubble.name = "AttendantDialogue"
-	bubble.phrases = JSON.parse_string(FileAccess.get_file_as_string("res://data/camp_dialogue.json")).get(attendant, [])
+	bubble.phrases = preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_dialogue.json").get(attendant, [])
 	ui.rect(bubble, 48, 584, 408, 104)
 	return bubble
 

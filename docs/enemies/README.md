@@ -1,5 +1,19 @@
 # Biblioteca de enemigos
 
+## Seis conceptos adicionales y animación por familia — 08/10/2026
+
+Las 56 apariencias de las plantillas tienen ahora atlas animados; se agregan
+saqueador de tumbas/serpiente de escarcha a cripta, murciélago alfa/cuervo de las
+ruinas a bosque y lobo de ceniza/señor de las brasas a fortaleza. Cada uno usa
+ocho poses y ataque HD transparente propios. Catálogos comunes: 20/22/18;
+57 definiciones activas. Las partidas ya guardadas conservan sus encuentros.
+
+El reposo de cuatro cuadros vuelve en ida y vuelta; `enemy_motion.gd` separa
+anticipación, golpe sostenido y recuperación por familia, sin estirar el cuerpo.
+Se conserva compensación de tamaño y suelo. El recibo de acción presenta vida y
+absorción sobre el receptor real, incluida caída antes del siguiente enemigo.
+[Fuentes, prompts, importación y pruebas actuales](../whole_game_polish/README.md).
+
 ## Tamaño al recibir daño y morir — 08/10/2026
 
 La compensación de tamaño pertenece al cuadro dibujado, aunque el enemigo haya

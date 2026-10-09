@@ -1,5 +1,65 @@
 # Historial de desarrollo
 
+## 09/10/2026 — Integridad de guardados, caché y separación técnica
+
+- `save_store.gd` conserva el respaldo válido tras recuperar un principal inválido;
+  un fallo al copiar respaldo impide reemplazar el principal. Lecturas correctas
+  limpian errores anteriores; misma versión 1 y estrategia `.tmp`/renombrado.
+- `data/json_catalog.gd` centraliza lecturas declarativas de 17 módulos con copias
+  profundas, diagnóstico de fuente/tipo y reintento tras errores. 1.001 consultas
+  de piso usan una lectura; benchmark local, sin afirmar mejoras de FPS/Web.
+- Cálculos y enlaces salen de `game.gd` a reglas propias; checkpoint permanece
+  en la fachada. Tema/helpers salen de `main.gd` a `ui_factory.gd`, que no accede
+  al juego. `game.gd`: 442→369 líneas; `main.gd`: 593→549; 184 módulos de `src/`.
+- Validador de contenido previo a regresiones detecta JSON/IDs duplicados,
+  referencias a héroes/cartas/encuentros, recursos y muestras/contextos de audio.
+  `--output` separa evidencia de cada corrida. No cambia reglas, IDs/UIDs,
+  balance, apariencia ni formato de guardado; no elimina assets anteriores.
+- Validación actual: 85/85 suites headless, 28 comprobaciones de integridad,
+  1.858 de contenido y ocho tests del validador. Ventana local: 13 comprobaciones
+  sobre 36 vistas, con revisión visual; importación final y diff limpios.
+  Error de copia inducido esperado en la prueba de fallo de respaldo; varios
+  avisos de recursos al cerrar suites continúan. Sin exportar ni probar Web,
+  emulador o dispositivo físico. [Análisis, límites y pendientes](architecture/TECHNICAL_REVIEW_2026_10_09.md).
+
+## 08/10/2026 — Revisión del juego: enemigos, acciones, consulta y audio
+
+- Seis enemigos nuevos de conceptos existentes (dos por piso), 48 poses y seis
+  ataques HD transparentes. Catálogos comunes: 20/22/18 tipos. Atlas con poses
+  completas, escala común y apoyo estable; reparaciones, corte mecánico, prompts
+  y hashes conservados, originales documentales excluidos de exportación.
+- Reposo de ida/vuelta y ataques con anticipación/recuperación por familia.
+  Cada acción enemiga presenta daño/absorción/vida sobre su receptor; curación
+  y bloqueo reciben partículas discretas. Sin sacudidas siguen visibles las cifras.
+- Mapa con conexiones disponibles animadas y contador/mensaje enmarcados;
+  bestiario con descubiertos primero, búsqueda y filtros sin revelar nombres;
+  opciones muestran porcentajes de sus deslizadores.
+- Dos arreglos CC0 para combates de bosque/fortaleza, fundidos de ambiente y
+  ganancias musicales; efectos alternan muestras sin repetición inmediata.
+  Conserva ausencia de sonidos de hover y preferencias/buses existentes.
+- Presentación extraída a cuatro colaboradores; recibos de impacto transitorios,
+  sin cambiar resolución, IDs/UIDs o guardados. [Auditoría, assets y pruebas](whole_game_polish/README.md).
+- Validación actual: 84/84 suites headless; ventana local 125 comprobaciones nuevas,
+  867 de tamaño/apoyo y 13 sobre 36 vistas; audio 86 y grabación nativa con señal
+  sin saturación. Revisión visual de atlas/cut-ins, combate y pantallas afectadas.
+  Algunas suites avisan de recursos al cierre; sin errores de script/aserciones.
+  `git diff --check` limpio. Sin exportar ni probar Web/emulador/dispositivo físico.
+  Pendientes: balance en partidas humanas, preferencia musical y rendimiento móvil.
+
+## 08/10/2026 — Iconos de intenciones y efectos con detalle moderado
+
+- 36 nuevos assets generados individualmente con ImageGen integrado, con siluetas
+  simples, volumen y textura discreta en pixel art; sustituyen los símbolos planos.
+  Conservan tamaños, números, cuadros de explicación, IDs/rutas y guardados.
+- `scripts/import_refined_effect_icons.gd` normaliza PNG transparentes; el punto
+  de entrada habitual delega al nuevo importador. Fuentes, prompts y hashes en
+  [Efectos de batalla](battle_effects/README.md). Arte de runtime: 0,70 MiB;
+  originales documentales excluidos de exportación.
+- Validación actual: 883 comprobaciones en ventana local y revisión visual a
+  1280×720; HUD 103, soporte 609 y disposición 41 headless, sin fallos de
+  aserciones. Las tres suites headless avisan de recursos pendientes al cierre.
+  Sin exportar ni probar navegador, emulador o dispositivo físico.
+
 ## 08/10/2026 — Limpieza de recursos reemplazados y salidas temporales
 
 - 693 archivos/254,11 MiB retirados: piezas de equipo sobre actores, imágenes

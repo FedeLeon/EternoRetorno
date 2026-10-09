@@ -52,7 +52,9 @@
     "cinematic_intro": "res://assets/audio/music/cinematic_intro.ogg",
     "cinematic_return": "res://assets/audio/music/cinematic_return.ogg",
     "metal_clash": "res://assets/audio/sfx/metal_clash.ogg",
-    "metal_clash_2": "res://assets/audio/sfx/metal_clash_2.ogg"
+    "metal_clash_2": "res://assets/audio/sfx/metal_clash_2.ogg",
+    "battle_forest": "res://assets/audio/music/battle_forest.ogg",
+    "battle_volcano": "res://assets/audio/music/battle_volcano.ogg"
   },
   "events": {
     "ui_click": {
@@ -586,6 +588,30 @@
     "combat_boss": {
       "music": "boss_phase2",
       "music_db": -4,
+      "ambience": [],
+      "idle": []
+    },
+    "combat_forest": {
+      "music": "battle_forest",
+      "music_db": -2,
+      "ambience": [],
+      "idle": []
+    },
+    "reward_forest": {
+      "music": "battle_forest",
+      "music_db": -8,
+      "ambience": [],
+      "idle": []
+    },
+    "combat_volcano": {
+      "music": "battle_volcano",
+      "music_db": -2,
+      "ambience": [],
+      "idle": []
+    },
+    "reward_volcano": {
+      "music": "battle_volcano",
+      "music_db": -8,
       "ambience": [],
       "idle": []
     }

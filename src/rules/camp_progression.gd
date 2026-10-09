@@ -2,7 +2,7 @@ extends RefCounted
 const CONFIG_PATH = "res://data/progression.json"
 
 static func config() -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string(CONFIG_PATH))
+	return preload("res://src/data/json_catalog.gd").dictionary(CONFIG_PATH)
 
 static func migrate(profile: Dictionary) -> bool:
 	var before = profile.duplicate(true)

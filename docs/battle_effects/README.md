@@ -1,6 +1,47 @@
 # Efectos de batalla con iconos
 
-## Diseño minimalista vigente — 08/10/2026
+## Pixel art sencillo con volumen — 08/10/2026
+
+Los 36 iconos actuales usan nuevas imágenes generadas individualmente con ImageGen
+integrado: símbolos sólidos, sombras escalonadas, brillos discretos y textura
+moderada. Se evita tanto el contorno vectorial plano como las ilustraciones
+recargadas anteriores. Ataque usa espada; bloqueo previsto usa escudo, con su
+flecha verde superpuesta por el componente; contraataque combina espada y escudo.
+Los otros efectos mantienen símbolos y acentos de color propios.
+
+Se conservan rutas, UIDs, lienzos transparentes de 128×128, iconos de 30/36 px,
+filas completas y diálogos existentes. No cambia la lógica de combate ni los
+guardados. Los originales están en `refined/sources/`, excluidos de exportación
+por `docs/.gdignore` y los presets. [Prompts por icono](refined/prompts.json) y
+[procedencia, hashes y normalización](refined/sources.json).
+
+Regeneración del arte vigente (solo recorte alfa, ajuste proporcional y centrado):
+
+```sh
+.tools/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script scripts/import_battle_effects.gd
+```
+
+El punto de entrada delega a `scripts/import_refined_effect_icons.gd`. Los SVG y
+el importador minimalista anterior se conservan como fuentes históricas; ejecutarlo
+explícitamente restauraría el diseño anterior.
+
+Los PNG de runtime suman **0,70 MiB**; los 25,32 MiB de originales documentales
+quedan fuera de los presets exportables. No se midió un exportado nuevo.
+Normalización: se descarta ruido alfa ≤0,01 del margen, se recorta el contenido,
+se ajusta a 116 px con Lanczos y se centra en 128×128. Los originales permanecen
+intactos; las importaciones conservan sus UIDs y compresión sin pérdida.
+
+Validación de esta versión: importación y 883 comprobaciones con ventana local
+Godot a 1280×720, sin fallos; revisión del catálogo a 36 px, tres enemigos,
+estados aliados acumulados y guardianes. Los diálogos se abren mediante entrada
+simulada y se comprueba que consultar no modifica estado ni RNG.
+Regresiones headless actuales: HUD 103, soporte 609 y disposición 41, sin fallos
+de aserciones. Las tres suites headless informan recursos pendientes al cierre;
+la nativa solo informa la limitación de V-Sync del driver.
+[Resultados actuales](refined/validation.json). No se exportó Web/APK ni se probó
+navegador, emulador o dispositivo físico.
+
+## Diseño vectorial anterior — 08/10/2026
 
 Los 36 PNG de héroes/enemigos se sustituyen por símbolos originales dibujados
 en código: siluetas simples, contorno oscuro, un color por efecto, sin texturas,
@@ -22,7 +63,7 @@ python3 scripts/generate_minimal_effect_icons.py
 .tools/Godot_v4.7.2-stable_linux.x86_64 --headless --path . --script scripts/import_minimal_effect_icons.gd
 ```
 
-`scripts/import_battle_effects.gd` delega al importador nuevo para evitar restaurar
+En esa versión `scripts/import_battle_effects.gd` delegaba al importador vectorial para evitar restaurar
 por accidente las ilustraciones anteriores. Los originales de ImageGen y sus
 prompts se conservan como procedencia histórica, no como fuentes activas.
 

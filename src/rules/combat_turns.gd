@@ -39,6 +39,7 @@ static func end(game: RefCounted) -> bool:
 	game.resolved_enemy_blocks.clear()
 	game.resolved_hero_defenses.clear()
 	game.resolved_hero_blocks.clear()
+	game.resolved_enemy_hits.clear()
 	if game.run.is_empty() or game.run.phase != "combat":
 		return false
 	var b = game.run.combat
@@ -78,8 +79,11 @@ static func end(game: RefCounted) -> bool:
 			targets = [game.living_heroes()[0]]
 		for i in targets:
 			var block_before: int = game.run.heroes[i].block
+			var hp_before: int = game.run.heroes[i].hp
 			game._damage(game.run.heroes[i], int(intent.damage))
 			if int(intent.damage) > 0:
+				if not game.resolved_enemy_hits.has(enemy_index): game.resolved_enemy_hits[enemy_index] = []
+				game.resolved_enemy_hits[enemy_index].append({"owner":i,"hp":game.run.heroes[i].hp,"block":game.run.heroes[i].block,"damage":int(intent.damage),"absorbed":block_before-game.run.heroes[i].block,"lost":maxi(0,hp_before-game.run.heroes[i].hp)})
 				if not game.resolved_hero_blocks.has(enemy_index): game.resolved_hero_blocks[enemy_index] = {}
 				game.resolved_hero_blocks[enemy_index][i] = game.run.heroes[i].block
 			if game.run.heroes[i].block < block_before:

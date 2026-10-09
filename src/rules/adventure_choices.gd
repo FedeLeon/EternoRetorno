@@ -30,7 +30,7 @@ static func definition(game: RefCounted, id: String) -> Dictionary:
 	if id.begins_with("pair_"):
 		var names: Array = game.run.party.map(func(hero): return game.content.heroes[hero].name)
 		var key: String = id.trim_prefix("pair_")
-		var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/pair_events.json")).get(key, {})
+		var data: Dictionary = preload("res://src/data/json_catalog.gd").dictionary("res://data/pair_events.json").get(key, {})
 		return {"name":data.get("name", "Una promesa compartida"),"text":data.get("text", "%s y %s descubren una forma de cubrirse mutuamente." % names),"choices":[data.get("choice", "Prepararse juntos: +4 bloqueo al comenzar el siguiente combate"),"Descansar juntos: recuperar 6 PV cada uno"],"background":data.get("background", "forest_hunter")}
 	return {}
 

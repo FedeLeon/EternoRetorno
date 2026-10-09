@@ -1,6 +1,6 @@
 extends RefCounted
 # Read-only descriptions of existing combat state. Never applies rules or saves.
-static var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/battle_effects.json"))
+static var catalog: Dictionary = preload("res://src/data/json_catalog.gd").dictionary("res://data/battle_effects.json")
 
 static func entry(id: String, value: int = 0, text: String = "") -> Dictionary:
 	var data: Dictionary = catalog[id]

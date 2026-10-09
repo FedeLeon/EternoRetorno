@@ -1,3 +1,3 @@
-extends "res://scripts/import_minimal_effect_icons.gd"
-# Compatibility entry point. Runtime icons now come from minimal vector masters.
-# Historical generated illustrations remain documented in docs/battle_effects/sources/.
+extends "res://scripts/import_refined_effect_icons.gd"
+# Compatibility entry point. Current icons use generated, restrained pixel-art masters.
+# Earlier generated illustrations and vector masters remain historical documentation.

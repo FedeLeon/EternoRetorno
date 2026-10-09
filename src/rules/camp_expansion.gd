@@ -3,7 +3,7 @@ const Expeditions = preload("res://src/rules/expeditions.gd")
 const Specializations = preload("res://src/rules/specializations.gd")
 
 static func buildings() -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/camp_expansion.json")).buildings
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_expansion.json").buildings
 
 static func migrate(profile: Dictionary) -> bool:
 	var contracts_changed = Expeditions.migrate(profile)

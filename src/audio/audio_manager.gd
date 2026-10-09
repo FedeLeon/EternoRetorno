@@ -13,6 +13,7 @@ var music_tween: Tween
 var ambience: Array[AudioStreamPlayer] = []
 var voices: Array[AudioStreamPlayer] = []
 var streams: Dictionary = {}
+var last_variant: Dictionary = {}
 var rng = RandomNumberGenerator.new()
 var idle_seconds = 4.0
 var played_count = 0
@@ -20,7 +21,7 @@ var mix = preload("res://src/audio/audio_mix.gd").new()
 
 func _ready() -> void:
 	name = "GameAudio"
-	catalog = JSON.parse_string(FileAccess.get_file_as_string("res://data/audio.json"))
+	catalog = preload("res://src/data/json_catalog.gd").dictionary("res://data/audio.json")
 	rng.randomize()
 	for bus in BUSES:
 		if AudioServer.get_bus_index(bus) < 0:
@@ -82,16 +83,19 @@ func set_context(id: String) -> void:
 	current_context = id
 	change_music(definition.get("music", ""), float(definition.get("music_db", -1)))
 	for channel in ambience:
-		retire(channel)
+		var fade = create_tween()
+		fade.tween_property(channel,"volume_db",-60.0,0.4)
+		fade.tween_callback(retire.bind(channel))
 	ambience.clear()
 	for entry in definition.get("ambience", []):
 		var channel = player("Ambience")
 		channel.stream = stream(entry.id, true)
-		channel.volume_db = entry.get("db", -6)
+		channel.volume_db = -60
 		channel.play()
+		create_tween().tween_property(channel,"volume_db",float(entry.get("db",-6)),0.4)
 		ambience.append(channel)
 	idle_seconds = rng.randf_range(4.0, 7.0)
-	if id in ["reward", "victory"] and previous != "reward": play_sfx("victory")
+	if (id.begins_with("reward") or id == "victory") and not previous.begins_with("reward"): play_sfx("victory")
 	if id == "defeat": play_sfx("defeat")
 	if id in ["market", "forge", "church", "refuge", "expeditions"] and previous != id: play_sfx("door", -5)
 	context_changed.emit(id)
@@ -102,7 +106,9 @@ func change_music(id: String, gain: float) -> void:
 		if is_instance_valid(fading_music):
 			retire(fading_music)
 			fading_music = null
-		if music != null: music.volume_db = gain
+		if music != null:
+			music_tween = create_tween()
+			music_tween.tween_property(music,"volume_db",gain,0.4)
 		return # Buying, hovering or rebuilding a screen never restarts its theme.
 	if music_tween != null and music_tween.is_valid(): music_tween.kill()
 	if is_instance_valid(fading_music):
@@ -135,7 +141,9 @@ func play_sfx(event: String, gain: float = 0.0, bus: String = "SFX") -> void:
 	var definition: Dictionary = catalog.events.get(event, {})
 	if definition.is_empty(): return
 	var variants: Array = definition.files
-	var id: String = variants[rng.randi_range(0, variants.size() - 1)]
+	var choices = variants.filter(func(id): return id != last_variant.get(event,"")) if variants.size() > 1 else variants
+	var id: String = choices[rng.randi_range(0, choices.size() - 1)]
+	last_variant[event] = id
 	var voice: AudioStreamPlayer = voices[0]
 	for available in voices:
 		if not available.playing:

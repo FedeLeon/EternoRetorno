@@ -1,0 +1,94 @@
+[
+  {
+    "id": "battle_forest",
+    "file": "assets/audio/music/battle_forest.ogg",
+    "license": "CC0-1.0",
+    "sources": [
+      "assets/audio/music/battle.ogg",
+      "assets/audio/ambience/birds.ogg"
+    ],
+    "source_sha256": [
+      "81770eeecde4a7558d6ef335da7880aacd33c9569f4d20f643251de195f18f9c",
+      "7ea6c6ea3a23fa32ca06984e69e45422d7ce3afa6432e1127c8250c3e870909a"
+    ],
+    "sha256": "998604fbad07ca04192636c56208b6a75f32c816996acea4c48f102ef6b947b4",
+    "processing": "[0:a]highpass=f=70,equalizer=f=900:t=q:w=0.8:g=2,lowpass=f=11000[music];[1:a]volume=0.07[amb];[music][amb]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-22:TP=-2:LRA=11[out]",
+    "original_credits": "docs/audio/sources.json",
+    "date": "2026-10-08",
+    "type": "arrangement of existing licensed recordings, not a new composition",
+    "source_credits": [
+      {
+        "id": "battle",
+        "file": "assets/audio/music/battle.ogg",
+        "author": "request",
+        "page": "https://opengameart.org/content/heartfelt-battle-loopable-fantasy-stringspianohorn",
+        "download": "https://opengameart.org/sites/default/files/heartfelt-battle_loop.ogg",
+        "archive_member": null,
+        "license": "CC0-1.0",
+        "original_sha256": "fbe7e37515e0e17a0c3b46df7c5c2977cd1b607e70d6f9494b09f1795a3ae4d3",
+        "sha256": "81770eeecde4a7558d6ef335da7880aacd33c9569f4d20f643251de195f18f9c",
+        "processing": "ffmpeg loudnorm I=-22, TP=-2, 44100Hz, Vorbis",
+        "downloaded": "2026-10-05"
+      },
+      {
+        "id": "birds",
+        "file": "assets/audio/ambience/birds.ogg",
+        "author": "isaiah658",
+        "page": "https://opengameart.org/content/ambient-bird-sounds",
+        "download": "https://opengameart.org/sites/default/files/birds-isaiah658_0.ogg",
+        "archive_member": null,
+        "license": "CC0-1.0",
+        "original_sha256": "359e4e3f9da9d75aac64cede511c7e3ef8b461f9d9f8c230f8f80e44c4b3e35f",
+        "sha256": "7ea6c6ea3a23fa32ca06984e69e45422d7ce3afa6432e1127c8250c3e870909a",
+        "processing": "ffmpeg loudnorm I=-25, TP=-2, 44100Hz, Vorbis",
+        "downloaded": "2026-10-05"
+      }
+    ]
+  },
+  {
+    "id": "battle_volcano",
+    "file": "assets/audio/music/battle_volcano.ogg",
+    "license": "CC0-1.0",
+    "sources": [
+      "assets/audio/music/battle.ogg",
+      "assets/audio/ambience/fire.ogg"
+    ],
+    "source_sha256": [
+      "81770eeecde4a7558d6ef335da7880aacd33c9569f4d20f643251de195f18f9c",
+      "ed0ba9b027c2aecbbcd7b4cb65c0f76f741281ca4f9374bc06e6c081576a253f"
+    ],
+    "sha256": "3411a638f215b34f076af3cb9b4a0cb0c84918eff1fdc49c57599fe8b7276917",
+    "processing": "[0:a]highpass=f=40,bass=g=3:f=110,equalizer=f=1800:t=q:w=1:g=1[music];[1:a]volume=0.07[amb];[music][amb]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-22:TP=-2:LRA=11[out]",
+    "original_credits": "docs/audio/sources.json",
+    "date": "2026-10-08",
+    "type": "arrangement of existing licensed recordings, not a new composition",
+    "source_credits": [
+      {
+        "id": "battle",
+        "file": "assets/audio/music/battle.ogg",
+        "author": "request",
+        "page": "https://opengameart.org/content/heartfelt-battle-loopable-fantasy-stringspianohorn",
+        "download": "https://opengameart.org/sites/default/files/heartfelt-battle_loop.ogg",
+        "archive_member": null,
+        "license": "CC0-1.0",
+        "original_sha256": "fbe7e37515e0e17a0c3b46df7c5c2977cd1b607e70d6f9494b09f1795a3ae4d3",
+        "sha256": "81770eeecde4a7558d6ef335da7880aacd33c9569f4d20f643251de195f18f9c",
+        "processing": "ffmpeg loudnorm I=-22, TP=-2, 44100Hz, Vorbis",
+        "downloaded": "2026-10-05"
+      },
+      {
+        "id": "fire",
+        "file": "assets/audio/ambience/fire.ogg",
+        "author": "PagDev",
+        "page": "https://opengameart.org/content/fireplace-sound-loop",
+        "download": "https://opengameart.org/sites/default/files/fire.wav",
+        "archive_member": null,
+        "license": "CC0-1.0",
+        "original_sha256": "85ca0cc60d0c037fff8b185e31ad1fcdbda6ce45eee17c3ee1318d1b8f59e330",
+        "sha256": "ed0ba9b027c2aecbbcd7b4cb65c0f76f741281ca4f9374bc06e6c081576a253f",
+        "processing": "ffmpeg loudnorm I=-25, TP=-2, 44100Hz, Vorbis",
+        "downloaded": "2026-10-05"
+      }
+    ]
+  }
+]

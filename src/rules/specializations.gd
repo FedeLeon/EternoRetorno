@@ -1,7 +1,7 @@
 extends RefCounted
 # Unlock eligibility, purchases and permanent selection. Adventure uses a snapshot.
 static func catalog() -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/camp_expansion.json")).specializations
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_expansion.json").specializations
 
 static func migrate(profile: Dictionary) -> bool:
 	if profile.has("specializations"): return false

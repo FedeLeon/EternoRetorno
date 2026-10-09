@@ -15,7 +15,7 @@ static func apply(actor: Control, hero: String, gear: Dictionary) -> void:
 	if not ResourceLoader.exists(path):
 		return
 	if metrics.is_empty() and FileAccess.file_exists("res://data/forge_visuals.json"):
-		metrics = JSON.parse_string(FileAccess.get_file_as_string("res://data/forge_visuals.json"))
+		metrics = preload("res://src/data/json_catalog.gd").dictionary("res://data/forge_visuals.json")
 	if metrics.has(key):
 		actor.set_meta("idle_height", float(metrics[key]))
 	if not cache.has(key):

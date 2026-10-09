@@ -6,7 +6,7 @@ static var _catalog: Array = []
 
 static func catalog() -> Array:
 	if _catalog.is_empty():
-		_catalog = JSON.parse_string(FileAccess.get_file_as_string("res://data/achievements.json"))
+		_catalog = preload("res://src/data/json_catalog.gd").array("res://data/achievements.json")
 	return _catalog
 
 static func sync(profile: Dictionary, run: Dictionary) -> bool:

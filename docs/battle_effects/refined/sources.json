@@ -1,0 +1,658 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "date": "2026-10-08",
+  "transparent_background": true,
+  "separate_generation_per_asset": true,
+  "assets": [
+    {
+      "id": "rear_guard",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fb4f025d-0327-4a2b-b879-03845f47c081.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: two overlapping steel shields, larger front shield teal and smaller rear shield silver. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/rear_guard.png",
+      "source_sha256": "e9e270bbe55910c3af08681b971d129fc28e6197d260265000f329cf79daac9a",
+      "asset": "assets/battle_effects/rear_guard.png",
+      "asset_sha256": "2a7bbd454850fbc089262e8c34675557a691c8f94861eff173bbeb0bd741616c",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "roots",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a12a16b6-fb43-4b63-a269-c3d22d84498b.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a chunky dark wooden root curling around a small stone, green leaf accent. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/roots.png",
+      "source_sha256": "a0ff344241dc057a30f4543221c2acafd4e5fc857fd2698d51b79783ef1b5127",
+      "asset": "assets/battle_effects/roots.png",
+      "asset_sha256": "5b399222788d20beb5785ee2c7c5a7cb3591f17f52f8ee20cde626caa5b1ad5d",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "resurrection",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-82126ea6-9d1b-4eae-871b-9232bfff21df.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a silver skull above a short purple upward flame. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/resurrection.png",
+      "source_sha256": "b621bcfd35ad673acfd2c62ec27a9c57564dcc9d95334965eac07b999105278c",
+      "asset": "assets/battle_effects/resurrection.png",
+      "asset_sha256": "570135f6ce6caa3c1c51e1f9ef7aeb5ab610b409fdf90b6217e7c09c7759eb61",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "embers",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-87d02d78-ef0e-494a-a8a3-461db4fcd781.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: three glowing red-orange embers above dark charcoal. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/embers.png",
+      "source_sha256": "c3203c703e08a8a65d42be26a060696761baaed59e55fb1f412e0facfcec7e56",
+      "asset": "assets/battle_effects/embers.png",
+      "asset_sha256": "859aaf2ea9b9b463bd63f2591af9797b4a8d16f57dbdf6ac7a31dd3be11152b6",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "imprisonment",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6b7deadd-900f-4f5f-bc04-3133971b865b.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a short pair of dark iron bars wrapped in one green vine. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/imprisonment.png",
+      "source_sha256": "349cac9b2d43a9952c18ae83f56cb96dfb5fc47615f5ebeee087a96c25330d98",
+      "asset": "assets/battle_effects/imprisonment.png",
+      "asset_sha256": "99d0bc6d5ba7b674203c23da2796925d270f0fe09805d2963fadffb81644ab48",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "charged_strike",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-457a1321-dc5a-4e63-a74b-69b48d7da554.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a silver armored fist with one small golden lightning spark. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/charged_strike.png",
+      "source_sha256": "40ae874fe6bb532fab2c7d4563db74e282088112927465588d42ce8297932ce8",
+      "asset": "assets/battle_effects/charged_strike.png",
+      "asset_sha256": "6adc5734a71041a751aec39b493dc233e55bb7e6e1933ee7942dbe0e92b9dc9a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "vampiric",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-92a714ce-951b-430b-b899-dac22487b855.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: two ivory fangs around one crimson blood drop. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/vampiric.png",
+      "source_sha256": "e686857d0c462df6d4a4385e20ea6e3c9e8605e43af34c2e8bde8170389bea27",
+      "asset": "assets/battle_effects/vampiric.png",
+      "asset_sha256": "b17edd3c794141a1a97d2f428288b8518cc4302bd5b70c4d187639aff95bc6d7",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "bulwark",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fa2f635d-0037-4515-aa45-5ae2682122cf.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a thick silver shield with a muted gold reinforced rim. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/bulwark.png",
+      "source_sha256": "13b53edee59313478b7caf88b94997093786d07a0e8b60aac3301fc81d2007c3",
+      "asset": "assets/battle_effects/bulwark.png",
+      "asset_sha256": "2c5249db8cd4984090c8c4d4c7ba6a264d91e7b89ea21ab96e1ce7da18dfb215",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "frenzy",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0704c175-e2de-48c2-8820-adbe5a3c1d52.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a red claw with three jagged ivory talons. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/frenzy.png",
+      "source_sha256": "bdb66495bac24b2ccfa2fe98c547295f7ad2853135ddc192daccf5efac42f6bd",
+      "asset": "assets/battle_effects/frenzy.png",
+      "asset_sha256": "425c1b1403e5ce19cd788ffb4c485716c6bc889baa16bee052961d1fde65d789",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "beast_command",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-cee22c05-5d1f-4849-8dd0-a8ab2d4e3acc.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a dark leather beast paw print with gold claws. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/beast_command.png",
+      "source_sha256": "0d8bc3844aac0aa88746f36c224f25e25d94011093a5f9865230c757346d08b7",
+      "asset": "assets/battle_effects/beast_command.png",
+      "asset_sha256": "78c7673faf07e7b9713875b20d5f9929419bbe80395d96b3992a1b69aa4dbc57",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "grief",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d1cbe16f-c991-4c15-a88b-3d9786cf5647.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a cracked gray skull with one red tear drop. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/grief.png",
+      "source_sha256": "a50b27843a934203ba4094a23f4608114d34ddbb2e3fd1f76736c5aa1dfa0465",
+      "asset": "assets/battle_effects/grief.png",
+      "asset_sha256": "5d6d1e462145151c9ec28b72d5bf7b8190576931725ef832a1a61ebf06f0f362",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "protector",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b3cdea37-9d7e-40ba-8670-de729bae4a2e.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a teal steel shield with a small gold plus. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/protector.png",
+      "source_sha256": "1923c05b6666b63e361478070b96e283fbd1d19bb264f9823bad4b8ea5ea5d60",
+      "asset": "assets/battle_effects/protector.png",
+      "asset_sha256": "0fc95ccf0d3864d0162e273b4b737bcca1783c7ac2902e9c585c08328e50a247",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "healer",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d169f703-8135-4990-8868-8a3282275523.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a modest golden cross above a single green healing leaf. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/healer.png",
+      "source_sha256": "a03d7ace80380209b0c4f998727bff511e3ac50600ed6e7233919f31d75fa5df",
+      "asset": "assets/battle_effects/healer.png",
+      "asset_sha256": "d1827c3a930196e342b6b04544add003f1210191abb3f5488d659148144f38e0",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "prepared",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ab828a52-cc12-42e7-8112-afab44dc74cf.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a drawn bow with a short pale blue arrow. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/prepared.png",
+      "source_sha256": "7892e6ce0ff8e9743a7e96e451eeea5ce0b90cc8c346a471c0ac758b262387a2",
+      "asset": "assets/battle_effects/prepared.png",
+      "asset_sha256": "fe989bc719a961e1aa80d6e6f2cbe96d5c54de7052060d6fb661ff7be56d4859",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "armor_plates",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-944d4cb7-873b-4d69-92e5-a23001c16705.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: three overlapping dark steel armor plates with gold rivets. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/armor_plates.png",
+      "source_sha256": "5fd2edc7dbd4af3bdaed2d261fd40810cb6760a7d1ac770cdd1441d4ca2a865a",
+      "asset": "assets/battle_effects/armor_plates.png",
+      "asset_sha256": "792cbb1bb7df8f95b444c4870d699771eb344756ca9b5b570657e7dae6d6a7c2",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "source",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a9272e77-8030-4796-b9e6-5a44c1e9996e.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a squat purple crystal on a dark stone pedestal. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/source.png",
+      "source_sha256": "1074ae9689133966e6601a16dff46d3768bbb01283e5c48545bc972d66c8b47f",
+      "asset": "assets/battle_effects/source.png",
+      "asset_sha256": "896a2a99ebc9e21f81278c1a33ad4be886aa389c5325700b9de6d78007401b4f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "enraged",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-243d6b91-3f7a-4024-95d2-d64f92d31eff.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a red snarling horned silhouette, two amber eyes. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/enraged.png",
+      "source_sha256": "677e2dc22e825e3b599888b3454dab03cf4c4fe9baf747b04a5349143039e916",
+      "asset": "assets/battle_effects/enraged.png",
+      "asset_sha256": "caab693a9f5749df75ed3513542516e6f58b834d7ac7b6bfc8fadd5028ff3885",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "ambush",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1805e1fa-1c83-451c-b143-79a6297d7c1a.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a short steel dagger behind a dark hood. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/ambush.png",
+      "source_sha256": "79ad6f9176ece814fd1d2b8dec5325c449a8ffa56fd544d0f4cf81703c06ffc5",
+      "asset": "assets/battle_effects/ambush.png",
+      "asset_sha256": "2c00ab8f58194ca0d2f89bae69ff6bbd2a891e23491a534b156d00c8aab9f68c",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "tainted",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7d08272f-9b42-4f5e-bef4-9e568f3c9b66.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a dark purple shield with a violet crack. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/tainted.png",
+      "source_sha256": "4f484d1c92b33ede2bdd5615809cada05e4a7ff21698a9f7c6c5c28674345b8b",
+      "asset": "assets/battle_effects/tainted.png",
+      "asset_sha256": "c004ad02431c50a89554a1e7169733cf388b8882348239c6edd88fc69f85deb2",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "strength",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2fef0e5c-de7c-4e06-998b-ada791d25bef.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a red flexed fist with a short gold upward chevron. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/strength.png",
+      "source_sha256": "57f7f9dd21df6d0ebb4664a57e8624ea5fe82b4d72ca992cb8c21a22cb57cd8f",
+      "asset": "assets/battle_effects/strength.png",
+      "asset_sha256": "26ae4350fb443815f0e84c31841807df736d16edc7a5a88b729ffc4c9dff0bfc",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "weakness",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b7a300ed-f409-4ece-85c4-5525e4658b5c.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a bent rusty sword with a small purple downward chevron. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/weakness.png",
+      "source_sha256": "f92fcba4f52e7a3aee9f7950f570a291c592ab2c94c0f67093bec88b3451c2ba",
+      "asset": "assets/battle_effects/weakness.png",
+      "asset_sha256": "fb5c78d2819dffd5d160829f9d389e70afc6a2a6e9f637f8c433df70b79fd984",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "fracture",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-27cab601-adff-476b-af08-5ebd7daf072d.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a silver shield split by a red crack. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/fracture.png",
+      "source_sha256": "fe29d5c62f2b473f4cbd27e0894f00f6ae1182703f4768126802e377caea6934",
+      "asset": "assets/battle_effects/fracture.png",
+      "asset_sha256": "dc86608244ef3c550ddbe2c249abe60a1133c7e9091fcdabe194542827076e41",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "poison",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dcc3c879-a001-4853-8406-dfe515d66fdb.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a pale green skull with a deep green poison drop. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/poison.png",
+      "source_sha256": "6393f6676f8be8a8b2ed8312a5f83a23d7fba601b1b7d21205c5ac67f038d36b",
+      "asset": "assets/battle_effects/poison.png",
+      "asset_sha256": "05d3b04be8b5b527cea409701c98f93695906313fb5e9129f0f9e41e55079c0a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "weapon_boost",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f3bb2f24-6927-4f1d-9758-1bbc5a856af4.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a steel sword blade with a short amber plus. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/weapon_boost.png",
+      "source_sha256": "63ecf8e4c55cf68b4bb162cced46979e0841aef737b207cabb2bd61b4f2cc3ca",
+      "asset": "assets/battle_effects/weapon_boost.png",
+      "asset_sha256": "18ecd580b22dc8a2b3fb616fcef4785f16dd27f96d7e415bf12126c9fe8604a3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "magic_boost",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-e53947d7-e3a3-483d-b21c-547b28a12fb3.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a blue-purple crystal wand tip with a small silver plus. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/magic_boost.png",
+      "source_sha256": "89eabc65bc91b6079009816a1e72adc66f462e2bab7c357b3b046bd297203a96",
+      "asset": "assets/battle_effects/magic_boost.png",
+      "asset_sha256": "9b5c4b54fc0db991d92a42bbd877382e5070c9a60419d3548bfa96ef7794f4cf",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "bond_focus",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0c029c9b-132f-4e9a-a6a4-750389288887.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: two interlocking muted golden chain links with a blue central highlight. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/bond_focus.png",
+      "source_sha256": "8e338c0eb4b7c45c16439bb20bac4710bbb0909c918af41208ab5a776dc852b7",
+      "asset": "assets/battle_effects/bond_focus.png",
+      "asset_sha256": "1d779d28f74b04c5bea65c1c95e997f5b8e1b7353bd625b2b4dbd2013d9b85be",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "curse_blood",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6f26f9d1-11a1-400e-918e-cc37436f4b7f.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a crimson blood drop pierced by a short dark thorn. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/curse_blood.png",
+      "source_sha256": "40a343c7d37f04e1c44e2ebd60fa65d12c4771b1f8bd2f7a41a972eff015262b",
+      "asset": "assets/battle_effects/curse_blood.png",
+      "asset_sha256": "16a68406b3a3d371bcb0637ca7668de902aa20311336e47b21248b4614dec509",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "curse_burden",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7cc53edf-6e2b-4402-b573-b7a93a67fb9f.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a chunky dark iron ball attached to two chain links, purple accent. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/curse_burden.png",
+      "source_sha256": "d819f0b2364c3d8d56363d7dd67f6989f069c342a6640b08dcc26909b678bbe0",
+      "asset": "assets/battle_effects/curse_burden.png",
+      "asset_sha256": "ccf7f5bbc710bcc3468d8505f16f1a6d0384390204fcf6c638946df7c0ae6fee",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "curse_scar",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c0544ef8-c6a6-41c8-9e05-038061934d93.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a simple reddish bandaged wound with a violet slash. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/curse_scar.png",
+      "source_sha256": "8db5ff1d5ae6f7427353632a1f667ea134df1bd549b1e1451aacb15259084e6d",
+      "asset": "assets/battle_effects/curse_scar.png",
+      "asset_sha256": "6fc42d43d9465f2e5d4458aaf3e4d86672fe71d09ffc7fcc92d8e1381ea3f7d6",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "set_multi",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dcf51512-3c17-4a05-bb55-cf6bd246a648.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: two crossed short steel swords, muted gold hilts. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/set_multi.png",
+      "source_sha256": "252f1b2dececeb9e3f9c99e5a7e1c3f7af1d546c9c69d6fb98fe7f00a7bd4d97",
+      "asset": "assets/battle_effects/set_multi.png",
+      "asset_sha256": "75a0bde269ada8a8933d866633d0dedfc0e5c90060e8917091530cf7ac9f1172",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "set_poison",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3f6a46c9-4f25-4af2-b40d-4ec5faf3c635.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a small green vial with a tiny ivory skull marking. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/set_poison.png",
+      "source_sha256": "f72514fe486a34599f734e0be4ea95a4e65839e6113957687ad4afd90309a6ad",
+      "asset": "assets/battle_effects/set_poison.png",
+      "asset_sha256": "76dc3839e18a5925a9bbdc59d165bf812ca3bf9948106c74ac6c657ff0b71d3a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "set_block",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d55b706f-c033-4333-af3d-9a46d321d11d.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a gray steel shield with a blue plus. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/set_block.png",
+      "source_sha256": "5a12121779dc0c0828d32f7083c8af53dd89da28b139f7e2416f869b78c8b858",
+      "asset": "assets/battle_effects/set_block.png",
+      "asset_sha256": "c6f76233057ebacea39bff16fe25265e92b146b513e64c12df84a03363e4fda5",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "set_heal",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b223f05b-f0d7-4ab9-9b46-bd7c241c7b2d.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a ruby red cross with a small warm gold highlight. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/set_heal.png",
+      "source_sha256": "f39126bb7d9af77c73a776d816597ce9f411a2c294b54679fb60ea0f0911630c",
+      "asset": "assets/battle_effects/set_heal.png",
+      "asset_sha256": "80e15ccb3e98ae1d05cb3ac8e2b7783356058221d90d790be98cef41e58b37e2",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "guard",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-aa5177a2-309a-41df-90a3-4c99af504805.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a plain gray-steel shield with muted gold rim, no arrows. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/guard.png",
+      "source_sha256": "681815e7cc7619f9ad26e244df5dfdbf35f93ce98223b0415d23e8b59a2dc054",
+      "asset": "assets/battle_effects/guard.png",
+      "asset_sha256": "f97b20906a807e7ee1fa942f07d150f4db464753e61dda71045baf550da6f5f6",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "counter",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-214fdb21-ee78-448c-8c5e-98e275154d2a.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a short steel sword curving around a gray shield with a single orange returning arrow. Eterno Retorno dark fantasy pixel-art UI. Minimal but slightly detailed pixel art: chunky clean solid silhouette, just 3-4 stepped shading tones, restrained handcrafted material texture and one short highlight. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, background scene, particles, glow halo, tiny filigree, or unrelated extra objects. Polished restrained material pixel art, not a thin vector outline or detailed illustration. Square canvas.",
+      "source_file": "docs/battle_effects/refined/sources/counter.png",
+      "source_sha256": "7fcd37ae33304d21e1eda7f386dbf79571e4001e63441953dbbaa6ec39caf4f5",
+      "asset": "assets/battle_effects/counter.png",
+      "asset_sha256": "6c91b207e9e0661596f29668642c81e8e71135d9bf6fe8e404e1450d9979bf8d",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    },
+    {
+      "id": "attack",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-15ab0969-3060-49ab-ac4d-9121aa060448.png",
+      "prompt": "Create ONE isolated game status icon on a genuinely transparent background: a single diagonal steel sword pointing up-right, weathered dark iron hilt and muted gold guard. For Eterno Retorno dark fantasy pixel-art UI. Minimal, slightly detailed pixel art: chunky clean silhouette, just 3-4 stepped shading tones and one short blade highlight; restrained handcrafted material texture. Clearly readable at 30 pixels. Large central symbol fills 80% of square canvas, full object visible with margin. No letters, numbers, border, badge, scene, particles, glow halo, tiny filigree, or extra objects. This is the attack intention icon, polished restrained pixel art, not a thin vector outline or detailed illustration.",
+      "source_file": "docs/battle_effects/refined/sources/attack.png",
+      "source_sha256": "478f2d328fe7d273e9ec7e9d46c0a10c4b5245550ec6106d3ffd99bb45b244a6",
+      "asset": "assets/battle_effects/attack.png",
+      "asset_sha256": "0d960eedaddd970fbfcec66a37bc3bf73fdf0f372f80ae59c420a0a2b9b25a65",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "processing": "Godot: discard alpha <= 0.01 padding noise, alpha crop, aspect fit to 116 px using Lanczos, center in transparent 128 px canvas"
+    }
+  ],
+  "runtime_bytes": 736765,
+  "source_bytes": 26552793
+}

@@ -17,4 +17,8 @@ static func enemy(audio: Node, visual: String) -> void:
 	elif visual == "elemental_4": event = "poison"
 	elif visual == "elemental_3": event = "frost"
 	elif visual == "flying_5": event = "wing"
+	elif visual in ["flying_1","flying_6"]: event = "wing"
+	elif visual == "beast_6": event = "frost"
+	elif visual == "crypt_bandit": event = "dagger"
+	elif visual == "bandit_7": event = "sword_heavy"
 	audio.play_sfx(event)

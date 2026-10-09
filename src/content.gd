@@ -11,29 +11,30 @@ var equipment: Dictionary
 var items: Dictionary
 
 func _init() -> void:
-	synergies = JSON.parse_string(FileAccess.get_file_as_string("res://data/synergies.json"))
-	var data = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json"))
+	synergies = preload("res://src/data/json_catalog.gd").array("res://data/synergies.json")
+	var data = preload("res://src/data/json_catalog.gd").dictionary("res://data/content.json")
 	heroes = data.heroes
 	cards = data.cards
-	cards.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/risk_cards.json")))
-	cards.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/tactical_cards.json")))
-	cards.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/support_cards.json")))
+	cards.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/risk_cards.json"))
+	cards.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/tactical_cards.json"))
+	cards.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/support_cards.json"))
 	enemies = data.enemies
-	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/crypt_enemies.json")))
-	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/forest_enemies.json")))
-	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/enemy_expansion.json")))
-	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/adventure_enemies.json")))
-	enemies.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/cinematic_enemies.json")))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/crypt_enemies.json"))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/forest_enemies.json"))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/enemy_expansion.json"))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/adventure_enemies.json"))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/cinematic_enemies.json"))
+	enemies.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/polish_enemies.json"))
 	relics = data.relics
-	relics.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/boss_relics.json")))
-	relics.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/elite_relics.json")))
+	relics.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/boss_relics.json"))
+	relics.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/elite_relics.json"))
 	var legacy_icons = {"ember":2, "fang":3, "chalice":0, "hourglass":7}
 	for id in legacy_icons: relics[id].icon = legacy_icons[id]
 	events = data.events
-	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/polish_events.json")))
-	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/travel_events.json")))
-	events.merge(JSON.parse_string(FileAccess.get_file_as_string("res://data/adventure_events.json")))
-	var objects = JSON.parse_string(FileAccess.get_file_as_string("res://data/equipment.json"))
+	events.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/polish_events.json"))
+	events.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/travel_events.json"))
+	events.merge(preload("res://src/data/json_catalog.gd").dictionary("res://data/adventure_events.json"))
+	var objects = preload("res://src/data/json_catalog.gd").dictionary("res://data/equipment.json")
 	equipment = objects.relics
 	items = objects.items
 

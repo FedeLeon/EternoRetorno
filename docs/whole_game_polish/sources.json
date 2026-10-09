@@ -1,0 +1,206 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "date": "2026-10-08",
+  "transparent_background": true,
+  "assets": [
+    {
+      "id": "crypt_bandit_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-bc3aa271-0bde-4b56-bf7f-34e4020d20f9.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a slim masked tomb raider in a dark hood, brown leather armor, ragged burgundy scarf and cloak, wielding two short curved steel daggers. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/crypt_bandit_motion.png",
+      "source_sha256": "739022faa14eee77d95e6e00e8e2e40f43b24c948b1add00ab686b3b93236ee7",
+      "asset": "assets/enemies/animations/crypt_bandit.png",
+      "asset_sha256": "4b22d43ec3431c4851503a3a960b9fd953fe3600a3c8a73d2479e71085cce473",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/crypt_bandit.png",
+      "reference_sha256": "c5bd51dd26cba2af1f43754d18ee4f8aae09fe93ee56758591ce53f16126418b",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-83a43df2-233c-4372-bc1f-4b0101ec5412.png",
+        "prompt": "Create a production game sprite sheet of a slim masked tomb raider in a dark hood, brown leather armor, ragged burgundy scarf and cloak, wielding two short curved steel daggers. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/crypt_bandit_motion.png",
+        "sha256": "a20067cdd5263bf9bbd64b4ae01265aedbcc89895404268ec470070c5dde52c3",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/crypt_bandit_motion.png",
+      "normalized_sha256": "ef7687b61a0a98abdbe4f42c21724641c27dfe721fad7d19674f039a89f83e69"
+    },
+    {
+      "id": "crypt_bandit_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-eb5c97db-2dec-4534-bd7b-d2ecd55b0b70.png",
+      "prompt": "Create one large foreground attack illustration of a slim masked tomb raider in a dark hood, brown leather armor, ragged burgundy scarf and cloak, wielding two short curved steel daggers. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/crypt_bandit_cutin.png",
+      "source_sha256": "e5ba2f796d2bc3b5807109ccbdcfa6c60f6caddde84847d67e3f5003185db7f5",
+      "asset": "assets/comic/enemies/crypt_bandit.png",
+      "asset_sha256": "e353ac41a4487485c607176155be74df74b0a0a99cb1e9742ea4bf09b2731af9",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/crypt_bandit.png",
+      "reference_sha256": "c5bd51dd26cba2af1f43754d18ee4f8aae09fe93ee56758591ce53f16126418b"
+    },
+    {
+      "id": "beast_6_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1521e186-0cfc-46dd-80c7-4f8d808f64c1.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a coiled icy blue serpent with pale segmented belly, sharp blue dorsal spines, fangs and cold cyan eyes. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/beast_6_motion.png",
+      "source_sha256": "8c1250fa7a5432655034da531005a8164ef1989144155177679669f6a94d3c4b",
+      "asset": "assets/enemies/animations/beast_6.png",
+      "asset_sha256": "985b74ca121a51ad0a36b6cd07305d25e2133cb0ec070ca1b523dc8bc8d7c0fa",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/beast_6.png",
+      "reference_sha256": "c177238e04c3df6d4db3bc7f9d6cf4b3ddcf78f3c9948660e15ffe859bd77815",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d88fcedf-8c78-43bf-93c6-56f90f00dc38.png",
+        "prompt": "Create a production game sprite sheet of a coiled icy blue serpent with pale segmented belly, sharp blue dorsal spines, fangs and cold cyan eyes. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/beast_6_motion.png",
+        "sha256": "5c201f9cd5c6d5ce02dabdbd49083449214d73942804fcae686f74b7701d8b20",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/beast_6_motion.png",
+      "normalized_sha256": "be7f78d55539b0982a643afeac1504eddd0704ba2922f5d835caaec20ab46217"
+    },
+    {
+      "id": "beast_6_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c57490e7-8391-4319-91a4-8fc6c1769634.png",
+      "prompt": "Create one large foreground attack illustration of a coiled icy blue serpent with pale segmented belly, sharp blue dorsal spines, fangs and cold cyan eyes. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/beast_6_cutin.png",
+      "source_sha256": "8d3ffdd459cff307f31f04dad5831e219286291b2c92641755ef12bedf758c82",
+      "asset": "assets/comic/enemies/beast_6.png",
+      "asset_sha256": "6d4921065dab2cccb3e04cfa687c6382a15cd13ec94588e2e269268423acd6f8",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/beast_6.png",
+      "reference_sha256": "c177238e04c3df6d4db3bc7f9d6cf4b3ddcf78f3c9948660e15ffe859bd77815"
+    },
+    {
+      "id": "flying_1_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5d01d4b2-93b1-4b69-b154-52c9ca3c9324.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a large dark charcoal vampire bat with red membranous wings, pointed ears, red eyes and ivory fangs. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/flying_1_motion.png",
+      "source_sha256": "08e09d9429bf1ac9a57424ede9dcbe6898b095cfda36e31069e6d7b95d4cda6e",
+      "asset": "assets/enemies/animations/flying_1.png",
+      "asset_sha256": "030bc14417d1851ef79f7ca8f168c31ac07cd53e921b3b834c56d3e17c25e251",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/flying_1.png",
+      "reference_sha256": "3cc792d9f1f8956af791daad222f3712782fb325c3bd9ca07ea2052d116cac02",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3aca0936-497d-4b7c-9d67-b91724fd0c16.png",
+        "prompt": "Create a production game sprite sheet of a large dark charcoal vampire bat with red membranous wings, pointed ears, red eyes and ivory fangs. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/flying_1_motion.png",
+        "sha256": "17be4aa7cbd5dc6cf37a2138ef31c8e883f9f586b4b3ea14dfae13d2ca8804f4",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/flying_1_motion.png",
+      "normalized_sha256": "84dac2037d036f76a8742fe4e1d5ea2bd72a45bdecfe9841d1a5571bf81a2f3f"
+    },
+    {
+      "id": "flying_1_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3fcf1a02-b27f-474e-9b7e-7ecee2435916.png",
+      "prompt": "Create one large foreground attack illustration of a large dark charcoal vampire bat with red membranous wings, pointed ears, red eyes and ivory fangs. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/flying_1_cutin.png",
+      "source_sha256": "b4791178fbd2fce347366b3415f482c0eea6dc50fe0b042c89e886fef4dbd4dd",
+      "asset": "assets/comic/enemies/flying_1.png",
+      "asset_sha256": "7d565a2279278d234886f5af6ea87c654cb31e9ec38edfbfa99eade9f1cc2e4b",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/flying_1.png",
+      "reference_sha256": "3cc792d9f1f8956af791daad222f3712782fb325c3bd9ca07ea2052d116cac02"
+    },
+    {
+      "id": "flying_6_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-934d1c60-8d21-49d1-ac1d-25ef20a32406.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a black raven with layered navy-purple feathers, red eyes and sharp gray beak and claws. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/flying_6_motion.png",
+      "source_sha256": "952a44d1d99ba3abd7e96691557393173cae4951f079716ac66b60ebec024b9c",
+      "asset": "assets/enemies/animations/flying_6.png",
+      "asset_sha256": "43f228df90fe185c197cb699225667b6d6a263517a36e12258d628c9f99f3077",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/flying_6.png",
+      "reference_sha256": "e1f09563662ecde517924461724022ffab499f6df4ab94a481b2367a385ff158",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-76aa347a-87aa-4c06-97b7-c9ec72a88368.png",
+        "prompt": "Create a production game sprite sheet of a black raven with layered navy-purple feathers, red eyes and sharp gray beak and claws. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/flying_6_motion.png",
+        "sha256": "e94c17b34cf63f9af6e03643e766efc7f0ce7febe34809420977dce1a942ed44",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/flying_6_motion.png",
+      "normalized_sha256": "499cb1c75dc8071aca77d3d7998ad76ba7e853cf1748eefefb4b00ddc3937fe5"
+    },
+    {
+      "id": "flying_6_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5c6e6cf9-387d-42e1-a59f-d8cca6997f42.png",
+      "prompt": "Create one large foreground attack illustration of a black raven with layered navy-purple feathers, red eyes and sharp gray beak and claws. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/flying_6_cutin.png",
+      "source_sha256": "f4c451827887aa325bee2a6ee0f3aa3297f78dc8de828313ab36389862b8a2c1",
+      "asset": "assets/comic/enemies/flying_6.png",
+      "asset_sha256": "a17ae0494375c7ca59b0829b8a9fcbad2f1b67c8f3f72a8022f82f114656273d",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/flying_6.png",
+      "reference_sha256": "e1f09563662ecde517924461724022ffab499f6df4ab94a481b2367a385ff158"
+    },
+    {
+      "id": "crypt_wolf_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-817b6218-02ea-41ba-866d-3763c0cc3156.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a lean charcoal-gray wolf with bristling gray fur, narrow amber-red eyes and long ivory fangs, subtle ember orange tips in its fur. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/crypt_wolf_motion.png",
+      "source_sha256": "e99a0b270af9e50fc706d226ddf3b7c34543155535931a7b35ba2c551e4b0848",
+      "asset": "assets/enemies/animations/crypt_wolf.png",
+      "asset_sha256": "42e05b8b76f279624629aa143190c625f749a7e5ebb58222eff7b1566af19c8a",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/crypt_wolf.png",
+      "reference_sha256": "db147ffe5381d419b06af3146c2057384b8e3180a35e01a504d8bd40e2c2735b",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4737ba88-1b20-4b1c-828b-671c8307b8d0.png",
+        "prompt": "Create a production game sprite sheet of a lean charcoal-gray wolf with bristling gray fur, narrow amber-red eyes and long ivory fangs, subtle ember orange tips in its fur. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/crypt_wolf_motion.png",
+        "sha256": "d861a10a21de0bd226db017bd5ec6dba4ec87d8bde18a41b50087b478810fdd4",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/crypt_wolf_motion.png",
+      "normalized_sha256": "03ef1d2c219b2fd2c258ea1f83a17b17362f723ad5bf687629d884ce62b4ec2a"
+    },
+    {
+      "id": "crypt_wolf_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-8d71e7e4-2393-446c-bbed-5d4d7005eb05.png",
+      "prompt": "Create one large foreground attack illustration of a lean charcoal-gray wolf with bristling gray fur, narrow amber-red eyes and long ivory fangs, subtle ember orange tips in its fur. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/crypt_wolf_cutin.png",
+      "source_sha256": "9cecdbdac809bd7c824503f17a3836d6cf5159b3489263e27d9e24640e2db991",
+      "asset": "assets/comic/enemies/crypt_wolf.png",
+      "asset_sha256": "274f06a2762cb778b302d632f4e1439b6d8a6d419d9ad9b247c99514531d80b9",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/crypt_wolf.png",
+      "reference_sha256": "db147ffe5381d419b06af3146c2057384b8e3180a35e01a504d8bd40e2c2735b"
+    },
+    {
+      "id": "bandit_7_motion",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-80c4cccd-54da-4323-8214-a4150af13df0.png",
+      "prompt": "Repair the attached eight-frame pixel art sprite sheet. Preserve character identity and eight distinct successive poses. CRITICAL FIX: figures in bottom row are cropped by cell borders; redraw any missing tails, wings, weapons, hands and effects completely. Keep EXACTLY 4 columns and 2 rows, NO ninth figure. All eight FULL figures face LEFT. Every figure must fit entirely inside the middle 60 percent of its own cell, with AT LEAST 20 percent transparent padding on EACH side of EVERY cell. Huge clearly empty gutters separate all figures. No effect, blade, feather, tail or cloak may touch or cross a cell boundary. This is a production sprite sheet; complete silhouettes matter more than large figures. Consistent body scale and baseline. Character: a muscular bald scarred human warlord in dark iron shoulder armor, red cloth sash and cape, skull belt buckle, holding a massive curved cleaver. Top row four idle poses, bottom row windup/lunge/strike/recovery. Smaller figures on same wide canvas, generous transparent margins. Remove broad attack beams; only a tiny local spark is allowed. Detailed dark fantasy pixel art, genuinely transparent background, no grid lines, no labels, no frames.",
+      "source_file": "docs/whole_game_polish/sources/bandit_7_motion.png",
+      "source_sha256": "ac56bf2b19a621f7118b67443247791339f77aeedda09a057d2aa7a39b3e827e",
+      "asset": "assets/enemies/animations/bandit_7.png",
+      "asset_sha256": "3794c932d4135e288cc24615754faad3ccc7a78e5fe0c2e226e2184ffd3db1bd",
+      "processing": "pack_polish_motion.py: isolate complete RGBA poses by connected body components and nearest detached particles, no artistic changes/resizing; equal padded 4x2 grid; enemy_art_import.gd common scale and ground-aligned 8x128 atlas",
+      "reference": "assets/enemies/hd/bandit_7.png",
+      "reference_sha256": "c8ea5ff57b96f4fbfaf37f51f84736886dc4ea39550984b7988d05f1f0c861e3",
+      "initial_attempt": {
+        "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ce77a668-78e1-4600-9ee9-9f7b0af5b9d9.png",
+        "prompt": "Create a production game sprite sheet of a muscular bald scarred human warlord in dark iron shoulder armor, red cloth sash and cape, skull belt buckle, holding a massive curved cleaver. Match the attached existing character concept, preserve its identity, costume and weapon. Genuine detailed dark fantasy PIXEL ART with deliberate stepped pixels. Exactly 8 full-body frames in a strict evenly spaced 4 columns by 2 rows grid, on genuinely transparent alpha background. Each frame entirely inside its cell, no overlap, no labels, no border, no floor shadow, no extra figures. All frames face LEFT. Same character proportions, body height, ground baseline and camera scale in all frames. Top row four successive restrained idle frames: subtle hand/weapon/clothing motion (or wing flap for flying creatures), no whole-body breathing stretch. Bottom row four successive attack poses: windup, thrust or lunge left, clear strike, recovery. Arms and weapon or jaws/wings move distinctly, feet stay consistent. Wide transparent gutters. Landscape 2:1 sheet. Do not shrink any attack frame.",
+        "file": "docs/whole_game_polish/rejected/bandit_7_motion.png",
+        "sha256": "1c74b2b0c0c2bdf2b5f4339bfe189b272915eb27899c4bc42c4d31bcad19efc5",
+        "reason": "Uniform cell slicing clipped some poses; replaced with repaired complete figures and mechanical packing."
+      },
+      "normalized_file": "docs/whole_game_polish/normalized/bandit_7_motion.png",
+      "normalized_sha256": "da27df0a290f3232819d02173cf4b9c229e59c5430fb37403a99c231cd957e9e"
+    },
+    {
+      "id": "bandit_7_cutin",
+      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7eaef67b-c97d-4967-9cca-4a9a2ef1e6b5.png",
+      "prompt": "Create one large foreground attack illustration of a muscular bald scarred human warlord in dark iron shoulder armor, red cloth sash and cape, skull belt buckle, holding a massive curved cleaver. Match attached character reference identity and costume. Dark fantasy detailed hand-inked comic game artwork, crisp textured materials, expressive dynamic attack, head and torso well defined, no blocky low-resolution pixels. Attack from RIGHT TO LEFT: weapon or jaws extended towards the left, flowing cloth or wings trailing to the right. Blue icy spell effects for ice serpent, gray smoke and restrained orange embers for cinder wolf or warlord, short silver slash accents for blades, purple-black feather or wing gusts for raven/bat. Isolated whole character plus close weapon effect, TRUE transparent background, no opaque scene or panels, no words, no badge, no text, no cropped face or weapon. Wide landscape composition, fills central 85% with modest margins.",
+      "source_file": "docs/whole_game_polish/sources/bandit_7_cutin.png",
+      "source_sha256": "7b58ab5dafe22b21c6215b8e30672b953dde4e5fada731725441538ad8379434",
+      "asset": "assets/comic/enemies/bandit_7.png",
+      "asset_sha256": "fbe67aeeb308f3ee9b7562028496639b8f1a6c3af11c769427732967bc5ba6f9",
+      "processing": "Godot enemy_art_import.gd: proportional Lanczos resize to width 900, retain alpha",
+      "reference": "assets/enemies/hd/bandit_7.png",
+      "reference_sha256": "c8ea5ff57b96f4fbfaf37f51f84736886dc4ea39550984b7988d05f1f0c861e3"
+    }
+  ],
+  "runtime_bytes": 6898453
+}

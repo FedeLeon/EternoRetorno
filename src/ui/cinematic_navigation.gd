@@ -2,7 +2,7 @@ extends RefCounted
 # Navigation owns watched flags. The player only presents already committed state.
 const Player = preload("res://src/presentation/cinematic_player.gd")
 static func catalog() -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/cinematics.json"))
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/cinematics.json")
 
 static func play(ui: Control, id: String) -> void:
 	if ui.has_meta("cinematic_active"): return

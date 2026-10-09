@@ -264,3 +264,11 @@ ramas interiores. Caminos futuros tenues, recorrido realizado más oscuro y
 salidas actuales resaltadas. Mapas guardados conservan salas/conexiones/posiciones
 en disco; UI adapta solo una copia de las espirales antiguas. Mapas de doce salas
 siguen como antes. [Archivos y pruebas actuales](../presentation_refinements/README.md).
+
+## Orientación y movimiento de caminos — 08/10/2026
+
+El mensaje inicial y el contador de salas visitadas tienen un panel oscuro.
+Solo las conexiones hacia salidas actualmente disponibles reciben un marcador
+pequeño animado; respeta la preferencia de menos efectos, ignora clics y no revela
+contenido de salas ni cambia rutas/guardados. `presentation/map_route_flow.gd`
+dibuja el efecto sobre la polilínea existente. [Pruebas actuales](../whole_game_polish/README.md).

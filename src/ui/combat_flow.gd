@@ -101,6 +101,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 			ui.enemy_art[i].set_fallen(false)
 			ui.enemy_health[i].animate_to(current_enemies[i].hp)
 		if i < current_enemies.size() and old_enemies[i].hp > 0:
+			if current_enemies[i].hp > old_enemies[i].hp:
+				ui.enemy_health[i].animate_to(current_enemies[i].hp)
+				preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.enemy_art[i],"heal")
 			if current_enemies[i].hp < old_enemies[i].hp:
 				ui.enemy_health[i].animate_to(current_enemies[i].hp)
 			if current_enemies[i].hp <= 0:
@@ -110,29 +113,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 				await ui.enemy_art[i].play_once("death")
 			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty():
 				await ui.enemy_art[i].play_once("hurt")
-		if hand_index < 0 and synergy_id == "" and ui.game.resolved_enemy_blocks.has(i):
-			var block = int(ui.game.resolved_enemy_blocks[i])
-			preload("res://src/presentation/card_impacts.gd").update_block(ui.enemy_health[i], block)
-			if block > 0:
-				ui.audio.play_sfx("block", -4)
-				await ui.get_tree().create_timer(0.30).timeout
-		if hand_index < 0 and synergy_id == "" and i in ui.game.resolved_enemy_attacks:
-			ui.CombatEffects.attack_flash(ui.layer)
+		if hand_index < 0 and synergy_id == "":
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual
-			if ui.game.run.get("training", false):
-				ui.audio.play_sfx("hit", -5)
-			else:
-				BattleAudio.enemy(ui.audio, visual)
-				var cut_in = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer, visual)
-				if cut_in != null:
-					await cut_in.finished
-			await ui.enemy_art[i].play_once("attack")
-			for hero_index in ui.game.resolved_hero_blocks.get(i, {}):
-				preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[hero_index], ui.game.resolved_hero_blocks[i][hero_index])
-			for hero_index in ui.game.resolved_hero_defenses.get(i, []):
-				ui.audio.play_sfx("block")
-				if ui.game.run.party[hero_index] in ui.ANIMATED_HEROES:
-					await ui.hero_art[hero_index].play_once("guard")
+			await preload("res://src/presentation/enemy_action_playback.gd").play(ui,i,visual)
 	if hand_index < 0 and synergy_id == "" and not ui.game.resolved_prepared_hits.is_empty():
 		await preload("res://src/presentation/card_impacts.gd").play(ui, ui.game.resolved_prepared_hits, "heavy")
 	for i in range(before.size()):
@@ -140,16 +123,22 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		ui.hero_health[i].animate_to(after.hp)
 		if hand_index < 0 and synergy_id == "":
 			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
-		if after.hp < before[i].hp:
+		var received_hit = ui.game.resolved_enemy_hits.values().any(func(hits): return hits.any(func(hit): return int(hit.owner) == i)) if hand_index < 0 and synergy_id == "" else false
+		if after.hp > before[i].hp:
+			preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.hero_art[i],"heal")
+		if after.block > before[i].block and (hand_index >= 0 or synergy_id != ""):
+			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
+			preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.hero_art[i],"block")
+		if after.hp < before[i].hp and not received_hit:
 			ui.audio.play_sfx("hurt", -5)
 			ui.flash_hit(ui.hero_art[i])
 		if ui.game.run.party[i] not in ui.ANIMATED_HEROES:
 			continue
 		if before[i].hp > 0 and after.hp <= 0:
-			await ui.hero_art[i].play_once("death")
+			if not ui.hero_art[i].fallen: await ui.hero_art[i].play_once("death")
 		elif before[i].hp <= 0 and after.hp > 0:
 			await ui.hero_art[i].play_once("revive")
-		elif after.hp < before[i].hp and impacts.is_empty():
+		elif after.hp < before[i].hp and impacts.is_empty() and not received_hit:
 			await ui.hero_art[i].play_once("hurt")
 	for bar in ui.hero_health.values() + ui.enemy_health.values():
 		if bar.animating:
@@ -157,6 +146,8 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	while ash_effects.any(func(effect): return is_instance_valid(effect)):
 		await ui.get_tree().process_frame
 	while not ui.get_tree().get_nodes_in_group("block_ash").is_empty():
+		await ui.get_tree().process_frame
+	while ui.layer.get_children().any(func(child): return child.get_script() == preload("res://src/presentation/support_feedback.gd")):
 		await ui.get_tree().process_frame
 	await ui.get_tree().create_timer(0.18).timeout
 	if ui.game.run.phase == "reward":

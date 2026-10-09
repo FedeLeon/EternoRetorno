@@ -198,3 +198,12 @@ tanto para bloqueo completo como parcial; sin absorción conserva `flesh_impact`
 Procedencia/hashes en `sources.json`, originales en `metal/sources/` con `.gdignore`.
 Catálogo actual: ocho músicas/arreglos, cuatro ambientes y 41 efectos.
 [Validación nativa y detalles](../presentation_refinements/README.md).
+## Arreglos de mazmorra y transiciones — 08/10/2026
+
+Dos arreglos locales CC0 (`battle_forest`, `battle_volcano`) diferencian bosque
+y fortaleza mediante ecualización y mezcla ambiental del material ya licenciado.
+No son composiciones IA. Recompensa baja la ganancia sin reiniciar la pista.
+El gestor funde ambiente y volumen musical al navegar, alterna muestras de SFX
+para evitar repetición consecutiva y conserva silencio al pasar el mouse.
+Bestiario abierto desde Inicio conserva música de título. Las opciones muestran
+porcentajes reales. [Fuentes/normalización y validación actual](../whole_game_polish/README.md).

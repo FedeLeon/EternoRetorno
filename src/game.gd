@@ -5,6 +5,7 @@ var resolved_enemy_attacks: Array[int] = []
 var resolved_enemy_blocks: Dictionary = {}
 var resolved_hero_defenses: Dictionary = {}
 var resolved_hero_blocks: Dictionary = {}
+var resolved_enemy_hits: Dictionary = {}
 var resolved_card_hits: Array = []
 
 const Achievements = preload("res://src/rules/achievements.gd")
@@ -229,38 +230,9 @@ func synergy_targets(id: String) -> Array:
 	return []
 
 func play_synergy(id: String, target: int) -> bool:
-	resolved_card_hits.clear()
-	if target not in synergy_targets(id): return false
-	var combo: Dictionary = {}
-	for candidate in available_synergies():
-		if candidate.id == id: combo = candidate
-	var b = run.combat
-	run.get("event_flags", {}).erase("pair_focus")
-	b.energy -= int(combo.cost)
-	# Descending indices preserve both exact instances, including upgrades.
-	var indices: Array = combo.indices.duplicate()
-	indices.sort()
-	indices.reverse()
-	for index in indices:
-		preload("res://src/rules/combat_telemetry.gd").card(self,b.hand[index].id)
-		b.discard.append(b.hand[index])
-		b.hand.remove_at(index)
-	combo.damage = preload("res://src/rules/boss_mechanics.gd").hit(self,b.enemies[target],int(combo.damage),combo.pierce)
-	if not preload("res://src/rules/combat_depth.gd").root_hit(self, b.enemies[target], int(combo.damage)):
-		_damage(b.enemies[target], int(combo.damage), combo.pierce)
-	if b.enemies[target].hp > 0 and int(b.enemies[target].intent.get("counter", 0)) > 0:
-		var attacker = run.party.find(combo.heroes[0])
-		_damage(run.heroes[attacker], 4)
-		resolved_card_hits.append({"kind":"counter", "enemy":target, "owner":attacker, "hp":run.heroes[attacker].hp, "block":run.heroes[attacker].block, "damage":4})
-	b.enemies[target].poison += int(combo.poison)
-	for hero in run.heroes:
-		if hero.hp <= 0: continue
-		hero.block += int(combo.block)
-		hero.hp = mini(hero.max_hp, hero.hp + int(combo.heal))
-	_log("Sinergia: %s." % combo.name)
-	_check_combat_end()
-	checkpoint()
-	return true
+	var accepted: bool = preload("res://src/rules/synergy_actions.gd").play_synergy(self, id, target)
+	if accepted: checkpoint()
+	return accepted
 
 func play_card(hand_index: int, target: int) -> bool:
 	var accepted: bool = preload("res://src/rules/card_actions.gd").play(self, hand_index, target)
@@ -268,23 +240,7 @@ func play_card(hand_index: int, target: int) -> bool:
 	return accepted
 
 func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
-	if unit.has("equipped_relic"):
-		amount = maxi(0, amount - relic_bonus(unit, "armor"))
-	var was_alive = unit.hp > 0
-	var hp_before: int = unit.hp
-	var absorbed = 0 if pierce else mini(unit.block, amount)
-	unit.block -= absorbed
-	unit.hp = maxi(0, unit.hp - (amount - absorbed))
-	if run.get("phase", "") == "combat": preload("res://src/rules/combat_depth.gd").record(self, unit, amount, absorbed, hp_before - unit.hp)
-	if unit.has("equipped_relic"):
-		preload("res://src/rules/adventure_extensions.gd").statistic(run, "damage_taken", hp_before - unit.hp)
-	if was_alive and unit.hp == 0 and relic_bonus(unit, "phoenix") > 0 and not unit.get("phoenix_used", false):
-		unit.hp = 1
-		unit.phoenix_used = true
-		_log("El Ídolo del Fénix evita un golpe fatal.")
-	if was_alive and unit.hp == 0 and unit.has("equipped_relic") and run.phase == "combat":
-		run.combat.hero_fell = true
-		preload("res://src/rules/adventure_extensions.gd").statistic(run, "fallen")
+	preload("res://src/rules/combat_stats.gd").damage(self, unit, amount, pierce)
 
 func end_turn() -> bool:
 	var accepted: bool = preload("res://src/rules/combat_turns.gd").end(self)
@@ -376,41 +332,13 @@ func relic_bonus(hero: Dictionary, effect: String) -> int:
 	return int(relic.get("value", 0)) if relic.get("effect", "") == effect else 0
 
 func turn_energy() -> int:
-	var amount = 3 + RunRelics.amount(run, content.relics, "extra_energy")
-	if run.combat.turn == 1:
-		amount += 1 if "hourglass" in run.relics else 0
-		for hero in run.heroes:
-			if hero.hp > 0:
-				amount += relic_bonus(hero, "energy")
-				if run.get("team_relic", "") != "":
-					break
-	if run.combat.turn == 1 and "burden" in run.get("curses", []): amount = maxi(0, amount - 1)
-	return amount
+	return preload("res://src/rules/combat_stats.gd").turn_energy(self)
 
 func attack_bonus(hero: Dictionary, owner: String) -> int:
-	var bonus = int(hero.get("turn_strength", 0)) + int(hero.get("forge", {}).get("strength", 0))
-	if run.get("team_relic", "") != "" or owner in ["mage", "cleric"]:
-		bonus += relic_bonus(hero, "magic")
-	if owner in ["mage", "cleric"]:
-		bonus += int(hero.get("turn_magic", 0))
-	return bonus
+	return preload("res://src/rules/combat_stats.gd").attack_bonus(self, hero, owner)
 
 func effective_card(instance: Dictionary) -> Dictionary:
-	var c = content.card(instance)
-	if run.is_empty() or c.owner not in run.party:
-		return c
-	var hero = run.heroes[run.party.find(c.owner)]
-	if c.damage > 0:
-		c.damage += attack_bonus(hero, c.owner)
-	if c.block > 0:
-		c.block += int(hero.get("forge", {}).get("block", 0))
-	if c.poison > 0:
-		c.poison += relic_bonus(hero, "poison")
-	Specializations.apply(c, hero, int(run.get("combat", {}).get("turn", 0)))
-	RunRelics.apply(c, instance, hero, run, content.relics)
-	if c.heal > 0 and "scar" in run.get("curses", []): c.heal = maxi(1, c.heal - 2)
-	if c.damage > 0: c.damage = Modifiers.damage(int(c.damage), hero)
-	return c
+	return preload("res://src/rules/combat_stats.gd").effective_card(self, instance)
 
 func item_targets(id: String) -> Array:
 	return preload("res://src/rules/items.gd").targets(self, id)

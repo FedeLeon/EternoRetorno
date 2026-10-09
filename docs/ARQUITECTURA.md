@@ -1,9 +1,19 @@
 # Arquitectura y organización del código
 
-Estado revisado el **08/10/2026**. Esta página describe el código actual y los
+Estado revisado el **09/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
+
+Revisión técnica del 09/10: **184 módulos**; `main.gd` 549 líneas, `game.gd`
+369. Cálculos/enlaces pasan a reglas propias y widgets/tema a `ui_factory.gd`.
+La caché JSON central entrega copias independientes; persistencia protege el
+respaldo recuperado. [Cambios, límites y pruebas actuales](architecture/TECHNICAL_REVIEW_2026_10_09.md).
+
+Pulido posterior del 08/10: 180 módulos en `src/`; `main.gd` se conserva en 593
+líneas, `game.gd` queda en 442 y `ui/combat_flow.gd` en 156. Las animaciones
+enemigas y su reproducción se extraen a colaboradores de presentación.
+[Estructura y validación de esta entrega](whole_game_polish/README.md).
 
 Auditoría 08/10: los 176 módulos de `src/` tienen consumidores desde la entrada
 del juego. Se retiró únicamente el helper sin llamadas `main.scroll_area`;
@@ -14,6 +24,8 @@ se cambian UIDs/guardados durante la [limpieza actual](cleanup/2026-10-08.md).
 | --- | --- |
 | `main.tscn`, `src/main.gd` | Entrada, navegación, composición de pantallas y helpers de UI todavía compartidos |
 | `src/game.gd` | API pública de acciones, estado de aventura/perfil y puntos de guardado |
+| `src/data/json_catalog.gd` | Fuentes JSON cacheadas, diagnósticos y copias independientes; sin estado de partida |
+| `src/ui/components/ui_factory.gd` | Tema/widgets reutilizables; la fachada conserva navegación y bloqueo de acciones |
 | `src/content.gd`, `data/` | Catálogos y diseño declarativo de la mazmorra |
 | `src/dungeon.gd` | Fachada de definición/generación de pisos y coordenadas compatibles con guardados anteriores |
 | `src/map_geometry.gd` | Geometría pura de la espiral y conexiones curvas; sin mutación de partidas |
@@ -557,6 +569,12 @@ activo requerida por `card_impacts.gd`; veneno pasa a la tira común. El compone
 `boss_objective.gd` prepara la acción del modal, delegando transacción/checkpoint
 a Game. Ningún componente calcula daño ni concede efectos/recompensas.
 
+Arte actualizado el 08/10: `scripts/import_battle_effects.gd` delega a
+`import_refined_effect_icons.gd`, que normaliza originales PNG transparentes de
+`docs/battle_effects/refined/sources/`. Es una herramienta de desarrollo separada
+de presentación/reglas; conserva los 36 IDs y sus rutas de runtime. Los SVG
+minimalistas previos quedan documentados como fuentes históricas.
+
 No se cambian persistencia, IDs/UIDs existentes ni responsabilidades de reglas.
 Main/Game mantienen sus tamaños; las extracciones futuras propuestas anteriormente
 siguen pendientes. [Sistema, procedencia y validación](battle_effects/README.md).
@@ -635,6 +653,19 @@ sus valores predeterminados conservan los consumidores existentes.
 No se añadieron responsabilidades a `main.gd` ni cambios de reglas/persistencia.
 [Decisiones visuales y validación actual](ui_layout/README.md).
 
+## Pulido de acciones y consulta — 08/10/2026
+
+`presentation/enemy_motion.gd` contiene perfiles y tiempos visuales;
+`enemy_action_playback.gd` reproduce daño confirmado por enemigo/objetivo.
+`rules/combat_turns.gd` agrega un recibo transitorio a `game.resolved_enemy_hits`
+después del cálculo existente; no cambia reglas ni lo introduce en el guardado.
+`support_feedback.gd` y `map_route_flow.gd` son efectos locales con opciones
+respetadas, sin RNG del juego. Bestiario conserva fábrica propia y copia de
+descubrimientos para filtrar sin mutaciones. Seis definiciones adicionales se
+fusionan desde `data/polish_enemies.json`; los mapas cargados no se regeneran.
+Audio mantiene mezcla/contextos separados y RNG privado; los arreglos son
+recursos Ogg normales. [Sistemas, fuentes y límites](whole_game_polish/README.md).
+
 ## Geometría versionada y planos de relato — 08/10/2026
 
 `map_geometry.gd` conserva centros legados y añade geometría 2; el generador guarda
@@ -646,3 +677,12 @@ configurable por adaptador, conservando el valor anterior como predeterminado.
 El taller permanente se compone en la pantalla de campamento, con navegación
 al sistema de proyectos existente, sin nueva construcción/regla/persistencia.
 [Archivos, assets y validación](presentation_refinements/README.md).
+
+## Extracciones técnicas — 09/10/2026
+
+`rules/combat_stats.gd` y `rules/synergy_actions.gd` reciben juego para calcular
+y resolver mediante colaboradores existentes; no escriben guardados. La fachada
+conserva APIs y checkpoint tras acciones aceptadas. `ui_factory.gd` no recibe
+`game` ni el controlador; recibe un padre visual y callbacks. `json_catalog.gd`
+centraliza IO declarativo con copias profundas, invalidación y diagnósticos.
+La validación de contenido precede a regresiones. [Análisis y pendientes](architecture/TECHNICAL_REVIEW_2026_10_09.md).

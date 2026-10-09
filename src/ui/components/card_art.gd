@@ -6,7 +6,7 @@ static var textures: Dictionary = {}
 
 static func texture_for(id: String) -> Texture2D:
 	if entries.is_empty():
-		entries = JSON.parse_string(FileAccess.get_file_as_string(MANIFEST))
+		entries = preload("res://src/data/json_catalog.gd").dictionary(MANIFEST)
 	if textures.has(id): return textures[id]
 	if not entries.has(id): return null
 	var entry = entries[id]

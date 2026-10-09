@@ -1,6 +1,6 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **08/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **09/10/2026**.
 
 ## Estado actual
 
@@ -10,14 +10,14 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
 - Controles: arrastrar, tocar, teclado o mando; preview, tutorial, velocidad 1–2× y efectos ajustables.
 - Aventura: dificultad y condición mediante tarjetas ilustradas, rechazo de carta por almas y resumen final.
-- Enemigos comunes: 18 tipos en cripta, 20 en bosque y 16 en fortaleza; generación que prioriza variedad y evita repetir la formación del combate anterior de cada camino. Pisos ya guardados conservan sus encuentros.
+- Enemigos comunes: 20 tipos en cripta, 22 en bosque y 18 en fortaleza; generación que prioriza variedad y evita repetir la formación del combate anterior de cada camino. Pisos ya guardados conservan sus encuentros.
 - Combate: 3 de energía compartida y **6 cartas por turno**; mazo inicial de **20 cartas (10 por héroe)**.
 - Interfaz: fondo de cripta, personajes sobre el suelo sin recuadros, barra
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Golpes cuerpo a cuerpo: el héroe se acerca al objetivo y vuelve a su puesto; HD simultáneo abajo a la izquierda, con combos y área por impacto.
 - Impactos: cifras flotantes de 40 px, con contorno oscuro, sombra y desvanecimiento más lento.
 - Estados de combate: 36 iconos de efectos junto a las intenciones y sobre la vida
-  aliada, con símbolos minimalistas y todas las filas visibles; tocar permite
+  aliada, con pixel art sencillo, volumen discreto y todas las filas visibles; tocar permite
   consultar cada explicación, sin carteles sobre las cartas. [Diseño y pruebas](battle_effects/README.md).
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
 - Encuentros: 28 situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
@@ -27,7 +27,7 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 para élites, más nueve exclusivas de guardianes, visible junto a la elección de carta.
 - Tamaño de enemigos: cuadros pequeños de ataque compensados mediante métricas precalculadas, con apoyo en el suelo y vuelta al tamaño de reposo.
-- Actores: héroes de batalla con doce poses por acción, base de 256×256 y ataques nuevos de 384×384; seis héroes clásicos y 56 enemigos con sprites de 128×128; 51 definiciones activas con 50 apariencias. Las incorporaciones a ambas mazmorras tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano.
+- Actores: héroes de batalla con doce poses por acción, base de 256×256 y ataques nuevos de 384×384; seis héroes clásicos y 56 enemigos animados con sprites de 128×128; 57 definiciones activas con 56 apariencias. Los nuevos conceptos tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano; anticipación y recuperación por familia.
 - Equipo de héroes: mejoras en el HUD y tintes del sprite; sin piezas de arma o
   armadura pegadas encima del personaje. Se mantiene el equipo dibujado en sus poses.
 - Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
@@ -41,9 +41,9 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Refugio: preparación persistente del mazo inicial y vínculos entre las quince parejas, historias y variantes de enlace; cambios solo para aventuras nuevas.
 - Cartas: 132 en total, 22 por héroe; mazos iniciales modestos y desbloqueos de mercado.
 - Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
-- Bestiario: botón solo en Inicio, encima de Colección, con regreso a Inicio.
+- Bestiario: botón solo en Inicio, encima de Colección, con regreso a Inicio; búsqueda, filtros por mazmorra y descubiertos primero, sin revelar nombres ocultos.
 - Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
-- Audio: ocho músicas/arreglos, cuatro ambientes y 41 efectos CC0; volumen general, música y efectos ajustables; canales compatibles con Web. [Sistema y fuentes](audio/README.md).
+- Audio: diez músicas/arreglos, cuatro ambientes y 41 efectos CC0; combate de bosque/fortaleza con arreglos propios, ambiente con fundidos y muestras de impactos alternadas. Volúmenes con porcentaje; canales compatibles con Web. [Sistema y fuentes](audio/README.md).
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
 - [Combate táctico y héroes detallados](combat_depth_2026_10/README.md): mejoras alternativas,
@@ -70,6 +70,8 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 | Tema | Documentación |
 | --- | --- |
+| Caché, respaldo, reglas/UI y validación de contenido | [Revisión técnica del 09/10](architecture/TECHNICAL_REVIEW_2026_10_09.md) |
+| Enemigos, impactos por acción, música y búsqueda del bestiario | [Revisión y pulido del juego del 08/10](whole_game_polish/README.md) |
 | Viñetas más lentas, mapas claros y cine ilustrado | [Cambios y validación del 08/10](presentation_refinements/README.md) |
 | Posiciones y legibilidad de las vistas | [Revisión local del 08/10](ui_layout/README.md) |
 | Cinemáticas y revisión integral del juego | [Escenas, assets, audio y auditoría](cinematics/README.md) |

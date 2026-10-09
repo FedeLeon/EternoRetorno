@@ -4,7 +4,7 @@ const HEROES = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
 const TRACKS = ["weapon", "armor"]
 
 static func config() -> Dictionary:
-	return JSON.parse_string(FileAccess.get_file_as_string("res://data/forge.json"))
+	return preload("res://src/data/json_catalog.gd").dictionary("res://data/forge.json")
 
 static func migrate(profile: Dictionary) -> bool:
 	if profile.has("forge_upgrades"):

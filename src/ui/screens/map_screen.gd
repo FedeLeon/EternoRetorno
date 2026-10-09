@@ -85,7 +85,11 @@ func _ready() -> void:
 	var drawer = preload("res://src/ui/components/map_group_drawer.gd").new()
 	drawer.host = self
 	add_child(drawer)
-	label("Salas recorridas: %d" % visited.size(), Rect2(54, 671, 560, 25), 15, Color("614932"))
+	var footer = Panel.new()
+	footer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	footer.add_theme_stylebox_override("panel",preload("res://src/ui/components/button_skin.gd").style("header_frame"))
+	place(footer,Rect2(44,665,494 if current < 0 else 232,36))
+	label("Elegí la sala iluminada para comenzar" if current < 0 else "Salas recorridas: %d" % visited.size(), Rect2(56,670,472 if current < 0 else 214,25),15,GOLD)
 	tooltip_text = "Semilla: %s" % run_seed
 	if boss_defeated:
 		action(exit_caption, Rect2(461, 626, 358, 44), func(): descend_requested.emit()).name = "Descend"
@@ -105,6 +109,11 @@ func draw_route() -> void:
 				line.add_point(route_position(node))
 				line.add_point(route_position(nodes[next]))
 			add_child(line)
+			if active_path:
+				var flow = preload("res://src/presentation/map_route_flow.gd").new()
+				flow.name = "AvailableRouteFlow%d_%d" % [node.id,next]
+				flow.points = line.points
+				add_child(flow)
 	for node in nodes:
 		var center = route_position(node)
 		var reachable = node.id in available

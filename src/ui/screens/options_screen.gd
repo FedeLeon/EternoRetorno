@@ -10,11 +10,14 @@ static func build(ui: Control) -> void:
 	for i in range(rows.size()):
 		var row: Array = rows[i]
 		ui.label_at(row[1],210,160+i*76,395,28,19)
+		var amount = ui.label_at("%d %%" % roundi(float(settings.get(row[0],row[3]))*100),520,160+i*76,85,28,16,ui.GOLD)
+		amount.name = row[2]+"Value"
+		amount.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 		var slider = HSlider.new(); slider.name = row[2]
 		slider.max_value = 100; slider.step = 1
 		slider.value = float(settings.get(row[0],row[3])) * 100
 		ui.rect(slider,210,194+i*76,395,26)
-		slider.value_changed.connect(func(value): ui.set_option(row[0],value/100.0))
+		slider.value_changed.connect(func(value): amount.text="%d %%" % roundi(value); ui.set_option(row[0],value/100.0))
 	ui.label_at("Velocidad de combate",680,160,390,32,21)
 	var speed = OptionButton.new(); speed.name = "CombatSpeed"
 	for text in ["Normal · 1×","Ágil · 1,5×","Rápido · 2×"]: speed.add_item(text)
