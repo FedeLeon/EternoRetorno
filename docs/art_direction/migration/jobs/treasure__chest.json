@@ -1,0 +1,22 @@
+{
+  "id": "treasure__chest",
+  "target": "assets/treasure/chest.png",
+  "family": "treasure",
+  "kind": "chest_atlas",
+  "hero": null,
+  "dimensions": [
+    1536,
+    256
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/migration/sources/chest_atlas/treasure__chest.png",
+  "queue_position": 351,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Exact SIX consecutive chest-opening poses, THREE COLUMNS by TWO ROWS on 1536x1024. Same small battered dark wooden chest, plain iron fittings and subtle violet cloth, centered same scale/feet. Poses closed, latch opening, lid cracked, half open, nearly open, fully open with restrained amber/violet pencil light. True transparent RGBA, no background/floor or labels, generous margins per cell.",
+  "references": [
+    "assets/treasure/chest.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a351c8ce-c87b-4073-862f-b7f048ead6cd.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

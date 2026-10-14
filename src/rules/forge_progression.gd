@@ -1,6 +1,6 @@
 extends RefCounted
 # Permanent purchases. No UI, animation or file writes.
-const HEROES = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
+const HEROES = ["warrior", "guardian", "rogue", "mage"]
 const TRACKS = ["weapon", "armor"]
 
 static func config() -> Dictionary:

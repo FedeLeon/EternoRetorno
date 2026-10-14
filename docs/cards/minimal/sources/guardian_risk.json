@@ -1,0 +1,44 @@
+{
+	"card": {
+		"block": 0.0,
+		"block_cost": 6.0,
+		"cost": 1.0,
+		"damage": 16.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "guardian_risk",
+		"locked": false,
+		"market_price": 160.0,
+		"name": "Escudo quebrado",
+		"owner": "guardian",
+		"pierce": false,
+		"poison": 0.0,
+		"risk": true,
+		"target": "enemy"
+	},
+	"card_id": "guardian_risk",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "guardian",
+	"id": "minimal_guardian_risk",
+	"kind": "minimal_card",
+	"motif": "One visibly cracked plain steel shield releasing a single sharp violet outward stroke.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-93166644-2498-499f-969d-037ba665b8bf.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One visibly cracked plain steel shield releasing a single sharp violet outward stroke. This is a visual metaphor for the card Escudo quebrado, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "b02258c128fb66f05189a6d9b722de6f8595894ee4c171826accc6a88bb8ac7d",
+	"source": "docs/cards/minimal/sources/guardian_risk.png",
+	"source_sha256": "efab73f6085113b003457caef2143062c926ffa81a0fe502829dc5d52f99e08b",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/guardian_risk.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

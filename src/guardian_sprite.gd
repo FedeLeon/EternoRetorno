@@ -33,7 +33,7 @@ static func frames() -> SpriteFrames:
 func _ready() -> void:
 	set_meta("hero_id", "guardian")
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	sprite = AnimatedSprite2D.new()
 	sprite.sprite_frames = frames()
 	sprite.centered = false

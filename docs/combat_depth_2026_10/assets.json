@@ -1,23 +1,5 @@
 [
   {
-    "id": "card_cleric_interrupt",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/card_cleric_interrupt.txt",
-    "source": "docs/combat_depth_2026_10/sources/card_cleric_interrupt.png",
-    "runtime": "assets/cards/art/cleric_interrupt.png",
-    "source_sha256": "f6e637b951c30b3d7a0720be8addbdaa9fefeb88bb35501180383f844ddaedae",
-    "runtime_sha256": "f6e637b951c30b3d7a0720be8addbdaa9fefeb88bb35501180383f844ddaedae"
-  },
-  {
-    "id": "card_cleric_prepared",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/card_cleric_prepared.txt",
-    "source": "docs/combat_depth_2026_10/sources/card_cleric_prepared.png",
-    "runtime": "assets/cards/art/cleric_prepared.png",
-    "source_sha256": "3f7c6abf58b549acbc1f096ac83999a489834ae4afb6c33ea1f58373eed457bb",
-    "runtime_sha256": "3f7c6abf58b549acbc1f096ac83999a489834ae4afb6c33ea1f58373eed457bb"
-  },
-  {
     "id": "card_guardian_interrupt",
     "generator": "builtin_imagegen",
     "prompt": "docs/combat_depth_2026_10/prompts/card_guardian_interrupt.txt",
@@ -54,24 +36,6 @@
     "runtime_sha256": "2b2e6524235728a84c182021ffb1ee51b4257648b12c17e2c54cdccea1817efb"
   },
   {
-    "id": "card_ranger_interrupt",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/card_ranger_interrupt.txt",
-    "source": "docs/combat_depth_2026_10/sources/card_ranger_interrupt.png",
-    "runtime": "assets/cards/art/ranger_interrupt.png",
-    "source_sha256": "329592f6f1047a0fc388b033e92aa86b95248fd880bf13b1eeb06e879e09d9e4",
-    "runtime_sha256": "329592f6f1047a0fc388b033e92aa86b95248fd880bf13b1eeb06e879e09d9e4"
-  },
-  {
-    "id": "card_ranger_prepared",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/card_ranger_prepared.txt",
-    "source": "docs/combat_depth_2026_10/sources/card_ranger_prepared.png",
-    "runtime": "assets/cards/art/ranger_prepared.png",
-    "source_sha256": "dcd872f99d2b896b4fa2de856afafc538078488ef528bea1401a4a16b0df6c3c",
-    "runtime_sha256": "dcd872f99d2b896b4fa2de856afafc538078488ef528bea1401a4a16b0df6c3c"
-  },
-  {
     "id": "card_rogue_interrupt",
     "generator": "builtin_imagegen",
     "prompt": "docs/combat_depth_2026_10/prompts/card_rogue_interrupt.txt",
@@ -106,69 +70,6 @@
     "runtime": "assets/cards/art/warrior_prepared.png",
     "source_sha256": "991d53596acd0f9af95364e1d8aca5f2dec09de791b0c3033f4527765d118b6d",
     "runtime_sha256": "991d53596acd0f9af95364e1d8aca5f2dec09de791b0c3033f4527765d118b6d"
-  },
-  {
-    "id": "cleric_attack",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_attack.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_attack.png",
-    "runtime": "assets/heroes/detail/cleric_attack.png",
-    "source_sha256": "cdd2d82915d2245e6592715e4e19c4a68643bb1eeae195d5f249a7e49d2e4e46",
-    "runtime_sha256": "ba5602d8b92b4e8dea82dd802157e326b766fe3f32aff617cfe522ec3af780a5"
-  },
-  {
-    "id": "cleric_death",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_death.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_death.png",
-    "runtime": "assets/heroes/detail/cleric_death.png",
-    "source_sha256": "282eb6aacbfb502768da21a2df330fa94ca108cbf5a2e05636a63670f7245cb5",
-    "runtime_sha256": "a9c93b16bb6fbb074ff94fa8651729a4bd6c14bb9ee7065ce23aa8839512b831"
-  },
-  {
-    "id": "cleric_guard",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_guard.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_guard.png",
-    "runtime": "assets/heroes/detail/cleric_guard.png",
-    "source_sha256": "454b7a3d9f2220db9a0c5df337148f9f64cf6253bf07dbc314fc816eef721bfa",
-    "runtime_sha256": "aadd93a3b683228313f85b9568e412d29d8838282bb18ec403acb5e4533f8a97"
-  },
-  {
-    "id": "cleric_hurt",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_hurt.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_hurt.png",
-    "runtime": "assets/heroes/detail/cleric_hurt.png",
-    "source_sha256": "d04d9d8b0595c643aa4da45aaa7581ed4dc195c254a1e4f2714a2cee16bdfe21",
-    "runtime_sha256": "f6d2814cfbd01909253c20d64fb7ee9e90736f7d4280931787f048db2bf29d29"
-  },
-  {
-    "id": "cleric_idle",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_idle.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_idle.png",
-    "runtime": "assets/heroes/detail/cleric_idle.png",
-    "source_sha256": "4c363fe2249c298cff073565d3ed9a2d717a14645d6ba844fe6db981fca9f50f",
-    "runtime_sha256": "c383ecb277d0f2ac4353195aa67754b0dc5cfd3a2c353e2ce406ffa11edaaab3"
-  },
-  {
-    "id": "cleric_run",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_run.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_run.png",
-    "runtime": "assets/heroes/detail/cleric_run.png",
-    "source_sha256": "4643274a8170b8b141fdbaad321ed4013f3bf96eec262c58c228bb72ad718c27",
-    "runtime_sha256": "3be1f62fd61fde1fdd69e039734cb38e595aa07303a8af119c26cf15d1f397df"
-  },
-  {
-    "id": "cleric_skill",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/cleric_skill.txt",
-    "source": "docs/combat_depth_2026_10/sources/cleric_skill.png",
-    "runtime": "assets/heroes/detail/cleric_skill.png",
-    "source_sha256": "38cea6a488743e6ffd9aac17f65d9fb1675a6d4949498a593ecc16f37c075cb8",
-    "runtime_sha256": "f88b2b75d1104dd80cf566f3686ed08e43abab7f24454b399fd614079b4fa4a7"
   },
   {
     "id": "dummy",
@@ -313,69 +214,6 @@
     "runtime": "assets/combat_depth/merchant.png",
     "source_sha256": "5730804a96560329254308596fe79af051d37180e59354ebdf19ea955ef502bf",
     "runtime_sha256": "5730804a96560329254308596fe79af051d37180e59354ebdf19ea955ef502bf"
-  },
-  {
-    "id": "ranger_attack",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_attack.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_attack.png",
-    "runtime": "assets/heroes/detail/ranger_attack.png",
-    "source_sha256": "7a200950a6919bb5f517e40d91ba803b129a83625360d6201da9379f7bcf7429",
-    "runtime_sha256": "bb14bcb85e2a6565136eb64aab5e9dd11ff89fab7e820110bcc71be59886bebd"
-  },
-  {
-    "id": "ranger_death",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_death.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_death.png",
-    "runtime": "assets/heroes/detail/ranger_death.png",
-    "source_sha256": "fecc3c9649f7d983884ae4756827e7a7ca7ea8cf8a8c9bb3b98ad9ab9ed81aae",
-    "runtime_sha256": "5aab0be1edca6527dd1299b69defc1ec52fd9e1eea5955b1aded15b641e802b7"
-  },
-  {
-    "id": "ranger_guard",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_guard.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_guard.png",
-    "runtime": "assets/heroes/detail/ranger_guard.png",
-    "source_sha256": "80079856e8d17035f77fe2a756a99bcbd1df703a339cdf7ef23e83ba87166b34",
-    "runtime_sha256": "9fadfdf1c24380ba0ebc8ddeee4ad5f5c01ad063448c63b4e1b5f0b5d499b8db"
-  },
-  {
-    "id": "ranger_hurt",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_hurt.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_hurt.png",
-    "runtime": "assets/heroes/detail/ranger_hurt.png",
-    "source_sha256": "ec4fe3df67bd82a6171ea18df08e717fe5760a772514e1d75a5a38218cccc694",
-    "runtime_sha256": "e129d4e3f091268b49f06d9495d4b6da14c64e710455036383899d7c15d617d2"
-  },
-  {
-    "id": "ranger_idle",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_idle.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_idle.png",
-    "runtime": "assets/heroes/detail/ranger_idle.png",
-    "source_sha256": "87c088a11178c24f206b557dee5847d41a81cebb387019ff6e1a72261bfce6d9",
-    "runtime_sha256": "daf5c6c6f8b7813d66a9c994a641b4fcd58a44df447b292cf339fcbeba798b50"
-  },
-  {
-    "id": "ranger_run",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_run.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_run.png",
-    "runtime": "assets/heroes/detail/ranger_run.png",
-    "source_sha256": "8a6ea88f867d4510d11cee3fde2ba7c81faaa77f878e7893fb2d71499ed668fa",
-    "runtime_sha256": "1575edbedf3c6846a9836631c453a2f6268470169247a1f1a9761eed301129c9"
-  },
-  {
-    "id": "ranger_skill",
-    "generator": "builtin_imagegen",
-    "prompt": "docs/combat_depth_2026_10/prompts/ranger_skill.txt",
-    "source": "docs/combat_depth_2026_10/sources/ranger_skill.png",
-    "runtime": "assets/heroes/detail/ranger_skill.png",
-    "source_sha256": "a3c9cf178b0cacdb4d725648c2bb1feaf93b96c323d6047bcaae543174e40260",
-    "runtime_sha256": "d3b208bb51adeca94e1f6a0e6b25d4eadc3484327e5d6c3977f5dad8b543c128"
   },
   {
     "id": "rogue_attack",

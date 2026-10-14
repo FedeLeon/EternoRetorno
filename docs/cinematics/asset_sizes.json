@@ -36,13 +36,11 @@
     "sha256": "6dee455d4384ad84687f353544de65367c0d82218545c5aaa068b77177e95d67"
   },
   {
-    "path": "assets/cinematics/portraits/ranger.png",
     "bytes": 579264,
     "imported_bytes": 131966,
     "sha256": "849602f56a30439b40e6d2c23be47889e683a1171a48e2353ba3994cc131a13c"
   },
   {
-    "path": "assets/cinematics/portraits/cleric.png",
     "bytes": 599807,
     "imported_bytes": 149292,
     "sha256": "5abfd6b1d5b8e24dfc75d2871317d0e0dad6e7038a1d869a27ceec177a5f80c7"

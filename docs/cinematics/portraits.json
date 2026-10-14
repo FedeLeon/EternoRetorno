@@ -58,35 +58,5 @@
     "output": "assets/cinematics/portraits/mage.png",
     "processing": "Extraction of existing HD frame; no new artwork or recoloring",
     "sha256": "6dee455d4384ad84687f353544de65367c0d82218545c5aaa068b77177e95d67"
-  },
-  {
-    "hero": "cleric",
-    "source": "assets/comic/motion/cleric_0.png",
-    "source_sha256": "35d7a2d54b36af9d5961f782116bbc271023384b8d793530b1b56dbd3c925976",
-    "frame": 5,
-    "region": [
-      768,
-      512,
-      1536,
-      1024
-    ],
-    "output": "assets/cinematics/portraits/cleric.png",
-    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
-    "sha256": "5abfd6b1d5b8e24dfc75d2871317d0e0dad6e7038a1d869a27ceec177a5f80c7"
-  },
-  {
-    "hero": "ranger",
-    "source": "assets/comic/motion/ranger_0.png",
-    "source_sha256": "ddc48ae10012b4044c7260a8528e3553b2c89e86392823db60302059729cb999",
-    "frame": 5,
-    "region": [
-      768,
-      512,
-      1536,
-      1024
-    ],
-    "output": "assets/cinematics/portraits/ranger.png",
-    "processing": "Extraction of existing HD frame; no new artwork or recoloring",
-    "sha256": "849602f56a30439b40e6d2c23be47889e683a1171a48e2353ba3994cc131a13c"
   }
 ]

@@ -54,7 +54,7 @@ func run_tests() -> void:
 	app.get_node("CinematicPlayer").finish()
 	await process_frame
 	check(app.screen == "base_camp", "Start opens camp")
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	var before = app.game.run.duplicate(true)
 	app.back()
 	await process_frame

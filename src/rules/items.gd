@@ -16,7 +16,7 @@ static func targets(game: RefCounted, id: String) -> Array:
 			var hero = game.run.heroes[i]
 			if target == "fallen" and hero.hp <= 0:
 				result.append(i)
-			elif hero.hp > 0 and (target == "living" or (target == "caster" and hero.id in ["mage", "cleric"])):
+			elif hero.hp > 0 and (target == "living" or (target == "caster" and hero.id in ["mage"])):
 				result.append(i)
 	return result
 

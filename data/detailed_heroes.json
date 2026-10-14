@@ -1,26 +1,22 @@
 {
-	"cleric": {
-		"frames": 12,
-		"idle_height": 73.9919678714859
-	},
 	"guardian": {
 		"frames": 12,
-		"idle_height": 86.883295194508
+		"idle_height": 83.7477477477477,
+		"style": "sketchbook"
 	},
 	"mage": {
 		"frames": 12,
-		"idle_height": 84.0
-	},
-	"ranger": {
-		"frames": 12,
-		"idle_height": 95.3131313131313
+		"idle_height": 81.4096916299559,
+		"style": "sketchbook"
 	},
 	"rogue": {
 		"frames": 12,
-		"idle_height": 89.8274111675127
+		"idle_height": 79.461052631579,
+		"style": "sketchbook"
 	},
 	"warrior": {
 		"frames": 12,
-		"idle_height": 67.8095238095238
+		"idle_height": 92.96,
+		"style": "sketchbook"
 	}
 }

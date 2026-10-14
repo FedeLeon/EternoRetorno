@@ -1,11 +1,10 @@
 {
   "forest_spring": {
     "name": "Manantial entre las raíces",
-    "text": "El agua brilla. La Clériga reconoce una bendición que restaura aún más vida.",
     "choices": [
-      "Beber · +8 PV por héroe (+12 con Clériga)",
       "Seguir el sendero"
-    ]
+    ],
+    "text": "Un manantial brilla entre las raíces. El grupo descansa junto al agua y recupera fuerzas."
   },
   "forest_hunter": {
     "name": "El campamento abandonado",
@@ -17,11 +16,10 @@
   },
   "forest_spirit": {
     "name": "La memoria del bosque",
-    "text": "El espíritu reconoce al Explorador y al Pícaro. Ofrece descanso y un puñado de almas.",
     "choices": [
-      "Aceptar · +5 PV (+10 con Explorador o Pícaro) y 15 almas",
       "Continuar"
-    ]
+    ],
+    "text": "Un espíritu ofrece descanso y algunas almas. Mauro reconoce las hierbas que crecen a su alrededor."
   },
   "forge_altar": {
     "name": "El altar del último herrero",

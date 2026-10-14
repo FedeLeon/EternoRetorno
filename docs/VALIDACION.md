@@ -1,3 +1,13 @@
+## Estado local posterior — 14/10/2026
+
+[Limpieza actual, inventario y validación](cleanup/2026-10-14.md): 88 suites
+aprobadas (82 iniciales y seis repetidas tras actualizar expectativas), contenido
+1502/0 y controles nativos aislados de primeros planos/campamento. Se retiraron
+recursos y herramientas sustituidos; se conservan originales activos y guardados.
+Hay advertencias de recursos vivos al cerrar varias pruebas UI, documentadas.
+Sin nueva exportación ni prueba Web/Android/dispositivo. Los resultados siguientes
+corresponden a sus fechas y no validan cambios posteriores.
+
 # Validación
 
 ## Última comprobación: equipo superpuesto en héroes (07/10/2026)

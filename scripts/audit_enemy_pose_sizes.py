@@ -14,9 +14,10 @@ for enemy, definition in catalog.items():
     if not path.exists():
         continue
     image = Image.open(path).convert('RGBA')
+    cell = image.height
     measures = []
     for index in range(8):
-        alpha = image.crop((index * 128, 0, (index + 1) * 128, 128)).getchannel('A')
+        alpha = image.crop((index * cell, 0, (index + 1) * cell, cell)).getchannel('A')
         mask = alpha.point(lambda value: 255 if value >= 128 else 0)
         left, top, right, bottom = mask.getbbox()
         measures.append({'width': right-left, 'height': bottom-top,
@@ -32,7 +33,7 @@ for enemy, definition in catalog.items():
         # Do not shrink large poses, or enlarge poses solely because wings fold.
         if pose['height'] < height*.9 and (footprint < extent*.85 or pose['area'] < area*.8):
             factors[index] = round(min(1.3, max(1.0, math.sqrt(extent/footprint), math.sqrt(area/pose['area']))), 4)
-    result[enemy] = {'scale': factors, 'bottom': [pose['bottom'] for pose in measures],
+    result[enemy] = {'scale': factors, 'bottom': [pose['bottom'] for pose in measures], 'frame_size': cell,
                      'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
 (ROOT/'data/enemy_pose_sizes.json').write_text(json.dumps(result, indent=2)+'\n')
 print(f'{len(result)} atlases measured; {sum(any(f>1 for f in r["scale"]) for r in result.values())} with small attack poses')

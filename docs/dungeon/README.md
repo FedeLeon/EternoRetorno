@@ -1,5 +1,12 @@
 # Presentación de combate
 
+## Corrección actual — 14/10/2026
+
+El [fondo de la tercera mazmorra](volcano_ground.md) se redibuja con el patio
+más arriba y pavimento continuo bajo los personajes. Fuente/prompts/hashes
+conservados; revisión nativa de los cuatro protagonistas y del jefe volcánico.
+Las secciones fechadas inferiores describen cambios históricos.
+
 Fondo generado a partir de `conceptoMazmorras.png`, guardado en
 `assets/dungeon/combat.png`. Bolsa independiente en `assets/dungeon/bag.png`.
 No se crean nuevos tipos de sala ni mecánicas de trampas en este cambio.

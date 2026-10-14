@@ -61,7 +61,7 @@ func run_tests() -> void:
 		await cut.finished
 		for pattern in definition.pattern:
 			var game = Game.new("user://unused-expansion-pattern.save", false)
-			game.new_run(["warrior", "cleric"], 12)
+			game.new_run(["warrior", "guardian"], 12)
 			game.enter_node(0)
 			game._start_combat([id])
 			var intent: Dictionary = pattern.duplicate(true)

@@ -6,7 +6,7 @@ signal menu_requested
 signal descend_requested
 
 const Dungeon = preload("res://src/dungeon.gd")
-const GOLD = Color("d8b779")
+const GOLD = Color("766080")
 var nodes: Array = []
 var available: Array = []
 var visited: Array = []
@@ -24,7 +24,7 @@ func place(node: Control, area: Rect2, parent: Node = self) -> void:
 	node.size = area.size
 	parent.add_child(node)
 
-func label(text: String, area: Rect2, font_size: int = 20, color: Color = Color("e6ddd0"), parent: Node = self) -> Label:
+func label(text: String, area: Rect2, font_size: int = 20, color: Color = Color("e9e1ee"), parent: Node = self) -> Label:
 	var node = Label.new()
 	node.text = text
 	node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -39,7 +39,7 @@ func picture(texture: Texture2D, area: Rect2, parent: Node = self) -> TextureRec
 	node.texture = texture
 	node.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	node.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	node.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	node.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(node, area, parent)
 	return node
@@ -77,7 +77,7 @@ func _ready() -> void:
 	title_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_frame.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("header_frame"))
 	place(title_frame, Rect2(360, 16, 560, 64))
-	var title = label(dungeon_name, Rect2(380, 24, 520, 48), 30, GOLD)
+	var title = label(dungeon_name, Rect2(380, 24, 520, 48), 30, Color("e7dded"))
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.add_theme_font_override("font",preload("res://src/ui/components/polish_theme.gd").HEADING)
 	action("Menú", Rect2(1068, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
@@ -101,7 +101,7 @@ func draw_route() -> void:
 			var active_path = next in available and node.id == current
 			var travelled = node.id in visited and (next in visited or next == current)
 			line.width = 3 if active_path else 2.5 if travelled else 1.5
-			line.default_color = Color("a14e20") if active_path else Color("674322") if travelled else Color(0.43,0.32,0.20,0.45)
+			line.default_color = Color("694778") if active_path else Color("62566b") if travelled else Color(0.29,0.25,0.33,0.48)
 			if node.get("layout", "") == "spiral":
 				for point in preload("res://src/map_geometry.gd").connection(node,nodes[next]):
 					line.add_point(display_point(point))
@@ -134,13 +134,13 @@ func draw_route() -> void:
 		for state in ["normal", "disabled", "hover", "pressed", "focus"]:
 			var style = StyleBoxTexture.new()
 			style.texture = preload("res://assets/map/minimal/room_papyrus.png")
-			style.modulate_color = Color("bda079") if reachable else Color("cfb58e")
+			style.modulate_color = Color("d8cbe0") if reachable else Color("a297ac")
 			if highlighted:
-				style.modulate_color = Color("ffe6a1") if node.id == current else Color("d8efb2")
+				style.modulate_color = Color("eddefa") if node.id == current else Color("d8e0ee")
 			if state in ["hover", "focus"]:
-				style.modulate_color = Color("edc285")
+				style.modulate_color = Color("efe2f7")
 			if state == "pressed":
-				style.modulate_color = Color("b18b62")
+				style.modulate_color = Color("baa7c9")
 			target.add_theme_stylebox_override(state, style)
 		var texture = load("res://assets/map/minimal/" + node.kind + ".png")
 		var icon = picture(texture, Rect2(4, 4, 48, 48), target)
@@ -156,8 +156,8 @@ func add_room_glow(center: Vector2, room_id: int, is_current: bool) -> void:
 	glow.name = "RoomGlow%d" % room_id
 	glow.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var style = StyleBoxFlat.new()
-	style.bg_color = Color(1.0, 0.82, 0.30, 0.8) if is_current else Color(0.44, 0.88, 0.69, 0.8)
-	style.shadow_color = Color(1.0, 0.73, 0.16, 0.85) if is_current else Color(0.16, 0.66, 0.44, 0.85)
+	style.bg_color = Color(0.76, 0.55, 0.95, 0.8) if is_current else Color(0.55, 0.66, 0.91, 0.8)
+	style.shadow_color = Color(0.59, 0.35, 0.8, 0.85) if is_current else Color(0.36, 0.44, 0.74, 0.85)
 	style.shadow_size = 20 if is_current else 18
 	style.set_corner_radius_all(4)
 	glow.add_theme_stylebox_override("panel", style)

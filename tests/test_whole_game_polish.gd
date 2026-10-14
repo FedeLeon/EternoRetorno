@@ -39,16 +39,13 @@ func run_tests() -> void:
 		var actor = app.enemy_art[0]
 		check(actor.has_motion_frames,"new enemy has drawn animation: "+id)
 		var texture = actor.sprite.texture.get_image()
-		var source = Image.load_from_file("res://docs/whole_game_polish/normalized/%s_motion.png" % additions[id].visual)
-		if source.get_width()%4 != 0 or source.get_height()%2 != 0:
-			source.resize(ceili(source.get_width()/4.0)*4,ceili(source.get_height()/2.0)*2,Image.INTERPOLATE_NEAREST)
 		var unique = {}
 		for frame in range(8):
-			unique[texture.get_region(Rect2i(frame*128,0,128,128)).get_data().hex_encode().sha256_text()] = true
-			var cell_size = source.get_size()/Vector2i(4,2)
-			var cell = source.get_region(Rect2i(Vector2i(frame%4,frame/4)*cell_size,cell_size))
-			var bounds = preload("res://scripts/enemy_art_import.gd").opaque_bounds(cell)
-			check(bounds.position.x>=8 and bounds.position.y>=8 and bounds.end.x<=cell_size.x-8 and bounds.end.y<=cell_size.y-8,"complete silhouette stays inside cell: %s / %d" % [id,frame])
+			unique[texture.get_region(Rect2i(frame*texture.get_height(),0,texture.get_height(),texture.get_height())).get_data().hex_encode().sha256_text()] = true
+			var cell_size = Vector2i(texture.get_height(),texture.get_height())
+			var cell = texture.get_region(Rect2i(frame*cell_size.x,0,cell_size.x,cell_size.y))
+			var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(cell,0.5)
+			check(bounds.position.x>=8 and bounds.position.y>=8 and bounds.end.x<=cell_size.x-8 and bounds.end.y<=cell_size.y-8,"complete packed silhouette keeps clear margins: %s / %d" % [id,frame])
 		check(unique.size()==8,"eight different poses: "+id)
 		var baseline = actor.sprite.position
 		actor.play_once("attack");await create_timer(0.25).timeout

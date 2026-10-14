@@ -117,18 +117,6 @@
       "prompt": "Use case: stylized-concept. Asset type: single achievement icon for Eterno Retorno dark medieval fantasy pixel-art RPG. Subject: a blue crystal staff tip with silver filigree and floating violet magic shards. Square composition, one centered readable emblem filling 75 percent of the image, ample clean margin. Mature detailed pixel art with crisp pixel clusters and deep ink shadows, antique silver and muted gold edging, subtle jewel-colored light, consistent gothic collectible badge style. Dark charcoal nearly black flat background, no outer circular medal, no UI frame, no letters, no numbers, no text, no watermark. Icon must remain legible at 80x80 pixels."
     },
     {
-      "id": "cleric_victory",
-      "asset": "assets/collection/icons/cleric_victory.png",
-      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c02d94eb-6956-4d76-9583-70abeabca12f.png",
-      "prompt": "Use case: stylized-concept. Asset type: single achievement icon for Eterno Retorno dark medieval fantasy pixel-art RPG. Subject: a golden sun staff with a white cloth ribbon and warm sacred light. Square composition, one centered readable emblem filling 75 percent of the image, ample clean margin. Mature detailed pixel art with crisp pixel clusters and deep ink shadows, antique silver and muted gold edging, subtle jewel-colored light, consistent gothic collectible badge style. Dark charcoal nearly black flat background, no outer circular medal, no UI frame, no letters, no numbers, no text, no watermark. Icon must remain legible at 80x80 pixels."
-    },
-    {
-      "id": "ranger_victory",
-      "asset": "assets/collection/icons/ranger_victory.png",
-      "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a46d17e1-a0b0-43bb-9f14-3274aa95f949.png",
-      "prompt": "Use case: stylized-concept. Asset type: single achievement icon for Eterno Retorno dark medieval fantasy pixel-art RPG. Subject: a dark wooden curved bow crossed by a glowing icy blue arrow. Square composition, one centered readable emblem filling 75 percent of the image, ample clean margin. Mature detailed pixel art with crisp pixel clusters and deep ink shadows, antique silver and muted gold edging, subtle jewel-colored light, consistent gothic collectible badge style. Dark charcoal nearly black flat background, no outer circular medal, no UI frame, no letters, no numbers, no text, no watermark. Icon must remain legible at 80x80 pixels."
-    },
-    {
       "id": "first_purchase",
       "asset": "assets/collection/icons/first_purchase.png",
       "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-915f2ad2-cccb-4af1-bc4b-11d604da7afb.png",

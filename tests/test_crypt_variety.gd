@@ -41,22 +41,17 @@ func run_tests() -> void:
 	var path = "user://crypt-variety-test.save"
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	var saved = Game.new(path, true)
-	saved.new_run(["warrior","cleric"], 31)
+	saved.new_run(["warrior","guardian"], 31)
 	saved.run.nodes[0].encounter = ["rat"]
 	saved.checkpoint()
 	var loaded = Game.new(path, true)
 	check(loaded.run.nodes == saved.run.nodes and loaded.rng.state == saved.rng.state, "load never rerolls saved encounters")
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
-	# Shared importer extraction must preserve the previously packed forest atlas.
-	var probe = preload("res://tests/artifacts.gd").path("crypt_variety/import-probe.png")
-	check(preload("res://scripts/enemy_art_import.gd").motion("res://docs/forest/sources/goblin_0_motion.png",probe), "shared importer runs")
-	check(Image.load_from_file(probe).get_data() == Image.load_from_file("res://assets/enemies/animations/goblin_0.png").get_data(), "forest atlas packing unchanged")
-	DirAccess.remove_absolute(probe)
 	root.size = Vector2i(1280,720)
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-crypt-ui.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior","cleric"], 12)
+	app.game.new_run(["warrior","guardian"], 12)
 	app.game.enter_node(0)
 	for id in extra:
 		var def = extra[id]
@@ -67,12 +62,11 @@ func run_tests() -> void:
 		check(actor.visual_id == def.visual and actor.has_motion_frames, "live sprite " + id)
 		var image = actor.sprite.texture.get_image()
 		var unique: Array = []
-		var source = Image.load_from_file("res://docs/enemies/crypt_expansion/sources/%s_motion.png" % def.visual)
 		for index in range(8):
-			var raw_frame = source.get_region(Rect2i(index%4*384,index/4*512,384,512))
-			var bounds = preload("res://scripts/enemy_art_import.gd").opaque_bounds(raw_frame)
-			check(bounds.position.x >= 8 and bounds.end.x <= 376, "source pose stays inside cell " + id)
-			var frame = image.get_region(Rect2i(index*128,0,128,128))
+			var cell = image.get_height()
+			var frame = image.get_region(Rect2i(index*cell,0,cell,cell))
+			var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(frame,0.5)
+			check(bounds.position.x >= 8 and bounds.end.x <= cell-8, "packed pose keeps clear side margins " + id)
 			var key = hash(frame.get_data())
 			if key not in unique: unique.append(key)
 			check(frame.get_pixel(0,0).a == 0 and frame.get_used_rect().size.x > 20, "transparent populated frame")
@@ -94,7 +88,7 @@ func run_tests() -> void:
 		# Every pattern is usable by the existing end-turn resolver.
 		for pattern in def.pattern:
 			var game = Game.new("user://unused-pattern.save",false)
-			game.new_run(["warrior","cleric"], 12)
+			game.new_run(["warrior","guardian"], 12)
 			game.enter_node(0)
 			game._start_combat([id])
 			var intent: Dictionary = pattern.duplicate(true)

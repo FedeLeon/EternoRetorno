@@ -1,0 +1,20 @@
+{
+  "id": "cards__art__originals",
+  "target": "assets/cards/art/originals.png",
+  "kind": "card",
+  "hero": null,
+  "transparent": false,
+  "source": "docs/art_direction/migration/sources/card/cards__art__originals.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2e4edad4-67fc-4634-803b-f4c0caf8b5e9.png",
+  "prompt": "Use case: stylized-concept. ONE production SHARED illustration atlas for the 20 basic cards of Eterno Retorno. Exactly FIVE COLUMNS by FOUR ROWS, twenty equal rectangular panels, wide 2:1 canvas approximately2048x1024. Input1 is Nicolas facial identity; Input2 Ines identity; Input3 Mauro identity; Input4 Vera identity; Input5 only graphite/colored-pencil MEDIUM and dark gray/violet palette. Do NOT copy the landscape or layout from the references. Draw all20 fresh in truly rough hand-drawn graphite and colored pencil: broken searching contours, visible directional hatch strokes, rubbed pigment and deep charcoal shadows, irregular violet marks. No shiny digital comic rendering or pixel art. ALL characters wear patched charcoal/gray civilian-derived clothes and VIOLET capes. ROW1 Nicolas: ordinary42-year-old carpenter with short brown beard and visible human face, simple gray iron helmet with visor UP, NO HORNS, NO FULL FACE MASK, NO SHIELD, only plain straight steel sword. Five panels left to right: sweeping sword cut, parrying with his SWORD, strong downward sword strike, forward sword thrust, protecting himself and one companion with sword posture. ROW2 Ines: strong auburn-haired Builder with braid, repaired gray armor and plain battered steel shield, short sword. Panels: shield bash, raising shield to block, protecting ONE companion (two people total), precise short sword lunge, steady shield stance guarding ONE ally. NO golden palace armor. ROW3 Mauro: messy dark-haired Apothecary with entirely VISIBLE HUMAN FACE, NO MASK, NO BEAK, hood pushed back, violet sash and green medicine vials. Panels: two-knife strike, evasive dark-cloak step, close view of plain knives with green poison droplets, throwing a green potion vial, using a green poison cloud. ROW4 Vera: silver-gray-haired Teacher in simple charcoal coat with violet collar, worn book and plain wooden staff. Panels: VIOLET magic bolts, VIOLET barrier, VIOLET crystal rain, VIOLET arcane projectile, VIOLET rune study/preparation. No electric BLUE magic. Clearly visible faces where a figure is shown, same identities as four portrait refs. Keep each action completely inside its own cell, large simple silhouettes, close/medium compositions to remain legible at293x156px, sparse charcoal/gray backgrounds. Panel boundaries only narrow plain dark gutters, NO card frames, NO letters, NO numbers, NO captions, NO watermark, NO menu UI. This IS intentionally a20-panel atlas; never add more or fewer panels. Main palette BLACK/GRAY/VIOLET, green only poison, a little red blood allowed. No opaque white paper rectangle outside the panels.",
+  "references": [
+    "assets/heroes/identity/portraits/warrior.png",
+    "assets/heroes/identity/portraits/guardian.png",
+    "assets/heroes/identity/portraits/rogue.png",
+    "assets/heroes/identity/portraits/mage.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": "Correct Nicolas face/helmet; all four civilian identities and violet magic"
+}

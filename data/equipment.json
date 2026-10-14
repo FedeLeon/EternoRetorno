@@ -104,7 +104,7 @@
       "effect": "magic",
       "value": 2,
       "target": "caster",
-      "description": "Maga o clériga obtiene +2 de daño por impacto de sus cartas durante este turno."
+      "description": "La Profesora gana +2 de daño mágico durante este turno."
     },
     "agility_brew": {
       "name": "Brebaje de Agilidad",

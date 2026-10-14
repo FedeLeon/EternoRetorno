@@ -1,3 +1,10 @@
+## Actualización visual — 13/10/2026
+
+Interior redibujado con grafito y lápices de colores, conservando su temática.
+[Assets, galería ampliada y pruebas actuales](../base_camp/interiors/README.md).
+
+> **Estado 13/10/2026:** cuatro protagonistas: Nicolás, Carpintero; Inés, Constructora; Mauro, Boticario; Vera, Profesora. El contenido y la compatibilidad de seis personajes descritos anteriormente quedan sustituidos por el [retiro definitivo](../cleanup/2026-10-13.md). Los resultados históricos no son pruebas del cambio actual.
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

@@ -19,7 +19,7 @@ func _initialize() -> void:
 	check(not g.build_forge(), "no duplicate construction")
 	check(not g.buy_forge_upgrade("bad", "weapon", 1), "valid hero")
 	check(not g.buy_forge_upgrade("warrior", "bad", 1), "valid track")
-	g.new_run(["warrior", "cleric"], 42)
+	g.new_run(["warrior", "guardian"], 42)
 	var initial = g.run.duplicate(true)
 	for id in g.content.heroes:
 		for track in ["weapon", "armor"]:
@@ -38,7 +38,7 @@ func _initialize() -> void:
 	var restored = Game.new(path, true)
 	check(restored.profile == g.profile and restored.run == g.run, "purchases and run reload")
 	for id in g.content.heroes:
-		var other = "cleric" if id != "cleric" else "warrior"
+		var other = "guardian" if id != "guardian" else "warrior"
 		g.new_run([id, other], 42)
 		check(g.run.heroes[0].forge.strength == 3 and g.run.heroes[0].forge.block == 6, "new run bonuses")
 		for card_id in g.content.cards:

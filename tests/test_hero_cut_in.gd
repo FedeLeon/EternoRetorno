@@ -1,8 +1,13 @@
 extends SceneTree
 const CutIn = preload("res://src/presentation/hero_cut_in.gd")
+var checks = 0
 var failures = 0
-func _initialize() -> void:
-	call_deferred("run_tests")
+func _initialize() -> void: call_deferred("run_tests")
+func check(ok: bool, message: String) -> void:
+	checks += 1
+	if not ok:
+		failures += 1
+		printerr("FAIL: ", message)
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
 	var host = Control.new()
@@ -13,57 +18,44 @@ func run_tests() -> void:
 	backdrop.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	backdrop.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	host.add_child(backdrop)
-	for kind in ["attack", "defense"]:
-		for hero in CutIn.COLORS:
+	for hero in CutIn.COLORS:
+		for kind in ["attack", "defense"]:
 			var effect = CutIn.play(host, hero, kind)
 			await process_frame
-			if effect.picture.texture == null or effect.size.x <= 0 or effect.z_index >= 200:
-				failures += 1
-			await create_timer(0.24).timeout
-			var expected_bottom = host.size.y * 1.12
-			if effect.picture.position.x > host.size.x * 0.03 or not is_equal_approx(effect.picture.position.y + effect.picture.size.y, expected_bottom):
-				failures += 1
-			if effect.picture.position.x >= 0:
-				failures += 1
-			if DisplayServer.get_name() != "headless" and hero == "warrior" and kind == "attack":
+			effect.set_process(false)
+			effect.elapsed = 0.0
+			check(effect.picture.texture != null and not effect.picture.texture is AtlasTexture, "single full image " + hero + kind)
+			check(effect.static_illustration and effect.frame_texture == null and effect.frame_grid == Vector2i.ONE, "no pose playback " + hero + kind)
+			check(effect.size == host.size and effect.z_index == 150 and effect.mouse_filter == Control.MOUSE_FILTER_IGNORE, "nonblocking foreground " + hero + kind)
+			check(effect.hero_fx != null and effect.hero_fx.get_index() < effect.picture.get_index(), "particles behind character " + hero + kind)
+			check(effect.defensive_effect == (kind == "defense"), "matching effect " + hero + kind)
+			var position: Vector2 = effect.picture.position
+			var texture: Texture2D = effect.picture.texture
+			var completed = [0]
+			effect.finished.connect(func(): completed[0] += 1)
+			for tick in range(3):
+				effect._process(0.24)
+				check(effect.picture.position == position and effect.picture.scale == Vector2.ONE, "still image transform " + hero + kind)
+				check(effect.picture.texture == texture and effect.frame_index == 0 and effect.picture.self_modulate == Color.WHITE, "unchanged artwork " + hero + kind)
+			check(position.x < 0 and is_equal_approx(position.y + effect.picture.size.y, host.size.y * 1.12), "lower left framing " + hero + kind)
+			check(effect.hero_fx.elapsed > 0.0 and effect.hero_fx.area.size.x > 0, "live background effects " + hero + kind)
+			if DisplayServer.get_name() != "headless":
 				await RenderingServer.frame_post_draw
-				root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat/comic.png"))
-			await effect.finished
+				root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("comic_static/"+hero+"_"+kind+".png"))
+			effect._process(0.25)
+			effect._process(0.25)
+			check(completed[0] == 1 and effect.modulate.a == 0, "single completion even on slow frame " + hero + kind)
 			await process_frame
-			if is_instance_valid(effect):
-				failures += 1
-	# Four attacks per hero rotate without repeating within a two/three-hit combo.
-	for hero in CutIn.COLORS:
-		var paths: Array = []
-		for index in range(5):
-			var effect = CutIn.play(host, hero)
-			await process_frame
-			if effect.picture.texture == null: failures += 1
-			paths.append(effect.texture_path)
-			effect.queue_free()
-			await process_frame
-		if paths.slice(0, 4).size() != 4 or paths[0] != paths[4]: failures += 1
-		for first in range(4):
-			for second in range(first + 1, 4):
-				if paths[first] == paths[second]: failures += 1
-	# A slow render frame must advance at most one pose; fade uses the same clock.
-	var slow = CutIn.play(host, "warrior", "defense")
-	slow.set_process(false)
-	var completed = [0]
-	slow.finished.connect(func(): completed[0] += 1)
-	var observed = [slow.frame_index]
-	for tick in range(20):
-		slow._process(0.25)
-		if slow.frame_index != observed.back(): observed.append(slow.frame_index)
-		if slow.is_queued_for_deletion(): break
-	if observed != range(16) or completed[0] != 1 or slow.modulate.a != 0.0:
-		printerr("Slow-frame regression: ", observed, " completed=", completed[0], " alpha=", slow.modulate.a)
-		failures += 1
+			check(not is_instance_valid(effect), "effect freed " + hero + kind)
+	# Every hit of a combo uses the same static artwork.
+	for _hit in range(3):
+		var effect = CutIn.play(host, "warrior", "attack")
+		await process_frame
+		check(effect.texture_path.ends_with("warrior_attack.png"), "combo remains static")
+		effect.queue_free()
+		await process_frame
+	check(CutIn.play(host, "missing") == null and CutIn.play(host, "warrior", "missing") == null, "invalid request ignored")
+	host.queue_free()
 	await process_frame
-	if is_instance_valid(slow):
-		printerr("Slow-frame effect was not freed")
-		failures += 1
-	if CutIn.play(host, "missing") != null:
-		failures += 1
-	print("COMIC: 6 heroes, 4 attack variants + defense, rotation, cleanup, missing ID | FAILURES: ", failures)
+	print("STATIC HERO CUT-IN: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

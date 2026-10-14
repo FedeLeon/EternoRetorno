@@ -19,19 +19,21 @@ def policy(path):
         return 0, 0.9, 256
     if path.startswith('assets/combat_depth/'):
         return 1, 0.9, 512 if path.endswith('/roots.png') else (0 if path.endswith('/dummy.png') else 1280)
-    if path == 'assets/base_camp/built_ground.png':
-        return 1, 0.85, 1280
     # Atlas regions in sprites and original card art use fixed pixel coordinates.
     if path.startswith('assets/encounters/'):
         return 1, 0.85, 1280
     if path.startswith('assets/collection/icons/'):
         return 0, 0.85, 256
+    if path.startswith('assets/comic/static/'):
+        return 1, 0.9, 0  # Full-resolution static hero illustrations with alpha.
     if path.startswith('assets/comic/'):
         return 1, 0.85, 0  # Keep animation frames and portrait crops unchanged.
-    if path.startswith('assets/cards/art/'):
-        return 1, 0.85, 0 if path.endswith('/originals.png') else 512
+    if path.startswith('assets/cards/art/minimal/'):
+        return 0, 0.9, 512  # Sparse pencil strokes: lossless bounded illustrations.
     if path.startswith('assets/cards/frames/'):
         return 0, 0.7, 768
+    if path == 'assets/map/minimal/parchment.png':
+        return 0, 0.85, 1280  # Full-screen drawing, not a node icon.
     if path.startswith('assets/map/minimal/'):
         return 0, 0.7, 192
     if path in ['assets/map/group_tab.png', 'assets/equipment/door.png', 'assets/dungeon/bag.png', 'assets/ui/end_turn_round.png']:

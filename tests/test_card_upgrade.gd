@@ -16,7 +16,7 @@ func run_tests() -> void:
 	var app = load("res://main.tscn").instantiate()
 	app.game = preload("res://src/game.gd").new("user://unused-upgrade.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.run.current = app.game.run.nodes.filter(func(node): return node.kind == "rest")[0].id
 	app.game.run.phase = "room"
 	app.game.run.deck[2].upgraded = true

@@ -8,8 +8,18 @@ static func definition(id: String) -> Dictionary:
 		if contract.id == id: return contract
 	return {}
 
-static func migrate(profile: Dictionary) -> bool:
-	if profile.has("expeditions"): return false
+static func migrate(profile: Dictionary, run: Dictionary = {}) -> bool:
+	if profile.has("expeditions"):
+		var state = profile.expeditions
+		var invalid_selection = not state.selected.is_empty() and definition(state.selected).is_empty()
+		if invalid_selection or state.offers.any(func(id): return definition(id).is_empty() or not preload("res://src/rules/hero_roster.gd").supports(definition(id).get("party",[]))):
+			var selected: String = state.selected
+			refresh(profile)
+			if not definition(selected).is_empty() and preload("res://src/rules/hero_roster.gd").supports(definition(selected).get("party",[])):
+				if selected not in state.offers: state.offers[0] = selected
+				state.selected = selected
+			return true
+		return false
 	profile.expeditions = {"cycle": 0, "offers": [], "selected": "", "last": {}}
 	refresh(profile)
 	return true
@@ -21,6 +31,7 @@ static func refresh(profile: Dictionary) -> void:
 	var general: Array = []
 	for contract in catalog():
 		if contract.id in previous: continue
+		if not preload("res://src/rules/hero_roster.gd").supports(contract.party): continue
 		if contract.party.size() == 2: pairs.append(contract.id)
 		else: general.append(contract.id)
 	var random = RandomNumberGenerator.new()

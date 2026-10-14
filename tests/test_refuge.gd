@@ -53,9 +53,9 @@ func run_tests() -> void:
 	await click(app.layer.get_node("CampTent"))
 	check(app.screen == "refuge", "camp tent opens refuge")
 	var view = app.layer.get_node("RefugeScreen")
-	check(view.body.find_children("RefugeHero_*", "Button", true, false).size() == 6, "six hero cards")
+	check(view.body.find_children("RefugeHero_*", "Button", true, false).size() == 4, "four active hero cards")
 	await shot("heroes")
-	for hero in app.game.content.heroes:
+	for hero in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		var portrait = view.body.get_node("RefugeHero_" + hero)
 		check(portrait.get_node("ComicPortrait").texture is AtlasTexture, "reuse cropped comic art")
 		await click(portrait)

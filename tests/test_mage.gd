@@ -48,7 +48,7 @@ func run_tests() -> void:
 	app.open_selection()
 	await create_timer(0.2).timeout
 	await shot("selection")
-	app.game.new_run(["mage", "cleric"], 42)
+	app.game.new_run(["mage", "guardian"], 42)
 	app.game.enter_node(0)
 	app.game.run.combat.enemies[0].hp = 100
 	app.game.run.combat.enemies[0].max_hp = 100
@@ -116,7 +116,7 @@ func run_tests() -> void:
 	await shot("fallen")
 	app.game.run.combat.enemies[0].hp = 1
 	app.game.run.combat.energy = 3
-	app.game.run.combat.hand = [{"id": "cleric_light", "upgraded": false}]
+	app.game.run.combat.hand = [{"id": "guardian_strike", "upgraded": false}]
 	app.continue_run()
 	app.animate_combat_action(0, 0)
 	while app.combat_busy and app.hero_art[0].sprite.animation != "revive":
@@ -126,7 +126,7 @@ func run_tests() -> void:
 	await shot("revive")
 	await settled()
 	check(app.screen == "reward" and app.game.run.heroes[0].hp == 11, "recovery preserves 25 percent rule")
-	app.game.new_run(["mage", "cleric"], 1)
+	app.game.new_run(["mage", "guardian"], 1)
 	app.game.enter_node(0)
 	app.game.run.heroes[0].hp = 1
 	app.game.run.heroes[1].hp = 1

@@ -1,0 +1,41 @@
+{
+	"card": {
+		"block": 4.0,
+		"cost": 1.0,
+		"damage": 7.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "warrior_charge",
+		"locked": false,
+		"name": "Embestida",
+		"owner": "warrior",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "enemy"
+	},
+	"card_id": "warrior_charge",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "warrior",
+	"id": "minimal_warrior_charge",
+	"kind": "minimal_card",
+	"motif": "A cropped armored shoulder and sword tip pushing forward, one short violet wedge of momentum. No face or scene.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-59cc9c6e-f404-414b-be7b-6373f5a2b44e.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: A cropped armored shoulder and sword tip pushing forward, one short violet wedge of momentum. No face or scene. This is a visual metaphor for the card Embestida, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "36e6244d89246e256d54fde220b8b2fef945670b32144f760e57cfce756ab5d6",
+	"source": "docs/cards/minimal/sources/warrior_charge.png",
+	"source_sha256": "c53a956af170e940b4257422da0ccecab52e0d042cd6708778260da40b74e595",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/warrior_charge.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

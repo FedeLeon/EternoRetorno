@@ -1,0 +1,22 @@
+{
+  "id": "cards__art__mage_frost_bind",
+  "target": "assets/cards/art/mage_frost_bind.png",
+  "family": "cards/art",
+  "kind": "card",
+  "hero": "mage",
+  "dimensions": [
+    512,
+    341
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/migration/sources/card/cards__art__mage_frost_bind_rejected_collage.png",
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Any protagonist depicted MUST be Vera the Teacher, adult ordinary woman with silver-gray hair, charcoal long coat and violet collar/cloak, worn book and simple wooden staff with violet crystal. Its new face/outfit replaces the old design. Card illustration asset assets/cards/art/mage_frost_bind.png. Keep the same action meaning and minimal silhouette-driven composition as reference, but draw real graphite/colored-pencil marks instead of hard-edged digital comic shapes. Dark gray/violet setting, visible protagonist face when shown and new outfit/weapon, a few energetic pencil strokes rather than huge neon bloom. For originals.png: exactly FIVE COLUMNS by FOUR ROWS of TWENTY separate illustration panels, first row Nicolas/sword, second Ines/shield, third Mauro/knives and green poison with FACE VISIBLE, fourth Vera/staff. Keep same action ordering as old atlas. NO frames, labels, costs or text. Landscape.",
+  "references": [
+    "assets/cards/art/mage_frost_bind.png",
+    "assets/heroes/identity/sketchbook.png",
+    "assets/heroes/identity/portraits/mage.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-98f690ad-669f-4a31-84db-43a1d3036f86.png",
+  "tool": "image_gen.imagegen",
+  "status": "rejected_collage"
+}

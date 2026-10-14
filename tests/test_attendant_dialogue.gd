@@ -59,7 +59,7 @@ func run_tests():
 			for n in range(labels.size() - 1):
 				check(labels[n].get_rect().end.y <= labels[n + 1].position.y, "specialization labels do not overlap: " + hero)
 			check(labels[-1].get_rect().end.y < card.get_node("LearnSpecialization").position.y, "status leaves button clear")
-		if hero == "cleric": await shot("church-specializations")
+		if hero == "guardian": await shot("church-specializations")
 	# All 30 contracts must fit, including the longest descriptions.
 	var contracts = preload("res://src/rules/expeditions.gd").catalog()
 	for contract in contracts:

@@ -18,8 +18,8 @@ func run_tests() -> void:
 	var gallery = Control.new()
 	app.add_child(gallery)
 	var index = 0
-	for owner in ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]:
-		app.game.new_run([owner, "warrior" if owner != "warrior" else "cleric"], 12)
+	for owner in ["warrior", "guardian", "rogue", "mage"]:
+		app.game.new_run([owner, "warrior" if owner != "warrior" else "guardian"], 12)
 		for id in app.game.content.cards:
 			if app.game.content.cards[id].owner != owner:
 				continue
@@ -45,7 +45,7 @@ func run_tests() -> void:
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("cards/gallery.png"))
 	gallery.free()
-	app.game.new_run(["warrior", "cleric"], 12)
+	app.game.new_run(["warrior", "guardian"], 12)
 	app.game.enter_node(0)
 	app.game.run.combat.hand = [{"id": "warrior_slash", "upgraded": false}]
 	app.continue_run()

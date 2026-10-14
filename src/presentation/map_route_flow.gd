@@ -21,7 +21,7 @@ func _draw() -> void:
 		if distance <= lengths[i]:
 			var t = (distance-previous)/maxf(0.001,lengths[i]-previous)
 			var point = points[i].lerp(points[i+1],t)
-			draw_circle(point,3.0,Color("43745a"))
-			draw_circle(point,1.2,Color("f3eac5"))
+			draw_circle(point,3.0,Color("766080"))
+			draw_circle(point,1.2,Color("dfd3e9"))
 			return
 		previous = lengths[i]

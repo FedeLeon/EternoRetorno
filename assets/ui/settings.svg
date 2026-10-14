@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-<defs><linearGradient id="metal" x2="0" y2="1"><stop stop-color="#f4d697"/><stop offset=".5" stop-color="#a98449"/><stop offset="1" stop-color="#5d4630"/></linearGradient></defs>
-<path d="M26 4h12l2 9 5 3 8-3 6 10-7 6v6l7 6-6 10-9-3-4 3-2 9H26l-2-9-5-3-8 3-6-10 7-6v-6l-7-6 6-10 8 3 5-3z" fill="url(#metal)" stroke="#221d1c" stroke-width="3"/>
-<circle cx="32" cy="32" r="17" fill="#747983" stroke="#ead09a" stroke-width="2"/>
-<circle cx="32" cy="32" r="10" fill="#171b26" stroke="#30292a" stroke-width="4"/>
-<path d="M20 25a14 14 0 0 1 23-3" fill="none" stroke="#cbd0d5" stroke-width="2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" preserveAspectRatio="none" viewBox="0 0 64 64"><path d="M25 5L39 5L41 13L48 17L56 15L61 29L54 34L53 42L58 49L47 59L40 53L32 55L26 61L13 53L15 45L10 39L2 36L4 22L12 20L17 14L17 7Z" fill="#1b1722" stroke="#bbb0c8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 25Q46 34 39 41Q31 47 23 39Q17 31 25 24Q34 18 42 25Z" fill="none" stroke="#897393" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M27 10L37 10 M8 26L12 26 M44 51L49 46" fill="none" stroke="#bbb0c8" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></svg>

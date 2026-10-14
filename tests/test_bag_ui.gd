@@ -17,7 +17,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = preload("res://src/game.gd").new("user://unused-bag.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)
 	app.screen = "items"
 	app.render()

@@ -20,13 +20,13 @@ func preview() -> void:
 	background.color = Color("161e2b")
 	background.size = Vector2(1280, 720)
 	root.add_child(background)
-	label_at("ETERNO RETORNO · Actores con detalle de 128 px", 0, 22, 1280, 26)
+	label_at("ETERNO RETORNO · Actores sketchbook", 0, 22, 1280, 26)
 	label_at("Mismo tamaño en juego · fuentes originales con más detalle", 0, 61, 1280)
-	var heroes = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
-	var names = ["Guerrero", "Guardiana", "Pícaro", "Maga", "Clériga", "Explorador"]
-	for i in range(6):
+	var heroes = ["warrior", "guardian", "rogue", "mage"]
+	var names = ["Carpintero", "Constructora", "Boticario", "Profesora"]
+	for i in range(heroes.size()):
 		var hero = load("res://src/" + heroes[i] + "_sprite.gd").new()
-		hero.position = Vector2(34 + i * 208, 117)
+		hero.position = Vector2(110 + i * 275, 117)
 		hero.size = Vector2(144, 136)
 		hero.pivot_offset = Vector2(72, 136)
 		hero.scale = Vector2.ONE * 1.25

@@ -6,13 +6,13 @@ static func choose(game: RefCounted, id: String, choice: int) -> bool:
 		return true
 	match id:
 		"forest_spring":
-			for hero in run.heroes: hero.hp = mini(hero.max_hp, hero.hp + (12 if "cleric" in run.party else 8))
+			for hero in run.heroes: hero.hp = mini(hero.max_hp, hero.hp + 8)
 		"forest_hunter", "forge_altar":
 			run.card_event = "remove" if id == "forest_hunter" else "transform"
 			run.phase = "event_cards"
 			return true
 		"forest_spirit":
-			for hero in run.heroes: hero.hp = mini(hero.max_hp, hero.hp + (10 if "ranger" in run.party or "rogue" in run.party else 5))
+			for hero in run.heroes: hero.hp = mini(hero.max_hp, hero.hp + (10 if "rogue" in run.party else 5))
 			game.profile.souls += 15
 			preload("res://src/rules/adventure_extensions.gd").statistic(run, "souls", 15)
 		"ash_archive":

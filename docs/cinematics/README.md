@@ -1,3 +1,16 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
+# Cinemáticas sketchbook — 14/10/2026
+
+Diecisiete escenas nuevas: introducción, historias civiles de los cuatro héroes y
+victorias de los tres guardianes. Los escenarios finales corresponden a cripta,
+bosque y fortaleza; rostros/vestimenta siguen la identidad actual. Prueba local:
+84 comprobaciones sin fallos. [Prompts, fuentes y límites](../art_direction/migration/README.md).
+Se conserva debajo la documentación histórica.
+
 # Cinemáticas y pulido integral — 08/10/2026
 
 ## Entrega

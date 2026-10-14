@@ -1,3 +1,12 @@
+## Conversión sketchbook — 14/10/2026
+
+Las 56 apariencias usan ocho poses dibujadas (celdas de 256 px) y cuatro dibujos
+transparentes de primer plano por enemigo. Los fallbacks comparten escala/apoyo;
+la presentación calcula la celda real, incluido daño y cenizas. Validación local:
+867 comprobaciones de tamaño/apoyo y prueba de primeros planos sin fallos.
+[Fuentes y límites](../art_direction/migration/README.md). Las secciones anteriores
+al cambio conservadas debajo son históricas.
+
 # Biblioteca de enemigos
 
 ## Seis conceptos adicionales y animación por familia — 08/10/2026

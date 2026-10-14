@@ -1,5 +1,5 @@
 extends Control
-## Shared foreground comic animation; presentation only.
+## Shared foreground presentation: static hero art or enemy pose sheets.
 signal finished
 const DURATION = 0.72
 var duration = DURATION
@@ -14,7 +14,10 @@ var frame_grid = Vector2i.ONE
 var frame_index = 0
 var frame_texture: AtlasTexture
 var enhanced_lights = false
+var sketch_style = false
 var defensive_effect = false
+var static_illustration = false
+var completed = false
 var hero_fx: Control
 
 func _ready() -> void:
@@ -39,6 +42,7 @@ func _ready() -> void:
 		hero_fx = preload("res://src/presentation/hero_comic_fx.gd").new()
 		hero_fx.name = "HeroLights"
 		add_child(hero_fx)
+		if static_illustration: move_child(hero_fx, 0) # Particles behind the character.
 	_layout()
 	resized.connect(_layout)
 	modulate.a = 0.0
@@ -51,23 +55,21 @@ func _layout() -> void:
 	picture.position = Vector2(_rest_x(), size.y - height + size.y * framing_offset.y)
 
 func _process(delta: float) -> void:
-	# First-use texture uploads or a slow frame must not skip the new hero poses.
-	# Fade and lifetime follow this same visual clock, including on slow devices.
-	elapsed += minf(delta, duration / (frame_grid.x * frame_grid.y) * preload("res://src/presentation/preferences.gd").speed()) if enhanced_lights else delta
+	if completed: return
+	# Static illustrations have no pose clock, movement, zoom or artwork flashing.
+	elapsed += delta
 	modulate.a = minf(clampf(elapsed / 0.10, 0.0, 1.0), clampf((duration - elapsed) / 0.16, 0.0, 1.0))
-	# Frame animation and framing share the same clock.
-	_update_frame()
-	var entry = 1.0 - pow(1.0 - clampf(elapsed / 0.14, 0.0, 1.0), 3.0)
-	picture.position.x = _rest_x() + (1.0 if from_right else -1.0) * (1.0 - entry) * picture.size.x * 0.7
-	picture.pivot_offset = Vector2(picture.size.x if from_right else 0.0, picture.size.y)
-	picture.scale = Vector2.ONE * (1.0 + minf(elapsed / duration, 1.0) * DURATION * 0.035)
+	if not static_illustration:
+		_update_frame()
+		var entry = 1.0 - pow(1.0 - clampf(elapsed / 0.14, 0.0, 1.0), 3.0)
+		picture.position.x = _rest_x() + (1.0 if from_right else -1.0) * (1.0 - entry) * picture.size.x * 0.7
+		picture.pivot_offset = Vector2(picture.size.x if from_right else 0.0, picture.size.y)
+		picture.scale = Vector2.ONE * (1.0 + minf(elapsed / duration, 1.0) * DURATION * 0.035)
 	if enhanced_lights:
-		# Brief highlights on the artwork itself; transparent pixels remain transparent.
-		var flash = pow(maxf(0.0, sin(elapsed / duration * PI)), 6.0)
-		picture.self_modulate = Color(1.0 + flash * 0.32, 1.0 + flash * 0.32, 1.0 + flash * 0.32)
 		hero_fx.present(Rect2(picture.position, picture.size * picture.scale), elapsed / duration * DURATION, accent, defensive_effect)
 	queue_redraw()
 	if elapsed >= duration:
+		completed = true
 		finished.emit()
 		queue_free()
 
@@ -79,7 +81,12 @@ func _draw() -> void:
 		var travel = fmod(i * 173.0 + elapsed * 1200.0, area.size.x)
 		var x = area.end.x - travel if from_right else area.position.x + travel
 		var length = minf(60 + (i % 5) * 20, x - area.position.x if from_right else area.end.x - x)
-		draw_line(Vector2(x, y), Vector2(x - length if from_right else x + length, y - 12), Color(accent, 0.65), 1 + i % 3)
+		var start = Vector2(x, y)
+		var end = Vector2(x - length if from_right else x + length, y - 12)
+		if sketch_style:
+			draw_line(start, start.lerp(end, 0.65), Color(accent, 0.32), 1.0, true)
+			draw_line(start.lerp(end, 0.78) + Vector2(0, 1), end, Color(accent, 0.22), 1.0, true)
+		else: draw_line(start, end, Color(accent, 0.65), 1 + i % 3)
 
 func _rest_x() -> float:
 	return (size.x * 0.985 - picture.size.x if from_right else size.x * 0.015) + size.x * framing_offset.x

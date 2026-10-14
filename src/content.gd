@@ -37,6 +37,11 @@ func _init() -> void:
 	var objects = preload("res://src/data/json_catalog.gd").dictionary("res://data/equipment.json")
 	equipment = objects.relics
 	items = objects.items
+	var lives = preload("res://src/data/json_catalog.gd").dictionary("res://data/hero_lives.json").heroes
+	for id in lives:
+		if not heroes.has(id): continue
+		heroes[id].civilian = lives[id].duplicate(true)
+		heroes[id].lore = lives[id].hook
 
 func card(instance: Dictionary) -> Dictionary:
 	var result = cards[instance.id].duplicate(true)

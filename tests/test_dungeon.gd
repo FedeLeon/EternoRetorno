@@ -21,7 +21,7 @@ func walk(nodes: Array, id: int, path: Array) -> void:
 		walk(nodes, next, next_path)
 func _initialize() -> void:
 	var g = Game.new("user://unused-dungeon-test.save", false)
-	g.new_run(["warrior", "cleric"], 42)
+	g.new_run(["warrior", "guardian"], 42)
 	var nodes = g.run.nodes
 	check(nodes.size() == 28, "28 rooms")
 	check(nodes.any(func(n): return n.next.size() == 3), "three-way forks")

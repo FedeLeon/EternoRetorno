@@ -9,7 +9,7 @@ func check(ok: bool, message: String):
 		failures += 1
 		printerr(message)
 func run_tests():
-	for hero in ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]:
+	for hero in ["warrior", "guardian", "rogue", "mage"]:
 		var actor = load("res://src/%s_sprite.gd" % hero).new()
 		root.add_child(actor)
 		for gear in [{}, {"weapon":0,"armor":0}, {"weapon":3,"armor":3}]:

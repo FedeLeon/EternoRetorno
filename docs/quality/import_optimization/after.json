@@ -42,125 +42,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/cards/art/cleric_absolution.png",
-    "bytes": 39494,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_benediction.png",
-    "bytes": 37030,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_blessing.png",
-    "bytes": 23728,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_candle.png",
-    "bytes": 63490,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_censure.png",
-    "bytes": 36832,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_covenant.png",
-    "bytes": 31302,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_dawn.png",
-    "bytes": 31470,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_interrupt.png",
-    "bytes": 46660,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_mend.png",
-    "bytes": 57706,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_mercy.png",
-    "bytes": 61728,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_prepared.png",
-    "bytes": 48350,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_purging_ray.png",
-    "bytes": 64002,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_radiance.png",
-    "bytes": 69956,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_radiant_judgment.png",
-    "bytes": 34342,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_rebirth.png",
-    "bytes": 34686,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_refuge.png",
-    "bytes": 60474,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/cleric_risk.png",
-    "bytes": 32486,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
     "asset": "assets/cards/art/guardian_aegis.png",
     "bytes": 65094,
     "mode": 1,
@@ -406,125 +287,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/cards/art/ranger_eagle_eye.png",
-    "bytes": 30604,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_field_aid.png",
-    "bytes": 26164,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_horizon.png",
-    "bytes": 57268,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_hunters_focus.png",
-    "bytes": 31660,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_interrupt.png",
-    "bytes": 45434,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_piercing_shot.png",
-    "bytes": 61702,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_prepared.png",
-    "bytes": 41120,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_quick_arrow.png",
-    "bytes": 59306,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_rain.png",
-    "bytes": 73608,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_risk.png",
-    "bytes": 26846,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_sidestep.png",
-    "bytes": 57428,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_silver_arrow.png",
-    "bytes": 59300,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_split_arrow.png",
-    "bytes": 33748,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_tendon_shot.png",
-    "bytes": 31018,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_triple_shot.png",
-    "bytes": 57528,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_volley.png",
-    "bytes": 62870,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
-    "asset": "assets/cards/art/ranger_withdraw.png",
-    "bytes": 68296,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 512
-  },
-  {
     "asset": "assets/cards/art/rogue_adrenaline.png",
     "bytes": 31538,
     "mode": 1,
@@ -763,13 +525,6 @@
     "size_limit": 512
   },
   {
-    "asset": "assets/cards/frames/cleric.png",
-    "bytes": 393578,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 768
-  },
-  {
     "asset": "assets/cards/frames/guardian.png",
     "bytes": 405166,
     "mode": 0,
@@ -779,13 +534,6 @@
   {
     "asset": "assets/cards/frames/mage.png",
     "bytes": 398890,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 768
-  },
-  {
-    "asset": "assets/cards/frames/ranger.png",
-    "bytes": 382022,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 768
@@ -807,20 +555,6 @@
   {
     "asset": "assets/church/building.png",
     "bytes": 270134,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/church/cleric_aegis.png",
-    "bytes": 312244,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/church/cleric_healer.png",
-    "bytes": 294024,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0
@@ -861,20 +595,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/church/ranger_precision.png",
-    "bytes": 265680,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/church/ranger_scout.png",
-    "bytes": 262288,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/church/rogue_assassin.png",
     "bytes": 270060,
     "mode": 0,
@@ -903,25 +623,11 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/cleric/cleric-128.png",
-    "bytes": 508582,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/collection/background.png",
     "bytes": 132650,
     "mode": 1,
     "quality": 0.85,
     "size_limit": 1280
-  },
-  {
-    "asset": "assets/collection/icons/cleric_victory.png",
-    "bytes": 71690,
-    "mode": 0,
-    "quality": 0.85,
-    "size_limit": 256
   },
   {
     "asset": "assets/collection/icons/fifty_battles.png",
@@ -1057,13 +763,6 @@
     "size_limit": 256
   },
   {
-    "asset": "assets/collection/icons/ranger_victory.png",
-    "bytes": 74202,
-    "mode": 0,
-    "quality": 0.85,
-    "size_limit": 256
-  },
-  {
     "asset": "assets/collection/icons/rogue_victory.png",
     "bytes": 75720,
     "mode": 0,
@@ -1153,13 +852,6 @@
     "mode": 1,
     "quality": 0.9,
     "size_limit": 1280
-  },
-  {
-    "asset": "assets/comic/cleric.png",
-    "bytes": 623580,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
   },
   {
     "asset": "assets/comic/enemies/bandit_0.png",
@@ -1484,41 +1176,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/comic/motion/cleric_0.png",
-    "bytes": 1971018,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/cleric_1.png",
-    "bytes": 2042152,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/cleric_2.png",
-    "bytes": 2192294,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/cleric_3.png",
-    "bytes": 1921144,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/cleric_defense.png",
-    "bytes": 2347064,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/comic/motion/guardian_0.png",
     "bytes": 2207332,
     "mode": 1,
@@ -1589,41 +1246,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/comic/motion/ranger_0.png",
-    "bytes": 1698828,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/ranger_1.png",
-    "bytes": 1633144,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/ranger_2.png",
-    "bytes": 1927572,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/ranger_3.png",
-    "bytes": 1776436,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/motion/ranger_defense.png",
-    "bytes": 1861732,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/comic/motion/rogue_0.png",
     "bytes": 1583594,
     "mode": 1,
@@ -1689,13 +1311,6 @@
   {
     "asset": "assets/comic/motion/warrior_defense.png",
     "bytes": 2135224,
-    "mode": 1,
-    "quality": 0.85,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/comic/ranger.png",
-    "bytes": 486546,
     "mode": 1,
     "quality": 0.85,
     "size_limit": 0
@@ -2604,118 +2219,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/forge/heroes/cleric_w0_a0.png",
-    "bytes": 458886,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w0_a1.png",
-    "bytes": 476468,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w0_a2.png",
-    "bytes": 463248,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w0_a3.png",
-    "bytes": 471814,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w1_a0.png",
-    "bytes": 476114,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w1_a1.png",
-    "bytes": 491344,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w1_a2.png",
-    "bytes": 497038,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w1_a3.png",
-    "bytes": 477768,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w2_a0.png",
-    "bytes": 493440,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w2_a1.png",
-    "bytes": 490244,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w2_a2.png",
-    "bytes": 494564,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w2_a3.png",
-    "bytes": 516950,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w3_a0.png",
-    "bytes": 490928,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w3_a1.png",
-    "bytes": 499352,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w3_a2.png",
-    "bytes": 504416,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/cleric_w3_a3.png",
-    "bytes": 518470,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/forge/heroes/guardian_w0_a0.png",
     "bytes": 550198,
     "mode": 0,
@@ -2935,118 +2438,6 @@
   {
     "asset": "assets/forge/heroes/mage_w3_a3.png",
     "bytes": 512358,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w0_a0.png",
-    "bytes": 394018,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w0_a1.png",
-    "bytes": 410254,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w0_a2.png",
-    "bytes": 404066,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w0_a3.png",
-    "bytes": 439856,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w1_a0.png",
-    "bytes": 411696,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w1_a1.png",
-    "bytes": 443748,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w1_a2.png",
-    "bytes": 429388,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w1_a3.png",
-    "bytes": 445592,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w2_a0.png",
-    "bytes": 440996,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w2_a1.png",
-    "bytes": 445636,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w2_a2.png",
-    "bytes": 453032,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w2_a3.png",
-    "bytes": 450490,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w3_a0.png",
-    "bytes": 434204,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w3_a1.png",
-    "bytes": 443218,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w3_a2.png",
-    "bytes": 464442,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/heroes/ranger_w3_a3.png",
-    "bytes": 487322,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0
@@ -3297,27 +2688,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/forge/icons/cleric_1.png",
-    "bytes": 13290,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/icons/cleric_2.png",
-    "bytes": 15520,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/icons/cleric_3.png",
-    "bytes": 16858,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/forge/icons/guardian_1.png",
     "bytes": 19420,
     "mode": 0,
@@ -3355,27 +2725,6 @@
   {
     "asset": "assets/forge/icons/mage_3.png",
     "bytes": 19050,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/icons/ranger_1.png",
-    "bytes": 13744,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/icons/ranger_2.png",
-    "bytes": 18858,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/forge/icons/ranger_3.png",
-    "bytes": 20124,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0
@@ -3437,27 +2786,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/heroes/actions/cleric_charged.png",
-    "bytes": 230064,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/actions/cleric_sweep.png",
-    "bytes": 339528,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/actions/cleric_thrust.png",
-    "bytes": 201080,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/heroes/actions/guardian_charged.png",
     "bytes": 380726,
     "mode": 1,
@@ -3500,27 +2828,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/heroes/actions/ranger_charged.png",
-    "bytes": 345588,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/actions/ranger_sweep.png",
-    "bytes": 353402,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/actions/ranger_thrust.png",
-    "bytes": 393290,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/heroes/actions/rogue_charged.png",
     "bytes": 342474,
     "mode": 1,
@@ -3558,55 +2865,6 @@
   {
     "asset": "assets/heroes/actions/warrior_thrust.png",
     "bytes": 273950,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_attack.png",
-    "bytes": 208274,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_death.png",
-    "bytes": 162312,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_guard.png",
-    "bytes": 197900,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_hurt.png",
-    "bytes": 192188,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_idle.png",
-    "bytes": 214048,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_run.png",
-    "bytes": 198654,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/cleric_skill.png",
-    "bytes": 205992,
     "mode": 1,
     "quality": 0.9,
     "size_limit": 0
@@ -3710,55 +2968,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/heroes/detail/ranger_attack.png",
-    "bytes": 237404,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_death.png",
-    "bytes": 193836,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_guard.png",
-    "bytes": 267730,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_hurt.png",
-    "bytes": 238508,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_idle.png",
-    "bytes": 244962,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_run.png",
-    "bytes": 224654,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/detail/ranger_skill.png",
-    "bytes": 254856,
-    "mode": 1,
-    "quality": 0.9,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/heroes/detail/rogue_attack.png",
     "bytes": 224280,
     "mode": 1,
@@ -3857,48 +3066,6 @@
     "size_limit": 0
   },
   {
-    "asset": "assets/heroes/equipment/cleric_armor_1.png",
-    "bytes": 85270,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/cleric_armor_2.png",
-    "bytes": 94378,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/cleric_armor_3.png",
-    "bytes": 105000,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/cleric_weapon_1.png",
-    "bytes": 70658,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/cleric_weapon_2.png",
-    "bytes": 88042,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/cleric_weapon_3.png",
-    "bytes": 105868,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
     "asset": "assets/heroes/equipment/guardian_armor_1.png",
     "bytes": 85072,
     "mode": 0,
@@ -3978,48 +3145,6 @@
   {
     "asset": "assets/heroes/equipment/mage_weapon_3.png",
     "bytes": 100892,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_armor_1.png",
-    "bytes": 88092,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_armor_2.png",
-    "bytes": 93500,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_armor_3.png",
-    "bytes": 96184,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_weapon_1.png",
-    "bytes": 75118,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_weapon_2.png",
-    "bytes": 78766,
-    "mode": 0,
-    "quality": 0.9,
-    "size_limit": 256
-  },
-  {
-    "asset": "assets/heroes/equipment/ranger_weapon_3.png",
-    "bytes": 91404,
     "mode": 0,
     "quality": 0.9,
     "size_limit": 256
@@ -4109,13 +3234,6 @@
     "size_limit": 256
   },
   {
-    "asset": "assets/heroes/running/cleric.png",
-    "bytes": 112154,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/heroes/running/guardian.png",
     "bytes": 135630,
     "mode": 0,
@@ -4125,13 +3243,6 @@
   {
     "asset": "assets/heroes/running/mage.png",
     "bytes": 123652,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/heroes/running/ranger.png",
-    "bytes": 88222,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0
@@ -4237,13 +3348,6 @@
   {
     "asset": "assets/objects/icons.png",
     "bytes": 67758,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/ranger/ranger-128.png",
-    "bytes": 418894,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0
@@ -4487,13 +3591,6 @@
     "size_limit": 1280
   },
   {
-    "asset": "assets/rest/cleric.png",
-    "bytes": 79770,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
     "asset": "assets/rest/guardian.png",
     "bytes": 91222,
     "mode": 0,
@@ -4510,13 +3607,6 @@
   {
     "asset": "assets/rest/mage.png",
     "bytes": 82850,
-    "mode": 0,
-    "quality": 0.7,
-    "size_limit": 0
-  },
-  {
-    "asset": "assets/rest/ranger.png",
-    "bytes": 84150,
     "mode": 0,
     "quality": 0.7,
     "size_limit": 0

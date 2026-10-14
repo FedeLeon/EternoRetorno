@@ -1,0 +1,70 @@
+{
+  "assets/ui/sword.svg": {
+    "sha256": "86014b7af3b346d96ffb708981d5e057d5308cc7185bc0d0e6b58ba0852bdba3",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/strength.svg": {
+    "sha256": "290d8d78e4b03879a4d91b76e97ccc81f7a7f19298168255972332a5f84cf429",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/weak.svg": {
+    "sha256": "056ec6c4da7818d96173bbdac1ed15e15a71a26eb88d511a56805e512beabee4",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/fracture.svg": {
+    "sha256": "84f0991877c322b0a69b5af53d5caa019c923de7da3656b6a510b0c33a28fee5",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/block_active.svg": {
+    "sha256": "fc227343b25377d0f7a72aeac8fb76066c66b1c31cf02d8d922490aaaccab122",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/block_up.svg": {
+    "sha256": "8f05b483d2203b78725b48ba7de19be2d14617e9e696af7410d8b3c15592ab1e",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/heal.svg": {
+    "sha256": "7b31fa6ad8a7527aa3cc7e406ef505e40c0e3b9561fbba336beff3695a2b9159",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/poison.svg": {
+    "sha256": "0e9ad6b59720656b34ab5e444b1490d89e6e16add36fb5c41238acb6e3a7ab6e",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/chain.svg": {
+    "sha256": "1df0a574e647d6457f9ea10de0059b86293567e3ce56791ae2eb6ef98b1ea756",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/arrow_right.svg": {
+    "sha256": "55901438670bb02a5991fc5252cf4493b5926470198b9f5ef071e24db1cc7217",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/arrow_left.svg": {
+    "sha256": "631c2ad36630eedc5cb53697cfab0d9e7c98843f01733d745ca5bfe30d4c7133",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/map/minimal/current_room.svg": {
+    "sha256": "e97cc0fb01c906d43fb23e0e9da285bf03259ef57a3aba900663e243eaa7b19b",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/deck.svg": {
+    "sha256": "6dbff68e3819da3fc6833e5315471bd19f472d33928f77a9d56919951f8e5ea5",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/settings.svg": {
+    "sha256": "9b427b342bd400f367f803f0dac2d94e25560a649c88f994bb1f48846c21eb39",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/collection/secret.svg": {
+    "sha256": "db9a0ff86909ed52f5073358cbdc2f5b7819fb2c130770d91369a26b25d3aabc",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/icon.svg": {
+    "sha256": "515fe6296568ad4d2cd4ed3e38ba0b408da9a48a3f2a3a57e125bc380fdd3557",
+    "method": "native SVG redraw: searched contours, graphite strokes, restrained functional color"
+  },
+  "assets/ui/pencil_spark.svg": {
+    "sha256": "b7cf31597bfb029722b2b783a212ae93581ee4a048a0d5a7c7b5f5a637ce7e2b",
+    "processing": "native editable pencil stroke for local hit/ash particles"
+  }
+}

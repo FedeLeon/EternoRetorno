@@ -1,0 +1,22 @@
+{
+  "id": "expeditions__contract_guardian",
+  "target": "assets/expeditions/contract_guardian.png",
+  "family": "expeditions",
+  "kind": "contract",
+  "hero": null,
+  "dimensions": [
+    480,
+    320
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/migration/sources/contract/expeditions__contract_guardian.png",
+  "queue_position": 364,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Contract illustration assets/expeditions/contract_guardian.png. Preserve the objective-symbol theme of the reference (journey, pair, elite, guardian, battle or mastery), drawn as clear conceptual pencil illustration on dim gray/violet paper/space, a few material/color accents, no elaborate shiny gold clutter. No actual letters, words or UI frame.",
+  "references": [
+    "assets/expeditions/contract_guardian.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-667876f7-84ff-4198-8e0e-e705042f7f81.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

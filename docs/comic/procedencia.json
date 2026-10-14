@@ -25,18 +25,6 @@
       "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/magaComic.png",
       "asset": "assets/comic/mage.png",
       "sha256": "d552cd17d9e3b52c1045b311e8bf2a8cfbd7153620eb6bcccb18f2bb86bf950a"
-    },
-    {
-      "hero": "cleric",
-      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/clerigaComic.png",
-      "asset": "assets/comic/cleric.png",
-      "sha256": "7cfecdd4281388c2881188df419a130f2d5e74658257b2b6436cd8214de29346"
-    },
-    {
-      "hero": "ranger",
-      "source": "/home/fede/Escritorio/EternoRetornoConceptArt/Heroes/exploradorComic.png",
-      "asset": "assets/comic/ranger.png",
-      "sha256": "14a81b998291a854f408dee7663e010a7d86de085d1dd3cf4f832d32d795e4d3"
     }
   ]
 }

@@ -92,53 +92,5 @@
     "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/mage_3.png",
     "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-08dea72a-bbdc-4fab-ae72-e160dedd38bc.png",
     "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-712f7cc8-ba2e-471b-900c-6cb992cf5d52.png"
-  },
-  {
-    "id": "cleric_0",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/cleric.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-be6a14e9-cfbb-41a1-99c4-fd77c1b09be5.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-e06cceda-3812-42ea-a85c-f520e2af242e.png"
-  },
-  {
-    "id": "cleric_1",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/cleric_1.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-d78984ae-cef5-45cd-aa41-5515089ef6dd.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-48965cc1-3dc6-4fa4-9bbd-5628b222c0d9.png"
-  },
-  {
-    "id": "cleric_2",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/cleric_2.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-84f2abf7-3dac-4a91-acac-471a21288167.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-753ac45a-383b-4442-9962-1e658a59d74f.png"
-  },
-  {
-    "id": "cleric_3",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/cleric_3.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-4fe2f3e6-f0d5-424f-9b58-6504e26713e0.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-e50b2024-c9d7-4b95-b658-63838625d638.png"
-  },
-  {
-    "id": "ranger_0",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/ranger.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-a65cefcd-0e34-404e-8657-de95f7a09e95.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-0282c987-563d-4b78-9dd4-4f7c577906df.png"
-  },
-  {
-    "id": "ranger_1",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/ranger_1.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-47d27391-556a-405b-8436-a9f3aa7cfbae.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-491346b8-f2bb-46fa-a3bf-84990d380edd.png"
-  },
-  {
-    "id": "ranger_2",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/ranger_2.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-2ec60da7-c33f-44cc-a3f2-60e7878bf93d.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-b5ecdd91-4bca-4a82-b13d-b2f12d2fa5c6.png"
-  },
-  {
-    "id": "ranger_3",
-    "reference": "/var/www/html/EternoRetorno/assets/comic/attacks/ranger_3.png",
-    "generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-3fc557c6-f387-428a-b41e-94bd231b77f1.png",
-    "initial_generated": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-eb1b0e1c-430f-4219-b0d5-31f8f467a43b.png"
   }
 ]

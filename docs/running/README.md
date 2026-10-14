@@ -1,3 +1,17 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
+# Carrera actual de los cuatro protagonistas — 14/10/2026
+
+Ocho poses a lápiz por héroe, celdas de 128 px, escala común con su atlas clásico
+y apoyo estable. Se reutilizan las fuentes de actores actuales y se evita aplicar
+la compensación antigua a los atlas normalizados. Prueba local: 121 comprobaciones,
+sin fallos. [Fuentes y validación](../art_direction/migration/README.md).
+
+## Documentación histórica previa a la conversión
+
 # Carrera de los seis héroes — 18/09/2026
 
 Cada héroe dispone de ocho cuadros de carrera hacia la derecha, en un atlas

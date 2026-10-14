@@ -1,0 +1,128 @@
+{
+  "generator": "image_gen.imagegen integrado",
+  "date": "2026-10-13",
+  "sources": [
+    {
+      "path": "docs/base_camp/dusk/sources/background.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c4110b6f64fc122b246071907b85c51c7fc79f57469c8abe8d15c891b2a9cd07"
+    },
+    {
+      "path": "docs/base_camp/dusk/sources/buildings.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "87f8a7a76636012ed5d81c6886f9c903a268d42f68f6a7af422be4744b4a85e1"
+    },
+    {
+      "path": "docs/base_camp/dusk/sources/fire.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "c07165d92363653f653ae0d3c62f926b0b6a2c3a5d8a4834d807392f4b633cff"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/base_camp/dusk/background.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "c4110b6f64fc122b246071907b85c51c7fc79f57469c8abe8d15c891b2a9cd07"
+    },
+    {
+      "path": "assets/base_camp/dusk/church.png",
+      "size": [
+        460,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "6d5625aacb2eb67d98e7e0af16d1114164c4f1a35438f7bf07d9b7ef6f4e7add"
+    },
+    {
+      "path": "assets/base_camp/dusk/expeditions.png",
+      "size": [
+        512,
+        411
+      ],
+      "mode": "RGBA",
+      "sha256": "6bc70a99499271e73bdff4564ec6b8ce24de61f8fc3cf8e982f4facf311ab443"
+    },
+    {
+      "path": "assets/base_camp/dusk/fire.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "3bde84df10fe3a6c858cd7421ea3146c080ab33b4431eff2341ec8483441b4f0"
+    },
+    {
+      "path": "assets/base_camp/dusk/forge.png",
+      "size": [
+        512,
+        476
+      ],
+      "mode": "RGBA",
+      "sha256": "f19d2df0423266103ef68cd4e4751d23832fa51ee7501ef7654173d3fd1994c4"
+    },
+    {
+      "path": "assets/base_camp/dusk/market.png",
+      "size": [
+        506,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "a79fe83fc87b6d68fad6652d53de6ec4c3abdbf46d0fdee7bf5077194824eb0e"
+    },
+    {
+      "path": "assets/base_camp/dusk/plot.png",
+      "size": [
+        512,
+        294
+      ],
+      "mode": "RGBA",
+      "sha256": "c1932f3cef6f36311e54809b84fef348ee0cd103207b0c7e1569b419fc682b09"
+    },
+    {
+      "path": "assets/base_camp/dusk/projects.png",
+      "size": [
+        512,
+        388
+      ],
+      "mode": "RGBA",
+      "sha256": "4598519bf45341906e65d7d83aa65c7f005e053d16c7bb052687e53b96a5f51a"
+    },
+    {
+      "path": "assets/base_camp/dusk/refuge.png",
+      "size": [
+        512,
+        419
+      ],
+      "mode": "RGBA",
+      "sha256": "3c39acde349aa0052cb87a0c1202c3313f65b075ab53558b74f19c303accc46c"
+    },
+    {
+      "path": "assets/base_camp/dusk/training.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "6767d47dfe79495454258e06d8f56111da863a0300117f000144f88162468c25"
+    }
+  ],
+  "normalization": "Godot scripts/import_dusk_camp.gd: recorte por silueta, escala proporcional Lanczos, margen alfa 16 px. Llamas 6x4 con baselines medidos en data/camp_fire_dusk.json. Fondo sin retoques.",
+  "original_paths": [
+    "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ca4439e1-1d49-4351-a5fc-a345b5ef186f.png",
+    "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-28ae3a2d-c223-4bc8-aa84-9270466727f4.png",
+    "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a396ae7d-791c-4406-9d1c-26de104120d3.png"
+  ]
+}

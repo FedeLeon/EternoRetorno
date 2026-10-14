@@ -36,9 +36,9 @@ static func turn_energy(game: RefCounted) -> int:
 
 static func attack_bonus(game: RefCounted, hero: Dictionary, owner: String) -> int:
 	var bonus = int(hero.get("turn_strength", 0)) + int(hero.get("forge", {}).get("strength", 0))
-	if game.run.get("team_relic", "") != "" or owner in ["mage", "cleric"]:
+	if game.run.get("team_relic", "") != "" or owner in ["mage"]:
 		bonus += game.relic_bonus(hero, "magic")
-	if owner in ["mage", "cleric"]:
+	if owner in ["mage"]:
 		bonus += int(hero.get("turn_magic", 0))
 	return bonus
 

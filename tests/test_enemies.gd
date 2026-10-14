@@ -33,23 +33,24 @@ func run_tests() -> void:
 		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		gallery.add_child(name_label)
 		var img = v.sprite.texture.get_image()
-		check(img.get_size() == Vector2i(1024 if v.has_motion_frames else 128, 128), id + " HD dimensions")
+		var cell_size = int(Visual.entries()[id].get("frame_size",128))
+		check(img.get_size() == Vector2i(cell_size * (8 if v.has_motion_frames else 1), cell_size), id + " catalogue frame dimensions")
 		check(v.has_motion_frames == (int(Visual.entries()[id].floor) in [1, 2, 3]), id + " active-floor motion coverage")
 		if v.has_motion_frames:
 			var unique: Array = []
 			for frame_index in range(8):
-				var frame = img.get_region(Rect2i(frame_index * 128, 0, 128, 128))
+				var frame = img.get_region(Rect2i(frame_index * cell_size, 0, cell_size, cell_size))
 				check(frame.get_used_rect().size.x > 20 and frame.get_pixel(0, 0).a == 0, id + " motion frame content and alpha")
 				var fingerprint = hash(frame.get_data())
 				if fingerprint not in unique:
 					unique.append(fingerprint)
 				if id != "crypt_bat":
 					var bottom = 0
-					for y in range(128):
-						for x in range(128):
+					for y in range(cell_size):
+						for x in range(cell_size):
 							if frame.get_pixel(x, y).a >= 0.5:
 								bottom = y + 1
-					check(bottom == 120, id + " stable grounded motion")
+					check(bottom == cell_size * 15 / 16, id + " stable grounded motion")
 			check(unique.size() == 8, id + " eight distinct drawn poses")
 		check(img.get_pixel(0, 0).a == 0 and img.get_used_rect().size.x > 10, id + " transparency and content")
 		index += 1
@@ -85,7 +86,7 @@ func run_tests() -> void:
 	var app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-enemy-test.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 12)
+	app.game.new_run(["warrior", "guardian"], 12)
 	app.game.enter_node(0)
 	for id in app.game.content.enemies:
 		var def = app.game.content.enemies[id]

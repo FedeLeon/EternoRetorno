@@ -29,7 +29,7 @@ static func buy(profile: Dictionary, id: String) -> bool:
 
 static func activate(profile: Dictionary, hero: String, id: String) -> bool:
 	if not profile.buildings.get("church", false): return false
-	if hero not in ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]: return false
+	if hero not in ["warrior", "guardian", "rogue", "mage"]: return false
 	if id == "":
 		profile.specializations.active.erase(hero)
 		return true

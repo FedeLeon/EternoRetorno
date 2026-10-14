@@ -1,5 +1,5 @@
 extends SceneTree
-# Local visual gallery. Optional argument: warrior/guardian/rogue/mage/cleric/ranger.
+# Local visual gallery. Optional argument: warrior/guardian/rogue/mage.
 var hero = "warrior"
 func _initialize() -> void:
 	if OS.get_cmdline_user_args().size() > 0: hero = OS.get_cmdline_user_args()[0]

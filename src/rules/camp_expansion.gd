@@ -5,8 +5,8 @@ const Specializations = preload("res://src/rules/specializations.gd")
 static func buildings() -> Dictionary:
 	return preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_expansion.json").buildings
 
-static func migrate(profile: Dictionary) -> bool:
-	var contracts_changed = Expeditions.migrate(profile)
+static func migrate(profile: Dictionary, run: Dictionary = {}) -> bool:
+	var contracts_changed = Expeditions.migrate(profile,run)
 	var specs_changed = Specializations.migrate(profile)
 	return contracts_changed or specs_changed
 

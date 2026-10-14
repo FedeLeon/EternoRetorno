@@ -1,3 +1,11 @@
+# Estado visual actual — 14/10/2026
+
+Cuatro héroes sketchbook, diez acciones de doce poses; detalle base de 256 px,
+acciones adicionales de 384 px. Las variantes de equipo reutilizan dibujos con
+tintes discretos, sin piezas superpuestas. Héroes: 1108 comprobaciones locales;
+herrería: 8220, sin fallos. [Conversión, procedencia y límites](../art_direction/migration/README.md).
+La documentación siguiente describe entregas anteriores.
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

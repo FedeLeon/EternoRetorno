@@ -18,15 +18,13 @@ const Warrior = preload("res://src/warrior_sprite.gd")
 const Guardian = preload("res://src/guardian_sprite.gd")
 const Rogue = preload("res://src/rogue_sprite.gd")
 const Mage = preload("res://src/mage_sprite.gd")
-const Cleric = preload("res://src/cleric_sprite.gd")
-const Ranger = preload("res://src/ranger_sprite.gd")
-const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage, "cleric": Cleric, "ranger": Ranger}
+const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage}
 const Campfire = preload("res://src/campfire.gd")
-const CAMP_POSITIONS = [Vector2(450, 345), Vector2(830, 345), Vector2(245, 485), Vector2(1035, 485), Vector2(430, 585), Vector2(850, 585)]
+const CAMP_POSITIONS = [Vector2(390, 350), Vector2(890, 350), Vector2(420, 558), Vector2(860, 558)]
 const Dungeon = preload("res://src/dungeon.gd")
 const GOLD = preload("res://src/ui/components/dark_skin.gd").ACCENT
 const INK = Color("10141f")
-const TEXT = Color("ebe2d0")
+const TEXT = Color("ded9e5")
 const MUTED = Color("9299ab")
 var training_original: RefCounted
 var training_config: Dictionary = {}
@@ -521,7 +519,7 @@ func object_icon(index: int, x: float, y: float, side: float, parent: Control = 
 	texture.region = Rect2((index % 4) * 64, (index / 4) * 64, 64, 64)
 	icon.texture = texture
 	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	rect(icon, x, y, side, side, parent)
 

@@ -27,7 +27,6 @@
     "id": "warrior_equipment",
     "hero": "warrior",
     "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching male cursed knight, black plate armor and purple cape, violet greatsword of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
     "reference": "assets/comic/warrior.png"
   },
   {
@@ -58,7 +57,6 @@
     "id": "guardian_equipment",
     "hero": "guardian",
     "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching female guardian, brown flowing hair, silver gold armor, teal cape, sword and sun shield of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
     "reference": "assets/comic/guardian.png"
   },
   {
@@ -89,7 +87,6 @@
     "id": "rogue_equipment",
     "hero": "rogue",
     "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching hooded male rogue, green cloak, plague mask, two poisoned curved daggers of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
     "reference": "assets/comic/rogue.png"
   },
   {
@@ -120,70 +117,7 @@
     "id": "mage_equipment",
     "hero": "mage",
     "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching silver haired female mage, blue white gold robes, crystal staff of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
     "reference": "assets/comic/mage.png"
-  },
-  {
-    "id": "cleric_thrust",
-    "hero": "cleric",
-    "kind": "action",
-    "action": "thrust",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw female cleric, white gold robes, golden holy staff performing a quick radiant bolt cast, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/cleric.png"
-  },
-  {
-    "id": "cleric_sweep",
-    "hero": "cleric",
-    "kind": "action",
-    "action": "sweep",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw female cleric, white gold robes, golden holy staff performing a sweeping golden radiant halo, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/cleric.png"
-  },
-  {
-    "id": "cleric_charged",
-    "hero": "cleric",
-    "kind": "action",
-    "action": "charged",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw female cleric, white gold robes, golden holy staff performing a charged golden judgment cast, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/cleric.png"
-  },
-  {
-    "id": "cleric_equipment",
-    "hero": "cleric",
-    "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching female cleric, white gold robes, golden holy staff of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
-    "reference": "assets/comic/cleric.png"
-  },
-  {
-    "id": "ranger_thrust",
-    "hero": "ranger",
-    "kind": "action",
-    "action": "thrust",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw hooded male archer, brown hair, dark blue cloak, ornate blue bow performing a quick precise single arrow shot, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/ranger.png"
-  },
-  {
-    "id": "ranger_sweep",
-    "hero": "ranger",
-    "kind": "action",
-    "action": "sweep",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw hooded male archer, brown hair, dark blue cloak, ornate blue bow performing a volley of three arrows, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/ranger.png"
-  },
-  {
-    "id": "ranger_charged",
-    "hero": "ranger",
-    "kind": "action",
-    "action": "charged",
-    "prompt": "Use case: stylized-concept. Asset type: production game sprite sheet with genuine transparent alpha. Reference: same hero identity and costume as provided comic portrait. Draw hooded male archer, brown hair, dark blue cloak, ornate blue bow performing a long charged power arrow shot, attacking toward RIGHT. Exactly 12 FULL BODY consecutive animation poses, 4 columns and 3 rows, evenly spaced in a 1536x1024 sheet. Sequence: anticipation, weapon windup, acceleration, contact, follow-through and recovery. Clean dark fantasy finely detailed hand-drawn pixel-art-inspired character, readable anatomy, detailed face, smooth believable different drawings; consistent scale, both feet at same height in each cell. Plenty of transparent gutter around all 12 poses; entire weapon, cape, hands and glow fit in each individual cell. No neighboring pose overlaps, no ground, no background, no labels, no panels, no text. Local colored glow and sparse sparks only. Keep identity, costume, hair, colors and weapon; do not turn hero into a different character.",
-    "reference": "assets/comic/ranger.png"
-  },
-  {
-    "id": "ranger_equipment",
-    "hero": "ranger",
-    "kind": "equipment",
-    "prompt": "Use case: stylized-concept. Asset type: six separate modular EQUIPMENT cutout sprites with genuine transparent alpha, matching hooded male archer, brown hair, dark blue cloak, ornate blue bow of the provided reference. Sheet exactly 3 columns by 2 rows, six separate items, generous empty transparent gutters, no character, no hands, no mannequin, no lettering. Top row: three visibly DIFFERENT tiers of this hero's signature weapon, in ascending refinement left-to-right: tier 1 reinforced iron, tier 2 engraved silver, tier 3 ornate enchanted masterpiece. Bottom row: three corresponding tier chest-and-shoulder armor or robe yoke pieces fitted to this character, seen side three-quarter facing RIGHT, chest alone no head/legs. Keep class color and medieval dark fantasy materials. Fine crisp painted pixel-art-inspired shading, clear silhouette and subtle glow. Each weapon points diagonally up-right and has a visible grip at its lower left end; each armor piece is centered upright. All six cutouts entirely within their cell. No background or drop shadows. Weapons for guardian include a compact shield with short blade; mage/cleric staffs, ranger bow, rogue daggers, warrior sword.",
-    "reference": "assets/comic/ranger.png"
   },
   {
     "id": "boss_crypt",
@@ -226,20 +160,6 @@
     "hero": "mage",
     "kind": "card",
     "prompt": "Use case: stylized-concept. A single horizontal dark-fantasy deckbuilding CARD ILLUSTRATION. Depict a silver-haired blue-robed mage channeling her own life into an electric crystal explosion striking several shadow silhouettes. Match the supplied reference card illustrations: minimal dramatic composition, rich near-black background, crisp finely shaded fantasy pixel-art illustration, class-colored luminous weapon trails, focus on hero torso and action, readable at small card size. One image only, no frame, no symbols outside scene, no text, no lettering, no UI, no panels. Landscape 1536x1024. Original unique action.",
-    "reference": "assets/cards/art/originals.png"
-  },
-  {
-    "id": "cleric_risk",
-    "hero": "cleric",
-    "kind": "card",
-    "prompt": "Use case: stylized-concept. A single horizontal dark-fantasy deckbuilding CARD ILLUSTRATION. Depict a blonde gold and white robed cleric drawing a red light thread from her chest and spreading golden healing light to two companions. Match the supplied reference card illustrations: minimal dramatic composition, rich near-black background, crisp finely shaded fantasy pixel-art illustration, class-colored luminous weapon trails, focus on hero torso and action, readable at small card size. One image only, no frame, no symbols outside scene, no text, no lettering, no UI, no panels. Landscape 1536x1024. Original unique action.",
-    "reference": "assets/cards/art/originals.png"
-  },
-  {
-    "id": "ranger_risk",
-    "hero": "ranger",
-    "kind": "card",
-    "prompt": "Use case: stylized-concept. A single horizontal dark-fantasy deckbuilding CARD ILLUSTRATION. Depict a hooded blue archer throwing aside an empty quiver and firing his last brilliant ice-blue arrow. Match the supplied reference card illustrations: minimal dramatic composition, rich near-black background, crisp finely shaded fantasy pixel-art illustration, class-colored luminous weapon trails, focus on hero torso and action, readable at small card size. One image only, no frame, no symbols outside scene, no text, no lettering, no UI, no panels. Landscape 1536x1024. Original unique action.",
     "reference": "assets/cards/art/originals.png"
   }
 ]

@@ -1,3 +1,13 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
+## Actualización visual — 13/10/2026
+
+Interior redibujado con grafito y lápices de colores, conservando su temática.
+[Assets, galería ampliada y pruebas actuales](../base_camp/interiors/README.md).
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

@@ -17,7 +17,8 @@ func run_tests() -> void:
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	host.add_child(bg)
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	for visual in CutIn.COLORS:
+	var catalog = preload("res://src/enemy_sprite.gd").entries()
+	for visual in catalog:
 		var effect = CutIn.play(host, visual)
 		effect._process(0.001)
 		var initial = effect.picture.position.x
@@ -26,6 +27,18 @@ func run_tests() -> void:
 		check(effect.picture.position.x < initial, "entry moves left " + visual)
 		check(is_equal_approx(effect.picture.position.x + effect.picture.size.x, host.size.x * 0.985), "right anchor " + visual)
 		check(effect.picture.texture.get_image().detect_alpha() != Image.ALPHA_NONE, "transparent " + visual)
+		if catalog[visual].get("foreground_frames",1) == 4:
+			check(effect.frame_grid == Vector2i(2,2), "four drawn attack poses " + visual)
+			var atlas = effect.frame_texture.atlas.get_image()
+			if atlas.is_compressed(): atlas.decompress()
+			var cell = atlas.get_size()/2
+			var hashes = []
+			for frame in range(4):
+				var pose = atlas.get_region(Rect2i(Vector2i(frame%2,frame/2)*cell,cell))
+				check(pose.get_used_rect().size.x > 20 and pose.detect_alpha() != Image.ALPHA_NONE,"drawn transparent pose %s/%d" % [visual,frame])
+				var digest = hash(pose.get_data())
+				check(digest not in hashes,"distinct attack pose %s/%d" % [visual,frame])
+				hashes.append(digest)
 		if DisplayServer.get_name() != "headless" and visual == "crypt_lancer":
 			await RenderingServer.frame_post_draw
 			root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat/enemy-comic.png"))

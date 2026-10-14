@@ -22,7 +22,7 @@ func battle(recipe: Dictionary, upgrades: bool = false) -> RefCounted:
 	return g
 func _initialize() -> void:
 	var content = Game.new("user://unused.save", false).content
-	check(content.synergies.size() == 15, "all 15 hero pairs")
+	check(content.synergies.size() == 6, "all six hero pairs")
 	var participants: Dictionary = {}
 	var pairs: Array = []
 	for recipe in content.synergies:

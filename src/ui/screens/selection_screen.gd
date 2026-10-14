@@ -6,7 +6,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 	var fire = ui.Campfire.new()
 	fire.name = "Campfire"
 	ui.rect(fire, 640, 471, 1, 1)
-	var ids = ui.game.content.heroes.keys()
+	var ids = preload("res://src/rules/hero_roster.gd").ids(ui.game.content.heroes)
 	for i in range(ids.size()):
 		var id = ids[i]
 		var h = ui.game.content.heroes[id]
@@ -29,7 +29,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 		sprite.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		preload("res://src/presentation/firelight.gd").attach(sprite, i * 0.6)
 		sprite.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 		sprite.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.rect(sprite, -24, -42, 228, 182, b)
 		ui.panel(0, 141, 180, 57, Color("343b4d"), b)

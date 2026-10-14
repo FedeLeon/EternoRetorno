@@ -2,9 +2,8 @@ extends RefCounted
 # Shared presentation for combat, rewards, collection and market.
 # Normalized centers measured on each illustrated frame (not identical layouts).
 const COST_CENTERS = {
-	"warrior": Vector2(0.87, 0.18), "guardian": Vector2(0.884, 0.173),
-	"rogue": Vector2(0.872, 0.158), "mage": Vector2(0.880, 0.158),
-	"cleric": Vector2(0.884, 0.192), "ranger": Vector2(0.872, 0.171)
+	"warrior": Vector2(0.885, 0.169), "guardian": Vector2(0.883, 0.156),
+	"rogue": Vector2(0.883, 0.153), "mage": Vector2(0.901, 0.163)
 }
 static func build(ui: Control, instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, _chosen: bool, enabled: bool, parent: Control, base_values: bool) -> Button:
 	var c = ui.game.content.card(instance)
@@ -12,7 +11,7 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 	var linked = ui.game.content.synergies.any(func(recipe): return instance.id in recipe.cards)
 	var card_description = ui.game.content.describe(instance, c if base_values else ui.game.effective_card(instance))
 	var def = ui.game.content.heroes[c.owner]
-	var colors = {"warrior": Color("98483f"), "guardian": Color("438b89"), "rogue": Color("72864a"), "mage": Color("8f65b4"), "cleric": Color("c09a55"), "ranger": Color("507ba6")}
+	var colors = {"warrior": Color("897784"), "guardian": Color("828293"), "rogue": Color("748174"), "mage": Color("9680aa")}
 	var accent: Color = colors[c.owner]
 	var b = ui.button("", x, y, w, h, callback, enabled, parent)
 	b.set_meta("card_id", instance.id)

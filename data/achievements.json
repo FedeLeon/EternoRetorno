@@ -114,7 +114,7 @@
   {
     "id": "warrior_victory",
     "name": "Juramento de acero",
-    "description": "Completá una aventura con el Guerrero.",
+    "description": "Completá una aventura con el Carpintero.",
     "metric": "hero_warrior",
     "target": 1,
     "secret": false
@@ -122,7 +122,7 @@
   {
     "id": "guardian_victory",
     "name": "Bastión eterno",
-    "description": "Completá una aventura con la Guardiana.",
+    "description": "Completá una aventura con la Constructora.",
     "metric": "hero_guardian",
     "target": 1,
     "secret": false
@@ -130,7 +130,7 @@
   {
     "id": "rogue_victory",
     "name": "Huella invisible",
-    "description": "Completá una aventura con el Pícaro.",
+    "description": "Completá una aventura con el Boticario.",
     "metric": "hero_rogue",
     "target": 1,
     "secret": false
@@ -138,24 +138,8 @@
   {
     "id": "mage_victory",
     "name": "Voluntad arcana",
-    "description": "Completá una aventura con la Maga.",
+    "description": "Completá una aventura con la Profesora.",
     "metric": "hero_mage",
-    "target": 1,
-    "secret": false
-  },
-  {
-    "id": "cleric_victory",
-    "name": "Luz que regresa",
-    "description": "Completá una aventura con la Clériga.",
-    "metric": "hero_cleric",
-    "target": 1,
-    "secret": false
-  },
-  {
-    "id": "ranger_victory",
-    "name": "Nunca falla el rumbo",
-    "description": "Completá una aventura con el Explorador.",
-    "metric": "hero_ranger",
     "target": 1,
     "secret": false
   },
@@ -217,10 +201,10 @@
   },
   {
     "id": "six_echoes",
-    "name": "Seis ecos, un destino",
+    "name": "Cuatro ecos, un destino",
     "description": "",
     "metric": "all_heroes",
-    "target": 6,
+    "target": 4,
     "secret": true
   },
   {

@@ -9,7 +9,7 @@ func check(ok: bool, message: String) -> void:
 	if not ok:
 		failures += 1
 		printerr("FAIL: ", message)
-func battle(party: Array = ["warrior", "ranger"]) -> RefCounted:
+func battle(party: Array = ["warrior", "rogue"]) -> RefCounted:
 	var g = Game.new("user://unused-support.save", false)
 	g.new_run(party, 37)
 	g.enter_node(0)
@@ -22,13 +22,13 @@ func play(g: RefCounted, id: String, target: int = 0, upgraded: bool = false) ->
 func _initialize() -> void:
 	var additions = JSON.parse_string(FileAccess.get_file_as_string("res://data/support_cards.json"))
 	var g = battle()
-	check(additions.size() == 24 and g.content.cards.size() == 132, "24 unique additions")
+	check(additions.size() == 16 and g.content.cards.size() == 88, "16 unique additions")
 	var originals = JSON.parse_string(FileAccess.get_file_as_string("res://data/content.json")).cards
 	check(additions.keys().all(func(id): return not originals.has(id)), "no existing ID overwritten")
 	for hero in g.content.heroes:
 		check(additions.values().filter(func(c): return c.owner == hero).size() == 4, "four per hero")
 		check(g.content.heroes[hero].starter.all(func(id): return not additions.has(id)), "basic starter unchanged")
-		g.new_run([hero, "warrior" if hero != "warrior" else "cleric"], 37)
+		g.new_run([hero, "warrior" if hero != "warrior" else "guardian"], 37)
 		g.profile.buildings.market = true
 		g.profile.souls = 10000
 		for id in additions:
@@ -47,7 +47,7 @@ func _initialize() -> void:
 	# An ally's buff changes only their cards, rounds once per hit and expires.
 	g = battle()
 	check(play(g, "warrior_rally", 1), "empower ally")
-	check(g.effective_card({"id":"ranger_arrow"}).damage == floori(g.content.cards.ranger_arrow.damage * 1.25), "ally boosted")
+	check(g.effective_card({"id":"rogue_cut"}).damage == floori(g.content.cards.rogue_cut.damage * 1.25), "ally boosted")
 	check(g.effective_card({"id":"warrior_slash"}).damage == g.content.cards.warrior_slash.damage, "owner unboosted")
 	play(g, "warrior_rally", 1)
 	check(g.run.heroes[1].strength_pct == 25, "buff does not stack")
@@ -64,10 +64,10 @@ func _initialize() -> void:
 	g.end_turn()
 	check(g.run.heroes[0].hp == hp[0] - 9 and g.run.heroes[1].hp == hp[1] - 9, "same reduced attack reaches both heroes")
 	check(g.run.combat.enemies[0].get("weak_pct", 0) == 0, "weakness consumed")
-	g = battle(["cleric", "mage"])
+	g = battle(["guardian", "mage"])
 	g.run.combat.enemies.append(g.run.combat.enemies[0].duplicate(true))
-	play(g, "cleric_censure", 1)
-	check(g.run.combat.enemies.all(func(e): return e.weak_pct == 25), "area debuff all enemies")
+	play(g, "guardian_inspire", 0)
+	check(g.run.heroes.all(func(h): return h.strength_pct == 25), "team buff reaches both heroes")
 	# Fracture removes current block once and reduces the next gain.
 	g = battle(["rogue", "warrior"])
 	var enemy = g.run.combat.enemies[0]
@@ -82,19 +82,19 @@ func _initialize() -> void:
 	g.end_turn()
 	check(enemy.block == 7 and enemy.get("fracture_pct", 0) == 0, "reduced shield gained and fracture expires")
 	# Multihit retains ordered hits and the fixed four-point counter rule.
-	g = battle(["ranger", "warrior"])
+	g = battle(["rogue", "warrior"])
 	enemy = g.run.combat.enemies[0]
 	enemy.intent.counter = 4
 	enemy.weak_pct = 25
-	play(g, "ranger_hunters_focus")
+	play(g, "rogue_adrenaline")
 	var health = g.run.heroes[0].hp
-	play(g, "ranger_split_arrow")
-	check(enemy.hp == 288, "two empowered hits of six")
-	check(g.resolved_card_hits.size() == 4, "two hits and two counters")
-	check(g.run.heroes[0].hp == health - 3, "counter four twice minus five block")
+	play(g, "rogue_venom_dance")
+	check(enemy.hp == 282, "three empowered hits of six")
+	check(g.resolved_card_hits.size() == 6, "three hits and three counters")
+	check(g.run.heroes[0].hp == health - 7, "counter four three times minus five block")
 	# Healing is capped, uses the selected ally and never revives fallen heroes.
-	for entry in [["warrior_second_wind","warrior",0,6],["guardian_lay_hands","guardian",1,6],["mage_siphon","mage",0,4],["ranger_field_aid","ranger",1,7]]:
-		g = battle([entry[1], "cleric"])
+	for entry in [["warrior_second_wind","warrior",0,6],["guardian_lay_hands","guardian",1,6],["mage_siphon","mage",0,4]]:
+		g = battle([entry[1], "mage" if entry[1] == "guardian" else "guardian"])
 		g.run.heroes[entry[2]].hp -= 10
 		var old_hp = g.run.heroes[entry[2]].hp
 		play(g, entry[0], 0 if entry[0] == "mage_siphon" else entry[2])
@@ -102,7 +102,9 @@ func _initialize() -> void:
 		play(g, entry[0], 0 if entry[0] == "mage_siphon" else entry[2], true)
 		check(g.run.heroes[entry[2]].hp <= g.run.heroes[entry[2]].max_hp, "no overheal")
 	g.run.heroes[1].hp = 0
-	g.run.combat.hand = [{"id":"ranger_field_aid"}]
+	g = battle(["guardian","warrior"])
+	g.run.heroes[1].hp = 0
+	g.run.combat.hand = [{"id":"guardian_lay_hands"}]
 	check(1 not in g.valid_targets(0) and not g.play_card(0,1), "healing rejects fallen ally")
 	# Checkpoint/reload preserves active percentages and purchases, not duplicates.
 	var path = "user://support-persist-test.save"
@@ -110,12 +112,12 @@ func _initialize() -> void:
 	g = Game.new(path, true)
 	g.profile.buildings.market = true
 	g.buy_market_card("warrior_rally")
-	g.new_run(["warrior","ranger"], 12)
+	g.new_run(["warrior","rogue"], 12)
 	g.enter_node(0)
 	play(g, "warrior_rally", 1)
 	var restored = Game.new(path, true)
 	check(restored.run == g.run and "warrior_rally" in restored.profile.market_cards, "save/reload exact")
-	check(restored.effective_card({"id":"ranger_arrow"}).damage == g.effective_card({"id":"ranger_arrow"}).damage, "same buff after reload")
+	check(restored.effective_card({"id":"rogue_cut"}).damage == g.effective_card({"id":"rogue_cut"}).damage, "same buff after reload")
 	restored._start_combat(["skeleton"])
 	check(restored.run.heroes[1].get("strength_pct", 0) == 0, "no buff leaks into next battle")
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)

@@ -19,7 +19,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-presentation.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)
 	var battle = app.game.run.combat
 	battle.enemies[0].intent = {"damage":12, "block":8, "target":1}
@@ -27,18 +27,18 @@ func run_tests() -> void:
 	await process_frame
 	var intent = app.layer.get_node("EnemyIntent0")
 	check(intent.get_node("Attack").amount == 12 and intent.get_node("Block").amount == 8, "both intent values")
-	check(intent.has_node("Target_cleric") and not intent.has_node("Target_warrior"), "face matches target")
+	check(intent.has_node("Target_guardian") and not intent.has_node("Target_warrior"), "face matches target")
 	await shot("intent")
 	battle.enemies[0].intent.all = true
 	app.render()
 	await process_frame
 	intent = app.layer.get_node("EnemyIntent0")
-	check(intent.has_node("Target_cleric") and intent.has_node("Target_warrior"), "area attack shows both portraits")
+	check(intent.has_node("Target_guardian") and intent.has_node("Target_warrior"), "area attack shows both portraits")
 	battle.enemies[0].intent.damage = 0
 	app.render()
 	await process_frame
 	intent = app.layer.get_node("EnemyIntent0")
-	check(not intent.has_node("Attack") and not intent.has_node("Target_cleric") and intent.has_node("Block"), "block-only intent has no sword or target")
+	check(not intent.has_node("Attack") and not intent.has_node("Target_guardian") and intent.has_node("Block"), "block-only intent has no sword or target")
 	battle.hand = [{"id":"warrior_slash", "upgraded":false}]
 	# Use the catalog to avoid relying on a particular attack card ID.
 	for id in app.game.content.cards:
@@ -75,7 +75,7 @@ func run_tests() -> void:
 		await process_frame
 	check(moved and outside and app.screen == "reward", "party runs offscreen before reward UI")
 	check(app.game.run.heroes[1].hp > 0, "fallen companion revived before exit")
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)
 	for hero in app.game.run.heroes:
 		hero.hp = 1
@@ -124,7 +124,7 @@ func run_tests() -> void:
 	check(defense != null and defense.action == "defense", "blocking card uses defensive illustration")
 	check(app.game.run.heroes[0].block > 0, "block committed before defense cut-in")
 	while app.combat_busy: await process_frame
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)
 	app.game.run.combat.enemies[0].intent = {"damage":0, "block":2, "target":0}
 	app.continue_run()

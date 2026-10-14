@@ -6,6 +6,7 @@ var resolved_enemy_blocks: Dictionary = {}
 var resolved_hero_defenses: Dictionary = {}
 var resolved_hero_blocks: Dictionary = {}
 var resolved_enemy_hits: Dictionary = {}
+var resolved_poison_hits: Dictionary = {}
 var resolved_card_hits: Array = []
 
 const Achievements = preload("res://src/rules/achievements.gd")
@@ -38,15 +39,17 @@ func _init(save_path: String = "user://eterno.save", persist: bool = true) -> vo
 		if not saved.is_empty():
 			profile = saved.profile
 			run = saved.run
-			if not run.is_empty():
-				rng.state = run.rng_state
 		message = store.last_error
 
+	var cleaned = preload("res://src/rules/content_migration.gd").clean(profile, run, content)
+	run = cleaned.run
+	if cleaned.closed: message = "La aventura anterior usaba contenido retirado. Conservamos el progreso del campamento."
+	if not run.is_empty(): rng.state = run.rng_state
 	var migrated = Progression.migrate(profile)
 	var forge_migrated = Forge.migrate(profile)
-	var expansion_migrated = CampExpansion.migrate(profile)
+	var expansion_migrated = CampExpansion.migrate(profile,run)
 	var achievements_migrated = Achievements.sync(profile, run)
-	if forge_migrated or expansion_migrated or migrated or achievements_migrated:
+	if cleaned.changed or forge_migrated or expansion_migrated or migrated or achievements_migrated:
 		checkpoint()
 
 func camp_action(action: String, payload: Dictionary) -> bool:

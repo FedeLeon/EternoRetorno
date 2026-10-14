@@ -46,7 +46,7 @@ func _ready() -> void:
 		picture.texture = load(data.asset)
 		picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		picture.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 		picture.position = Vector2(2, 2); picture.size = Vector2(36, 36)
 		picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		button.add_child(picture)

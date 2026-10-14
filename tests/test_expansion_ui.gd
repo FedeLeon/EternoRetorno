@@ -21,7 +21,7 @@ func run_tests():
 	root.size = Vector2i(1280,720)
 	app=load("res://main.tscn").instantiate();app.game=Game.new("user://unused-expansion-ui.save",false)
 	root.add_child(app);await process_frame
-	app.game.new_run(["warrior","cleric"],29,{},3);app.game.enter_node(0)
+	app.game.new_run(["warrior","guardian"],29,{},3);app.game.enter_node(0)
 	app.game.run.combat.hand=[{"id":"warrior_slash","upgraded":false}]
 	# Find the actual first attack ID rather than relying on historical card names.
 	app.game.run.combat.hand[0].id=app.game.run.deck[0].id
@@ -93,7 +93,7 @@ func run_tests():
 	app.set_option("text_scale",1.12);app.render();await process_frame
 	check(app.theme.default_font_size == 22,"large text scales shared theme")
 	await capture("options-large");app.set_option("text_scale",1.0)
-	app.game.profile.bonds={"cleric_warrior":1};app.screen="bonds";app.render();await process_frame
+	app.game.profile.bonds={"guardian_warrior":1};app.screen="bonds";app.render();await process_frame
 	await capture("bonds")
 	app.game.run.phase="room";app.game.run.nodes[app.game.run.current].kind="event";app.game.run.nodes[app.game.run.current].event="forest_spring";app.continue_run();await process_frame
 	check(app.layer.has_node("EncounterScreen"),"themed encounter")

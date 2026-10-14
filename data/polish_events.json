@@ -1,7 +1,7 @@
 {
   "pair_guardian_warrior": {
     "name": "Acero y juramento",
-    "text": "La Guardiana cubre la grieta de la armadura del Guerrero. Él abre camino con su espada.",
+    "text": "La Constructora cubre la grieta de la armadura del Carpintero. Él abre camino con su espada.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -10,7 +10,7 @@
   },
   "pair_rogue_warrior": {
     "name": "La sombra del filo",
-    "text": "El Pícaro marca los puntos débiles mientras el Guerrero mantiene a los rivales ocupados.",
+    "text": "El Boticario marca los puntos débiles mientras el Carpintero mantiene a los rivales ocupados.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -19,25 +19,7 @@
   },
   "pair_mage_warrior": {
     "name": "Acero encantado",
-    "text": "La Maga graba una runa helada en la espada del Guerrero.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_cleric_warrior": {
-    "name": "Luz en la grieta",
-    "text": "La Clériga calma el dolor bajo la armadura maldita. El Guerrero renueva su juramento.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_ranger_warrior": {
-    "name": "El camino del hierro",
-    "text": "El Explorador descubre una ruta de flanqueo que el Guerrero puede abrir.",
+    "text": "La Profesora graba una runa helada en la espada del Carpintero.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -46,7 +28,7 @@
   },
   "pair_guardian_rogue": {
     "name": "Cobertura inesperada",
-    "text": "Un escudo firme deja al Pícaro atacar desde un ángulo imposible.",
+    "text": "Un escudo firme deja al Boticario atacar desde un ángulo imposible.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -55,25 +37,7 @@
   },
   "pair_guardian_mage": {
     "name": "Círculo protector",
-    "text": "La Maga dibuja un sello detrás del escudo de la Guardiana.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_cleric_guardian": {
-    "name": "Dos formas de proteger",
-    "text": "La luz de la Clériga alcanza a quienes el escudo de la Guardiana no puede cubrir.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_guardian_ranger": {
-    "name": "Tras el escudo",
-    "text": "El Explorador ensaya su tiro desde la cobertura de la Guardiana.",
+    "text": "La Profesora dibuja un sello detrás del escudo de la Constructora.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -82,52 +46,7 @@
   },
   "pair_mage_rogue": {
     "name": "Veneno y escarcha",
-    "text": "La Maga enfría una hoja del Pícaro para retrasar a su próximo rival.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_cleric_rogue": {
-    "name": "Un remedio improbable",
-    "text": "El Pícaro ofrece hierbas que la Clériga convierte en un ungüento.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_ranger_rogue": {
-    "name": "Rastros en silencio",
-    "text": "Ambos trazan una emboscada sin dejar huellas.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_cleric_mage": {
-    "name": "La misma fuente",
-    "text": "La Maga y la Clériga reconocen un antiguo símbolo de poder entre sus libros.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_mage_ranger": {
-    "name": "La flecha del invierno",
-    "text": "La Maga talla un cristal para la punta de una flecha del Explorador.",
-    "choices": [
-      "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
-      "Descansar juntos: recuperar 6 PV cada uno"
-    ],
-    "background": "forest_hunter"
-  },
-  "pair_cleric_ranger": {
-    "name": "El sendero seguro",
-    "text": "La Clériga ilumina marcas que solo el Explorador sabe seguir.",
+    "text": "La Profesora enfría una hoja del Boticario para retrasar a su próximo rival.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"

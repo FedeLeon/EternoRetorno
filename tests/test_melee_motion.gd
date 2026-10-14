@@ -12,7 +12,7 @@ func verify():
 	var app=load("res://main.tscn").instantiate()
 	app.game=preload("res://src/game.gd").new("user://unused-melee-test",false)
 	root.add_child(app)
-	for hero in ["warrior","guardian","rogue","mage","cleric","ranger"]:
+	for hero in ["warrior","guardian","rogue","mage"]:
 		check(Motion.applies({"damage":5},hero)==(hero in ["warrior","guardian","rogue"]),"delivery classification " + hero)
 	check(not Motion.applies({"damage":0},"warrior"),"nonoffensive cards stay in place")
 	check(not Motion.applies({"damage":5,"id":"rogue_plague"},"rogue"),"poison outbreak is ranged")
@@ -24,12 +24,12 @@ func verify():
 		["warrior","warrior_cleave",0,2.0,false],
 		["warrior","warrior_slash",2,2.0,true],
 		["mage","mage_spark",0,1.0,false],
-		["ranger","ranger_arrow",0,1.0,false]]
+		["rogue","rogue_cut",0,1.0,false]]
 	for item in cases:
 		var hero: String=item[0]
 		app.game.profile.settings={"combat_speed":item[3],"reduce_cutins":item[4]}
 		app.apply_options()
-		app.game.new_run([hero,"cleric"],31)
+		app.game.new_run([hero,"mage" if hero == "guardian" else "guardian"],31)
 		app.game.enter_node(0); app.game._start_combat(["skeleton_warrior","rat","goblin_warrior"])
 		for enemy in app.game.run.combat.enemies: enemy.hp=500; enemy.max_hp=500; enemy.intent.counter=0
 		if item[1]=="guardian_bash": app.game.run.combat.enemies[item[2]].intent.counter=4

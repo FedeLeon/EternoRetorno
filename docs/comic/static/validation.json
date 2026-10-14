@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "godot": "4.7.2",
+  "assets": {
+    "checks": 33,
+    "failures": 0
+  },
+  "presentation_headless": {
+    "checks": 124,
+    "failures": 0
+  },
+  "presentation_local_x11": {
+    "checks": 124,
+    "failures": 0,
+    "renderer": "Compatibility / Mesa llvmpipe",
+    "audio": "Dummy"
+  },
+  "enemy_foregrounds": {
+    "appearances": 56,
+    "failures": 0
+  },
+  "content": {
+    "checks": 1502,
+    "errors": 0
+  },
+  "import_script_errors": 0,
+  "exported": false,
+  "web_or_device_validated": false,
+  "review": "Eight generated originals and local composition captures; not a full manual adventure."
+}

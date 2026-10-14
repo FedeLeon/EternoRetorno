@@ -5,7 +5,7 @@ static func build(ui: Control, back: Callable) -> void:
 	var scroll = ScrollContainer.new(); ui.rect(scroll,55,145,1170,550)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	var body = VBoxContainer.new(); body.custom_minimum_size = Vector2(1130,0); body.add_theme_constant_override("separation",12); scroll.add_child(body)
-	var heroes: Array = ui.game.content.heroes.keys()
+	var heroes: Array = preload("res://src/rules/hero_roster.gd").ids(ui.game.content.heroes)
 	for i in range(heroes.size()):
 		for j in range(i+1,heroes.size()):
 			var party: Array = [heroes[i],heroes[j]]
@@ -27,5 +27,9 @@ static func build(ui: Control, back: Callable) -> void:
 			box.add_child(choose)
 static func dialogue(ui: Control, party: Array, wins: int) -> String:
 	if wins == 0: return "Una aventura completa compartida abre este recuerdo."
-	var voices = {"warrior":"Yo abro el camino. Avisame cuando necesites cubrirte.","guardian":"Tu espalda estará a salvo mientras yo siga en pie.","rogue":"Ahora sé reconocer tus pasos, incluso en la oscuridad.","mage":"La magia cambia, pero aprendí a confiar en tu ritmo.","cleric":"Cuando el fuego se apaga, todavía podemos sostenernos.","ranger":"Dos huellas juntas encuentran caminos que una sola no ve."}
-	return "%s: «%s»\n%s: «%s»%s" % [ui.game.content.heroes[party[0]].name,voices[party[0]],ui.game.content.heroes[party[1]].name,voices[party[1]],"\nEl recuerdo de tres victorias: ya no hace falta hablar para luchar juntos." if wins >= 3 else ""]
+	var voices = {"warrior":"Yo abro el camino. Avisame cuando necesites cubrirte.","guardian":"Tu espalda estará a salvo mientras yo siga en pie.","rogue":"Ahora sé reconocer tus pasos, incluso en la oscuridad.","mage":"La magia cambia, pero aprendí a confiar en tu ritmo."}
+	var first: Dictionary = ui.game.content.heroes[party[0]]
+	var second: Dictionary = ui.game.content.heroes[party[1]]
+	var a: Dictionary = first.get("civilian", {})
+	var b: Dictionary = second.get("civilian", {})
+	return "%s: «%s»\n%s: «%s»%s" % [a.get("name",first.name), a.get("voice",voices[party[0]]), b.get("name",second.name), b.get("voice",voices[party[1]]), "\nEl recuerdo de tres victorias: ya no hace falta hablar para luchar juntos." if wins >= 3 else ""]

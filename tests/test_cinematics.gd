@@ -18,7 +18,7 @@ func run_tests() -> void:
 	root.add_child(app)
 	await process_frame
 	var clips = Navigation.catalog()
-	check(clips.size()==10,"intro, six hero stories and three boss finales")
+	check(clips.size()==8,"intro, four hero stories and three boss finales")
 	var original = app.game.run.duplicate(true)
 	var profile = app.game.profile.duplicate(true)
 	for id in clips:
@@ -82,12 +82,12 @@ func run_tests() -> void:
 	await process_frame
 	await capture("cinema-gallery")
 	check(app.layer.get_children().size()>10,"gallery composed")
-	app.layer.find_child("ViewCinematic_hero_cleric",true,false).pressed.emit()
+	app.layer.find_child("ViewCinematic_hero_guardian",true,false).pressed.emit()
 	await process_frame
 	check(app.has_node("CinematicPlayer"),"gallery replays a character story")
 	app.get_node("CinematicPlayer").finish()
 	await process_frame
-	check(app.game.profile.cinematics_seen.has("hero_cleric"),"viewing in gallery also counts as seen")
+	check(app.game.profile.cinematics_seen.has("hero_guardian"),"viewing in gallery also counts as seen")
 	check(app.game.store.write(app.game.profile,app.game.run),"write isolated cutscene save")
 	var restored = preload("res://src/game.gd").new("user://cinematics-test.json",true)
 	check(restored.profile.get("cinematics_seen",{}).has("boss_3"),"new watched flags survive save/load")

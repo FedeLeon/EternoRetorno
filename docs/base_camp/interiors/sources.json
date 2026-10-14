@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-13",
+  "generator": "image_gen.imagegen integrado",
+  "normalization": "Copia directa sin filtros, repintado ni cambios de proporciones. Rutas/UIDs originales conservados en cinco edificios; proyectos tiene fondo propio nuevo.",
+  "reference_style": "docs/base_camp/dusk/sources/background.png",
+  "assets": [
+    {
+      "id": "market",
+      "source": "docs/base_camp/interiors/sources/market.png",
+      "runtime": "assets/market/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "4a32bd799a23f935f78930e65a69d417b221f55de82f08313c4973b664f30527"
+    },
+    {
+      "id": "forge",
+      "source": "docs/base_camp/interiors/sources/forge.png",
+      "runtime": "assets/forge/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d8069d2edb65966709cb262f561a002eff3805763de57f2b000a8db972a279a9"
+    },
+    {
+      "id": "church",
+      "source": "docs/base_camp/interiors/sources/church.png",
+      "runtime": "assets/church/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "42f8d4a3c5dc354a0093455502b7e9ba577f919fa1840bc40acbe3c67fe57b2d"
+    },
+    {
+      "id": "expeditions",
+      "source": "docs/base_camp/interiors/sources/expeditions.png",
+      "runtime": "assets/expeditions/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "2ab54a0317f5de9bd5d346ebacf7085a265729d44fd6a4b087916ac325c63cde"
+    },
+    {
+      "id": "refuge",
+      "source": "docs/base_camp/interiors/sources/refuge.png",
+      "runtime": "assets/refuge/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "aeefac846307338172321d3292fe05d0e6c5a39417895e2c951d27ab59800bf5"
+    },
+    {
+      "id": "projects",
+      "source": "docs/base_camp/interiors/sources/projects.png",
+      "runtime": "assets/projects/interior.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "726d80b31c02641510b91e852a27251d8a024ed3d062389d5444abf1050d3d53"
+    }
+  ]
+}

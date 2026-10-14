@@ -1,0 +1,11 @@
+{
+  "generator": "OpenAI built-in ImageGen",
+  "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6c7bb1b8-306e-4687-8795-558583d96192.png",
+  "prompt": "Use the attached four-hero sketchbook page as the exact ART STYLE, paper, pencil contrast, costume and palette reference. Create ONE new portrait/concept of ONLY the THIRD character, the rogue, with his FACE COMPLETELY VISIBLE and NO MASK. He is MAURO, an ordinary civilian camp apothecary forced to learn combat, a man around 30, slightly tired expressive human face, short messy dark-brown wavy hair under a low open hood, uneven eyebrows, faint stubble, a small healed nick above one eyebrow, natural skin, perceptive wary eyes; believable and imperfect, not a glamorous model, not an anime assassin. REMOVE every beak, plague mask, mouth covering, scarf over mouth or face guard. His eyes, nose, mouth and jaw are clearly readable. Keep a practical charcoal hood and layered worn black cloth, violet sash, wrapped forearm, leather herb pouches, one tiny green medicine vial and two plain daggers held low. Show full body head-to-boots on a VERTICAL sketchbook page, centered, generous space around him, grounded pose with slight uncertainty rather than heroic swagger. Authentic loose graphite/charcoal and muted violet colored-pencil concept sketch on visible mid-light cool-gray PAPER: broken searching contours, cross-hatching, construction marks, imperfect asymmetry, eraser traces, unfinished boot lines. Strong charcoal-black cloth shadows, richer smoky purple pigment, readable gray steel edges, small restrained natural skin and hair colors. Preserve the accepted paper sketch aesthetic, NOT polished digital painting, NO photorealistic rendering, NO comic ink, NO pixel art. No magical glow, no ornaments, no other characters, no labels/text. The new FACE is the main visual change and must remain visible despite the hood.",
+  "reference": "assets/heroes/identity/sketchbook.png",
+  "asset": "assets/heroes/identity/rogue_unmasked.png",
+  "processing": "Unchanged copied PNG; AtlasTexture portrait crops only",
+  "date": "2026-10-13",
+  "sha256": "21d841465cb041ceacc6533abf27e2397e69f179be3b7ccc9c12cdfa828256da",
+  "reference_sha256": "a65727816ad458cfcbc786ab274048581c8d4bf9666926b515341ce25fcec14c"
+}

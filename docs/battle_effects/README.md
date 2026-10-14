@@ -1,4 +1,41 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
+## Primeros planos de héroes — 14/10/2026
+
+Ataque y defensa usan una ilustración estática por héroe/acción; las marcas de
+energía y partículas se dibujan detrás y el personaje no cambia de pose ni escala.
+[Assets y pruebas actuales](../comic/static/README.md). Las animaciones normales
+sobre el escenario y las reglas de efectos se conservan.
+
+## Estética actual — 14/10/2026
+
+Iconos de efectos redibujados a lápiz, con siluetas legibles, gris/violeta y
+acentos semánticos; se mantienen sus diálogos y reglas. Partículas de impacto y
+cenizas usan un trazo editable, sin destellos dorados dominantes. El veneno
+conserva su parpadeo verde. [Assets y pruebas de integración](../art_direction/migration/README.md).
+
 # Efectos de batalla con iconos
+
+## Daño de veneno — 13/10/2026
+
+Al terminar el turno, el enemigo parpadea verde por el daño de veneno;
+los golpes normales conservan el rojo. La reacción espera a que se esfumen
+las cartas y, si el veneno mata, precede a las cenizas sin otro destello rojo.
+
+`game.gd` expone `resolved_poison_hits`, un recibo transitorio de vida y daño
+real producido por `rules/combat_turns.gd`. `ui/combat_flow.gd` lo reproduce con
+`enemy_sprite.gd` antes de las acciones enemigas, sin confundirlo con golpes
+preparados ni modificar reglas, guardados o assets.
+
+Pruebas actuales: `test_poison_feedback.gd`, 10 comprobaciones sin fallos tanto
+headless como con ventana local (OpenGL/Mesa); `test_turn_sequence.gd`, 182,
+y `test_combat_depth.gd`, 28, sin fallos headless. La prueba de veneno headless
+informa cuatro objetos y un recurso pendientes al cierre; la misma prueba
+con ventana no informa esos pendientes, solo la limitación de V-Sync del driver.
+Sin exportación ni validación web/dispositivo de este cambio.
 
 ## Pixel art sencillo con volumen — 08/10/2026
 

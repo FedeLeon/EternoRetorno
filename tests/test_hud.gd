@@ -28,7 +28,7 @@ func run_tests() -> void:
 	var app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-hud.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 12, {"team": "phoenix_idol"})
+	app.game.new_run(["warrior", "guardian"], 12, {"team": "phoenix_idol"})
 	app.game.enter_node(0)
 	app.game.run.heroes[0].block = 12
 	app.game.run.heroes[0].poison = 2
@@ -86,7 +86,7 @@ func run_tests() -> void:
 		after.save_png(preload("res://tests/artifacts.gd").path("hud/energy-frame-b.png"))
 	await click(hud.get_node("Relic0").get_global_rect().get_center())
 	check(is_instance_valid(hud.popover) and not is_instance_valid(app.overlay), "Anchored description without modal")
-	check(hud.popover.find_children("*", "Label", true, false).any(func(n): return "Clériga" in n.text), "Phoenix state identifies each hero")
+	check(hud.popover.find_children("*", "Label", true, false).any(func(n): return "Constructora" in n.text), "Phoenix state identifies each hero")
 	check(hud.popover.find_children("*", "Button", true, false).is_empty(), "Description has no buttons")
 	check(hud.popover.position.y == hud.get_node("Relic0").get_rect().end.y + 10, "Description below relic")
 	await shot("relic-popover")

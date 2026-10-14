@@ -41,7 +41,7 @@ func _initialize() -> void:
 	check(not g.buy_market_card(id), "duplicate rejected")
 	check(not g.buy_market_card("bad"), "invalid rejected")
 	check(P.available(g.profile, g.content.cards[id]), "purchased available")
-	g.new_run(["warrior", "cleric"], 42)
+	g.new_run(["warrior", "guardian"], 42)
 	g.enter_node(0)
 	var before = g.profile.souls
 	for enemy in g.run.combat.enemies: enemy.hp = 0
@@ -71,7 +71,7 @@ func _initialize() -> void:
 		if not c.has("tier"): continue
 		for upgraded in [false, true]:
 			var battle = Game.new("user://unused-card-rules.save", false)
-			var companion = "cleric" if c.owner != "cleric" else "warrior"
+			var companion = "guardian" if c.owner != "guardian" else "warrior"
 			battle.new_run([c.owner, companion], 42)
 			battle.enter_node(0)
 			for enemy in battle.run.combat.enemies:
@@ -90,7 +90,7 @@ func _initialize() -> void:
 			if effect.block > 0: check(battle.run.heroes[0].block == effect.block, "block " + card_id)
 			if effect.heal > 0: check(battle.run.heroes[0].hp == mini(battle.run.heroes[0].max_hp, battle.run.heroes[0].max_hp - 20 + effect.heal), "heal " + card_id)
 	var balance = restored.profile.souls
-	restored.new_run(["mage", "ranger"], 5)
+	restored.new_run(["mage", "rogue"], 5)
 	check(restored.profile.souls == balance, "new run keeps balance")
 	check(restored.profile.market_cards == [id], "unlocks persist")
 	restored.profile.souls = 0

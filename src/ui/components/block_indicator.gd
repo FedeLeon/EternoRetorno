@@ -28,7 +28,7 @@ func _ready() -> void:
 	texture.region = Rect2(cell.position + bounds.position, bounds.size)
 	shield.texture = icon_texture if icon_texture != null else texture
 	shield.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	shield.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	shield.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	shield.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	shield.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	shield.position = Vector2(0, -2)

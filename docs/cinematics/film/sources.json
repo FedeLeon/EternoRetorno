@@ -9,7 +9,6 @@
   {
     "id": "intro_1",
     "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b75a067d-1d0c-4847-98cb-b069ccb788ba.png",
-    "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Medium wide view of SIX distant distinct adventurers gathering around a campfire: purple armored swordsman, auburn-haired teal-caped shieldwoman, green masked rogue, silver-haired blue mage, ivory cleric, blue hooded archer. Tents and ruins around them, hopeful warm fire.",
     "tool": "image_gen built-in",
     "asset": "assets/cinematics/shots/intro_1.png"
   },
@@ -75,34 +74,6 @@
     "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Wide spellcasting action shot of SAME mage lifting blue crystal staff before ancient sealed door while icy shards float in spiral, silver hair and blue cloak windblown, brilliant cyan light on dark stone.",
     "tool": "image_gen built-in",
     "asset": "assets/cinematics/shots/hero_mage_1.png"
-  },
-  {
-    "id": "hero_cleric_0",
-    "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-caeb6344-c460-4f85-aa13-60c4fcd9559d.png",
-    "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Medium atmospheric shot of SAME ivory-and-gold hooded cleric rekindling candles in ruined sanctuary, gold staff rests beside her, her face lit by first small flame, no modern details.",
-    "tool": "image_gen built-in",
-    "asset": "assets/cinematics/shots/hero_cleric_0.png"
-  },
-  {
-    "id": "hero_cleric_1",
-    "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-bcf674b9-00f1-4f99-a351-e2ce68cc08e4.png",
-    "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Intimate movie shot of SAME ivory cleric kneeling next to wounded cloaked companion and healing with golden hands, luminous motes and warm light filling cold crypt, compassionate expression.",
-    "tool": "image_gen built-in",
-    "asset": "assets/cinematics/shots/hero_cleric_1.png"
-  },
-  {
-    "id": "hero_ranger_0",
-    "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9fae4720-babd-47e3-b5c9-ff8d5142a4fd.png",
-    "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Wide tracking-style shot of SAME blue-hooded archer standing in uncanny dark forest where roots twist across the path, hand on ornate bow, studying broken trail, dawn shafts and mist.",
-    "tool": "image_gen built-in",
-    "asset": "assets/cinematics/shots/hero_ranger_0.png"
-  },
-  {
-    "id": "hero_ranger_1",
-    "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6605531d-43a5-4b97-ab26-caf480da9e14.png",
-    "prompt": "Create ONE full-screen cinematic illustration for Eterno Retorno, a dark medieval fantasy RPG. Landscape 16:9, 1280x720 or larger, no text, no typography, no UI, no borders, no collage. Cinematic painted detailed pixel-art aesthetic with realistic light, atmospheric depth, somber charcoal stone and warm fire or cold magic, matching our game backgrounds. Compose story action in the upper and middle two-thirds, leave bottom for subtitles. This is a distinct movie shot, NOT a static character selection portrait. Close diagonal action shot of SAME blue hooded ranger drawing ornate bow and releasing brilliant blue arrow toward a distant forest opening, cloak swept back, companion silhouettes follow its light.",
-    "tool": "image_gen built-in",
-    "asset": "assets/cinematics/shots/hero_ranger_1.png"
   },
   {
     "id": "boss_1_0",

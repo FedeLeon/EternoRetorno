@@ -12,6 +12,7 @@ var clock = 0.0
 var base_scale = 1.0
 var tween: Tween
 var has_motion_frames = false
+var frame_size = 128.0
 
 static func entries() -> Dictionary:
 	if catalog.is_empty():
@@ -22,13 +23,14 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	# Different silhouettes no longer flap or idle in perfect synchrony.
 	clock = float(absi(visual_id.hash())%1000)/137.0
-	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR if entries()[visual_id].get("style","") == "sketchbook" else CanvasItem.TEXTURE_FILTER_NEAREST
 	sprite = Sprite2D.new()
 	var motion_path = "res://assets/enemies/animations/" + visual_id + ".png"
 	has_motion_frames = ResourceLoader.exists(motion_path)
 	sprite.texture = load(motion_path if has_motion_frames else "res://assets/enemies/hd/" + visual_id + ".png")
 	sprite.hframes = 8 if has_motion_frames else 1
-	sprite.offset = Vector2(0, -64)
+	frame_size = sprite.texture.get_height()
+	sprite.offset = Vector2(0, -frame_size/2)
 	sprite.frame_changed.connect(_size_pose)
 	add_child(sprite)
 	resized.connect(_place)
@@ -36,7 +38,7 @@ func _ready() -> void:
 	set_fallen(fallen)
 
 func _place() -> void:
-	base_scale = maxf(1, floor(minf(size.x / 64, size.y / 52))) / 2.0
+	base_scale = maxf(1, floor(minf(size.x / 64, size.y / 52))) / 2.0 * 128.0/frame_size
 	sprite.position = Vector2(round(size.x / 2), size.y)
 	sprite.scale = Vector2.ONE * base_scale
 	_size_pose()
@@ -49,10 +51,10 @@ func _size_pose() -> void:
 	# Correction belongs to the drawn frame, not to the current action flag.
 	# Reactions and ash playback can freeze the last rendered attack frame.
 	var factor = float(metrics.get("scale", [1,1,1,1,1,1,1,1])[sprite.frame])
-	var bottom = float(metrics.get("bottom", [120,120,120,120,120,120,120,120])[sprite.frame])
+	var bottom = float(metrics.get("bottom", [120,120,120,120,120,120,120,120])[sprite.frame]) * frame_size / float(metrics.get("frame_size",128))
 	sprite.scale = Vector2.ONE * base_scale * factor
 	# Keep the original opaque foot baseline while correcting the drawn pose size.
-	sprite.offset.y = 64-bottom + (bottom-128)/factor
+	sprite.offset.y = frame_size/2-bottom + (bottom-frame_size)/factor
 
 func _process(delta: float) -> void:
 	if acting or fallen or sprite == null:
@@ -99,7 +101,7 @@ func play_once(animation: String) -> void:
 		"attack":
 			attack_motion()
 		_:
-			sprite.modulate = Color(1.6, 0.5, 0.5)
+			sprite.modulate = Color(0.5, 1.6, 0.5) if animation == "poison" else Color(1.6, 0.5, 0.5)
 			tween.tween_property(sprite, "position:x", size.x / 2 + 7, 0.08)
 			tween.tween_property(sprite, "position:x", size.x / 2, 0.12)
 			tween.parallel().tween_property(sprite, "modulate", Color.WHITE, 0.12)

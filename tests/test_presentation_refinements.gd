@@ -30,7 +30,7 @@ func run_tests() -> void:
 			var finished = [0]
 			effect.finished.connect(func(): finished[0]+=1)
 			for frame in range(16): effect._process(0.25)
-			check(effect.frame_index == 15 and finished[0] == 1,"all frames finish once "+hero+" "+action)
+			check(effect.static_illustration and effect.frame_index == 0 and finished[0] == 1,"static illustration finishes once "+hero+" "+action)
 			await process_frame
 	var shared = preload("res://src/presentation/comic_cut_in.gd").new()
 	check(is_equal_approx(shared.duration,0.72),"enemy default duration unchanged")
@@ -50,7 +50,7 @@ func run_tests() -> void:
 	app.screen = "home"; app.render()
 	check(app.layer.has_node("HomeBestiary"),"bestiary remains at home")
 	for floor_number in [1,2,3]:
-		app.game.new_run(["warrior","cleric"],141,{},floor_number)
+		app.game.new_run(["warrior","guardian"],141,{},floor_number)
 		app.screen = "map"; app.render(); await capture("map-clean-%d" % floor_number)
 	# Presentation upgrade of a saved spiral does not rewrite rooms or links.
 	for node in app.game.run.nodes:
@@ -82,7 +82,7 @@ func run_tests() -> void:
 			await capture("shot-"+id+"-"+str(chapter))
 			player.advance()
 		await process_frame
-	check(image_hashes.size() == 21,"twenty-one distinct cinematic frames")
+	check(image_hashes.size() == 17,"seventeen distinct cinematic frames")
 	var sound_events: Array = []
 	app.audio.sound_played.connect(func(id): sound_events.append(id))
 	preload("res://src/presentation/preferences.gd").settings = {"impact_strength":0.0}

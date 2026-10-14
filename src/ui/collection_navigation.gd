@@ -6,6 +6,7 @@ static func build(ui: Control) -> void:
 	for id in ui.game.content.cards:
 		var card: Dictionary = ui.game.content.cards[id]
 		if not card.locked: continue
+		if card.owner not in preload("res://src/rules/hero_roster.gd").ACTIVE and id not in ui.game.profile.unlocked_cards: continue
 		snapshot.unlocks.append({"name": card.name, "unlocked": id in ui.game.profile.unlocked_cards,
 			"requirement": "Ganá una aventura con " + ui.game.content.heroes[card.owner].name + ".",
 			"icon": "res://assets/collection/icons/%s_victory.png" % card.owner})

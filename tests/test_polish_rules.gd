@@ -5,13 +5,13 @@ var failures=0
 func check(ok: bool, caption: String) -> void:
 	checks+=1
 	if not ok: failures+=1;printerr("FAIL: ",caption)
-func battle(party: Array=["warrior","cleric"],floor_number: int=1) -> RefCounted:
+func battle(party: Array=["warrior","guardian"],floor_number: int=1) -> RefCounted:
 	var g=Game.new("user://unused-polish",false);g.new_run(party,331,{},floor_number);g.enter_node(0)
 	for enemy in g.run.combat.enemies:enemy.hp=500;enemy.max_hp=500;enemy.intent={"damage":0,"block":0,"counter":0,"target":0}
 	return g
 func hand(g: RefCounted,id: String) -> void: g.run.combat.hand=[{"id":id,"upgraded":false}];g.run.combat.energy=3
 func boss(floor_number: int) -> RefCounted:
-	var g=battle(["warrior","cleric"],floor_number)
+	var g=battle(["warrior","guardian"],floor_number)
 	var node=g.run.nodes.filter(func(n):return n.kind=="boss")[0]
 	g.run.current=node.id;g._start_combat(node.encounter)
 	return g
@@ -20,11 +20,11 @@ func _initialize() -> void:
 	check(g.play_card(0,0) and g.run.heroes[0].hp==hp-5 and g.run.combat.energy==5,"blood cost and energy commit together")
 	hand(g,"warrior_risk");g.run.heroes[0].hp=5;var before=g.run.duplicate(true)
 	check(not g.play_card(0,0) and g.run==before,"health cost cannot kill and rejected play changes nothing")
-	g=battle(["rogue","ranger"]);hand(g,"rogue_risk");before=g.run.duplicate(true)
+	g=battle(["warrior", "rogue"]);hand(g,"rogue_risk");before=g.run.duplicate(true)
 	check(not g.play_card(0,0) and g.run==before,"discard card needs another card")
-	g.run.combat.hand.append({"id":"ranger_risk","upgraded":false})
+	g.run.combat.hand.append({"id":"rogue_risk","upgraded":false})
 	check(g.play_card(0,0) and g.run.combat.hand.is_empty() and g.run.combat.discard.size()==2,"rightmost companion card discarded exactly once")
-	g=battle(["guardian","cleric"]);hand(g,"guardian_risk");before=g.run.duplicate(true)
+	g=battle(["guardian", "mage"]);hand(g,"guardian_risk");before=g.run.duplicate(true)
 	check(not g.play_card(0,0) and g.run==before,"guard sacrifice needs six block")
 	g.run.heroes[0].block=7;check(g.play_card(0,0) and g.run.heroes[0].block==1,"guard sacrifice pays six")
 	for floor_number in [1,2,3]:
@@ -58,10 +58,10 @@ func _initialize() -> void:
 	check(g.run.combat.boss_objective.broken and preload("res://src/rules/boss_mechanics.gd").hit(g,enemy,20,false)==20,"piercing removes plates and exposes boss")
 	g=battle();var choices=preload("res://src/rules/adventure_choices.gd")
 
-	g=battle(["guardian","cleric"],2);g.run.combat.boss_objective={"trapped":0};g.run.combat.hand=[{"id":"guardian_guard","upgraded":false},{"id":"cleric_light","upgraded":false}]
+	g=battle(["guardian", "mage"],2);g.run.combat.boss_objective={"trapped":0};g.run.combat.hand=[{"id":"guardian_guard","upgraded":false},{"id":"guardian_strike","upgraded":false}]
 	check(g.synergy_targets("whatever").is_empty(),"trapped partner cannot participate in synergy")
 	g=battle()
-	check(JSON.parse_string(FileAccess.get_file_as_string("res://data/pair_events.json")).size()==15,"one event per hero pair")
+	check(JSON.parse_string(FileAccess.get_file_as_string("res://data/pair_events.json")).size()==6,"one event per hero pair")
 	var risky: Array=g.run.nodes.filter(func(n):return n.has("risk"))
 	check(risky.size()==1 and g.run.nodes.any(func(n):return n.stage==risky[0].stage and not n.has("risk")),"risk branch has ordinary alternative")
 
@@ -82,7 +82,7 @@ func _initialize() -> void:
 	check(g.polish_action("scout") and g.run.nodes[0].scouted and not g.polish_action("scout"),"scout only charges for new rooms")
 	g=battle();var state=g.rng.state;hand(g,"warrior_slash");g.play_card(0,0)
 	check(g.rng.state==state and g.run.telemetry.cards.warrior_slash==1,"telemetry never consumes gameplay RNG")
-	g=battle(["warrior","cleric"],2);g._start_combat(["forest_wolf","goblin_shaman"])
+	g=battle(["warrior","guardian"],2);g._start_combat(["forest_wolf","goblin_shaman"])
 	var coordination=preload("res://src/rules/enemy_coordination.gd")
 	var wolf=g.run.combat.enemies[0];var shaman=g.run.combat.enemies[1]
 	var base_damage=int(wolf.intent.damage)

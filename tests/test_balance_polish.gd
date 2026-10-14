@@ -17,7 +17,7 @@ func _initialize():
      simulate(g)
      results.append({"party":g.run.party,"seed":g.run.seed,"gear":rank,"won":g.run.phase=="victory","floor":g.run.floor,"telemetry":g.run.telemetry,"killer":g.run.get("killer","")})
  var report={"bot":"Legal greedy actions; selects rewards and upgrades; no battle stats modified","runs":results,"failures":failures}
- var out=FileAccess.open("res://artifacts/polish/balance.json",FileAccess.WRITE);out.store_string(JSON.stringify(report,"\t")+"\n")
+ var out=FileAccess.open(preload("res://tests/artifacts.gd").path("polish/balance.json"),FileAccess.WRITE);out.store_string(JSON.stringify(report,"\t")+"\n")
  for rank in [0,1]:
   var group=results.filter(func(r):return r.gear==rank)
   print("BALANCE rank ",rank,": ",group.filter(func(r):return r.won).size(),"/",group.size()," wins")

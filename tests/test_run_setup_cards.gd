@@ -24,7 +24,7 @@ func verify() -> void:
 	app.game.profile.preferred_difficulty = 0
 	app.game.profile.preferred_variant = "normal"
 	var profile = app.game.profile.duplicate(true)
-	Setup.open(app,3,func(floor): app.game.new_run(["warrior","cleric"],72,{},floor))
+	Setup.open(app,3,func(floor): app.game.new_run(["warrior","guardian"],72,{},floor))
 	await process_frame
 	check(app.overlay.find_children("*","OptionButton",true,false).is_empty(),"no dropdowns")
 	check(app.overlay.find_children("DifficultyCard*","Button",true,false).size()==4 and app.overlay.find_children("ConditionCard*","Button",true,false).size()==3,"four difficulty and three condition cards")
@@ -38,7 +38,7 @@ func verify() -> void:
 	click(app.overlay.get_node("CancelRunSetup")); await process_frame
 	check(app.game.profile==profile,"cancel preserves preferences")
 	app.game.profile.difficulty_unlocked = 3
-	Setup.open(app,3,func(floor): app.game.new_run(["warrior","cleric"],72,{},floor))
+	Setup.open(app,3,func(floor): app.game.new_run(["warrior","guardian"],72,{},floor))
 	await process_frame
 	click(app.overlay.get_node("DifficultyCard3")); await process_frame
 	click(app.overlay.get_node("ConditionCard_dangerous")); await process_frame

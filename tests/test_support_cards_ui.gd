@@ -48,7 +48,7 @@ func run_tests() -> void:
 		await shot(hero)
 		page.free()
 	app.layer.show()
-	app.game.new_run(["warrior","ranger"], 12)
+	app.game.new_run(["warrior","rogue"], 12)
 	app.game.enter_node(0)
 	var b = app.game.run.combat
 	b.enemies = [{"id":"skeleton", "hp":100, "max_hp":100, "block":15, "poison":0,"weak_pct":25,"fracture_pct":25,"intent":{"damage":12,"block":12,"target":0}}]

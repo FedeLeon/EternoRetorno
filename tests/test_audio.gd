@@ -68,7 +68,7 @@ func run_tests() -> void:
 	await process_frame
 	raw_button.pressed.emit()
 	check(played.has("click"), "standalone screen buttons wired")
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)
 	app.continue_run()
 	check(audio.current_context == "combat", "battle theme selected")

@@ -24,8 +24,8 @@ func run_tests() -> void:
 	var app = load("res://main.tscn").instantiate()
 	app.game = preload("res://src/game.gd").new("user://unused-rest.save", false)
 	root.add_child(app)
-	var ids = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
-	for pair in range(3):
+	var ids = ["warrior", "guardian", "rogue", "mage"]
+	for pair in range(ids.size() / 2):
 		app.game.new_run([ids[pair * 2], ids[pair * 2 + 1]], 42)
 		for hero in app.game.run.heroes: hero.hp = 10
 		enter_rest(app)

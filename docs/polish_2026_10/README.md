@@ -1,3 +1,8 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
 # Pulido visual y expansión táctica — 07/10/2026
 
 Limpieza 08/10: se retiraron del runtime las 36 piezas de equipo superpuestas

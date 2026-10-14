@@ -1,0 +1,44 @@
+{
+	"card": {
+		"block": 4.0,
+		"cost": 1.0,
+		"damage": 0.0,
+		"heal": 6.0,
+		"hits": 1.0,
+		"id": "warrior_second_wind",
+		"locked": false,
+		"market_price": 160.0,
+		"name": "Segundo aliento",
+		"owner": "warrior",
+		"pierce": false,
+		"poison": 0.0,
+		"support": true,
+		"target": "self",
+		"tier": "market"
+	},
+	"card_id": "warrior_second_wind",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "warrior",
+	"id": "minimal_warrior_second_wind",
+	"kind": "minimal_card",
+	"motif": "One loose bandage loop around a cropped forearm and one small muted red healing cross. No person or background.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fdd62e23-460c-4cae-9d8e-5e10c7683030.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One loose bandage loop around a cropped forearm and one small muted red healing cross. No person or background. This is a visual metaphor for the card Segundo aliento, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "1f13a8ca20d81f545240414bea90f5fbab81cb885f369d3a503d1e8c43aded76",
+	"source": "docs/cards/minimal/sources/warrior_second_wind.png",
+	"source_sha256": "d1baf857f994be242a2cdbb58788f829da82f532e898e960a9c96f14fc24d697",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/warrior_second_wind.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

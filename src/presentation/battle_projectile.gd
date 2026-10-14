@@ -15,7 +15,7 @@ static func play(parent: Control, source: Control, target: Control, hero: String
 	effect.start = inverse * source.get_global_rect().get_center() + Vector2(34,-12)
 	effect.destination = inverse * target.get_global_rect().get_center() + Vector2(0,-18)
 	effect.tint = preload("res://src/presentation/hero_cut_in.gd").COLORS.get(hero,Color("e9cfa4"))
-	effect.kind = "arrow" if hero == "ranger" else "orb" if hero in ["mage","cleric"] else "slash"
+	effect.kind = "orb" if hero == "mage" else "slash"
 	parent.add_child(effect)
 	var tween = effect.create_tween()
 	tween.tween_property(effect,"progress",1.0,0.23 if effect.kind != "slash" else 0.12)

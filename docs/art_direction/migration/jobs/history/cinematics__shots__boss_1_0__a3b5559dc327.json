@@ -1,0 +1,25 @@
+{
+  "id": "cinematics__shots__boss_1_0",
+  "target": "assets/cinematics/shots/boss_1_0.png",
+  "family": "cinematics/shots",
+  "kind": "cinematic",
+  "hero": null,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_0.png",
+  "narrative": {
+    "title": "Los ecos se apagan",
+    "text": "La fuente se quiebra. Por primera vez, los huesos de la cripta dejan de responder al llamado."
+  },
+  "queue_position": 367,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Characters are Nicolas (short brown beard, carpenter), Ines (auburn braid, builder), Mauro (messy dark hair, visible HUMAN FACE, apothecary) and Vera (silver-gray hair, teacher). Use their exact portrait identities. Civilian workclothes in charcoal/gray and violet, ordinary people, NOT heroic royal costumes. No masks or beaks on Mauro; no horned or closed helmet on Nicolas. Match clothing to the actual narrative situation, not to a combat sprite. ONE SINGLE full-frame cinematic shot, landscape16:9. No panels, no collage, no grid or inset images. Distinct scene composition for this narrative beat, rough hand-drawn conceptual pencil art on paper, dark gray/violet palette, calm bottom area for subtitle overlay. No actual text. Narrative context only: {\"title\":\"Los ecos se apagan\",\"text\":\"La fuente se quiebra. Por primera vez, los huesos de la cripta dejan de responder al llamado.\"}. Focus on the environmental aftermath of the defeated guardian and the next route. At most TWO distant unidentified traveler silhouettes, so this works for any chosen pair. No close-up portraits, no four-person party. ",
+  "references": [
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-742a93a0-37b4-4a3f-8629-40c1a9cc19ee.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

@@ -12,8 +12,8 @@
   "contracts": [
     {
       "id": "pair_warrior_guardian",
-      "name": "Guerrero y Guardiana",
-      "description": "Ganá una aventura con Guerrero y Guardiana.",
+      "name": "Carpintero y Constructora",
+      "description": "Ganá una aventura con Carpintero y Constructora.",
       "art": "pair",
       "party": [
         "warrior",
@@ -25,8 +25,8 @@
     },
     {
       "id": "pair_warrior_rogue",
-      "name": "Guerrero y Pícaro",
-      "description": "Ganá una aventura con Guerrero y Pícaro.",
+      "name": "Carpintero y Boticario",
+      "description": "Ganá una aventura con Carpintero y Boticario.",
       "art": "pair",
       "party": [
         "warrior",
@@ -38,8 +38,8 @@
     },
     {
       "id": "pair_warrior_mage",
-      "name": "Guerrero y Maga",
-      "description": "Ganá una aventura con Guerrero y Maga.",
+      "name": "Carpintero y Profesora",
+      "description": "Ganá una aventura con Carpintero y Profesora.",
       "art": "pair",
       "party": [
         "warrior",
@@ -50,35 +50,9 @@
       "reward": 350
     },
     {
-      "id": "pair_warrior_cleric",
-      "name": "Guerrero y Clériga",
-      "description": "Ganá una aventura con Guerrero y Clériga.",
-      "art": "pair",
-      "party": [
-        "warrior",
-        "cleric"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_warrior_ranger",
-      "name": "Guerrero y Explorador",
-      "description": "Ganá una aventura con Guerrero y Explorador.",
-      "art": "pair",
-      "party": [
-        "warrior",
-        "ranger"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
       "id": "pair_guardian_rogue",
-      "name": "Guardiana y Pícaro",
-      "description": "Ganá una aventura con Guardiana y Pícaro.",
+      "name": "Constructora y Boticario",
+      "description": "Ganá una aventura con Constructora y Boticario.",
       "art": "pair",
       "party": [
         "guardian",
@@ -90,38 +64,12 @@
     },
     {
       "id": "pair_guardian_mage",
-      "name": "Guardiana y Maga",
-      "description": "Ganá una aventura con Guardiana y Maga.",
+      "name": "Constructora y Profesora",
+      "description": "Ganá una aventura con Constructora y Profesora.",
       "art": "pair",
       "party": [
         "guardian",
         "mage"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_guardian_cleric",
-      "name": "Guardiana y Clériga",
-      "description": "Ganá una aventura con Guardiana y Clériga.",
-      "art": "pair",
-      "party": [
-        "guardian",
-        "cleric"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_guardian_ranger",
-      "name": "Guardiana y Explorador",
-      "description": "Ganá una aventura con Guardiana y Explorador.",
-      "art": "pair",
-      "party": [
-        "guardian",
-        "ranger"
       ],
       "metric": "victory",
       "target": 1,
@@ -129,8 +77,8 @@
     },
     {
       "id": "pair_rogue_mage",
-      "name": "Pícaro y Maga",
-      "description": "Ganá una aventura con Pícaro y Maga.",
+      "name": "Boticario y Profesora",
+      "description": "Ganá una aventura con Boticario y Profesora.",
       "art": "pair",
       "party": [
         "rogue",
@@ -141,74 +89,9 @@
       "reward": 350
     },
     {
-      "id": "pair_rogue_cleric",
-      "name": "Pícaro y Clériga",
-      "description": "Ganá una aventura con Pícaro y Clériga.",
-      "art": "pair",
-      "party": [
-        "rogue",
-        "cleric"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_rogue_ranger",
-      "name": "Pícaro y Explorador",
-      "description": "Ganá una aventura con Pícaro y Explorador.",
-      "art": "pair",
-      "party": [
-        "rogue",
-        "ranger"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_mage_cleric",
-      "name": "Maga y Clériga",
-      "description": "Ganá una aventura con Maga y Clériga.",
-      "art": "pair",
-      "party": [
-        "mage",
-        "cleric"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_mage_ranger",
-      "name": "Maga y Explorador",
-      "description": "Ganá una aventura con Maga y Explorador.",
-      "art": "pair",
-      "party": [
-        "mage",
-        "ranger"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
-      "id": "pair_cleric_ranger",
-      "name": "Clériga y Explorador",
-      "description": "Ganá una aventura con Clériga y Explorador.",
-      "art": "pair",
-      "party": [
-        "cleric",
-        "ranger"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 350
-    },
-    {
       "id": "win_warrior",
-      "name": "El camino del Guerrero",
-      "description": "Ganá una aventura llevando a Guerrero, con cualquier compañero.",
+      "name": "El camino del Carpintero",
+      "description": "Ganá una aventura llevando a Carpintero, con cualquier compañero.",
       "art": "guardian",
       "party": [
         "warrior"
@@ -219,8 +102,8 @@
     },
     {
       "id": "win_guardian",
-      "name": "El camino de la Guardiana",
-      "description": "Ganá una aventura llevando a Guardiana, con cualquier compañero.",
+      "name": "El camino de la Constructora",
+      "description": "Ganá una aventura llevando a Constructora, con cualquier compañero.",
       "art": "guardian",
       "party": [
         "guardian"
@@ -231,8 +114,8 @@
     },
     {
       "id": "win_rogue",
-      "name": "El camino del Pícaro",
-      "description": "Ganá una aventura llevando a Pícaro, con cualquier compañero.",
+      "name": "El camino del Boticario",
+      "description": "Ganá una aventura llevando a Boticario, con cualquier compañero.",
       "art": "guardian",
       "party": [
         "rogue"
@@ -243,35 +126,11 @@
     },
     {
       "id": "win_mage",
-      "name": "El camino de la Maga",
-      "description": "Ganá una aventura llevando a Maga, con cualquier compañero.",
+      "name": "El camino de la Profesora",
+      "description": "Ganá una aventura llevando a Profesora, con cualquier compañero.",
       "art": "guardian",
       "party": [
         "mage"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 250
-    },
-    {
-      "id": "win_cleric",
-      "name": "El camino de la Clériga",
-      "description": "Ganá una aventura llevando a Clériga, con cualquier compañero.",
-      "art": "guardian",
-      "party": [
-        "cleric"
-      ],
-      "metric": "victory",
-      "target": 1,
-      "reward": 250
-    },
-    {
-      "id": "win_ranger",
-      "name": "El camino del Explorador",
-      "description": "Ganá una aventura llevando a Explorador, con cualquier compañero.",
-      "art": "guardian",
-      "party": [
-        "ranger"
       ],
       "metric": "victory",
       "target": 1,
@@ -371,7 +230,7 @@
   "specializations": {
     "warrior_whirlwind": {
       "hero": "warrior",
-      "name": "Guerrero del torbellino",
+      "name": "Torbellino",
       "description": "+1 de daño por golpe en cartas con dos o más impactos.",
       "condition": "multi",
       "stat": "damage",
@@ -402,7 +261,7 @@
     "guardian_retaliator": {
       "hero": "guardian",
       "name": "Vindicadora",
-      "description": "+3 de daño con cartas ofensivas mientras la Guardiana tenga bloqueo activo.",
+      "description": "+3 de daño con cartas ofensivas mientras la Constructora tenga bloqueo activo.",
       "condition": "guarded",
       "stat": "damage",
       "bonus": 3,
@@ -448,46 +307,6 @@
       "bonus": 2,
       "cost": 450,
       "art": "mage_focus"
-    },
-    "cleric_healer": {
-      "hero": "cleric",
-      "name": "Sanadora",
-      "description": "+2 de vida restaurada con cartas de curación.",
-      "condition": "always",
-      "stat": "heal",
-      "bonus": 2,
-      "cost": 450,
-      "art": "cleric_healer"
-    },
-    "cleric_aegis": {
-      "hero": "cleric",
-      "name": "Custodia sagrada",
-      "description": "+2 de bloqueo con cartas defensivas.",
-      "condition": "always",
-      "stat": "block",
-      "bonus": 2,
-      "cost": 450,
-      "art": "cleric_aegis"
-    },
-    "ranger_precision": {
-      "hero": "ranger",
-      "name": "Ojo de halcón",
-      "description": "+2 de daño en cartas de un impacto contra un solo enemigo.",
-      "condition": "focused",
-      "stat": "damage",
-      "bonus": 2,
-      "cost": 450,
-      "art": "ranger_precision"
-    },
-    "ranger_scout": {
-      "hero": "ranger",
-      "name": "Vanguardia",
-      "description": "+3 de daño por impacto con cartas durante el primer turno de cada combate.",
-      "condition": "opening",
-      "stat": "damage",
-      "bonus": 3,
-      "cost": 450,
-      "art": "ranger_scout"
     }
   }
 }

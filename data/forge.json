@@ -1,6 +1,10 @@
 {
   "build_cost": 400,
-  "prices": [150, 300, 600],
+  "prices": [
+    150,
+    300,
+    600
+  ],
   "strength_per_level": 1,
   "block_per_level": 2
 }

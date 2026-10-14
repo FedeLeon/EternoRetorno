@@ -1,9 +1,8 @@
 class_name ERNumberView
 extends Control
 
-# All glyphs end at source row 46, except 5 (40) and 6 (41).
-# Compensate transparent source padding without changing the glyph artwork.
-const BASELINE_OFFSET = {"5": 6.0, "6": 5.0}
+# The pencil glyph bank shares one opaque baseline at source row 46.
+const BASELINE_OFFSET = {}
 
 var value: int = 0:
 	set(next):
@@ -13,7 +12,7 @@ var value: int = 0:
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
-	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	resized.connect(refresh)
 	refresh()
 

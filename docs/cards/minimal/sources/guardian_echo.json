@@ -1,0 +1,41 @@
+{
+	"card": {
+		"block": 22.0,
+		"cost": 2.0,
+		"damage": 0.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "guardian_echo",
+		"locked": true,
+		"name": "Juramento eterno",
+		"owner": "guardian",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "all_allies"
+	},
+	"card_id": "guardian_echo",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "guardian",
+	"id": "minimal_guardian_echo",
+	"kind": "minimal_card",
+	"motif": "Two plain steel shields connected by one simple loop of violet thread, no ornamentation.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-87afcb15-12ec-45e2-b5c8-51f094ca7d17.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: Two plain steel shields connected by one simple loop of violet thread, no ornamentation. This is a visual metaphor for the card Juramento eterno, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "8da31ea2084079b8b47c30857a04b9f3f8eb47cce79637f88b59c4a2c4e9f2fe",
+	"source": "docs/cards/minimal/sources/guardian_echo.png",
+	"source_sha256": "567c550eba101ee59852f1a1d9f19a62a1b5eefac229e0547eef1ba1543023ab",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/guardian_echo.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

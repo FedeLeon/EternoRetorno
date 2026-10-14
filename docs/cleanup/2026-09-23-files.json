@@ -4,11 +4,9 @@
     "bytes": 3007321
   },
   {
-    "path": "assets/comic/attacks/cleric_1.png",
     "bytes": 2748711
   },
   {
-    "path": "assets/comic/attacks/ranger_1.png",
     "bytes": 2786257
   },
   {
@@ -36,7 +34,6 @@
     "bytes": 3035583
   },
   {
-    "path": "assets/comic/attacks/ranger_2.png",
     "bytes": 2844744
   },
   {
@@ -44,11 +41,9 @@
     "bytes": 2396861
   },
   {
-    "path": "assets/comic/attacks/cleric_3.png",
     "bytes": 3170607
   },
   {
-    "path": "assets/comic/attacks/ranger_3.png",
     "bytes": 2801721
   },
   {
@@ -64,7 +59,6 @@
     "bytes": 3017769
   },
   {
-    "path": "assets/comic/attacks/cleric_2.png",
     "bytes": 2973792
   },
   {
@@ -120,11 +114,9 @@
     "bytes": 943
   },
   {
-    "path": "assets/comic/attacks/cleric_1.png.import",
     "bytes": 950
   },
   {
-    "path": "assets/comic/attacks/ranger_1.png.import",
     "bytes": 950
   },
   {
@@ -152,7 +144,6 @@
     "bytes": 956
   },
   {
-    "path": "assets/comic/attacks/ranger_2.png.import",
     "bytes": 950
   },
   {
@@ -160,11 +151,9 @@
     "bytes": 953
   },
   {
-    "path": "assets/comic/attacks/cleric_3.png.import",
     "bytes": 950
   },
   {
-    "path": "assets/comic/attacks/ranger_3.png.import",
     "bytes": 950
   },
   {
@@ -180,7 +169,6 @@
     "bytes": 955
   },
   {
-    "path": "assets/comic/attacks/cleric_2.png.import",
     "bytes": 950
   },
   {
@@ -244,7 +232,6 @@
     "bytes": 1697086
   },
   {
-    "path": "artifacts/forge/combat-cleric.png",
     "bytes": 1694073
   },
   {

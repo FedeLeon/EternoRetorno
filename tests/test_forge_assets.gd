@@ -1,6 +1,6 @@
 extends SceneTree
 const Gear = preload("res://src/presentation/hero_equipment.gd")
-const HEROES = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
+const HEROES = ["warrior", "guardian", "rogue", "mage"]
 var checks = 0
 var failures = 0
 func check(value: bool, caption: String) -> void:

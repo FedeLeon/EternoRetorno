@@ -1,3 +1,8 @@
+## Actualización visual — 13/10/2026
+
+Interior redibujado con grafito y lápices de colores, conservando su temática.
+[Assets, galería ampliada y pruebas actuales](../base_camp/interiors/README.md).
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

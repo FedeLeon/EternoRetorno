@@ -97,6 +97,10 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = ui.game.run.combat.get("enemies", [])
 	for i in range(old_enemies.size()):
+		var poison_hit: Dictionary = ui.game.resolved_poison_hits.get(i, {}) if hand_index < 0 and synergy_id == "" else {}
+		if not poison_hit.is_empty() and int(poison_hit.lost) > 0:
+			ui.enemy_health[i].animate_to(poison_hit.hp)
+			await ui.enemy_art[i].play_once("poison")
 		if i < current_enemies.size() and old_enemies[i].hp <= 0 and current_enemies[i].hp > 0:
 			ui.enemy_art[i].set_fallen(false)
 			ui.enemy_health[i].animate_to(current_enemies[i].hp)
@@ -109,9 +113,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 			if current_enemies[i].hp <= 0:
 				ui.audio.play_sfx("death")
 				ui.audio.play_sfx("ash", -8)
-				ui.flash_hit(ui.enemy_art[i])
+				if poison_hit.is_empty(): ui.flash_hit(ui.enemy_art[i])
 				await ui.enemy_art[i].play_once("death")
-			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty():
+			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty() and poison_hit.is_empty():
 				await ui.enemy_art[i].play_once("hurt")
 		if hand_index < 0 and synergy_id == "":
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual

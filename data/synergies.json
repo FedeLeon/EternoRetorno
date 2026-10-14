@@ -54,42 +54,6 @@
     "pierce": false
   },
   {
-    "id": "warrior_cleric",
-    "name": "Espada del alba",
-    "heroes": [
-      "warrior",
-      "cleric"
-    ],
-    "cards": [
-      "warrior_cleave",
-      "cleric_blessing"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 0,
-    "heal": 6,
-    "poison": 0,
-    "pierce": false
-  },
-  {
-    "id": "warrior_ranger",
-    "name": "Asalto certero",
-    "heroes": [
-      "warrior",
-      "ranger"
-    ],
-    "cards": [
-      "warrior_riposte",
-      "ranger_volley"
-    ],
-    "cost": 2,
-    "damage": 24,
-    "block": 0,
-    "heal": 0,
-    "poison": 0,
-    "pierce": true
-  },
-  {
     "id": "guardian_rogue",
     "name": "Bastión tóxico",
     "heroes": [
@@ -126,42 +90,6 @@
     "pierce": false
   },
   {
-    "id": "guardian_cleric",
-    "name": "Juramento del refugio",
-    "heroes": [
-      "guardian",
-      "cleric"
-    ],
-    "cards": [
-      "guardian_iron_chain",
-      "cleric_dawn"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 8,
-    "heal": 6,
-    "poison": 0,
-    "pierce": false
-  },
-  {
-    "id": "guardian_ranger",
-    "name": "Vigilia del cazador",
-    "heroes": [
-      "guardian",
-      "ranger"
-    ],
-    "cards": [
-      "guardian_circle",
-      "ranger_piercing_shot"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 8,
-    "heal": 0,
-    "poison": 0,
-    "pierce": true
-  },
-  {
     "id": "rogue_mage",
     "name": "Veneno del vacío",
     "heroes": [
@@ -178,95 +106,5 @@
     "heal": 0,
     "poison": 5,
     "pierce": false
-  },
-  {
-    "id": "rogue_cleric",
-    "name": "Purga oscura",
-    "heroes": [
-      "rogue",
-      "cleric"
-    ],
-    "cards": [
-      "rogue_double_fang",
-      "cleric_blessing"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 0,
-    "heal": 6,
-    "poison": 5,
-    "pierce": false
-  },
-  {
-    "id": "rogue_ranger",
-    "name": "Cacería venenosa",
-    "heroes": [
-      "rogue",
-      "ranger"
-    ],
-    "cards": [
-      "rogue_toxic_mist",
-      "ranger_volley"
-    ],
-    "cost": 2,
-    "damage": 24,
-    "block": 0,
-    "heal": 0,
-    "poison": 5,
-    "pierce": true
-  },
-  {
-    "id": "mage_cleric",
-    "name": "Aurora astral",
-    "heroes": [
-      "mage",
-      "cleric"
-    ],
-    "cards": [
-      "mage_prism",
-      "cleric_dawn"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 0,
-    "heal": 6,
-    "poison": 0,
-    "pierce": false
-  },
-  {
-    "id": "mage_ranger",
-    "name": "Constelación certera",
-    "heroes": [
-      "mage",
-      "ranger"
-    ],
-    "cards": [
-      "mage_hail",
-      "ranger_piercing_shot"
-    ],
-    "cost": 2,
-    "damage": 24,
-    "block": 0,
-    "heal": 0,
-    "poison": 0,
-    "pierce": true
-  },
-  {
-    "id": "cleric_ranger",
-    "name": "Flecha del alba",
-    "heroes": [
-      "cleric",
-      "ranger"
-    ],
-    "cards": [
-      "cleric_dawn",
-      "ranger_volley"
-    ],
-    "cost": 2,
-    "damage": 20,
-    "block": 0,
-    "heal": 6,
-    "poison": 0,
-    "pierce": true
   }
 ]

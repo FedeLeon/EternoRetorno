@@ -44,14 +44,14 @@ static func build(ui: Control) -> void:
 		return
 	if ui.screen == "base_camp":
 		var camp = TextureRect.new()
-		camp.texture = preload("res://assets/base_camp/background.png")
+		camp.texture = preload("res://assets/base_camp/dusk/background.png")
 		camp.name = "DayCampBackground"
 		var ambience = ShaderMaterial.new()
-		ambience.shader = preload("res://assets/shaders/camp_day.gdshader")
+		ambience.shader = preload("res://assets/shaders/camp_dusk.gdshader")
 		camp.material = ambience
 		camp.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		camp.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		ui.rect(camp, 0, 0, 1280, 720)
+		ui.rect(camp, 0, 80, 1280, 640)
 		return
 	if ui.screen == "select":
 		var camp = TextureRect.new()

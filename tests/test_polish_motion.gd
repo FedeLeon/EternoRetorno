@@ -10,7 +10,7 @@ func run_tests():
  root.size=Vector2i(1280,720)
  var scene=Control.new();scene.size=Vector2(1280,720);root.add_child(scene)
  var background=TextureRect.new();background.texture=load("res://assets/dungeon/combat.png");background.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;background.size=scene.size;scene.add_child(background)
- var heroes=["warrior","guardian","rogue","mage","cleric","ranger"]
+ var heroes=["warrior","guardian","rogue","mage"]
  var actors=[]
  for i in range(heroes.size()):
   var actor=Actor.new();actor.hero_id=heroes[i];actor.gear={"weapon":i%3+1,"armor":i%3+1};actor.position=Vector2(60+i*200,200);actor.size=Vector2(150,220);scene.add_child(actor);actors.append(actor)
@@ -25,7 +25,7 @@ func run_tests():
    for frame in range(12):
     var crop=image.get_region(Rect2i((frame%4)*384,(frame/4)*384,384,384));signatures[hash(crop.get_data())]=true
     check(crop.get_pixel(0,0).a<0.01,"transparent pose background")
-    check(preload("res://scripts/sprite_sheet_tools.gd").opaque_bottom(crop)==368,"fixed boot baseline "+heroes[i]+action+str(frame))
+    check(preload("res://scripts/sketchbook_sheet_packer.gd").bottom(crop)==368,"fixed boot baseline "+heroes[i]+action+str(frame))
    check(signatures.size()==12,"twelve independently drawn poses")
  for action in ["idle","guard"]:
   for actor in actors:actor.sprite.play(action);actor.sprite.pause();actor.sprite.frame=5

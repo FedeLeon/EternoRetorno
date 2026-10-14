@@ -1,0 +1,1962 @@
+[
+  {
+    "file": "assets/rest/ranger.png.import",
+    "bytes": 934
+  },
+  {
+    "file": "assets/rest/ranger.png",
+    "bytes": 103564
+  },
+  {
+    "file": "assets/rest/cleric.png",
+    "bytes": 91059
+  },
+  {
+    "file": "assets/rest/cleric.png.import",
+    "bytes": 934
+  },
+  {
+    "file": "assets/cleric/cleric-128.png",
+    "bytes": 592384
+  },
+  {
+    "file": "assets/cleric/cleric-128.png.import",
+    "bytes": 948
+  },
+  {
+    "file": "assets/comic/ranger.png.import",
+    "bytes": 936
+  },
+  {
+    "file": "assets/comic/ranger.png",
+    "bytes": 2715578
+  },
+  {
+    "file": "assets/comic/cleric.png",
+    "bytes": 3061120
+  },
+  {
+    "file": "assets/comic/cleric.png.import",
+    "bytes": 935
+  },
+  {
+    "file": "assets/ranger/ranger-128.png",
+    "bytes": 493734
+  },
+  {
+    "file": "assets/ranger/ranger-128.png.import",
+    "bytes": 948
+  },
+  {
+    "file": "assets/church/cleric_healer.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/church/cleric_aegis.png",
+    "bytes": 388541
+  },
+  {
+    "file": "assets/church/ranger_scout.png",
+    "bytes": 342432
+  },
+  {
+    "file": "assets/church/cleric_aegis.png.import",
+    "bytes": 954
+  },
+  {
+    "file": "assets/church/ranger_precision.png.import",
+    "bytes": 965
+  },
+  {
+    "file": "assets/church/ranger_scout.png.import",
+    "bytes": 954
+  },
+  {
+    "file": "assets/church/ranger_precision.png",
+    "bytes": 336186
+  },
+  {
+    "file": "assets/church/cleric_healer.png",
+    "bytes": 369776
+  },
+  {
+    "file": "assets/collection/icons/ranger_victory.png",
+    "bytes": 1337430
+  },
+  {
+    "file": "assets/collection/icons/cleric_victory.png.import",
+    "bytes": 973
+  },
+  {
+    "file": "assets/collection/icons/ranger_victory.png.import",
+    "bytes": 973
+  },
+  {
+    "file": "assets/collection/icons/cleric_victory.png",
+    "bytes": 1398802
+  },
+  {
+    "file": "assets/comic/motion/cleric_1.png",
+    "bytes": 9953030
+  },
+  {
+    "file": "assets/comic/motion/ranger_1.png",
+    "bytes": 8656957
+  },
+  {
+    "file": "assets/comic/motion/cleric_1.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/ranger_1.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/cleric_0.png",
+    "bytes": 9440427
+  },
+  {
+    "file": "assets/comic/motion/cleric_defense.png.import",
+    "bytes": 967
+  },
+  {
+    "file": "assets/comic/motion/ranger_3.png.import",
+    "bytes": 948
+  },
+  {
+    "file": "assets/comic/motion/ranger_2.png",
+    "bytes": 9756295
+  },
+  {
+    "file": "assets/comic/motion/cleric_2.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/ranger_2.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/cleric_3.png",
+    "bytes": 9263854
+  },
+  {
+    "file": "assets/comic/motion/ranger_defense.png",
+    "bytes": 9419017
+  },
+  {
+    "file": "assets/comic/motion/cleric_0.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/ranger_3.png",
+    "bytes": 8990972
+  },
+  {
+    "file": "assets/comic/motion/ranger_0.png",
+    "bytes": 9009474
+  },
+  {
+    "file": "assets/comic/motion/cleric_defense.png",
+    "bytes": 10642073
+  },
+  {
+    "file": "assets/comic/motion/cleric_3.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/cleric_2.png",
+    "bytes": 9975171
+  },
+  {
+    "file": "assets/comic/motion/ranger_0.png.import",
+    "bytes": 949
+  },
+  {
+    "file": "assets/comic/motion/ranger_defense.png.import",
+    "bytes": 966
+  },
+  {
+    "file": "assets/forge/icons/cleric_1.png",
+    "bytes": 16057
+  },
+  {
+    "file": "assets/forge/icons/ranger_1.png",
+    "bytes": 17573
+  },
+  {
+    "file": "assets/forge/icons/cleric_1.png.import",
+    "bytes": 946
+  },
+  {
+    "file": "assets/forge/icons/ranger_1.png.import",
+    "bytes": 947
+  },
+  {
+    "file": "assets/forge/icons/ranger_3.png.import",
+    "bytes": 946
+  },
+  {
+    "file": "assets/forge/icons/ranger_2.png",
+    "bytes": 22684
+  },
+  {
+    "file": "assets/forge/icons/cleric_2.png.import",
+    "bytes": 946
+  },
+  {
+    "file": "assets/forge/icons/ranger_2.png.import",
+    "bytes": 947
+  },
+  {
+    "file": "assets/forge/icons/cleric_3.png",
+    "bytes": 19627
+  },
+  {
+    "file": "assets/forge/icons/ranger_3.png",
+    "bytes": 24043
+  },
+  {
+    "file": "assets/forge/icons/cleric_3.png.import",
+    "bytes": 947
+  },
+  {
+    "file": "assets/forge/icons/cleric_2.png",
+    "bytes": 18851
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a3.png",
+    "bytes": 573445
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a3.png",
+    "bytes": 555098
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a2.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a1.png",
+    "bytes": 525238
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a3.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a1.png",
+    "bytes": 524795
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a1.png",
+    "bytes": 523807
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a3.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a3.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a3.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a1.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a2.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a3.png",
+    "bytes": 550068
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a3.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a3.png",
+    "bytes": 522980
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a2.png",
+    "bytes": 476888
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a2.png",
+    "bytes": 524283
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a0.png",
+    "bytes": 548082
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a3.png",
+    "bytes": 517105
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a1.png",
+    "bytes": 569477
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a0.png",
+    "bytes": 509566
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a0.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a2.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a2.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a3.png",
+    "bytes": 556654
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a2.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a3.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a3.png",
+    "bytes": 573648
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a3.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a2.png",
+    "bytes": 578174
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a2.png",
+    "bytes": 542661
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a3.png",
+    "bytes": 521406
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a1.png",
+    "bytes": 579643
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a2.png",
+    "bytes": 570547
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a0.png",
+    "bytes": 567173
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a0.png",
+    "bytes": 497047
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a2.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a3.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a2.png",
+    "bytes": 537165
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a2.png",
+    "bytes": 576341
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w2_a0.png",
+    "bytes": 577726
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a1.png",
+    "bytes": 497855
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w2_a0.png",
+    "bytes": 521360
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a1.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a2.png",
+    "bytes": 502781
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w3_a0.png",
+    "bytes": 576312
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w0_a1.png",
+    "bytes": 560501
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w3_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a2.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w0_a0.png",
+    "bytes": 471564
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a1.png",
+    "bytes": 573113
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a2.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/forge/heroes/cleric_w1_a0.png.import",
+    "bytes": 959
+  },
+  {
+    "file": "assets/forge/heroes/ranger_w1_a0.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/heroes/detail/cleric_hurt.png",
+    "bytes": 639470
+  },
+  {
+    "file": "assets/heroes/detail/cleric_death.png.import",
+    "bytes": 961
+  },
+  {
+    "file": "assets/heroes/detail/cleric_idle.png",
+    "bytes": 716434
+  },
+  {
+    "file": "assets/heroes/detail/ranger_idle.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/heroes/detail/ranger_death.png.import",
+    "bytes": 961
+  },
+  {
+    "file": "assets/heroes/detail/cleric_guard.png",
+    "bytes": 624134
+  },
+  {
+    "file": "assets/heroes/detail/ranger_guard.png",
+    "bytes": 781029
+  },
+  {
+    "file": "assets/heroes/detail/ranger_skill.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/heroes/detail/cleric_death.png",
+    "bytes": 592435
+  },
+  {
+    "file": "assets/heroes/detail/ranger_hurt.png.import",
+    "bytes": 958
+  },
+  {
+    "file": "assets/heroes/detail/cleric_skill.png.import",
+    "bytes": 961
+  },
+  {
+    "file": "assets/heroes/detail/ranger_attack.png.import",
+    "bytes": 964
+  },
+  {
+    "file": "assets/heroes/detail/ranger_idle.png",
+    "bytes": 746754
+  },
+  {
+    "file": "assets/heroes/detail/ranger_run.png",
+    "bytes": 678717
+  },
+  {
+    "file": "assets/heroes/detail/cleric_guard.png.import",
+    "bytes": 961
+  },
+  {
+    "file": "assets/heroes/detail/cleric_attack.png.import",
+    "bytes": 964
+  },
+  {
+    "file": "assets/heroes/detail/cleric_run.png.import",
+    "bytes": 955
+  },
+  {
+    "file": "assets/heroes/detail/cleric_hurt.png.import",
+    "bytes": 958
+  },
+  {
+    "file": "assets/heroes/detail/ranger_run.png.import",
+    "bytes": 955
+  },
+  {
+    "file": "assets/heroes/detail/ranger_skill.png",
+    "bytes": 740555
+  },
+  {
+    "file": "assets/heroes/detail/cleric_attack.png",
+    "bytes": 624563
+  },
+  {
+    "file": "assets/heroes/detail/ranger_attack.png",
+    "bytes": 709904
+  },
+  {
+    "file": "assets/heroes/detail/cleric_idle.png.import",
+    "bytes": 958
+  },
+  {
+    "file": "assets/heroes/detail/ranger_death.png",
+    "bytes": 703204
+  },
+  {
+    "file": "assets/heroes/detail/ranger_hurt.png",
+    "bytes": 733829
+  },
+  {
+    "file": "assets/heroes/detail/cleric_run.png",
+    "bytes": 562903
+  },
+  {
+    "file": "assets/heroes/detail/ranger_guard.png.import",
+    "bytes": 961
+  },
+  {
+    "file": "assets/heroes/detail/cleric_skill.png",
+    "bytes": 620622
+  },
+  {
+    "file": "assets/heroes/actions/ranger_sweep.png.import",
+    "bytes": 962
+  },
+  {
+    "file": "assets/heroes/actions/cleric_thrust.png.import",
+    "bytes": 964
+  },
+  {
+    "file": "assets/heroes/actions/ranger_charged.png.import",
+    "bytes": 968
+  },
+  {
+    "file": "assets/heroes/actions/cleric_thrust.png",
+    "bytes": 624210
+  },
+  {
+    "file": "assets/heroes/actions/ranger_thrust.png",
+    "bytes": 1397573
+  },
+  {
+    "file": "assets/heroes/actions/ranger_charged.png",
+    "bytes": 1154329
+  },
+  {
+    "file": "assets/heroes/actions/cleric_sweep.png.import",
+    "bytes": 962
+  },
+  {
+    "file": "assets/heroes/actions/ranger_sweep.png",
+    "bytes": 1278316
+  },
+  {
+    "file": "assets/heroes/actions/ranger_thrust.png.import",
+    "bytes": 963
+  },
+  {
+    "file": "assets/heroes/actions/cleric_sweep.png",
+    "bytes": 1054911
+  },
+  {
+    "file": "assets/heroes/actions/cleric_charged.png.import",
+    "bytes": 967
+  },
+  {
+    "file": "assets/heroes/actions/cleric_charged.png",
+    "bytes": 702037
+  },
+  {
+    "file": "assets/heroes/running/ranger.png.import",
+    "bytes": 944
+  },
+  {
+    "file": "assets/heroes/running/ranger.png",
+    "bytes": 111597
+  },
+  {
+    "file": "assets/heroes/running/cleric.png",
+    "bytes": 132271
+  },
+  {
+    "file": "assets/heroes/running/cleric.png.import",
+    "bytes": 944
+  },
+  {
+    "file": "assets/cinematics/shots/hero_ranger_1.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cinematics/shots/hero_ranger_0.png.import",
+    "bytes": 970
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_0.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cinematics/shots/hero_ranger_0.png",
+    "bytes": 1572515
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_1.png",
+    "bytes": 1563625
+  },
+  {
+    "file": "assets/cinematics/shots/hero_ranger_1.png",
+    "bytes": 1614604
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_0.png",
+    "bytes": 1555498
+  },
+  {
+    "file": "assets/cinematics/shots/hero_cleric_1.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cinematics/portraits/ranger.png.import",
+    "bytes": 950
+  },
+  {
+    "file": "assets/cinematics/portraits/ranger.png",
+    "bytes": 579264
+  },
+  {
+    "file": "assets/cinematics/portraits/cleric.png",
+    "bytes": 599807
+  },
+  {
+    "file": "assets/cinematics/portraits/cleric.png.import",
+    "bytes": 950
+  },
+  {
+    "file": "assets/cards/frames/ranger.png.import",
+    "bytes": 944
+  },
+  {
+    "file": "assets/cards/frames/ranger.png",
+    "bytes": 1695738
+  },
+  {
+    "file": "assets/cards/frames/cleric.png",
+    "bytes": 1682239
+  },
+  {
+    "file": "assets/cards/frames/cleric.png.import",
+    "bytes": 943
+  },
+  {
+    "file": "assets/cards/art/ranger_sidestep.png.import",
+    "bytes": 968
+  },
+  {
+    "file": "assets/cards/art/cleric_dawn.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/cards/art/ranger_rain.png",
+    "bytes": 2444656
+  },
+  {
+    "file": "assets/cards/art/ranger_field_aid.png",
+    "bytes": 220939
+  },
+  {
+    "file": "assets/cards/art/ranger_interrupt.png",
+    "bytes": 2292219
+  },
+  {
+    "file": "assets/cards/art/cleric_mercy.png.import",
+    "bytes": 960
+  },
+  {
+    "file": "assets/cards/art/cleric_interrupt.png",
+    "bytes": 2269162
+  },
+  {
+    "file": "assets/cards/art/ranger_sidestep.png",
+    "bytes": 2145119
+  },
+  {
+    "file": "assets/cards/art/cleric_dawn.png",
+    "bytes": 1784585
+  },
+  {
+    "file": "assets/cards/art/ranger_tendon_shot.png",
+    "bytes": 240041
+  },
+  {
+    "file": "assets/cards/art/ranger_piercing_shot.png.import",
+    "bytes": 984
+  },
+  {
+    "file": "assets/cards/art/ranger_hunters_focus.png.import",
+    "bytes": 983
+  },
+  {
+    "file": "assets/cards/art/ranger_quick_arrow.png.import",
+    "bytes": 977
+  },
+  {
+    "file": "assets/cards/art/cleric_refuge.png.import",
+    "bytes": 963
+  },
+  {
+    "file": "assets/cards/art/ranger_interrupt.png.import",
+    "bytes": 971
+  },
+  {
+    "file": "assets/cards/art/cleric_interrupt.png.import",
+    "bytes": 972
+  },
+  {
+    "file": "assets/cards/art/cleric_mend.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/cards/art/cleric_blessing.png",
+    "bytes": 1676807
+  },
+  {
+    "file": "assets/cards/art/cleric_rebirth.png.import",
+    "bytes": 966
+  },
+  {
+    "file": "assets/cards/art/cleric_radiant_judgment.png.import",
+    "bytes": 992
+  },
+  {
+    "file": "assets/cards/art/cleric_censure.png",
+    "bytes": 267820
+  },
+  {
+    "file": "assets/cards/art/ranger_silver_arrow.png.import",
+    "bytes": 981
+  },
+  {
+    "file": "assets/cards/art/ranger_quick_arrow.png",
+    "bytes": 2134707
+  },
+  {
+    "file": "assets/cards/art/ranger_tendon_shot.png.import",
+    "bytes": 978
+  },
+  {
+    "file": "assets/cards/art/ranger_triple_shot.png.import",
+    "bytes": 978
+  },
+  {
+    "file": "assets/cards/art/cleric_covenant.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/cleric_radiant_judgment.png",
+    "bytes": 257815
+  },
+  {
+    "file": "assets/cards/art/cleric_absolution.png.import",
+    "bytes": 974
+  },
+  {
+    "file": "assets/cards/art/ranger_horizon.png",
+    "bytes": 2125898
+  },
+  {
+    "file": "assets/cards/art/ranger_risk.png.import",
+    "bytes": 956
+  },
+  {
+    "file": "assets/cards/art/cleric_risk.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/cards/art/ranger_rain.png.import",
+    "bytes": 957
+  },
+  {
+    "file": "assets/cards/art/cleric_censure.png.import",
+    "bytes": 966
+  },
+  {
+    "file": "assets/cards/art/cleric_purging_ray.png",
+    "bytes": 2363950
+  },
+  {
+    "file": "assets/cards/art/ranger_volley.png",
+    "bytes": 2242544
+  },
+  {
+    "file": "assets/cards/art/cleric_purging_ray.png.import",
+    "bytes": 978
+  },
+  {
+    "file": "assets/cards/art/ranger_horizon.png.import",
+    "bytes": 966
+  },
+  {
+    "file": "assets/cards/art/ranger_eagle_eye.png",
+    "bytes": 1792431
+  },
+  {
+    "file": "assets/cards/art/ranger_split_arrow.png",
+    "bytes": 247768
+  },
+  {
+    "file": "assets/cards/art/cleric_candle.png",
+    "bytes": 2279784
+  },
+  {
+    "file": "assets/cards/art/cleric_risk.png",
+    "bytes": 213077
+  },
+  {
+    "file": "assets/cards/art/ranger_withdraw.png",
+    "bytes": 2304390
+  },
+  {
+    "file": "assets/cards/art/cleric_prepared.png",
+    "bytes": 2278155
+  },
+  {
+    "file": "assets/cards/art/cleric_blessing.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/ranger_field_aid.png.import",
+    "bytes": 971
+  },
+  {
+    "file": "assets/cards/art/ranger_hunters_focus.png",
+    "bytes": 243500
+  },
+  {
+    "file": "assets/cards/art/cleric_benediction.png",
+    "bytes": 266586
+  },
+  {
+    "file": "assets/cards/art/cleric_refuge.png",
+    "bytes": 2300353
+  },
+  {
+    "file": "assets/cards/art/ranger_risk.png",
+    "bytes": 195927
+  },
+  {
+    "file": "assets/cards/art/ranger_silver_arrow.png",
+    "bytes": 2150174
+  },
+  {
+    "file": "assets/cards/art/ranger_prepared.png",
+    "bytes": 2245678
+  },
+  {
+    "file": "assets/cards/art/ranger_piercing_shot.png",
+    "bytes": 2254570
+  },
+  {
+    "file": "assets/cards/art/cleric_rebirth.png",
+    "bytes": 1963052
+  },
+  {
+    "file": "assets/cards/art/cleric_candle.png.import",
+    "bytes": 963
+  },
+  {
+    "file": "assets/cards/art/cleric_prepared.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/ranger_triple_shot.png",
+    "bytes": 2106450
+  },
+  {
+    "file": "assets/cards/art/cleric_benediction.png.import",
+    "bytes": 978
+  },
+  {
+    "file": "assets/cards/art/cleric_mercy.png",
+    "bytes": 2227719
+  },
+  {
+    "file": "assets/cards/art/ranger_prepared.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/cleric_mend.png",
+    "bytes": 2362282
+  },
+  {
+    "file": "assets/cards/art/ranger_withdraw.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/cleric_covenant.png",
+    "bytes": 1828510
+  },
+  {
+    "file": "assets/cards/art/ranger_volley.png.import",
+    "bytes": 963
+  },
+  {
+    "file": "assets/cards/art/cleric_radiance.png",
+    "bytes": 2490026
+  },
+  {
+    "file": "assets/cards/art/cleric_absolution.png",
+    "bytes": 271934
+  },
+  {
+    "file": "assets/cards/art/cleric_radiance.png.import",
+    "bytes": 969
+  },
+  {
+    "file": "assets/cards/art/ranger_eagle_eye.png.import",
+    "bytes": 972
+  },
+  {
+    "file": "assets/cards/art/ranger_split_arrow.png.import",
+    "bytes": 978
+  },
+  {
+    "file": "docs/rest/ranger.json",
+    "bytes": 1241
+  },
+  {
+    "file": "docs/rest/cleric.json",
+    "bytes": 1252
+  },
+  {
+    "file": "docs/cleric/prompt.md",
+    "bytes": 2573
+  },
+  {
+    "file": "docs/cleric/README.md",
+    "bytes": 1926
+  },
+  {
+    "file": "docs/cleric/generated-sheet.png",
+    "bytes": 1800785
+  },
+  {
+    "file": "docs/running/ranger.json",
+    "bytes": 2142
+  },
+  {
+    "file": "docs/running/cleric.json",
+    "bytes": 2142
+  },
+  {
+    "file": "docs/running/cleric-arms-correction.json",
+    "bytes": 1467
+  },
+  {
+    "file": "docs/ranger/prompt.md",
+    "bytes": 1772
+  },
+  {
+    "file": "docs/ranger/README.md",
+    "bytes": 1816
+  },
+  {
+    "file": "docs/ranger/generated-sheet.png",
+    "bytes": 1738569
+  },
+  {
+    "file": "docs/church/cleric_healer.json",
+    "bytes": 832
+  },
+  {
+    "file": "docs/church/cleric_aegis.json",
+    "bytes": 841
+  },
+  {
+    "file": "docs/church/ranger_scout.json",
+    "bytes": 838
+  },
+  {
+    "file": "docs/church/ranger_precision.json",
+    "bytes": 837
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_run.txt",
+    "bytes": 851
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_guard.txt",
+    "bytes": 959
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_death.txt",
+    "bytes": 848
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_attack.txt",
+    "bytes": 958
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_skill.txt",
+    "bytes": 919
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_attack.txt",
+    "bytes": 956
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/card_ranger_prepared.txt",
+    "bytes": 907
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_hurt.txt",
+    "bytes": 860
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_guard.txt",
+    "bytes": 957
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/card_cleric_prepared.txt",
+    "bytes": 913
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_skill.txt",
+    "bytes": 921
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_hurt.txt",
+    "bytes": 858
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/cleric_idle.txt",
+    "bytes": 850
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_death.txt",
+    "bytes": 850
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_idle.txt",
+    "bytes": 852
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/card_ranger_interrupt.txt",
+    "bytes": 950
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/card_cleric_interrupt.txt",
+    "bytes": 956
+  },
+  {
+    "file": "docs/combat_depth_2026_10/prompts/ranger_run.txt",
+    "bytes": 853
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_hurt.png",
+    "bytes": 3020569
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_idle.png",
+    "bytes": 3200042
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/card_ranger_interrupt.png",
+    "bytes": 2292219
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/card_cleric_interrupt.png",
+    "bytes": 2269162
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_guard.png",
+    "bytes": 2962619
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_guard.png",
+    "bytes": 2219952
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_death.png",
+    "bytes": 2734740
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_idle.png",
+    "bytes": 2163880
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_run.png",
+    "bytes": 1942015
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_skill.png",
+    "bytes": 2190006
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_attack.png",
+    "bytes": 2935981
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/card_ranger_prepared.png",
+    "bytes": 2245678
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/card_cleric_prepared.png",
+    "bytes": 2278155
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_attack.png",
+    "bytes": 2044085
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_death.png",
+    "bytes": 2379026
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/ranger_hurt.png",
+    "bytes": 2137909
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_run.png",
+    "bytes": 2401812
+  },
+  {
+    "file": "docs/combat_depth_2026_10/sources/cleric_skill.png",
+    "bytes": 2952232
+  },
+  {
+    "file": "docs/rest/sources/ranger.png",
+    "bytes": 941456
+  },
+  {
+    "file": "docs/rest/sources/cleric.png",
+    "bytes": 913110
+  },
+  {
+    "file": "docs/running/sources/ranger.png",
+    "bytes": 1776929
+  },
+  {
+    "file": "docs/running/sources/cleric.png",
+    "bytes": 2310996
+  },
+  {
+    "file": "docs/comic/attacks/cleric_2.json",
+    "bytes": 1127
+  },
+  {
+    "file": "docs/comic/attacks/ranger_1.json",
+    "bytes": 1146
+  },
+  {
+    "file": "docs/comic/attacks/cleric_1.json",
+    "bytes": 1144
+  },
+  {
+    "file": "docs/comic/attacks/cleric_3.json",
+    "bytes": 1155
+  },
+  {
+    "file": "docs/comic/attacks/ranger_3.json",
+    "bytes": 1160
+  },
+  {
+    "file": "docs/comic/attacks/ranger_2.json",
+    "bytes": 1145
+  },
+  {
+    "file": "docs/comic/motion/sources/cleric_1.png",
+    "bytes": 2344131
+  },
+  {
+    "file": "docs/comic/motion/sources/ranger_1.png",
+    "bytes": 2301703
+  },
+  {
+    "file": "docs/comic/motion/sources/cleric_0.png",
+    "bytes": 2109764
+  },
+  {
+    "file": "docs/comic/motion/sources/ranger_2.png",
+    "bytes": 2274666
+  },
+  {
+    "file": "docs/comic/motion/sources/cleric_3.png",
+    "bytes": 2473895
+  },
+  {
+    "file": "docs/comic/motion/sources/ranger_3.png",
+    "bytes": 2159835
+  },
+  {
+    "file": "docs/comic/motion/sources/ranger_0.png",
+    "bytes": 2104506
+  },
+  {
+    "file": "docs/comic/motion/sources/cleric_2.png",
+    "bytes": 2363726
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_0_part2.png",
+    "bytes": 2514779
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_3_part2.png",
+    "bytes": 2559814
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_defense_part0.png",
+    "bytes": 2768493
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_0_part0.png",
+    "bytes": 2443555
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_0_part2.png",
+    "bytes": 2439344
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_defense_part0.png",
+    "bytes": 2495278
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_0_part0.png",
+    "bytes": 2321169
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_0_part3.png",
+    "bytes": 2155250
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_1_part0.png",
+    "bytes": 2206839
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_1_part3.png",
+    "bytes": 2404389
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_2_part3.png",
+    "bytes": 2563267
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_2_part2.png",
+    "bytes": 2787840
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_defense_part3.png",
+    "bytes": 2451069
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_2_part3.png",
+    "bytes": 2451867
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_0_part1.png",
+    "bytes": 2596318
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_0_part3.png",
+    "bytes": 2419810
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_0_part1.png",
+    "bytes": 2578655
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_defense_part2.png",
+    "bytes": 2489191
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_1_part0.png",
+    "bytes": 2366821
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_3_part0.png",
+    "bytes": 2351277
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_defense_part3.png",
+    "bytes": 2689945
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_defense_part1.png",
+    "bytes": 2441850
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_3_part3.png",
+    "bytes": 2473710
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_3_part0.png",
+    "bytes": 2236522
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_3_part2.png",
+    "bytes": 2291868
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_defense_part2.png",
+    "bytes": 2637396
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_1_part1.png",
+    "bytes": 2482364
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_3_part1.png",
+    "bytes": 2440042
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_defense_part1.png",
+    "bytes": 2676258
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_2_part0.png",
+    "bytes": 2439442
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_3_part1.png",
+    "bytes": 2489270
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_1_part1.png",
+    "bytes": 2558455
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_2_part0.png",
+    "bytes": 2309743
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_2_part1.png",
+    "bytes": 2455683
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_2_part2.png",
+    "bytes": 2527512
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_3_part3.png",
+    "bytes": 2323814
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_1_part3.png",
+    "bytes": 2339564
+  },
+  {
+    "file": "docs/comic/hd/sources/ranger_1_part2.png",
+    "bytes": 2260047
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_2_part1.png",
+    "bytes": 2579277
+  },
+  {
+    "file": "docs/comic/hd/sources/cleric_1_part2.png",
+    "bytes": 2464510
+  },
+  {
+    "file": "docs/comic/smooth/sources/cleric_1.png",
+    "bytes": 2574262
+  },
+  {
+    "file": "docs/comic/smooth/sources/ranger_1.png",
+    "bytes": 2522333
+  },
+  {
+    "file": "docs/comic/smooth/sources/cleric_0.png",
+    "bytes": 2540630
+  },
+  {
+    "file": "docs/comic/smooth/sources/ranger_2.png",
+    "bytes": 2592004
+  },
+  {
+    "file": "docs/comic/smooth/sources/cleric_3.png",
+    "bytes": 2442233
+  },
+  {
+    "file": "docs/comic/smooth/sources/ranger_defense.png",
+    "bytes": 2530050
+  },
+  {
+    "file": "docs/comic/smooth/sources/ranger_3.png",
+    "bytes": 2392180
+  },
+  {
+    "file": "docs/comic/smooth/sources/ranger_0.png",
+    "bytes": 2389077
+  },
+  {
+    "file": "docs/comic/smooth/sources/cleric_defense.png",
+    "bytes": 2733533
+  },
+  {
+    "file": "docs/comic/smooth/sources/cleric_2.png",
+    "bytes": 2588561
+  },
+  {
+    "file": "docs/combat_expansion/sources/cleric_1.png",
+    "bytes": 1532620
+  },
+  {
+    "file": "docs/combat_expansion/sources/ranger_1.png",
+    "bytes": 1533325
+  },
+  {
+    "file": "docs/combat_expansion/sources/cleric_0.png",
+    "bytes": 1596710
+  },
+  {
+    "file": "docs/combat_expansion/sources/ranger_2.png",
+    "bytes": 1413531
+  },
+  {
+    "file": "docs/combat_expansion/sources/cleric_3.png",
+    "bytes": 1416736
+  },
+  {
+    "file": "docs/combat_expansion/sources/ranger_defense.png",
+    "bytes": 1242377
+  },
+  {
+    "file": "docs/combat_expansion/sources/ranger_3.png",
+    "bytes": 1353067
+  },
+  {
+    "file": "docs/combat_expansion/sources/ranger_0.png",
+    "bytes": 1113076
+  },
+  {
+    "file": "docs/combat_expansion/sources/cleric_defense.png",
+    "bytes": 1789915
+  },
+  {
+    "file": "docs/combat_expansion/sources/cleric_2.png",
+    "bytes": 1629197
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/ranger_thrust.txt",
+    "bytes": 1053
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/ranger_equipment.txt",
+    "bytes": 1189
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/cleric_equipment.txt",
+    "bytes": 1175
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/ranger_risk.txt",
+    "bytes": 594
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/cleric_charged.txt",
+    "bytes": 1036
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/ranger_sweep.txt",
+    "bytes": 1044
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/cleric_risk.txt",
+    "bytes": 629
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/ranger_charged.txt",
+    "bytes": 1051
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/cleric_thrust.txt",
+    "bytes": 1031
+  },
+  {
+    "file": "docs/polish_2026_10/prompts/cleric_sweep.txt",
+    "bytes": 1036
+  },
+  {
+    "file": "docs/polish_2026_10/sources/cleric_thrust.png",
+    "bytes": 2965334
+  },
+  {
+    "file": "docs/polish_2026_10/sources/ranger_thrust.png",
+    "bytes": 2842609
+  },
+  {
+    "file": "docs/polish_2026_10/sources/ranger_equipment.png",
+    "bytes": 2799877
+  },
+  {
+    "file": "docs/polish_2026_10/sources/cleric_equipment.png",
+    "bytes": 2791712
+  },
+  {
+    "file": "docs/polish_2026_10/sources/ranger_charged.png",
+    "bytes": 3038877
+  },
+  {
+    "file": "docs/polish_2026_10/sources/cleric_risk.png",
+    "bytes": 2056249
+  },
+  {
+    "file": "docs/polish_2026_10/sources/ranger_sweep.png",
+    "bytes": 2718183
+  },
+  {
+    "file": "docs/polish_2026_10/sources/ranger_risk.png",
+    "bytes": 1949118
+  },
+  {
+    "file": "docs/polish_2026_10/sources/cleric_sweep.png",
+    "bytes": 3019022
+  },
+  {
+    "file": "docs/polish_2026_10/sources/cleric_charged.png",
+    "bytes": 3062174
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a3.json",
+    "bytes": 1524
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a0.json",
+    "bytes": 1485
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a3.png",
+    "bytes": 1824919
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a3.png",
+    "bytes": 1530439
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a3.json",
+    "bytes": 1513
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a0.json",
+    "bytes": 1555
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a1.png",
+    "bytes": 1437552
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a0.json",
+    "bytes": 1491
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a1.png",
+    "bytes": 1408911
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a0.json",
+    "bytes": 1466
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a1.png",
+    "bytes": 1387716
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a3.json",
+    "bytes": 1613
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a3.json",
+    "bytes": 1588
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a3.json",
+    "bytes": 1577
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a3.png",
+    "bytes": 1579409
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a3.png",
+    "bytes": 1450937
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a2.png",
+    "bytes": 1236958
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a2.png",
+    "bytes": 1451148
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a0.png",
+    "bytes": 1553160
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a3.json",
+    "bytes": 1607
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a0.json",
+    "bytes": 1530
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a3.png",
+    "bytes": 1346675
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a1.png",
+    "bytes": 1691150
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a0.json",
+    "bytes": 1519
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a0.png",
+    "bytes": 1431214
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a1.json",
+    "bytes": 1479
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a3.png",
+    "bytes": 1542478
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a0.json",
+    "bytes": 1455
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a0.json",
+    "bytes": 1549
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a3.png",
+    "bytes": 1773048
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a1.json",
+    "bytes": 1449
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a2.png",
+    "bytes": 1750279
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a2.png",
+    "bytes": 1487058
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a1.json",
+    "bytes": 1543
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a3.png",
+    "bytes": 1342988
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a1.png",
+    "bytes": 1698967
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a1.json",
+    "bytes": 1485
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a2.json",
+    "bytes": 1475
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a2.png",
+    "bytes": 1708088
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a0.png",
+    "bytes": 1628462
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a0.png",
+    "bytes": 1296453
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a2.json",
+    "bytes": 1575
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a2.json",
+    "bytes": 1539
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a2.json",
+    "bytes": 1550
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a2.png",
+    "bytes": 1434679
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a1.json",
+    "bytes": 1460
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a3.json",
+    "bytes": 1543
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a2.png",
+    "bytes": 1666104
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a0.png",
+    "bytes": 1630734
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a1.png",
+    "bytes": 1292975
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a0.png",
+    "bytes": 1468387
+  },
+  {
+    "file": "docs/forge/sources/ranger_w1_a2.png",
+    "bytes": 1306492
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a0.png",
+    "bytes": 1701782
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a1.png",
+    "bytes": 1633618
+  },
+  {
+    "file": "docs/forge/sources/cleric_w2_a2.json",
+    "bytes": 1569
+  },
+  {
+    "file": "docs/forge/sources/cleric_w0_a1.json",
+    "bytes": 1524
+  },
+  {
+    "file": "docs/forge/sources/cleric_w3_a1.json",
+    "bytes": 1549
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a0.png",
+    "bytes": 1238810
+  },
+  {
+    "file": "docs/forge/sources/ranger_w2_a2.json",
+    "bytes": 1505
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a1.png",
+    "bytes": 1709628
+  },
+  {
+    "file": "docs/forge/sources/ranger_w0_a2.json",
+    "bytes": 1486
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a2.json",
+    "bytes": 1511
+  },
+  {
+    "file": "docs/forge/sources/ranger_w3_a3.json",
+    "bytes": 1549
+  },
+  {
+    "file": "docs/forge/sources/cleric_w1_a1.json",
+    "bytes": 1513
+  },
+  {
+    "file": "docs/church/sources/cleric_aegis.png",
+    "bytes": 3068493
+  },
+  {
+    "file": "docs/church/sources/ranger_scout.png",
+    "bytes": 2661917
+  },
+  {
+    "file": "docs/church/sources/ranger_precision.png",
+    "bytes": 2717253
+  },
+  {
+    "file": "docs/church/sources/cleric_healer.png",
+    "bytes": 2977379
+  },
+  {
+    "file": "docs/cinematics/film/sources/hero_ranger_0.png",
+    "bytes": 2580503
+  },
+  {
+    "file": "docs/cinematics/film/sources/hero_cleric_1.png",
+    "bytes": 2524219
+  },
+  {
+    "file": "docs/cinematics/film/sources/hero_ranger_1.png",
+    "bytes": 2612787
+  },
+  {
+    "file": "docs/cinematics/film/sources/hero_cleric_0.png",
+    "bytes": 2529228
+  },
+  {
+    "file": "docs/cards/support/sources/ranger_field_aid.png",
+    "bytes": 1801825
+  },
+  {
+    "file": "docs/cards/support/sources/ranger_tendon_shot.png",
+    "bytes": 1935296
+  },
+  {
+    "file": "docs/cards/support/sources/cleric_censure.png",
+    "bytes": 1964150
+  },
+  {
+    "file": "docs/cards/support/sources/cleric_radiant_judgment.png",
+    "bytes": 1958933
+  },
+  {
+    "file": "docs/cards/support/sources/ranger_split_arrow.png",
+    "bytes": 1919067
+  },
+  {
+    "file": "docs/cards/support/sources/ranger_hunters_focus.png",
+    "bytes": 1842059
+  },
+  {
+    "file": "docs/cards/support/sources/cleric_benediction.png",
+    "bytes": 2009180
+  },
+  {
+    "file": "docs/cards/support/sources/cleric_absolution.png",
+    "bytes": 1959447
+  },
+  {
+    "file": "src/cleric_sprite.gd.uid",
+    "bytes": 20
+  },
+  {
+    "file": "src/cleric_sprite.gd",
+    "bytes": 2507
+  },
+  {
+    "file": "src/ranger_sprite.gd",
+    "bytes": 2509
+  },
+  {
+    "file": "src/ranger_sprite.gd.uid",
+    "bytes": 20
+  },
+  {
+    "file": "scripts/import_cleric.gd",
+    "bytes": 1260
+  },
+  {
+    "file": "scripts/import_ranger.gd.uid",
+    "bytes": 19
+  },
+  {
+    "file": "scripts/import_cleric.gd.uid",
+    "bytes": 19
+  },
+  {
+    "file": "scripts/import_ranger.gd",
+    "bytes": 1258
+  },
+  {
+    "file": "tests/test_ranger.gd",
+    "bytes": 6594
+  },
+  {
+    "file": "tests/test_cleric.gd",
+    "bytes": 6577
+  },
+  {
+    "file": "tests/test_ranger.gd.uid",
+    "bytes": 19
+  },
+  {
+    "file": "tests/test_cleric.gd.uid",
+    "bytes": 19
+  },
+  {
+    "file": "docs/forge/hud-sources/sheet3.png",
+    "bytes": 1778969
+  }
+]

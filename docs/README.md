@@ -1,10 +1,26 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **09/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **14/10/2026**.
 
 ## Estado actual
 
-Aventuras nuevas de tres pisos aleatorios de 28 salas: cripta, bosque y fortaleza volcánica; seis clases y parejas de dos héroes. Campamento inicial,
+[Suelo corregido de las batallas de la tercera mazmorra](dungeon/volcano_ground.md):
+patio continuo bajo los personajes, conservando el estilo a lápiz.
+
+Dirección visual de todo el juego: **sketchbook de grafito y lápices de colores**,
+con trazos irregulares, negro/gris/violeta y buen contraste.
+
+[Conversión integral completada](art_direction/migration/README.md): héroes,
+enemigos y sus animaciones, mazmorras, mapas, cartas, iconos y cinemáticas.
+628 imágenes actualizadas verificadas por hash; ninguna imagen activa pendiente.
+[Inventario y galería actuales](art_direction/2026-10-13/review/README.md).
+
+[Campamento al atardecer](base_camp/dusk/README.md) e
+[interiores con galerías 2×2](base_camp/interiors/README.md) conservan el arte aprobado.
+
+Elenco: Nicolás **Carpintero**, Inés **Constructora**, Mauro **Boticario** y Vera **Profesora**. [Retiro definitivo y migración de guardados](cleanup/2026-10-13.md).
+
+Aventuras nuevas de tres pisos aleatorios de 28 salas: cripta, bosque y fortaleza volcánica; cuatro protagonistas con oficios civiles y parejas de dos héroes. Campamento inicial,
 selección alrededor de la fogata, equipamiento previo, mapa en espiral con caminos variables hasta el guardián central, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
@@ -16,33 +32,37 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   superior, energía abajo a la izquierda y cartas asomadas que se elevan al tocar.
 - Golpes cuerpo a cuerpo: el héroe se acerca al objetivo y vuelve a su puesto; HD simultáneo abajo a la izquierda, con combos y área por impacto.
 - Impactos: cifras flotantes de 40 px, con contorno oscuro, sombra y desvanecimiento más lento.
+- Daño de veneno al terminar el turno: parpadeo verde, antes de las cenizas si
+  mata; los golpes normales mantienen el rojo. [Validación](battle_effects/README.md).
 - Estados de combate: 36 iconos de efectos junto a las intenciones y sobre la vida
-  aliada, con pixel art sencillo, volumen discreto y todas las filas visibles; tocar permite
+  aliada, con dibujos sencillos a lápiz, volumen discreto y todas las filas visibles; tocar permite
   consultar cada explicación, sin carteles sobre las cartas. [Diseño y pruebas](battle_effects/README.md).
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
-- Encuentros: 28 situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
-- Cartas: seis marcos con emblemas por clase, coste superior derecho, pastilla de
-  ataque/defensa e ilustraciones minimalistas asignadas por ID.
+- Encuentros: 19 situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
+- Cartas: cuatro marcos con emblemas por héroe, coste superior derecho y pastilla de
+  ataque/defensa. 88 ilustraciones minimalistas nuevas: objetos y trazos que
+  representan el efecto, con poco detalle y fondo despejado. [Arte actual](cards/minimal/README.md).
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 para élites, más nueve exclusivas de guardianes, visible junto a la elección de carta.
 - Tamaño de enemigos: cuadros pequeños de ataque compensados mediante métricas precalculadas, con apoyo en el suelo y vuelta al tamaño de reposo.
-- Actores: héroes de batalla con doce poses por acción, base de 256×256 y ataques nuevos de 384×384; seis héroes clásicos y 56 enemigos animados con sprites de 128×128; 57 definiciones activas con 56 apariencias. Los nuevos conceptos tienen cuatro poses de reposo, cuatro de ataque y una ilustración transparente de ataque en primer plano; anticipación y recuperación por familia.
+- Actores: héroes de batalla con doce poses por acción, base de 256×256 y ataques nuevos de 384×384; cuatro héroes y 56 enemigos animados con celdas de 256×256; 57 definiciones activas con 56 apariencias. Los nuevos conceptos tienen cuatro poses de reposo, cuatro de ataque y cuatro poses transparentes de ataque en primer plano; anticipación y recuperación por familia.
 - Equipo de héroes: mejoras en el HUD y tintes del sprite; sin piezas de arma o
   armadura pegadas encima del personaje. Se mantiene el equipo dibujado en sus poses.
-- Ataques de héroes en primer plano: 24 ataques y seis defensas de 16 cuadros dibujados,
-  con poses HD, luces y partículas locales; [assets y reproducción](comic/hd/README.md).
-- Campamento: mercado construible en solar 1 por 300 almas, con 78 cartas comprables.
+- Primeros planos de héroes: ocho ilustraciones estáticas (ataque y defensa por
+  protagonista), transparentes y quietas con partículas detrás; se retiran los
+  atlas anteriores. [Assets, limpieza y validación](comic/static/README.md).
+- Campamento: mercado construible en solar 1 por 300 almas, con 52 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
   Herrería en solar 3 por 400 almas: tres niveles independientes de arma y armadura
-  por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con doce especializaciones; puesto de expediciones
-  en solar 2, debajo de la fogata (500 almas), con treinta contratos y tres ofertas por aventura.
-- Refugio: preparación persistente del mazo inicial y vínculos entre las quince parejas, historias y variantes de enlace; cambios solo para aventuras nuevas.
-- Cartas: 132 en total, 22 por héroe; mazos iniciales modestos y desbloqueos de mercado.
-- Colección: 30 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
+  por héroe, permanentes y aplicados al iniciar cada aventura. Iglesia en solar 4 (600 almas), con ocho especializaciones; puesto de expediciones
+  en solar 2, debajo de la fogata (500 almas), con 19 contratos y tres ofertas por aventura.
+- Refugio: preparación persistente del mazo inicial y vínculos entre las seis parejas activas, historias y variantes de enlace; cambios solo para aventuras nuevas.
+- Cartas: 88 definiciones, 22 por héroe; mazos iniciales modestos y desbloqueos de mercado.
+- Colección: 28 logros persistentes, cinco secretos, desbloqueos e historial con fondo propio.
 - Bestiario: botón solo en Inicio, encima de Colección, con regreso a Inicio; búsqueda, filtros por mazmorra y descubiertos primero, sin revelar nombres ocultos.
-- Sinergias: 12 cartas con ENLACE, 15 combinaciones entre parejas por 2 de energía.
+- Sinergias: seis combinaciones por 2 de energía.
 - Audio: diez músicas/arreglos, cuatro ambientes y 41 efectos CC0; combate de bosque/fortaleza con arreglos propios, ambiente con fundidos y muestras de impactos alternadas. Volúmenes con porcentaje; canales compatibles con Web. [Sistema y fuentes](audio/README.md).
 - Godot 4.7.2, GDScript, Compatibility, orientación horizontal, interfaz en español.
 
@@ -55,14 +75,14 @@ La APK existente corresponde a una entrega anterior. Los cambios recientes se
 probaron localmente; **no se exporta una APK por cada cambio**. La validación
 Android histórica no certifica la interfaz actual.
 
-Limpieza actual: [auditoría del 08/10](cleanup/2026-10-08.md).
+Limpieza actual: [código, recursos y fuentes sustituidas del 14/10](cleanup/2026-10-14.md).
 Se retiraron recursos sustituidos, referencias regenerables y resultados temporales;
 se mantienen las animaciones activas y las pruebas de regresión.
 
 Auditoría histórica del 18/09: [limpieza y separación de módulos](cleanup/2026-09-18.md),
 con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
-- Cinemáticas: inicio, seis héroes y tres guardianes; galería Historias, pausa/salto,
+- Cinemáticas: inicio, cuatro héroes y tres guardianes; galería Historias, pausa/salto,
   automatismos opcionales y descubrimiento compatible con guardados anteriores.
   [Entrega y revisión integral](cinematics/README.md).
 
@@ -70,6 +90,9 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 
 | Tema | Documentación |
 | --- | --- |
+| Rostros casi de perfil para tarjetas pequeñas | [Retratos compactos y conservación de verticales](portraits/2026-10-13/README.md) |
+| Origen civil, oficios, personalidad y Pícaro sin máscara | [Historia inicial de los cuatro vecinos](story/2026-10-13/README.md) |
+| Cuatro héroes y dirección de bocetos sobre papel | [Elenco, arte y límites de la primera etapa](art_direction/2026-10-13/README.md) |
 | Caché, respaldo, reglas/UI y validación de contenido | [Revisión técnica del 09/10](architecture/TECHNICAL_REVIEW_2026_10_09.md) |
 | Enemigos, impactos por acción, música y búsqueda del bestiario | [Revisión y pulido del juego del 08/10](whole_game_polish/README.md) |
 | Viñetas más lentas, mapas claros y cine ilustrado | [Cambios y validación del 08/10](presentation_refinements/README.md) |
@@ -96,12 +119,10 @@ con 30/30 pruebas automatizadas aprobadas; sin nueva exportación.
 | Limpieza y archivos temporales | [LIMPIEZA.md](LIMPIEZA.md) |
 | Historial y decisiones | [HISTORIAL.md](HISTORIAL.md) |
 | Última comprobación local e informe Android histórico | [VALIDACION.md](VALIDACION.md) |
-| Guerrero y alineación del reposo | [Guerrero](warrior/README.md) |
-| Guardiana | [Guardiana](guardian/README.md) |
-| Pícaro | [Pícaro](rogue/README.md) |
-| Maga | [Maga](mage/README.md) |
-| Clériga | [Clériga](cleric/README.md) |
-| Explorador | [Explorador](ranger/README.md) |
+| Carpintero y alineación del reposo | [Carpintero](warrior/README.md) |
+| Constructora | [Constructora](guardian/README.md) |
+| Boticario | [Boticario](rogue/README.md) |
+| Profesora | [Profesora](mage/README.md) |
 | Selección y fogata animada | [Campamento de selección](camp/README.md) |
 | Campamento previo y solares | [Campamento base](base_camp/README.md) |
 | Encargados y globos ambientales | [Interiores y diálogos](base_camp/attendants.md) |
@@ -129,7 +150,6 @@ entrada más reciente del historial y el documento del sistema correspondiente.
 
 ## Próximos trabajos identificados
 
-- Ilustraciones individuales de cartas.
 - Balancear las mejoras permanentes, nuevas formaciones y tres pisos con partidas humanas.
 - Evaluar nuevas familias entre los enemigos todavía reservados después de probar la fortaleza.
 - Balancear seis cartas por turno, equipamiento y consumibles con partidas humanas.

@@ -14,10 +14,10 @@ func run_tests():
 	root.size=Vector2i(1280,720)
 	app=load("res://main.tscn").instantiate();app.game=Game.new("user://unused-depth-ui",false)
 	root.add_child(app);await process_frame
-	app.game.new_run(["warrior","cleric"],82);app.game.enter_node(0)
+	app.game.new_run(["warrior","guardian"],82);app.game.enter_node(0)
 	var original=app.game;var original_run=original.run.duplicate(true);var profile=original.profile.duplicate(true)
 	app.screen="training_setup";app.render();await process_frame;await capture("training-setup")
-	preload("res://src/ui/training_navigation.gd").start(app,["mage","ranger"],2,3);await process_frame
+	preload("res://src/ui/training_navigation.gd").start(app,["mage","rogue"],2,3);await process_frame
 	check(app.game!=original and not app.game.save_enabled,"training isolates persistent game")
 	check(app.game.run.combat.energy==99 and app.game.run.heroes[0].forge.weapon==2,"training gear and energy")
 	await capture("training-combat")

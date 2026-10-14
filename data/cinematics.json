@@ -6,148 +6,106 @@
     "color": "7ba9ca",
     "chapters": [
       {
-        "title": "Un mundo que vuelve",
-        "text": "Las puertas se cierran. Los nombres se olvidan. Pero una brasa siempre sobrevive.",
-        "duration": 5.5,
+        "title": "El día repetido",
+        "text": "La ruta de provisiones vuelve a cerrarse cada mañana. Los soldados que fueron a abrirla no regresaron.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_0.png"
       },
       {
-        "title": "Seis caminos, una fogata",
-        "text": "Quienes regresan al campamento no buscan la eternidad. Buscan una salida.",
-        "duration": 5.5,
+        "title": "El campamento",
+        "text": "Junto al fuego, los arreglos y las notas permanecen. Afuera, el mundo vuelve a empezar.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_1.png"
       },
       {
-        "title": "Eterno Retorno",
-        "text": "Elegí a tus compañeros. Descendé a las profundidades. Y traé de vuelta algo más que cicatrices.",
-        "duration": 6,
+        "title": "Cuatro vecinos",
+        "text": "Un carpintero, una albañila, un boticario y una maestra salen a buscar un camino. Ninguno sabe cuánto tardará en aprender a luchar.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_2.png"
       }
     ]
   },
   "hero_warrior": {
-    "title": "El filo del abismo",
+    "title": "Nicolás · Carpintero",
     "background": "intro",
     "portrait": "warrior",
     "context": "cinematic_hero",
     "color": "bd75df",
     "chapters": [
       {
-        "title": "El filo del abismo",
-        "text": "Juró no volver a levantar aquella espada. El retorno convirtió su juramento en una carga.",
-        "duration": 5.5,
+        "title": "Nicolás · Carpintero",
+        "text": "Hacía muebles y reparaba carros. Se ofreció a buscar la caravana porque sabía arreglar una rueda, no porque supiera combatir.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_warrior_0.png"
       },
       {
-        "title": "Su próximo retorno",
-        "text": "Ahora avanza por quienes ya no pueden hacerlo. Cada golpe abre un camino para su compañero.",
-        "duration": 5.5,
+        "title": "El peso que carga",
+        "text": "Ahora lleva una espada y sigue guardando clavos doblados. Quiere terminar un carro que pueda sacar a las familias del campamento.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_warrior_1.png"
       }
     ]
   },
   "hero_guardian": {
-    "title": "El último escudo",
+    "title": "Inés · Albañila",
     "background": "intro",
     "portrait": "guardian",
     "context": "cinematic_hero",
     "color": "e3c68a",
     "chapters": [
       {
-        "title": "El último escudo",
-        "text": "Cuando cayó la muralla, ella fue la última en dejar su puesto. Aún recuerda cada nombre.",
-        "duration": 5.5,
+        "title": "Inés · Albañila",
+        "text": "Su primer escudo fue una tabla contra una puerta. La sostuvo mientras los vecinos salían. En el siguiente retorno volvió a intentarlo.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_guardian_0.png"
       },
       {
-        "title": "Su próximo retorno",
-        "text": "Su escudo no promete invulnerabilidad. Promete que nadie deberá resistir a solas.",
-        "duration": 5.5,
+        "title": "Un lugar seguro",
+        "text": "En el campamento refuerza refugios y revisa el pozo. En la batalla aprende a confiar: no puede sostener todas las puertas sola.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_guardian_1.png"
       }
     ]
   },
   "hero_rogue": {
-    "title": "Bajo la máscara",
+    "title": "Mauro · Boticario",
     "background": "intro",
     "portrait": "rogue",
     "context": "cinematic_hero",
     "color": "8ab75b",
     "chapters": [
       {
-        "title": "Bajo la máscara",
-        "text": "Aprendió a sobrevivir sin dejar huellas. El campamento fue el primer lugar donde alguien notó su ausencia.",
-        "duration": 5.5,
+        "title": "Mauro · Boticario",
+        "text": "Salió a buscar plantas cuando faltaron remedios. Llevaba un cuchillo de cortar raíces y una lista de ingredientes.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_rogue_0.png"
       },
       {
-        "title": "Su próximo retorno",
-        "text": "Sus venenos compran tiempo. Sus dagas lo devuelven. Esta vez tiene a quién proteger.",
-        "duration": 5.5,
+        "title": "La medida justa",
+        "text": "Aprendió a frenar una persecución con venenos. Todavía cuenta gotas cuando se pone nervioso y sueña con una botica que solo prepare remedios.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_rogue_1.png"
       }
     ]
   },
   "hero_mage": {
-    "title": "Fragmentos de memoria",
+    "title": "Vera · Maestra",
     "background": "intro",
     "portrait": "mage",
     "context": "cinematic_hero",
     "color": "8ba8ea",
     "chapters": [
       {
-        "title": "Fragmentos de memoria",
-        "text": "En cada regreso encuentra una página distinta del mismo libro. Ninguna explica quién escribió su nombre.",
-        "duration": 5.5,
+        "title": "Vera · Maestra",
+        "text": "Copiaba cartas y daba clase en una habitación prestada. Empezó a estudiar las marcas que reaparecían después del retorno.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_mage_0.png"
       },
       {
-        "title": "Su próximo retorno",
-        "text": "Reúne los fragmentos, domina el frío y la luz. Tal vez la respuesta esté detrás de la última puerta.",
-        "duration": 5.5,
+        "title": "Aprender probando",
+        "text": "Su primera chispa quemó una mesa. Guarda esa hoja entre sus notas: le recuerda que saber cómo hacerlo no es lo mismo que hacerlo bien.",
+        "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_mage_1.png"
-      }
-    ]
-  },
-  "hero_cleric": {
-    "title": "Una luz que permanece",
-    "background": "intro",
-    "portrait": "cleric",
-    "context": "cinematic_hero",
-    "color": "f0d59a",
-    "chapters": [
-      {
-        "title": "Una luz que permanece",
-        "text": "Sus plegarias no detuvieron el desastre. Aun así, volvió a encender las velas.",
-        "duration": 5.5,
-        "image": "res://assets/cinematics/shots/hero_cleric_0.png"
-      },
-      {
-        "title": "Su próximo retorno",
-        "text": "No cura para borrar las heridas, sino para dar otra oportunidad a quienes todavía pueden caminar.",
-        "duration": 5.5,
-        "image": "res://assets/cinematics/shots/hero_cleric_1.png"
-      }
-    ]
-  },
-  "hero_ranger": {
-    "title": "Más allá del horizonte",
-    "background": "intro",
-    "portrait": "ranger",
-    "context": "cinematic_hero",
-    "color": "8eb3cf",
-    "chapters": [
-      {
-        "title": "Más allá del horizonte",
-        "text": "Conocía cada sendero del bosque. Hasta que las raíces comenzaron a cambiar de lugar.",
-        "duration": 5.5,
-        "image": "res://assets/cinematics/shots/hero_ranger_0.png"
-      },
-      {
-        "title": "Su próximo retorno",
-        "text": "Ahora sigue señales que nadie más ve. Una flecha certera puede marcar el camino de regreso.",
-        "duration": 5.5,
-        "image": "res://assets/cinematics/shots/hero_ranger_1.png"
       }
     ]
   },

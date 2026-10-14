@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-13",
+  "engine": "Godot 4.7.2",
+  "specific_headless": {
+    "checks": 24,
+    "failures": 0,
+    "log": "artifacts/compact-specific.log"
+  },
+  "native": {
+    "roster_checks": 437,
+    "failures": 0,
+    "roster_log": "artifacts/compact-roster.log",
+    "ui_checks": 13,
+    "views": 36,
+    "ui_failures": 0,
+    "ui_log": "artifacts/compact-ui.log",
+    "renderer": "Compatibility / Mesa llvmpipe",
+    "resolution": [
+      1280,
+      720
+    ],
+    "visual_review": "Four compact faces in market screenshot; no head crop.",
+    "capture": "artifacts/sketch-roster/market.png"
+  },
+  "vertical_sources_and_regions_unchanged": true,
+  "runtime_png_bytes": 3025776,
+  "import_errors": 0,
+  "import_log": "artifacts/compact-portrait-import.log",
+  "git_diff_check": "passed",
+  "full_regression_rerun": false,
+  "exported": false,
+  "web_tested": false,
+  "physical_device_tested": false,
+  "provenance": "sources.json"
+}

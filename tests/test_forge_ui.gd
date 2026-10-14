@@ -47,7 +47,7 @@ func run_tests() -> void:
 	check(app.screen == "forge", "enter forge")
 	check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "forge starts in portrait gallery")
 	await capture("gallery.png")
-	for id in app.game.content.heroes:
+	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		app.layer.get_node("ForgeHero_" + id).pressed.emit()
 		await process_frame
 		check(app.forge_hero == id, "select " + id)
@@ -79,7 +79,7 @@ func run_tests() -> void:
 	var back_button = app.layer.find_children("*", "Button", true, false).filter(func(button): return button.text == "Campamento")[0]
 	await click(back_button.get_global_rect().get_center())
 	check(app.screen == "base_camp", "top camp button returns to camp")
-	for pair in [["warrior", "guardian"], ["rogue", "mage"], ["cleric", "ranger"]]:
+	for pair in [["warrior", "guardian"], ["rogue", "mage"], ["guardian", "rogue"]]:
 		for id in pair:
 			app.game.profile.forge_upgrades[id] = {"weapon": 3, "armor": 3}
 		app.game.new_run(pair, 42)

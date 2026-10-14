@@ -1,9 +1,0 @@
-{
-  "hero": "ranger",
-  "id": "precision",
-  "name": "Ojo de halcón",
-  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: blue hooded male ranger taking careful aim with a glowing blue arrow, small hawk spirit. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Ojo de halcón.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-8e4367c7-a64d-440a-9de1-41ce87408a57.png",
-  "reference": "assets/rest/ranger.png",
-  "tool": "image_gen built-in"
-}

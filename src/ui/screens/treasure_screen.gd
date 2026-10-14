@@ -54,7 +54,7 @@ func _ready() -> void:
 	picture = TextureRect.new()
 	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	picture.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(picture, Rect2(0, 0, 520, 460), chest)
 	set_frame(5 if result.opened else 0)
@@ -101,7 +101,7 @@ func show_reward() -> void:
 		texture.region = Rect2((int(result.icon) % 4) * 64, (int(result.icon) / 4) * 64, 64, 64)
 		icon.texture = texture
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 		place(icon, Rect2(256, 94, 88, 88), panel)
 	var description = label(result.description, Rect2(45, 188, 510, 177), 19, panel)
 	description.add_theme_constant_override("line_spacing", 0)

@@ -29,6 +29,11 @@ static func play(parent: Control, visual: String) -> Control:
 	var effect = new()
 	effect.visual_id = visual
 	effect.accent = COLORS.get(visual, Color("eca864"))
+	var config = preload("res://src/enemy_sprite.gd").entries().get(visual,{})
+	if config.get("foreground_frames",1) == 4:
+		effect.frame_grid = Vector2i(2,2)
+		effect.sketch_style = true
+		effect.accent = effect.accent.lerp(Color("9783ae"),0.55)
 	effect.texture_path = "res://assets/comic/enemies/%s.png" % visual
 	effect.from_right = true
 	effect.name = "EnemyCutIn"

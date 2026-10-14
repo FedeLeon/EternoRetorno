@@ -1,0 +1,15 @@
+{
+  "id": "rogue_attack",
+  "hero": "rogue",
+  "action": "attack",
+  "source": "docs/art_direction/migration/sources/heroes/rogue_attack.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5c6817bf-0776-41db-aa90-1dc07b89285f.png",
+  "prompt": "Use case: stylized-concept. Production full-body battlefield animation sheet for Eterno Retorno. First reference provides outfit/body identity (use ONLY rogue protagonist described below), second reference fixes exact facial identity. Subject: Mauro, civilian male apothecary, visible unmasked human face and messy dark hair, charcoal hood pulled back enough to see entire face, dark leather coat, violet sash, practical boots, two plain short knives, small green medicine vials at belt. NEVER a mask, beak or covered face. Style genuinely rough graphite and colored pencil conceptual drawing, broken searching outlines and double lines, strong charcoal shadows, irregular violet pigment, not pixel art, not polished glossy comic painting, no white sticker outline. Full body facing RIGHT in three-quarter profile, match existing hand-drawn portraits. EXACTLY TWELVE DISTINCT consecutive poses in a FOUR COLUMNS by THREE ROWS sheet. Landscape 1536x1024. Each equal cell ~384x341 contains one complete body, feet near center x192 y300, same anatomical scale in all frames; head roughly y45. Keep at least 24px transparent gutter on every edge; all hands/weapons/cloth/effects MUST remain within their cell, never overlap adjacent poses. Frame order left-to-right then next row. Action: a clear melee sword/knife/staff strike cycle: first three poses anticipation, next three wind-up and swing, next three contact/follow-through, last three recover to stance. Guardian hits with shield; mage thrusts the staff with a small violet bolt. Ground contact aligns in all cells. Paper tooth inside drawing only. Genuine TRANSPARENT RGBA background, alpha zero outside drawn figures and short effects. NO paper rectangle, no painted floor or shadow platform, no captions, numbers, cell dividers, grid lines, text, no other heroes. Keep recognizable face/outfit and weapons unchanged throughout.",
+  "references": [
+    "assets/heroes/identity/rogue_unmasked.png",
+    "assets/heroes/identity/portraits/rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "transparent_background": true,
+  "status": "generated"
+}

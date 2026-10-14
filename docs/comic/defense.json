@@ -24,18 +24,6 @@
       "prompt": "Create ONE new defensive action comic cut-in asset for this same hero. Reference image establishes exact character identity, costume, weapon and inked comic rendering style; change the pose to DEFENDING, not attacking. Defensive stance, gripping her crystal staff in front to channel a curved blue crystal protective barrier facing right. White hair, blue white robes and gold trim. Single full character, strong readable silhouette, dynamic 3/4 profile facing right. Crisp ink outlines, subtle hatching, painterly comic colors, white sticker contour matching reference. Landscape 3:2 composition, entire figure and weapon visible with padding, no cropping. TRANSPARENT RGBA background, no scenery, no gray/black matte, no text, no panels, no enemy. Sparse magical defensive impact effects around the weapon/shield; preserve empty transparency between effects. This is a foreground game overlay.",
       "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-0416f7ac-8926-497d-ba93-40caf7450b82.png",
       "asset": "assets/comic/defense/mage.png"
-    },
-    {
-      "hero": "cleric",
-      "prompt": "Create ONE new defensive action comic cut-in asset for this same hero. Reference image establishes exact character identity, costume, weapon and inked comic rendering style; change the pose to DEFENDING, not attacking. Defensive stance, holding her holy staff in front of herself to channel a golden protective shield facing right. White gold robes, holy halo and gold light. Single full character, strong readable silhouette, dynamic 3/4 profile facing right. Crisp ink outlines, subtle hatching, painterly comic colors, white sticker contour matching reference. Landscape 3:2 composition, entire figure and weapon visible with padding, no cropping. TRANSPARENT RGBA background, no scenery, no gray/black matte, no text, no panels, no enemy. Sparse magical defensive impact effects around the weapon/shield; preserve empty transparency between effects. This is a foreground game overlay.",
-      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-c23229fe-0dbe-43e6-a71c-d83089fc14af.png",
-      "asset": "assets/comic/defense/cleric.png"
-    },
-    {
-      "hero": "ranger",
-      "prompt": "Create ONE new defensive action comic cut-in asset for this same hero. Reference image establishes exact character identity, costume, weapon and inked comic rendering style; change the pose to DEFENDING, not attacking. Defensive stance, holding his reinforced curved bow diagonally across his torso to parry a strike from the right, blue impact sparks. Blue hood and cloak, leather armor and quiver. Single full character, strong readable silhouette, dynamic 3/4 profile facing right. Crisp ink outlines, subtle hatching, painterly comic colors, white sticker contour matching reference. Landscape 3:2 composition, entire figure and weapon visible with padding, no cropping. TRANSPARENT RGBA background, no scenery, no gray/black matte, no text, no panels, no enemy. Sparse magical defensive impact effects around the weapon/shield; preserve empty transparency between effects. This is a foreground game overlay.",
-      "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-26493071-f8c4-4de8-886b-2e758366ad47.png",
-      "asset": "assets/comic/defense/ranger.png"
     }
   ]
 }

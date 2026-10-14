@@ -1,6 +1,6 @@
 extends Control
 const BlockIndicator = preload("res://src/ui/components/block_indicator.gd")
-const HEROES = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
+const HEROES = ["warrior", "guardian", "rogue", "mage"]
 var intent: Dictionary = {}
 var heroes: Array = []
 var effects: Array = []
@@ -74,7 +74,7 @@ func _ready() -> void:
 			crop.region = Rect2(HEROES.find(id) * 128 + 48, 27, 32, 36)
 			face.texture = crop
 			face.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			face.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+			face.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 			face.position = Vector2.ONE
 			face.size = Vector2(25, 28)
 			face.mouse_filter = Control.MOUSE_FILTER_IGNORE

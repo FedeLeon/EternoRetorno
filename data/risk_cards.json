@@ -67,39 +67,5 @@
     "market_price": 160,
     "risk": true,
     "health_cost": 4
-  },
-  "cleric_risk": {
-    "id": "cleric_risk",
-    "owner": "cleric",
-    "name": "Luz compartida",
-    "cost": 1,
-    "target": "all_allies",
-    "damage": 0,
-    "block": 0,
-    "heal": 10,
-    "poison": 0,
-    "hits": 1,
-    "pierce": false,
-    "locked": false,
-    "market_price": 160,
-    "risk": true,
-    "health_cost": 5
-  },
-  "ranger_risk": {
-    "id": "ranger_risk",
-    "owner": "ranger",
-    "name": "Última flecha",
-    "cost": 0,
-    "target": "enemy",
-    "damage": 14,
-    "block": 0,
-    "heal": 0,
-    "poison": 0,
-    "hits": 1,
-    "pierce": false,
-    "locked": false,
-    "market_price": 160,
-    "risk": true,
-    "discard_cost": 1
   }
 }

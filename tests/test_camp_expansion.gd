@@ -14,14 +14,14 @@ func _initialize() -> void:
 	var path = "user://camp-expansion-test.save"
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	var g = Game.new(path, true)
-	check(E.catalog().size() == 30 and S.catalog().size() == 12, "catalog sizes")
+	check(E.catalog().size() == 19 and S.catalog().size() == 8, "catalog sizes")
 	var ids: Array = []
 	var pairs = 0
 	for contract in E.catalog():
 		check(contract.id not in ids and contract.target > 0 and contract.reward > 0, "valid unique contract")
 		ids.append(contract.id)
 		if contract.party.size() == 2: pairs += 1
-	check(pairs == 15, "all hero pairs represented")
+	check(pairs == 6, "all hero pairs represented")
 	for cycle in range(20):
 		var previous = g.profile.expeditions.offers.duplicate()
 		E.refresh(g.profile)
@@ -55,7 +55,7 @@ func _initialize() -> void:
 	g.checkpoint()
 	var restored = Game.new(path, true)
 	check(restored.profile == g.profile and restored.run == g.run, "atomic settlement reload")
-	g.new_run(["warrior", "cleric"], 10)
+	g.new_run(["warrior", "guardian"], 10)
 	g.enter_node(0)
 	for enemy in g.run.combat.enemies: enemy.hp = 0
 	g._check_combat_end()
@@ -65,7 +65,7 @@ func _initialize() -> void:
 	cycle = g.profile.expeditions.cycle
 	g._finish(false)
 	check(g.profile.expeditions.cycle == cycle + 1, "defeat refresh")
-	var legacy = {"history":[{"won":true,"party":["warrior","mage"]},{"won":false,"party":["rogue","cleric"]}]}
+	var legacy = {"history":[{"won":true,"party":["warrior","mage"]},{"won":false,"party":["rogue","guardian"]}]}
 	S.migrate(legacy)
 	check(legacy.specializations.victorious == ["warrior","mage"] and not S.migrate(legacy), "legacy victory migration idempotent")
 	g.profile.specializations.victorious = []
@@ -75,7 +75,7 @@ func _initialize() -> void:
 	before = g.profile.souls
 	check(g.camp_action("buy_specialization", {"id":"warrior_whirlwind"}), "buy eligible")
 	check(g.profile.souls == before - 450 and not g.camp_action("buy_specialization", {"id":"warrior_whirlwind"}), "spec charge once")
-	g.new_run(["warrior","cleric"], 1)
+	g.new_run(["warrior","guardian"], 1)
 	check(g.run.heroes[0].specialization.id == "warrior_whirlwind", "new run specialization snapshot")
 	check(g.camp_action("buy_specialization", {"id":"warrior_executioner"}), "buy alternative")
 	check(g.run.heroes[0].specialization.id == "warrior_whirlwind", "active run unchanged")
@@ -99,25 +99,20 @@ func _initialize() -> void:
 			check(card[spec.stat] == 0, "does not invent effect " + id)
 		check(count == 2, "two specs per hero")
 	# Exercise real card resolution, including per-hit bonuses and turn conditions.
-	S.victory(g.profile, ["ranger"])
-	g.camp_action("buy_specialization", {"id":"ranger_scout"})
-	g.new_run(["ranger", "cleric"], 12)
+	S.victory(g.profile, ["mage"])
+	g.camp_action("buy_specialization", {"id":"mage_focus"})
+	g.new_run(["mage", "guardian"], 12)
 	g.enter_node(0)
-	var shot = {"id":"ranger_shot", "upgraded":false}
-	# Locate a basic single-target attack from the actual starter catalog.
-	for id in g.content.heroes.ranger.starter:
-		if g.content.cards[id].damage > 0:
-			shot.id = id
-			break
+	var shot = {"id":"mage_shard", "upgraded":false}
 	var basic = g.content.card(shot)
-	check(g.effective_card(shot).damage == basic.damage + 3, "opening card preview")
+	check(g.effective_card(shot).damage == basic.damage + 2, "single-hit card preview")
 	g.run.combat.enemies[0].hp = 200
 	g.run.combat.enemies[0].block = 0
 	g.run.combat.hand = [shot]
 	check(g.play_card(0, 0), "specialized attack played")
-	check(g.run.combat.enemies[0].hp == 200 - (basic.damage + 3) * basic.hits, "specialization applied in actual damage")
+	check(g.run.combat.enemies[0].hp == 200 - (basic.damage + 2) * basic.hits, "specialization applied in actual damage")
 	g.run.combat.turn = 2
-	check(g.effective_card(shot).damage == basic.damage, "opening bonus ends")
+	check(g.effective_card(shot).damage == basic.damage + 2, "focused bonus persists across turns")
 	for id in S.catalog():
 		var spec = S.catalog()[id]
 		if spec.condition == "always": continue
@@ -126,7 +121,7 @@ func _initialize() -> void:
 		S.apply(card, {"specialization":spec,"block":0}, 2)
 		check(card[spec.stat] == 5, "unmet condition " + id)
 	for kind in ["elite", "boss"]:
-		g.new_run(["warrior", "cleric"], 22)
+		g.new_run(["warrior", "guardian"], 22)
 		for node in g.run.nodes:
 			if node.kind != kind: continue
 			g.run.current = node.id
@@ -138,7 +133,7 @@ func _initialize() -> void:
 		g._check_combat_end()
 		check(g.run.expedition_stats.get("elites" if kind == "elite" else "bosses", 0) == 1, "objective hook " + kind)
 		check(g.run.expedition_stats.get("clean_battles", 0) == 0, "fallen hero excludes clean battle")
-	g.new_run(["warrior", "cleric"], 22)
+	g.new_run(["warrior", "guardian"], 22)
 	for node in g.run.nodes:
 		if node.kind == "treasure":
 			g.run.current = node.id
@@ -155,7 +150,7 @@ func _initialize() -> void:
 			check(g.run.expedition_stats.upgrades == 1, "upgrade objective")
 			break
 	var pair_contract = E.definition("pair_warrior_guardian")
-	check(E.progress({"party":["warrior","cleric"],"expedition_stats":{"victory":1}}, pair_contract) == 0, "wrong pair cannot fulfill contract")
+	check(E.progress({"party":["warrior","mage"],"expedition_stats":{"victory":1}}, pair_contract) == 0, "wrong pair cannot fulfill contract")
 	g.checkpoint()
 	restored = Game.new(path, true)
 	check(restored.profile == g.profile and restored.run == g.run, "progress and specs reload")

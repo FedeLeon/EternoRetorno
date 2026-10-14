@@ -1,3 +1,13 @@
+> **Etapa histórica retirada el 14/10/2026.** Los primeros planos de héroes
+> ahora usan [ocho imágenes estáticas nuevas](../static/README.md). Se eliminaron
+> los atlas y fuentes PNG de animación, junto con sus montadores exclusivos.
+> Los prompts y resultados siguientes se conservan como historial, no como
+> instrucciones de reproducción ni validación de la entrega actual.
+
+> **Actualización 13/10/2026:** los veinte atlas activos de los cuatro héroes ahora usan [dibujo sketchbook y fuentes HD nuevas](../sketchbook/README.md). Las fuentes/pruebas del estilo cómic descritas abajo quedan como historial; el importador activo usa sketchbook por defecto.
+
+> **Estado 13/10/2026:** cuatro protagonistas: Nicolás, Carpintero; Inés, Constructora; Mauro, Boticario; Vera, Profesora. El contenido y la compatibilidad de seis personajes descritos anteriormente quedan sustituidos por el [retiro definitivo](../../cleanup/2026-10-13.md). Los resultados históricos no son pruebas del cambio actual.
+
 # Primeros planos de héroes en alta definición — 05/10/2026
 
 ## Motivo y formato

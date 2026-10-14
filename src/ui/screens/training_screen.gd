@@ -20,12 +20,12 @@ static func build(ui: Control) -> void:
 	ui.button("Configurar rivales",60,410,300,44,func(): preload("res://src/ui/screens/training_config_dialog.gd").open(ui))
 	var start = ui.button("Entrenar", 60, 470, 300, 58, func(): preload("res://src/ui/training_navigation.gd").start(ui, chosen, weapon.selected, armor.selected), false)
 	start.disabled = true
-	var ids = ui.game.content.heroes.keys()
+	var ids = preload("res://src/rules/hero_roster.gd").ids(ui.game.content.heroes)
 	for i in range(ids.size()):
 		var id = ids[i]
 		var button = preload("res://src/ui/components/refuge_portrait.gd").build(ui, ui.layer, id, ui.game.content.heroes[id].name, Vector2(688 + (i % 2) * 266, 172 + (i / 2) * 174), func():
 			if id in chosen: chosen.erase(id)
 			elif chosen.size() < 2: chosen.append(id)
 			for j in range(buttons.size()): buttons[j].modulate = Color(1.3,1.2,1.0) if ids[j] in chosen else Color.WHITE
-			start.disabled = chosen.size() != 2, true)
+			start.disabled = chosen.size() != 2, true, ui.game.content.heroes[id].get("civilian",{}))
 		buttons.append(button)

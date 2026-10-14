@@ -10,14 +10,14 @@ func run_tests():
  var path = "user://development-start-test.save"
  for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
  var game = Game.new(path, true)
- game.new_run(["warrior", "cleric"], 42)
+ game.new_run(["warrior", "guardian"], 42)
  check(game.run.floor == 1, "default stays crypt")
  var snapshot = game.run.duplicate(true)
- check(not game.new_run(["warrior", "cleric"], 42, {}, 4) and game.run == snapshot, "invalid floor preserves run")
+ check(not game.new_run(["warrior", "guardian"], 42, {}, 4) and game.run == snapshot, "invalid floor preserves run")
  var app = load("res://main.tscn").instantiate()
  app.game = game
  root.add_child(app)
- app.selected_party = ["warrior", "cleric"]
+ app.selected_party = ["warrior", "guardian"]
  app.equipped = {"team":"vital_amulet"}
  app.screen = "equipment"
  app.render()
@@ -31,7 +31,7 @@ func run_tests():
  app.begin()
  app.overlay.get_node("StartDungeon2").pressed.emit()
  app.overlay.get_node("StartAdventure").pressed.emit()
- for hero in ["warrior","cleric"]:
+ for hero in ["warrior","guardian"]:
   await process_frame
   check(app.has_node("CinematicPlayer"),"selected hero is introduced")
   app.get_node("CinematicPlayer").finish()

@@ -1,0 +1,22 @@
+{
+  "id": "forge__icons__rogue_1",
+  "target": "assets/forge/icons/rogue_1.png",
+  "family": "forge/icons",
+  "kind": "icon",
+  "hero": "rogue",
+  "dimensions": [
+    128,
+    128
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/migration/sources/icon/forge__icons__rogue_1.png",
+  "queue_position": 305,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Any protagonist depicted MUST be Mauro the Apothecary, adult human man with messy dark hair, ENTIRE HUMAN FACE VISIBLE, NO MASK, NO BEAK, charcoal hood pushed back, patched dark coat, violet sash, two plain short knives and little green medicine vials. Its new face/outfit replaces the old design. ONE isolated minimal icon representing assets/forge/icons/rogue_1.png as in the reference, clear solid silhouette, sparse pencil hatch shading and imperfect charcoal outline. No complex scene, no person/portrait unless strictly essential to the symbol, no ornamental gold frame, no labels. Readable at 30-60 pixels, centered with 10% clear margins. True transparent background. If energy/end-turn: retain circular shape and clean dark center for overlaid numbers/text, use violet/gray drawn border with restrained light. If hero achievement: use civilian profession symbol (carpentry, construction, apothecary, teaching), never masked rogue or horned knight.",
+  "references": [
+    "assets/forge/icons/rogue_1.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9b93ad50-dc85-4532-8b73-ebdbd7a3b4ed.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

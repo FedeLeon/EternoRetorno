@@ -1,0 +1,43 @@
+{
+	"card": {
+		"block": 12.0,
+		"cost": 2.0,
+		"damage": 0.0,
+		"heal": 5.0,
+		"hits": 1.0,
+		"id": "guardian_unbroken",
+		"locked": false,
+		"market_price": 320.0,
+		"name": "Nunca caeremos",
+		"owner": "guardian",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "all_allies",
+		"tier": "market"
+	},
+	"card_id": "guardian_unbroken",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "guardian",
+	"id": "minimal_guardian_unbroken",
+	"kind": "minimal_card",
+	"motif": "Two linked plain shield silhouettes with one small muted red healing cross between them.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a6b7a59e-fdaa-4a73-add3-6fb6380c2ca9.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: Two linked plain shield silhouettes with one small muted red healing cross between them. This is a visual metaphor for the card Nunca caeremos, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "f2bf18117eae21f1588775863e505a560e77a3cac2419b1fedd2718b42897721",
+	"source": "docs/cards/minimal/sources/guardian_unbroken.png",
+	"source_sha256": "a564fca41f46e52d13931afcfc872fb2509f899b0ce4df7bcab3d5c8cd3832a0",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/guardian_unbroken.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

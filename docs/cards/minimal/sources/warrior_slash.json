@@ -1,0 +1,41 @@
+{
+	"card": {
+		"block": 0.0,
+		"cost": 1.0,
+		"damage": 9.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "warrior_slash",
+		"locked": false,
+		"name": "Tajo",
+		"owner": "warrior",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "enemy"
+	},
+	"card_id": "warrior_slash",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "warrior",
+	"id": "minimal_warrior_slash",
+	"kind": "minimal_card",
+	"motif": "One plain steel sword cutting a single short violet arc. No hand or person.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c6d37b6e-3af7-4497-ab29-33caae75bb84.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One plain steel sword cutting a single short violet arc. No hand or person. This is a visual metaphor for the card Tajo, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "67288075f989e16e8428b4169101ad326ef00a8ff0a21041fe42af7b1a17ce1c",
+	"source": "docs/cards/minimal/sources/warrior_slash.png",
+	"source_sha256": "1d9cb24d3bbd3abb82e578bdd72ec45770b3cf4d02f6edc70535388cbfcf984c",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/warrior_slash.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

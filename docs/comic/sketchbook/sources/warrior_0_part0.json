@@ -1,0 +1,15 @@
+{
+  "id": "warrior_0",
+  "hero": "warrior",
+  "variant": 0,
+  "part": 0,
+  "references": [
+    "assets/heroes/identity/sketchbook.png",
+    "assets/heroes/identity/portraits/warrior.png"
+  ],
+  "prompt": "Use case: stylized-concept. Production foreground battle animation sheet for Eterno Retorno. Reference image1 is the approved hand-drawn sketchbook character design; use ONLY FIRST figure in the board. Image2 is the exact facial identity, keep it recognizable.\nSubject: Nicolas the Carpenter, a stocky adult 42-year-old bearded man with the exact face from his portrait, raised helmet visor, patched charcoal plate armor and ragged deep violet cape, both hands on a long straight steel sword. Facing RIGHT, dynamic torso/hips-up foreground composition, hands and weapon fully visible; do not draw full legs. Constant lens, character size and hip anchor. Action: broad horizontal sword slash from left to right. This sheet is part 1 of a coherent SIXTEEN-frame animation. Draw exactly FOUR DISTINCT consecutive poses, frames 1 through 4: four successive anticipation poses: relaxed ready stance, gather, draw back, fully prepared. The four poses must visibly change arm, weapon, cloth and shoulder positions, never repeated static figures.\nOUTPUT: exactly TWO COLUMNS by TWO ROWS, FOUR equal landscape cells read left-to-right/top-to-bottom. Canvas 1536x1024, each cell 768x512. Draw ONE hero per cell. Entire subject AND effects must fit inside its cell with minimum 45px clear alpha margin at all four edges. Waist roughly x340/y395 within each cell, head near x330/y120; roughly same visible figure height across all sheets. Frame weapons/effects toward the RIGHT inside the cell, never crossing into a neighbor.\nStyle: genuine rough graphite and colored-pencil concept sketch. Visible broken exploratory contour lines, imperfect double outlines, dense directional crosshatching, smudged charcoal shadows, uneven violet pencil pigment, tiny construction marks close to the body. High contrast blacks/gray/violet, distinct skin, saturated deep violet fabric. Draw as a person sketching on paper, NOT polished digital painting, pixel art, glossy armor, cel-shaded anime or clean vector lines. Paper tooth only INSIDE drawn forms; there must be no paper rectangle behind them.\nEffects: scratched hand-drawn violet weapon trails, small pencil sparks, short graphite motion strokes; restrained lilac light at contact, no smooth neon bloom. Effect intensity grows to contact and then dissipates. Anatomy and face remain readable. Genuine transparent RGBA background, background alpha ZERO; no white/gray/black gradient, opaque backing, floor, scene, shadow platform, grid lines, labels, numbers, text, borders or white sticker outline. No other characters. All four silhouettes separated by broad genuinely transparent gutters.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-07479cfa-2495-482a-b1a2-cc59037c4d2e.png",
+  "file": "docs/comic/sketchbook/sources/warrior_0_part0.png",
+  "generator": "image_gen.imagegen",
+  "transparent_requested": true
+}

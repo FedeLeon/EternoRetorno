@@ -1,9 +1,68 @@
 # Arquitectura y organización del código
 
-Estado revisado el **09/10/2026**. Esta página describe el código actual y los
+Estado revisado el **14/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Estructura actual
+
+Limpieza del 14/10: los 184 módulos activos conservan rutas/UIDs. Se retiran
+importadores anteriores y se comparte la geometría en `sketchbook_sheet_packer.gd`;
+se simplifica la presentación de héroes a partículas a lápiz y dibujos estáticos.
+Las poses enemigas, reglas y persistencia se mantienen. La cola activa conserva
+314 trabajos; cartas mínimas y recortes estáticos tienen sus importadores propios.
+[Archivos, decisiones, pruebas y límites](cleanup/2026-10-14.md). Las menciones
+a importadores retirados en las secciones fechadas inferiores son históricas.
+
+Arte mínimo de cartas del 14/10: `import_minimal_cards.gd` prepara 88 imágenes
+individuales acotadas a 512×288 y publica juntas las referencias de
+`data/card_art.json`. Se reutiliza `ui/components/card_art.gd` en todas las vistas;
+no se altera la fábrica, las reglas o los guardados. Los motivos y procedencia
+se documentan aparte; la cola de migración deja fuera las cartas sustituidas y se retiran
+los importadores históricos. [Assets y pruebas](cards/minimal/README.md).
+
+Primeros planos de héroes del 14/10: `hero_cut_in.gd` selecciona ocho PNG
+estáticos; `comic_cut_in.gd` admite ilustración inmóvil con partículas detrás.
+La reproducción de cuadrículas se conserva para los enemigos, sin duplicar el
+componente ni modificar reglas. Se retiran los montadores exclusivos de las
+secuencias de héroes; `import_static_cutins.py` valida y copia originales RGBA.
+[Assets, limpieza y pruebas](comic/static/README.md).
+
+Conversión integral completada el 14/10: `sketchbook_sheet_packer.gd` comparte
+recortes alfa y anclajes; los importadores de actores, assets y derivados están
+en `scripts/`, sin resolver combate ni guardar partidas. `enemy_sprite.gd`
+calcula el tamaño de celda real para admitir atlas de 128 o 256 píxeles sin
+cambiar el tamaño externo; las métricas conservan el apoyo durante daño/cenizas.
+El primer plano admite cuatro poses por enemigo cuando el catálogo lo indica.
+La presentación de carrera comparte escala con el atlas clásico nuevo.
+[Fuentes, cola y validación actual](art_direction/migration/README.md).
+
+Campamento crepuscular del 13/10: `ui/screens/base_camp_screen.gd` compone
+edificios y solares independientes desde el perfil recibido; no modifica reglas.
+`campfire.gd` admite atlas/velocidad/estilo por instancia y comparte por defecto el fuego dibujado aprobado
+con otras pantallas. El suelo ya no necesita máscaras de construcción
+sobre la pintura; `camp_dusk.gdshader` solo presenta ambiente.
+[Composición, assets y validación](base_camp/dusk/README.md).
+
+Interiores del 13/10: `building_hero_picker.gd` comparte la galería 2×2 entre
+mercado, herrería, iglesia y refugio, con padre opcional para reconstrucción
+local. `refuge_portrait.gd` recibe tamaño de tarjeta sin cambiar sus valores
+predeterminados para otras pantallas. Fondos y navegación permanecen en sus
+pantallas; ninguna compra o configuración se calcula en estos componentes.
+[Assets y validación actual](base_camp/interiors/README.md).
+
+Auditoría visual posterior: `scripts/audit_visual_style.py` verifica hashes de
+arte aprobado, resuelve los edificios dinámicos actuales y agrupa recursos por
+28 vistas/superficies. `audit_visual_contact_sheets.py` crea previews temporales
+sin modificar imágenes del juego. No se cambian módulos runtime en esta revisión.
+[Inventario actual, incluidos mapas/mazmorras e iconos](art_direction/2026-10-13/review/README.md).
+
+Elenco del 13/10: 184 módulos en `src/`. Cuatro protagonistas; los dos
+personajes retirados ya no tienen contenido ni módulos de presentación.
+`rules/content_migration.gd` depura referencias inexistentes antes de migraciones
+de progresión y logros, sin guardar ni conceder premios. `game.gd` conserva la
+carga, RNG y checkpoint. [Decisión y compatibilidad](cleanup/2026-10-13.md).
+Galerías, primeros planos, actores y escenarios adoptan el sketchbook. `hero_cut_in.gd` activa el modo de partículas dibujadas de la presentación compartida, sin modificar reglas ni guardados.
+[Alcance visual actual](art_direction/2026-10-13/README.md). [Auditoría de rutas, atlas y conversión completada](art_direction/2026-10-13/review/README.md).
 
 Revisión técnica del 09/10: **184 módulos**; `main.gd` 549 líneas, `game.gd`
 369. Cálculos/enlaces pasan a reglas propias y widgets/tema a `ui_factory.gd`.
@@ -32,6 +91,7 @@ se cambian UIDs/guardados durante la [limpieza actual](cleanup/2026-10-08.md).
 | `src/rules/dungeon_generator.gd` | Grafo acíclico, distribución de salas y encuentros mediante RNG recibido |
 | `src/rules/dungeon_progression.gd` | Transición entre pisos conservando el progreso de la aventura; no guarda ni concede victoria |
 | `src/save_store.gd` | Persistencia atómica, versión y copia de respaldo |
+| `src/rules/content_migration.gd` | Depura contenido inexistente al cargar, sin guardar ni conceder premios |
 | `src/rules/` | Reglas de progresión, herrería, tesoros, sinergias y consumibles |
 | `src/ui/screens/` | Composición de pantallas; selección, reliquias, mapa, mercado, herrería, tesoro, recompensa, bolsa y combate |
 | `src/ui/components/` | Cartas, barras, números, paneles, botones y elementos reutilizables |
@@ -686,3 +746,31 @@ conserva APIs y checkpoint tras acciones aceptadas. `ui_factory.gd` no recibe
 `game` ni el controlador; recibe un padre visual y callbacks. `json_catalog.gd`
 centraliza IO declarativo con copias profundas, invalidación y diagnósticos.
 La validación de contenido precede a regresiones. [Análisis y pendientes](architecture/TECHNICAL_REVIEW_2026_10_09.md).
+
+## Elenco visible y dirección artística — 13/10/2026
+
+`rules/hero_roster.gd` concentra los cuatro IDs elegibles. No elimina contenido ni
+limita la resolución de aventuras legadas; UI y ofertas nuevas consultan esta
+política. Migración de contratos recibe el estado de aventura para preservar
+selecciones en curso. `refuge_portrait.gd` recorta una hoja sketchbook compartida;
+SVG de marcos mantiene sus márgenes y añade borde irregular discreto. La conversión
+de actores/escenarios es pendiente y no se simula con filtros. Pruebas aisladas
+por suite mediante XDG_DATA_HOME. [Entrega y alcance](art_direction/2026-10-13/README.md).
+
+## Metadata narrativa civil — 13/10/2026
+
+`data/hero_lives.json` concentra una propuesta de mundo y cuatro vidas. La fachada
+`content.gd` agrega `civilian` y lore sin renombrar IDs/clases ni calcular efectos.
+Galerías reciben la ficha por argumento y muestran nombre/oficio; vínculos leen
+sus voces. Las reglas no dependen de estos textos. Los guiones de cinematicas
+conservan IDs y planos existentes. Retrato sin máscara del Pícaro independiente
+de la hoja compartida, para preservar los otros tres dibujos. No agrega una
+pantalla, tabla de guardado o sistema de trabajos/olvido. [Fichas y alcance](story/2026-10-13/README.md).
+
+## Recursos según formato de tarjeta — 13/10/2026
+
+`refuge_portrait.portrait(hero, compact)` separa cuatro rostros PNG compactos
+de los cuerpos/crops verticales vigentes. Sigue siendo presentación: no calcula
+reglas ni altera estado. Usa proporción centrada para caras y fallback de
+recursos legados. Importador mecánico proporcional con fuentes excluidas de
+exportación y pruebas de baseline. [Recursos y validación](portraits/2026-10-13/README.md).

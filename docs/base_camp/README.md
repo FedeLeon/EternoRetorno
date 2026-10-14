@@ -1,6 +1,24 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../cleanup/2026-10-14.md).
+
 # Campamento previo a la aventura
 
-Estado actual: **30/09/2026**. Las secciones fechadas conservan el historial de cambios.
+Estado actual: **13/10/2026**. Las secciones fechadas conservan el historial de cambios.
+
+## Exterior actual: atardecer sketchbook
+
+Los [seis interiores](interiors/README.md) también adoptan el sketchbook y las
+galerías de héroes usan dos filas de dos tarjetas ampliadas en el bloque derecho.
+
+Nuevo paisaje y edificios de grafito/lápiz, sol bajo, sombras violetas y luz de
+fogata. Mercado/herrería a la izquierda, iglesia/proyectos a la derecha,
+refugio junto al camino central y expediciones debajo de la fogata. Los solares
+se dibujan como piezas independientes y desaparecen al construir. Fuego nuevo
+de 24 cuadros. [Assets, composición y pruebas actuales](dusk/README.md).
+Las referencias al fondo diurno y sus máscaras que siguen describen versiones
+históricas; el exterior actual usa `assets/base_camp/dusk/` y `camp_dusk.gdshader`.
 
 ## Navegación e interfaz
 

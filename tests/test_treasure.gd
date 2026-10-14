@@ -12,7 +12,7 @@ func check(ok: bool, text: String) -> void:
 		printerr(text)
 func _initialize() -> void:
 	var g = Game.new(SAVE, true)
-	g.new_run(["warrior", "cleric"], 42)
+	g.new_run(["warrior", "guardian"], 42)
 	check(g.run.inventory.is_empty(), "new run has empty inventory")
 	check(not g.take_treasure() and not g.leave_treasure(), "room actions require treasure")
 	g.run.current = 0
@@ -30,7 +30,7 @@ func _initialize() -> void:
 	check(g.run == committed and not g.take_treasure(), "reopening during animation cannot replay")
 	check(g.leave_treasure() and not g.leave_treasure(), "acknowledge pending result once")
 	for trapped in [false, true]:
-		g.new_run(["warrior", "cleric"], 23)
+		g.new_run(["warrior", "guardian"], 23)
 		g.run.current = 0
 		preload("res://tests/room_fixture.gd").enter(g, "treasure")
 		g.run.treasure.trapped = trapped
@@ -40,7 +40,7 @@ func _initialize() -> void:
 		check(g.run.heroes[0].hp == (1 if trapped else 2) and g.run.heroes[1].hp == (16 if trapped else 20), "trap damage is small and nonlethal")
 		check(g.run.inventory.values() == [1], "traps also give item")
 		check(g.run.phase == "room" and g.run.treasure.opened, "result remains pending")
-	g.new_run(["warrior", "cleric"], 11)
+	g.new_run(["warrior", "guardian"], 11)
 	g.run.inventory = {"healing_potion": 3}
 	g.run.current = 0
 	preload("res://tests/room_fixture.gd").enter(g, "treasure")

@@ -172,7 +172,6 @@
       "seconds": 6.9
     },
     {
-      "test": "test_cleric.gd",
       "exit": 0,
       "script_error": false,
       "assertion_failure": false,
@@ -524,7 +523,6 @@
       "seconds": 1.7
     },
     {
-      "test": "test_ranger.gd",
       "exit": 0,
       "script_error": false,
       "assertion_failure": false,

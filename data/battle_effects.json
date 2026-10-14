@@ -1,7 +1,7 @@
 {
   "rear_guard": {
     "title": "Retaguardia cubierta",
-    "description": "Un protector vivo cubre a esta criatura. Los ataques de maga, explorador, penetrantes y de área pueden alcanzarla. Al caer el último protector queda expuesta."
+    "description": "Un protector vivo cubre a esta criatura. Los ataques de la Profesora, penetrantes y de área pueden alcanzarla. Al caer el último protector queda expuesta."
   },
   "roots": {
     "title": "Raíces protectoras",
@@ -97,7 +97,7 @@
   },
   "magic_boost": {
     "title": "Potencia mágica",
-    "description": "Añade el daño indicado a las cartas ofensivas de maga o clériga durante este turno. Expira al comenzar el siguiente turno aliado."
+    "description": "Añade el daño indicado a las cartas ofensivas de la Profesora durante este turno. Expira al comenzar el siguiente turno aliado."
   },
   "bond_focus": {
     "title": "Concentración del vínculo",

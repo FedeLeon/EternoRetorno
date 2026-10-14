@@ -22,7 +22,8 @@ static func start(actor: Control) -> void:
 	actor.set_meta("before_run_scale", actor.sprite.scale)
 	actor.set_meta("before_run_position", actor.sprite.position)
 	# Match the current equipment silhouette height while sharing each hero's gait.
-	var ratio = float(actor.get_meta("idle_height", HEIGHTS[hero])) / float(HEIGHTS[hero])
+	var metrics = preload("res://src/data/json_catalog.gd").dictionary("res://data/detailed_heroes.json")
+	var ratio = 1.0 if metrics.get(hero,{}).get("style","") == "sketchbook" else float(actor.get_meta("idle_height", HEIGHTS[hero])) / float(HEIGHTS[hero])
 	var old_scale: Vector2 = actor.sprite.scale
 	actor.sprite.scale *= ratio
 	actor.sprite.position.y += 120 * (old_scale.y - actor.sprite.scale.y)

@@ -13,7 +13,7 @@ func run_tests() -> void:
 	game.profile.buildings.expeditions = true
 	var offers = game.profile.expeditions.offers.duplicate()
 	game.profile.expeditions.selected = offers[0]
-	game.new_run(["warrior","cleric"],31)
+	game.new_run(["warrior","guardian"],31)
 	game.enter_node(0)
 	var cycle = game.profile.expeditions.cycle
 	var souls = game.profile.souls

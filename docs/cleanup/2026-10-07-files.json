@@ -1,24 +1,20 @@
 [
   {
-    "path": ".godot/imported/cleric.png-0df7636aab83c89d7bc93128a75092eb.ctex",
     "bytes": 525550,
     "sha256": "e06b791cf47cb2637cc2c09ae8d4743fd3ff7f079221230f0a6096369e3576a0",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/cleric.png-0df7636aab83c89d7bc93128a75092eb.md5",
     "bytes": 91,
     "sha256": "13b039c115df0dfae309f0d71a1fd2ed0fbeb9af353bb9cf5b24802c6954902d",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/cleric.png-e63d9e5e2ba5271a812e8484b871735b.ctex",
     "bytes": 18510,
     "sha256": "254baa50317da8394fe3164c07188cf554c37cec697ac93aa968c459fe204769",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/cleric.png-e63d9e5e2ba5271a812e8484b871735b.md5",
     "bytes": 91,
     "sha256": "d9a3eaac727861f2dda0cc447d6f316ed1a062ac18e03815ef7bd734ba08909a",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
@@ -84,25 +80,21 @@
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/ranger.png-151beee2292d0d922e39b1bec4859ebd.ctex",
     "bytes": 17884,
     "sha256": "906f0bc029607c192228ecef75f335bae888c82fb3c2f22dac88463bfb81cc47",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/ranger.png-151beee2292d0d922e39b1bec4859ebd.md5",
     "bytes": 91,
     "sha256": "e8cf69f5e482f5212a2a5a417e0513ee9850481a63163c9408f37bcafdf48237",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/ranger.png-272935fbc0f0ab4de752c22204bc1930.ctex",
     "bytes": 470722,
     "sha256": "3d7118fd108a18e3f8b6cba5d3fbdd9af1f832820c8e35c8db9bfdab27f9d1bd",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
   },
   {
-    "path": ".godot/imported/ranger.png-272935fbc0f0ab4de752c22204bc1930.md5",
     "bytes": 91,
     "sha256": "57aec853bd9edc413515258ada024b349fbb8a4cc036a2d30834dd28c1eaedbe",
     "reason": "Caché identificado por el .import del asset retirado; sin importadores activos"
@@ -312,7 +304,6 @@
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/church/spacing-cleric.png",
     "bytes": 1150698,
     "sha256": "8eb4a8dbf885ac35982b4656d179e079bb74839991dd2306f567147d54f86575",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
@@ -324,7 +315,6 @@
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/church/spacing-ranger.png",
     "bytes": 1104163,
     "sha256": "a8c0c3297edd8f986ccefc4c28503cbae37aceed98987727395c55b5c5bad491",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
@@ -450,31 +440,26 @@
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/cleric_0.png",
     "bytes": 1950315,
     "sha256": "3c35bca154cb1a0c73629a942853b103e14dccdc0bdb29ab873f677eb35bf199",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/cleric_1.png",
     "bytes": 1973869,
     "sha256": "8ee8661a391f5367c643947a85f57dccf6f5446370bbf021e2120376b582ad02",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/cleric_2.png",
     "bytes": 1962138,
     "sha256": "332e8bb80f7894e9239b1d43f8b9c66de3dc4a8096e10aecac88987e0b901ab0",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/cleric_3.png",
     "bytes": 1922092,
     "sha256": "998102f7bf3bcb2d95c7f2a877708e1caf9ff92fd20bac62786ef70e7114f125",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/cleric_defense.png",
     "bytes": 1949575,
     "sha256": "c57ce6b50abc78a767a070c61bef645b17edaec5dee739eb8ae50180d0ceef87",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
@@ -540,31 +525,26 @@
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/ranger_0.png",
     "bytes": 1995503,
     "sha256": "274c6acc5d7dfcc66f9f0a790201d8f24639d0330f14c70f0a0a35c289be5f41",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/ranger_1.png",
     "bytes": 1995744,
     "sha256": "db70dae8b764ee5a76dfa4d188c17a3af264ceabde3c471c8ae61221bd47661d",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/ranger_2.png",
     "bytes": 1993440,
     "sha256": "e9d9e6b6b2ae8dedcd16e2f9770af6e1e3fcea6c323fe9fb8fc382525e80798d",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/ranger_3.png",
     "bytes": 1996700,
     "sha256": "dc58b798f68e5d8bf2fa53f6016028d281b289fe3fae11381cd9a3154a1bdb79",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "artifacts/comic_motion/ranger_defense.png",
     "bytes": 1952563,
     "sha256": "a88aaa508ef2d84d59953130d551775b7f39594149d41aad245e1052dadc331d",
     "reason": "Captura, log o ensayo temporal ignorado por Git"
@@ -1056,13 +1036,11 @@
     "reason": "Captura, log o ensayo temporal ignorado por Git"
   },
   {
-    "path": "assets/cards/cleric.png",
     "bytes": 22294,
     "sha256": "8ab04d0dbe63a5dc21e3b1125a6c5b036661914a3c887da580882cc7a174fe35",
     "reason": "Asset reemplazado sin consumidores de runtime, datos, scripts o tests"
   },
   {
-    "path": "assets/cards/cleric.png.import",
     "bytes": 935,
     "sha256": "c9b5c5447429bd1ba4cdd8bfa577e06a98cbb3e47ca1b50dc36250b0173eb499",
     "reason": "Metadatos del asset retirado"
@@ -1092,13 +1070,11 @@
     "reason": "Metadatos del asset retirado"
   },
   {
-    "path": "assets/cards/ranger.png",
     "bytes": 21759,
     "sha256": "056fb978ce0355041bf42902648312a377d30a8f421d162573c934bef27ffecb",
     "reason": "Asset reemplazado sin consumidores de runtime, datos, scripts o tests"
   },
   {
-    "path": "assets/cards/ranger.png.import",
     "bytes": 935,
     "sha256": "ddd0f6b9c76ae3013721ebd083528abebda8f441dc2a8583d0c8247cffbe45d1",
     "reason": "Metadatos del asset retirado"
@@ -1128,13 +1104,11 @@
     "reason": "Metadatos del asset retirado"
   },
   {
-    "path": "assets/comic/defense/cleric.png",
     "bytes": 2870129,
     "sha256": "48aba18bf4324ccd5875850c732d875906f33ea36e209b88ee98b7b057cbcc9a",
     "reason": "Asset reemplazado sin consumidores de runtime, datos, scripts o tests"
   },
   {
-    "path": "assets/comic/defense/cleric.png.import",
     "bytes": 944,
     "sha256": "d08d5dda25f35c7a37d940c289bc0ce7422051fcc558152e641f9ae85326d216",
     "reason": "Metadatos del asset retirado"
@@ -1164,13 +1138,11 @@
     "reason": "Metadatos del asset retirado"
   },
   {
-    "path": "assets/comic/defense/ranger.png",
     "bytes": 2681357,
     "sha256": "92e02968be536b311c93eb974132eccb31f50080317f399c62f58b2922910845",
     "reason": "Asset reemplazado sin consumidores de runtime, datos, scripts o tests"
   },
   {
-    "path": "assets/comic/defense/ranger.png.import",
     "bytes": 944,
     "sha256": "1f012864d0fc4fd27467a563d222d3d86d1d83c7b815c4b2e9fc8016576c65f9",
     "reason": "Metadatos del asset retirado"
@@ -1236,121 +1208,101 @@
     "reason": "Mapa fijo sustituido por dungeon_generator; guardados incluyen sus nodos"
   },
   {
-    "path": "docs/comic/hd/references/cleric_0_part0.png",
     "bytes": 601286,
     "sha256": "b22a279b3ee7abb257639c3931ca3a545ce94ca5d905c4b920d2d3ac8450501e",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_0_part1.png",
     "bytes": 649837,
     "sha256": "73747d1e6968cde4fd23252bd48b2b71eaf0698d9bde6ef1a3c63c2dd4e7e8aa",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_0_part2.png",
     "bytes": 651226,
     "sha256": "829e65a628bfc21955fe934220837eeaaea68d11f4fb59848bffb1497dd9af64",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_0_part3.png",
     "bytes": 604005,
     "sha256": "aa6d1a0edcd103330ec1480d81497a832e12b2b78097e07698de4ca97514ecd4",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_1_part0.png",
     "bytes": 603887,
     "sha256": "fd103e764152ac54b6b0b536b9f295575f8310d63b30863dc83b1b123e73c4f7",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_1_part1.png",
     "bytes": 670178,
     "sha256": "0c84f13734a90db16a3eb2c056867c33a4f52c05da700dd87047be8be579a0a0",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_1_part2.png",
     "bytes": 654009,
     "sha256": "da6923153dab27fc76128b1839b7a8d912f17eb0d92648719e6b2d89e0aa3b9f",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_1_part3.png",
     "bytes": 619818,
     "sha256": "24f770f90d5e74027c57c648ed64443ac8afd22cc80198475f0a61f775572391",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_2_part0.png",
     "bytes": 588054,
     "sha256": "281e06229e089cb41e35d6821ea0f7fab2edfddd32fd68f0a77081d37834d46a",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_2_part1.png",
     "bytes": 652222,
     "sha256": "c0e75a3abb07d494f493468319682887cb7dc45e17167a48b29ea5281922bed9",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_2_part2.png",
     "bytes": 714193,
     "sha256": "6299ce684d3a66481bd0106bfb887ecfa704e18fd8482d9264fecc9cabe6ff11",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_2_part3.png",
     "bytes": 605807,
     "sha256": "175f296dcadc16f108cc2a4920f1c26f2639830abd696ec43b70812cd9ab520d",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_3_part0.png",
     "bytes": 569699,
     "sha256": "7ec263aed86bc98c8941cd35bcfde0753d31f262c7f3493a70ef873c2d372411",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_3_part1.png",
     "bytes": 621805,
     "sha256": "f934216dab38ce68660fac11cdb4f9a86505105e1c7f4ba578f2a82003edb891",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_3_part2.png",
     "bytes": 647193,
     "sha256": "79404b123f32bbef6896201a09bdd78c60b4da04af11ad6e3cbb8451a03a76b6",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_3_part3.png",
     "bytes": 583342,
     "sha256": "1188eaff06222361c3737dc618643c53b5a0e451c0d0a1dd379ff162cbc1c880",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_defense_part0.png",
     "bytes": 655560,
     "sha256": "ffe441c05d4cd92c3f158c10b6482e1c10faf87bef21ce515786be1566a34282",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_defense_part1.png",
     "bytes": 688772,
     "sha256": "ee1c412df1a2b41e0bbf6176f6f86faf66ed600273f827906a13880f8fa35da0",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_defense_part2.png",
     "bytes": 704684,
     "sha256": "d628503629a3b72d6ea1bfc65ec48d44ecb2f29db112515062e7e2c8acbc9455",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/cleric_defense_part3.png",
     "bytes": 665539,
     "sha256": "bfc1b2f5ef955bf4d768b0d897e8febc464d4174874c5d2614937705aa9916a0",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
@@ -1596,121 +1548,101 @@
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_0_part0.png",
     "bytes": 571166,
     "sha256": "4ad8c907b576dc5639e240859d87d834924d5fd9dab74e45005b514ddd1a3999",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_0_part1.png",
     "bytes": 613799,
     "sha256": "9cd2159cd55296b83fe0d84ff07dea93e1e474bcf3bcc54146907c0c1db7c3ee",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_0_part2.png",
     "bytes": 617211,
     "sha256": "fdd42ff2efc241a4fa2ae17f0629c21fbf07eff4ff8543abd406f1889d0fc84a",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_0_part3.png",
     "bytes": 562469,
     "sha256": "60e72e8f2df00f58e0fbf3728a89bd05057e1c34c3407448801bf665e3d2cd69",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_1_part0.png",
     "bytes": 590951,
     "sha256": "88bd0e35b066b003e9911241ceb199c8c5c413067d398d266b9b3554ae567d76",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_1_part1.png",
     "bytes": 638465,
     "sha256": "cd055c63f61e2ca1439cac1b9c9a79dfaae265d600fcf0396f6f9ecc1d34edbd",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_1_part2.png",
     "bytes": 655888,
     "sha256": "a3d0153daefdf8abce87a32cb717bc77a8b461a2ef07c78ea5a17a8ba58c707a",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_1_part3.png",
     "bytes": 612109,
     "sha256": "b3c385d1e63e29d10486893bcd21e0a8866b213d0614e9345096508dab9c1740",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_2_part0.png",
     "bytes": 619957,
     "sha256": "6ef24314e88a1058cdb87878b35e4b7e0ee7e7b001279c64751ecc6fb1a1af90",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_2_part1.png",
     "bytes": 650629,
     "sha256": "9ca1682b48bba4b5ad521e559df5b979568639827ab44ea6c7054e1b94a6524b",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_2_part2.png",
     "bytes": 667430,
     "sha256": "cec169928f0f70aeeea091e96752622e3d55d820db47c840488676d5284d4e79",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_2_part3.png",
     "bytes": 629041,
     "sha256": "d2bf682a31d045078d5680a390ece123d90c2cd4bb869112c21a4711bcdc2049",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_3_part0.png",
     "bytes": 536348,
     "sha256": "8df93eacbea27db9bf555ade9be32140f0f254ada33af44605cb092190adccaa",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_3_part1.png",
     "bytes": 601436,
     "sha256": "79287f3b5d9604513abcebc4c2358866024217102b802f267172170cd4de2607",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_3_part2.png",
     "bytes": 639099,
     "sha256": "944a5b794fd1284c7fe3de8ca12e11e16db403fb130e3240515535e08d9fcb9e",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_3_part3.png",
     "bytes": 579793,
     "sha256": "f6a43c3e795d9e6a5dbc77dd1352ff28ebb6bebe57947f88390b4089626d761a",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_defense_part0.png",
     "bytes": 591492,
     "sha256": "13b0e84da4cca29d1f78294eecd837d9a745df053ff12d525bf86435df4341a9",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_defense_part1.png",
     "bytes": 631892,
     "sha256": "2907b91ba5c8c2971f88e2483569493c7d22863540f4ac6cbc087ba6ed051574",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_defense_part2.png",
     "bytes": 652500,
     "sha256": "3ddd7f9dba8d9ef2fea6c5282fa7f1ba4bac17440c64fa24fe887cddc396ba59",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"
   },
   {
-    "path": "docs/comic/hd/references/ranger_defense_part3.png",
     "bytes": 605989,
     "sha256": "c9e7f065725f24b6f644bfeaa7eb5b4d1dacdcd2da9b3af72cf6f2ca487e43c1",
     "reason": "Referencia derivada regenerable con prepare_hero_hd_refs.gd"

@@ -1,0 +1,43 @@
+{
+	"card": {
+		"block": 6.0,
+		"cost": 1.0,
+		"damage": 0.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "rogue_cover",
+		"locked": false,
+		"market_price": 0.0,
+		"name": "Ocultarse",
+		"owner": "rogue",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "self",
+		"tier": "starter"
+	},
+	"card_id": "rogue_cover",
+	"crop": [
+		0,
+		0,
+		1671,
+		940
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "rogue",
+	"id": "minimal_rogue_cover",
+	"kind": "minimal_card",
+	"motif": "One folded charcoal hood and cloak hiding an empty space, violet interior fold. No face, no mask, no person.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-59988b74-fe24-40f2-9faf-a77df18f9f7a.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One folded charcoal hood and cloak hiding an empty space, violet interior fold. No face, no mask, no person. This is a visual metaphor for the card Ocultarse, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "7c57db3b68af1a6c9dbdb25d81e37789e3747985becbc1117df82b726054fdf7",
+	"source": "docs/cards/minimal/sources/rogue_cover.png",
+	"source_sha256": "17056e27a1b34b565b65a1b4ae64aa5647a2bab7e7146ed6f626a4a5184a8dbd",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/rogue_cover.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

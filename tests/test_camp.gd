@@ -31,7 +31,7 @@ func run_tests() -> void:
 	await create_timer(0.2).timeout
 	var fire = app.layer.get_node("Campfire")
 	check(fire.flame.sprite_frames.get_frame_count("default") == 24, "natural fire has twenty-four frames")
-	for id in app.game.content.heroes:
+	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		var seat = app.layer.get_node("CampHero_" + id + "/SeatedHero")
 		check(seat.texture.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
 		check(seat.material is ShaderMaterial, "seated hero receives animated firelight")
@@ -41,31 +41,31 @@ func run_tests() -> void:
 	await create_timer(0.27).timeout
 	check(fire.flame.frame != first and fire.elapsed > 0.4, "fire frames and sparks advance")
 	await capture("camp-second")
-	var ids = app.game.content.heroes.keys()
-	for i in range(6):
-		for j in range(i + 1, 6):
+	var ids = preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes)
+	for i in range(ids.size()):
+		for j in range(i + 1, ids.size()):
 			app.selected_party.clear()
 			app.render()
 			await process_frame
 			await click(i)
 			await click(j)
 			check(app.selected_party == [ids[i], ids[j]], "pair selectable %d %d" % [i, j])
-			await click((j + 1) % 6 if (j + 1) % 6 != i else (j + 2) % 6)
+			await click((j + 1) % ids.size() if (j + 1) % ids.size() != i else (j + 2) % ids.size())
 			check(app.selected_party.size() == 2, "third choice rejected")
 			await click(i)
 			check(app.selected_party == [ids[j]], "deselect by touch")
-	app.selected_party = ["warrior", "cleric"]
+	app.selected_party = ["warrior", "mage"]
 	app.render()
 	await create_timer(0.2).timeout
 	await capture("camp-selected")
 	app.begin()
 	app.overlay.get_node("StartDungeon1").pressed.emit()
 	app.overlay.get_node("StartAdventure").pressed.emit()
-	for hero in ["warrior","cleric"]:
+	for hero in ["warrior","mage"]:
 		await process_frame
 		check(app.has_node("CinematicPlayer"),"story shown for chosen hero")
 		app.get_node("CinematicPlayer").finish()
 	await process_frame
-	check(app.screen == "map" and app.game.run.party == ["warrior", "cleric"], "chosen pair enters dungeon")
+	check(app.screen == "map" and app.game.run.party == ["warrior", "mage"], "chosen pair enters dungeon")
 	print("CAMP CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

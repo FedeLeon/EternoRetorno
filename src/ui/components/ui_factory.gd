@@ -1,6 +1,6 @@
 extends RefCounted
 ## Reusable visual construction. No navigation, game state or persistence.
-const TEXT = Color("ebe2d0")
+const TEXT = Color("ded9e5")
 
 static func create_theme() -> Theme:
 	var ui_theme = Theme.new()

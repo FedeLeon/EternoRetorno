@@ -1,0 +1,22 @@
+{
+  "id": "dungeon__bag",
+  "target": "assets/dungeon/bag.png",
+  "family": "dungeon",
+  "kind": "icon",
+  "hero": null,
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/migration/sources/icon/dungeon__bag.png",
+  "queue_position": 294,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. ONE isolated minimal icon representing assets/dungeon/bag.png as in the reference, clear solid silhouette, sparse pencil hatch shading and imperfect charcoal outline. No complex scene, no person/portrait unless strictly essential to the symbol, no ornamental gold frame, no labels. Readable at 30-60 pixels, centered with 10% clear margins. True transparent background. If energy/end-turn: retain circular shape and clean dark center for overlaid numbers/text, use violet/gray drawn border with restrained light. If hero achievement: use civilian profession symbol (carpentry, construction, apothecary, teaching), never masked rogue or horned knight.",
+  "references": [
+    "assets/dungeon/bag.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-06801ad6-eac9-4b7e-a4f0-34441affa8a3.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

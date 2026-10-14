@@ -11,7 +11,7 @@ func run_checks() -> void:
 	root.add_child(app)
 	for id in app.game.content.cards:
 		var owner = app.game.content.cards[id].owner
-		app.game.new_run([owner, "warrior" if owner != "warrior" else "cleric"], 12)
+		app.game.new_run([owner, "warrior" if owner != "warrior" else "guardian"], 12)
 		app.game.enter_node(0)
 		app.game.run.combat.hand = [{"id": id, "upgraded": true}]
 		app.continue_run()
@@ -34,10 +34,10 @@ func run_checks() -> void:
 	await process_frame
 	click(app.CAMP_POSITIONS[0] - Vector2(0, 50))
 	await process_frame
-	click(app.CAMP_POSITIONS[4] - Vector2(0, 50))
+	click(app.CAMP_POSITIONS[3] - Vector2(0, 50))
 	await process_frame
 	checks += 1
-	if app.selected_party != ["warrior", "cleric"]:
+	if app.selected_party != ["warrior", "mage"]:
 		failures += 1
 		printerr("Selection by input failed: ", app.selected_party)
 	print("UI CHECKS: %d | FAILURES: %d" % [checks, failures])

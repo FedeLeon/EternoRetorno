@@ -20,7 +20,7 @@ func capture(id: String) -> void:
 	inspect(app.layer,id)
 	if DisplayServer.get_name()!="headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://artifacts/polish/"+id+".png")
+		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("polish/"+id+".png"))
 	captures.append(id)
 func show(screen: String,id: String="") -> void:
 	app.screen=screen;app.render();await capture(screen if id=="" else id)
@@ -39,14 +39,14 @@ func run_tests() -> void:
 	await show("home");await show("options");await show("base_camp");await show("projects")
 	await show("market");app.market_hero="warrior";await show("market","market-cards")
 	app.market_hero="";await show("forge");app.forge_hero="guardian";await show("forge","forge-detail")
-	await show("church");app.church_hero="cleric";await show("church","church-detail")
+	await show("church");app.church_hero="guardian";await show("church","church-detail")
 	await show("expeditions");await show("refuge")
-	var refuge=app.layer.get_node("RefugeScreen");refuge.selected="ranger";refuge.redraw();await capture("refuge-comparison")
-	await show("select");app.selected_party=["warrior","cleric"];app.equipped={"team":"vital_amulet"};await show("equipment")
+	var refuge=app.layer.get_node("RefugeScreen");refuge.selected="rogue";refuge.redraw();await capture("refuge-comparison")
+	await show("select");app.selected_party=["warrior","guardian"];app.equipped={"team":"vital_amulet"};await show("equipment")
 	await show("training_setup");preload("res://src/ui/screens/training_config_dialog.gd").open(app);await capture("training-config");app.close_modal()
 	await show("collection");await show("bestiary")
 	for floor_number in [1,2,3]:
-		app.game.new_run(["warrior","cleric"],141,{},floor_number);await show("map","map-%d" % floor_number)
+		app.game.new_run(["warrior","guardian"],141,{},floor_number);await show("map","map-%d" % floor_number)
 
 	var risk=app.game.run.nodes.filter(func(n):return n.has("risk"))[0]
 	app.game.run.current=app.game.run.nodes.filter(func(n):return risk.id in n.next)[0].id
@@ -62,7 +62,7 @@ func run_tests() -> void:
 	var energy=int(app.game.run.combat.energy);await key(KEY_ENTER)
 	check(app.combat_busy and app.game.run.combat.energy==energy-1,"keyboard commits once and spends instantly")
 	while app.combat_busy:await process_frame
-	app.game.run.combat.hand=[{"id":"cleric_light","upgraded":false}];app.selected_card=-1;app.render();await process_frame
+	app.game.run.combat.hand=[{"id":"guardian_strike","upgraded":false}];app.selected_card=-1;app.render();await process_frame
 	await joy(JOY_BUTTON_RIGHT_SHOULDER)
 	check(app.selected_card==0,"gamepad selects card")
 	await joy(JOY_BUTTON_DPAD_DOWN);energy=int(app.game.run.combat.energy);await joy(JOY_BUTTON_A)
@@ -77,7 +77,7 @@ func run_tests() -> void:
 	await key(KEY_ENTER)
 	check(app.combat_busy and app.game.run.combat.energy==1 and app.game.run.combat.hand.is_empty(),"keyboard link consumes two cards and real energy")
 	while app.combat_busy:await process_frame
-	app.game.new_run(["warrior","cleric"],141,{},3);app.game.enter_node(0);app.game._start_combat(["skeleton","rat","ice_elemental"])
+	app.game.new_run(["warrior","guardian"],141,{},3);app.game.enter_node(0);app.game._start_combat(["skeleton","rat","ice_elemental"])
 
 	app.selected_card=-1;app.render();await process_frame
 	var times: Array=[];var deadline=Time.get_ticks_msec()+3000;var previous=Time.get_ticks_usec()
@@ -88,7 +88,7 @@ func run_tests() -> void:
 	app.game.run.phase="merchant";preload("res://src/rules/travel_encounters.gd").prepare(app.game);await show("merchant")
 	var rest=app.game.run.nodes.filter(func(n):return n.kind=="rest")[0];app.game.run.current=rest.id;app.game.run.phase="room";await show("room","rest")
 	var encounter=app.game.run.nodes.filter(func(n):return n.kind=="event")[0];app.game.run.current=encounter.id
-	for id in ["well","pact_blood","pair_cleric_warrior"]:encounter.event=id;app.game.run.phase="room";await show("room","event-"+id)
+	for id in ["well","pact_blood","pair_guardian_warrior"]:encounter.event=id;app.game.run.phase="room";await show("room","event-"+id)
 	var boss=app.game.run.nodes.filter(func(n):return n.kind=="boss")[0];app.game.run.current=boss.id;app.game._start_combat(boss.encounter);await show("combat","boss-objective")
 	var objective_energy=int(app.game.run.combat.energy);await key(KEY_O)
 	check(app.game.run.combat.energy==objective_energy-1 and app.game.run.combat.boss_objective.hp==1,"keyboard objective action spends real energy")
@@ -99,12 +99,12 @@ func run_tests() -> void:
 	check(app.layer.find_child("BossRelic_fire_crown",true,false) != null,"three exclusive relics rendered")
 	var original=app.game;var profile=original.profile.duplicate(true);var run=original.run.duplicate(true)
 	app.training_config={"enemies":["skeleton","rat"],"mode":"custom","damage":8,"block":4,"counter":true}
-	preload("res://src/ui/training_navigation.gd").start(app,["mage","ranger"],2,1);await capture("training-group")
+	preload("res://src/ui/training_navigation.gd").start(app,["mage","rogue"],2,1);await capture("training-group")
 	check(app.game.run.combat.enemies.size()==2 and app.game.run.combat.enemies.all(func(e):return e.intent.block==4 and e.intent.damage==8 and e.intent.counter==4),"custom group intentions")
 	preload("res://src/ui/training_navigation.gd").leave(app)
 	check(app.game==original and app.game.profile==profile and app.game.run==run,"training restores exact original state")
 	var report={"captures":captures,"clipping":clipping,"checks":checks,"failures":failures,"frame_samples":frame_samples,"renderer":RenderingServer.get_video_adapter_name(),"memory_mib":Performance.get_monitor(Performance.MEMORY_STATIC)/1048576.0,"texture_mib":Performance.get_monitor(Performance.RENDER_TEXTURE_MEM_USED)/1048576.0}
-	var file=FileAccess.open("res://artifacts/polish/ui-audit.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t")+"\n")
+	var file=FileAccess.open(preload("res://tests/artifacts.gd").path("polish/ui-audit.json"),FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t")+"\n")
 	app.queue_free();await process_frame
 	await create_timer(0.15).timeout
 	print("POLISH UI: ",checks," checks / ",failures," failures · ",captures.size()," views")

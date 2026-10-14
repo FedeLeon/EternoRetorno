@@ -40,6 +40,7 @@ static func end(game: RefCounted) -> bool:
 	game.resolved_hero_defenses.clear()
 	game.resolved_hero_blocks.clear()
 	game.resolved_enemy_hits.clear()
+	game.resolved_poison_hits.clear()
 	if game.run.is_empty() or game.run.phase != "combat":
 		return false
 	var b = game.run.combat
@@ -48,9 +49,12 @@ static func end(game: RefCounted) -> bool:
 	b.discard.append_array(b.hand)
 	b.hand.clear()
 	# Poison ticks simultaneously before enemy actions, bypassing block.
-	for enemy in b.enemies:
+	for enemy_index in range(b.enemies.size()):
+		var enemy = b.enemies[enemy_index]
 		if enemy.hp > 0 and enemy.poison > 0:
+			var hp_before: int = enemy.hp
 			game._damage(enemy, enemy.poison, true)
+			game.resolved_poison_hits[enemy_index] = {"hp": enemy.hp, "lost": hp_before - enemy.hp}
 			enemy.poison = maxi(0, enemy.poison - 1)
 	if game._check_combat_end():
 		return true

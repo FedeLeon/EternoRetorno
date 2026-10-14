@@ -6,6 +6,7 @@ from pathlib import Path
 import subprocess
 import time
 import sys
+import os
 from audit_content import audit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,8 +31,10 @@ if validation_tests.returncode:
 
 def run(test):
     start = time.monotonic()
+    test_env = os.environ.copy()
+    test_env["XDG_DATA_HOME"] = str((output / "userdata" / test.stem).resolve())
     try:
-        result = subprocess.run([args.godot, '--headless', '--path', str(ROOT), '--script', str(test)], cwd=ROOT, capture_output=True, text=True, timeout=120)
+        result = subprocess.run([args.godot, '--headless', '--audio-driver', 'Dummy', '--path', str(ROOT), '--script', str(test)], cwd=ROOT, env=test_env, capture_output=True, text=True, timeout=120)
         log = result.stdout + result.stderr
         code = result.returncode
     except subprocess.TimeoutExpired as error:

@@ -144,7 +144,6 @@
         "seconds": 10.95
       },
       {
-        "test": "test_cleric.gd",
         "exit": 0,
         "script_error": false,
         "assertion_failure": false,
@@ -464,7 +463,6 @@
         "seconds": 1.22
       },
       {
-        "test": "test_ranger.gd",
         "exit": 0,
         "script_error": false,
         "assertion_failure": false,
@@ -654,7 +652,6 @@
       "rest",
       "event-well",
       "event-pact_blood",
-      "event-pair_cleric_warrior",
       "boss-objective",
       "reward",
       "boss_reward",
@@ -705,8 +702,7 @@
         "won": 39,
         "runs": 45
       }
-    ],
-    "remaining": "Human playtests required; automatic decision policy performs worst with mage/ranger."
+    ]
   },
   "web_existing_export": {
     "url": "http://127.0.0.1:8766",

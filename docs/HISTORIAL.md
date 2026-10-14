@@ -1,5 +1,317 @@
 # Historial de desarrollo
 
+## 14/10/2026 — Apoyo de personajes en la fortaleza volcánica
+
+- Redibujado `assets/volcano/combat.png`: suelo adelantado, patio continuo y
+  arquitectura elevada al fondo para evitar que los héroes parezcan flotar.
+  Mismo recurso para combates normales, élites y jefe; posiciones y reglas intactas.
+- Fuente, prompt y procedencia de dos iteraciones conservados; hashes actualizados.
+- Importación local sin errores de script; revisión nativa aislada de los cuatro
+  héroes en dos combates, incluido el jefe. Contenido 1502/0; 628 hashes visuales
+  coincidentes. Sin exportación ni validación Web/dispositivo.
+- [Composición, archivos y validación](dungeon/volcano_ground.md).
+
+## 14/10/2026 — Limpieza posterior al rediseño
+
+- Retirados 2916 archivos/1372,97 MiB: ocho imágenes antiguas de campamento y
+  sus imports, shader diurno, 68 archivos de herramientas anteriores, 541 PNG
+  sustituidos/rechazados y 2290 temporales. Además, 3,31 MiB de caché exacta.
+  Prompts/procedencia, fuentes vigentes, conceptos, licencias y TestWeb conservados.
+- Simplificación de partículas de héroes y reloj/variantes de primeros planos;
+  atlas enemigos intactos. Geometría compartida y cola de 314 trabajos activos,
+  con 69 trabajos/77 entradas sustituidos archivados. Módulos/IDs/guardados activos
+  conservados; vistas previas ajustadas a cuatro héroes.
+- 88/88 suites aprobadas: 82 iniciales y seis repetidas al actualizar expectativas
+  antiguas de dimensiones/retratos/combos. Contenido 1502/0; nativo aislado, héroes
+  124/0 y campamento 95/0. Importación y sintaxis sin errores; inventario con 628
+  hashes coincidentes y cero imágenes activas pendientes. Se mantienen advertencias
+  de salida en 38 suites UI, sin afirmar ausencia de fugas.
+- [Inventario, procedencia y validación actual](cleanup/2026-10-14.md).
+  Capturas/registros de verificación descartables; resúmenes conservados en docs.
+  Sin Web/dispositivo/exportación ni recorrido manual completo.
+
+## 14/10/2026 — Ilustraciones minimalistas para las 88 cartas
+
+- Un dibujo nuevo por carta, 22 por protagonista: objetos/gestos/trazos sencillos
+  para representar daño, defensa, veneno, apoyo y magia. Grafito/lápices con
+  fondo oscuro despejado; se evitan retratos, paisajes y adornos dominantes.
+- Publicación conjunta de `data/card_art.json`, 88 PNG únicos de 512×288;
+  mismo componente en mano, mazo, mercado, mejoras y recompensas. IDs, marcos,
+  reglas y guardados conservados. Tres símbolos ambiguos de grupo se regeneran
+  con formas de escudos. Se retiran 69 imágenes runtime anteriores con imports
+  y caché exacta; se conservan fuentes históricas y metadatos.
+- Importadores históricos omiten las cartas sustituidas. Documentación de cartas,
+  guía visual, arquitectura, índice y galerías actualizados. Fuentes/prompts/hashes
+  y motivos individuales en [cartas minimalistas](cards/minimal/README.md).
+- Pruebas locales: catálogo 529/0, apoyo/UI 409/0, contenido 1502/0. La prueba UI
+  informa 20 instancias/5 recursos vivos al salir, pendiente de liberación; sus
+  aserciones pasan. Importación sin errores de script y diff sin errores de formato.
+  Captura de ocho cartas renderizadas y revisión de las 88 ilustraciones en ocho
+  hojas. X11 aislado/llvmpipe con audio Dummy; sin Web/dispositivo ni exportación.
+  Inventario: 636 imágenes actualizadas verificadas, cero pendientes activos.
+
+## 14/10/2026 — Primeros planos estáticos de ataque y defensa
+
+- Ocho ilustraciones nuevas de los cuatro civiles, con transparencia real y
+  cómic a lápiz: una de ataque y una de defensa por héroe. Personaje quieto,
+  sin cambio de pose/zoom/deslizamiento; partículas y energía animadas detrás.
+  Se mantienen duración, encuadre, combos, reglas y guardados.
+- Retirados 20 atlas, cuatro bases antiguas, 196 hojas fuente, imports, capturas
+  y montadores exclusivos; 275 archivos/730,2 MiB más 44,5 MiB de caché exacta
+  regenerable. No representa ahorro de exportación. Prompts/historial conservados.
+  Actores del escenario y primeros planos enemigos siguen activos.
+- Pruebas actuales: imágenes 33/0; presentación 124/0 headless y X11 local
+  aislado; enemigos sin fallos; contenido 1502/0. Importación sin errores de
+  script; revisión de ocho originales y composición local. Sin Web/dispositivo
+  ni exportación. Inventario actual: 617 imágenes actualizadas verificadas.
+- [Procedencia, inventario de eliminados, decisiones y límites](comic/static/README.md).
+
+## 14/10/2026 — Conversión visual integral completada
+
+- Cola de 383 trabajos integrada; 629 imágenes actualizadas verificadas por hash,
+  cero discrepancias y cero imágenes activas pendientes. Incluye cuarenta hojas
+  de héroes, 56 actores enemigos y 56 primeros planos de cuatro poses, escenarios,
+  cartas, marcos, iconos y cinemáticas. Derivados/reutilizaciones separados de
+  ilustraciones nuevas; cuatro cómics antiguos quedan como procedencia histórica.
+- Revisión final de identidad civil, rostro visible de Mauro, cartas individuales,
+  escenas de guardianes, transparencia real y anclaje/escala de actores. Numerales
+  con base común; mapa importado a 1280 px; filtros y partículas acordes al lápiz.
+- Pruebas locales finales: contenido 1502/0, héroes 1108/0, enemigos/apoyo 867/0,
+  herrería 8220/0, carrera 121/0, mapa 141/0, tesoro 8/0, cinemáticas 84/0;
+  primeros planos enemigos y recompensa sin fallos. Recompensa informa al cerrar
+  24 instancias/5 recursos vivos: pendiente técnico, no fallo de sus aserciones.
+- Godot importó sin errores de script; diff sin errores de formato. Render X11
+  aislado/llvmpipe con audio Dummy, sin interferir con la prueba del usuario.
+  Revisión de composiciones y hojas de contacto; no recorrido manual completo,
+  Web, dispositivo ni exportación. Intentos interrumpidos excluidos del resultado.
+- [Prompts, manifiestos, decisiones, límites y validación](art_direction/migration/README.md).
+  Arquitectura, índice y documentos de sistemas actualizados; IDs y guardados intactos.
+
+## 14/10/2026 — Continuación de assets y revisión de identidad
+
+- Se generan y revisan las 56 apariencias enemigas de ocho poses; integración
+  de primeros planos de cuatro poses con referencia del actor nuevo.
+- Pruebas aisladas de escritorio: héroes detallados 1108/0 tras limpiar halos;
+  enemigos/apoyo/cenizas 867/0 sobre los 56 atlas nuevos. Un intento perdió
+  su servidor X antes de las comprobaciones y se repitió; no se cuenta como
+  validación. Audio de prueba Dummy y servidor fuera de pantalla.
+- Dieciséis cartas habían salido como mosaicos: fuentes archivadas como
+  rechazadas y regeneración individual con rostro y efecto real. La hoja
+  básica de veinte cartas se rehace con caras actuales, casco abierto de
+  Nicolás, escudo de acero de Inés y magia violeta de Vera.
+- Filtro lineal predeterminado para el dibujo nuevo, incluidos objetos,
+  números y cofres. Los atlas conservan sus coordenadas y dimensiones.
+- Fuentes/prompt/checkpoints y pendientes en [migración](art_direction/migration/README.md).
+  Sin exportación ni validación Web/Android. La conversión sigue en curso.
+
+## 13/10/2026 — Conversión integral sketchbook en curso
+
+- Cuarenta hojas de héroes, diez acciones de doce poses por protagonista;
+  derivados clásicos/carrera y 64 variantes de equipo conservan rutas y UIDs.
+  Reposo revisado en segunda pasada; Nicolás defiende con espada, sin escudo.
+- Fondos de aventura de las tres mazmorras, encuentros, descanso, colección,
+  inventario y preparación; figuras sentadas, papel del mapa y cuatro marcos.
+- Dieciséis SVG redibujados como iconos de lápiz; enemigos se integran por tandas
+  con ocho poses, alfa y escala/anclaje compartidos. Primeros planos pendientes.
+- Corregido límite de 192 px aplicado al papel grande del mapa: ahora 1280 px.
+  Los atlas mantienen dimensiones; no se exporta el juego. Procedencia/prompts
+  y pendientes registrados en [migración](art_direction/migration/README.md).
+- Verificaciones locales realizadas durante la tanda: contenido 1502/0;
+  héroes detallados 1108/0 antes de corregir las nueve acciones de Nicolás;
+  mapa 141/0; descanso 25/0; tamaños enemigos 867/0 sobre la primera tanda.
+  Importación sin errores de script. Estos resultados no certifican las tandas
+  posteriores; se repetirán los controles afectados al terminar la conversión.
+  El test de mapa informa recursos vivos al salir. Sin Web/Android/exportación.
+
+## 13/10/2026 — Revisión visual completa tras campamento e interiores
+
+- Inventario actualizado: 708 archivos y 634 imágenes; 42 PNG sketchbook
+  verificados por hash, dos SVG adaptados y 502 PNG anteriores con consumidor
+  runtime resuelto. Se separan 60 PNG condicionales, cuatro históricos y ocho
+  anteriores sin consumidor resuelto; no se declaran muertos ni se eliminan.
+- Nuevos edificios dinámicos incorporados al censo; se retiran falsos consumidores
+  de los edificios anteriores. Galería por estilo/uso/vista y 28 grupos de pantallas.
+- 544 PNG activos revisados en 21 hojas de contacto, con un cuadro representativo
+  por atlas. Se documentan pendientes de mazmorras/mapa, protagonistas/enemigos,
+  cartas/iconos/HUD, selección/descanso, especializaciones/contratos y cinemáticas.
+- Contenido: 1502 comprobaciones sin errores; primeros planos: 80 fuentes y
+  20 atlas sin errores; 42 hashes coincidentes, inventario/galería consistentes
+  y scripts Python compilados. Sin cambios runtime, regeneración ni exportación.
+- [Informe y prioridades actuales](art_direction/2026-10-13/review/README.md).
+
+## 13/10/2026 — Interiores sketchbook y tarjetas de héroes ampliadas
+
+- Seis fondos nuevos: mercado, herrería, iglesia, expediciones, refugio y
+  proyectos, conservando temática, asistentes a la izquierda y zona de UI derecha.
+  Rutas/UIDs existentes conservados; proyectos obtiene su propio interior.
+- Galería 2×2 compartida por mercado, herrería, iglesia y refugio: tarjetas
+  244×254, rostros ampliados, placa de 50 px y oficio legible. Ocupa la altura
+  derecha hasta y=692. Vínculos del refugio pasan al lado izquierdo.
+- Tamaño opcional en el retrato y padre opcional en la galería; entrenamiento
+  conserva dimensiones anteriores. Fuentes de rostros/cuerpos, acciones, mazos,
+  progreso y costes intactos. Proyectos reutiliza edificios exteriores dibujados.
+- Fuentes, prompts/hashes y outputs en `docs/base_camp/interiors/`; importador
+  reproducible `scripts/import_sketchbook_interiors.gd`.
+- Galerías y clics de los cuatro héroes: 84 comprobaciones con ventana, sin
+  fallos; revisión visual de seis interiores y detalles. Headless: retratos 22,
+  refugio 109, mercado 43, herrería 96 y expansión UI 33, sin fallos.
+  Entornos aislados por suite. Advertencias y límites en
+  [documentación](base_camp/interiors/README.md). Sin exportación.
+
+## 13/10/2026 — Rediseño completo del exterior del campamento al atardecer
+
+- Fondo nuevo de grafito y lápices, con sol cayendo visible debajo del menú,
+  ruinas/lago lejanos, sombras violetas y caminos alrededor de una fogata central.
+- Seis edificios, muñeco y solares dibujados como assets independientes; mercado
+  y herrería a la izquierda, iglesia y proyectos a la derecha, refugio cerca del
+  centro y expediciones abajo. Carteles separados, clics por alfa y solares que
+  desaparecen al construir. IDs, progreso, costes y navegación conservados.
+- Fuego de 24 cuadros a 12 FPS, baselines propios y chispas de lápiz; ambiente
+  localizado de árboles/lago/luz. Instancias de selección/descanso conservan su
+  atlas/configuración. Composición simplificada en `base_camp_screen.gd`.
+- Diez PNG en `assets/base_camp/dusk/`; tres fuentes originales, prompts,
+  procedencia y hashes en `docs/base_camp/dusk/`. Importador reproducible Godot.
+- Campamento: 34 headless/38 ventana; disposición/construcción: 95 ventana;
+  herrería UI: 96, expansión UI: 33 y selección: 35 headless, sin fallos.
+  Revisión local de la escena completa y solar/construcción parcial a 1280×720.
+  Advertencias de cierre/driver y límites en [documentación](base_camp/dusk/README.md).
+  Sin exportación Web/APK ni validación en dispositivo.
+
+## 13/10/2026 — Parpadeo verde para el daño de veneno
+
+- Reacción verde al terminar el turno, incluso antes de una muerte por veneno;
+  golpes normales rojos y cenizas conservadas. Espera al descarte animado.
+- Recibo transitorio en `game.gd` y `rules/combat_turns.gd`, reproducido por
+  `ui/combat_flow.gd` y `enemy_sprite.gd`; sin cambios de daño ni persistencia.
+- Prueba nueva `tests/test_poison_feedback.gd`: 10 comprobaciones headless y
+  10 con ventana local, sin fallos. Secuencia de turno: 182; profundidad de
+  combate: 28, sin fallos headless. Advertencias y límites en
+  [efectos de batalla](battle_effects/README.md#daño-de-veneno--13102026).
+
+## 13/10/2026 — Auditoría de assets y animaciones pendientes de sketchbook
+
+- Censo reproducible de 696 archivos de assets (605 PNG, 18 SVG, 12 shaders,
+  55 audios y seis archivos de fuentes/configuración/licencia). Galería de
+  623 imágenes y CSV/JSON con rutas, familias, estado y consumidores dinámicos.
+- 26 PNG ya convertidos y dos marcos SVG adaptados. Se documenta la mezcla de
+  identidades: sprites normales/sentados de los cuatro héroes, especializaciones
+  e historias siguen antiguos; Mauro conserva máscara en varias vistas activas.
+- 57 definiciones enemigas, 56 apariencias: ninguna convertida. Cincuenta tienen
+  cuatro poses de ataque propias; seis de la cripta usan traslado/rotación.
+  Sus 56 primeros planos siguen siendo ilustraciones estáticas con movimiento
+  y estelas. HD estático y retratos cinematográficos se distinguen como fallbacks.
+- Se inventarían fondos, edificios, cartas/marcos, objetos, reliquias, iconos,
+  fuego, mapa y planos cinematográficos. Guía de prioridad por conjunto coherente
+  y requisitos de cuadrícula/filtro/anclaje al convertir enemigos a mayor resolución.
+- Validación local: 1501 checks de catálogo sin errores; 80 fuentes/20 atlas
+  sketchbook sin errores; inventario y compilación Python correctos. Revisión
+  visual de hojas de contacto por familia y estática de cargadores/reproductores.
+  No se modifica arte ni gameplay, no se repite gameplay histórico como prueba
+  actual y no se exporta. [Informe y galería](art_direction/2026-10-13/review/README.md).
+
+
+## 13/10/2026 — Ataques y defensas en primer plano con estética sketchbook
+
+- Dirección visual guardada en memoria por pedido explícito: todo el juego debe
+  migrar a grafito/lápices de colores con trazos imperfectos, negro/gris/violeta
+  y contraste firme, incluyendo enemigos, mazmorras, escenarios e interiores.
+- ImageGen integrado genera 80 fuentes HD 2×2: veinte secuencias de dieciséis
+  dibujos (320 poses), cuatro ataques y una defensa por Nicolás, Inés, Mauro
+  y Vera. Identidades de los retratos aprobados; Mauro sin máscara. Fondo RGBA
+  transparente, textura de lápiz dentro de las figuras, sin rectángulo de papel.
+- Se reemplazan los veinte atlas en `assets/comic/motion/` conservando rutas,
+  UIDs, 3072×2048 y celdas de 768×512. Duración 0,96 s, encuadre inferior
+  izquierdo y alternancia de variantes para combos se mantienen. No se modifica
+  daño, energía, resolución ni guardado de acciones.
+- Primeros planos usan violeta/gris, destello discreto y partículas con trazos
+  cortados en `hero_cut_in.gd`, `comic_cut_in.gd`, `hero_comic_fx.gd`. El modo
+  anterior sigue disponible para los enemigos mientras se rediseñan sus assets.
+- `import_sketchbook_cutins.gd` reutiliza el montaje HD con recorte/escala común;
+  `import_hero_motion.gd` adopta la nueva fuente por defecto. Prompts, originales
+  de generación, hashes, guía y siguientes etapas quedan en documentación.
+- Validación actual: 80 fuentes y 20 atlas sin errores de formato/transparencia;
+  86 suites headless aprobadas, auditoría de 1501 checks y ocho pruebas negativas.
+  Godot nativo reproduce las veinte secuencias: 1773 comprobaciones sin fallos;
+  revisión de capturas de los cuatro héroes y defensas. Se registran avisos de
+  cierre de algunas suites de UI. Sin exportación Web/APK ni dispositivo físico.
+- Pendiente: actores normales de batalla, correr/descanso, enemigos, mazmorras,
+  campamento/interiores, cartas/iconos y cinemáticas. No se afirma una conversión
+  completa del juego. [Assets, prompts, validación y guía](comic/sketchbook/README.md).
+
+
+## 13/10/2026 — Retiro definitivo y títulos por oficio
+
+- Se eliminan Clériga y Explorador de reglas, datos, UI, sprites, cartas,
+  especializaciones, contratos, sinergias, historias y suites específicas.
+  490 archivos exclusivos retirados (505,83 MiB) y 278 cachés regenerables.
+  Se recortan las hojas compartidas de retratos de intención y arte de cartas;
+  se conservan coordenadas de los cuatro héroes y la armadura compartida.
+- Nicolás/Carpintero, Inés/Constructora, Mauro/Boticario y Vera/Profesora,
+  según elección del usuario. IDs/UIDs y estadísticas de los cuatro se mantienen;
+  tarjetas sin repetición del oficio y galerías HTML actualizadas.
+- Migración genérica de referencias inexistentes antes de progresión/logros:
+  conserva progreso válido; cierra aventuras incompatibles sin premio ni resultado
+  inventado. Ofertas/selecciones obsoletas se reemplazan. No se borran guardados
+  reales ni exportaciones manuales.
+- Validación local: 86 suites Godot, auditoría de 1501 comprobaciones y ocho
+  pruebas negativas del validador; 16 checks de migración. 438 checks de galerías renderizadas
+  con Godot nativo a 1280×720; revisión de refugio y herrería. Avisos de recursos
+  al cerrar varias pruebas de UI quedan registrados; no hay fallos de script
+  ni aserciones en la ronda aprobada. Sin exportación, emulador ni dispositivo.
+  [Detalle y manifiesto](cleanup/2026-10-13.md).
+
+
+## 13/10/2026 — Cuatro retratos casi de perfil para tarjetas pequeñas
+
+- Assets ImageGen propios para Nicolás, Inés, Mauro y Vera; cara centrada y
+  visible, sin máscara del Pícaro, grafito/papel y violeta. PNG proporcionales
+  de 928 px en `assets/heroes/identity/portraits/`, fuentes/prompts/hashes en docs.
+- `refuge_portrait.gd` usa región completa/ajuste centrado en formato compacto;
+  conserva archivos y encuadres de cuerpo de las tarjetas verticales. Sin cambiar
+  reglas, guardados, acciones, nombres/oficios o dimensiones de controles.
+- Validación actual: 24 checks headless, 437 de galerías/compatibilidad y 13
+  sobre 36 vistas nativas; revisión visual de cuatro rostros. Importación y diff
+  limpios. No se repite la suite completa histórica ni se exporta Web/APK.
+  [Procedencia, tamaños y pruebas](portraits/2026-10-13/README.md).
+
+## 13/10/2026 — Cuatro vidas civiles y rostro visible del Pícaro
+
+- Primer borrador de mundo/vidas en `data/hero_lives.json`: Nicolás carpintero,
+  Inés albañila, Mauro boticario y Vera maestra/escribiente. Historias personales,
+  temperamentos, defectos, miedos, oficios y arcos; nombres de trabajo propuestos.
+- `content.gd` añade metadata civil/lore sin cambiar IDs/nombres de clase, stats
+  ni guardados. Intro e historias dejan el tono abstracto por hechos cotidianos;
+  galerías muestran nombre/oficio y vínculos usan sus voces propias.
+- Retrato del Pícaro sin máscara ni pico generado con ImageGen, gris/violeta y
+  lápiz sobre papel, separado de la hoja compartida para preservar los otros
+  tres dibujos. Prompt, referencia, fuente y hashes conservados. Sus poses
+  históricas y planos de cinemáticas siguen pendientes de conversión.
+- Validación actual: 86/86 suites headless; ventana local 437 comprobaciones de
+  elenco/compatibilidad y 13 sobre 36 vistas, con revisión visual; auditoría de
+  contenido 1.859, importación y diff limpios. Avisos de recursos al cierre
+  continúan. Sin exportar ni probar Web/dispositivo. Oficios/olvido no añaden
+  efectos de reglas. [Borrador, procedencia y límites](story/2026-10-13/README.md).
+
+## 13/10/2026 — Cuatro héroes y referencia sketchbook con contraste
+
+- Elenco nuevo: Guerrero, Guardiana, Pícaro y Maga. Política central en
+  `rules/hero_roster.gd`; selección, galerías, vínculos y entrenamiento muestran
+  cuatro clases. Contenido/IDs/poses legados se conservan para aventuras antiguas.
+- Contratos nuevos compatibles (19 de 30 definiciones); migración conserva
+  aventura/selección válida. Colección e historias ocultan objetivos/relatos
+  retirados no obtenidos, conservando desbloqueos y relatos ya vistos.
+- Cuatro iteraciones ImageGen, prompts/fuentes/hashes conservados; última hoja
+  gris con grafito visible, trazos sueltos y violeta más firme. Recortes reutilizados
+  en retratos del campamento. Marcos SVG más discretos, irregulares y gris/violeta.
+  Actores, escenarios, cartas y cinemáticas todavía mantienen el arte anterior.
+- Pruebas locales: 86 suites verificadas, tras adaptar/repetir dos que esperaban
+  seis héroes o un ID de historia retirado. 437 comprobaciones nativas nuevas,
+  incluido guardado legado y seis parejas de contratos; 13 sobre 36 vistas.
+  Avisos de recursos al cierre continúan; diff e importación limpios. Pruebas
+  aisladas por suite con XDG_DATA_HOME. Sin exportar ni probar Web/dispositivo.
+- [Guía, límites de esta etapa y procedencia](art_direction/2026-10-13/README.md).
+  Las propuestas de interacción para seis parejas son diseño pendiente.
+
 ## 09/10/2026 — Integridad de guardados, caché y separación técnica
 
 - `save_store.gd` conserva el respaldo válido tras recuperar un principal inválido;

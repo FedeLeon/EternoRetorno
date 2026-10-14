@@ -1,0 +1,987 @@
+{
+  "sources": [
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_0_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "85361bbbc41558d25cb92aeb9e14c3c8d138eb51d168e12bef238edfa1b7a5e0",
+      "clear_fraction": 0.6045,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-07479cfa-2495-482a-b1a2-cc59037c4d2e.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_0_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5bbcee3b5c7abcdb239c483fcfe63e13be5b5f74f915b77fc587d23462517d25",
+      "clear_fraction": 0.6026,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-874cbfa7-bd98-43eb-91c0-004c32bf0d08.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_0_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9628c1389afa1bc14bb19dd4f7fa36f6bc351eb70ab169518605a38570f69d53",
+      "clear_fraction": 0.5797,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-877e1c5e-47b9-403d-8dcf-a3385b5d76e6.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_0_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0abcedd3a0d9773208b53dd55cfd5546e3082930a9d393be3260edd2437064bd",
+      "clear_fraction": 0.5858,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f195655e-ece8-451f-a37f-19b4076fc8e7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_1_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5e99c4b883005a3a2f6ec6e1d354f2b772ce5ff747aecc0d4673e3ffe8d5c153",
+      "clear_fraction": 0.5744,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5ad1478c-1d9b-4262-8061-2018d61c05f5.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_1_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "200eb5607c905687c3175acbe6f7557090378b561a34d61e346ba148774015c5",
+      "clear_fraction": 0.6064,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-14ce6283-4cba-400b-8d83-28695bd68e94.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_1_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "052ee39d6a065878f746de66cf3452a551152f3ca01c5ff6422833cf8ae8f765",
+      "clear_fraction": 0.6124,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c6d00a34-0c26-49c2-90f3-37cdfab039c3.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_1_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4ed3340cc472dc99b286a6412837e06a14f1f8826acf59dc35be45e9af412f1e",
+      "clear_fraction": 0.609,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7e4d30b9-2b37-4fd1-8161-e4a30a8c6465.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_2_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "65ceebf23affa12bd1c915e9c3d39c96c9e4180f74eae4089b682d4d7bce5b73",
+      "clear_fraction": 0.5808,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-22a48720-21bd-449f-a507-bedb0fa03564.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_2_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "49c69d83bd733301b51ff4b5e6bedaceb3b8ccd56c2525d68b722be2c839c837",
+      "clear_fraction": 0.6145,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9093e6e7-037a-47a0-aac3-df6d0ac2a302.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_2_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ff95dc3b1716dcaece92011d41baebc8ba5ce81d23cc4521e1275d2cd2f1665f",
+      "clear_fraction": 0.6233,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2a108b7e-1aef-477b-9e45-614d1897c4d9.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_2_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f51728646a840e4225dec71aa82bee6919fce96f8f8cf9bfa6a84cff146a5f5d",
+      "clear_fraction": 0.592,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-156c1596-a8a7-41f7-b70f-419f6a06643a.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_3_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "68fe7555357f5a3591f6ead03ea5eb755d60e2c12f27c7ad59a5a61efdfc90df",
+      "clear_fraction": 0.5888,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d388cd2c-b183-4353-827e-435c6f882c94.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_3_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b5f2ee03b725dfb7c36cc076d41309b2177e434399f5933ce780a933b9bd9f2e",
+      "clear_fraction": 0.6254,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-71bd52d4-4543-4f5d-80d1-8aa9a2de28aa.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_3_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "d4dc9c7a1a95be2fe10171d7d16bc7d61418d0d71cdf2b365859333eac41c309",
+      "clear_fraction": 0.5708,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-91a93936-e1a9-4ec9-9d72-50243f972ee7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_3_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b1453c83ff0c473657f4422ea091a1d61dc68c7e3e4a8fdf120f0077c259c6f4",
+      "clear_fraction": 0.6033,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5fd88b28-a287-4240-8b48-b0a606938f65.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_defense_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "388b2da19d174d7509ecf0ddade1ced0dc78f2cb6ea53ab9287211506d141560",
+      "clear_fraction": 0.5364,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ff6dc109-97bb-4b23-a524-5df9ffee8443.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_defense_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "18b6b5676dbee0cc45b46efda579ee02899b9b9ac1d9826a509c24d8a26f86b2",
+      "clear_fraction": 0.5353,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-475f10ea-a43e-4b90-aeb1-a2e36532fef7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_defense_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "cc0d87ce22da0f1877da0d9fc303202d5b431a15700fc7f89b550805dd7293f9",
+      "clear_fraction": 0.5319,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-982de9dc-1509-4e28-865c-ae928ddf0f07.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/warrior_defense_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "39d68de42d524efbe7d4c3bd920e8685fd5a4d4ab7d945fd6c8c0814a7d1dd51",
+      "clear_fraction": 0.5985,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4a623b72-721f-4a4d-96de-ed36ed763832.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_0_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "10f2a214244ab4dc3a99fdc40435f8485e8628f5605c8b1d6cc6519911a2c14e",
+      "clear_fraction": 0.4899,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-e5898362-da63-4d27-a426-3179984f636f.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_0_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "17c60e54b7a09cfa43bd26d8b3d749e28989b090b3183902f57ea913a4694590",
+      "clear_fraction": 0.5239,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5014f6f0-edd8-4642-93f7-f4ddf6ff48b6.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_0_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "851970ea3233b983f7da383abfb4264abb89d7a1c5dc10488240187f656ac378",
+      "clear_fraction": 0.5295,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-30b50ad9-ed48-4e96-b1ba-171d31ca0762.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_0_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f3eb566e559c5b1545841dcd84a2003c5ee277adac3bc0de35ecb5ae0267b929",
+      "clear_fraction": 0.5296,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a4821280-bdfc-4586-8594-f0aac11612e6.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_1_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e8dbc9279ff410b2fed4e81be066e2e0afd92ca4081a429be58451d1b5c492a8",
+      "clear_fraction": 0.5125,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-8e91b661-4ec4-4e76-98e3-6bb8cbaddca7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_1_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0caf38a76a790e9b38d4592f46926a1d45257ba9e75475b5a88c8a077175a5d1",
+      "clear_fraction": 0.4664,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5b042717-46a8-43ec-a29d-d7deecc01702.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_1_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "844ac76071a15dd0790a28839862062003962f779739b0745ac20278129a23f5",
+      "clear_fraction": 0.4518,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-e7aa2e3d-8a50-44a7-98a6-14cb3732c114.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_1_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ccd443ab9d541ada7cba1cfc10034a88e655f7d5d4449a1e4f54b4246c379fdf",
+      "clear_fraction": 0.5442,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c84e94c0-2351-4afa-881d-2c8013ece8ca.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_2_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8d621e636bf7606a75bfc021b7481422263d2501665f9b19a41b4d5f6ed685db",
+      "clear_fraction": 0.5452,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4f046371-c525-49f3-ba73-964732d6fe87.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_2_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "61c4eb4df88a5f406bf25c1b5f7183c658a6cb346da3ab1254d3d4bf8327cce6",
+      "clear_fraction": 0.5334,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-79ac1b4f-75ff-43e2-8628-d43a1750a5c5.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_2_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ebf288391ae87d9a01e6d74a3b0c009e8cee2cbab30a668e665c18efc6bb8d19",
+      "clear_fraction": 0.5846,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4b052e23-60ab-488c-a393-945fafe4723f.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_2_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "757219ae3478d35938e152fd553cbfc4d9bd79af36d2669489328170cf7e2fcf",
+      "clear_fraction": 0.5896,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-57f0b244-efd0-48c3-98df-ab105963be45.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_3_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "000d603c1418f65692a6d6e4147c842dd6ec4909f1c7d4c18a2a59de2c924d5f",
+      "clear_fraction": 0.5569,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c4ccd4cb-d718-42de-b35f-776000ec7dcd.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_3_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6ad87606f96db0ea966351919d6982e11af12852d489105ae4f67725a8b1138f",
+      "clear_fraction": 0.5581,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6c728054-055d-42cb-99d5-255ad0559f5a.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_3_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c571209f9a3d80125db6c832cf76bc3ad7d0c91417a52249d7b0889bb4319831",
+      "clear_fraction": 0.5537,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-cfbef716-2839-4074-b79f-84b3988bb661.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_3_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f5ae0647260ab33fbaf1207f90b70f586bf05142606f9f839dd1caa0ea4b5f6e",
+      "clear_fraction": 0.601,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b49c68d1-8495-47e0-b0e4-3000dc320557.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_defense_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "470747a269b7a2975adb85b6a5f8736e49e44c083289ca5dc6f6eaa55e196414",
+      "clear_fraction": 0.513,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-265b940c-a195-49f3-9d99-bf10f7a2f27b.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_defense_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7d3e25619b279daefae89c1033eec362cbb16c24ac0d4144e94b85e5fea22083",
+      "clear_fraction": 0.493,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2ab70eb5-0bc1-4535-8a71-1cf329aff8bc.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_defense_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "08e46c61353bd6cb7e21cf46b1ee004ba9849059d2e26dd0577a1e0d1785e0da",
+      "clear_fraction": 0.5076,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-82d64fd5-a8ef-4b21-9fa9-99bbcb8ce7a9.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/guardian_defense_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "424ce48c75d41518d4dc4cd49d99e6eaaa5fdcb1fd969c5b4a501f123a56b85f",
+      "clear_fraction": 0.4974,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3d6d0d92-9d79-4257-a098-a9048b203db1.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_0_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "17853450c733ca6a093a49d5f2df4f4802122b45a3ef5ad13cf56a224ac675c1",
+      "clear_fraction": 0.5572,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fa89280d-d161-4594-9f02-069be16a3708.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_0_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "45b9a7b8f451c9920e699eedb5bc1956d1912764621e42e360ed433aafbfe522",
+      "clear_fraction": 0.5812,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9df22b0a-cdc5-4913-894c-b12c47f67ce7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_0_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "3100a0f0cb582c79e7bc9b4b3c1ace29359a6ca60dfb79b03604aefae330280e",
+      "clear_fraction": 0.579,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-21c006d4-1cc5-4184-8039-d0d36a6317ce.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_0_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fb3ed58bdff7441fc126c046acfdacdb9319b6037304bc795bd46dff3102e635",
+      "clear_fraction": 0.5793,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c07d13d2-5edf-4d1a-a1c6-eedf69498038.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_1_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b876529c643c4d5263b575e08649edef1137280fe53f5a7c477dee61d8d37e57",
+      "clear_fraction": 0.5859,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2b432980-90c0-435d-a236-45c8b12a8850.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_1_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "375c0bc6c3b7b8bcc939458bb3cc3eb4afa65e1269ffd983b00dc7ec1f9b846c",
+      "clear_fraction": 0.5617,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-39c237db-9635-4dee-a305-d8d391bb76ec.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_1_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "736ee595878befa10c9c7424712809d345e0b565f97b2d6ae1d6c52a43a5fdae",
+      "clear_fraction": 0.4944,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5b68eacc-9283-4828-bd4a-2029fd63b8ce.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_1_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "90e2e5dc469a1a6cfca87e41e816889cb23f0ee4e55e722706d2af89a8e1acef",
+      "clear_fraction": 0.5737,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-45dfe94b-8968-42b3-817f-0490927b162a.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_2_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "c3d4a43bdd287d5393152d3b9676acd21905f60891cd9ef6fa7cf145b1e3e6bc",
+      "clear_fraction": 0.5739,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0acc78c7-2e74-4bb1-9a54-f7502522f3f9.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_2_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f465e32177dd0e9f58cb73eeccc0d6912bfc6ce77877ed3c946dfb7123176967",
+      "clear_fraction": 0.5478,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b8b709c7-b5ed-45d6-8059-36eefeceb988.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_2_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dd50a82ca0ce1160b24f805092b018229846394079a7a658a1324ad36df03a7f",
+      "clear_fraction": 0.5428,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-8d6f19fa-8d90-487e-97b7-bbc1d9665018.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_2_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f50f1496f8b91792f23fbe9e8d2cd9b1db4ea2102b5b7989f1eaf12ece33cdf6",
+      "clear_fraction": 0.5903,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-58c06ee2-ca83-467e-bbe9-152a6957f2eb.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_3_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "4342288256abb9f619cdefb45cea310a8713a352c2dedb2661cddd0a7aa05973",
+      "clear_fraction": 0.576,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-db513096-0851-49a5-9987-5cf1e6d3bab2.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_3_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9c1f86acfb27033762859b081e587bae2b1789f8d5dbde01aa735abb9f5ef3ee",
+      "clear_fraction": 0.5394,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7d879533-a1a7-4b9c-a1a0-4813de9917d9.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_3_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "8a5c4ddd67ac4e96df04e9ee4ad0bc147ebd5f5954e3caecbf4a067b5bc3a7b0",
+      "clear_fraction": 0.6062,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4a189079-dff7-4241-bd3f-7a5b0562bacc.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_3_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "394e049f7a930dbad5f8a32982bd66c7f7aefd149ad74b8a177d9f417b05e5ba",
+      "clear_fraction": 0.5879,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1ae0ede4-5200-470c-89b5-c519db2e7d4c.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_defense_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "63c088e795a33f04920969157bfc3c6cb4559af9449919773eaed4dff8c7e012",
+      "clear_fraction": 0.5215,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-09d58ebf-b259-4f09-9c20-853ff0993576.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_defense_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0fb7dafdeab7bf5243b483302a3691a56d27ec5d577aac30858ddd132cb84be5",
+      "clear_fraction": 0.5165,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ddd1ce9a-be08-48c7-8e96-83b8b243774f.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_defense_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9259ce880a5ba4831787fd17e28421b13684579aaed121abb21d270537a1882d",
+      "clear_fraction": 0.5763,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9eee3a01-4451-414e-8953-dbe42229fda6.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/rogue_defense_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "02d4935277011b892fb3fef9cab681d899a9ae56b8b287062d0227b40b321127",
+      "clear_fraction": 0.5427,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4a2b5c06-d0e4-4b29-907f-071f84bb2cae.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_0_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "2b83194b5fa0bb22e7f40ec4fe73f9f9d706694102bcd0a1afc68c43b1e58709",
+      "clear_fraction": 0.5854,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-406a917c-04ef-4acd-bb9c-8aa2f4c81880.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_0_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "fddca204e1c780c46cf6a9fe3a70497b82013ca967a0a1c73a3f712394a69e78",
+      "clear_fraction": 0.5479,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-85f06cc8-c23b-4c55-abe3-cb4a96ee5b60.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_0_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b992116de5086b21a5c80327c15f3e41e1795d5d203d699a6b44e3dc7efdd179",
+      "clear_fraction": 0.5773,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-df0857f0-0f06-45d7-8cc6-cf49a88ab17d.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_0_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "eb5cd0ce9ce25564d6c8d67fa2fe714ceff4bb321d2ad24432d9b3ddb7d00226",
+      "clear_fraction": 0.5898,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-73e4dc2c-c8b6-46cc-aa9e-61935e26527c.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_1_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "9c8dbc30f33f7760c9e8640e11ad07d8839323abbd2846cd84db2673e5609a31",
+      "clear_fraction": 0.5652,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-413e6e52-6854-4489-b6fc-8e511ce7efd1.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_1_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "7e2ee9c0d6b1de66c17c3a28c021f6faea90a5b12395fc34703618eb67a9cea3",
+      "clear_fraction": 0.59,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dcde5b83-6747-4e7c-b4f9-dc7dfcaaa213.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_1_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "50082e1962003fc34fbf4708cc7fa9b1b345906ad52195213ba61e91021d1190",
+      "clear_fraction": 0.6005,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-97db31e8-49d2-4fd0-958d-817977dbf4ee.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_1_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6024ca7553821e3af57f7e4cbb15a8757bd862e950f6154ae540db7e2b299193",
+      "clear_fraction": 0.6007,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c601e46a-0e8b-4a0c-8a73-808937f1aec7.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_2_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "175f2cc7b537c162735d14a9975db719aa0bd50bc27c136788c97b655702fbf5",
+      "clear_fraction": 0.5655,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-2982445e-0e06-47f0-83fa-efdd0af5ff2f.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_2_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "60a577d27206d2260c8c9b26b433b16a255e1372635f4352495852157a6d26ef",
+      "clear_fraction": 0.5942,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-71df1318-20e5-4ddd-9d36-0529657dabd3.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_2_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "26764979f21466972b51b9c664b96703a4a2c96d06e57e16246b1fdc7cb19c83",
+      "clear_fraction": 0.5816,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-96903524-c63e-4348-b568-271915a9b7cd.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_2_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "24ffdc48db6093a020cb3b1d37c22c257771706c44f1f79d5d899b38e7196922",
+      "clear_fraction": 0.5754,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1d01d518-4a7b-4f65-915f-1c43d959cf73.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_3_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "0bb5248e0ffac67f0f8b9c6405c378122776dcd2784b1e037adb68c89fe9d9f0",
+      "clear_fraction": 0.5687,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-a1ce1e6a-92f6-4a92-966e-0f7e5cba7e3f.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_3_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "5b4d4c66fdffe1cb724be179d0fba8afc5125ade42094a8ba08ad0b0a4d8ecf7",
+      "clear_fraction": 0.588,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-19e330ba-65de-42d8-828d-09513549c693.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_3_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "79d45018fead5c53cd048d5756fa495b8fd9139aa6b2f4da328bea1bc0190959",
+      "clear_fraction": 0.5342,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c300cde2-058a-401b-bd3c-470ef44e7d3e.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_3_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "68a71deffce6bc6330ca31920181a8c2384f28eab3eb6f71f4040fb27d00766e",
+      "clear_fraction": 0.6211,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-00c50619-2307-4473-a349-ed272c83375a.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_defense_part0.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "71ca15bd38438c0ac5d7621f3c85800eade1a18639e0f94c50efd8ad1ea81071",
+      "clear_fraction": 0.5016,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f8cf1eaa-2351-44a7-b9a7-93521f2a537d.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_defense_part1.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e279a34e896c3905e09a757d2f006923205609de0b18660856edd0c0f5a6fd33",
+      "clear_fraction": 0.5358,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-fcf2387b-944f-40a0-a798-301a2328272d.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_defense_part2.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "bdd1ab2e685eb2151f50005ee90285eb96458e395c582585f326810dff850b06",
+      "clear_fraction": 0.4436,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5a531b63-d31a-40cf-9819-026aa1052e6a.png"
+    },
+    {
+      "file": "docs/comic/sketchbook/sources/mage_defense_part3.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "32e0f32ab9fb54a8aa8f5a4ca36e2e8e42db578263e2d75a7e41f45508a92b03",
+      "clear_fraction": 0.5623,
+      "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-30d579ab-93e8-447a-8606-ba056070b919.png"
+    }
+  ],
+  "atlases": [
+    {
+      "file": "assets/comic/motion/warrior_0.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "16db74113c52e2f7dbf381fbdc0640ecb12deb655c4ea09dac0ae0cde3c5e15a"
+    },
+    {
+      "file": "assets/comic/motion/warrior_1.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "24268a7884ba7e6ab134ac69962ce8cd8e776591b37189439c60f626040b265c"
+    },
+    {
+      "file": "assets/comic/motion/warrior_2.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "d6b4e539972eb07a33b82a856c74d03d8e2088910e08ab375fb465c023b939c4"
+    },
+    {
+      "file": "assets/comic/motion/warrior_3.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "9505975c594fde4c89716de940ed87f9c6c7815eeca8ed2629f017c12a11f566"
+    },
+    {
+      "file": "assets/comic/motion/warrior_defense.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "d5643c3cbc69681614c744eb6b0faebaadd5f8db8107acfdf01e63f6fd50a48d"
+    },
+    {
+      "file": "assets/comic/motion/guardian_0.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "5eace78cdd7480b7a9a06ae6c4bcec2a4f846bbcc1d971c722507df491c3df4f"
+    },
+    {
+      "file": "assets/comic/motion/guardian_1.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "1eff972ee27de19b59d68d3ba37431c6604190907d60fdc4d74885bc19cd06ee"
+    },
+    {
+      "file": "assets/comic/motion/guardian_2.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "76f1a4b26c87943ed113898d3877d2a5461036a240b02365742570acc9d2ead2"
+    },
+    {
+      "file": "assets/comic/motion/guardian_3.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "cd5dc1e4d56647c2a653448ee497716e91ad50cc49c42787957e16e1b480ce13"
+    },
+    {
+      "file": "assets/comic/motion/guardian_defense.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "899bc719073a913a24d9e83a379dbfb9b3b5ed7fdea779ca35d824d657e025d3"
+    },
+    {
+      "file": "assets/comic/motion/rogue_0.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "a2cea11779f61b9e02f22543a65ddd27f01bb446e9ba74938268f7aa3b8274f8"
+    },
+    {
+      "file": "assets/comic/motion/rogue_1.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "8a5a2dc61b7bbe26e42a289c8d568a862977470985ad3ce09bbcb74c4c312c96"
+    },
+    {
+      "file": "assets/comic/motion/rogue_2.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "2cad786d5fab03a21b9ae51d4e0ca42fd28d19e6b992412b6c55ed7ad6a0964b"
+    },
+    {
+      "file": "assets/comic/motion/rogue_3.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "5cc61d0a9faf26bf35436c7bfd4c5d47d382f40958b7f29d2809c3c9549e3cca"
+    },
+    {
+      "file": "assets/comic/motion/rogue_defense.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "bcbabe829d5005e8c8e6c44e81ad51a3c617a12233101015f65a08563b955033"
+    },
+    {
+      "file": "assets/comic/motion/mage_0.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "f9e35e5624a32dd5d1da586d2d0b8dffa9e3848e9ec731f3e87dd7b8d29976fa"
+    },
+    {
+      "file": "assets/comic/motion/mage_1.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "5f0ab72e3a41b723ac3b775436e6a9177b3262eca50e5022e870000df6079c7b"
+    },
+    {
+      "file": "assets/comic/motion/mage_2.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "6fd8b75e82da4f9dadfd05daa6f432339334ddd812ab9d09200b8046926b91ac"
+    },
+    {
+      "file": "assets/comic/motion/mage_3.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "d2eee6266f123b194e71ea54c9287a34fe197e0a613c9bd94da1794ba47bb965"
+    },
+    {
+      "file": "assets/comic/motion/mage_defense.png",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "frames": 16,
+      "sha256": "6b7550fe61fbf3b98f72a790b6068669ed56839ffd9f9f3a1d3473116377b1bf"
+    }
+  ],
+  "errors": []
+}

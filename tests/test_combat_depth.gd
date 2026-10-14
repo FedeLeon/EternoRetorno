@@ -6,7 +6,7 @@ func check(ok: bool, caption: String):
 	checks+=1
 	if not ok:failures+=1;printerr("FAIL: ",caption)
 func game(floor_number: int=1) -> RefCounted:
-	var g=Game.new("user://unused-depth",false);g.new_run(["warrior","cleric"],81,{},floor_number);g.enter_node(0)
+	var g=Game.new("user://unused-depth",false);g.new_run(["warrior","guardian"],81,{},floor_number);g.enter_node(0)
 	return g
 func hand(g: RefCounted,id: String):
 	g.run.combat.hand=[{"id":id,"upgraded":false}];g.run.combat.energy=99
@@ -19,7 +19,7 @@ func _initialize():
 	g.end_turn()
 	check(enemy.hp==hp-17 and g.resolved_prepared_hits.size()==1 and g.run.combat.prepared.is_empty(),"charge hits once next turn")
 	var save_path="user://depth-charge-test.save";var store=Game.new(save_path,true)
-	store.new_run(["warrior","cleric"],81);store.enter_node(0);store.run.combat.enemies[0].hp=300;store.run.combat.enemies[0].max_hp=300
+	store.new_run(["warrior","guardian"],81);store.enter_node(0);store.run.combat.enemies[0].hp=300;store.run.combat.enemies[0].max_hp=300
 	hand(store,"warrior_prepared");store.play_card(0,0)
 	var restored=Game.new(save_path,true)
 	check(restored.run.combat.prepared==store.run.combat.prepared,"charge survives save reload")
@@ -30,10 +30,10 @@ func _initialize():
 	g._start_combat(["ice_elemental","crypt_lancer_new"])
 	hand(g,"warrior_slash")
 	check(g.valid_targets(0)==[0],"protector hides rear from melee")
-	g.run.combat.hand=[{"id":"cleric_light","upgraded":false}]
-	var caster_id=g.content.cards.keys().filter(func(id):return g.content.cards[id].owner=="cleric" and g.content.cards[id].target=="enemy")[0]
+	g.run.combat.hand=[{"id":"guardian_strike","upgraded":false}]
+	var caster_id=g.content.cards.keys().filter(func(id):return g.content.cards[id].owner=="guardian" and g.content.cards[id].target=="enemy")[0]
 	g.run.combat.hand[0].id=caster_id
-	# Cleric is melee for coverage; only ranger/mage, area and pierce bypass.
+	# Constructora is melee for coverage; only rogue/mage, area and pierce bypass.
 	var card=g.content.card(g.run.combat.hand[0]);card.pierce=true
 	check(Depth.targets(g,card,[0,1])==[0,1],"piercing bypasses protector")
 	g.run.combat.enemies[0].hp=0;hand(g,"warrior_slash")
@@ -58,7 +58,7 @@ func _initialize():
 	var original=g.content.card({"id":"warrior_slash","upgraded":true})
 	var efficient=g.content.card({"id":"warrior_slash","upgraded":true,"upgrade_variant":"efficient"})
 	check(original.damage==12 and efficient.damage==9 and efficient.cost==0,"legacy power and alternate efficiency")
-	var healing=g.content.cards.keys().filter(func(id):return g.content.cards[id].owner=="cleric" and g.content.cards[id].heal>0 and g.content.cards[id].target=="ally")[0]
+	var healing=g.content.cards.keys().filter(func(id):return g.content.cards[id].owner=="guardian" and g.content.cards[id].heal>0 and g.content.cards[id].target=="ally")[0]
 	check(g.content.card({"id":healing,"upgraded":true,"upgrade_variant":"shared"}).target=="all_allies","shared healing choice")
 	g.run.phase="merchant";preload("res://src/rules/travel_encounters.gd").prepare(g);g.profile.souls=100
 	var offer=g.run.merchant_offers[0];var souls=g.profile.souls

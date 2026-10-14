@@ -28,7 +28,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-treasure-ui.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 42)
+	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.run.current = 0
 	preload("res://tests/room_fixture.gd").enter(app.game, "treasure")
 	app.game.run.treasure.trapped = false

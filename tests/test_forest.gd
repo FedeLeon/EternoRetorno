@@ -56,7 +56,7 @@ func _initialize() -> void:
 	var path = "user://forest-transition-test.save"
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	var g = Game.new(path, true)
-	g.new_run(["warrior", "cleric"], 5, {"team":"vital_amulet"})
+	g.new_run(["warrior", "guardian"], 5, {"team":"vital_amulet"})
 	g.run.relics = ["iron_knot"]
 	g.run.inventory = {"healing_potion":2}
 	g.run.expedition_stats = {"battles":4}
@@ -98,7 +98,7 @@ func _initialize() -> void:
 	check(g.descend() and g.run.phase == "victory" and g.profile.victories == 1, "forest completes adventure")
 	check(g.profile.expeditions.cycle == contract_cycle + 1 and "warrior" in g.profile.specializations.victorious, "settlement only at final victory")
 	check(not g.descend() and g.profile.victories == 1, "final settlement once")
-	g.new_run(["warrior", "cleric"], 8)
+	g.new_run(["warrior", "guardian"], 8)
 	g.run.erase("polish_version")
 	g.run.erase("telemetry")
 	g.run.erase("floor")

@@ -26,7 +26,7 @@ static func initialize(game: RefCounted) -> void:
 
 static func targets(game: RefCounted, card: Dictionary, candidates: Array) -> Array:
 	if game.run.get("tactics_version", 0) == 0: return candidates
-	if card.target == "all_enemies" or card.pierce or card.owner in ["mage", "ranger"]: return candidates
+	if card.target == "all_enemies" or card.pierce or card.owner in ["mage"]: return candidates
 	var b: Dictionary = game.run.combat
 	var covered = b.enemies.any(func(e): return e.hp > 0 and game.content.enemies[e.id].get("role", "") == "protector")
 	return candidates.filter(func(i): return not covered or not b.enemies[i].get("rear", false))

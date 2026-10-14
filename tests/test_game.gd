@@ -10,12 +10,12 @@ func check(value: bool, description: String) -> void:
 		failures += 1
 		printerr("FAIL: ", description)
 
-func fresh(party: Array = ["warrior", "cleric"], seed_value: int = 42) -> RefCounted:
+func fresh(party: Array = ["warrior", "guardian"], seed_value: int = 42) -> RefCounted:
 	var game = Game.new("user://unused-test.save", false)
 	game.new_run(party, seed_value)
 	return game
 
-func combat(party: Array = ["warrior", "cleric"]) -> RefCounted:
+func combat(party: Array = ["warrior", "guardian"]) -> RefCounted:
 	var game = fresh(party)
 	game.enter_node(0)
 	return game
@@ -40,8 +40,8 @@ func _initialize() -> void:
 
 func content_and_map() -> void:
 	var g = fresh()
-	check(g.content.heroes.size() == 6 and g.content.cards.size() == 132, "6 classes / 132 cards")
-	check(g.content.enemies.size() == 57 and g.content.events.size() == 28 and g.content.relics.size() == 33, "enemy / event / relic catalog")
+	check(g.content.heroes.size() == 4 and g.content.cards.size() == 88, "4 professions / 88 cards")
+	check(g.content.enemies.size() == 57 and g.content.events.size() == 19 and g.content.relics.size() == 33, "enemy / event / relic catalog")
 	check(not g.new_run(["mage", "mage"]), "no duplicate heroes")
 	check(not g.new_run(["invalid", "mage"]), "invalid hero rejected")
 	check(g.run.deck.size() == 20, "20 starter instances")
@@ -81,32 +81,33 @@ func card_rules() -> void:
 	check(e.hp == 95 and e.block == 0 and g.run.combat.energy == 2, "damage consumes block and energy")
 	g.run.combat.energy = 1
 	check(not g.play_card(0, 0), "insufficient energy rejected")
-	set_hand(g, ["cleric_heal"])
+	set_hand(g, ["guardian_lay_hands"])
 	g.run.heroes[0].hp = 20
 	g.play_card(0, 0)
-	check(g.run.heroes[0].hp == 27, "ally heal")
+	check(g.run.heroes[0].hp == 26, "ally heal")
 	g.run.combat.energy = 3
+	g.run.heroes[0].block = 0
 	set_hand(g, ["warrior_guard"])
 	check(g.valid_targets(0) == [0], "self targets only owner")
 	g.play_card(0, 0)
 	check(g.run.heroes[0].block == 9, "self block")
 	e.intent = {"damage": 3, "target": 0}
 	g.end_turn()
-	check(g.run.heroes[0].hp == 27 and g.run.heroes[0].block == 0, "block protects enemy phase then expires")
+	check(g.run.heroes[0].hp == 26 and g.run.heroes[0].block == 0, "block protects enemy phase then expires")
 	g.run.heroes[0].block = 20
 	g.run.heroes[1].block = 20
 	e.intent = {"damage": 0, "target": 0}
 	g.end_turn()
 	check(g.run.heroes.all(func(h): return h.block == 0), "unused block expires even without incoming attacks")
-	g = combat(["ranger", "rogue"])
+	g = combat(["warrior", "rogue"])
 	e = g.run.combat.enemies[0]; e.hp = 100; e.max_hp = 100; e.block = 30
-	set_hand(g, ["ranger_arrow", "rogue_toxin"])
+	set_hand(g, ["rogue_assassin", "rogue_toxin"])
 	g.play_card(0, 0)
-	check(e.hp == 92 and e.block == 30, "precision bypasses block")
+	check(e.hp == 78 and e.block == 30, "precision bypasses block")
 	g.play_card(0, 0)
 	check(e.poison == 4 and e.block == 26, "poison applied")
 	g.end_turn()
-	check(e.hp == 88 and e.poison == 3, "poison ticks and decays")
+	check(e.hp == 74 and e.poison == 3, "poison ticks and decays")
 	g = combat(["mage", "guardian"])
 	g.run.combat.enemies.append(g.run.combat.enemies[0].duplicate(true))
 	set_hand(g, ["mage_storm"])
@@ -116,7 +117,7 @@ func card_rules() -> void:
 	set_hand(g, ["guardian_wall"])
 	g.play_card(0, 1)
 	check(g.run.heroes.all(func(h): return h.block == 13), "party block")
-	g = combat(["mage", "ranger"])
+	g = combat(["mage", "rogue"])
 	e = g.run.combat.enemies[0]; e.hp = 100; e.max_hp = 100
 	g.run.relics = ["fang"]
 	set_hand(g, ["mage_spark"])
@@ -124,10 +125,10 @@ func card_rules() -> void:
 	check(e.hp == 90, "fang applies to each hit")
 	g.run.combat.draw = []
 	g.run.combat.hand = []
-	g.run.combat.discard = [instance("mage_spark"), instance("ranger_arrow")]
+	g.run.combat.discard = [instance("mage_spark"), instance("rogue_cut")]
 	g._draw(5)
 	check(g.run.combat.hand.size() == 2 and g.run.combat.discard.is_empty(), "reshuffle handles short deck")
-	var up = g.content.card(instance("ranger_arrow", true))
+	var up = g.content.card(instance("rogue_cut", true))
 	check(up.damage == 11, "upgrade damage")
 	check(g.content.card(instance("rogue_toxin", true)).poison == 6, "upgrade poison")
 	g = fresh(); g.run.relics = ["ember", "hourglass"]; g.enter_node(0)
@@ -148,7 +149,7 @@ func death_rules() -> void:
 	check(g.run.combat.inactive.size() == 10, "ten inactive cards conserved")
 	check(e.intent.target == 1, "intent only targets living heroes")
 	g.run.combat.energy = 3
-	set_hand(g, ["cleric_light"])
+	set_hand(g, ["guardian_strike"])
 	e.hp = 1
 	g.play_card(0, 0)
 	check(g.run.phase == "reward" and g.run.heroes[0].hp == 15, "fallen revives with ceil 25 percent")
@@ -333,4 +334,4 @@ func simulations() -> void:
 			print("PAIR %s + %s: %d/3 victories" % [ids[i], ids[j], pair_wins])
 			# Completion rate is a balance observation: this bot skips rewards and upgrades.
 			wins += pair_wins
-	print("SIMULATIONS: %d/45 victories" % wins)
+	print("SIMULATIONS: %d/18 victories" % wins)

@@ -26,49 +26,41 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_weapon_3.png-fc1d1d6e3b84437832bcff33552d0190.ctex",
       "bytes": 105868,
       "sha256": "ed3fd02fa01b20d3daa155d238f948afeb844fc6610adc9c9315fef535dba25e",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_weapon_3.png-fc1d1d6e3b84437832bcff33552d0190.md5",
       "bytes": 91,
       "sha256": "502e2fd72cbc0171f84caac31b68283ebd1832da6837393f31070734d6e530f6",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_3.png.import",
       "bytes": 975,
       "sha256": "da3429b18e7d767c6048bd77531f55eee0084511ec0e21d5d284e31b36e1dbf8",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_3.png",
       "bytes": 124564,
       "sha256": "9b94541cd2a34c042f749737b64212d9b86169fda12b3af3781f2ff597ff7666",
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_weapon_2.png-99f59eb2d3a29ec882a9ee1c3759f70d.ctex",
       "bytes": 88042,
       "sha256": "233d155185da2f309b6ce87820e5ff1e62e0d42add6dda48f8dd97bcca8364be",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_weapon_2.png-99f59eb2d3a29ec882a9ee1c3759f70d.md5",
       "bytes": 91,
       "sha256": "a03b86c5a2198d631e89dd77b04660c41b0c83f5ff57e40acf301cf6d1bd9b07",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_2.png.import",
       "bytes": 974,
       "sha256": "52a6193adf141f92f50a0a9b1523f07cee828b329ec64bc712c48140993f7c23",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_2.png",
       "bytes": 108154,
       "sha256": "beb02f819e3fdcaa93a92d667959f73ab7297edca95c6a459c10cccd5e4d86d7",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -122,25 +114,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_armor_2.png-4d99370da3bca3e8ae532199e47cd9fb.ctex",
       "bytes": 93500,
       "sha256": "803563a4ded5a722c9847cbbd237ac96a410430fec45fc1d747badff3d1d7618",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_armor_2.png-4d99370da3bca3e8ae532199e47cd9fb.md5",
       "bytes": 91,
       "sha256": "da358b30f0e03b7bb29eaea4c73e2f955690c04854f6c6ddb45fed032ea4b4a2",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_2.png.import",
       "bytes": 972,
       "sha256": "bb5eb93d860bced614d7ba02fbec99b85b9ba730d6d71ec68a76bc83e1ff7cd4",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_2.png",
       "bytes": 131163,
       "sha256": "b8dab3514ab08f46e1dec5b93935f4b928d8b16df845c0a380961297f4168909",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -194,25 +182,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_weapon_3.png-d387c74cc67022b8c6b78a237ae26301.ctex",
       "bytes": 91404,
       "sha256": "862e455bc305c609a1a984511d743fc27cdebc4039a83753d2caf5296cb5f669",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_weapon_3.png-d387c74cc67022b8c6b78a237ae26301.md5",
       "bytes": 91,
       "sha256": "8830c9528e4b5f34e7444e56e604023dcf79c2810749e144506bfb16dfaca4d9",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_3.png.import",
       "bytes": 974,
       "sha256": "c748e12d6e698549f9a596b398b9986c199f33fc398b7393deb1ccbc9a8340ff",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_3.png",
       "bytes": 109458,
       "sha256": "036943cf330d155637d71eb6fc50e1a779f0ca66d6e81ffb92ba8c2bfc83b55d",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -362,25 +346,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_armor_1.png-880bea43b8af6cf36bc128a3323be229.ctex",
       "bytes": 85270,
       "sha256": "14d1b4b83c167839cf11ab15d52642df672b722ab33b6973641d76d7959ba648",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_armor_1.png-880bea43b8af6cf36bc128a3323be229.md5",
       "bytes": 91,
       "sha256": "24b7b721a977717f25fa0e464596a990333d24426e56598b67da42665fae68db",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_1.png.import",
       "bytes": 972,
       "sha256": "26c62c7b942ee800d909c80d0ae6b4e2ae45808ae4ea2b82943077a9acf55eae",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_1.png",
       "bytes": 112549,
       "sha256": "e52a1bc879c329462bece8f9af6ad35c6d7b14e3e3b29e1a8256a4390ffd1009",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -434,49 +414,41 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_weapon_2.png-8d96a9f73a14d993f6f8cbabd7e3ee3e.ctex",
       "bytes": 78766,
       "sha256": "1776a9f306ce64724d49b049e7e49c4a4bae38afa927ec2bf888e3ba94e99c1f",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_weapon_2.png-8d96a9f73a14d993f6f8cbabd7e3ee3e.md5",
       "bytes": 91,
       "sha256": "87b890d84b77ccce17fe8155915627f44f9698921e979b2b75e2eb5f1423a97b",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_2.png.import",
       "bytes": 975,
       "sha256": "31d57b913b52168fbfb78c9ef5e1d700b29b0df27c032d2608dd2652a783a521",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_2.png",
       "bytes": 95723,
       "sha256": "b14255d82597edfc4cdc334f85b27c4847d1addb6b965b376a4f075183188bc5",
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_armor_3.png-85b1e23ca0654bd73fa363b65a5c5fe4.ctex",
       "bytes": 105000,
       "sha256": "894c52e9cfb3746f02b2663778f6f5dc14fefcf8370889c1f7be9ea533c2f934",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_armor_3.png-85b1e23ca0654bd73fa363b65a5c5fe4.md5",
       "bytes": 91,
       "sha256": "19a0f325ad2b38288bf5e6f03d2341c0cac04ed1664ca0f0e8b45d34c2faf5f3",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_3.png.import",
       "bytes": 972,
       "sha256": "3c811ec58743b170ae56dfde32f656ffa3819d0ae460ee8854901247cdc3c13b",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_3.png",
       "bytes": 133502,
       "sha256": "80092b7042d0b8567c6d56d52ade0ea1ffea490e38715d66f8ce4f87ca4f6f24",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -554,25 +526,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_weapon_1.png-8f0aca54879152adbd92676acb51ae0e.ctex",
       "bytes": 75118,
       "sha256": "2af49e1c73383b99299cef216b10dd56d86f33af12ddd600fed52ab9cff4df4d",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_weapon_1.png-8f0aca54879152adbd92676acb51ae0e.md5",
       "bytes": 91,
       "sha256": "f398dea40e6147714fbf4b9d225ebd4e2b62010f3fe7cd968e8c4bacd780a2c9",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_1.png.import",
       "bytes": 975,
       "sha256": "d5649c29ae03dfc955de24e511d82ade554ec78acb05171e951d6be44acc6ef5",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_weapon_1.png",
       "bytes": 93935,
       "sha256": "559784e0f49389fa59c3bf93b3f52e5754be1370c2b82d4760de6b8bc1fe736b",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -674,25 +642,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_armor_2.png-615b9dee5ce7a4134b227a06c7be887f.ctex",
       "bytes": 94378,
       "sha256": "3e03f1f5503c888c6e407c51c4db9f5b1e16e8763303854cc26188fd0f6ac275",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_armor_2.png-615b9dee5ce7a4134b227a06c7be887f.md5",
       "bytes": 91,
       "sha256": "28e13c8a91bc481df8fa3f14b30ddaa1c5f50b72d67bf12badaf63e98ad48297",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_2.png.import",
       "bytes": 972,
       "sha256": "eef4713aaec8186ae523df900de7185ad38905a3c0c1c1eb6582616f257b27ae",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_armor_2.png",
       "bytes": 122082,
       "sha256": "9fabc1ceba21be869ffb122dc9eae9b9fba3d59b469101fda69341d82ec1bcaf",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -722,25 +686,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_armor_3.png-1f00585e58fc2b3c659d2a93fada77fa.ctex",
       "bytes": 96184,
       "sha256": "35738a4151df739931fddb31e1737f44f9e539146e1dda73cca1f8ed600c047b",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_armor_3.png-1f00585e58fc2b3c659d2a93fada77fa.md5",
       "bytes": 91,
       "sha256": "2f275a174c27e6810665cac1de3843958e4ae602cd50053ad8138a9f3e446f78",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_3.png.import",
       "bytes": 972,
       "sha256": "dd6110b673f84c86f2eb2cecf8d16bd836b0ada20f2ce489543965671d30bd69",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_3.png",
       "bytes": 129798,
       "sha256": "49bed1a44ab53b5e03fbf5444e9511046cab77525dc7b1e06f8d9728a9ebe009",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -770,25 +730,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/ranger_armor_1.png-ef359993ce200f157d4871593be8b48f.ctex",
       "bytes": 88092,
       "sha256": "5245678484ffb5f8e49c8a3378db34e3caa57c3e21d61397fd8654c9ac5a5483",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/ranger_armor_1.png-ef359993ce200f157d4871593be8b48f.md5",
       "bytes": 91,
       "sha256": "e6c6edc2e2513a489c636ff10af365778712d2fd2cdde8e34aa6ace2a14ebc5f",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_1.png.import",
       "bytes": 972,
       "sha256": "38d88a1310ef62378d03e703ac2eb4bb581fc148d79680b89b4ca9e7cdd04596",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/ranger_armor_1.png",
       "bytes": 123506,
       "sha256": "3c07c236d7800b95eb8785599585fd51e40cbe6f21eb9fd260a45550522177af",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -818,25 +774,21 @@
       "reason": "retired overlay/objective/frame; original source retained in docs"
     },
     {
-      "path": ".godot/imported/cleric_weapon_1.png-03e3b1a1b1c79cf4784a9eab5309ea95.ctex",
       "bytes": 70658,
       "sha256": "ea47921894fc7dd5b35f754da78bd0a7316fe7edda06c5c11b5c9fcff2f85870",
       "reason": "cache of retired asset"
     },
     {
-      "path": ".godot/imported/cleric_weapon_1.png-03e3b1a1b1c79cf4784a9eab5309ea95.md5",
       "bytes": 91,
       "sha256": "c4c4f5f6cb0fe8f183cc083b9ca3d829d11299878955ab06e276409e6b40b5d2",
       "reason": "checksum of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_1.png.import",
       "bytes": 974,
       "sha256": "0c2b53c75d0e36b4550e092688518fbb1022e6495fcb8a43ddb98f732bf9f230",
       "reason": "import metadata of retired asset"
     },
     {
-      "path": "assets/heroes/equipment/cleric_weapon_1.png",
       "bytes": 88314,
       "sha256": "d1437bc6793f988df2864b8b307543e4bfb937de4109ba9f62f244544b0e0899",
       "reason": "retired overlay/objective/frame; original source retained in docs"
@@ -1352,7 +1304,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/layout-review/event-pair_cleric_warrior.png",
       "bytes": 1185878,
       "sha256": "4a8de8725141d7632421bd05b16a1406b85bb6abade8214527fcfde7354a6da6",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -1850,7 +1801,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/film-review/shot-hero_ranger-0.png",
       "bytes": 1268856,
       "sha256": "e17e488ea4066b143dcbb933e6a3db7a310114354a42ba41a8b876a39335baba",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -1910,7 +1860,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/film-review/shot-hero_ranger-1.png",
       "bytes": 1312753,
       "sha256": "307c0946c0aa1152709962b26a92d0b62aa220b2fd55fc950158528fb0f3e0a9",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -1952,7 +1901,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/film-review/shot-hero_cleric-0.png",
       "bytes": 1239949,
       "sha256": "91687556d7b45cae08850adb1888aac587afac48f3f03e41bfccd229982567ff",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -2024,7 +1972,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/film-review/shot-hero_cleric-1.png",
       "bytes": 1353445,
       "sha256": "ad90646bfeaa0bb029dd429a29150171a437b644539489e3f3bdd949b1d4f11d",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -2156,7 +2103,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/integral-review/cinema-hero_ranger.png",
       "bytes": 1176769,
       "sha256": "ffa72d47edd90f83928c7f159cfc505b3f8c60bf2e4a4f26f99e686483681c88",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -2210,7 +2156,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/integral-review/cinema-hero_cleric.png",
       "bytes": 1193831,
       "sha256": "0f959d14fa78e101277ba2bfce5fa00370846c35928864b8e3bfa916c7672a61",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -2780,7 +2725,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/polish/event-pair_cleric_warrior.png",
       "bytes": 1185678,
       "sha256": "a69f1524fed7c3989e5a877c1ff4ecbfce0490e9f088cec980782d55640a2fc2",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -3008,7 +2952,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/polish/test_cleric.log",
       "bytes": 351,
       "sha256": "4bbd7607ebd2dde75a0f865abe39864a32cb56d063ca681f444dc3234fd3dbe5",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -3314,7 +3257,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/polish/test_ranger.log",
       "bytes": 351,
       "sha256": "28de852a13f27157634739cbac915a78492cca26848495f01bd25c9efed64fc1",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -3902,7 +3844,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/polish/regressions/test_cleric.log",
       "bytes": 351,
       "sha256": "4bbd7607ebd2dde75a0f865abe39864a32cb56d063ca681f444dc3234fd3dbe5",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -4064,7 +4005,6 @@
       "reason": "disposable screenshot/log/recording/temporary fixture"
     },
     {
-      "path": "artifacts/polish/regressions/test_ranger.log",
       "bytes": 351,
       "sha256": "28de852a13f27157634739cbac915a78492cca26848495f01bd25c9efed64fc1",
       "reason": "disposable screenshot/log/recording/temporary fixture"
@@ -4473,7 +4413,6 @@
       "bytes": 112
     },
     {
-      "path": "artifacts/polish/regressions/test_cleric.log",
       "bytes": 105
     },
     {
@@ -4581,7 +4520,6 @@
       "bytes": 358
     },
     {
-      "path": "artifacts/polish/regressions/test_ranger.log",
       "bytes": 351
     },
     {
@@ -4905,7 +4843,6 @@
       "bytes": 112
     },
     {
-      "path": "artifacts/polish/regressions/test_cleric.log",
       "bytes": 351
     },
     {
@@ -5013,7 +4950,6 @@
       "bytes": 358
     },
     {
-      "path": "artifacts/polish/regressions/test_ranger.log",
       "bytes": 105
     },
     {

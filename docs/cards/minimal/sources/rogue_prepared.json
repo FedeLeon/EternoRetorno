@@ -1,0 +1,44 @@
+{
+	"card": {
+		"block": 0.0,
+		"charge": true,
+		"cost": 1.0,
+		"damage": 17.0,
+		"heal": 0.0,
+		"hits": 1.0,
+		"id": "rogue_prepared",
+		"interrupt": false,
+		"locked": false,
+		"market_price": 140.0,
+		"name": "Acecho letal",
+		"owner": "rogue",
+		"pierce": false,
+		"poison": 0.0,
+		"target": "enemy"
+	},
+	"card_id": "rogue_prepared",
+	"crop": [
+		0,
+		0,
+		1672,
+		941
+	],
+	"dimensions": [
+		512,
+		288
+	],
+	"hero": "rogue",
+	"id": "minimal_rogue_prepared",
+	"kind": "minimal_card",
+	"motif": "One half-concealed knife behind the fold of a charcoal coat, one short held-back violet strike line. No person.",
+	"original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-082ac953-cd3f-4fae-a14b-dc0c170a178f.png",
+	"prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One half-concealed knife behind the fold of a charcoal coat, one short held-back violet strike line. No person. This is a visual metaphor for the card Acecho letal, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+	"references": [],
+	"sha256": "d294d8549fd43ff4db9c7bec73c0b21a8769480718f1b3f0a2071a4fe093a459",
+	"source": "docs/cards/minimal/sources/rogue_prepared.png",
+	"source_sha256": "f32898c0f8efbcae1b9f342017fb98d8863aec91fe23223e34e292214a3191ea",
+	"status": "integrated",
+	"target": "assets/cards/art/minimal/rogue_prepared.png",
+	"tool": "image_gen.imagegen",
+	"transparent": false
+}

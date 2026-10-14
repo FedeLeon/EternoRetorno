@@ -58,7 +58,7 @@ func run_tests() -> void:
 		if node.name == "HeroCutIn": cut_ins.append(node.texture_path))
 	app.animate_combat_action(0, 0)
 	while app.combat_busy: await process_frame
-	check(cut_ins.size() == 3 and cut_ins[0] != cut_ins[1] and cut_ins[1] != cut_ins[2] and cut_ins[0] != cut_ins[2], "three distinct foreground attacks")
+	check(cut_ins.size() == 3 and cut_ins.all(func(path): return path.ends_with("mage_attack.png")), "three static foreground appearances for three hits")
 	check(enemy_steps.slice(0, 3) == [95, 90, 85], "presentation shows three separate enemy HP reductions")
 	check(hero_steps.slice(0, 3) == [hp-4, hp-8, hp-12], "presentation shows three separate counters")
 	# A two-hit card must not add the old single introductory cut-in.
@@ -71,7 +71,7 @@ func run_tests() -> void:
 		if node.name == "HeroCutIn": cut_ins.append(node.texture_path))
 	app.animate_combat_action(0, 0)
 	while app.combat_busy: await process_frame
-	check(cut_ins.size() == 2 and cut_ins[0] != cut_ins[1], "two distinct foreground attacks")
+	check(cut_ins.size() == 2 and cut_ins.all(func(path): return path.ends_with("mage_attack.png")), "two static foreground appearances for two hits")
 	app.queue_free()
 	await process_frame
 	await create_timer(0.1).timeout

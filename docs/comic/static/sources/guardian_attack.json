@@ -1,0 +1,20 @@
+{
+  "id": "static_guardian_attack",
+  "hero": "guardian",
+  "action": "attack",
+  "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Ines the Builder: strong adult woman, auburn hair in practical braid, familiar face from reference, patched gray plate armor, violet cloth/cape, battered plain steel shield and short straight steel sword. Action: Shield bash toward the RIGHT, heavy battered shield thrust forward, short sword held safely back, determined readable face. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+  "source": "docs/comic/static/sources/guardian_attack.png",
+  "target": "assets/comic/static/guardian_attack.png",
+  "references": [
+    "assets/heroes/identity/portraits/guardian.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-be7f911c-02d0-468b-b069-269be3070db9.png",
+  "tool": "image_gen.imagegen",
+  "status": "integrated",
+  "sha256": "c8440cda5f2a421cf666310634022857ac8a20b2d980ca0b220c6fe59ffe090b",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "clear_fraction": 0.4056
+}

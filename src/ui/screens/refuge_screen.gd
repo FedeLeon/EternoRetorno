@@ -33,19 +33,14 @@ func redraw() -> void:
 	body = Control.new()
 	ui.rect(body, 0, 84, 1280, 636, self)
 	if selected == "":
-		var heading = ui.label_at("Elegí un héroe para preparar sus 10 cartas iniciales", 80, 45, 1120, 42, 26, ui.TEXT, body)
-		heading.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		ui.button("Vínculos entre héroes", 460, 100, 360, 46, func():
+		preload("res://src/ui/components/building_hero_picker.gd").build(ui, heroes, "Elegí un héroe · Mazo inicial", "RefugeHero_", func(hero):
+			selected = hero
+			attacks = choices[hero].attacks
+			notice = ""
+			redraw(), true, body)
+		ui.button("Vínculos entre héroes", 110, 496, 360, 46, func():
 			ui.screen = "bonds"; ui.render(), true, body)
-		var ids = heroes.keys()
-		for i in range(ids.size()):
-			var hero = ids[i]
-			preload("res://src/ui/components/refuge_portrait.gd").build(ui, body, hero, heroes[hero].name, Vector2(35 + i * 204, 172), func():
-				selected = hero
-				attacks = choices[hero].attacks
-				notice = ""
-				redraw())
-		ui.label_at("El equipo cambia. Tu forma de luchar también.", 80, 550, 1120, 32, 20, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		ui.label_at("Prepará sus 10 cartas iniciales.\nLos cambios se aplican en aventuras nuevas.", 70, 550, 600, 60, 18, ui.TEXT, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		return
 	ui.panel(90, 10, 1100, 610, Color("67573d"), body)
 	ui.label_at(heroes[selected].name + " · Mazo inicial · 10 / 10 cartas", 150, 24, 980, 38, 27, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

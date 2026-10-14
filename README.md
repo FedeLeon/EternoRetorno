@@ -1,8 +1,8 @@
 # Eterno Retorno
 
-Prototipo jugable de rol y cartas para Android. Tres mazmorras, seis personajes,
+Prototipo jugable de rol y cartas para Android. Tres mazmorras, cuatro protagonistas civiles,
 parejas de dos, mazo compartido y desbloqueos permanentes. Interfaz en español,
-pixel art basado en los conceptos del usuario, sprites y funcionamiento sin conexión.
+arte sketchbook de grafito y lápices de colores, animaciones y funcionamiento sin conexión.
 
 **Documentación:** [índice y estado actual](docs/README.md) ·
 [historial de desarrollo](docs/HISTORIAL.md) ·
@@ -48,7 +48,7 @@ conservan. No se publica en Google Play.
 8. Elegí una carta después de ganar o rechazala por 12 almas. En los descansos podés
    curar el 30 % de vida o mejorar una carta, eligiendo entre Potencia y Eficiencia
    con una vista previa. Cada instancia admite una mejora.
-9. Derrotá al jefe, resolvé la recompensa y tocá **Bajar por la escalera**.
+9. Derrotá al jefe y elegí su reliquia exclusiva: se muestra directamente el mapa del siguiente piso.
    Las aventuras nuevas recorren cripta, bosque y fortaleza volcánica;
    los guardados anteriores conservan su límite de pisos.
 
@@ -67,10 +67,10 @@ la mano, los enemigos, las intenciones y las recompensas pendientes.
 
 | Sistema | Contenido actual de nuevas aventuras |
 | --- | --- |
-| Clases | Guerrero, guardiana, pícaro, maga, clériga, explorador |
-| Cartas | 132, 22 por héroe; 78 comprables y 10 instancias iniciales por héroe |
+| Protagonistas | Nicolás/Carpintero, Inés/Constructora, Mauro/Boticario y Vera/Profesora |
+| Cartas | 88, 22 por héroe; 52 comprables y 10 instancias iniciales por héroe |
 | Mapa | 28 salas, cinco bifurcaciones de tres opciones; 18 salas por ruta y dos élites posibles |
-| Enemigos | 45 definiciones activas entre tres pisos, con élites y guardianes |
+| Enemigos | 57 definiciones activas entre tres pisos, con élites y guardianes |
 | Eventos | 28 definiciones, con pactos, historias de parejas y decisiones de mazo |
 | Reliquias de aventura | 24 generales y 9 exclusivas de guardianes |
 | Equipamiento | 8 opciones; una sola reliquia por pareja |
@@ -162,7 +162,7 @@ Se puede borrar esa carpeta. Ver [limpieza y mantenimiento](docs/LIMPIEZA.md).
 
 ### Cinemáticas y pulido integral · 08/10/2026
 
-Inicio, seis historias de héroes y tres finales de guardianes con galería, pausa
+Inicio, cuatro historias de héroes y tres finales de guardianes con galería, pausa
 y salto; seis enemigos adicionales, atmósferas/impactos locales y mezcla de audio
 mejorada. [Assets, compatibilidad, análisis y pruebas](docs/cinematics/README.md).
 Sin exportación; la publicación Web sigue siendo manual.

@@ -1,3 +1,8 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../../cleanup/2026-10-14.md).
+
 # Cartas de apoyo y debilitamiento — 22/09/2026
 
 24 cartas nuevas, cuatro por héroe: catálogo total de **114**, con **60 comprables**

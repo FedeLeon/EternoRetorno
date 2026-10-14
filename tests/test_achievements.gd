@@ -11,7 +11,7 @@ func check(ok: bool, message: String) -> void:
 		printerr(message)
 func _initialize() -> void:
 	var catalog = Achievements.catalog()
-	check(catalog.size() == 30, "thirty achievements")
+	check(catalog.size() == 28, "twenty-eight achievements")
 	check(catalog.filter(func(a): return a.secret).size() == 5, "five secrets")
 	var ids: Array = []
 	for entry in catalog:
@@ -52,10 +52,10 @@ func _initialize() -> void:
 	var full = {"attempts": 10, "victories": 10, "market_cards": range(10), "specializations": {"victorious": Achievements.HEROES.duplicate()}, "forge_upgrades": {"warrior": {"weapon": 3, "armor": 3}}, "buildings": {"market": true, "forge": true, "church": true, "expeditions": true}, "history": [{"won": true, "party": ["warrior", "guardian"]}, {"won": true, "party": ["mage", "rogue"]}]}
 	var completed = {"phase": "victory", "heroes": [{"hp": 5}], "expedition_stats": {"battles": 50, "elites": 10, "bosses": 1, "treasures": 10, "upgrades": 10}, "contract_result": {"complete": true}}
 	Achievements.sync(full, completed)
-	check(full.achievements.unlocked.size() == 30, "all thirty achievements reachable")
+	check(full.achievements.unlocked.size() == 28, "all twenty-eight achievements reachable")
 	full.history.clear()
 	Achievements.sync(full, completed)
-	check(full.achievements.unlocked.size() == 30, "achievements survive history truncation")
+	check(full.achievements.unlocked.size() == 28, "achievements survive history truncation")
 	for profile in [g.profile, full]:
 		for entry in Achievements.entries(profile):
 			check(not entry.has("metric"), "UI never receives rule key")

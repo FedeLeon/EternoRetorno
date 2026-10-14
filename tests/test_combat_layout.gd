@@ -27,7 +27,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-layout.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 12)
+	app.game.new_run(["warrior", "guardian"], 12)
 	app.game.enter_node(0)
 	app.continue_run()
 	await process_frame

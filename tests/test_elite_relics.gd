@@ -10,7 +10,7 @@ func check(ok: bool, label: String) -> void:
 		printerr("FAIL: ", label)
 func battle(hero: String = "warrior") -> RefCounted:
 	var g = Game.new("user://unused-relic-test.save", false)
-	g.new_run([hero, "cleric" if hero != "cleric" else "warrior"], 42)
+	g.new_run([hero, "guardian" if hero != "guardian" else "warrior"], 42)
 	g.enter_node(0)
 	g.run.combat.enemies[0].hp = 1000
 	g.run.combat.enemies[0].max_hp = 1000
@@ -91,7 +91,7 @@ func _initialize() -> void:
 	check(Relics.grant(g.run, g.content.relics, "giant_heart"), "grant heart")
 	check(g.run.heroes[0].max_hp == before_max + 6 and g.run.heroes[0].hp == 16, "max HP and heal")
 	check(not Relics.grant(g.run, g.content.relics, "giant_heart") and g.run.heroes[0].max_hp == before_max + 6, "grant idempotent")
-	g.new_run(["warrior","cleric"], 4)
+	g.new_run(["warrior","guardian"], 4)
 	check(g.run.relics.is_empty() and g.run.heroes[0].max_hp == before_max, "run relics reset on new adventure")
 	g.profile.unlocked_relics = ["hourglass"]
 	var seen: Array = []
@@ -121,7 +121,7 @@ func _initialize() -> void:
 		saved = loaded
 	check(saved.run.relics.size() == 2, "two elites give distinct relics")
 	# A reward saved by an older version has no receipt; it remains usable.
-	saved.new_run(["warrior", "cleric"], 12)
+	saved.new_run(["warrior", "guardian"], 12)
 	saved.enter_node(0)
 	saved._make_reward()
 	saved.run.erase("reward_relic")

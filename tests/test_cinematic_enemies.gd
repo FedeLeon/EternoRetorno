@@ -16,7 +16,7 @@ func run_tests() -> void:
 	app.game=Game.new("user://cinematic-enemies-test.json",false)
 	app.game.profile.settings = {"tutorial_seen":true}
 	root.add_child(app)
-	app.game.new_run(["mage","ranger"],123,{},1)
+	app.game.new_run(["mage","rogue"],123,{},1)
 	app.game.enter_node(0)
 	var additions: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/cinematic_enemies.json"))
 	for id in additions:

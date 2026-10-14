@@ -1,0 +1,20 @@
+{
+  "id": "static_rogue_defense",
+  "hero": "rogue",
+  "action": "defense",
+  "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Mauro the Apothecary: adult ordinary man with messy dark hair and light stubble, entire HUMAN FACE fully exposed including nose and mouth, NO MASK OR BEAK, hood pushed back, charcoal coat, violet sash, small medicine vials and two plain short knives. Action: Defensive crossed-knife parry facing RIGHT, lean back slightly but face visible, ENTIRE FACE CLEARLY VISIBLE. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+  "source": "docs/comic/static/sources/rogue_defense.png",
+  "target": "assets/comic/static/rogue_defense.png",
+  "references": [
+    "assets/heroes/identity/portraits/rogue.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3d792fe8-6ced-4718-a4a3-8dc56964fdf4.png",
+  "tool": "image_gen.imagegen",
+  "status": "integrated",
+  "sha256": "fc0b9cd3ec7731f4aa306066fb867f0b61e403edec186284f002b4288530acce",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "clear_fraction": 0.5153
+}

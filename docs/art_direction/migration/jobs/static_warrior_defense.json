@@ -1,0 +1,14 @@
+{
+  "id": "static_warrior_defense",
+  "hero": "warrior",
+  "action": "defense",
+  "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Nicolas the Carpenter: weathered 42-year-old ordinary man, short brown beard, open simple angular gray iron helmet VISOR UP showing face, patched charcoal-gray armor and muted violet cloak. Only one plain straight steel sword, NO SHIELD, NO HORNS. Action: A braced defensive sword parry toward the RIGHT, sword angled in front of torso, two hands on hilt, NO SHIELD. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+  "source": "docs/comic/static/sources/warrior_defense.png",
+  "target": "assets/comic/static/warrior_defense.png",
+  "references": [
+    "assets/heroes/identity/portraits/warrior.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9834dabd-989d-4cbe-82c8-89ab1867fdec.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

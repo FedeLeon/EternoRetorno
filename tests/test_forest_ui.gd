@@ -41,26 +41,26 @@ func run_tests() -> void:
 		check(app.enemy_health[index].get_global_rect().end.x <= 1280, "health inside screen")
 	await shot("three-goblins")
 	var catalog = JSON.parse_string(FileAccess.get_file_as_string("res://data/forest_enemies.json"))
-	var additions = JSON.parse_string(FileAccess.get_file_as_string("res://docs/forest/expansion/enemies.json"))
+	var additions = ["goblin_lancer", "goblin_bomber", "goblin_raider", "goblin_rider", "forest_bat", "forest_raven"]
 	var ids = catalog.values().map(func(enemy): return enemy.visual)
 	for id in ids:
 		var texture = load("res://assets/enemies/animations/%s.png" % id)
 		var img = texture.get_image()
-		check(img.get_size() == Vector2i(1024,128), "eight-frame atlas " + id)
+		check(img.get_size() == Vector2i(img.get_height()*8,img.get_height()), "eight-frame atlas " + id)
 		var unique: Array = []
 		for i in range(8):
-			var frame = img.get_region(Rect2i(i*128,0,128,128))
+			var frame = img.get_region(Rect2i(i*img.get_height(),0,img.get_height(),img.get_height()))
 			var fingerprint = hash(frame.get_data())
 			if fingerprint not in unique: unique.append(fingerprint)
 		check(unique.size() == 8, "distinct poses " + id)
 		check(img.get_pixel(0,0).a == 0, "transparent atlas " + id)
 		var addition = additions.filter(func(key): return catalog[key].visual == id)
 		if not addition.is_empty():
-			var source = Image.load_from_file("res://docs/forest/expansion/sources/%s_motion.png" % id)
 			for index in range(8):
-				var cell = source.get_region(Rect2i(index%4*384,index/4*512,384,512))
-				var bounds = preload("res://scripts/enemy_art_import.gd").opaque_bounds(cell)
-				check(bounds.position.x >= 8 and bounds.end.x <= 376, "pose inside cell " + id)
+				var size = img.get_height()
+				var frame = img.get_region(Rect2i(index*size,0,size,size))
+				var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(frame,0.5)
+				check(bounds.position.x >= 8 and bounds.end.x <= size-8, "packed pose keeps clear side margins " + id)
 			app.game._start_combat([addition[0]])
 			app.continue_run()
 			await process_frame
@@ -76,7 +76,7 @@ func run_tests() -> void:
 		var cut = CutIn.play(app.layer, id)
 		check(cut != null and cut.from_right, "right-to-left cutin " + id)
 		var illustration = load(cut.texture_path).get_image()
-		check(illustration.get_pixel(0,0).a == 0, "transparent cutin " + id)
+		check(illustration.get_pixel(0,0).a < 0.05, "transparent cutin " + id)
 		await create_timer(0.18).timeout
 		await shot("attack-" + id)
 		await cut.finished

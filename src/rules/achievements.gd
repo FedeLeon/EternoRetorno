@@ -1,6 +1,6 @@
 extends RefCounted
 # Permanent, idempotent milestones. No UI, RNG, rewards or file access for saves.
-const HEROES = ["warrior", "guardian", "rogue", "mage", "cleric", "ranger"]
+const HEROES = ["warrior", "guardian", "rogue", "mage"]
 const METRICS = ["battles", "elites", "bosses", "treasures", "upgrades"]
 static var _catalog: Array = []
 
@@ -46,7 +46,8 @@ static func sync(profile: Dictionary, run: Dictionary) -> bool:
 	totals.all_heroes = 0
 	for hero in HEROES:
 		totals["hero_" + hero] = 1 if hero in winners else 0
-		totals.all_heroes += totals["hero_" + hero]
+		if hero in preload("res://src/rules/hero_roster.gd").ACTIVE:
+			totals.all_heroes += totals["hero_" + hero]
 	for track in ["weapon", "armor"]:
 		for levels in profile.get("forge_upgrades", {}).values():
 			totals[track] = maxi(int(totals.get(track, 0)), int(levels.get(track, 0)))

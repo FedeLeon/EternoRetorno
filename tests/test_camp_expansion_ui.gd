@@ -75,9 +75,9 @@ func run_tests() -> void:
 	app.back()
 	app.layer.get_node("Plot3").pressed.emit()
 	await process_frame
-	check(app.screen == "church" and app.layer.find_children("ChurchHero_*", "Button", true, false).size() == 6, "six church portraits")
+	check(app.screen == "church" and app.layer.find_children("ChurchHero_*", "Button", true, false).size() == 4, "four active church portraits")
 	await capture("church")
-	for hero in app.game.content.heroes:
+	for hero in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		app.layer.get_node("ChurchHero_" + hero).pressed.emit()
 		await process_frame
 		var choices = app.layer.find_children("LearnSpecialization", "Button", true, false)
@@ -94,7 +94,7 @@ func run_tests() -> void:
 		check(app.screen == "church" and app.church_hero == "", "back to gallery")
 	app.back()
 	check(app.screen == "base_camp", "back to camp")
-	app.game.new_run(["warrior","cleric"], 3)
+	app.game.new_run(["warrior","guardian"], 3)
 	app.layer.get_node("Plot1").pressed.emit()
 	for button in app.layer.find_children("AcceptContract", "Button", true, false): check(button.disabled, "contracts locked during run")
 	await create_timer(0.3).timeout

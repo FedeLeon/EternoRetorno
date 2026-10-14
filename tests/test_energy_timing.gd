@@ -10,7 +10,7 @@ func run_tests():
 	var app = load("res://main.tscn").instantiate()
 	app.game = preload("res://src/game.gd").new("user://unused-energy-timing.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 31)
+	app.game.new_run(["warrior", "guardian"], 31)
 	app.game.enter_node(0)
 	app.game._start_combat(["goblin_warrior"])
 	app.game.run.combat.hand = [{"id":"warrior_slash", "upgraded":false}]

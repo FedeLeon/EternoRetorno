@@ -1,25 +1,23 @@
+> **Sustitución del 14/10/2026:** el catálogo activo se rediseña con
+> [88 ilustraciones minimalistas individuales](../minimal/README.md).
+> Esta página conserva la integración y procedencia de las tandas anteriores;
+> el atlas básico y las ilustraciones detalladas anteriores dejan de ser el arte
+> activo al publicar el manifiesto nuevo. Los IDs y el componente compartido continúan.
+
 # Ilustraciones minimalistas de cartas
 
 ## Fuentes y estilo
 
-La plantilla del usuario `conceptoCartasImagen.png` se conserva sin editar en
-`assets/cards/art/originals.png`. Tiene 5 columnas y 6 filas: guerrero,
-guardiana, pícaro, maga, clériga y explorador. Cada fila sigue el orden de las
-cinco cartas originales del catálogo. Los 30 recortes son AtlasTexture, sin
-copiar cada panel a un archivo independiente. Se excluyen los separadores negros.
+La plantilla del usuario conserva ahora únicamente las primeras cuatro filas
+en `assets/cards/art/originals.png`: Carpintero, Constructora, Boticario y
+Profesora. Tiene cinco columnas; sus 20 recortes AtlasTexture mantienen las
+coordenadas originales. Se retiraron las filas de los personajes eliminados.
 
-Las 60 cartas añadidas reciben ilustraciones individuales generadas con la
-herramienta integrada imagegen, usando esa plantilla como referencia de estilo.
-Siluetas simples, formas angulosas, fondo oscuro, un gesto luminoso y pocos
-colores. Guerrero violeta, guardiana dorado/verde azulado, pícaro verde tóxico,
-maga azul eléctrico, clériga dorado y explorador azul hielo. Los marcos existentes
-conservan su color por clase. No se incorporan textos dentro de las imágenes.
-
-Prompts completos por ID: [prompts.json](prompts.json). Procedencia de las 60
-imágenes: [sources.json](sources.json), con el nombre del original de imagegen.
-Las imágenes finales están en `assets/cards/art/<id>.png`, dentro del proyecto.
-[Galería navegable y filtrable por héroe](galeria.html), sin conexión ni librerías
-externas; abrir el HTML en un navegador local.
+Las 40 ilustraciones individuales del catálogo inicial ampliado conservan sus
+prompts y procedencia. Las ampliaciones posteriores se documentan en sus
+carpetas propias. La galería HTML muestra únicamente el elenco actual y ajusta
+su recorte CSS a la altura nueva de la plantilla. No se genera arte nuevo para
+este cambio. [Inventario y pruebas](../../cleanup/2026-10-13.md).
 
 ## Integración
 

@@ -16,7 +16,7 @@ func run_tests() -> void:
 	root.add_child(app)
 	await process_frame
 	for floor_number in [1,2,3]:
-		app.game.new_run(["warrior","cleric"],42,{},floor_number)
+		app.game.new_run(["warrior","guardian"],42,{},floor_number)
 		app.game.profile.settings = {"auto_cinematics":false}
 		Room.enter(app.game,"boss")
 		Room.break_objective(app.game)

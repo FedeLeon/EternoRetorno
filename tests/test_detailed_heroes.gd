@@ -9,7 +9,7 @@ func run_tests():
 	root.size=Vector2i(1280,720)
 	var scene=Control.new();root.add_child(scene)
 	var background=ColorRect.new();background.color=Color("15171f");background.size=Vector2(1280,720);scene.add_child(background)
-	var heroes=["warrior","guardian","rogue","mage","cleric","ranger"]
+	var heroes=["warrior","guardian","rogue","mage"]
 	var actors: Array=[]
 	for i in range(heroes.size()):
 		var actor=Actor.new();actor.hero_id=heroes[i];actor.size=Vector2(180,150)

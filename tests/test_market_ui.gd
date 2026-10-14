@@ -28,7 +28,7 @@ func run_tests() -> void:
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("market/gallery.png"))
-	for hero in app.game.content.heroes:
+	for hero in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		app.layer.get_node("Category_" + hero).pressed.emit()
 		await process_frame
 		check(app.market_hero == hero, "category " + hero)

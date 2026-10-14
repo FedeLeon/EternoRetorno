@@ -27,7 +27,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-map-test.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior", "cleric"], 42, {"team": "vital_amulet"})
+	app.game.new_run(["warrior", "guardian"], 42, {"team": "vital_amulet"})
 	app.game.run.relics.append("ember")
 	app.continue_run()
 	await process_frame

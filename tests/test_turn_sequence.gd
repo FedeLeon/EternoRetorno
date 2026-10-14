@@ -20,7 +20,7 @@ func run_tests() -> void:
 	app = load("res://main.tscn").instantiate()
 	app.game = Game.new("user://unused-turn-sequence.save", false)
 	root.add_child(app)
-	app.game.new_run(["warrior","cleric"], 31)
+	app.game.new_run(["warrior","guardian"], 31)
 	app.game.enter_node(0)
 	app.game._start_combat(["goblin_warrior","goblin_archer"])
 	app.game.run.combat.enemies[0].intent = {"damage":6,"block":7,"target":0}
@@ -60,7 +60,7 @@ func run_tests() -> void:
 	check(not second_attacked and app.game.run.combat.enemies[1].block == 5, "block-only enemy gains shield without attacking")
 	# Enemies killed by poison, and enemies after a lethal action, must not gain block visually.
 	var game = Game.new("user://unused-turn-receipts.save",false)
-	game.new_run(["warrior","cleric"],31)
+	game.new_run(["warrior","guardian"],31)
 	game.enter_node(0)
 	game._start_combat(["goblin_warrior","goblin_archer"])
 	game.run.combat.enemies[0].hp = 1
@@ -72,7 +72,7 @@ func run_tests() -> void:
 	game.run.combat.enemies[0].intent = {"damage":999,"all":true,"block":3,"target":0}
 	game.end_turn()
 	check(game.resolved_enemy_blocks == {0:3}, "defeat does not present unexecuted shields")
-	game.new_run(["warrior","cleric"],31)
+	game.new_run(["warrior","guardian"],31)
 	game.enter_node(0)
 	game._start_combat(["goblin_warrior"])
 	for hero in game.run.heroes: hero.block = 20

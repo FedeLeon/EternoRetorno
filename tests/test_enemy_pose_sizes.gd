@@ -26,12 +26,13 @@ func verify():
    check(factor>=1 and factor<=1.3,"conservative correction never shrinks artwork")
    check(actor.sprite.scale.is_equal_approx(Vector2.ONE*base*factor) and actor.scale==parent_scale,"only inner pose scale is corrected")
    var bottom=float(metrics[id].bottom[frame])
-   var foot=(bottom-64+actor.sprite.offset.y)*actor.sprite.scale.y
-   check(absf(foot-(bottom-128)*base)<0.001,"opaque ground baseline preserved")
+   var cell=actor.frame_size
+   var foot=(bottom-cell/2+actor.sprite.offset.y)*actor.sprite.scale.y
+   check(absf(foot-(bottom-cell)*base)<0.001,"opaque ground baseline preserved")
   actor.acting=false;actor._size_pose()
   check(actor.sprite.scale.is_equal_approx(Vector2.ONE*base*float(metrics[id].scale[7])),"frame correction survives leaving action state")
   actor.sprite.frame=0;actor._size_pose()
-  check(actor.sprite.scale==Vector2.ONE*base and actor.sprite.offset.y==-64,"idle restores normal scale and offset")
+  check(actor.sprite.scale==Vector2.ONE*base and actor.sprite.offset.y==-actor.frame_size/2,"idle restores normal scale and offset")
   actor.queue_free();index+=1
  await process_frame
  for i in range(shown.size()):

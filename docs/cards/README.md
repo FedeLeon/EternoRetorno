@@ -1,3 +1,21 @@
+# Cartas de los cuatro protagonistas — estado actual
+
+88 cartas activas, 22 por héroe. Nicolás/Carpintero, Inés/Constructora,
+Mauro/Boticario y Vera/Profesora. La mano, el mercado, el mazo, las mejoras y
+las recompensas comparten la misma fábrica de cartas.
+
+## Ilustración minimalista — 14/10/2026
+
+Se rediseñan las ilustraciones para representar el efecto con pocos objetos,
+siluetas legibles y trazos a lápiz: sin necesidad de mostrar al héroe ni escenas
+con mucho detalle. [Dirección visual, fuentes y validación](minimal/README.md).
+Los marcos y los datos jugables se mantienen.
+
+## Documentación histórica
+
+Las secciones siguientes conservan las decisiones y cifras de entregas anteriores;
+no describen el elenco ni la cantidad actuales.
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

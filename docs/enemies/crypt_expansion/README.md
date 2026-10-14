@@ -1,3 +1,8 @@
+> **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
+> de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
+> como historial; las fuentes y herramientas del arte vigente permanecen intactas.
+> [Inventario y validación actuales](../../cleanup/2026-10-14.md).
+
 # Nueva variedad de enemigos de la cripta — 22/09/2026
 
 Se activan seis diseños existentes: cuatro esqueletos y dos elementales. La

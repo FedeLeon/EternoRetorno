@@ -33,7 +33,7 @@ func run_tests() -> void:
 	var before = app.game.profile.duplicate(true)
 	check(screen.get_node("CollectionHome").icon != null, "Home has back arrow asset")
 	check(screen.find_children("*", "Button", true, false).all(func(b): return b.text != "Menú"), "no menu button in collection")
-	check(screen.find_children("Achievement_*", "Button", true, false).size() == 30, "all thirty achievements present")
+	check(screen.find_children("Achievement_*", "Button", true, false).size() == 28, "active achievements present; unearned legacy hero milestones hidden")
 	for entry in app.game.Achievements.catalog():
 		var icon = load("res://assets/collection/icons/%s.png" % entry.id)
 		check(icon is Texture2D and icon.get_width() > 0, "achievement icon loaded: " + entry.id)
@@ -69,7 +69,7 @@ func run_tests() -> void:
 	screen.find_child("Achievement_warrior_victory", true, false).pressed.emit()
 	await shot("unlocked")
 	await click(screen.get_node("HistoryTab"))
-	check(screen.find_children("*", "Label", true, false).any(func(l): return l.text == "Guerrero + Guardiana"), "historic hero names retained")
+	check(screen.find_children("*", "Label", true, false).any(func(l): return l.text == "Carpintero + Constructora"), "history uses current profession titles")
 	await shot("history")
 	app.queue_free();await process_frame;await create_timer(0.15).timeout
 	print("COLLECTION UI: %d checks / %d failures" % [checks, failures])

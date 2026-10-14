@@ -19,7 +19,7 @@ func click(node: Control) -> void:
 		root.push_input(event)
 	await process_frame
 func prepare(id: String, floor_index: int = 1) -> void:
-	app.game.new_run(["warrior", "cleric"], 42, {}, floor_index)
+	app.game.new_run(["warrior", "guardian"], 42, {}, floor_index)
 	for node in app.game.run.nodes:
 		if node.kind == "event":
 			app.game.run.current = node.id

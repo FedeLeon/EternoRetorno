@@ -1,0 +1,27 @@
+{
+  "id": "map__minimal__parchment",
+  "target": "assets/map/minimal/parchment.png",
+  "family": "map/minimal",
+  "kind": "map",
+  "hero": null,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/migration/sources/map/map__minimal__parchment.png",
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Asset assets/map/minimal/parchment.png. A clean usable sheet of cool-gray sketchbook paper, irregular rubbed graphite/violet margins and lightly worn edges. If large parchment: landscape 16:9, calm gray interior for routes/icons, subtle paper grain, no maps or paths or nodes baked in, no sepia yellow ornate medieval scroll. If room_papyrus: ONE small square scrap of dark gray-violet paper with torn irregular pencil edge and calm darker interior for a room icon, true transparent outside scrap. Preserve intended usable central space.",
+  "references": [
+    "assets/map/minimal/parchment.png",
+    "docs/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-8bbb7e7a-fb89-4c99-9be6-9f4eac2d7275.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": {
+    "reason": "Removed baked checkerboard outside paper",
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d6d022c5-0e2d-44a6-9151-443ba16dd4b4.png",
+    "transparent": true,
+    "prompt": "Preserve gray graphite violet paper; remove baked checkerboard and use real alpha transparency outside edges."
+  }
+}

@@ -1,0 +1,786 @@
+{
+	"assets/forge/heroes/guardian_w0_a0.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "12af0a8cbf1ae43028d6d22ef1e1c9e9a39d91f3bbaf288b46fd63df7948888c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w0_a1.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "8865aaa5219a75740f09f2cd2f5bd74f83eb20dfc96d88cf74319b104726c02c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w0_a2.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "cca9944da50390f534b80496b04714e25fdb58969f92b87339ab118a01256f14",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w0_a3.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ce36cd4eb5a2e7882edc356205ef1a55af3935c6e097a5e6866c69a8b1373a66",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w1_a0.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c7281cbfc40e48a09aadb171f63fbc0bce8d2bfeb47b6d2f66d8238701c30425",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w1_a1.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "0ed8dd5d5489d359a1a20b59723a961f7633a5eee25670ff64fea4bb5d2495d6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w1_a2.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "7ad93f52c49152cb7d3f2273e5f0be5fa1bfffd6386293a42eeeeddd439a4ac5",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w1_a3.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "6f234edf4fdf449de07ebda77e8ce0432c4d90bdc033d7975fe8cca3cdf4fe11",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w2_a0.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c57a45c408d0b88b617085d14a66bef013dd079b01cd297bf9f9493617a446d3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w2_a1.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f59445f01545b8255e8f99f7528421ddec8de918a10162061ba11d2f850c92b3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w2_a2.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "18eb82d3198540fe04071efc1f5ee6d4c577861e83902117c341446ac119d4d3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w2_a3.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "147a49edf31823b5fea14ce7a23f9f5abfb5173940816c967b465640a1fe04c7",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w3_a0.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "e5e3638068e510b3bd0d0db0346b31332aa3928b6f4e5afc371717dfc5ecc26f",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w3_a1.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f8bead107bbba24b385beb2186fa3682f067ca08c88bc9dd5a316147f757c866",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w3_a2.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "543441b2c40848bdaad929210e8e820f5ffa2c15f0e3b349d1101ac1412499e7",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/guardian_w3_a3.png": {
+		"action": "equipment derivative",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c6acb97f8941e321ea44c4b914c5fe4680c21c7bcda42e8cc2b5f8d57ce310b3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w0_a0.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "4d5c63b65ed0766304fe7e51125f3a57c36aab4a391873a46e284eb0856f5405",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w0_a1.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "9352200ded4bcc2acf3bfb74d3792d7c8de4f54175721dbda5c36040979457d7",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w0_a2.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "4a4a40c0ca137a8dff2e56066a84e878f2d2172fcc6d4af91953cc843b5dbc81",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w0_a3.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ae5d78ec0c263031bac4681d8885d737a134792fac132538dd05828ddc8b7d23",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w1_a0.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "875b6cc8b1e6951c0cfc85462141636e22f673593fed833999b075bb9593b4de",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w1_a1.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "87a0775f9c93ddcc8e353a5fff5d4c8de304f305f2792a6861c37c3d584fad26",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w1_a2.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "cbdf05668b4ec0d84680d383122194420007890d0bfe0fa7a8eb7fb86c1c3f02",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w1_a3.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3e167df153f56b203bdcb597f64d5274795b48dccaae699369dc712e7eb553b6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w2_a0.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "dd5c9d62567f39b442db6f0cbf6a5c9df27d55c456b72bf9a2028ade682f1b96",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w2_a1.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "47ca92c4d731580ff626fa9a54fae3d726b87c22ed0d965262e7e5bd02483af0",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w2_a2.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "859dfa66d0135c214639167edf8d451f6f6287101a4fce89a4a871a70bb8c25a",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w2_a3.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ae5b43cbff854ed975b5624ac70e52f2a25e755e278040853d549f57b2103c71",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w3_a0.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "153522d7a2c4723aac63ba1ec79ebc6754c51d530e6010ec69aba2fd488937b3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w3_a1.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "8da6bcf44fd747f61ef5087e86d267f8145c2dd16f3277dc7b180e5403d0503c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w3_a2.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a97b5dab60c32472c1f236172db2cd00ee69cc77eef6172b9e989fc0b30c5533",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/mage_w3_a3.png": {
+		"action": "equipment derivative",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "522f5b50a34e4672620e4b1fd731f555e5f910cefcfaec23592b9939c48bda8e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w0_a0.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a7babf67934d595a87ae8192d30c0077fdee8efa61548535e2b2f3a621fbe5a6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w0_a1.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f12d59280330478914013863288afa67cc1e66f022d486b149fd4d70f7fc20d3",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w0_a2.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "9f4d12beb315fe7eec3e683dc387f961af03e7fcfe89482d455804c8fecbd89f",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w0_a3.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3dada8d1859b2f6916ab87bf10037b937b80481fb64c17570327c17e82a5d961",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w1_a0.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "35a1d60d9b0fec15558ced8aa7b238b6f6897f25355be6d8efabe6eb9918523b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w1_a1.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "5637c5cb0c5c36ae4874476326917eb8859a5b689e9ff61bb2862ac427c9fa02",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w1_a2.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "6ce2a46b94ed22aff566383c43d6f241c4e7bcc766585d600e30d57e3d90a02a",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w1_a3.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "984214e3602f002431900079d7503950b239088bb1a9f016248bbe9ff7b0ce10",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w2_a0.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "40367b7d5b5617cd0efaa5c5e586aea228faa3f5847233020d86e8a1620076f9",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w2_a1.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "01e835cd09225a01031bfb282ba184f5a37e1530fa5a7c31d2058770a89ab93d",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w2_a2.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "e967664f9598fc36d635c14541c1dcdc2b22c60c7e1768a519be6ff837e5e614",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w2_a3.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "45d9c10a301cfcae7cc4d9288546c560b66b99ca4ac0e60ed9c505b387c5bf2d",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w3_a0.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a0f63b208d005d2b585f9df6e21f4521051a5cf92e4716b9916c3cbd5ebe7c27",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w3_a1.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "bd89b6689d3d3088aa5068a3cb205140b01e9f97c7bab45ecdd6b0df33796821",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w3_a2.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "5e9596ced996a370a3dc3b83682dd76b5c4688a3a211eb4fe7f7599f94563cd1",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/rogue_w3_a3.png": {
+		"action": "equipment derivative",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "1b210abf8c8e5f7933d56f08c509af3e2d3afbfea143e70c1345bf028bc88905",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w0_a0.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3df7b70d47e1abf0092d7b9b89739672552361df9e78f9ac7e9dd03410b5a9fe",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w0_a1.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "5ae2172f5f341b72dfa12ef2e6edeff7cc17e4dcf885490f8b686eedc5d28cab",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w0_a2.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "17c7e54d2006dc16d58e477f574398fe4f4a9c869f7816ad44c992c3b3945ecf",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w0_a3.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "bf21e2f24ba076cbb0cfe774670708fd35ab1462708b838bf6132247b60659c2",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w1_a0.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "17b010c9417ff06de1a291393b63100788e3a1025e969753e3c255c6a4446781",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w1_a1.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "b32e5447e58f92480f0dcc56b45d4bef5268c9af591dd46ef5b4b290d26dab2b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w1_a2.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "dd16ce0e2bf6b35650cc582eaabf7942aaa2d540f1d9d69245548828ffb601c6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w1_a3.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "b4fad39debcf8291e5934206071ede06ec6354537f9a61c371dd401a0b8c10cd",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w2_a0.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c97c1a4fe66a56b59a8f4ee540ff16ee09a6c3cc3df5f3cdfca73efd151b3bd2",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w2_a1.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f075f0e383c28eba7cba819750e06b815c60103cccb43da9d17662e9ca3b9c27",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w2_a2.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ec2cfb608b7981c1bd5376f1b0c1d472727c7be464a0b5d243e9a8c1c650fa42",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w2_a3.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "d2da7bbca5e6ede30d3d5ab8a8d300c02765a33d9ef2700f093da1f63c9660f9",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w3_a0.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "452349b9490d01e083867a924874e6bcdf46dfc1bffea1e9fb36857377ba7b47",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w3_a1.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3e3df4dfed1c809321cd1f6be734c2c7a80d7aa92fb3d1c88ab5b79a96ac7e51",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w3_a2.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "dc6b8b4255328edb4e740f7dd63b156bd51d06f0b9fcd1016cf32ec8d0440f12",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/forge/heroes/warrior_w3_a3.png": {
+		"action": "equipment derivative",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "8652b666d33054f17389d1e9051e8d1e827c4b44c7a8cc30443872eb7dd11d7c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/guardian/guardian-128.png": {
+		"action": "classic",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "12af0a8cbf1ae43028d6d22ef1e1c9e9a39d91f3bbaf288b46fd63df7948888c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/guardian_charged.png": {
+		"action": "charged",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "221c280d3924964252abe9ba0597ddc25ed9d0535fe18bf4513805d85d33a8e0",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/guardian_sweep.png": {
+		"action": "sweep",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "d1be71be91460429233c555a8fa1137bfc31e707ed1fb781e020881aa817feea",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/guardian_thrust.png": {
+		"action": "thrust",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "002684cfc95654d7ca4a55969769f1b90551bc124d5c2f99b19e8a328b47eb7e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/mage_charged.png": {
+		"action": "charged",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ac403c56f6fbcbc9f0024c7dd83f0950226352a2301edaad3b8557ded59f447e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/mage_sweep.png": {
+		"action": "sweep",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "6d5696b43fc0cb1709f4ecafa693921a5c64ceddc8d7685a83d1ccb4b90721c2",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/mage_thrust.png": {
+		"action": "thrust",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "bed02d1bcd0dafa51921cac1190deb002337afc23661ead4cd3d94549b6f261e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/rogue_charged.png": {
+		"action": "charged",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "26ee4946658cb0e0eb948e5636cc25ad734e9e1494af216871d15ac973acfbcd",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/rogue_sweep.png": {
+		"action": "sweep",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "adf2f334b01391f562de46caddd63e034e9e34580f331e34393b9b66ece4ffa2",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/rogue_thrust.png": {
+		"action": "thrust",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "089adef4debb6504e8a6558b5a7b40bd9b1060c304a790720d6cddc79f3efdc5",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/warrior_charged.png": {
+		"action": "charged",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "129fc09fcac89c22e6892023eef06062c0d61b040bf0b1639f5f5f7b4ac7c4f6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/warrior_sweep.png": {
+		"action": "sweep",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c0c25939e0c7c41e89bbf7a015348c79a3e7d7c033288192075742f3a8ac5c3c",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/actions/warrior_thrust.png": {
+		"action": "thrust",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "339ff643ff5cf1dd24d628b2cb4a030bf1a23216572bb7c47dba246f76702d90",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_attack.png": {
+		"action": "attack",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "97893d0aa2b86adcdd548a3f7b080499b6ae018252525160a8942218bf38e3d4",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_death.png": {
+		"action": "death",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "ebd441f09644d3312d67a29216b61df7fab76e4458deb2caf4ae2bc81214db2e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_guard.png": {
+		"action": "guard",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "92e58aab38ad5687a90e163e5765c7964c3d6bbef65d632320b4c65addf29f23",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_hurt.png": {
+		"action": "hurt",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "887b142080194cfa7d3414c0c2e7b7e0a8374116c02701d2b37b12ddb6f1949d",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_idle.png": {
+		"action": "idle",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "53e7eb570a6e7cdbe0670465535cfc9059acd042d5185ffb00e07587b2f62b44",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_run.png": {
+		"action": "run",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "5bef8c840eb8ad32eff8011a9230783cba80b0f7388af936f1ba30e5c81dff01",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/guardian_skill.png": {
+		"action": "skill",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a9e154177d0b82f84ef9fe351ec13455ac621df77e3e07e06b3225bf5950bae2",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_attack.png": {
+		"action": "attack",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "2ee2ed6103af30e2dde95566feb558b48dbe7c8ea3d7e9c3d7893ab308fbc70a",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_death.png": {
+		"action": "death",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "b90726facfcb87ce107ea5e344560767e3a044124274f7608cc27e326004e29b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_guard.png": {
+		"action": "guard",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "d04ca1e4f00c502994c3dfd73638e14b3711f3fadb15e48a7d83be60aacca766",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_hurt.png": {
+		"action": "hurt",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "0d503aece3636d7ef68411e3563456a04cac63f33ffa068456daf3da75712968",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_idle.png": {
+		"action": "idle",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3b78d9d4eb0a5ae0590cbc3734e55e0fa49b07846aeb3f670ce2317b5f79751a",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_run.png": {
+		"action": "run",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "6d72c4d851ec3e365946b388de839ca3b0729d031c423f5bb3b3768e9cb27383",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/mage_skill.png": {
+		"action": "skill",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "e491823e0898fbc7777c063bec6c6a6cf832c76c0ebe0e331a4fd6ca4256fdd8",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_attack.png": {
+		"action": "attack",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "bd1e64b8b0b302b63cbbbe7839fd61ffbac7f0b74d51584b600f4d1c299fd003",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_death.png": {
+		"action": "death",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "cfc71c3e72b74ccfc4d1bf5f0ef6497c07f70827d1ea492b4db3f2a079099d1f",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_guard.png": {
+		"action": "guard",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "92ba39f3a9978ff2b91f17105b4083ba7fb6b392c213a96bc483bf69d33daf7b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_hurt.png": {
+		"action": "hurt",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a07ac4c55d06adf69d3d468974134e1d2fa3a80fc403b0b84a4f00828381fc87",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_idle.png": {
+		"action": "idle",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "392f262641ace9f4959b0eafa37986c36a025905ca15aa2a2a25791028a59b59",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_run.png": {
+		"action": "run",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "5e3db1f30c6cfa07b8de2de8623ea2d820174e3306133946719f598ed480e9bc",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/rogue_skill.png": {
+		"action": "skill",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f465f398acc7281ad43fedabd79c0722113351c43c783f940457435ba1ee385a",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_attack.png": {
+		"action": "attack",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "097ced39685a0a73c4c39fabba05f90e03f3d7bdbeea5cb2ef2c97cabe6148cb",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_death.png": {
+		"action": "death",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "49eab25caaab326a8e7f1a4033c54da50975ea9ada4208e553f99530d7112276",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_guard.png": {
+		"action": "guard",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "889f8d417901ca92f9bacefe6e2115d287131a52c90aa87f19934fae5f7dde26",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_hurt.png": {
+		"action": "hurt",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "71e8c32700fef3d4270bf4a502623b08c03a715cd3ad43206a5a9214af87ebd6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_idle.png": {
+		"action": "idle",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "c88de8774b5780a31339ffa5711545e42b172a1b5beb93a3217783a41f29e60b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_run.png": {
+		"action": "run",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "d742386b4d3bd71f10350f87a693fae13a17e2e069e06eaa38162f1c9225258b",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/detail/warrior_skill.png": {
+		"action": "skill",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "f3fc9f386155deb8116f2c2ab3ea61c17a2370bc92b7099109fa945d748107af",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/running/guardian.png": {
+		"action": "run",
+		"hero": "guardian",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "2b9c0a8bc7806313a8cf5810a4eee7431f46931e7541afe14266426204a8bd76",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/running/mage.png": {
+		"action": "run",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "e7625afa660e5e0d4028c796453045644caa0feb5feff312737dff0db9f8aab7",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/running/rogue.png": {
+		"action": "run",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "80567509e9c02d9880eaadf6a3d9e35c6afedf0b3491ffce1af707d4a50f713e",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/heroes/running/warrior.png": {
+		"action": "run",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "b9e402ce3fa0ffe505e3be2f0e55059bfbd754220c7fa8747616ff02484dfb64",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/mage/mage-128.png": {
+		"action": "classic",
+		"hero": "mage",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "4d5c63b65ed0766304fe7e51125f3a57c36aab4a391873a46e284eb0856f5405",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/rogue/rogue-128.png": {
+		"action": "classic",
+		"hero": "rogue",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "a7babf67934d595a87ae8192d30c0077fdee8efa61548535e2b2f3a621fbe5a6",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	},
+	"assets/warrior/warrior-128.png": {
+		"action": "classic",
+		"hero": "warrior",
+		"processing": "common proportional scale, alpha crops, baseline 240/368; old-size derivatives",
+		"sha256": "3df7b70d47e1abf0092d7b9b89739672552361df9e78f9ac7e9dd03410b5a9fe",
+		"source_folder": "docs/art_direction/migration/sources/heroes"
+	}
+}

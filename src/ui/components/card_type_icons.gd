@@ -30,7 +30,7 @@ static func attach(card: Control, data: Dictionary, linked: bool = false) -> voi
 	pill.size = Vector2(width, 24)
 	var style = StyleBoxFlat.new()
 	style.bg_color = Color("242127")
-	style.border_color = Color("a58d64")
+	style.border_color = Color("92819d")
 	style.set_border_width_all(1)
 	style.set_corner_radius_all(8)
 	pill.add_theme_stylebox_override("panel", style)
