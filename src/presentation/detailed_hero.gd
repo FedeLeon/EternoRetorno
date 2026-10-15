@@ -4,6 +4,7 @@ var hero_id = "warrior"
 var gear: Dictionary = {}
 var sprite: AnimatedSprite2D
 var fallen = false
+var action_revision = 0
 static var cache: Dictionary = {}
 const ACTIONS = ["idle","attack","skill","guard","hurt","death","run"]
 func frames() -> SpriteFrames:
@@ -16,7 +17,7 @@ func frames() -> SpriteFrames:
 		if not ResourceLoader.exists(path): continue
 		result.add_animation(action)
 		result.set_animation_loop(action,action in ["idle","run"])
-		result.set_animation_speed(action,10 if action=="idle" else (13 if action=="run" else 18))
+		result.set_animation_speed(action,10 if action=="idle" else (10 if action=="run" else 18))
 		var sheet = load(path)
 		for index in range(12):
 			var i = 11-index if action=="revive" else index
@@ -55,21 +56,34 @@ func set_fallen(value: bool) -> void:
 	fallen=value
 	if sprite==null:return
 	if value:sprite.play("death");sprite.pause();sprite.frame=11
-	else:sprite.play("idle")
+	else:
+		sprite.play("idle")
+		sprite.pause()
+		sprite.frame = 0
 func play_once(animation: String) -> void:
 	var action="skill" if animation in ["heavy","bash","poison"] else animation
 	if not sprite.sprite_frames.has_animation(action):return
+	action_revision += 1
+	var revision = action_revision
 	_blend_pose()
 	sprite.play(action);sprite.frame=0
-	if action in ["idle","run"]:return
+	if action == "idle":
+		sprite.pause()
+		return
+	if action == "run":return
 	if action in ["attack","skill","guard","hurt","thrust","sweep","charged"]:
 		preload("res://src/presentation/actor_sparks.gd").play(self,action,hero_id)
-	await sprite.animation_finished
+	# An interrupted action must not reset a newer attack/run to idle.
+	while revision == action_revision and sprite.animation == action and sprite.is_playing():
+		await get_tree().process_frame
+	if revision != action_revision or sprite.animation != action: return
 	if action=="death":set_fallen(true)
 	else:
 		fallen=false
 		_blend_pose()
 		sprite.play("idle")
+		sprite.pause()
+		sprite.frame = 0
 
 func _blend_pose() -> void:
 	if not sprite.sprite_frames.has_animation(sprite.animation): return

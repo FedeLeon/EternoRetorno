@@ -25,7 +25,7 @@ func run_tests() -> void:
 	app.game.run.nodes = Dungeon.create(app.game.rng, 2)
 	app.continue_run()
 	await process_frame
-	check(app.layer.get_node("MapScreen").dungeon_name == "El Bosque de las Raíces", "forest title")
+	check(app.layer.get_node("MapScreen").dungeon_name == "Cinturón industrial", "forest title")
 	await shot("map")
 	app.game.run.current = 0
 	app.game._start_combat(["goblin_warrior","goblin_archer","goblin_shaman"])
@@ -52,7 +52,7 @@ func run_tests() -> void:
 			var frame = img.get_region(Rect2i(i*img.get_height(),0,img.get_height(),img.get_height()))
 			var fingerprint = hash(frame.get_data())
 			if fingerprint not in unique: unique.append(fingerprint)
-		check(unique.size() == 8, "distinct poses " + id)
+		check(unique.size() == 4, "four authored keyposes " + id)
 		check(img.get_pixel(0,0).a == 0, "transparent atlas " + id)
 		var addition = additions.filter(func(key): return catalog[key].visual == id)
 		if not addition.is_empty():
@@ -71,7 +71,7 @@ func run_tests() -> void:
 			await create_timer(0.17).timeout
 			check(actor.sprite.frame >= 4, "new enemy attack poses " + id)
 			await shot("motion-" + id)
-			await create_timer(0.3).timeout
+			await await_actions([actor])
 			check(not actor.acting and actor.sprite.frame < 4, "new enemy returns to idle " + id)
 		var cut = CutIn.play(app.layer, id)
 		check(cut != null and cut.from_right, "right-to-left cutin " + id)
@@ -88,7 +88,7 @@ func run_tests() -> void:
 	await create_timer(0.18).timeout
 	check(app.enemy_art.values().all(func(actor): return actor.sprite.frame >= 4), "attacks use drawn attack row")
 	await shot("beasts-motion")
-	await create_timer(0.3).timeout
+	await await_actions(app.enemy_art.values())
 	check(app.enemy_art.values().all(func(actor): return not actor.acting and actor.sprite.frame < 4), "return to idle row")
 	preload("res://tests/room_fixture.gd").enter(app.game, "rest")
 	app.continue_run()
@@ -102,3 +102,9 @@ func run_tests() -> void:
 	await shot("treasure")
 	print("FOREST UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)
+
+func await_actions(actors: Array) -> void:
+	# Observe completion rather than racing the 0.46s tween by 10ms on llvmpipe.
+	var deadline = Time.get_ticks_msec() + 2000
+	while actors.any(func(actor): return actor.acting) and Time.get_ticks_msec() < deadline:
+		await process_frame

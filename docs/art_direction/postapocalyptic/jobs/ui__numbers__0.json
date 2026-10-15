@@ -1,0 +1,24 @@
+{
+  "id": "ui__numbers__0",
+  "target": "assets/ui/numbers/0.png",
+  "kind": "numbers",
+  "hero": null,
+  "dimensions": [
+    32,
+    48
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/postapocalyptic/sources/ui__numbers__0.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE glyph bank, FIVE columns by TWO rows1536x1024. EXACT top row 0 1 2 3 4, bottom row5 6 7 8 9, one bold ivory comic numeral per cell, thin dark ink outline, same cap height/baseline, readable at32x48. TRUE transparency, no backdrop, no other symbols.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b56f7895-df5d-4b88-b283-8dec99a264bc.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "80c96498246bc626480c4e29e634d1d897788b10a77dd77e8ec34d7de15e6f38",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

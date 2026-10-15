@@ -1,7 +1,7 @@
 {
   "guardian_warrior": {
     "name": "Acero y juramento",
-    "text": "La Constructora cubre la grieta de la armadura del Carpintero. Él abre camino con su espada.",
+    "text": "La Constructora cubre la grieta de la protección del Carpintero. Él abre camino con su herramienta.",
     "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
     "background": "forest_hunter"
   },
@@ -13,7 +13,7 @@
   },
   "mage_warrior": {
     "name": "Acero encantado",
-    "text": "La Profesora graba una runa helada en la espada del Carpintero.",
+    "text": "La Profesora graba una circuito helada en la herramienta del Carpintero.",
     "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
     "background": "forest_hunter"
   },
@@ -30,7 +30,7 @@
     "background": "forest_hunter"
   },
   "mage_rogue": {
-    "name": "Veneno y escarcha",
+    "name": "Corrosión y escarcha",
     "text": "La Profesora enfría una hoja del Boticario para retrasar a su próximo rival.",
     "choice": "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
     "background": "forest_hunter"

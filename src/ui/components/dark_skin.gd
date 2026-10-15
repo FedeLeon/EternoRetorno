@@ -1,6 +1,6 @@
 extends RefCounted
-# Shared gothic chrome. Artwork and geometry only; never gameplay or persistence.
-const ACCENT = Color("b6adbf")
+# Shared industrial comic chrome. No gameplay or persistence.
+const ACCENT = Color("7cdad1")
 
 static func frame(compact: bool = false, tint: Color = Color.WHITE) -> StyleBoxTexture:
  return trim("button" if compact else "panel", tint)

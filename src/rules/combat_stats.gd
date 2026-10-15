@@ -15,7 +15,7 @@ static func damage(game: RefCounted, unit: Dictionary, amount: int, pierce: bool
 	if was_alive and unit.hp == 0 and game.relic_bonus(unit, "phoenix") > 0 and not unit.get("phoenix_used", false):
 		unit.hp = 1
 		unit.phoenix_used = true
-		game._log("El Ídolo del Fénix evita un golpe fatal.")
+		game._log("%s evita un golpe fatal." % game.content.equipment.get(unit.get("equipped_relic", ""), {}).get("name", "El relé de emergencia"))
 	if was_alive and unit.hp == 0 and unit.has("equipped_relic") and game.run.phase == "combat":
 		game.run.combat.hero_fell = true
 		preload("res://src/rules/adventure_extensions.gd").statistic(game.run, "fallen")

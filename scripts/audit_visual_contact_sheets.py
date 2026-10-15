@@ -26,7 +26,7 @@ def group(asset):
     if '/enemies/' in path: return 'enemies'
     if '/cards/' in path: return 'cards'
     if any(f'assets/{folder}/' in path for folder in ['heroes','warrior','guardian','rogue','mage','forge/heroes','comic/static']): return 'heroes'
-    if any(f'assets/{folder}/' in path for folder in ['battle_effects','relics','forge/icons','collection/icons','objects','ui']): return 'icons'
+    if any(f'assets/{folder}/' in path for folder in ['battle_effects','relics','forge/badges','collection/icons','objects','ui']): return 'icons'
     return 'screens'
 
 def generate():

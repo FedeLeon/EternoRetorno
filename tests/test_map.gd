@@ -33,7 +33,7 @@ func run_tests() -> void:
 	await process_frame
 	await process_frame
 	var view = app.layer.get_node("MapScreen")
-	check(view.relics.size() == 2 and view.relics[0].name == "Amuleto Vital", "equipped and found relics shown")
+	check(view.relics.size() == 2 and view.relics[0].name == app.game.content.equipment["vital_amulet"].name, "equipped and found relics shown")
 	check(view.get_node("GroupDrawer/Hero0").size.y > 80 and view.get_node("GroupDrawer/Health0") != null, "larger actor with health")
 	check(not view.has_node("Descend"), "stairs hidden before boss victory")
 	for i in range(28):
@@ -84,7 +84,8 @@ func run_tests() -> void:
 	check(app.screen == "combat" and app.game.run.current == 0, "room art click enters available encounter")
 	app.game.run.phase = "map"
 	app.game.run.current = 0
-	app.continue_run()
+	app.screen = "map"
+	app.render()
 	await process_frame
 	view = app.layer.get_node("MapScreen")
 	check(not view.get_node("Room1").disabled and not view.get_node("Room2").disabled, "branch availability retained")
@@ -107,12 +108,14 @@ func run_tests() -> void:
 			check(not child.text.contains(" · "), "no room captions")
 	await shot("current-room")
 	app.game.run.boss_defeated = true
-	app.continue_run()
+	app.screen = "map"
+	app.render()
 	await process_frame
 	check(app.layer.get_node("MapScreen").has_node("Descend"), "stairs appear after boss")
 	# Legacy personal equipment is still shown, once per bearer.
 	app.game.run.erase("team_relic")
-	app.continue_run()
+	app.screen = "map"
+	app.render()
 	await process_frame
 	check(app.layer.get_node("MapScreen").relics.size() == 3, "legacy personal equipment and found relic retained")
 	print("MAP CHECKS: %d | FAILURES: %d" % [checks, failures])

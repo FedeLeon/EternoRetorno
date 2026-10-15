@@ -45,6 +45,10 @@ def approved_assets():
         if path.exists():
             for asset,record in json.loads(path.read_text()).items():
                 approved[asset] = {'document':str(path.relative_to(ROOT)), 'sha256':record['sha256']}
+    modern = ROOT/'docs/art_direction/postapocalyptic/assets.json'
+    if modern.exists():
+        for asset, record in json.loads(modern.read_text()).items():
+            approved[asset] = {'document':str(modern.relative_to(ROOT)), 'sha256':record['sha256']}
     return approved
 
 
@@ -66,7 +70,7 @@ def screen_inventory(records):
         'Colección y bestiario':['collection'], 'Entrenamiento':['combat_depth/training.png','combat_depth/dummy.png'],
         'Cinemáticas e historias':['cinematics'], 'Cartas de combate y mercado':['cards'],
         'Intenciones y efectos':['battle_effects','camp/front-128.png'],
-        'Objetos y reliquias':['objects','relics'], 'Equipo y HUD':['forge/icons','ui'],
+        'Objetos y reliquias':['objects','relics'], 'Equipo y HUD':['forge/badges','ui'],
         'Actores de héroes':['heroes/detail','heroes/actions','heroes/running','comic/static'],
         'Actores y ataques de enemigos':['enemies/animations','comic/enemies']}
     return [{'screen':name, 'assets':[r['path'] for r in records if r['type'] in VISUAL_EXTENSIONS
@@ -117,6 +121,7 @@ def inventory():
             consumers[f'assets/comic/static/{hero}_{suffix}.png'].add('src/presentation/hero_cut_in.gd')
         consumers[f'assets/heroes/running/{hero}.png'].add('src/presentation/hero_run.gd:8')
         consumers[f'assets/heroes/identity/portraits/{hero}.png'].add('src/ui/components/refuge_portrait.gd:34')
+        consumers[f'assets/heroes/identity/postapocalyptic/{hero}.png'].add('src/ui/components/refuge_portrait.gd: individual full-body comic identity')
         consumers[f'assets/rest/{hero}.png'].add('selection_screen/rest_screen: seated party')
         consumers[f'assets/cards/frames/{hero}.png'].add('src/ui/components/card_view.gd:25')
         consumers[f'assets/cinematics/portraits/{hero}.png'].add('conditional cinematic portrait: chapter without image')
@@ -130,8 +135,13 @@ def inventory():
     for id,art in documents['card_art'].items(): consumers[art['source'][6:]].add(f'card art: {id}')
     for folder in ['relics','relics/boss']:
         for path in (ROOT/'assets'/folder).glob('*.png'): consumers[str(path.relative_to(ROOT))].add('src/presentation/relic_art.gd: ID-based relic path')
-    for path in (ROOT/'assets/forge/icons').glob('*.png'): consumers[str(path.relative_to(ROOT))].add('equipment icon: ID/rank path')
+    for hero in content['heroes']:
+        for track in ['weapon','armor']:
+            for rank in range(1,4): consumers[f'assets/forge/badges/{hero}_{track}_{rank}.png'].add('equipment_badges: hero/track/rank snapshot')
     for path in (ROOT/'assets/ui/numbers').glob('*.png'): consumers[str(path.relative_to(ROOT))].add('src/ui/components/number_view.gd:30')
+    for path in (ROOT/'assets/run_setup').rglob('*.png'): consumers[str(path.relative_to(ROOT))].add('src/ui/screens/run_setup_screen.gd: dedicated difficulty/condition illustration')
+    for floor in range(1,4):
+        for count in range(1,4): consumers[f'assets/paths/floor_{floor}_{count}.png'].add('src/ui/screens/paths_screen.gd: floor/count-based junction')
     for kind in ['combat','event','treasure','rest','elite','boss']: consumers[f'assets/map/minimal/{kind}.png'].add(f'map node kind: {kind}')
     for id in content['events']:
         if (ROOT/f'assets/encounters/{id}.png').exists(): consumers[f'assets/encounters/{id}.png'].add('event backdrop (shared by related encounters)')
@@ -198,7 +208,7 @@ def write_outputs(report):
     OUT.mkdir(parents=True,exist_ok=True)
     (OUT/'inventory.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     with (OUT/'inventory.csv').open('w',newline='') as stream:
-        writer = csv.DictWriter(stream,fieldnames=list(report['assets'][0]))
+        writer = csv.DictWriter(stream,fieldnames=list(report['assets'][0]),lineterminator='\n')
         writer.writeheader();writer.writerows(report['assets'])
     rows = []
     for asset in report['assets']:

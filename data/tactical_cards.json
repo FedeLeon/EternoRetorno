@@ -2,7 +2,7 @@
   "warrior_prepared": {
     "id": "warrior_prepared",
     "owner": "warrior",
-    "name": "Tajo anunciado",
+    "name": "Medir y cortar",
     "cost": 1,
     "target": "enemy",
     "damage": 17,
@@ -19,7 +19,7 @@
   "warrior_interrupt": {
     "id": "warrior_interrupt",
     "owner": "warrior",
-    "name": "Ruptura de guardia",
+    "name": "Cuña de madera",
     "cost": 1,
     "target": "enemy",
     "damage": 5,
@@ -36,7 +36,7 @@
   "guardian_prepared": {
     "id": "guardian_prepared",
     "owner": "guardian",
-    "name": "Carga del baluarte",
+    "name": "Carga de demolición",
     "cost": 1,
     "target": "enemy",
     "damage": 17,
@@ -53,7 +53,7 @@
   "guardian_interrupt": {
     "id": "guardian_interrupt",
     "owner": "guardian",
-    "name": "Silenciar el golpe",
+    "name": "Traba de seguridad",
     "cost": 1,
     "target": "enemy",
     "damage": 5,
@@ -70,7 +70,7 @@
   "rogue_prepared": {
     "id": "rogue_prepared",
     "owner": "rogue",
-    "name": "Acecho letal",
+    "name": "Dosis preparada",
     "cost": 1,
     "target": "enemy",
     "damage": 17,
@@ -87,7 +87,7 @@
   "rogue_interrupt": {
     "id": "rogue_interrupt",
     "owner": "rogue",
-    "name": "Corte de concentración",
+    "name": "Cortar el cable",
     "cost": 1,
     "target": "enemy",
     "damage": 5,
@@ -104,7 +104,7 @@
   "mage_prepared": {
     "id": "mage_prepared",
     "owner": "mage",
-    "name": "Cristal concentrado",
+    "name": "Capacitor cargado",
     "cost": 1,
     "target": "enemy",
     "damage": 17,
@@ -121,7 +121,7 @@
   "mage_interrupt": {
     "id": "mage_interrupt",
     "owner": "mage",
-    "name": "Disipar conjuro",
+    "name": "Interrumpir señal",
     "cost": 1,
     "target": "enemy",
     "damage": 5,

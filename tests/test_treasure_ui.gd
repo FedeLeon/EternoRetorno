@@ -53,7 +53,7 @@ func run_tests() -> void:
 	check(view.has_node("RewardModal") and app.game.run.inventory == inventory, "rebuild restores pending result without duplication")
 	await click(Vector2(640, 560))
 	await process_frame
-	check(app.screen == "map", "continue returns to map")
+	check(app.screen == "paths", "continue returns to paths")
 	app.game.run.current = 0
 	preload("res://tests/room_fixture.gd").enter(app.game, "treasure")
 	app.game.run.treasure.trapped = true

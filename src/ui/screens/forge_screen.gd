@@ -7,7 +7,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/attendant_dialogue.gd").attach(ui, "forge")
-	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Herrería · Acero que perdura", actions.back, profile.souls, "Campamento")
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Taller · Herramientas para resistir", actions.back, profile.souls, "Campamento")
 	if selected == "":
 		preload("res://src/ui/components/building_hero_picker.gd").build(ui, content.heroes, "Elegí un héroe para mejorar su equipo", "ForgeHero_", actions.category, true)
 		return
@@ -29,6 +29,6 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		ui.label_at("%s · Nivel %d / 3" % ["Arma" if i == 0 else "Armadura", level], 656, y, 530, 34, 24, ui.GOLD)
 		ui.label_at("+%d %s" % [level * amount, "de fuerza por golpe" if i == 0 else "de bloqueo en cartas defensivas"], 656, y + 36, 536, 32, 19, ui.TEXT)
 		var price = int(settings.prices[level]) if level < 3 else 0
-		var caption = "Mejora máxima" if level == 3 else "Mejorar (+%d) · %d almas" % [amount, price]
+		var caption = "Mejora máxima" if level == 3 else "Mejorar (+%d) · %d celdas" % [amount, price]
 		var buy = ui.button(caption, 656, y + 83, 562, 54, func(): actions.buy.call(track, level + 1), level < 3 and profile.souls >= price)
 		buy.name = "Upgrade_" + track

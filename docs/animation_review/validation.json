@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "atlas_audit": {
+    "sheets": 96,
+    "frames": 928,
+    "errors": 0
+  },
+  "native": {
+    "detailed_heroes": [
+      1121,
+      0
+    ],
+    "action_poses": [
+      356,
+      0
+    ],
+    "melee_combos": [
+      323,
+      0
+    ],
+    "hero_cutins": [
+      124,
+      0
+    ],
+    "seated_selection": [
+      117,
+      0
+    ],
+    "rest": [
+      25,
+      0
+    ],
+    "enemy_sizes": [
+      867,
+      0
+    ],
+    "forest_ui": [
+      146,
+      0
+    ],
+    "enemy_cutins_failures": 0
+  },
+  "reviewed_images": [
+    "artifacts/animation-review/selection.png",
+    "artifacts/animation-review/selection-chosen.png",
+    "artifacts/animation-review/enemies-0.png",
+    "artifacts/animation-review/enemies-6.png",
+    "artifacts/combat-depth/heroes-hurt.png",
+    "artifacts/polish/motion-charged.png",
+    "artifacts/comic_static/warrior_attack.png",
+    "artifacts/comic_static/mage_defense.png",
+    "artifacts/rest/pair0.png"
+  ],
+  "asset_hash_audit": {
+    "valid": 685,
+    "legacy": 0
+  },
+  "limitations": [
+    "native isolated Xephyr with llvmpipe",
+    "Dummy audio",
+    "resource shutdown warnings in UI tests",
+    "no Web/mobile export or physical device validation"
+  ],
+  "headless": {
+    "suites": 89,
+    "passed": 89,
+    "failed": 0,
+    "report": "artifacts/animation-review/all-final-regressions/results.json"
+  }
+}

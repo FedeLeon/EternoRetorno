@@ -36,12 +36,12 @@ func run_tests():
   check(app.has_node("CinematicPlayer"),"selected hero is introduced")
   app.get_node("CinematicPlayer").finish()
  await process_frame
- check(game.run.floor == 2 and game.run.current == -1 and game.available_nodes() == [0], "forest starts at entrance")
- check(game.run.deck.size() == 20 and game.run.inventory.is_empty() and game.run.visited.is_empty(), "fresh starter state")
- check(game.run.team_relic == "vital_amulet" and app.screen == "map", "relic and map preserved")
+ check(game.run.floor == 2 and game.run.current == 0 and game.run.phase == "combat" and game.available_nodes().is_empty(), "forest starts at entrance")
+ check(game.run.deck.size() == 20 and game.run.inventory.is_empty() and game.run.visited == [0], "fresh starter state")
+ check(game.run.team_relic == "vital_amulet" and app.screen == "combat", "relic and map preserved")
  var loaded = Game.new(path, true)
- check(loaded.run.floor == 2 and loaded.run.nodes == game.run.nodes, "forest save reload")
- check(game.enter_node(0), "forest entrance playable")
+ check(loaded.run.floor == 2 and loaded.run.nodes == game.run.nodes and loaded.run.phase == "combat" and loaded.run.combat == game.run.combat, "forest save reload")
+ check(not game.enter_node(0), "first encounter cannot be entered twice")
  var roster = preload("res://src/dungeon.gd").definition(2).common
  check(game.run.nodes[0].encounter.all(func(id): return id in roster), "forest encounter roster")
  app.begin()

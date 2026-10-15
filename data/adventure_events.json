@@ -1,6 +1,6 @@
 {
   "forest_spring": {
-    "name": "Manantial entre las raíces",
+    "name": "El colector de lluvia",
     "choices": [
       "Seguir el sendero"
     ],
@@ -15,22 +15,22 @@
     ]
   },
   "forest_spirit": {
-    "name": "La memoria del bosque",
+    "name": "El terminal botánico",
     "choices": [
       "Continuar"
     ],
-    "text": "Un espíritu ofrece descanso y algunas almas. Mauro reconoce las hierbas que crecen a su alrededor."
+    "text": "El viejo terminal marca un depósito de suministros. Mauro reconoce las plantas que han crecido alrededor."
   },
   "forge_altar": {
-    "name": "El altar del último herrero",
-    "text": "El fuego puede transformar una carta en otra de su héroe, de coste 0–1 y mejorada. El resultado es incierto.",
+    "name": "Banco de recuperación",
+    "text": "Un terminal de mantenimiento puede reconstruir una carta de su héroe, de coste 0–1 y mejorada. El resultado es incierto.",
     "choices": [
       "Elegir carta para transformar",
       "Conservar tu mazo"
     ]
   },
   "ash_archive": {
-    "name": "El archivo de cenizas",
+    "name": "Registro de la central",
     "text": "Una página perdida puede reemplazar una carta por otra distinta de su héroe y coste 0–1.",
     "choices": [
       "Elegir carta para intercambiar",
@@ -38,10 +38,10 @@
     ]
   },
   "lava_bridge": {
-    "name": "El puente de las brasas",
-    "text": "Al otro lado hay 45 almas. Cruzar cuesta 8 PV a cada héroe; ambos deben sobrevivir.",
+    "name": "Pasarela de refrigeración",
+    "text": "Al otro lado hay 45 celdas. Cruzar cuesta 8 PV a cada héroe; ambos deben sobrevivir.",
     "choices": [
-      "Cruzar · -8 PV por héroe, +45 almas",
+      "Cruzar · -8 PV por héroe, +45 celdas",
       "Tomar el camino seguro"
     ]
   }

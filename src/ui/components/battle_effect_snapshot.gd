@@ -11,7 +11,7 @@ static func common(unit: Dictionary) -> Array:
 	var result: Array = preload("res://src/ui/components/combat_modifier_badges.gd").entries(unit)
 	var poison = int(unit.get("poison", 0))
 	if poison > 0:
-		result.append(entry("poison", poison, "Veneno activo: %d acumulaciones. En los enemigos causa ese daño antes de su acción, ignora el bloqueo y pierde una acumulación tras aplicarse." % poison))
+		result.append(entry("poison", poison, "Corrosión activo: %d acumulaciones. En los enemigos causa ese daño antes de su acción, ignora el bloqueo y pierde una acumulación tras aplicarse." % poison))
 	return result
 
 static func enemy(game: RefCounted, index: int) -> Array:
@@ -21,7 +21,7 @@ static func enemy(game: RefCounted, index: int) -> Array:
 	var covered = game.run.combat.enemies.any(func(e): return e.hp > 0 and game.content.enemies[e.id].get("role", "") == "protector")
 	if unit.get("rear", false) and covered: result.append(entry("rear_guard"))
 	if int(unit.get("root_hp", 0)) > 0:
-		result.append(entry("roots", unit.root_hp, "Las raíces absorben los golpes directos antes de perder vida. Quedan %d PV de raíces. El veneno las ignora." % unit.root_hp))
+		result.append(entry("roots", unit.root_hp, "Las raíces absorben los golpes directos antes de perder vida. Quedan %d PV de raíces. La corrosión las ignora." % unit.root_hp))
 	var special: String = unit.intent.get("special", "")
 	var special_ids = {"resurrect":"resurrection", "embers":"embers", "prison":"imprisonment", "armored_strike":"charged_strike"}
 	if special_ids.has(special):
@@ -49,7 +49,7 @@ static func enemy(game: RefCounted, index: int) -> Array:
 		elif objective.kind == "armor" and not objective.broken:
 			effect = entry("armor_plates", objective.hp, preload("res://src/rules/boss_mechanics.gd").describe(objective))
 		elif objective.kind == "prison" and objective.trapped >= 0:
-			effect = entry("imprisonment", 0, "El bosque mantiene atrapado a %s. No puede jugar sus cartas ni participar de enlaces. Liberarlo cuesta 1 energía; también se libera tras el siguiente turno enemigo." % game.content.heroes[game.run.heroes[objective.trapped].id].name)
+			effect = entry("imprisonment", 0, "La red de contención mantiene atrapado a %s. No puede jugar sus cartas ni participar de enlaces. Liberarlo cuesta 1 energía; también se libera tras el siguiente turno enemigo." % game.content.heroes[game.run.heroes[objective.trapped].id].name)
 		if not effect.is_empty():
 			effect.objective_action = true
 			# A prison intention and an active prison share artwork, but have different meaning.
@@ -65,7 +65,7 @@ static func hero(game: RefCounted, index: int) -> Array:
 		var value = int(unit.get(stat, 0))
 		if value > 0:
 			result.append(entry("weapon_boost" if stat == "turn_strength" else "magic_boost", value,
-				"%s: +%d de daño a sus cartas ofensivas durante este turno. Expira al comenzar el siguiente turno aliado." % ["Potencia física" if stat == "turn_strength" else "Potencia mágica", value]))
+				"%s: +%d de daño a sus cartas ofensivas durante este turno. Expira al comenzar el siguiente turno aliado." % ["Potencia física" if stat == "turn_strength" else "Potencia eléctrica", value]))
 	var prepared: Array = game.run.combat.get("prepared", []).filter(func(a): return a.owner == index)
 	if not prepared.is_empty():
 		var names: Array[String] = []
@@ -80,5 +80,5 @@ static func hero(game: RefCounted, index: int) -> Array:
 		result.append(entry("curse_" + curse, 0, definition.description + " Puede limpiarse en un descanso o ante el mercader."))
 	for set_data in preload("res://src/rules/relic_sets.gd").active(game.run):
 		var id: String = {"multi":"set_multi", "poison":"set_poison", "block":"set_block", "heal":"set_heal"}[set_data.type]
-		result.append(entry(id, set_data.value, set_data.effect + " Se activa mientras tengas ambas reliquias de la combinación."))
+		result.append(entry(id, set_data.value, set_data.effect + " Se activa mientras tengas ambas componentes de la combinación."))
 	return result

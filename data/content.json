@@ -5,8 +5,8 @@
       "name": "Carpintero",
       "role": "Daño directo",
       "hp": 58,
-      "color": "b65aa8",
-      "lore": "Portador Maldito.\nAcero y maldición.",
+      "color": "bd6be1",
+      "lore": "Un vecino del refugio. Herramientas recuperadas contra la máquina.",
       "starter": [
         "warrior_slash",
         "warrior_slash",
@@ -25,8 +25,8 @@
       "name": "Constructora",
       "role": "Protección",
       "hp": 64,
-      "color": "80b4b3",
-      "lore": "Nadie cae a sus espaldas.",
+      "color": "f0a657",
+      "lore": "Un vecino del refugio. Herramientas recuperadas contra la máquina.",
       "starter": [
         "guardian_bash",
         "guardian_bash",
@@ -43,10 +43,10 @@
     "rogue": {
       "id": "rogue",
       "name": "Boticario",
-      "role": "Veneno",
+      "role": "Corrosión",
       "hp": 45,
-      "color": "a4be73",
-      "lore": "Hasta la piedra aprende a sangrar.",
+      "color": "69caa5",
+      "lore": "Un vecino del refugio. Herramientas recuperadas contra la máquina.",
       "starter": [
         "rogue_cut",
         "rogue_cut",
@@ -65,8 +65,8 @@
       "name": "Profesora",
       "role": "Ataques múltiples",
       "hp": 42,
-      "color": "b095d4",
-      "lore": "Una chispa. Mil ecos.",
+      "color": "75d8e6",
+      "lore": "Un vecino del refugio. Herramientas recuperadas contra la máquina.",
       "starter": [
         "mage_spark",
         "mage_spark",
@@ -85,7 +85,7 @@
     "warrior_slash": {
       "id": "warrior_slash",
       "owner": "warrior",
-      "name": "Tajo",
+      "name": "Corte de sierra",
       "cost": 1,
       "target": "enemy",
       "damage": 9,
@@ -99,7 +99,7 @@
     "warrior_guard": {
       "id": "warrior_guard",
       "owner": "warrior",
-      "name": "Guardia de hierro",
+      "name": "Mango reforzado",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -113,7 +113,7 @@
     "warrior_heavy": {
       "id": "warrior_heavy",
       "owner": "warrior",
-      "name": "Golpe pesado",
+      "name": "Golpe de taller",
       "cost": 2,
       "target": "enemy",
       "damage": 19,
@@ -127,7 +127,7 @@
     "warrior_charge": {
       "id": "warrior_charge",
       "owner": "warrior",
-      "name": "Embestida",
+      "name": "Abrir paso",
       "cost": 1,
       "target": "enemy",
       "damage": 7,
@@ -141,7 +141,7 @@
     "warrior_echo": {
       "id": "warrior_echo",
       "owner": "warrior",
-      "name": "Filo del retorno",
+      "name": "Marca de corte",
       "cost": 2,
       "target": "enemy",
       "damage": 25,
@@ -155,7 +155,7 @@
     "guardian_bash": {
       "id": "guardian_bash",
       "owner": "guardian",
-      "name": "Golpe de escudo",
+      "name": "Golpe de chapa",
       "cost": 1,
       "target": "enemy",
       "damage": 7,
@@ -169,7 +169,7 @@
     "guardian_guard": {
       "id": "guardian_guard",
       "owner": "guardian",
-      "name": "Baluarte",
+      "name": "Mampara",
       "cost": 1,
       "target": "ally",
       "damage": 0,
@@ -183,7 +183,7 @@
     "guardian_wall": {
       "id": "guardian_wall",
       "owner": "guardian",
-      "name": "Muro del alba",
+      "name": "Pared de obra",
       "cost": 2,
       "target": "all_allies",
       "damage": 0,
@@ -197,7 +197,7 @@
     "guardian_strike": {
       "id": "guardian_strike",
       "owner": "guardian",
-      "name": "Contraataque",
+      "name": "Rebote de chapa",
       "cost": 1,
       "target": "enemy",
       "damage": 9,
@@ -211,7 +211,7 @@
     "guardian_echo": {
       "id": "guardian_echo",
       "owner": "guardian",
-      "name": "Juramento eterno",
+      "name": "Refuerzo permanente",
       "cost": 2,
       "target": "all_allies",
       "damage": 0,
@@ -225,7 +225,7 @@
     "rogue_cut": {
       "id": "rogue_cut",
       "owner": "rogue",
-      "name": "Puñalada",
+      "name": "Corte utilitario",
       "cost": 1,
       "target": "enemy",
       "damage": 8,
@@ -239,7 +239,7 @@
     "rogue_dodge": {
       "id": "rogue_dodge",
       "owner": "rogue",
-      "name": "Paso sombrío",
+      "name": "Paso lateral",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -253,7 +253,7 @@
     "rogue_toxin": {
       "id": "rogue_toxin",
       "owner": "rogue",
-      "name": "Hoja tóxica",
+      "name": "Hoja corrosiva",
       "cost": 1,
       "target": "enemy",
       "damage": 4,
@@ -267,7 +267,7 @@
     "rogue_venom": {
       "id": "rogue_venom",
       "owner": "rogue",
-      "name": "Veneno negro",
+      "name": "Ácido concentrado",
       "cost": 2,
       "target": "enemy",
       "damage": 0,
@@ -281,7 +281,7 @@
     "rogue_echo": {
       "id": "rogue_echo",
       "owner": "rogue",
-      "name": "Herida perpetua",
+      "name": "Oxidación persistente",
       "cost": 1,
       "target": "enemy",
       "damage": 6,
@@ -295,7 +295,7 @@
     "mage_spark": {
       "id": "mage_spark",
       "owner": "mage",
-      "name": "Chispas",
+      "name": "Chispa de bobina",
       "cost": 1,
       "target": "enemy",
       "damage": 4,
@@ -309,7 +309,7 @@
     "mage_ward": {
       "id": "mage_ward",
       "owner": "mage",
-      "name": "Velo arcano",
+      "name": "Campo de interferencia",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -323,7 +323,7 @@
     "mage_storm": {
       "id": "mage_storm",
       "owner": "mage",
-      "name": "Tormenta",
+      "name": "Descarga en cadena",
       "cost": 2,
       "target": "all_enemies",
       "damage": 10,
@@ -337,7 +337,7 @@
     "mage_missile": {
       "id": "mage_missile",
       "owner": "mage",
-      "name": "Misiles del vacío",
+      "name": "Pulsos dirigidos",
       "cost": 2,
       "target": "enemy",
       "damage": 5,
@@ -351,7 +351,7 @@
     "mage_echo": {
       "id": "mage_echo",
       "owner": "mage",
-      "name": "Constelación rota",
+      "name": "Señal persistente",
       "cost": 2,
       "target": "all_enemies",
       "damage": 7,
@@ -365,7 +365,7 @@
     "warrior_pommel": {
       "id": "warrior_pommel",
       "owner": "warrior",
-      "name": "Golpe de pomo",
+      "name": "Golpe de mango",
       "cost": 1,
       "target": "enemy",
       "damage": 6,
@@ -381,7 +381,7 @@
     "warrior_brace": {
       "id": "warrior_brace",
       "owner": "warrior",
-      "name": "Postura firme",
+      "name": "Apoyo firme",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -397,7 +397,7 @@
     "warrior_cleave": {
       "id": "warrior_cleave",
       "owner": "warrior",
-      "name": "Barrido de acero",
+      "name": "Barrido de sierra",
       "cost": 2,
       "target": "all_enemies",
       "damage": 10,
@@ -413,7 +413,7 @@
     "warrior_riposte": {
       "id": "warrior_riposte",
       "owner": "warrior",
-      "name": "Respuesta de hierro",
+      "name": "Respuesta de oficio",
       "cost": 1,
       "target": "enemy",
       "damage": 8,
@@ -429,7 +429,7 @@
     "warrior_execution": {
       "id": "warrior_execution",
       "owner": "warrior",
-      "name": "Sentencia de acero",
+      "name": "Punto de fractura",
       "cost": 2,
       "target": "enemy",
       "damage": 23,
@@ -445,7 +445,7 @@
     "warrior_onslaught": {
       "id": "warrior_onslaught",
       "owner": "warrior",
-      "name": "Asalto implacable",
+      "name": "Trabajo a destajo",
       "cost": 2,
       "target": "enemy",
       "damage": 8,
@@ -461,7 +461,7 @@
     "warrior_blood_oath": {
       "id": "warrior_blood_oath",
       "owner": "warrior",
-      "name": "Pacto de sangre",
+      "name": "Horas extra",
       "cost": 2,
       "target": "enemy",
       "damage": 16,
@@ -477,7 +477,7 @@
     "warrior_fortress": {
       "id": "warrior_fortress",
       "owner": "warrior",
-      "name": "Fortaleza maldita",
+      "name": "Refuerzo de emergencia",
       "cost": 2,
       "target": "self",
       "damage": 0,
@@ -493,7 +493,7 @@
     "warrior_rift": {
       "id": "warrior_rift",
       "owner": "warrior",
-      "name": "Corte del abismo",
+      "name": "Corte transversal",
       "cost": 2,
       "target": "all_enemies",
       "damage": 16,
@@ -509,7 +509,7 @@
     "warrior_final_edge": {
       "id": "warrior_final_edge",
       "owner": "warrior",
-      "name": "Filo del destino",
+      "name": "Última pasada",
       "cost": 3,
       "target": "enemy",
       "damage": 36,
@@ -541,7 +541,7 @@
     "guardian_shelter": {
       "id": "guardian_shelter",
       "owner": "guardian",
-      "name": "Resguardo",
+      "name": "Cobertura",
       "cost": 1,
       "target": "ally",
       "damage": 0,
@@ -557,7 +557,7 @@
     "guardian_iron_chain": {
       "id": "guardian_iron_chain",
       "owner": "guardian",
-      "name": "Cadena de hierro",
+      "name": "Cable de sujeción",
       "cost": 2,
       "target": "enemy",
       "damage": 15,
@@ -573,7 +573,7 @@
     "guardian_circle": {
       "id": "guardian_circle",
       "owner": "guardian",
-      "name": "Círculo protector",
+      "name": "Perímetro seguro",
       "cost": 1,
       "target": "all_allies",
       "damage": 0,
@@ -589,7 +589,7 @@
     "guardian_sentinel": {
       "id": "guardian_sentinel",
       "owner": "guardian",
-      "name": "Vigilia de acero",
+      "name": "Turno de vigilancia",
       "cost": 2,
       "target": "ally",
       "damage": 0,
@@ -605,7 +605,7 @@
     "guardian_ram": {
       "id": "guardian_ram",
       "owner": "guardian",
-      "name": "Ariete",
+      "name": "Palanca de obra",
       "cost": 2,
       "target": "enemy",
       "damage": 17,
@@ -621,7 +621,7 @@
     "guardian_sanctuary": {
       "id": "guardian_sanctuary",
       "owner": "guardian",
-      "name": "Santuario de hierro",
+      "name": "Refugio móvil",
       "cost": 2,
       "target": "all_allies",
       "damage": 0,
@@ -637,7 +637,7 @@
     "guardian_reprisal": {
       "id": "guardian_reprisal",
       "owner": "guardian",
-      "name": "Represalia",
+      "name": "Devolución",
       "cost": 1,
       "target": "enemy",
       "damage": 13,
@@ -653,7 +653,7 @@
     "guardian_aegis": {
       "id": "guardian_aegis",
       "owner": "guardian",
-      "name": "Égida del grupo",
+      "name": "Barrera compartida",
       "cost": 3,
       "target": "all_allies",
       "damage": 0,
@@ -669,7 +669,7 @@
     "guardian_unbroken": {
       "id": "guardian_unbroken",
       "owner": "guardian",
-      "name": "Nunca caeremos",
+      "name": "La estructura aguanta",
       "cost": 2,
       "target": "all_allies",
       "damage": 0,
@@ -685,7 +685,7 @@
     "rogue_nick": {
       "id": "rogue_nick",
       "owner": "rogue",
-      "name": "Corte furtivo",
+      "name": "Incisión",
       "cost": 1,
       "target": "enemy",
       "damage": 5,
@@ -701,7 +701,7 @@
     "rogue_cover": {
       "id": "rogue_cover",
       "owner": "rogue",
-      "name": "Ocultarse",
+      "name": "Bajo cobertura",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -717,7 +717,7 @@
     "rogue_double_fang": {
       "id": "rogue_double_fang",
       "owner": "rogue",
-      "name": "Doble colmillo",
+      "name": "Doble corte",
       "cost": 1,
       "target": "enemy",
       "damage": 4,
@@ -733,7 +733,7 @@
     "rogue_toxic_mist": {
       "id": "rogue_toxic_mist",
       "owner": "rogue",
-      "name": "Niebla tóxica",
+      "name": "Aerosol corrosivo",
       "cost": 2,
       "target": "all_enemies",
       "damage": 0,
@@ -749,7 +749,7 @@
     "rogue_venom_dance": {
       "id": "rogue_venom_dance",
       "owner": "rogue",
-      "name": "Danza venenosa",
+      "name": "Dosificación",
       "cost": 2,
       "target": "enemy",
       "damage": 5,
@@ -765,7 +765,7 @@
     "rogue_plague": {
       "id": "rogue_plague",
       "owner": "rogue",
-      "name": "Brote de peste",
+      "name": "Fuga química",
       "cost": 2,
       "target": "all_enemies",
       "damage": 5,
@@ -781,7 +781,7 @@
     "rogue_assassin": {
       "id": "rogue_assassin",
       "owner": "rogue",
-      "name": "Estocada del asesino",
+      "name": "Punto de unión",
       "cost": 2,
       "target": "enemy",
       "damage": 22,
@@ -797,7 +797,7 @@
     "rogue_dark_cloak": {
       "id": "rogue_dark_cloak",
       "owner": "rogue",
-      "name": "Manto nocturno",
+      "name": "Bajo la lona",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -813,7 +813,7 @@
     "rogue_black_blood": {
       "id": "rogue_black_blood",
       "owner": "rogue",
-      "name": "Sangre negra",
+      "name": "Contaminación",
       "cost": 2,
       "target": "enemy",
       "damage": 8,
@@ -829,7 +829,7 @@
     "rogue_silent_end": {
       "id": "rogue_silent_end",
       "owner": "rogue",
-      "name": "Final silencioso",
+      "name": "Desconexión silenciosa",
       "cost": 3,
       "target": "enemy",
       "damage": 22,
@@ -845,7 +845,7 @@
     "mage_shard": {
       "id": "mage_shard",
       "owner": "mage",
-      "name": "Fragmento azul",
+      "name": "Pulso breve",
       "cost": 1,
       "target": "enemy",
       "damage": 6,
@@ -861,7 +861,7 @@
     "mage_veil": {
       "id": "mage_veil",
       "owner": "mage",
-      "name": "Bruma protectora",
+      "name": "Ruido de señal",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -877,7 +877,7 @@
     "mage_prism": {
       "id": "mage_prism",
       "owner": "mage",
-      "name": "Prisma doble",
+      "name": "Doble pulso",
       "cost": 1,
       "target": "enemy",
       "damage": 5,
@@ -893,7 +893,7 @@
     "mage_hail": {
       "id": "mage_hail",
       "owner": "mage",
-      "name": "Lluvia de cristales",
+      "name": "Ráfaga de impulsos",
       "cost": 2,
       "target": "all_enemies",
       "damage": 6,
@@ -909,7 +909,7 @@
     "mage_comet": {
       "id": "mage_comet",
       "owner": "mage",
-      "name": "Cometa del vacío",
+      "name": "Descarga focal",
       "cost": 2,
       "target": "enemy",
       "damage": 24,
@@ -925,7 +925,7 @@
     "mage_barrage": {
       "id": "mage_barrage",
       "owner": "mage",
-      "name": "Ráfaga arcana",
+      "name": "Barrido electromagnético",
       "cost": 2,
       "target": "enemy",
       "damage": 6,
@@ -941,7 +941,7 @@
     "mage_starfall": {
       "id": "mage_starfall",
       "owner": "mage",
-      "name": "Caída estelar",
+      "name": "Apagón de sector",
       "cost": 3,
       "target": "all_enemies",
       "damage": 9,
@@ -957,7 +957,7 @@
     "mage_mirror": {
       "id": "mage_mirror",
       "owner": "mage",
-      "name": "Espejo astral",
+      "name": "Señal reflejada",
       "cost": 1,
       "target": "self",
       "damage": 0,
@@ -973,7 +973,7 @@
     "mage_nova": {
       "id": "mage_nova",
       "owner": "mage",
-      "name": "Nova azul",
+      "name": "Sobrecarga de bobina",
       "cost": 2,
       "target": "all_enemies",
       "damage": 17,
@@ -989,7 +989,7 @@
     "mage_singularity": {
       "id": "mage_singularity",
       "owner": "mage",
-      "name": "Singularidad",
+      "name": "Cortocircuito central",
       "cost": 3,
       "target": "enemy",
       "damage": 12,
@@ -1005,7 +1005,7 @@
   },
   "enemies": {
     "rat": {
-      "name": "Murciélago nocturno",
+      "name": "Sonda de conductos",
       "hp": 22,
       "color": "b59a86",
       "pattern": [
@@ -1019,7 +1019,7 @@
       "visual": "crypt_bat"
     },
     "skeleton": {
-      "name": "Esqueleto lancero",
+      "name": "Operario perforador",
       "hp": 30,
       "color": "d6c9a9",
       "pattern": [
@@ -1038,7 +1038,7 @@
       "visual": "crypt_lancer"
     },
     "cultist": {
-      "name": "Chamán de ceniza",
+      "name": "Relé incendiario",
       "hp": 28,
       "color": "b58cc5",
       "pattern": [
@@ -1055,7 +1055,7 @@
       "visual": "crypt_shaman"
     },
     "slime": {
-      "name": "Baba ácida",
+      "name": "Fuga corrosiva",
       "hp": 34,
       "color": "91b37d",
       "pattern": [
@@ -1070,7 +1070,7 @@
       "visual": "crypt_slime"
     },
     "elite": {
-      "name": "Esqueleto guardián",
+      "name": "Custodio de acceso",
       "hp": 78,
       "color": "bfa873",
       "pattern": [
@@ -1094,7 +1094,7 @@
       "visual": "skeleton_6"
     },
     "boss": {
-      "name": "Autómata roto",
+      "name": "Guardián del subsuelo",
       "hp": 110,
       "color": "cf7666",
       "pattern": [
@@ -1135,46 +1135,46 @@
   },
   "relics": {
     "ember": {
-      "name": "Ascua persistente",
+      "name": "Acumulador térmico",
       "description": "Al iniciar cada combate, ambos ganan 4 de bloqueo.",
       "locked": false
     },
     "fang": {
-      "name": "Colmillo de obsidiana",
+      "name": "Diente de sierra",
       "description": "Cada impacto de tus cartas inflige 1 de daño adicional.",
       "locked": false
     },
     "chalice": {
-      "name": "Cáliz de musgo",
+      "name": "Kit de recuperación",
       "description": "Tras ganar un combate, ambos recuperan 3 de vida.",
       "locked": false
     },
     "hourglass": {
-      "name": "Reloj sin arena",
+      "name": "Reloj de señal",
       "description": "El primer turno de cada combate tiene 1 de energía adicional.",
       "locked": true
     }
   },
   "events": {
     "well": {
-      "name": "El pozo de los ecos",
-      "text": "Una voz pronuncia nombres que todavía no conocés. El agua conserva un calor imposible.",
+      "name": "El purificador",
+      "text": "El filtro todavía funciona. Nicolás revisa la carcasa mientras Mauro comprueba el agua: parece segura.",
       "choices": [
         "Beber · recuperar 8 de vida ambos",
         "Seguir adelante"
       ]
     },
     "altar": {
-      "name": "El altar hambriento",
-      "text": "Una hendidura en la piedra espera una ofrenda. Bajo ella brilla un filo intacto.",
+      "name": "Terminal de emergencia",
+      "text": "La batería sigue conectada a un circuito dañado. Se puede recuperar una técnica del archivo, pero la descarga va a doler.",
       "choices": [
-        "Ofrendar · perder 5 de vida ambos y mejorar una carta al azar",
-        "Dejar el altar"
+        "Forzar el terminal · perder 5 de vida ambos y mejorar una carta al azar",
+        "Dejar el terminal"
       ]
     },
     "library": {
-      "name": "La biblioteca hundida",
-      "text": "Las páginas se deshacen salvo una: describe exactamente tu llegada a esta sala.",
+      "name": "El archivo escolar",
+      "text": "Entre los cuadernos aparece un plano del sector. Alguien anotó sus errores para que el siguiente grupo no los repita.",
       "choices": [
         "Leer · elegir una carta",
         "Cerrar el libro"

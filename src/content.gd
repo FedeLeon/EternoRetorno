@@ -62,7 +62,7 @@ func describe(instance: Dictionary, effective: Dictionary = {}) -> String:
 	if c.heal > 0:
 		lines.append("Cura %d %s." % [c.heal, "al dueño" if c.target == "enemy" else "de vida"])
 	if c.poison > 0:
-		lines.append("Aplica %d de veneno." % c.poison)
+		lines.append("Aplica %d de corrosión." % c.poison)
 	if c.get("charge", false): lines.append("Se ejecuta al comenzar tu próximo turno.")
 	if c.get("interrupt", false): lines.append("Interrumpe intención especial y contraataque.")
 	lines.append_array(preload("res://src/rules/combat_modifiers.gd").description(c))

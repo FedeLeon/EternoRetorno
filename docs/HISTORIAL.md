@@ -1,5 +1,171 @@
 # Historial de desarrollo
 
+## 14/10/2026 — Revisión integral, regresiones y retirada de recursos obsoletos
+
+- Revisión de batalla, tres mazmorras, seis parejas, edificios, vistas, logros,
+  eventos, tesoros, cartas, inventario, progresión y guardado. Ataques preparados
+  se muestran antes de las cenizas y respetan la reactivación del jefe; acciones
+  distintas mantienen primeros planos propios. Contraataques incluyen absorción
+  y pérdida real, con la presentación normal de impactos.
+- Reconocimiento conserva el mapa y cobra una sola vez. Colección obtiene el
+  total del catálogo activo; audio de curación/reactivación resuelve `effect`.
+  Textos tecnológicos y condición Interferida coherentes. Nuevo helper de
+  presentación `prepared_strikes.gd` y regresión `test_game_review.gd`.
+- Retirados 3.371 archivos / 1.328.169.819 bytes del workspace: 18 imágenes
+  sustituidas y sus imports, shader/tipografía sin uso, nueve herramientas de
+  estética anterior, fuentes gráficas históricas y artefactos de pruebas.
+  Colas activas depuradas. Prompts/metadatos, fuentes vigentes, fallback,
+  licencias necesarias y todas las pruebas funcionales conservadas; 189 módulos
+  runtime alcanzables. TestWeb, herramientas y partidas reales intactos.
+- Validación final: **90/90 suites headless**, contenido 1510/0 y ocho pruebas
+  negativas; 12 suites nativas aprobadas, colección repetida 42/0 y nuevos casos
+  de batalla/mapa 16/0. 54 aventuras simuladas y recorrido de 36 vistas.
+  Estrés de navegación: 90 reconstrucciones, 62 nodos antes/después, sin nuevos
+  huérfanos al terminar los fundidos. 667 hashes visuales válidos y cero
+  referencias a recursos retirados; reconstrucción de héroe y 102 símbolos sin
+  cambios de bytes. Capturas nuevas revisadas.
+- Se registran avisos de recursos al cerrar 36 suites; render local aislado con
+  llvmpipe/audio Dummy. Sin exportar ni probar Web/Android/dispositivo físico.
+  Alcance, resultados y archivos retirados en
+  [Revisión completa](game_review_2026_10_14/README.md).
+
+## 14/10/2026 — Poses corregidas, selección apoyada y luces de primer plano
+
+- Auditoría de 96 hojas/928 cuadros. Corrección de separadores y asignación de
+  poses reales: Profesora 7/7/6/4, Carpintero 6/6/6/5 y secuencias propias de
+  Constructora/Boticario. Se reconstruyen derivados de los cuatro héroes y
+  las 56 hojas/reposos de enemigos, quitando fragmentos de vecinos. Métricas
+  de tamaño recalculadas, rutas/UIDs/dimensiones de cuadros conservadas.
+- Reposo detallado estable; carrera a 10 FPS y revisión de acciones para que
+  una transición interrumpida no sobrescriba una nueva. Enemigos con filtro lineal.
+- Cuatro personajes sentados apoyados en el suelo, dos por lado de la fogata,
+  con encuadre alfa proporcional y área de toque de toda la figura. Descanso
+  comparte `seated_hero_art.gd`. Luces de la fogata conservadas.
+- Rayos amplios, halos, partículas escalonadas y arcos defensivos detrás de
+  ilustraciones HD quietas; respetan calidad/intensidad de efectos. Escenario
+  visible y reglas, energía, resolución y persistencia sin cambios.
+- Fuentes/prompts originales conservados; layouts semánticos, inventario,
+  procedencia del procesamiento y validación en
+  [Revisión de animaciones](animation_review/README.md).
+- Validación actual: 89/89 suites headless; render nativo aislado héroes 1121/0,
+  poses 356/0, combos 323/0, selección 117/0, primeros planos 124/0, descanso
+  25/0, tamaños enemigos 867/0 y segunda mazmorra 146/0; primeros planos enemigos
+  sin fallos. Revisión de capturas de selección, reacciones, ataques/defensas
+  y galería de 56 apariencias. 685 hashes válidos. Prueba de retorno enemigo
+  espera finalización real con plazo, evitando carrera de 10 ms en llvmpipe.
+  Avisos de cierre de recursos registrados; audio Dummy, sin exportar ni probar
+  Web, dispositivo físico o rendimiento de GPU real.
+
+## 14/10/2026 — Celda de energía y equipo HD por personaje
+
+- Contador de batalla con celda frontal y ventana despejada para EnergyNumber,
+  incluido valor de dos cifras; iluminación suave solo en tubos laterales.
+- 24 PNG de armas/protecciones de los cuatro civiles, con tres niveles por pista.
+  `equipment_badges.gd` resuelve ID/pista/nivel de la instantánea, conservando
+  bonos, niveles, guardados y explicaciones. Filtrado lineal en iconos del HUD;
+  número de nivel permanece dentro del icono al comprimir el espaciado.
+- Cinco fuentes ImageGen, prompts y procesamiento geométrico documentados en
+  [Celda y mejoras](combat_equipment_assets/README.md). Importación 512 px/0.9;
+  685 recursos visuales verificados por hash, incluidos los 25 nuevos RGBA.
+- Validación actual: render nativo aislado HUD 106/0, herrería 96/0;
+  premios headless sin fallos y auditoría de contenido 1510/0. Capturas de
+  contador de dos cifras y equipo de ambos pares revisadas. Avisos de recursos
+  al cerrar registrados; audio Dummy, sin exportación ni prueba Web/dispositivo.
+
+## 14/10/2026 — Celdas, componentes HD e inicio directo al combate
+
+- Nueva ilustración de celdas; ocho PNG individuales de componentes iniciales
+  a 512 px, siete iconos propios de dificultad/condición y play en ambos botones
+  de iniciar aventura. Fuentes/prompts de cinco generaciones ImageGen y SVG
+  nativo conservados en [Preparación](preparation_assets/README.md).
+- `equipment_screen.gd` resuelve arte por RelicArt; `data/equipment.json` añade
+  referencias opcionales sin cambiar IDs/iconos/valores. «Interferida» conserva
+  ID/efecto `tainted`. Resolución/filtros y política de importación actualizados.
+- `begin_on_floor()` entra/guarda sala 0 con Game antes de las cinemáticas:
+  nueva aventura y reanudación comienzan en combate sin mapa inicial. Game.new_run
+  mantiene su API para modelos/partidas anteriores; recompensas y Caminos intactos.
+- Validación actual: 89/89 suites headless; render nativo componentes/inicio 60/0,
+  configuración 30/0. Resolución, play, opciones bloqueadas, primera sala visitada
+  y reanudación sin segunda entrada verificados; 660 hashes visuales válidos.
+  Avisos al cerrar registrados, audio Dummy/perfil privado; sin exportar o probar
+  Web, escucha, rendimiento de GPU o dispositivo físico.
+
+## 14/10/2026 — Edificios ajustados a sus solares y barril inmóvil
+
+- Se encuadran los edificios por el área visible, eliminando en presentación los
+  grandes márgenes transparentes que los empequeñecían. Se amplían los seis
+  edificios y se alinean por la base, manteniendo proporciones y solares vacíos.
+- Máscaras de clic comparten la textura recortada; carteles sobre techos y paso
+  a carteles vecinos, incluidos Refugio/Proyectos. Construcción y navegación intactas.
+- Barril fijo de una sola imagen y hoja nueva de 24 llamas transparentes con
+  raíz fija a 12 FPS. Fuente/ prompt ImageGen y montaje geométrico en
+  [Brasero y distribución](base_camp/stable_fire/README.md). Cambios en
+  `base_camp_screen.gd`, `campfire.gd`, orden de carteles e importación.
+- Validación actual: 89/89 suites headless; render local aislado fuego 109/0,
+  solares 149/0 y clics de expansión 33/0. 643 hashes visuales verificados;
+  barril y raíz estables durante los 24 cuadros. Avisos al cerrar registrados,
+  audio Dummy/perfil privado; sin exportar o probar Web/dispositivo físico.
+
+## 14/10/2026 — Marcos de cartas de tablero y terminar turno tecnológico
+
+- Cuatro marcos con placas metálicas, biseles, circuitos del personaje, remaches
+  y papel tramado para reglas. Franja de nombre/oficio y «MEJORADA», reservando
+  espacios para título, coste, ilustración, efectos/objetivo y pastilla inferior.
+- Nuevo aro circular tecnológico de terminar turno, centro limpio y foco cian;
+  tamaño 136×136, zona de clic, acción y orden de combate conservados.
+- Assets SVG nativos rasterizados, cinco recursos existentes sustituidos sin
+  cambiar rutas/UIDs. Generador `postapocalyptic_ui_art.py`, integración en
+  `card_view.gd`, `card_typography.gd` y `end_turn_button.gd`. Estadísticas y textos
+  permanecen dinámicos; no se calculan reglas en el componente.
+- [Fuentes, decisiones y resultados](cards/tabletop/README.md): 89/89 suites
+  headless; cartas 1.249/0 renderizadas y soporte 537/0 headless; 642 hashes
+  verificados. Revisión local de mano y botón, audio Dummy/perfil privado;
+  avisos al cerrar registrados. Sin exportar ni probar navegador/dispositivo.
+
+## 14/10/2026 — Caminos en primera persona después de las batallas
+
+- Nueve fondos nuevos de cómic para las tres zonas, con una/dos/tres salidas;
+  iconos de destinos reales y alternativas posteriores. Los pasajes son clicables.
+  La recompensa se cobra primero; riesgos y transacciones conservan su flujo.
+- Columna Grupo/Mazo/Mapa con icono nativo de plano plegado; consulta de mapa
+  y vuelta a Caminos, vida/componentes y retorno desde Mazo. Tras un jefe,
+  carta/cinemática/componente preceden a la entrada del siguiente piso en primera
+  persona; la central final ofrece completar la aventura sin volver al mapa.
+- `adventure_navigation.gd` prepara snapshots/decide la pantalla. Se extraen del
+  mapa señales, datos y helpers a `adventure_scene.gd`; `paths_screen.gd` queda
+  separado. La fase guardada sigue siendo `map`, sin migración ni flag temporal.
+- Prompts/fuentes/procedencia en [Caminos](paths/README.md); diez recursos añadidos
+  al registro visual (642 activos). Importación de fondos a 1280 px/calidad 0,9,
+  originales completos; sin exportación.
+- Validación actual: 89/89 suites headless, 1.502 comprobaciones de contenido;
+  render nativo aislado con Caminos 153/0 y transiciones de jefe 14/0. Revisión
+  visual de bifurcaciones/rail/salida final. Avisos al cerrar registrados; audio
+  Dummy, perfil privado, sin navegador, escucha real o dispositivo físico.
+
+## 14/10/2026 — Rediseño integral: civiles contra la máquina
+
+- 632 recursos visuales activos sustituidos por cómic de tinta/cel shading:
+  cuatro civiles con herramientas improvisadas, 56 apariencias mecánicas,
+  88 cartas mínimas, campamento, interiores, tres zonas, iconos y 17 planos
+  cinematográficos. 140 trabajos producidos más cuatro maestros de identidad;
+  126 diseños de interfaz nativos. No se aplica un filtro al arte anterior.
+- Primeros planos estáticos en ambos bandos, borde blanco, transparencia y
+  partículas detrás. Poses del escenario con apoyo fijo y escala normalizada;
+  tiempos sostenidos distinguidos de dibujos originales en pruebas y documentación.
+- ARCA, celdas, componentes y sectores industriales sustituyen la ficción medieval;
+  26 catálogos publicados conservando IDs, UIDs, cifras y guardados. Taller y
+  Laboratorio mantienen galería 2×2. SourceSans3 MSDF, coste de carta centrado
+  y descripciones ajustadas al espacio sobre los símbolos inferiores.
+- Fuentes/prompts, importadores, cobertura, decisiones y límites en
+  [Dirección postapocalíptica](art_direction/postapocalyptic/README.md).
+  Documentación previa marcada como histórica.
+- Validación actual: 88/88 suites locales headless; 1.502 controles de contenido;
+  632 hashes verificados y cero recursos antiguos. Render local aislado de
+  pantallas, tres mapas/batallas y ambos primeros planos: héroes 124/0,
+  máquinas cero fallos. 35 suites con avisos al cerrar; audio Dummy. Sin exportar,
+  sin escucha real, navegador, emulador o dispositivo físico.
+
+
 ## 14/10/2026 — Apoyo de personajes en la fortaleza volcánica
 
 - Redibujado `assets/volcano/combat.png`: suelo adelantado, patio continuo y

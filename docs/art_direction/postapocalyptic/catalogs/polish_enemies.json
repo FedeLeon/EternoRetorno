@@ -1,0 +1,129 @@
+{
+  "crypt_tomb_raider": {
+    "id": "crypt_tomb_raider",
+    "visual": "crypt_bandit",
+    "name": "Extractor de archivos",
+    "hp": 30,
+    "role": "attacker",
+    "color": "7eafce",
+    "pattern": [
+      {
+        "damage": 7
+      },
+      {
+        "damage": 0,
+        "block": 5,
+        "counter": 4
+      },
+      {
+        "damage": 9
+      }
+    ]
+  },
+  "crypt_frost_serpent": {
+    "id": "crypt_frost_serpent",
+    "visual": "beast_6",
+    "name": "Serpentín refrigerante",
+    "hp": 33,
+    "role": "attacker",
+    "color": "7eafce",
+    "pattern": [
+      {
+        "damage": 5,
+        "all": true
+      },
+      {
+        "damage": 8,
+        "block": 4
+      },
+      {
+        "damage": 0,
+        "block": 7
+      }
+    ]
+  },
+  "forest_alpha_bat": {
+    "id": "forest_alpha_bat",
+    "visual": "flying_1",
+    "name": "Dron alfa",
+    "hp": 34,
+    "role": "attacker",
+    "color": "80a659",
+    "pattern": [
+      {
+        "damage": 9
+      },
+      {
+        "damage": 13
+      },
+      {
+        "damage": 0,
+        "block": 7,
+        "counter": 4
+      }
+    ]
+  },
+  "forest_dark_raven": {
+    "id": "forest_dark_raven",
+    "visual": "flying_6",
+    "name": "Vigía de azotea",
+    "hp": 29,
+    "role": "attacker",
+    "color": "80a659",
+    "pattern": [
+      {
+        "damage": 7
+      },
+      {
+        "damage": 0,
+        "counter": 4
+      },
+      {
+        "damage": 4,
+        "all": true
+      }
+    ]
+  },
+  "ash_cinder_wolf": {
+    "id": "ash_cinder_wolf",
+    "visual": "crypt_wolf",
+    "name": "Sabueso térmico",
+    "hp": 37,
+    "role": "attacker",
+    "color": "d59b64",
+    "pattern": [
+      {
+        "damage": 10
+      },
+      {
+        "damage": 13
+      },
+      {
+        "damage": 6,
+        "all": true
+      }
+    ]
+  },
+  "ash_warlord": {
+    "id": "ash_warlord",
+    "visual": "bandit_7",
+    "name": "Supervisor de fundición",
+    "hp": 46,
+    "role": "protector",
+    "color": "d59b64",
+    "pattern": [
+      {
+        "damage": 8,
+        "block": 6
+      },
+      {
+        "damage": 12
+      },
+      {
+        "damage": 0,
+        "block": 10,
+        "counter": 4
+      }
+    ]
+  }
+}

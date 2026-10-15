@@ -4,25 +4,34 @@ Punto de entrada de la documentación del proyecto. Actualizado el **14/10/2026*
 
 ## Estado actual
 
-[Suelo corregido de las batallas de la tercera mazmorra](dungeon/volcano_ground.md):
-patio continuo bajo los personajes, conservando el estilo a lápiz.
+**Dirección vigente:** mundo postapocalíptico de civiles contra máquinas, con
+cómic de acción americano: tinta negra, sombras planas y colores vivos.
+La sustitución de los **667 recursos visuales activos está completada** y verificada
+por hash; la ficción publicada conserva IDs y estadísticas. [Diseños, alcance y procedencia](art_direction/postapocalyptic/README.md).
 
-Dirección visual de todo el juego: **sketchbook de grafito y lápices de colores**,
+
+[Suelo corregido de las batallas de la tercera mazmorra](dungeon/volcano_ground.md):
+registro histórico del apoyo; las batallas actuales usan escenarios industriales
+con suelo visible bajo los personajes.
+
+Dirección anterior (registro histórico): **sketchbook de grafito y lápices de colores**,
 con trazos irregulares, negro/gris/violeta y buen contraste.
 
-[Conversión integral completada](art_direction/migration/README.md): héroes,
+[Conversión sketchbook anterior](art_direction/migration/README.md): héroes,
 enemigos y sus animaciones, mazmorras, mapas, cartas, iconos y cinemáticas.
 628 imágenes actualizadas verificadas por hash; ninguna imagen activa pendiente.
-[Inventario y galería actuales](art_direction/2026-10-13/review/README.md).
+[Inventario técnico de recursos](art_direction/2026-10-13/review/README.md).
 
 [Campamento al atardecer](base_camp/dusk/README.md) e
-[interiores con galerías 2×2](base_camp/interiors/README.md) conservan el arte aprobado.
+[interiores con galerías 2×2](base_camp/interiors/README.md) conservan la distribución; sus dibujos fueron sustituidos por el nuevo cómic.
 
 Elenco: Nicolás **Carpintero**, Inés **Constructora**, Mauro **Boticario** y Vera **Profesora**. [Retiro definitivo y migración de guardados](cleanup/2026-10-13.md).
 
-Aventuras nuevas de tres pisos aleatorios de 28 salas: cripta, bosque y fortaleza volcánica; cuatro protagonistas con oficios civiles y parejas de dos héroes. Campamento inicial,
+Aventuras nuevas de tres pisos aleatorios de 28 salas: red de mantenimiento, cinturón industrial y central del Reinicio; cuatro protagonistas con oficios civiles y parejas de dos héroes. Campamento inicial,
 selección alrededor de la fogata, equipamiento previo, mapa en espiral con caminos variables hasta el guardián central, combate,
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
+
+- Navegación: después de las recompensas se elige en [Caminos en primera persona](paths/README.md), con salidas reales, vista previa y menú Grupo/Mazo/Mapa. Una aventura nueva entra directamente en la primera batalla tras la preparación.
 
 - Controles: arrastrar, tocar, teclado o mando; preview, tutorial, velocidad 1–2× y efectos ajustables.
 - Aventura: dificultad y condición mediante tarjetas ilustradas, rechazo de carta por almas y resumen final.
@@ -35,23 +44,27 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 - Daño de veneno al terminar el turno: parpadeo verde, antes de las cenizas si
   mata; los golpes normales mantienen el rojo. [Validación](battle_effects/README.md).
 - Estados de combate: 36 iconos de efectos junto a las intenciones y sobre la vida
-  aliada, con dibujos sencillos a lápiz, volumen discreto y todas las filas visibles; tocar permite
+  aliada, con iconos de cómic sencillos, volumen discreto y todas las filas visibles; tocar permite
   consultar cada explicación, sin carteles sobre las cartas. [Diseño y pruebas](battle_effects/README.md).
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
 - Encuentros: 19 situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
+- Cartas: [marcos de juego de mesa tecnológicos](cards/tabletop/README.md), con placas, circuitos y franja de personaje/mejora; botón circular de terminar turno con nuevo aro mecánico.
 - Cartas: cuatro marcos con emblemas por héroe, coste superior derecho y pastilla de
   ataque/defensa. 88 ilustraciones minimalistas nuevas: objetos y trazos que
   representan el efecto, con poco detalle y fondo despejado. [Arte actual](cards/minimal/README.md).
+- Preparación: [celdas, ocho componentes HD, iconos propios y play](preparation_assets/README.md); entrada directa al combate, con guardado antes de las cinemáticas.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 para élites, más nueve exclusivas de guardianes, visible junto a la elección de carta.
 - Tamaño de enemigos: cuadros pequeños de ataque compensados mediante métricas precalculadas, con apoyo en el suelo y vuelta al tamaño de reposo.
+- Animaciones: [revisión de poses, selección y efectos de primer plano](animation_review/README.md); extracción corregida y reposo estable.
 - Actores: héroes de batalla con doce poses por acción, base de 256×256 y ataques nuevos de 384×384; cuatro héroes y 56 enemigos animados con celdas de 256×256; 57 definiciones activas con 56 apariencias. Los nuevos conceptos tienen cuatro poses de reposo, cuatro de ataque y cuatro poses transparentes de ataque en primer plano; anticipación y recuperación por familia.
-- Equipo de héroes: mejoras en el HUD y tintes del sprite; sin piezas de arma o
+- Equipo de héroes: [celda de energía y 24 iconos de mejoras](combat_equipment_assets/README.md), propios por personaje/pista/nivel. Mejoras en el HUD y tintes del sprite; sin piezas de arma o
   armadura pegadas encima del personaje. Se mantiene el equipo dibujado en sus poses.
 - Primeros planos de héroes: ocho ilustraciones estáticas (ataque y defensa por
   protagonista), transparentes y quietas con partículas detrás; se retiran los
   atlas anteriores. [Assets, limpieza y validación](comic/static/README.md).
+- Campamento: [edificios ajustados a los solares y barril fijo](base_camp/stable_fire/README.md); 24 cuadros nuevos solo de llamas, sin desplazamiento del cuerpo.
 - Campamento: mercado construible en solar 1 por 300 almas, con 52 cartas comprables.
   Almas persistentes por victoria, visibles solo en campamento y edificios. Barra superior
   con saldo gráfico; arco para continuar/nueva aventura y edificio de mercado visible.
@@ -75,7 +88,9 @@ La APK existente corresponde a una entrega anterior. Los cambios recientes se
 probaron localmente; **no se exporta una APK por cada cambio**. La validación
 Android histórica no certifica la interfaz actual.
 
-Limpieza actual: [código, recursos y fuentes sustituidas del 14/10](cleanup/2026-10-14.md).
+Revisión y limpieza actuales: [batallas, vistas, mecánicas y archivos sustituidos](game_review_2026_10_14/README.md).
+
+Limpieza anterior: [código, recursos y fuentes sustituidas del 14/10](cleanup/2026-10-14.md).
 Se retiraron recursos sustituidos, referencias regenerables y resultados temporales;
 se mantienen las animaciones activas y las pruebas de regresión.
 

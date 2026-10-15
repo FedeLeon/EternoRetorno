@@ -1,14 +1,14 @@
 extends RefCounted
 const DIFFICULTIES = [
-	["Normal", "guard", "Enemigos y almas sin cambios."],
-	["Retorno I", "attack", "+6% vida enemiga · +1 daño\n+15% almas"],
-	["Retorno II", "counter", "+12% vida · +2 daño · +30% almas\nContraataques cada 3 turnos"],
-	["Retorno III", "enraged", "+18% vida · +3 daño · +45% almas\nContraataques cada 3 turnos"]
+	["Normal", "difficulty/normal", "Enemigos y celdas sin cambios."],
+	["Retorno I", "difficulty/return_1", "+6% vida enemiga · +1 daño\n+15% celdas"],
+	["Retorno II", "difficulty/return_2", "+12% vida · +2 daño · +30% celdas\nContraataques cada 3 turnos"],
+	["Retorno III", "difficulty/return_3", "+18% vida · +3 daño · +45% celdas\nContraataques cada 3 turnos"]
 ]
 const CONDITIONS = [
-	["normal", "Sin condición", "prepared", "Una expedición sin efectos adicionales."],
-	["tainted", "Profanada", "tainted", "+3 bloqueo enemigo cada 3 turnos."],
-	["dangerous", "Peligrosa", "frenzy", "Más élites · +25% almas\nContraataques cada 3 turnos"]
+	["normal", "Sin condición", "conditions/normal", "Una expedición sin efectos adicionales."],
+	["tainted", "Interferida", "conditions/tainted", "+3 bloqueo enemigo cada 3 turnos."],
+	["dangerous", "Peligrosa", "conditions/dangerous", "Más élites · +25% celdas\nContraataques cada 3 turnos"]
 ]
 
 static func open(ui: Control, floor_number: int, start: Callable) -> void:
@@ -42,6 +42,10 @@ static func open(ui: Control, floor_number: int, start: Callable) -> void:
 		ui.game.profile.preferred_variant = selected.variant
 		start.call(floor_number),true,panel)
 	begin_button.name = "StartAdventure"
+	begin_button.icon = preload("res://assets/ui/play.svg")
+	begin_button.expand_icon = true
+	begin_button.add_theme_constant_override("icon_max_width", 30)
+	begin_button.add_theme_constant_override("h_separation", 10)
 	ui.button("Volver",540,620,200,34,ui.close_modal,true,panel).name = "CancelRunSetup"
 
 static func card(ui: Control, parent: Control, id: String, title: String, art: String, detail: String, x: float, y: float, w: float, h: float, group: ButtonGroup, selected: bool, enabled: bool, action: Callable) -> Button:
@@ -52,8 +56,9 @@ static func card(ui: Control, parent: Control, id: String, title: String, art: S
 	button.button_pressed = selected
 	button.tooltip_text = title + ": " + detail
 	var picture = TextureRect.new()
-	picture.texture = load("res://assets/battle_effects/%s.png" % art)
+	picture.texture = load("res://assets/run_setup/%s.png" % art)
 	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	if not enabled: picture.modulate = Color(0.5,0.5,0.5,0.65)

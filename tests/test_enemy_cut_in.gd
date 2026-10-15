@@ -24,11 +24,13 @@ func run_tests() -> void:
 		var initial = effect.picture.position.x
 		await create_timer(0.25).timeout
 		check(effect.picture.texture != null and effect.from_right, "texture and direction " + visual)
-		check(effect.picture.position.x < initial, "entry moves left " + visual)
+		check(effect.static_illustration and effect.picture.position.x == initial and effect.picture.scale == Vector2.ONE, "static enemy transform " + visual)
+		check(effect.hero_fx != null and effect.hero_fx.get_index() < effect.picture.get_index(), "lights behind enemy " + visual)
+		check(effect.picture.material is ShaderMaterial, "thin silhouette border " + visual)
 		check(is_equal_approx(effect.picture.position.x + effect.picture.size.x, host.size.x * 0.985), "right anchor " + visual)
 		check(effect.picture.texture.get_image().detect_alpha() != Image.ALPHA_NONE, "transparent " + visual)
 		if catalog[visual].get("foreground_frames",1) == 4:
-			check(effect.frame_grid == Vector2i(2,2), "four drawn attack poses " + visual)
+			check(effect.frame_grid == Vector2i(2,2) and effect.frame_index == 2, "one contact pose from legacy sheet " + visual)
 			var atlas = effect.frame_texture.atlas.get_image()
 			if atlas.is_compressed(): atlas.decompress()
 			var cell = atlas.get_size()/2
@@ -39,6 +41,9 @@ func run_tests() -> void:
 				var digest = hash(pose.get_data())
 				check(digest not in hashes,"distinct attack pose %s/%d" % [visual,frame])
 				hashes.append(digest)
+		var region = effect.frame_texture.region if effect.frame_texture != null else Rect2()
+		await create_timer(0.12).timeout
+		check(effect.picture.position.x == initial and (effect.frame_texture == null or effect.frame_texture.region == region), "enemy pose never advances " + visual)
 		if DisplayServer.get_name() != "headless" and visual == "crypt_lancer":
 			await RenderingServer.frame_post_draw
 			root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat/enemy-comic.png"))

@@ -1,5 +1,8 @@
 # Retratos para tarjetas pequeñas — 13/10/2026
 
+> Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
+> se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
+
 ## Actualización: galerías ampliadas de edificios
 
 Mercado, herrería, iglesia y refugio reutilizan estos rostros en tarjetas

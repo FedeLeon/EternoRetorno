@@ -1,0 +1,24 @@
+{
+  "id": "cards__frames__mage",
+  "target": "assets/cards/frames/mage.png",
+  "kind": "frame",
+  "hero": "mage",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/postapocalyptic/sources/cards__frames__mage.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Vera,27,young woman with silver-gray short tousled bob, teacher, graphite-smudged fingers, pencil behind ear. Aubergine civilian long coat with teal lining over cream ordinary shirt and worn gray trousers, scuffed boots, notebook and reused school satchel. Holds a homemade electromagnetic pulse device built from an old antenna, exposed cables and a salvaged battery, with small cyan arcs; NO magic staff, NO robes, NO plate armor. Curious determined civilian, not military. ONE vertical2:3 game card FRAME. Keep exact functional layout: small profession emblem TOPCENTER, light cream clean title strip x12-74percent y14-23percent, dark empty image window y27-61percent, light cream clean description area y63-91percent, dark cost medallion at x88percent y17percent, small icon pill bottom. Thin bold ink black border, angular chipped industrial plate corners, restrained teal/violet highlights. No text/numbers/portrait, true alpha outside silhouette. No ornaments invading text.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dd2d6b07-dba8-490a-a084-1a55967b5c43.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "7c7b66d5d078be36385c0c393d29a484959a58225ecb5881a0d8aa227fde9fc5",
+  "actual_dimensions": [
+    1024,
+    1536
+  ]
+}

@@ -1,0 +1,897 @@
+{
+  "date": "2026-10-14",
+  "headless": {
+    "passed": 90,
+    "total": 90,
+    "script_errors": 0,
+    "failed_assertion_suites": 0,
+    "shutdown_warning_suites": 36,
+    "results": [
+      {
+        "test": "test_achievements.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.49
+      },
+      {
+        "test": "test_actor_motion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 4.53
+      },
+      {
+        "test": "test_adventure_assets.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 17.35
+      },
+      {
+        "test": "test_adventure_expansion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.69
+      },
+      {
+        "test": "test_attendant_dialogue.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.89
+      },
+      {
+        "test": "test_audio.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 8.03
+      },
+      {
+        "test": "test_bag_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.47
+      },
+      {
+        "test": "test_balance_polish.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 5.89
+      },
+      {
+        "test": "test_base_camp.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.75
+      },
+      {
+        "test": "test_battle_effect_icons.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 3.21
+      },
+      {
+        "test": "test_block_ash.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.79
+      },
+      {
+        "test": "test_boss_relic_navigation.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.8
+      },
+      {
+        "test": "test_building_galleries.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.74
+      },
+      {
+        "test": "test_camp.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.58
+      },
+      {
+        "test": "test_camp_expansion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.49
+      },
+      {
+        "test": "test_camp_expansion_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.38
+      },
+      {
+        "test": "test_camp_plot_ground.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.42
+      },
+      {
+        "test": "test_card_art.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.67
+      },
+      {
+        "test": "test_card_upgrade.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.8
+      },
+      {
+        "test": "test_cards.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 9.09
+      },
+      {
+        "test": "test_cinematic_enemies.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 11.23
+      },
+      {
+        "test": "test_cinematics.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 5.84
+      },
+      {
+        "test": "test_collection_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.79
+      },
+      {
+        "test": "test_combat_depth.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.48
+      },
+      {
+        "test": "test_combat_depth_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.38
+      },
+      {
+        "test": "test_combat_expansion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 9.73
+      },
+      {
+        "test": "test_combat_layout.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 5.07
+      },
+      {
+        "test": "test_combat_presentation.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 18.61
+      },
+      {
+        "test": "test_compact_portraits.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.39
+      },
+      {
+        "test": "test_content_migration.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.38
+      },
+      {
+        "test": "test_counter.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 16.08
+      },
+      {
+        "test": "test_crypt_variety.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 9.26
+      },
+      {
+        "test": "test_depth_animation_flow.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 6.19
+      },
+      {
+        "test": "test_detailed_heroes.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.15
+      },
+      {
+        "test": "test_development_start.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.99
+      },
+      {
+        "test": "test_dungeon.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.48
+      },
+      {
+        "test": "test_elite_relics.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.57
+      },
+      {
+        "test": "test_encounters_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 3.49
+      },
+      {
+        "test": "test_end_adventure.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.8
+      },
+      {
+        "test": "test_enemies.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 73.45
+      },
+      {
+        "test": "test_enemy_cut_in.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 40.85
+      },
+      {
+        "test": "test_enemy_formations.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 3.08
+      },
+      {
+        "test": "test_enemy_pose_sizes.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 6.06
+      },
+      {
+        "test": "test_energy_timing.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.63
+      },
+      {
+        "test": "test_equipment.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.57
+      },
+      {
+        "test": "test_equipment_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.93
+      },
+      {
+        "test": "test_expansion_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 4.98
+      },
+      {
+        "test": "test_forest.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.5
+      },
+      {
+        "test": "test_forest_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 14.49
+      },
+      {
+        "test": "test_forge.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.49
+      },
+      {
+        "test": "test_forge_assets.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 8.3
+      },
+      {
+        "test": "test_forge_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 3.49
+      },
+      {
+        "test": "test_game.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.87
+      },
+      {
+        "test": "test_game_review.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 21.6
+      },
+      {
+        "test": "test_guardian.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 27.95
+      },
+      {
+        "test": "test_hero_cut_in.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.79
+      },
+      {
+        "test": "test_hero_grounding.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.54
+      },
+      {
+        "test": "test_hero_roster.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.52
+      },
+      {
+        "test": "test_hud.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.99
+      },
+      {
+        "test": "test_mage.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 33.96
+      },
+      {
+        "test": "test_map.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 3.49
+      },
+      {
+        "test": "test_market_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.36
+      },
+      {
+        "test": "test_melee_motion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 17.42
+      },
+      {
+        "test": "test_paths.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 3.21
+      },
+      {
+        "test": "test_poison_feedback.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 4.51
+      },
+      {
+        "test": "test_polish_motion.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.24
+      },
+      {
+        "test": "test_polish_rules.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.48
+      },
+      {
+        "test": "test_polish_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 15.7
+      },
+      {
+        "test": "test_presentation_refinements.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 6.98
+      },
+      {
+        "test": "test_progression.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.85
+      },
+      {
+        "test": "test_refuge.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 2.08
+      },
+      {
+        "test": "test_rest.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.9
+      },
+      {
+        "test": "test_reward_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.0
+      },
+      {
+        "test": "test_rogue.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 24.44
+      },
+      {
+        "test": "test_run_setup_cards.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 1.42
+      },
+      {
+        "test": "test_running.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 3.74
+      },
+      {
+        "test": "test_spiral_map.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.79
+      },
+      {
+        "test": "test_static_cutins.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.57
+      },
+      {
+        "test": "test_support_cards.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.59
+      },
+      {
+        "test": "test_support_cards_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 2.73
+      },
+      {
+        "test": "test_synergies.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.57
+      },
+      {
+        "test": "test_synergy_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 4.22
+      },
+      {
+        "test": "test_technical_integrity.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.48
+      },
+      {
+        "test": "test_title.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 1.61
+      },
+      {
+        "test": "test_treasure.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 0.48
+      },
+      {
+        "test": "test_treasure_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 5.16
+      },
+      {
+        "test": "test_turn_sequence.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 5.91
+      },
+      {
+        "test": "test_ui.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": false,
+        "seconds": 4.79
+      },
+      {
+        "test": "test_warrior.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 18.66
+      },
+      {
+        "test": "test_whole_game_polish.gd",
+        "exit": 0,
+        "script_error": false,
+        "assertion_failure": false,
+        "shutdown_warning": true,
+        "seconds": 14.69
+      }
+    ]
+  },
+  "content": {
+    "checks": 1510,
+    "errors": []
+  },
+  "native": {
+    "batch": [
+      {
+        "test": "test_encounters_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 9.27,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_camp_expansion_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 7.96,
+        "shutdown_warning": false
+      },
+      {
+        "test": "test_collection_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 3.5,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_market_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 5.35,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_forge_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 9.38,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_expansion_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 13.78,
+        "shutdown_warning": false
+      },
+      {
+        "test": "test_bag_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 4.74,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_paths",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 9.19,
+        "shutdown_warning": false
+      },
+      {
+        "test": "test_treasure_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 9.22,
+        "shutdown_warning": false
+      },
+      {
+        "test": "test_equipment_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 6.42,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_polish_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 23.55,
+        "shutdown_warning": true
+      },
+      {
+        "test": "test_combat_depth_ui",
+        "exit": 0,
+        "script_errors": false,
+        "assertions_failed": false,
+        "seconds": 5.28,
+        "shutdown_warning": true
+      }
+    ],
+    "latest_rechecks": {
+      "collection": {
+        "checks": 42,
+        "failures": 0
+      },
+      "focused_battle_map": {
+        "checks": 16,
+        "failures": 0
+      }
+    },
+    "navigation_stress": {
+      "after": {
+        "nodes": 62.0,
+        "orphans": 0.0
+      },
+      "before": {
+        "nodes": 62.0,
+        "orphans": 0.0
+      },
+      "cycles": 30,
+      "node_growth": 0.0,
+      "orphan_growth": 0.0,
+      "renders": 90
+    }
+  },
+  "art": {
+    "valid_visual_hashes": 667,
+    "mismatches": 0,
+    "retired_runtime_references": 0,
+    "actor_import_byte_stability": true,
+    "native_symbols_dry_run": {
+      "checked": 102,
+      "changed": 0
+    }
+  },
+  "cleanup": {
+    "files": 3371,
+    "bytes": 1328169819,
+    "visuals_removed": 18,
+    "obsolete_tools_removed": 9,
+    "runtime_modules_reachable": 189
+  },
+  "balance": {
+    "basic_bot": {
+      "runs": 18,
+      "wins": 3
+    },
+    "decision_bot": {
+      "runs": 36,
+      "gear_0_wins": 14,
+      "gear_0_runs": 18,
+      "gear_1_wins": 13,
+      "gear_1_runs": 18
+    },
+    "note": "Legal deterministic bots, not human balance or performance validation."
+  },
+  "limitations": [
+    "Local headless and isolated Xephyr/llvmpipe only",
+    "Dummy audio; no subjective listening test",
+    "No Web/APK export, browser, physical GPU or mobile test",
+    "36 suites still warn about live resources at process exit; not a proven absence of resource leaks"
+  ]
+}

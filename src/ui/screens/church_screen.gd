@@ -7,7 +7,7 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/attendant_dialogue.gd").attach(ui, "church")
-	preload("res://src/ui/components/preparation_header.gd").build(ui, "La Iglesia · Elegí tu camino", actions.back, snapshot.souls, "Campamento")
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Laboratorio · Elegí tu camino", actions.back, snapshot.souls, "Campamento")
 	if snapshot.hero == "":
 		var heading_frame = Panel.new()
 		heading_frame.name = "ChurchHeadingFrame"
@@ -29,10 +29,10 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 		var body = preload("res://src/ui/components/camp_offer_card.gd").build(ui, ui.layer, Rect2(528 + i * 366, 150, 358, 512), "res://assets/church/%s.png" % spec.art, spec.name, spec.description, true)
 		body.name = "Specialization_" + spec.id
 		if active: body.modulate = Color(1.12, 1.07, 0.96)
-		var status = "Activa para próximas aventuras" if active else ("Aprendida" if spec.owned else ("Costo: %d almas" % spec.cost if snapshot.eligible else "Requiere ganar una aventura con este héroe"))
+		var status = "Activa para próximas aventuras" if active else ("Aprendida" if spec.owned else ("Costo: %d celdas" % spec.cost if snapshot.eligible else "Requiere ganar una aventura con este héroe"))
 		ui.label_at(status, 18, 366, 322, 52, 18, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		var caption = "Activa" if active else ("Activar" if spec.owned else "Aprender · %d almas" % spec.cost)
+		var caption = "Activa" if active else ("Activar" if spec.owned else "Aprender · %d celdas" % spec.cost)
 		var enabled = not active and (spec.owned or (snapshot.eligible and snapshot.souls >= spec.cost))
 		var button = ui.button(caption, 22, 436, 314, 48, func(): actions.activate.call(spec.id) if spec.owned else actions.buy.call(spec.id), enabled, body)
 		button.name = "LearnSpecialization"
-	ui.label_at("Una activa por héroe. Aprender cuesta almas; cambiar entre aprendidas es gratis.\nSe aplica al iniciar una aventura nueva.", 528, 664, 724, 52, 15, ui.TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at("Una activa por héroe. Aprender cuesta celdas; cambiar entre aprendidas es gratis.\nSe aplica al iniciar una aventura nueva.", 528, 664, 724, 52, 15, ui.TEXT).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

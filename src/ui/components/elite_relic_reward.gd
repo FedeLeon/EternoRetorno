@@ -3,7 +3,7 @@ extends RefCounted
 static func build(ui: Control, relic: Dictionary) -> void:
 	var panel = ui.panel(28, 160, 358, 414)
 	panel.name = "EliteRelicReward"
-	ui.label_at("Reliquia obtenida", 16, 14, 326, 36, 25, ui.GOLD, panel).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at("Componente obtenida", 16, 14, 326, 36, 25, ui.GOLD, panel).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var icon = TextureRect.new()
 	icon.name = "RelicArtwork"
 	icon.texture = preload("res://src/presentation/relic_art.gd").texture(relic)

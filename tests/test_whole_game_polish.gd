@@ -46,7 +46,7 @@ func run_tests() -> void:
 			var cell = texture.get_region(Rect2i(frame*cell_size.x,0,cell_size.x,cell_size.y))
 			var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(cell,0.5)
 			check(bounds.position.x>=8 and bounds.position.y>=8 and bounds.end.x<=cell_size.x-8 and bounds.end.y<=cell_size.y-8,"complete packed silhouette keeps clear margins: %s / %d" % [id,frame])
-		check(unique.size()==8,"eight different poses: "+id)
+		check(unique.size()==4,"four authored keyposes: "+id)
 		var baseline = actor.sprite.position
 		actor.play_once("attack");await create_timer(0.25).timeout
 		check(actor.acting and actor.sprite.frame>=4,"windup and strike use drawn poses: "+id)
@@ -98,15 +98,15 @@ func run_tests() -> void:
 	check(body.get_child_count()==3,"bestiary initially shows discovered entries")
 	app.layer.get_node("BestiaryFloor2").pressed.emit();await process_frame
 	check(body.get_child_count()==1 and body.get_child(0).name=="BestiaryEntry_forest_alpha_bat","filter by actual dungeon membership")
-	app.layer.get_node("BestiarySearch").text="señor"
-	app.layer.get_node("BestiarySearch").text_changed.emit("señor");await process_frame
+	app.layer.get_node("BestiarySearch").text="fundición"
+	app.layer.get_node("BestiarySearch").text_changed.emit("fundición");await process_frame
 	check(body.get_child(0).name=="BestiaryEmpty","empty search has explanation")
 	app.layer.get_node("BestiaryFloor3").pressed.emit();await process_frame
 	check(body.get_child_count()==1 and body.get_child(0).name=="BestiaryEntry_ash_warlord","search combines with dungeon filter")
 	await capture("bestiary-filtered")
 	app.layer.get_node("BestiaryFloor1").pressed.emit()
-	app.layer.get_node("BestiarySearch").text="serpiente"
-	app.layer.get_node("BestiarySearch").text_changed.emit("serpiente")
+	app.layer.get_node("BestiarySearch").text="serpentín"
+	app.layer.get_node("BestiarySearch").text_changed.emit("serpentín")
 	app.layer.get_node("BestiaryKnownOnly").button_pressed=false
 	await process_frame
 	check(body.get_child(0).name=="BestiaryEmpty","search never reveals undiscovered names")

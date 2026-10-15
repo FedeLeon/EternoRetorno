@@ -1,5 +1,16 @@
 # Estado visual actual — 14/10/2026
 
+Cómic postapocalíptico integrado: cuatro civiles, 56 apariencias de máquinas,
+660 recursos visuales verificados. Cuerpos de 256 px y acciones de 384 px con
+poses sostenidas; primeros planos estáticos HD y partículas detrás. Los bancos
+originales, frames de tiempo y derivados se distinguen en la documentación.
+[Arte, pruebas actuales y límites](../art_direction/postapocalyptic/README.md).
+88/88 suites locales sin fallos; render nativo aislado a 1280×720. Sin exportar
+ni certificar Web/dispositivo o escucha de audio. Las cifras inferiores son
+históricas y no validan esta entrega.
+
+## Estado anterior sketchbook — 14/10/2026
+
 Cuatro héroes sketchbook, diez acciones de doce poses; detalle base de 256 px,
 acciones adicionales de 384 px. Las variantes de equipo reutilizan dibujos con
 tintes discretos, sin piezas superpuestas. Héroes: 1108 comprobaciones locales;

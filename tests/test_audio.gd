@@ -100,7 +100,8 @@ func run_tests() -> void:
 	played.clear()
 	await app.animate_combat_action()
 	check(played.has("ash") and played.has("block"), "discard and enemy block sound")
-	check(played.has("bones") or played.has("monster") or played.has("goblin") or played.has("blade"), "enemy attack audio")
+	check(played.has("shield_bash") or played.has("shield_impact") or played.has("magic"), "mechanical enemy attack audio")
+	check(not played.has("bones") and not played.has("monster") and not played.has("goblin"), "machines avoid creature voices")
 	if recording != null:
 		recording.set_recording_active(false)
 		var capture = recording.get_recording()

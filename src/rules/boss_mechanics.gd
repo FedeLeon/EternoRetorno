@@ -12,8 +12,8 @@ static func initialize(game: RefCounted) -> void:
 
 static func describe(state: Dictionary) -> String:
 	match state.kind:
-		"source": return "Fuente de resurrección: 20 PV. Rompela en dos acciones de 1 energía para impedir el regreso del guardián."
-		"prison": return "El bosque puede atrapar a un héroe: liberarlo cuesta 1 energía. Cada prisión dura como máximo un turno enemigo."
+		"source": return "Relé de reactivación: 20 PV. Rompela en dos acciones de 1 energía para impedir el regreso del guardián."
+		"prison": return "El sistema de sujeción puede inmovilizar a un héroe: liberarlo cuesta 1 energía. Cada prisión dura como máximo un turno enemigo."
 		"armor": return "Dos placas reducen el daño directo a la mitad. Cada golpe penetrante rompe una; también podés romperlas por 1 energía. Romper la última interrumpe el golpe cargado."
 	return ""
 
@@ -52,7 +52,7 @@ static func action(game: RefCounted, enemy: Dictionary, intent: Dictionary) -> v
 	if intent.get("special", "") == "prison" and game.living_heroes().size() == 2:
 		objective.trapped = int(intent.target)
 		objective.released_turn = game.run.combat.turn + 1
-		game._log("El bosque atrapó a %s. Liberalo o resistí hasta el próximo turno." % game.content.heroes[game.run.heroes[objective.trapped].id].name)
+		game._log("Un cable de sujeción inmoviliza a %s. Liberalo o resistí hasta el próximo turno." % game.content.heroes[game.run.heroes[objective.trapped].id].name)
 
 static func new_turn(game: RefCounted) -> void:
 	var objective: Dictionary = game.run.combat.get("boss_objective", {})
@@ -75,6 +75,6 @@ static func sustain(game: RefCounted) -> bool:
 		if enemy.hp <= 0 and game.content.enemies[enemy.id].get("boss", false):
 			enemy.hp = maxi(1, int(enemy.max_hp / 3)); enemy.resurrected = true; objective.revival_used = true
 			game.resolved_card_hits.append({"kind":"revive","enemy":game.run.combat.enemies.find(enemy),"hp":enemy.hp,"block":enemy.block})
-			game._log("La fuente devuelve al guardián a la vida. No podrá hacerlo de nuevo.")
+			game._log("El relé reactiva al guardián. No podrá hacerlo de nuevo.")
 			return true
 	return false

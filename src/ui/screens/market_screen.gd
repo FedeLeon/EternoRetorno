@@ -45,7 +45,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		var buy = Button.new()
 		buy.name = "Buy_" + id
 		var price = preload("res://src/rules/building_projects.gd").price(profile,card)
-		buy.text = "Habilitada" if owned else "Comprar · %d almas" % price
+		buy.text = "Habilitada" if owned else "Comprar · %d celdas" % price
 		buy.disabled = owned or profile.souls < price
 		buy.tooltip_text = "Ya disponible en recompensas" if owned else "Se conserva entre aventuras"
 		buy.pressed.connect(func(): actions.buy.call(id))
@@ -53,6 +53,6 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 		ui.rect(buy, 0, 312, 228, 48, body)
 		if not owned and preload("res://src/rules/building_projects.gd").owned(profile,"reservation"):
 			var reserved=profile.get("reserved_card","")==id
-			ui.button("Reservada · -20 almas" if reserved else "Reservar carta",0,366,228,36,func():
+			ui.button("Reservada · -20 celdas" if reserved else "Reservar carta",0,366,228,36,func():
 				var position=scroll.scroll_vertical
 				if ui.game.polish_action("reserve",{"id":id}): ui.render();ui.layer.get_node("MarketCards").set_deferred("scroll_vertical",position),not reserved,body).add_theme_font_size_override("font_size",15)

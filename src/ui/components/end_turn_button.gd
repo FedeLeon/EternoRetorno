@@ -10,7 +10,7 @@ static func decorate(button: Button) -> void:
 		button.add_theme_stylebox_override(state, style)
 	var focus = StyleBoxFlat.new()
 	focus.bg_color = Color.TRANSPARENT
-	focus.border_color = Color("d8b779")
+	focus.border_color = Color("8debdc")
 	focus.set_border_width_all(2)
 	focus.set_corner_radius_all(68)
 	button.add_theme_stylebox_override("focus", focus)

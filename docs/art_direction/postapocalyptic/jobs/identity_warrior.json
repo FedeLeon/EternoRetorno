@@ -1,0 +1,18 @@
+{
+  "hero": "warrior",
+  "prompt": "Use case: stylized-concept. Asset type: single full-body character design cutout for Eterno Retorno. ORIGINAL post-apocalyptic resistance world, late-1990s arcade fighting-game AMERICAN COMIC aesthetic: bold black hand-inked contours, dynamic angular shapes, flat vibrant colors, dramatic cel-shaded hard-edged shadows, subtle printed halftone dots, confident expressive faces. NOT pencil sketchbook, not washed out, not pixel art, not photorealism, not glossy 3D. Deep ink-black and aubergine shadows, vivid teal/cyan tech accents, rust orange and violet cloth, warm believable skin. Ordinary civilians fighting oppressive autonomous machines using improvised tools, NO superheroes, NO existing franchise costumes or logos, NO medieval fantasy. Subject: Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn. Reference is FACE IDENTITY ONLY, replace all armor/weapons/outfit with the civilian design described. ONE full-body figure, three-quarter view facing RIGHT, neutral ready stance, entire head hands boots tool visible, centered on TRUE transparent RGBA background, at least8percent clear margins. No scene, no floor, no diagram, no text, no white rectangular paper. Thin off-white silhouette outline. Portrait1024x1536.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ddfd09dc-f571-44d0-a950-a08b70ae82ee.png",
+  "style": "ORIGINAL post-apocalyptic resistance world, late-1990s arcade fighting-game AMERICAN COMIC aesthetic: bold black hand-inked contours, dynamic angular shapes, flat vibrant colors, dramatic cel-shaded hard-edged shadows, subtle printed halftone dots, confident expressive faces. NOT pencil sketchbook, not washed out, not pixel art, not photorealism, not glossy 3D. Deep ink-black and aubergine shadows, vivid teal/cyan tech accents, rust orange and violet cloth, warm believable skin. Ordinary civilians fighting oppressive autonomous machines using improvised tools, NO superheroes, NO existing franchise costumes or logos, NO medieval fantasy.",
+  "identity": "Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn.",
+  "kind": "identity",
+  "id": "identity_warrior",
+  "source": "docs/art_direction/postapocalyptic/sources/identity_warrior.png",
+  "target": "assets/heroes/identity/postapocalyptic/warrior.png",
+  "transparent": true,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

@@ -1,0 +1,172 @@
+{
+  "intro": {
+    "title": "Lo que el reinicio no borra",
+    "background": "intro",
+    "context": "cinematic_intro",
+    "color": "7ba9ca",
+    "chapters": [
+      {
+        "title": "El día repetido",
+        "text": "Cada mañana ARCA reinicia los sectores. Los convoyes pasan de largo; sus drones ya no reconocen a los vecinos.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/intro_0.png"
+      },
+      {
+        "title": "El campamento",
+        "text": "En un punto ciego de la red, el refugio conserva lo reparado y lo escrito. Allí todavía se aprende a vivir juntos.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/intro_1.png"
+      },
+      {
+        "title": "Cuatro vecinos",
+        "text": "Nicolás, Inés, Mauro y Vera salen con herramientas prestadas. Buscan provisiones y una forma de detener el siguiente reinicio.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/intro_2.png"
+      }
+    ]
+  },
+  "hero_warrior": {
+    "title": "Nicolás · Carpintero",
+    "background": "intro",
+    "portrait": "warrior",
+    "context": "cinematic_hero",
+    "color": "bd75df",
+    "chapters": [
+      {
+        "title": "Nicolás · Carpintero",
+        "text": "Nicolás reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_warrior_0.png"
+      },
+      {
+        "title": "El peso que carga",
+        "text": "Terminar un carro que pueda sacar a familias enteras del campamento. Guarda clavos doblados porque dice que todavía sirven.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_warrior_1.png"
+      }
+    ]
+  },
+  "hero_guardian": {
+    "title": "Inés · Constructora",
+    "background": "intro",
+    "portrait": "guardian",
+    "context": "cinematic_hero",
+    "color": "e3c68a",
+    "chapters": [
+      {
+        "title": "Inés · Albañila",
+        "text": "Inés levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_guardian_0.png"
+      },
+      {
+        "title": "Un lugar seguro",
+        "text": "Construir un lugar donde los vecinos puedan dormir sin montar guardia. Golpea dos veces los tablones para escuchar si están huecos.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_guardian_1.png"
+      }
+    ]
+  },
+  "hero_rogue": {
+    "title": "Mauro · Boticario",
+    "background": "intro",
+    "portrait": "rogue",
+    "context": "cinematic_hero",
+    "color": "8ab75b",
+    "chapters": [
+      {
+        "title": "Mauro · Boticario",
+        "text": "Mauro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_rogue_0.png"
+      },
+      {
+        "title": "La medida justa",
+        "text": "Llenar la botica de remedios útiles y dejar de reservar ingredientes para hacer corrosións. Cuenta gotas en voz baja cuando está nervioso.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_rogue_1.png"
+      }
+    ]
+  },
+  "hero_mage": {
+    "title": "Vera · Profesora",
+    "background": "intro",
+    "portrait": "mage",
+    "context": "cinematic_hero",
+    "color": "8ba8ea",
+    "chapters": [
+      {
+        "title": "Vera · Maestra",
+        "text": "Vera enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_mage_0.png"
+      },
+      {
+        "title": "Aprender probando",
+        "text": "Saber cómo detener el ciclo y volver a dar clase sin preparar una evacuación. Lleva un lápiz detrás de la oreja y busca otro para escribir.",
+        "duration": 6.0,
+        "image": "res://assets/cinematics/shots/hero_mage_1.png"
+      }
+    ]
+  },
+  "boss_1": {
+    "title": "Los ecos se apagan",
+    "background": "crypt",
+    "context": "cinematic_victory",
+    "color": "84c0e7",
+    "chapters": [
+      {
+        "title": "Los ecos se apagan",
+        "text": "El guardián de mantenimiento queda inmóvil. Entre el ruido de los ventiladores, por fin se escucha el agua de las tuberías.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_1_0.png"
+      },
+      {
+        "title": "El camino continúa",
+        "text": "Una compuerta de servicio conduce al cinturón industrial. Antes de avanzar, el grupo recupera una pieza que todavía funciona.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_1_1.png"
+      }
+    ]
+  },
+  "boss_2": {
+    "title": "La raíz se libera",
+    "background": "forest",
+    "context": "cinematic_victory",
+    "color": "a1cb7b",
+    "chapters": [
+      {
+        "title": "La raíz se libera",
+        "text": "El supervisor pierde la señal y las grúas se detienen. Las plantas siguen creciendo entre los rieles.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_2_0.png"
+      },
+      {
+        "title": "El camino continúa",
+        "text": "Más allá del patio aparece la central. Desde allí llega la orden que reinicia los sectores.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_2_1.png"
+      }
+    ]
+  },
+  "boss_3": {
+    "title": "Después del último fuego",
+    "background": "volcano",
+    "context": "cinematic_victory",
+    "color": "efb477",
+    "chapters": [
+      {
+        "title": "Después del último fuego",
+        "text": "ARCA deja de responder. Los dos esperan la siguiente alarma, pero solo se oye metal enfriándose.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_3_0.png"
+      },
+      {
+        "title": "Un lugar al que volver",
+        "text": "En el refugio todavía hay techos por reparar, heridas que curar y cuadernos sin terminar. Esta vez el día puede seguir.",
+        "duration": 6,
+        "image": "res://assets/cinematics/shots/boss_3_1.png"
+      }
+    ]
+  }
+}

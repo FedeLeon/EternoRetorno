@@ -10,10 +10,10 @@ static func build(ui: Control) -> void:
 	ui.panel(36,94,1208,96)
 	var records: Dictionary = ui.game.profile.get("bestiary",{}).duplicate(true)
 	var count = ui.game.content.enemies.keys().filter(func(id):return not records.get(id,{}).is_empty()).size()
-	ui.label_at("%d / %d criaturas descubiertas" % [count,ui.game.content.enemies.size()],54,101,510,28,18,ui.GOLD)
+	ui.label_at("%d / %d unidades descubiertas" % [count,ui.game.content.enemies.size()],54,101,510,28,18,ui.GOLD)
 	var search = LineEdit.new()
 	search.name = "BestiarySearch"
-	search.placeholder_text = "Buscar criatura descubierta…"
+	search.placeholder_text = "Buscar unidad descubierta…"
 	search.clear_button_enabled = true
 	ui.rect(search,796,100,426,38)
 	var state = {"floor":0,"known":true,"query":""}
@@ -31,7 +31,7 @@ static func build(ui: Control) -> void:
 		scroll.scroll_vertical = 0
 	for i in range(4):
 		var index = i
-		var button = ui.button(["Todos","Cripta","Bosque","Fortaleza"][i],54+i*154,144,142,34,func():state.floor=index;rebuild.call())
+		var button = ui.button(["Todos","Mantenimiento","Industria","Central"][i],54+i*154,144,142,34,func():state.floor=index;rebuild.call())
 		button.name = "BestiaryFloor%d" % i
 		button.toggle_mode = true
 		button.button_group = group
@@ -69,7 +69,7 @@ static func populate(ui: Control, body: Control, records: Dictionary, state: Dic
 		return ui.game.content.enemies[a].name.naturalnocasecmp_to(ui.game.content.enemies[b].name) < 0)
 	body.custom_minimum_size = Vector2(1180,maxi(220,ceili(ids.size()/3.0)*208))
 	if ids.is_empty():
-		var message = ui.label_at("No hay criaturas descubiertas que coincidan con esta búsqueda.",80,92,1000,62,22,ui.MUTED,body)
+		var message = ui.label_at("No hay unidades descubiertas que coincidan con esta búsqueda.",80,92,1000,62,22,ui.MUTED,body)
 		message.name = "BestiaryEmpty"
 		message.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		return

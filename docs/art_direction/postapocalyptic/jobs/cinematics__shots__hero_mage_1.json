@@ -1,0 +1,24 @@
+{
+  "id": "cinematics__shots__hero_mage_1",
+  "target": "assets/cinematics/shots/hero_mage_1.png",
+  "kind": "cinematic",
+  "hero": "mage",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/cinematics__shots__hero_mage_1.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Vera,27,young woman with silver-gray short tousled bob, teacher, graphite-smudged fingers, pencil behind ear. Aubergine civilian long coat with teal lining over cream ordinary shirt and worn gray trousers, scuffed boots, notebook and reused school satchel. Holds a homemade electromagnetic pulse device built from an old antenna, exposed cables and a salvaged battery, with small cyan arcs; NO magic staff, NO robes, NO plate armor. Curious determined civilian, not military. ONE single cinematic shot: Vera records drone radio patterns on a shelter roof beside her homemade antenna and salvaged battery; one tiny cyan electrical arc, curious concentration, NOT magical casting. Wide16:9 composition, strong dramatic comic staging, quiet lower25percent for subtitles. No panels or collage, no words or UI.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-24e6ca16-cf08-4b0a-a8ed-18641ed49be9.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "840ad934d70a8922bb201c76f33f650d719d1f61f9e0be281ea13d055c6adeed",
+  "actual_dimensions": [
+    1672,
+    941
+  ]
+}

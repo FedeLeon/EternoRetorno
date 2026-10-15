@@ -2,7 +2,7 @@
   "crypt_tomb_raider": {
     "id": "crypt_tomb_raider",
     "visual": "crypt_bandit",
-    "name": "Saqueador de tumbas",
+    "name": "Extractor de archivos",
     "hp": 30,
     "role": "attacker",
     "color": "7eafce",
@@ -23,7 +23,7 @@
   "crypt_frost_serpent": {
     "id": "crypt_frost_serpent",
     "visual": "beast_6",
-    "name": "Serpiente de escarcha",
+    "name": "Serpentín refrigerante",
     "hp": 33,
     "role": "attacker",
     "color": "7eafce",
@@ -45,7 +45,7 @@
   "forest_alpha_bat": {
     "id": "forest_alpha_bat",
     "visual": "flying_1",
-    "name": "Murciélago alfa",
+    "name": "Dron alfa",
     "hp": 34,
     "role": "attacker",
     "color": "80a659",
@@ -66,7 +66,7 @@
   "forest_dark_raven": {
     "id": "forest_dark_raven",
     "visual": "flying_6",
-    "name": "Cuervo de las ruinas",
+    "name": "Vigía de azotea",
     "hp": 29,
     "role": "attacker",
     "color": "80a659",
@@ -87,7 +87,7 @@
   "ash_cinder_wolf": {
     "id": "ash_cinder_wolf",
     "visual": "crypt_wolf",
-    "name": "Lobo de ceniza",
+    "name": "Sabueso térmico",
     "hp": 37,
     "role": "attacker",
     "color": "d59b64",
@@ -107,7 +107,7 @@
   "ash_warlord": {
     "id": "ash_warlord",
     "visual": "bandit_7",
-    "name": "Señor de las brasas",
+    "name": "Supervisor de fundición",
     "hp": 46,
     "role": "protector",
     "color": "d59b64",

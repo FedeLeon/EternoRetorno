@@ -1,0 +1,182 @@
+{
+  "duelist_seal": {
+    "name": "Compensador manual",
+    "description": "Las cartas de un solo impacto infligen +2 de daño.",
+    "locked": false,
+    "condition": "single",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/duelist_seal.png"
+  },
+  "storm_drum": {
+    "name": "Bobina de impulso",
+    "description": "Cada golpe de las cartas con varios impactos inflige +1 de daño.",
+    "locked": false,
+    "condition": "multi",
+    "stat": "damage",
+    "value": 1,
+    "icon_path": "res://assets/relics/storm_drum.png"
+  },
+  "star_shard": {
+    "name": "Condensador partido",
+    "description": "Las cartas que atacan a todos los enemigos infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "area",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/star_shard.png"
+  },
+  "drill_tusk": {
+    "name": "Broca endurecida",
+    "description": "Las cartas que atraviesan bloqueo infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "pierce",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/drill_tusk.png"
+  },
+  "titan_hammer": {
+    "name": "Martillo de prensa",
+    "description": "Las cartas de coste 2 o más infligen +3 de daño por impacto.",
+    "locked": false,
+    "condition": "costly",
+    "stat": "damage",
+    "value": 3,
+    "icon_path": "res://assets/relics/titan_hammer.png"
+  },
+  "blood_ruby": {
+    "name": "Sensor cardíaco",
+    "description": "Con la mitad de vida o menos, las cartas del héroe infligen +3 de daño por impacto.",
+    "locked": false,
+    "condition": "wounded",
+    "stat": "damage",
+    "value": 3,
+    "icon_path": "res://assets/relics/blood_ruby.png"
+  },
+  "ivory_mirror": {
+    "name": "Placa reflectora",
+    "description": "Con toda la vida, las cartas del héroe otorgan +3 de bloqueo.",
+    "locked": false,
+    "condition": "healthy",
+    "stat": "block",
+    "value": 3,
+    "icon_path": "res://assets/relics/ivory_mirror.png"
+  },
+  "iron_knot": {
+    "name": "Amarre de acero",
+    "description": "Las cartas que dan bloqueo otorgan +2 de bloqueo.",
+    "locked": false,
+    "condition": "always",
+    "stat": "block",
+    "value": 2,
+    "icon_path": "res://assets/relics/iron_knot.png"
+  },
+  "dawn_bell": {
+    "name": "Avisador de turno",
+    "description": "Las cartas de curación restauran +2 de vida.",
+    "locked": false,
+    "condition": "always",
+    "stat": "heal",
+    "value": 2,
+    "icon_path": "res://assets/relics/dawn_bell.png"
+  },
+  "viper_tooth": {
+    "name": "Boquilla corrosiva",
+    "description": "Las cartas que aplican corrosión añaden +1 de corrosión.",
+    "locked": false,
+    "condition": "always",
+    "stat": "poison",
+    "value": 1,
+    "icon_path": "res://assets/relics/viper_tooth.png"
+  },
+  "rune_chisel": {
+    "name": "Cincel aislado",
+    "description": "Las cartas mejoradas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "upgraded",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/rune_chisel.png"
+  },
+  "turtle_charm": {
+    "name": "Blindaje ligero",
+    "description": "Las cartas de bloqueo dirigidas a su dueño otorgan +3 de bloqueo.",
+    "locked": false,
+    "condition": "self",
+    "stat": "block",
+    "value": 3,
+    "icon_path": "res://assets/relics/turtle_charm.png"
+  },
+  "silver_thread": {
+    "name": "Fibra conductora",
+    "description": "Las cartas que curan a un aliado o a ambos héroes restauran +3 de vida.",
+    "locked": false,
+    "condition": "ally",
+    "stat": "heal",
+    "value": 3,
+    "icon_path": "res://assets/relics/silver_thread.png"
+  },
+  "sun_spark": {
+    "name": "Acumulador solar",
+    "description": "Durante el primer turno, las cartas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "opening",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/sun_spark.png"
+  },
+  "ancient_cog": {
+    "name": "Engranaje de retorno",
+    "description": "Desde el tercer turno, las cartas infligen +2 de daño por impacto.",
+    "locked": false,
+    "condition": "late",
+    "stat": "damage",
+    "value": 2,
+    "icon_path": "res://assets/relics/ancient_cog.png"
+  },
+  "sentinel_mask": {
+    "name": "Óptica centinela",
+    "description": "Al empezar un combate, cada héroe vivo gana 6 de bloqueo.",
+    "locked": false,
+    "condition": "start_block",
+    "stat": "",
+    "value": 6,
+    "icon_path": "res://assets/relics/sentinel_mask.png"
+  },
+  "oath_chain": {
+    "name": "Cable trenzado",
+    "description": "Al empezar cada turno, cada héroe vivo gana 2 de bloqueo.",
+    "locked": false,
+    "condition": "turn_block",
+    "stat": "",
+    "value": 2,
+    "icon_path": "res://assets/relics/oath_chain.png"
+  },
+  "spring_seed": {
+    "name": "Célula de reserva",
+    "description": "Tras ganar un combate, ambos héroes recuperan 4 de vida.",
+    "locked": false,
+    "condition": "victory_heal",
+    "stat": "",
+    "value": 4,
+    "icon_path": "res://assets/relics/spring_seed.png"
+  },
+  "giant_heart": {
+    "name": "Bomba auxiliar",
+    "description": "Al obtenerla, ambos héroes ganan 6 de vida máxima y recuperan 6 de vida durante esta aventura.",
+    "locked": false,
+    "condition": "max_hp",
+    "stat": "",
+    "value": 6,
+    "icon_path": "res://assets/relics/giant_heart.png"
+  },
+  "raven_quill": {
+    "name": "Registro portátil",
+    "description": "Robás una carta adicional en el primer turno de cada combate.",
+    "locked": false,
+    "condition": "opening_draw",
+    "stat": "",
+    "value": 1,
+    "icon_path": "res://assets/relics/raven_quill.png"
+  }
+}

@@ -18,8 +18,10 @@ static func resolve(game: RefCounted, card: Dictionary, owner: int, targets: Arr
 			hero.hp = mini(hero.max_hp, hero.hp + game.RunRelics.amount(game.run, game.content.relics, "hit_heal"))
 			if enemy.hp > 0 and int(enemy.intent.get("counter", 0)) > 0:
 				game.run.attacker_name = game.content.enemies[enemy.id].name + " (contraataque)"
+				var hero_hp = int(hero.hp)
+				var hero_block = int(hero.block)
 				game._damage(hero, 4)
-				events.append({"kind":"counter", "enemy":index, "owner":owner, "hp":hero.hp, "block":hero.block, "damage":4})
+				events.append({"kind":"counter", "enemy":index, "owner":owner, "hp":hero.hp, "block":hero.block, "damage":4,"absorbed":hero_block-int(hero.block),"lost":maxi(0,hero_hp-int(hero.hp))})
 		if hero.hp > 0 and enemy.hp > 0:
 			enemy.poison += int(card.poison)
 	return events

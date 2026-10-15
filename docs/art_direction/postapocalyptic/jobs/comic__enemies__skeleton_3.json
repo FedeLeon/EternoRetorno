@@ -1,0 +1,32 @@
+{
+  "id": "comic__enemies__skeleton_3",
+  "target": "assets/comic/enemies/skeleton_3.png",
+  "kind": "machine_foreground_bank",
+  "hero": null,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/postapocalyptic/sources/comic__enemies__skeleton_3.png",
+  "machines": [
+    "skeleton_3",
+    "skeleton_5",
+    "elemental_2",
+    "elemental_7"
+  ],
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE four-character foreground cutout atlas, TWO columns by TWO rows1536x1024. Each768x512 cell contains exactly ONE machine attacking LEFT in one STATIC dramatic contact pose, same recognizable chassis as machine-sheet reference. Exact order top-left/top-right/bottom-left/bottom-right: rectangular shield-bearing biped security robot with short shock baton; bare-frame aggressive demolition robot with twin rotating cutters; bulky concrete-crushing construction robot with piled armor slabs; angular stealth surveillance robot wrapped in dark fiber panels, violet optic. Big head/sensors and weapon or claws, close framing. White thin outer outline around machine AND tool. All art fully within own cell with25px clear margin. No scene/floor/grid/text, TRUE transparent RGBA. No consecutive animation: FOUR DIFFERENT enemies.",
+  "reference_bank": "docs/art_direction/postapocalyptic/sources/enemies__animations__skeleton_3.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7574e762-97cb-41f9-a7a0-1ca4c4634d28.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_warrior.png",
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/enemies__animations__skeleton_3.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "55e06484ad75d8909ce2dd4e0a7cf718909a57cd1ccbf821cc6b4ad52a9c157a",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

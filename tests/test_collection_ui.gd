@@ -34,6 +34,7 @@ func run_tests() -> void:
 	check(screen.get_node("CollectionHome").icon != null, "Home has back arrow asset")
 	check(screen.find_children("*", "Button", true, false).all(func(b): return b.text != "Menú"), "no menu button in collection")
 	check(screen.find_children("Achievement_*", "Button", true, false).size() == 28, "active achievements present; unearned legacy hero milestones hidden")
+	check(screen.find_child("AchievementTotals", true, false).text.begins_with("0 / %d logros" % app.game.Achievements.catalog().size()), "summary uses the actual active achievement count")
 	for entry in app.game.Achievements.catalog():
 		var icon = load("res://assets/collection/icons/%s.png" % entry.id)
 		check(icon is Texture2D and icon.get_width() > 0, "achievement icon loaded: " + entry.id)

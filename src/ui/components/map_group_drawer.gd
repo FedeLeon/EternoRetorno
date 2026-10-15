@@ -25,7 +25,7 @@ func _ready() -> void:
 	preload("res://src/ui/components/modal_frame.gd").decorate(panel)
 	place(panel, Rect2(0, 48, 510, 672))
 	for i in range(host.heroes.size()): show_hero(host.heroes[i], i)
-	label("RELIQUIAS", Rect2(28, 437, 320, 28), 18)
+	label("COMPONENTES", Rect2(28, 437, 320, 28), 18)
 	show_relics()
 	# Fixed rail stays at the viewport edge while the group panel slides beneath it.
 	var rail = Panel.new()
@@ -59,6 +59,17 @@ func _ready() -> void:
 	picture(preload("res://assets/ui/deck.svg"), Rect2(6, 0, 64, 58), deck)
 	var deck_caption = host.label("Mazo", Rect2(0, 62, 76, 24), 16, Color("ead3a0"), deck)
 	deck_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+
+
+	if host.paths_available:
+		var map_button = host.action("", Rect2(4, 364, 76, 94), func(): host.map_requested.emit(), rail)
+		map_button.name = "Map"
+		map_button.tooltip_text = "Volver a los caminos" if host.map_open else "Ver mapa"
+		for state in ["normal", "hover", "pressed", "focus"]:
+			map_button.add_theme_stylebox_override(state, StyleBoxEmpty.new())
+		picture(preload("res://assets/ui/map.svg"), Rect2(6, 0, 64, 58), map_button)
+		var map_caption = host.label("Caminos" if host.map_open else "Mapa", Rect2(0, 62, 76, 24), 16, Color("ead3a0"), map_button)
+		map_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func toggle() -> void:
 	close_relic()
@@ -95,7 +106,7 @@ func show_relics() -> void:
 	scroll.get_v_scroll_bar().value_changed.connect(func(_value): close_relic())
 	if host.relics.is_empty():
 		var empty = Label.new()
-		empty.text = "Sin reliquias."
+		empty.text = "Sin componentes."
 		grid.add_child(empty)
 	for relic in host.relics:
 		var button = Button.new()

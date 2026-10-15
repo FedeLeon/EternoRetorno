@@ -9,7 +9,7 @@ static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_sta
 	background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
-	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tu reliquia · Prepará el descenso", actions.menu)
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tu componente · Prepará el descenso", actions.menu)
 	var ids = relics.keys()
 	for i in range(ids.size()):
 		var id = ids[i]
@@ -22,14 +22,21 @@ static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_sta
 			preload("res://src/ui/components/equipment_description.gd").attach(ui, relic, center)
 		for state in ["normal", "hover", "pressed", "disabled"]:
 			b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-		ui.object_icon(relic.icon, 0, 0, 132, b)
+		var icon = TextureRect.new()
+		icon.name = "ComponentArt"
+		icon.texture = preload("res://src/presentation/relic_art.gd").texture(relic)
+		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		icon.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+		icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		ui.rect(icon, 0, 0, 132, 132, b)
 		b.mouse_entered.connect(func(): b.modulate = Color(1.2, 1.2, 1.2))
 		b.mouse_exited.connect(func(): b.modulate = Color.WHITE)
 	var back = ui.button("Volver a personajes", 36, 647, 320, 54, actions.back)
 	back.name = "BackToCharacters"
 	var start = ui.button("Iniciar aventura", 904, 647, 340, 54, actions.start, can_start)
 	start.name = "StartAdventure"
-	start.icon = preload("res://assets/equipment/door.png")
+	start.icon = preload("res://assets/ui/play.svg")
 	start.expand_icon = true
 	start.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	start.add_theme_constant_override("icon_max_width", 38)

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 128 128">
+<circle cx="64" cy="64" r="62" fill="#03070d"/>
+<path d="M41 4H87L111 20L124 45V83L108 111L85 124H43L17 108L4 84V44L18 18Z" fill="#1b2b38" stroke="#030810" stroke-width="3"/>
+<path d="M43 7H85L108 23L121 46V81L105 108L84 121H44L20 105L7 83V45L21 21Z" fill="none" stroke="#667d8b" stroke-width="1.3"/>
+<circle cx="64" cy="64" r="51" fill="#111e2b" stroke="#060b12" stroke-width="3"/>
+<circle cx="64" cy="64" r="48" fill="none" stroke="#7ee3dc" stroke-width="2" stroke-dasharray="18 5 7 5"/>
+<circle cx="64" cy="64" r="43" fill="#101923" stroke="#526b7b" stroke-width="1.2"/>
+<path d="M28 19L38 13H50M78 13H91L102 24M116 48V56M12 73V85L23 102M80 115H92L105 102" fill="none" stroke="#b98ce5" stroke-width="2.2"/>
+<path d="M46 8H71M10 48V59M117 86L111 100M38 119H52" stroke="#ccedf0" stroke-width="1.3"/>
+<path d="M58 6V13H70V6M58 115V122H70V115" fill="#314b5e" stroke="#030810" stroke-width="1"/>
+<path d="M61 9H67M61 119H67" stroke="#85f2dc" stroke-width="2"/>
+<g transform="translate(32 17)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g><g transform="translate(96 17)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g><g transform="translate(15 64)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g><g transform="translate(113 64)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g><g transform="translate(32 111)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g><g transform="translate(96 111)"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g></svg>

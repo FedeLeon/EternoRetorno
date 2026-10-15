@@ -7,7 +7,7 @@ static func build(ui: Control) -> void:
 	ui.rect(bg, 0, 0, 1280, 720)
 	preload("res://src/ui/components/preparation_header.gd").build(ui,"Patio de entrenamiento",ui.open_base_camp,-1,"Campamento")
 	ui.panel(36,94,1208,38)
-	ui.label_at("Elegí una pareja. Probá cartas, equipo y rivales sin gastar almas ni alterar la aventura.",54,95,1172,36,18,ui.TEXT)
+	ui.label_at("Elegí una pareja. Probá cartas, equipo y rivales sin gastar celdas ni alterar la aventura.",54,95,1172,36,18,ui.TEXT)
 	var chosen: Array = []
 	var buttons: Array[Button] = []
 	var weapon = OptionButton.new()

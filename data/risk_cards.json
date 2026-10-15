@@ -2,7 +2,7 @@
   "warrior_risk": {
     "id": "warrior_risk",
     "owner": "warrior",
-    "name": "Furia de sangre",
+    "name": "Sin descanso",
     "cost": 0,
     "target": "self",
     "damage": 0,
@@ -20,7 +20,7 @@
   "guardian_risk": {
     "id": "guardian_risk",
     "owner": "guardian",
-    "name": "Escudo quebrado",
+    "name": "Chapa al límite",
     "cost": 1,
     "target": "enemy",
     "damage": 16,
@@ -37,7 +37,7 @@
   "rogue_risk": {
     "id": "rogue_risk",
     "owner": "rogue",
-    "name": "Todo o nada",
+    "name": "Última ampolla",
     "cost": 0,
     "target": "enemy",
     "damage": 11,
@@ -54,7 +54,7 @@
   "mage_risk": {
     "id": "mage_risk",
     "owner": "mage",
-    "name": "Sobrecarga vital",
+    "name": "Batería al rojo",
     "cost": 1,
     "target": "all_enemies",
     "damage": 9,

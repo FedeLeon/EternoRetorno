@@ -1,0 +1,226 @@
+{
+  "crypt_bat": [
+    "Sonda de conductos",
+    "small one-eyed bat-shaped inspection drone, sheet-metal wings"
+  ],
+  "crypt_lancer": [
+    "Operario perforador",
+    "skeletal exposed-frame maintenance robot, long drill lance"
+  ],
+  "crypt_shaman": [
+    "Relé incendiario",
+    "hunched cable-covered relay robot with a welding torch"
+  ],
+  "crypt_slime": [
+    "Fuga corrosiva",
+    "low tracked chemical-cleaning robot leaking bright green coolant"
+  ],
+  "skeleton_6": [
+    "Custodio de acceso",
+    "heavy biped security robot with broad riot shield and blue sensor"
+  ],
+  "crypt_automaton": [
+    "Guardián del subsuelo",
+    "massive broken hydraulic tunnel guardian, claw and cylindrical reactor chest"
+  ],
+  "skeleton_0": [
+    "Cortador industrial",
+    "thin biped factory cutter robot with saw-arm and rusted orange shell"
+  ],
+  "skeleton_2": [
+    "Torreta móvil",
+    "thin biped mobile rivet-launcher robot with long crossbar gun"
+  ],
+  "skeleton_3": [
+    "Unidad de contención",
+    "rectangular shield-bearing biped security robot with short shock baton"
+  ],
+  "skeleton_5": [
+    "Desguazador",
+    "bare-frame aggressive demolition robot with twin rotating cutters"
+  ],
+  "elemental_2": [
+    "Compactador",
+    "bulky concrete-crushing construction robot with piled armor slabs"
+  ],
+  "elemental_7": [
+    "Interferencia negra",
+    "angular stealth surveillance robot wrapped in dark fiber panels, violet optic"
+  ],
+  "goblin_0": [
+    "Recolector armado",
+    "small hunched junk-collector robot with steel hook"
+  ],
+  "goblin_2": [
+    "Disparador de clavos",
+    "small scavenger robot with pneumatic nail launcher"
+  ],
+  "goblin_3": [
+    "Nodo de reparación",
+    "small cable-haired repair robot carrying green coolant canisters"
+  ],
+  "beast_0": [
+    "Sabueso de patrulla",
+    "lean four-legged robotic patrol hound, gray panels, cyan eye"
+  ],
+  "beast_1": [
+    "Excavador compacto",
+    "low stocky four-legged excavator with boar-like front plow"
+  ],
+  "beast_5": [
+    "Triturador pesado",
+    "massive bear-shaped industrial demolition robot with piston forearms"
+  ],
+  "goblin_7": [
+    "Supervisor del cinturón",
+    "large industrial supervisor robot with hazard-striped armor and crane claw"
+  ],
+  "goblin_1": [
+    "Recolector de asta",
+    "small salvage robot holding a long grappling pole"
+  ],
+  "goblin_4": [
+    "Portacargas explosivas",
+    "small round demolition robot with exposed explosive red canister"
+  ],
+  "goblin_5": [
+    "Desmontador",
+    "nimble salvage robot with twin mechanical pincers"
+  ],
+  "goblin_6": [
+    "Patrulla de arrastre",
+    "small salvage robot mounted on a separate single-wheel motor chassis"
+  ],
+  "beast_2": [
+    "Dron de ala ancha",
+    "large wing-shaped search drone with two articulated folding metal wings"
+  ],
+  "beast_7": [
+    "Carroñero aéreo",
+    "black bird-shaped scrap-recovery drone with long articulated beak clamp"
+  ],
+  "skeleton_4": [
+    "Enlace de reactivación",
+    "thin cable-limbed robot with antenna coil and violet power cell"
+  ],
+  "elemental_0": [
+    "Incinerador",
+    "compact walking incinerator robot, vented furnace body with orange flame nozzle"
+  ],
+  "crypt_beetle": [
+    "Blindado de inspección",
+    "six-legged metal beetle inspection robot with broad domed armored shell"
+  ],
+  "bandit_2": [
+    "Vigía de precisión",
+    "lean biped security automaton with long improvised-looking rail launcher"
+  ],
+  "beast_4": [
+    "Fumigador",
+    "squat four-legged chemical robot with big green pressurized tank"
+  ],
+  "elemental_6": [
+    "Enredador de cables",
+    "walking root-like tangle of industrial cables controlled by a small orange core"
+  ],
+  "skeleton_1": [
+    "Perforador de riel",
+    "rail-maintenance biped robot with long steel spike and cyan sensor"
+  ],
+  "skeleton_7": [
+    "Corredor de carga",
+    "horse-shaped quadruped cargo robot with exposed pistons and battery packs"
+  ],
+  "elemental_1": [
+    "Refrigerador móvil",
+    "heavy insulated coolant robot, ice-blue tanks, thick hose arms"
+  ],
+  "flying_0": [
+    "Dron nocturno",
+    "compact black wing drone with two red night-vision sensors"
+  ],
+  "flying_4": [
+    "Aguijón de seguridad",
+    "wasp-shaped security drone with yellow chassis and needle tail"
+  ],
+  "flying_7": [
+    "Ojo de rastreo",
+    "owl-shaped surveillance drone with large paired camera optics"
+  ],
+  "bandit_0": [
+    "Asaltante de chatarra",
+    "small fast biped raider robot with broad scraper blade and scrap panels"
+  ],
+  "bandit_1": [
+    "Punzón de la central",
+    "tall furnace-service robot with long red-hot industrial lance"
+  ],
+  "bandit_3": [
+    "Barrera de la central",
+    "wide biped guard robot with heavy heat shield and orange sensor"
+  ],
+  "bandit_5": [
+    "Prensa de demolición",
+    "huge riveted industrial press automaton with a hammer piston arm"
+  ],
+  "flying_2": [
+    "Dron de combustión",
+    "small twin-wing furnace drone with two orange burner nozzles"
+  ],
+  "elemental_5": [
+    "Filtro de ceniza",
+    "floating industrial filter drone with segmented dust-extraction tubes"
+  ],
+  "flying_3": [
+    "ARCA, núcleo del reinicio",
+    "massive dragon-shaped autonomous reactor maintenance machine with articulated wings, cable tail and bright cyan central reactor; entirely mechanical"
+  ],
+  "elemental_3": [
+    "Bobina de tormenta",
+    "Tesla-coil maintenance robot with violet electric arcs and two articulated legs"
+  ],
+  "beast_3": [
+    "Pinza de túnel",
+    "scorpion-shaped utility robot with twin pincers and welding tail"
+  ],
+  "elemental_4": [
+    "Nebulizador industrial",
+    "hovering toxic mist extraction robot, green compressor and bent antenna"
+  ],
+  "bandit_6": [
+    "Rastreador de perímetro",
+    "slender camouflage-panel security robot with cable crossbow launcher"
+  ],
+  "bandit_4": [
+    "Lanzacargas",
+    "broad-shouldered demolition robot with orange shoulder mortar"
+  ],
+  "flying_5": [
+    "Coraza de vuelo",
+    "six-legged black heat-shield inspection drone with small folding wings"
+  ],
+  "crypt_bandit": [
+    "Extractor de archivos",
+    "agile archive-recovery automaton with utility blade and storage satchel"
+  ],
+  "beast_6": [
+    "Serpentín refrigerante",
+    "long segmented mechanical coolant serpent with cyan fluid tubes"
+  ],
+  "flying_1": [
+    "Dron alfa",
+    "large angular bat-wing surveillance drone with violet scanning optic"
+  ],
+  "flying_6": [
+    "Vigía de azotea",
+    "long-wing black reconnaissance drone with cyan camera head"
+  ],
+  "crypt_wolf": [
+    "Sabueso térmico",
+    "four-legged black robot hound with hot orange vents and metal claws"
+  ],
+  "bandit_7": [
+    "Supervisor de fundición",
+    "towering broad biped foundry supervisor robot with orange hazard panels and huge welding tool"
+  ]
+}

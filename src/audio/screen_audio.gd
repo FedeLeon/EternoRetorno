@@ -22,6 +22,6 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 		var current = int(run.get("current", -1))
 		var nodes: Array = run.get("nodes", [])
 		if current >= 0 and current < nodes.size() and nodes[current].kind == "rest": return "rest"
-	if screen in ["map", "room", "event_cards"]:
+	if screen in ["map", "paths", "room", "event_cards"]:
 		return "volcano" if int(run.get("floor", 1)) == 3 else ("forest" if int(run.get("floor", 1)) == 2 else "crypt")
 	return ""

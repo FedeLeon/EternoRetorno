@@ -11,6 +11,12 @@ def imported_bytes(text):
     return sum((ROOT / p).stat().st_size for p in re.findall(r'^path(?:\.\w+)?="res://([^"]+)"', text, re.M) if (ROOT / p).exists())
 
 def policy(path):
+    if path.startswith(('assets/equipment/components/', 'assets/run_setup/', 'assets/forge/badges/')) or path in ['assets/ui/cell.png', 'assets/ui/battle_energy_cell.png']:
+        return 1, 0.9, 512  # Dedicated HD preparation icons.
+    if path == 'assets/camp/fire-flames.png':
+        return 1, 0.9, 0  # 24 fixed-region transparent flame poses.
+    if path.startswith('assets/paths/'):
+        return 1, 0.9, 1280  # Full-screen first-person junction illustrations.
     if path.startswith('assets/cinematics/'):
         return 1, 0.9, 1280  # Story art is viewed full-screen with a gentle pan.
     if path.startswith(('assets/heroes/detail/', 'assets/heroes/actions/')):
@@ -36,7 +42,7 @@ def policy(path):
         return 0, 0.85, 1280  # Full-screen drawing, not a node icon.
     if path.startswith('assets/map/minimal/'):
         return 0, 0.7, 192
-    if path in ['assets/map/group_tab.png', 'assets/equipment/door.png', 'assets/dungeon/bag.png', 'assets/ui/end_turn_round.png']:
+    if path in ['assets/map/group_tab.png', 'assets/dungeon/bag.png', 'assets/ui/end_turn_round.png']:
         return 0, 0.7, 256
     if Path(path).name in ['background.png', 'interior.png', 'combat.png', 'combat_columns.png', 'combat_glade.png', 'combat_ruins.png', 'valhalla.png', 'rest.png'] and not path.startswith('assets/cards/'):
         return 1, 0.85, 1280

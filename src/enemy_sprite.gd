@@ -23,7 +23,7 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	# Different silhouettes no longer flap or idle in perfect synchrony.
 	clock = float(absi(visual_id.hash())%1000)/137.0
-	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR if entries()[visual_id].get("style","") == "sketchbook" else CanvasItem.TEXTURE_FILTER_NEAREST
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	sprite = Sprite2D.new()
 	var motion_path = "res://assets/enemies/animations/" + visual_id + ".png"
 	has_motion_frames = ResourceLoader.exists(motion_path)

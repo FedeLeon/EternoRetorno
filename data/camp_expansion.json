@@ -5,7 +5,7 @@
       "cost": 500
     },
     "church": {
-      "name": "Iglesia",
+      "name": "Laboratorio",
       "cost": 600
     }
   },
@@ -271,7 +271,7 @@
     "rogue_venom": {
       "hero": "rogue",
       "name": "Alquimista tóxico",
-      "description": "+1 de veneno en cartas que ya aplican veneno.",
+      "description": "+1 de corrosión en cartas que ya aplican corrosión.",
       "condition": "always",
       "stat": "poison",
       "bonus": 1,

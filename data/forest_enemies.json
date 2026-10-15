@@ -1,6 +1,6 @@
 {
   "goblin_warrior": {
-    "name": "Goblin guerrero",
+    "name": "Recolector armado",
     "hp": 26,
     "color": "7e9b42",
     "visual": "goblin_0",
@@ -19,7 +19,7 @@
     ]
   },
   "goblin_archer": {
-    "name": "Goblin arquero",
+    "name": "Disparador de clavos",
     "hp": 22,
     "color": "a58956",
     "visual": "goblin_2",
@@ -37,7 +37,7 @@
     ]
   },
   "goblin_shaman": {
-    "name": "Goblin chamán",
+    "name": "Nodo de reparación",
     "hp": 28,
     "color": "82af5c",
     "visual": "goblin_3",
@@ -57,7 +57,7 @@
     "role": "support"
   },
   "forest_wolf": {
-    "name": "Lobo gris",
+    "name": "Sabueso de patrulla",
     "hp": 24,
     "color": "99a3aa",
     "visual": "beast_0",
@@ -74,7 +74,7 @@
     ]
   },
   "forest_boar": {
-    "name": "Jabalí salvaje",
+    "name": "Excavador compacto",
     "hp": 32,
     "color": "b88251",
     "visual": "beast_1",
@@ -93,7 +93,7 @@
     ]
   },
   "forest_elite": {
-    "name": "Oso ancestral",
+    "name": "Triturador pesado",
     "hp": 86,
     "color": "aa764f",
     "visual": "beast_5",
@@ -116,7 +116,7 @@
     ]
   },
   "forest_boss": {
-    "name": "Gorvak, señor de la espesura",
+    "name": "Supervisor del cinturón",
     "hp": 125,
     "color": "b65e40",
     "visual": "goblin_7",
@@ -155,7 +155,7 @@
     ]
   },
   "goblin_lancer": {
-    "name": "Goblin lancero",
+    "name": "Recolector de asta",
     "hp": 28,
     "color": "bd8155",
     "visual": "goblin_1",
@@ -174,7 +174,7 @@
     ]
   },
   "goblin_bomber": {
-    "name": "Goblin bombardero",
+    "name": "Portacargas explosivas",
     "hp": 23,
     "color": "eaa352",
     "visual": "goblin_4",
@@ -193,7 +193,7 @@
     ]
   },
   "goblin_raider": {
-    "name": "Goblin saqueador",
+    "name": "Desmontador",
     "hp": 25,
     "color": "cbb06c",
     "visual": "goblin_5",
@@ -211,7 +211,7 @@
     ]
   },
   "goblin_rider": {
-    "name": "Goblin jinete",
+    "name": "Patrulla de arrastre",
     "hp": 34,
     "color": "b58868",
     "visual": "goblin_6",
@@ -229,7 +229,7 @@
     ]
   },
   "forest_bat": {
-    "name": "Murciélago gigante",
+    "name": "Dron de ala ancha",
     "hp": 21,
     "color": "b480cf",
     "visual": "beast_2",
@@ -247,7 +247,7 @@
     ]
   },
   "forest_raven": {
-    "name": "Cuervo carroñero",
+    "name": "Carroñero aéreo",
     "hp": 20,
     "color": "a79dbb",
     "visual": "beast_7",

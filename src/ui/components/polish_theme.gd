@@ -5,7 +5,7 @@ const HEADING = preload("res://assets/fonts/heading.tres")
 static func install(theme: Theme) -> void:
 	theme.default_font = BODY
 	theme.set_color("font_disabled_color", "Button", Color("8d8793"))
-	theme.set_color("font_focus_color", "Button", Color("f4dfac"))
+	theme.set_color("font_focus_color", "Button", Color("a5fff0"))
 	theme.set_color("font_hover_color", "Button", Color("f6ead9"))
 	theme.set_constant("outline_size", "Label", 1)
 	theme.set_color("font_outline_color", "Label", Color(0.03,0.025,0.04,0.45))
@@ -24,12 +24,12 @@ static func install(theme: Theme) -> void:
 		track.content_margin_left = 5; track.content_margin_top = 5
 		theme.set_stylebox("scroll", type, track)
 		for state in ["grabber","grabber_highlight","grabber_pressed"]:
-			var grip = StyleBoxFlat.new(); grip.bg_color = Color("897b89") if state == "grabber" else Color("c5ad83")
+			var grip = StyleBoxFlat.new(); grip.bg_color = Color("617b8d") if state == "grabber" else Color("8edfd3")
 			grip.set_corner_radius_all(4); grip.content_margin_left = 5; grip.content_margin_top = 5
 			theme.set_stylebox(state, type, grip)
 	for type in ["HSlider","VSlider"]:
 		var track = StyleBoxFlat.new();track.bg_color = Color("302b39");track.set_corner_radius_all(3)
 		track.content_margin_top = 3;track.content_margin_bottom = 3
 		theme.set_stylebox("slider", type, track)
-		var fill = track.duplicate(); fill.bg_color = Color("baa071")
+		var fill = track.duplicate(); fill.bg_color = Color("76cfc9")
 		theme.set_stylebox("grabber_area", type, fill); theme.set_stylebox("grabber_area_highlight", type, fill)

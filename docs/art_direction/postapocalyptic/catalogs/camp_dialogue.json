@@ -1,0 +1,30 @@
+{
+  "market": [
+    "Mirá las conexiones antes de pagar.",
+    "No abras el frasco junto a la batería.",
+    "Si vuelve el convoy, guardame un filtro.",
+    "Te cambio filtros por vendas limpias.",
+    "Esa batería está probada. La otra, todavía no."
+  ],
+  "forge": [
+    "Dejá la pieza sobre la mesa. Todavía quema.",
+    "Eso aguanta otra salida. Dos no te prometo.",
+    "Traé también el mango. No arreglo solo la hoja.",
+    "Si apretás de más, partís la rosca.",
+    "Mientras arreglo esto, tomá un poco de agua."
+  ],
+  "church": [
+    "El aparato ayuda. Entenderlo ayuda más.",
+    "Probalo con poca carga primero.",
+    "Lo que aprendas, anotáselo al siguiente.",
+    "El cable azul. El otro ya lo quemé.",
+    "Acá anotamos también lo que sale mal."
+  ],
+  "expeditions": [
+    "El sector está cambiando. Revisen la ruta.",
+    "Un encargo por salida. Vuelvan los dos.",
+    "La radio se corta cerca de la central.",
+    "Si perdés la señal, seguí tus propias marcas.",
+    "Nos quedan dos radios que no chisporrotean."
+  ]
+}

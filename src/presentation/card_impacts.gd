@@ -6,11 +6,12 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 	var melee = preload("res://src/presentation/melee_motion.gd")
 	for event in events:
 		if event.kind == "hit":
-			var strike = int(event.get("hit_index", 0))
+			var hit_index = int(event.get("hit_index", 0))
+			var strike = "%d:%d:%d" % [int(event.get("action_index", 0)), int(event.owner), hit_index]
 			var hero: String = event.get("hero",ui.game.run.party[event.owner])
 			var actor: Control = ui.hero_art[event.owner]
 			var close_attack = melee.applies(event.get("card",{}),hero)
-			var action=preload("res://src/presentation/action_motion.gd").for_card(event.get("card",{}),strike) if event.has("card") else motion
+			var action=preload("res://src/presentation/action_motion.gd").for_card(event.get("card",{}),hit_index) if event.has("card") else motion
 			if strike not in shown_strikes:
 				shown_strikes.append(strike)
 				preload("res://src/audio/battle_audio.gd").hero(ui.audio, ui.game.run.party[event.owner],"attack",event.get("card",{}))
@@ -45,13 +46,12 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			preload("res://src/audio/battle_audio.gd").enemy(ui.audio, visual)
 			await ui.enemy_art[event.enemy].play_once("attack")
 			ui.CombatEffects.attack_flash(ui.layer)
-			ui.flash_hit(ui.hero_art[event.owner])
-			ui.audio.play_sfx("hit")
+			await preload("res://src/presentation/impact_feedback.gd").play(ui, ui.hero_art[event.owner], event)
 			var bar = ui.hero_health[event.owner]
 			update_block(bar, event.block)
 			bar.animate_to(event.hp)
 			if bar.animating: await bar.animation_finished
-			if event.hp > 0: await ui.hero_art[event.owner].play_once("hurt")
+			await ui.hero_art[event.owner].play_once("death" if event.hp <= 0 else "guard" if int(event.get("absorbed", 0)) > 0 else "hurt")
 
 
 static func update_block(bar: Control, amount: int) -> void:

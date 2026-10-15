@@ -1,9 +1,9 @@
 extends SceneTree
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
-const MANIFEST = "res://docs/art_direction/migration/assets.json"
 var manifest: Dictionary = {}
 func _initialize() -> void:
-	if FileAccess.file_exists(MANIFEST): manifest = JSON.parse_string(FileAccess.get_file_as_string(MANIFEST))
+	var manifest_path = "res://docs/art_direction/postapocalyptic/assets.json"
+	if FileAccess.file_exists(manifest_path): manifest = JSON.parse_string(FileAccess.get_file_as_string(manifest_path))
 	var portraits = Image.create(512,128,false,Image.FORMAT_RGBA8)
 	portraits.fill(Color.TRANSPARENT)
 	var ids = ["warrior","guardian","rogue","mage"]
@@ -21,7 +21,7 @@ func _initialize() -> void:
 	var fire = "res://assets/base_camp/dusk/fire.png"
 	var flame = Image.new();flame.load_png_from_buffer(FileAccess.get_file_as_bytes(fire))
 	store(flame,"assets/camp/fire-natural.png",fire,"reuse approved 24-frame pencil fire")
-	FileAccess.open(MANIFEST,FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
+	FileAccess.open(manifest_path,FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
 	quit()
 func store(image: Image, target: String, source: String, processing: String) -> void:
 	Pack.save(image,"res://"+target)

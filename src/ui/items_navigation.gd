@@ -16,7 +16,7 @@ static func build(ui: Control) -> void:
 		"select": func(id): ui.selected_item = id; ui.render(),
 		"consume": func(index):
 			if ui.game.use_item(ui.selected_item, index):
-				ui.audio.play_sfx("heal" if ui.game.content.items[ui.selected_item].get("heal", 0) > 0 else "confirm")
+				ui.audio.play_sfx("heal" if ui.game.content.items[ui.selected_item].get("effect", "") in ["heal", "revive"] else "confirm")
 				ui.selected_item = ""
 				ui.continue_run()
 	})

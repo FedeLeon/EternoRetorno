@@ -1,21 +1,21 @@
 {
   "world": {
     "status": "Borrador narrativo inicial; sus reglas de memoria no son penalizaciones de juego.",
-    "premise": "Fuera del campamento, cada retorno repite un día que nadie consigue terminar. El fuego del campamento mantiene un pequeño espacio a salvo: allí permanecen las reparaciones, los cuadernos y quienes regresan.",
-    "first_crisis": "La ruta de provisiones vuelve a cerrarse en cada ciclo. Los soldados que fueron a abrirla no regresaron. Cuatro vecinos se ofrecen para buscar un camino y comprobar qué mantiene el retorno.",
+    "premise": "La red ARCA reinicia cada día los sectores de una ciudad arruinada. Entre sus puntos ciegos, un refugio de vecinos conserva reparaciones, cuadernos y recuerdos.",
+    "first_crisis": "Los convoyes automáticos ya no entregan provisiones: clasifican a los supervivientes como intrusos. Cuatro vecinos salen a recuperar suministros y encontrar el núcleo que sostiene el ciclo.",
     "cost": "Volver con vida o despertar después de caer no garantiza recordar todos los detalles. Los vecinos dejan notas y objetos para reconocer lo aprendido. Esta pérdida de recuerdos es un tema de la historia, no una mecánica aplicada.",
-    "camp": "El campamento funciona porque cada persona sigue trabajando. Los protagonistas son vecinos con oficios, relaciones y responsabilidades, incluso después de aprender a combatir.",
-    "cards": "Las cartas pueden representarse como fichas del cuaderno común: anotaciones de movimientos, errores y técnicas que los compañeros quieren recordar. Es una propuesta de ficción, no un cambio del sistema de mazos."
+    "camp": "El refugio funciona porque cada persona sigue trabajando: se reparan techos, se curan heridas y se enseña a quienes todavía no saben leer. Ningún protagonista deja de ser vecino por aprender a luchar.",
+    "cards": "El cuaderno común conserva técnicas y errores que la red no consigue borrar. Las cartas representan decisiones aprendidas entre compañeros; la ficción no cambia las reglas del mazo."
   },
   "heroes": {
     "warrior": {
       "name": "Nicolás",
       "age": 42,
       "occupation": "Carpintero",
-      "hook": "Nicolás arreglaba puertas. Aprendió a sostener una espada para abrir el camino de las provisiones.",
+      "hook": "Nicolás reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
       "before": "Trabajó veinte años haciendo muebles, mangos de herramientas y carros. Vivía con su pareja y enseñaba a su hijo a medir antes de cortar. Nunca quiso ser soldado. Conserva un banco de trabajo lleno de piezas que piensa terminar cuando puedan irse.",
       "camp_work": "Repara camas, ruedas, techos y mangos. Lleva una lista de arreglos en un trozo de madera y se enfada cuando alguien usa una hoja de carpintería para partir leña.",
-      "forced_to_fight": "La caravana de comida dejó de llegar. Se ofreció a acompañar a quienes buscaran la ruta porque el carro necesitaba una reparación y nadie más sabía hacerla. Cuando los atacaron, levantó una herramienta antes de aprender a llevar una espada.",
+      "forced_to_fight": "La caravana de comida dejó de llegar. Se ofreció a acompañar a quienes buscaran la ruta porque el carro necesitaba una reparación y nadie más sabía hacerla. Cuando los atacaron, levantó una herramienta antes de aprender a llevar una herramienta.",
       "personality": "Reservado, paciente con los objetos y menos paciente con las personas. Cuida haciendo cosas: ajusta una hebilla o repara una silla en lugar de decir que está preocupado. Su humor es seco.",
       "flaw": "Confunde ser útil con cargar solo con todo. Oculta cansancio y heridas para no retrasar al grupo.",
       "fear": "Volver y no reconocer a su familia, o que su hijo solo recuerde a un hombre que siempre estaba por salir.",
@@ -23,13 +23,13 @@
       "arc": "Aprende a pedir ayuda y a detener un ataque para proteger al compañero. Su valor deja de depender de hacer el trabajo más pesado.",
       "voice": "Esperá. Tenés la correa floja. Después me agradecés.",
       "everyday_detail": "Guarda clavos doblados porque dice que todavía sirven.",
-      "visual": "Guantes remendados, una hebilla reparada a mano y el gesto de comprobar el equilibrio de la espada como haría con una herramienta."
+      "visual": "Camisa violeta, delantal gastado, botas de trabajo, barba corta y sierra industrial montada sobre un mango reparado. Sin casco ni armadura militar."
     },
     "guardian": {
       "name": "Inés",
       "age": 35,
       "occupation": "Constructora",
-      "hook": "Inés levantaba muros. Su primer escudo fue una tabla con la que sostuvo una puerta durante una evacuación.",
+      "hook": "Inés levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
       "before": "Aprendió el oficio en las obras de su madre. Trabajaba reparando casas y canales, cobraba tarde y sabía cuáles escaleras no soportaban una persona más. Ahorra para construir una casa que pueda llamar suya.",
       "camp_work": "Refuerza refugios, revisa el pozo y organiza turnos para reparar la empalizada. Marca con tiza los apoyos que están cediendo y exige que nadie trabaje debajo de ellos.",
       "forced_to_fight": "Durante el primer ataque sostuvo una puerta con una tabla mientras los demás salían. Volvió a hacerlo en el siguiente ciclo y empezó a reconocer qué movimientos compraban unos segundos. El escudo llegó después.",
@@ -40,33 +40,33 @@
       "arc": "Pasa de intentar cubrir cada peligro a confiar en señales y acuerdos con su compañero.",
       "voice": "Te cubro, pero avisame antes de hacer una locura.",
       "everyday_detail": "Golpea dos veces los tablones para escuchar si están huecos.",
-      "visual": "Tiza en el cinturón, manos de trabajo, trenza práctica y escudo reparado con piezas de procedencia distinta."
+      "visual": "Trenza pelirroja, chaqueta de obra naranja, tiza en el cinturón, escudo de señalización reparado y palanca. Sin armadura medieval."
     },
     "rogue": {
       "name": "Mauro",
       "age": 30,
       "occupation": "Boticario",
-      "hook": "Mauro preparaba remedios. Ahora usa la misma precisión para dosificar un veneno y ganar tiempo para su compañero.",
+      "hook": "Mauro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
       "before": "Trabajaba en la botica de su tía: secaba plantas, preparaba ungüentos y llevaba cuentas de dosis. Conoce a los vecinos por sus dolencias y por qué sabor de jarabe toleran. No era un ladrón ni un asesino.",
       "camp_work": "Mantiene la botica, busca hierbas, limpia heridas y separa los frascos que parecen iguales. Anota las dosis con letra pequeña y se niega a llamar milagro a un tratamiento que todavía no probó.",
       "forced_to_fight": "Los ingredientes empezaron a escasear. Salió al bosque a buscarlos con un cuchillo de cortar raíces. Aprendió a moverse sin llamar la atención; después descubrió que podía frenar una persecución con sustancias que antes guardaba bajo llave.",
       "personality": "Atento, rápido para notar cambios y bastante incómodo hablando de sí mismo. Hace bromas cuando se asusta, pregunta demasiado y se acuerda de detalles que los demás olvidan.",
       "flaw": "Quiere anticiparse a todo y a veces decide por otros para no explicar un riesgo.",
       "fear": "Confundir una dosis y hacerle daño a alguien que confía en él.",
-      "desire": "Llenar la botica de remedios útiles y dejar de reservar ingredientes para hacer venenos.",
+      "desire": "Llenar la botica de remedios útiles y dejar de reservar ingredientes para hacer corrosións.",
       "arc": "Aprende a compartir lo que sabe y a explicar sus decisiones. Su precisión sirve tanto para atacar como para cuidar.",
       "voice": "No tomes del frasco verde. Sí, ya sé que los dos son verdes.",
       "everyday_detail": "Cuenta gotas en voz baja cuando está nervioso.",
-      "visual": "Rostro humano visible, sin máscara ni pico; pelo oscuro desordenado, barba suave y cejas expresivas. Capucha abierta, bolsas de hierbas y un pequeño corte curado sobre una ceja."
+      "visual": "Rostro completo visible sin máscara, pelo oscuro desordenado, chaqueta verde petróleo, botiquín, cuchillos utilitarios y frascos bien separados."
     },
     "mage": {
       "name": "Vera",
       "age": 27,
       "occupation": "Profesora",
-      "hook": "Vera enseñaba a leer. Aprendió magia comparando las marcas que reaparecían después de cada retorno.",
+      "hook": "Vera enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
       "before": "Daba clase en una habitación prestada y copiaba cartas para quienes no sabían escribir. Hacía cuadernos con papel reutilizado. Tenía alumnos difíciles, uno especialmente bueno dibujando, y planes para una escuela con ventanas grandes.",
       "camp_work": "Da clases, escribe mensajes, ordena mapas y registra qué cambió en cada ciclo. Pide a los vecinos que describan los hechos antes de buscar explicaciones y conserva hojas contradictorias en vez de tirar las que parecen equivocadas.",
-      "forced_to_fight": "Notó que algunas marcas de la cripta reaccionaban a gestos repetidos. Copió las formas y practicó hasta lograr una chispa. Su primer intento de defensa quemó una mesa. Nadie la llamó maga hasta que consiguió repetir el resultado.",
+      "forced_to_fight": "Comparó los horarios de patrulla y las señales que precedían a cada reinicio. Un aparato recuperado respondía a esas frecuencias. Quemó dos fusibles antes de conseguir que un dron se detuviera.",
       "personality": "Curiosa, metódica y tenaz. Explica más de lo necesario cuando se entusiasma. Corrige una frase mientras habla y pierde cosas que acaba de dejar a su lado.",
       "flaw": "Puede seguir tomando notas cuando lo sensato sería correr. Le cuesta admitir que una respuesta quizá todavía no exista.",
       "fear": "Descubrir que alguno de sus experimentos empeoró el retorno.",
@@ -74,7 +74,7 @@
       "arc": "Aprende a decidir con información incompleta y a escuchar conocimientos que no están escritos en sus cuadernos.",
       "voice": "Eso no estaba ayer. Esperá... no, tenés razón: primero salimos.",
       "everyday_detail": "Lleva un lápiz detrás de la oreja y busca otro para escribir.",
-      "visual": "Dedos manchados de grafito, cuaderno reutilizado, lápiz detrás de la oreja y bastón construido con piezas sencillas."
+      "visual": "Pelo corto gris plateado, abrigo violeta, lápiz detrás de la oreja, cuaderno y emisor electromagnético de antena y cables. Sin bastón mágico ni túnica."
     }
   }
 }

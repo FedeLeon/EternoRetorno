@@ -16,12 +16,12 @@ static func build(ui: Control) -> void:
 	center(ui,"El camino queda atrás" if won else "El mundo los recuerda",96,70,42,ui.TEXT)
 	var party_names: Array = ui.game.run.party.map(func(id): return ui.game.content.heroes[id].name)
 	center(ui," + ".join(party_names),166,40,23,ui.GOLD)
-	var victory_text = "Completaste los pisos de esta expedición.\nLa aventura está completa." if int(ui.game.run.get("floor_count",1)) > 1 else "Completaste %s." % ["la cripta de los ecos","el bosque de las raíces","la fortaleza del último fuego"][floor_number-1]
+	var victory_text = "Completaste los pisos de esta expedición.\nLa aventura está completa." if int(ui.game.run.get("floor_count",1)) > 1 else "Completaste %s." % ["la red de mantenimiento","el cinturón industrial","la Central del Reinicio"][floor_number-1]
 	var defeat_text = "Decidiste volver al campamento.\nLos contratos se renuevan para el próximo intento." if summary.get("abandoned",false) else "Ambos compañeros han caído.\nOtra pareja. Otro mazo. Una nueva oportunidad."
 	center(ui,victory_text if won else defeat_text,208,76,22,ui.MUTED)
-	center(ui,"Piso %d · Retorno %d · %s" % [floor_number,summary.get("difficulty",0),{"normal":"Sin condición","tainted":"Profanada","dangerous":"Expedición peligrosa"}.get(summary.get("variant","normal"),"Sin condición")],286,30,17,ui.MUTED)
+	center(ui,"Piso %d · Retorno %d · %s" % [floor_number,summary.get("difficulty",0),{"normal":"Sin condición","tainted":"Interferida","dangerous":"Expedición peligrosa"}.get(summary.get("variant","normal"),"Sin condición")],286,30,17,ui.MUTED)
 	var stats: Dictionary = summary.get("statistics",{})
-	var metrics = [["Combates",stats.get("battles",0)],["Élites",stats.get("elites",0)],["Guardianes",stats.get("bosses",0)],["Almas obtenidas",stats.get("souls",0)]]
+	var metrics = [["Combates",stats.get("battles",0)],["Élites",stats.get("elites",0)],["Guardianes",stats.get("bosses",0)],["Celdas obtenidas",stats.get("souls",0)]]
 	for i in range(metrics.size()):
 		var tile = ui.panel(174+i*236,324,224,88)
 		ui.label_at(str(metrics[i][1]),12,4,200,48,30,ui.GOLD,tile).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -38,11 +38,11 @@ static func build(ui: Control) -> void:
 	var relic_names: Array[String] = []
 	for id in summary.get("relics",[]):
 		if ui.game.content.relics.has(id): relic_names.append(ui.game.content.relics[id].name)
-	detail(ui,details,"Reliquias (%d): " % relic_names.size() + (", ".join(relic_names) if not relic_names.is_empty() else "ninguna"))
+	detail(ui,details,"Componentes (%d): " % relic_names.size() + (", ".join(relic_names) if not relic_names.is_empty() else "ninguno"))
 	detail(ui,details,"Ecos desbloqueados: " + ", ".join(ui.game.run.new_unlocks) if not ui.game.run.new_unlocks.is_empty() else "Tus desbloqueos anteriores se conservan.")
 	var contract: Dictionary = ui.game.run.get("contract_result",{})
 	if not contract.is_empty():
-		detail(ui,details,("%s · +%d almas" % [contract.name,contract.reward]) if contract.complete else (contract.name+" · no completado. Tres nuevas ofertas disponibles."))
+		detail(ui,details,("%s · +%d celdas" % [contract.name,contract.reward]) if contract.complete else (contract.name+" · no completado. Tres nuevas ofertas disponibles."))
 	ui.button("Volver al campamento",322,622,310,56,ui.open_base_camp)
 	ui.button("Colección de ecos",650,622,310,56,ui.open_collection)
 

@@ -55,6 +55,7 @@ func _ready() -> void:
 		var actor = picture("res://assets/rest/%s.png" % hero.id, Rect2(left, 208, 260, 252))
 		actor.name = "Hero%d" % i
 		actor.flip_h = i == 1
+		preload("res://src/presentation/seated_hero_art.gd").fit(actor, hero.id, Rect2(left, 224, 260, 236))
 		preload("res://src/presentation/firelight.gd").attach(actor, i * 0.6)
 		if hero.hp <= 0: actor.modulate = Color(0.55, 0.55, 0.6)
 		var bar = HealthBar.new()

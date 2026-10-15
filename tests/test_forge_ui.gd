@@ -97,7 +97,9 @@ func run_tests() -> void:
 		check(hud.equipment.size() == 4, "both upgraded tracks of each hero in HUD")
 		for i in range(4):
 			var entry = hud.equipment[i]
-			check(entry.level == 3 and entry.texture != null, "level-specific equipment asset")
+			var hero_id = pair[i / 2]
+			var track = "weapon" if i % 2 == 0 else "armor"
+			check(entry.level == 3 and entry.texture.resource_path.ends_with("%s_%s_3.png" % [hero_id, track]) and entry.texture.get_size() == Vector2(512, 512), "HD equipment identifies hero, track and level")
 			await click(hud.get_node("Relic%d" % (hud.relics.size() + i)).get_global_rect().get_center())
 			check(is_instance_valid(hud.popover), "equipment opens anchored description")
 			var labels = hud.popover.find_children("*", "Label", true, false)

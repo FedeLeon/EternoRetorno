@@ -6,6 +6,11 @@ func check(ok: bool,caption: String):
 	if not ok:failures+=1;printerr("FAIL: ",caption)
 func _initialize():call_deferred("run_tests")
 func run_tests():
+	var fixture = Image.create(100, 100, false, Image.FORMAT_RGBA8)
+	fixture.fill(Color.TRANSPARENT)
+	fixture.fill_rect(Rect2i(10, 40, 50, 55), Color.WHITE)
+	fixture.fill_rect(Rect2i(10, 0, 5, 5), Color.WHITE)
+	check(preload("res://scripts/sketchbook_sheet_packer.gd").principal_bounds(fixture) == Rect2i(10, 40, 50, 55), "pose crop excludes detached fragments from previous row")
 	root.size=Vector2i(1280,720)
 	var scene=Control.new();root.add_child(scene)
 	var background=ColorRect.new();background.color=Color("15171f");background.size=Vector2(1280,720);scene.add_child(background)
@@ -30,7 +35,9 @@ func run_tests():
 				actor.apply_gear({"weapon":weapon,"armor":armor})
 				check(actor.sprite.material.get_shader_parameter("weapon_rank")==float(weapon) and actor.sprite.material.get_shader_parameter("armor_rank")==float(armor),"independent gear ranks")
 		actor.apply_gear({"weapon":0,"armor":0})
-	await process_frame
+	await create_timer(0.2).timeout
+	for actor in actors:
+		check(actor.sprite.frame == 0 and not actor.sprite.is_playing(), "battle idle holds a stable pose")
 	if DisplayServer.get_name()!="headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat-depth/six-detailed-heroes.png"))
@@ -41,6 +48,19 @@ func run_tests():
 		if DisplayServer.get_name()!="headless":
 			await RenderingServer.frame_post_draw
 			root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat-depth/heroes-"+action+".png"))
+	for actor in actors:
+		actor.play_once("attack")
+	await create_timer(0.08).timeout
+	for actor in actors:
+		actor.play_once("guard")
+	await create_timer(0.08).timeout
+	for actor in actors:
+		actor.play_once("run")
+	await create_timer(0.75).timeout
+	for actor in actors:
+		check(actor.sprite.animation == "run" and actor.sprite.is_playing(), "interrupted attack/guard cannot overwrite running")
+		actor.play_once("idle")
+		check(actor.sprite.frame == 0 and not actor.sprite.is_playing(), "explicit idle restores stable pose")
 	for actor in actors:
 		actor.set_fallen(true);check(actor.sprite.frame==11 and actor.fallen,"final defeat pose")
 		actor.set_fallen(false);check(actor.sprite.animation=="idle" and not actor.fallen,"idle restored")

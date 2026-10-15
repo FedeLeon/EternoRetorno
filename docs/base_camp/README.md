@@ -1,3 +1,10 @@
+## Corrección vigente — 14/10/2026
+
+[Edificios en sus solares y brasero fijo](stable_fire/README.md): se recortan los
+márgenes transparentes al presentar, se amplían los seis edificios y se anclan
+al suelo. Barril de una sola imagen y 24 dibujos separados de llamas. Las
+secciones siguientes conservan estados históricos.
+
 > **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
 > de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
 > como historial; las fuentes y herramientas del arte vigente permanecen intactas.

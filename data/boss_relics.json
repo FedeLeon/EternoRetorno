@@ -1,7 +1,7 @@
 {
   "crypt_blood": {
     "id": "crypt_blood",
-    "name": "Cáliz del Guardián",
+    "name": "Inyector de presión",
     "description": "Los ataques curan 1 PV al dueño por impacto.",
     "condition": "hit_heal",
     "value": 1,
@@ -14,7 +14,7 @@
   },
   "crypt_seal": {
     "id": "crypt_seal",
-    "name": "Sello de los Muertos",
+    "name": "Credencial de servicio",
     "description": "Cada héroe inicia los turnos con 3 de bloqueo.",
     "condition": "turn_block",
     "value": 3,
@@ -27,7 +27,7 @@
   },
   "crypt_lantern": {
     "id": "crypt_lantern",
-    "name": "Luz del Sepulcro",
+    "name": "Lámpara de emergencia",
     "description": "Robá dos cartas más en el primer turno.",
     "condition": "opening_draw",
     "value": 2,
@@ -40,8 +40,8 @@
   },
   "forest_thorn": {
     "id": "forest_thorn",
-    "name": "Espina del Bosque",
-    "description": "Las cartas de veneno aplican 3 más.",
+    "name": "Pinza de enganche",
+    "description": "Las cartas de corrosión aplican 3 más.",
     "condition": "always",
     "value": 3,
     "locked": false,
@@ -53,7 +53,7 @@
   },
   "forest_heart": {
     "id": "forest_heart",
-    "name": "Corazón Silvestre",
+    "name": "Núcleo de reciclaje",
     "description": "Ambos héroes ganan 12 de vida máxima y actual.",
     "condition": "max_hp",
     "value": 12,
@@ -66,7 +66,7 @@
   },
   "forest_eye": {
     "id": "forest_eye",
-    "name": "Ojo de la Cacería",
+    "name": "Radar de perímetro",
     "description": "Los ataques penetrantes causan 5 de daño más.",
     "condition": "pierce",
     "value": 5,
@@ -79,7 +79,7 @@
   },
   "fire_crown": {
     "id": "fire_crown",
-    "name": "Corona de Ceniza",
+    "name": "Regulador central",
     "description": "Los ataques caros causan 6 de daño más.",
     "condition": "costly",
     "value": 6,
@@ -92,7 +92,7 @@
   },
   "fire_ward": {
     "id": "fire_ward",
-    "name": "Custodia del Fuego",
+    "name": "Aislante térmico",
     "description": "Los héroes heridos reciben 5 más de bloqueo de sus cartas.",
     "condition": "wounded",
     "value": 5,
@@ -105,7 +105,7 @@
   },
   "fire_spark": {
     "id": "fire_spark",
-    "name": "Chispa del Retorno",
+    "name": "Celda de arranque",
     "description": "Comenzá cada turno con una energía adicional.",
     "condition": "extra_energy",
     "value": 1,

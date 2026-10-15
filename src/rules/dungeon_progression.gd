@@ -14,4 +14,4 @@ static func advance(run: Dictionary, rng: RandomNumberGenerator) -> void:
 	run.erase("treasure")
 	preload("res://src/rules/adventure_extensions.gd").apply_condition(run)
 	run.phase = "map"
-	run.log = ["El aire del bosque reemplaza al silencio de la cripta." if run.floor == 2 else "Las cenizas anuncian la Fortaleza del Último Fuego."]
+	run.log = ["El aire del bosque reemplaza al silencio de la cripta." if run.floor == 2 else "Las cenizas anuncian la Central del Reinicio."]

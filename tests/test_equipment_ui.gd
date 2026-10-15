@@ -52,6 +52,10 @@ func run_tests() -> void:
 	check(app.layer.has_node("EquipmentDescription"), "outside click keeps description")
 	await click(app.layer.get_node("Equip_arcane_orb").get_global_rect().get_center())
 	check(app.equipped == {"team":"arcane_orb"}, "replace single shared relic")
+	check(app.layer.get_node("StartAdventure").icon.resource_path.ends_with("play.svg"), "start uses play instead of door")
+	for component in app.game.content.equipment:
+		var picture = app.layer.get_node("Equip_" + component + "/ComponentArt")
+		check(not picture.texture is AtlasTexture and picture.texture.get_width() == 512, "component uses dedicated HD texture " + component)
 	await shot("loadout")
 	var party = app.selected_party.duplicate()
 	check(not app.game.profile.has("preparation"), "preparation not persisted")
@@ -73,10 +77,10 @@ func run_tests() -> void:
 		check(app.has_node("CinematicPlayer"),"hero story follows preparation")
 		app.get_node("CinematicPlayer").finish()
 	await process_frame
-	check(app.screen == "map" and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
+	check(app.screen == "combat" and app.game.run.current == 0 and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
 	check(app.game.run.inventory.is_empty(), "new adventure has no consumables")
 	app.game.run.inventory["agility_brew"] = 1 # Explicit UI fixture for bag use.
-	app.game.enter_node(0)
+	check(not app.game.enter_node(0), "first battle cannot be entered twice")
 	app.continue_run()
 	await process_frame
 	await click(Vector2(925, 32))

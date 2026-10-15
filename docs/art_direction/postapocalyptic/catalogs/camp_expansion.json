@@ -1,0 +1,312 @@
+{
+  "buildings": {
+    "expeditions": {
+      "name": "Puesto de expediciones",
+      "cost": 500
+    },
+    "church": {
+      "name": "Laboratorio",
+      "cost": 600
+    }
+  },
+  "contracts": [
+    {
+      "id": "pair_warrior_guardian",
+      "name": "Carpintero y Constructora",
+      "description": "Ganá una aventura con Carpintero y Constructora.",
+      "art": "pair",
+      "party": [
+        "warrior",
+        "guardian"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "pair_warrior_rogue",
+      "name": "Carpintero y Boticario",
+      "description": "Ganá una aventura con Carpintero y Boticario.",
+      "art": "pair",
+      "party": [
+        "warrior",
+        "rogue"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "pair_warrior_mage",
+      "name": "Carpintero y Profesora",
+      "description": "Ganá una aventura con Carpintero y Profesora.",
+      "art": "pair",
+      "party": [
+        "warrior",
+        "mage"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "pair_guardian_rogue",
+      "name": "Constructora y Boticario",
+      "description": "Ganá una aventura con Constructora y Boticario.",
+      "art": "pair",
+      "party": [
+        "guardian",
+        "rogue"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "pair_guardian_mage",
+      "name": "Constructora y Profesora",
+      "description": "Ganá una aventura con Constructora y Profesora.",
+      "art": "pair",
+      "party": [
+        "guardian",
+        "mage"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "pair_rogue_mage",
+      "name": "Boticario y Profesora",
+      "description": "Ganá una aventura con Boticario y Profesora.",
+      "art": "pair",
+      "party": [
+        "rogue",
+        "mage"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 350
+    },
+    {
+      "id": "win_warrior",
+      "name": "El camino del Carpintero",
+      "description": "Ganá una aventura llevando a Carpintero, con cualquier compañero.",
+      "art": "guardian",
+      "party": [
+        "warrior"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 250
+    },
+    {
+      "id": "win_guardian",
+      "name": "El camino de la Constructora",
+      "description": "Ganá una aventura llevando a Constructora, con cualquier compañero.",
+      "art": "guardian",
+      "party": [
+        "guardian"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 250
+    },
+    {
+      "id": "win_rogue",
+      "name": "El camino del Boticario",
+      "description": "Ganá una aventura llevando a Boticario, con cualquier compañero.",
+      "art": "guardian",
+      "party": [
+        "rogue"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 250
+    },
+    {
+      "id": "win_mage",
+      "name": "El camino de la Profesora",
+      "description": "Ganá una aventura llevando a Profesora, con cualquier compañero.",
+      "art": "guardian",
+      "party": [
+        "mage"
+      ],
+      "metric": "victory",
+      "target": 1,
+      "reward": 250
+    },
+    {
+      "id": "battles_3",
+      "name": "Primeras escaramuzas",
+      "description": "Ganá 3 combates en una aventura (incluye élites y guardián).",
+      "art": "battle",
+      "party": [],
+      "metric": "battles",
+      "target": 3,
+      "reward": 115
+    },
+    {
+      "id": "battles_6",
+      "name": "Paso firme",
+      "description": "Ganá 6 combates en una aventura (incluye élites y guardián).",
+      "art": "battle",
+      "party": [],
+      "metric": "battles",
+      "target": 6,
+      "reward": 160
+    },
+    {
+      "id": "battles_10",
+      "name": "La larga expedición",
+      "description": "Ganá 10 combates en una aventura (incluye élites y guardián).",
+      "art": "battle",
+      "party": [],
+      "metric": "battles",
+      "target": 10,
+      "reward": 220
+    },
+    {
+      "id": "elites_1",
+      "name": "Cazador de élites",
+      "description": "Derrotá a 1 élite en una aventura.",
+      "art": "elite",
+      "party": [],
+      "metric": "elites",
+      "target": 1,
+      "reward": 150
+    },
+    {
+      "id": "elites_2",
+      "name": "Dos amenazas menos",
+      "description": "Derrotá a 2 élites en una aventura.",
+      "art": "elite",
+      "party": [],
+      "metric": "elites",
+      "target": 2,
+      "reward": 300
+    },
+    {
+      "id": "guardian",
+      "name": "El sello quebrado",
+      "description": "Derrotá al guardián en una aventura.",
+      "art": "guardian",
+      "party": [],
+      "metric": "bosses",
+      "target": 1,
+      "reward": 220
+    },
+    {
+      "id": "treasure",
+      "name": "Buscadores de secretos",
+      "description": "Abrí al menos un cofre durante una aventura, incluso si tiene trampa.",
+      "art": "exploration",
+      "party": [],
+      "metric": "treasures",
+      "target": 1,
+      "reward": 100
+    },
+    {
+      "id": "upgrade",
+      "name": "Acero templado",
+      "description": "Mejorá dos cartas en descansos durante una aventura.",
+      "art": "mastery",
+      "party": [],
+      "metric": "upgrades",
+      "target": 2,
+      "reward": 160
+    },
+    {
+      "id": "clean",
+      "name": "Todos regresan",
+      "description": "Ganá tres combates sin que ningún héroe caiga durante esos combates.",
+      "art": "battle",
+      "party": [],
+      "metric": "clean_battles",
+      "target": 3,
+      "reward": 180
+    }
+  ],
+  "specializations": {
+    "warrior_whirlwind": {
+      "hero": "warrior",
+      "name": "Torbellino",
+      "description": "+1 de daño por golpe en cartas con dos o más impactos.",
+      "condition": "multi",
+      "stat": "damage",
+      "bonus": 1,
+      "cost": 450,
+      "art": "warrior_whirlwind"
+    },
+    "warrior_executioner": {
+      "hero": "warrior",
+      "name": "Verdugo",
+      "description": "+2 de daño en cartas de un solo impacto.",
+      "condition": "single",
+      "stat": "damage",
+      "bonus": 2,
+      "cost": 450,
+      "art": "warrior_executioner"
+    },
+    "guardian_protector": {
+      "hero": "guardian",
+      "name": "Baluarte",
+      "description": "+3 de bloqueo en cartas dirigidas a un aliado o a ambos héroes.",
+      "condition": "ally",
+      "stat": "block",
+      "bonus": 3,
+      "cost": 450,
+      "art": "guardian_protector"
+    },
+    "guardian_retaliator": {
+      "hero": "guardian",
+      "name": "Vindicadora",
+      "description": "+3 de daño con cartas ofensivas mientras la Constructora tenga bloqueo activo.",
+      "condition": "guarded",
+      "stat": "damage",
+      "bonus": 3,
+      "cost": 450,
+      "art": "guardian_retaliator"
+    },
+    "rogue_venom": {
+      "hero": "rogue",
+      "name": "Alquimista tóxico",
+      "description": "+1 de corrosión en cartas que ya aplican corrosión.",
+      "condition": "always",
+      "stat": "poison",
+      "bonus": 1,
+      "cost": 450,
+      "art": "rogue_venom"
+    },
+    "rogue_assassin": {
+      "hero": "rogue",
+      "name": "Hoja certera",
+      "description": "+2 de daño en cartas con penetración de bloqueo.",
+      "condition": "pierce",
+      "stat": "damage",
+      "bonus": 2,
+      "cost": 450,
+      "art": "rogue_assassin"
+    },
+    "mage_tempest": {
+      "hero": "mage",
+      "name": "Tejedora de tormentas",
+      "description": "+2 de daño por enemigo en cartas que atacan a todos.",
+      "condition": "area",
+      "stat": "damage",
+      "bonus": 2,
+      "cost": 450,
+      "art": "mage_tempest"
+    },
+    "mage_focus": {
+      "hero": "mage",
+      "name": "Canalizadora",
+      "description": "+2 de daño en cartas de un impacto contra un solo enemigo.",
+      "condition": "focused",
+      "stat": "damage",
+      "bonus": 2,
+      "cost": 450,
+      "art": "mage_focus"
+    }
+  }
+}

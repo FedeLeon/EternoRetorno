@@ -33,9 +33,28 @@ func run_tests() -> void:
 	check(fire.flame.sprite_frames.get_frame_count("default") == 24, "natural fire has twenty-four frames")
 	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		var seat = app.layer.get_node("CampHero_" + id + "/SeatedHero")
-		check(seat.texture.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
+		check(seat.texture is AtlasTexture and seat.texture.atlas.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
 		check(seat.material is ShaderMaterial, "seated hero receives animated firelight")
+		check(is_equal_approx(seat.position.y + seat.size.y, 216), "seated boots anchored to the shared floor")
+		check(seat.position.y >= 0 and seat.position.y + seat.size.y < seat.get_parent().size.y, "whole seated illustration is inside its touch target")
 		check(seat.flip_h == (seat.get_parent().position.x > 640), "seated hero faces the fire")
+	check(fire.barrel is Sprite2D and not fire.barrel is AnimatedSprite2D, "barrel is a static body")
+	var barrel_texture = fire.barrel.texture
+	var barrel_transform = fire.barrel.transform
+	var flame_position = fire.flame.position
+	var drawings = {}
+	var raw_flames = Image.new()
+	raw_flames.load_png_from_buffer(FileAccess.get_file_as_bytes("res://assets/camp/fire-flames.png"))
+	for frame in range(24):
+		fire.flame.pause()
+		fire.flame.frame = frame
+		var texture = fire.flame.sprite_frames.get_frame_texture("default", frame)
+		check(texture.atlas.resource_path.ends_with("fire-flames.png"), "only flame art advances")
+		drawings[hash(raw_flames.get_region(Rect2i(texture.region)).get_data())] = true
+		check(fire.barrel.texture == barrel_texture and fire.barrel.transform == barrel_transform, "barrel does not move across the whole cycle")
+		check(fire.flame.position == flame_position and fire.flame.offset == Vector2.ZERO, "flame root remains above the same rim")
+	check(drawings.size() == 24, "twenty-four distinct flame-only drawings")
+	fire.flame.play()
 	var first = fire.flame.frame
 	await capture("camp-first")
 	await create_timer(0.27).timeout
@@ -66,6 +85,6 @@ func run_tests() -> void:
 		check(app.has_node("CinematicPlayer"),"story shown for chosen hero")
 		app.get_node("CinematicPlayer").finish()
 	await process_frame
-	check(app.screen == "map" and app.game.run.party == ["warrior", "mage"], "chosen pair enters dungeon")
+	check(app.screen == "combat" and app.game.run.current == 0 and app.game.run.party == ["warrior", "mage"], "chosen pair enters dungeon")
 	print("CAMP CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)

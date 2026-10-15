@@ -16,7 +16,7 @@ static func open(ui: Control) -> void:
 
 static func confirm_end(ui: Control) -> void:
 	ui.close_modal()
-	ui.overlay = Dialog.build(ui, "Terminar aventura", "No podrás continuar esta aventura. Conservás tus almas y mejoras permanentes.", [
+	ui.overlay = Dialog.build(ui, "Terminar aventura", "No podrás continuar esta aventura. Conservás tus celdas y mejoras permanentes.", [
 		{"id":"ConfirmEndAdventure", "text":"Terminar e ir al campamento", "callback":func():
 			if ui.game.end_adventure():
 				ui.close_modal()

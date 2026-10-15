@@ -25,7 +25,7 @@ static func describe(game: RefCounted, hand_index: int, target: int) -> String:
 			lines.append("%s: %d daño a vida · %d bloqueo%s%s" % [game.content.enemies[before[i].id].name, before[i].hp - last.hp, before[i].block - last.block, " · cae" if last.hp <= 0 else "", " · %d×%d" % [hits.size(),card.damage] if card.hits > 1 else ""])
 	var counters = copy.resolved_card_hits.filter(func(hit): return hit.kind == "counter")
 	for revival in copy.resolved_card_hits.filter(func(hit):return hit.kind=="revive"):
-		lines.append("La fuente lo devuelve con %d PV; no cae definitivamente." % revival.hp)
+		lines.append("El relé lo reactiva con %d PV; no cae definitivamente." % revival.hp)
 	if not counters.is_empty(): lines.append("Devuelve %d contraataques de 4 PV" % counters.size())
 	for i in range(heroes.size()):
 		var after: Dictionary = copy.run.heroes[i]
@@ -33,7 +33,7 @@ static func describe(game: RefCounted, hand_index: int, target: int) -> String:
 		var guard = after.block - heroes[i].block
 		if delta != 0 or guard != 0:
 			lines.append("%s: %s%d PV · %s%d bloqueo" % [game.content.heroes[heroes[i].id].name, "+" if delta >= 0 else "", delta, "+" if guard >= 0 else "", guard])
-	if card.poison > 0: lines.append("Aplica %d de veneno" % card.poison)
+	if card.poison > 0: lines.append("Aplica %d de corrosión" % card.poison)
 	if card.damage <= 0:
 		lines.append(game.content.describe(game.run.combat.hand[hand_index], card))
 	return "\n".join(lines)

@@ -19,14 +19,14 @@ static func prepare(game: RefCounted) -> void:
 			if node.id in parent.next and not parent.next.any(func(id): return id != node.id):
 				parent.next.append(alternatives[0].id)
 				parent.next.sort()
-		node.risk = {"name":"Emboscada opcional","warning":"Enemigos con +20% PV y +2 daño por ataque. Premio: una poción de curación y 20 almas adicionales."}
+		node.risk = {"name":"Emboscada opcional","warning":"Enemigos con +20% PV y +2 daño por ataque. Premio: una ampolla de curación y 20 celdas adicionales."}
 		break
 
 static func definition(game: RefCounted, id: String) -> Dictionary:
 	if id.begins_with("pact_"):
 		var curse: Dictionary = CURSES.get(id.trim_prefix("pact_"), {})
 		if curse.is_empty(): return {}
-		return {"name":"Un pacto bajo las sombras","text":"Una voz ofrece una reliquia de aventura. A cambio: " + curse.description + " Podés limpiar la maldición en un descanso o ante el mercader.","choices":["Aceptar: reliquia aleatoria + maldición " + curse.name,"Rechazar el pacto"],"background":"altar"}
+		return {"name":"Un pacto bajo las sombras","text":"Una voz ofrece un componente de aventura. A cambio: " + curse.description + " Podés limpiar la avería en un descanso o ante el mercader.","choices":["Aceptar: componente aleatorio + avería " + curse.name,"Rechazar el pacto"],"background":"altar"}
 	if id.begins_with("pair_"):
 		var names: Array = game.run.party.map(func(hero): return game.content.heroes[hero].name)
 		var key: String = id.trim_prefix("pair_")

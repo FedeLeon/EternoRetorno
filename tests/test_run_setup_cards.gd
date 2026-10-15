@@ -45,7 +45,10 @@ func verify() -> void:
 	await capture("selected")
 	for button in app.overlay.find_children("*Card*","Button",true,false):
 		check(button.get_global_rect().end.x<=1280 and button.get_global_rect().end.y<=720,"cards fit screen")
+		var art = button.get_children().filter(func(n): return n is TextureRect)[0]
+		check(art.texture.resource_path.begins_with("res://assets/run_setup/") and art.texture.get_width() == 512, "dedicated HD configuration icon")
 		check(button.get_children().filter(func(n):return n is TextureRect and n.texture != null).size()==1,"illustration present")
+	check(app.overlay.get_node("StartAdventure").icon.resource_path.ends_with("play.svg"), "configuration confirm uses play")
 	click(app.overlay.get_node("StartAdventure")); await process_frame
 	check(app.game.run.floor==3 and app.game.run.difficulty==3 and app.game.run.variant=="dangerous","start applies clicked configuration")
 	app.close_modal(); app.queue_free(); await process_frame

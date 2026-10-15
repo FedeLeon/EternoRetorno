@@ -34,6 +34,12 @@ func run_tests():
 			check(app.layer.has_node("EmptyPlot%d" % j) == (j > i), "only unbuilt lots display stakes")
 			check(app.layer.has_node(NODES[j]) == (j <= i), "built artwork follows saved buildings")
 		await capture(str(i) + "-" + IDS[i])
+	for id in NODES + ["RefugeBuilding", "ProjectsBuilding"]:
+		var picture = app.layer.get_node(id)
+		check(picture.texture is AtlasTexture, "building trims transparent canvas: " + id)
+		check(picture.size.x >= 260, "building occupies its ground footprint: " + id)
+		var opaque = picture.texture.get_image().get_used_rect()
+		check(float(opaque.size.x) / picture.texture.get_width() > 0.97 and float(opaque.size.y) / picture.texture.get_height() > 0.97, "no unused image margins inside building slot: " + id)
 	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit", "ProjectsEntrance"]
 	for id in entrances:
 		var area: Rect2 = app.layer.get_node(id).get_meta("caption_rect")
@@ -41,6 +47,11 @@ func run_tests():
 		for other in entrances:
 			if id == other: continue
 			check(not area.intersects(app.layer.get_node(other).get_meta("caption_rect")), "captions do not overlap")
+		for other in entrances:
+			if id == other: continue
+			var neighbour = app.layer.get_node(other)
+			if neighbour.has_method("configure"):
+				check(not neighbour._has_point(area.get_center() - neighbour.position), "building does not intercept neighbouring caption: " + other + "/" + id)
 		var button = app.layer.get_node(id)
 		var local = area.get_center()-button.position
 		check(button._has_point(local) if button.has_method("_has_point") else Rect2(Vector2.ZERO,button.size).has_point(local), "caption remains clickable: " + id)

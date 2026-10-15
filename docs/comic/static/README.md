@@ -1,5 +1,12 @@
 # Primeros planos estáticos de héroes — 14/10/2026
 
+> Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
+> se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
+
+> Registro histórico. Los dibujos y fuentes activos fueron sustituidos el 14/10
+> por el [cómic postapocalíptico](../../art_direction/postapocalyptic/README.md). Las validaciones inferiores
+> pertenecen a la etapa anterior y no certifican los recursos nuevos.
+
 Por pedido del usuario se sustituyen las secuencias de ataque/defensa por **ocho
 ilustraciones estáticas nuevas**: una de ataque y una de defensa por protagonista.
 Se generaron con la herramienta integrada `image_gen.imagegen`, usando como

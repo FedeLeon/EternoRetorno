@@ -1,0 +1,18 @@
+{
+  "hero": "mage",
+  "prompt": "Use case: stylized-concept. Asset type: single full-body character design cutout for Eterno Retorno. ORIGINAL post-apocalyptic resistance world, late-1990s arcade fighting-game AMERICAN COMIC aesthetic: bold black hand-inked contours, dynamic angular shapes, flat vibrant colors, dramatic cel-shaded hard-edged shadows, subtle printed halftone dots, confident expressive faces. NOT pencil sketchbook, not washed out, not pixel art, not photorealism, not glossy 3D. Deep ink-black and aubergine shadows, vivid teal/cyan tech accents, rust orange and violet cloth, warm believable skin. Ordinary civilians fighting oppressive autonomous machines using improvised tools, NO superheroes, NO existing franchise costumes or logos, NO medieval fantasy. Subject: Vera,27,young woman with silver-gray short tousled bob, teacher, graphite-smudged fingers, pencil behind ear. Aubergine civilian long coat with teal lining over cream ordinary shirt and worn gray trousers, scuffed boots, notebook and reused school satchel. Holds a homemade electromagnetic pulse device built from an old antenna, exposed cables and a salvaged battery, with small cyan arcs; NO magic staff, NO robes, NO plate armor. Curious determined civilian, not military. Reference is FACE IDENTITY ONLY, replace all armor/weapons/outfit with the civilian design described. ONE full-body figure, three-quarter view facing RIGHT, neutral ready stance, entire head hands boots tool visible, centered on TRUE transparent RGBA background, at least8percent clear margins. No scene, no floor, no diagram, no text, no white rectangular paper. Thin off-white silhouette outline. Portrait1024x1536.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f5196d7b-0da8-4211-beb1-5503688e67a4.png",
+  "style": "ORIGINAL post-apocalyptic resistance world, late-1990s arcade fighting-game AMERICAN COMIC aesthetic: bold black hand-inked contours, dynamic angular shapes, flat vibrant colors, dramatic cel-shaded hard-edged shadows, subtle printed halftone dots, confident expressive faces. NOT pencil sketchbook, not washed out, not pixel art, not photorealism, not glossy 3D. Deep ink-black and aubergine shadows, vivid teal/cyan tech accents, rust orange and violet cloth, warm believable skin. Ordinary civilians fighting oppressive autonomous machines using improvised tools, NO superheroes, NO existing franchise costumes or logos, NO medieval fantasy.",
+  "identity": "Vera,27,young woman with silver-gray short tousled bob, teacher, graphite-smudged fingers, pencil behind ear. Aubergine civilian long coat with teal lining over cream ordinary shirt and worn gray trousers, scuffed boots, notebook and reused school satchel. Holds a homemade electromagnetic pulse device built from an old antenna, exposed cables and a salvaged battery, with small cyan arcs; NO magic staff, NO robes, NO plate armor. Curious determined civilian, not military.",
+  "kind": "identity",
+  "id": "identity_mage",
+  "source": "docs/art_direction/postapocalyptic/sources/identity_mage.png",
+  "target": "assets/heroes/identity/postapocalyptic/mage.png",
+  "transparent": true,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

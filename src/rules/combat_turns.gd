@@ -29,12 +29,17 @@ static func start(game: RefCounted) -> void:
 		if game.run.get("training", false): intent = preload("res://src/rules/training_config.gd").intent(game, enemy, intent)
 		enemy.intent = intent
 	preload("res://src/rules/combat_depth.gd").release(game)
-	if game._check_combat_end(): return
+	var ended = game._check_combat_end()
+	# A source revival after release belongs to the same prepared-action replay.
+	for event in game.resolved_card_hits:
+		if event.kind == "revive": game.resolved_prepared_hits.append(event)
+	if ended: return
 	game._draw(6 + (game.RunRelics.amount(game.run, game.content.relics, "opening_draw") if battle.turn == 1 else 0))
 
 
 static func end(game: RefCounted) -> bool:
 	game.resolved_prepared_hits.clear()
+	game.resolved_card_hits.clear()
 	game.resolved_enemy_attacks.clear()
 	game.resolved_enemy_blocks.clear()
 	game.resolved_hero_defenses.clear()

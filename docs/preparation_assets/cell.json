@@ -1,0 +1,10 @@
+{
+  "id": "cell",
+  "target": "assets/ui/cell.png",
+  "source": "docs/preparation_assets/sources/cell.png",
+  "count": 1,
+  "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Draw ONE salvaged rechargeable energy cell currency token: a compact cylindrical cartridge with protective ribbed steel casing, two small brass terminals, a luminous cyan energy core behind a glass strip, violet cable grip and a tiny orange indicator. Three-quarter view, balanced centered composition, thin pale edge highlight, complete object with generous transparent margin, square 1024x1024. This is a tangible detailed battery cartridge, not a plain battery pictogram.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5821b42a-605a-4d23-af12-e06e2b3e6100.png",
+  "reference": "assets/objects/icons.png",
+  "tool": "image_gen.imagegen"
+}

@@ -1,0 +1,48 @@
+{
+  "forest_spring": {
+    "name": "El colector de lluvia",
+    "choices": [
+      "Seguir el sendero"
+    ],
+    "text": "Un manantial brilla entre las raíces. El grupo descansa junto al agua y recupera fuerzas."
+  },
+  "forest_hunter": {
+    "name": "El campamento abandonado",
+    "text": "Dejar una carga atrás permite caminar más ligero. Conservá al menos doce cartas y cuatro por héroe.",
+    "choices": [
+      "Elegir una carta para retirar",
+      "No cambiar el mazo"
+    ]
+  },
+  "forest_spirit": {
+    "name": "El terminal botánico",
+    "choices": [
+      "Continuar"
+    ],
+    "text": "El viejo terminal marca un depósito de suministros. Mauro reconoce las plantas que han crecido alrededor."
+  },
+  "forge_altar": {
+    "name": "Banco de recuperación",
+    "text": "Un terminal de mantenimiento puede reconstruir una carta de su héroe, de coste 0–1 y mejorada. El resultado es incierto.",
+    "choices": [
+      "Elegir carta para transformar",
+      "Conservar tu mazo"
+    ]
+  },
+  "ash_archive": {
+    "name": "Registro de la central",
+    "text": "Una página perdida puede reemplazar una carta por otra distinta de su héroe y coste 0–1.",
+    "choices": [
+      "Elegir carta para intercambiar",
+      "Cerrar el libro"
+    ]
+  },
+  "lava_bridge": {
+    "name": "Pasarela de refrigeración",
+    "text": "Al otro lado hay 45 celdas. Cruzar cuesta 8 PV a cada héroe; ambos deben sobrevivir.",
+    "choices": [
+      "Cruzar · -8 PV por héroe, +45 celdas",
+      "Tomar el camino seguro"
+    ]
+  }
+}

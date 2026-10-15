@@ -1,0 +1,16 @@
+{
+  "id": "components_1",
+  "source": "docs/preparation_assets/sources/components_1.png",
+  "ids": [
+    "vital_amulet",
+    "vigor_ring",
+    "phoenix_idol",
+    "poison_fang"
+  ],
+  "target_dir": "assets/equipment/components",
+  "count": 4,
+  "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Inventory icon bank with EXACT 2 columns by 2 rows, four different isolated objects. TOP LEFT: rugged vital-monitor module, black/red casing, tiny green pulse-line screen, medical cross shaped metal inset and clip. TOP RIGHT: starter capacitor, steel cylinder with exposed copper coil, glowing blue charging strips and ribbed cable. BOTTOM LEFT: emergency relay, orange safety housing, mechanical latch, spare fuse and red alarm lamp, revival device. BOTTOM RIGHT: corrosion injector nozzle, metallic threaded tip, transparent green acid reservoir, tubing and safety clamp. Each complete object centered inside its own square quadrant with 15 percent transparent margins; no touching edges or crossing between quadrants. High detail original ink illustration. Square 2048x2048 sheet, consistent scale and lighting.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3a17ff5c-ec1f-4889-9334-76784c68588a.png",
+  "reference": "assets/objects/icons.png",
+  "tool": "image_gen.imagegen"
+}

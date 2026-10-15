@@ -1,7 +1,7 @@
 {
   "pair_guardian_warrior": {
     "name": "Acero y juramento",
-    "text": "La Constructora cubre la grieta de la armadura del Carpintero. Él abre camino con su espada.",
+    "text": "Inés sujeta la chapa mientras Nicolás ajusta el mango de la sierra. Antes de salir prueban las señales que van a usar.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -18,8 +18,8 @@
     "background": "forest_hunter"
   },
   "pair_mage_warrior": {
-    "name": "Acero encantado",
-    "text": "La Profesora graba una runa helada en la espada del Carpintero.",
+    "name": "Herramienta conectada",
+    "text": "Vera conecta un cable aislado al mango de Nicolás. Le explica dónde no debe poner los dedos.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -37,7 +37,7 @@
   },
   "pair_guardian_mage": {
     "name": "Círculo protector",
-    "text": "La Profesora dibuja un sello detrás del escudo de la Constructora.",
+    "text": "Vera atornilla un aislante detrás del escudo de Inés. Lo prueban con una batería casi agotada.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -45,8 +45,8 @@
     "background": "forest_hunter"
   },
   "pair_mage_rogue": {
-    "name": "Veneno y escarcha",
-    "text": "La Profesora enfría una hoja del Boticario para retrasar a su próximo rival.",
+    "name": "Química y corriente",
+    "text": "Mauro separa los frascos antes de que Vera encienda el emisor. Los dos han aprendido a avisar primero.",
     "choices": [
       "Preparar el enlace: +4 bloqueo inicial y +2 daño para la próxima sinergia",
       "Descansar juntos: recuperar 6 PV cada uno"
@@ -54,8 +54,8 @@
     "background": "forest_hunter"
   },
   "pact_blood": {
-    "name": "Pacto de las sombras",
-    "text": "Una reliquia a cambio de una maldición.",
+    "name": "Recuperación arriesgada",
+    "text": "Un componente útil a cambio de aceptar una avería durante la expedición.",
     "choices": [
       "Aceptar",
       "Rechazar"
@@ -63,8 +63,8 @@
     "background": "altar"
   },
   "pact_burden": {
-    "name": "Pacto de las sombras",
-    "text": "Una reliquia a cambio de una maldición.",
+    "name": "Recuperación arriesgada",
+    "text": "Un componente útil a cambio de aceptar una avería durante la expedición.",
     "choices": [
       "Aceptar",
       "Rechazar"
@@ -72,8 +72,8 @@
     "background": "altar"
   },
   "pact_scar": {
-    "name": "Pacto de las sombras",
-    "text": "Una reliquia a cambio de una maldición.",
+    "name": "Recuperación arriesgada",
+    "text": "Un componente útil a cambio de aceptar una avería durante la expedición.",
     "choices": [
       "Aceptar",
       "Rechazar"

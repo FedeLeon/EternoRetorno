@@ -36,7 +36,7 @@ func _ready() -> void:
 		if relic.has("level"):
 			var number = NumberView.new()
 			number.value = relic.level
-			number.position = Vector2(34, 28)
+			number.position = Vector2(target.size.x - 18, 28)
 			number.size = Vector2(18, 22)
 			number.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			target.add_child(number)
@@ -61,9 +61,10 @@ func _ready() -> void:
 	var orb = TextureRect.new()
 	orb.name = "EnergyOrb"
 	var flow = ShaderMaterial.new()
-	flow.shader = preload("res://assets/ui/shaders/energy_flow.gdshader")
+	flow.shader = preload("res://assets/ui/shaders/energy_cell_flow.gdshader")
 	orb.material = flow
-	orb.texture = load("res://assets/ui/energy.png")
+	orb.texture = preload("res://assets/ui/battle_energy_cell.png")
+	orb.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	orb.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	orb.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	orb.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -105,6 +106,7 @@ func icon_button(texture: Texture2D, area: Rect2, description: String, action: C
 	place(target, area)
 	var picture = TextureRect.new()
 	picture.texture = texture
+	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE

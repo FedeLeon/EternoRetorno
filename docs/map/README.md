@@ -1,3 +1,11 @@
+# Mapa y caminos actuales — 14/10/2026
+
+El mapa táctico conserva salas/conexiones, marcadores y resplandores del mundo
+industrial. Después de las recompensas se presenta [Caminos en primera persona](../paths/README.md);
+Grupo/Mazo/Mapa comparten la columna derecha. Abrir Mapa permite inspeccionar
+el recorrido y volver a los caminos. Las fases/IDs y guardados no cambian.
+Las secciones siguientes documentan etapas anteriores.
+
 > **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
 > de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
 > como historial; las fuentes y herramientas del arte vigente permanecen intactas.

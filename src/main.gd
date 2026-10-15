@@ -20,7 +20,7 @@ const Rogue = preload("res://src/rogue_sprite.gd")
 const Mage = preload("res://src/mage_sprite.gd")
 const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage}
 const Campfire = preload("res://src/campfire.gd")
-const CAMP_POSITIONS = [Vector2(390, 350), Vector2(890, 350), Vector2(420, 558), Vector2(860, 558)]
+const CAMP_POSITIONS = [Vector2(180, 558), Vector2(1100, 558), Vector2(380, 558), Vector2(900, 558)]
 const Dungeon = preload("res://src/dungeon.gd")
 const GOLD = preload("res://src/ui/components/dark_skin.gd").ACCENT
 const INK = Color("10141f")
@@ -118,6 +118,7 @@ func render() -> void:
 		"collection": collection()
 		"deck": deck_view()
 		"map": map_view()
+		"paths": preload("res://src/ui/adventure_navigation.gd").build(self, true)
 		"combat": combat_view()
 		"room": room_view()
 		"event_cards": preload("res://src/ui/screens/event_cards_screen.gd").build(self)
@@ -195,9 +196,9 @@ func market_plot() -> void:
 		return
 	var cost = int(game.Progression.config().market_cost)
 	if game.profile.souls < cost:
-		show_modal("Mercado", "Necesitás %d almas. Ganá batallas para reunirlas." % cost, "Entendido", close_modal)
+		show_modal("Mercado", "Necesitás %d celdas. Ganá batallas para reunirlas." % cost, "Entendido", close_modal)
 		return
-	show_modal("Construir mercado", "Construir en el solar 1 cuesta %d almas. Permite comprar cartas para futuras recompensas." % cost, "Construir", func():
+	show_modal("Construir mercado", "Construir en el solar 1 cuesta %d celdas. Permite comprar cartas para futuras recompensas." % cost, "Construir", func():
 		if game.build_market():
 			close_modal()
 			open_market())
@@ -215,6 +216,7 @@ func camp_hotspot(id: String, area: Rect2, caption: String, action: Callable, ca
 		b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 	var plaque = panel(area.position.x + (area.size.x - 208) / 2, area.position.y - 34 if caption_above else area.end.y, 208, 34)
 	plaque.position += caption_offset
+	plaque.z_index = 4 # Camp captions stay above neighbouring roofs.
 	if caption_offset != Vector2.ZERO:
 		var clickable = b.get_rect().merge(plaque.get_rect())
 		b.position = clickable.position
@@ -283,11 +285,13 @@ func begin_on_floor(starting_floor: int) -> void:
 	if active_run():
 		game._finish(false)
 	if game.new_run(selected_party, -1, equipped, starting_floor):
+		# Commit the first encounter before any presentation; resume starts in combat.
+		game.enter_node(0)
 		await preload("res://src/ui/cinematic_navigation.gd").party(self)
 		continue_run()
 
 func continue_run() -> void:
-	screen = game.run.phase
+	screen = preload("res://src/ui/adventure_navigation.gd").screen_for(game)
 	selected_card = -1
 	selected_synergy = ""
 	upgrade_mode = false
@@ -301,30 +305,7 @@ func act(callback: Callable) -> void:
 	continue_run()
 
 func map_view() -> void:
-	var view = preload("res://src/ui/screens/map_screen.gd").new()
-	view.name = "MapScreen"
-	view.nodes = game.run.nodes.duplicate(true)
-	view.available = game.available_nodes()
-	view.visited = game.run.visited.duplicate()
-	view.current = game.run.current
-	view.run_seed = game.run.seed
-	view.boss_defeated = game.run.boss_defeated
-	view.dungeon_name = Dungeon.definition(int(game.run.get("floor", 1))).name
-	view.exit_caption = ("Entrar al bosque" if int(game.run.get("floor", 1)) == 1 else "Entrar a la fortaleza") if int(game.run.get("floor", 1)) < int(game.run.get("floor_count", 1)) else "Completar aventura"
-	view.deck_count = game.run.deck.size()
-	view.relics = equipped_relics()
-	for hero in game.run.heroes:
-		var snapshot = hero.duplicate()
-		snapshot.title = game.content.heroes[hero.id].name
-		snapshot.visual = ANIMATED_HEROES[hero.id]
-		view.heroes.append(snapshot)
-	view.room_requested.connect(func(id): preload("res://src/ui/map_room_prompt.gd").enter(self,id))
-	view.deck_requested.connect(open_deck)
-	view.menu_requested.connect(pause_menu)
-	view.descend_requested.connect(func(): act(game.descend))
-	rect(view, 0, 0, 1280, 720)
-	if preload("res://src/rules/building_projects.gd").owned(game.profile,"scouting"):
-		button("Reconocer caminos · 20 almas",52,90,340,40,func(): act(func():game.polish_action("scout")),game.profile.souls>=20 and view.available.any(func(i):return not game.run.nodes[i].get("scouted",false)))
+	preload("res://src/ui/adventure_navigation.gd").build(self, false)
 
 func health_bar(unit: Dictionary, x: float, y: float, width: float, parent: Control = null) -> Control:
 	var bar = HealthBar.new()
@@ -501,6 +482,8 @@ func back() -> void:
 	elif screen in ["base_camp", "collection", "options"]:
 		screen = "home"
 		render()
+	elif screen == "map" and preload("res://src/ui/adventure_navigation.gd").has_paths(game):
+		continue_run()
 	elif screen == "deck":
 		screen = return_screen
 		upgrade_mode = false

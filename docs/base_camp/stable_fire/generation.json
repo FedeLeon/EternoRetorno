@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen.imagegen",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4d67560f-cab8-4a9a-8457-6f901efe6d94.png",
+  "prompt": "Use case: stylized-concept. Asset type: game flame-only animation sprite sheet. Using the attached comic brazier sheet ONLY as a style reference, create 24 consecutive hand-inked comic FIRE FLAME poses, ONLY THE FLAMES AND A FEW TINY SPARKS. Absolutely NO barrel, stove, logs, coals, rim, metal, stones, floor, background, shadows or glow panel. Strong black-edged orange/red tongues with golden yellow cores in the original postapocalyptic American action-comic style, crisp cel shading and subtle halftone. EXACT regular 6 columns by 4 rows sprite sheet; 24 distinct flame shapes evolving gently to create a calm smooth continuous cycle, not 24 copies. Every flame centered within its own square cell, same ground level, complete isolated flame shape, generous transparent gutter around each cell, no crossing cell boundaries. All flame roots at the same height and same narrow horizontal base width. No arrows, lettering, labels or frame numbers. Real RGBA transparent background. Wide 1536x1024 sheet. Preserve the orange/yellow comic look of the reference but remove ALL solid objects, only fire.",
+  "reference": "assets/base_camp/dusk/fire.png",
+  "transparent": true
+}

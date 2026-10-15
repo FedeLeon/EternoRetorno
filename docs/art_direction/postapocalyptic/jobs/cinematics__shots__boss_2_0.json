@@ -1,0 +1,24 @@
+{
+  "id": "cinematics__shots__boss_2_0",
+  "target": "assets/cinematics/shots/boss_2_0.png",
+  "kind": "cinematic",
+  "hero": null,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/cinematics__shots__boss_2_0.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE single cinematic shot: Defeated industrial supervisor machine hangs still among vines in an abandoned loading yard; two anonymous survivor silhouettes nearby. Wide16:9 composition, strong dramatic comic staging, quiet lower25percent for subtitles. No panels or collage, no words or UI.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0931820f-947d-4ea9-956f-263f4d4e2d97.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "eeb005c5e3a081c7f4ea94fce33a0028b1648c4533552a576f2bd830bf8628b9",
+  "actual_dimensions": [
+    1672,
+    941
+  ]
+}

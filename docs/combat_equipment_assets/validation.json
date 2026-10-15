@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "generated_assets": 25,
+  "sources": 5,
+  "runtime_size": [
+    512,
+    512
+  ],
+  "transparent_assets_checked": 25,
+  "native": {
+    "hud": {
+      "checks": 106,
+      "failures": 0,
+      "log": "/tmp/eterno-gear-hud-native.log"
+    },
+    "forge": {
+      "checks": 96,
+      "failures": 0,
+      "log": "/tmp/eterno-gear-forge-native.log"
+    }
+  },
+  "headless": {
+    "reward_ui_failures": 0,
+    "content_checks": 1510,
+    "content_errors": 0
+  },
+  "visual_review": [
+    "artifacts/hud/cell-two-digits.png",
+    "artifacts/forge/combat-warrior.png",
+    "artifacts/forge/combat-rogue.png"
+  ],
+  "limitations": [
+    "native llvmpipe, private profile, Dummy audio",
+    "resource cleanup warnings at process shutdown",
+    "no Web export or device verification"
+  ]
+}

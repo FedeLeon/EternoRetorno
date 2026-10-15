@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	if preload("res://src/presentation/preferences.gd").low_quality(): return
-	var tint = Color("e4b881") if floor_number==3 else Color("bdb978") if floor_number==2 else Color("859da9")
+	var tint = Color("ffad59") if floor_number==3 else Color("7ac8aa") if floor_number==2 else Color("6bd5e0")
 	for i in range(24):
 		var x = fmod(91.0*i+sin(elapsed*0.3+i)*17+elapsed*(6 if floor_number==2 else 2),1280)
 		var y = 470-fmod(i*61.0+elapsed*(14 if floor_number==3 else 4),350)

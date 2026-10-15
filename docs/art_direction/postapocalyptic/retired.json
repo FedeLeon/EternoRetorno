@@ -1,0 +1,14 @@
+[
+  {
+    "path": "assets/heroes/identity/sketchbook.png",
+    "archive": "docs/art_direction/postapocalyptic/retired/sketchbook.png",
+    "sha256": "a65727816ad458cfcbc786ab274048581c8d4bf9666926b515341ce25fcec14c",
+    "reason": "Replaced by four individual civilian comic identities"
+  },
+  {
+    "path": "assets/heroes/identity/rogue_unmasked.png",
+    "archive": "docs/art_direction/postapocalyptic/retired/rogue_unmasked.png",
+    "sha256": "21d841465cb041ceacc6533abf27e2397e69f179be3b7ccc9c12cdfa828256da",
+    "reason": "Replaced by four individual civilian comic identities"
+  }
+]

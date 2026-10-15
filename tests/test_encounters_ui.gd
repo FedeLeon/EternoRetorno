@@ -56,8 +56,8 @@ func run_tests() -> void:
 				check(before.get_region(Rect2i(80, 550, 80, 80)).get_data() == after.get_region(Rect2i(80, 550, 80, 80)).get_data(), "distant masonry stays still")
 			var hp = app.game.run.heroes[0].hp
 			await click(dialog.get_node("EventChoice0"))
-			if id == "well": check(app.screen == "map" and app.game.run.heroes[0].hp == hp + 8, "well choice heals once and returns to map")
-			elif id == "altar": check(app.screen == "map" and app.game.run.heroes[0].hp == hp - 5 and app.game.run.deck.filter(func(c): return c.upgraded).size() == 1, "altar pays health and upgrades one card")
+			if id == "well": check(app.screen == "paths" and app.game.run.heroes[0].hp == hp + 8, "well choice heals once and returns to paths")
+			elif id == "altar": check(app.screen == "paths" and app.game.run.heroes[0].hp == hp - 5 and app.game.run.deck.filter(func(c): return c.upgraded).size() == 1, "altar pays health and upgrades one card")
 			else: check(app.screen == "reward" and app.game.run.reward.size() > 0, "library opens existing card reward")
 	await prepare("altar")
 	app.game.run.heroes[0].hp = 5
@@ -73,7 +73,7 @@ func run_tests() -> void:
 	app.close_modal()
 	await process_frame
 	await click(view.get_node("EncounterDialog/EventChoice1"))
-	check(app.screen == "map", "leaving encounter remains possible")
+	check(app.screen == "paths", "leaving encounter remains possible")
 	await prepare("altar")
 	for card in app.game.run.deck: card.upgraded = true
 	app.render()

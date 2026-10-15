@@ -1,0 +1,267 @@
+{
+  "goblin_warrior": {
+    "name": "Recolector armado",
+    "hp": 26,
+    "color": "7e9b42",
+    "visual": "goblin_0",
+    "pattern": [
+      {
+        "damage": 6,
+        "block": 3
+      },
+      {
+        "damage": 9
+      },
+      {
+        "damage": 0,
+        "counter": 4
+      }
+    ]
+  },
+  "goblin_archer": {
+    "name": "Disparador de clavos",
+    "hp": 22,
+    "color": "a58956",
+    "visual": "goblin_2",
+    "pattern": [
+      {
+        "damage": 7
+      },
+      {
+        "damage": 10
+      },
+      {
+        "damage": 4,
+        "block": 3
+      }
+    ]
+  },
+  "goblin_shaman": {
+    "name": "Nodo de reparación",
+    "hp": 28,
+    "color": "82af5c",
+    "visual": "goblin_3",
+    "pattern": [
+      {
+        "damage": 4,
+        "all": true
+      },
+      {
+        "damage": 8,
+        "block": 4
+      },
+      {
+        "damage": 10
+      }
+    ],
+    "role": "support"
+  },
+  "forest_wolf": {
+    "name": "Sabueso de patrulla",
+    "hp": 24,
+    "color": "99a3aa",
+    "visual": "beast_0",
+    "pattern": [
+      {
+        "damage": 6
+      },
+      {
+        "damage": 9
+      },
+      {
+        "damage": 5
+      }
+    ]
+  },
+  "forest_boar": {
+    "name": "Excavador compacto",
+    "hp": 32,
+    "color": "b88251",
+    "visual": "beast_1",
+    "pattern": [
+      {
+        "damage": 5,
+        "block": 4
+      },
+      {
+        "damage": 12
+      },
+      {
+        "damage": 0,
+        "block": 5
+      }
+    ]
+  },
+  "forest_elite": {
+    "name": "Triturador pesado",
+    "hp": 86,
+    "color": "aa764f",
+    "visual": "beast_5",
+    "pattern": [
+      {
+        "damage": 12,
+        "block": 6
+      },
+      {
+        "damage": 8,
+        "all": true
+      },
+      {
+        "damage": 17
+      },
+      {
+        "damage": 0,
+        "counter": 4
+      }
+    ]
+  },
+  "forest_boss": {
+    "name": "Supervisor del cinturón",
+    "hp": 125,
+    "color": "b65e40",
+    "visual": "goblin_7",
+    "pattern": [
+      {
+        "damage": 10,
+        "all": true
+      },
+      {
+        "damage": 16,
+        "block": 8
+      },
+      {
+        "damage": 20
+      },
+      {
+        "damage": 0,
+        "block": 5,
+        "counter": 4
+      }
+    ],
+    "boss": true,
+    "phase_two": [
+      {
+        "damage": 12,
+        "all": true
+      },
+      {
+        "damage": 19
+      },
+      {
+        "damage": 0,
+        "block": 14,
+        "counter": 4
+      }
+    ]
+  },
+  "goblin_lancer": {
+    "name": "Recolector de asta",
+    "hp": 28,
+    "color": "bd8155",
+    "visual": "goblin_1",
+    "pattern": [
+      {
+        "damage": 7,
+        "block": 3
+      },
+      {
+        "damage": 10
+      },
+      {
+        "damage": 0,
+        "counter": 4
+      }
+    ]
+  },
+  "goblin_bomber": {
+    "name": "Portacargas explosivas",
+    "hp": 23,
+    "color": "eaa352",
+    "visual": "goblin_4",
+    "pattern": [
+      {
+        "damage": 4,
+        "all": true
+      },
+      {
+        "damage": 10
+      },
+      {
+        "damage": 0,
+        "block": 4
+      }
+    ]
+  },
+  "goblin_raider": {
+    "name": "Desmontador",
+    "hp": 25,
+    "color": "cbb06c",
+    "visual": "goblin_5",
+    "pattern": [
+      {
+        "damage": 8
+      },
+      {
+        "damage": 5,
+        "block": 5
+      },
+      {
+        "damage": 11
+      }
+    ]
+  },
+  "goblin_rider": {
+    "name": "Patrulla de arrastre",
+    "hp": 34,
+    "color": "b58868",
+    "visual": "goblin_6",
+    "pattern": [
+      {
+        "damage": 8
+      },
+      {
+        "damage": 12
+      },
+      {
+        "damage": 5,
+        "block": 3
+      }
+    ]
+  },
+  "forest_bat": {
+    "name": "Dron de ala ancha",
+    "hp": 21,
+    "color": "b480cf",
+    "visual": "beast_2",
+    "pattern": [
+      {
+        "damage": 6
+      },
+      {
+        "damage": 9
+      },
+      {
+        "damage": 4,
+        "all": true
+      }
+    ]
+  },
+  "forest_raven": {
+    "name": "Carroñero aéreo",
+    "hp": 20,
+    "color": "a79dbb",
+    "visual": "beast_7",
+    "pattern": [
+      {
+        "damage": 7
+      },
+      {
+        "damage": 5,
+        "block": 3
+      },
+      {
+        "damage": 9
+      }
+    ]
+  }
+}

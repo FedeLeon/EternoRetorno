@@ -1,6 +1,6 @@
 {
   "skeleton_warrior": {
-    "name": "Esqueleto guerrero",
+    "name": "Cortador industrial",
     "hp": 24,
     "color": "cba776",
     "visual": "skeleton_0",
@@ -19,7 +19,7 @@
     ]
   },
   "skeleton_archer": {
-    "name": "Esqueleto arquero",
+    "name": "Torreta móvil",
     "hp": 22,
     "color": "89a06b",
     "visual": "skeleton_2",
@@ -37,7 +37,7 @@
     ]
   },
   "skeleton_shielder": {
-    "name": "Esqueleto escudero",
+    "name": "Unidad de contención",
     "hp": 32,
     "color": "829eba",
     "visual": "skeleton_3",
@@ -57,7 +57,7 @@
     "role": "protector"
   },
   "skeleton_berserker": {
-    "name": "Esqueleto berserker",
+    "name": "Desguazador",
     "hp": 28,
     "color": "c97761",
     "visual": "skeleton_5",
@@ -75,7 +75,7 @@
     ]
   },
   "rock_elemental": {
-    "name": "Elemental de roca",
+    "name": "Compactador",
     "hp": 36,
     "color": "a49c71",
     "visual": "elemental_2",
@@ -95,7 +95,7 @@
     "role": "protector"
   },
   "shadow_elemental": {
-    "name": "Elemental de sombra",
+    "name": "Interferencia negra",
     "hp": 24,
     "color": "b079dc",
     "visual": "elemental_7",

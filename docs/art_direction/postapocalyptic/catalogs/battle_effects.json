@@ -1,0 +1,146 @@
+{
+  "rear_guard": {
+    "title": "Retaguardia cubierta",
+    "description": "Un protector vivo cubre a esta unidad. Los ataques de la Profesora, penetrantes y de área pueden alcanzarla. Al caer el último protector queda expuesta."
+  },
+  "roots": {
+    "title": "Cables de sujeción",
+    "description": "Los cables absorben los golpes directos antes de perder vida. El número indica sus PV restantes. La corrosión los ignora."
+  },
+  "resurrection": {
+    "title": "Intención de reactivación",
+    "description": "Al actuar intentará reactivar a una unidad caída con un tercio de su vida. Cada unidad puede regresar una sola vez."
+  },
+  "embers": {
+    "title": "Intención de sobrecarga térmica",
+    "description": "Al actuar causa 4 de daño a cada héroe vivo, además de su ataque habitual. El bloqueo puede absorber el daño de las sobrecarga térmica."
+  },
+  "imprisonment": {
+    "title": "Pinza de sujeción",
+    "description": "Al actuar atrapará al héroe elegido. No podrá jugar sus cartas ni participar de enlaces. Liberarlo cuesta 1 energía; también se libera tras el siguiente turno enemigo."
+  },
+  "charged_strike": {
+    "title": "Golpe cargado",
+    "description": "Las placas potencian este ataque. Romper la última placa interrumpe la carga y reduce su intención de ataque a un máximo de 8 de daño."
+  },
+  "vampiric": {
+    "title": "Recuperación de energía",
+    "description": "Recupera 3 PV si su ataque consigue quitar vida a un héroe. El daño absorbido completamente por bloqueo no activa la curación."
+  },
+  "bulwark": {
+    "title": "Élite acorazado",
+    "description": "Su intención gana bloqueo adicional: 2 por cada turno de combate, hasta un máximo de 10. El valor ya está incluido junto al escudo de intención."
+  },
+  "frenzy": {
+    "title": "Élite frenético",
+    "description": "Cuando le queda menos de la mitad de su vida, sus ataques ganan 3 de daño. El daño adicional ya está incluido en su intención."
+  },
+  "beast_command": {
+    "title": "Orden de caza",
+    "description": "Su orden aumenta en 3 el daño de las bestias aliadas vivas. Este aumento ya se incluye en la intención de ataque de cada bestia."
+  },
+  "grief": {
+    "title": "Furia por los caídos",
+    "description": "La caída de un compañero aumenta en 3 su daño de ataque. Su intención ya muestra ese aumento."
+  },
+  "protector": {
+    "title": "Protector",
+    "description": "Al actuar concede 3 de bloqueo a los otros enemigos vivos. También cubre la retaguardia mientras siga vivo."
+  },
+  "healer": {
+    "title": "Apoyo sanador",
+    "description": "Al actuar restaura 3 PV a cada enemigo vivo, incluido él mismo, sin superar su vida máxima."
+  },
+  "prepared": {
+    "title": "Ataque preparado",
+    "description": "Se ejecutará al comenzar el próximo turno aliado, después de las acciones enemigas, si su dueño sigue vivo."
+  },
+  "armor_plates": {
+    "title": "Placas del guardián",
+    "description": "Las placas reducen el daño directo a la mitad. Un golpe penetrante rompe una placa; también podés romperla por 1 energía. Romper la última interrumpe el golpe cargado."
+  },
+  "source": {
+    "title": "Capacitor",
+    "description": "La fuente tiene 20 PV y puede reactivar al guardián una vez. Rompela en dos acciones de 1 energía para impedir su regreso."
+  },
+  "enraged": {
+    "title": "Segunda fase",
+    "description": "El guardián ha entrado en su segunda fase. Su patrón de acciones se vuelve más agresivo; consultá el daño y los demás efectos de su intención."
+  },
+  "ambush": {
+    "title": "Emboscada",
+    "description": "Este enemigo tiene un 20% más de vida y 2 de daño adicional en sus ataques. Su barra y su intención ya incluyen esas mejoras."
+  },
+  "tainted": {
+    "title": "Fluido corrosivo",
+    "description": "Este enemigo obtiene 3 de bloqueo adicional cada tercer turno de combate. Su intención de bloqueo ya incluye este aumento cuando corresponde."
+  },
+  "strength": {
+    "title": "Fuerza",
+    "description": "Aumenta el daño de las cartas durante este turno. El número muestra el porcentaje. No se acumula: se conserva el valor mayor."
+  },
+  "weakness": {
+    "title": "Debilidad",
+    "description": "Reduce el daño de ataque de su próxima acción. El número muestra el porcentaje. No afecta al contraataque y expira después de actuar."
+  },
+  "fracture": {
+    "title": "Defensa quebrada",
+    "description": "Reduce su bloqueo actual y el de su próxima acción en el porcentaje indicado. No se acumula y el bloqueo perdido no vuelve."
+  },
+  "poison": {
+    "title": "Corrosión",
+    "description": "El número muestra las acumulaciones de corrosión. El daño ignora el bloqueo y luego pierde una acumulación."
+  },
+  "weapon_boost": {
+    "title": "Herramienta reforzada",
+    "description": "Añade el daño indicado a sus cartas ofensivas durante este turno. Expira al comenzar el siguiente turno aliado."
+  },
+  "magic_boost": {
+    "title": "Voltaje amplificado",
+    "description": "Añade el daño indicado a las cartas ofensivas de la Profesora durante este turno. Expira al comenzar el siguiente turno aliado."
+  },
+  "bond_focus": {
+    "title": "Concentración del vínculo",
+    "description": "La próxima carta de enlace gana 2 de potencia. Se consume al jugar ese enlace."
+  },
+  "curse_blood": {
+    "title": "Avería hidráulica",
+    "description": "Cada héroe pierde 1 PV al terminar el turno, sin poder caer por este efecto."
+  },
+  "curse_burden": {
+    "title": "Lastre averiado",
+    "description": "El primer turno de cada combate comienza con 1 energía menos."
+  },
+  "curse_scar": {
+    "title": "Aislamiento dañado",
+    "description": "Las curaciones restauran 2 PV menos, con un mínimo de 1."
+  },
+  "set_multi": {
+    "title": "Cadencia sangrienta",
+    "description": "Cada golpe de cartas múltiples gana 1 de daño extra mientras tengas las dos componentes de esta combinación."
+  },
+  "set_poison": {
+    "title": "Pacto tóxico",
+    "description": "Las cartas de corrosión añaden 2 acumulaciones extra mientras tengas las dos componentes de esta combinación."
+  },
+  "set_block": {
+    "title": "Baluarte",
+    "description": "Las cartas defensivas ganan 2 de bloqueo extra mientras tengas las dos componentes de esta combinación."
+  },
+  "set_heal": {
+    "title": "Fuente vital",
+    "description": "Las cartas de curación restauran 2 PV extra mientras tengas las dos componentes de esta combinación."
+  },
+  "attack": {
+    "title": "Intención de ataque",
+    "description": "El enemigo planea atacar por la cantidad de daño indicada, al héroe mostrado junto a la intención."
+  },
+  "guard": {
+    "title": "Intención de bloqueo",
+    "description": "El enemigo planea obtener la cantidad de bloqueo indicada antes de atacar. La flecha verde distingue esta intención del bloqueo activo."
+  },
+  "counter": {
+    "title": "Contraataque",
+    "description": "Devuelve 4 de daño al atacante por cada golpe recibido, si sobrevive. El bloqueo del héroe puede absorberlo."
+  }
+}

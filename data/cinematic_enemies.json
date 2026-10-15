@@ -2,7 +2,7 @@
   "crypt_storm": {
     "id": "crypt_storm",
     "visual": "elemental_3",
-    "name": "Heraldo de tormenta",
+    "name": "Bobina de tormenta",
     "hp": 34,
     "role": "support",
     "color": "7eafce",
@@ -24,7 +24,7 @@
   "crypt_scorpion": {
     "id": "crypt_scorpion",
     "visual": "beast_3",
-    "name": "Escorpión de las criptas",
+    "name": "Pinza de túnel",
     "hp": 30,
     "role": "attacker",
     "color": "7eafce",
@@ -45,7 +45,7 @@
   "forest_miasma": {
     "id": "forest_miasma",
     "visual": "elemental_4",
-    "name": "Espíritu del pantano",
+    "name": "Nebulizador industrial",
     "hp": 35,
     "role": "support",
     "color": "80a659",
@@ -66,7 +66,7 @@
   "forest_hunter_enemy": {
     "id": "forest_hunter_enemy",
     "visual": "bandit_6",
-    "name": "Cazador encapuchado",
+    "name": "Rastreador de perímetro",
     "hp": 29,
     "role": "attacker",
     "color": "80a659",
@@ -86,7 +86,7 @@
   "ash_bombardier": {
     "id": "ash_bombardier",
     "visual": "bandit_4",
-    "name": "Bombardero de la fortaleza",
+    "name": "Lanzacargas",
     "hp": 38,
     "role": "attacker",
     "color": "d59b64",
@@ -108,7 +108,7 @@
   "ash_wing_beetle": {
     "id": "ash_wing_beetle",
     "visual": "flying_5",
-    "name": "Escarabajo de obsidiana",
+    "name": "Coraza de vuelo",
     "hp": 42,
     "role": "protector",
     "color": "d59b64",

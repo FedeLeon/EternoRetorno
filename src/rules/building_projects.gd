@@ -1,8 +1,8 @@
 extends RefCounted
 const PROJECTS = {
-	"reservation":{"building":"market","name":"Mostrador de reservas","cost":350,"description":"Reservá una carta del mercado. Su próxima compra cuesta 20 almas menos."},
-	"refresh":{"building":"market","name":"Red de suministros","cost":450,"description":"El mercader errante renueva sus tres consumibles por 25 almas, una vez por piso."},
-	"scouting":{"building":"expeditions","name":"Mesa de exploración","cost":400,"description":"En el mapa, reconocé todas las salas disponibles por 20 almas. Sus detalles aparecen al señalar cada sala."}}
+	"reservation":{"building":"market","name":"Mostrador de reservas","cost":350,"description":"Reservá una carta del mercado. Su próxima compra cuesta 20 celdas menos."},
+	"refresh":{"building":"market","name":"Red de suministros","cost":450,"description":"El mercader errante renueva sus tres consumibles por 25 celdas, una vez por piso."},
+	"scouting":{"building":"expeditions","name":"Mesa de exploración","cost":400,"description":"En el mapa, reconocé todas las salas disponibles por 20 celdas. Sus detalles aparecen al señalar cada sala."}}
 
 static func owned(profile: Dictionary, id: String) -> bool:
 	return profile.get("projects", {}).get(id, false)

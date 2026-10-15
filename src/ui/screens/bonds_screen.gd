@@ -27,7 +27,7 @@ static func build(ui: Control, back: Callable) -> void:
 			box.add_child(choose)
 static func dialogue(ui: Control, party: Array, wins: int) -> String:
 	if wins == 0: return "Una aventura completa compartida abre este recuerdo."
-	var voices = {"warrior":"Yo abro el camino. Avisame cuando necesites cubrirte.","guardian":"Tu espalda estará a salvo mientras yo siga en pie.","rogue":"Ahora sé reconocer tus pasos, incluso en la oscuridad.","mage":"La magia cambia, pero aprendí a confiar en tu ritmo."}
+	var voices = {"warrior":"Yo abro el camino. Avisame cuando necesites cubrirte.","guardian":"Tu espalda estará a salvo mientras yo siga en pie.","rogue":"Ahora sé reconocer tus pasos, incluso en la oscuridad.","mage":"La interferencia cambia, pero aprendí a confiar en tu ritmo."}
 	var first: Dictionary = ui.game.content.heroes[party[0]]
 	var second: Dictionary = ui.game.content.heroes[party[1]]
 	var a: Dictionary = first.get("civilian", {})

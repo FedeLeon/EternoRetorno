@@ -51,7 +51,7 @@ func run_tests() -> void:
 							if frame.get_pixel(x, y).a >= 0.5:
 								bottom = y + 1
 					check(bottom == cell_size * 15 / 16, id + " stable grounded motion")
-			check(unique.size() == 8, id + " eight distinct drawn poses")
+			check(unique.size() == 4, id + " four authored keyposes in eight timing frames")
 		check(img.get_pixel(0, 0).a == 0 and img.get_used_rect().size.x > 10, id + " transparency and content")
 		index += 1
 	await create_timer(0.3).timeout

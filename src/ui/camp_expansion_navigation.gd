@@ -14,9 +14,9 @@ static func plot(ui: Control, building: String) -> void:
 		return
 	var definition: Dictionary = Rules.buildings()[building]
 	if ui.game.profile.souls < int(definition.cost):
-		ui.show_modal(definition.name, "Necesitás %d almas para construir este edificio." % definition.cost, "Entendido", ui.close_modal)
+		ui.show_modal(definition.name, "Necesitás %d celdas para construir este edificio." % definition.cost, "Entendido", ui.close_modal)
 		return
-	ui.show_modal("Construir " + definition.name, "Costo: %d almas.\n%s" % [definition.cost, "Contratos para tu próxima aventura." if building == "expeditions" else "Especializaciones para héroes que hayan ganado una aventura."], "Construir", func():
+	ui.show_modal("Construir " + definition.name, "Costo: %d celdas.\n%s" % [definition.cost, "Contratos para tu próxima aventura." if building == "expeditions" else "Especializaciones para héroes que hayan ganado una aventura."], "Construir", func():
 		if ui.game.camp_action("build", {"id":building}):
 			ui.close_modal()
 			open(ui, building))

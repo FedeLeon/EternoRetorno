@@ -1,6 +1,6 @@
 {
   "1": {
-    "name": "La cripta de los ecos",
+    "name": "Red de mantenimiento",
     "common": [
       "rat",
       "skeleton",
@@ -69,7 +69,7 @@
     }
   },
   "2": {
-    "name": "El Bosque de las Raíces",
+    "name": "Cinturón industrial",
     "common": [
       "goblin_warrior",
       "goblin_archer",
@@ -140,7 +140,7 @@
     }
   },
   "3": {
-    "name": "Fortaleza del Último Fuego",
+    "name": "Central del Reinicio",
     "common": [
       "ash_lancer",
       "ash_shielder",

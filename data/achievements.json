@@ -137,7 +137,7 @@
   },
   {
     "id": "mage_victory",
-    "name": "Voluntad arcana",
+    "name": "Voluntad electromagnética",
     "description": "Completá una aventura con la Profesora.",
     "metric": "hero_mage",
     "target": 1,
@@ -170,7 +170,7 @@
   {
     "id": "master_armor",
     "name": "Segunda piel",
-    "description": "Mejorá la armadura de un héroe al nivel 3.",
+    "description": "Mejorá la protección de un héroe al nivel 3.",
     "metric": "armor",
     "target": 3,
     "secret": false

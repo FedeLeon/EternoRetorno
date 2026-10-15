@@ -1,0 +1,24 @@
+{
+  "id": "expeditions__contract_exploration",
+  "target": "assets/expeditions/contract_exploration.png",
+  "kind": "contract",
+  "hero": null,
+  "dimensions": [
+    480,
+    320
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/expeditions__contract_exploration.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE simple comic contract card illustration representing contract exploration: industrial route plan, civilian partnership or machine recovery mission, matching the idea in filename. Spare composition, large single main silhouette, no words or UI border. Dark teal/violet background.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3a933393-591c-4582-ac9b-ceb60c358083.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "deff187c9049a0d03d0ff095f319fb8d1a7be76330e33546a6d3b0fc5fa6bb88",
+  "actual_dimensions": [
+    1024,
+    1536
+  ]
+}

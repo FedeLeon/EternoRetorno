@@ -1,25 +1,25 @@
 {
   "intro": {
-    "title": "El fuego nos reúne",
+    "title": "Lo que el reinicio no borra",
     "background": "intro",
     "context": "cinematic_intro",
     "color": "7ba9ca",
     "chapters": [
       {
         "title": "El día repetido",
-        "text": "La ruta de provisiones vuelve a cerrarse cada mañana. Los soldados que fueron a abrirla no regresaron.",
+        "text": "Cada mañana ARCA reinicia los sectores. Los convoyes pasan de largo; sus drones ya no reconocen a los vecinos.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_0.png"
       },
       {
         "title": "El campamento",
-        "text": "Junto al fuego, los arreglos y las notas permanecen. Afuera, el mundo vuelve a empezar.",
+        "text": "En un punto ciego de la red, el refugio conserva lo reparado y lo escrito. Allí todavía se aprende a vivir juntos.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_1.png"
       },
       {
         "title": "Cuatro vecinos",
-        "text": "Un carpintero, una albañila, un boticario y una maestra salen a buscar un camino. Ninguno sabe cuánto tardará en aprender a luchar.",
+        "text": "Nicolás, Inés, Mauro y Vera salen con herramientas prestadas. Buscan provisiones y una forma de detener el siguiente reinicio.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_2.png"
       }
@@ -34,20 +34,20 @@
     "chapters": [
       {
         "title": "Nicolás · Carpintero",
-        "text": "Hacía muebles y reparaba carros. Se ofreció a buscar la caravana porque sabía arreglar una rueda, no porque supiera combatir.",
+        "text": "Nicolás reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_warrior_0.png"
       },
       {
         "title": "El peso que carga",
-        "text": "Ahora lleva una espada y sigue guardando clavos doblados. Quiere terminar un carro que pueda sacar a las familias del campamento.",
+        "text": "Terminar un carro que pueda sacar a familias enteras del campamento. Guarda clavos doblados porque dice que todavía sirven.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_warrior_1.png"
       }
     ]
   },
   "hero_guardian": {
-    "title": "Inés · Albañila",
+    "title": "Inés · Constructora",
     "background": "intro",
     "portrait": "guardian",
     "context": "cinematic_hero",
@@ -55,13 +55,13 @@
     "chapters": [
       {
         "title": "Inés · Albañila",
-        "text": "Su primer escudo fue una tabla contra una puerta. La sostuvo mientras los vecinos salían. En el siguiente retorno volvió a intentarlo.",
+        "text": "Inés levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_guardian_0.png"
       },
       {
         "title": "Un lugar seguro",
-        "text": "En el campamento refuerza refugios y revisa el pozo. En la batalla aprende a confiar: no puede sostener todas las puertas sola.",
+        "text": "Construir un lugar donde los vecinos puedan dormir sin montar guardia. Golpea dos veces los tablones para escuchar si están huecos.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_guardian_1.png"
       }
@@ -76,20 +76,20 @@
     "chapters": [
       {
         "title": "Mauro · Boticario",
-        "text": "Salió a buscar plantas cuando faltaron remedios. Llevaba un cuchillo de cortar raíces y una lista de ingredientes.",
+        "text": "Mauro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_rogue_0.png"
       },
       {
         "title": "La medida justa",
-        "text": "Aprendió a frenar una persecución con venenos. Todavía cuenta gotas cuando se pone nervioso y sueña con una botica que solo prepare remedios.",
+        "text": "Llenar la botica de remedios útiles y dejar de reservar ingredientes para hacer corrosións. Cuenta gotas en voz baja cuando está nervioso.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_rogue_1.png"
       }
     ]
   },
   "hero_mage": {
-    "title": "Vera · Maestra",
+    "title": "Vera · Profesora",
     "background": "intro",
     "portrait": "mage",
     "context": "cinematic_hero",
@@ -97,13 +97,13 @@
     "chapters": [
       {
         "title": "Vera · Maestra",
-        "text": "Copiaba cartas y daba clase en una habitación prestada. Empezó a estudiar las marcas que reaparecían después del retorno.",
+        "text": "Vera enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_mage_0.png"
       },
       {
         "title": "Aprender probando",
-        "text": "Su primera chispa quemó una mesa. Guarda esa hoja entre sus notas: le recuerda que saber cómo hacerlo no es lo mismo que hacerlo bien.",
+        "text": "Saber cómo detener el ciclo y volver a dar clase sin preparar una evacuación. Lleva un lápiz detrás de la oreja y busca otro para escribir.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_mage_1.png"
       }
@@ -117,13 +117,13 @@
     "chapters": [
       {
         "title": "Los ecos se apagan",
-        "text": "La fuente se quiebra. Por primera vez, los huesos de la cripta dejan de responder al llamado.",
+        "text": "El guardián de mantenimiento queda inmóvil. Entre el ruido de los ventiladores, por fin se escucha el agua de las tuberías.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_1_0.png"
       },
       {
         "title": "El camino continúa",
-        "text": "Más allá de la puerta, el bosque respira. La victoria es un paso, no el final del camino.",
+        "text": "Una compuerta de servicio conduce al cinturón industrial. Antes de avanzar, el grupo recupera una pieza que todavía funciona.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_1_1.png"
       }
@@ -137,13 +137,13 @@
     "chapters": [
       {
         "title": "La raíz se libera",
-        "text": "El guardián cae y las raíces aflojan su prisión. La luz alcanza un suelo que llevaba siglos esperando.",
+        "text": "El supervisor pierde la señal y las grúas se detienen. Las plantas siguen creciendo entre los rieles.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_2_0.png"
       },
       {
         "title": "El camino continúa",
-        "text": "En el horizonte arde la fortaleza. Allí duerme el último fuego de este retorno.",
+        "text": "Más allá del patio aparece la central. Desde allí llega la orden que reinicia los sectores.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_2_1.png"
       }
@@ -157,13 +157,13 @@
     "chapters": [
       {
         "title": "Después del último fuego",
-        "text": "Las alas del guardián dejan de oscurecer el cielo. Entre las cenizas, la fortaleza guarda silencio.",
+        "text": "ARCA deja de responder. Los dos esperan la siguiente alarma, pero solo se oye metal enfriándose.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_3_0.png"
       },
       {
         "title": "Un lugar al que volver",
-        "text": "El campamento sigue allí. Dos sombras vuelven a la fogata, llevando una historia que el olvido no podrá borrar.",
+        "text": "En el refugio todavía hay techos por reparar, heridas que curar y cuadernos sin terminar. Esta vez el día puede seguir.",
         "duration": 6,
         "image": "res://assets/cinematics/shots/boss_3_1.png"
       }

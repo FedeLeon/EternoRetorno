@@ -1,7 +1,6 @@
 extends RefCounted
 # Four civilian heroes: face portraits and full-body sketchbook crops.
-const COLORS = {"warrior":"74637f", "guardian":"898191", "rogue":"635a70", "mage":"9679b3"}
-const SKETCH_CROPS = {"warrior":Rect2(0.045,0.04,0.205,0.54), "guardian":Rect2(0.29,0.06,0.21,0.54), "rogue":Rect2(0.54,0.05,0.205,0.54), "mage":Rect2(0.79,0.06,0.205,0.54)}
+const COLORS = {"warrior":"bd6be1", "guardian":"f0a657", "rogue":"69caa5", "mage":"75d8e6"}
 static func build(ui: Control, parent: Control, hero: String, title: String, position: Vector2, action: Callable, compact: bool = false, life: Dictionary = {}, card_size: Vector2 = Vector2.ZERO) -> Button:
 	var dimensions = card_size if card_size != Vector2.ZERO else (Vector2(244, 166) if compact else Vector2(190, 338))
 	var large_compact = compact and dimensions.y > 200
@@ -17,7 +16,7 @@ static func build(ui: Control, parent: Control, hero: String, title: String, pos
 	picture.name = "ComicPortrait"
 	picture.texture = crop
 	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED if compact and not large_compact and SKETCH_CROPS.has(hero) else TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED if compact and not large_compact and COLORS.has(hero) else TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(picture, 6, 6, dimensions.x - 12, plaque_y - 10, b)
@@ -33,11 +32,10 @@ static func build(ui: Control, parent: Control, hero: String, title: String, pos
 
 static func portrait(hero: String, compact: bool) -> AtlasTexture:
 	var crop = AtlasTexture.new()
-	if compact and SKETCH_CROPS.has(hero):
+	if compact and COLORS.has(hero):
 		crop.atlas = load("res://assets/heroes/identity/portraits/%s.png" % hero)
 		crop.region = Rect2(Vector2.ZERO, crop.atlas.get_size())
 		return crop
-	crop.atlas = load("res://assets/heroes/identity/rogue_unmasked.png") if hero == "rogue" else load("res://assets/heroes/identity/sketchbook.png")
-	var region: Rect2 = Rect2(0.22, 0.035, 0.56, 0.52) if hero == "rogue" else SKETCH_CROPS[hero]
-	crop.region = Rect2(region.position * crop.atlas.get_size(), region.size * crop.atlas.get_size())
+	crop.atlas = load("res://assets/heroes/identity/postapocalyptic/%s.png" % hero)
+	crop.region = Rect2(Vector2.ZERO,crop.atlas.get_size())
 	return crop

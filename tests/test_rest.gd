@@ -47,7 +47,7 @@ func run_tests() -> void:
 		await process_frame
 		check(app.layer.has_node("RestScreen") and app.game.run == before, "cancel returns to same rest")
 		await click(app.layer.get_node("RestScreen/Heal"))
-		check(app.screen == "map", "healing returns to map")
+		check(app.screen == "paths", "healing returns to paths")
 		for hero in app.game.run.heroes:
 			check(hero.hp == mini(hero.max_hp, 10 + ceili(hero.max_hp * 0.3)), "healing keeps 30 percent rule")
 		check(not app.game.rest(true), "rest cannot be consumed twice")

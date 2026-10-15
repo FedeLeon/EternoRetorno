@@ -3,13 +3,12 @@
 ## Estado actual — 14/10/2026
 
 Los cuatro héroes muestran **una ilustración estática de ataque y una de defensa**,
-transparentes, en estilo cómic a lápiz. El personaje permanece quieto y las
+transparentes, con tinta negra, cel shading y colores vivos. El personaje permanece quieto y las
 partículas/energía se mueven detrás. Se mantiene el encuadre inferior izquierdo.
-[Assets nuevos, prompts, limpieza y validación](static/README.md).
+[Dirección actual, fuentes y pruebas](../art_direction/postapocalyptic/README.md).
 
 `hero_cut_in.gd` selecciona `assets/comic/static/<hero>_<action>.png`.
-`comic_cut_in.gd` comparte presentación con enemigos, cuyos atlas/poses siguen
-activos. No se retiran las animaciones de los actores normales del escenario.
+`comic_cut_in.gd` comparte presentación con enemigos, que también muestran una ilustración estática por máquina. Los atlas de los actores del escenario conservan sus poses; no se retiran las animaciones de los actores normales del escenario.
 Los combos conservan una presentación por golpe y las defensas su receptor real.
 
 ## Documentación histórica

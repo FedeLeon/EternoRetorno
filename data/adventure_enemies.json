@@ -1,7 +1,7 @@
 {
   "crypt_lancer_new": {
     "id": "crypt_lancer_new",
-    "name": "Lancero de la cripta",
+    "name": "Perforador de riel",
     "visual": "skeleton_1",
     "hp": 30,
     "color": "df944d",
@@ -24,7 +24,7 @@
   },
   "crypt_horse": {
     "id": "crypt_horse",
-    "name": "Corcel sin alma",
+    "name": "Corredor de carga",
     "visual": "skeleton_7",
     "hp": 32,
     "color": "df944d",
@@ -47,7 +47,7 @@
   },
   "ice_elemental": {
     "id": "ice_elemental",
-    "name": "Custodio de hielo",
+    "name": "Refrigerador móvil",
     "visual": "elemental_1",
     "hp": 36,
     "color": "df944d",
@@ -70,7 +70,7 @@
   },
   "forest_nightbat": {
     "id": "forest_nightbat",
-    "name": "Murciélago nocturno",
+    "name": "Dron nocturno",
     "visual": "flying_0",
     "hp": 23,
     "color": "df944d",
@@ -93,7 +93,7 @@
   },
   "giant_wasp": {
     "id": "giant_wasp",
-    "name": "Avispa gigante",
+    "name": "Aguijón de seguridad",
     "visual": "flying_4",
     "hp": 26,
     "color": "df944d",
@@ -116,7 +116,7 @@
   },
   "watch_owl": {
     "id": "watch_owl",
-    "name": "Búho vigía",
+    "name": "Ojo de rastreo",
     "visual": "flying_7",
     "hp": 29,
     "color": "df944d",
@@ -139,7 +139,7 @@
   },
   "forest_cutthroat": {
     "id": "forest_cutthroat",
-    "name": "Saqueador del bosque",
+    "name": "Asaltante de chatarra",
     "visual": "bandit_0",
     "hp": 31,
     "color": "df944d",
@@ -162,7 +162,7 @@
   },
   "ash_lancer": {
     "id": "ash_lancer",
-    "name": "Lancero de ceniza",
+    "name": "Punzón de la central",
     "visual": "bandit_1",
     "hp": 38,
     "color": "df944d",
@@ -185,7 +185,7 @@
   },
   "ash_shielder": {
     "id": "ash_shielder",
-    "name": "Escudero de ceniza",
+    "name": "Barrera de la central",
     "visual": "bandit_3",
     "hp": 44,
     "color": "df944d",
@@ -208,7 +208,7 @@
   },
   "ash_brute": {
     "id": "ash_brute",
-    "name": "Bruto de las brasas",
+    "name": "Prensa de demolición",
     "visual": "bandit_5",
     "hp": 48,
     "color": "df944d",
@@ -231,7 +231,7 @@
   },
   "dragon_hatchling": {
     "id": "dragon_hatchling",
-    "name": "Cría del Último Fuego",
+    "name": "Dron de combustión",
     "visual": "flying_2",
     "hp": 39,
     "color": "df944d",
@@ -254,7 +254,7 @@
   },
   "sand_elemental": {
     "id": "sand_elemental",
-    "name": "Espíritu de ceniza",
+    "name": "Filtro de ceniza",
     "visual": "elemental_5",
     "hp": 41,
     "color": "df944d",
@@ -277,7 +277,7 @@
   },
   "ash_brute_elite": {
     "id": "ash_brute_elite",
-    "name": "Verdugo de la fortaleza",
+    "name": "Prensa de demolición · reforzada",
     "visual": "bandit_5",
     "hp": 92,
     "color": "df944d",
@@ -300,7 +300,7 @@
   },
   "volcano_boss": {
     "id": "volcano_boss",
-    "name": "Wyvern del Último Fuego",
+    "name": "ARCA, núcleo del reinicio",
     "visual": "flying_3",
     "hp": 180,
     "color": "df944d",

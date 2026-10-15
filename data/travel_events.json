@@ -1,7 +1,7 @@
 {
   "wandering_merchant": {
     "name": "El mercader errante",
-    "text": "Un viajero ofrece provisiones e intercambia reliquias.",
+    "text": "Un viajero ofrece provisiones e intercambia componentes.",
     "choices": [
       "Ver sus mercancías",
       "Seguir el camino"

@@ -75,6 +75,7 @@ static func prepare(game: RefCounted, card: Dictionary, owner: int, targets_list
 
 static func release(game: RefCounted) -> void:
 	var b: Dictionary = game.run.combat
+	var action_index = 0
 	for attack in b.get("prepared", []).duplicate():
 		if attack.turn > b.turn: continue
 		b.prepared.erase(attack)
@@ -85,7 +86,10 @@ static func release(game: RefCounted) -> void:
 		var eligible: Array = targets(game, attack.card, living)
 		var selected: Array = eligible if attack.card.target == "all_enemies" else attack.targets.filter(func(i): return i in eligible)
 		if selected.is_empty() and not eligible.is_empty(): selected.append(eligible[0])
-		game.resolved_prepared_hits.append_array(preload("res://src/rules/card_hits.gd").resolve(game, attack.card, attack.owner, selected))
+		var hits = preload("res://src/rules/card_hits.gd").resolve(game, attack.card, attack.owner, selected)
+		for hit in hits: hit.action_index = action_index
+		action_index += 1
+		game.resolved_prepared_hits.append_array(hits)
 		game._log("Se ejecuta %s." % attack.card.name)
 
 static func record(game: RefCounted, unit: Dictionary, amount: int, absorbed: int, lost: int) -> void:

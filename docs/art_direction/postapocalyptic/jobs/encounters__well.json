@@ -1,0 +1,24 @@
+{
+  "id": "encounters__well",
+  "target": "assets/encounters/well.png",
+  "kind": "scene",
+  "hero": null,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/encounters__well.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Broken municipal water purification pump beneath a cracked concrete canopy, one repaired tap with clean water. Post-apocalyptic city, no people. Wide landscape3:2. No characters unless explicitly requested.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-0e6107b2-0d0b-4e37-b009-c6ee105903bd.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "94845ede328ca9007c9dcc3bfacef3922b335b8902e8510e018d8c10d25a1f06",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

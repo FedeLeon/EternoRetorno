@@ -2,7 +2,7 @@
   "warrior_rally": {
     "id": "warrior_rally",
     "owner": "warrior",
-    "name": "Grito de guerra",
+    "name": "Entre vecinos",
     "cost": 1,
     "target": "ally",
     "damage": 0,
@@ -20,7 +20,7 @@
   "warrior_second_wind": {
     "id": "warrior_second_wind",
     "owner": "warrior",
-    "name": "Segundo aliento",
+    "name": "Pausa de taller",
     "cost": 1,
     "target": "self",
     "damage": 0,
@@ -37,7 +37,7 @@
   "warrior_crush_armor": {
     "id": "warrior_crush_armor",
     "owner": "warrior",
-    "name": "Quebrar armadura",
+    "name": "Separar placas",
     "cost": 1,
     "target": "enemy",
     "damage": 8,
@@ -55,7 +55,7 @@
   "warrior_disarm": {
     "id": "warrior_disarm",
     "owner": "warrior",
-    "name": "Desarmar",
+    "name": "Trabar engranajes",
     "cost": 1,
     "target": "enemy",
     "damage": 5,
@@ -73,7 +73,7 @@
   "guardian_lay_hands": {
     "id": "guardian_lay_hands",
     "owner": "guardian",
-    "name": "Auxilio",
+    "name": "Primeros auxilios",
     "cost": 1,
     "target": "ally",
     "damage": 0,
@@ -90,7 +90,7 @@
   "guardian_inspire": {
     "id": "guardian_inspire",
     "owner": "guardian",
-    "name": "Valor compartido",
+    "name": "Apoyo mutuo",
     "cost": 2,
     "target": "all_allies",
     "damage": 0,
@@ -108,7 +108,7 @@
   "guardian_shield_break": {
     "id": "guardian_shield_break",
     "owner": "guardian",
-    "name": "Embate de escudo",
+    "name": "Chapa contra chapa",
     "cost": 2,
     "target": "enemy",
     "damage": 6,
@@ -126,7 +126,7 @@
   "guardian_rebuke": {
     "id": "guardian_rebuke",
     "owner": "guardian",
-    "name": "Reprensión",
+    "name": "Frenar el avance",
     "cost": 1,
     "target": "enemy",
     "damage": 0,
@@ -144,7 +144,7 @@
   "rogue_enervating": {
     "id": "rogue_enervating",
     "owner": "rogue",
-    "name": "Toxina debilitante",
+    "name": "Disolvente",
     "cost": 1,
     "target": "enemy",
     "damage": 0,
@@ -162,7 +162,7 @@
   "rogue_corrosive": {
     "id": "rogue_corrosive",
     "owner": "rogue",
-    "name": "Ácido corrosivo",
+    "name": "Ácido de batería",
     "cost": 1,
     "target": "enemy",
     "damage": 0,
@@ -198,7 +198,7 @@
   "rogue_exposed": {
     "id": "rogue_exposed",
     "owner": "rogue",
-    "name": "Herida abierta",
+    "name": "Junta expuesta",
     "cost": 2,
     "target": "enemy",
     "damage": 9,
@@ -216,7 +216,7 @@
   "mage_focus": {
     "id": "mage_focus",
     "owner": "mage",
-    "name": "Enfoque arcano",
+    "name": "Ajustar frecuencia",
     "cost": 1,
     "target": "ally",
     "damage": 0,
@@ -234,7 +234,7 @@
   "mage_frost_bind": {
     "id": "mage_frost_bind",
     "owner": "mage",
-    "name": "Escarcha opresiva",
+    "name": "Bloqueo de servos",
     "cost": 2,
     "target": "all_enemies",
     "damage": 3,
@@ -252,7 +252,7 @@
   "mage_shatter": {
     "id": "mage_shatter",
     "owner": "mage",
-    "name": "Cristal quebrado",
+    "name": "Aislamiento roto",
     "cost": 1,
     "target": "enemy",
     "damage": 8,
@@ -270,7 +270,7 @@
   "mage_siphon": {
     "id": "mage_siphon",
     "owner": "mage",
-    "name": "Drenaje arcano",
+    "name": "Recuperar carga",
     "cost": 1,
     "target": "enemy",
     "damage": 7,

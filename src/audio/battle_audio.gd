@@ -7,6 +7,10 @@ static func hero(audio: Node, hero_id: String, action: String = "attack", card: 
 	audio.play_sfx(events.get(hero_id, "blade"))
 
 static func enemy(audio: Node, visual: String) -> void:
+	var catalog = preload("res://src/data/json_catalog.gd").dictionary("res://data/enemy_visuals.json")
+	if catalog.get(visual,{}).get("style","") == "postapocalyptic_comic":
+		audio.play_sfx("shield_impact" if visual.begins_with("beast") or visual.begins_with("bandit") else "magic" if visual.begins_with("elemental") or visual.begins_with("flying") else "shield_bash")
+		return
 	var event = "monster"
 	if visual.begins_with("skeleton"): event = "bones"
 	elif visual.begins_with("goblin"): event = "goblin"

@@ -15,5 +15,5 @@ static func build(ui: Control) -> void:
 		ui.label_at(project.description,24,282,328,100,20,ui.TEXT,tile).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		var owned = rules.owned(ui.game.profile,id)
 		var built: bool = ui.game.profile.buildings.get(project.building,false)
-		ui.button("Completado" if owned else ("Construí el edificio primero" if not built else "Desarrollar · %d almas" % project.cost),24,394,328,48,func():
+		ui.button("Completado" if owned else ("Construí el edificio primero" if not built else "Desarrollar · %d celdas" % project.cost),24,394,328,48,func():
 			if ui.game.polish_action("project",{"id":id}): ui.audio.play_sfx("upgrade");ui.render(),not owned and built and ui.game.profile.souls >= project.cost,tile).add_theme_font_size_override("font_size",18)

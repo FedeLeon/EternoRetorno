@@ -70,7 +70,7 @@ func run_tests() -> void:
 			var key = hash(frame.get_data())
 			if key not in unique: unique.append(key)
 			check(frame.get_pixel(0,0).a == 0 and frame.get_used_rect().size.x > 20, "transparent populated frame")
-		check(unique.size() == 8, "eight distinct poses " + id)
+		check(unique.size() == 4, "four authored keyposes " + id)
 		await shot(id + "-idle")
 		actor.play_once("attack")
 		await create_timer(0.17).timeout

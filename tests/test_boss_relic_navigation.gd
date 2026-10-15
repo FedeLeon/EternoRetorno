@@ -35,13 +35,13 @@ func run_tests() -> void:
 			event.position = button.get_global_rect().get_center()
 			root.push_input(event)
 		await process_frame
-		check(app.screen == "map" and id in app.game.run.relics,"real choice opens map and grants relic")
+		check(app.screen == "paths" and id in app.game.run.relics,"real choice opens next paths and grants relic")
 		check(app.game.run.floor == mini(3,floor_number+1),"map belongs to next floor")
 		var next_map = app.layer.find_child("DungeonMap",true,false)
 		if next_map == null:
-			next_map = app.layer.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/screens/map_screen.gd"))[0]
+			next_map = app.layer.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/screens/paths_screen.gd"))[0]
 		if floor_number<3:
-			check(not next_map.has_node("Descend") and app.game.available_nodes()==[0],"no extra entrance button")
+			check(not next_map.has_node("Descend") and app.game.available_nodes()==[0],"single entrance path without extra transition button")
 			check(next_map.dungeon_name == preload("res://src/dungeon.gd").definition(floor_number+1).name,"next dungeon title rendered")
 		else:
 			check(next_map.has_node("Descend") and app.game.profile.victories==0,"last floor retains adventure completion")

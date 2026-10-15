@@ -1,6 +1,6 @@
 {
   "skeleton_mage": {
-    "name": "Chamán esqueleto",
+    "name": "Enlace de reactivación",
     "hp": 25,
     "color": "b566eb",
     "visual": "skeleton_4",
@@ -20,7 +20,7 @@
     "role": "support"
   },
   "fire_elemental": {
-    "name": "Elemental de fuego",
+    "name": "Incinerador",
     "hp": 30,
     "color": "ff8533",
     "visual": "elemental_0",
@@ -38,7 +38,7 @@
     ]
   },
   "armored_beetle": {
-    "name": "Escarabajo coraza",
+    "name": "Blindado de inspección",
     "hp": 32,
     "color": "db9b51",
     "visual": "crypt_beetle",
@@ -57,7 +57,7 @@
     ]
   },
   "bandit_archer": {
-    "name": "Bandido arquero",
+    "name": "Vigía de precisión",
     "hp": 27,
     "color": "c99968",
     "visual": "bandit_2",
@@ -75,7 +75,7 @@
     ]
   },
   "poison_toad": {
-    "name": "Sapo venenoso",
+    "name": "Fumigador",
     "hp": 26,
     "color": "9ec64f",
     "visual": "beast_4",
@@ -94,7 +94,7 @@
     ]
   },
   "root_elemental": {
-    "name": "Elemental de raíces",
+    "name": "Enredador de cables",
     "hp": 38,
     "color": "88bf65",
     "visual": "elemental_6",

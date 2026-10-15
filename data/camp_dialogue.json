@@ -1,30 +1,30 @@
 {
   "market": [
-    "Mirá con calma. Una buena carta puede cambiar el viaje.",
-    "Las almas van y vienen. Un buen trato permanece.",
-    "Siempre guardo algo para quienes consiguen volver.",
-    "¿Buscás un golpe certero o una segunda oportunidad?",
-    "Lo que compres aquí podrá aparecer en tus próximas recompensas."
+    "Mirá las conexiones antes de pagar.",
+    "No abras el frasco junto a la batería.",
+    "Si vuelve el convoy, guardame un filtro.",
+    "Te cambio filtros por vendas limpias.",
+    "Esa batería está probada. La otra, todavía no."
   ],
   "forge": [
-    "Acercate. Todavía queda calor en la fragua.",
-    "Un filo bien templado también necesita una mano firme.",
-    "Traé tu armadura. Prefiero reparar acero que despedir héroes.",
-    "Mis mejoras te acompañarán en cada nueva aventura.",
-    "El martillo no descansa mientras haya alguien por volver."
+    "Dejá la pieza sobre la mesa. Todavía quema.",
+    "Eso aguanta otra salida. Dos no te prometo.",
+    "Traé también el mango. No arreglo solo la hoja.",
+    "Si apretás de más, partís la rosca.",
+    "Mientras arreglo esto, tomá un poco de agua."
   ],
   "church": [
-    "Cada victoria abre un camino. Elegí el tuyo con calma.",
-    "La luz no pelea por vos, pero puede guiar tu mano.",
-    "Dos caminos, una elección. Ningún héroe aprende todo de una vez.",
-    "Tu nueva especialización te acompañará al volver a partir.",
-    "Que tu fuerza alcance también para cuidar a tu compañero."
+    "El aparato ayuda. Entenderlo ayuda más.",
+    "Probalo con poca carga primero.",
+    "Lo que aprendas, anotáselo al siguiente.",
+    "El cable azul. El otro ya lo quemé.",
+    "Acá anotamos también lo que sale mal."
   ],
   "expeditions": [
-    "Un buen viaje empieza con un propósito.",
-    "Revisá los contratos. Solo podés llevar uno por aventura.",
-    "A veces, el mejor plan empieza con un compañero distinto.",
-    "Los mapas señalan el camino. Volver depende de ustedes.",
-    "Cuando termine tu aventura, habrá nuevos encargos esperando."
+    "El sector está cambiando. Revisen la ruta.",
+    "Un encargo por salida. Vuelvan los dos.",
+    "La radio se corta cerca de la central.",
+    "Si perdés la señal, seguí tus propias marcas.",
+    "Nos quedan dos radios que no chisporrotean."
   ]
 }

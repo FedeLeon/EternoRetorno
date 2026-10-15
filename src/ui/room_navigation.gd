@@ -25,7 +25,7 @@ static func build(ui: Control) -> void:
 		view.menu_requested.connect(ui.pause_menu)
 		ui.rect(view, 0, 0, 1280, 720)
 		if not ui.game.run.get("curses", []).is_empty():
-			ui.button("Limpiar una maldición", 482, 82, 316, 44, func(): ui.act(func(): ui.game.polish_action("cleanse")))
+			ui.button("Limpiar una avería", 482, 82, 316, 44, func(): ui.act(func(): ui.game.polish_action("cleanse")))
 		return
 	if node.kind == "event":
 		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
@@ -33,7 +33,7 @@ static func build(ui: Control) -> void:
 		view.event = preload("res://src/rules/adventure_choices.gd").definition(ui.game, node.event)
 		if view.event.is_empty(): view.event = ui.game.content.events[node.event].duplicate(true)
 		else: view.event_id = view.event.background
-		var chains = {"forest_hunter":"Además, las provisiones esconden una contraseña de descuento para el mercader errante.", "forest_spirit":"Además, el siguiente descanso restaurará 5 PV extra.", "library":"Además, el siguiente cofre ocultará otra poción de curación."}
+		var chains = {"forest_hunter":"Además, las provisiones esconden una contraseña de descuento para el mercader errante.", "forest_spirit":"Además, el siguiente descanso restaurará 5 PV extra.", "library":"Además, el siguiente cofre ocultará otra ampolla de curación."}
 		if chains.has(node.event): view.event.text += " " + chains[node.event]
 		if node.event == "lava_bridge": view.can_offer = ui.game.run.heroes.all(func(h): return h.hp > 8)
 		if node.event == "altar":
@@ -50,7 +50,7 @@ static func treasure_display(ui: Control) -> Dictionary:
 	var text = data.get("description", "")
 	if state.get("opened", false):
 		if state.has("legacy_relic"):
-			text += "\nReliquia conservada de tu partida anterior."
+			text += "\nComponente conservada de tu partida anterior."
 		else:
 			text += "\nAñadido a la bolsa: 1."
 		if state.trapped:

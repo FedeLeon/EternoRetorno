@@ -1,126 +1,134 @@
 {
-  "relics": {
-    "vital_amulet": {
-      "name": "Amuleto Vital",
-      "icon": 0,
-      "effect": "max_hp",
-      "value": 10,
-      "description": "+10 de vida máxima e inicial para ambos héroes durante la aventura."
-    },
-    "vigor_ring": {
-      "name": "Anillo del Vigor",
-      "icon": 1,
-      "effect": "energy",
-      "value": 1,
-      "description": "+1 de energía compartida en el primer turno de cada combate. Se aplica una sola vez al equipo."
-    },
-    "phoenix_idol": {
-      "name": "Ídolo del Fénix",
-      "icon": 2,
-      "effect": "phoenix",
-      "value": 1,
-      "description": "Cada héroe sobrevive con 1 de vida a su primer golpe fatal. Una vez por héroe y aventura."
-    },
-    "poison_fang": {
-      "name": "Colmillo Envenenado",
-      "icon": 3,
-      "effect": "poison",
-      "value": 2,
-      "description": "+2 acumulaciones de veneno en las cartas de ambos héroes que apliquen veneno."
-    },
-    "arcane_orb": {
-      "name": "Orbe Arcano",
-      "icon": 4,
-      "effect": "magic",
-      "value": 2,
-      "description": "+2 de daño por impacto en las cartas ofensivas de ambos héroes, de cualquier clase."
-    },
-    "wind_boots": {
-      "name": "Botas del Viento",
-      "icon": 5,
-      "effect": "block",
-      "value": 3,
-      "description": "Cada héroe vivo gana 3 de bloqueo al inicio de cada turno del equipo."
-    },
-    "pilgrim_shield": {
-      "name": "Escudo del Peregrino",
-      "icon": 6,
-      "effect": "armor",
-      "value": 2,
-      "description": "Reduce en 2 cada ataque enemigo contra cualquiera de los héroes, antes del bloqueo."
-    },
-    "merchant_coin": {
-      "name": "Moneda del Mercader",
-      "icon": 7,
-      "effect": "reward",
-      "value": 1,
-      "description": "En cada oferta, mejora una carta de cada héroe si aparece alguna de su clase."
-    }
-  },
-  "items": {
-    "healing_potion": {
-      "name": "Poción de Curación",
-      "icon": 8,
-      "effect": "heal",
-      "value": 12,
-      "target": "living",
-      "description": "Recupera 12 de vida de un aliado vivo."
-    },
-    "energy_flask": {
-      "name": "Frasco de Energía",
-      "icon": 9,
-      "effect": "energy",
-      "value": 2,
-      "target": "team",
-      "description": "Añade 2 de energía compartida para este turno."
-    },
-    "phoenix_feather": {
-      "name": "Pluma Fénix",
-      "icon": 10,
-      "effect": "revive",
-      "value": 25,
-      "target": "fallen",
-      "description": "Revive a un aliado caído con el 25 % de su vida máxima. Sus cartas vuelven al descarte."
-    },
-    "strength_tonic": {
-      "name": "Tónico de Fuerza",
-      "icon": 11,
-      "effect": "strength",
-      "value": 3,
-      "target": "living",
-      "description": "Un aliado obtiene +3 de daño por impacto de sus cartas durante este turno."
-    },
-    "concentrated_poison": {
-      "name": "Veneno Concentrado",
-      "icon": 12,
-      "effect": "poison",
-      "value": 6,
-      "target": "enemy",
-      "description": "Aplica 6 acumulaciones de veneno a un enemigo."
-    },
-    "arcane_elixir": {
-      "name": "Elixir Arcano",
-      "icon": 13,
-      "effect": "magic",
-      "value": 2,
-      "target": "caster",
-      "description": "La Profesora gana +2 de daño mágico durante este turno."
-    },
-    "agility_brew": {
-      "name": "Brebaje de Agilidad",
-      "icon": 14,
-      "effect": "draw",
-      "value": 2,
-      "target": "team",
-      "description": "Roba 2 cartas adicionales del mazo compartido."
-    },
-    "defense_balm": {
-      "name": "Bálsamo de Defensa",
-      "icon": 15,
-      "effect": "block",
-      "value": 12,
-      "target": "living",
-      "description": "Otorga 12 de bloqueo a un aliado vivo hasta el siguiente turno."
-    }
-  }
+	"items": {
+		"agility_brew": {
+			"description": "Roba 2 cartas adicionales del mazo compartido.",
+			"effect": "draw",
+			"icon": 14.0,
+			"name": "Brebaje de Agilidad",
+			"target": "team",
+			"value": 2.0
+		},
+		"arcane_elixir": {
+			"description": "La Profesora gana +2 de daño eléctrico durante este turno.",
+			"effect": "magic",
+			"icon": 13.0,
+			"name": "Elixir Arcano",
+			"target": "caster",
+			"value": 2.0
+		},
+		"concentrated_poison": {
+			"description": "Aplica 6 acumulaciones de corrosión a un enemigo.",
+			"effect": "poison",
+			"icon": 12.0,
+			"name": "Ácido concentrado",
+			"target": "enemy",
+			"value": 6.0
+		},
+		"defense_balm": {
+			"description": "Otorga 12 de bloqueo a un aliado vivo hasta el siguiente turno.",
+			"effect": "block",
+			"icon": 15.0,
+			"name": "Bálsamo de Defensa",
+			"target": "living",
+			"value": 12.0
+		},
+		"energy_flask": {
+			"description": "Añade 2 de energía compartida para este turno.",
+			"effect": "energy",
+			"icon": 9.0,
+			"name": "Carga auxiliar",
+			"target": "team",
+			"value": 2.0
+		},
+		"healing_potion": {
+			"description": "Recupera 12 de vida de un aliado vivo.",
+			"effect": "heal",
+			"icon": 8.0,
+			"name": "Ampolla médica",
+			"target": "living",
+			"value": 12.0
+		},
+		"phoenix_feather": {
+			"description": "Revive a un aliado caído con el 25 % de su vida máxima. Sus cartas vuelven al descarte.",
+			"effect": "revive",
+			"icon": 10.0,
+			"name": "Cartucho de reanimación",
+			"target": "fallen",
+			"value": 25.0
+		},
+		"strength_tonic": {
+			"description": "Un aliado obtiene +3 de daño por impacto de sus cartas durante este turno.",
+			"effect": "strength",
+			"icon": 11.0,
+			"name": "Estimulante",
+			"target": "living",
+			"value": 3.0
+		}
+	},
+	"relics": {
+		"arcane_orb": {
+			"asset": "res://assets/equipment/components/arcane_orb.png",
+			"description": "+2 de daño por impacto en las cartas ofensivas de ambos héroes, de cualquier clase.",
+			"effect": "magic",
+			"icon": 4.0,
+			"name": "Bobina amplificadora",
+			"value": 2.0
+		},
+		"merchant_coin": {
+			"asset": "res://assets/equipment/components/merchant_coin.png",
+			"description": "En cada oferta, mejora una carta de cada héroe si aparece alguna de su clase.",
+			"effect": "reward",
+			"icon": 7.0,
+			"name": "Ficha de intercambio",
+			"value": 1.0
+		},
+		"phoenix_idol": {
+			"asset": "res://assets/equipment/components/phoenix_idol.png",
+			"description": "Cada héroe sobrevive con 1 de vida a su primer golpe fatal. Una vez por héroe y aventura.",
+			"effect": "phoenix",
+			"icon": 2.0,
+			"name": "Relé de emergencia",
+			"value": 1.0
+		},
+		"pilgrim_shield": {
+			"asset": "res://assets/equipment/components/pilgrim_shield.png",
+			"description": "Reduce en 2 cada ataque enemigo contra cualquiera de los héroes, antes del bloqueo.",
+			"effect": "armor",
+			"icon": 6.0,
+			"name": "Placa de protección",
+			"value": 2.0
+		},
+		"poison_fang": {
+			"asset": "res://assets/equipment/components/poison_fang.png",
+			"description": "+2 acumulaciones de corrosión en las cartas de ambos héroes que apliquen corrosión.",
+			"effect": "poison",
+			"icon": 3.0,
+			"name": "Boquilla corrosiva",
+			"value": 2.0
+		},
+		"vigor_ring": {
+			"asset": "res://assets/equipment/components/vigor_ring.png",
+			"description": "+1 de energía compartida en el primer turno de cada combate. Se aplica una sola vez al equipo.",
+			"effect": "energy",
+			"icon": 1.0,
+			"name": "Condensador de arranque",
+			"value": 1.0
+		},
+		"vital_amulet": {
+			"asset": "res://assets/equipment/components/vital_amulet.png",
+			"description": "+10 de vida máxima e inicial para ambos héroes durante la aventura.",
+			"effect": "max_hp",
+			"icon": 0.0,
+			"name": "Monitor vital",
+			"value": 10.0
+		},
+		"wind_boots": {
+			"asset": "res://assets/equipment/components/wind_boots.png",
+			"description": "Cada héroe vivo gana 3 de bloqueo al inicio de cada turno del equipo.",
+			"effect": "block",
+			"icon": 5.0,
+			"name": "Botas reforzadas",
+			"value": 3.0
+		}
+	}
 }

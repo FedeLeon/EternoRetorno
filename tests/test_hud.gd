@@ -99,6 +99,11 @@ func run_tests() -> void:
 	app.back()
 	check(not is_instance_valid(hud.popover) and app.screen == "combat", "Back dismisses description")
 	check(hud.get_node("EnergyOrb").material is ShaderMaterial, "Energy flow shader attached")
+	check(hud.get_node("EnergyOrb").texture.resource_path.ends_with("battle_energy_cell.png"), "Battle uses dedicated cell with empty number window")
+	hud.update_energy(12)
+	check(hud.get_node("EnergyNumber").value == 12, "Two-digit energy updates immediately")
+	await shot("cell-two-digits")
+	hud.update_energy(app.game.run.combat.energy)
 	for actor in app.enemy_art.values():
 		check(actor.scale == Vector2.ONE * 1.8125, "Enemies use current combat scale")
 	for i in app.hero_art:

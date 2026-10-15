@@ -11,9 +11,9 @@ static func plot(ui: Control) -> void:
 		return
 	var cost = int(ui.game.Forge.config().build_cost)
 	if ui.game.profile.souls < cost:
-		ui.show_modal("Herrería", "Necesitás %d almas para construirla en el solar 3." % cost, "Entendido", ui.close_modal)
+		ui.show_modal("Taller", "Necesitás %d celdas para construirla en el solar 3." % cost, "Entendido", ui.close_modal)
 		return
-	ui.show_modal("Construir herrería", "Por %d almas, el herrero podrá mejorar permanentemente el equipo de tus héroes." % cost, "Construir", func():
+	ui.show_modal("Construir taller", "Por %d celdas, el herrero podrá mejorar permanentemente el equipo de tus héroes." % cost, "Construir", func():
 		if ui.game.build_forge():
 			ui.close_modal()
 			open(ui))

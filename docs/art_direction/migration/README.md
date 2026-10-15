@@ -1,5 +1,12 @@
 # Conversión integral sketchbook — completada el 14/10/2026
 
+> Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
+> se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
+
+> Registro histórico. Los dibujos y fuentes activos fueron sustituidos el 14/10
+> por el [cómic postapocalíptico](../postapocalyptic/README.md). Las validaciones inferiores
+> pertenecen a la etapa anterior y no certifican los recursos nuevos.
+
 > **Limpieza posterior del 14/10:** se conservan 314 trabajos activos y sus fuentes.
 > Los 69 trabajos de cartas sustituidas y las entradas de recursos retirados se
 > archivaron en [cleanup](../../cleanup/2026-10-14.md). Se retiraron PNG rechazados

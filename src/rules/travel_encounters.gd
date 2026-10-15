@@ -44,20 +44,20 @@ static func chain(game: RefCounted, event: String) -> void:
 	if not game.run.has("event_flags"): game.run.event_flags = {}
 	if event == "forest_hunter":
 		game.run.event_flags.guide = true
-		game._log("Encontrás una contraseña en el campamento: el próximo mercader vende por 20 almas.")
+		game._log("Encontrás una contraseña en el campamento: el próximo mercader vende por 20 celdas.")
 	elif event == "forest_spirit":
 		game.run.event_flags.sanctuary = true
 		game._log("El bosque recuerda tu ayuda: el siguiente descanso restaurará 5 PV adicionales.")
 	elif event == "library":
 		game.run.event_flags.knowledge = true
-		game._log("Un mapa antiguo señala un escondite: el siguiente cofre tendrá otra poción.")
+		game._log("Un mapa antiguo señala un escondite: el siguiente cofre tendrá otra ampolla.")
 
 static func apply_room(game: RefCounted, kind: String) -> void:
 	var flags: Dictionary = game.run.get("event_flags", {})
 	if kind == "treasure" and flags.get("knowledge", false):
 		game.run.inventory.healing_potion = int(game.run.inventory.get("healing_potion", 0)) + 1
 		flags.knowledge = false
-		game.run.room_note = "El mapa antiguo te permitió encontrar otra poción de curación."
+		game.run.room_note = "El mapa antiguo te permitió encontrar otra ampolla de curación."
 
 static func rest_bonus(game: RefCounted) -> int:
 	var flags: Dictionary = game.run.get("event_flags", {})

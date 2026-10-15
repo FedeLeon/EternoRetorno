@@ -1,60 +1,5 @@
-extends Control
-# Receives a presentation snapshot. Navigation and saves belong to the controller.
-signal room_requested(id: int)
-signal deck_requested
-signal menu_requested
-signal descend_requested
-
-const Dungeon = preload("res://src/dungeon.gd")
-const GOLD = Color("766080")
-var nodes: Array = []
-var available: Array = []
-var visited: Array = []
-var current = -1
-var heroes: Array = []
-var relics: Array = []
-var boss_defeated = false
-var deck_count = 0
-var run_seed = 0
-var dungeon_name = "La cripta de los ecos"
-var exit_caption = "Bajar por la escalera"
-
-func place(node: Control, area: Rect2, parent: Node = self) -> void:
-	node.position = area.position
-	node.size = area.size
-	parent.add_child(node)
-
-func label(text: String, area: Rect2, font_size: int = 20, color: Color = Color("e9e1ee"), parent: Node = self) -> Label:
-	var node = Label.new()
-	node.text = text
-	node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	node.add_theme_font_size_override("font_size", font_size)
-	node.add_theme_color_override("font_color", color)
-	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	place(node, area, parent)
-	return node
-
-func picture(texture: Texture2D, area: Rect2, parent: Node = self) -> TextureRect:
-	var node = TextureRect.new()
-	node.texture = texture
-	node.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	node.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	node.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	place(node, area, parent)
-	return node
-
-func action(text: String, area: Rect2, callback: Callable, parent: Node = self) -> Button:
-	var node = Button.new()
-	node.text = text
-	if text in ["Bajar por la escalera", "Entrar al bosque", "Completar aventura"]:
-		preload("res://src/ui/components/button_skin.gd").arrow(node)
-	if text == "Menú":
-		preload("res://src/ui/components/button_skin.gd").decorate(node, "wood_menu")
-	node.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-	node.pressed.connect(callback)
-	place(node, area, parent)
-	return node
+extends "res://src/ui/components/adventure_scene.gd"
+# Tactical map; the path scene reuses its snapshot and party rail.
 
 func _ready() -> void:
 	# Older spiral saves receive the clearer arrangement in a private UI snapshot.
@@ -101,7 +46,7 @@ func draw_route() -> void:
 			var active_path = next in available and node.id == current
 			var travelled = node.id in visited and (next in visited or next == current)
 			line.width = 3 if active_path else 2.5 if travelled else 1.5
-			line.default_color = Color("694778") if active_path else Color("62566b") if travelled else Color(0.29,0.25,0.33,0.48)
+			line.default_color = Color("75ded4") if active_path else Color("80999f") if travelled else Color(0.28,0.37,0.42,0.55)
 			if node.get("layout", "") == "spiral":
 				for point in preload("res://src/map_geometry.gd").connection(node,nodes[next]):
 					line.add_point(display_point(point))

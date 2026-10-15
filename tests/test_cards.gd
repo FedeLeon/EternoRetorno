@@ -27,6 +27,10 @@ func run_tests() -> void:
 				var card = app.card_panel({"id": id, "upgraded": upgraded}, 0, 0, 218, 244, func(): pass, false, true, gallery)
 				await process_frame
 				check(card.get_node("CostNumber").value == int(app.game.content.card({"id": id, "upgraded": upgraded}).cost), "Sprite cost: " + id)
+				var owner_label = card.get_node("CardOwner")
+				check(owner_label.text.contains(app.game.content.heroes[app.game.content.cards[id].owner].civilian.name), "Correct civilian on card: " + id)
+				check(owner_label.text.contains("MEJORADA") == upgraded, "Upgrade state on card: " + id)
+				check(owner_label.get_theme_font("font").get_string_size(owner_label.text, HORIZONTAL_ALIGNMENT_LEFT, -1, owner_label.get_theme_font_size("font_size")).x <= owner_label.size.x, "Owner metadata fits: " + id)
 				for node in card.get_children():
 					if node is Label:
 						check(node.get_line_count() * node.get_line_height() <= node.size.y + 1, "Text clipped: " + node.text)

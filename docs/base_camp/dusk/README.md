@@ -1,5 +1,12 @@
 # Campamento al atardecer — 13/10/2026
 
+> Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
+> se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
+
+> Registro histórico. Los dibujos y fuentes activos fueron sustituidos el 14/10
+> por el [cómic postapocalíptico](../../art_direction/postapocalyptic/README.md). Las validaciones inferiores
+> pertenecen a la etapa anterior y no certifican los recursos nuevos.
+
 Rediseño del exterior con grafito y lápices de colores: negro/gris/violeta,
 trazos buscados, tramado irregular y acentos ámbar. El sol baja detrás de las
 montañas; el lago y las ruinas quedan al fondo. La ilustración ocupa el espacio

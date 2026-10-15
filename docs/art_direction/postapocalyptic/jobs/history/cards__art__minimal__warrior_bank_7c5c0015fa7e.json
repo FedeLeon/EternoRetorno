@@ -1,0 +1,48 @@
+{
+  "id": "cards__art__minimal__warrior_bank",
+  "target": "assets/cards/art/minimal/warrior_bank.png",
+  "kind": "card_bank",
+  "hero": "warrior",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
+  "cards": [
+    "warrior_slash",
+    "warrior_guard",
+    "warrior_heavy",
+    "warrior_charge",
+    "warrior_echo",
+    "warrior_pommel",
+    "warrior_brace",
+    "warrior_cleave",
+    "warrior_riposte",
+    "warrior_execution",
+    "warrior_onslaught",
+    "warrior_blood_oath",
+    "warrior_fortress",
+    "warrior_rift",
+    "warrior_final_edge",
+    "warrior_risk",
+    "warrior_prepared",
+    "warrior_interrupt",
+    "warrior_rally",
+    "warrior_second_wind",
+    "warrior_crush_armor",
+    "warrior_disarm"
+  ],
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE card-symbol atlas, SIX columns by FOUR rows24cells1536x1024. All cells have the same opaque dark charcoal background #131922, no visible grid or borders. Minimalist symbols,1to3 simple shapes per cell, no full hero or portraits. Use this hero's civilian tool design from reference: Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn.. All symbols centered inside central65percent width and central50percent height of each cell. EXACT reading order left to right top to bottom: cell0: improvised tool attack, metaphor for warrior_slash, distinct composition; cell1: defensive bracing tool, metaphor for warrior_guard, distinct composition; cell2: improvised tool attack, metaphor for warrior_heavy, distinct composition; cell3: improvised tool attack, metaphor for warrior_charge, distinct composition; cell4: improvised tool attack, metaphor for warrior_echo, distinct composition; cell5: improvised tool attack, metaphor for warrior_pommel, distinct composition; cell6: defensive bracing tool, metaphor for warrior_brace, distinct composition; cell7: improvised tool attack, metaphor for warrior_cleave, distinct composition; cell8: improvised tool attack, metaphor for warrior_riposte, distinct composition; cell9: improvised tool attack, metaphor for warrior_execution, distinct composition; cell10: improvised tool attack, metaphor for warrior_onslaught, distinct composition; cell11: red medical aid, metaphor for warrior_blood_oath, distinct composition; cell12: defensive bracing tool, metaphor for warrior_fortress, distinct composition; cell13: improvised tool attack, metaphor for warrior_rift, distinct composition; cell14: improvised tool attack, metaphor for warrior_final_edge, distinct composition; cell15: improvised tool attack, metaphor for warrior_risk, distinct composition; cell16: improvised tool attack, metaphor for warrior_prepared, distinct composition; cell17: improvised tool attack, metaphor for warrior_interrupt, distinct composition; cell18: improvised tool attack, metaphor for warrior_rally, distinct composition; cell19: red medical aid, metaphor for warrior_second_wind, distinct composition; cell20: improvised tool attack, metaphor for warrior_crush_armor, distinct composition; cell21: improvised tool attack, metaphor for warrior_disarm, distinct composition. Cells22and23 empty. NO text or numbers. Bold clean ink outlines, flat bright colors, very sparse hard shadows, no tiny detail.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-cddb7d77-1911-458b-b1e6-399b29803a8b.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "c804444168c4e168f4512c8b24477ed75b0e12cb275728e91c249cf1429fee77",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

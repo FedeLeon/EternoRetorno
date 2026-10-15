@@ -97,31 +97,34 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = ui.game.run.combat.get("enemies", [])
 	for i in range(old_enemies.size()):
+		var enemy_hp = int(current_enemies[i].hp) if i < current_enemies.size() else int(old_enemies[i].hp)
+		if hand_index < 0 and synergy_id == "":
+			enemy_hp = preload("res://src/presentation/prepared_strikes.gd").before_hp(ui.game.resolved_prepared_hits, i, enemy_hp)
 		var poison_hit: Dictionary = ui.game.resolved_poison_hits.get(i, {}) if hand_index < 0 and synergy_id == "" else {}
 		if not poison_hit.is_empty() and int(poison_hit.lost) > 0:
 			ui.enemy_health[i].animate_to(poison_hit.hp)
 			await ui.enemy_art[i].play_once("poison")
-		if i < current_enemies.size() and old_enemies[i].hp <= 0 and current_enemies[i].hp > 0:
+		if i < current_enemies.size() and old_enemies[i].hp <= 0 and enemy_hp > 0:
 			ui.enemy_art[i].set_fallen(false)
-			ui.enemy_health[i].animate_to(current_enemies[i].hp)
+			ui.enemy_health[i].animate_to(enemy_hp)
 		if i < current_enemies.size() and old_enemies[i].hp > 0:
-			if current_enemies[i].hp > old_enemies[i].hp:
-				ui.enemy_health[i].animate_to(current_enemies[i].hp)
+			if enemy_hp > old_enemies[i].hp:
+				ui.enemy_health[i].animate_to(enemy_hp)
 				preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.enemy_art[i],"heal")
-			if current_enemies[i].hp < old_enemies[i].hp:
-				ui.enemy_health[i].animate_to(current_enemies[i].hp)
-			if current_enemies[i].hp <= 0:
+			if enemy_hp < old_enemies[i].hp:
+				ui.enemy_health[i].animate_to(enemy_hp)
+			if enemy_hp <= 0:
 				ui.audio.play_sfx("death")
 				ui.audio.play_sfx("ash", -8)
 				if poison_hit.is_empty(): ui.flash_hit(ui.enemy_art[i])
 				await ui.enemy_art[i].play_once("death")
-			elif current_enemies[i].hp < old_enemies[i].hp and impacts.is_empty() and poison_hit.is_empty():
+			elif enemy_hp < old_enemies[i].hp and impacts.is_empty() and poison_hit.is_empty():
 				await ui.enemy_art[i].play_once("hurt")
 		if hand_index < 0 and synergy_id == "":
 			var visual = ui.game.content.enemies[old_enemies[i].id].visual
 			await preload("res://src/presentation/enemy_action_playback.gd").play(ui,i,visual)
 	if hand_index < 0 and synergy_id == "" and not ui.game.resolved_prepared_hits.is_empty():
-		await preload("res://src/presentation/card_impacts.gd").play(ui, ui.game.resolved_prepared_hits, "heavy")
+		await preload("res://src/presentation/prepared_strikes.gd").play(ui)
 	for i in range(before.size()):
 		var after = ui.game.run.heroes[i]
 		ui.hero_health[i].animate_to(after.hp)

@@ -25,8 +25,8 @@ func run_tests() -> void:
 		check(actor.has_motion_frames,"animated new enemy "+id)
 		var pixels = actor.sprite.texture.get_image()
 		var unique = {}
-		for frame in range(8):unique[pixels.get_region(Rect2i(frame*128,0,128,128)).get_data().hex_encode().sha256_text()]=true
-		check(unique.size()==8,"eight distinct drawn poses "+id)
+		for frame in range(8):unique[pixels.get_region(Rect2i(frame*pixels.get_height(),0,pixels.get_height(),pixels.get_height())).get_data().hex_encode().sha256_text()]=true
+		check(unique.size()==4,"four authored keyposes in eight timing frames "+id)
 		actor.play_once("attack")
 		await create_timer(0.25).timeout
 		check(actor.acting and actor.sprite.frame>=4,"attack poses played "+id)

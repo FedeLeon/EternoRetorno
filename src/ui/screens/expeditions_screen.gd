@@ -15,7 +15,7 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 		var body = preload("res://src/ui/components/camp_offer_card.gd").build(ui, ui.layer, Rect2(510 + i * 250, 164, 240, 474), "res://assets/expeditions/contract_%s.png" % contract.art, contract.name, contract.description)
 		body.name = "Contract_" + contract.id
 		if chosen: body.modulate = Color(1.12, 1.07, 0.96)
-		ui.label_at("Recompensa: %d almas" % contract.reward, 12, 352, 216, 40, 18, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		ui.label_at("Recompensa: %d celdas" % contract.reward, 12, 352, 216, 40, 18, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		var caption = "Elegido · Cancelar" if chosen else "Aceptar contrato"
 		if snapshot.running: caption = "En curso: %d / %d" % [contract.progress, contract.target] if chosen else "Próxima aventura"
 		var can_select = not snapshot.running and (snapshot.selected == "" or chosen)
@@ -24,5 +24,5 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 		button.add_theme_font_size_override("font_size", 17)
 	var note = "Cancelá el contrato elegido para seleccionar otro. La recompensa se entrega al finalizar la aventura."
 	if snapshot.running: note = "Ya hay una aventura en curso. Finalizala para elegir otro contrato."
-	elif not snapshot.last.is_empty(): note = ("Contrato completado: %s · +%d almas" % [snapshot.last.name, snapshot.last.reward]) if snapshot.last.complete else "Contrato anterior no completado: " + snapshot.last.name
+	elif not snapshot.last.is_empty(): note = ("Contrato completado: %s · +%d celdas" % [snapshot.last.name, snapshot.last.reward]) if snapshot.last.complete else "Contrato anterior no completado: " + snapshot.last.name
 	ui.label_at(note, 510, 650, 740, 54, 18, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

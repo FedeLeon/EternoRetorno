@@ -29,7 +29,8 @@ func _ready() -> void:
 		back.add_theme_stylebox_override(state, style)
 	var summary = _frame(Rect2(36, 100, 1208, 48), self)
 	var earned = snapshot.achievements.filter(func(a): return a.unlocked).size()
-	ui.label_at("%d / 30 logros    ·    %d aventuras    ·    %d victorias" % [earned, snapshot.attempts, snapshot.victories], 20, 5, 1168, 38, 20, ui.TEXT, summary)
+	var totals = ui.label_at("%d / %d logros    ·    %d aventuras    ·    %d victorias" % [earned, snapshot.achievements.size(), snapshot.attempts, snapshot.victories], 20, 5, 1168, 38, 20, ui.TEXT, summary)
+	totals.name = "AchievementTotals"
 	for i in range(3):
 		var tab = ui.button(["Logros", "Desbloqueos", "Últimos retornos"][i], 36 + i * 256, 164, 244, 42, func(): show_tab(i), true, self)
 		tab.name = ["AchievementsTab", "UnlocksTab", "HistoryTab"][i]
@@ -158,7 +159,7 @@ func history_detail(entry: Dictionary) -> void:
 		for kind in ["cards","picked","unused"]:
 			lines.append({"cards":"Cartas jugadas", "picked":"Recompensas elegidas", "unused":"Cartas descartadas sin usar"}[kind]+":")
 			for id in metrics.get(kind,{}): lines.append("  %s × %d" % [ui.game.content.cards.get(id,{"name":id}).name,metrics[kind][id]])
-	lines.append("\nReliquias:")
+	lines.append("\nComponentes:")
 	for id in entry.get("relics", []): lines.append(ui.game.content.relics.get(id, {"name":id}).name)
 	lines.append("\nMazo final:")
 	for card in entry.get("deck", []):
@@ -167,6 +168,6 @@ func history_detail(entry: Dictionary) -> void:
 			var suffix = " · " + variants.get(card.get("upgrade_variant", "power"), "Mejora") if card.get("upgraded", false) else ""
 			lines.append(ui.game.content.card(card).name + suffix)
 	if not entry.has("deck"): lines.append("Esta aventura antigua solo conserva su resumen.")
-	var labels = {"battles":"Combates", "elites":"Élites", "bosses":"Guardianes", "souls":"Almas ganadas", "damage_taken":"Daño recibido", "fallen":"Caídas", "cards_removed":"Cartas retiradas"}
+	var labels = {"battles":"Combates", "elites":"Élites", "bosses":"Guardianes", "souls":"Celdas ganadas", "damage_taken":"Daño recibido", "fallen":"Caídas", "cards_removed":"Cartas retiradas"}
 	for stat in entry.get("summary", {}).get("statistics", {}): lines.append(labels.get(stat, stat) + ": " + str(entry.summary.statistics[stat]))
 	preload("res://src/ui/components/reading_dialog.gd").open(ui, "Historia del retorno", "\n".join(lines))

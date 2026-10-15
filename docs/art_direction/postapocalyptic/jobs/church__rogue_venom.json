@@ -1,0 +1,24 @@
+{
+  "id": "church__rogue_venom",
+  "target": "assets/church/rogue_venom.png",
+  "kind": "specialization",
+  "hero": "rogue",
+  "dimensions": [
+    480,
+    320
+  ],
+  "transparent": false,
+  "source": "docs/art_direction/postapocalyptic/sources/church__rogue_venom.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Mauro,30,lean human man with messy dark brown hair, slight stubble, entire expressive human face visible, NO MASK or respirator, NO hood covering head. Pharmacist. Teal patched field jacket with rolled sleeves, aubergine shoulder medical satchel, faded black jeans, ordinary boots, bottle vials. Holds two short improvised utility knives, a green acid vial secured at belt. No assassin armor. Quick nervous civilian, focused expression. ONE readable comic specialization card illustration: rogue venom. Show the civilian reference hero using professional equipment in a small industrial workshop context. No fantasy armor/magic. Same hero identity, one action, no text/UI/frame. Landscape3:2.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dfa91275-6dc5-4036-9eca-5dab518efd5f.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "079053f1ea2168f22aa95dec3a07b5c333eeef8a6a45179fcead395d1761b5f4",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

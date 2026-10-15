@@ -2,7 +2,7 @@ extends RefCounted
 # UI factory only. Eligibility and damage are supplied by the rules layer.
 static func description(combo: Dictionary) -> String:
 	var text = "%d de daño%s." % [combo.damage, " penetrante" if combo.pierce else ""]
-	if combo.poison > 0: text += "\n%d de veneno." % combo.poison
+	if combo.poison > 0: text += "\n%d de corrosión." % combo.poison
 	if combo.block > 0: text += "\n%d de bloqueo a ambos." % combo.block
 	if combo.heal > 0: text += "\nCura %d a ambos." % combo.heal
 	return text

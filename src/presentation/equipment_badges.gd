@@ -13,7 +13,7 @@ static func entries(heroes: Array, catalog: Dictionary) -> Array:
 				"name": "%s · Nivel %d" % ["Arma" if weapon else "Armadura", level],
 				"owner": catalog[hero.id].name,
 				"description": ("+%d de fuerza por golpe de sus cartas de ataque." if weapon else "+%d de bloqueo en sus cartas defensivas.") % bonus,
-				"texture": load("res://assets/forge/icons/%s_%d.png" % [hero.id if weapon else "armor", level]),
+				"texture": load("res://assets/forge/badges/%s_%s_%d.png" % [hero.id, track, level]),
 				"level": level,
 			})
 	return result

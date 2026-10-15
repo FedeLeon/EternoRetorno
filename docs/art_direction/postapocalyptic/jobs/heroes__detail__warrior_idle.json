@@ -1,0 +1,25 @@
+{
+  "id": "heroes__detail__warrior_idle",
+  "target": "assets/heroes/detail/warrior_idle.png",
+  "kind": "hero_action",
+  "hero": "warrior",
+  "dimensions": [
+    1024,
+    768
+  ],
+  "transparent": true,
+  "source": "docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png",
+  "action": "idle",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn. EXACTLY TWELVE sequential poses of quiet idle, feet and torso stationary, tiny hand/clothing shifts only, NO attacks. FOUR columns by THREE rows,1536x1024 sprite sheet. Same face/outfit/equipment/proportions in all12 cells. Full body facing RIGHT. Each pose inside its cell with at least25px clear margins, no overlap. Feet/base same line except falling. TRUE transparent RGBA background, no scenery or floor, no grid lines, no labels or numbers.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d1f17b73-c14c-49e3-8a25-26e4841380f4.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

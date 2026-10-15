@@ -1,7 +1,7 @@
 extends RefCounted
 const SETS = [
 	{"ids":["storm_drum","fang"],"name":"Cadencia sangrienta","effect":"Cada golpe de cartas múltiples gana 1 de daño extra.","stat":"damage","value":1,"type":"multi"},
-	{"ids":["viper_tooth","drill_tusk"],"name":"Pacto tóxico","effect":"Las cartas de veneno añaden 2 acumulaciones extra.","stat":"poison","value":2,"type":"poison"},
+	{"ids":["viper_tooth","drill_tusk"],"name":"Pacto tóxico","effect":"Las cartas de corrosión añaden 2 acumulaciones extra.","stat":"poison","value":2,"type":"poison"},
 	{"ids":["ivory_mirror","turtle_charm"],"name":"Baluarte","effect":"Las cartas defensivas ganan 2 de bloqueo extra.","stat":"block","value":2,"type":"block"},
 	{"ids":["dawn_bell","chalice"],"name":"Fuente vital","effect":"Las cartas de curación restauran 2 PV extra.","stat":"heal","value":2,"type":"heal"}]
 

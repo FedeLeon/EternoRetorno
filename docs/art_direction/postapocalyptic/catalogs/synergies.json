@@ -1,0 +1,110 @@
+[
+  {
+    "id": "warrior_guardian",
+    "name": "Muralla cortante",
+    "heroes": [
+      "warrior",
+      "guardian"
+    ],
+    "cards": [
+      "warrior_riposte",
+      "guardian_iron_chain"
+    ],
+    "cost": 2,
+    "damage": 20,
+    "block": 8,
+    "heal": 0,
+    "poison": 0,
+    "pierce": false
+  },
+  {
+    "id": "warrior_rogue",
+    "name": "Filo ponzoñoso",
+    "heroes": [
+      "warrior",
+      "rogue"
+    ],
+    "cards": [
+      "warrior_cleave",
+      "rogue_double_fang"
+    ],
+    "cost": 2,
+    "damage": 24,
+    "block": 0,
+    "heal": 0,
+    "poison": 5,
+    "pierce": false
+  },
+  {
+    "id": "warrior_mage",
+    "name": "Acero astral",
+    "heroes": [
+      "warrior",
+      "mage"
+    ],
+    "cards": [
+      "warrior_riposte",
+      "mage_prism"
+    ],
+    "cost": 2,
+    "damage": 24,
+    "block": 0,
+    "heal": 0,
+    "poison": 0,
+    "pierce": false
+  },
+  {
+    "id": "guardian_rogue",
+    "name": "Bastión tóxico",
+    "heroes": [
+      "guardian",
+      "rogue"
+    ],
+    "cards": [
+      "guardian_iron_chain",
+      "rogue_toxic_mist"
+    ],
+    "cost": 2,
+    "damage": 20,
+    "block": 8,
+    "heal": 0,
+    "poison": 5,
+    "pierce": false
+  },
+  {
+    "id": "guardian_mage",
+    "name": "Égida de cristal",
+    "heroes": [
+      "guardian",
+      "mage"
+    ],
+    "cards": [
+      "guardian_circle",
+      "mage_hail"
+    ],
+    "cost": 2,
+    "damage": 20,
+    "block": 8,
+    "heal": 0,
+    "poison": 0,
+    "pierce": false
+  },
+  {
+    "id": "rogue_mage",
+    "name": "Corrosión del vacío",
+    "heroes": [
+      "rogue",
+      "mage"
+    ],
+    "cards": [
+      "rogue_toxic_mist",
+      "mage_prism"
+    ],
+    "cost": 2,
+    "damage": 24,
+    "block": 0,
+    "heal": 0,
+    "poison": 5,
+    "pierce": false
+  }
+]

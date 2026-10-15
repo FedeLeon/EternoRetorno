@@ -50,7 +50,7 @@ static func label_at(text: String, x: float, y: float, w: float, h: float, font_
 static func button(text: String, x: float, y: float, w: float, h: float, callback: Callable, enabled: bool = true, parent: Control = null) -> Button:
 	var b = Button.new()
 	b.text = text
-	if text in ["Inicio", "Elegir reliquia", "Saltar recompensa"]:
+	if text in ["Inicio", "Elegir componente", "Saltar recompensa"]:
 		preload("res://src/ui/components/button_skin.gd").arrow(b, text == "Inicio")
 	if text == "Menú":
 		preload("res://src/ui/components/button_skin.gd").decorate(b, "wood_menu")

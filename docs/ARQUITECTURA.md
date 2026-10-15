@@ -5,7 +5,65 @@ siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.
 
 ## Estructura actual
 
-Limpieza del 14/10: los 184 módulos activos conservan rutas/UIDs. Se retiran
+Revisión general del 14/10: `presentation/prepared_strikes.gd` ordena recibos de
+ataques preparados y disolución tras acciones enemigas. Los recibos añaden
+`action_index` y absorción/pérdida del contraataque sin persistirse. `combat_turns`
+enruta la reactivación del jefe al mismo lote; reglas y checkpoint permanecen en
+Game. Reconocimiento mantiene la pantalla del mapa; colección calcula su total
+con el catálogo. Se retiran herramientas anteriores y 18 imágenes sustituidas,
+con colas depuradas; 189 módulos runtime alcanzables y 667 visuales vigentes.
+[Revisión, limpieza y pruebas](game_review_2026_10_14/README.md).
+
+Preparación del 14/10: `equipment_screen.gd` usa `RelicArt.texture` y el campo
+opcional `asset` de componentes, preservando el icono numérico/fallback. Celdas
+usa PNG propio y configuración siete ilustraciones propias; play es SVG nativo.
+`main.begin_on_floor()` delega en Game la entrada/guardado de sala 0 antes de las
+cinemáticas. No cambia `Game.new_run`, las fases ni el esquema persistido. El
+importador `import_preparation_assets.gd` solo prepara recursos y referencias.
+[Assets, decisiones y validación](preparation_assets/README.md).
+
+
+Campamento del 14/10: `base_camp_screen.gd` recorta márgenes transparentes en
+AtlasTexture cacheados y coloca los edificios por su base; máscaras de entrada
+comparten el recorte y dejan pasar carteles vecinos. `campfire.gd` separa Sprite2D
+fijo del barril y AnimatedSprite2D de llamas con raíz fija. El importador nuevo
+`import_camp_flames.gd` solo encaja la hoja ilustrada; no modifica reglas/guardados.
+[Fuentes, distribución y validación](base_camp/stable_fire/README.md).
+
+
+Cartas de tablero del 14/10: `postapocalyptic_ui_art.py` construye los cuatro
+marcos y el aro circular de terminar turno; el importador SVG conserva rutas y
+UIDs. `card_view.gd` reserva una franja para personaje/oficio/estado de mejora y
+reajusta el dibujo. Valores, objetivos e instancias siguen perteneciendo a Content
+reglas/persistencia; ningún dato de juego se hornea en el asset.
+[Diseños, recursos y validación](cards/tabletop/README.md).
+
+
+Caminos en primera persona del 14/10: `ui/adventure_navigation.gd` resuelve
+pantalla y snapshots, sin cambiar la fase persistida `map`. Se extraen señales,
+datos y helpers de `map_screen.gd` a `ui/components/adventure_scene.gd`.
+`ui/screens/paths_screen.gd` presenta salidas/tipos/continuaciones y emite IDs;
+`map_group_drawer.gd` comparte Grupo/Mazo/Mapa. Transacciones/riesgos permanecen
+en `map_room_prompt.gd` y Game; cartas, componentes de jefe, RNG y guardado
+se resuelven antes de la presentación. El siguiente piso abre su entrada en
+primera persona; el mapa queda disponible por consulta.
+[Assets, archivos y validación](paths/README.md).
+
+
+Rediseño postapocalíptico integrado el 14/10: `art_direction/postapocalyptic/queue.json`
+separa ilustraciones/bancos originales de recursos derivados. Los importadores
+conservan IDs, rutas y métricas de apoyo; `sketchbook_sheet_packer.gd` reutiliza
+solo geometría y normaliza RGBA. `import_sketchbook_actors.gd -- --comic` admite
+bancos de poses civiles; los iconos amplían el sistema vectorial nativo.
+`comic_cut_in.gd` deja quietas las ilustraciones de ambos bandos, con contorno
+blanco y partículas detrás. Los 26 catálogos narrativos están publicados; la publicación comprueba
+IDs y valores numéricos. Los 632 recursos visuales tienen procedencia actual.
+`card_view.gd` comparte centro de coste y limita la descripción al espacio
+reservado sobre los iconos inferiores; `card_typography.gd` usa SourceSans3 MSDF.
+[Dirección, fuentes y estado de producción](art_direction/postapocalyptic/README.md).
+
+
+Registro anterior a este rediseño (limpieza del 14/10): los 184 módulos activos conservan rutas/UIDs. Se retiran
 importadores anteriores y se comparte la geometría en `sketchbook_sheet_packer.gd`;
 se simplifica la presentación de héroes a partículas a lápiz y dibujos estáticos.
 Las poses enemigas, reglas y persistencia se mantienen. La cola activa conserva
@@ -13,7 +71,7 @@ Las poses enemigas, reglas y persistencia se mantienen. La cola activa conserva
 [Archivos, decisiones, pruebas y límites](cleanup/2026-10-14.md). Las menciones
 a importadores retirados en las secciones fechadas inferiores son históricas.
 
-Arte mínimo de cartas del 14/10: `import_minimal_cards.gd` prepara 88 imágenes
+Registro anterior del arte mínimo de cartas del 14/10: `import_minimal_cards.gd` prepara 88 imágenes
 individuales acotadas a 512×288 y publica juntas las referencias de
 `data/card_art.json`. Se reutiliza `ui/components/card_art.gd` en todas las vistas;
 no se altera la fábrica, las reglas o los guardados. Los motivos y procedencia
@@ -752,7 +810,9 @@ La validación de contenido precede a regresiones. [Análisis y pendientes](arch
 `rules/hero_roster.gd` concentra los cuatro IDs elegibles. No elimina contenido ni
 limita la resolución de aventuras legadas; UI y ofertas nuevas consultan esta
 política. Migración de contratos recibe el estado de aventura para preservar
-selecciones en curso. `refuge_portrait.gd` recorta una hoja sketchbook compartida;
+selecciones en curso. En esta etapa histórica `refuge_portrait.gd` recortaba
+una hoja sketchbook compartida; la dirección actual usa cuatro maestros civiles
+individuales y retratos compactos proporcionales.
 SVG de marcos mantiene sus márgenes y añade borde irregular discreto. La conversión
 de actores/escenarios es pendiente y no se simula con filtros. Pruebas aisladas
 por suite mediante XDG_DATA_HOME. [Entrega y alcance](art_direction/2026-10-13/README.md).
@@ -774,3 +834,24 @@ de los cuerpos/crops verticales vigentes. Sigue siendo presentación: no calcula
 reglas ni altera estado. Usa proporción centrada para caras y fallback de
 recursos legados. Importador mecánico proporcional con fuentes excluidas de
 exportación y pruebas de baseline. [Recursos y validación](portraits/2026-10-13/README.md).
+
+### Celda y equipo HD del HUD (14/10/2026)
+
+`equipment_badges.gd` resuelve `assets/forge/badges/{hero}_{track}_{rank}.png`
+a partir de la instantánea de la aventura. `combat_hud.gd` presenta la celda
+con EnergyNumber independiente y shader lateral, manteniendo update_energy
+inmediato y los cuadros anclados. No calcula estadísticas ni persiste cambios.
+Importador geométrico, fuentes/prompts y revisión en
+[Celda y mejoras](combat_equipment_assets/README.md).
+
+### Poses y selección corregidas (14/10/2026)
+
+`seated_hero_art.gd` comparte recorte alfa, proporciones y apoyo entre preparación
+y descanso; no depende del modelo. `detailed_hero.gd` mantiene cuadro 0 de reposo
+y descarta finalizaciones de acciones reemplazadas. `hero_comic_fx.gd` dibuja
+luces/partículas detrás de arte estático, sin RNG de la partida. El importador
+de actores usa layouts semánticos revisados y separadores reales de las fuentes
+para reconstruir los atlas sin cambiar IDs, regiones ni guardados. La extracción
+geométrica se comparte con los bancos de enemigos, cuyas métricas de escala se
+recalculan a partir del resultado; no se deduce daño desde los cuadros.
+[Alcance y validación](animation_review/README.md).
