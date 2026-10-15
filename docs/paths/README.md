@@ -6,6 +6,15 @@ salir de cofres, descansos y encuentros para mantener la navegación consistente
 Cada salida muestra el tipo de la próxima sala y, bajo «Después», las alternativas
 inmediatas posteriores. No se inventan conexiones ni se altera la semilla.
 
+## Iconos ilustrados — 15/10/2026
+
+Mapa y caminos comparten seis nuevas ilustraciones generadas individualmente:
+armas improvisadas, tacho de descanso, radio/interrogación, caja tecnológica,
+máquina élite y jefe. Tinta negra, color y borde claro sobre transparencia.
+El destino principal tiene un área cuadrada centrada de 76 px; las vistas
+previas posteriores conservan 36 px. Navegación/guardados no cambian.
+[Fuentes, prompts y pruebas actuales](../map/comic_icons/README.md).
+
 ## Presentación y assets
 
 Nueve fondos de cómic postapocalíptico: uno, dos y tres pasajes por cada zona.
@@ -30,6 +39,12 @@ No se exportó para medir un tamaño de distribución.
 El icono de mapa es SVG nativo: plano plegado, nodos y ruta, paleta industrial.
 Fuente `map.svg`, recurso `assets/ui/map.svg`. Las diez altas están registradas
 por hash/fuente en `docs/art_direction/postapocalyptic/assets.json`.
+
+## Menú lateral de cómic — 15/10/2026
+
+Los accesos Grupo, Mazo y Mapa/Caminos comparten los nuevos PNG ilustrados de
+64 px con rótulos alineados. El plano bifurcado representa tanto la inspección
+del mapa como la vuelta a los caminos. [Fuentes y pruebas](../map/sidebar_icons/README.md).
 
 ## Menú y flujo
 

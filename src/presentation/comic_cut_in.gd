@@ -14,6 +14,7 @@ var frame_grid = Vector2i.ONE
 var frame_index = 0
 var frame_texture: AtlasTexture
 var enhanced_lights = false
+var full_view_rays = false
 var sketch_style = false
 var defensive_effect = false
 var static_illustration = true
@@ -42,6 +43,8 @@ func _ready() -> void:
 		hero_fx = preload("res://src/presentation/hero_comic_fx.gd").new()
 		hero_fx.name = "HeroLights"
 		add_child(hero_fx)
+		hero_fx.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		hero_fx.full_view_rays = full_view_rays
 		if static_illustration: move_child(hero_fx, 0) # Particles behind the character.
 		hero_fx.from_right = from_right
 	_layout()

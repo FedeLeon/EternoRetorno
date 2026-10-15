@@ -24,6 +24,13 @@ func run_tests() -> void:
 	root.add_child(app)
 	await process_frame
 	check(app.screen == "home" and app.layer.get_node("StartGame").text == "Iniciar juego", "Initial menu")
+	var options = app.layer.get_node("Options")
+	var gear = options.get_node("SettingsGear")
+	check(gear.texture.resource_path.ends_with("settings.png") and gear.texture.get_width() == 512, "settings uses detailed generated gear")
+	check(gear.texture.get_image().get_pixel(0, 0).a == 0, "gear keeps transparent background")
+	check(options.get_node("Electricity").mouse_filter == Control.MOUSE_FILTER_IGNORE, "electricity does not intercept settings clicks")
+	await create_timer(0.2).timeout
+	check(options.get_node("Electricity").elapsed > 0 and options.get_node("Electricity").size == options.size, "electric rim animates within the button")
 	if DisplayServer.get_name() != "headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("title/home.png"))

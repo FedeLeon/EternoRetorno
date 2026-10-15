@@ -1,12 +1,128 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **14/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **15/10/2026**.
 
 ## Estado actual
 
+[Combate y parejas](combat_refinement/README.md): guardias continuas con 12 poses
+por héroe, estocadas/barridos propios, seis emblemas y efectos condicionados,
+práctica interactiva de bloqueo/reserva/sinergia y seis bancos enemigos renovados.
+
+[Posición de héroes](battle_effects/README.md): personajes e iconos al pie 16 px
+más abajo, con límite para mantener visibles los estados y la carta ampliada.
+
+[Inspección de enemigos](battle_effects/README.md): cuadro compacto con icono
+en cada fila de información, altura ajustada y scroll para muchos efectos.
+Batalla visible alrededor; conserva clic de ataque al seleccionar carta.
+
+[Reserva reversible](cards/pixel_retain/README.md): la carta queda boca abajo
+en la mano; tocarla o pulsar Recuperar carta la devuelve de frente y permite
+guardar otra gratis. Conserva mejoras, posición y guardados anteriores.
+
+[Arrastre de cartas](cards/pixel_retain/README.md): eliminado el cartel oscuro
+superpuesto; conserva carta flotante, objetivos iluminados y aplicación al soltar.
+
+[Espacio de combate](battle_effects/README.md): suelo e intenciones 24 px más
+abajo y personajes alrededor de un 12% más grandes en la distribución habitual.
+Carta ampliada completa y efectos separados de la mano; pruebas y capturas actuales.
+
+[Tipografía de cartas](cards/pixel_retain/README.md): corregido el hueco en la
+«e» de la negrita sustituyendo MSDF por rasterizado con suavizado al doble de
+resolución. Conserva fuente, peso y distribución; render local revisado.
+
+[Distribución del combate](battle_effects/README.md): escenario industrial
+corregido, personajes más grandes, barras elevadas e intenciones/estados bajo
+los pies. Nombre/datos del enemigo al tocarlo sin carta seleccionada; los
+ataques y enlaces conservan sus objetivos y las ayudas siguen siendo pulsables.
+
+[Rayos enemigos](animation_review/README.md): los primeros planos enemigos
+también extienden sus rayos de luz hasta fuera de la pantalla, igual que los
+héroes, conservando la ilustración estática y sus partículas.
+
+[Lectura de cartas](cards/pixel_retain/README.md): título, energía y categoría
+alineados con el marco; descripción más grande y ajustada al espacio. La
+pastilla inferior conserva efectos/enlaces y elimina iconos repetidos de
+ataque/defensa. Comprobaciones de catálogo y render local sin fallos.
+
+[Auditoría integral del 15/10](quality/AUDITORIA_2026_10_15.md): catálogos,
+assets, arquitectura y limpieza; 98/98 suites headless, comprobaciones nativas
+de combate/opciones (125/0) y edificios (84/0). Prioridades, candidatos de
+limpieza y propuestas de diseño separados de cambios implementados.
+
+[Colección a pantalla completa](collection/README.md): botón «Ver ilustración»
+en los logros desbloqueados, incluidos secretos descubiertos; Volver/Escape
+recupera la selección y el foco.
+
+
+[Rayos de primeros planos](animation_review/README.md): ataques y defensas de
+héroes con luz radial que llega más allá de los bordes de la pantalla, sin
+puntas cortadas dentro de la vista.
+
+
+[Menú lateral de mapa y caminos](map/sidebar_icons/README.md): tres nuevos
+assets de cómic para Grupo, Mazo y Caminos/Mapa, transparentes y con tamaño
+uniforme de 64 px.
+
+[Iconos de mapa y caminos](map/comic_icons/README.md): seis ilustraciones de
+cómic generadas individualmente, transparentes y con borde claro; destino
+principal de caminos centrado a 76 px.
+
+
+[Carrera de victoria](animation_review/README.md): los cuatro héroes conservan
+su tamaño y la línea de suelo al abandonar el combate, con escala propia del
+atlas actual y separación entre actores HD y clásicos.
+
+
+[Tamaño de enemigos](animation_review/README.md): escala estable durante
+contraataques pese al redondeo de contenedores, y recortes corregidos para
+sabueso, supervisor y dos drones de una hoja con filas desiguales.
+
+
+[Bloqueo activo](battle_effects/README.md): escudo carbón con borde claro fino
+para que destaque el número sobre héroes y enemigos.
+
+
+[Selección de héroes](camp/README.md): tacho fijo con la misma luz y chispas del
+campamento, sin animación de llamas.
+
+
+[Campamento con animales](base_camp/companions/README.md): refugio centrado sobre
+el brasero, Aventuras cuadrado con Play grande y electricidad, perro y gato
+con pasos, olfateo/comida y pausas sobre recorridos despejados.
+
+
+[Cartas y reserva](cards/pixel_retain/README.md): frentes/reversos de metal y
+papel por oficio, dibujos de cómic minimalistas y una carta guardada boca abajo
+por turno que regresa junto al robo normal. Conserva mejoras y guardados.
+
+
+[Configuración de inicio](ui_buttons/settings/README.md): engranaje ilustrado de
+cómic con partículas y descargas cian, conservando acceso y ajustes existentes.
+
+[Terminar turno](ui_buttons/README.md): arcos eléctricos y chispas cian alrededor
+del aro del botón, con texto central despejado y preferencias de efectos respetadas.
+
+[Intenciones enemigas](battle_effects/README.md): rostros HD centrados del héroe
+objetivo, con borde del color que lo identifica; ataques de área muestran ambos.
+
+[Colección](collection/README.md): 28 ilustraciones de cómic detalladas, una
+generación propia por logro, con originales/prompts conservados y detalle a 184 px;
+ocultación secreta con ilustración propia y seis iconos SVG auxiliares.
+
+[Guardia intermitente](animation_review/README.md): los cuatro héroes de batalla
+mueven manos/arma y flexionan ligeramente entre pausas propias, con pies apoyados
+y prioridad para ataques, defensas, reacciones y carrera.
+
+[Bolsa y accesos superiores](objects/README.md): nuevos iconos tecnológicos de
+mazo/mochila y selección de consumibles mediante retratos contiguos de héroes o
+enemigos, respetando los objetivos válidos y el consumo único.
+
+[Registro del combate](ui_buttons/README.md): botón de libreta en el menú
+superior entre Bolsa y Menú; escenario libre del antiguo botón textual.
+
 **Dirección vigente:** mundo postapocalíptico de civiles contra máquinas, con
 cómic de acción americano: tinta negra, sombras planas y colores vivos.
-La sustitución de los **667 recursos visuales activos está completada** y verificada
+La sustitución de los **683 recursos visuales activos está completada** y verificada
 por hash; la ficción publicada conserva IDs y estadísticas. [Diseños, alcance y procedencia](art_direction/postapocalyptic/README.md).
 
 
@@ -24,6 +140,8 @@ enemigos y sus animaciones, mazmorras, mapas, cartas, iconos y cinemáticas.
 
 [Campamento al atardecer](base_camp/dusk/README.md) e
 [interiores con galerías 2×2](base_camp/interiors/README.md) conservan la distribución; sus dibujos fueron sustituidos por el nuevo cómic.
+En el campamento, Mercado/Laboratorio tienen el cartel sobre el techo y el
+[brasero centrado](base_camp/stable_fire/README.md) emite luz y chispas sin llamas.
 
 Elenco: Nicolás **Carpintero**, Inés **Constructora**, Mauro **Boticario** y Vera **Profesora**. [Retiro definitivo y migración de guardados](cleanup/2026-10-13.md).
 
@@ -32,6 +150,8 @@ selección alrededor de la fogata, equipamiento previo, mapa en espiral con cami
 recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
 
 - Navegación: después de las recompensas se elige en [Caminos en primera persona](paths/README.md), con salidas reales, vista previa y menú Grupo/Mazo/Mapa. Una aventura nueva entra directamente en la primera batalla tras la preparación.
+- Mapa: [seis iconos propios de salas](map/README.md), de cómic tecnológico, para
+  combate, descanso, encuentro, tesoro, élite y jefe; compartidos con los caminos.
 
 - Controles: arrastrar, tocar, teclado o mando; preview, tutorial, velocidad 1–2× y efectos ajustables.
 - Aventura: dificultad y condición mediante tarjetas ilustradas, rechazo de carta por almas y resumen final.
@@ -48,11 +168,15 @@ recompensas, descanso, eventos, jefe y escalera final. Funciona sin conexión.
   consultar cada explicación, sin carteles sobre las cartas. [Diseño y pruebas](battle_effects/README.md).
 - Tesoros: cofres animados con un consumible; 15 % de trampas. Bolsa inicial vacía.
 - Encuentros: 19 situaciones, incluido un mercader errante por piso nuevo; fondos propios, decisiones de mazo y beneficios según pareja.
-- Cartas: [marcos de juego de mesa tecnológicos](cards/tabletop/README.md), con placas, circuitos y franja de personaje/mejora; botón circular de terminar turno con nuevo aro mecánico.
+- Cartas: [marcos tecnológicos propios por héroe](cards/tabletop/README.md), sin placa de nombre/oficio ni emblema superior; color, refuerzos y circuitos distinguen los cuatro diseños. Botón circular de terminar turno con aro mecánico.
+- Legibilidad de cartas: títulos y descripciones en negrita, con ajuste de texto
+  calculado usando el mismo peso tipográfico.
 - Cartas: cuatro marcos con emblemas por héroe, coste superior derecho y pastilla de
   ataque/defensa. 88 ilustraciones minimalistas nuevas: objetos y trazos que
   representan el efecto, con poco detalle y fondo despejado. [Arte actual](cards/minimal/README.md).
 - Preparación: [celdas, ocho componentes HD, iconos propios y play](preparation_assets/README.md); entrada directa al combate, con guardado antes de las cinemáticas.
+- Energía en batalla: arcos y chispas eléctricas alrededor de la batería, con
+  descarga al consumir energía y cifra central despejada; respeta ajustes de efectos.
 - Equipamiento: ocho reliquias iniciales, una elegida por pareja; ocho consumibles.
   Los élites conceden una reliquia de aventura aleatoria sin duplicados de un catálogo
   de 24 para élites, más nueve exclusivas de guardianes, visible junto a la elección de carta.

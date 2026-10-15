@@ -10,7 +10,7 @@ func verify():
  root.size=Vector2i(1280,720)
  var stage=Control.new();root.add_child(stage)
  var metrics=JSON.parse_string(FileAccess.get_file_as_string("res://data/enemy_pose_sizes.json"))
- var shown=["beast_2","elemental_2","skeleton_1","flying_0","goblin_3","flying_3"]
+ var shown=["beast_2","elemental_2","skeleton_1","flying_0","goblin_3","crypt_wolf"]
  var actors=[]
  var index=0
  for id in metrics:
@@ -19,10 +19,18 @@ func verify():
   actor.set_process(false)
   check(FileAccess.get_sha256("res://assets/enemies/animations/%s.png"%id)==metrics[id].sha256,"metrics match original atlas")
   var parent_scale=actor.scale;var base=actor.base_scale
+  actor.size.x=127.99998
+  actor._place()
+  check(actor.base_scale==base,"subpixel parent rounding cannot halve the enemy " + id)
+  actor.size.x=128.0
+  actor._place()
   actor.acting=true
+  var atlas=actor.sprite.texture.get_image()
+  var idle_height=opaque_height(atlas,0)
   for frame in range(4,8):
    actor.sprite.frame=frame;actor._size_pose()
    var factor=float(metrics[id].scale[frame])
+   check(opaque_height(atlas,frame)*factor>=idle_height*0.8,"complete silhouette throughout attack/counter " + id + " frame " + str(frame))
    check(factor>=1 and factor<=1.3,"conservative correction never shrinks artwork")
    check(actor.sprite.scale.is_equal_approx(Vector2.ONE*base*factor) and actor.scale==parent_scale,"only inner pose scale is corrected")
    var bottom=float(metrics[id].bottom[frame])
@@ -85,3 +93,13 @@ func verify():
   actor.queue_free()
  stage.queue_free();await process_frame
  print("ENEMY POSE SIZES: %d checks / %d failures"%[checks,failures]);quit(1 if failures else 0)
+
+func opaque_height(atlas: Image, frame: int) -> int:
+ var cell=atlas.get_height()
+ var top=cell
+ var bottom=0
+ for y in range(cell):
+  for x in range(frame*cell,(frame+1)*cell):
+   if atlas.get_pixel(x,y).a>=0.5:
+    top=mini(top,y);bottom=maxi(bottom,y+1)
+ return bottom-top

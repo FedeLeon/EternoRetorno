@@ -38,7 +38,11 @@ func _ready() -> void:
 	set_fallen(fallen)
 
 func _place() -> void:
-	base_scale = maxf(1, floor(minf(size.x / 64, size.y / 52))) / 2.0 * 128.0/frame_size
+	# Parent transforms can round a 128px Control to 127.99999px. Applying
+	# floor to that value halves the sprite on the next attack/reaction.
+	# Quantize layout measurements to a thousandth of a pixel first.
+	var layout_size = size.snapped(Vector2.ONE * 0.001)
+	base_scale = maxf(1, floor(minf(layout_size.x / 64, layout_size.y / 52))) / 2.0 * 128.0/frame_size
 	sprite.position = Vector2(round(size.x / 2), size.y)
 	sprite.scale = Vector2.ONE * base_scale
 	_size_pose()

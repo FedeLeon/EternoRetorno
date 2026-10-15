@@ -13,10 +13,17 @@ static func build(ui: Control, exit_y: float) -> void:
 		style.set_corner_radius_all(7)
 		options.add_theme_stylebox_override(state, style)
 	var gear = TextureRect.new()
-	gear.texture = preload("res://assets/ui/settings.svg")
+	gear.name = "SettingsGear"
+	gear.texture = preload("res://assets/ui/settings.png")
 	gear.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	gear.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	gear.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 	gear.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(gear, 9, 9, 52, 52, options)
+	var electricity = preload("res://src/presentation/end_turn_electricity.gd").new()
+	electricity.name = "Electricity"
+	options.add_child(electricity)
+	electricity.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 
 static func exit_game(ui: Control) -> void:
 	ui.game.checkpoint()

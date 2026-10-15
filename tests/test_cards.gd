@@ -27,10 +27,19 @@ func run_tests() -> void:
 				var card = app.card_panel({"id": id, "upgraded": upgraded}, 0, 0, 218, 244, func(): pass, false, true, gallery)
 				await process_frame
 				check(card.get_node("CostNumber").value == int(app.game.content.card({"id": id, "upgraded": upgraded}).cost), "Sprite cost: " + id)
-				var owner_label = card.get_node("CardOwner")
-				check(owner_label.text.contains(app.game.content.heroes[app.game.content.cards[id].owner].civilian.name), "Correct civilian on card: " + id)
-				check(owner_label.text.contains("MEJORADA") == upgraded, "Upgrade state on card: " + id)
-				check(owner_label.get_theme_font("font").get_string_size(owner_label.text, HORIZONTAL_ALIGNMENT_LEFT, -1, owner_label.get_theme_font_size("font_size")).x <= owner_label.size.x, "Owner metadata fits: " + id)
+				check(not card.has_node("CardOwner"), "No identity plaque on card: " + id)
+				check(card.get_node("CardTitle").text.ends_with(" +") == upgraded, "Upgrade remains visible in title: " + id)
+				check(card.get_node("IllustrationSpace").position.y < 0.2 * card.size.y, "Artwork uses removed plaque space: " + id)
+				# The lower strip communicates special effects, never the category again.
+				for icon in card.get_children():
+					if icon is TextureRect and (icon.name.begins_with("CardType") or icon.name == "CardLinkIcon"):
+						var old_shield = icon.texture is AtlasTexture and icon.texture.atlas.resource_path == "res://assets/objects/icons.png" and icon.texture.region.intersects(Rect2(128,64,64,64))
+						check(icon.texture.resource_path != "res://assets/ui/sword.svg" and not old_shield, "No redundant attack/block icon: " + id)
+				var data = app.game.content.card({"id":id,"upgraded":upgraded})
+				if data.poison > 0:
+					check(card.get_node("CardType0").texture.resource_path == "res://assets/ui/poison.svg", "Corrosion icon preserved: " + id)
+				if app.game.content.synergies.any(func(recipe): return id in recipe.cards):
+					check(card.has_node("CardLinkIcon"), "Synergy icon preserved: " + id)
 				for node in card.get_children():
 					if node is Label:
 						check(node.get_line_count() * node.get_line_height() <= node.size.y + 1, "Text clipped: " + node.text)
@@ -57,7 +66,7 @@ func run_tests() -> void:
 	await click(Vector2(640, 630))
 	check(app.selected_card == 0, "Illustration passes clicks to card")
 	var hp = app.game.run.combat.enemies[0].hp
-	await click(Vector2(990, 330))
+	await click(app.layer.get_node("EnemyTarget0").get_global_rect().get_center())
 	while app.combat_busy:
 		await process_frame
 	check(app.game.run.combat.enemies[0].hp < hp and app.game.run.combat.energy == 2, "Card and target resolve correctly")
@@ -88,7 +97,7 @@ func run_tests() -> void:
 			check(actor.get_node_or_null("TargetGlow") == null and actor.get_parent().disabled, "Area never highlights/enables own heroes")
 		for actor in app.enemy_art.values():
 			check(actor.get_node_or_null("TargetGlow") != null and not actor.get_parent().disabled, "Area highlights/enables every living enemy")
-		await click(Vector2(875 + chosen * 234, 330))
+		await click(app.layer.get_node("EnemyTarget%d" % chosen).get_global_rect().get_center())
 		while app.combat_busy: await process_frame
 		check(battle.enemies.all(func(e): return e.hp < 100), "Clicking either enemy applies area damage to both")
 	app.game.run.combat.hand = [{"id":"mage_storm", "upgraded":false}]

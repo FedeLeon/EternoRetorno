@@ -11,7 +11,7 @@ def imported_bytes(text):
     return sum((ROOT / p).stat().st_size for p in re.findall(r'^path(?:\.\w+)?="res://([^"]+)"', text, re.M) if (ROOT / p).exists())
 
 def policy(path):
-    if path.startswith(('assets/equipment/components/', 'assets/run_setup/', 'assets/forge/badges/')) or path in ['assets/ui/cell.png', 'assets/ui/battle_energy_cell.png']:
+    if path.startswith(('assets/equipment/components/', 'assets/run_setup/', 'assets/forge/badges/')) or path in ['assets/ui/cell.png', 'assets/ui/battle_energy_cell.png', 'assets/ui/settings.png']:
         return 1, 0.9, 512  # Dedicated HD preparation icons.
     if path == 'assets/camp/fire-flames.png':
         return 1, 0.9, 0  # 24 fixed-region transparent flame poses.
@@ -28,15 +28,15 @@ def policy(path):
     # Atlas regions in sprites and original card art use fixed pixel coordinates.
     if path.startswith('assets/encounters/'):
         return 1, 0.85, 1280
-    if path.startswith('assets/collection/icons/'):
-        return 0, 0.85, 256
+    if path.startswith('assets/collection/icons/') or path == 'assets/collection/secret.png':
+        return 1, 0.9, 512  # Detailed generated comic achievement illustrations.
     if path.startswith('assets/comic/static/'):
         return 1, 0.9, 0  # Full-resolution static hero illustrations with alpha.
     if path.startswith('assets/comic/'):
         return 1, 0.85, 0  # Keep animation frames and portrait crops unchanged.
     if path.startswith('assets/cards/art/minimal/'):
-        return 0, 0.9, 512  # Sparse pencil strokes: lossless bounded illustrations.
-    if path.startswith('assets/cards/frames/'):
+        return 0, 0.9, 512  # Detailed pixel illustrations: lossless bounded images.
+    if path.startswith(('assets/cards/frames/', 'assets/cards/backs/')):
         return 0, 0.7, 768
     if path == 'assets/map/minimal/parchment.png':
         return 0, 0.85, 1280  # Full-screen drawing, not a node icon.

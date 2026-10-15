@@ -49,8 +49,8 @@ func run_tests() -> void:
 	check(app.selected_card == index, "Touch selects peeking card")
 	check(not app.layer.find_children("TargetGlow", "ColorRect", true, false).is_empty(), "Valid targets glow")
 	var selected = app.layer.get_node("CombatHand").get_child(0).get_child(index)
-	check(selected.global_position.y == 358 and selected.global_position.y + selected.size.y <= 720, "Selected card fully visible")
-	check(selected.get_node("IllustrationSpace").position.x == 18, "Illustration has side margins")
+	check(selected.global_position.y == preload("res://src/ui/components/combat_layout.gd").HAND_TOP and selected.global_position.y + selected.size.y <= 720, "Selected card fully visible")
+	check(is_equal_approx(selected.get_node("IllustrationSpace").position.x, selected.size.x * 0.095), "Illustration has side margins")
 	await shot("selected-card")
 	app.pause_menu()
 	await process_frame

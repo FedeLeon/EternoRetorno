@@ -20,7 +20,11 @@ func run_tests():
 	check(app.layer.get_node("DayCampBackground").texture.resource_path.ends_with("dusk/background.png"), "dusk landscape is loaded")
 	check(app.layer.has_node("ProjectsBuilding") and app.layer.has_node("RefugeBuilding"), "permanent buildings present without construction")
 	var fire = app.layer.get_node("DayCampfire")
-	check(fire.sketch_style and fire.flame.sprite_frames.get_frame_count("default") == 24, "dusk fire has 24 drawn frames")
+	check(fire.embers_only and not fire.has_node("Flames") and fire.has_node("InteriorEmbers"), "camp uses interior light and sparks without flames")
+	check(fire.position == Vector2(674, 409), "barrel base is centred on the illustrated camp circle")
+	var barrel_transform = fire.barrel.transform
+	await create_timer(0.3).timeout
+	check(fire.barrel.transform == barrel_transform and fire.get_node("InteriorEmbers").elapsed > 0, "embers move while metal barrel stays still")
 	await capture("unbuilt")
 	for i in range(IDS.size()):
 		var bought: bool
@@ -41,6 +45,12 @@ func run_tests():
 		var opaque = picture.texture.get_image().get_used_rect()
 		check(float(opaque.size.x) / picture.texture.get_width() > 0.97 and float(opaque.size.y) / picture.texture.get_height() > 0.97, "no unused image margins inside building slot: " + id)
 	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit", "ProjectsEntrance"]
+	for pair in [["Plot0", "MarketBuilding"], ["Plot3", "ChurchBuilding"]]:
+		var caption: Rect2 = app.layer.get_node(pair[0]).get_meta("caption_rect")
+		var picture: Control = app.layer.get_node(pair[1])
+		check(caption.end.y <= picture.position.y, "market and laboratory captions sit above roofs")
+		var entrance = app.layer.get_node(pair[0])
+		check(entrance.artwork_rect.position == picture.position - entrance.position, "raised caption preserves artwork hit mask")
 	for id in entrances:
 		var area: Rect2 = app.layer.get_node(id).get_meta("caption_rect")
 		check(Rect2(0,80,1280,640).encloses(area), "caption stays clear of header and viewport: " + id)

@@ -5,6 +5,7 @@ var gear: Dictionary = {}
 var sprite: AnimatedSprite2D
 var fallen = false
 var action_revision = 0
+var idle_motion: RefCounted
 static var cache: Dictionary = {}
 const ACTIONS = ["idle","attack","skill","guard","hurt","death","run"]
 func frames() -> SpriteFrames:
@@ -37,14 +38,31 @@ func _ready() -> void:
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	sprite = AnimatedSprite2D.new();sprite.centered=false;sprite.sprite_frames=frames()
 	add_child(sprite);resized.connect(_place);sprite.animation_changed.connect(_place);_place()
+	# Only the running gait needs per-frame foot placement; guard/actions keep
+	# their own offsets and must not be reset by this callback.
+	sprite.frame_changed.connect(func():
+		if sprite.animation == "run": _place()
+	)
 	apply_gear(gear)
+	idle_motion = preload("res://src/presentation/hero_guard_idle.gd").new(self)
 	set_fallen(fallen)
+func _process(delta: float) -> void:
+	if idle_motion != null: idle_motion.advance(delta)
 func _place() -> void:
 	if sprite==null:return
 	var texture = sprite.sprite_frames.get_frame_texture(sprite.animation,0)
 	var cell: Vector2 = texture.get_size() if texture != null else Vector2(256,256)
-	sprite.scale=Vector2(0.5,0.5)
-	sprite.position=Vector2((size.x-cell.x*0.5)/2,size.y-(cell.y-16)*0.5)
+	var factor = 0.5
+	if sprite.animation == "run":
+		factor *= preload("res://src/presentation/hero_run.gd").height_ratio(sprite.sprite_frames)
+		var current = sprite.sprite_frames.get_frame_texture("run",sprite.frame)
+		var bottom = preload("res://src/presentation/hero_grounding.gd").bottom(current)
+		sprite.offset = Vector2.ZERO
+		sprite.scale = Vector2.ONE * factor
+		sprite.position = Vector2((size.x-cell.x*factor)/2,size.y-bottom*factor)
+	else:
+		sprite.scale=Vector2(0.5,0.5)
+		sprite.position=Vector2((size.x-cell.x*0.5)/2,size.y-(cell.y-16)*0.5)
 func apply_gear(levels: Dictionary) -> void:
 	gear=levels
 	if sprite==null:return
@@ -55,6 +73,7 @@ func apply_gear(levels: Dictionary) -> void:
 func set_fallen(value: bool) -> void:
 	fallen=value
 	if sprite==null:return
+	if idle_motion != null: idle_motion.interrupt()
 	if value:sprite.play("death");sprite.pause();sprite.frame=11
 	else:
 		sprite.play("idle")
@@ -66,6 +85,7 @@ func play_once(animation: String) -> void:
 	action_revision += 1
 	var revision = action_revision
 	_blend_pose()
+	idle_motion.interrupt()
 	sprite.play(action);sprite.frame=0
 	if action == "idle":
 		sprite.pause()
@@ -85,15 +105,16 @@ func play_once(animation: String) -> void:
 		sprite.pause()
 		sprite.frame = 0
 
-func _blend_pose() -> void:
+func _blend_pose(seconds: float = 0.08) -> void:
 	if not sprite.sprite_frames.has_animation(sprite.animation): return
 	var ghost = Sprite2D.new()
 	ghost.centered = false
 	ghost.texture = sprite.sprite_frames.get_frame_texture(sprite.animation, sprite.frame)
 	ghost.position = sprite.position
 	ghost.scale = sprite.scale
+	ghost.offset = sprite.offset
 	ghost.material = sprite.material
 	add_child(ghost)
 	var tween = create_tween()
-	tween.tween_property(ghost, "modulate:a", 0.0, 0.08)
+	tween.tween_property(ghost, "modulate:a", 0.0, seconds)
 	tween.tween_callback(ghost.queue_free)

@@ -27,7 +27,7 @@ func run_tests():
     var crop=image.get_region(Rect2i(sheet.get_frame_texture(action,frame).region));signatures[hash(crop.get_data())]=true
     check(crop.get_pixel(0,0).a<0.01,"transparent pose background")
     check(preload("res://scripts/sketchbook_sheet_packer.gd").bottom(crop)==368,"fixed boot baseline "+heroes[i]+action+str(frame))
-   check(signatures.size()>=4 and signatures.size()<=5,"four action keyposes with held timing and idle return")
+   check(signatures.size() == 12 if action in ["thrust", "sweep"] else signatures.size() >= 4 and signatures.size() <= 5, "authored pose count matches action revision")
  for action in ["idle","guard"]:
   for actor in actors:actor.sprite.play(action);actor.sprite.pause();actor.sprite.frame=5
   await process_frame

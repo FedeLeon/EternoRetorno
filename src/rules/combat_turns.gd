@@ -4,7 +4,7 @@ static func start(game: RefCounted) -> void:
 	var battle = game.run.combat
 	battle.turn += 1
 	preload("res://src/rules/boss_mechanics.gd").new_turn(game)
-	battle.energy = 99 if game.run.get("training", false) else game.turn_energy()
+	battle.energy = 3 if game.run.has("guided_lesson") else (99 if game.run.get("training", false) else game.turn_energy())
 	for h in game.run.heroes:
 		h.block = game.relic_bonus(h, "block") if h.hp > 0 else 0
 		game.Modifiers.clear(h)
@@ -27,6 +27,7 @@ static func start(game: RefCounted) -> void:
 		preload("res://src/rules/boss_mechanics.gd").plan(game, enemy, intent)
 		preload("res://src/rules/enemy_coordination.gd").plan(game, enemy, intent)
 		if game.run.get("training", false): intent = preload("res://src/rules/training_config.gd").intent(game, enemy, intent)
+		if game.run.has("guided_lesson"): intent.target = 0
 		enemy.intent = intent
 	preload("res://src/rules/combat_depth.gd").release(game)
 	var ended = game._check_combat_end()
@@ -34,6 +35,7 @@ static func start(game: RefCounted) -> void:
 	for event in game.resolved_card_hits:
 		if event.kind == "revive": game.resolved_prepared_hits.append(event)
 	if ended: return
+	preload("res://src/rules/card_reserve.gd").restore(game)
 	game._draw(6 + (game.RunRelics.amount(game.run, game.content.relics, "opening_draw") if battle.turn == 1 else 0))
 
 

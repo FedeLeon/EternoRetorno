@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64"><g fill="#f6b15a" stroke="#070d16" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M7 19H57V54H7Z"/><path d="M23 19V9H41V19M7 33H57M28 29H36V39H28Z" fill="none"/></g><g fill="#f6b15a" stroke="#f6b15a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M7 19H57V54H7Z"/><path d="M23 19V9H41V19M7 33H57M28 29H36V39H28Z" fill="none"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64"><g stroke="#080e19" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
+<path d="M7 24L16 13H48L57 24V55L51 61H13L7 55Z" fill="#d28b43"/>
+<path d="M7 24H57V33H7Z" fill="#f1c977"/>
+<path d="M13 36V53H23V36M41 36V53H51V36" fill="#86613e"/>
+<path d="M18 14V24M46 14V24M14 29H22M42 29H50" stroke="#fff0b4" stroke-width="2"/>
+<path d="M26 28H38V42H26Z" fill="#394c5a"/>
+<path d="M30 32H34V38H30Z" fill="#7eede7" stroke="none"/>
+<path d="M31 3V8M53 4L50 9M10 5L13 9" stroke="#ffe2a0" stroke-width="2.5"/>
+</g></svg>

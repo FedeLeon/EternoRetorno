@@ -1,4 +1,13 @@
-## Estado local posterior — 14/10/2026
+## Auditoría local actual — 15/10/2026
+
+[Informe y límites](quality/AUDITORIA_2026_10_15.md): 98/98 suites headless,
+contenido 1510/0, 683 recursos con hashes/fuentes válidos, atlas 96/928 sin
+errores de umbral e ilustraciones 88 únicas. Render nativo aislado: combate,
+enemigos y opciones 125/0, galerías de edificios 84/0. Cinco capturas actuales
+revisadas; 35 suites con avisos de objetos vivos al cierre. Sin exportar ni
+certificar Web/dispositivo, rendimiento o escucha de audio. No cambia reglas.
+
+## Estado local anterior — 14/10/2026
 
 [Limpieza actual, inventario y validación](cleanup/2026-10-14.md): 88 suites
 aprobadas (82 iniciales y seis repetidas tras actualizar expectativas), contenido

@@ -5,6 +5,8 @@ static func description(combo: Dictionary) -> String:
 	if combo.poison > 0: text += "\n%d de corrosión." % combo.poison
 	if combo.block > 0: text += "\n%d de bloqueo a ambos." % combo.block
 	if combo.heal > 0: text += "\nCura %d a ambos." % combo.heal
+	var tactic = combo.get("tactic_text", "")
+	if not tactic.is_empty(): text += "\n" + tactic
 	return text
 
 static func build(ui: Control, combos: Array, selected: String, energy: int, cards: Dictionary, select: Callable) -> void:
@@ -12,15 +14,21 @@ static func build(ui: Control, combos: Array, selected: String, energy: int, car
 		var combo = combos[i]
 		var chosen = selected == combo.id
 		var caption = "%s\nCombinar · %d energía" % [combo.name, combo.cost]
-		var b = ui.button(caption, 530, 113 + i * 70, 228, 64, func(): select.call(combo.id))
+		var crowded: bool = ui.game.run.combat.enemies.size() >= 3
+		var b = ui.button(caption, 12 if crowded else 530, 424 if crowded else 113 + i * 70, 136 if crowded else 228, 94 if crowded else 64, func(): select.call(combo.id))
 		b.name = "Synergy_" + combo.id
-		b.add_theme_font_size_override("font_size", 16)
+		b.icon = load("res://assets/synergies/%s.svg" % combo.id)
+		b.add_theme_constant_override("icon_max_width", 36)
+		b.expand_icon = true
+		b.modulate = Color.WHITE if energy >= combo.cost else Color(0.65, 0.65, 0.7)
+		b.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		b.add_theme_font_size_override("font_size", 14 if crowded else 16)
 		b.add_theme_color_override("font_color", ui.GOLD if chosen else ui.TEXT)
 		b.tooltip_text = "%s + %s\n%s\nDescarta ambas cartas." % [cards[combo.cards[0]].name, cards[combo.cards[1]].name, description(combo)]
-		if chosen:
+		if chosen and not crowded:
 			var note = description(combo) + ("\nTocá un enemigo." if energy >= combo.cost else "\nFalta energía.")
-			ui.panel(530, 185, 228, 151)
-			ui.label_at(note, 534, 189, 220, 143, 17, ui.GOLD)
+			ui.panel(530, 185, 228, 214)
+			ui.label_at(note, 534, 189, 220, 206, 16, ui.GOLD)
 
 static func mark(_ui: Control, button: Button, card_id: String, recipes: Array, cards: Dictionary) -> void:
 	var partners: Array[String] = []

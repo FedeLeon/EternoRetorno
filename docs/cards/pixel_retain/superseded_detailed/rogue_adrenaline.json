@@ -1,0 +1,11 @@
+{
+  "id": "rogue_adrenaline",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/rogue_adrenaline.png",
+  "source": "docs/cards/pixel_retain/sources/rogue_adrenaline.png",
+  "prompt": "Use case: illustration-story. ONE standalone landscape 3:2 game card illustration for Eterno Retorno. Style reference is the first image's richly detailed CRISP PIXEL ART, chunky hand-placed pixel clusters, dark outlines, dramatic limited palette, light highlights, NO smooth comic rendering, NO paper sketch filter. Subject belongs to postapocalyptic civilians fighting machines. Hero identity: Mauro, civilian APOTHECARY, FACE FULLY VISIBLE without mask or hood, dark hair, teal medical utility jacket, knives and acid vials, green teal identity. Card concept in Spanish: \"Adrenalina\". Mechanical meaning for visual storytelling only: {\"id\":\"rogue_adrenaline\",\"owner\":\"rogue\",\"name\":\"Adrenalina\",\"cost\":1,\"target\":\"self\",\"damage\":0,\"block\":5,\"heal\":0,\"poison\":0,\"hits\":1,\"pierce\":false,\"locked\":false,\"tier\":\"market\",\"market_price\":180,\"strength_pct\":25,\"support\":true}. Illustrate this specific action with clear readable composition, tools and scavenged technology, strong silhouette, one focused visual idea, industrial shadows with green accents. Some utility cards can show tools or symbolic objects instead of entire hero. No fantasy armor, no medieval swords, no elves, no magic wizards. NO frame, NO card template, NO letters, NO words, NO stats or numbers, NO UI. Fill entire landscape canvas with the illustration. Preserve the physical identity of the civilian hero if present.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6f8cc020-0fd0-428a-bac2-473f27233b7b.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "reference": "docs/cards/pixel_retain/sources/frame_warrior.png"
+}

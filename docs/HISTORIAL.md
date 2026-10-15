@@ -1,5 +1,460 @@
 # Historial de desarrollo
 
+## 15/10/2026 — Guardia dibujada, golpes propios, parejas y práctica
+
+- 12 atlas nuevos para los cuatro civiles: 12 poses de guardia continua y
+  12 por cada variante de estocada/barrido. Transiciones suaves y pies anclados;
+  conserva prioridad de carrera/caída y primeros planos estáticos con efectos.
+- Seis emblemas de pareja; marcas en las dos instancias listas para combinar,
+  enlace visual y seis interacciones condicionadas. Las aventuras nuevas activan
+  la versión; guardados anteriores conservan efectos. Control fuera de objetivos
+  cuando hay tres enemigos.
+- Práctica interactiva con la pareja elegida para bloqueo, respuesta enemiga,
+  reserva y sinergia. Game temporal sin guardado; restaura aventura/RNG originales.
+  Reinicio/reposición y salida disponibles. Tutorial existente ofrece Practicar.
+- Tres enemigos frecuentes y los tres jefes reciben ocho poses propias cada uno;
+  anticipación/golpe/recuperación diferenciados por perfil. Baseline y correcciones
+  de tamaño medidas. 192 dibujos nuevos en total; fuentes/prompts conservados.
+- Importadores reproducibles y protección frente a regeneradores anteriores;
+  reglas, interfaz y presentación en módulos propios. Sin ampliar `main.gd`.
+- Validación, incidencias corregidas y límites locales en
+  [refinamiento de combate](combat_refinement/README.md). Sin exportar.
+
+## 15/10/2026 — Héroes más cerca de sus datos y de la mano
+
+- Héroes e iconos inferiores bajan 16 px; límite común adaptativo cuando hay
+  muchos estados. Mantiene escala, barras, enemigos, cartas y fondo.
+- Distribución/inspección **184/0 nativo aislado**, captura revisada; efectos
+  **883/0 headless**. Audio Dummy, avisos al cierre; sin exportar ni validar
+  Web/dispositivo. [Detalle](battle_effects/README.md).
+
+## 15/10/2026 — Inspección enemiga compacta e ilustrada por datos
+
+- Marco de 560 px, altura ajustada hasta 440 y scroll interior; iconos existentes
+  para vida, bloqueo, rol, ataque, bloqueo previsto, contraataque y efectos.
+  Nombre arriba, cierre al pie y batalla visible alrededor. Componentes de
+  preparación de datos y presentación separados; sin nuevos assets/reglas.
+- Inspección/distribución **184/0 nativo aislado y 184/0 headless**; capturas
+  normales y con muchos efectos/texto grande revisadas. Audio Dummy, avisos
+  de recursos al cierre; sin exportar ni validar Web/dispositivo.
+  [Detalle](battle_effects/README.md).
+
+## 15/10/2026 — Carta guardada en la mano y reserva reversible
+
+- Reverso intercalado en el lugar de la carta; tocarlo o usar Recuperar carta
+  la vuelve jugable y habilita guardar otra. Una reserva activa, sin coste de
+  energía. Conserva instancia/mejoras, posición al jugar otras cartas y saves
+  anteriores. Checkpoint antes de cada volteo; nuevas reglas en el módulo de
+  reserva y fachada `Game.unreserve_card`.
+- Mano visual separada de índices jugables mediante metadatos; cenizas solo
+  para cartas consumidas, nunca la boca abajo. Resumen de mazo incluye esa carta
+  en Mano. Sin nuevos assets; reutiliza los reversos y el volteo existentes.
+- Reglas **36/0 headless**, interfaz **30/0 nativo aislado**, captura revisada.
+  Regresión general **99/99** antes del ajuste final del contador; después reglas,
+  UI nativa y recompensas/mazo repetidas sin fallos. Audio Dummy, avisos al cerrar
+  UI; sin exportar ni validar Web/dispositivo. [Detalle](cards/pixel_retain/README.md).
+
+## 15/10/2026 — Arrastre de cartas sin aviso que tape la batalla
+
+- Eliminado el cartel oscuro de instrucciones/previsualización en `card_drag`;
+  conserva imagen flotante, resaltado, reconocimiento y validación de objetivos.
+  Retirado el código exclusivo del cartel, sin cambios de reglas o guardados.
+- Arrastre/interfaz **17/0 nativo aislado**, captura de arrastre revisada;
+  mouse/táctil simulados, audio Dummy. Sin exportar ni validar Web/dispositivo.
+  [Detalle](cards/pixel_retain/README.md).
+
+## 15/10/2026 — Actores más grandes y franja de intenciones más baja
+
+- Suelo habitual de 303 a 327, límite de información de 382 a 406; héroes
+  habituales de 191 a 215 px, enemigos ampliados con límite de silueta.
+  Mano normal conservada; carta ampliada proporcional de 202×302 a y=414,
+  completa y separada 8 px de los efectos. Valores compartidos en `combat_layout`.
+- Distribución/inspección **132/0 nativo aislado**, capturas de tres escenarios
+  y dos parejas revisadas; efectos **883/0 nativo aislado**, captura apilada
+  revisada. Headless: distribución **41/0**, efectos **883/0**,
+  apoyo **665/0**, HUD **112/0**. Audio Dummy, avisos al cierre; sin exportación
+  ni pruebas Web/dispositivo. [Detalle](battle_effects/README.md).
+
+## 15/10/2026 — Letra «e» completa en las cartas
+
+- Reproducido el hueco de Source Sans 3 negrita en MSDF a 48/96/128 px.
+  `card_typography.gd` usa rasterizado con oversampling 2 manteniendo peso 700
+  y fuente. Cambio compartido para título, tipo y descripción, sin alterar
+  números, assets o reglas. Comparación y cuatro frentes revisados en nativo.
+- Cartas **1361/0**, apoyo **537/0**, headless; cartas/reserva **18/0 nativo
+  aislado**. Audio Dummy, avisos de recursos al cerrar nativo; sin exportar ni
+  probar Web/dispositivo. [Diagnóstico](cards/pixel_retain/README.md).
+
+## 15/10/2026 — Combate con información al suelo e inspección de enemigos
+
+- Barras elevadas, personajes ampliados con escala uniforme/límite de altura,
+  nombres enemigos retirados del escenario y datos al tocar sin carta/enlace
+  seleccionado. Conserva objetivos de ataque, efectos pulsables, bloqueo junto
+  a vida y desaparición de información al caer.
+- Intenciones/estados debajo de los pies; franja reservada sobre la mano para
+  que las cartas no intercepten los clics. Carta seleccionada completa a y=390.
+  Componentes propios de geometría e inspección; sin ampliar `main.gd`.
+- Fondo industrial con héroe gigante corregido mediante `image_gen.imagegen`,
+  fuente/prompts/cola/hashes conservados. Encuadre del suelo adaptado por
+  mazmorra, incluida la tercera. Sin cambios en reglas o guardados.
+- Prueba nueva **114/0 nativo aislado** y efectos **883/0 nativo aislado**;
+  capturas de tres escenarios/ambas parejas/estados apilados revisadas.
+  Regresiones **97/99 inicialmente**, después HUD **112/0** y sinergias **19/0**
+  al actualizar expectativas de escala/coordenadas. Contenido **1510/0** y
+  arte **683 recursos válidos**. Audio Dummy, avisos al cierre; sin exportación
+  ni validar Web/dispositivo. [Detalle](battle_effects/README.md).
+
+## 15/10/2026 — Rayos enemigos de pantalla completa
+
+- Los primeros planos enemigos activan el mismo alcance de rayos que los
+  héroes, hasta fuera de la pantalla. Conservan imagen estática, partículas,
+  encuadre, duración y preferencias; sin nuevos assets ni cambios de reglas.
+- Suite de primeros planos de 56 enemigos **sin fallos, nativo aislado**;
+  captura de ataque revisada. Regresión de héroes **260/0 headless**. Audio
+  Dummy; sin exportar ni probar Web/dispositivo.
+  [Detalle](animation_review/README.md).
+
+## 15/10/2026 — Centrado y legibilidad de las cartas
+
+- Título centrado en el papel; coste y tipo subidos para coincidir con sus
+  espacios del marco. Descripción más grande/en negrita, ancho ampliado e
+  interlineado, con reducción por líneas reales para explicaciones largas.
+  Pastilla inferior solo para efectos/enlaces, sin espada/escudo redundantes.
+  Reutiliza los componentes compartidos; sin nuevos assets ni cambios de reglas.
+- Cartas **1361/0**, apoyo **537/0**, sinergias **19/0**, headless; cartas/reserva
+  **18/0 nativo aislado**, capturas de cuatro héroes y mano revisadas. Audio
+  Dummy, avisos de recursos al cierre sin errores de script/aserciones;
+  sin exportar ni probar Web/dispositivo. [Detalle](cards/pixel_retain/README.md).
+
+## 15/10/2026 — Auditoría integral y prioridades de mejora
+
+- Revisión de catálogos, código, importadores, assets, duplicados, tamaños y
+  muestra visual actual. Informe con inventario, candidatos de limpieza y
+  propuestas de parejas, claridad, animación, audio y pruebas humanas.
+  No cambia reglas/arte/guardados ni borra archivos o exportaciones.
+- **98/98 suites headless**, contenido **1510/0**, arte **683 recursos válidos**,
+  atlas **96 hojas/928 cuadros sin errores de umbral**, cartas **88 ilustraciones
+  únicas**. Nativo aislado: combate/enemigos/opciones **125/0**, edificios **84/0**;
+  cinco capturas revisadas. **35 suites con avisos al cierre**, pendientes de
+  diagnóstico. Audio Dummy; sin exportación, Web, dispositivo ni perfilado.
+  [Informe](quality/AUDITORIA_2026_10_15.md).
+
+## 15/10/2026 — Arte de logros desbloqueados en pantalla completa
+
+- Botón «Ver ilustración» en el detalle derecho de logros desbloqueados.
+  Visor oscuro de toda la vista, imagen proporcionada, cierre por Volver/Escape
+  y recuperación de foco/selección. Pendientes y secretos sin descubrir siguen
+  ocultos. Texturas actuales reutilizadas, sin cambios en progreso/guardados.
+- Visor **21/0 nativo aislado**, capturas normal/secreto revisadas; regresión
+  de Colección **50/0 headless**. Audio Dummy; avisos de recursos al cerrar,
+  sin errores de script/aserciones. Sin exportar ni probar Web/dispositivo.
+  [Detalle](collection/README.md).
+
+
+## 15/10/2026 — Rayos de primeros planos sin cortes dentro de la pantalla
+
+- Luz radial de ataque/defensa de héroes extendida desde su origen hasta fuera
+  de la vista completa; lienzo del tamaño del padre y longitud por esquina más
+  lejana. Conserva figura, partículas, opacidad, tiempos y preferencias.
+  Sin cambios de assets, reglas ni guardados; modo enemigo sigue siendo local.
+- Primeros planos de héroes **260/0 nativo aislado**, capturas de ataque/defensa
+  revisadas. Imágenes estáticas **33/0** y enemigos **sin fallos**, headless.
+  Audio Dummy; sin exportar ni probar Web/dispositivo.
+  [Detalle](animation_review/README.md).
+
+
+## 15/10/2026 — Assets de cómic para el menú lateral del mapa
+
+- Tres generaciones individuales: Grupo con supervivientes, Mazo con cartas
+  y Caminos/Mapa con plano bifurcado. Fuentes/prompts conservados, PNG activos
+  de 256 px presentados a 64 px, rótulos alineados y navegación conservada.
+  Importador reutilizado con `--sidebar`; inventario/tipo derivado actualizados.
+- Mapa **141/0** y caminos **153/0**, nativo aislado; capturas revisadas.
+  Auditoría **683 recursos válidos, sin pendientes/desajustes**. Audio Dummy;
+  avisos de recursos al cerrar sin errores de script/aserciones. Sin exportar
+  ni probar Web/dispositivo. [Detalle](map/sidebar_icons/README.md).
+
+
+## 15/10/2026 — Iconos de mapa y caminos ilustrados en cómic
+
+- Seis generaciones individuales: combate, descanso, encuentro, tesoro, élite
+  y jefe. Transparentes, tinta negra y borde marfil; PNG de 256 px conservando
+  rutas/UIDs, originales de 1254 px y prompts. Importador dedicado y protección
+  contra sobrescritura vectorial. Icono principal de caminos centrado a 76 px.
+- Mapa **141/0** y caminos **153/0**, nativo aislado; originales y capturas
+  revisados. Auditoría **680 recursos válidos, sin pendientes/desajustes**.
+  Audio Dummy; avisos de recursos al cerrar, sin errores de script/aserciones.
+  Sin exportar ni probar Web/dispositivo. [Detalle](map/comic_icons/README.md).
+
+
+## 15/10/2026 — Carrera de victoria con escala y apoyo estables
+
+- Los actores HD inician la carrera con su controlador, cancelando acciones
+  anteriores y evitando ajustes clásicos de 128 px. Escala proporcional única
+  calculada desde los dibujos actuales; pies alineados por cuadro y recorrido
+  horizontal. Sin cambiar assets, velocidad de salida, reglas ni guardados.
+- Regresión nueva: **44 fallos antes**, ahora **364/0 headless y 348/0 nativo**.
+  Cuatro héroes, 12 cuadros, dos victorias reales y capturas revisadas. Carrera
+  clásica **93/0**, detallados **1121/0**, guardia **906/0**, cuerpo a cuerpo
+  **1728/0**, headless. Audio Dummy; avisos de recursos al cerrar sin errores
+  de script/aserciones. Sin exportar ni probar Web/dispositivo.
+  [Detalle](animation_review/README.md).
+
+
+## 15/10/2026 — Enemigos sin encogerse al contraatacar
+
+- Corrección de escala ante medidas subpíxel del contenedor: evita que `floor`
+  reduzca a la mitad el dibujo al reproducir ataques/contraataques.
+- Separadores revisados de una fuente con filas desiguales: recupera los dibujos
+  completos de sabueso, supervisor y dos drones; ocho PNG, hashes y métricas.
+  Procedencia conservada, importador reproducible por hoja y sin cambios jugables.
+- Poses **1147/0 headless**; combo con tres contraataques para cuatro máquinas
+  **400/0 headless y 410/0 nativo aislado**. Capturas del sabueso/supervisor
+  revisadas; auditoría **680 recursos, 140 fuentes, sin pendientes**.
+  Enemigos **1450/0**, cuerpo a cuerpo **1726/0**, presentación **46/0** y
+  movimiento sin fallos, headless; avisos de recursos al cerrar sin errores de
+  script/aserciones. Sin exportar ni probar Web/dispositivo.
+  [Detalle](animation_review/README.md).
+
+
+## 15/10/2026 — Escudo de bloqueo activo oscuro
+
+- SVG compartido en carbón y un único borde claro fino, sin rellenos/contornos
+  interiores detrás de la cifra. Generador nativo e inventario/hash actualizados.
+  Posiciones, cifras, diálogos, reglas y disolución se conservan.
+- HUD **113/0 nativo**, captura revisada para héroe/enemigo; cenizas **5/0 headless**.
+  Audio Dummy; avisos de recursos al cerrar, sin errores de script/aserciones.
+  Sin exportación ni prueba Web/dispositivo. [Detalle](battle_effects/README.md).
+
+
+## 15/10/2026 — Selección de héroes con brasas y chispas
+
+- `selection_screen.gd` activa el modo `embers_only` ya usado por el campamento:
+  mismo `barrel_embers.gd`, tacho fijo, luz cálida y chispas; no se crea `Flames`.
+  Conserva iluminación de héroes, elección y preparación, sin cambiar guardados.
+- Prueba de selección actualizada: **46/0 headless y 46/0 nativo**; capturas
+  revisadas. Ausencia de llamas, cuerpo estable, seis parejas e inicio de aventura.
+  Audio Dummy; avisos de recursos al cerrar, sin errores de script/aserciones.
+  Sin exportar ni probar Web/dispositivo físico. [Detalle](camp/README.md).
+
+
+## 15/10/2026 — Refugio central, Aventuras y animales del campamento
+
+- Refugio sobre el círculo central, separado del Mercado. Aventuras visible de
+  164×164 con Play a 128 px, rasterización SVG 2× y electricidad cuadrada; menú
+  de aventura nueva/continuar, máscaras y carteles preservados.
+- Dos hojas propias de cómic con ocho poses por animal. Perro junto al Taller
+  y gato a la derecha del Laboratorio: pasos alternados, olfateo/comida y pausas,
+  escala/apoyo constantes, recorridos cortos y RNG visual sin tocar la partida.
+- [Originales, prompts e importación](base_camp/companions/README.md). Pruebas:
+  animales/interacción **54/0 headless y nativo**, solares **155/0 nativo**,
+  campamento **38/0 nativo**; Inicio **16/0**, HUD **112/0**, expansión **33/0**
+  headless. Capturas revisadas. Audio Dummy; avisos de recursos al cerrar algunas
+  suites, sin errores de script/aserciones. Sin exportaciones ni prueba Web/móvil.
+
+
+## 15/10/2026 — Cartas, reversos y reserva por turno
+
+- Cuatro frentes de metal/papel inspirados en la referencia y cuatro reversos
+  propios de los oficios. El usuario aprobó los marcos/reversos y pidió reducir
+  el detalle de las ilustraciones: 88 viñetas individuales en cómic minimalista,
+  fondo limpio, objetos/acciones legibles y colores del héroe. Textos/cifras
+  dinámicos, en negrita; categoría en cinta central y selección más vertical.
+- Una reserva gratis por turno: carta boca abajo fuera de la mano, regreso
+  además del robo normal, conservación de mejoras y paso a inactivas si cae su
+  dueño. Game guarda antes del volteo; cargar no reinicia el límite. Resumen de
+  mazo incluye reservas; partidas antiguas admiten campos opcionales.
+- Reglas en `card_reserve`, presentación en `card_flip`, coordinación en
+  `card_reserve_navigation`; composición de mano extraída a `combat_hand`.
+  Importador propio con preflight y protección frente a bancos/SVG anteriores.
+- Detectado y corregido desborde de 2 px de intenciones con los tres indicadores
+  y dos retratos; las caras se ajustan al espacio disponible de su columna.
+- [Alcance, fuentes, prompts y validación](cards/pixel_retain/README.md).
+  Validación final: **94/94 suites headless**, reserva **23/0**, UI **18/0 nativo**
+  con clic real, catálogo **88/0 nativo**; capturas finales revisadas. Auditoría
+  de **96 recursos** propios, 88 ilustraciones únicas y **678 hashes** generales
+  válidos. Avisos de recursos al cerrar 32 suites, sin errores de script/aserciones.
+  Audio Dummy, sin exportar ni probar Web/dispositivo; guardado personal intacto.
+
+
+## 15/10/2026 — Engranaje ilustrado con electricidad en inicio
+
+- Asset transparente de cómic generado individualmente con herramienta integrada:
+  metal gastado, placas violetas, tornillos y canales cian. PNG activo a 512 px;
+  fuente, prompt, referencia y hashes en `ui_buttons/settings/`.
+- Botón superior de configuración reutiliza arcos/chispas de Terminar turno,
+  sin interceptar clics y respetando ajustes de efectos. SVG anterior sustituido,
+  UID de importación conservado y regenerador nativo actualizado. Acciones y
+  guardado intactos; sin sonido adicional ni exportación.
+- Validación actual: inicio **18/0 nativo**, capturas revisadas; icono/alfa,
+  electricidad, clic, volumen, guardado, modos de ventana y salida verificados.
+  Auditoría **674 hashes válidos**. Audio Dummy; avisos de recursos al cerrar
+  sin errores de script/aserciones. Sin probar Web/dispositivo físico.
+
+## 15/10/2026 — Ilustraciones de cómic reales para cada logro
+
+- Sustituidos los 28 pictogramas por 28 ilustraciones generadas individualmente
+  con `image_gen.imagegen`: escenas/objetos detallados, tinta y tramado, desgaste,
+  sombras violetas y luces cian/ámbar. Originales, prompts exactos, referencias,
+  dimensiones y hashes conservados en `collection/comic_illustrations/`.
+- Activos a 512×512, importación a calidad 0,9, detalle ampliado a 184×184 y menor
+  atenuación de logros pendientes. Los cinco secretos conservan su ocultación;
+  requisitos, catálogo y guardados intactos. Máscara secreta con ilustración
+  adicional (29 generaciones en total); seis SVG auxiliares conservados.
+- Importador propio con prevalidación completa; los logros salen de la cola de
+  vectores para que una reconstrucción nativa no restaure los pictogramas.
+- Validación actual: **50/0 nativo**, 28 ilustraciones distintas a 512 px,
+  galería/vistas revisadas; **674 hashes válidos**. Regeneración de 80 vectores y
+  prueba de importación selectiva sin sobrescribir los logros. Audio Dummy,
+  avisos de recursos al cerrar sin errores de script/aserciones. Sin exportar
+  ni probar Web/dispositivo físico.
+
+## 15/10/2026 — Electricidad en Terminar turno
+
+- Arcos y chispas cian alrededor del aro mecánico, con texto despejado; nueva
+  capa `end_turn_electricity.gd` adjunta por el decorador del botón. PNG, área
+  circular, callback y orden del turno intactos; no captura clics ni añade audio.
+- Respeta intensidad/calidad de efectos y se apaga con el botón deshabilitado.
+  Geometría nativa sin nuevos PNG, RNG ni cambios de reglas o guardado.
+- Validación actual: HUD **113/0 nativo**, captura revisada; distribución/clic
+  de combate **41/0 headless**. Audio Dummy; avisos de recursos al cerrar la
+  prueba de distribución, sin errores de script/aserciones. Sin exportar ni
+  probar Web/dispositivo físico.
+
+## 15/10/2026 — Caras centradas y color de objetivo en intenciones
+
+- La intención deja de ampliar la cara del sprite de cuerpo entero y utiliza
+  los retratos HD existentes, con encuadre individual compartido en
+  `refuge_portrait.face_texture`. Bordes de 2 px con el color de cada héroe;
+  marco 28×32, cara 24×28 y separación ajustada, sin deformación.
+- No cambian imágenes originales, reglas ni guardados. Área muestra ambos vivos;
+  objetivos individuales y caídos conservan las reglas actuales.
+- Validación actual: combate **46/0 nativo**, HUD **112/0 headless**. Cuatro
+  identidades, bordes, proporciones, recortes y objetivos cubiertos; capturas
+  de ambas parejas revisadas. Audio Dummy, avisos de recursos al cerrar
+  presentación sin errores de script/aserciones. Sin exportar ni probar Web/móvil.
+
+## 15/10/2026 — Iconos de la Colección
+
+- Rediseñados los 28 emblemas activos y la máscara secreta, con cómic tecnológico,
+  tinta, medalla metálica, color por familia y detalles propios para cada rango.
+  Seis SVG nuevos para pestañas, reloj y resultados del historial: 35 dibujos.
+- Fuentes originales reproducibles en `collection_icons.py`, integrado en
+  generador/importador (`--collection-only`); vectores y hashes registrados.
+  Logros conservan rutas, IDs, dimensiones y UIDs. Requisitos y guardados intactos;
+  cinco secretos siguen ocultando su dibujo/nombre/condición hasta descubrirse.
+- Validación actual: Colección **50/0 nativo**, incluyendo dibujos distintos,
+  pestañas, reloj, historial y secretos. Galería de 35 iconos y vistas revisadas.
+  Auditoría **674 hashes válidos**, cero recursos antiguos. Render aislado y
+  audio Dummy; sin exportar ni probar Web/dispositivo físico.
+
+## 15/10/2026 — Gestos de guardia durante el reposo
+
+- Cuatro héroes de batalla con secuencias breves de brazos/manos/arma y flexión
+  leve, alternadas con pausas distintas por héroe. Reutilizan cuadros dibujados
+  de reposo, con ida/vuelta y fundidos, sin deformar el cuerpo ni generar PNG.
+- Nuevo `hero_guard_idle.gd` separado del actor: tiempo visual determinista,
+  base alfa compensada y cancelación ante ataque/defensa/reacción/carrera/caída.
+  Revivir restaura reposo y espera; no modifica reglas, RNG ni guardados.
+- Validación actual: guardia **906/0 nativo**, detallados **1121/0 headless**,
+  pulido **356/0 headless**. Capturas de los cuatro héroes revisadas; apoyo de
+  pies, escala, pausas e interrupciones cubiertos. Audio Dummy; pulido conserva
+  avisos históricos por Image.load de PNG, sin errores de script/aserciones.
+  Sin exportar ni probar Web/dispositivo físico.
+
+## 15/10/2026 — Registro como libreta en la barra superior
+
+- Nuevo asset SVG de libreta tecnológica con espiral/lápiz, procedencia nativa
+  en `hud_navigation_icons.py`, registrado por hash. Botón entre Bolsa y Menú;
+  se elimina el botón textual sobre la escena y se ajusta el contador de bolsa.
+- HUD emite `journal_requested` solo al activar `show_journal` desde combate;
+  `tactical_badges.open_journal` conserva lectura, mensaje vacío y bloqueo
+  durante acciones. Recompensas no muestran acceso sin acción. Sin cambios
+  de registros, reglas, partidas ni guardado.
+- Validación actual: HUD **113/0** en render nativo aislado; pruebas de posición,
+  contador, apertura del registro real, lectura sin mutación y bloqueo durante
+  animaciones. Captura revisada; auditoría **668 hashes válidos** sin recursos
+  antiguos. Audio Dummy; avisos de recursos al cerrar, sin errores de script
+  ni aserciones. Sin exportar ni probar Web/dispositivo físico.
+
+## 15/10/2026 — Iconos de mazo/bolsa y objetivos por retrato
+
+- Mazo con tres cartas tecnológicas y bolsa como mochila de suministros;
+  assets compartidos sustituidos conservando rutas, UIDs, contador y acciones.
+  Fuentes SVG reproducibles en `hud_navigation_icons.py`; generador e importador
+  selectivo `--hud-icons-only` integrados, hashes de procedencia actualizados.
+- Globo de objetos con retratos contiguos para elegir héroe o enemigo vivo.
+  Equipo muestra dos fotos con una acción; reanimación solo al caído. Textos
+  largos ajustan tamaño. Se preservan índices originales, consumo único y
+  validación/guardado en Game; UI no aplica efectos por su cuenta.
+- Validación local actual: bolsa **69/0** y HUD **106/0**, ambos renderizados
+  en X11 aislado con audio Dummy. Capturas revisadas de menú, héroes, enemigos
+  y reanimación; prueba clic sobre imagen, tres enemigos, enemigo muerto,
+  cantidades y retorno. Auditoría **667 hashes válidos**, cero recursos antiguos.
+  Avisos de recursos al cerrar ambas suites, sin errores de script/aserciones.
+  Sin exportar ni probar Web/dispositivo físico.
+
+## 14/10/2026 — Seis nuevos iconos de sala
+
+- Assets originales de cómic tecnológico para combate, descanso, encuentro,
+  tesoro, élite y jefe. Siluetas diferenciadas, tinta oscura, color plano y
+  brillos discretos; transparentes y legibles en los recuadros actuales.
+- Se sustituyen los seis PNG compartidos por mapa/caminos, conservando rutas,
+  dimensiones y UIDs. Generador `map_room_icons.py`, fuentes SVG y hashes
+  registrados; importador admite `--map-icons-only`. Sin cambios de navegación.
+- Validación actual: mapa **141/0**, caminos **153/0**, ambos nativos; capturas
+  revisadas. Auditoría **667 hashes válidos**, cero recursos antiguos.
+  Audio Dummy; avisos de recursos al cerrar mapa sin errores de script ni
+  aserciones. Sin exportar ni probar Web/dispositivo físico.
+
+## 14/10/2026 — Electricidad alrededor de la batería de combate
+
+- Nueva presentación `energy_electricity.gd`: partículas cian y descargas cortas
+  junto a los tubos laterales, sin cubrir cifras ni interceptar clics. El HUD
+  transmite la energía y activa descarga al gastar; al quedar vacío el efecto cesa.
+- Respeta intensidad y efectos reducidos. Reutiliza la batería actual, sin
+  nuevos assets rasterizados, sonidos, RNG ni cambios de reglas/guardado.
+- Validación actual: HUD **106/0 nativo**, capturas de batería revisadas;
+  descuento de energía **5/0 headless**. Render aislado y audio Dummy; avisos de
+  recursos al cerrar, sin errores de script ni aserciones. Sin exportar ni
+  probar Web/dispositivo físico.
+
+## 14/10/2026 — Textos de cartas en negrita
+
+- Títulos y descripciones usan Source Sans 3 en peso variable 700, compartido
+  desde `card_typography.gd`; medición y render emplean la misma fuente.
+  MSDF conservado, sin cambios de assets ni tipografía global de menús.
+- Validación actual: cartas **1073/0** y soporte **537/0**, ambas con render
+  nativo aislado y revisión de captura de tarjetas. Audio Dummy; avisos de recursos
+  al cerrar, sin errores de script/aserciones. Sin exportar ni probar Web/móvil.
+
+## 14/10/2026 — Cartas rectangulares y marcos por personaje
+
+- Retirados placa de nombre/oficio y emblema circular superior. Cuatro assets
+  tecnológicos con borde propio: dientes violetas, refuerzos naranja, conductos
+  menta y circuitos cian. Ilustración ampliada; título/coste dentro del contorno.
+- Mejoras siguen mostrando «+» en el título, costes y pastillas conservados.
+  Tipografía exclusiva de la placa retirada. Fuentes SVG, generador e inventario
+  actualizados; importador puede reconstruir solo marcos. Rutas/UIDs intactos.
+- Validación actual: cartas **1073/0** y soporte **537/0**, ambas nativas con
+  render aislado, capturas revisadas, audio Dummy. Auditoría **667 hashes válidos**,
+  cero recursos anteriores. Avisos de recursos al cerrar, sin errores de script
+  ni aserciones. Sin exportar ni probar Web/dispositivo.
+
+## 14/10/2026 — Carteles elevados y tacho con brasas en el centro
+
+- Mercado y Laboratorio construidos llevan el cartel arriba del edificio.
+  Máscaras de entrada respetan el desplazamiento y el rectángulo real del cartel.
+- Tacho centrado en el círculo del campamento (674/409), metal inmóvil y sin
+  animación de llamas: boca con brasas, luz cálida y chispas ascendentes mediante
+  `presentation/barrel_embers.gd`. Selección conserva su fuego ilustrado.
+- Documentación de sistema y arquitectura actualizada. Sin cambios de assets
+  originales, reglas ni guardados. Sin exportar.
+- Validación local actual: solares **155/0**, navegación campamento **38/0** y
+  expansión **33/0**, con render nativo aislado y capturas revisadas; selección
+  **117/0 headless**. Audio Dummy. Persisten avisos de recursos al cerrar algunas
+  suites; sin errores de script ni aserciones. Web/dispositivo no probados.
+
 ## 14/10/2026 — Revisión integral, regresiones y retirada de recursos obsoletos
 
 - Revisión de batalla, tres mazmorras, seis parejas, edificios, vistas, logros,

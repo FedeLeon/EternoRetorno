@@ -1,0 +1,11 @@
+{
+  "id": "mage_siphon",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/mage_siphon.png",
+  "source": "docs/cards/pixel_retain/sources/mage_siphon.png",
+  "prompt": "Use case: illustration-story. ONE standalone landscape 3:2 game card illustration for Eterno Retorno. Style reference is the first image's richly detailed CRISP PIXEL ART, chunky hand-placed pixel clusters, dark outlines, dramatic limited palette, light highlights, NO smooth comic rendering, NO paper sketch filter. Subject belongs to postapocalyptic civilians fighting machines. Hero identity: Vera, civilian SCHOOLTEACHER, silver bob haircut, purple coat, homemade electromagnetic emitter wired from scrap electronics, cyan identity. Card concept in Spanish: \"Recuperar carga\". Mechanical meaning for visual storytelling only: {\"id\":\"mage_siphon\",\"owner\":\"mage\",\"name\":\"Recuperar carga\",\"cost\":1,\"target\":\"enemy\",\"damage\":7,\"block\":0,\"heal\":4,\"poison\":0,\"hits\":1,\"pierce\":false,\"locked\":false,\"tier\":\"market\",\"market_price\":190,\"support\":true}. Illustrate this specific action with clear readable composition, tools and scavenged technology, strong silhouette, one focused visual idea, industrial shadows with cyan accents. Some utility cards can show tools or symbolic objects instead of entire hero. No fantasy armor, no medieval swords, no elves, no magic wizards. NO frame, NO card template, NO letters, NO words, NO stats or numbers, NO UI. Fill entire landscape canvas with the illustration. Preserve the physical identity of the civilian hero if present.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-133ae3af-06e2-46ff-bcb4-fe4291f99f6e.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "reference": "docs/cards/pixel_retain/sources/frame_warrior.png"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "warrior_riposte",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/warrior_riposte.png",
+  "source": "docs/cards/pixel_retain/sources/warrior_riposte.png",
+  "prompt": "Use case: illustration-story. Create one standalone landscape 3:2 MINIMALIST COMIC card illustration for Eterno Retorno, NOT a card frame. Exact subject: A saw parries a steel rod then follows one short violet return arc.. OBJECTS ONLY, no person, no face, no torso, no portrait. If a hand is essential to the action, show ONLY the cropped hand at the edge. Everything in the composition is specified by the exact subject; do not add a hero holding the object. Thick bold black comic ink outlines, large simple shapes, flat saturated violet identity accents against charcoal black. ONLY TWO shadow shades, no fine texture, no tiny screws, no ornate decoration, minimal material details. Extremely clear silhouette, large central motif, dark negative space surrounding it. No scenery, no buildings, no full environment, no complex machine, no multiple panels, no letters, no words, no numbers, no frame or UI. Retain postapocalyptic improvised tools instead of fantasy weapons. A single readable comic action or object vignette with much less detail than a full scene.",
+  "reference": null,
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f9b90763-ac53-4a33-99a6-56bc8879649d.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "04f0fd22d3a8552c13e2d9ebd8cd681c05b521c748470a769c30e709da30cc6f"
+}

@@ -31,7 +31,7 @@ func run_tests() -> void:
 		await create_timer(0.25).timeout
 		check(actor.acting and actor.sprite.frame>=4,"attack poses played "+id)
 		await capture("enemy-"+id+"-attack")
-		await create_timer(0.25).timeout
+		await create_timer(0.55).timeout
 		check(not actor.acting and actor.sprite.frame<4,"idle restored "+id)
 		var cut = preload("res://src/presentation/enemy_cut_in.gd").play(app.layer,additions[id].visual)
 		check(cut!=null and cut.from_right,"HD cut-in attacks left "+id)

@@ -19,6 +19,7 @@ static func play(parent: Control, hero: String, kind: String = "attack") -> Cont
 	effect.framing_offset = Vector2(-0.10, 0.12)
 	effect.static_illustration = true
 	effect.enhanced_lights = true
+	effect.full_view_rays = true
 	effect.sketch_style = false
 	effect.defensive_effect = kind == "defense"
 	effect.texture_path = "res://assets/comic/static/%s_%s.png" % [hero, kind]

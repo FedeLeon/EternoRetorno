@@ -46,7 +46,7 @@ func build_path(node: Dictionary, center: float) -> void:
 	sign.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	sign.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("header_frame"))
 	place(sign, Rect2(24, 24, 236, 126), target)
-	picture(load("res://assets/map/minimal/" + node.kind + ".png"), Rect2(92, 34, 100, 62), target)
+	picture(load("res://assets/map/minimal/" + node.kind + ".png"), Rect2(104, 28, 76, 76), target)
 	var caption = label(NAMES.get(node.kind, node.kind), Rect2(26, 105, 232, 36), 24, Color("e9e1ee"), target)
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	if node.has("risk"):

@@ -1,0 +1,1680 @@
+{
+  "cards": {
+    "warrior_slash": {
+      "id": "warrior_slash",
+      "owner": "warrior",
+      "name": "Corte de sierra",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_guard": {
+      "id": "warrior_guard",
+      "owner": "warrior",
+      "name": "Mango reforzado",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 9,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_heavy": {
+      "id": "warrior_heavy",
+      "owner": "warrior",
+      "name": "Golpe de taller",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 19,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_charge": {
+      "id": "warrior_charge",
+      "owner": "warrior",
+      "name": "Abrir paso",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 7,
+      "block": 4,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "warrior_echo": {
+      "id": "warrior_echo",
+      "owner": "warrior",
+      "name": "Marca de corte",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 25,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "guardian_bash": {
+      "id": "guardian_bash",
+      "owner": "guardian",
+      "name": "Golpe de chapa",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 7,
+      "block": 3,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_guard": {
+      "id": "guardian_guard",
+      "owner": "guardian",
+      "name": "Mampara",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 12,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_wall": {
+      "id": "guardian_wall",
+      "owner": "guardian",
+      "name": "Pared de obra",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 13,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_strike": {
+      "id": "guardian_strike",
+      "owner": "guardian",
+      "name": "Rebote de chapa",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "guardian_echo": {
+      "id": "guardian_echo",
+      "owner": "guardian",
+      "name": "Refuerzo permanente",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 22,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "rogue_cut": {
+      "id": "rogue_cut",
+      "owner": "rogue",
+      "name": "Corte utilitario",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_dodge": {
+      "id": "rogue_dodge",
+      "owner": "rogue",
+      "name": "Paso lateral",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 8,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_toxin": {
+      "id": "rogue_toxin",
+      "owner": "rogue",
+      "name": "Hoja corrosiva",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 4,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_venom": {
+      "id": "rogue_venom",
+      "owner": "rogue",
+      "name": "Ácido concentrado",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 9,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "rogue_echo": {
+      "id": "rogue_echo",
+      "owner": "rogue",
+      "name": "Oxidación persistente",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 7,
+      "hits": 1,
+      "pierce": false,
+      "locked": true
+    },
+    "mage_spark": {
+      "id": "mage_spark",
+      "owner": "mage",
+      "name": "Chispa de bobina",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_ward": {
+      "id": "mage_ward",
+      "owner": "mage",
+      "name": "Campo de interferencia",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 8,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_storm": {
+      "id": "mage_storm",
+      "owner": "mage",
+      "name": "Descarga en cadena",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 10,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_missile": {
+      "id": "mage_missile",
+      "owner": "mage",
+      "name": "Pulsos dirigidos",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 3,
+      "pierce": false,
+      "locked": false
+    },
+    "mage_echo": {
+      "id": "mage_echo",
+      "owner": "mage",
+      "name": "Señal persistente",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 7,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": true
+    },
+    "warrior_pommel": {
+      "id": "warrior_pommel",
+      "owner": "warrior",
+      "name": "Golpe de mango",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "warrior_brace": {
+      "id": "warrior_brace",
+      "owner": "warrior",
+      "name": "Apoyo firme",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 6,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "warrior_cleave": {
+      "id": "warrior_cleave",
+      "owner": "warrior",
+      "name": "Barrido de sierra",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 10,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "warrior_riposte": {
+      "id": "warrior_riposte",
+      "owner": "warrior",
+      "name": "Respuesta de oficio",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 5,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "warrior_execution": {
+      "id": "warrior_execution",
+      "owner": "warrior",
+      "name": "Punto de fractura",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 23,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 100
+    },
+    "warrior_onslaught": {
+      "id": "warrior_onslaught",
+      "owner": "warrior",
+      "name": "Trabajo a destajo",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 3,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 140
+    },
+    "warrior_blood_oath": {
+      "id": "warrior_blood_oath",
+      "owner": "warrior",
+      "name": "Horas extra",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 16,
+      "block": 0,
+      "heal": 5,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180
+    },
+    "warrior_fortress": {
+      "id": "warrior_fortress",
+      "owner": "warrior",
+      "name": "Refuerzo de emergencia",
+      "cost": 2,
+      "target": "self",
+      "damage": 0,
+      "block": 23,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 220
+    },
+    "warrior_rift": {
+      "id": "warrior_rift",
+      "owner": "warrior",
+      "name": "Corte transversal",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 16,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 260
+    },
+    "warrior_final_edge": {
+      "id": "warrior_final_edge",
+      "owner": "warrior",
+      "name": "Última pasada",
+      "cost": 3,
+      "target": "enemy",
+      "damage": 36,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": false,
+      "tier": "market",
+      "market_price": 320
+    },
+    "guardian_tap": {
+      "id": "guardian_tap",
+      "owner": "guardian",
+      "name": "Empuje",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 2,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "guardian_shelter": {
+      "id": "guardian_shelter",
+      "owner": "guardian",
+      "name": "Cobertura",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 7,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "guardian_iron_chain": {
+      "id": "guardian_iron_chain",
+      "owner": "guardian",
+      "name": "Cable de sujeción",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 15,
+      "block": 5,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "guardian_circle": {
+      "id": "guardian_circle",
+      "owner": "guardian",
+      "name": "Perímetro seguro",
+      "cost": 1,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 6,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "guardian_sentinel": {
+      "id": "guardian_sentinel",
+      "owner": "guardian",
+      "name": "Turno de vigilancia",
+      "cost": 2,
+      "target": "ally",
+      "damage": 0,
+      "block": 25,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 100
+    },
+    "guardian_ram": {
+      "id": "guardian_ram",
+      "owner": "guardian",
+      "name": "Palanca de obra",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 17,
+      "block": 9,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 140
+    },
+    "guardian_sanctuary": {
+      "id": "guardian_sanctuary",
+      "owner": "guardian",
+      "name": "Refugio móvil",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 17,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180
+    },
+    "guardian_reprisal": {
+      "id": "guardian_reprisal",
+      "owner": "guardian",
+      "name": "Devolución",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 13,
+      "block": 3,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 220
+    },
+    "guardian_aegis": {
+      "id": "guardian_aegis",
+      "owner": "guardian",
+      "name": "Barrera compartida",
+      "cost": 3,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 25,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 260
+    },
+    "guardian_unbroken": {
+      "id": "guardian_unbroken",
+      "owner": "guardian",
+      "name": "La estructura aguanta",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 12,
+      "heal": 5,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 320
+    },
+    "rogue_nick": {
+      "id": "rogue_nick",
+      "owner": "rogue",
+      "name": "Incisión",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "rogue_cover": {
+      "id": "rogue_cover",
+      "owner": "rogue",
+      "name": "Bajo cobertura",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 6,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "rogue_double_fang": {
+      "id": "rogue_double_fang",
+      "owner": "rogue",
+      "name": "Doble corte",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 4,
+      "block": 0,
+      "heal": 0,
+      "poison": 2,
+      "hits": 2,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "rogue_toxic_mist": {
+      "id": "rogue_toxic_mist",
+      "owner": "rogue",
+      "name": "Aerosol corrosivo",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 5,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "rogue_venom_dance": {
+      "id": "rogue_venom_dance",
+      "owner": "rogue",
+      "name": "Dosificación",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 4,
+      "hits": 3,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 100
+    },
+    "rogue_plague": {
+      "id": "rogue_plague",
+      "owner": "rogue",
+      "name": "Fuga química",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 7,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 140
+    },
+    "rogue_assassin": {
+      "id": "rogue_assassin",
+      "owner": "rogue",
+      "name": "Punto de unión",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 22,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180
+    },
+    "rogue_dark_cloak": {
+      "id": "rogue_dark_cloak",
+      "owner": "rogue",
+      "name": "Bajo la lona",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 13,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 220
+    },
+    "rogue_black_blood": {
+      "id": "rogue_black_blood",
+      "owner": "rogue",
+      "name": "Contaminación",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 12,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 260
+    },
+    "rogue_silent_end": {
+      "id": "rogue_silent_end",
+      "owner": "rogue",
+      "name": "Desconexión silenciosa",
+      "cost": 3,
+      "target": "enemy",
+      "damage": 22,
+      "block": 0,
+      "heal": 0,
+      "poison": 12,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 320
+    },
+    "mage_shard": {
+      "id": "mage_shard",
+      "owner": "mage",
+      "name": "Pulso breve",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "mage_veil": {
+      "id": "mage_veil",
+      "owner": "mage",
+      "name": "Ruido de señal",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 6,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "starter",
+      "market_price": 0
+    },
+    "mage_prism": {
+      "id": "mage_prism",
+      "owner": "mage",
+      "name": "Doble pulso",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "mage_hail": {
+      "id": "mage_hail",
+      "owner": "mage",
+      "name": "Ráfaga de impulsos",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false,
+      "tier": "reward",
+      "market_price": 0
+    },
+    "mage_comet": {
+      "id": "mage_comet",
+      "owner": "mage",
+      "name": "Descarga focal",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 24,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 100
+    },
+    "mage_barrage": {
+      "id": "mage_barrage",
+      "owner": "mage",
+      "name": "Barrido electromagnético",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 6,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 4,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 140
+    },
+    "mage_starfall": {
+      "id": "mage_starfall",
+      "owner": "mage",
+      "name": "Apagón de sector",
+      "cost": 3,
+      "target": "all_enemies",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 2,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180
+    },
+    "mage_mirror": {
+      "id": "mage_mirror",
+      "owner": "mage",
+      "name": "Señal reflejada",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 14,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 220
+    },
+    "mage_nova": {
+      "id": "mage_nova",
+      "owner": "mage",
+      "name": "Sobrecarga de bobina",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 17,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 260
+    },
+    "mage_singularity": {
+      "id": "mage_singularity",
+      "owner": "mage",
+      "name": "Cortocircuito central",
+      "cost": 3,
+      "target": "enemy",
+      "damage": 12,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 3,
+      "pierce": true,
+      "locked": false,
+      "tier": "market",
+      "market_price": 320
+    },
+    "warrior_risk": {
+      "id": "warrior_risk",
+      "owner": "warrior",
+      "name": "Sin descanso",
+      "cost": 0,
+      "target": "self",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "market_price": 160,
+      "risk": true,
+      "health_cost": 5,
+      "energy_gain": 2
+    },
+    "guardian_risk": {
+      "id": "guardian_risk",
+      "owner": "guardian",
+      "name": "Chapa al límite",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 16,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "market_price": 160,
+      "risk": true,
+      "block_cost": 6
+    },
+    "rogue_risk": {
+      "id": "rogue_risk",
+      "owner": "rogue",
+      "name": "Última ampolla",
+      "cost": 0,
+      "target": "enemy",
+      "damage": 11,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "market_price": 160,
+      "risk": true,
+      "discard_cost": 1
+    },
+    "mage_risk": {
+      "id": "mage_risk",
+      "owner": "mage",
+      "name": "Batería al rojo",
+      "cost": 1,
+      "target": "all_enemies",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "market_price": 160,
+      "risk": true,
+      "health_cost": 4
+    },
+    "warrior_prepared": {
+      "id": "warrior_prepared",
+      "owner": "warrior",
+      "name": "Medir y cortar",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 17,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": true,
+      "interrupt": false,
+      "market_price": 140
+    },
+    "warrior_interrupt": {
+      "id": "warrior_interrupt",
+      "owner": "warrior",
+      "name": "Cuña de madera",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": false,
+      "interrupt": true,
+      "market_price": 140
+    },
+    "guardian_prepared": {
+      "id": "guardian_prepared",
+      "owner": "guardian",
+      "name": "Carga de demolición",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 17,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": true,
+      "interrupt": false,
+      "market_price": 140
+    },
+    "guardian_interrupt": {
+      "id": "guardian_interrupt",
+      "owner": "guardian",
+      "name": "Traba de seguridad",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": false,
+      "interrupt": true,
+      "market_price": 140
+    },
+    "rogue_prepared": {
+      "id": "rogue_prepared",
+      "owner": "rogue",
+      "name": "Dosis preparada",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 17,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": true,
+      "interrupt": false,
+      "market_price": 140
+    },
+    "rogue_interrupt": {
+      "id": "rogue_interrupt",
+      "owner": "rogue",
+      "name": "Cortar el cable",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": false,
+      "interrupt": true,
+      "market_price": 140
+    },
+    "mage_prepared": {
+      "id": "mage_prepared",
+      "owner": "mage",
+      "name": "Capacitor cargado",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 17,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": true,
+      "interrupt": false,
+      "market_price": 140
+    },
+    "mage_interrupt": {
+      "id": "mage_interrupt",
+      "owner": "mage",
+      "name": "Interrumpir señal",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "charge": false,
+      "interrupt": true,
+      "market_price": 140
+    },
+    "warrior_rally": {
+      "id": "warrior_rally",
+      "owner": "warrior",
+      "name": "Entre vecinos",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180,
+      "strength_pct": 25,
+      "support": true
+    },
+    "warrior_second_wind": {
+      "id": "warrior_second_wind",
+      "owner": "warrior",
+      "name": "Pausa de taller",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 4,
+      "heal": 6,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 160,
+      "support": true
+    },
+    "warrior_crush_armor": {
+      "id": "warrior_crush_armor",
+      "owner": "warrior",
+      "name": "Separar placas",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 200,
+      "fracture_pct": 25,
+      "support": true
+    },
+    "warrior_disarm": {
+      "id": "warrior_disarm",
+      "owner": "warrior",
+      "name": "Trabar engranajes",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 5,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180,
+      "weak_pct": 25,
+      "support": true
+    },
+    "guardian_lay_hands": {
+      "id": "guardian_lay_hands",
+      "owner": "guardian",
+      "name": "Primeros auxilios",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 4,
+      "heal": 6,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 170,
+      "support": true
+    },
+    "guardian_inspire": {
+      "id": "guardian_inspire",
+      "owner": "guardian",
+      "name": "Apoyo mutuo",
+      "cost": 2,
+      "target": "all_allies",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 230,
+      "strength_pct": 25,
+      "support": true
+    },
+    "guardian_shield_break": {
+      "id": "guardian_shield_break",
+      "owner": "guardian",
+      "name": "Chapa contra chapa",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 6,
+      "block": 6,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 230,
+      "fracture_pct": 25,
+      "support": true
+    },
+    "guardian_rebuke": {
+      "id": "guardian_rebuke",
+      "owner": "guardian",
+      "name": "Frenar el avance",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 0,
+      "block": 7,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 190,
+      "weak_pct": 25,
+      "support": true
+    },
+    "rogue_enervating": {
+      "id": "rogue_enervating",
+      "owner": "rogue",
+      "name": "Disolvente",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 4,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 210,
+      "weak_pct": 25,
+      "support": true
+    },
+    "rogue_corrosive": {
+      "id": "rogue_corrosive",
+      "owner": "rogue",
+      "name": "Ácido de batería",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 0,
+      "block": 0,
+      "heal": 0,
+      "poison": 4,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 210,
+      "fracture_pct": 25,
+      "support": true
+    },
+    "rogue_adrenaline": {
+      "id": "rogue_adrenaline",
+      "owner": "rogue",
+      "name": "Adrenalina",
+      "cost": 1,
+      "target": "self",
+      "damage": 0,
+      "block": 5,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 180,
+      "strength_pct": 25,
+      "support": true
+    },
+    "rogue_exposed": {
+      "id": "rogue_exposed",
+      "owner": "rogue",
+      "name": "Junta expuesta",
+      "cost": 2,
+      "target": "enemy",
+      "damage": 9,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": true,
+      "locked": false,
+      "tier": "market",
+      "market_price": 220,
+      "fracture_pct": 25,
+      "support": true
+    },
+    "mage_focus": {
+      "id": "mage_focus",
+      "owner": "mage",
+      "name": "Ajustar frecuencia",
+      "cost": 1,
+      "target": "ally",
+      "damage": 0,
+      "block": 4,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 190,
+      "strength_pct": 25,
+      "support": true
+    },
+    "mage_frost_bind": {
+      "id": "mage_frost_bind",
+      "owner": "mage",
+      "name": "Bloqueo de servos",
+      "cost": 2,
+      "target": "all_enemies",
+      "damage": 3,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 240,
+      "weak_pct": 25,
+      "support": true
+    },
+    "mage_shatter": {
+      "id": "mage_shatter",
+      "owner": "mage",
+      "name": "Aislamiento roto",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 8,
+      "block": 0,
+      "heal": 0,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 200,
+      "fracture_pct": 25,
+      "support": true
+    },
+    "mage_siphon": {
+      "id": "mage_siphon",
+      "owner": "mage",
+      "name": "Recuperar carga",
+      "cost": 1,
+      "target": "enemy",
+      "damage": 7,
+      "block": 0,
+      "heal": 4,
+      "poison": 0,
+      "hits": 1,
+      "pierce": false,
+      "locked": false,
+      "tier": "market",
+      "market_price": 190,
+      "support": true
+    }
+  },
+  "art": {
+    "guardian_aegis": {
+      "source": "res://assets/cards/art/minimal/guardian_aegis.png"
+    },
+    "guardian_bash": {
+      "source": "res://assets/cards/art/minimal/guardian_bash.png"
+    },
+    "guardian_circle": {
+      "source": "res://assets/cards/art/minimal/guardian_circle.png"
+    },
+    "guardian_echo": {
+      "source": "res://assets/cards/art/minimal/guardian_echo.png"
+    },
+    "guardian_guard": {
+      "source": "res://assets/cards/art/minimal/guardian_guard.png"
+    },
+    "guardian_inspire": {
+      "source": "res://assets/cards/art/minimal/guardian_inspire.png"
+    },
+    "guardian_interrupt": {
+      "source": "res://assets/cards/art/minimal/guardian_interrupt.png"
+    },
+    "guardian_iron_chain": {
+      "source": "res://assets/cards/art/minimal/guardian_iron_chain.png"
+    },
+    "guardian_lay_hands": {
+      "source": "res://assets/cards/art/minimal/guardian_lay_hands.png"
+    },
+    "guardian_prepared": {
+      "source": "res://assets/cards/art/minimal/guardian_prepared.png"
+    },
+    "guardian_ram": {
+      "source": "res://assets/cards/art/minimal/guardian_ram.png"
+    },
+    "guardian_rebuke": {
+      "source": "res://assets/cards/art/minimal/guardian_rebuke.png"
+    },
+    "guardian_reprisal": {
+      "source": "res://assets/cards/art/minimal/guardian_reprisal.png"
+    },
+    "guardian_risk": {
+      "source": "res://assets/cards/art/minimal/guardian_risk.png"
+    },
+    "guardian_sanctuary": {
+      "source": "res://assets/cards/art/minimal/guardian_sanctuary.png"
+    },
+    "guardian_sentinel": {
+      "source": "res://assets/cards/art/minimal/guardian_sentinel.png"
+    },
+    "guardian_shelter": {
+      "source": "res://assets/cards/art/minimal/guardian_shelter.png"
+    },
+    "guardian_shield_break": {
+      "source": "res://assets/cards/art/minimal/guardian_shield_break.png"
+    },
+    "guardian_strike": {
+      "source": "res://assets/cards/art/minimal/guardian_strike.png"
+    },
+    "guardian_tap": {
+      "source": "res://assets/cards/art/minimal/guardian_tap.png"
+    },
+    "guardian_unbroken": {
+      "source": "res://assets/cards/art/minimal/guardian_unbroken.png"
+    },
+    "guardian_wall": {
+      "source": "res://assets/cards/art/minimal/guardian_wall.png"
+    },
+    "mage_barrage": {
+      "source": "res://assets/cards/art/minimal/mage_barrage.png"
+    },
+    "mage_comet": {
+      "source": "res://assets/cards/art/minimal/mage_comet.png"
+    },
+    "mage_echo": {
+      "source": "res://assets/cards/art/minimal/mage_echo.png"
+    },
+    "mage_focus": {
+      "source": "res://assets/cards/art/minimal/mage_focus.png"
+    },
+    "mage_frost_bind": {
+      "source": "res://assets/cards/art/minimal/mage_frost_bind.png"
+    },
+    "mage_hail": {
+      "source": "res://assets/cards/art/minimal/mage_hail.png"
+    },
+    "mage_interrupt": {
+      "source": "res://assets/cards/art/minimal/mage_interrupt.png"
+    },
+    "mage_mirror": {
+      "source": "res://assets/cards/art/minimal/mage_mirror.png"
+    },
+    "mage_missile": {
+      "source": "res://assets/cards/art/minimal/mage_missile.png"
+    },
+    "mage_nova": {
+      "source": "res://assets/cards/art/minimal/mage_nova.png"
+    },
+    "mage_prepared": {
+      "source": "res://assets/cards/art/minimal/mage_prepared.png"
+    },
+    "mage_prism": {
+      "source": "res://assets/cards/art/minimal/mage_prism.png"
+    },
+    "mage_risk": {
+      "source": "res://assets/cards/art/minimal/mage_risk.png"
+    },
+    "mage_shard": {
+      "source": "res://assets/cards/art/minimal/mage_shard.png"
+    },
+    "mage_shatter": {
+      "source": "res://assets/cards/art/minimal/mage_shatter.png"
+    },
+    "mage_singularity": {
+      "source": "res://assets/cards/art/minimal/mage_singularity.png"
+    },
+    "mage_siphon": {
+      "source": "res://assets/cards/art/minimal/mage_siphon.png"
+    },
+    "mage_spark": {
+      "source": "res://assets/cards/art/minimal/mage_spark.png"
+    },
+    "mage_starfall": {
+      "source": "res://assets/cards/art/minimal/mage_starfall.png"
+    },
+    "mage_storm": {
+      "source": "res://assets/cards/art/minimal/mage_storm.png"
+    },
+    "mage_veil": {
+      "source": "res://assets/cards/art/minimal/mage_veil.png"
+    },
+    "mage_ward": {
+      "source": "res://assets/cards/art/minimal/mage_ward.png"
+    },
+    "rogue_adrenaline": {
+      "source": "res://assets/cards/art/minimal/rogue_adrenaline.png"
+    },
+    "rogue_assassin": {
+      "source": "res://assets/cards/art/minimal/rogue_assassin.png"
+    },
+    "rogue_black_blood": {
+      "source": "res://assets/cards/art/minimal/rogue_black_blood.png"
+    },
+    "rogue_corrosive": {
+      "source": "res://assets/cards/art/minimal/rogue_corrosive.png"
+    },
+    "rogue_cover": {
+      "source": "res://assets/cards/art/minimal/rogue_cover.png"
+    },
+    "rogue_cut": {
+      "source": "res://assets/cards/art/minimal/rogue_cut.png"
+    },
+    "rogue_dark_cloak": {
+      "source": "res://assets/cards/art/minimal/rogue_dark_cloak.png"
+    },
+    "rogue_dodge": {
+      "source": "res://assets/cards/art/minimal/rogue_dodge.png"
+    },
+    "rogue_double_fang": {
+      "source": "res://assets/cards/art/minimal/rogue_double_fang.png"
+    },
+    "rogue_echo": {
+      "source": "res://assets/cards/art/minimal/rogue_echo.png"
+    },
+    "rogue_enervating": {
+      "source": "res://assets/cards/art/minimal/rogue_enervating.png"
+    },
+    "rogue_exposed": {
+      "source": "res://assets/cards/art/minimal/rogue_exposed.png"
+    },
+    "rogue_interrupt": {
+      "source": "res://assets/cards/art/minimal/rogue_interrupt.png"
+    },
+    "rogue_nick": {
+      "source": "res://assets/cards/art/minimal/rogue_nick.png"
+    },
+    "rogue_plague": {
+      "source": "res://assets/cards/art/minimal/rogue_plague.png"
+    },
+    "rogue_prepared": {
+      "source": "res://assets/cards/art/minimal/rogue_prepared.png"
+    },
+    "rogue_risk": {
+      "source": "res://assets/cards/art/minimal/rogue_risk.png"
+    },
+    "rogue_silent_end": {
+      "source": "res://assets/cards/art/minimal/rogue_silent_end.png"
+    },
+    "rogue_toxic_mist": {
+      "source": "res://assets/cards/art/minimal/rogue_toxic_mist.png"
+    },
+    "rogue_toxin": {
+      "source": "res://assets/cards/art/minimal/rogue_toxin.png"
+    },
+    "rogue_venom": {
+      "source": "res://assets/cards/art/minimal/rogue_venom.png"
+    },
+    "rogue_venom_dance": {
+      "source": "res://assets/cards/art/minimal/rogue_venom_dance.png"
+    },
+    "warrior_blood_oath": {
+      "source": "res://assets/cards/art/minimal/warrior_blood_oath.png"
+    },
+    "warrior_brace": {
+      "source": "res://assets/cards/art/minimal/warrior_brace.png"
+    },
+    "warrior_charge": {
+      "source": "res://assets/cards/art/minimal/warrior_charge.png"
+    },
+    "warrior_cleave": {
+      "source": "res://assets/cards/art/minimal/warrior_cleave.png"
+    },
+    "warrior_crush_armor": {
+      "source": "res://assets/cards/art/minimal/warrior_crush_armor.png"
+    },
+    "warrior_disarm": {
+      "source": "res://assets/cards/art/minimal/warrior_disarm.png"
+    },
+    "warrior_echo": {
+      "source": "res://assets/cards/art/minimal/warrior_echo.png"
+    },
+    "warrior_execution": {
+      "source": "res://assets/cards/art/minimal/warrior_execution.png"
+    },
+    "warrior_final_edge": {
+      "source": "res://assets/cards/art/minimal/warrior_final_edge.png"
+    },
+    "warrior_fortress": {
+      "source": "res://assets/cards/art/minimal/warrior_fortress.png"
+    },
+    "warrior_guard": {
+      "source": "res://assets/cards/art/minimal/warrior_guard.png"
+    },
+    "warrior_heavy": {
+      "source": "res://assets/cards/art/minimal/warrior_heavy.png"
+    },
+    "warrior_interrupt": {
+      "source": "res://assets/cards/art/minimal/warrior_interrupt.png"
+    },
+    "warrior_onslaught": {
+      "source": "res://assets/cards/art/minimal/warrior_onslaught.png"
+    },
+    "warrior_pommel": {
+      "source": "res://assets/cards/art/minimal/warrior_pommel.png"
+    },
+    "warrior_prepared": {
+      "source": "res://assets/cards/art/minimal/warrior_prepared.png"
+    },
+    "warrior_rally": {
+      "source": "res://assets/cards/art/minimal/warrior_rally.png"
+    },
+    "warrior_rift": {
+      "source": "res://assets/cards/art/minimal/warrior_rift.png"
+    },
+    "warrior_riposte": {
+      "source": "res://assets/cards/art/minimal/warrior_riposte.png"
+    },
+    "warrior_risk": {
+      "source": "res://assets/cards/art/minimal/warrior_risk.png"
+    },
+    "warrior_second_wind": {
+      "source": "res://assets/cards/art/minimal/warrior_second_wind.png"
+    },
+    "warrior_slash": {
+      "source": "res://assets/cards/art/minimal/warrior_slash.png"
+    }
+  }
+}

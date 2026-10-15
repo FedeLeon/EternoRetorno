@@ -64,10 +64,14 @@ static func save(image: Image, path: String) -> void:
 
 # Generated actor banks have uneven gutters. Locate actual separators, then
 # crop to the principal connected silhouette instead of including neighbour fragments.
-static func actor_cells(source: String, columns: int, rows: int, row_columns: Array = []) -> Array[Image]:
+static func actor_cells(source: String, columns: int, rows: int, row_columns: Array = [], row_edges: Array = []) -> Array[Image]:
 	var image = Image.load_from_file(source)
 	var output: Array[Image] = []
-	var ys = edges(image, rows, true, 0, -1, 0.35)
+	if image == null: return output
+	var ys: Array = row_edges if not row_edges.is_empty() else edges(image, rows, true, 0, -1, 0.35)
+	if ys.size() != rows + 1 or int(ys[0]) != 0 or int(ys[-1]) != image.get_height(): return []
+	for index in range(rows):
+		if int(ys[index]) >= int(ys[index + 1]): return []
 	for row in range(rows):
 		var count = int(row_columns[row]) if not row_columns.is_empty() else columns
 		var xs = edges(image, count, false, ys[row], ys[row + 1], 0.30)

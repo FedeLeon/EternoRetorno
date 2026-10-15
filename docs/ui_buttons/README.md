@@ -1,3 +1,47 @@
+## Engranaje de configuración — 15/10/2026
+
+La pantalla inicial usa un [engranaje ilustrado de cómic](settings/README.md),
+con transparencia y arcos/chispas cian. Reutiliza el efecto periférico de Terminar
+turno, conservando botón, posición y acceso a las opciones.
+
+## Electricidad de Terminar turno — 15/10/2026
+
+`presentation/end_turn_electricity.gd` añade arcos cian con halo y chispas
+alrededor del aro mecánico existente. El centro queda libre para el texto;
+`end_turn_button.gd` adjunta una capa transparente a la entrada, sin cambiar
+el PNG, forma circular, área de clic ni callback de turno.
+
+El efecto cesa al deshabilitarse el botón y respeta intensidad de destellos
+(cero lo desactiva) y efectos reducidos (1 arco/4 partículas frente a 3/12).
+Ligero realce al apuntar o enfocar, sin sonidos nuevos. Geometría nativa,
+sin nuevos assets rasterizados, RNG jugable ni cambios de reglas/guardado.
+
+Validación actual: HUD **113/0** con render nativo aislado y captura revisada;
+distribución y clic de combate **41/0 headless**. Audio Dummy; avisos de recursos
+al cerrar distribución, sin errores de script/aserciones. Sin exportar ni
+probar Web/dispositivo físico.
+
+## Mazo y bolsa tecnológicos — 15/10/2026
+
+Registro de batalla: libreta tecnológica con espiral y lápiz, nuevo asset
+`assets/ui/journal.svg` generado desde `hud_navigation_icons.py`. Se ubica en
+el HUD en **962/8, 46×48**, entre bolsa y Menú. El contador de bolsa se acomoda
+sin cruzarse con la libreta. Ya no hay botón «Registro» sobre el escenario.
+Tooltip y acción conservan el nombre «Registro del combate»; misma lectura
+desplazable, estado vacío y bloqueo durante acciones. Solo se habilita en combate,
+no aparece como acción sin conexión en recompensas. Sin cambio de reglas/guardado.
+
+Validación actual: HUD **113/0** con render nativo aislado y captura revisada;
+posición, contador, apertura/lectura y bloqueo durante acción verificados.
+Auditoría **668 hashes válidos**. Audio Dummy, avisos de recursos al cerrar;
+sin errores de script/aserciones, exportación ni prueba Web/dispositivo.
+
+Mazo usa tres cartas superpuestas con placa eléctrica; bolsa una mochila de
+suministros con cierres, metal y luces cian. Se sustituyen `assets/ui/deck.svg`
+y `assets/dungeon/bag.png`, compartidos por los accesos existentes sin cambiar
+acciones ni tamaños. Procedencia y selección de objetivos por fotos en
+[Bolsa de objetos](../objects/README.md).
+
 ## Actualización de pulido — 07/10/2026
 
 [Implementación actual, assets, reglas y validación](../polish_2026_10/README.md).

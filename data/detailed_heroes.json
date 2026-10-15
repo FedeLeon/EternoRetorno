@@ -1,22 +1,22 @@
 {
 	"guardian": {
 		"frames": 12.0,
-		"idle_height": 93.8823529411765,
+		"idle_height": 94.0,
 		"style": "postapocalyptic_comic"
 	},
 	"mage": {
 		"frames": 12.0,
-		"idle_height": 90.9333333333333,
+		"idle_height": 91.0,
 		"style": "postapocalyptic_comic"
 	},
 	"rogue": {
 		"frames": 12.0,
-		"idle_height": 102.0,
+		"idle_height": 101.5,
 		"style": "postapocalyptic_comic"
 	},
 	"warrior": {
-		"frames": 12,
-		"idle_height": 92.6315789473684,
+		"frames": 12.0,
+		"idle_height": 91.5,
 		"style": "postapocalyptic_comic"
 	}
 }

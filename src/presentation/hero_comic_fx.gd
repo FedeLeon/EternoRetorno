@@ -6,6 +6,7 @@ var elapsed = 0.0
 var accent = Color.WHITE
 var defensive = false
 var from_right = false
+var full_view_rays = false
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -29,7 +30,7 @@ func _draw() -> void:
 	# Broad rays extend beyond the silhouette; the dungeon remains visible between them.
 	for i in range(8 if reduced else 16):
 		var angle = float(i) * TAU / (8.0 if reduced else 16.0) + sin(elapsed * 2.0) * 0.07
-		var reach = unit * (0.62 + (i % 4) * 0.12)
+		var reach = ray_reach(origin, unit, i)
 		var width = 0.045 if defensive else 0.065
 		var near = origin + Vector2.from_angle(angle) * unit * 0.12
 		var tip = origin + Vector2.from_angle(angle) * reach * (0.85 + phase * 0.15)
@@ -59,3 +60,12 @@ func _draw() -> void:
 		if i % 3 == 0:
 			var cross = Vector2(-direction.y, direction.x) * 3.5
 			draw_line(point - cross, point + cross, Color.WHITE * Color(1, 1, 1, alpha), 1.5, true)
+
+func ray_reach(origin: Vector2, unit: float, index: int) -> float:
+	if not full_view_rays: return unit * (0.62 + (index % 4) * 0.12)
+	# Cover the farthest viewport corner even at the shortest growth phase.
+	# Both outer vertices remain off-screen, so no triangle cap is visible.
+	var farthest = 0.0
+	for corner in [Vector2.ZERO, Vector2(size.x,0), size, Vector2(0,size.y)]:
+		farthest = maxf(farthest,origin.distance_to(corner))
+	return (farthest + 32.0) / 0.85

@@ -1,19 +1,9 @@
 extends RefCounted
 
 static func attach(card: Control, data: Dictionary, linked: bool = false) -> void:
-	var attack = data.damage > 0 or data.poison > 0
 	var icons: Array[Texture2D] = []
-	if attack:
-		icons.append(preload("res://assets/ui/sword.svg"))
 	if data.poison > 0:
 		icons.append(preload("res://assets/ui/poison.svg"))
-	if data.block > 0:
-		var shield = AtlasTexture.new()
-		shield.atlas = preload("res://assets/objects/icons.png")
-		var cell = Rect2i(128, 64, 64, 64)
-		var bounds = shield.atlas.get_image().get_region(cell).get_used_rect()
-		shield.region = Rect2(cell.position + bounds.position, bounds.size)
-		icons.append(shield)
 	if data.get("heal", 0) > 0:
 		icons.append(preload("res://assets/ui/heal.svg"))
 	for effect in ["strength", "weak", "fracture"]:

@@ -1,0 +1,11 @@
+{
+  "id": "event",
+  "subject": "A compact battered cyan-blue handheld walkie-talkie with one short thick antenna and one large warm ivory comic speech balloon overlapping its upper right. Inside balloon a single bold dark question mark is the only allowed symbol. Amber indicator and a few large speaker slots. Mysterious encounter, strong readable silhouette, not a generic chat app icon.",
+  "prompt": "Game asset for Eterno Retorno, original post-apocalyptic civilian resistance fighting autonomous machines. ONE standalone square map-room icon. American action comic illustration: bold expressive black ink outlines, large flat saturated color shapes, angular hard cel shadows, restrained halftone only, slightly irregular hand-inked edges. A real illustrated comic prop with a little material detail, NOT a generic geometric SVG symbol. Clear silhouette and very few internal details so it stays readable at 36 and 48 pixels. Centered composition, generous 8 percent clear padding, thin pale ivory outer keyline around silhouette for readability on dark and light maps. No text, no letters, no numbers, no labels, no badge frame, no scenery, no cast shadow outside the prop, no photorealism, no 3D, no medieval motifs, no swords or magic runes. Genuine transparent background, preserve alpha. A compact battered cyan-blue handheld walkie-talkie with one short thick antenna and one large warm ivory comic speech balloon overlapping its upper right. Inside balloon a single bold dark question mark is the only allowed symbol. Amber indicator and a few large speaker slots. Mysterious encounter, strong readable silhouette, not a generic chat app icon.",
+  "source": "docs/map/comic_icons/sources/event.png",
+  "target": "assets/map/minimal/event.png",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-95c1efcf-eda1-410a-8545-715557ccda55.png",
+  "source_sha256": "24fdf25f2b3900abc1536a90e7bba04aaffb034bb1aafeff2cce146c43fa3e83"
+}

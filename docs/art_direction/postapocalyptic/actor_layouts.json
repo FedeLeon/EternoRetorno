@@ -1,0 +1,13 @@
+{
+  "enemies__animations__flying_1": {
+    "source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
+    "row_edges": [
+      0,
+      214,
+      410,
+      607,
+      1024
+    ],
+    "reason": "Reviewed nonuniform source rows: violet drone, cyan drone, thermal hound, foundry biped. Uniform quarter rows sliced the hound out and retained fragments of the next robot."
+  }
+}

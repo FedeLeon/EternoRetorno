@@ -1,3 +1,19 @@
+## Selección con luz y chispas, sin llamas — 15/10/2026
+
+La selección de los cuatro héroes activa `Campfire.embers_only`, igual que el
+campamento. Reutiliza `presentation/barrel_embers.gd`: boca iluminada, brasas,
+halo cálido y chispas ascendentes. El cuerpo del tacho queda fijo; no se instancia
+`Flames` ni se reproduce la hoja de 24 cuadros en esta pantalla. Se conserva
+la luz sobre los héroes sentados y el flujo de elección/preparación de aventura.
+Sin generar imágenes ni modificar guardados.
+
+Validación actual: `test_camp.gd` **46/0 headless y 46/0 nativo** en Xephyr/llvmpipe,
+audio Dummy. Comprueba efecto compartido, ausencia de llamas, avance de luz/chispas,
+cuerpo quieto, seis parejas posibles, límite de dos, deselección e inicio de
+aventura. Capturas nativas revisadas en `artifacts/camp/` (ignoradas por Git).
+Avisos de recursos/ObjectDB al cerrar, sin errores de script/aserciones.
+Sin exportar ni probar Web/dispositivo físico. Lo siguiente es histórico.
+
 > **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
 > de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
 > como historial; las fuentes y herramientas del arte vigente permanecen intactas.

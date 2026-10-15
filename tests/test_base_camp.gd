@@ -40,7 +40,7 @@ func run_tests() -> void:
 		await create_timer(0.45).timeout
 		await RenderingServer.frame_post_draw
 		var second = root.get_texture().get_image()
-		for area in [Rect2i(24, 84, 110, 100), Rect2i(770, 238, 110, 20), Rect2i(626, 394, 35, 42)]:
+		for area in [Rect2i(24, 84, 110, 100), Rect2i(770, 238, 110, 20), Rect2i(652, 295, 35, 42)]:
 			check(first.get_region(area).get_data() != second.get_region(area).get_data(), "foliage, water and fire animate")
 		var ground = Rect2i(440, 550, 110, 60)
 		check(first.get_region(ground).get_data() == second.get_region(ground).get_data(), "ground remains still")

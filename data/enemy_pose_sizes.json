@@ -189,7 +189,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "050b017fd284eb1100d1231ed0a7e78d4b1ef0ec1b4aea58119c76a35e3e9d15"
+    "sha256": "15ef7b01c19490949ed2bdd80ad587daca6d43176753b7da88b0391182d92500"
   },
   "beast_0": {
     "scale": [
@@ -389,7 +389,7 @@
       1.0,
       1.0,
       1.0,
-      1.0,
+      1.1036,
       1.0,
       1.0,
       1.0
@@ -405,7 +405,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "863fa6c57c2359d145fd305a80e1d3b4aa1d34b8822ab66660556dfaee23baff"
+    "sha256": "702b6e5a60bf372bc1b604134390dd691400d9938f6328f79a1b60e81f9332e2"
   },
   "crypt_bandit": {
     "scale": [
@@ -437,7 +437,7 @@
       1.0,
       1.0,
       1.0,
-      1.0,
+      1.1545,
       1.0,
       1.0,
       1.0
@@ -453,7 +453,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "f633fd914f761d14c0a6a49b932062d14f4ffbe5a601fceeee9ec8d7c55abc03"
+    "sha256": "5324c9cbec785a0e7dd1019d163504438edab191c2c8441061eb140b39871ef8"
   },
   "crypt_beetle": {
     "scale": [
@@ -501,7 +501,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "f2bb2490118640c2343f9f9b956376a0cf68747d3df1502fe72418dc5d5ebe23"
+    "sha256": "c24e09c1be1ac60c54e9733e2edb18dd01fcd092c93e2e034dfe12546ac62ad3"
   },
   "crypt_shaman": {
     "scale": [
@@ -559,7 +559,7 @@
       1.0,
       1.0,
       1.0,
-      1.3,
+      1.0,
       1.0
     ],
     "bottom": [
@@ -573,7 +573,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "d48c6ece49fa11c6606bce5a50c8b63753db056ac01faeb50aac9b6edece69cc"
+    "sha256": "3335b68d00bad6d1ddbd0c0657890cfa964743584f45092d54d6eb81d8442520"
   },
   "elemental_0": {
     "scale": [
@@ -861,7 +861,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "7ea5bcf0656ab8790a8aaa8f3fd99b87f51417fdfe78161b78ba09222b0637f8"
+    "sha256": "449cb415445c05d436942714545ea9e17d90b08c2ba82a450848f29f96157e64"
   },
   "flying_4": {
     "scale": [
@@ -933,7 +933,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "77b0efb7d85175030ce6c20f909db82912d0b0a7b0748464d059c12bb55c473c"
+    "sha256": "18cd7eb17fc435495ff4ab9dd5465871aac76992f5bc730fa4f8c954b2470762"
   },
   "flying_7": {
     "scale": [
@@ -981,7 +981,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "28d535e2664c9182ba7e3661ef7e59b2877cecce8d2851b60eed3d7d9d0b808c"
+    "sha256": "ce385600494a26bbd3c7081ffb774866f8ad08bfb1749cdc5b5c482b4cab773e"
   },
   "goblin_1": {
     "scale": [
@@ -1149,7 +1149,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "b88a541156fb68f33bf7fed846731822c206d4f7e95cb4bce09beecac0ec6ac4"
+    "sha256": "1266f1368a74f44434f5db41ca9902086f29e937eec8b2c528860abec32b5dd9"
   },
   "skeleton_0": {
     "scale": [

@@ -28,7 +28,7 @@ static func build(ui: Control) -> void:
 		room.texture = load("res://assets/combat_depth/training.png" if ui.game.run.get("training", false) else ui.BattleBackground.path_for(ui.game.run.seed, ui.game.run.current, int(ui.game.run.get("floor", 1))))
 		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		var area = ui.BattleBackground.combat_rect() if ui.screen == "combat" else Rect2(0,64,1280,656)
+		var area = ui.BattleBackground.combat_rect(int(ui.game.run.get("floor", 1)), preload("res://src/ui/components/combat_layout.gd").ground_for(ui)) if ui.screen == "combat" else Rect2(0,64,1280,656)
 		ui.rect(room, area.position.x, area.position.y, area.size.x, area.size.y)
 		if ui.screen == "combat" and not ui.game.run.get("training",false):
 			var atmosphere = preload("res://src/presentation/battle_atmosphere.gd").new()

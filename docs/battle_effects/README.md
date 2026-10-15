@@ -1,3 +1,145 @@
+## Héroes ligeramente más abajo — 15/10/2026
+
+Los dos héroes y sus iconos al pie bajan 16 px respecto del apoyo enemigo,
+acercándolos a la mano. `combat_layout.hero_ground_for` limita ese desplazamiento
+si hay muchas filas de efectos para no superar y=406 ni tapar la carta ampliada.
+Ambos héroes comparten el desplazamiento; no cambian tamaño, barras, enemigos,
+cartas o encuadre del fondo.
+
+Validación actual: distribución/inspección **184/0 nativo aislado**, captura
+de los héroes en escenario industrial revisada; estados **883/0 headless**.
+Audio Dummy, avisos de recursos al cierre; sin exportar ni validar Web/dispositivo.
+
+## Inspección compacta con iconos — 15/10/2026
+
+`enemy_inspection` prepara filas de vida, bloqueo activo, rol, ataque, intención
+de bloqueo, contraataque y estados, cada una con su icono vigente del combate.
+Vida reutiliza el corazón existente; el rol protector/apoyo no se repite como
+otra fila de efecto. Los datos siguen viniendo de intención efectiva/snapshot,
+sin resolver reglas o guardar desde la vista.
+
+`enemy_inspection_dialog.gd` presenta un marco centrado de **560 px de ancho y
+hasta 440 px de alto**, frente al cuadro anterior de 860×550. La altura se ajusta
+al contenido y la lista interna tiene scroll cuando hay muchos estados. Iconos
+de 32 px, texto 18 px con ajuste de accesibilidad, nombre en el encabezado y
+Volver al pie. Se atenúa menos la batalla, que permanece visible alrededor.
+El diario y otros lectores conservan su componente anterior.
+
+Validación posterior: distribución/inspección **184/0 nativo aislado** y
+**184/0 headless**. Incluye tamaño máximo, icono por fila, datos de solo lectura,
+ataques al seleccionar carta, muchos estados, texto grande, acceso al último
+efecto y cierre. Capturas de inspección normal y lista larga revisadas en
+`artifacts/combat-floor/`. Audio Dummy, avisos de recursos al cerrar, sin fallos
+de script/aserciones. Sin exportar ni validar Web/dispositivo físico.
+
+## Más espacio para los actores — ajuste posterior del 15/10/2026
+
+Línea habitual de suelo a y=327 (24 px más abajo) e información hasta y=406.
+La altura de héroes en una situación de una fila de efectos pasa de unos 191
+a 215 px; la escala enemiga crece también y sigue limitada según la silueta.
+Se conservan barras en y=78, apoyo común, adaptación para muchos estados y
+encuadre del fondo ligado al suelo.
+
+La mano normal sigue en su posición habitual. El contenedor y carta ampliada
+empiezan en y=414: quedan 8 px libres después de la información. La ampliación
+es de 202×302, conservando prácticamente la proporción anterior de 218×326,
+y cabe completa en pantalla. `combat_layout` centraliza límite de información,
+inicio de mano y tamaño ampliado; no cambia el arte o las reglas de cartas.
+
+Validación posterior: distribución/inspección **132/0 nativo aislado**, tres
+mazmorras, ambas parejas y tres enemigos, con capturas normal/seleccionada
+revisadas. Estados apilados/diálogos **883/0 nativo aislado**, captura revisada.
+Headless: distribución **41/0**, estados **883/0**, apoyo **665/0**
+(incluye textos largos a 202×302) y HUD **112/0**. Se conservan avisos de recursos
+al cerrar algunas suites; audio Dummy, sin exportar ni probar Web/dispositivo.
+Los resultados generales de abajo corresponden a la entrega anterior.
+
+## Distribución anterior de combate e inspección — 15/10/2026
+
+Los nombres enemigos ya no tienen placa permanente sobre las barras. Tocar un
+enemigo vivo sin carta/enlace seleccionado abre un diálogo con nombre, PV,
+bloqueo, rol, intención efectiva y efectos. Con carta/enlace seleccionado, el
+clic sigue aplicando la acción validada. `enemy_inspection.gd` es solo lectura;
+reutiliza el diálogo desplazable y no modifica estado, RNG o guardado.
+
+Barras a y=78, con bloqueo activo en su extremo izquierdo. Héroes con altura
+objetivo de unos 196 px frente a los 165 anteriores; enemigos también amplían
+su escala con límite según la silueta para no invadir las barras. Retaguardia
+conserva reducción visual, sin elevar su apoyo respecto del suelo.
+
+`combat_layout.gd` comparte línea de suelo y reserva una franja hasta y=382.
+Intenciones y estados aparecen debajo de los pies; estados compactos de 32 px,
+seis por fila, con cifras y cuadros explicativos conservados. Si hay varias
+filas, adapta el espacio de todos los actores para evitar solapamientos.
+`battle_effect_strip` conserva el formato de 40 px por defecto para otros usos.
+
+La mano normal conserva sus posiciones visibles. Su contenedor empieza ahora
+en y=390, dejando de interceptar clics sobre los efectos del suelo; la carta
+seleccionada empieza en y=390 y sigue completa, de 326 px. Ni el scroll ni
+las cartas cubren los diálogos de efectos.
+
+El escenario de la captura era `assets/forest/combat_glade.png`, con un civil
+gigante pintado dentro. Se reemplazó por un fondo industrial vacío, generado
+con `image_gen.imagegen`, manteniendo ruta/importación y fuente actualizada.
+Prompt/procedencia: [registro](../animation_review/industrial_background_fix.json),
+[registro anterior](../animation_review/industrial_background_previous.json).
+`battle_background.combat_rect` adapta el encuadre al suelo de cada mazmorra,
+incluida la tercera, cuyo muro quedaba por delante de los pies con el layout nuevo.
+
+Pruebas y capturas de esta entrega: `tests/test_combat_floor_info.gd` **114/0
+nativo aislado** recorre tres mazmorras y ambas parejas, tres enemigos,
+información de solo lectura, clics de ataque y geometría. Estados apilados y
+sus clics: **883/0 nativo aislado**, además del recorrido visual de los tres
+escenarios. Regresión general: 97/99 inicialmente; HUD **112/0** y sinergias
+**19/0** tras actualizar expectativas de escala/coordenadas en esas dos suites.
+Los 99 escenarios de suite quedan validados; se conservan los registros de
+fallos iniciales y reejecuciones en `artifacts/combat-floor/`. Hay avisos de
+recursos al cierre, sin errores de script/aserciones en la validación final.
+Sin exportación ni cambios de reglas/guardados. Audio Dummy, sin validar
+Web/dispositivo físico.
+
+## Bloqueo activo oscuro — 15/10/2026
+
+`assets/ui/block_active.svg` usa una silueta rellena en carbón `#111720` y un único
+borde claro `#c8d3de`, de 1,5 unidades sobre viewBox 64 (aproximadamente 1 px en
+batalla). Se retira el doble relleno claro y el dibujo interior para despejar
+el fondo de la cifra. Aplica a héroes y enemigos mediante `BlockIndicator`.
+Dimensiones, posición, números, explicación al tocar y disolución intactos.
+
+Dibujo SVG nativo del sistema existente, reproducido por
+`postapocalyptic_icons.active_block_svg`; el generador general conserva este
+acabado. No requiere generación de imágenes ni cambia reglas/guardados.
+Inventario de procedencia/hash actualizado, UID conservado.
+
+Validación local: HUD **113/0 nativo**, con captura real revisada del bloqueo de
+héroe/enemigo; disolución **5/0 headless**. Xephyr/llvmpipe y audio Dummy; avisos
+de recursos al cerrar HUD, sin errores de script/aserciones. Sin exportar ni
+probar Web/dispositivo. Los acabados grises mencionados abajo son históricos.
+
+## Rostros de objetivo en intenciones — 15/10/2026
+
+La intención enemiga usa los retratos HD existentes de
+`assets/heroes/identity/portraits/<hero>.png`, dejando de recortar la cara desde
+el sprite pequeño de cuerpo entero. `refuge_portrait.face_texture` centraliza
+cuatro encuadres de cabeza, escalados respecto del lienzo de referencia 928×464.
+No se modifican ni generan imágenes; las tarjetas grandes mantienen sus encuadres.
+
+Cada objetivo tiene un marco de hasta 28×32, borde de 2 px y cara de hasta
+24×28 centrada. Si coinciden ataque, bloqueo, contraataque y dos objetivos, la
+separación baja de 30 a 29 px: la cara conserva la proporción de su textura y el
+marco se ajusta a ella, sin deformarla ni salir de la columna. Colores compartidos con la identidad: Carpintero violeta `bd6be1`,
+Constructora naranja `f0a657`, Boticario verde `69caa5`, Profesora cian `75d8e6`.
+Separación adaptativa de hasta 30 px y ancho de intención recalculado; no cambian
+daño, orden de acciones, objetivos válidos, diálogos ni guardados. Ataques de área
+muestran ambos héroes vivos; los caídos no aparecen como objetivo.
+
+Validación actual: presentación de combate **46/0 nativo**, iconos **883/0 headless**
+y regresión general **94/94 suites** después del ajuste proporcional.
+Se cubren los cuatro retratos, bordes, recortes dentro de fuente, proporciones,
+ataques individuales/de área y exclusión de caídos. Capturas de ambas parejas
+revisadas en render aislado; audio Dummy. Avisos de recursos al cerrar la suite
+de presentación, sin errores de script/aserciones. Sin exportar ni probar Web/móvil.
+
 > **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
 > de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
 > como historial; las fuentes y herramientas del arte vigente permanecen intactas.

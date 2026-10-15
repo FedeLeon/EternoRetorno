@@ -1,6 +1,23 @@
 extends RefCounted
-# Four civilian heroes: face portraits and full-body sketchbook crops.
+# Shared civilian portraits, full-body cards and individual face framing.
 const COLORS = {"warrior":"bd6be1", "guardian":"f0a657", "rogue":"69caa5", "mage":"75d8e6"}
+const FACE_REGIONS = {
+	"warrior": Rect2(310, 0, 240, 280),
+	"guardian": Rect2(350, 0, 240, 280),
+	"rogue": Rect2(362, 0, 276, 322),
+	"mage": Rect2(280, 0, 240, 280)
+}
+
+static func face_texture(hero: String) -> AtlasTexture:
+	var texture = portrait(hero, true).atlas
+	var scale = texture.get_size() / Vector2(928, 464)
+	var area: Rect2 = FACE_REGIONS[hero]
+	var crop = AtlasTexture.new()
+	crop.atlas = texture
+	crop.region = Rect2(area.position * scale, area.size * scale)
+	crop.filter_clip = true
+	return crop
+
 static func build(ui: Control, parent: Control, hero: String, title: String, position: Vector2, action: Callable, compact: bool = false, life: Dictionary = {}, card_size: Vector2 = Vector2.ZERO) -> Button:
 	var dimensions = card_size if card_size != Vector2.ZERO else (Vector2(244, 166) if compact else Vector2(190, 338))
 	var large_compact = compact and dimensions.y > 200

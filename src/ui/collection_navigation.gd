@@ -11,7 +11,7 @@ static func build(ui: Control) -> void:
 			"requirement": "Ganá una aventura con " + ui.game.content.heroes[card.owner].name + ".",
 			"icon": "res://assets/collection/icons/%s_victory.png" % card.owner})
 	snapshot.unlocks.append({"name": "Reloj sin arena", "unlocked": "hourglass" in ui.game.profile.unlocked_relics,
-		"requirement": "Derrotá a un élite. Primer turno: +1 de energía.", "icon": "res://assets/collection/icons/ten_victories.png"})
+		"requirement": "Derrotá a un élite. Primer turno: +1 de energía.", "icon": "res://assets/collection/ui/hourglass.svg"})
 
 	for id in ui.game.content.relics:
 		var relic: Dictionary=ui.game.content.relics[id]

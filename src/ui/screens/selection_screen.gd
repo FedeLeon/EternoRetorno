@@ -5,6 +5,7 @@ static func build(ui: Control, actions: Dictionary) -> void:
 	ui.label_at("Tocá a dos personajes para formar tu pareja de aventura.", 28, 88, 1100, 30, 18, ui.TEXT)
 	var fire = ui.Campfire.new()
 	fire.name = "Campfire"
+	fire.embers_only = true
 	ui.rect(fire, 640, 471, 1, 1)
 	var ids = preload("res://src/rules/hero_roster.gd").ids(ui.game.content.heroes)
 	for i in range(ids.size()):

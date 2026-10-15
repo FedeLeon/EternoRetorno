@@ -6,6 +6,51 @@ Grupo/Mazo/Mapa comparten la columna derecha. Abrir Mapa permite inspeccionar
 el recorrido y volver a los caminos. Las fases/IDs y guardados no cambian.
 Las secciones siguientes documentan etapas anteriores.
 
+## Menú lateral ilustrado — 15/10/2026
+
+Grupo, Mazo y Caminos/Mapa usan tres nuevos assets de cómic, con transparencia,
+borde claro y áreas de 64 px; rótulos alineados debajo y navegación existente.
+[Prompts, fuentes y validación](sidebar_icons/README.md).
+
+## Iconos ilustrados actuales — 15/10/2026
+
+Seis assets generados por separado, con tinta negra, colores de cómic, borde
+marfil y transparencia, reemplazan los pictogramas SVG rasterizados. Compartidos
+por mapa y caminos; en estos últimos el icono principal ocupa 76 px cuadrados.
+[Prompts, originales, preparación e integración](comic_icons/README.md).
+Pruebas actuales nativas: mapa **141/0**, caminos **153/0**; capturas revisadas.
+
+## Iconos de sala de cómic tecnológico — 14/10/2026 (histórico)
+
+Se sustituyen los seis símbolos simples por dibujos propios, con tinta oscura,
+volumen de color plano, pequeños brillos y siluetas distintas legibles a 36–48 px:
+
+| Sala / ID | Asset | Dibujo |
+| --- | --- | --- |
+| Combate / combat | `assets/map/minimal/combat.png` | Armas improvisadas cruzadas, metal y naranja |
+| Descanso / rest | `assets/map/minimal/rest.png` | Brasero de metal con luz cálida |
+| Encuentro / event | `assets/map/minimal/event.png` | Bocadillo de interrogación y radio cian |
+| Tesoro / treasure | `assets/map/minimal/treasure.png` | Caja industrial con cierre electrónico |
+| Élite / elite | `assets/map/minimal/elite.png` | Cabeza de máquina violeta con ojos ámbar |
+| Jefe / boss | `assets/map/minimal/boss.png` | Máquina pesada, visor rojo y corona de placas |
+
+Integración automática en mapa, salidas y vistas previas de caminos mediante
+las rutas ya compartidas. Sin rótulos nuevos, cambios de tamaño, grafo ni reglas.
+Transparencia, dimensiones y UIDs conservados; fuentes SVG en
+`docs/art_direction/postapocalyptic/vectors/map__minimal__<kind>.svg`.
+
+Procedencia: geometría SVG original en `scripts/map_room_icons.py`, integrada
+en `postapocalyptic_icons.svg_for`. No se usó generación de imágenes ni fuentes
+externas. Rasterizado con `scripts/import_postapocalyptic_icons.gd -- --map-icons-only`;
+hashes activos/fuente en el inventario postapocalíptico. Se mantiene el total
+de 667 recursos visuales. No se toca el papel, recuadro ni marcador de sala actual.
+
+Validación actual: `test_map.gd` **141/0** y `test_paths.gd` **153/0**, ambos
+con render nativo aislado y capturas revisadas del mapa y salidas. Auditoría:
+**667 hashes activos/fuente válidos**, cero recursos antiguos. Audio Dummy;
+avisos de recursos al cerrar la suite de mapa, sin errores de script/aserciones.
+Sin exportar ni probar Web/dispositivo.
+
 > **Limpieza del 14/10/2026:** se retiraron los PNG fuente sustituidos/rechazados
 > de esta etapa y sus importadores antiguos. Los prompts y registros se conservan
 > como historial; las fuentes y herramientas del arte vigente permanecen intactas.

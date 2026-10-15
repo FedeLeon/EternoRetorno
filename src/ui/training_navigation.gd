@@ -32,6 +32,8 @@ static func reset(ui: Control) -> void:
 	ui.render()
 
 static func leave(ui: Control) -> void:
+	if ui.game.run.has("guided_lesson"):
+		preload("res://src/ui/guided_practice_navigation.gd").finish(ui, false); return
 	if ui.training_original != null:
 		ui.game = ui.training_original
 		ui.training_original = null

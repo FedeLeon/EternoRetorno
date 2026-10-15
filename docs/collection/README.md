@@ -1,5 +1,81 @@
 # Colección de ecos
 
+## Ilustraciones desbloqueadas a pantalla completa — 15/10/2026
+
+Al seleccionar un logro desbloqueado, el panel derecho conserva su estado y
+agrega **Ver ilustración** debajo. Abre su imagen sobre toda la vista, con
+fondo oscuro y ajuste proporcional que muestra el dibujo completo. Usa los
+PNG actuales de 512 px, sin nuevos assets ni duplicados de mayor resolución.
+
+Los logros pendientes no tienen el botón; los secretos solo muestran su arte
+real una vez descubiertos. Volver o Escape cierra el visor y recupera el foco
+en el botón, conservando selección, pestaña y desplazamiento de la colección.
+El fondo bloquea clics sobre los controles que quedan detrás.
+
+`collection_screen._open_art()` comprueba que el logro esté desbloqueado;
+`ui/components/artwork_viewer.gd` solo presenta una textura y reutiliza
+`ui.overlay`/`close_modal`, incluido el regreso por teclado. Sin conceder logros,
+modificar perfiles, descargar imágenes ni acceder a fuentes documentales.
+
+Validación actual: `test_collection_artwork.gd` **21/0 nativo aislado**, logro
+normal y secreto desbloqueados, pendientes, proporciones, clics bloqueados,
+cierre por botón/Escape, restauración de selección/foco y perfil/partida sin
+cambios. Capturas de ambos dibujos revisadas en `artifacts/collection/`.
+`test_collection_ui.gd` **50/0 headless**. Audio Dummy; avisos de recursos al
+cerrar, sin errores de script/aserciones. Sin exportar ni probar Web/dispositivo.
+
+
+## Arte actual: ilustraciones detalladas — 15/10/2026
+
+Los **28 logros activos** usan nuevas ilustraciones individuales generadas con
+la herramienta integrada, en el cómic de acción del juego: objetos/escenas,
+tinta, desgaste y luces. Reemplazan los pictogramas vectoriales anteriores.
+Assets a 512×512, detalle de selección ampliado a 184×184 y menor atenuación de
+pendientes. Se conservan requisitos, guardados y ocultación de los cinco secretos.
+[Galería, fuentes, prompts e importación reproducible](comic_illustrations/README.md).
+
+La máscara secreta también tiene ilustración propia de candado/caja cerrada,
+sin pistas. Solo los seis recursos de pestañas, reloj e historial siguen en SVG.
+Validación actual: **50/0 nativo**, galería/vistas revisadas y **674 hashes válidos**.
+
+## Etapa vectorial sustituida — 15/10/2026 (histórico)
+
+Conjunto de **35 dibujos**: 28 logros activos, emblema secreto, tres pestañas,
+Reloj sin arena y dos resultados de historial. Medallas metálicas octogonales,
+tinta negra, caras planas y luces cian/violeta/ámbar. Cada logro tiene un archivo
+distinto; los niveles superiores añaden refuerzos, laureles o luces de rango.
+
+- Los cuatro oficios usan sierra, escudo de chapa, frasco y bobina.
+- Batallas, élites, guardián, compras, cofres, mejoras, contratos y retornos tienen
+  símbolos propios; los logros secretos usan sus dibujos solo al descubrirse.
+- Se conserva el candado común para los cinco secretos pendientes, sin filtrar
+  nombre, progreso, requisito o ilustración real. No se cambian condiciones.
+- Pestañas con trofeo/candado abierto/libreta; historial con bandera de victoria
+  o refugio de retorno. Reloj sin arena tiene ahora un reloj propio, sin reutilizar
+  la medalla de victorias. Los objetos/reliquias descubiertos conservan su arte.
+
+### Archivos y procedencia
+
+- `scripts/collection_icons.py`: geometría original SVG, integrada en
+  `postapocalyptic_icons.svg_for/create`. No generación de imágenes ni fuentes
+  externas. `assets/collection/icons/<id>.png` conserva rutas, dimensiones y UIDs.
+- Fuentes en `docs/art_direction/postapocalyptic/vectors/collection__icons__*.svg`;
+  rasterizado selectivo `scripts/import_postapocalyptic_icons.gd -- --collection-only`.
+- `assets/collection/secret.svg` sustituido; seis recursos nuevos bajo
+  `assets/collection/ui/`: achievements, unlocks, history, hourglass, victory, return.
+  Fuente de estos siete SVG nativos registrada con hash en `assets.json`.
+- Presentación en `collection_screen.gd`; snapshot de reloj en
+  `collection_navigation.gd`. Sin modificar perfil, premios, historial ni guardado.
+
+### Validación actual
+
+Colección **50/0** con render nativo aislado: 28 dibujos distintos, recursos,
+pestañas, reloj específico, ambos resultados de historial, ocultación secreta y
+consulta sin mutar perfil. Galería de los 35 iconos y vistas de logros/desbloqueos/
+historial revisadas; capturas en `artifacts/collection/`, ignoradas por Git/export.
+Auditoría **674 hashes válidos**, cero visuales antiguos. Audio Dummy; sin
+exportar ni probar Web/dispositivo físico. Los registros inferiores son históricos.
+
 ## Actualización — 07/10/2026
 
 El tema compartido mejora marcos, tipografía, contraste y pestañas. Desbloqueos

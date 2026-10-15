@@ -1,0 +1,18 @@
+{
+  "id": "back_warrior",
+  "kind": "back",
+  "target": "assets/cards/backs/warrior.png",
+  "source": "docs/cards/pixel_retain/sources/back_warrior.png",
+  "prompt": "Use case: ui-mockup. ONE card BACK production game asset for Eterno Retorno, tall 2:3, orthographic flat filling entire canvas edge to edge. Reference: match this image's detailed CRISP PIXEL ART worn metal tabletop card, dark charcoal engraved steel, screws, weathered bevels, subtle material texture, sparse copper repairs. Hero Nicolas, civilian CARPENTER, short brown hair and stubble, aubergine workshirt and worn workshop apron, improvised industrial hand-saw, violet identity. Use the hero identity accent color on narrow frame and luminous central emblem representing profession and tools. Symmetrical composition, large single central emblem, dark quiet engraved mechanical pattern, refined crisp pixel clusters. No character portrait, no paper text areas (this is BACK), NO letters NO words NO numbers. Rounded clipped outer corners transparent, frame nearly fills canvas. One coherent card only, no sheet.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dc74d99a-4869-41e7-9dce-ae0de92ef7f1.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "reference": "docs/cards/pixel_retain/sources/frame_warrior.png",
+  "visual_style": "pixel_metal_parchment",
+  "measured_dimensions": [
+    1024,
+    1536
+  ],
+  "source_sha256": "fa1d344db324bd3a7d16f46b6110af652e50571469b5e61cb17c31074c0fb06a",
+  "reference_sha256": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+}

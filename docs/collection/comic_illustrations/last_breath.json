@@ -1,0 +1,16 @@
+{
+  "id": "last_breath",
+  "prompt": "Use case: illustration-story. Asset type: ONE finished square achievement illustration for a postapocalyptic civilian-versus-machines comic game. Subject: A damaged portable medical heart monitor with one very faint glowing red heartbeat trace, cracked glass, frayed cyan wires and a worn civilian hand gripping its edge, tense amber light in deep violet shadows, no digits or words. Style: detailed American action-comic artwork, confident black ink outlines, visible hand-drawn crosshatching and halftone, rich cel-shaded colours and dimensional lighting, worn material textures, deep violet shadows, cyan electronics, warm amber highlights, gritty but readable. This is an illustrated object or compact narrative scene, NOT a simple vector pictogram, NOT a generic flat geometric badge. No medal frame, octagonal border, UI, writing, letters, numbers, logo or watermark. One bold central composition occupying 85 percent of the square, strong silhouette, dark inked atmospheric background. Match the visual language of the style reference but create entirely new artwork. No fantasy swords, magic staffs or medieval armour.",
+  "source": "docs/collection/comic_illustrations/sources/last_breath.png",
+  "target": "assets/collection/icons/last_breath.png",
+  "reference": "assets/heroes/identity/portraits/warrior.png",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d42f98e0-0ea9-4198-a278-cf482291e396.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "source_sha256": "5b47ec0843404b7e667086f29843d1fb187e1675332ba1901df4ead76e821ab4",
+  "reference_sha256": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+}

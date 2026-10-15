@@ -17,6 +17,7 @@ static func start(game: RefCounted, party: Array, seed_value: int, equipment: Di
 	var initial_seed = game.rng.seed
 	game.run = {"seed": initial_seed, "rng_state": game.rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": game.Dungeon.create(game.rng, starting_floor), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
 	game.run.polish_version = 1
+	game.run.pair_tactics_version = 1
 	game.run.telemetry = {"cards":{},"offered":{},"picked":{},"unused":{},"battles":[]}
 	game.run.tactics_version = 1
 	game.run.event_flags = {}

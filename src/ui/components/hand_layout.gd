@@ -10,11 +10,11 @@ static func arrange(card: Control, index: int, count: int, selected: bool) -> vo
 	var left = (content_width(count) - spread) / 2.0
 	var t = (index * 2.0 / (count - 1) - 1.0) if count > 1 else 0.0
 	card.pivot_offset = Vector2(card.size.x / 2, card.size.y)
-	card.position = Vector2(left + index * STEP, 84 + 6 * t * t)
+	card.position = Vector2(left + index * STEP, 434 - preload("res://src/ui/components/combat_layout.gd").HAND_TOP + 6 * t * t)
 	card.rotation_degrees = 7 * t
 	# Child order and draw order stay consistent for overlapping hit targets.
 	card.z_index = 0
 	if selected:
-		card.position = Vector2(clampf(left + index * STEP - 22, 0, content_width(count) - card.size.x), 8)
+		card.position = Vector2(clampf(left + index * STEP - 22, 0, content_width(count) - card.size.x), 0)
 		card.rotation = 0
 		card.z_index = 10

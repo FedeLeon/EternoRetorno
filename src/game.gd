@@ -152,7 +152,7 @@ func _start_combat(encounter: Array) -> void:
 		var def = content.enemies[id]
 		enemies.append({"id": id, "hp": int(def.hp), "max_hp": int(def.hp), "block": 0, "poison": 0, "intent": {}})
 	preload("res://src/rules/adventure_extensions.gd").strengthen(run, enemies, content)
-	run.combat = {"enemies": enemies, "draw": run.deck.duplicate(true), "hand": [], "discard": [], "inactive": [], "energy": 0, "turn": 0}
+	run.combat = {"enemies": enemies, "draw": run.deck.duplicate(true), "hand": [], "discard": [], "inactive": [], "reserved": [], "reserve_used": false, "energy": 0, "turn": 0}
 	run.combat.hero_fell = false
 	run.log = ["El silencio se rompe."]
 	preload("res://src/rules/combat_depth.gd").initialize(self)
@@ -242,6 +242,16 @@ func play_card(hand_index: int, target: int) -> bool:
 	if accepted: checkpoint()
 	return accepted
 
+func reserve_card(hand_index: int) -> bool:
+	var accepted: bool = preload("res://src/rules/card_reserve.gd").reserve(self, hand_index)
+	if accepted: checkpoint()
+	return accepted
+
+func unreserve_card() -> bool:
+	var accepted: bool = preload("res://src/rules/card_reserve.gd").unreserve(self)
+	if accepted: checkpoint()
+	return accepted
+
 func _damage(unit: Dictionary, amount: int, pierce: bool = false) -> void:
 	preload("res://src/rules/combat_stats.gd").damage(self, unit, amount, pierce)
 
@@ -252,9 +262,11 @@ func end_turn() -> bool:
 
 func _remove_inactive() -> void:
 	var b = run.combat
-	for pile in ["draw", "hand", "discard"]:
+	for pile in ["draw", "hand", "discard", "reserved"]:
+		if not b.has(pile): continue
 		for i in range(b[pile].size() - 1, -1, -1):
 			if run.heroes[owner_index(b[pile][i])].hp <= 0:
+				if pile == "hand": preload("res://src/rules/card_reserve.gd").before_remove(b, i)
 				b.inactive.append(b[pile][i])
 				b[pile].remove_at(i)
 

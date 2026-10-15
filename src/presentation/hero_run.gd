@@ -2,6 +2,8 @@ extends RefCounted
 # Dedicated eight-frame gait. Separate atlas prevents changing combat actions.
 const FRAMES = 8
 const FPS = 10.0
+static var height_ratios: Dictionary = {}
+const Ground = preload("res://src/presentation/hero_grounding.gd")
 const HEIGHTS = preload("res://src/ui/components/combat_actor_scale.gd").IDLE_HEIGHT
 
 static func add_animation(frames: SpriteFrames, hero: String) -> void:
@@ -15,24 +17,53 @@ static func add_animation(frames: SpriteFrames, hero: String) -> void:
 		texture.region = Rect2(i * 128, 0, 128, 128)
 		frames.add_frame("run", texture)
 
+# One uniform scale for the whole gait: preserve natural limb motion without
+# changing body size on each frame. Measure the active art, not old class data.
+static func height_ratio(frames: SpriteFrames) -> float:
+	var key = frames.get_instance_id()
+	if height_ratios.has(key): return height_ratios[key]
+	var heights: Array[int] = []
+	for i in range(frames.get_frame_count("run")):
+		heights.append(pose_height(frames.get_frame_texture("run",i)))
+	heights.sort()
+	var idle = pose_height(frames.get_frame_texture("idle",0))
+	var ratio = float(idle) / maxi(1,heights[heights.size()/2])
+	if height_ratios.size() >= 16: height_ratios.clear()
+	height_ratios[key] = ratio
+	return ratio
+
+static func pose_height(texture: Texture2D) -> int:
+	var image = texture.get_image()
+	if image.is_compressed(): image.decompress()
+	for y in range(image.get_height()):
+		for x in range(image.get_width()):
+			if image.get_pixel(x,y).a > 0.5: return Ground.bottom(texture)-y
+	return 0
+
 static func start(actor: Control) -> void:
 	if actor.sprite.animation == "run": return
 	actor.set_fallen(false)
-	var hero: String = actor.get_meta("hero_id")
+	if actor.has_meta("detailed"):
+		# Let the HD controller place its 256px frames and cancel older actions.
+		actor.play_once("run")
+		return
 	actor.set_meta("before_run_scale", actor.sprite.scale)
 	actor.set_meta("before_run_position", actor.sprite.position)
-	# Match the current equipment silhouette height while sharing each hero's gait.
-	var metrics = preload("res://src/data/json_catalog.gd").dictionary("res://data/detailed_heroes.json")
-	var ratio = 1.0 if metrics.get(hero,{}).get("style","") == "sketchbook" else float(actor.get_meta("idle_height", HEIGHTS[hero])) / float(HEIGHTS[hero])
+	var frames: SpriteFrames = actor.sprite.sprite_frames
+	var idle = frames.get_frame_texture("idle",0)
+	var running = frames.get_frame_texture("run",0)
 	var old_scale: Vector2 = actor.sprite.scale
-	actor.sprite.scale *= ratio
-	actor.sprite.position.y += 120 * (old_scale.y - actor.sprite.scale.y)
-	actor.sprite.position.x += 64 * (old_scale.x - actor.sprite.scale.x)
+	actor.sprite.scale *= height_ratio(frames)
+	actor.sprite.position.y += Ground.bottom(idle)*old_scale.y-Ground.bottom(running)*actor.sprite.scale.y
+	actor.sprite.position.x += (idle.get_width()*old_scale.x-running.get_width()*actor.sprite.scale.x)/2
 	actor.sprite.speed_scale = 1.0
 	actor.sprite.play("run")
 	actor.sprite.frame = 0
 
 static func stop(actor: Control) -> void:
+	if actor.has_meta("detailed"):
+		actor.play_once("idle")
+		return
 	if actor.has_meta("before_run_scale"):
 		actor.sprite.scale = actor.get_meta("before_run_scale")
 		actor.sprite.position = actor.get_meta("before_run_position")

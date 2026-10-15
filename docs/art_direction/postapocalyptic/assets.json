@@ -1,4 +1,22 @@
 {
+	"assets/base_camp/companions/cat.png": {
+		"generation": "docs/base_camp/companions/cat.json",
+		"processing": "eight poses at one scale, 4x2 cells of 192px, feet baseline 174px",
+		"sha256": "920202272c301902a082f584b9a5da89a2918931818e92c0445f0a1d7da4e397",
+		"source": "docs/base_camp/companions/sources/cat.png",
+		"source_sha256": "7d2cee3fab41ad4c22aada6f804ac5e2514863415077be93d5b0d27119f0ace2",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/base_camp/companions/dog.png": {
+		"generation": "docs/base_camp/companions/dog.json",
+		"processing": "eight poses at one scale, 4x2 cells of 192px, feet baseline 174px",
+		"sha256": "b91693b89818cbe3f86abb0c47a7ff653b78ba08a8f44790b5bb323cd0aaf417",
+		"source": "docs/base_camp/companions/sources/dog.png",
+		"source_sha256": "c1d735edcb63d90616c9e598c56642bf1bdec7242cfbbbd5f157490bd5a83729",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
+	},
 	"assets/base_camp/dusk/background.png": {
 		"job": "base_camp__dusk__background",
 		"sha256": "c30fcde81db76bfb494317fd19e72a43992f9f866932f99db09bdedd8a876c5b",
@@ -348,736 +366,1051 @@
 		"source": "assets/heroes/identity/portraits"
 	},
 	"assets/cards/art/minimal/guardian_aegis.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "861052f424813180debb61b1b555b7bd141a07f7e3e90e143e2a5a0ea5d10c86",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_aegis.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1640766957d886935a62aa5c9f3da9962424f793b892332a85d1b14f67c0e20a",
+		"source": "docs/cards/pixel_retain/sources/guardian_aegis.png",
+		"source_sha256": "ae499c3bc3d6d394a651a11b625b1946a9b15c810a53f1db9b9d18efa1b62555",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_bash.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "883d9cd87a0d1c262b1878d03e50eed872042e2e505dbdc3e328014d496f3a65",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_bash.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/superseded_detailed/sources/guardian_bash.png": "a98468c005349de3742635c93600765078067c3e4f26d65870705ea345695c6a"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "bc91db52633fe1a11217433491e95d94a7a311cf6625ddf763055e01ab5eebaf",
+		"source": "docs/cards/pixel_retain/sources/guardian_bash.png",
+		"source_sha256": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_circle.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "506a17fa9bbac885d5d25cfc7155fadbd22186a06e83047ef0f6a88d6dd4b2eb",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_circle.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1eb15f236258104945d62cf03ec44219d2802c1595387aa2b148936324c5abd1",
+		"source": "docs/cards/pixel_retain/sources/guardian_circle.png",
+		"source_sha256": "492f6f204598e5ab9ae3c8b993c14defb317b6c8785a8a38ab840cf596b2e047",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_echo.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "875911de18d47c9d7ac2a2abae41b0446d31d715098a3f1548bed3fd147a421f",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_echo.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "471f1f96801ade30611612941d013fb64c3b43356d2c24df32c8f229cd4da863",
+		"source": "docs/cards/pixel_retain/sources/guardian_echo.png",
+		"source_sha256": "f7201c43a54e84e85b060a2e625ee41977280f5c0f4be877c735ce283149e474",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_guard.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "3557f163b3a84daf628d4ff9cff01ccf314c79a092d405ad010c7aaf49666600",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_guard.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "b9d651454e4b5d4cdd7b4e99973ae7e08658cbcabd1e684b206eb9030cf31820",
+		"source": "docs/cards/pixel_retain/sources/guardian_guard.png",
+		"source_sha256": "e0632757a4ac2eeb10cb74db2d9ee7445921b01cac7ba9aed92a0bde774910d1",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_inspire.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "d36f4513afa09324e4b62e1fad266b1c60b8508a0d6df42e0794b7870786fa67",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_inspire.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "c4b372b88fa5f1e1a7bccda7f2e3f47e175082bd1eb085609d6fd037251acaea",
+		"source": "docs/cards/pixel_retain/sources/guardian_inspire.png",
+		"source_sha256": "d68c38639ea71a414699d5c18f463e6e070df46d3b824e29fcc711d16aebd76a",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_interrupt.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "100ba3c3f5f301b87838e36ca52c5b42f0d4765bb317fa9735ba0ffbf81edb2d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_interrupt.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "a9d53ffbf5a682f2f6bce6a173798364d474ad665b46f6ce0faf825c779f5224",
+		"source": "docs/cards/pixel_retain/sources/guardian_interrupt.png",
+		"source_sha256": "c2768f82e5ab1cd610d5c988d6bf32f28b479a79306192e17c06f2cbd766d7e3",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_iron_chain.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "24acab9583e0f7ca6176d96e743b548e537bad910cf5fd3e2ee5712352e7b98a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_iron_chain.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "53223b5aceea618c56877e089a1b34e28eb33cf7bebef02c53344bdf8de63fcd",
+		"source": "docs/cards/pixel_retain/sources/guardian_iron_chain.png",
+		"source_sha256": "7c8fc38a75efae66d09c46a074f1ea91fc77e2e2db2976aff368f59e28074b0c",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_lay_hands.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "3edf2ff434f0a8044c86aefcbfe2b588744d8bfb19fac3cab512188bd091d9a5",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_lay_hands.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "369e3eb62da4e74cc99bdc4f0fd63b1aaf6c98772c95d56587ff3ebff9d44e9d",
+		"source": "docs/cards/pixel_retain/sources/guardian_lay_hands.png",
+		"source_sha256": "447ab379d2dce99bfbf218ae33a26f389ba8cea0b2f47dbc6b3ebb00afbabdb7",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_prepared.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "253c43f73e5e0674635d79207da84c30d0c00b3856737915319fb36e7b559d04",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_prepared.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "7b130e53ecbbe68c0444f6d8a1c51f00e888f492e3b10764595a68bb3ab42144",
+		"source": "docs/cards/pixel_retain/sources/guardian_prepared.png",
+		"source_sha256": "f4e4e68ff10c297edb3c0bdd891964666b30c0e3c48f66bef811975bf545dacc",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_ram.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "66744832f12a6fe9cda883e733216dddc1a8a5e159edea32c76d68a63ba59bd8",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_ram.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "bf709d97c2e68c61a9a0573fe5bf5d4fed3556ac301a6ed09cfaa358835867a3",
+		"source": "docs/cards/pixel_retain/sources/guardian_ram.png",
+		"source_sha256": "cab44b902a744e35a519e3bde723a11e4d32529e0fab1ac476aeab8b3c6dbc1f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_rebuke.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "9d2ed67e593c456d55b0c85f5ac3982fad122d864f71254ad27f7bec49b2d1ce",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_rebuke.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5c21ac439d8440b7c1d982babb1e8ed2bf4111831c35ae0252a0742915f46383",
+		"source": "docs/cards/pixel_retain/sources/guardian_rebuke.png",
+		"source_sha256": "f2c78af86057fd31a46171a00a64b3fd2fa5b8e933d09f22221a4134bfc468d4",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_reprisal.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "b56b1c71e2c4ef2d6b4ba1bcda895ff25ce4907bc52421cdf8c92ce0ae1a9ea4",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_reprisal.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "52435975fa3e986072dc1b98cfc7c0bc12d98dd0d03d8f959ca2e50f7b606b77",
+		"source": "docs/cards/pixel_retain/sources/guardian_reprisal.png",
+		"source_sha256": "9510c42e531c1cd55525638b058aa48ecac2f567eaa51a0cf7a177a215790741",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_risk.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "823b9872f2801293eed29cc13c0e751706abff9146b2518ca119602c301ddaac",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_risk.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "2fd8894e0a8491d1a8dd786e7b36c145931a4de3245847d635bc4e60ec913d51",
+		"source": "docs/cards/pixel_retain/sources/guardian_risk.png",
+		"source_sha256": "41a990d69513f67a9b637bba0792b947804bd83e15b3b8c0d18c75aee26e9576",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_sanctuary.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "95b6e30f6ce84f5ad0a4e79536007fc29fbf30751b5255dc4b7f041d01a31824",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_sanctuary.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5b394e9cfa9fdc6079cf1a800a16b042abd65d4919dbd52cd84a105d4aa41115",
+		"source": "docs/cards/pixel_retain/sources/guardian_sanctuary.png",
+		"source_sha256": "b07967eae52ed4133f539216356afc9671526a1388b58eb85290509bc5a884f9",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_sentinel.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "85086eff4ed378773e1202e8639b2005d51e805e3c536bdec9d58fdbb6a48c0c",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_sentinel.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "e9a390c51d86162da0fd4e38796fc9610d6ddf02ed64d24871ef304dd16a9f76",
+		"source": "docs/cards/pixel_retain/sources/guardian_sentinel.png",
+		"source_sha256": "865fe6975456f4123c4318aba3d0ed8135f2ed26ee723ef826e697e11179ff95",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_shelter.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "a66a69ee9f9df143ea51031119c41a84132538a61e9b655976b3a0c0f2686c5c",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_shelter.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "203cb64c4bc72eb520971441402c489318d843f66b4a689205295b29a1a3b297",
+		"source": "docs/cards/pixel_retain/sources/guardian_shelter.png",
+		"source_sha256": "081c191265bdf33ff3e107e7ae26505a141d76e229b8d84aeabd799c4e014bf2",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_shield_break.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "dce6ca8ce3cd491d29e0a27091f7638124a6a62e84347c743adfbde27c416dd8",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_shield_break.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "6505a3c2033aaa3fca33fc8b77cdb4307fa1c5927dce82e96bc6044eea3d6397",
+		"source": "docs/cards/pixel_retain/sources/guardian_shield_break.png",
+		"source_sha256": "899811fedcefc9fcdf27124b0c41db97a74622c0a66bdd3b7a6ff023801af402",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_strike.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "5a2256f50ca7de236e24eac4795fccb2d6beb1ce0b9d7cb69244029bae8afa01",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_strike.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5d14c93d75d05a58e01e7244bfdaa313ee4dd1056006d1cf9bb8144bdaf5aafa",
+		"source": "docs/cards/pixel_retain/sources/guardian_strike.png",
+		"source_sha256": "5e2c1a3a3c5e4bbf5e97cae89b5a5fa8554e5fbd24502b4a0f4285504957e973",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_tap.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "1b335d8748529e16443926ab07fc57b31d1f84827544fdfbc9f907aa3050de7a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_tap.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "f8e35da0daf12af8eda1d46f6fd4495cc4176beb965d5185b34da48fa470db45",
+		"source": "docs/cards/pixel_retain/sources/guardian_tap.png",
+		"source_sha256": "bfe7a2cd0e4fe94381aac22909651984c724542584ea0862d7d29dd64de3cf83",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_unbroken.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "4d0b4ed3762c49b506729ec8de59679fa6f981fb6f41fab5b0408b57ae29993a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_unbroken.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "366a903486f26795e5c4e297342717c3e7865c9de7718c0b28a31bed7dbe1acf",
+		"source": "docs/cards/pixel_retain/sources/guardian_unbroken.png",
+		"source_sha256": "bb0a051e28435abd1b3c329cc80256095c74b668ac9d5370190773b936015c6a",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/guardian_wall.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__guardian_bank",
-		"sha256": "1ce57c543d066372d38a370da723c531f53e858c79ac4f3876bbb53af489772b",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__guardian_bank.png",
-		"source_sha256": "2989f58e530c08ce1769e589a3213d70a7c9711a995c7a77f7dbfd12fedd647d",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/guardian_wall.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "e34cf46d5d65e32869488d2de62cf36f93c5a2f873189e4ffabc72c9d3f23cd6",
+		"source": "docs/cards/pixel_retain/sources/guardian_wall.png",
+		"source_sha256": "41133b965aa8b544be526069d7365d9f624019b84b02a6e65da4931eb3bde1ed",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_barrage.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "b9675bc5742e5c49026f6b9d1c4e2dc68894f182a305060fc972d67b73732bdc",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_barrage.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "88ede2b155d79e01a4996a7ef151d9b7f5e5b1600cdf7dcf840bde4b1a9d7b78",
+		"source": "docs/cards/pixel_retain/sources/mage_barrage.png",
+		"source_sha256": "a017680bc6207f023d125c03c8bef3a6c2d130ed16bbc42810a1298d28c40ac9",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_comet.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "f4d63d5460cc49b62ceb7ef871db1a7544644fda04014320d24c9113d69e7d1b",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_comet.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "6814f47ece01250c61df69d6f69eb5b993e3a60284161be5dfb0b1b985e67944",
+		"source": "docs/cards/pixel_retain/sources/mage_comet.png",
+		"source_sha256": "7eba292bac630817b89a88a49d13cc87d9ba4345dd5fa18db33eab59935404da",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_echo.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "0a84ccc8c9c59e387e8c18973fdc621ea2c3bb91631eeedb62a86989e3b0d1ed",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_echo.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "0776d9e6a2d2ff9255e775bb10f5e8b7ba7237127e402dbf536cad3784bd9e78",
+		"source": "docs/cards/pixel_retain/sources/mage_echo.png",
+		"source_sha256": "aa77196dd481224974329e2fc46bff561db30f856055e65662881b1af667539d",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_focus.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "3bd03ca5bd0ec3b6a4aa19c0e55770f05bf7a999f8f4cd9bd354ff5809c40966",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_focus.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "45b027bf2de8fbdc81fef12c54eb9689de77118a9c7ba32a712034bda7d2d6b0",
+		"source": "docs/cards/pixel_retain/sources/mage_focus.png",
+		"source_sha256": "0742242e945f81d0ee44451a7b0330c6699cb389a4f1d6a213ec63e612fb5127",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_frost_bind.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "d3afd58505ef8b40178645187bb7e7e1275bc5bb78db98c70bec66e39176653a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_frost_bind.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "340eb353209bda63bf3a9324f582620e2a122e99dc90ab6e91c268af26727e90",
+		"source": "docs/cards/pixel_retain/sources/mage_frost_bind.png",
+		"source_sha256": "f6feb064fccfc050e8a41e7a832005614b11d258f8a2366651f4cc956f84c9fc",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_hail.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "0eb4752b42027029f3fb8c450d0bcdc3caad3749b9a926c6bda1dff9bab51800",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_hail.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "028a27d6779de1683691d077ab122aeef2d87a13249b390323ee4682a896c206",
+		"source": "docs/cards/pixel_retain/sources/mage_hail.png",
+		"source_sha256": "993e972ec4fae6b43cea67a2d9992f4786f64bf7436b33c9b5714c2bcb370a66",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_interrupt.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "c94a7cd1595a568605dbd44b73626097dce26828ef0513326f04a357e65e249d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_interrupt.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "135829dc02d075fd15abfa647d9b018a6dcb8e6d816a5c832f56337d127d8329",
+		"source": "docs/cards/pixel_retain/sources/mage_interrupt.png",
+		"source_sha256": "4772a7c09888b22cecb1fca2c62262a2d987f5396952ec5ea44d8ab81bb4c392",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_mirror.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "40128d13280f0c634d8fdf8542175f3c3b60ad2876b21934de5a510c9ce967b4",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_mirror.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "22d25174a922ea4ec3c78c18c59488ce79da065327a4223f2e13bd4bbd3934c1",
+		"source": "docs/cards/pixel_retain/sources/mage_mirror.png",
+		"source_sha256": "df7d072104618f8c78d101adfadb04f17a91fe1f2b391d5d6a4e9123d4fa8882",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_missile.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "a7bff28f2d74d83e17ffee26c538f454d536bf3c4dc853f9f37fa5a524967487",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_missile.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5cf0b27844fb9b26c1be44909a291d4e8460c65d04aa0a45c2c5f2a3ff5a04f3",
+		"source": "docs/cards/pixel_retain/sources/mage_missile.png",
+		"source_sha256": "0455bfe3bb9ad85ff3caf442f973adb49dc8321c582e239e6313fd4fa86e0710",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_nova.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "7fa802b277163fa9b8a46aa2eeb50c28221430eec4c659fb5a5e9e3cb6d26579",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_nova.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "4128dd68d209b2fc6eb7a1244d915aea60e27bfda1fbb675ac64a52d0dae1788",
+		"source": "docs/cards/pixel_retain/sources/mage_nova.png",
+		"source_sha256": "d9f3f824cc99b67cd6f4940e7627c945b2e1482a0d7556e3500c8a54d7166eab",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_prepared.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "1264b7b791d24030868b64c79e1c025024d530644cf37857ccf0c80701be9edf",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_prepared.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "bd0f816ac424248b51ad81f5f3145b63364d39b9a8bc54fac66d16bb7f109016",
+		"source": "docs/cards/pixel_retain/sources/mage_prepared.png",
+		"source_sha256": "aed4cf4c6148f917c169fd4efb6cf3023df69f0efd0273de8cfc7e4290bcae6f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_prism.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "a2f81988010340feea3221d871aaaf509d5fca73043e6047f15f33a3c6f7ebcf",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_prism.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "0ff26d6bfe773bd6c9633355930985d97a265f1d63ce748bc14991ffece2763f",
+		"source": "docs/cards/pixel_retain/sources/mage_prism.png",
+		"source_sha256": "39053f6b696d1f1164dc18fe6b913b254220e1c9d0302f30e48aca7c239d2e80",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_risk.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "b8adbcf18054347e40aba6968465d5cf74cd0faaaac7edcd39af4cabef280b19",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_risk.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "648bccab374b56710d02349d318214269cbdad6f9bfc61b11bdc4b5f2a042186",
+		"source": "docs/cards/pixel_retain/sources/mage_risk.png",
+		"source_sha256": "1c7a70a4614950c73701d1fbcaa31f05f7bddb36274e5a931b9fe32b47ecdfd2",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_shard.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "988c510c2831db39f7b3ef3ad938c572f39e07c4258781dab6f58b491a12849a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_shard.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "300b36aa7a3f1d465aaf5d7be46e94420d9e51fe773c9b4c83d4426309141e71",
+		"source": "docs/cards/pixel_retain/sources/mage_shard.png",
+		"source_sha256": "d7c4be2cd5f64c7524ca414c62cfa2a9b9ea522ab34ff94dbc59e84623b42fe9",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_shatter.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "c13cd95e2b3a34d2cedb3c39f3b76c70a304f32af974a040d825d42434ecfd14",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_shatter.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1743f0316f9dce482000b3132d44f655cef83a129e30a4d8371581b1231fb594",
+		"source": "docs/cards/pixel_retain/sources/mage_shatter.png",
+		"source_sha256": "a869bdd366fb12e17735a0d692bec6b0225eb532ec962ac7d85eb15f8599a292",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_singularity.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "e2fa94608dc9ba27d66d9613e7ee48bf3e849d958192f299bca50077ffef86b7",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_singularity.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "52b9fc1def078f7b130098f301c8b0634f8252c285da12d80e0b331a3bac8f40",
+		"source": "docs/cards/pixel_retain/sources/mage_singularity.png",
+		"source_sha256": "ae509b75df339cbcaab84854e796cb42f9faab9e206e24fdcbee3d99ce7dca7a",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_siphon.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "847afd0708b0d307decdb0661113874eefeae54698116dd58064278c37682550",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_siphon.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1fb7f285c11f58d4589354159b6ea09a159d2c9fea40534ee18766ceef61de4e",
+		"source": "docs/cards/pixel_retain/sources/mage_siphon.png",
+		"source_sha256": "48859121f8d06c6242edb1d20fe7a54d43525950d130e7b8e7f856097bd76c1c",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_spark.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "7a1ab553a4c8c0a1f3621cefbf3128bcc466bdf26def7362d3225439dc926fc3",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_spark.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "55aff11abe694c99733840c0648930a3fd5ff3881f63f50b7a7311a59c72800e",
+		"source": "docs/cards/pixel_retain/sources/mage_spark.png",
+		"source_sha256": "61551a1e5c7f454c9ba0af8861956834836a3cd393545ca86692ee2e37a1569e",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_starfall.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "8ca12aa9817a1ced53d0c458e3c25f5e5c5bc57b3d1dbea166dcdf9dcc55c88a",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_starfall.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "abe2fb1dc717f25269729d294c5cc3e0944072f6d90cf0d6f9e2287e6f5ca2b5",
+		"source": "docs/cards/pixel_retain/sources/mage_starfall.png",
+		"source_sha256": "6a2095413d53839af5e1722c1c927eb41554c4b1c865e774283edc7b637fcf31",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_storm.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "c9d96b2e493fc8812586469066d94768b2663e84e9cbc13ba89fab675ec9975e",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_storm.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "c84d9d7af74e4acd16ac90b0264c6ae67b9ed37e8e7e63f961471cebd69e55b5",
+		"source": "docs/cards/pixel_retain/sources/mage_storm.png",
+		"source_sha256": "24bbeaf4ef43810f4ed80b65c100e410779c5e27e2769ef4911b05be561bbb9e",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_veil.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "9f490ad8b17677e9af02bd00c46afe828bea4693a09d5a7ecba5e9c539cc8da5",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_veil.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "2e54536ad4f212def603207ec176e22d37bb5bbc4d9613a6e15cabaf5ebb0e73",
+		"source": "docs/cards/pixel_retain/sources/mage_veil.png",
+		"source_sha256": "e80db847425e1845e683a0483f98a35afe38a788910ed268f81013d6d57e6efe",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/mage_ward.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__mage_bank",
-		"sha256": "faf1453ce38b9cfe8c23920c262f815c6859beda678f823fd4dbe0779f377d29",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__mage_bank.png",
-		"source_sha256": "649bb5c90f4bbdf12190b2b7262dd7df9709b0bdfc5ca60ba1c41a2f223338b1",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/mage_ward.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "17050c373945b165840446180d65d515794940de7a3ae9ad80d5793e50f26bf9",
+		"source": "docs/cards/pixel_retain/sources/mage_ward.png",
+		"source_sha256": "09dda7c378f9617e490e556497ae29132db276c39e3cbdd00ea1132ac92ccc52",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_adrenaline.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "3d6d19b3cce48a79188df5b556209fd2ac2a2cd36ccae0a5d31d44605059f5b7",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_adrenaline.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "84b25e85a1270ee8f8d19e392eb7576def80e9a04912878ce58a7dc996f00d70",
+		"source": "docs/cards/pixel_retain/sources/rogue_adrenaline.png",
+		"source_sha256": "a60834872890885e722aec1fd150e3fad761bc84f4c609987856e9d6ee0faf3b",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_assassin.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "c6ca879677790f196dfa27461fd84df6aa0603f459f3e755cee9a93bbda5439d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_assassin.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "f739f4cfb0160661a0323f81c4d0fcbe1dccf22add92b88a4ce1a664791f041f",
+		"source": "docs/cards/pixel_retain/sources/rogue_assassin.png",
+		"source_sha256": "b4d9432703f3b690a1e83e00f8810602b74404dcd07fdd80ee2e237403accfc3",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_black_blood.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "67a1cf69acdecfe1dc473312b93cdccd49a4150902ea77efb2a8c8d5e00a9d37",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_black_blood.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "569e13a523f6c2e9af0f274c02d59b1648687a10316f09c57a212ad52b98fbf1",
+		"source": "docs/cards/pixel_retain/sources/rogue_black_blood.png",
+		"source_sha256": "62869d8b9c9eb2774e635ba7b5182cd495ef7e3ed66f5e78ab620195c84994db",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_corrosive.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "f7a566083354f8bc859a7bb283f29e9645b8a5a18b4368e388675cec733bc24f",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_corrosive.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "c38ab7057e23fc8b80708281eb8a434fed13950d1ec9f9275c298c4580a6e5cc",
+		"source": "docs/cards/pixel_retain/sources/rogue_corrosive.png",
+		"source_sha256": "7cc74628a3473e2f96db72f64264e5eff28c402ee3c73cfe0d743eb75cbe8780",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_cover.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "35ad495717c8a4e0b41271e51be880af64a99d4b2640e073d85d103168165149",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_cover.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/postapocalyptic/rogue.png": "fe10afdde918235929380e71ad5515b9d1a186c95db9e3cbde1bd5a62d435cc1"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "07c08755182d48e835939063a3e125e5fadd91f7f986cf51f91f9eb6c6a23469",
+		"source": "docs/cards/pixel_retain/sources/rogue_cover.png",
+		"source_sha256": "9d63d5f976c304a28042631e664f67e5b81caeec252f0e3774425960d3b6d921",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_cut.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "419e3b9af3943e846c16d80f6df5762ba4a8c0405eed4936028586db41ffcff6",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_cut.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "26d470d9d52c71c825bdf1033a2d95b28e8877a6402534d4e8fffd8d146d083c",
+		"source": "docs/cards/pixel_retain/sources/rogue_cut.png",
+		"source_sha256": "1538ab25a556c1d065b5d3a604b3e09dda6f70b651b218f08f58b0492da103df",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_dark_cloak.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "26d6bd012639b7c04dc28cdfa64109e43a2b8f9fc80c7f583fe203762b05715c",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_dark_cloak.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/postapocalyptic/rogue.png": "fe10afdde918235929380e71ad5515b9d1a186c95db9e3cbde1bd5a62d435cc1"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "d57d0a11176dd7b09ec0e43d01b90f1806e11991215b5e366659be62e2f8d992",
+		"source": "docs/cards/pixel_retain/sources/rogue_dark_cloak.png",
+		"source_sha256": "616c975bc4bd51dcdaa8cc5e12d9d4ce66fa6412b9fccf93996442fb8f443785",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_dodge.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "772a7a8a75c1c8f8ddbfbf9591b4b469d4528fc6bf770d0e27c674cf1e14879d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_dodge.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/postapocalyptic/rogue.png": "fe10afdde918235929380e71ad5515b9d1a186c95db9e3cbde1bd5a62d435cc1"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "ca5124e5d92df6cee33a0371358a24c6f4b52b976b45fe6a778a52a6c1485b99",
+		"source": "docs/cards/pixel_retain/sources/rogue_dodge.png",
+		"source_sha256": "22d25342fffa0639f45d0a8b5afaeb0d232cd00414854f6d20486af9944a86f3",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_double_fang.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "898f31e05b02ae4aef6cd29dce757a547e426d1b8467d5273bd8af92eb4e9f19",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_double_fang.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "94de09b542f0818cc4ce8c01dbcd51446e23b61e60e96b780ac6895876742fac",
+		"source": "docs/cards/pixel_retain/sources/rogue_double_fang.png",
+		"source_sha256": "61596ab3289a2501d6a999830cc2e9b155c4feed162e8db03494c59cf2679ba4",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_echo.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "efb6c046a042039256610c801b6fd961b3cafc6dfb3bd628280377e9b8825c28",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_echo.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "2779c3ca8c124209895e9223d1aae583b1a46d88fb3e36dc0672e2cf0c4c0c09",
+		"source": "docs/cards/pixel_retain/sources/rogue_echo.png",
+		"source_sha256": "79cecc94b9d597d37e5425af358b72446f72f380ee34e1840225dc3023d761db",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_enervating.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "562d4e20f0f8412341ca703deb3812cb0ed85e461556b87c17107a67d6901ee0",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_enervating.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "7d4d0a76855fb50199ea32f5821ff018922f65a0babfd55be186c33080c5954c",
+		"source": "docs/cards/pixel_retain/sources/rogue_enervating.png",
+		"source_sha256": "1646ffc62bb61840dba40eacf06bee5e52bf7e8fe9ee0db55d36021a3ba5ff05",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_exposed.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "8176c4a8fb3c82f5e02d5ba28eaf7052e640578c15cf655341ad025df33d4765",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_exposed.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1c732cd2c6e7964210bb21b6897de74650549c8b9321ced147bf45b06876557c",
+		"source": "docs/cards/pixel_retain/sources/rogue_exposed.png",
+		"source_sha256": "4d2fb0a638f7de3b230eb8bf4bd3a1d4bd4af82f5f6f677d55bd3e7171ed1a8f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_interrupt.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "072da20cfd07ce181ef7312ada0a7f49f12f90933ea5156d55eedfc707f5f3b5",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_interrupt.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "c750d5b4d3d2223a249543e7e48cbe82faab724b8a8bb663e3f1cac686dcd6e6",
+		"source": "docs/cards/pixel_retain/sources/rogue_interrupt.png",
+		"source_sha256": "4a2ad4a5b77924824a9363375811aa4420e8bbc1b3ed272497d583faf70fe27f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_nick.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "36bf1d3ceb35dc6447f7fb284c06dac7d44cb5d58584f3f39fb79ddb8c646d62",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_nick.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "b7fb94efc792a1bba4e2c9c64a22f714a66bb27fbd90f7f52c54983e54253ec5",
+		"source": "docs/cards/pixel_retain/sources/rogue_nick.png",
+		"source_sha256": "5b2de5a8c01c961aa8f27ac83c286b606477710be1567358cb42f05b750774ad",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_plague.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "adaf5641df8f536388a005479bc9ffa91a236c0cc30cf74c843326121d8e0c41",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_plague.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "e075f7402e8f2539b7154d1143d3c7ac062f1fcba80f46973e46b40594615c5d",
+		"source": "docs/cards/pixel_retain/sources/rogue_plague.png",
+		"source_sha256": "da0cec2d5f02cc888748f512aae21d557effc660f77d28fe26167d1f66d3da13",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_prepared.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "c26fca23b7576e195f40887892e7acb949fb2f1a365c76692cadaf2ad6077ecc",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_prepared.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "fac0166c9c568b1716d12b5fa68737cc873edcc90d047dfd25e2884499f74a35",
+		"source": "docs/cards/pixel_retain/sources/rogue_prepared.png",
+		"source_sha256": "5e24ef09fe1cca429762c5a552024cbf7d25e9fd562910c82b07fc91dad570bf",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_risk.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "3741742e82481741a1949e4ee082233a037a9d77e4fad9456c59a8630fb6d8c1",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_risk.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "fee5ff2c9faece13a8e5f345de7afccc90ff09bde169df9a2d1e21499cbb7a42",
+		"source": "docs/cards/pixel_retain/sources/rogue_risk.png",
+		"source_sha256": "f840144d3b3fa4505c2fbae662a2b425a6e68105ef87bc8ff32bb3b566189350",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_silent_end.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "3e44acb2cf54bc87f9cd913925cea12da44f0e16c82e75563da106bd6adcf55f",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_silent_end.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "8046721c4244107e8bbccea607cc821de2907c664f216ebcd29814db7e4e0251",
+		"source": "docs/cards/pixel_retain/sources/rogue_silent_end.png",
+		"source_sha256": "5058b57979ded4eb5f9d1244271f41e32e86212328eedc51b8a5e20f80d269ce",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_toxic_mist.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "6f4c2464cd6b729fe7c779e2066c815920e3d414dab8429f67dbc7806aa3419c",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_toxic_mist.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "edbccefc06c0cff8b6e62a0b760827f09c41a9c904da68849e14203e39c9ca5a",
+		"source": "docs/cards/pixel_retain/sources/rogue_toxic_mist.png",
+		"source_sha256": "6058a4313decc3b334196c4b4dbeb9bc89e118f343672b0b2989c8e538fad929",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_toxin.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "c785622661c7aa1cc09a6b597cb66f6915aeb5888a19f282ef3136f0759222e1",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_toxin.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "cd3549716a59cfc775162651bfaee003ce3894ab8e426ba93a2ee2da41169e18",
+		"source": "docs/cards/pixel_retain/sources/rogue_toxin.png",
+		"source_sha256": "c001b52320aee9556f78217f1b052275fd12c26f7367d2b7462b404b6656705f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_venom.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "bdc03308dbe7a973779328be0e833a74f90cc3b1f1a1e2ec0218e9ebcd35aa53",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_venom.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5f28bd0c54c75d2b84e17aa109398165bfd901d583fff130f78af287f35b3e91",
+		"source": "docs/cards/pixel_retain/sources/rogue_venom.png",
+		"source_sha256": "eb3e0474a4ab673de8839375f4a2fac6b98727171a2a6a5215b88ea97832e569",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/rogue_venom_dance.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__rogue_bank",
-		"sha256": "adbf5e1d9a445608d70c381636dcbf94fbd859c6760f5372f9e10d2203f39d40",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__rogue_bank.png",
-		"source_sha256": "91baf5c96baeb01e8719582f89433b123a90a8c8278a6bb65cfcce8d15d09ff2",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/rogue_venom_dance.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "7449f6981bfc56708694443d49e31c504ef5c2f0a438f6bb97881d54ae2022dc",
+		"source": "docs/cards/pixel_retain/sources/rogue_venom_dance.png",
+		"source_sha256": "852c4ee7c56a358e7a1f3e37fa38205dd18bb090b287e4137629ba5d0d6b5b2e",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_blood_oath.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "57e3dc7f9d8f2dae3bb2e1dd58be7d88aaaa01f9f109c5d641c23597435e2c10",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_blood_oath.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "aea19171ecfe9507bef3184238721299f00a88cceddf8d522f851a10cefd0543",
+		"source": "docs/cards/pixel_retain/sources/warrior_blood_oath.png",
+		"source_sha256": "522583dda09696c23cf1c0b48eaa7f4fd880b6be1809b49df090eb19a5e6fef4",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_brace.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "6e128a4f6d24c8a84b577982243cf584d3bd37b408d740526915a4c336e7d913",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_brace.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "bde10a9b159ad7e0144940b3607f99500fe94a927f7fd8c011196562e98d4515",
+		"source": "docs/cards/pixel_retain/sources/warrior_brace.png",
+		"source_sha256": "34488af93df3123087109a5423d696d2b8e5a92d52605949623a8871e2c60b33",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_charge.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "56a768ddc62de350d5787b60ddc10897dd4e7ef79227d39474b6b9d3914120fc",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_charge.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "bd4fa63b95f3cfc15ece42d7a3a21fc3bcef75246494e2ca6b39537b430b6116",
+		"source": "docs/cards/pixel_retain/sources/warrior_charge.png",
+		"source_sha256": "25437e81129ba4cb1c5db8fcb824568884fd981623817470e8e086773eb8d343",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_cleave.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "976152cf066a80e6a236e25e9e83cdc98ba445ad1c553d5a093d94b87552f2f0",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_cleave.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "ef56909db80ac35272320ca9d46d75910d8441ecae188a71042b52feb24ab2a9",
+		"source": "docs/cards/pixel_retain/sources/warrior_cleave.png",
+		"source_sha256": "6056ea8e56ff6cf74e26ad40adb90cfa25ecba9043b4cc1b661621f458abdef2",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_crush_armor.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "5e0219cc023754e04e1fb6e96eb2fb693b1e0d7a65998afcf09bd41db10d1c04",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_crush_armor.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "925a622303c862ad5e251f3de12e432c9e2f382649ae9a2911796801a7966b52",
+		"source": "docs/cards/pixel_retain/sources/warrior_crush_armor.png",
+		"source_sha256": "e40f7b9c0a7381718e2d69ec1483f4eb1fe43124d259e438c224a56e85c0be79",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_disarm.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "cb52240a2551c6fb049c379b209b046cfae90f8aa3214c835bc050a8cd692e1d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_disarm.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "072add5b3d1993510c5fd592647622438f0ffd5c6a8384fd243fe59164c30992",
+		"source": "docs/cards/pixel_retain/sources/warrior_disarm.png",
+		"source_sha256": "b55f7fc68e94e2791d4d3372a52cff6a96ba57d444b8678dc7b449cbe9ae9445",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_echo.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "3aa7d162bb4ff48046ac0eb91a642b1a8317c8a26504c9720035b46367e013e9",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_echo.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "c5e6680ac7f0d732e2e6c7d0c3f1d929934b3fa36434ff0487f0a62f7187adce",
+		"source": "docs/cards/pixel_retain/sources/warrior_echo.png",
+		"source_sha256": "527a88236d389b08ca5c6c145f3acc488234c50a01218a2907f1702c4bca8bb3",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_execution.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "d1ed67761ff9b8026cd206921cd6afa80f5fe91b64cdf0c1bd9fb00872e3e660",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_execution.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "e483f054e6578ec30d8d943a8ab9ab0b894debd59d259fb0b27157b8c5e73702",
+		"source": "docs/cards/pixel_retain/sources/warrior_execution.png",
+		"source_sha256": "1f3a5d328e942d19faa2d4d597265afc11b148f06b2efa4165ad10c3c90e1d8e",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_final_edge.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "b973760d18806a623b15087d7aead0c5ef971f1aee58ddbfc32e22eec55d10cd",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_final_edge.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/guardian_bash.png": "4a459baafac503160147b25b9428385c97d2872088a3e18220362a46b4fc456c"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "a77595a1ae8c70fdb50f84b0fe825d1f11667b0e065c43841abb25ed1b3fc1d9",
+		"source": "docs/cards/pixel_retain/sources/warrior_final_edge.png",
+		"source_sha256": "f721ddb569d4746d49548e9d2c0583f39ec9a7225253d7c235808b3c1486aecb",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_fortress.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "dc43ad12bfbccf6b4e9932d13e1ed6c66e9903a16f67c6dcd66108ff0c87c8b5",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_fortress.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "ceda07eafe19a967858e6c6969e681d4327e960f519dd35ec28ec43ec3302707",
+		"source": "docs/cards/pixel_retain/sources/warrior_fortress.png",
+		"source_sha256": "301e90775cd5e95d588d8b081bfe891c4bd971cc8bb4f59b3c8bfaeeec618cc9",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_guard.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "64e45854da2d5ceab75873a08fd45537ae8b8f398585b4b42ca73543e9190704",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_guard.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "387e4e909183cf41de02b2d8b6e481a1a78b04f545e354264f7198532a2ab390",
+		"source": "docs/cards/pixel_retain/sources/warrior_guard.png",
+		"source_sha256": "4985d7b332105176a2d11cc501ebacf0ca828937910eda54a55e8db99936cf31",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_heavy.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "51c61e3f48c0d2432b998524768e65e8350288767cbb512196a21ebf0b2d69d8",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_heavy.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/postapocalyptic/warrior.png": "28eeed03de5bb57d5626e5ddfc75571c400db574f3b41ad96335c73782378f67"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "a7861a29d8a35b11d22aa977a0e9524ba6abab532308c5b9c791e15cbf85cabe",
+		"source": "docs/cards/pixel_retain/sources/warrior_heavy.png",
+		"source_sha256": "079e159c72b9d688dada308baeb0de680ac920001f450475d46a5722c907ca96",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_interrupt.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "85314f8864ab1e6d8edf5a121f0d4aa4c2f7eeeeaf9a75dfadc82f6240118507",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_interrupt.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "5c564367e721e455a3b797c8491c55e2a2725999f7a70e554d93069a8baf9b1d",
+		"source": "docs/cards/pixel_retain/sources/warrior_interrupt.png",
+		"source_sha256": "b44bfc04023599f85773773ca81556286e4b497d30cbf06e760e31f09d5e6d0b",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_onslaught.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "9831099bcd7713aff724c2054c2248b42f425d4d54f194bf8cb89a4bd5a978b0",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_onslaught.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "161c1a155f1f25cba3aa395377141b93aa672799448b2ea60000cd055739dd45",
+		"source": "docs/cards/pixel_retain/sources/warrior_onslaught.png",
+		"source_sha256": "ce257679c7e23016e9a66cfe3eefde30ababa6adc0c177858accf60502b4a702",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_pommel.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "013d624c1a64bd5b7d688f837a0a0060fccdfb08423df28954a3e4875a16f215",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_pommel.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "4a5942b8c5f6a2ae9a1e4d1b0b19ec633df6f255328dcf7a5c01080e4459e699",
+		"source": "docs/cards/pixel_retain/sources/warrior_pommel.png",
+		"source_sha256": "60a01094e8ad89c931c2290f949b5d855bb5fc4c6dfa1862f993e06ac34bb47b",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_prepared.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "1e1fcc84578804aaf0ca1674d8a80a1c72746ab04efdf60c1e1af4cc2d0ad322",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_prepared.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "2e038200aecaae51825a741e83e0b594e8d0ac788d18205adca02e7e763892b7",
+		"source": "docs/cards/pixel_retain/sources/warrior_prepared.png",
+		"source_sha256": "d9b0fa94ebf7bca2aae0421103b3170575217825129f449fc82327f26287189b",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_rally.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "a13969b67c4d916c917d049f598904d821fd29f2a6f91a214087a93d4cb0d7b2",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_rally.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "66a07143c57c1607b6d9fb4e50f6f4ce6e135d652c544d01457ca7dd4354aa62",
+		"source": "docs/cards/pixel_retain/sources/warrior_rally.png",
+		"source_sha256": "d597ce99620364693a4b5ca530bae756d12ef3ab157eaec28605e7c6f243aaa2",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_rift.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "6755847a0e7ad0d8c21e3ca4985e799e2d988d563a5a7170cf5c6f17dda9bd7d",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_rift.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "598902d1198e6d992d3f0bffe62bfaa66203806f3ab4184a5898794dbebe26a6",
+		"source": "docs/cards/pixel_retain/sources/warrior_rift.png",
+		"source_sha256": "a911f1b3300ce8062f9b4352e2e4350dd85c9dfd0b9f68d45e6a7c0a12f92e1d",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_riposte.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "248931b4feb38ca1e92ed9af6f54fca85d6ea7d9566be24ec484c8b45cc47dc6",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_riposte.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "d0daee852137d42db3ae059899d9cad1b9c603b0ae8a76586c1ad55b16193c86",
+		"source": "docs/cards/pixel_retain/sources/warrior_riposte.png",
+		"source_sha256": "04f0fd22d3a8552c13e2d9ebd8cd681c05b521c748470a769c30e709da30cc6f",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_risk.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "dfe39778bdca68a6043f9a4953081f7889483067ba0ebfadc591fb1be8046349",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_risk.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "78aa0d4659383ec171eb918f785d0919c5006492eb7873ceab7ec88fbd6d4f3a",
+		"source": "docs/cards/pixel_retain/sources/warrior_risk.png",
+		"source_sha256": "284e9fef4bebfcc8d9c407e3c7562918dfa2116f74f44a69d03acdd1f0149020",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_second_wind.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "638591406befb54ca1403ad3d882fbe8fead136409fd8db90a0157ca061c07a7",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_second_wind.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "42b206b3326e275d33d7a4e27f32cb7c0dbf8ebc470ac062be553400ed5e953e",
+		"source": "docs/cards/pixel_retain/sources/warrior_second_wind.png",
+		"source_sha256": "0f08152d9ae028ede205a80adafc461e7d9f39a5b8a94bdc00f783d403e49472",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/art/minimal/warrior_slash.png": {
-		"fit_mode": "symbol_bounds",
-		"job": "cards__art__minimal__warrior_bank",
-		"sha256": "7dcb7e096c0c992f66b7390f6b72d09de152e2efa19bdc2a3edac63e7f19ff7f",
-		"source": "docs/art_direction/postapocalyptic/sources/cards__art__minimal__warrior_bank.png",
-		"source_sha256": "90d6e8b36a7c36327b7ce96da7068f14383bc10647f49f014fb1f551bbf53b0f",
-		"style": "postapocalyptic_comic"
+		"generation": "docs/cards/pixel_retain/warrior_slash.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "372f1b9d2fa9fa8e2f94b64854404d3b5aade4aa9d16e79dd1b52a67a417bc66",
+		"source": "docs/cards/pixel_retain/sources/warrior_slash.png",
+		"source_sha256": "31fd89876868621d1fe052760bdd95b4b9d6e7eb490ae5d2ee3d7d6f9b0477e2",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/cards/backs/guardian.png": {
+		"generation": "docs/cards/pixel_retain/back_guardian.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "9889dbbf25625e79925142a45cbc3c33fa7ae722519e6fc736db094fcbad3288",
+		"source": "docs/cards/pixel_retain/sources/back_guardian.png",
+		"source_sha256": "4bead88d35a4ccda146c9ae5ba8b1677b2fb349b8bfec2b7dcd51c3bfe849b1b",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/cards/backs/mage.png": {
+		"generation": "docs/cards/pixel_retain/back_mage.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1e7eeb6dff6d19ce508d328d3cb66e2b587ebcaac6f25fff620c8206794c69ab",
+		"source": "docs/cards/pixel_retain/sources/back_mage.png",
+		"source_sha256": "6f42d037f7aa6c27282425719ddc0b404747c19c9af27819a345ce6a95c35a86",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/cards/backs/rogue.png": {
+		"generation": "docs/cards/pixel_retain/back_rogue.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "864cbfd4e41885d00880ff69750dee313d4a82fbf86097ba9c020542cf2842ec",
+		"source": "docs/cards/pixel_retain/sources/back_rogue.png",
+		"source_sha256": "6ab0bf3e1b2ebe3352d9b6e2fc9156b337542cef8d0bd901018645bc95225bf9",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/cards/backs/warrior.png": {
+		"generation": "docs/cards/pixel_retain/back_warrior.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "a6c854b41ee926ddd262860b2d0286657d4f859fcb59f2452cb1d75f8bff2e2d",
+		"source": "docs/cards/pixel_retain/sources/back_warrior.png",
+		"source_sha256": "fa1d344db324bd3a7d16f46b6110af652e50571469b5e61cb17c31074c0fb06a",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/frames/guardian.png": {
-		"sha256": "e2f45415660fc6a34f9a18ee7c636071a706493241ffc527e40ade5fa9afb3c1",
-		"source": "docs/art_direction/postapocalyptic/vectors/cards__frames__guardian.svg",
-		"source_sha256": "fe86664380f6af1479a8ac683bc684d7d1ed42affc167a12e557ecde015f0b0a",
-		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"generation": "docs/cards/pixel_retain/frame_guardian.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "688eca23006800367642a390c19de3fed93032dc289d555fb431c2e2a29e251d",
+		"source": "docs/cards/pixel_retain/sources/frame_guardian.png",
+		"source_sha256": "07fce53ba9f75891f480651ff0bab6060d698c533e0284ddcf3f393aeb4c824d",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/frames/mage.png": {
-		"sha256": "6230d9667e46ff7fd1edbdca85563c0fff5de023519eb235b9fa3be913f78d21",
-		"source": "docs/art_direction/postapocalyptic/vectors/cards__frames__mage.svg",
-		"source_sha256": "b84b9e1c0386083bf5139bd1849ef9f94ee616b9cc3ecb07cddf496efecb7759",
-		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"generation": "docs/cards/pixel_retain/frame_mage.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "6ebe9f8aa3e13038e9fe27192ac343281b18d05c426a9db566380220deb58a25",
+		"source": "docs/cards/pixel_retain/sources/frame_mage.png",
+		"source_sha256": "6385b4abe9ad5b3b3e715f5032832caa8863b6a4b77fe7b4aed99cac5dbb0503",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/frames/rogue.png": {
-		"sha256": "f53d66f6fe658260ccc7adcdc555dc8a419362287c383ee2cada3372ed6e90ce",
-		"source": "docs/art_direction/postapocalyptic/vectors/cards__frames__rogue.svg",
-		"source_sha256": "b285b974433ca607865c40e13150deb618ee774d54f722dcc4f76577b3c4baf3",
-		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"generation": "docs/cards/pixel_retain/frame_rogue.json",
+		"inputs_sha256": {
+			"docs/cards/pixel_retain/sources/frame_warrior.png": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+		},
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "1417a0b9626288d274764d3785d61344c68579366878053b695599f9194f9e0b",
+		"source": "docs/cards/pixel_retain/sources/frame_rogue.png",
+		"source_sha256": "42a4609bdcfd697db1444ad61946a396b6abee74520f714313aac0fa671cf73d",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/cards/frames/warrior.png": {
-		"sha256": "1eb974a40be6a84a1d7864d7569dc2ac2098609159e80d5d974f752f26712a39",
-		"source": "docs/art_direction/postapocalyptic/vectors/cards__frames__warrior.svg",
-		"source_sha256": "c4ecf4ebde65b3882c0c65925de70e182577b9a1ca49c0c164023c7dd58fe64f",
-		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"generation": "docs/cards/pixel_retain/frame_warrior.json",
+		"processing": "Lanczos resize; text and values remain runtime UI",
+		"sha256": "0daf77d203c0523375007269e4172fd61e0de8658ee79240ba0732e6b6a0274e",
+		"source": "docs/cards/pixel_retain/sources/frame_warrior.png",
+		"source_sha256": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001",
+		"style": "postapocalyptic_pixel_cards",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/church/guardian_protector.png": {
 		"job": "church__guardian_protector",
@@ -1317,203 +1650,392 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/collection/icons/fifty_battles.png": {
-		"sha256": "3d8bc69b1b6ff2bcd9082178408d8c597866a159c0cee8737831d0604335c37c",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__fifty_battles.svg",
-		"source_sha256": "0ae89378fb06350733cba21f1a00fb6cd8a51d3b220c66f08e6a519ed2dab401",
+		"generation": "docs/collection/comic_illustrations/fifty_battles.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "c60b674763f45d8ceecbbd33deeb5ff5882e7ecabadb36106a98a37381561574",
+		"source": "docs/collection/comic_illustrations/sources/fifty_battles.png",
+		"source_sha256": "73d4c4252380007188b8386d9ce370e871328028caff0645c25c2d50b60d67cb",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_battle.png": {
-		"sha256": "062d384533f44acbbf58df1a751d8480633b8a5db3afe69043e5fc9b7912dd50",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_battle.svg",
-		"source_sha256": "e0f555af19d4537b13374fe434be1d2064c8b31f791cae3bbb509af8498d1a6f",
+		"generation": "docs/collection/comic_illustrations/first_battle.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "9d60f7ff3f6b3df76d89ac3010acd97f8f558922a977edeb8cd515d31f1469a3",
+		"source": "docs/collection/comic_illustrations/sources/first_battle.png",
+		"source_sha256": "91073b6eccd60eb9adcebdf546ba50c56b89e449d6e4cd10444067f65aef9564",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_chest.png": {
-		"sha256": "63a080dcf8403edf3ea24a6655caccb0d8f94ba56499aa361e95119aa162f338",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_chest.svg",
-		"source_sha256": "7acc919a7f8ba6445a7594e13b31fe2adb61f02f1779fd5a88e52f22c36ca143",
+		"generation": "docs/collection/comic_illustrations/first_chest.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "6f2d5986b6464ed9baebaa2066cc91e81bb8964b8941fd216bda3cfef80b2128",
+		"source": "docs/collection/comic_illustrations/sources/first_chest.png",
+		"source_sha256": "786e5d64079f0733b9e2eb9570ada2cd98c33464ac59a824342b9a444852408a",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_contract.png": {
-		"sha256": "4297954baee3270008e1beaafb81d0119f8d06864ed4a115bf2daf21c269e73b",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_contract.svg",
-		"source_sha256": "8268c29b26fdd6d27f85a2826b85f361bc78b02acdcefb79f190d988944400bd",
+		"generation": "docs/collection/comic_illustrations/first_contract.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "17692ed74fbc19f9ee01923c18b873647a954187335894b23b815246a3a2f0f6",
+		"source": "docs/collection/comic_illustrations/sources/first_contract.png",
+		"source_sha256": "a986f85cb8c636b43eb300c403a0951085cbec56cbd9df31a60486883d9fbb34",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_elite.png": {
-		"sha256": "5c44b89a66080034626fe5d5174998d3f475ce8cb123b8b7f50ea534fb602115",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_elite.svg",
-		"source_sha256": "9e6fedafd575ed32bd0e0def099476d7eb6c2799354ccfa967618a51cb5cb3b0",
+		"generation": "docs/collection/comic_illustrations/first_elite.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "52bc99edaefe177f6cadb8986e82c6de70cf0d0633ef26c09f21d422b40d0c6d",
+		"source": "docs/collection/comic_illustrations/sources/first_elite.png",
+		"source_sha256": "ac7db3a5d0089f399e5190b1fa97135ec04f91847cbce96d81ff3ed2b5787366",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_guardian.png": {
-		"sha256": "c3e5b35be6359c97dcbc8373cd7ab557be6aaa16d62ee7f3e2610c5819fa7693",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_guardian.svg",
-		"source_sha256": "980541d22a19c1e25067f0237c94a92a92922fb0195826c8f2be6130e7109a43",
+		"generation": "docs/collection/comic_illustrations/first_guardian.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "fa24d5bc7ff8a967f33331202bb833cfbbba67ccfdc94dc93db254aefb3df91f",
+		"source": "docs/collection/comic_illustrations/sources/first_guardian.png",
+		"source_sha256": "613bab373a366a36bb936b1eb1ca4e8d3179aef2f4fa125e88a77bf042b1eac2",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_purchase.png": {
-		"sha256": "63a080dcf8403edf3ea24a6655caccb0d8f94ba56499aa361e95119aa162f338",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_purchase.svg",
-		"source_sha256": "7acc919a7f8ba6445a7594e13b31fe2adb61f02f1779fd5a88e52f22c36ca143",
+		"generation": "docs/collection/comic_illustrations/first_purchase.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "c62c8a87a87c5f68e822193225b50d9c64fb156d74fe564e82de4901385e2bbf",
+		"source": "docs/collection/comic_illustrations/sources/first_purchase.png",
+		"source_sha256": "31c977de545e124d941833fa59a97766ce666c3c1c492f9be2baa70c745ebc22",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_steps.png": {
-		"sha256": "696d55c7744da4408ac64a309de568926b9a5a5e25ba4a2e3967bb1758ebc9b0",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_steps.svg",
-		"source_sha256": "8e6a3eec637f6acaa022c0c3f08835c7ade705716b7228992eea202d1d028804",
+		"generation": "docs/collection/comic_illustrations/first_steps.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "da85fe7ebcf331392bb33e3b2c0400cf1210e1d8ccf33e73ad9971d9faf99d83",
+		"source": "docs/collection/comic_illustrations/sources/first_steps.png",
+		"source_sha256": "ff5f13dd8fc9acb1c7a9d6fccdb14d37ae82f986598aff2e651b29c7cc02a751",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_upgrade.png": {
-		"sha256": "2a419263eb92b3013792462f97f7e08dce21b0cd29e816ac9de871fe0477b485",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_upgrade.svg",
-		"source_sha256": "7d572d28beade501f7315ce36184d5c2866a8ff01034dee8ebafe4859bb79541",
+		"generation": "docs/collection/comic_illustrations/first_upgrade.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "e74719e7a3dc236c1b70c108226260afce8f1021b1e32e0d167208218a2a7789",
+		"source": "docs/collection/comic_illustrations/sources/first_upgrade.png",
+		"source_sha256": "7a7c5ba69ddf3c486bacc8c1c640e39068d00314adab97ee53e614ea67ef67c4",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/first_victory.png": {
-		"sha256": "fb6d96eebe9c569bf044f0ab7a3e9801d065d779913a6c160f6a0ad4f6a90a66",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__first_victory.svg",
-		"source_sha256": "5f0bbc7c8a5b0e54f246b37cef565c36d9752d656d2e8dfd473172e2b50c7846",
+		"generation": "docs/collection/comic_illustrations/first_victory.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "c396662d5eddf141b3e20de8b2af2b95acd594f539e4915d917bfa8285b5a60d",
+		"source": "docs/collection/comic_illustrations/sources/first_victory.png",
+		"source_sha256": "c20f9f4d5d4bc5eeb7a8aba926bcf34e539cf3770f73042372be1162b98b6481",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/five_victories.png": {
-		"sha256": "6ddccddc750a228942b72010954f44b3d9fe20032eb6243aa6560243af2bcbd8",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__five_victories.svg",
-		"source_sha256": "e8191337c1120ac870dd23e416afd6a8a27f719ad6f921ebc01e8953e806f4b3",
+		"generation": "docs/collection/comic_illustrations/five_victories.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "84c19dcab389b4a71c611b390834f1ec7ef637aeaa75d891c4b310e9818d3841",
+		"source": "docs/collection/comic_illustrations/sources/five_victories.png",
+		"source_sha256": "58c2998608466ddcda9ba2fccf7ffee935343b3c334be7b5f23b54cb3917b176",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/forbidden_pact.png": {
-		"sha256": "707dcbd74218d38996d8bcdec50873299516fe7ece762d652132c33261d622db",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__forbidden_pact.svg",
-		"source_sha256": "dbb03f9d0a17cf451703b6d22bad5d516e4272dd78e32e7483c9c7975b7a6a46",
+		"generation": "docs/collection/comic_illustrations/forbidden_pact.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "dcade2299e268cdd525c9c6704236f081a08d4edd5a3e5f10ee0c6ca91067ed4",
+		"source": "docs/collection/comic_illustrations/sources/forbidden_pact.png",
+		"source_sha256": "42dd9655cfec3b9520af2b47fe634821d3816c5af0d9c7acd43793eb611ab667",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/guardian_victory.png": {
-		"sha256": "c3e5b35be6359c97dcbc8373cd7ab557be6aaa16d62ee7f3e2610c5819fa7693",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__guardian_victory.svg",
-		"source_sha256": "980541d22a19c1e25067f0237c94a92a92922fb0195826c8f2be6130e7109a43",
+		"generation": "docs/collection/comic_illustrations/guardian_victory.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "e8e56780313174d82c1c6fe67c4049d7ac2bc2f5d0752cb59ec5e20bccae2de9",
+		"source": "docs/collection/comic_illustrations/sources/guardian_victory.png",
+		"source_sha256": "017bbde5d18c99ce3869215053ef814d807489120b5ff23326ee24d6e878a36c",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/home_again.png": {
-		"sha256": "28ec530299df21d5213cc13cb50b72b8532245d0a3cf8859eb853800641c3af0",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__home_again.svg",
-		"source_sha256": "7c5132ceb211b3e9d75041812d56c103acffa9757e2935ae86d3e95ebe5e5d53",
+		"generation": "docs/collection/comic_illustrations/home_again.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "299c19be6da1f1773c039ef1337c2bccc1303d13bf480804e798f17a618ab25a",
+		"source": "docs/collection/comic_illustrations/sources/home_again.png",
+		"source_sha256": "eb2cbc5ed6f5ccd6422647878af0f3ba0b9ea37fdb8217bafd32f0c710b19e03",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/last_breath.png": {
-		"sha256": "7cdcf900f67411b9f47b7fbe19a6b93dfb2dd9ed78e5498cca49a2697b81ff06",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__last_breath.svg",
-		"source_sha256": "c326878e16c5a1d185be129b4af55b40c5a9635237abe54644c6f2d9ce444518",
+		"generation": "docs/collection/comic_illustrations/last_breath.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "ffcb32b08fb6fb0b74ce2c4391e731324e0d100b14ad73ac9773d6c36a6c6e25",
+		"source": "docs/collection/comic_illustrations/sources/last_breath.png",
+		"source_sha256": "5b47ec0843404b7e667086f29843d1fb187e1675332ba1901df4ead76e821ab4",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/mage_victory.png": {
-		"sha256": "9e664f89756eed4ee90791ba83dbcd8db1e0f4f52b58f07f00a5031f00503f55",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__mage_victory.svg",
-		"source_sha256": "0b944412ff7598404c4619776d42b44ccdb8bad7ecfb6451ae2176d0a4d5d3fc",
+		"generation": "docs/collection/comic_illustrations/mage_victory.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "6c5e5ad500caef8224c0317732ffb67b63d8236bc62a3c3719cd7863d45056c8",
+		"source": "docs/collection/comic_illustrations/sources/mage_victory.png",
+		"source_sha256": "a9429403e5ab64b672758b58b93d5d448bc5481020cce8bb972be685140bf60d",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/master_armor.png": {
-		"sha256": "95171f5c93b6a80eabb1659f68bed5951fac72c0b3779c4cc632ab29628ca6ee",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__master_armor.svg",
-		"source_sha256": "ca26199f588d74fd615cd2eb868592720a70d02316d2d6eb42d277b475b5cf58",
+		"generation": "docs/collection/comic_illustrations/master_armor.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "a2fd3cb78e9ddf57579123abf421801cb253c0c93386c2ae798fb734e5bd93a4",
+		"source": "docs/collection/comic_illustrations/sources/master_armor.png",
+		"source_sha256": "be89fbd5354f44eb4570dc2664064b68de636d2130992b7ad5b337ab97ee67bf",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/master_weapon.png": {
-		"sha256": "062d384533f44acbbf58df1a751d8480633b8a5db3afe69043e5fc9b7912dd50",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__master_weapon.svg",
-		"source_sha256": "e0f555af19d4537b13374fe434be1d2064c8b31f791cae3bbb509af8498d1a6f",
+		"generation": "docs/collection/comic_illustrations/master_weapon.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "ce22b0810b7225ddc892cb93489c08ee7f98aea3c1b60d63b2c9df1cf9276c28",
+		"source": "docs/collection/comic_illustrations/sources/master_weapon.png",
+		"source_sha256": "ff5e1fc7ded7227774b63ae05ea8c2ad5ddcbfe25c8a1b0df082df21ae05463d",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/oathbound.png": {
-		"sha256": "784206ded6d843ed98faa895c6378ab9d63f34fc6aed5bacdb9310b8daf22847",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__oathbound.svg",
-		"source_sha256": "d3acf63df4a30d01a274987f8d90528ecd452a70bcf92b364fbff0ff0294305c",
+		"generation": "docs/collection/comic_illustrations/oathbound.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "472621a1e24234a75f5104aff354e8bd7698c3a572e6b4e8cb3652db3ca1f553",
+		"source": "docs/collection/comic_illustrations/sources/oathbound.png",
+		"source_sha256": "917cc6f059fa52c31b85e95b4de4324f25ff93823bae69813a253037d92e3566",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/rogue_victory.png": {
-		"sha256": "878c17858f745f88485ce72c1ccaa77a7235baa02dc4cb3576eb218c732726f9",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__rogue_victory.svg",
-		"source_sha256": "7b6adfda32407f7a5bc73d93d6bc48be0f872eb7baadf8cb0cff12aceb96da90",
+		"generation": "docs/collection/comic_illustrations/rogue_victory.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "ea59f62d7f39617f873c0b1dbaa0e16fac8f759c9ea478ddaaa33711a2246be4",
+		"source": "docs/collection/comic_illustrations/sources/rogue_victory.png",
+		"source_sha256": "cea03db9cee22592b9a2e568c773729970654f0a2681d3e4a9e13eff03588e6e",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/six_echoes.png": {
-		"sha256": "ede5c870bb0ad835d1f084bf2e0d3a0a1cca2b19b2f4cf56d441bdc9fec38945",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__six_echoes.svg",
-		"source_sha256": "9484ff8b2a254f42fd57d7eeedabfe68144b827f1a3dd9b297c494c101aa2aef",
+		"generation": "docs/collection/comic_illustrations/six_echoes.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "14cd9857d21ec61c11c487189afd59fcd95b3693250dffed9ab89d6d610b8271",
+		"source": "docs/collection/comic_illustrations/sources/six_echoes.png",
+		"source_sha256": "936af26a3e00dccf11640865e724c0a4466422cb04da8d3c6bbe0b8791f5649f",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_battles.png": {
-		"sha256": "80189ea3ba87003ef8da28ff96c32e714e8a00bc97b34dba42140fc6058bff38",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_battles.svg",
-		"source_sha256": "2c37e00143e57daf10e1c21bd15880fe400df6e227b3d88b035d61adbe7158e1",
+		"generation": "docs/collection/comic_illustrations/ten_battles.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "826a83087731f377dd24ccb6480332067356552af4f8240fe36bb47adbc4b0f1",
+		"source": "docs/collection/comic_illustrations/sources/ten_battles.png",
+		"source_sha256": "b868fce9b9e29ee6f5890a8dd4f85f9f72daae421723e8a5849168c398eed4c0",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_chests.png": {
-		"sha256": "be5e3db4f704aea1dba3e2e72bf31188be8e6a3f7ab4df4899c451d282331b58",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_chests.svg",
-		"source_sha256": "3e15f65cd1f6e1cfc8ec38272312cbd9d8bfb6b79bc9c3d6c3172ddd6845aed2",
+		"generation": "docs/collection/comic_illustrations/ten_chests.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "7f5002bfc9294982198f9575afd0f9f4987da81d351456afe201b55ff71551ff",
+		"source": "docs/collection/comic_illustrations/sources/ten_chests.png",
+		"source_sha256": "8d3405861f13d3a450ad5ad09202f95988ca3788bdcb4fc5095a35fb031b056c",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_elites.png": {
-		"sha256": "111e047065156285c6ae5934f1ebc1302d81432babc79d926840148050f67597",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_elites.svg",
-		"source_sha256": "310288f16a22d4cf0a2f79bd0507c6ae86e0ead75802d3a6a508ceeed43821f8",
+		"generation": "docs/collection/comic_illustrations/ten_elites.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "af05972a7453abea8087e843415a8761ab511bfa8428fbe87ef8e29a72295306",
+		"source": "docs/collection/comic_illustrations/sources/ten_elites.png",
+		"source_sha256": "f44b1c81935992722cfe060c245030819fdaa27f2cebea18a5dbddf092c983a7",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_purchases.png": {
-		"sha256": "be5e3db4f704aea1dba3e2e72bf31188be8e6a3f7ab4df4899c451d282331b58",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_purchases.svg",
-		"source_sha256": "3e15f65cd1f6e1cfc8ec38272312cbd9d8bfb6b79bc9c3d6c3172ddd6845aed2",
+		"generation": "docs/collection/comic_illustrations/ten_purchases.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "c4e5fa6f3e5c99db28c5ffb85e9bf957d304e96a97da254e56725b58724cceac",
+		"source": "docs/collection/comic_illustrations/sources/ten_purchases.png",
+		"source_sha256": "dec7818d9fe3ccfc930ed0c06e6dfc3e8764b56a2823879f48f91283a7a4c35b",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_upgrades.png": {
-		"sha256": "6d6575a0511441f13bd1bf57318f7ddd4622ab90e748152d8d5260d8eae7be76",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_upgrades.svg",
-		"source_sha256": "3dc51ccc61692a32068da45e379b2648b107699061ad6f5c5022d9541836498e",
+		"generation": "docs/collection/comic_illustrations/ten_upgrades.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "c8ef9d17c8f87f2c4aaa0d8c770865056fa0964f6a2b915afc341e45299ade41",
+		"source": "docs/collection/comic_illustrations/sources/ten_upgrades.png",
+		"source_sha256": "4b25c0a3802ddb16a94e1ef90a2bc638ad25a082d988c91b44483fe0a1481244",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/ten_victories.png": {
-		"sha256": "6ddccddc750a228942b72010954f44b3d9fe20032eb6243aa6560243af2bcbd8",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__ten_victories.svg",
-		"source_sha256": "e8191337c1120ac870dd23e416afd6a8a27f719ad6f921ebc01e8953e806f4b3",
+		"generation": "docs/collection/comic_illustrations/ten_victories.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "b7306846a33b7422f6387bf40285b88787be8b852b5dc4b9a4fab60e82b46e8f",
+		"source": "docs/collection/comic_illustrations/sources/ten_victories.png",
+		"source_sha256": "8ab05664b20903107840df3191661faa5128de618493516bf0eb919dee7b4a3f",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/collection/icons/warrior_victory.png": {
-		"sha256": "062d384533f44acbbf58df1a751d8480633b8a5db3afe69043e5fc9b7912dd50",
-		"source": "docs/art_direction/postapocalyptic/vectors/collection__icons__warrior_victory.svg",
-		"source_sha256": "e0f555af19d4537b13374fe434be1d2064c8b31f791cae3bbb509af8498d1a6f",
+		"generation": "docs/collection/comic_illustrations/warrior_victory.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "cebf6149db02900d3df8d7a4f2ebbb0bd6ec58ad231d97aef5c32ce00fd91a19",
+		"source": "docs/collection/comic_illustrations/sources/warrior_victory.png",
+		"source_sha256": "11ca86f1d4098600052bfd00eaccd64f6e7053255510f9084cae0a4023508baa",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
-	"assets/collection/secret.svg": {
-		"sha256": "2052578d4ad16af4e7b2fcbecf842b31b4637afc815e832b7a0049ff7d76fe91",
+	"assets/collection/secret.png": {
+		"generation": "docs/collection/comic_illustrations/secret.json",
+		"inputs_sha256": {
+			"assets/heroes/identity/portraits/warrior.png": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+		},
+		"processing": "proportional Lanczos resize to 512 square",
+		"sha256": "bf22e305ae7a15ba8875b31fb83331af1a8dbaced799fb89f4cb6de89270095e",
+		"source": "docs/collection/comic_illustrations/sources/secret.png",
+		"source_sha256": "c1926055f266033a3926cad22f5a94d7c15062c6218f9e9747e71b04896eaa40",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/collection/ui/achievements.svg": {
+		"sha256": "106fd1e1f9dcec8f7c291cfa990195fa468e42c01d0a4c1cfe0eb210ff02c9ac",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/collection/ui/history.svg": {
+		"sha256": "a053ab54eef53a7933ef4d594a097a34378439e65dbcb386b6f0101b7bb72531",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/collection/ui/hourglass.svg": {
+		"sha256": "14e0d883d9ab01db11371a8ccbcb7775a14d8cd05c2b44e41ee4be72795ac3a4",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/collection/ui/return.svg": {
+		"sha256": "bb4132055019caaaedfa9895f001dec51aeeae3e48909ce7a8756d54b7e26918",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/collection/ui/unlocks.svg": {
+		"sha256": "85e9cfcbc759b62d361e79df5ba27f5b6593b7a5fdbb39570822deea23204110",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/collection/ui/victory.svg": {
+		"sha256": "67cdbe9c2c1e2d8c1ebd5ec65238291014586d76911366e0bc307b434e404fca",
+		"source": "scripts/collection_icons.py",
+		"source_sha256": "863bbe97fcab7b0650d7486ed9b02859d6c8bc9ea3fa85710656ccfc631cec61",
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG"
 	},
@@ -1994,9 +2516,9 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/dungeon/bag.png": {
-		"sha256": "3d36372a4e40754bee5895f4b98f0054701957fcc0dae8777b047448b9ecd903",
+		"sha256": "a9de88a4be4c064de79723c82264242a4a1ce2b0a532e2805bad3d302bcbe3f5",
 		"source": "docs/art_direction/postapocalyptic/vectors/dungeon__bag.svg",
-		"source_sha256": "cf66b372684ccf5392086b318b9497bbd219f96a2c65d065abf45f0d8bf47305",
+		"source_sha256": "42fd14ac2044d72ae54ff42197f10358ed210b7a508d2cccd0207ca5147cc9be",
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG rasterization"
 	},
@@ -2149,9 +2671,16 @@
 	},
 	"assets/enemies/animations/bandit_7.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "050b017fd284eb1100d1231ed0a7e78d4b1ef0ec1b4aea58119c76a35e3e9d15",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "15ef7b01c19490949ed2bdd80ad587daca6d43176753b7da88b0391182d92500",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2229,12 +2758,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_automaton.png": {
-		"job": "enemies__animations__skeleton_6",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "863fa6c57c2359d145fd305a80e1d3b4aa1d34b8822ab66660556dfaee23baff",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__skeleton_6.png",
-		"source_sha256": "580bc2be72ef57a61da8436b040c70c7d7070951474ee3a2ab611a2a3bcf7852",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "702b6e5a60bf372bc1b604134390dd691400d9938f6328f79a1b60e81f9332e2",
+		"source": "docs/combat_refinement/sources/enemy_crypt_automaton.png",
+		"source_sha256": "7de17318574ca2f4d582e7391dc695a256bbbb6d5b4e07f9a6711d553e133b18",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_bandit.png": {
@@ -2247,12 +2775,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_bat.png": {
-		"job": "enemies__animations__crypt_bat",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "f633fd914f761d14c0a6a49b932062d14f4ffbe5a601fceeee9ec8d7c55abc03",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__crypt_bat.png",
-		"source_sha256": "0d684923269a47ccbdb3500d40e9748699c8e0870dba8dc39ba439ad7185f6f6",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "5324c9cbec785a0e7dd1019d163504438edab191c2c8441061eb140b39871ef8",
+		"source": "docs/combat_refinement/sources/enemy_crypt_bat.png",
+		"source_sha256": "48fdc65e3fa17a8d19e51154a1500269b4946adebe439a2745f01703b418f3f7",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_beetle.png": {
@@ -2265,12 +2792,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_lancer.png": {
-		"job": "enemies__animations__crypt_bat",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "f2bb2490118640c2343f9f9b956376a0cf68747d3df1502fe72418dc5d5ebe23",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__crypt_bat.png",
-		"source_sha256": "0d684923269a47ccbdb3500d40e9748699c8e0870dba8dc39ba439ad7185f6f6",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "c24e09c1be1ac60c54e9733e2edb18dd01fcd092c93e2e034dfe12546ac62ad3",
+		"source": "docs/combat_refinement/sources/enemy_crypt_lancer.png",
+		"source_sha256": "b7c8d40e8fdbc8846534613f375fdb48b1c3ef807c64dc36321a8ced399ed7bf",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/crypt_shaman.png": {
@@ -2293,9 +2819,16 @@
 	},
 	"assets/enemies/animations/crypt_wolf.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "d48c6ece49fa11c6606bce5a50c8b63753db056ac01faeb50aac9b6edece69cc",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "3335b68d00bad6d1ddbd0c0657890cfa964743584f45092d54d6eb81d8442520",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2383,8 +2916,15 @@
 	},
 	"assets/enemies/animations/flying_1.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
 		"sha256": "0a5a050a7bd48107ffa1116a57960a602cc7a9d3c5328cdbc8a14858d7d09bb1",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
@@ -2400,12 +2940,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/flying_3.png": {
-		"job": "enemies__animations__bandit_5",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "7ea5bcf0656ab8790a8aaa8f3fd99b87f51417fdfe78161b78ba09222b0637f8",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__bandit_5.png",
-		"source_sha256": "a246e7fc58ec4350f29e1000625f657ad776a3ac05f98425dbfc8c4a1f4d708c",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "449cb415445c05d436942714545ea9e17d90b08c2ba82a450848f29f96157e64",
+		"source": "docs/combat_refinement/sources/enemy_flying_3.png",
+		"source_sha256": "8ddec8e537de7f771816061dd29afce342a9452cdfefb0466f07aa00da5119bc",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/flying_4.png": {
@@ -2428,9 +2967,16 @@
 	},
 	"assets/enemies/animations/flying_6.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "77b0efb7d85175030ce6c20f909db82912d0b0a7b0748464d059c12bb55c473c",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "18cd7eb17fc435495ff4ab9dd5465871aac76992f5bc730fa4f8c954b2470762",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2445,12 +2991,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/goblin_0.png": {
-		"job": "enemies__animations__goblin_0",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "28d535e2664c9182ba7e3661ef7e59b2877cecce8d2851b60eed3d7d9d0b808c",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__goblin_0.png",
-		"source_sha256": "36576c7e7ad716a8b783e51d0ab17eb26dee6365abc6fc37b9fca2e6df090f39",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "ce385600494a26bbd3c7081ffb774866f8ad08bfb1749cdc5b5c482b4cab773e",
+		"source": "docs/combat_refinement/sources/enemy_goblin_0.png",
+		"source_sha256": "b79bb6d3a2a64c7baa4b985b9b400d1f421093ea6251b09146c7c8df64cf8ec5",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/goblin_1.png": {
@@ -2508,12 +3053,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/goblin_7.png": {
-		"job": "enemies__animations__beast_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "b88a541156fb68f33bf7fed846731822c206d4f7e95cb4bce09beecac0ec6ac4",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__beast_1.png",
-		"source_sha256": "7cd02816ef5fba2c1af3dc2309561de66a96493a815d31b0cc893fa71e1d6c6f",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "1266f1368a74f44434f5db41ca9902086f29e937eec8b2c528860abec32b5dd9",
+		"source": "docs/combat_refinement/sources/enemy_goblin_7.png",
+		"source_sha256": "5fde2a7dc36a57b88ba9436589b003d209ad01d5825c7b415337c1049cdac512",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/animations/skeleton_0.png": {
@@ -2653,9 +3197,16 @@
 	},
 	"assets/enemies/hd/bandit_7.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "838f2a2891135ac8b32d682fd85f1c85751ebbf8f11eb4840f51bb92686c145b",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "368ff0fffab1faa36bcbd9d909b6b4a9c604e7c0480ea43a681c3cf10de9b4c1",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2733,12 +3284,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_automaton.png": {
-		"job": "enemies__animations__skeleton_6",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "4e4abed5a786b89e0be10e2cae633663585a4554255328f9839e85779b386e9d",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__skeleton_6.png",
-		"source_sha256": "580bc2be72ef57a61da8436b040c70c7d7070951474ee3a2ab611a2a3bcf7852",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "745d917a2855510a620a5d981f9987f76e3f8ad4592deffc59a22dea03d62ef0",
+		"source": "docs/combat_refinement/sources/enemy_crypt_automaton.png",
+		"source_sha256": "7de17318574ca2f4d582e7391dc695a256bbbb6d5b4e07f9a6711d553e133b18",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_bandit.png": {
@@ -2751,12 +3301,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_bat.png": {
-		"job": "enemies__animations__crypt_bat",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "160435df97a1986d6077e28125a6dd19891357daa39311a76f4c73d23f7892d7",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__crypt_bat.png",
-		"source_sha256": "0d684923269a47ccbdb3500d40e9748699c8e0870dba8dc39ba439ad7185f6f6",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "75c426de3ba0ac5e864ae718ea64e2f9227e292d8b982487f708505e2f37219c",
+		"source": "docs/combat_refinement/sources/enemy_crypt_bat.png",
+		"source_sha256": "48fdc65e3fa17a8d19e51154a1500269b4946adebe439a2745f01703b418f3f7",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_beetle.png": {
@@ -2769,12 +3318,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_lancer.png": {
-		"job": "enemies__animations__crypt_bat",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "6a4c31fcb60d29cb91d3c5e8fb28680f28a8a4a671838e01aa42dcafec24c646",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__crypt_bat.png",
-		"source_sha256": "0d684923269a47ccbdb3500d40e9748699c8e0870dba8dc39ba439ad7185f6f6",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "9c8bd9527cea4ec6850f352c4131872d17c315fbbf3d9ff08e7cc92689423472",
+		"source": "docs/combat_refinement/sources/enemy_crypt_lancer.png",
+		"source_sha256": "b7c8d40e8fdbc8846534613f375fdb48b1c3ef807c64dc36321a8ced399ed7bf",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/crypt_shaman.png": {
@@ -2797,9 +3345,16 @@
 	},
 	"assets/enemies/hd/crypt_wolf.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "61a5936c0966f177ff2fda2200653bb3390b777c852ef96fc2bb313868643ef7",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "e6fd62ce9ac7a8aa8d6d0fadb1645967156b2c334279b2499fb35083c9bea2f1",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2887,8 +3442,15 @@
 	},
 	"assets/enemies/hd/flying_1.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
 		"sha256": "8b6ad2f21d20bf87a5810ec6c56fb739fc008d8883b8926ebd10ae220b99a9bd",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
@@ -2904,12 +3466,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/flying_3.png": {
-		"job": "enemies__animations__bandit_5",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "7223a17fa20dc997bbe5f99b99efac48dd89e0c1cad27f7b94eff50a7991b553",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__bandit_5.png",
-		"source_sha256": "a246e7fc58ec4350f29e1000625f657ad776a3ac05f98425dbfc8c4a1f4d708c",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "482e63abf91dc93d1709e84a878d6ee0fdaeb97636fb8b0e19f889e156636d22",
+		"source": "docs/combat_refinement/sources/enemy_flying_3.png",
+		"source_sha256": "8ddec8e537de7f771816061dd29afce342a9452cdfefb0466f07aa00da5119bc",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/flying_4.png": {
@@ -2932,9 +3493,16 @@
 	},
 	"assets/enemies/hd/flying_6.png": {
 		"job": "enemies__animations__flying_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "f75b24a41b7cc2b42c87c61a46885da5d81f6e4d60477af55a44fb0f857eb9ea",
+		"processing": "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline",
+		"processing_version": 6.0,
+		"row_edges": [
+			0.0,
+			214.0,
+			410.0,
+			607.0,
+			1024.0
+		],
+		"sha256": "22fbc6d813e798ac0dd51aadedf996dc044a0c25b7fdec4934292d29b80d81d7",
 		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__flying_1.png",
 		"source_sha256": "ffcb6673e2fc64ae52a609304c79a38ec0264801abff8f381acac0e48f40c7c8",
 		"style": "postapocalyptic_comic"
@@ -2949,12 +3517,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/goblin_0.png": {
-		"job": "enemies__animations__goblin_0",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "fa03b2aafcde71183093a9247b20e895061d15e15ac0e40c417d99c32bd9c0c4",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__goblin_0.png",
-		"source_sha256": "36576c7e7ad716a8b783e51d0ab17eb26dee6365abc6fc37b9fca2e6df090f39",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "b075904485921555bfc72030d1067ada3802d7ed48c4114b7c7b9ec71b94c55b",
+		"source": "docs/combat_refinement/sources/enemy_goblin_0.png",
+		"source_sha256": "b79bb6d3a2a64c7baa4b985b9b400d1f421093ea6251b09146c7c8df64cf8ec5",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/goblin_1.png": {
@@ -3012,12 +3579,11 @@
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/goblin_7.png": {
-		"job": "enemies__animations__beast_1",
-		"processing": "adaptive gutters, principal silhouette crop, common scale and baseline",
-		"processing_version": 5.0,
-		"sha256": "6e500ec7c043b836b73153b91cd06e4ca13db14b1b5866ee9749769df6608de2",
-		"source": "docs/art_direction/postapocalyptic/sources/enemies__animations__beast_1.png",
-		"source_sha256": "7cd02816ef5fba2c1af3dc2309561de66a96493a815d31b0cc893fa71e1d6c6f",
+		"fluid_revision": 1,
+		"processing": "8 authored poses, adaptive gutters, uniform proportional scale, opaque feet at 240",
+		"sha256": "be8fa59a5283b8a961c6e93ee9382b14d6de7eb497698843ac814d7317848cca",
+		"source": "docs/combat_refinement/sources/enemy_goblin_7.png",
+		"source_sha256": "5fde2a7dc36a57b88ba9436589b003d209ad01d5825c7b415337c1049cdac512",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/enemies/hd/skeleton_0.png": {
@@ -3222,9 +3788,9 @@
 	},
 	"assets/forest/combat_glade.png": {
 		"job": "forest__combat_glade",
-		"sha256": "0f1f54d40ddf1ecc0d8b419e93352bb14cbaddb9607c0c0c8ac1239c496bea5f",
+		"sha256": "218cd01e381451605308c199a6236118ed12e47e2bc2a5cfe1931b767c996cad",
 		"source": "docs/art_direction/postapocalyptic/sources/forest__combat_glade.png",
-		"source_sha256": "cba1ccf83ce779459876fc1b222b7ed94a63be8687c27184ad515415b0ad0471",
+		"source_sha256": "6913a500ea52417519980ea162d2c9f6d23b55ae227b28f98dd21250c222076b",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/forest/combat_ruins.png": {
@@ -4090,7 +4656,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "7f4f601761eefa3a2ac4d3be923c0f89796a063ae60ced1f3c28f3ac101dcda0",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4103,7 +4669,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "7bab586d142b9f7af483ccaa079a38c22daa8a0d810857a59241d9ec1275fc67",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4116,7 +4682,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "3d1c96ceb9cc6c3eb2a864f41d9bd0e89300e9282206266e25c2e10c4bb053e6",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4129,7 +4695,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "dbf15b7f31bb156a6ceb96455ff60d47518003676d726b66770d141f950ae898",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4142,7 +4708,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "1b3ba033d6c1ba3ad16b45e528faa5212e376d4d4a1d1ad44241044b50b23c31",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4155,7 +4721,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "78f75119fb7f02bbdcaf3b8640df8d5fda1ff5ddd2bf5fc23a953cb8929a342f",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4168,7 +4734,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "0f2434a8073a3fcc74cbd96a04a2bdf27fb1e3cac103f094a4bdfc62b0868478",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4181,7 +4747,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "108633e22867df1f8de0fc65f07cea60b13f8f62f8f962c263e314284d83ea85",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4194,7 +4760,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "7835896e1589d8c67039b9316636c26a3815665b61ca9d4d61d7032538ea03d3",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4207,7 +4773,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "720fdea645bb895b7c16bcb2fd08bf2ba47177b84f57ae8683b29bf4afdbd24e",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4220,7 +4786,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "a5afaf2bf6e4fad770e3ac77cfa19567f1a8c6c716ffc77e7fa869e5a168698c",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4233,7 +4799,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "7434aee88d545bc6a2242ddfb36184dbfe1ced19e1fccdb6bb6a0d1fced95f72",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4246,7 +4812,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "688870949fc58d261ffbd117b64aae7a2b7b1133715e185b79afdec6fea3e3fc",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4259,7 +4825,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "1392d4eafa058e09950eea6cafb59fc726709f99896a82e1ef04cfaa45feaada",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4272,7 +4838,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "f891de8717755aa815d8caa21d8cc2573372429e598c76604df2ce235a5a7fac",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4285,7 +4851,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "8d3981c32b7e85238b849c46736d29c49e73d4f294b085fc5e83cf435866f1c0",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4323,30 +4889,20 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/actions/guardian_sweep.png": {
-		"action": "sweep",
-		"hero": "guardian",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_attack.png": "83ca8705baf25358fbcfca6030336fb5c137defb4713498915c0b64ace93a7a4",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_idle.png": "2f10491b357cc01e49ec57507ee39f9859d38614de9a5005b51792a5ef451838"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "af1e9fe1b8473ccfc05159091fbf0e59ed5771ed94d5de01a81c18eda55c8c47",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "a8ffd46f3850b54e2e6a632e4ff86986040abb816e9df7e2cbb129d0bb219c7f",
+		"source": "docs/combat_refinement/sources/guardian_sweep.png",
+		"source_sha256": "37bf8976de9809c3a1c26b83eef323d354e707ae6c99820212747513fa52e272",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/guardian_thrust.png": {
-		"action": "thrust",
-		"hero": "guardian",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_attack.png": "83ca8705baf25358fbcfca6030336fb5c137defb4713498915c0b64ace93a7a4",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_idle.png": "2f10491b357cc01e49ec57507ee39f9859d38614de9a5005b51792a5ef451838"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "af1e9fe1b8473ccfc05159091fbf0e59ed5771ed94d5de01a81c18eda55c8c47",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "e8af158cfa38ac17439b744b52056af940c4f304f5337ad1191cee68209663dc",
+		"source": "docs/combat_refinement/sources/guardian_thrust.png",
+		"source_sha256": "2f8af09c6aaccac75f7aac37a2a1891a28706559256f9ab0543ba4620e2a4a38",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/mage_charged.png": {
 		"action": "charged",
@@ -4362,30 +4918,20 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/actions/mage_sweep.png": {
-		"action": "sweep",
-		"hero": "mage",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_attack.png": "e6f062e1c7cfa68daa7057b7673af7914076f462dae45dbfa0ba4fbd2bb388f5",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_idle.png": "733c4e4bc2b445ac9a0686ff3205c5fac1bbc30d5ffe6e0b4b03e9dc913a3de5"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "478a566d4da06193f732aed3fec9178b2a1624b6129724ebdd5ccd512c285465",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "e28254e1fe43a4a62bb0fe665738fb687c731fdcf7befb26e543a7447607ef3c",
+		"source": "docs/combat_refinement/sources/mage_sweep.png",
+		"source_sha256": "e858772bfec5c0946c10a3bae76308e3b29d5ed6d4f8ff1981e5c812aedd79b7",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/mage_thrust.png": {
-		"action": "thrust",
-		"hero": "mage",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_attack.png": "e6f062e1c7cfa68daa7057b7673af7914076f462dae45dbfa0ba4fbd2bb388f5",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_idle.png": "733c4e4bc2b445ac9a0686ff3205c5fac1bbc30d5ffe6e0b4b03e9dc913a3de5"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "478a566d4da06193f732aed3fec9178b2a1624b6129724ebdd5ccd512c285465",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "46febd2d337f59e35641ef438b7feedd2f7c1a3328b364c45d7e19c2efb8018e",
+		"source": "docs/combat_refinement/sources/mage_thrust.png",
+		"source_sha256": "c704edce95fd6911491f36dbe323f323e49f231d3b6871822cccbb208635a0af",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/rogue_charged.png": {
 		"action": "charged",
@@ -4401,30 +4947,20 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/actions/rogue_sweep.png": {
-		"action": "sweep",
-		"hero": "rogue",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_attack.png": "92ad2aba602cb53a880785324e317e67323afba69afc7f81140efdc527d660b1",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_idle.png": "f197f2f599f7d5f233dff79d408cb490f3b7fe5ec5c37601c6f9c3390e0d6533"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "d8ff257cc8186fa351e6f02f23f7bd402b24ddf3d1955dfe943219fd443ecea4",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "44bfdab22fde380b67bc2e28aabb3e6484c7d5f42db0a9f05adbbd9ba3019147",
+		"source": "docs/combat_refinement/sources/rogue_sweep.png",
+		"source_sha256": "0a0cbfcc96a1ac1b796c4b481d0d95bc5aba6b9a3b3bf6cdd2d53cd7097a3629",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/rogue_thrust.png": {
-		"action": "thrust",
-		"hero": "rogue",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_attack.png": "92ad2aba602cb53a880785324e317e67323afba69afc7f81140efdc527d660b1",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_idle.png": "f197f2f599f7d5f233dff79d408cb490f3b7fe5ec5c37601c6f9c3390e0d6533"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "d8ff257cc8186fa351e6f02f23f7bd402b24ddf3d1955dfe943219fd443ecea4",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "8a86b6b9b243c30eb05a1cde8b37922f3fe499c5c732f4ee0d5930ef3eb52048",
+		"source": "docs/combat_refinement/sources/rogue_thrust.png",
+		"source_sha256": "cd26ab868c0ef17fdbea8ef08d0b8392bff5aa0bb0464a9610958043921e9f8d",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/warrior_charged.png": {
 		"action": "charged",
@@ -4435,35 +4971,25 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "0c308fc93cf0e2cd5e5adf8f149438dfee5665bf438a23fc0daf63de94abb72b",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/actions/warrior_sweep.png": {
-		"action": "sweep",
-		"hero": "warrior",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_attack.png": "a0dd3ecd09bd3376486170bd74b901cf0c9d10783a0b4575bffe5eb2458e8b39",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
-		"sha256": "f4152002e5e98fc3ebefc75d2473c50f3304e54e1c92792a2188ec47a75b2600",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "5f9b8c797b1a4f073a8a53e5bcffb2c8b4085497cdb4c5cd4b0901dceae8f9aa",
+		"source": "docs/combat_refinement/sources/warrior_sweep.png",
+		"source_sha256": "0b245da55e0c4bacf0406b84ca82c188c080674531812653ec148c0598997a79",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/actions/warrior_thrust.png": {
-		"action": "thrust",
-		"hero": "warrior",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_attack.png": "a0dd3ecd09bd3376486170bd74b901cf0c9d10783a0b4575bffe5eb2458e8b39",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
-		"sha256": "f4152002e5e98fc3ebefc75d2473c50f3304e54e1c92792a2188ec47a75b2600",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "e6e096a810f47dc3a41667b68e0a914611577639ff50b7f7c16f45729faf91de",
+		"source": "docs/combat_refinement/sources/warrior_thrust.png",
+		"source_sha256": "d92933eca142824e54ef148f236a339dfcee9420aea3f510f3207a5d63255e1a",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/detail/guardian_attack.png": {
 		"action": "attack",
@@ -4518,17 +5044,12 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/detail/guardian_idle.png": {
-		"action": "idle",
-		"hero": "guardian",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_attack.png": "83ca8705baf25358fbcfca6030336fb5c137defb4713498915c0b64ace93a7a4",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__guardian_idle.png": "2f10491b357cc01e49ec57507ee39f9859d38614de9a5005b51792a5ef451838"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "c21b8ec9b62e1e2ad7ba22a85473a586b9a2a3a558afb5bed4a6acf7ba117b76",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "7191c3b08ff4a27732aacb16448695eb7765e75eedecfd29beba05caa50bcffc",
+		"source": "docs/combat_refinement/sources/guardian_idle.png",
+		"source_sha256": "dfd5534d15ae8936f026548fa80d45a3baa29905b40b2e5bc222367e7f22e4ef",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/detail/guardian_run.png": {
 		"action": "run",
@@ -4609,17 +5130,12 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/detail/mage_idle.png": {
-		"action": "idle",
-		"hero": "mage",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_attack.png": "e6f062e1c7cfa68daa7057b7673af7914076f462dae45dbfa0ba4fbd2bb388f5",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__mage_idle.png": "733c4e4bc2b445ac9a0686ff3205c5fac1bbc30d5ffe6e0b4b03e9dc913a3de5"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "c3ecbe48f6ceb860ef7a1e3850ddd58ed9a2d31b7bbb1e2a4fc1faeddd0bc356",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "58f2b073cde59e67633a3cfb6069493748b741d9a0a1df817d02a0b6fe574a31",
+		"source": "docs/combat_refinement/sources/mage_idle.png",
+		"source_sha256": "e12081330aaf48948d0eef0558598a689e14eec83527dff208bb6d72875862e5",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/detail/mage_run.png": {
 		"action": "run",
@@ -4700,17 +5216,12 @@
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/detail/rogue_idle.png": {
-		"action": "idle",
-		"hero": "rogue",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_attack.png": "92ad2aba602cb53a880785324e317e67323afba69afc7f81140efdc527d660b1",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__rogue_idle.png": "f197f2f599f7d5f233dff79d408cb490f3b7fe5ec5c37601c6f9c3390e0d6533"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5.0,
-		"sha256": "32201d209a6fd28edac2bc4fa0262803264541fed8bf04c5cd8b254464d594ed",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "b3ed2482b230a608695c818ac3664593173f68ba40467d99173f5822be8e187c",
+		"source": "docs/combat_refinement/sources/rogue_idle.png",
+		"source_sha256": "62b63ebf038de486e38fad2f4371482b7a1c6c49bde0a23ddf319df481d366a0",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/detail/rogue_run.png": {
 		"action": "run",
@@ -4747,7 +5258,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "714393bf2a29eb69c1ca0e73ed6e51ce7576d9b771fdcfd5d1a385e65deb07b3",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4760,7 +5271,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "5bac234acd263f8da5a258151bf19226163061edb383855b83cfe4686c45e677",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4773,7 +5284,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "862533a845c63819cfcb8009fea3b3c74209f9ca67f375592dbd839fade8cafc",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4786,22 +5297,17 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "94c27f5a7e4744a96a946afbdbe25af4987081ba6146c163c0b11d7abcb4da61",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
 	"assets/heroes/detail/warrior_idle.png": {
-		"action": "idle",
-		"hero": "warrior",
-		"inputs_sha256": {
-			"docs/animation_review/pose_layouts.json": "965427603bf046d94e047e2f9bf5bf25fe457b7ba193670a15651b5f8887ef18",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_attack.png": "a0dd3ecd09bd3376486170bd74b901cf0c9d10783a0b4575bffe5eb2458e8b39",
-			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
-		},
-		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
-		"sha256": "2efb96ac1c1e7fd3398dbf866b454fd284ff22968409d389bc9791c69eaba8a8",
-		"source_folder": "docs/art_direction/postapocalyptic/sources"
+		"fluid_revision": 1.0,
+		"processing": "12 authored poses, adaptive gutters, common proportional scale, anchored opaque feet",
+		"sha256": "7b345b1501dbc333c4edba7f0637bdbebbbcd49b777996bf6c9b5a961bc8d0ce",
+		"source": "docs/combat_refinement/sources/warrior_idle.png",
+		"source_sha256": "0af3439f622f61c2ed039cb0a5fcf806bb355a35f76e8b093743b5e90567d4e9",
+		"style": "postapocalyptic_comic"
 	},
 	"assets/heroes/detail/warrior_run.png": {
 		"action": "run",
@@ -4812,7 +5318,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "bc0f79915d0327e106f039541fd5e3d7d3698259f18487f6649d12783ffb689d",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4825,7 +5331,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "ebe22b7d7f09d37d0a0cfa7d3257985a81703522b2f2c746646bf4e7f2ef67de",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4933,7 +5439,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "8bbdeb30b89ab04002f9c33d1763518dcee7f1dcc08d57f8c7926057fb76a7b9",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	},
@@ -4970,18 +5476,22 @@
 		"tool": "native SVG rasterization"
 	},
 	"assets/map/minimal/boss.png": {
-		"sha256": "06f8faf45ee7df63e216eb356cd813d9f06b261b91c76c1314ac7c5d1edd4ac5",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__boss.svg",
-		"source_sha256": "f8b3a6ed145aea74892acb3a56cb9a68c2ee1a91b80cc31b4535c0ff2f8aff99",
+		"generation": "docs/map/comic_icons/jobs/boss.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "db4243d838feb16e4b45c80825e23ef5c5805fa9a230d466018d3e55493acca3",
+		"source": "docs/map/comic_icons/sources/boss.png",
+		"source_sha256": "8ee6be302b3ea81f8de150bac86f634a4c7f1ab99a57a8989946fca9c9f6883b",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/map/minimal/combat.png": {
-		"sha256": "ea92b28cf59c2aecb5ef9c9d80e3f8423fe36c2ace5381de6a0608bcd75b4149",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__combat.svg",
-		"source_sha256": "409c3a853a6b29334bc1e59def4078edb33794775daa7246b8668a5d274fa61e",
+		"generation": "docs/map/comic_icons/jobs/combat.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "50a0464658b210dbc7b46d139aa1a1d3b63a94e5cc3327699bac25d981ff1fcd",
+		"source": "docs/map/comic_icons/sources/combat.png",
+		"source_sha256": "cca5022b1e60796aa9664f56044c9bcdc10f61d3114002181c0d1729d8b448c0",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/map/minimal/current_room.svg": {
 		"sha256": "cded655cfebc0db2981476d239a639686997ae6c396e45d68f3ad87ec7047df2",
@@ -4989,18 +5499,22 @@
 		"tool": "native SVG"
 	},
 	"assets/map/minimal/elite.png": {
-		"sha256": "45c7dc9b400c9cc90d54531007f4e42c351248eb568d31bb1d77342015580226",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__elite.svg",
-		"source_sha256": "a0ba891bf7e26950ff30259a4297f3eaaaa6a420ce1adb433b600ce504686968",
+		"generation": "docs/map/comic_icons/jobs/elite.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "6218ca61d9410f9015a382a807d74a4d2fc09d29450c07f9f9e94ab3412e7f51",
+		"source": "docs/map/comic_icons/sources/elite.png",
+		"source_sha256": "8b02d0009e441ad1b5e649757b662ce3371601aed56e00387e6a97a1a0ad1832",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/map/minimal/event.png": {
-		"sha256": "3313a8fc6941303ddd8131bc94e0f952871cc24114c5d7f20b3dc097ba7c7b73",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__event.svg",
-		"source_sha256": "e04dec1069ecf524cb16ec5a1ab6cb5ffc4fd70158bdbff582f5f0d1a2309a47",
+		"generation": "docs/map/comic_icons/jobs/event.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "8c275acfe43ad9f80082402d915cfc9ea9f2563b1460e1b455da5c52161b05a5",
+		"source": "docs/map/comic_icons/sources/event.png",
+		"source_sha256": "24fdf25f2b3900abc1536a90e7bba04aaffb034bb1aafeff2cce146c43fa3e83",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/map/minimal/parchment.png": {
 		"sha256": "85cab258205d0c90f6b4b16747ad6467c1d603a6b52d47cd2a3eb2e95c911223",
@@ -5010,11 +5524,13 @@
 		"tool": "native SVG rasterization"
 	},
 	"assets/map/minimal/rest.png": {
-		"sha256": "8081931aeff82dab41945f65cf7f4731a6f0cc999ac9f0d9f8f81093d25dd0dc",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__rest.svg",
-		"source_sha256": "5448fd04b601ad66cfb1de71cfd933bea94cc626f7b3f01d863554971b737fc5",
+		"generation": "docs/map/comic_icons/jobs/rest.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "76a0f358e5e8d8ecf0342060ebcb609db12c2fd4972bbae0866c3b8dad3a7bc1",
+		"source": "docs/map/comic_icons/sources/rest.png",
+		"source_sha256": "f3b5e5f51c380b9b6d8d1523df8a45fa273c72ea231784755954bf053595648e",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/map/minimal/room_papyrus.png": {
 		"sha256": "51bbaebfb810019e6f03c52ee934a726f6fc640c1f20dea8170147ea65647547",
@@ -5024,11 +5540,40 @@
 		"tool": "native SVG rasterization"
 	},
 	"assets/map/minimal/treasure.png": {
-		"sha256": "3d36372a4e40754bee5895f4b98f0054701957fcc0dae8777b047448b9ecd903",
-		"source": "docs/art_direction/postapocalyptic/vectors/map__minimal__treasure.svg",
-		"source_sha256": "cf66b372684ccf5392086b318b9497bbd219f96a2c65d065abf45f0d8bf47305",
+		"generation": "docs/map/comic_icons/jobs/treasure.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "0fed4dda609d11c0ca96de621242fd1880962e6bbedb6cebeea131012c702d66",
+		"source": "docs/map/comic_icons/sources/treasure.png",
+		"source_sha256": "9c093f74f0b68f4c216d0606c9a05274bffe1b561cdfcbea3c014f141c61cf1b",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG rasterization"
+		"tool": "image_gen.imagegen"
+	},
+	"assets/map/sidebar/deck.png": {
+		"generation": "docs/map/sidebar_icons/jobs/deck.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "554ebaf44c8005803ee07ea14c7b2715874e93005f023791797dc27129ad1839",
+		"source": "docs/map/sidebar_icons/sources/deck.png",
+		"source_sha256": "930979749c51cb09a61edeb4805665a3adc2113bb990e3cf87070de796714a86",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/map/sidebar/group.png": {
+		"generation": "docs/map/sidebar_icons/jobs/group.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "02bed035fdfe714be71422ee68ccf1517d0da1f65c0e0e3b0171eec0db21d8a0",
+		"source": "docs/map/sidebar_icons/sources/group.png",
+		"source_sha256": "9509a1ba7682ae82f428fe64a80ef46b976329002e5c0df130e10b9f06133549",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
+	},
+	"assets/map/sidebar/paths.png": {
+		"generation": "docs/map/sidebar_icons/jobs/paths.json",
+		"processing": "alpha bounds crop, proportional Lanczos fit within 240px, centered on transparent 256px canvas",
+		"sha256": "7ab2481d346ee13ee90fe064f6b399fae46aa5d43609e3a371530701a92f74cc",
+		"source": "docs/map/sidebar_icons/sources/paths.png",
+		"source_sha256": "0589be1d8c4729e733de7917b630419b8582804d7d0ecd4ad6cdbd5f695fd51b",
+		"style": "postapocalyptic_comic",
+		"tool": "image_gen.imagegen"
 	},
 	"assets/market/interior.png": {
 		"job": "market__interior",
@@ -5474,6 +6019,48 @@
 		"style": "postapocalyptic_comic",
 		"tool": "image_gen.imagegen"
 	},
+	"assets/synergies/guardian_mage.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "11cc5b5303496be45d481a98c8b899a807e4afbf6f8196d5ea096b4bf9db5f29",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
+	"assets/synergies/guardian_rogue.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "0c701e116df68958fc77cc2ef08daac33e11ce4d774d4613aaf1a8f556c59ae8",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
+	"assets/synergies/rogue_mage.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "a0daa4a8905b2c33bdba69419aad98f8ffa8cba553ae7aebe3cf9654c21171ca",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
+	"assets/synergies/warrior_guardian.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "ffab0a0e1e3ac67575541d587fa285aa45277e4d6dbeda394f877c559e89bf45",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
+	"assets/synergies/warrior_mage.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "db111d65aa2fe8f8a0bf02cdf176bc7bef3f25ae60bcdc8a64dbc72eace77b2d",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
+	"assets/synergies/warrior_rogue.svg": {
+		"processing": "Original vector pair motifs, roster colors, transparent canvas",
+		"sha256": "d932134d22512ee6908eb4fd0dfa3f2d997cd33037b11c9dd64d14e08a592524",
+		"source": "scripts/synergy_emblems.py",
+		"source_sha256": "7908549ef55916c67de53c47946be984811fc7a9aef3c9e9db87025a51908e85",
+		"style": "postapocalyptic_comic"
+	},
 	"assets/title/background.png": {
 		"job": "title__background",
 		"sha256": "30db34b0eefe53482a0387009c46e1ebe96ceff19d2cfc2c351949355826f79a",
@@ -5508,7 +6095,7 @@
 		"tool": "image_gen.imagegen"
 	},
 	"assets/ui/block_active.svg": {
-		"sha256": "1cc0e26bbed550097c7e96f5f46e87dffa369f43d5e8320389218a271e9fa9b9",
+		"sha256": "c2337d65967de636c5e05963625f9306f3cc7b9cd3b40c6566bbbb095e8d6f5b",
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG"
 	},
@@ -5532,7 +6119,7 @@
 		"tool": "native SVG"
 	},
 	"assets/ui/deck.svg": {
-		"sha256": "6ce339a3c094dc82c669dbbf720fd21b0ba4ccd6a04c4f95d764ba2de853ca71",
+		"sha256": "ca7ee3cae64420122423a8c47e41bd1f942ac6fe788bff633a9b906def4f95c9",
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG"
 	},
@@ -5550,6 +6137,13 @@
 	},
 	"assets/ui/heal.svg": {
 		"sha256": "f377f68903cb4bcbf4c821c5398b52f28fca93dd8a3c7b03b2083607b3ebc636",
+		"style": "postapocalyptic_comic",
+		"tool": "native SVG"
+	},
+	"assets/ui/journal.svg": {
+		"sha256": "94e4af796ecc8854cde100a2f2fce6bcebce02db261f697bd3c82417aca541ce",
+		"source": "scripts/hud_navigation_icons.py",
+		"source_sha256": "a84b8a5d03e6c29563d0aabb528d836c77df9fc458fcb79592037c1990f67d77",
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG"
 	},
@@ -5655,10 +6249,14 @@
 		"style": "postapocalyptic_comic",
 		"tool": "native SVG"
 	},
-	"assets/ui/settings.svg": {
-		"sha256": "8f65b529f6349513eb96f5e78e33272b969f3316b7e8c47b62cc5c7b12ab02ca",
+	"assets/ui/settings.png": {
+		"generation": "docs/ui_buttons/settings/generation.json",
+		"processing": "proportional resize to 512 square, generated alpha retained",
+		"sha256": "c7b68b570f9a6938b4a0ff39ad830e2162e2b09a020026188f85941b4ef456bd",
+		"source": "docs/ui_buttons/settings/sources/gear.png",
+		"source_sha256": "65b580a0cdce5529f9443d68767e3ce383e3235ba276b75fe317e0a612adcddb",
 		"style": "postapocalyptic_comic",
-		"tool": "native SVG"
+		"tool": "image_gen.imagegen"
 	},
 	"assets/ui/strength.svg": {
 		"sha256": "b9c4b77c37b8bbcf489a440dbce03b5764d9beeacbb8ccc6a73a148431282738",
@@ -5698,7 +6296,7 @@
 			"docs/art_direction/postapocalyptic/sources/heroes__detail__warrior_idle.png": "7c13c1ec16b1ef6ce7f9d036c5b9186d5708ab3fb6b86567710a3853ebb6a584"
 		},
 		"processing": "common proportional scale, adaptive gutters and principal-silhouette crop, baseline 240/368; old-size derivatives",
-		"processing_version": 5,
+		"processing_version": 5.0,
 		"sha256": "7f4f601761eefa3a2ac4d3be923c0f89796a063ae60ced1f3c28f3ac101dcda0",
 		"source_folder": "docs/art_direction/postapocalyptic/sources"
 	}

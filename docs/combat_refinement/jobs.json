@@ -1,0 +1,206 @@
+[
+  {
+    "id": "warrior_idle",
+    "hero": "warrior",
+    "action": "idle",
+    "prompt": "Production animation sprite sheet for Eterno Retorno. Reference image is identity reference only: preserve this exact character and outfit, remove all opaque backdrop tiles. Nicolás, brown-haired bearded carpenter, purple rolled-sleeve shirt, stained tan work apron, dark work trousers, brown boots, long improvised industrial hand-saw pole tool held diagonally in both hands. ORIGINAL AMERICAN ACTION COMIC: crisp confident dark ink contours, vibrant flat colors, hard cel shadows, sparse halftone. NOT pixel art, NOT 3D, NO medieval armor. Create ONE complete idle combat guard loop, 12 genuinely distinct sequential hand-drawn in-between poses, exactly 4 columns by 3 rows, row-major left-to-right chronology. All twelve complete full-body characters FACE RIGHT with identical proportions, same camera distance, same planted boot locations on a shared baseline WITHIN each cell. Feet NEVER take a step. Animate a gentle realistic slow inhale/exhale, shoulders and elbows easing, hands subtly readjusting their weapon grip, knees slightly flexing, strands of hair and loose clothing moving with delayed follow-through. Avoid exaggerated bobbing, rubber body scaling, or large gestures. Frame1 calm ready, frames2-6 slowly inhale/raise hands a few pixels, frames7-12 slowly exhale and settle back into frame1 for a seamless loop. Twelve equally sized well-separated cells, generous transparent gutters, every head, boot and weapon tip fully inside its cell. Uniform scale in all cells. NO text, NO cell borders, NO cast shadow, NO backdrops or rectangular colored tiles. TRUE fully transparent RGBA background throughout all gutters and behind each individual character. Landscape sheet 4:3, high detail readable around 256 px per pose.",
+    "source": "docs/combat_refinement/sources/warrior_idle.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-3c239e78-1bf3-489e-b40b-97302d1d7a26.png",
+    "body_height": 185.2631578947368,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/warrior_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "guardian_idle",
+    "hero": "guardian",
+    "action": "idle",
+    "prompt": "Production animation sprite sheet for Eterno Retorno. Reference image is identity reference only: preserve this exact character and outfit, remove all opaque backdrop tiles. Inés, athletic auburn-haired construction worker with braided hair, orange work jacket, purple neck scarf, dark work pants, boots, rectangular blue-white road-sign scrap shield in left arm and crowbar in right hand. ORIGINAL AMERICAN ACTION COMIC: crisp confident dark ink contours, vibrant flat colors, hard cel shadows, sparse halftone. NOT pixel art, NOT 3D, NO medieval armor. Create ONE complete idle combat guard loop, 12 genuinely distinct sequential hand-drawn in-between poses, exactly 4 columns by 3 rows, row-major left-to-right chronology. All twelve complete full-body characters FACE RIGHT with identical proportions, same camera distance, same planted boot locations on a shared baseline WITHIN each cell. Feet NEVER take a step. Animate a gentle realistic slow inhale/exhale, shoulders and elbows easing, hands subtly readjusting their weapon grip, knees slightly flexing, strands of hair and loose clothing moving with delayed follow-through. Avoid exaggerated bobbing, rubber body scaling, or large gestures. Frame1 calm ready, frames2-6 slowly inhale/raise hands a few pixels, frames7-12 slowly exhale and settle back into frame1 for a seamless loop. Twelve equally sized well-separated cells, generous transparent gutters, every head, boot and weapon tip fully inside its cell. Uniform scale in all cells. NO text, NO cell borders, NO cast shadow, NO backdrops or rectangular colored tiles. TRUE fully transparent RGBA background throughout all gutters and behind each individual character. Landscape sheet 4:3, high detail readable around 256 px per pose.",
+    "source": "docs/combat_refinement/sources/guardian_idle.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-8fbb6646-19e1-4ffe-be57-710a0b682aaa.png",
+    "body_height": 187.764705882353,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/guardian_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "rogue_idle",
+    "hero": "rogue",
+    "action": "idle",
+    "prompt": "Production animation sprite sheet for Eterno Retorno. Reference image is identity reference only: preserve this exact character and outfit, remove all opaque backdrop tiles. Mauro, dark messy-haired male pharmacist with fully visible unmasked face, teal rolled-sleeve jacket, burgundy medical satchel and small chemical flasks at belt, dark pants and boots, two short utility knives in his hands. ORIGINAL AMERICAN ACTION COMIC: crisp confident dark ink contours, vibrant flat colors, hard cel shadows, sparse halftone. NOT pixel art, NOT 3D, NO medieval armor. Create ONE complete idle combat guard loop, 12 genuinely distinct sequential hand-drawn in-between poses, exactly 4 columns by 3 rows, row-major left-to-right chronology. All twelve complete full-body characters FACE RIGHT with identical proportions, same camera distance, same planted boot locations on a shared baseline WITHIN each cell. Feet NEVER take a step. Animate a gentle realistic slow inhale/exhale, shoulders and elbows easing, hands subtly readjusting their weapon grip, knees slightly flexing, strands of hair and loose clothing moving with delayed follow-through. Avoid exaggerated bobbing, rubber body scaling, or large gestures. Frame1 calm ready, frames2-6 slowly inhale/raise hands a few pixels, frames7-12 slowly exhale and settle back into frame1 for a seamless loop. Twelve equally sized well-separated cells, generous transparent gutters, every head, boot and weapon tip fully inside its cell. Uniform scale in all cells. NO text, NO cell borders, NO cast shadow, NO backdrops or rectangular colored tiles. TRUE fully transparent RGBA background throughout all gutters and behind each individual character. Landscape sheet 4:3, high detail readable around 256 px per pose.",
+    "source": "docs/combat_refinement/sources/rogue_idle.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-6438b9d9-5a1b-4846-82f3-19a2fc822d29.png",
+    "body_height": 204.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/rogue_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "mage_idle",
+    "hero": "mage",
+    "action": "idle",
+    "prompt": "Production animation sprite sheet for Eterno Retorno. Reference image is identity reference only: preserve this exact character and outfit, remove all opaque backdrop tiles. Vera, mature silver-haired female teacher, purple long civilian coat, cream shirt, dark work trousers and boots, improvised cyan electrical coil emitter held in her hands. ORIGINAL AMERICAN ACTION COMIC: crisp confident dark ink contours, vibrant flat colors, hard cel shadows, sparse halftone. NOT pixel art, NOT 3D, NO medieval armor. Create ONE complete idle combat guard loop, 12 genuinely distinct sequential hand-drawn in-between poses, exactly 4 columns by 3 rows, row-major left-to-right chronology. All twelve complete full-body characters FACE RIGHT with identical proportions, same camera distance, same planted boot locations on a shared baseline WITHIN each cell. Feet NEVER take a step. Animate a gentle realistic slow inhale/exhale, shoulders and elbows easing, hands subtly readjusting their weapon grip, knees slightly flexing, strands of hair and loose clothing moving with delayed follow-through. Avoid exaggerated bobbing, rubber body scaling, or large gestures. Frame1 calm ready, frames2-6 slowly inhale/raise hands a few pixels, frames7-12 slowly exhale and settle back into frame1 for a seamless loop. Twelve equally sized well-separated cells, generous transparent gutters, every head, boot and weapon tip fully inside its cell. Uniform scale in all cells. NO text, NO cell borders, NO cast shadow, NO backdrops or rectangular colored tiles. TRUE fully transparent RGBA background throughout all gutters and behind each individual character. Landscape sheet 4:3, high detail readable around 256 px per pose.",
+    "source": "docs/combat_refinement/sources/mage_idle.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-486277bc-4ed9-4da2-864e-fca8b48ec64c.png",
+    "body_height": 181.8666666666666,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/mage_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "warrior_thrust",
+    "hero": "warrior",
+    "action": "thrust",
+    "prompt": "Create ONE production sprite sheet with exactly TWELVE sequential drawn poses in a uniform FOUR columns by THREE rows grid, read row-major. Identity reference: Nicolás, brown-haired bearded carpenter, purple rolled-sleeve shirt, stained tan work apron, dark work trousers, brown boots, long improvised industrial hand-saw pole tool held diagonally in both hands. Match the reference character exactly. American action COMIC art, bold black ink, hard cel shadows, vivid colors, no pixel art, no 3D. Action is a straight two-handed forward thrust with his long saw-pole, elbows draw back, forward drive, full extension, controlled retraction. No wide horizontal cutting arc. All full-body characters face RIGHT. Pose1 starts in standing combat guard, poses2-4 anticipate, poses5-7 strike, poses8-11 recover, pose12 ends in the same guard as pose1. Genuine different intermediate drawings, smooth believable weight transfer through arms, torso and knees. Consistent anatomy and size across the sheet. Do not move character root horizontally in the cell. Boot soles share one baseline in EVERY cell. Keep the entire body and weapon fully visible with generous padding. NO text, labels, lines or frames. True transparent RGBA background, no backdrop tiles, no ground shadows. Do not imitate the original idle sheet poses: this is a distinct strong forward thrust/bashing attack. Landscape4:3 sheet, detailed enough for 384 pixel cells.",
+    "source": "docs/combat_refinement/sources/warrior_thrust.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-a6f82c6f-5e0e-4d47-8346-ca004cab3f08.png",
+    "body_height": 183.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/warrior_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "guardian_thrust",
+    "hero": "guardian",
+    "action": "thrust",
+    "prompt": "Create ONE production sprite sheet with exactly TWELVE sequential drawn poses in a uniform FOUR columns by THREE rows grid, read row-major. Identity reference: Inés, athletic auburn-haired construction worker with braided hair, orange work jacket, purple neck scarf, dark work pants, boots, rectangular blue-white road-sign scrap shield in left arm and crowbar in right hand. Match the reference character exactly. American action COMIC art, bold black ink, hard cel shadows, vivid colors, no pixel art, no 3D. Action is a powerful forward shield bash with her road-sign shield, crouched brace, lead arm pushes shield outward, impact, recoil; crowbar held back. All full-body characters face RIGHT. Pose1 starts in standing combat guard, poses2-4 anticipate, poses5-7 strike, poses8-11 recover, pose12 ends in the same guard as pose1. Genuine different intermediate drawings, smooth believable weight transfer through arms, torso and knees. Consistent anatomy and size across the sheet. Do not move character root horizontally in the cell. Boot soles share one baseline in EVERY cell. Keep the entire body and weapon fully visible with generous padding. NO text, labels, lines or frames. True transparent RGBA background, no backdrop tiles, no ground shadows. Do not imitate the original idle sheet poses: this is a distinct strong forward thrust/bashing attack. Landscape4:3 sheet, detailed enough for 384 pixel cells.",
+    "source": "docs/combat_refinement/sources/guardian_thrust.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-a0481020-d198-4943-944d-a33497c687b8.png",
+    "body_height": 188.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/guardian_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "rogue_thrust",
+    "hero": "rogue",
+    "action": "thrust",
+    "prompt": "Create ONE production sprite sheet with exactly TWELVE sequential drawn poses in a uniform FOUR columns by THREE rows grid, read row-major. Identity reference: Mauro, dark messy-haired male pharmacist with fully visible unmasked face, teal rolled-sleeve jacket, burgundy medical satchel and small chemical flasks at belt, dark pants and boots, two short utility knives in his hands. Match the reference character exactly. American action COMIC art, bold black ink, hard cel shadows, vivid colors, no pixel art, no 3D. Action is a precise forward stab with one short utility knife while his other knife protects the chest, arm coils, straight lunge, retracts. Fully visible unmasked face. All full-body characters face RIGHT. Pose1 starts in standing combat guard, poses2-4 anticipate, poses5-7 strike, poses8-11 recover, pose12 ends in the same guard as pose1. Genuine different intermediate drawings, smooth believable weight transfer through arms, torso and knees. Consistent anatomy and size across the sheet. Do not move character root horizontally in the cell. Boot soles share one baseline in EVERY cell. Keep the entire body and weapon fully visible with generous padding. NO text, labels, lines or frames. True transparent RGBA background, no backdrop tiles, no ground shadows. Do not imitate the original idle sheet poses: this is a distinct strong forward thrust/bashing attack. Landscape4:3 sheet, detailed enough for 384 pixel cells.",
+    "source": "docs/combat_refinement/sources/rogue_thrust.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-b363dd75-0151-42ed-8696-fd07564455da.png",
+    "body_height": 203.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/rogue_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "mage_thrust",
+    "hero": "mage",
+    "action": "thrust",
+    "prompt": "Create ONE production sprite sheet with exactly TWELVE sequential drawn poses in a uniform FOUR columns by THREE rows grid, read row-major. Identity reference: Vera, mature silver-haired female teacher, purple long civilian coat, cream shirt, dark work trousers and boots, improvised cyan electrical coil emitter held in her hands. Match the reference character exactly. American action COMIC art, bold black ink, hard cel shadows, vivid colors, no pixel art, no 3D. Action is a tightly focused straight cyan electrical discharge from her improvised coil emitter, both arms stabilize, trigger squeeze and small recoil, emitter pointed directly right. All full-body characters face RIGHT. Pose1 starts in standing combat guard, poses2-4 anticipate, poses5-7 strike, poses8-11 recover, pose12 ends in the same guard as pose1. Genuine different intermediate drawings, smooth believable weight transfer through arms, torso and knees. Consistent anatomy and size across the sheet. Do not move character root horizontally in the cell. Boot soles share one baseline in EVERY cell. Keep the entire body and weapon fully visible with generous padding. NO text, labels, lines or frames. True transparent RGBA background, no backdrop tiles, no ground shadows. Do not imitate the original idle sheet poses: this is a distinct strong forward thrust/bashing attack. Landscape4:3 sheet, detailed enough for 384 pixel cells.",
+    "source": "docs/combat_refinement/sources/mage_thrust.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-0c22741f-b749-4c1d-8bf3-9a647fce2d87.png",
+    "body_height": 182.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/mage_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "warrior_sweep",
+    "hero": "warrior",
+    "action": "sweep",
+    "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Nicolás, brown-haired bearded carpenter, purple rolled-sleeve shirt, stained tan work apron, dark work trousers, brown boots, long improvised industrial hand-saw pole tool held diagonally in both hands. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a broad horizontal SAW SWEEP across a machine, pull long saw tool far back to the left, hips twist, both arms sweep a wide rightward cutting arc, follow-through and recoil. Visibly different from a straight thrust. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.",
+    "source": "docs/combat_refinement/sources/warrior_sweep.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-dea065ea-2059-4f34-ba67-4bf5a2d93334.png",
+    "body_height": 183.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/warrior_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "guardian_sweep",
+    "hero": "guardian",
+    "action": "sweep",
+    "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Inés, athletic auburn-haired construction worker with braided hair, orange work jacket, purple neck scarf, dark work pants, boots, rectangular blue-white road-sign scrap shield in left arm and crowbar in right hand. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a wide rightward CROWBAR SWING: shield braces near chest, right hand draws crowbar behind shoulder, horizontal crowbar strike with strong torso twist, follow-through, return. NOT a shield bash. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.",
+    "source": "docs/combat_refinement/sources/guardian_sweep.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-7a885d40-b354-46b0-b56d-7a2f2b2e9fb7.png",
+    "body_height": 188.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/guardian_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "rogue_sweep",
+    "hero": "rogue",
+    "action": "sweep",
+    "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Mauro, dark messy-haired male pharmacist with fully visible unmasked face, teal rolled-sleeve jacket, burgundy medical satchel and small chemical flasks at belt, dark pants and boots, two short utility knives in his hands. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a fast alternating DOUBLE KNIFE SWEEP: cross utility knives near torso, uncross both arms in a wide outward rightward slash, follow-through low, recoil into guard. NOT a straight stab; face fully visible. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.",
+    "source": "docs/combat_refinement/sources/rogue_sweep.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-014b07b9-e598-4006-8331-e3b85b8e4128.png",
+    "body_height": 203.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/rogue_idle.png (version anterior al reemplazo)"
+    ]
+  },
+  {
+    "id": "mage_sweep",
+    "hero": "mage",
+    "action": "sweep",
+    "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Vera, mature silver-haired female teacher, purple long civilian coat, cream shirt, dark work trousers and boots, improvised cyan electrical coil emitter held in her hands. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a wide cyan ELECTRICAL FAN pulse: coil emitter arcs from high right to low right, sweeping electrical wave, torso turns, arms follow through then reset. Visibly different from a focused straight discharge. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.",
+    "source": "docs/combat_refinement/sources/mage_sweep.png",
+    "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-42052df5-fb47-4b54-917d-fd5186539652.png",
+    "body_height": 182.0,
+    "columns": 4,
+    "rows": 3,
+    "frames": 12,
+    "tool": "image_gen.imagegen",
+    "transparent_background": true,
+    "references": [
+      "assets/heroes/detail/mage_idle.png (version anterior al reemplazo)"
+    ]
+  }
+]

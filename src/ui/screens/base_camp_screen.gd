@@ -15,22 +15,24 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 	fire.sheet = load(ART + "fire.png")
 	fire.fps = 12.0
 	fire.sketch_style = true
+	fire.embers_only = true
 	fire.name = "DayCampfire"
-	ui.rect(fire, 643, 475, 1, 1)
+	ui.rect(fire, 674, 409, 1, 1)
 	fire.scale = Vector2(0.62, 0.62)
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Campamento, un lugar al que volver...", actions.home, profile.souls)
-	ui.camp_hotspot("CampExit", Rect2(1100,145,150,140), "Aventuras", actions.prepare)
+	preload("res://src/ui/components/camp_adventure_button.gd").build(ui, actions.prepare)
 	for i in range(LOTS.size()):
 		var lot: Dictionary = LOTS[i]
 		var built: bool = profile.buildings.get(lot.id, false)
 		var area: Rect2 = lot.area if built else lot.plot
 		var picture = artwork(ui, lot.node if built else "EmptyPlot%d" % i, lot.id if built else "plot", area)
 		area = picture.get_rect()
-		var hotspot = ui.camp_hotspot("Plot%d" % i, area, lot.title if built else "Solar %d · %s" % [i + 1, lot.title], actions[lot.id])
+		var caption_above: bool = built and lot.id in ["market", "church"]
+		var hotspot = ui.camp_hotspot("Plot%d" % i, area, lot.title if built else "Solar %d · %s" % [i + 1, lot.title], actions[lot.id], caption_above)
 		if built:
 			hotspot.set_script(preload("res://src/ui/components/building_hotspot.gd"))
-			hotspot.configure(picture.texture, area.size)
-	var refuge = artwork(ui, "RefugeBuilding", "refuge", Rect2(352,220,282,175))
+			hotspot.configure(picture.texture, area.size, area.position - hotspot.position)
+	var refuge = artwork(ui, "RefugeBuilding", "refuge", Rect2(516,116,282,175))
 	var tent = ui.camp_hotspot("CampTent", refuge.get_rect(), "Refugio de personajes", actions.refuge)
 	tent.set_script(preload("res://src/ui/components/building_hotspot.gd"))
 	tent.configure(refuge.texture, refuge.size)
@@ -39,6 +41,7 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 	entrance.set_script(preload("res://src/ui/components/building_hotspot.gd"))
 	entrance.configure(projects.texture, projects.size)
 	protect_captions(ui)
+	preload("res://src/presentation/camp_companions.gd").attach(ui)
 	var training = ui.button("", 40, 630, 76, 76, func(): ui.screen = "training_setup"; ui.render())
 	training.name = "TrainingEntrance"
 	training.tooltip_text = "Entrenamiento contra el muñeco"

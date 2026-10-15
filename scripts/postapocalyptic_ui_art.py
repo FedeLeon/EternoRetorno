@@ -3,37 +3,39 @@ COLORS={'warrior':'#bd6be1','guardian':'#f0a657','rogue':'#69caa5','mage':'#75d8
 
 def card_frame(hero,shapes):
     color=COLORS[hero]
-    glyph={'warrior':'saw','guardian':'shield','rogue':'acid','mage':'coil'}[hero]
+    # Each silhouette remains rectangular: no crest or separate identity plaque.
+    trims={
+      'warrior':'<path d="M39 460L67 478V510L39 528ZM39 545L67 563V595L39 613ZM961 1060L933 1078V1110L961 1128ZM961 1145L933 1163V1195L961 1213Z"/>',
+      'guardian':'<path d="M43 38H230L205 69H74V225L43 252ZM957 38H770L795 69H926V225L957 252ZM43 1460H230L205 1429H74V1275L43 1248ZM957 1460H770L795 1429H926V1275L957 1248Z"/>',
+      'rogue':'<path d="M46 330H71V650H46ZM929 845H954V1165H929Z"/><path d="M49 695L68 677V735L49 753ZM951 750L932 768V710L951 692Z"/><circle cx="59" cy="795" r="10"/><circle cx="941" cy="650" r="10"/>',
+      'mage':'<path d="M48 340H69V410L56 425V620M952 340H931V410L944 425V620M48 1050H69V1120L56 1135V1330M952 1050H931V1120L944 1135V1330" fill="none" stroke-width="7"/><circle cx="56" cy="620" r="10"/><circle cx="944" cy="620" r="10"/>'
+    }
+    trim=trims[hero]
     bolts=''.join(f'<g transform="translate({x} {y})"><circle r="12" fill="#63717b" stroke="#040a10" stroke-width="5"/><path d="M-6 -3H6M-3 6H4" stroke="#c2ccd0" stroke-width="3"/></g>' for x in [69,931] for y in [185,390,947,1370])
     texture=''.join(f'<circle cx="{x}" cy="{y}" r="2.2" fill="#777a80" opacity=".2"/>' for x in range(115,890,25) for y in [166,372,932,1397])
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
 <defs><pattern id="print" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.2" fill="#8b8990" opacity=".13"/></pattern></defs>
-<path d="M82 105H918Q965 105 965 154V1390Q965 1470 913 1470H87Q35 1470 35 1390V154Q35 105 82 105Z" fill="#04080e" stroke="#02050a" stroke-width="18"/>
-<path d="M82 126H918L947 155V1390L912 1449H88L53 1390V155Z" fill="#26343e" stroke="#657985" stroke-width="6"/>
-<path d="M98 143H902L929 170V1380L902 1428H98L71 1380V170Z" fill="#101a26" stroke="{color}" stroke-width="5"/>
-<path d="M83 160H330L352 143M670 143L692 160H917M59 407V478L79 498V660M941 822V887L921 907V1067M95 1408H306L331 1428M670 1428L695 1408H905" fill="none" stroke="{color}" stroke-width="5"/>
-<path d="M58 166V352M942 1150V1370M103 134H385M614 1439H895" stroke="#d0d9dc" stroke-width="4"/>
+<path d="M82 20H918Q965 20 965 69V1390Q965 1470 913 1470H87Q35 1470 35 1390V69Q35 20 82 20Z" fill="#04080e" stroke="#02050a" stroke-width="18"/>
+<path d="M82 41H918L947 70V1390L912 1449H88L53 1390V70Z" fill="#26343e" stroke="#657985" stroke-width="6"/>
+<path d="M98 58H902L929 85V1380L902 1428H98L71 1380V85Z" fill="#101a26" stroke="{color}" stroke-width="5"/>
+<path d="M83 75H330L352 58M670 58L692 75H917M59 407V478L79 498V660M941 822V887L921 907V1067M95 1408H306L331 1428M670 1428L695 1408H905" fill="none" stroke="{color}" stroke-width="5"/>
+<path d="M58 166V352M942 1150V1370M103 49H385M614 1439H895" stroke="#d0d9dc" stroke-width="4"/>
 <g fill="{color}" stroke="#040a10" stroke-width="3"><circle cx="79" cy="660" r="7"/><circle cx="921" cy="1067" r="7"/><path d="M61 765L80 747V798L61 816ZM938 492L919 510V559L938 541Z"/></g>
-<path d="M108 205H789L813 229V340L789 351H108L89 332V227Z" fill="#ede4ce" stroke="#020710" stroke-width="9"/>
-<path d="M113 218H775M109 338H776" stroke="#c0b79f" stroke-width="4"/>
-<path d="M117 355H880V422H117Z" fill="#253747" stroke="#040a10" stroke-width="5"/>
-<path d="M130 362H872M128 417H869" stroke="{color}" stroke-width="3"/>
-<circle cx="500" cy="80" r="67" fill="#0c1622" stroke="#04080d" stroke-width="12"/>
-<circle cx="500" cy="80" r="58" fill="none" stroke="{color}" stroke-width="5"/>
-<g transform="translate(459 39) scale(1.28)" fill="{color}" stroke="#03070c" stroke-width="4" stroke-linejoin="round">{shapes[glyph]}</g>
-<circle cx="890" cy="255" r="78" fill="#03070c"/><circle cx="890" cy="255" r="68" fill="#192b3a" stroke="{color}" stroke-width="7"/>
-<circle cx="890" cy="255" r="59" fill="none" stroke="#5e7382" stroke-width="3"/>
-<path d="M847 221Q866 205 889 207M929 276L922 290" stroke="#effaf5" stroke-width="5" fill="none"/>
-<path d="M100 443H900V916H100Z" fill="#090f18" stroke="#04070c" stroke-width="12"/>
-<path d="M109 452H891V907H109Z" fill="none" stroke="#6a808a" stroke-width="4"/>
-<path d="M101 474V443H135M865 443H900V474M100 882V916H135M865 916H900V882" fill="none" stroke="{color}" stroke-width="8"/>
+<path d="M108 90H789L813 114V225L789 236H108L89 217V112Z" fill="#ede4ce" stroke="#020710" stroke-width="9"/>
+<path d="M113 103H775M109 223H776" stroke="#c0b79f" stroke-width="4"/>
+<circle cx="890" cy="150" r="78" fill="#03070c"/><circle cx="890" cy="150" r="68" fill="#192b3a" stroke="{color}" stroke-width="7"/>
+<circle cx="890" cy="150" r="59" fill="none" stroke="#5e7382" stroke-width="3"/>
+<path d="M847 116Q866 100 889 102M929 171L922 185" stroke="#effaf5" stroke-width="5" fill="none"/>
+<path d="M100 280H900V916H100Z" fill="#090f18" stroke="#04070c" stroke-width="12"/>
+<path d="M109 289H891V907H109Z" fill="none" stroke="#6a808a" stroke-width="4"/>
+<path d="M101 311V280H135M865 280H900V311M100 882V916H135M865 916H900V882" fill="none" stroke="{color}" stroke-width="8"/>
 <path d="M113 944H887L906 965V1348L883 1380H117L94 1348V965Z" fill="#eee4d0" stroke="#020710" stroke-width="9"/>
 <path d="M118 952H876V1371H118Z" fill="url(#print)"/>
 <path d="M119 956H878M114 1365H871" stroke="#c6bba1" stroke-width="4"/>
 <path d="M108 969V998M891 969V998M108 1324V1350M891 1324V1350" stroke="#506473" stroke-width="5"/>
 <path d="M87 1419H254M747 1419H914" stroke="{color}" stroke-width="6"/>
 <path d="M261 1419H288M294 1419H312M319 1419H328M338 1419H346M358 1419H387" stroke="#78909c" stroke-width="4"/>
-{bolts}{texture}</svg>'''
+<g fill="{color}" stroke="#070d16" stroke-width="4">{trim}</g>{bolts}{texture}</svg>'''
 
 def end_turn_frame():
     bolts=''.join(f'<g transform="translate({x} {y})"><circle r="3.2" fill="#738996" stroke="#030810" stroke-width="1.3"/><path d="M-1.5 -.6H1.5" stroke="#d0e2e3" stroke-width=".8"/></g>' for x,y in [(32,17),(96,17),(15,64),(113,64),(32,111),(96,111)])

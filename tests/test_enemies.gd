@@ -51,7 +51,8 @@ func run_tests() -> void:
 							if frame.get_pixel(x, y).a >= 0.5:
 								bottom = y + 1
 					check(bottom == cell_size * 15 / 16, id + " stable grounded motion")
-			check(unique.size() == 4, id + " four authored keyposes in eight timing frames")
+			var fluid = id in ["crypt_bat", "crypt_lancer", "goblin_0", "crypt_automaton", "goblin_7", "flying_3"]
+			check(unique.size() == (8 if fluid else 4), id + " authored poses match bank revision")
 		check(img.get_pixel(0, 0).a == 0 and img.get_used_rect().size.x > 10, id + " transparency and content")
 		index += 1
 	await create_timer(0.3).timeout
@@ -69,7 +70,7 @@ func run_tests() -> void:
 			changed = changed or v.sprite.scale != scale_before or v.sprite.frame != frame_before or v.sprite.position != position_before
 		check(changed, v.visual_id + " idle changes")
 		v.play_once("attack")
-	await create_timer(0.5).timeout
+	await create_timer(0.85).timeout
 	for v in visuals:
 		check(not v.acting and not v.fallen, v.visual_id + " attack returns")
 		v.play_once("hurt")

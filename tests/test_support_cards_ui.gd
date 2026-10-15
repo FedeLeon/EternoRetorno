@@ -34,13 +34,12 @@ func run_tests() -> void:
 			var texture = Art.texture_for(id)
 			check(texture != null and texture.get_width() == 512, "bounded unique art " + id)
 			for upgraded in [false,true]:
-				for size in [Vector2(174,278),Vector2(218,278),Vector2(220,300),Vector2(224,244)]:
+				for size in [Vector2(174,278),Vector2(218,278),Vector2(220,300),Vector2(224,244),Vector2(202,302)]:
 					var card = app.card_panel({"id":id,"upgraded":upgraded},0,0,size.x,size.y,func(): pass,false,true,page,true)
 					await process_frame
 					var description = card.get_node("CardDescription")
 					var title = card.get_node("CardTitle")
-					var owner_label = card.get_node("CardOwner")
-					check(owner_label.get_theme_font("font").get_string_size(owner_label.text, HORIZONTAL_ALIGNMENT_LEFT, -1, owner_label.get_theme_font_size("font_size")).x <= owner_label.size.x, "owner strip fits " + id)
+					check(not card.has_node("CardOwner"), "No owner strip " + id)
 					check(title.get_line_count() == 1 and title.size.x <= size.x * 0.62 + 1, "complete title fits " + id)
 					check(description.position.y + (description.size.y + description.get_line_count() * description.get_line_height()) / 2 <= size.y - 29, "text above badge " + id)
 					check(description.get_line_count() * description.get_line_height() <= description.size.y + 1, "description fits " + id)

@@ -9,6 +9,7 @@ static func play(game: RefCounted, hand_index: int, target: int) -> bool:
 	var c = game.effective_card(instance)
 	var owner = game.owner_index(instance)
 	b.energy -= int(c.cost)
+	preload("res://src/rules/card_reserve.gd").before_remove(b, hand_index)
 	b.hand.remove_at(hand_index)
 	b.discard.append(instance)
 	preload("res://src/rules/risk_cards.gd").pay(game, c, owner)

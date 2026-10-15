@@ -66,7 +66,7 @@ func run_tests() -> void:
 	await process_frame
 	var hp = app.game.run.combat.enemies[0].hp
 	var turn = app.game.run.combat.turn
-	await click(app.enemy_art[0].global_position + Vector2(40, 40))
+	await click(app.layer.get_node("EnemyTarget0").get_global_rect().get_center())
 	check(app.game.run.combat.enemies[0].hp < hp, "target resolves combo")
 	check(app.game.run.combat.energy == 1, "spends two energy")
 	for frame in range(900):

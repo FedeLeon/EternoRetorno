@@ -35,6 +35,7 @@ SHAPES={
 EFFECTS={'ambush':'eye','armor_plates':'armor','attack':'saw','beast_command':'radio','bond_focus':'chain','bulwark':'shield','charged_strike':'bolt','counter':'saw','curse_blood':'heart','curse_burden':'case','curse_scar':'fracture','embers':'flame','enraged':'flame','fracture':'fracture','frenzy':'bolt','grief':'heart','guard':'shield','healer':'cross','imprisonment':'lock','magic_boost':'coil','poison':'acid','prepared':'check','protector':'shield','rear_guard':'shield','resurrection':'battery','roots':'chain','set_block':'shield','set_heal':'cross','set_multi':'saw','set_poison':'acid','source':'battery','strength':'up','tainted':'acid','vampiric':'heart','weakness':'down','weapon_boost':'saw'}
 
 def symbol(stem,path):
+    if path.startswith('assets/collection/icons/'):return 'collection badge'
     if 'battle_effects' in path:return EFFECTS[stem]
     if stem=='end_turn_round':return 'radio'
     if stem=='group_tab':return 'group'
@@ -43,6 +44,15 @@ def symbol(stem,path):
     return 'chip'
 
 def svg_for(stem,path):
+    if path.startswith('assets/collection/icons/'):
+        from collection_icons import collection_icon
+        return collection_icon(stem)
+    if path == 'assets/dungeon/bag.png':
+        from hud_navigation_icons import hud_icon
+        return hud_icon('bag')
+    from map_room_icons import ROOMS, room_icon
+    if path.startswith('assets/map/minimal/') and stem in ROOMS:
+        return room_icon(stem)
     shape=symbol(stem,path)
     color='#6ae4dc' if shape in ['chip','battery','radio','coil','eye'] else '#91e875' if shape=='acid' else '#ef666b' if shape in ['cross','heart'] else '#f6b15a' if shape in ['flame','wrench','gear','case'] else '#b58bf0'
     if shape=='armor':color='#c9d4dd'
@@ -56,17 +66,21 @@ def svg_for(stem,path):
         seed=int(hashlib.sha256(stem.encode()).hexdigest()[:8],16)
         a=10+(seed%9);b=43+((seed>>4)%10)
         extra+=f'<path d="M5 {a}H12V{a+7}H18M46 {b}H53V{b-7}H59" fill="none" stroke="#bff3ec" stroke-width="2"/><circle cx="5" cy="{a}" r="2" fill="#f4cc82"/><circle cx="59" cy="{b-7}" r="2" fill="#f4cc82"/>'
-    if path.startswith('assets/collection/'):
-        tier=3 if 'fifty' in stem else 2 if stem.startswith(('ten_','five_')) else 1
-        for i in range(tier):extra+=f'<path d="M{25+i*7} 58L{28+i*7} 53L{31+i*7} 58Z" fill="#f3c66f" stroke="#0b1621" stroke-width="1"/>'
-        body='<path d="M32 1L60 15V49L32 63L4 49V15Z" fill="#142432" stroke="#6f90a1" stroke-width="2"/>'+f'<g transform="translate(8 8) scale(.75)">{body}</g>'
     if stem == 'end_turn_round':
         from postapocalyptic_ui_art import end_turn_frame
         return end_turn_frame()
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64"><g fill="{color}" stroke="#070d16" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">{body}</g><g fill="{color}" stroke="{color}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">{body}</g>{extra}</svg>'
 
+def active_block_svg(width='48', height='48'):
+    """Quiet dark backing for overlaid digits; one fine light outline."""
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 64 64"><path d="M12 10L32 4L52 10V31Q49 48 32 59Q15 48 12 31Z" fill="#111720" stroke="#c8d3de" stroke-width="1.5" stroke-linejoin="round"/></svg>'
+
 def create():
     (DOC/'vectors').mkdir(exist_ok=True)
+    from collection_icons import write_auxiliary
+    write_auxiliary(ROOT)
+    from hud_navigation_icons import hud_icon
+    (ROOT/'assets/ui/journal.svg').write_text(hud_icon('journal'))
     queue=json.loads((DOC/'queue.json').read_text())
     records=[]
     for job in queue['derived']:
@@ -82,11 +96,18 @@ def create():
         (ROOT/source).write_text(art)
         records.append(dict(target=job['target'],source=source,dimensions=job['dimensions'],symbol='card frame' if job['kind']=='frame' else 'route blueprint'))
     # Native UI vectors keep their physical sizes and public resource paths.
-    names={'sword':'saw','poison':'acid','heal':'cross','strength':'up','weak':'down','fracture':'fracture','chain':'chain','settings':'gear','deck':'check','block_active':'shield','block_up':'shield'}
+    names={'sword':'saw','poison':'acid','heal':'cross','strength':'up','weak':'down','fracture':'fracture','chain':'chain','deck':'check','block_active':'shield','block_up':'shield'}
     import re
     for stem,shape in names.items():
         p=ROOT/f'assets/ui/{stem}.svg';old=p.read_text()
+        if stem == 'deck':
+            from hud_navigation_icons import hud_icon
+            p.write_text(hud_icon('deck'))
+            continue
         w=re.search(r'width="([^"]+)"',old)[1];h=re.search(r'height="([^"]+)"',old)[1]
+        if stem == 'block_active':
+            p.write_text(active_block_svg(w, h))
+            continue
         color = '#ef666b' if stem=='heal' else '#91e875' if stem=='poison' else '#b9c6cf' if stem in ['block_active','block_up'] else '#83d7d4'
         s=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 64 64"><g fill="{color}" stroke="#070d16" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">{SHAPES[shape]}</g><g fill="{color}" stroke="{color}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round">{SHAPES[shape]}</g></svg>'
         if stem=='block_up':

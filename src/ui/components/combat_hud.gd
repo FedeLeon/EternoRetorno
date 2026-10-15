@@ -9,6 +9,7 @@ var open_relic = -1
 signal bag_requested
 signal deck_requested
 signal menu_requested
+signal journal_requested
 signal relic_requested(index: int)
 
 # Presentation snapshot supplied by the controller; no game or save dependency.
@@ -19,6 +20,7 @@ var turn = 1
 var energy = 3
 var item_count = 0
 var show_energy = true
+var show_journal = false
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -43,10 +45,13 @@ func _ready() -> void:
 	var bag = icon_button(load("res://assets/dungeon/bag.png"), Rect2(897, 4, 56, 56), "Bolsa de objetos", func(): bag_requested.emit())
 	bag.name = "Bag"
 	if item_count > 0:
-		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(931, 0, 40, 28))
-		add_number(item_count, Rect2(933, 1, 36, 25), "BagCount")
+		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(923, 0, 36, 24))
+		add_number(item_count, Rect2(925, 1, 32, 22), "BagCount")
 	var deck = icon_button(preload("res://assets/ui/deck.svg"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())
 	deck.name = "Deck"
+	if show_journal:
+		var journal = icon_button(preload("res://assets/ui/journal.svg"), Rect2(962, 8, 46, 48), "Registro del combate", func(): journal_requested.emit())
+		journal.name = "Journal"
 	text_button("Menú", Rect2(1014, 12, 102, 40), func(): menu_requested.emit())
 	var title = Label.new()
 	title.text = "TURNO"
@@ -69,6 +74,10 @@ func _ready() -> void:
 	orb.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	orb.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(orb, Rect2(16, 572, 140, 140))
+	var electricity = preload("res://src/presentation/energy_electricity.gd").new()
+	electricity.name = "EnergyElectricity"
+	electricity.energy = energy
+	place(electricity, orb.get_rect())
 	add_number(energy, Rect2(49, 615, 74, 52), "EnergyNumber")
 
 func update_energy(amount: int) -> void:
@@ -76,6 +85,9 @@ func update_energy(amount: int) -> void:
 	var display = get_node_or_null("EnergyNumber")
 	if display != null:
 		display.value = amount
+	var electricity = get_node_or_null("EnergyElectricity")
+	if electricity != null:
+		electricity.update_energy(amount)
 
 func place(node: Control, area: Rect2) -> void:
 	node.position = area.position

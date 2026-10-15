@@ -17,7 +17,9 @@ static func play_synergy(game: RefCounted, id: String, target: int) -> bool:
 	for index in indices:
 		preload("res://src/rules/combat_telemetry.gd").card(game,b.hand[index].id)
 		b.discard.append(b.hand[index])
+		preload("res://src/rules/card_reserve.gd").before_remove(b, index)
 		b.hand.remove_at(index)
+	preload("res://src/rules/pair_tactics.gd").apply(game, combo, target)
 	combo.damage = preload("res://src/rules/boss_mechanics.gd").hit(game,b.enemies[target],int(combo.damage),combo.pierce)
 	if not preload("res://src/rules/combat_depth.gd").root_hit(game, b.enemies[target], int(combo.damage)):
 		game._damage(b.enemies[target], int(combo.damage), combo.pierce)

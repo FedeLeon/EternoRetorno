@@ -7,7 +7,6 @@ var dragging = false
 var pointer_id = -1
 var original: Button
 var preview: Button
-var tip: Label
 var highlights: Array = []
 var hover_target = -1
 
@@ -50,11 +49,7 @@ func _input(event: InputEvent) -> void:
 	if moved and not dragging and point.distance_to(origin) > 14: lift()
 	if dragging and moved:
 		preview.position = point - Vector2(110, 180)
-		var target = target_at(point)
-		if target != hover_target:
-			hover_target = target
-			tip.text = preload("res://src/rules/combat_preview.gd").describe(ui.game, index, target) if target >= 0 else "Soltá sobre un objetivo iluminado"
-			fit_tip()
+		hover_target = target_at(point)
 		get_viewport().set_input_as_handled()
 	if released:
 		if not dragging: index = -1; return
@@ -70,11 +65,6 @@ func lift() -> void:
 	preview = ui.card_panel(ui.game.run.combat.hand[index], 0, 0, 220, 340, func(): pass, false, true, ui.layer)
 	preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	preview.z_index = 140
-	tip = ui.label_at("Soltá sobre un objetivo iluminado", 100, 68, 1080, 48, 18)
-	tip.z_index = 140
-	tip.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	var plate = preload("res://src/ui/components/combat_backplate.gd").attach(tip, Rect2(Vector2.ZERO, tip.size))
-	(plate.get_theme_stylebox("panel") as StyleBoxFlat).bg_color = Color(0.025,0.035,0.055,0.94)
 	var card = ui.game.effective_card(ui.game.run.combat.hand[index])
 	for target in ui.game.valid_targets(index):
 		var actor = ui.hero_art[target] if card.target in ["self", "ally", "all_allies"] else ui.enemy_art[target]
@@ -90,22 +80,12 @@ func target_at(point: Vector2) -> int:
 		if area != null and area.get_global_rect().has_point(point): return target
 	return -1
 
-func fit_tip() -> void:
-	var font = tip.get_theme_font("font")
-	var font_size = tip.get_theme_font_size("font_size")
-	var rows = 0
-	for line in tip.text.split("\n"):
-		rows += maxi(1, ceili(font.get_string_size(line,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x / tip.size.x))
-	tip.size.y = clampi(rows * 24 + 16,48,184)
-	tip.get_node("CombatBackplate").size = tip.size
-
 func cancel() -> void:
 	index = -1
 	dragging = false
 	hover_target = -1
 	if is_instance_valid(original): original.modulate.a = 1.0; original.set_pressed_no_signal(false)
 	if is_instance_valid(preview): preview.queue_free()
-	if is_instance_valid(tip): tip.queue_free()
 	for glow in highlights:
 		if is_instance_valid(glow): glow.queue_free()
 	highlights.clear()

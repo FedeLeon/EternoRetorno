@@ -11,6 +11,7 @@ static func pay(game: RefCounted, card: Dictionary, owner: int) -> void:
 	game.run.combat.energy += int(card.get("energy_gain", 0))
 	# Discard the rightmost other card. Exact rule is shown on the card, deterministic.
 	for i in range(int(card.get("discard_cost", 0))):
+		preload("res://src/rules/card_reserve.gd").before_remove(game.run.combat, game.run.combat.hand.size() - 1)
 		game.run.combat.discard.append(game.run.combat.hand.pop_back())
 
 static func description(card: Dictionary) -> Array[String]:

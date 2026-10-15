@@ -26,6 +26,13 @@ func run_tests() -> void:
 		check(effect.picture.texture != null and effect.from_right, "texture and direction " + visual)
 		check(effect.static_illustration and effect.picture.position.x == initial and effect.picture.scale == Vector2.ONE, "static enemy transform " + visual)
 		check(effect.hero_fx != null and effect.hero_fx.get_index() < effect.picture.get_index(), "lights behind enemy " + visual)
+		check(effect.full_view_rays and effect.hero_fx.full_view_rays and effect.hero_fx.size.is_equal_approx(host.size), "full viewport enemy lights " + visual)
+		var origin = effect.hero_fx.area.position + effect.hero_fx.area.size * Vector2(0.38, 0.48)
+		var unit = effect.hero_fx.area.size.y
+		for direction in range(16):
+			var reach = effect.hero_fx.ray_reach(origin, unit, direction)
+			var tip = origin + Vector2.from_angle(direction * TAU / 16.0) * reach * 0.85
+			check(not Rect2(Vector2.ZERO, host.size).has_point(tip), "enemy ray reaches beyond viewport %s/%d" % [visual,direction])
 		check(effect.picture.material is ShaderMaterial, "thin silhouette border " + visual)
 		check(is_equal_approx(effect.picture.position.x + effect.picture.size.x, host.size.x * 0.985), "right anchor " + visual)
 		check(effect.picture.texture.get_image().detect_alpha() != Image.ALPHA_NONE, "transparent " + visual)

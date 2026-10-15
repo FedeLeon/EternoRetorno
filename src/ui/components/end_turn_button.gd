@@ -14,3 +14,7 @@ static func decorate(button: Button) -> void:
 	focus.set_border_width_all(2)
 	focus.set_corner_radius_all(68)
 	button.add_theme_stylebox_override("focus", focus)
+	var electricity = preload("res://src/presentation/end_turn_electricity.gd").new()
+	electricity.name = "Electricity"
+	button.add_child(electricity)
+	electricity.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)

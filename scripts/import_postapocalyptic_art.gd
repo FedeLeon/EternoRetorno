@@ -5,17 +5,24 @@ const ROOT = "res://docs/art_direction/postapocalyptic/"
 var manifest: Dictionary = {}
 var visuals: Dictionary = {}
 var installed = 0
+var layouts: Dictionary = {}
+var only_job = ""
 
 func _initialize() -> void:
 	manifest = read_json(ROOT + "assets.json")
+	layouts = read_json(ROOT + "actor_layouts.json")
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--job="): only_job = arg.trim_prefix("--job=")
 	visuals = read_json("res://data/enemy_visuals.json")
 	var queue = read_json(ROOT + "queue.json")
 	for job in queue.jobs:
+		if not only_job.is_empty() and job.id != only_job: continue
+		if job.kind == "card_bank" and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0], {}).get("style", "") == "postapocalyptic_pixel_cards": continue
 		if "--actors-only" in OS.get_cmdline_user_args() and job.kind not in ["machine_bank", "enemy_bank"]: continue
 		if job.kind in ["hero_action", "hero_bank"]: continue # Shared actor scale is imported separately.
 		if not FileAccess.file_exists("res://" + job.source): continue
 		var source_hash = FileAccess.get_sha256("res://" + job.source)
-		if job.kind in ["machine_bank", "enemy_bank"] and manifest.get(job.target, {}).get("processing_version", 0) != 5:
+		if job.kind in ["machine_bank", "enemy_bank"] and manifest.get(job.target, {}).get("processing_version", 0) != processing_version(job):
 			install(job, source_hash)
 			continue
 		if job.kind == "card_bank" and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0],{}).get("source_sha256", "") == source_hash and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0],{}).get("fit_mode", "") == "symbol_bounds": continue
@@ -24,7 +31,7 @@ func _initialize() -> void:
 		var record = read_json(ROOT + "jobs/" + job.id + ".json")
 		if record.get("prompt", "") != job.prompt: continue
 		install(job, source_hash)
-	for hero in ["warrior", "guardian", "rogue", "mage"]:
+	for hero in (["warrior", "guardian", "rogue", "mage"] if only_job.is_empty() else []):
 		var path = ROOT + "jobs/identity_" + hero + ".json"
 		if not FileAccess.file_exists(path): continue
 		var job = read_json(path)
@@ -32,8 +39,10 @@ func _initialize() -> void:
 		if job.kind not in ["card_bank", "portrait"] and manifest.get(job.target, {}).get("source_sha256", "") == source_hash: continue
 		var image = Image.load_from_file("res://" + job.source)
 		store(image, job.target, job, source_hash)
-	FileAccess.open(ROOT + "assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
-	FileAccess.open("res://data/enemy_visuals.json", FileAccess.WRITE).store_string(JSON.stringify(visuals,"\t")+"\n")
+	if installed > 0:
+		FileAccess.open(ROOT + "assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
+	if visuals != read_json("res://data/enemy_visuals.json"):
+		FileAccess.open("res://data/enemy_visuals.json", FileAccess.WRITE).store_string(JSON.stringify(visuals,"\t")+"\n")
 	print("POSTAPOCALYPTIC COMIC: ", installed, " assets integrated")
 	quit()
 
@@ -48,7 +57,10 @@ func install(job: Dictionary, source_hash: String) -> void:
 	var dimensions = Vector2i(int(job.dimensions[0]), int(job.dimensions[1]))
 	match job.kind:
 		"machine_bank":
-			var drawings = Pack.actor_cells("res://"+job.source,4,4)
+			var layout: Dictionary = layouts.get(job.id, {})
+			if not layout.is_empty() and layout.source_sha256 != source_hash:
+				push_error("Reviewed layout belongs to a different source: " + job.id); return
+			var drawings = Pack.actor_cells("res://"+job.source,4,4,[],layout.get("row_edges", []))
 			if drawings.size()!=16: push_error("Invalid machine pose bank: "+job.id); return
 			for row in range(4):
 				var poses: Array[Image] = []
@@ -149,13 +161,17 @@ func install(job: Dictionary, source_hash: String) -> void:
 	store(image,job.target,job,source_hash)
 
 func store(image: Image, path: String, job: Dictionary, source_hash: String) -> void:
+	if manifest.get(path.trim_prefix("res://"), {}).get("fluid_revision", 0): return
 	DirAccess.make_dir_recursive_absolute(("res://"+path).get_base_dir())
 	Pack.save(image,"res://"+path)
 	manifest[path] = {"sha256":FileAccess.get_sha256("res://"+path),"source_sha256":source_hash,"source":job.source,"job":job.id,"style":"postapocalyptic_comic"}
 	if job.kind == "card_bank": manifest[path]["fit_mode"] = "symbol_bounds"
 	if job.kind in ["machine_bank", "enemy_bank"]:
-		manifest[path]["processing_version"] = 5
+		manifest[path]["processing_version"] = processing_version(job)
 		manifest[path]["processing"] = "adaptive gutters, principal silhouette crop, common scale and baseline"
+	if layouts.has(job.id):
+		manifest[path]["row_edges"] = layouts[job.id].row_edges
+		manifest[path]["processing"] = "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline"
 	installed += 1
 
 func symbol_bounds(image: Image) -> Rect2i:
@@ -169,3 +185,6 @@ func symbol_bounds(image: Image) -> Rect2i:
 				low = low.min(Vector2i(x,y)); high = high.max(Vector2i(x,y))
 	if high.x < 0: return Rect2i(Vector2i.ZERO,image.get_size())
 	return Rect2i(low,high-low+Vector2i.ONE).grow(6).intersection(Rect2i(Vector2i.ZERO,image.get_size()))
+
+func processing_version(job: Dictionary) -> int:
+	return 6 if layouts.has(job.id) else 5

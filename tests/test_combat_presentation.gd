@@ -34,6 +34,8 @@ func run_tests() -> void:
 	await process_frame
 	intent = app.layer.get_node("EnemyIntent0")
 	check(intent.has_node("Target_guardian") and intent.has_node("Target_warrior"), "area attack shows both portraits")
+	check_faces(intent, ["warrior", "guardian"])
+	await shot("intent-two-faces")
 	battle.enemies[0].intent.damage = 0
 	app.render()
 	await process_frame
@@ -52,7 +54,7 @@ func run_tests() -> void:
 	app.game.run.heroes[1].hp = 0
 	app.render()
 	await process_frame
-	check(app.layer.get_node("CombatHand").get_child(0).get_child(0).has_node("CardType0"), "attack card has symbol")
+	check(app.layer.get_node("CombatHand").get_child(0).get_child(0).get_node("CardCategory").text == "Ataque", "attack category replaces redundant icon")
 	battle.energy = 0
 	app.animate_combat_action(0, 0)
 	check(not app.layer.has_node("CardAsh") and not app.layer.has_node("HeroCutIn") and battle.hand.size() == 1, "rejected play keeps card without ashes")
@@ -150,5 +152,28 @@ func run_tests() -> void:
 	app.animate_combat_action()
 	check(not app.layer.has_node("CardAsh"), "empty hand has no phantom ash")
 	while app.combat_busy: await process_frame
+	app.game.new_run(["rogue", "mage"], 42)
+	app.game.enter_node(0)
+	app.game.run.combat.enemies[0].intent = {"damage": 12, "block": 8, "counter": 4, "all": true}
+	app.continue_run()
+	await process_frame
+	intent = app.layer.get_node("EnemyIntent0")
+	check_faces(intent, ["rogue", "mage"])
+	await shot("intent-boticario-profesora")
+	app.game.run.heroes[1].hp = 0
+	app.render()
+	await process_frame
+	check(app.layer.get_node("EnemyIntent0").has_node("Target_rogue") and not app.layer.get_node("EnemyIntent0").has_node("Target_mage"), "area portrait excludes fallen hero")
 	print("PRESENTATION CHECKS: %d | FAILURES: %d" % [checks, failures])
 	quit(1 if failures else 0)
+
+func check_faces(intent: Control, heroes: Array) -> void:
+	for hero in heroes:
+		var frame = intent.get_node("Target_" + hero)
+		var face = frame.get_node("Face")
+		var style = frame.get_theme_stylebox("panel")
+		check(style.border_color == Color(app.game.content.heroes[hero].color) and style.border_width_left == 2, "target border matches hero identity")
+		check(face.texture.atlas.resource_path == "res://assets/heroes/identity/portraits/%s.png" % hero, "target uses HD face portrait")
+		check(Rect2(Vector2.ZERO, face.texture.atlas.get_size()).encloses(face.texture.region), "face crop stays inside source")
+		check(is_equal_approx(face.texture.get_width() / float(face.texture.get_height()), face.size.x / face.size.y), "face keeps proportions without stretching")
+		check(frame.size.is_equal_approx(face.size + Vector2(4, 4)) and face.position.is_equal_approx(Vector2(2, 2)), "face leaves colored border visible on all sides")

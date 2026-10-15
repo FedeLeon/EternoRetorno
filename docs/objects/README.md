@@ -1,5 +1,38 @@
 # Reliquias equipables y consumibles
 
+## Selección por retratos — 15/10/2026
+
+El globo de cada objeto muestra los objetivos válidos en tarjetas contiguas:
+retratos de los héroes para consumibles aliados, imágenes de los enemigos vivos
+para ácido y otros objetos ofensivos. Tocar la foto o su tarjeta ejecuta la misma
+acción. Objetos de equipo muestran las dos fotos en **un único botón** para evitar
+consumo duplicado. Reanimación conserva únicamente el héroe caído como objetivo.
+
+Se reutilizan los retratos existentes de `heroes/identity/portraits` y los PNG
+estáticos de `enemies/hd`, recortados al área opaca sin deformarlos. Navegación
+arma el snapshot (índice original, nombre, texturas); `item_popover.gd` solo lo
+presenta y emite la elección. `game.item_targets/use_item` siguen validando,
+aplicando y guardando. No cambia inventario, efectos ni compatibilidad.
+
+Globo de 340×350 px cuando hay objetivos, dos héroes o hasta tres enemigos en
+fila; descripción ajusta fuente para no invadir los retratos. Sin unidades o
+fuera de combate se mantiene el botón deshabilitado. Cantidades solo bajo el ítem.
+
+Botones superiores: nueva mochila de suministros violeta con cierres metálicos
+y luz cian, y tres cartas tecnológicas superpuestas para mazo. Reutilizan
+`assets/dungeon/bag.png` y `assets/ui/deck.svg`; tamaño, contador y acciones iguales.
+Fuentes originales en `scripts/hud_navigation_icons.py`, integradas en el generador
+existente; SVG de mochila en el inventario vectorial postapocalíptico. Rasterizado
+selectivo `scripts/import_postapocalyptic_icons.gd -- --hud-icons-only`. Sin
+generación por IA ni recursos externos; hashes registrados en `assets.json`.
+
+Validación del 15/10: bolsa **69/0** y HUD **106/0**, ambos con render nativo
+aislado. Clics en retratos, héroe correcto, consumo único de equipo, tres enemigos,
+exclusión de muertos sin renumerar y reanimación del caído verificados. Capturas
+de menú/retratos revisadas. Auditoría **667 hashes válidos**, cero recursos antiguos.
+Audio Dummy; avisos de recursos al cerrar sin errores de script/aserciones.
+Sin exportar ni probar Web/dispositivo.
+
 ## Regla actual: una reliquia compartida (16/09/2026)
 
 Campamento → dos personajes → elegir directamente una reliquia → iniciar.

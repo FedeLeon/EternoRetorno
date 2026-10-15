@@ -1,5 +1,22 @@
 # Assets de preparación y comienzo directo — 14/10/2026
 
+## Electricidad del contador de batalla
+
+La batería `battle_energy_cell.png` conserva su dibujo, posición y número.
+`presentation/energy_electricity.gd` añade una capa de arcos cortos cian con halo
+y chispas ascendentes alrededor de los tubos laterales. El centro numérico queda
+despejado y los efectos no capturan clics. No requiere nuevos PNG ni audio.
+
+El HUD le pasa la energía visible al construir/actualizar. Al gastar energía hay
+una descarga breve de 0,45 s; sin energía cesa tras esa descarga. Respeta intensidad
+de destellos (cero desactiva) y efectos reducidos (4 partículas en lugar de 12).
+Solo presentación, sin RNG ni modificaciones de reglas o guardado.
+
+Validación actual: `test_hud.gd` **106/0** en render nativo aislado, con revisión
+de capturas de batería en dos instantes; `test_energy_timing.gd` **5/0 headless**
+confirma el descuento inmediato. Audio Dummy, avisos de recursos al cerrar sin
+errores de script/aserciones. Sin exportar ni probar Web/dispositivo.
+
 ## Celdas y componentes HD
 
 `assets/ui/cell.png` representa la moneda como un cartucho recargable de metal,

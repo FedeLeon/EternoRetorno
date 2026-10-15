@@ -1,4 +1,13 @@
-## Estado local posterior — 14/10/2026
+## Revisión actual — 15/10/2026
+
+[Diagnóstico sin borrados](quality/AUDITORIA_2026_10_15.md#limpieza-y-tamaño-qué-se-puede-afirmar):
+sin capturas/bytecode versionados detectados, todos los scripts de `src` con
+referencias por ruta, 18 grupos de duplicados (4,86 MiB teóricos) y candidatos
+concretos de iconos sustituidos. Deben retirarse también sus trabajos de
+generación y referencias dinámicas antes de borrar. Se conservan las 98 suites,
+originales y cambios existentes. Las mediciones locales no equivalen al PCK.
+
+## Estado local anterior — 14/10/2026
 
 [Limpieza actual, inventario y validación](cleanup/2026-10-14.md): 88 suites
 aprobadas (82 iniciales y seis repetidas tras actualizar expectativas), contenido

@@ -12,6 +12,7 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	if ui.combat_busy or ui.game.run.phase != "combat":
 		return
 	if hand_index >= ui.game.run.combat.hand.size(): return
+	var returning: Array = ui.game.run.combat.get("reserved", []).duplicate(true) if hand_index < 0 and synergy_id == "" else []
 	var before = ui.game.run.heroes.duplicate(true)
 	var old_enemies = ui.game.run.combat.enemies.duplicate(true)
 	var owner = -1
@@ -64,8 +65,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	if hand_view != null:
 		var cards = hand_view.get_child(0).get_children()
 		for index in spent_indices:
-			if index >= 0 and index < cards.size():
-				ash_effects.append(preload("res://src/presentation/card_ash.gd").play(ui.layer, cards[index]))
+			for card in cards:
+				if int(card.get_meta("hand_index", -1)) == index:
+					ash_effects.append(preload("res://src/presentation/card_ash.gd").play(ui.layer, card))
 	for actor in ui.hero_art.values() + ui.enemy_art.values():
 		var glow = actor.get_node_or_null("TargetGlow")
 		if glow != null:
@@ -75,6 +77,7 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		while ash_effects.any(func(effect): return is_instance_valid(effect)):
 			await ui.get_tree().process_frame
 	if synergy_id != "":
+		preload("res://src/presentation/pair_link_fx.gd").play(ui, synergy_id)
 		ui.CombatEffects.attack_flash(ui.layer)
 		for actor in ui.hero_art.values():
 			await actor.play_once("attack")
@@ -161,3 +164,5 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		await ui.CombatEffects.leave_room(ui.layer, ui.hero_art.values())
 	ui.combat_busy = false
 	ui.continue_run()
+	if not returning.is_empty() and ui.game.run.phase == "combat" and not ui.game.run.combat.hand.is_empty() and ui.game.run.combat.hand[0] == returning[0]:
+		await preload("res://src/ui/card_reserve_navigation.gd").reveal(ui)

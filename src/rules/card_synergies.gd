@@ -18,6 +18,7 @@ static func available(run: Dictionary, recipes: Array) -> Array:
 		if indices.size() != 2: continue
 		var combo = recipe.duplicate(true)
 		combo.indices = indices
+		combo.tactic_text = preload("res://src/rules/pair_tactics.gd").TEXT.get(combo.get("tactic", ""), "") if run.get("pair_tactics_version", 0) >= 1 else ""
 		for index in indices:
 			if hand[index].get("upgraded", false): combo.damage += 3
 		result.append(combo)

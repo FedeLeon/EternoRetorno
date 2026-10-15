@@ -1,4 +1,13 @@
-# Estado visual actual — 14/10/2026
+# Auditoría actual — 15/10/2026
+
+[Informe integral](AUDITORIA_2026_10_15.md): 98/98 suites, contenido 1510/0,
+683 recursos con procedencia válida y 96 atlas/928 cuadros sin celdas vacías
+según el auditor. Render nativo aislado de combate/opciones 125/0 y edificios
+84/0; muestra de cinco vistas revisada. Hay avisos al cierre en 35 suites;
+sin exportación, Web, dispositivo ni escucha de audio. El informe distingue
+calidad visual, integridad de recursos, limpieza posible y propuestas futuras.
+
+# Estado visual anterior — 14/10/2026
 
 Cómic postapocalíptico integrado: cuatro civiles, 56 apariencias de máquinas,
 660 recursos visuales verificados. Cuerpos de 256 px y acciones de 384 px con

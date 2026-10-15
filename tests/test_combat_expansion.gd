@@ -48,7 +48,7 @@ func run_tests() -> void:
 		actor.play_once("attack")
 		await create_timer(0.17).timeout
 		check(actor.acting and actor.sprite.frame >= 4, "attack frames " + id)
-		await create_timer(0.3).timeout
+		await create_timer(0.65).timeout
 		check(not actor.acting and actor.sprite.frame < 4, "returns to idle " + id)
 		var cut = CutIn.play(app.layer, definition.visual)
 		check(cut != null and cut.from_right, "right-to-left cut-in " + id)

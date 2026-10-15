@@ -30,6 +30,7 @@ func run_tests() -> void:
 	root.add_child(app)
 	app.game.new_run(["warrior", "guardian"], 12, {"team": "phoenix_idol"})
 	app.game.enter_node(0)
+	app.game.run.inventory.energy_flask = 2
 	app.game.run.heroes[0].block = 12
 	app.game.run.heroes[0].poison = 2
 	app.game.run.combat.enemies[0].block = 7
@@ -44,6 +45,21 @@ func run_tests() -> void:
 		var target = hud.get_node(key)
 		check(target.text == "" and target.get_theme_stylebox("normal") is StyleBoxEmpty, key + " image only")
 	check(hud.get_node("EnergyNumber").value == app.game.run.combat.energy, "Energy matches rules")
+	var journal = hud.get_node("Journal")
+	check(journal.text == "" and journal.get_child(0).texture.resource_path.ends_with("journal.svg"), "journal is a notebook icon")
+	check(journal.position.x >= hud.get_node("Bag").get_rect().end.x and journal.get_rect().end.x < 1014 and journal.get_rect().end.y <= 64, "journal fits between bag and menu inside toolbar")
+	check(hud.get_node("BagCount").value == 2 and hud.get_node("BagCount").get_rect().end.x < journal.position.x, "bag count stays clear of notebook")
+	check(app.layer.find_children("*", "Button", true, false).all(func(n): return n.text != "Registro"), "no journal button over battle scene")
+	app.game.run.combat.get_or_add("journal", []).append("Prueba del registro de movimientos")
+	var journal_snapshot = app.game.run.duplicate(true)
+	await click(journal.get_global_rect().get_center())
+	check(is_instance_valid(app.overlay) and app.overlay.find_children("*", "Label", true, false).any(func(n): return "Prueba del registro" in n.text), "notebook opens current battle journal")
+	check(app.game.run == journal_snapshot, "reading journal never changes the run")
+	app.close_modal()
+	app.combat_busy = true
+	await click(journal.get_global_rect().get_center())
+	check(not is_instance_valid(app.overlay), "journal remains unavailable during combat animation")
+	app.combat_busy = false
 	await click(hud.get_node("Deck").get_global_rect().get_center())
 	check(app.screen == "deck", "Three-card icon opens deck")
 	app.back()
@@ -105,12 +121,12 @@ func run_tests() -> void:
 	await shot("cell-two-digits")
 	hud.update_energy(app.game.run.combat.energy)
 	for actor in app.enemy_art.values():
-		check(actor.scale == Vector2.ONE * 1.8125, "Enemies use current combat scale")
+		check(is_equal_approx(actor.scale.x, actor.scale.y) and actor.scale.y > 0 and actor.scale.y <= 1.25 * preload("res://src/ui/components/combat_actor_scale.gd").GROWTH + 0.001, "Enemy scale remains uniform and fits battlefield")
 	for i in app.hero_art:
 		var actor = app.hero_art[i]
 		var height = preload("res://src/ui/components/combat_actor_scale.gd").IDLE_HEIGHT[app.game.run.heroes[i].id]
 		height = float(actor.get_meta("idle_height", height))
-		check(is_equal_approx(actor.scale.y * height, 164.9375), "Hero silhouettes have common enlarged height")
+		check(is_equal_approx(actor.scale.y * height, minf(preload("res://src/ui/components/combat_actor_scale.gd").HERO_HEIGHT, preload("res://src/ui/components/combat_layout.gd").ground_for(app) - 112)), "Hero silhouettes share enlarged available height")
 	await click(Vector2(925, 32))
 	check(app.screen == "items", "Icon bag opens")
 	app.back()

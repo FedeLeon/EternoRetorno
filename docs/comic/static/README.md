@@ -1,5 +1,30 @@
 # Primeros planos estáticos de héroes — 14/10/2026
 
+## Rayos de primeros planos hasta los bordes — 15/10/2026
+
+Los rayos de luz detrás de los ataques y defensas de los cuatro héroes ahora
+atraviesan la vista completa, en vez de terminar a una distancia proporcional
+al recorte del personaje. El lienzo `HeroLights` ocupa toda la superposición y
+`hero_comic_fx.ray_reach()` calcula la longitud desde el origen hasta la esquina
+más lejana, con margen y compensación por la fase más corta de crecimiento.
+Ambos vértices exteriores quedan fuera de pantalla, evitando puntas/cortes
+visibles dentro de la escena.
+
+`hero_cut_in.gd` activa `full_view_rays`; el valor predeterminado compartido
+con los enemigos sigue siendo local. Se conservan el dibujo estático, encuadre,
+partículas, arcos defensivos, color, opacidad, duración, orden detrás del héroe,
+preferencias de efectos y entrada sin bloquear. No se modifican assets/prompts,
+reglas ni guardados.
+
+Validación actual: `test_hero_cut_in.gd` **260/0 nativo aislado**, ocho acciones
+(cuatro héroes × ataque/defensa), lienzo completo, longitud en 16 direcciones
+para cada caso desde el origen real, imagen quieta y finalización única.
+Capturas de ataque de Nicolás y defensa de Inés revisadas en
+`artifacts/comic_static/`. Regresiones headless: imágenes estáticas **33/0**;
+primeros planos enemigos **sin fallos**. Audio Dummy, sin exportar ni probar
+Web/dispositivo.
+
+
 > Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
 > se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
 

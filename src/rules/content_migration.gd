@@ -43,7 +43,7 @@ static func clean(profile: Dictionary, run: Dictionary, content: RefCounted) -> 
 	if not run.is_empty():
 		closed = run.get("party", []).any(func(id): return id not in heroes)
 		var cards: Array = run.get("deck", []).duplicate()
-		for pile in ["draw", "hand", "discard", "inactive"]: cards.append_array(run.get("combat", {}).get(pile, []))
+		for pile in ["draw", "hand", "discard", "inactive", "reserved"]: cards.append_array(run.get("combat", {}).get(pile, []))
 		for card in cards:
 			var id = card.get("id", "") if card is Dictionary else card
 			if not content.cards.has(id): closed = true

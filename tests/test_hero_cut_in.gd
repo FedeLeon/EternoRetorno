@@ -29,6 +29,14 @@ func run_tests() -> void:
 			check(effect.size == host.size and effect.z_index == 150 and effect.mouse_filter == Control.MOUSE_FILTER_IGNORE, "nonblocking foreground " + hero + kind)
 			check(effect.hero_fx != null and effect.hero_fx.get_index() < effect.picture.get_index(), "particles behind character " + hero + kind)
 			check(effect.defensive_effect == (kind == "defense"), "matching effect " + hero + kind)
+			check(effect.hero_fx.full_view_rays and effect.hero_fx.size==host.size,"hero light canvas covers full view")
+			effect._process(0.0) # Initialize the real lower-left origin before measuring coverage.
+			var light = effect.hero_fx
+			var origin = light.area.position + light.area.size*Vector2(0.60,0.48)
+			for i in range(16):
+				var direction = Vector2.from_angle(i*TAU/16.0)
+				var tip = origin + direction*light.ray_reach(origin,light.area.size.y,i)*0.85
+				check(not Rect2(Vector2.ZERO,host.size).grow(8).has_point(tip),"ray tip stays beyond viewport even at shortest phase")
 			var position: Vector2 = effect.picture.position
 			var texture: Texture2D = effect.picture.texture
 			var completed = [0]

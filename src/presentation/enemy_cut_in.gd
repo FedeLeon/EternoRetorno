@@ -35,6 +35,7 @@ static func play(parent: Control, visual: String) -> Control:
 		effect.frame_index = 2 # One contact pose while legacy sheets are replaced.
 	effect.static_illustration = true
 	effect.enhanced_lights = true
+	effect.full_view_rays = true
 	effect.texture_path = "res://assets/comic/enemies/%s.png" % visual
 	effect.from_right = true
 	effect.name = "EnemyCutIn"

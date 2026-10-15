@@ -1,9 +1,199 @@
 # Arquitectura y organización del código
 
-Estado revisado el **14/10/2026**. Esta página describe el código actual y los
+Estado revisado el **15/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
+## Diagnóstico y propuesta — 15/10/2026
+
+[Auditoría integral](quality/AUDITORIA_2026_10_15.md): sin extracción ni cambio
+de estructura en esta revisión. Unas 200 unidades GDScript/10.649 líneas;
+`main.gd` 530 y `game.gd` 378. Priorizar contratos de recibos/diccionarios,
+diagnóstico de objetos retenidos en pruebas UI y auditorías basadas en catálogos
+actuales. Separar inventario/procedencia de alcanzabilidad runtime. La siguiente
+ampliación de parejas debe reutilizar reglas y telemetría existentes, conservando
+IDs, resolución y checkpoint antes de la presentación. Son propuestas, no
+refactorizaciones completadas.
+
 ## Estructura actual
+
+Combate/parejas del 15/10: `pair_tactics` aplica interacciones opcionales por
+versión de aventura desde `synergy_actions`; `card_synergies` deriva descripciones
+y oportunidades sin mutar el estado. `synergy_readiness` señala instancias
+concretas y `pair_link_fx` presenta el enlace después del checkpoint.
+`guided_lessons` prepara/evalúa ejercicios de reglas en un Game temporal;
+`guided_practice_navigation` cambia/restaura la instancia mediante el aislamiento
+ya usado por entrenamiento. `combat_screen` compone su barra de instrucciones.
+`hero_guard_idle` recorre dibujos continuamente y `enemy_motion` coordina poses
+con tiempos por perfil. Importadores específicos conservan procedencia, escalas
+y recursos con IDs existentes. [Detalle y pruebas](combat_refinement/README.md).
+
+Inspección compacta del 15/10: `enemy_inspection` prepara filas de datos e iconos
+reutilizando snapshots/intención efectiva. `enemy_inspection_dialog` calcula
+altura acotada y presenta filas con scroll, sin lógica de combate/persistencia.
+Sustituye solo el uso del lector genérico para esta inspección; diario y otros
+lectores siguen en `reading_dialog`. [Pruebas](battle_effects/README.md).
+
+Reserva reversible del 15/10: `card_reserve` conserva el array `reserved` para
+compatibilidad/exclusión de acciones y añade posición opcional, recuperación
+y ajuste al retirar cartas. `Game.unreserve_card` hace checkpoint antes del
+volteo, igual que guardar. `combat_hand` intercala un reverso pulsable y asigna
+`hand_index` a los nodos jugables; `combat_flow` usa ese metadato para cenizas,
+evitando confundir índice jugable con posición visual. Navegación coordina ambos
+volteos sin calcular reglas. Resumen de mazo incluye la reserva dentro de Mano.
+[Comportamiento y validación](cards/pixel_retain/README.md).
+
+Distribución de combate del 15/10: `ui/components/combat_layout.gd` calcula
+espacio de suelo/estados y centraliza inicio de mano/tamaño ampliado (ajuste
+posterior: suelo 327, información hasta 406, mano desde 414), sin alterar reglas;
+`combat_actor_scale` normaliza la
+escala uniforme y cachea la altura enemiga medida. `enemy_inspection.gd` abre
+información de solo lectura mediante `enemy_inspection_dialog`. `combat_screen` compone
+estas piezas y conserva objetivos de cartas/enlaces; `combat_hand` reserva la
+franja de clics de estados por encima de la mano. `battle_background` adapta
+el encuadre por mazmorra al suelo común. [Detalle](battle_effects/README.md).
+
+Primeros planos enemigos del 15/10: `enemy_cut_in` activa `full_view_rays` en
+el componente compartido, igual que `hero_cut_in`. Reutiliza el lienzo completo
+y cálculo por esquina más lejana, con origen derecho. Sin nuevo componente,
+assets o cambios de reglas/guardado. [Detalle](animation_review/README.md).
+
+Visor de Colección del 15/10: `collection_screen` muestra «Ver ilustración»
+solo para logros desbloqueados y valida esa condición al abrir. El componente
+`ui/components/artwork_viewer.gd` presenta la textura completa con ajuste
+proporcional y fondo que bloquea entrada; reutiliza `ui.overlay`/`close_modal`
+para botón y Escape, restaurando foco sin reconstruir la colección. No altera
+reglas, progreso o guardados ni duplica assets. [Pruebas](collection/README.md).
+
+
+Primeros planos del 15/10: `hero_cut_in` activa `full_view_rays` en la capa
+compartida `comic_cut_in`, cuyo lienzo `HeroLights` usa todo el rectángulo padre.
+`hero_comic_fx.ray_reach` extiende los vértices más allá de la esquina más lejana,
+incluida la fase mínima de crecimiento. La extensión a enemigos se documenta arriba;
+figura estática, tiempos, reglas y guardados se mantienen.
+[Detalle y pruebas](animation_review/README.md).
+
+
+Accesos laterales del 15/10: `map_group_drawer` consume tres PNG dedicados de
+`assets/map/sidebar`, con tamaño y rótulos alineados, sin alterar señales.
+`import_map_comic_icons --sidebar` valida/prepara las tres fuentes; mantiene su
+modo de seis salas y añade entradas derivadas `map_sidebar_illustration`.
+[Fuentes y pruebas](map/sidebar_icons/README.md).
+
+Iconos de salas del 15/10: `import_map_comic_icons.gd` valida/prepara seis
+ilustraciones individuales con procedencia en `docs/map/comic_icons`, conservando
+rutas/UIDs de `assets/map/minimal`. Seis entradas derivadas `map_illustration`
+y exclusión del inventario de vectores impiden que se regeneren como SVG.
+`paths_screen` centra el destino principal en 76 px; mapa/previsualizaciones
+comparten PNG existentes, sin cambios de navegación ni reglas.
+[Fuentes y pruebas](map/comic_icons/README.md).
+
+
+Carrera del 15/10: `hero_run` mide proporciones del arte activo con caché acotada
+y deriva la salida HD a `detailed_hero.play_once`, sin ajustes clásicos de 128 px.
+`detailed_hero._place()` alinea/centra la carrera con una escala única y apoyo
+por cuadro; el callback de cuadro se restringe a `run`. Se conserva el recorrido
+horizontal de `combat_effects.leave_room`, reglas y guardados.
+[Diagnóstico, alcance y pruebas](animation_review/README.md).
+
+
+Enemigos del 15/10: `enemy_sprite._place()` estabiliza medidas subpíxel antes
+de cuantizar escala, evitando la reducción a la mitad en contraataques.
+`sketchbook_sheet_packer.actor_cells()` acepta separadores de fila revisados;
+`import_postapocalyptic_art` los consulta en `actor_layouts.json`, comprueba la
+fuente por hash y permite filtrar por `--job`. Datos de poses e inventario
+acompañan los ocho PNG reempacados. Sin cambios de reglas/guardados.
+[Diagnóstico y pruebas](animation_review/README.md).
+
+
+Bloqueo activo del 15/10: `block_active.svg` comparte relleno carbón y contorno
+claro fino en héroes/enemigos. `postapocalyptic_icons.active_block_svg` conserva
+el diseño al regenerar recursos. No cambia `BlockIndicator`, reglas ni datos.
+[Diseño y pruebas](battle_effects/README.md).
+
+
+Selección del 15/10: `selection_screen.gd` activa `Campfire.embers_only`; comparte
+`presentation/barrel_embers.gd` con el campamento, sin crear `Flames`. Se mantienen
+el cuerpo fijo, luz de los héroes, preparación y guardados. [Pruebas](camp/README.md).
+
+
+Campamento del 15/10: `base_camp_screen` reubica el refugio y delega Aventuras
+en `camp_adventure_button.gd`; conserva callbacks y metadatos de carteles.
+`end_turn_electricity` admite borde rectangular opcional, manteniendo el circular
+por defecto. `presentation/camp_companions.gd` maneja dos decoraciones con RNG
+visual independiente, cuadros reales y recorridos acotados; sin reglas/guardado.
+`import_camp_companions.gd` prepara dos atlas 4×2 con escala única y apoyo común.
+[Distribución, fuentes y pruebas](base_camp/companions/README.md).
+
+
+Cartas y reserva del 15/10: `rules/card_reserve.gd` mueve una instancia fuera de
+la mano jugable y la devuelve antes del robo normal; Game hace checkpoint antes
+del volteo. `combat_hand.gd` extrae la composición de mano de `combat_screen`;
+`card_reserve_navigation.gd` coordina acción/espacio reservado y `card_flip.gd`
+presenta el cambio de cara. Migración, inactivas y resumen de mazo contemplan el
+nuevo montón opcional sin cambiar la versión de guardado. Cuatro frentes y
+reversos ilustrados; dibujos de carta en cómic minimalista según corrección del
+usuario. [Diseño, reglas y procedencia](cards/pixel_retain/README.md).
+
+
+Configuración del 15/10: `title_actions.gd` usa `settings.png`, ilustración
+transparente generada y preparada por `import_settings_icon.gd`. Reutiliza
+`end_turn_electricity.gd` como capa periférica sin captura de entrada; generador
+SVG no recrea el recurso anterior. Acciones/guardado sin cambios.
+[Procedencia y revisión](ui_buttons/settings/README.md).
+
+Terminar turno: `end_turn_button.gd` adjunta
+`presentation/end_turn_electricity.gd`, una capa de arcos/partículas periféricos
+que respeta botón deshabilitado y preferencias. No captura entrada ni modifica
+el callback, el aro original, el área circular o la resolución de turnos.
+
+Rostros de intenciones del 15/10: `refuge_portrait.face_texture` comparte encuadres
+individuales sobre los retratos HD; `enemy_intent.gd` presenta cara proporcionada
+y borde de identidad con `Portrait.COLORS`. Sin modificar imágenes, objetivos,
+reglas ni persistencia. [Detalle](battle_effects/README.md).
+
+Arte de Colección del 15/10: 28 ilustraciones generadas individualmente,
+importadas a 512 px por `import_collection_illustrations.gd` tras validar todo
+el conjunto, incluida una ilustración común para secretos. Tipo
+`collection_illustration` separado de vectores para impedir sobrescritura;
+`collection_icons.py` conserva los seis SVG auxiliares.
+Detalle ampliado y menor atenuación en `collection_screen.gd`. IDs, premios,
+secretos y persistencia no cambian. [Fuentes y pruebas](collection/README.md).
+
+Guardia intermitente: `detailed_hero.gd` delega el reloj visual de reposo en
+`presentation/hero_guard_idle.gd`. Secuencias sobre los atlas de reposo actuales,
+pausas desfasadas y base alfa compensada sin escalar el cuerpo. Acciones y caídas
+interrumpen el controlador; no usa reglas, persistencia ni RNG jugable.
+[Secuencias y validación](animation_review/README.md).
+
+Registro del 15/10: `CombatHUD` presenta libreta opcional mediante `show_journal`
+y señal `journal_requested`; `combat_screen.gd` conecta la señal a
+`tactical_badges.open_journal`. Se retira el botón flotante anterior. Recompensas
+no activan la libreta. Fuentes SVG nativas en `hud_navigation_icons.py`.
+
+Bolsa del 15/10: `items_navigation.gd` añade texturas de retrato al snapshot de
+objetivos válidos. `item_popover.gd` presenta tarjetas horizontales y emite el
+índice original; equipo conserva una acción con dos retratos. Reglas y guardado
+permanecen en Game. `hud_navigation_icons.py` genera los nuevos iconos de mazo
+y mochila en las rutas compartidas. [Detalle](objects/README.md).
+
+Iconos de mapa: `scripts/map_room_icons.py` contiene los seis dibujos de salas
+y `postapocalyptic_icons.svg_for` los integra en el generador existente.
+Importador admite `--map-icons-only`; mapa/caminos comparten las rutas PNG
+actuales, sin nueva lógica de navegación. [Diseños y procedencia](map/README.md).
+
+Contador de energía: `presentation/energy_electricity.gd` dibuja arcos y partículas
+periféricas, recibe el snapshot del HUD y respeta preferencias de efectos.
+`combat_hud.gd.update_energy` actualiza cifra y descarga conjuntamente; sin
+lecturas de Game, reglas ni persistencia desde el componente visual.
+[Presentación y pruebas](preparation_assets/README.md).
+
+Cartas del 14/10: `card_view.gd` retira la placa `CardOwner`, sube título/coste
+y amplía la ilustración. Cuatro marcos tecnológicos rectangulares sin emblema
+superior, con detalles externos propios, proceden de `postapocalyptic_ui_art.py`;
+importador admite `--frames-only`. Mejoras conservan «+» en el título. Sin cambios
+de reglas, IDs ni persistencia. `card_typography.gd` aplica Source Sans 3 variable
+en peso 700 a títulos/descripciones; las mediciones de ajuste usan esa misma
+fuente en negrita. [Diseño y pruebas](cards/tabletop/README.md).
 
 Revisión general del 14/10: `presentation/prepared_strikes.gd` ordena recibos de
 ataques preparados y disolución tras acciones enemigas. Los recibos añaden
@@ -28,6 +218,10 @@ AtlasTexture cacheados y coloca los edificios por su base; máscaras de entrada
 comparten el recorte y dejan pasar carteles vecinos. `campfire.gd` separa Sprite2D
 fijo del barril y AnimatedSprite2D de llamas con raíz fija. El importador nuevo
 `import_camp_flames.gd` solo encaja la hoja ilustrada; no modifica reglas/guardados.
+El campamento activa `embers_only`: no instancia llamas y delega la boca,
+resplandor y chispas a `presentation/barrel_embers.gd`; selección mantiene su
+fuego ilustrado. Mercado/Laboratorio usan carteles superiores; la máscara acepta
+el desplazamiento del dibujo dentro del botón y consulta el cartel real.
 [Fuentes, distribución y validación](base_camp/stable_fire/README.md).
 
 

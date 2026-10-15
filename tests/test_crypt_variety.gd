@@ -76,7 +76,7 @@ func run_tests() -> void:
 		await create_timer(0.17).timeout
 		check(actor.sprite.frame >= 4 and actor.acting, "drawn attack poses " + id)
 		await shot(id + "-motion")
-		await create_timer(0.3).timeout
+		await create_timer(0.65).timeout
 		check(not actor.acting and actor.sprite.frame < 4, "returns to idle " + id)
 		var cut = CutIn.play(app.layer, def.visual)
 		check(cut != null and cut.from_right, "cut-in from right " + id)

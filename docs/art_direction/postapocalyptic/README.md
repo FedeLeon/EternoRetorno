@@ -1,5 +1,27 @@
 # Eterno Retorno: civiles contra la máquina
 
+[Menú lateral ilustrado](../../map/sidebar_icons/README.md): Grupo, Mazo y
+Caminos/Mapa con tres generaciones individuales; inventario actual de
+**683 recursos visuales activos**.
+
+[Iconos ilustrados de mapa y caminos](../../map/comic_icons/README.md): seis
+PNG transparentes generados individualmente, con fuentes/prompts y exclusión
+del generador vectorial. Sustituyen los símbolos de sala de la etapa anterior.
+
+
+[Perro y gato del campamento](../../base_camp/companions/README.md): dos hojas
+ilustradas transparentes, ocho poses cada una, caminar/olfatear/comer y pausas.
+
+Actualización de cartas del 15/10: [cuatro frentes/reversos de metal y papel y
+88 ilustraciones de cómic minimalista](../../cards/pixel_retain/README.md).
+Se conservan las identidades civiles; las ilustraciones usan fondos despejados
+y formas planas. La reserva permite guardar una carta por turno.
+
+Actualización 15/10: [28 ilustraciones individuales de logros y máscara secreta](../../collection/comic_illustrations/README.md)
+generadas con la herramienta integrada, sustituyendo los pictogramas de esa
+sección. Inventario tras los accesos laterales: **683 recursos visuales activos verificados**.
+Los recuentos de la entrega original siguientes son históricos.
+
 Nueva dirección solicitada el 14/10/2026. Sustituye el sketchbook medieval.
 Las referencias del usuario orientan el lenguaje visual; no se copian personajes,
 logotipos, trajes ni mundos de esas franquicias.

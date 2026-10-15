@@ -30,7 +30,8 @@ func run_tests() -> void:
 	app.open_selection()
 	await create_timer(0.2).timeout
 	var fire = app.layer.get_node("Campfire")
-	check(fire.flame.sprite_frames.get_frame_count("default") == 24, "natural fire has twenty-four frames")
+	check(fire.embers_only and not fire.has_node("Flames") and fire.has_node("InteriorEmbers"), "selection uses camp light and sparks without flame sprites")
+	check(fire.get_node("InteriorEmbers").get_script() == preload("res://src/presentation/barrel_embers.gd"), "selection shares the exact camp ember effect")
 	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		var seat = app.layer.get_node("CampHero_" + id + "/SeatedHero")
 		check(seat.texture is AtlasTexture and seat.texture.atlas.resource_path == "res://assets/rest/%s.png" % id, "selection reuses seated rest artwork")
@@ -41,24 +42,11 @@ func run_tests() -> void:
 	check(fire.barrel is Sprite2D and not fire.barrel is AnimatedSprite2D, "barrel is a static body")
 	var barrel_texture = fire.barrel.texture
 	var barrel_transform = fire.barrel.transform
-	var flame_position = fire.flame.position
-	var drawings = {}
-	var raw_flames = Image.new()
-	raw_flames.load_png_from_buffer(FileAccess.get_file_as_bytes("res://assets/camp/fire-flames.png"))
-	for frame in range(24):
-		fire.flame.pause()
-		fire.flame.frame = frame
-		var texture = fire.flame.sprite_frames.get_frame_texture("default", frame)
-		check(texture.atlas.resource_path.ends_with("fire-flames.png"), "only flame art advances")
-		drawings[hash(raw_flames.get_region(Rect2i(texture.region)).get_data())] = true
-		check(fire.barrel.texture == barrel_texture and fire.barrel.transform == barrel_transform, "barrel does not move across the whole cycle")
-		check(fire.flame.position == flame_position and fire.flame.offset == Vector2.ZERO, "flame root remains above the same rim")
-	check(drawings.size() == 24, "twenty-four distinct flame-only drawings")
-	fire.flame.play()
-	var first = fire.flame.frame
+	var first: float = fire.get_node("InteriorEmbers").elapsed
 	await capture("camp-first")
 	await create_timer(0.27).timeout
-	check(fire.flame.frame != first and fire.elapsed > 0.4, "fire frames and sparks advance")
+	check(fire.get_node("InteriorEmbers").elapsed > first and fire.elapsed > 0.4, "embers and warm glow advance")
+	check(fire.barrel.texture == barrel_texture and fire.barrel.transform == barrel_transform, "barrel stays fixed while light and sparks move")
 	await capture("camp-second")
 	var ids = preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes)
 	for i in range(ids.size()):

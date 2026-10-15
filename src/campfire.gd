@@ -12,6 +12,7 @@ var elapsed = 0.0
 var sheet: Texture2D = SHEET
 var fps = FPS
 var sketch_style = true
+var embers_only = false
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -26,6 +27,11 @@ func _ready() -> void:
 	barrel.scale = Vector2.ONE * 0.75
 	barrel.position = Vector2(-96, -105.75)
 	add_child(barrel)
+	if embers_only:
+		var embers = preload("res://src/presentation/barrel_embers.gd").new()
+		embers.name = "InteriorEmbers"
+		add_child(embers)
+		return
 	flame = AnimatedSprite2D.new()
 	flame.name = "Flames"
 	var frames = SpriteFrames.new()
@@ -54,6 +60,7 @@ func _draw() -> void:
 		draw_set_transform(Vector2.ZERO, 0, Vector2(1, 0.3))
 		draw_circle(Vector2.ZERO, radius, Color(1, 0.36, 0.06, 0.05 * pulse))
 	draw_set_transform(Vector2.ZERO)
+	if embers_only: return
 	for i in range(8):
 		var age = fmod(elapsed * (0.31 + i * 0.006) + i * 0.173, 1.0)
 		var x = sin(i * 7.1 + age * 5.0) * (10 + age * 27)

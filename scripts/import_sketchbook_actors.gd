@@ -58,11 +58,13 @@ func _initialize() -> void:
 				widest = maxi(widest,cell.get_width());tallest = maxi(tallest,cell.get_height())
 				if action == "idle": idle_height = maxi(idle_height,cell.get_height())
 		var ratio = minf(224.0/widest,minf(232.0/tallest,204.0/idle_height))
-		metrics[hero] = {"idle_height":idle_height*ratio*0.5,"frames":12,"style":"postapocalyptic_comic"}
+		if not manifest.get("assets/heroes/detail/%s_idle.png" % hero, {}).get("fluid_revision", 0):
+			metrics[hero] = {"idle_height":idle_height*ratio*0.5,"frames":12,"style":"postapocalyptic_comic"}
 		for action in ACTIONS:
 			var large = action in ["thrust","sweep","charged"]
 			var folder = "actions" if large else "detail"
 			var path = "res://assets/heroes/%s/%s_%s.png" % [folder,hero,action]
+			if manifest.get(path.trim_prefix("res://"), {}).get("fluid_revision", 0): continue
 			Pack.save(Pack.pack(poses[action],4,384 if large else 256,ratio,368 if large else 240),path)
 			manifest[path.trim_prefix("res://")] = record(path,hero,action)
 		# Preserve old atlas dimensions for existing map/forge actors and saved IDs.

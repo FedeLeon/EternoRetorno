@@ -52,7 +52,7 @@ func run_tests() -> void:
 			var frame = img.get_region(Rect2i(i*img.get_height(),0,img.get_height(),img.get_height()))
 			var fingerprint = hash(frame.get_data())
 			if fingerprint not in unique: unique.append(fingerprint)
-		check(unique.size() == 4, "four authored keyposes " + id)
+		check(unique.size() == (8 if id in ["goblin_0", "goblin_7"] else 4), "authored pose count matches revision " + id)
 		check(img.get_pixel(0,0).a == 0, "transparent atlas " + id)
 		var addition = additions.filter(func(key): return catalog[key].visual == id)
 		if not addition.is_empty():

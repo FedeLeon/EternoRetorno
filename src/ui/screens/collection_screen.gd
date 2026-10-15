@@ -34,6 +34,9 @@ func _ready() -> void:
 	for i in range(3):
 		var tab = ui.button(["Logros", "Desbloqueos", "Últimos retornos"][i], 36 + i * 256, 164, 244, 42, func(): show_tab(i), true, self)
 		tab.name = ["AchievementsTab", "UnlocksTab", "HistoryTab"][i]
+		tab.icon = load("res://assets/collection/ui/%s.svg" % ["achievements", "unlocks", "history"][i])
+		tab.expand_icon = true
+		tab.add_theme_constant_override("icon_max_width", 26)
 		tabs.append(tab)
 	show_tab(0)
 
@@ -81,7 +84,7 @@ func _icon(path: String, area: Rect2, parent: Control, tint: Color = Color.WHITE
 
 func _achievement_icon(entry: Dictionary) -> String:
 	if entry.secret and not entry.unlocked:
-		return "res://assets/collection/secret.svg"
+		return "res://assets/collection/secret.png"
 	return "res://assets/collection/icons/%s.png" % entry.id
 
 func _achievements() -> void:
@@ -93,7 +96,7 @@ func _achievements() -> void:
 		var tile = ui.button("", (i % 3) * 288, (i / 3) * 156, 276, 144, func(): pass, true, contents)
 		tile.name = "Achievement_" + entry.id
 		tile.pressed.connect(func(): _select(entry, tile))
-		_icon(_achievement_icon(entry), Rect2(12, 20, 76, 76), tile, Color.WHITE if entry.unlocked else Color(0.65, 0.65, 0.72))
+		_icon(_achievement_icon(entry), Rect2(12, 20, 76, 76), tile, Color.WHITE if entry.unlocked else Color(0.85, 0.85, 0.9))
 		ui.label_at(entry.name, 100, 12, 164, 62, 19, ui.TEXT if entry.unlocked else ui.MUTED, tile)
 		ui.label_at("DESBLOQUEADO" if entry.unlocked else ("SECRETO" if entry.secret else "EN PROGRESO"), 100, 79, 164, 24, 13, ui.GOLD if entry.unlocked else ui.MUTED, tile)
 		if not entry.secret:
@@ -118,11 +121,18 @@ func _select(entry: Dictionary, tile: Button) -> void:
 	for child in detail.get_children():
 		detail.remove_child(child)
 		child.queue_free()
-	_icon(_achievement_icon(entry), Rect2(82, 28, 136, 136), detail)
-	ui.label_at(entry.name, 22, 180, 256, 66, 25, ui.GOLD, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	ui.label_at(entry.description, 24, 256, 252, 112, 20, ui.TEXT, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_icon(_achievement_icon(entry), Rect2(58, 16, 184, 184), detail)
+	ui.label_at(entry.name, 22, 208, 256, 66, 25, ui.GOLD, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at(entry.description, 24, 282, 252, 108, 19, ui.TEXT, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var status = "Desbloqueado" if entry.unlocked else ("Logro secreto" if entry.secret else "Progreso: %d / %d" % [entry.progress, entry.target])
-	ui.label_at(status, 24, 398, 252, 40, 19, ui.GOLD, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.label_at(status, 24, 392 if entry.unlocked else 398, 252, 32 if entry.unlocked else 40, 19, ui.GOLD, detail).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if entry.unlocked:
+		var view = ui.button("Ver ilustración",24,430,252,36,func(): _open_art(entry),true,detail)
+		view.name = "ViewAchievementArt"
+
+func _open_art(entry: Dictionary) -> void:
+	if not entry.unlocked: return
+	preload("res://src/ui/components/artwork_viewer.gd").open(ui,load(_achievement_icon(entry)),detail.get_node("ViewAchievementArt"))
 
 func _unlocks() -> void:
 	var contents = _scroll(1208, ceil(snapshot.unlocks.size() / 3.0) * 172)
@@ -141,8 +151,9 @@ func _history() -> void:
 	for i in range(snapshot.history.size()):
 		var entry: Dictionary = snapshot.history[i]
 		var row = _frame(Rect2(0, i * 88, 1188, 76), contents)
+		_icon("res://assets/collection/ui/%s.svg" % ("victory" if entry.won else "return"), Rect2(12, 15, 46, 46), row)
 		ui.button("Ver", 885, 18, 80, 38, func(): history_detail(entry), true, row)
-		ui.label_at("VICTORIA" if entry.won else "RETORNO", 20, 14, 160, 48, 20, ui.GOLD if entry.won else ui.MUTED, row)
+		ui.label_at("VICTORIA" if entry.won else "RETORNO", 68, 14, 120, 48, 18, ui.GOLD if entry.won else ui.MUTED, row)
 		ui.label_at(entry.party_names, 190, 14, 690, 48, 22, ui.TEXT, row)
 		ui.label_at("%d salas" % entry.rooms, 980, 14, 180, 48, 20, ui.MUTED, row)
 

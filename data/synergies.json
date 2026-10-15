@@ -1,7 +1,7 @@
 [
   {
     "id": "warrior_guardian",
-    "name": "Muralla cortante",
+    "name": "Corte a cubierto",
     "heroes": [
       "warrior",
       "guardian"
@@ -15,11 +15,12 @@
     "block": 8,
     "heal": 0,
     "poison": 0,
-    "pierce": false
+    "pierce": false,
+    "tactic": "cover"
   },
   {
     "id": "warrior_rogue",
-    "name": "Filo ponzoñoso",
+    "name": "Incisión asistida",
     "heroes": [
       "warrior",
       "rogue"
@@ -33,11 +34,12 @@
     "block": 0,
     "heal": 0,
     "poison": 5,
-    "pierce": false
+    "pierce": false,
+    "tactic": "incision"
   },
   {
     "id": "warrior_mage",
-    "name": "Acero astral",
+    "name": "Puente de tensión",
     "heroes": [
       "warrior",
       "mage"
@@ -51,11 +53,12 @@
     "block": 0,
     "heal": 0,
     "poison": 0,
-    "pierce": false
+    "pierce": false,
+    "tactic": "circuit"
   },
   {
     "id": "guardian_rogue",
-    "name": "Bastión tóxico",
+    "name": "Cortina reactiva",
     "heroes": [
       "guardian",
       "rogue"
@@ -69,11 +72,12 @@
     "block": 8,
     "heal": 0,
     "poison": 5,
-    "pierce": false
+    "pierce": false,
+    "tactic": "screen"
   },
   {
     "id": "guardian_mage",
-    "name": "Égida de cristal",
+    "name": "Jaula de Faraday",
     "heroes": [
       "guardian",
       "mage"
@@ -87,11 +91,12 @@
     "block": 8,
     "heal": 0,
     "poison": 0,
-    "pierce": false
+    "pierce": false,
+    "tactic": "interference"
   },
   {
     "id": "rogue_mage",
-    "name": "Corrosión del vacío",
+    "name": "Reacción en cadena",
     "heroes": [
       "rogue",
       "mage"
@@ -105,6 +110,7 @@
     "block": 0,
     "heal": 0,
     "poison": 5,
-    "pierce": false
+    "pierce": false,
+    "tactic": "chain"
   }
 ]

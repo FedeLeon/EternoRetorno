@@ -4,21 +4,16 @@
   "kind": "scene",
   "hero": null,
   "dimensions": [
-    1280,
-    720
+    1280.0,
+    720.0
   ],
   "transparent": false,
   "source": "docs/art_direction/postapocalyptic/sources/forest__combat_glade.png",
-  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Overgrown industrial service yard, trees and vines engulfing broken autonomous factory equipment, teal filtered daylight. Broad level cracked concrete floor beginning at38percent full width; vegetation behind the battle zone, not covering feet. Wide landscape3:2. No characters unless explicitly requested.",
-  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-019e9cff-de9a-4db2-a888-fc2534d0f6e5.png",
+  "prompt": "Edit this game background asset. Remove the gigantic human man and his entire saw weapon completely. There must be NO humans, NO characters, NO creatures anywhere. Retain the same postapocalyptic overgrown industrial scrapyard setting, American comic book ink style, crisp black contours, orange rust machinery, cyan sky, purple shadows, vines and distant steel catwalks. This is a side-view turn-based battle arena background. Important composition: move the distant back wall and bases of the excavators into the upper 35 percent of the image; an unobstructed broad continuous flat cracked concrete battle floor should cover the entire lower 65 percent, no obstacles in the left and right actor standing zones. Horizon/back-wall-floor junction around y=35 percent. Keep foreground perspective restrained and horizontal so characters can stand on a common ground line at y=52 percent of the image. No UI, no text, no logos, no frames. Landscape 16:9. Replace the giant man area with plausible industrial background and floor matching surrounding art. Full opaque background.",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-57e750d8-9b1a-490d-a3ce-3d29c68a7649.png",
   "references": [
-    "/var/www/html/EternoRetorno/docs/art_direction/postapocalyptic/sources/identity_warrior.png"
+    "assets/forest/combat_glade.png"
   ],
   "tool": "image_gen.imagegen",
-  "status": "generated",
-  "source_sha256": "cba1ccf83ce779459876fc1b222b7ed94a63be8687c27184ad515415b0ad0471",
-  "actual_dimensions": [
-    1536,
-    1024
-  ]
+  "revision": "2026-10-15-background-only"
 }

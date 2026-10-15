@@ -1,5 +1,35 @@
 # Edificios en sus solares y brasero fijo — 14/10/2026
 
+
+**Actualización 15/10:** [refugio sobre el círculo y animales del patio](../companions/README.md).
+El brasero conserva su posición; la fila de Refugio de la tabla siguiente es histórica.
+
+## Ajuste posterior: carteles superiores y brasas en el campamento
+
+- Mercado y Laboratorio construidos muestran el cartel inmediatamente encima
+  del rectángulo visible del edificio. Los solares vacíos conservan su rótulo.
+- Máscaras alfa desplazadas con el dibujo y detección del rectángulo real del
+  cartel mantienen clicables techo/edificio/cartel; protección de carteles vecinos.
+- La base del tacho queda en **674 / 409**, sobre el centro del círculo ilustrado
+  del fondo a 1280×720. Metal y piedras permanecen inmóviles.
+- Modo `embers_only` del campamento: no crea ni reproduce `Flames`. La boca
+  oscura cubre los fragmentos de llama del recorte original, con brasas, luz
+  cálida pulsante, halo tenue y 18 chispas ascendentes de ciclos escalonados.
+  Composición dibujada por `src/presentation/barrel_embers.gd`, sin nuevos PNG
+  ni generación de imágenes. Se reutiliza el barril de procedencia ya registrada.
+- La selección de héroes también usa luz/chispas sin llamas desde el 15/10.
+  [Revisión y pruebas actuales](../../camp/README.md). Sin cambios de reglas,
+  persistencia ni exportación.
+
+Validación de este ajuste: revisión de capturas nativas del campamento vacío y
+sus cuatro etapas de construcción; `test_camp_plot_ground.gd`: **155/0**,
+incluidos posición, ausencia de llamas, cuerpo quieto, avance de efectos,
+carteles superiores y máscaras/clics vecinos. Las cifras del registro siguiente
+corresponden al cambio anterior, no a esta revisión.
+Navegación nativa `test_base_camp.gd`: **38/0**; expansión nativa: **33/0**;
+selección headless: **117/0**. Audio Dummy, perfil privado; avisos de recursos al
+cerrar algunas suites, sin errores de script. Web y dispositivo no probados.
+
 ## Edificios
 
 El PNG completo tenía bandas transparentes amplias arriba/abajo. El ajuste por
@@ -20,8 +50,9 @@ son límites de encaje, no una orden de deformar el edificio:
 | Refugio | 352 / 220 / 282 / 175 |
 | Proyectos | 866 / 416 / 282 / 183 |
 
-Los solares vacíos y la construcción conservan sus reglas. El cartel acompaña
-el borde inferior. Máscaras de clic usan la **misma textura recortada** que el
+Los solares vacíos y la construcción conservan sus reglas. Los carteles de
+Taller, Expediciones, Refugio y Proyectos acompañan el borde inferior; Mercado
+y Laboratorio llevan cartel superior. Máscaras de clic usan la **misma textura recortada** que el
 dibujo y respetan los carteles vecinos; los carteles se dibujan encima de techos.
 Refugio y Proyectos también usan máscara. Los accesos, costes y edificios
 permanentes no cambian.

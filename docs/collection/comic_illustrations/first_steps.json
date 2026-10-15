@@ -1,0 +1,16 @@
+{
+  "id": "first_steps",
+  "prompt": "Use case: illustration-story. Asset type: one finished square achievement illustration for a postapocalyptic civilian-versus-machines comic game. Subject: extreme close-up of a battered leather work boot stepping onto a broken metallic roadway, crushing a small disconnected robot sensor under the sole; the road recedes in cyan and violet shards. Meaning: a civilian takes the first step into danger. American action-comic illustration, bold black ink contours, expressive hand-drawn hatching, detailed worn leather seams, scratched metal and debris, rich cel-shaded colours, purple shadows, cyan electronic rim light, warm amber highlights. Rich illustrated artwork with physical texture and dimensional lighting, NOT a simple vector pictogram, NOT a flat geometric badge, NO octagonal frame or medal, NO text, letters, numbers, logo or watermark. One large readable central subject occupying 85 percent of the square, strong clear silhouette, dark inked vignette background, premium comic game achievement art. Match the visual ink and colour language of the reference, but create an entirely new subject and composition.",
+  "source": "docs/collection/comic_illustrations/sources/first_steps.png",
+  "target": "assets/collection/icons/first_steps.png",
+  "reference": "assets/heroes/identity/portraits/warrior.png",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-14ea20ba-7e3f-4b4b-8565-eba9fa24bc9e.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "source_sha256": "ff5f13dd8fc9acb1c7a9d6fccdb14d37ae82f986598aff2e651b29c7cc02a751",
+  "reference_sha256": "5a7460c2631f1622ead4df6a378c7eda9653fac390c9953e9d3cc3fa971f5644"
+}

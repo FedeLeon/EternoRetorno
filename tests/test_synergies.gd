@@ -50,7 +50,7 @@ func _initialize() -> void:
 			check(g.run.combat.hand.is_empty() and g.run.combat.discard.size() == discard_count + 2, "consumes both")
 			check(g.run.combat.energy == 1, "shared cost")
 			var damage = recipe.damage + (6 if upgraded else 0)
-			check(g.run.combat.enemies[0].hp == 200 - damage + (0 if recipe.pierce else 5), "special damage")
+			check(g.run.combat.enemies[0].hp == 200 - damage + (0 if recipe.pierce or recipe.get("tactic", "") == "circuit" else 5), "special damage")
 			check(g.run.combat.enemies[0].poison == recipe.poison, "poison")
 			for h in g.run.heroes:
 				check(h.block == recipe.block and h.hp == h.max_hp - 15 + recipe.heal, "both allies benefit")

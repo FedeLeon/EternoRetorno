@@ -1,0 +1,18 @@
+{
+  "id": "rogue_dodge",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/rogue_dodge.png",
+  "source": "docs/cards/pixel_retain/sources/rogue_dodge.png",
+  "prompt": "Use case: illustration-story. Create one standalone landscape 3:2 MINIMALIST COMIC card illustration for Eterno Retorno, NOT a card frame. Exact subject: Half-body Mauro steps sideways, with two simple offset teal movement strokes.. The only person is MAURO, a grown MAN with short tousled dark brown hair and light stubble, wearing teal civilian medical jacket, face visible, no mask, NO BRAID, not a woman. Match the reference male identity. Show his requested action, cropped half-body, not a full-body standing portrait. Thick bold black comic ink outlines, large simple shapes, flat saturated teal green identity accents against charcoal black. ONLY TWO shadow shades, no fine texture, no tiny screws, no ornate decoration, minimal material details. Extremely clear silhouette, large central motif, dark negative space surrounding it. No scenery, no buildings, no full environment, no complex machine, no multiple panels, no letters, no words, no numbers, no frame or UI. Retain postapocalyptic improvised tools instead of fantasy weapons. A single readable comic action or object vignette with much less detail than a full scene.",
+  "reference": "assets/heroes/identity/postapocalyptic/rogue.png",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-907e4c33-429f-4aef-becd-9df37d1db7a8.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "visual_style": "minimal_comic",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "22d25342fffa0639f45d0a8b5afaeb0d232cd00414854f6d20486af9944a86f3",
+  "reference_sha256": "fe10afdde918235929380e71ad5515b9d1a186c95db9e3cbde1bd5a62d435cc1"
+}

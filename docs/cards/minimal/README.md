@@ -1,5 +1,8 @@
 # Ilustraciones minimalistas de cartas — 14/10/2026
 
+**Actualización 15/10/2026:** Las ilustraciones actuales se renuevan con [cómic minimalista y frentes/reversos de metal y papel](../pixel_retain/README.md). La descripción y pruebas siguientes son históricas.
+
+
 > Limpieza posterior: las fuentes bitmap e importadores sustituidos de esta etapa
 > se retiraron; se conservan prompts, metadatos y hashes. [Registro](../../game_review_2026_10_14/README.md).
 

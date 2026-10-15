@@ -8,7 +8,8 @@ static func build(ui: Control, back: Callable) -> void:
 	var battle = ui.game.run.combat
 	var detail = "Total: %d cartas" % ui.game.run.deck.size()
 	if ui.game.run.phase == "combat":
-		detail += " · Mazo: %d · Mano: %d · Descarte: %d · Inactivas: %d" % [battle.draw.size(), battle.hand.size(), battle.discard.size(), battle.inactive.size()]
+		var face_down = battle.get("reserved", []).size()
+		detail += " · Mazo: %d · Mano: %d (%d boca abajo) · Descarte: %d · Inactivas: %d" % [battle.draw.size(), battle.hand.size() + face_down, face_down, battle.discard.size(), battle.inactive.size()]
 	var frame = Panel.new()
 	frame.name = "DeckSummaryFrame"
 	frame.mouse_filter = Control.MOUSE_FILTER_IGNORE

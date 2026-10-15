@@ -47,8 +47,8 @@ func _ready() -> void:
 	tab.tooltip_text = "Abrir grupo"
 	for state in ["normal", "hover", "pressed", "focus"]:
 		tab.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-	picture(preload("res://assets/map/group_tab.png"), Rect2(0, 0, 76, 94), tab)
-	var caption = host.label("Grupo", Rect2(0, 91, 76, 24), 16, Color("ead3a0"), tab)
+	picture(preload("res://assets/map/sidebar/group.png"), Rect2(6, 4, 64, 64), tab)
+	var caption = host.label("Grupo", Rect2(0, 70, 76, 24), 16, Color("ead3a0"), tab)
 	caption.name = "Caption"
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var deck = host.action("", Rect2(4, 246, 76, 94), func(): host.deck_requested.emit(), rail)
@@ -56,8 +56,8 @@ func _ready() -> void:
 	deck.tooltip_text = "Ver mazo · %d cartas" % host.deck_count
 	for state in ["normal", "hover", "pressed", "focus"]:
 		deck.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-	picture(preload("res://assets/ui/deck.svg"), Rect2(6, 0, 64, 58), deck)
-	var deck_caption = host.label("Mazo", Rect2(0, 62, 76, 24), 16, Color("ead3a0"), deck)
+	picture(preload("res://assets/map/sidebar/deck.png"), Rect2(6, 4, 64, 64), deck)
+	var deck_caption = host.label("Mazo", Rect2(0, 70, 76, 24), 16, Color("ead3a0"), deck)
 	deck_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 
@@ -67,8 +67,8 @@ func _ready() -> void:
 		map_button.tooltip_text = "Volver a los caminos" if host.map_open else "Ver mapa"
 		for state in ["normal", "hover", "pressed", "focus"]:
 			map_button.add_theme_stylebox_override(state, StyleBoxEmpty.new())
-		picture(preload("res://assets/ui/map.svg"), Rect2(6, 0, 64, 58), map_button)
-		var map_caption = host.label("Caminos" if host.map_open else "Mapa", Rect2(0, 62, 76, 24), 16, Color("ead3a0"), map_button)
+		picture(preload("res://assets/map/sidebar/paths.png"), Rect2(6, 4, 64, 64), map_button)
+		var map_caption = host.label("Caminos" if host.map_open else "Mapa", Rect2(0, 70, 76, 24), 16, Color("ead3a0"), map_button)
 		map_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func toggle() -> void:
