@@ -4,6 +4,7 @@ func _initialize() -> void:
 	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string("res://docs/combat_refinement/enemy_jobs.json"))
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://docs/art_direction/postapocalyptic/assets.json"))
 	for job in jobs:
+		if manifest.get("assets/enemies/animations/%s.png"%job.id,{}).get("comic_rebuild_revision",0)==1:continue
 		var poses = Pack.actor_cells("res://" + job.source, 4, 2)
 		if poses.size() != 8: push_error("Invalid enemy bank: " + job.id); quit(1); return
 		var ratio = 1000.0

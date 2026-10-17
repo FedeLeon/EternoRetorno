@@ -121,7 +121,7 @@ func run_tests() -> void:
 	await shot("cell-two-digits")
 	hud.update_energy(app.game.run.combat.energy)
 	for actor in app.enemy_art.values():
-		check(is_equal_approx(actor.scale.x, actor.scale.y) and actor.scale.y > 0 and actor.scale.y <= 1.25 * preload("res://src/ui/components/combat_actor_scale.gd").GROWTH + 0.001, "Enemy scale remains uniform and fits battlefield")
+		check(is_equal_approx(actor.scale.x, actor.scale.y) and actor.scale.y > 0 and preload("res://src/ui/components/combat_actor_scale.gd").silhouette(actor).size.y * actor.sprite.scale.y * actor.scale.y <= preload("res://src/ui/components/combat_layout.gd").ground_for(app) - 66 + 0.01, "Enemy scale remains uniform and fits battlefield")
 	for i in app.hero_art:
 		var actor = app.hero_art[i]
 		var height = preload("res://src/ui/components/combat_actor_scale.gd").IDLE_HEIGHT[app.game.run.heroes[i].id]

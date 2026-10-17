@@ -1,0 +1,31 @@
+{
+  "id": "expressive_crypt_bat",
+  "kind": "enemy_sheet",
+  "prompt": "Create a brand new clean transparent RGBA SPRITE SHEET for this game's same enemy. Reference preserves identity but REMOVE all rectangular dark backgrounds. Small rusted bat-like reconnaissance drone with an orange-red camera eye and two articulated dark blue metal wings. Hovers, no legs on ground. Shot: coil wings back, aim sensor, fire thin red pulse left, wings recover. American action comic ink, strong clean black outlines, flat saturated rust orange and cyan, hard cel shading. EXACTLY 8 full body poses, 4 columns by 2 rows, equal roomy cells with transparent gaps, reading left to right. Same character facing LEFT in every cell, same body scale, same foot baseline (or same hovering root for drone). Row one: FOUR genuinely distinct subtle idle poses, slow moving joints/wing feathers or pistons, breathing-like mechanical stance. Row two: frame5 anticipation begins, frame6 maximum windup, frame7 actual strong leftward strike, frame8 recovery, pose nearly back to idle. No text/numbers, no panels, NO BACKGROUNDS, true alpha outside drawn body, no white squares. Fully drawn uncropped feet/weapon/wings in each cell. Exaggerate anticipation and recovery meaningfully, clear silhouette, no body shrinking, keep exact identity and equipment from reference.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/enemies/animations/crypt_bat.png",
+      "dimensions": [
+        2048,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/hd/crypt_bat.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/expressive_crypt_bat.png",
+  "enemy": "crypt_bat",
+  "columns": 4,
+  "rows": 2,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-49acad86-4b17-4cc4-938f-c94c0f6d64bd.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

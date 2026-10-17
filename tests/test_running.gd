@@ -16,6 +16,7 @@ func run_tests() -> void:
 	background.size = Vector2(1280,720)
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	host.add_child(background)
+	var art:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://docs/art_direction/postapocalyptic/assets.json"))
 	var actors: Array = []
 	var index = 0
 	for hero in Run.HEIGHTS:
@@ -33,7 +34,8 @@ func run_tests() -> void:
 			check(image.get_pixel(0,0).a == 0 and image.get_used_rect().end.y <= 121, "transparent/grounded frame " + hero)
 			var hash = hash(image.get_data())
 			if hash not in hashes: hashes.append(hash)
-		check(hashes.size() == 6, "six distinct gait phases in eight timing frames " + hero)
+		var authored = 8 if art.get("assets/heroes/running/%s.png"%hero,{}).get("comic_rebuild_revision",0)==1 else 6
+		check(hashes.size() == authored, "distinct authored gait phases in eight timing frames " + hero)
 		Gear.apply(actor, hero, {"weapon":3,"armor":3})
 		check(actor.sprite.sprite_frames.get_frame_texture("run", 7).atlas.resource_path.contains("running"), "gear preserves separate running atlas")
 		preload("res://src/ui/components/combat_actor_scale.gd").hero(actor, hero)

@@ -1,0 +1,80 @@
+{
+  "id": "icons_00",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: ambush; clear symbolic battle status, restrained details, readable at 28 pixels; cell 2: armor plates; clear symbolic battle status, restrained details, readable at 28 pixels; cell 3: attack; clear symbolic battle status, restrained details, readable at 28 pixels; cell 4: beast command; clear symbolic battle status, restrained details, readable at 28 pixels; cell 5: bond focus; clear symbolic battle status, restrained details, readable at 28 pixels; cell 6: bulwark; clear symbolic battle status, restrained details, readable at 28 pixels; cell 7: charged strike; clear symbolic battle status, restrained details, readable at 28 pixels; cell 8: counter; clear symbolic battle status, restrained details, readable at 28 pixels; cell 9: curse blood; clear symbolic battle status, restrained details, readable at 28 pixels. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\nCell 1 gameplay meaning (do not print words): Emboscada. Este enemigo tiene un 20% más de vida y 2 de daño adicional en sus ataques. Su barra y su intención ya incluyen esas mejoras.\nCell 2 gameplay meaning (do not print words): Placas del guardián. Las placas reducen el daño directo a la mitad. Un golpe penetrante rompe una placa; también podés romperla por 1 energía. Romper la última interrumpe el golpe cargado.\nCell 3 gameplay meaning (do not print words): Intención de ataque. El enemigo planea atacar por la cantidad de daño indicada, al héroe mostrado junto a la intención.\nCell 4 gameplay meaning (do not print words): Orden de caza. Su orden aumenta en 3 el daño de las bestias aliadas vivas. Este aumento ya se incluye en la intención de ataque de cada bestia.\nCell 5 gameplay meaning (do not print words): Concentración del vínculo. La próxima carta de enlace gana 2 de potencia. Se consume al jugar ese enlace.\nCell 6 gameplay meaning (do not print words): Élite acorazado. Su intención gana bloqueo adicional: 2 por cada turno de combate, hasta un máximo de 10. El valor ya está incluido junto al escudo de intención.\nCell 7 gameplay meaning (do not print words): Golpe cargado. Las placas potencian este ataque. Romper la última placa interrumpe la carga y reduce su intención de ataque a un máximo de 8 de daño.\nCell 8 gameplay meaning (do not print words): Contraataque. Devuelve 4 de daño al atacante por cada golpe recibido, si sobrevive. El bloqueo del héroe puede absorberlo.\nCell 9 gameplay meaning (do not print words): Avería hidráulica. Cada héroe pierde 1 PV al terminar el turno, sin poder caer por este efecto.\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/battle_effects/ambush.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/armor_plates.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/attack.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/beast_command.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/bond_focus.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/bulwark.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/charged_strike.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/counter.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/curse_blood.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/icons_00.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-b5d3092e-71f6-4f5f-8e15-6722900b7bf6.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-17",
+  "asset_manifest_sha256": "0d1f291d6c4187324554aacfad11e7bca0a69b813d7040d5e6f817bc445d6863",
+  "art": {
+    "generated_jobs": 241,
+    "generation_jobs": 241,
+    "converted_resources": 716,
+    "resources": 716,
+    "pending_resources": [],
+    "errors": [],
+    "complete": true
+  },
+  "atlas": {
+    "sheets": 100,
+    "frames": 1024,
+    "errors": 0
+  },
+  "content": {
+    "checks": 1511,
+    "errors": [],
+    "counts": {
+      "heroes": 4,
+      "cards": 88,
+      "enemies": 57,
+      "relics": 33,
+      "events": 19
+    }
+  },
+  "headless": {
+    "suites": 107,
+    "passed": 107,
+    "shutdown_warning_suites": 43,
+    "logs": "artifacts/comic_rebuild/final_regressions"
+  },
+  "native": {
+    "environment": "Godot 4.7.2, isolated X11, Mesa llvmpipe",
+    "results": [
+      {
+        "test": "test_title",
+        "checks": 18,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_title.log"
+      },
+      {
+        "test": "test_run_setup_cards",
+        "checks": 30,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_run_setup_cards.log"
+      },
+      {
+        "test": "test_camp_companions",
+        "checks": 54,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_camp_companions.log"
+      },
+      {
+        "test": "test_presentation_refinements",
+        "checks": 115,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_presentation_refinements.log"
+      },
+      {
+        "test": "test_building_galleries",
+        "checks": 84,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_building_galleries.log"
+      },
+      {
+        "test": "test_collection_ui",
+        "checks": 50,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_collection_ui.log"
+      },
+      {
+        "test": "test_rest",
+        "checks": 25,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_rest.log"
+      },
+      {
+        "test": "test_pixel_cards_ui",
+        "checks": 30,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_pixel_cards_ui.log"
+      },
+      {
+        "test": "test_hero_guard_idle",
+        "checks": 1354,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_hero_guard_idle.log"
+      },
+      {
+        "test": "test_combat_floor_info",
+        "checks": 184,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_combat_floor_info.log"
+      },
+      {
+        "test": "test_comic_cutouts",
+        "checks": 54,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_comic_cutouts.log"
+      },
+      {
+        "test": "test_hero_cut_in",
+        "checks": 261,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_hero_cut_in.log"
+      },
+      {
+        "test": "test_paths_final",
+        "checks": 153,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_paths_final.log"
+      },
+      {
+        "test": "test_cinematics",
+        "checks": 84,
+        "failures": 0,
+        "log": "artifacts/comic_rebuild/native/test_cinematics.log"
+      }
+    ],
+    "scope": "Unchanged views retain their initial native checks; title, paths, rest, combat and cinematics were checked after their final corrections."
+  },
+  "visual_review": [
+    "title/home",
+    "run-setup/selected",
+    "camp_companions/camp",
+    "building_interiors/church",
+    "building_interiors/church-detail",
+    "collection/achievements",
+    "rest/pair0",
+    "pixel_cards/fronts_backs",
+    "combat-floor/floor3-warrior"
+  ],
+  "exports": [],
+  "not_verified": [
+    "web browser",
+    "Android emulator",
+    "physical device"
+  ],
+  "diagnostics": [
+    "Some suites retain objects/resources at process shutdown.",
+    "Technical integrity deliberately provokes a backup-copy error."
+  ]
+}

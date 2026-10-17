@@ -54,7 +54,7 @@ func run_tests() -> void:
 	await click(screen.get_node("UnlocksTab"))
 	check(screen.find_children("Achievement_*", "Button", true, false).is_empty(), "tabs replace content")
 	check(screen.find_children("*", "Label", true, false).any(func(l): return l.text == "Reloj sin arena"), "legacy relic unlock retained")
-	check(screen.snapshot.unlocks.any(func(e): return e.name == "Reloj sin arena" and e.icon.ends_with("hourglass.svg")), "hourglass uses a dedicated drawing")
+	check(screen.snapshot.unlocks.any(func(e): return e.name == "Reloj sin arena" and e.icon.ends_with("unlocks/hourglass.png")), "hourglass uses a dedicated drawing")
 	await shot("unlocks")
 	await click(screen.get_node("HistoryTab"))
 	check(screen.find_children("*", "Label", true, false).any(func(l): return "Tu historia" in l.text), "empty history explained")

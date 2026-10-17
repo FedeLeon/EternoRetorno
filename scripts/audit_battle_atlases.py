@@ -8,11 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def audit():
     records, errors = [], []
-    for folder, columns, count in [('heroes/detail', 4, 12), ('heroes/actions', 4, 12), ('enemies/animations', 8, 8)]:
+    for folder, columns, count in [('heroes/detail', 4, 12), ('heroes/actions', 4, 12), ('heroes/guard', 6, 24), ('enemies/animations', 8, 8)]:
         for path in sorted((ROOT / 'assets' / folder).glob('*.png')):
             with Image.open(path) as image:
                 width = image.width // columns
-                height = image.height // (3 if count == 12 else 1)
+                height = image.height // (4 if count == 24 else 3 if count == 12 else 1)
                 poses = []
                 for index in range(count):
                     x, y = index % columns * width, index // columns * height

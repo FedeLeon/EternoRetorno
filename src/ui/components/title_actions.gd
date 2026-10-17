@@ -5,13 +5,6 @@ static func build(ui: Control, exit_y: float) -> void:
 	var options = ui.button("", 1178, 24, 70, 70, func(): ui.screen = "options"; ui.render())
 	options.name = "Options"
 	options.tooltip_text = "Opciones"
-	for state in ["normal", "hover", "pressed", "focus"]:
-		var style = StyleBoxFlat.new()
-		style.bg_color = Color("292a30") if state in ["hover", "focus"] else Color("141822")
-		style.border_color = Color("c7bbd6") if state in ["hover", "focus"] else Color("5b5568")
-		style.set_border_width_all(2)
-		style.set_corner_radius_all(7)
-		options.add_theme_stylebox_override(state, style)
 	var gear = TextureRect.new()
 	gear.name = "SettingsGear"
 	gear.texture = preload("res://assets/ui/settings.png")

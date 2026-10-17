@@ -34,7 +34,7 @@ func _ready() -> void:
 	for i in range(3):
 		var tab = ui.button(["Logros", "Desbloqueos", "Últimos retornos"][i], 36 + i * 256, 164, 244, 42, func(): show_tab(i), true, self)
 		tab.name = ["AchievementsTab", "UnlocksTab", "HistoryTab"][i]
-		tab.icon = load("res://assets/collection/ui/%s.svg" % ["achievements", "unlocks", "history"][i])
+		tab.icon = load("res://assets/collection/unlocks/unlocks_tab.png" if i == 1 else "res://assets/collection/ui/%s.svg" % ["achievements", "unlocks", "history"][i])
 		tab.expand_icon = true
 		tab.add_theme_constant_override("icon_max_width", 26)
 		tabs.append(tab)
@@ -139,7 +139,7 @@ func _unlocks() -> void:
 	for i in range(snapshot.unlocks.size()):
 		var entry: Dictionary = snapshot.unlocks[i]
 		var tile = _frame(Rect2((i % 3) * 396, (i / 3) * 172, 382, 158), contents)
-		_icon(entry.icon, Rect2(18, 30, 78, 88), tile, Color.WHITE if entry.unlocked else Color(0.5, 0.5, 0.6))
+		_icon(entry.icon, Rect2(18, 30, 78, 88), tile, Color.WHITE if entry.unlocked else Color(0.80, 0.80, 0.85))
 		ui.label_at(entry.name, 110, 14, 252, 48, 22, ui.GOLD, tile)
 		ui.label_at(entry.get("detail","DESBLOQUEADO") if entry.unlocked else entry.requirement, 110, 70, 252, 72, 18, ui.TEXT, tile)
 

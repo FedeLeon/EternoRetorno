@@ -1,3 +1,101 @@
+## Objetivo junto al daño previsto — 17/10/2026
+
+## Viñetas de combate — 17/10/2026
+
+Actores, primeros planos y todos los iconos renovados con recorte blanco. Las
+intenciones usan cartuchos oscuros de tinta/papel; conservan ataque/daño, objetivo,
+bloqueo y estados al pie. Barras con borde de tinta y tonos planos, fuentes de
+cómic y controles de energía/turno con centro limpio. La presentación mantiene
+resolución, RNG y guardado; las métricas de las 56 hojas se recalcularon.
+[Dirección, procedencia y validación vigente](../comic_rebuild_2026_10_17/README.md).
+
+`enemy_intent.gd` ordena la fila como ataque + daño, retrato del héroe objetivo,
+bloqueo previsto y contraataque. Si ataca a ambos héroes, aparecen ambos retratos
+inmediatamente después del daño. La tira de estados permanece debajo; conserva
+ancho total, centrado, colores de retrato, consultas y reglas.
+
+Validación actual: HUD **113/0 nativo aislado**, captura
+`artifacts/hud/combat.png` revisada; iconos/diálogos **883/0 headless**. Algunas
+suites avisan de recursos retenidos al cerrar; sin exportar ni validar Web.
+
+## Cables lineales sobre el suelo — 16/10/2026
+
+La decoración de Cables de sujeción ya no muestra el PNG circular sobre el cuerpo.
+`tactical_badges.enemy` crea `presentation/ground_cables.gd`: tres cables de tinta
+oscura y metal, horizontales y con pequeñas descargas cian móviles. Banda de
+200×8 px desde suelo−1, detrás del dibujo y antes del bloque de intenciones.
+Sin círculos, texturas nuevas, nodos por chispa, reglas ni RNG. No captura clics.
+Redibujo acotado a 30 Hz o 15 Hz con efectos reducidos.
+
+`combat_screen` conserva el control de su visibilidad mediante la vida mostrada:
+desaparece al caer la máquina; reconstruir la vista con `root_hp=0` no lo crea.
+El icono, sus PV, explicación y absorción de golpes conservan el comportamiento.
+El PNG anterior sigue en el inventario documental/importadores históricos, pero
+ya no se utiliza como decoración de combate; no se realiza una limpieza general.
+
+Validación de este cambio: `test_ground_cables.gd` **11/0 headless y 11/0 nativo
+local aislado**; posición, capas, clics, animación, desaparición y ausencia de
+mutaciones. Captura `artifacts/ground_cables/boss.png` revisada. Iconos de efectos
+**883/0 headless**; distribución/inspección **184/0 headless**. Audio Dummy, Mesa/llvmpipe; avisos de recursos retenidos al
+cerrar la prueba del efecto. Sin exportar ni validar Web/dispositivo físico.
+
+## Ajuste de separación entre máquinas — 16/10/2026
+
+Tras revisar el solapamiento señalado, la altura máxima pasa de suelo−66 a
+suelo−90 (24 px menos, aproximadamente un 9% en la formación habitual).
+Con varios enemigos el ancho máximo es 220 px, ajustado a columnas separadas
+226/234 px; evita que las máquinas horizontales invadan el dibujo vecino.
+Un enemigo solitario conserva hasta 440 px de ancho. El ajuste es proporcional:
+los modelos anchos requieren más reducción que los verticales. Se mantienen
+suelo, héroes, intenciones, barras superpuestas y ausencia de reducción trasera.
+
+Archivos: `combat_actor_scale.gd`, `combat_screen.gd` y `test_enemy_presence.gd`.
+La prueba añade comprobaciones de intersección horizontal de siluetas en las
+formaciones de prueba. **547/0 headless y 547/0 nativo aislado**, con capturas
+actuales de pareja y tres drones revisadas. Regresión completa posterior al ajuste:
+**104/104 suites headless**, en `artifacts/enemy_presence/reduced_regressions`.
+Los resultados de la sección anterior
+corresponden al tamaño anterior. Audio Dummy; avisos de recursos al cerrar en
+headless. Sin exportar ni validar Web/dispositivo. No cambia reglas ni guardados.
+
+## Máquinas más imponentes — 16/10/2026
+
+`combat_actor_scale.gd` mide y cachea el rectángulo opaco de reposo de cada banco
+enemigo. Normaliza el dibujo con escala uniforme, en vez de conservar tamaños
+accidentales de las fuentes. La altura disponible pasa de suelo−112 a suelo−66;
+ancho máximo 320/400/500 px con tres/dos/un enemigo. Las máquinas anchas ganan
+presencia por su envergadura, sin estirarlas verticalmente. La retaguardia ya no
+reduce el dibujo: su protección e iconos siguen funcionando igual.
+
+Las barras de vida y el bloqueo activo de ambos equipos se dibujan en capas
+absolutas 30/31 sobre los personajes, permitiendo superponer vida y máquina sin
+perder lectura. Los primeros planos y diálogos mantienen sus capas superiores.
+
+`combat_layout.gd` baja el suelo entre 8 y 20 px en situaciones habituales;
+con muchos efectos conserva el ajuste adaptativo. Suelo máximo 347, datos hasta
+410 y carta ampliada desde 414. `enemy_intent.gd` usa una fila compacta de 34 px
+en lugar de 38 sin achicar los iconos; filas adicionales mantienen su tamaño.
+Los héroes conservan su normalización y desplazamiento relativo de 16 px.
+No cambian cartas, reglas, objetivos de ataque, guardados ni RNG. No se generan
+assets para este ajuste.
+
+### Validación de este cambio
+
+- `test_enemy_presence.gd`: **540/0 headless y nativo aislado**, incluye los
+  56 bancos, límites/proporciones, escala estable entre poses, retaguardia y
+  formaciones reales. La dimensión mayor supera en un 18% la altura de héroe
+  de referencia, incluso en presupuesto de tres enemigos; no exige que un dron
+  horizontal tenga la altura de una máquina erguida.
+- `test_combat_floor_info.gd`: **184/0 headless y nativo aislado**; distribución,
+  inspección, efectos, objetivos y carta ampliada. `test_hud.gd`: **112/0 headless**.
+- Regresión completa actual: **104/104 suites headless**. Capturas revisadas en
+  `artifacts/enemy_presence/formation_0.png`, `formation_3.png` y
+  `artifacts/combat-floor/floor3-warrior-selected.png`.
+
+Pruebas locales con Godot 4.7.2, audio Dummy y ventana aislada Mesa/llvmpipe.
+Algunas suites avisan de recursos retenidos al cerrar, sin errores de aserción.
+No se exportó ni se probó Web, emulador o dispositivo físico.
+
 ## Héroes ligeramente más abajo — 15/10/2026
 
 Los dos héroes y sus iconos al pie bajan 16 px respecto del apoyo enemigo,

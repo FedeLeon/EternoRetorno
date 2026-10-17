@@ -22,8 +22,9 @@ func run_tests():
 		preload("res://src/ui/components/combat_actor_scale.gd").hero(actor,heroes[i]);actors.append(actor)
 		var label=Label.new();label.text=heroes[i];label.position=actor.position+Vector2(30,160);scene.add_child(label)
 		for action in Actor.ACTIONS:
-			check(actor.sprite.sprite_frames.get_frame_count(action)==12,heroes[i]+" twelve "+action+" poses")
-			for frame in range(12):
+			var count = 24 if action == "idle" else 12
+			check(actor.sprite.sprite_frames.get_frame_count(action)==count,heroes[i]+" authored "+action+" poses")
+			for frame in range(count):
 				var texture=actor.sprite.sprite_frames.get_frame_texture(action,frame)
 				check(texture.get_size()==Vector2(256,256),"256px frame")
 				var image=texture.get_image();if image.is_compressed():image.decompress()
@@ -37,7 +38,7 @@ func run_tests():
 		actor.apply_gear({"weapon":0,"armor":0})
 	await create_timer(0.2).timeout
 	for actor in actors:
-		check(actor.sprite.frame == 0 and not actor.sprite.is_playing(), "battle idle holds a stable pose")
+		check(actor.sprite.animation == "idle" and actor.sprite.frame < 24 and not actor.sprite.is_playing(), "battle idle uses authored guard frames")
 	if DisplayServer.get_name()!="headless":
 		await RenderingServer.frame_post_draw
 		root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("combat-depth/six-detailed-heroes.png"))

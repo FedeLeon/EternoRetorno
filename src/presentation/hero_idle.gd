@@ -13,6 +13,7 @@ static func attach(owner_actor: Control, hero: String) -> void:
 	effect.material.shader = preload("res://assets/shaders/hero_idle.gdshader")
 	effect.material.set_shader_parameter("phase", float(["warrior", "guardian", "rogue", "mage"].find(hero)))
 	owner_actor.sprite.material = effect.material
+	preload("res://src/presentation/comic_outline.gd").attach_sprite(owner_actor.sprite)
 	owner_actor.add_child(effect)
 	effect._process(0.0)
 

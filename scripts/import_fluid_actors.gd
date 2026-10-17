@@ -6,6 +6,8 @@ func _initialize() -> void:
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://docs/art_direction/postapocalyptic/assets.json"))
 	var metrics: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/detailed_heroes.json"))
 	for job in jobs:
+		var protected_path="assets/heroes/%s/%s.png" % ["detail" if job.action=="idle" else "actions",job.id]
+		if manifest.get(protected_path,{}).get("comic_rebuild_revision",0)==1: continue
 		var poses = Pack.actor_cells("res://" + job.source, 4, 3)
 		if poses.size() != 12: push_error("Invalid pose bank: " + job.id); quit(1); return
 		var large: bool = job.action != "idle"

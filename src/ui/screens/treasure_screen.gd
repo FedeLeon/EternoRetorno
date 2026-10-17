@@ -28,6 +28,7 @@ func label(text: String, area: Rect2, font_size: int = 22, parent: Node = self) 
 func _ready() -> void:
 	var background = TextureRect.new()
 	background.texture = load(background_path)
+	background.self_modulate = preload("res://src/ui/components/battle_background.gd").SCENERY_TINT
 	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	place(background, Rect2(0, 0, 1280, 720))

@@ -1,6 +1,6 @@
 # Arquitectura y organización del código
 
-Estado revisado el **15/10/2026**. Esta página describe el código actual y los
+Estado revisado el **17/10/2026**. Esta página describe el código actual y los
 siguientes pasos, por separado. [Decisiones históricas](architecture/EVOLUCION.md).
 
 ## Diagnóstico y propuesta — 15/10/2026
@@ -16,6 +16,43 @@ refactorizaciones completadas.
 
 ## Estructura actual
 
+Renovación de cómic del 17/10: 716 recursos integrados. `comic_outline` enlaza textura/región por
+fotograma y cachea materiales de iconos; incluye compartido en shaders de equipo,
+reposo clásico, iluminación de fogata y energía. `comic_presentation` compone
+iconos al crearse y márgenes `comic_panel`, sin recorrer el árbol por frame.
+Pipeline de arte nuevo separado en planificador, cola, empacador, importador y
+derivados compatibles; el manifest solo acredita archivos realmente integrados.
+`data/comic_art.json` identifica recortes ya pintados para omitir el muestreo
+adicional del shader; la alternativa limita también la lectura base a su celda.
+Source Sans 3 se instala mediante el tema compartido (550 en cuerpo, 800 en
+encabezados y 700 en cartas, rasterizadas sin MSDF para evitar huecos en la e);
+`card_view` usa nuevamente las áreas normalizadas de los marcos de metal/papel
+anteriores; el importador respeta `user_preserved_revision` en los ocho marcos
+y reversos restaurados. Las ilustraciones actuales se conservan.
+Los empaquetadores ajustan escala y apoyos fuera de ejecución, incluidos animales
+en la línea 174 y carreras con variación de altura acotada, sin deformar cuerpos
+por fotograma en el juego. Las reglas y persistencia no participan del decorado.
+[Alcance y estado actual](comic_rebuild_2026_10_17/README.md).
+
+Cables del 16/10: `tactical_badges` compone `presentation/ground_cables` detrás
+del enemigo y sobre el suelo; componente de dibujo/tiempo sin acceso a Game.
+`combat_screen` sincroniza visibilidad con vida mostrada. Iconos/valores y reglas
+de absorción siguen separados. [Pruebas](battle_effects/README.md).
+
+Presentación actual del 16/10: `detailed_hero` monta 24 dibujos de reposo desde
+`assets/heroes/guard/` y conserva las otras acciones de 12 poses. `hero_guard_idle`
+recorre los dibujos hacia delante/atrás sin deformación ni copias; mismo apoyo y
+prioridad de acciones. `battle_atmosphere` presenta clima determinista por sala,
+sin RNG de reglas, con redibujo a 30/15 Hz y presupuesto reducido de partículas.
+`screen_backgrounds` configura piso/variante; `battle_background` encuadra los seis
+fondos nuevos oscuros y conserva el tinte solo de escenario. Importador geométrico
+con alturas objetivo fijas y procedencia conservada.
+[Detalle y validación](guard_weather_2026_10_16/README.md).
+
+`hero_cut_in` conserva tres ilustraciones por héroe con contadores de presentación,
+efectos separados y guardado/RNG. `collection_navigation` suministra iconos dedicados
+de desbloqueo. [Actualización anterior](visual_polish_2026_10_16/README.md).
+
 Combate/parejas del 15/10: `pair_tactics` aplica interacciones opcionales por
 versión de aventura desde `synergy_actions`; `card_synergies` deriva descripciones
 y oportunidades sin mutar el estado. `synergy_readiness` señala instancias
@@ -23,8 +60,8 @@ concretas y `pair_link_fx` presenta el enlace después del checkpoint.
 `guided_lessons` prepara/evalúa ejercicios de reglas en un Game temporal;
 `guided_practice_navigation` cambia/restaura la instancia mediante el aislamiento
 ya usado por entrenamiento. `combat_screen` compone su barra de instrucciones.
-`hero_guard_idle` recorre dibujos continuamente y `enemy_motion` coordina poses
-con tiempos por perfil. Importadores específicos conservan procedencia, escalas
+La guardia actual se describe en la actualización del 16/10 de arriba;
+`enemy_motion` coordina poses con tiempos por perfil. Importadores específicos conservan procedencia, escalas
 y recursos con IDs existentes. [Detalle y pruebas](combat_refinement/README.md).
 
 Inspección compacta del 15/10: `enemy_inspection` prepara filas de datos e iconos
@@ -44,9 +81,12 @@ volteos sin calcular reglas. Resumen de mazo incluye la reserva dentro de Mano.
 
 Distribución de combate del 15/10: `ui/components/combat_layout.gd` calcula
 espacio de suelo/estados y centraliza inicio de mano/tamaño ampliado (ajuste
-posterior: suelo 327, información hasta 406, mano desde 414), sin alterar reglas;
-`combat_actor_scale` normaliza la
-escala uniforme y cachea la altura enemiga medida. `enemy_inspection.gd` abre
+del 16/10: suelo máximo 347, información hasta 410, intención compacta de 34 px,
+mano desde 414), sin alterar reglas. `combat_actor_scale` normaliza la escala
+uniforme y cachea el rectángulo opaco enemigo; altura disponible hasta suelo−90
+y ancho máximo 220 con varios enemigos o 440 con uno solo. No reduce retaguardias.
+Vida y bloqueo activo tienen capas absolutas 30/31 sobre los actores.
+`enemy_inspection.gd` abre
 información de solo lectura mediante `enemy_inspection_dialog`. `combat_screen` compone
 estas piezas y conserva objetivos de cartas/enlaces; `combat_hand` reserva la
 franja de clics de estados por encima de la mano. `battle_background` adapta

@@ -1,5 +1,9 @@
 # Guía común de arte sketchbook
 
+> Dirección histórica, sustituida el 17/10/2026. Para cualquier asset nuevo usar
+> la [guía vigente de cómic y recorte blanco](../../comic_rebuild_2026_10_17/STYLE_GUIDE.md).
+> Este documento conserva la procedencia de las ilustraciones anteriores.
+
 ## Reglas para cualquier asset nuevo
 
 - Grafito y lápices de colores: contornos buscados, líneas dobles, tramado que

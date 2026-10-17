@@ -13,6 +13,7 @@ func _initialize() -> void:
 	var manifest_path = "res://docs/art_direction/postapocalyptic/assets.json"
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(manifest_path)) if FileAccess.file_exists(manifest_path) else {}
 	for hero in ids:
+		if manifest.get("assets/%s/%s-128.png"%[hero,hero],{}).get("comic_rebuild_revision",0)==1: continue
 		if hero not in HEROES: quit(1);return
 		var bank_image = Image.load_from_file("res://docs/art_direction/postapocalyptic/sources/heroes__detail__%s_attack.png" % hero)
 		if bank_image == null or bank_image.detect_alpha() == Image.ALPHA_NONE:

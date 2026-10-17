@@ -1,0 +1,21 @@
+{
+  "id": "path_floor_2_1",
+  "kind": "direct",
+  "prompt": "Use case: illustration-story. Asset type: full-screen video game scene, original postapocalyptic action comic.\nPrimary request: the player's first-person eye-level view standing at a junction, looking ahead at 1 available route(s), no people or bodies visible. World: civilians surviving against autonomous machines. Setting: overgrown industrial grounds, derelict factory walkways, rail tracks and vine-covered steel, purple dusk and amber sunlight.\nStyle reference image only: keep the thick confident black comic inks, crisp angular cel shading, subtle print halftone, vivid aubergine/cyan/rust-orange colors and the same original industrial world. NO pencil sketchbook, NO medieval fantasy.\nComposition: wide landscape 16:9, exactly ONE clear straight passage, entrance centered at 47 percent of image width. Each passage leads convincingly into depth, with visible walkable floor starting at the bottom center. Doors are tall and readable; do not put small doors on far-off walls. All route entrances within LEFT 90 percent of picture; reserve the rightmost 8 percent as an uncluttered dark wall for a navigation rail. Upper 12 percent and lower 16 percent have quieter drawing for runtime labels. Clear distinct route mouth centered vertically at 48 percent image height. No other accessible doors, branching side streets or extra exits. No lettering, arrows, room icons, interface, sign text, people, hands, heads, heroes, monsters, chests. The game overlays the correct destination icons dynamically. Full bleed finished comic illustration, opaque background, horizontal 1536x864 composition. Draw a new sinister dark comic setting with ivory page gutter at extreme 1 percent margin and inked panel corners. All specified fork exits remain clearly readable, large empty sign/UI overlay zones unchanged. No baked labels.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/paths/floor_2_1.png",
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/path_floor_2_1.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ee32f62d-fd9b-4c43-a899-9ff9aad487e8.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

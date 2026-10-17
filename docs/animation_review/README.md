@@ -1,3 +1,10 @@
+## Guardia y escenarios — actualización del 16/10/2026
+
+La guardia utiliza 24 dibujos nuevos por héroe, con ciclo de ida/vuelta y apoyo
+común. Seis fondos de combate nuevos y ambiente por zona con hojas, viento,
+lluvia ocasional y cenizas. Sustituye el reposo con deformación de una imagen.
+[Implementación, procedencia y pruebas actuales](../guard_weather_2026_10_16/README.md).
+
 # Revisión de animaciones y selección — 14/10/2026
 
 ## Escenarios y escala del combate — 15/10/2026
@@ -214,3 +221,11 @@ héroes (12 poses cada uno), seis enemigos/jefes con ocho dibujos propios y
 tiempos por perfil. Primeros planos estáticos conservados; nuevos importadores
 respetados por los anteriores mediante `fluid_revision`. Fuentes y prompts
 en `docs/combat_refinement/`; validación actual en ese documento.
+
+## 16/10/2026 — Reposo sin saltos y variantes estáticas de ataque
+
+[Guardia suave y assets](../visual_polish_2026_10_16/README.md): la guardia del
+15/10 se sustituye por respiración/balanceo continuo sobre una silueta estable;
+no se alternan proporciones ni se añaden fantasmas. Ocho primeros planos nuevos
+se alternan con los cuatro originales, también en combos. Los efectos de fondo
+permanecen independientes y estáticos los personajes del primer plano.

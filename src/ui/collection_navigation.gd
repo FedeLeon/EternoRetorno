@@ -9,14 +9,14 @@ static func build(ui: Control) -> void:
 		if card.owner not in preload("res://src/rules/hero_roster.gd").ACTIVE and id not in ui.game.profile.unlocked_cards: continue
 		snapshot.unlocks.append({"name": card.name, "unlocked": id in ui.game.profile.unlocked_cards,
 			"requirement": "Ganá una aventura con " + ui.game.content.heroes[card.owner].name + ".",
-			"icon": "res://assets/collection/icons/%s_victory.png" % card.owner})
+			"icon": "res://assets/collection/unlocks/%s.png" % id})
 	snapshot.unlocks.append({"name": "Reloj sin arena", "unlocked": "hourglass" in ui.game.profile.unlocked_relics,
-		"requirement": "Derrotá a un élite. Primer turno: +1 de energía.", "icon": "res://assets/collection/ui/hourglass.svg"})
+		"requirement": "Derrotá a un élite. Primer turno: +1 de energía.", "icon": "res://assets/collection/unlocks/hourglass.png"})
 
 	for id in ui.game.content.relics:
 		var relic: Dictionary=ui.game.content.relics[id]
 		if not relic.get("boss_only",false):continue
-		snapshot.unlocks.append({"name":relic.name,"unlocked":id in ui.game.profile.get("boss_relics",[]),"requirement":"Elegila al derrotar al guardián del piso %d." % relic.floor,"detail":"DESCUBIERTA · "+relic.description,"icon":relic.asset})
+		snapshot.unlocks.append({"name":relic.name,"unlocked":id in ui.game.profile.get("boss_relics",[]),"requirement":"Elegila al derrotar al guardián del piso %d." % relic.floor,"detail":"DESCUBIERTA · "+relic.description,"icon":"res://assets/collection/unlocks/%s.png" % id})
 	for entry in ui.game.profile.history:
 		var row: Dictionary = entry.duplicate(true)
 		var names: Array[String] = []

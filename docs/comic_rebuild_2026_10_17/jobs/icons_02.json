@@ -1,0 +1,80 @@
+{
+  "id": "icons_02",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: imprisonment; clear symbolic battle status, restrained details, readable at 28 pixels; cell 2: magic boost; clear symbolic battle status, restrained details, readable at 28 pixels; cell 3: poison; clear symbolic battle status, restrained details, readable at 28 pixels; cell 4: prepared; clear symbolic battle status, restrained details, readable at 28 pixels; cell 5: protector; clear symbolic battle status, restrained details, readable at 28 pixels; cell 6: rear guard; clear symbolic battle status, restrained details, readable at 28 pixels; cell 7: resurrection; clear symbolic battle status, restrained details, readable at 28 pixels; cell 8: roots; clear symbolic battle status, restrained details, readable at 28 pixels; cell 9: set block; clear symbolic battle status, restrained details, readable at 28 pixels. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\nCell 1 gameplay meaning (do not print words): Pinza de sujeción. Al actuar atrapará al héroe elegido. No podrá jugar sus cartas ni participar de enlaces. Liberarlo cuesta 1 energía; también se libera tras el siguiente turno enemigo.\nCell 2 gameplay meaning (do not print words): Voltaje amplificado. Añade el daño indicado a las cartas ofensivas de la Profesora durante este turno. Expira al comenzar el siguiente turno aliado.\nCell 3 gameplay meaning (do not print words): Corrosión. El número muestra las acumulaciones de corrosión. El daño ignora el bloqueo y luego pierde una acumulación.\nCell 4 gameplay meaning (do not print words): Ataque preparado. Se ejecutará al comenzar el próximo turno aliado, después de las acciones enemigas, si su dueño sigue vivo.\nCell 5 gameplay meaning (do not print words): Protector. Al actuar concede 3 de bloqueo a los otros enemigos vivos. También cubre la retaguardia mientras siga vivo.\nCell 6 gameplay meaning (do not print words): Retaguardia cubierta. Un protector vivo cubre a esta unidad. Los ataques de la Profesora, penetrantes y de área pueden alcanzarla. Al caer el último protector queda expuesta.\nCell 7 gameplay meaning (do not print words): Intención de reactivación. Al actuar intentará reactivar a una unidad caída con un tercio de su vida. Cada unidad puede regresar una sola vez.\nCell 8 gameplay meaning (do not print words): Cables de sujeción. Los cables absorben los golpes directos antes de perder vida. El número indica sus PV restantes. La corrosión los ignora.\nCell 8 specifically: straight horizontal ELECTRIFIED GROUND CABLES, no circular loop, no plant roots.\nCell 9 gameplay meaning (do not print words): Baluarte. Las cartas defensivas ganan 2 de bloqueo extra mientras tengas las dos componentes de esta combinación.\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/battle_effects/imprisonment.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/magic_boost.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/poison.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/prepared.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/protector.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/rear_guard.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/resurrection.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/roots.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/set_block.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/icons_02.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-89cab240-61f6-4231-84dd-1431ab8d73da.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

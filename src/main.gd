@@ -55,6 +55,8 @@ func _ready() -> void:
 	theme = preload("res://src/ui/components/ui_factory.gd").create_theme()
 	add_child(audio)
 	apply_options()
+	var comic = preload("res://src/presentation/comic_presentation.gd").new()
+	add_child(comic); comic.watch(self)
 	render()
 
 func box(fill: Color, border: Color = Color("343b4d"), width: int = 1) -> StyleBoxFlat:
@@ -124,6 +126,7 @@ func render() -> void:
 		"event_cards": preload("res://src/ui/screens/event_cards_screen.gd").build(self)
 		"reward": reward_view()
 		"victory", "defeat": result_view()
+	preload("res://src/presentation/comic_presentation.gd").frame_screen(self)
 	if screen == "combat" and game.run.combat.turn == 1:
 		preload("res://src/ui/tutorial_navigation.gd").maybe.call_deferred(self)
 	if game.message != "":

@@ -1,0 +1,23 @@
+{
+  "id": "companion_cat",
+  "kind": "animal_sheet",
+  "prompt": "Use case: stylized-concept. Production animation SPRITE SHEET of ONE small charcoal grey and cream short-haired cat, pale paws and chest, expressive upright ears. Style: American action comic matching a postapocalyptic civilian refuge, bold clean black ink contours, flat cel shadows, warm dusk rim lighting, restrained textures, readable silhouette. This is an animal, NOT a human, no clothing, no armor, no props, no terrain. TRUE transparent background. Exactly EIGHT full-body poses arranged in a strict FOUR COLUMN by TWO ROW grid, equal-sized cells, wide landscape sheet, no overlap, ample transparent gutters. All poses face RIGHT in a gentle side/three-quarter view, same body size and camera, feet on consistent baseline within every cell. ROW ONE: four distinct consecutive WALK cycle poses, clearly alternate front and rear legs in natural quadruped gait (front left and rear right stepping, passing, front right and rear left stepping, passing opposite). ROW TWO: four small SNIFF/EAT poses: head lowering towards ground, nose close to ground, small chewing/head movement, lifting head a little; subtle tail changes, torso stable. Preserve animal identity in every cell. Each drawing isolated fully inside its own cell, no clipped tails or feet, no motion lines, no ghosted duplicate limbs, no captions, no letters, no numbers, no gridlines, no shadows painted on floor. Four columns, two rows, eight drawings of the SAME animal only.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/base_camp/companions/cat.png",
+      "dimensions": [
+        768,
+        384
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/companion_cat.png",
+  "columns": 4,
+  "rows": 2,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-abb70032-393a-4f0b-b3db-32402c732010.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

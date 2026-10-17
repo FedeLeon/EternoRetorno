@@ -36,6 +36,9 @@ func run_tests() -> void:
 	await process_frame
 	var reserved = app.layer.find_child("ReservedCard", true, false)
 	check(reserved != null and reserved.get_parent() == app.layer.get_node("CombatHand").get_child(0), "Face-down card stays inside hand")
+	if reserved == null:
+		printerr("Reserve state: overlay=",app.overlay," selected=",app.selected_card," busy=",app.combat_busy," hovered=",root.gui_get_hovered_control())
+		app.free();quit(1);return
 	check(reserved.get_parent().get_child_count() == 6 and reserved.get_parent().get_child(0) == reserved, "Reserve keeps six visible cards and original position")
 	check(app.layer.find_child("ReserveCard", true, false).text == "Recuperar carta", "Control offers recovery instead of another reserve")
 	await click(reserved.get_global_transform() * Vector2(50, 60))
@@ -110,11 +113,11 @@ func run_tests() -> void:
 func click(point: Vector2) -> void:
 	var motion = InputEventMouseMotion.new()
 	motion.position = point
-	Input.parse_input_event(motion)
+	root.push_input(motion)
 	for pressed in [true, false]:
 		var event = InputEventMouseButton.new()
 		event.position = point
 		event.button_index = MOUSE_BUTTON_LEFT
 		event.pressed = pressed
-		Input.parse_input_event(event)
+		root.push_input(event)
 		await process_frame

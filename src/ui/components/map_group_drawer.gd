@@ -33,7 +33,7 @@ func _ready() -> void:
 	rail.z_index = 41
 	var rail_style = StyleBoxFlat.new()
 	rail_style.bg_color = Color("101016")
-	rail_style.border_color = Color("5b5568")
+	rail_style.border_color = Color("eee8da")
 	rail_style.border_width_left = 2
 	rail.add_theme_stylebox_override("panel", rail_style)
 	host.place(rail, Rect2(1196, 0, 84, 720))

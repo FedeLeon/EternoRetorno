@@ -15,7 +15,7 @@ func click(point: Vector2) -> void:
 		event.position = point
 		event.button_index = MOUSE_BUTTON_LEFT
 		event.pressed = pressed
-		Input.parse_input_event(event)
+		root.push_input(event)
 		await process_frame
 func shot(file: String) -> void:
 	if DisplayServer.get_name() == "headless": return

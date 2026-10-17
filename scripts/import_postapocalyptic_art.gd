@@ -16,6 +16,7 @@ func _initialize() -> void:
 	visuals = read_json("res://data/enemy_visuals.json")
 	var queue = read_json(ROOT + "queue.json")
 	for job in queue.jobs:
+		if manifest.get(job.target,{}).get("comic_rebuild_revision",0)==1: continue
 		if not only_job.is_empty() and job.id != only_job: continue
 		if job.kind == "card_bank" and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0], {}).get("style", "") == "postapocalyptic_pixel_cards": continue
 		if "--actors-only" in OS.get_cmdline_user_args() and job.kind not in ["machine_bank", "enemy_bank"]: continue

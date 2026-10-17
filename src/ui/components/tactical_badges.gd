@@ -1,13 +1,14 @@
 extends RefCounted
 # Arena decoration and the action log. Status icons live with the intentions.
-static func enemy(ui: Control, parent: Control, unit: Dictionary) -> void:
+static func enemy(ui: Control, parent: Control, unit: Dictionary) -> Control:
 	if unit.hp > 0 and int(unit.get("root_hp", 0)) > 0:
-		var roots = TextureRect.new()
-		roots.texture = preload("res://assets/combat_depth/roots.png")
-		roots.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		roots.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		roots.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		ui.rect(roots, 24, preload("res://src/ui/components/combat_layout.gd").ground_for(ui) - preload("res://src/ui/components/combat_layout.gd").TOP - 76, 168, 76, parent)
+		var cables = preload("res://src/presentation/ground_cables.gd").new()
+		cables.name = "GroundCables"
+		var layout = preload("res://src/ui/components/combat_layout.gd")
+		ui.rect(cables, 7, layout.ground_for(ui) - layout.TOP - 1, 200, 8, parent)
+		parent.move_child(cables, 0) # Draw underneath the machine, not across its legs.
+		return cables
+	return null
 
 static func open_journal(ui: Control) -> void:
 	if ui.combat_busy: return

@@ -24,5 +24,6 @@ func _initialize() -> void:
 	FileAccess.open(manifest_path,FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")
 	quit()
 func store(image: Image, target: String, source: String, processing: String) -> void:
+	if manifest.get(target,{}).get("comic_rebuild_revision",0)==1: return
 	Pack.save(image,"res://"+target)
 	manifest[target] = {"sha256":FileAccess.get_sha256("res://"+target),"source":source.trim_prefix("res://"),"processing":processing}

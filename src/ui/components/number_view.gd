@@ -1,7 +1,7 @@
 class_name ERNumberView
 extends Control
 
-# The pencil glyph bank shares one opaque baseline at source row 46.
+# The comic glyph bank shares one opaque baseline at source row 46.
 const BASELINE_OFFSET = {}
 
 var value: int = 0:

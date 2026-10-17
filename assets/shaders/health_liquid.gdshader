@@ -17,7 +17,7 @@ void fragment() {
  float filled = (1.0 - smoothstep(front - 0.7 + wave, front + 0.7 + wave, p.x)) * step(0.001, level);
  if (level >= 0.999) filled = 1.0;
  vec3 empty = vec3(0.065, 0.035, 0.053);
- float body = sin(UV.y * 3.14159);
+ float body = floor(sin(UV.y * 3.14159) * 3.0) / 3.0;
  vec3 blood = mix(vec3(0.23, 0.014, 0.03), vec3(0.68, 0.05, 0.08), body);
  blood += vec3(0.04, 0.006, 0.008) * sin(p.x * 0.055 - t * 1.2 + sin(UV.y * 6.0));
  for (int i = 0; i < 7; i++) {
@@ -32,9 +32,14 @@ void fragment() {
  // Narrow glass reflection leaves the central number clear.
  float shine = exp(-pow((p.y - 4.0) / 1.0, 2.0));
  color += vec3(0.17, 0.15, 0.18) * shine;
- vec3 metal = mix(vec3(0.16, 0.14, 0.19), vec3(0.55, 0.52, 0.59), 1.0 - UV.y);
+ vec3 metal = mix(vec3(0.16, 0.14, 0.19), vec3(0.55, 0.52, 0.59), floor((1.0 - UV.y) * 3.0) / 3.0);
  color = mix(color, metal, rim);
  float cap = max(1.0 - step(4.0, p.x), step(tube_size.x - 4.0, p.x));
  color = mix(color, metal * 0.8, cap);
+ // Printed paper rim and black inner ink keep the animated liquid readable.
+ float paper = 1.0 - smoothstep(0.55, 1.2, -edge);
+ float ink_line = (1.0 - smoothstep(2.0, 3.0, -edge)) * (1.0-paper);
+ color = mix(color, vec3(0.025,0.02,0.035), ink_line);
+ color = mix(color, vec3(0.97,0.94,0.87), paper);
  COLOR = vec4(color, mask);
 }

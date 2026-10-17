@@ -31,7 +31,7 @@ static func attach(parent: Control, id: String, area: Rect2) -> TextureRect:
 	picture.position = area.position
 	picture.size = area.size
 	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	picture.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	parent.add_child(picture)
 	return picture

@@ -9,6 +9,7 @@ static func background_path(floor_id: int, count: int) -> String:
 func _ready() -> void:
 	var background = picture(load(background_path(floor_number, available.size())), Rect2(0, 0, 1280, 720))
 	background.name = "PathsBackground"
+	background.self_modulate = preload("res://src/ui/components/battle_background.gd").SCENERY_TINT
 	background.stretch_mode = TextureRect.STRETCH_SCALE
 	var header = Panel.new()
 	header.name = "PathsHeader"
@@ -38,9 +39,9 @@ func build_path(node: Dictionary, center: float) -> void:
 	for state in ["normal", "hover", "pressed", "focus"]:
 		var style = StyleBoxFlat.new()
 		style.bg_color = Color(0.10, 0.31, 0.33, 0.19) if state in ["hover", "focus", "pressed"] else Color.TRANSPARENT
-		style.border_color = Color("8ce6dc") if state in ["hover", "focus"] else Color(0.5, 0.8, 0.85, 0.15)
+		style.border_color = Color("eee8da") if state in ["hover", "focus"] else Color(0.5, 0.8, 0.85, 0.15)
 		style.set_border_width_all(2 if state in ["hover", "focus"] else 0)
-		style.set_corner_radius_all(8)
+		style.set_corner_radius_all(1)
 		target.add_theme_stylebox_override(state, style)
 	var sign = Panel.new()
 	sign.mouse_filter = Control.MOUSE_FILTER_IGNORE

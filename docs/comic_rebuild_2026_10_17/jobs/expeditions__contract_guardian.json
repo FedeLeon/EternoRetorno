@@ -1,0 +1,21 @@
+{
+  "id": "expeditions__contract_guardian",
+  "kind": "direct",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE simple comic contract card illustration representing contract guardian: industrial route plan, civilian partnership or machine recovery mission, matching the idea in filename. Spare composition, large single main silhouette, no words or UI border. Dark teal/violet background.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. BACKGROUND COMIC PAGE TREATMENT: thin ivory paper gutter and imperfect thick black vignette boundary at outermost 1 percent edge; subtle halftone blocks and angular secondary panel corner slivers confined to far corners. Keep the center and UI/character zones completely clear; no letters, no speech text, no captions baked in. Preserve specified flat arena ground and all usable empty space. Backgrounds stay ominous and dark so bright characters pop.",
+  "targets": [
+    {
+      "path": "assets/expeditions/contract_guardian.png",
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/expeditions__contract_guardian.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-4a11b465-0f0e-4e01-a893-912eefb5c44a.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

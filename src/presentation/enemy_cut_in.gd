@@ -40,7 +40,4 @@ static func play(parent: Control, visual: String) -> Control:
 	effect.from_right = true
 	effect.name = "EnemyCutIn"
 	parent.add_child(effect)
-	var border = ShaderMaterial.new()
-	border.shader = preload("res://assets/shaders/comic_outline.gdshader")
-	effect.picture.material = border
 	return effect

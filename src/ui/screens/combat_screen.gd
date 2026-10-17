@@ -64,10 +64,13 @@ static func build(ui: Control) -> void:
 		if h.id in ui.ANIMATED_HEROES:
 			visual.set_fallen(h.hp <= 0)
 		ui.hero_health[i] = ui.health_bar(h, 16, 0, 172, target)
+		ui.hero_health[i].z_as_relative = false
+		ui.hero_health[i].z_index = 30
 		ui.hero_health[i].value_changed.connect(func(hp): strip.visible = hp > 0)
 		if h.hp > 0:
 			var effects = ui.StatusEffects.new()
 			effects.unit = h
+			effects.z_as_relative = false; effects.z_index = 31
 			effects.block_position = Vector2(-15, -8)
 			ui.rect(effects, 10, 0, 184, 28, target)
 		else:
@@ -94,23 +97,25 @@ static func build(ui: Control) -> void:
 			enemy_visual.sprite.texture = preload("res://assets/combat_depth/dummy.png")
 			enemy_visual.set_process(false)
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
-		preload("res://src/ui/components/combat_actor_scale.gd").fit_enemy(enemy_visual, ground - 112)
+		preload("res://src/ui/components/combat_actor_scale.gd").fit_enemy(enemy_visual, ground - 90, 220.0 if b.enemies.size() > 1 else 440.0)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
-		preload("res://src/ui/components/tactical_badges.gd").enemy(ui, target, e)
-		if e.get("rear", false):
-			enemy_visual.scale *= 0.86
+		var cables = preload("res://src/ui/components/tactical_badges.gd").enemy(ui, target, e)
 		var enemy_effects = preload("res://src/ui/components/battle_effect_snapshot.gd").enemy(ui.game, i)
 		var extra_height = preload("res://src/ui/components/battle_effect_strip.gd").height_for(enemy_effects.size(), true)
 		target.tooltip_text = target.tooltip_text if not target.tooltip_text.is_empty() else "Tocá para inspeccionar"
 		ui.enemy_health[i] = ui.health_bar(e, 16, 0, 182, target)
+		ui.enemy_health[i].z_as_relative = false
+		ui.enemy_health[i].z_index = 30
 		var health = ui.enemy_health[i]
 		var update_visibility = func(hp: int):
 			health.visible = hp > 0
+			if cables != null: cables.visible = hp > 0
 		health.value_changed.connect(update_visibility)
 		update_visibility.call(e.hp)
 		var effects = ui.StatusEffects.new()
 		effects.unit = e
+		effects.z_as_relative = false; effects.z_index = 31
 		effects.block_position = Vector2(-12, -8)
 		ui.rect(effects, 7, 0, 200, 28, target)
 		if e.hp > 0:
@@ -119,7 +124,7 @@ static func build(ui: Control) -> void:
 			intent_view.intent = preload("res://src/rules/enemy_coordination.gd").intent(ui.game, e)
 			intent_view.heroes = ui.game.run.heroes.duplicate(true)
 			intent_view.ui = ui; intent_view.effects = enemy_effects; intent_view.compact_effects = true
-			ui.rect(intent_view, x, ground + 8, 214, 38 + extra_height)
+			ui.rect(intent_view, x, ground + 8, 214, layout.INTENT_ROW_HEIGHT + extra_height)
 			health.value_changed.connect(func(hp): intent_view.visible = hp > 0)
 
 	if ui.selected_card >= 0 and ui.selected_card < b.hand.size() and ui.game.available_synergies().is_empty():

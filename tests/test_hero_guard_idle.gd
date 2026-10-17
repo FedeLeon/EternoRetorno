@@ -29,10 +29,10 @@ func run_tests() -> void:
 		actors.append(actor)
 	for actor in actors:
 		var signatures = {}
-		for frame in range(12):
+		for frame in range(24):
 			var image = actor.sprite.sprite_frames.get_frame_texture("idle", frame).get_image()
 			signatures[hash(image.get_data())] = true
-		check(signatures.size() == 12, "twelve genuinely different authored guard poses")
+		check(signatures.size() == 24, "twenty-four genuinely different authored guard poses")
 	var first_frames: Array = []
 	for actor in actors:
 		actor.idle_motion.advance(0.1)
@@ -46,16 +46,18 @@ func run_tests() -> void:
 			var old_scale = actor.sprite.scale
 			var old_position = actor.sprite.position
 			actor.idle_motion.advance(0.1)
-			if actor.sprite.frame != 0: seen[actor.hero_id] = true
+			if actor.sprite.frame > 0: seen[actor.hero_id] = true
+			check(actor.sprite.frame >= 0 and actor.sprite.frame < 24, "guard uses authored in-betweens")
 			var texture = actor.sprite.sprite_frames.get_frame_texture("idle", actor.sprite.frame)
 			var base = actor.sprite.sprite_frames.get_frame_texture("idle", 0)
 			check(Grounding.bottom(texture) + actor.sprite.offset.y == Grounding.bottom(base), "feet stay at same ground line")
 			check(actor.sprite.scale == old_scale and actor.sprite.position == old_position, "guard never scales or translates actor")
 		if DisplayServer.get_name() != "headless": await create_timer(0.1).timeout
 		if step == 43: await shot("guard")
-	check(seen.size() == 4, "all four heroes change drawn guard poses")
+	check(seen.size() == 4, "all four heroes play their authored guard drawings")
 	for actor in actors:
 		check(actor.idle_motion.cycles >= 1, "continuous guard completes breathing cycles")
+		check(actor.get_children().filter(func(n): return n is Sprite2D).is_empty(), "idle creates no ghost copies")
 		actor.play_once("attack")
 		actor.idle_motion.advance(0.3)
 		check(actor.sprite.animation == "attack" and not actor.idle_motion.moving, "attack interrupts idle without being overwritten")

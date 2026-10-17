@@ -23,7 +23,7 @@ func _ready() -> void:
 	var width = indicator_width + targets.size() * target_step
 	var x = (size.x - width) / 2.0
 	if width > 0:
-		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(x - 4, 0, width + 8, 38))
+		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(x - 4, 0, width + 8, 34 if compact_effects else 38))
 	if damage > 0:
 		var attack = BlockIndicator.new()
 		attack.name = "Attack"
@@ -34,30 +34,6 @@ func _ready() -> void:
 		attack.number_height = 18
 		attack.position = Vector2(x, 2)
 		add_child(attack)
-		x += 52
-	if block > 0:
-		var shield = BlockIndicator.new()
-		shield.name = "Block"
-		shield.amount = block
-		shield.explanation = "El enemigo planea obtener %d de bloqueo al actuar. Todavía no es bloqueo activo." % block
-		shield.number_height = 18
-		shield.gaining_block = true
-		shield.compact = true
-		shield.icon_texture = load("res://assets/battle_effects/guard.png")
-		shield.position = Vector2(x, 2)
-		add_child(shield)
-
-		x += 52
-	if counter > 0:
-		var counter_icon = BlockIndicator.new()
-		counter_icon.name = "Counter"
-		counter_icon.amount = 4
-		counter_icon.number_height = 18
-		counter_icon.icon_texture = load("res://assets/battle_effects/counter.png")
-		counter_icon.compact = true
-		counter_icon.explanation = "Contraataque activo durante este turno: devuelve 4 de daño al atacante por cada golpe recibido, si sobrevive. Tu bloqueo puede absorberlo."
-		counter_icon.position = Vector2(x, 2)
-		add_child(counter_icon)
 		x += 52
 	if damage > 0:
 		for id in targets:
@@ -86,12 +62,36 @@ func _ready() -> void:
 			face.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			frame.add_child(face)
 			x += target_step
+	if block > 0:
+		var shield = BlockIndicator.new()
+		shield.name = "Block"
+		shield.amount = block
+		shield.explanation = "El enemigo planea obtener %d de bloqueo al actuar. Todavía no es bloqueo activo." % block
+		shield.number_height = 18
+		shield.gaining_block = true
+		shield.compact = true
+		shield.icon_texture = load("res://assets/battle_effects/guard.png")
+		shield.position = Vector2(x, 2)
+		add_child(shield)
+
+		x += 52
+	if counter > 0:
+		var counter_icon = BlockIndicator.new()
+		counter_icon.name = "Counter"
+		counter_icon.amount = 4
+		counter_icon.number_height = 18
+		counter_icon.icon_texture = load("res://assets/battle_effects/counter.png")
+		counter_icon.compact = true
+		counter_icon.explanation = "Contraataque activo durante este turno: devuelve 4 de daño al atacante por cada golpe recibido, si sobrevive. Tu bloqueo puede absorberlo."
+		counter_icon.position = Vector2(x, 2)
+		add_child(counter_icon)
+		x += 52
 	if not effects.is_empty():
 		var strip = preload("res://src/ui/components/battle_effect_strip.gd").new()
 		strip.name = "EnemyEffects"
 		strip.ui = ui
 		strip.entries = effects
 		strip.compact = compact_effects
-		strip.position = Vector2(0, 38 if compact_effects else 40)
+		strip.position = Vector2(0, preload("res://src/ui/components/combat_layout.gd").INTENT_ROW_HEIGHT if compact_effects else 40)
 		strip.size = Vector2(size.x, strip.height_for(effects.size(), compact_effects))
 		add_child(strip)

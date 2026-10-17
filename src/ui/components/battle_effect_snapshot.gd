@@ -21,7 +21,7 @@ static func enemy(game: RefCounted, index: int) -> Array:
 	var covered = game.run.combat.enemies.any(func(e): return e.hp > 0 and game.content.enemies[e.id].get("role", "") == "protector")
 	if unit.get("rear", false) and covered: result.append(entry("rear_guard"))
 	if int(unit.get("root_hp", 0)) > 0:
-		result.append(entry("roots", unit.root_hp, "Las raíces absorben los golpes directos antes de perder vida. Quedan %d PV de raíces. La corrosión las ignora." % unit.root_hp))
+		result.append(entry("roots", unit.root_hp, "Los cables de sujeción absorben los golpes directos antes de perder vida. Quedan %d PV de cables. La corrosión las ignora." % unit.root_hp))
 	var special: String = unit.intent.get("special", "")
 	var special_ids = {"resurrect":"resurrection", "embers":"embers", "prison":"imprisonment", "armored_strike":"charged_strike"}
 	if special_ids.has(special):

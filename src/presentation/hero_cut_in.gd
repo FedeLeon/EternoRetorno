@@ -3,6 +3,7 @@ const COLORS = {
 	"warrior": Color("bb62f0"), "guardian": Color("ffb34f"),
 	"rogue": Color("78ef8d"), "mage": Color("5de5ed")
 }
+static var attack_cycles: Dictionary = {}
 var hero_id: String
 var action = "attack"
 
@@ -22,7 +23,9 @@ static func play(parent: Control, hero: String, kind: String = "attack") -> Cont
 	effect.full_view_rays = true
 	effect.sketch_style = false
 	effect.defensive_effect = kind == "defense"
-	effect.texture_path = "res://assets/comic/static/%s_%s.png" % [hero, kind]
+	var variant = int(attack_cycles.get(hero, 0)) if kind == "attack" else 0
+	if kind == "attack": attack_cycles[hero] = (variant + 1) % 3
+	effect.texture_path = "res://assets/comic/static/variants/%s_attack_%d.png" % [hero, variant] if variant > 0 else "res://assets/comic/static/%s_%s.png" % [hero, kind]
 	effect.name = "HeroCutIn"
 	parent.add_child(effect)
 	return effect

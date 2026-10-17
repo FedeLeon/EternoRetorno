@@ -1,0 +1,37 @@
+{
+  "id": "barrel_embers",
+  "kind": "fire_bank",
+  "prompt": "Exactly 24 chronological animation cells, 6 columns x 4 rows. ONE metal postapocalyptic fire barrel, same barrel perfectly stationary in every frame. Warm orange light flickers inside, few floating tiny sparks rise, thin blue-gray smoke curls, NO visible tall flame tongues. Black comic inks, white rim around barrel only. True alpha, empty gutters, equal size, NO horizontal barrel motion, no terrain, no text.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/base_camp/dusk/fire.png",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/camp/fire-flames.png",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/camp/fire-natural.png",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/barrel_embers.png",
+  "columns": 6,
+  "rows": 4,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ee4491a4-e3db-47de-a74f-c3ca724148da.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

@@ -1,8 +1,38 @@
 # Documentación de Eterno Retorno
 
-Punto de entrada de la documentación del proyecto. Actualizado el **15/10/2026**.
+Punto de entrada de la documentación del proyecto. Actualizado el **17/10/2026**.
 
 ## Estado actual
+
+[Marcos y reversos anteriores restaurados](cards/restored_frames_2026_10_17/README.md),
+conservando las ilustraciones actuales y los números eléctricos nuevos.
+
+[Tipografía y números legibles](typography_2026_10_17/README.md): restaurada
+Source Sans 3; diez dígitos claros con filete eléctrico cian y base alineada.
+
+[Renovación integral de cómic](comic_rebuild_2026_10_17/README.md), **completada**:
+716 recursos renovados, viñetas, recortes blancos, cartuchos de intención y
+tipografía revisada posteriormente (ver arriba). Auditoría 716/716; regresión 107/107 suites headless y revisión
+nativa de vistas principales, con límites y procedencia documentados.
+[Guía de arte vigente](comic_rebuild_2026_10_17/STYLE_GUIDE.md).
+
+[Orden de intenciones](battle_effects/README.md): ataque y daño, retrato del héroe
+objetivo y después bloqueo/contraataque; conserva la tira de efectos debajo.
+
+[Cables de sujeción](battle_effects/README.md): líneas sobre el suelo con
+pequeñas descargas eléctricas, detrás de la máquina; reemplaza el aro superpuesto.
+
+[Guardia de 24 dibujos y escenarios lúgubres](guard_weather_2026_10_16/README.md):
+cuatro hojas nuevas de guardia, seis fondos de combate renovados, hojas/viento y
+lluvia ocasional. Reemplaza la respiración con shader sobre una sola imagen.
+
+[Máquinas más imponentes](battle_effects/README.md): tamaño normalizado por la
+silueta real, moderado tras revisar solapamientos y con ancho limitado por columna; suelo e intenciones ligeramente más
+abajo y barras legibles sobre el arte. Regresión actual: 104/104 suites headless.
+
+[Guardia suave y nuevos assets](visual_polish_2026_10_16/README.md): reposo continuo
+sin saltos/superposiciones, fondos de mazmorra ligeramente oscuros, ocho primeros
+planos de ataque alternados y quince iconos propios de Desbloqueos.
 
 [Combate y parejas](combat_refinement/README.md): guardias continuas con 12 poses
 por héroe, estocadas/barridos propios, seis emblemas y efectos condicionados,

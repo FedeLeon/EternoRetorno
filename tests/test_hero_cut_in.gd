@@ -55,13 +55,16 @@ func run_tests() -> void:
 			check(completed[0] == 1 and effect.modulate.a == 0, "single completion even on slow frame " + hero + kind)
 			await process_frame
 			check(not is_instance_valid(effect), "effect freed " + hero + kind)
-	# Every hit of a combo uses the same static artwork.
+	# Each hit remains static but successive hits choose different artwork.
+	var combo_paths = {}
 	for _hit in range(3):
 		var effect = CutIn.play(host, "warrior", "attack")
 		await process_frame
-		check(effect.texture_path.ends_with("warrior_attack.png"), "combo remains static")
+		combo_paths[effect.texture_path] = true
+		check(effect.static_illustration, "combo remains static")
 		effect.queue_free()
 		await process_frame
+	check(combo_paths.size() == 3, "three different static illustrations for combo hits")
 	check(CutIn.play(host, "missing") == null and CutIn.play(host, "warrior", "missing") == null, "invalid request ignored")
 	host.queue_free()
 	await process_frame

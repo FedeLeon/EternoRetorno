@@ -12,6 +12,7 @@ func run_tests():
  var background=TextureRect.new();background.texture=load("res://assets/dungeon/combat.png");background.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;background.size=scene.size;scene.add_child(background)
  var heroes=["warrior","guardian","rogue","mage"]
  var actors=[]
+ var art:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://docs/art_direction/postapocalyptic/assets.json"))
  for i in range(heroes.size()):
   var actor=Actor.new();actor.hero_id=heroes[i];actor.gear={"weapon":i%3+1,"armor":i%3+1};actor.position=Vector2(60+i*200,200);actor.size=Vector2(150,220);scene.add_child(actor);actors.append(actor)
   check(actor.sprite.get_children().filter(func(node):return node is Sprite2D).is_empty(),"no floating equipment on "+heroes[i])
@@ -27,7 +28,7 @@ func run_tests():
     var crop=image.get_region(Rect2i(sheet.get_frame_texture(action,frame).region));signatures[hash(crop.get_data())]=true
     check(crop.get_pixel(0,0).a<0.01,"transparent pose background")
     check(preload("res://scripts/sketchbook_sheet_packer.gd").bottom(crop)==368,"fixed boot baseline "+heroes[i]+action+str(frame))
-   check(signatures.size() == 12 if action in ["thrust", "sweep"] else signatures.size() >= 4 and signatures.size() <= 5, "authored pose count matches action revision")
+   check(signatures.size() == 12 if action in ["thrust", "sweep"] or art.get(texture.atlas.resource_path.trim_prefix("res://"),{}).get("comic_rebuild_revision",0)==1 else signatures.size() >= 4 and signatures.size() <= 5, "authored pose count matches action revision")
  for action in ["idle","guard"]:
   for actor in actors:actor.sprite.play(action);actor.sprite.pause();actor.sprite.frame=5
   await process_frame

@@ -1,0 +1,87 @@
+{
+  "id": "props_ui__numbers__0",
+  "kind": "numbers",
+  "prompt": "Production UI numeral sprite bank. EXACTLY TEN SIMPLE DIGITS in a regular FIVE COLUMN TWO ROW grid: top row 0 1 2 3 4; bottom row 5 6 7 8 9. One numeral per equal cell, generous transparent padding, same cap height and baseline. Flat bold upright conventional sans-serif numerals, very legible simple shapes, warm ivory solid fill, narrow dark navy outline, VERY SMALL cyan electric edge accent inside the outline, minimalist electronic comic style. Smooth clean glyphs, open counters, easily distinguish 0 6 8 9. No metal, no machinery, no bevel, no scratches, no detached sparks, no floating particles, no lightning outside the silhouette, no backgrounds, no labels, no additional text. Legible after downscaling each glyph to 32x48 pixels. True transparent background.",
+  "targets": [
+    {
+      "path": "assets/ui/numbers/0.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/1.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/2.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/3.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/4.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/5.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/6.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/7.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/8.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    },
+    {
+      "path": "assets/ui/numbers/9.png",
+      "dimensions": [
+        32,
+        48
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/typography_2026_10_17/sources/minimal_electric_numbers.png",
+  "columns": 5,
+  "rows": 2,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-128d9d0e-b4f9-4d57-9931-1cb2cd8bbb2e.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "docs/typography_2026_10_17/previous_numbers_job.json"
+}

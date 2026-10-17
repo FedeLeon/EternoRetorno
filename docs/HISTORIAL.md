@@ -1,5 +1,124 @@
 # Historial de desarrollo
 
+## 17/10/2026 — Recuperación de marcos de cartas
+
+- Restaurados cuatro marcos y cuatro reversos anteriores, conservando las
+  ilustraciones actuales, fuente y dígitos nuevos. Ajustados sus centros de texto.
+- Procedencia y elección protegidas en manifest/importador; auditoría distingue
+  708 recursos renovados y 8 conservados por pedido del usuario.
+- Cartas: 30 comprobaciones nativas y 665 headless, sin fallos. Sin exportar.
+- [Detalle](cards/restored_frames_2026_10_17/README.md).
+
+## 17/10/2026 — Tipografía restaurada y números minimalistas
+
+- Source Sans 3 vuelve a cuerpo, títulos, botones, barras y cartas en negrita;
+  conserva la corrección de rasterizado de la letra e.
+- Diez dígitos ImageGen marfil/cian, transparentes y alineados, con altura
+  uniforme. Empaquetador versión 5 y procedencia conservada.
+- HUD nativo 113, cartas nativas 30, inicio nativo 18 y ajuste de cartas
+  headless 665 comprobaciones sin fallos; auditoría 716/716.
+- [Detalle, archivos y límites](typography_2026_10_17/README.md). Sin exportar.
+
+## 17/10/2026 — Renovación integral de cómic
+
+- 684 PNG renovados y 32 SVG reelaborados: héroes, animaciones, 56 máquinas,
+  primeros planos estáticos, escenarios, edificios, interiores, caminos, cartas
+  e iconos. 241 trabajos con prompts/fuentes y cinco revisiones conservadas.
+- Viñetas, bordes blancos, paneles oblicuos y cartuchos oscuros de intención.
+  Comic Neue/Bold y Bangers con licencias OFL; botones con centro despejado.
+- Cartas con cabeceras medidas por héroe, símbolos claros y filtrado lineal.
+  Energía/configuración/terminar turno aislados; descanso con botiquín, carta de
+  mejora y barril de brasas compartido. Inicio conserva el logotipo completo.
+- `comic_outline`, `comic_panel`, `comic_presentation` y pipeline de arte separados
+  de reglas/guardado. Los recortes pintados omiten el muestreo adicional; lectura
+  de atlas limitada a su celda. Compatibilidad de rutas, UIDs y guardados conservada.
+- Auditorías: 716/716 recursos, 100 hojas/1.024 fotogramas y 1.511 comprobaciones
+  de contenido sin errores. Regresión final **107/107 suites headless**; nativo
+  aislado de inicio, campamento, edificios, colección, descanso, cartas, guardia,
+  combate, primeros planos, caminos y cinemáticas. Capturas revisadas.
+- Avisos de recursos al cerrar algunas suites y fallo de respaldo provocado por
+  la prueba de integridad. Sin exportar ni verificar Web/emulador/dispositivo.
+  [Archivos, resultados, procedencia y límites](comic_rebuild_2026_10_17/README.md).
+
+## 17/10/2026 — Retrato del objetivo inmediatamente después del ataque
+
+- Fila de intención: ataque/daño, héroe objetivo, bloqueo y contraataque.
+  Ataques a ambos muestran los dos retratos juntos; conserva estados inferiores.
+- HUD **113/0 nativo aislado**, captura revisada; efectos **883/0 headless**.
+  Avisos de recursos al cerrar algunas suites; sin exportar ni validar Web.
+  [Detalle](battle_effects/README.md).
+
+## 16/10/2026 — Cables eléctricos lineales debajo de los enemigos
+
+- Reemplazada la decoración circular por cables horizontales sobre el suelo,
+  detrás del personaje y separados de las intenciones; descargas cian animadas
+  con redibujo limitado. Sin cambios de reglas, PV de cables o guardados.
+- Cables **11/0 headless y nativo aislado**, captura revisada; iconos de efectos
+  **883/0 headless**, distribución/inspección **184/0 headless**. Avisos de recursos al cierre; sin exportar ni validar Web.
+  [Detalle y archivos](battle_effects/README.md).
+
+## 16/10/2026 — Guardias dibujadas, escenarios oscuros y clima de batalla
+
+- Cuatro atlas nuevos de 24 dibujos de guardia: manos, armas, pelo y ropa con
+  movimiento; 46 pasos de ida/vuelta por ciclo, pies anclados y sin deformación
+  shader. Ataques/carrera/caída conservan prioridad y recursos; equipo independiente.
+- Seis escenarios nuevos de cómic nocturno/lúgubre, suelo despejado y encuadre
+  ajustado. Hojas, viento, polvo/cenizas y lluvia exterior ocasional; filtraciones
+  en interiores. Ambiente limitado a 30 Hz o 15 Hz con menos efectos, sin RNG de juego.
+- Prompts/fuentes/importador geométrico reproducible conservados; mismo tamaño
+  visual de héroes, IDs y guardados. Retirado el include de respiración anterior.
+- 105 suites verificadas: 103 en recorrido inicial y dos con expectativas antiguas
+  de reposo corregidas y repetidas sin fallos (héroes 1.265/0, herrería 96/0).
+  Guardia 1.354/0 nativo, clima 249/0 nativo, distribución 184/0 nativo y render
+  118/0 nativo; capturas revisadas. Atlas 100/1.024/0 y 716 recursos con procedencia.
+  Avisos de recursos al cerrar algunas suites; sin exportar ni validar rendimiento Web.
+  [Decisiones, archivos y límites](guard_weather_2026_10_16/README.md).
+
+## 16/10/2026 — Tamaño enemigo moderado y separación por columna
+
+- Altura máxima reducida 24 px; ancho de 220 px con varios enemigos y 440 con
+  uno solo. Conserva proporciones, suelo bajo y barras superpuestas. Evita el
+  solapamiento en reposo de las formaciones revisadas, especialmente máquinas
+  anchas. Héroes, intenciones, reglas y guardados sin cambios.
+- Presencia/separación **547/0 headless y nativo aislado**, capturas actuales
+  revisadas; regresión completa posterior **104/104 suites headless**. Avisos de
+  recursos al cerrar headless; sin exportar ni validar Web.
+  [Detalle](battle_effects/README.md).
+
+## 16/10/2026 — Máquinas más grandes y combate ligeramente más abajo
+
+- Escala uniforme por silueta opaca de los 56 bancos enemigos; aprovecha altura
+  y ancho según formación. Unidades anchas conservan proporciones. Eliminada
+  la reducción visual de retaguardia; barras y bloqueo quedan sobre el arte.
+- Suelo e intenciones bajan 8–20 px en formaciones habituales. Fila compacta
+  de 34 px sin reducir iconos; límite de datos 410 y carta ampliada desde 414.
+- Reglas, guardados y RNG conservados. Sin nuevos assets ni exportaciones.
+- Regresión **104/104 suites headless**; presencia enemiga **540/0 headless y
+  nativo**, distribución/inspección **184/0 headless y nativo**, HUD **112/0
+  headless**. Capturas de jefe, formaciones y carta seleccionada revisadas.
+  Avisos de recursos al cerrar algunas suites; sin validar Web/dispositivo.
+  [Detalle y archivos](battle_effects/README.md).
+
+## 16/10/2026 — Guardia suave, fondos oscuros y variedad de primeros planos
+
+- El reposo mantiene una silueta estable con respiración/balanceo continuo local,
+  brazos, pelo y ropa suaves; elimina saltos de dibujos y copias superpuestas.
+  Pies excluidos del movimiento; prioridad de acciones y escala conservadas.
+- Tinte central aplicado únicamente a fondos de combate de los tres pisos,
+  entrenamiento, caminos, descanso, cofres y encuentros. Héroes/UI/luces mantienen
+  su brillo y no cambia el encuadre del suelo ni el RNG.
+- Ocho primeros planos de ataque nuevos: tres ilustraciones por héroe contando
+  la original, alternadas sin repetir en golpes consecutivos ni combos. Conserva
+  borde blanco, imagen estática, efectos detrás y duración/tamaño/posición.
+- Quince iconos de cómic para Desbloqueos: cuatro cartas, reloj, nueve reliquias
+  exclusivas y pestaña. Snapshot de lectura; sin cambios de reglas/guardado.
+  Fuentes, prompts e importador geométrico conservados.
+- Regresión **103/103 headless**; guardia **1.358/0 nativo**, render/variantes/iconos
+  **118/0 nativo**, colección **50/0 nativo**. Contenido **1.510/0**, 712 recursos
+  con procedencia vigente, atlas **96/928/0**. Avisos de recursos de algunas
+  suites al cerrar; sin exportar ni validar Web/dispositivo.
+  [Detalle y archivos](visual_polish_2026_10_16/README.md).
+
 ## 15/10/2026 — Guardia dibujada, golpes propios, parejas y práctica
 
 - 12 atlas nuevos para los cuatro civiles: 12 poses de guardia continua y

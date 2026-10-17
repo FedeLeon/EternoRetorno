@@ -2,6 +2,7 @@ extends RefCounted
 const DURATION = 1.0
 static func play(actor: Control) -> void:
 	var sprite: Sprite2D = actor.sprite
+	var previous_material = sprite.material
 	var material = ShaderMaterial.new()
 	material.shader = preload("res://assets/shaders/enemy_ash.gdshader")
 	material.set_shader_parameter("frame_rect", Vector4(float(sprite.frame) / sprite.hframes, 0, 1.0 / sprite.hframes, 1))
@@ -34,5 +35,5 @@ static func play(actor: Control) -> void:
 	tween.tween_interval(0.3)
 	await tween.finished
 	ashes.queue_free()
-	sprite.material = null
+	sprite.material = previous_material
 	sprite.hide()

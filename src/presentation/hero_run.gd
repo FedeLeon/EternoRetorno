@@ -27,7 +27,9 @@ static func height_ratio(frames: SpriteFrames) -> float:
 		heights.append(pose_height(frames.get_frame_texture("run",i)))
 	heights.sort()
 	var idle = pose_height(frames.get_frame_texture("idle",0))
-	var ratio = float(idle) / maxi(1,heights[heights.size()/2])
+	var middle = heights.size()/2
+	var median = (heights[middle-1]+heights[middle])*0.5 if heights.size()%2==0 else float(heights[middle])
+	var ratio = float(idle) / maxf(1,median)
 	if height_ratios.size() >= 16: height_ratios.clear()
 	height_ratios[key] = ratio
 	return ratio

@@ -1,19 +1,18 @@
 extends RefCounted
-## Continuous authored breathing/guard loop. Never deforms the body or uses game RNG.
-const Grounding = preload("res://src/presentation/hero_grounding.gd")
+## Authored guard drawings, played forward/back with fixed feet and no deformation.
 const HEROES = ["warrior", "guardian", "rogue", "mage"]
 var actor: Control
 var phase = 0
 var wait_remaining = 0.0
 var elapsed = 0.0
-var duration = 2.4
+var duration = 4.0
 var moving = false
 var cycles = 0
 
 func _init(owner_actor: Control) -> void:
 	actor = owner_actor
 	phase = HEROES.find(actor.hero_id)
-	duration = 2.4 + phase * 0.17
+	duration = 3.8 + phase * 0.16
 	interrupt()
 
 func interrupt() -> void:
@@ -36,11 +35,10 @@ func advance(delta: float) -> void:
 	while elapsed >= duration:
 		elapsed -= duration
 		cycles += 1
-	var frame = mini(11, int(elapsed / duration * 12.0))
-	if sprite.frame != frame:
-		actor._blend_pose(0.12)
-		sprite.pause()
-		sprite.frame = frame
-	var base = sprite.sprite_frames.get_frame_texture("idle", 0)
-	var current = sprite.sprite_frames.get_frame_texture("idle", frame)
-	sprite.offset.y = Grounding.bottom(base) - Grounding.bottom(current)
+	# Reverse the same in-betweens at the ends, without a last-to-first pose jump.
+	var count = sprite.sprite_frames.get_frame_count("idle")
+	var steps = maxi(1, (count - 1) * 2)
+	var step = mini(steps - 1, floori(elapsed / duration * steps))
+	sprite.pause()
+	sprite.frame = step if step < count else steps - step
+	sprite.offset = Vector2.ZERO

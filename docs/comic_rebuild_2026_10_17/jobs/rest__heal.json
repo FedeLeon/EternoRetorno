@@ -1,0 +1,22 @@
+{
+  "id": "rest__heal",
+  "kind": "direct",
+  "prompt": "A HORIZONTAL compact GAME REST-CHOICE ILLUSTRATION, American action comic book ink and flat cel colors. ONE large improvised first-aid kit made from a patched teal canvas bag with an ivory medical cross on its flap, one rolled clean bandage beside it, a tiny warm orange light accent. Bold black ink, thin WHITE outline around these objects, two hard-edged shadow tones, sparse halftone, enough detail to recognize a salvaged civilian medical bag but simple readable silhouette. Entire composition centered within the middle 60 percent of width and 45 percent of height so it can be cropped to a very wide 2.3:1 slot. OPAQUE plain near-black aubergine background. No room, environment, people, buildings, robots, scenery or story scene. No text, no letters, no captions, no numbers, no UI widgets. One simple pictorial choice clearly meaning RECOVER HEALTH.",
+  "targets": [
+    {
+      "path": "assets/rest/heal.png",
+      "dimensions": [
+        384,
+        256
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/rest__heal_semantic.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-7eda2f5e-a65f-471a-bb78-e0ad5888a7e9.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "docs/comic_rebuild_2026_10_17/revisions/rest__heal_original.json"
+}

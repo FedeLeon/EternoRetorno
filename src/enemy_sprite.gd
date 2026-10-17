@@ -35,6 +35,7 @@ func _ready() -> void:
 	add_child(sprite)
 	resized.connect(_place)
 	_place()
+	preload("res://src/presentation/comic_outline.gd").attach_sprite(sprite)
 	set_fallen(fallen)
 
 func _place() -> void:

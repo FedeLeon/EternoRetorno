@@ -33,7 +33,7 @@ func run_tests() -> void:
 			var reach = effect.hero_fx.ray_reach(origin, unit, direction)
 			var tip = origin + Vector2.from_angle(direction * TAU / 16.0) * reach * 0.85
 			check(not Rect2(Vector2.ZERO, host.size).has_point(tip), "enemy ray reaches beyond viewport %s/%d" % [visual,direction])
-		check(effect.picture.material is ShaderMaterial, "thin silhouette border " + visual)
+		check(preload("res://src/presentation/comic_outline.gd").is_baked(effect.picture.texture) or effect.picture.material is ShaderMaterial, "thin silhouette border " + visual)
 		check(is_equal_approx(effect.picture.position.x + effect.picture.size.x, host.size.x * 0.985), "right anchor " + visual)
 		check(effect.picture.texture.get_image().detect_alpha() != Image.ALPHA_NONE, "transparent " + visual)
 		if catalog[visual].get("foreground_frames",1) == 4:

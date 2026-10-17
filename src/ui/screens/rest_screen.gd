@@ -37,7 +37,9 @@ func label(text: String, area: Rect2, font_size: int, parent: Node = self) -> La
 
 func _ready() -> void:
 	name = "RestScreen"
-	picture(background_path, Rect2(0, 0, 1280, 720)).stretch_mode = TextureRect.STRETCH_SCALE
+	var scenery = picture(background_path, Rect2(0, 0, 1280, 720))
+	scenery.stretch_mode = TextureRect.STRETCH_SCALE
+	scenery.self_modulate = preload("res://src/ui/components/battle_background.gd").SCENERY_TINT
 	var header = Panel.new()
 	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	header.add_theme_stylebox_override("panel", ButtonSkin.style("header_frame"))
@@ -49,6 +51,12 @@ func _ready() -> void:
 	ButtonSkin.decorate(menu, "wood_menu")
 	menu.pressed.connect(func(): menu_requested.emit())
 	place(menu, Rect2(1134, 10, 124, 48))
+	var fire = preload("res://src/campfire.gd").new()
+	fire.name = "RestCampfire"
+	fire.embers_only = true
+	fire.position = Vector2(640,444)
+	fire.scale = Vector2(0.75,0.75)
+	add_child(fire)
 	for i in range(heroes.size()):
 		var hero: Dictionary = heroes[i]
 		var left = 220.0 if i == 0 else 800.0
@@ -75,11 +83,7 @@ func choice(id: String, art: String, title: String, description: String, area: R
 	button.name = id
 	button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	for state in ["normal", "hover", "pressed", "focus", "disabled"]:
-		var style = StyleBoxFlat.new()
-		style.bg_color = Color("161b25") if state not in ["hover", "focus"] else Color("2d3038")
-		style.border_color = Color("bda16a") if state not in ["hover", "focus"] else Color("f3d492")
-		style.set_border_width_all(2)
-		style.set_corner_radius_all(8)
+		var style = preload("res://src/ui/components/dark_skin.gd").focus() if state == "focus" else preload("res://src/ui/components/button_skin.gd").state_style("wood_button",state)
 		button.add_theme_stylebox_override(state, style)
 	button.pressed.connect(action)
 	place(button, area)

@@ -20,6 +20,7 @@ func _initialize() -> void:
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(INVENTORY + "assets.json"))
 	var targets: Dictionary = {}
 	for job in jobs:
+		if manifest.get(job.target,{}).get("comic_rebuild_revision",0)==1:continue
 		var img: Image = images[job.id]
 		img.resize(512, 340 if job.kind == "illustration" else 768, Image.INTERPOLATE_LANCZOS)
 		preload("res://scripts/sketchbook_sheet_packer.gd").save(img, "res://" + job.target)

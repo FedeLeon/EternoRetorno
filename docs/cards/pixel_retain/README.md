@@ -1,5 +1,20 @@
 # Cartas de metal y papel; reserva de una carta — 15/10/2026
 
+## Marcos anteriores recuperados — 17/10/2026
+
+Se restauran los cuatro marcos y reversos de esta colección, manteniendo las
+ilustraciones nuevas. [Detalle y pruebas](../restored_frames_2026_10_17/README.md).
+La renovación descrita abajo queda como registro histórico.
+
+## Renovación de cómic — 17/10/2026
+
+88 ilustraciones, cuatro marcos y cuatro reversos renovados; conservan metal y
+papel con tinta, tramas y borde blanco. Source Sans 3 en negrita (restaurada tras la revisión tipográfica), centros de título/coste
+medidos por héroe, tipo elevado dentro de su banda y filtrado lineal al reducir.
+La reserva reversible y las reglas de cartas se mantienen. Los dígitos comparten
+línea de base; el importador normaliza RGBA y la auditoría detecta dibujos vacíos.
+[Prompts, fuentes y resultados actuales](../../comic_rebuild_2026_10_17/README.md).
+
 ## Arrastre sin cartel superpuesto — 15/10/2026
 
 `card_drag.gd` deja de crear el bloque oscuro «Soltá sobre un objetivo iluminado»

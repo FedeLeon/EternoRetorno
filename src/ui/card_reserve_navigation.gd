@@ -25,7 +25,7 @@ static func cover(ui: Control, card: Control, instance: Dictionary) -> void:
 	back.name = "CardBackCover"
 	back.texture = back_for(ui, instance)
 	back.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	back.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	back.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	back.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	back.size = card.size
 	card.add_child(back)

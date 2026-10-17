@@ -7,9 +7,11 @@ static func attach(parent: Control, area: Rect2) -> Panel:
 	plate.show_behind_parent = true
 	plate.position = area.position
 	plate.size = area.size
-	var style = StyleBoxFlat.new()
-	style.bg_color = Color(0.025, 0.035, 0.055, 0.65)
-	style.set_corner_radius_all(5)
+	# Same inked cartouche as the buttons, with a narrow border for small icons.
+	var style = preload("res://src/ui/components/dark_skin.gd").button()
+	for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]:
+		style.set_texture_margin(side,5)
+		style.set_content_margin(side,0)
 	plate.add_theme_stylebox_override("panel", style)
 	parent.add_child(plate)
 	return plate

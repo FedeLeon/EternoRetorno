@@ -1,0 +1,28 @@
+{
+  "engine": "Godot 4.7.2",
+  "headless": {
+    "initial_passed": 103,
+    "total": 105,
+    "rerun_fixed": 2,
+    "unresolved": 0,
+    "report": "artifacts/guard_weather/regressions/results.json",
+    "reruns": "artifacts/guard_weather/regressions/reruns.json"
+  },
+  "native": {
+    "guard_checks": 1354,
+    "weather_checks": 249,
+    "floor_info_checks": 184,
+    "render_checks": 118,
+    "assertion_failures": 0,
+    "renderer": "isolated X11, Mesa/llvmpipe",
+    "audio": "Dummy"
+  },
+  "atlas": {
+    "sheets": 100,
+    "frames": 1024,
+    "errors": 0
+  },
+  "web_tested": false,
+  "exported": false,
+  "physical_device_tested": false
+}

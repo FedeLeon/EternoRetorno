@@ -52,6 +52,8 @@ func _ready() -> void:
 	if expanded.has(event_id):
 		var parameters: Array = expanded[event_id]
 		for i in range(4): effect.set_shader_parameter(["encounter_kind","focus","radius","effect_color"][i],parameters[i])
+	var scenery_tint = preload("res://src/ui/components/battle_background.gd").SCENERY_TINT
+	effect.set_shader_parameter("scenery_tint", Vector3(scenery_tint.r, scenery_tint.g, scenery_tint.b))
 	background.material = effect
 	place(background, Rect2(0, 0, 1280, 720))
 	var menu = Button.new()

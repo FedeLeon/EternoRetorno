@@ -36,6 +36,7 @@ func _ready() -> void:
 		_set_static_region()
 	picture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	picture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	picture.material = preload("res://src/presentation/comic_outline.gd").material_for(picture.texture)
 	picture.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(picture)
@@ -47,6 +48,11 @@ func _ready() -> void:
 		hero_fx.full_view_rays = full_view_rays
 		if static_illustration: move_child(hero_fx, 0) # Particles behind the character.
 		hero_fx.from_right = from_right
+	var panel = preload("res://src/presentation/comic_panel.gd").new()
+	panel.name = "ComicImpactPanel"
+	panel.impact = true; panel.from_right = from_right; panel.accent = accent
+	add_child(panel); move_child(panel,0)
+	panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_layout()
 	resized.connect(_layout)
 	modulate.a = 0.0

@@ -1,5 +1,13 @@
 # Primeros planos de combate
 
+## Renovación de cómic — 17/10/2026
+
+Todos los primeros planos de héroes y enemigos fueron redibujados con tinta,
+color plano, tramas y recorte blanco. Siguen siendo estáticos, con rayos y
+partículas en movimiento y panel oblicuo detrás; conservan encuadre y duración.
+Los recursos que ya tienen el borde pintado omiten el contorno adicional del shader.
+[Fuentes, arquitectura y validación actual](../comic_rebuild_2026_10_17/README.md).
+
 ## Estado actual — 14/10/2026
 
 Los cuatro héroes muestran **una ilustración estática de ataque y una de defensa**,

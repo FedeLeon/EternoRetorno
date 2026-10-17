@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Single game prop sprite: an upright battered dark steel oil drum used as an ember brazier in a post-apocalyptic civilian camp. American inked comic illustration, black confident contours, flat cel shading, subtle violet-blue shadows, rusty orange wear, thin clean ivory cutout outline. Full barrel visible, centered straight front with slightly visible elliptical open top. Open top contains dark irregular charcoal chunks with a few small orange glowing cracks, no flames, NO smoke, no sparks, no floating particles. Strong intact steel lip on both front and back, no separate floating lid. Three metal reinforcing rings. Transparent background everywhere outside barrel silhouette, no ground or scenery, no square backdrop. Barrel body fills central 80 percent width and 85 percent height, generous margins. Keep the opening integrated into real barrel perspective rather than a flat floating ellipse. One static barrel only, no animation sheet, no text.",
+  "transparent_background": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-bfeebbbf-41e6-4f41-bb1d-9c11f5353108.png",
+  "source": "sources/ember_barrel.png",
+  "target": "assets/camp/ember_barrel.png",
+  "processing": "Alpha crop, aspect-preserving Lanczos fit into transparent 144x216. No painted modifications."
+}

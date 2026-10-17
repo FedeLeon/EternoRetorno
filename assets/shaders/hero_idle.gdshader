@@ -1,4 +1,5 @@
 shader_type canvas_item;
+#include "res://assets/shaders/comic_cutout.gdshaderinc"
 varying vec4 tint;
 void vertex() { tint = COLOR; }
 uniform vec4 frame_rect = vec4(0.0, 0.0, 1.0, 1.0);
@@ -15,5 +16,6 @@ void fragment() {
 	vec2 offset = vec2(sin(clock * 1.7 + p.y * 7.0 + phase) * cape * 0.009,
 		sin(clock * 1.25 + phase) * hand * 0.006);
 	vec2 sample_uv = frame_rect.xy + clamp(p + offset * enabled, vec2(0.001), vec2(0.999)) * frame_rect.zw;
-	COLOR = tint * texture(TEXTURE, mix(UV, sample_uv, enabled));
+	vec2 shifted_uv = mix(UV, sample_uv, enabled);
+	COLOR = tint * comic_cutout(shifted_uv, fwidth(UV), texture(TEXTURE, shifted_uv));
 }

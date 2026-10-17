@@ -2,9 +2,9 @@ extends RefCounted
 # Shared civilian portraits, full-body cards and individual face framing.
 const COLORS = {"warrior":"bd6be1", "guardian":"f0a657", "rogue":"69caa5", "mage":"75d8e6"}
 const FACE_REGIONS = {
-	"warrior": Rect2(310, 0, 240, 280),
-	"guardian": Rect2(350, 0, 240, 280),
-	"rogue": Rect2(362, 0, 276, 322),
+	"warrior": Rect2(340, 0, 240, 280),
+	"guardian": Rect2(390, 0, 260, 300),
+	"rogue": Rect2(400, 0, 260, 300),
 	"mage": Rect2(280, 0, 240, 280)
 }
 

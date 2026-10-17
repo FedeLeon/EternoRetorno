@@ -3,6 +3,9 @@
 Implementado el **15/10/2026**. Mantiene la dirección de cómic americano
 postapocalíptico, los cuatro civiles y los primeros planos estáticos con efectos.
 
+La guardia descrita el 15/10 fue sustituida el **16/10** para eliminar saltos y
+superposiciones. Ver [guardia continua y variantes de primeros planos](../visual_polish_2026_10_16/README.md).
+
 ## Guardia y golpes de los cuatro héroes
 
 - Cuatro atlas nuevos de guardia: **12 dibujos distintos por héroe**, en bucle

@@ -1,0 +1,80 @@
+{
+  "id": "icons_01",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: curse burden; clear symbolic battle status, restrained details, readable at 28 pixels; cell 2: curse scar; clear symbolic battle status, restrained details, readable at 28 pixels; cell 3: embers; clear symbolic battle status, restrained details, readable at 28 pixels; cell 4: enraged; clear symbolic battle status, restrained details, readable at 28 pixels; cell 5: fracture; clear symbolic battle status, restrained details, readable at 28 pixels; cell 6: frenzy; clear symbolic battle status, restrained details, readable at 28 pixels; cell 7: grief; clear symbolic battle status, restrained details, readable at 28 pixels; cell 8: guard; clear symbolic battle status, restrained details, readable at 28 pixels; cell 9: healer; clear symbolic battle status, restrained details, readable at 28 pixels. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\nCell 1 gameplay meaning (do not print words): Lastre averiado. El primer turno de cada combate comienza con 1 energía menos.\nCell 2 gameplay meaning (do not print words): Aislamiento dañado. Las curaciones restauran 2 PV menos, con un mínimo de 1.\nCell 3 gameplay meaning (do not print words): Intención de sobrecarga térmica. Al actuar causa 4 de daño a cada héroe vivo, además de su ataque habitual. El bloqueo puede absorber el daño de las sobrecarga térmica.\nCell 4 gameplay meaning (do not print words): Segunda fase. El guardián ha entrado en su segunda fase. Su patrón de acciones se vuelve más agresivo; consultá el daño y los demás efectos de su intención.\nCell 5 gameplay meaning (do not print words): Defensa quebrada. Reduce su bloqueo actual y el de su próxima acción en el porcentaje indicado. No se acumula y el bloqueo perdido no vuelve.\nCell 6 gameplay meaning (do not print words): Élite frenético. Cuando le queda menos de la mitad de su vida, sus ataques ganan 3 de daño. El daño adicional ya está incluido en su intención.\nCell 7 gameplay meaning (do not print words): Furia por los caídos. La caída de un compañero aumenta en 3 su daño de ataque. Su intención ya muestra ese aumento.\nCell 8 gameplay meaning (do not print words): Intención de bloqueo. El enemigo planea obtener la cantidad de bloqueo indicada antes de atacar. La flecha verde distingue esta intención del bloqueo activo.\nCell 9 gameplay meaning (do not print words): Apoyo sanador. Al actuar restaura 3 PV a cada enemigo vivo, incluido él mismo, sin superar su vida máxima.\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/battle_effects/curse_burden.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/curse_scar.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/embers.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/enraged.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/fracture.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/frenzy.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/grief.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/guard.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "assets/battle_effects/healer.png",
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/icons_01.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-dfeaf303-9942-4d79-9b34-385ee162c889.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

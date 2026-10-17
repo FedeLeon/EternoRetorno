@@ -1,0 +1,24 @@
+{
+  "id": "standalone_settings",
+  "kind": "direct",
+  "prompt": "EDIT THE PROVIDED IMAGE into a clean isolated SETTINGS ICON. Keep ONLY the central eight-tooth dark steel cog, its thick black ink, thin WHITE outer cutout edge, very small violet electricity accents and clear circular center hole. REMOVE ALL people, faces, robots, buildings, sky, debris, panels and background behind and around this gear. Outside the cog AND its center hole must be TRUE TRANSPARENT ALPHA. One single cog, centered, upright, fills 88 percent of square canvas, all teeth completely visible. Readable silhouette at 48 pixels: flat American action comic, large hard-edged shadow areas, restrained metal detail, no scenery, no other objects, no text, no rectangular tile.",
+  "targets": [
+    {
+      "path": "assets/ui/settings.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/standalone_settings_isolated.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-570c6a7a-c90e-45cf-b516-559c196e6782.png",
+  "references": [
+    "/var/www/html/EternoRetorno/docs/comic_rebuild_2026_10_17/sources/reference_standalone_settings.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "docs/comic_rebuild_2026_10_17/revisions/standalone_settings_original.json"
+}

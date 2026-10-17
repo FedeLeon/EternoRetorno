@@ -1,4 +1,5 @@
 shader_type canvas_item;
+uniform vec3 scenery_tint = vec3(1.0);
 // Local effects only: the environment stays still and the UI is drawn above it.
 uniform int encounter_kind = 0;
 uniform vec2 focus = vec2(0.5, 0.38);
@@ -35,5 +36,5 @@ void fragment() {
 		float mote = (1.0 - step(side, max(delta.x, delta.y))) * sin(age * 3.14159);
 		light += mote * 0.38;
 	}
-	COLOR = vec4(clamp(base.rgb + tint * light, 0.0, 1.0), base.a);
+	COLOR = vec4(clamp(base.rgb + tint * light, 0.0, 1.0) * scenery_tint, base.a);
 }

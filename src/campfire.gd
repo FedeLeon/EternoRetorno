@@ -1,6 +1,7 @@
 extends Control
 
 const SHEET = preload("res://assets/camp/fire-natural.png")
+const EMBER_BARREL = preload("res://assets/camp/ember_barrel.png")
 const FLAMES = preload("res://assets/camp/fire-flames.png")
 const COLUMNS = 6
 const FRAME_COUNT = 24
@@ -22,10 +23,13 @@ func _ready() -> void:
 	var body = AtlasTexture.new()
 	body.atlas = sheet
 	body.region = Rect2(0, 110, 256, 146) # One stationary barrel from the first drawing.
-	barrel.texture = body
+	barrel.texture = EMBER_BARREL if embers_only else body
 	barrel.centered = false
 	barrel.scale = Vector2.ONE * 0.75
 	barrel.position = Vector2(-96, -105.75)
+	if embers_only:
+		barrel.scale = Vector2.ONE * 0.5
+		barrel.position = Vector2(-36, -104)
 	add_child(barrel)
 	if embers_only:
 		var embers = preload("res://src/presentation/barrel_embers.gd").new()

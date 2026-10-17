@@ -29,7 +29,9 @@ func _ready() -> void:
 		for state in ["normal", "hover", "pressed"]:
 			var style = StyleBoxFlat.new()
 			style.bg_color = Color(0.025, 0.022, 0.035, 0.85 if state == "normal" else 0.98)
-			style.set_corner_radius_all(5)
+			style.set_corner_radius_all(1)
+			style.set_border_width_all(1)
+			style.border_color = Color(0.94,0.91,0.85,0.55)
 			if state != "normal":
 				style.set_border_width_all(1); style.border_color = Color("bba06e")
 			button.add_theme_stylebox_override(state, style)

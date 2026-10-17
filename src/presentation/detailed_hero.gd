@@ -14,17 +14,19 @@ func frames() -> SpriteFrames:
 	var result = SpriteFrames.new();result.remove_animation("default")
 	for action in ACTIONS + ["revive","heal","thrust","sweep","charged"]:
 		var path = "res://assets/heroes/detail/%s_%s.png" % [hero_id,"death" if action=="revive" else "skill" if action=="heal" else action]
+		if action == "idle": path = "res://assets/heroes/guard/%s.png" % hero_id
 		if action in ["thrust","sweep","charged"]: path = "res://assets/heroes/actions/%s_%s.png" % [hero_id,action]
 		if not ResourceLoader.exists(path): continue
 		result.add_animation(action)
 		result.set_animation_loop(action,action in ["idle","run"])
 		result.set_animation_speed(action,10 if action=="idle" else (10 if action=="run" else 18))
 		var sheet = load(path)
-		for index in range(12):
+		var grid = Vector2(6, 4) if action == "idle" else Vector2(4, 3)
+		for index in range(24 if action == "idle" else 12):
 			var i = 11-index if action=="revive" else index
 			var texture = AtlasTexture.new();texture.atlas = sheet
-			var cell: Vector2 = sheet.get_size()/Vector2(4,3)
-			texture.region = Rect2(Vector2(i%4,i/4)*cell,cell)
+			var cell: Vector2 = sheet.get_size()/grid
+			texture.region = Rect2(Vector2(i % int(grid.x), i / int(grid.x))*cell,cell)
 			texture.filter_clip = true
 			result.add_frame(action,texture)
 	cache[hero_id] = result
@@ -70,6 +72,7 @@ func apply_gear(levels: Dictionary) -> void:
 	material.set_shader_parameter("weapon_rank",float(gear.get("weapon",0)))
 	material.set_shader_parameter("armor_rank",float(gear.get("armor",0)))
 	sprite.material=material
+	preload("res://src/presentation/comic_outline.gd").attach_sprite(sprite)
 func set_fallen(value: bool) -> void:
 	fallen=value
 	if sprite==null:return
@@ -113,7 +116,7 @@ func _blend_pose(seconds: float = 0.08) -> void:
 	ghost.position = sprite.position
 	ghost.scale = sprite.scale
 	ghost.offset = sprite.offset
-	ghost.material = sprite.material
+	ghost.material = sprite.material.duplicate()
 	add_child(ghost)
 	var tween = create_tween()
 	tween.tween_property(ghost, "modulate:a", 0.0, seconds)

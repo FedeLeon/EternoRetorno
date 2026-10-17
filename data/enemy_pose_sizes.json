@@ -21,7 +21,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "1dc4c1c3b8dbf546b51647b427c0650023335870fc818d1fbfe3e5eef2bc9e7c"
+    "sha256": "d39b61ecff45d4e5976647d748a154e17fcedc9471701c62d5da08b331099095"
   },
   "bandit_1": {
     "scale": [
@@ -45,7 +45,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "c65dd885434ef6f55777973ceb2631e0f32dfadba9491bdf6f04098c11ede2c0"
+    "sha256": "5eea37af211266da81e7491c954004d6d2d810b2e70b9c4b7b651395dac4172f"
   },
   "bandit_2": {
     "scale": [
@@ -69,7 +69,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "3e0422047e78dea736ba4944162c0a0bb636ebfb077e952636dc6fe94608a2a7"
+    "sha256": "d860ba2a08c041d50c3b5b5fab24fdd7e43db3da5cf08ec0b1a3a3cc8d5a38d5"
   },
   "bandit_3": {
     "scale": [
@@ -93,7 +93,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "9d92e1a3425bee7f05909232b102708c5faceea12d0742ab8a2793e61a728116"
+    "sha256": "944d82710c4636e79092c3bcf0ba3c78e3ed111eb9eb8dac0b91e4a814450a2c"
   },
   "bandit_4": {
     "scale": [
@@ -117,7 +117,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "cc97b8b2b1c0247cfbc33e4742469dfd70cf0efcd8f85ae6df5b4d6d7fae4302"
+    "sha256": "e85c56c32fef2105279fc9ad36b06a18321324413e729bd743196e1f205e5855"
   },
   "bandit_5": {
     "scale": [
@@ -141,7 +141,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "d151d3e139868f649f5dfbd6d3dada817b31a1b682ed89485cc72e2f21d3ae6c"
+    "sha256": "bd7b5b4ef224a955684e6e28b01f8dffd4f9445b5b54a7e9591f79b5e83c6f36"
   },
   "bandit_6": {
     "scale": [
@@ -165,7 +165,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "a27f7c1eac7300665cb293f9bf9dd84cc9420237f1a7fd17a187df3ddfdf04d8"
+    "sha256": "9c41f23ee2eb10a6d3a2a1860db10a84f2c03e9dd6e3ec7cf89c33d91409de85"
   },
   "bandit_7": {
     "scale": [
@@ -189,7 +189,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "15ef7b01c19490949ed2bdd80ad587daca6d43176753b7da88b0391182d92500"
+    "sha256": "6d1d64ff39eb8f8476f865405a600a4f1ec395b046b8cfc9521adea7f5f91b04"
   },
   "beast_0": {
     "scale": [
@@ -213,7 +213,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "f46481d677450426f0a1249f67b54958ce793157cdae9546c557fae656012399"
+    "sha256": "2c4fd88b32097a18696372554e196798a9be44fcad04a216280e6b862e2875dc"
   },
   "beast_1": {
     "scale": [
@@ -237,7 +237,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "e557c97086c535379c0e787f5ee60c59aba586bfa8087752bbf0c8acb3aa68a2"
+    "sha256": "4685ffb6542e792d30fca8b277833709e558d71c8ed011cab2a3122cdb4392b1"
   },
   "beast_2": {
     "scale": [
@@ -261,7 +261,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "112b70d3a1641873e0b641d6357272a438b32cf819a2cae4f7ecf6c638a1802d"
+    "sha256": "438531693c73e91005b50887f015eabf563e5c38539e2dc96b1a70a5448de2c4"
   },
   "beast_3": {
     "scale": [
@@ -285,7 +285,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "57930a22353df9823de2bae16c357adb16392922fcaa9132cbf070f179f2f5ef"
+    "sha256": "a5ff074ec2be8c94a7e8884534d0d5cda391bd95cb5b20a471e417afed3a46aa"
   },
   "beast_4": {
     "scale": [
@@ -309,7 +309,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "b4b274e457e007d8b22ddeddc6c67635a72ecece6defef297d72fececc051f3d"
+    "sha256": "96b70633207338524347b619e7b620377fd0e8071e9762b5c2820fd1aada7c97"
   },
   "beast_5": {
     "scale": [
@@ -333,7 +333,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "7b0433eab2e626596f90d6bf843b5af5862db7c74b9b477f9283555ee89f2984"
+    "sha256": "0b0bd6906ed71286d27986d004569573a138b7e25d7a2aebb79fa817e0814f9a"
   },
   "beast_6": {
     "scale": [
@@ -357,7 +357,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "49d6280bb87a10bd8640ed27a86954c0d894d1fe6429158e00ef8e85227c8637"
+    "sha256": "e293c8c7f61be4332700c78da95fceb712bf7d478648cad552296f8c576b0d1f"
   },
   "beast_7": {
     "scale": [
@@ -381,7 +381,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "b78fcd912c5c72aa23f43f85cecd35421bacc4a8b01b79cdec7be7672461a242"
+    "sha256": "c0f3c017103c76833b728ea7d39054e38bdbeda5130607c2063773c5c72a32f4"
   },
   "crypt_automaton": {
     "scale": [
@@ -389,7 +389,7 @@
       1.0,
       1.0,
       1.0,
-      1.1036,
+      1.1529,
       1.0,
       1.0,
       1.0
@@ -405,7 +405,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "702b6e5a60bf372bc1b604134390dd691400d9938f6328f79a1b60e81f9332e2"
+    "sha256": "373fbbd338cd87e38b158d48711ab051f52429b4d83b08ee35a6c8db14bce113"
   },
   "crypt_bandit": {
     "scale": [
@@ -429,7 +429,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "9622a38fbd7405b7fa42a06cdda04d54d549928792efa01c0c722471f53cd433"
+    "sha256": "688df5c02e707b4ebbe32bd560d994bdec6118b49e341ae10b84836dcf6ba516"
   },
   "crypt_bat": {
     "scale": [
@@ -437,8 +437,8 @@
       1.0,
       1.0,
       1.0,
-      1.1545,
       1.0,
+      1.1415,
       1.0,
       1.0
     ],
@@ -453,7 +453,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "5324c9cbec785a0e7dd1019d163504438edab191c2c8441061eb140b39871ef8"
+    "sha256": "0f1b769bff9127d85db0f2200acf8704799b9dc2c6ee4692bd1d227022ba883a"
   },
   "crypt_beetle": {
     "scale": [
@@ -477,7 +477,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "5fee0a3ec01f8055fe1da32407d3c3cda2b1cf81dc5c8e997ea9796980251b89"
+    "sha256": "95d752b37bf9b463045052821cc9be897a7c285ba67f1375c054185f80c805e8"
   },
   "crypt_lancer": {
     "scale": [
@@ -486,7 +486,7 @@
       1.0,
       1.0,
       1.0,
-      1.0,
+      1.1568,
       1.0,
       1.0
     ],
@@ -501,7 +501,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "c24e09c1be1ac60c54e9733e2edb18dd01fcd092c93e2e034dfe12546ac62ad3"
+    "sha256": "746d830ebdda150211a0a8e30dcd22d638491b75eb4a7918627467322ac76a53"
   },
   "crypt_shaman": {
     "scale": [
@@ -525,7 +525,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "0659d9db4ddb887bed4d941d91f30939ed3f057b76335f75851c6589f4398df4"
+    "sha256": "6633202cc01774f51e589eabd5974fa997958e993eaf0695a7461c2dd6557206"
   },
   "crypt_slime": {
     "scale": [
@@ -549,7 +549,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "390373a06bceea1018408c9b11a0a62e0ea5acc3e93237920beea23d1bfdf077"
+    "sha256": "2d475f2ee796a4a4a139f3c1af940da1476e037c8b4dfd9e3949595c232c480f"
   },
   "crypt_wolf": {
     "scale": [
@@ -573,7 +573,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "3335b68d00bad6d1ddbd0c0657890cfa964743584f45092d54d6eb81d8442520"
+    "sha256": "f51ee379da0769dbb33964ab8f2820c48e1afb8fa15de2c91906450523597f02"
   },
   "elemental_0": {
     "scale": [
@@ -597,7 +597,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "29ba43d21258498e8590f2e8d766949fe2aa4c7fb7abd83e24e8b4d872283410"
+    "sha256": "577932e3222a7d2b003800148f81bca1a6b6baf2c59fc79171c23c466976d9a2"
   },
   "elemental_1": {
     "scale": [
@@ -621,7 +621,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "3c8421ab5ec093ad5e475bc92ac2cba10106f2267c3c987c6a354921c51f1d4a"
+    "sha256": "7531408b0562590af1fcb98b8ea6528033d27ec6ee7e53bff7c1aea54f34c017"
   },
   "elemental_2": {
     "scale": [
@@ -632,7 +632,7 @@
       1.0,
       1.0,
       1.0,
-      1.1146
+      1.0
     ],
     "bottom": [
       240,
@@ -645,7 +645,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "e755ddf8bb299f72642cd34ddb2f61fb1daa3cfb4bedbd79dac3de6e307331ab"
+    "sha256": "44b52fbf72287458ad617f4b67045f91c007d5c5f58bbdceb981e00dfeb9494f"
   },
   "elemental_3": {
     "scale": [
@@ -669,7 +669,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "24e6febb7c740779af79d060cd6f1fc98265b8170f6e752200c5270f4a44d386"
+    "sha256": "1157c510e9edd358522c42a65fcda0934bbfdf61af044c2b198236f7bceac707"
   },
   "elemental_4": {
     "scale": [
@@ -677,8 +677,8 @@
       1.0,
       1.0,
       1.0,
-      1.0,
-      1.0,
+      1.1091,
+      1.1091,
       1.0,
       1.0
     ],
@@ -693,7 +693,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "10443cea81ddb1fab54bfc9367e122c7c7c3bb3a68262e4b5d04b3856f06b702"
+    "sha256": "dde86e21aec74225cd9575228d2ecabe56ff87ec0f0d730e00f3425e6454a923"
   },
   "elemental_5": {
     "scale": [
@@ -717,7 +717,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "1384679204c0ba79a8b38cb268528b7240e8e650ed04bce93eb1d4a7c18d967f"
+    "sha256": "e4307df1affe34a80a7a783f87e2ffba38a2e980e3c911ebdb2044dfb82848ce"
   },
   "elemental_6": {
     "scale": [
@@ -741,7 +741,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "0cdcb87a2720c66d541309356e335ffea08f51a09829d116729c18dffc715261"
+    "sha256": "dbe3587f705d1e2aed1414d4ea6a5e4f970002943a05c7847162b1e235b4727e"
   },
   "elemental_7": {
     "scale": [
@@ -752,7 +752,7 @@
       1.0,
       1.0,
       1.0,
-      1.0
+      1.1292
     ],
     "bottom": [
       240,
@@ -765,7 +765,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "12fe06a59a20aacb12f1d685c2c9242993b1c6948c635f43b746baca43cca392"
+    "sha256": "751c34c67f0b2dd1f307a2a1283bd376a3d1427ec7d56ccc250add67ceb0070f"
   },
   "flying_0": {
     "scale": [
@@ -789,7 +789,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "e478293edfc7f67370a2152e05aaca24f5d5790117633acc741628f0ffd64fda"
+    "sha256": "95cc29e1a760e78d61b6861b7d70c95a587f0b4fdb8401d7666a00b7e3704509"
   },
   "flying_1": {
     "scale": [
@@ -813,7 +813,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "0a5a050a7bd48107ffa1116a57960a602cc7a9d3c5328cdbc8a14858d7d09bb1"
+    "sha256": "91b553f09d1847d5450e7edfbe57c489c5e40ad46e8bc9e477b18e4baa85b527"
   },
   "flying_2": {
     "scale": [
@@ -837,7 +837,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "2a8e3ea3eabeb7dcfa53875e27b79beec3ae1492bf417b72defc8f1d440d5230"
+    "sha256": "a5cb64415c135ef111e2cbf8f7ce183ba2fc99ebcf8640df1855f7351f23400c"
   },
   "flying_3": {
     "scale": [
@@ -861,7 +861,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "449cb415445c05d436942714545ea9e17d90b08c2ba82a450848f29f96157e64"
+    "sha256": "82d41414cbfa61f22b4932bdda505ae5299ea8d6659d93395fee4f3e4797c210"
   },
   "flying_4": {
     "scale": [
@@ -885,7 +885,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "507eeb09ee1fa998e1a7a24ac387d5840035a26a439dd773a9ea276789049385"
+    "sha256": "45543af6b981d627cc9980baa5c26c10438a9e98ced2f6aaab774cc39f5e4868"
   },
   "flying_5": {
     "scale": [
@@ -909,7 +909,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "2fbc0ec42ce50a423d20e4c815940be116e85570975ec4664b3c26bbb5d7ddab"
+    "sha256": "3d3a59a0d8a0cd0926ca84b554a516d9533923a8dc4969a0d94518e0f9da86e5"
   },
   "flying_6": {
     "scale": [
@@ -933,7 +933,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "18cd7eb17fc435495ff4ab9dd5465871aac76992f5bc730fa4f8c954b2470762"
+    "sha256": "2ea7df7598ccd4558342d3f818f951c939fce03c3239c44c5cb866ecef5522bb"
   },
   "flying_7": {
     "scale": [
@@ -957,7 +957,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "4e9668f4220f40432c1027c306e8064e878b132269ea5188f67a45ee8406b2cd"
+    "sha256": "d4e4423b7248ddb06dc1461acbb2d2532a600e4905fbdf8bc8166e14efb2c106"
   },
   "goblin_0": {
     "scale": [
@@ -981,7 +981,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "ce385600494a26bbd3c7081ffb774866f8ad08bfb1749cdc5b5c482b4cab773e"
+    "sha256": "00f14eaf8fbe8aafe2a81fa53e6c08f12e6d4a265a64e583e23f0c99b3891718"
   },
   "goblin_1": {
     "scale": [
@@ -1005,7 +1005,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "c3e02de4d232ab55b19e57ad5902c6bd5a5b13b8e5c4dfece5c0d9a12eb5aa32"
+    "sha256": "47593e7672ee760bfbc9546b32a0b227d07bb9578d9dad801b722e972327d5f3"
   },
   "goblin_2": {
     "scale": [
@@ -1029,7 +1029,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "2963ae2292de9ea307ceb8b29dc002930555f2cbd5eeb49ec5657f4467087c79"
+    "sha256": "147b01bf25cbbcc1ff16b32eb164e2e766a25500cc0e4920d333d0cc2bdf4105"
   },
   "goblin_3": {
     "scale": [
@@ -1053,7 +1053,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "eef372aef20a07870a3ffdaa9200b215192ddaf18fdf1d9acaa1852d8ae90073"
+    "sha256": "a99ad42876128af3353a44adfe0793789438ce5370e7d0d638e74d90013fdac3"
   },
   "goblin_4": {
     "scale": [
@@ -1077,7 +1077,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "8803f342c609290329646371f924f9959a07f4b3a175f44620093288f4938e9f"
+    "sha256": "29ef0b80c0ebe2c174d7940dda32af4662747ceb1c66e7b71e2d6848520be7dc"
   },
   "goblin_5": {
     "scale": [
@@ -1101,7 +1101,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "3790a84c0b3a7cec410d0723a97686ed883bd9c5ab8c01db83e457d5dbebe998"
+    "sha256": "9686ee00362982676689fac81f1d26334d46e7a9fed4231e3dff9a6c2fed7e81"
   },
   "goblin_6": {
     "scale": [
@@ -1125,7 +1125,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "a6110aff411474cd850f892ef7bbf44b7d6c75fe289a859cbd24cab1692b3dea"
+    "sha256": "91d7e75f4508c08cdd4d9a81039c2a5c9f9985357aa40d10bf6764964b9c0e46"
   },
   "goblin_7": {
     "scale": [
@@ -1135,7 +1135,7 @@
       1.0,
       1.0,
       1.0,
-      1.0,
+      1.1459,
       1.0
     ],
     "bottom": [
@@ -1149,7 +1149,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "1266f1368a74f44434f5db41ca9902086f29e937eec8b2c528860abec32b5dd9"
+    "sha256": "e1bfd255e3e79aaf989ce9b36617e04614de66f53d84286f53ee0d9672e0f871"
   },
   "skeleton_0": {
     "scale": [
@@ -1173,7 +1173,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "fff02def63bf303fa0d20326a30b97c0361cb5b0caa90b6ddf35e55ebb861060"
+    "sha256": "a377016bc47ce554c13a47db1d54513f7ab5c61cfedc53053e2dccbdf05fae05"
   },
   "skeleton_1": {
     "scale": [
@@ -1197,7 +1197,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "ca6c8ba4b582e68579af88af3a8f0d224190802948e9f293c8e016b7fdeb4690"
+    "sha256": "204a8cd94d86bbdefa5a99bd389816149ed644483ef094de809f64031e6488d9"
   },
   "skeleton_2": {
     "scale": [
@@ -1221,7 +1221,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "7542e32cde3c15d4865833a9717c1afd1fead70c7fccc6c2bfee988ca88532bd"
+    "sha256": "6ecc3a6eec514781c7f888ef000e1208991ef4063f7b246a045263764a382dfb"
   },
   "skeleton_3": {
     "scale": [
@@ -1245,7 +1245,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "04134fa9af2348258f6e97e3cd0ad054cbcba6f0443b9cdd9ea82dd977678be1"
+    "sha256": "78ea54c53846d680da253b8b7ce548cd7eeea86f0dca5167301c14843248894b"
   },
   "skeleton_4": {
     "scale": [
@@ -1269,7 +1269,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "1453ce4435344a64415aa06a1da2a3b54151b3d17e6900aa24db7e1427657cc9"
+    "sha256": "b08be4fc5da6d6093be19f366fec3a18bd8108204c80129dee137c9a2b603fae"
   },
   "skeleton_5": {
     "scale": [
@@ -1293,7 +1293,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "52f34f6b686aefe65ea2929529fc55c40d5c583b9b43db1de794f6f7fe1cc117"
+    "sha256": "b01b3d5390a1ae2ef280f3cefdc3603fe8f9d53c534219cee648d84a634b3924"
   },
   "skeleton_6": {
     "scale": [
@@ -1317,7 +1317,7 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "4e14f052db008c5425dfbd46b689dd5cf76c385fd2c47f7eaaffd2afb9e242d7"
+    "sha256": "1b240165c2e6624194c1cfdd5846f74911474e4974e959e9fa07248e7e571607"
   },
   "skeleton_7": {
     "scale": [
@@ -1341,6 +1341,6 @@
       240
     ],
     "frame_size": 256,
-    "sha256": "2045a632df0e18adb7371f7c3dedd74b1ddcccaa43aa5da1e63b8bf28bd7fe2c"
+    "sha256": "4a22344181c749ae37c485ccf64325c68be8424fb42b87b7347d80105dbbee74"
   }
 }

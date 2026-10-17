@@ -69,6 +69,7 @@ func _ready() -> void:
 	flow.shader = preload("res://assets/ui/shaders/energy_cell_flow.gdshader")
 	orb.material = flow
 	orb.texture = preload("res://assets/ui/battle_energy_cell.png")
+	preload("res://src/presentation/comic_outline.gd").configure(flow,orb.texture)
 	orb.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	orb.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	orb.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED

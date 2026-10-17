@@ -25,6 +25,8 @@ static func build(ui: Control) -> void:
 		return # These screens own their backgrounds.
 	if ui.screen == "combat" or (ui.screen == "room" and int(ui.game.run.get("floor", 1)) == 2):
 		var room = TextureRect.new()
+		room.name = "DungeonScenery"
+		room.self_modulate = ui.BattleBackground.SCENERY_TINT
 		room.texture = load("res://assets/combat_depth/training.png" if ui.game.run.get("training", false) else ui.BattleBackground.path_for(ui.game.run.seed, ui.game.run.current, int(ui.game.run.get("floor", 1))))
 		room.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		room.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -34,6 +36,7 @@ static func build(ui: Control) -> void:
 			var atmosphere = preload("res://src/presentation/battle_atmosphere.gd").new()
 			atmosphere.name = "BattleAtmosphere"
 			atmosphere.floor_number = int(ui.game.run.get("floor",1))
+			atmosphere.weather_variant = posmod(int(ui.game.run.seed) + int(ui.game.run.current), 3)
 			ui.rect(atmosphere,0,0,1280,720)
 		return
 	if ui.screen in ["home", "options"]:

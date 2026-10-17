@@ -1,0 +1,80 @@
+{
+  "id": "icons_12",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: warrior armor 2; recognizable improvised civilian weapon/tool or scrap protective workwear, hero violet for warrior, orange for guardian, teal green for rogue, cyan violet for mage; cell 2: warrior armor 3; recognizable improvised civilian weapon/tool or scrap protective workwear, hero violet for warrior, orange for guardian, teal green for rogue, cyan violet for mage; cell 3: warrior weapon 1; recognizable improvised civilian weapon/tool or scrap protective workwear, hero violet for warrior, orange for guardian, teal green for rogue, cyan violet for mage; cell 4: warrior weapon 2; recognizable improvised civilian weapon/tool or scrap protective workwear, hero violet for warrior, orange for guardian, teal green for rogue, cyan violet for mage; cell 5: warrior weapon 3; recognizable improvised civilian weapon/tool or scrap protective workwear, hero violet for warrior, orange for guardian, teal green for rogue, cyan violet for mage; cell 6: group tab; cell 7: boss; cell 8: combat; cell 9: elite. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\n\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/forge/badges/warrior_armor_2.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/forge/badges/warrior_armor_3.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/forge/badges/warrior_weapon_1.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/forge/badges/warrior_weapon_2.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/forge/badges/warrior_weapon_3.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/map/group_tab.png",
+      "dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "path": "assets/map/minimal/boss.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/map/minimal/combat.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/map/minimal/elite.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "docs/comic_rebuild_2026_10_17/sources/icons_12.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-a06b252b-920b-4424-a4b8-195bd4b8df8a.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

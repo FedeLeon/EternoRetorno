@@ -1,0 +1,82 @@
+{
+  "assets/cards/frames/warrior.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "frame_warrior",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "0f196169a77426734e80857117180209bf2121d1c62a152e4f1fd8024ec97ca6",
+    "source": "docs/comic_rebuild_2026_10_17/sources/frame_warrior.png",
+    "source_sha256": "0b76dcf08178b38495109c6c5b5008dcb25909fb03f034b3b809f168fdb0d02e",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/frames/guardian.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "frame_guardian",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "470e203e523789d82f5a44377ffef13b96ec3b136bf1c5cb856ea00d01acbd5b",
+    "source": "docs/comic_rebuild_2026_10_17/sources/frame_guardian.png",
+    "source_sha256": "df6b7bc8152a86119b5e565784a789b5a5772bd16d7ab674e52b94c8293d9cf9",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/frames/rogue.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "frame_rogue",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "f2d4286b8c2ce5724dcaa9a1850f38d376685140fcb97f57570fdd85b12c58aa",
+    "source": "docs/comic_rebuild_2026_10_17/sources/frame_rogue.png",
+    "source_sha256": "7b1962fdc81192000a5fd6b7f60246e007a00f5c006b34ab799dcc820f47effa",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/frames/mage.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "frame_mage",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "b3f8c76b98d8160aed0746ad71f0e1ff4804902877574f2281c3866b2212e2b6",
+    "source": "docs/comic_rebuild_2026_10_17/sources/frame_mage.png",
+    "source_sha256": "91e27596d2b072d37a584110bee3a729c53e5733da0461a65f166917152953f0",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/backs/warrior.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "back_warrior",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "0b7703a9d8d9d51f861348ece03c72dc3bf78cacaefc952cce02d8c4cd423a0a",
+    "source": "docs/comic_rebuild_2026_10_17/sources/back_warrior.png",
+    "source_sha256": "0d4d5c54127b9ef459b5852fd875d7e61f3f184b1137966eebf83e884b716691",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/backs/guardian.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "back_guardian",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "4b1f617e571570c4a9ad2492fb38622c4d2fda67906169348e827d95918194b2",
+    "source": "docs/comic_rebuild_2026_10_17/sources/back_guardian.png",
+    "source_sha256": "a1e9451f20da1e2edf83202a4581ca2a2aff7df875cdff3bd283c9139e2b765d",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/backs/rogue.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "back_rogue",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "12ec593c0f9c444e139a8d57eafa6024c2e0aad0418b3e76e15943d0117bbea8",
+    "source": "docs/comic_rebuild_2026_10_17/sources/back_rogue.png",
+    "source_sha256": "04545cb0a3f53c76030f7623503cacb5485bc481ae4eb0e002943954e33a83f6",
+    "style": "postapocalyptic_comic"
+  },
+  "assets/cards/backs/mage.png": {
+    "comic_processing_version": 3.0,
+    "comic_rebuild_revision": 1.0,
+    "job": "back_mage",
+    "processing": "new authored comic illustration, geometric crop/pack, same resource path",
+    "sha256": "7679456b34adbf9bb15988047b284aa75d59dbb0e58a730e329006ddaa526679",
+    "source": "docs/comic_rebuild_2026_10_17/sources/back_mage.png",
+    "source_sha256": "01b278068d59d094f8f5308760c64c4e7a0d3da8edb886cb092509ef350d4727",
+    "style": "postapocalyptic_comic"
+  }
+}

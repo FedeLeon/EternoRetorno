@@ -188,3 +188,10 @@ su resolución. La política de iconos se conserva en `optimize_texture_imports.
   detalle, iconos, progreso y botón Inicio con flecha junto al texto.
 - Importación de recursos y `git diff --check` sin errores.
 - Sin nueva prueba Web, emulador ni dispositivo físico. No se exportó Web ni APK.
+
+## 16/10/2026 — Ilustraciones propias en Desbloqueos
+
+Catorce iconos individuales (cuatro cartas, reloj y nueve reliquias exclusivas)
+y un icono para la pestaña, en cómic postapocalíptico y 256 px. Los bloqueados
+conservan visibilidad del arte y mantienen sus requisitos. No se modifican
+recompensas/persistencia. [Procedencia y pruebas](../visual_polish_2026_10_16/README.md).
