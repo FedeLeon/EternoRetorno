@@ -1,0 +1,23 @@
+{
+  "id": "frame_rogue",
+  "kind": "direct",
+  "prompt": "Use case: ui-mockup. Create ONE production game card FRONT template, flat orthographic, tall 2:3 rectangle filling canvas edge to edge, no perspective, transparent outside corners only. Reference image: match the attached Eterno Retorno concept sheet's detailed crisp INKED COMIC ART worn metal and parchment physical tabletop cards. Adapt to postapocalyptic civilian Mauro, civilian APOTHECARY, FACE FULLY VISIBLE without mask or hood, dark hair, teal medical utility jacket, knives and acid vials, green teal identity. Frame materials green teal steel with medical case latches, vial motifs and knife corner fittings, bottom mortar-and-pestle emblem. Match reference EXACTLY in layout and geometry. Layout STRICT normalized: title blank cream parchment banner x.10-.78 y.065-.16; EMPTY circular cost socket centered(.89,.10) radius .07width; dark EMPTY rectangular illustration window x.10-.90 y.19-.58; narrow EMPTY dark category ribbon x.16-.84 y.59-.65; large CLEAN pale parchment description x.10-.90 y.66-.91; small bottom metal emblem identifying this civilian profession y.94. Refined handmade ink shapes, strong dark outlines, crisp highlights, layered corners, limited colors, readable at small size. NO letters NO numbers NO words NO illustration in window. This is a usable full standalone frame, not a sheet, no surrounding margin. New final card aesthetic: bold hand-inked comic book panel, thin ivory paper cutout outer boundary, dark technological violet/steel trim, small halftone in corners and speed-hatch fittings. Preserve EXACT layout normalized slots of title, cost, image, type and description; no text/numbers baked in. Clean pale ivory description area for black live lettering. No pixel-art texture.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/cards/frames/rogue.png",
+      "dimensions": [
+        512,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "rogue",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/frame_rogue.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-cbad3939-03c2-4937-a419-0016d5b81744.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

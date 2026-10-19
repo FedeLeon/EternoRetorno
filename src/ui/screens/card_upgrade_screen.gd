@@ -3,6 +3,7 @@ extends Control
 var ui: Control
 var selected = -1
 var variant = "power"
+var preferred_branch = 0
 var branches: Array[Button] = []
 var cards: Array = []
 var contents: Control
@@ -13,7 +14,7 @@ func _ready() -> void:
 	preload("res://src/ui/components/inventory_background.gd").build(ui,self)
 	cards = ui.game.run.deck.duplicate(true)
 	ui.panel(20, 12, 1240, 116, ui.GOLD, self)
-	ui.label_at("Templar una carta", 36, 32, 950, 44, 30, ui.TEXT, self)
+	ui.label_at("Templar una carta", 100, 32, 950, 44, 30, ui.TEXT, self)
 	ui.button("Menú", 1134, 30, 110, 48, ui.pause_menu, true, self)
 	ui.label_at("Elegí una carta y su mejora.", 36, 89, 350, 38, 17, ui.TEXT, self)
 	var scroll = ScrollContainer.new()
@@ -25,10 +26,6 @@ func _ready() -> void:
 	ui.panel(20,634,1240,78,ui.GOLD,self)
 	confirm = ui.button("Mejorar", 920, 646, 324, 54, commit, false, self)
 	confirm.name = "ConfirmUpgrade"
-	ui.button("Volver", 36, 646, 230, 54, func():
-		ui.screen = ui.return_screen
-		ui.upgrade_mode = false
-		ui.render(), true, self)
 	for i in range(2):
 		var choice = ui.button("", 400 + i * 265, 82, 255, 42, func(): choose_branch(i), true, self)
 		branches.append(choice)
@@ -75,11 +72,12 @@ func refresh() -> void:
 func select(index: int) -> void:
 	if cards[index].upgraded: return
 	selected = index
-	variant = "power"
+	variant = preload("res://src/rules/card_upgrades.gd").choices(ui.game.content.cards[cards[selected].id])[preferred_branch].id
 	refresh()
 
 func choose_branch(index: int) -> void:
 	if selected < 0: return
+	preferred_branch = index
 	variant = preload("res://src/rules/card_upgrades.gd").choices(ui.game.content.cards[cards[selected].id])[index].id
 	refresh()
 

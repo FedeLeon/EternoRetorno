@@ -1158,7 +1158,7 @@
   "events": {
     "well": {
       "name": "El purificador",
-      "text": "El filtro todavía funciona. Nicolás revisa la carcasa mientras Mauro comprueba el agua: parece segura.",
+      "text": "El filtro todavía funciona. Bruno revisa la carcasa mientras Ciro comprueba el agua: parece segura.",
       "choices": [
         "Beber · recuperar 8 de vida ambos",
         "Seguir adelante"

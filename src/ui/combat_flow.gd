@@ -58,6 +58,9 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	if hand_index >= 0 or synergy_id != "":
 		ui.layer.get_node("CombatHUD").update_energy(ui.game.run.combat.energy)
 	var impacts: Array = ui.game.resolved_card_hits.duplicate(true) if hand_index >= 0 or synergy_id != "" else []
+	var shown_hero_actions: Dictionary = {}
+	for impact in impacts:
+		if impact.kind == "hit": shown_hero_actions[int(impact.owner)] = true
 	ui.combat_busy = true
 	for tip in ui.get_tree().get_nodes_in_group("combat_tip"): tip.queue_free()
 	var ash_effects: Array = []
@@ -76,26 +79,28 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 	if hand_index < 0 and synergy_id == "":
 		while ash_effects.any(func(effect): return is_instance_valid(effect)):
 			await ui.get_tree().process_frame
+		await preload("res://src/presentation/turn_announcement.gd").play(ui.layer, true, int(ui.game.run.combat.get("turn", 1)))
 	if synergy_id != "":
 		preload("res://src/presentation/pair_link_fx.gd").play(ui, synergy_id)
-		ui.CombatEffects.attack_flash(ui.layer)
-		for actor in ui.hero_art.values():
-			await actor.play_once("attack")
+		if impacts.is_empty():
+			for actor in ui.hero_art.values(): await actor.play_once("skill")
 		if not impacts.is_empty():
 			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)
 	if prepared: motion = "guard"
-	if owner >= 0 and ui.game.run.party[owner] in ui.ANIMATED_HEROES:
-		if offensive:
-			ui.CombatEffects.attack_flash(ui.layer)
-		if (offensive or defensive) and impacts.is_empty():
-			BattleAudio.hero(ui.audio, ui.game.run.party[owner], "attack" if offensive else "defense")
-			var cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer, ui.game.run.party[owner], "attack" if offensive else "defense")
-			if cut_in != null:
-				await cut_in.finished
+	if owner >= 0 and ui.game.run.party[owner] in ui.BATTLE_HEROES:
 		if impacts.is_empty():
-			await ui.hero_art[owner].play_once(motion)
+			var actor: Control = ui.hero_art[owner]
+			var revision: int = actor.begin_action(motion)
+			shown_hero_actions[owner] = true
+			BattleAudio.hero(ui.audio,ui.game.run.party[owner],"attack" if offensive else "defense")
+			var cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer,ui.game.run.party[owner],"attack" if offensive else "defense")
+			preload("res://src/presentation/hero_attack_playback.gd").hold_until_finished(actor,revision,cut_in)
+			if cut_in != null: await preload("res://src/presentation/hero_attack_playback.gd").recover(ui,actor,revision,cut_in)
+			else: await ui.get_tree().create_timer(.28).timeout
+			actor.finish_action(revision)
 		else:
 			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)
+
 	# The committed result can already be reward/defeat; show the old arena until
 	# reactions finish, so a lethal strike and a falling hero remain visible.
 	var current_enemies = ui.game.run.combat.get("enemies", [])
@@ -113,11 +118,11 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		if i < current_enemies.size() and old_enemies[i].hp > 0:
 			if enemy_hp > old_enemies[i].hp:
 				ui.enemy_health[i].animate_to(enemy_hp)
-				preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.enemy_art[i],"heal")
+				await ui.enemy_art[i].play_once("heal")
 			if enemy_hp < old_enemies[i].hp:
 				ui.enemy_health[i].animate_to(enemy_hp)
 			if enemy_hp <= 0:
-				ui.audio.play_sfx("death")
+				BattleAudio.enemy(ui.audio, old_enemies[i].id, "death")
 				ui.audio.play_sfx("ash", -8)
 				if poison_hit.is_empty(): ui.flash_hit(ui.enemy_art[i])
 				await ui.enemy_art[i].play_once("death")
@@ -135,14 +140,14 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
 		var received_hit = ui.game.resolved_enemy_hits.values().any(func(hits): return hits.any(func(hit): return int(hit.owner) == i)) if hand_index < 0 and synergy_id == "" else false
 		if after.hp > before[i].hp:
-			preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.hero_art[i],"heal")
+			await ui.hero_art[i].play_once("heal")
 		if after.block > before[i].block and (hand_index >= 0 or synergy_id != ""):
 			preload("res://src/presentation/card_impacts.gd").update_block(ui.hero_health[i], after.block)
-			preload("res://src/presentation/support_feedback.gd").play(ui.layer,ui.hero_art[i],"block")
+			if not shown_hero_actions.has(i): await ui.hero_art[i].play_once("guard")
 		if after.hp < before[i].hp and not received_hit:
-			ui.audio.play_sfx("hurt", -5)
+			ui.audio.play_sfx("voice_%s_hurt" % ui.game.run.party[i], -3)
 			ui.flash_hit(ui.hero_art[i])
-		if ui.game.run.party[i] not in ui.ANIMATED_HEROES:
+		if ui.game.run.party[i] not in ui.BATTLE_HEROES:
 			continue
 		if before[i].hp > 0 and after.hp <= 0:
 			if not ui.hero_art[i].fallen: await ui.hero_art[i].play_once("death")
@@ -157,11 +162,14 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		await ui.get_tree().process_frame
 	while not ui.get_tree().get_nodes_in_group("block_ash").is_empty():
 		await ui.get_tree().process_frame
-	while ui.layer.get_children().any(func(child): return child.get_script() == preload("res://src/presentation/support_feedback.gd")):
-		await ui.get_tree().process_frame
 	await ui.get_tree().create_timer(0.18).timeout
-	if ui.game.run.phase == "reward":
-		await ui.CombatEffects.leave_room(ui.layer, ui.hero_art.values())
+	if hand_index < 0 and synergy_id == "" and ui.game.run.phase == "combat":
+		var hud = ui.layer.get_node("CombatHUD")
+		hud.update_turn(int(ui.game.run.combat.turn))
+		hud.update_energy(int(ui.game.run.combat.energy))
+		await preload("res://src/presentation/turn_announcement.gd").play(ui.layer, false, int(ui.game.run.combat.turn))
+	# Keep the arena snapshot alive throughout busy playback; navigation/cinematics
+	# take ownership only after all presentation has finished.
 	ui.combat_busy = false
 	ui.continue_run()
 	if not returning.is_empty() and ui.game.run.phase == "combat" and not ui.game.run.combat.hand.is_empty() and ui.game.run.combat.hand[0] == returning[0]:

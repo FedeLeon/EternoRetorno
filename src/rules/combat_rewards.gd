@@ -59,6 +59,7 @@ static func check_end(game: RefCounted) -> bool:
 			game.run.reward_relic = relic
 	if kind == "boss":
 		game.run.boss_defeated = true
+	game.Forge.Materials.award(game.profile, game.run)
 	game._make_reward()
 	return true
 
@@ -92,6 +93,7 @@ static func choose(game: RefCounted, index: int) -> bool:
 		preload("res://src/rules/adventure_extensions.gd").statistic(game.run, "souls", 12)
 	game.run.reward = []
 	game.run.reward_relic = ""
+	game.run.reward_salvage = {}
 	game.run.combat = {}
 	game.run.phase = "map"
 	if game.run.get("polish_version", 0) > 0 and game.run.boss_defeated: preload("res://src/rules/boss_rewards.gd").prepare(game)

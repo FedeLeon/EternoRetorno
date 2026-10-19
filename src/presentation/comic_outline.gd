@@ -61,7 +61,7 @@ static func update_frame(sprite: Node2D) -> void:
 	if not sprite.material is ShaderMaterial: return
 	var material: ShaderMaterial = sprite.material
 	var path = material.shader.resource_path
-	if path not in [SHADER.resource_path,"res://assets/shaders/detailed_equipment.gdshader","res://assets/shaders/hero_idle.gdshader"]: return
+	if path not in [SHADER.resource_path,"res://assets/shaders/detailed_equipment.gdshader"]: return
 	var area = Vector4(0,0,1,1)
 	if sprite is AnimatedSprite2D:
 		if not sprite.sprite_frames.has_animation(sprite.animation): return

@@ -27,5 +27,4 @@ static func build(ui: Control) -> void:
 	view.name = "CollectionScreen"
 	view.ui = ui
 	view.snapshot = snapshot
-	view.home = func(): ui.screen = "home"; ui.render()
 	ui.rect(view, 0, 0, 1280, 720)

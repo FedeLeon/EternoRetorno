@@ -1,7 +1,7 @@
 extends SceneTree
 ## Resize authored comic illustrations; never generates or substitutes artwork.
-const BASE = "res://docs/collection/comic_illustrations/"
-const INVENTORY = "res://docs/art_direction/postapocalyptic/"
+const BASE = "res://art_sources/collection/comic_illustrations/"
+const INVENTORY = "res://art_sources/art_direction/postapocalyptic/"
 
 func _initialize() -> void:
 	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string(BASE + "jobs.json"))
@@ -30,7 +30,7 @@ func _initialize() -> void:
 		var image: Image = images[job.id]
 		image.resize(512, 512, Image.INTERPOLATE_LANCZOS)
 		preload("res://scripts/sketchbook_sheet_packer.gd").save(image, "res://" + job.target)
-		manifest[job.target] = {"sha256": FileAccess.get_sha256("res://" + job.target), "source": job.source, "source_sha256": FileAccess.get_sha256("res://" + job.source), "style": "postapocalyptic_comic", "tool": "image_gen.imagegen", "processing": "proportional Lanczos resize to 512 square", "generation": "docs/collection/comic_illustrations/%s.json" % job.id, "inputs_sha256": {job.reference: FileAccess.get_sha256("res://" + job.reference)}}
+		manifest[job.target] = {"sha256": FileAccess.get_sha256("res://" + job.target), "source": job.source, "source_sha256": FileAccess.get_sha256("res://" + job.source), "style": "postapocalyptic_comic", "tool": "image_gen.imagegen", "processing": "proportional Lanczos resize to 512 square", "generation": "art_sources/collection/comic_illustrations/%s.json" % job.id, "inputs_sha256": {job.reference: FileAccess.get_sha256("res://" + job.reference)}}
 	FileAccess.open(INVENTORY + "assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest, "\t", false) + "\n")
 	# Native-vector rebuilds must never overwrite these generated illustrations.
 	var vectors: Array = JSON.parse_string(FileAccess.get_file_as_string(INVENTORY + "vectors.json"))

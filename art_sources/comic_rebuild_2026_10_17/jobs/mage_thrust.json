@@ -1,0 +1,27 @@
+{
+  "id": "mage_thrust",
+  "kind": "hero_sheet",
+  "prompt": "Create ONE production sprite sheet with exactly TWELVE sequential drawn poses in a uniform FOUR columns by THREE rows grid, read row-major. Identity reference: Vera, mature silver-haired female teacher, purple long civilian coat, cream shirt, dark work trousers and boots, improvised cyan electrical coil emitter held in her hands. Match the reference character exactly. American action COMIC art, bold black ink, hard cel shadows, vivid colors, no pixel art, no 3D. Action is a tightly focused straight cyan electrical discharge from her improvised coil emitter, both arms stabilize, trigger squeeze and small recoil, emitter pointed directly right. All full-body characters face RIGHT. Pose1 starts in standing combat guard, poses2-4 anticipate, poses5-7 strike, poses8-11 recover, pose12 ends in the same guard as pose1. Genuine different intermediate drawings, smooth believable weight transfer through arms, torso and knees. Consistent anatomy and size across the sheet. Do not move character root horizontally in the cell. Boot soles share one baseline in EVERY cell. Keep the entire body and weapon fully visible with generous padding. NO text, labels, lines or frames. True transparent RGBA background, no backdrop tiles, no ground shadows. Do not imitate the original idle sheet poses: this is a distinct strong forward thrust/bashing attack. Landscape4:3 sheet, detailed enough for 384 pixel cells.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/heroes/actions/mage_thrust.png",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "mage",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/mage_thrust.png",
+  "action": "thrust",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-e8ccc2ca-bb92-4db9-8f12-2765421fbaa5.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

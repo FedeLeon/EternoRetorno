@@ -1,0 +1,15 @@
+{
+  "id": "warrior_brace",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/warrior_brace.png",
+  "source": "art_sources/cards/pixel_retain/sources/warrior_brace.png",
+  "prompt": "Use case: illustration-story. ONE landscape 3:2 minimalist COMIC illustration for Eterno Retorno. Exact subject: Two boots planted wide beneath a workshop apron, a wooden brace braced diagonally.. Objects only; if needed cropped hands or boots, NO hero portrait, NO face, NO torso, NO other characters. Thick black ink, large simple flat shadow shapes, two shadow tones, violet identity accents with dark charcoal negative space, strong readable close-up. No scenery, no frame, no card text, no letters, no numbers, no UI, no intricate machinery, no tiny details. Preserve postapocalyptic improvised civilian tools; no medieval weapons.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-ff8ed323-e162-4ed0-8e1d-b55435788c67.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "34488af93df3123087109a5423d696d2b8e5a92d52605949623a8871e2c60b33"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cards__art__originals",
+  "target": "assets/cards/art/originals.png",
+  "kind": "card",
+  "hero": null,
+  "transparent": false,
+  "source": "art_sources/art_direction/migration/sources/card/cards__art__originals.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-51e0a6ce-3d1c-419f-9f56-5e79207c20d3.png",
+  "prompt": "Precise edit of this existing Eterno Retorno 5-column x4-row card illustration atlas. Preserve the whole atlas EXACTLY: same20 panels, borders/gutters, all faces, costumes, actions, graphite and colored-pencil hand drawing and gray/violet palette. Change ONLY the LAST panel of the THIRD ROW (row3 column5): Mauro the messy dark-haired apothecary has a violet cloth over his mouth. LOWER/REMOVE that cloth from his mouth and nose so his ENTIRE HUMAN FACE including nose, lips and chin is visible. He must have NO MASK, NO BEAK and NO SCARF COVERING HIS FACE. Keep the green poison cloud and his pose; his hand can hold a vial below his chin instead. Keep his identity from portrait reference. Do not alter any of the other19 panels. No new text, no extra panels.",
+  "references": [
+    "art_sources/art_direction/migration/sources/card/cards__art__originals.png",
+    "assets/heroes/identity/portraits/rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": "Lower apothecary mouth cloth in row3 col5 only; maintain corrected identities"
+}

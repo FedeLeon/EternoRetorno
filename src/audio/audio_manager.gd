@@ -14,6 +14,7 @@ var ambience: Array[AudioStreamPlayer] = []
 var voices: Array[AudioStreamPlayer] = []
 var streams: Dictionary = {}
 var last_variant: Dictionary = {}
+var last_played: Dictionary = {}
 var rng = RandomNumberGenerator.new()
 var idle_seconds = 4.0
 var played_count = 0
@@ -140,10 +141,18 @@ func retire(channel: AudioStreamPlayer) -> void:
 func play_sfx(event: String, gain: float = 0.0, bus: String = "SFX") -> void:
 	var definition: Dictionary = catalog.events.get(event, {})
 	if definition.is_empty(): return
+	var now = Time.get_ticks_msec()
+	if last_played.has(event) and now - int(last_played[event]) < int(definition.get("cooldown_ms", 0)):
+		return
+	last_played[event] = now
 	var variants: Array = definition.files
 	var choices = variants.filter(func(id): return id != last_variant.get(event,"")) if variants.size() > 1 else variants
 	var id: String = choices[rng.randi_range(0, choices.size() - 1)]
 	last_variant[event] = id
+	var group: String = definition.get("voice_group", "")
+	if group != "":
+		for previous in voices:
+			if previous.get_meta("voice_group", "") == group: previous.stop()
 	var voice: AudioStreamPlayer = voices[0]
 	for available in voices:
 		if not available.playing:
@@ -156,6 +165,7 @@ func play_sfx(event: String, gain: float = 0.0, bus: String = "SFX") -> void:
 	voice.volume_db = float(definition.get("db", 0.0)) + gain
 	voice.pitch_scale = rng.randf_range(0.96, 1.04) if definition.get("vary_pitch", true) else 1.0
 	voice.play()
+	voice.set_meta("voice_group", group)
 	voice.set_meta("started",Time.get_ticks_msec())
 	mix.accent(event)
 	played_count += 1

@@ -1,0 +1,11 @@
+{
+  "id": "group",
+  "subject": "GROUP / PARTY icon: two friendly but determined CIVILIAN survivor busts overlapping, looking ahead in three-quarter front view, faces clearly visible. Left: brown-haired man with short beard and dark violet work shirt. Right: auburn-haired woman with an orange utility jacket and a gray shoulder work pad. Head and shoulders only, compact double-bust silhouette. Human resistance companions, no helmets, no mask, no guns obscuring faces.",
+  "prompt": "Use case: stylized-concept. Game UI icon for Eterno Retorno, an original post-apocalyptic world of civilian resistance against autonomous machines. ONE single isolated illustrated button icon, square composition, genuine transparent background. Match our American action comic assets: thick confident BLACK ink contours, rich FLAT orange/violet/cyan colors, angular hard-edged cel shadows, restrained sparse halftone, worn metal or cloth details. Thin clean ivory keyline along outside silhouette. Strong large readable shapes at 64px, no tiny clutter. Not a generic SVG pictogram, not 3D, not realistic rendering, not pixel art. Centered object occupies 85% of square with fully clear margins, no scenery, no background plate/frame, no text, no words, no letters, no numbers, no logos, no medieval equipment. GROUP / PARTY icon: two friendly but determined CIVILIAN survivor busts overlapping, looking ahead in three-quarter front view, faces clearly visible. Left: brown-haired man with short beard and dark violet work shirt. Right: auburn-haired woman with an orange utility jacket and a gray shoulder work pad. Head and shoulders only, compact double-bust silhouette. Human resistance companions, no helmets, no mask, no guns obscuring faces.",
+  "source": "art_sources/map/sidebar_icons/sources/group.png",
+  "target": "assets/map/sidebar/group.png",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7d7d9d75-91fb-4dfd-ab5e-b94a0e9e5c76.png",
+  "source_sha256": "9509a1ba7682ae82f428fe64a80ef46b976329002e5c0df130e10b9f06133549"
+}

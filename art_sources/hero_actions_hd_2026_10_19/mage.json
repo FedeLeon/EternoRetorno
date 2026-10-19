@@ -1,0 +1,129 @@
+{
+  "hero": "mage",
+  "source": "art_sources/hero_actions_hd_2026_10_19/sources/mage.png",
+  "source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-a195a400-788c-42f2-a68f-44c608cdc206.png",
+  "prompt": "Create one production game sprite pose sheet for Eterno Retorno. Use the attached local image as the visual identity reference ONLY: same person, face, hair, clothing palette, improvised weapon and American comic drawing style. Crisp expressive black ink, clean cel-shaded flat colors, modest material detail, thin ivory-white cutout outline around the whole figure and tools, genuine transparent alpha background. NOT pixel art, NOT blurry, NOT low-res, NOT pencil sketch. Six separate FULL BODY static illustrations in an exact regular 3 columns x 2 rows grid, landscape 1536x1024 or larger (prefer 3072x2048). Each cell is square and isolated, generous clear transparent gutters and outer padding; nothing overlaps another cell or crosses its boundaries. Same anatomical scale and head size across ALL six poses; full boots and tools visible with no cropping. All face toward the right. No scenery, no ground shadow, no captions, no text, no frames, no spark/light effects (those run separately in the game). Cell order reading left to right: TOP LEFT = strong attack contact pose using the tool/weapon; TOP MIDDLE = guarded defensive stance protecting face and torso using existing equipment; TOP RIGHT = tactical support/skill gesture with existing equipment; BOTTOM LEFT = recoil from being hit while keeping both feet on the ground; BOTTOM MIDDLE = defeated slumped seated/kneeling pose with lowered head and tool, same head size, NOT flat prone and NOT gore; BOTTOM RIGHT = neutral upright combat-ready reference pose for scale comparison, near the input idle stance. These are six action stills, NOT a sprite animation sequence.\nCharacter: Alma the civilian teacher: adult woman, short tousled silver-grey hair, small yellow hair clip, violet long work coat with teal lining, off-white shirt, brown cross-body satchel, charcoal work trousers and brown laced boots. Her weapon is an improvised handheld electrical coil with antenna rods and a wrapped handle in her right hand; a small closed tan notebook is held in her left. Attack aims the coil forcefully to the right with both feet firmly planted and a concentrated expression; guard raises a braced forearm and holds the coil across the torso defensively (no magical bubble); skill adjusts the coil's control while consulting the notebook. Preserve the teacher's face and costume; no wizard robes or fantasy staff.",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "actions": [
+    "attack",
+    "guard",
+    "skill",
+    "hurt",
+    "death",
+    "scale_reference"
+  ],
+  "parts": [
+    {
+      "seed": [
+        327,
+        267
+      ],
+      "bounds": [
+        29,
+        53,
+        597,
+        429
+      ],
+      "pixels": 96512,
+      "center": [
+        327.0,
+        267.0
+      ]
+    },
+    {
+      "seed": [
+        806,
+        264
+      ],
+      "bounds": [
+        595,
+        50,
+        424,
+        430
+      ],
+      "pixels": 87734,
+      "center": [
+        806.5,
+        264.5
+      ]
+    },
+    {
+      "seed": [
+        1282,
+        279
+      ],
+      "bounds": [
+        1098,
+        40,
+        370,
+        479
+      ],
+      "pixels": 88936,
+      "center": [
+        1282.5,
+        279.0
+      ]
+    },
+    {
+      "seed": [
+        292,
+        754
+      ],
+      "bounds": [
+        62,
+        523,
+        461,
+        464
+      ],
+      "pixels": 94323,
+      "center": [
+        292.0,
+        754.5
+      ]
+    },
+    {
+      "seed": [
+        775,
+        796
+      ],
+      "bounds": [
+        555,
+        605,
+        442,
+        383
+      ],
+      "pixels": 79202,
+      "center": [
+        775.5,
+        796.0
+      ]
+    },
+    {
+      "seed": [
+        1298,
+        754
+      ],
+      "bounds": [
+        1100,
+        524,
+        398,
+        462
+      ],
+      "pixels": 95215,
+      "center": [
+        1298.5,
+        754.5
+      ]
+    }
+  ],
+  "reference": "assets/combat_static/heroes/mage/idle.png",
+  "reference_sha256": "fcd5bbd42388e0d88818edea09d796942f9cd35eec6e4d3ed4457200a7168871",
+  "processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
+  "outline_baked": true
+}

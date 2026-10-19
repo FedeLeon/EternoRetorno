@@ -44,7 +44,7 @@ func run_tests() -> void:
 	while app.combat_busy and Time.get_ticks_msec() < deadline:
 		var ashes = app.layer.get_children().any(func(node): return node.get_script() == preload("res://src/presentation/card_ash.gd"))
 		var cut = app.layer.get_node_or_null("EnemyCutIn")
-		var attacking = cut != null or app.enemy_art[0].acting
+		var attacking = (cut != null and not cut.defensive_effect) or app.enemy_art[0].current_action=="attack"
 		saw_ash = saw_ash or ashes
 		overlap = overlap or (ashes and attacking)
 		premature_block = premature_block or (ashes and first.visible)
@@ -52,7 +52,7 @@ func run_tests() -> void:
 		if attacking:
 			saw_attack = true
 			check(first.visible and first.amount == 7, "block already visible at attack")
-		second_attacked = second_attacked or (cut != null and cut.visual_id == "goblin_2")
+		second_attacked = second_attacked or (cut != null and not cut.defensive_effect and cut.visual_id == "goblin_2")
 		await process_frame
 	check(not app.combat_busy, "sequence completes")
 	check(saw_ash and saw_block_before_attack and saw_attack, "all ordered stages observed")

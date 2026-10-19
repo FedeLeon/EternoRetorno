@@ -1,0 +1,24 @@
+{
+  "id": "rest__warrior",
+  "target": "assets/rest/warrior.png",
+  "kind": "seated",
+  "hero": "warrior",
+  "dimensions": [
+    320,
+    256
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/postapocalyptic/sources/rest__warrior.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn. ONE full-body civilian seated on a low salvaged crate resting, faces RIGHT, warm light fromRIGHT, improvised weapon at rest. Entire body/tool visible, NO medieval gear. TRUE transparent background, no fire, no scenery, no ground. Full cutout with margins.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9ce81624-bf7c-4d9d-b76d-cdb8bed61aa2.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/identity_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "671af8a881c4876b00134264173670f1217ca8cedd583729e4828af5bccef401",
+  "actual_dimensions": [
+    1024,
+    1536
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "request": "Todos los iconos de efectos, protector, contraataque, retaguardia cubierta, espada y escudo en comic minimalista.",
+  "method": "Native editable SVG authored in scripts/minimal_combat_icons.py; rasterized with Godot. No ImageGen or API.",
+  "constraints": [
+    "Legible at 28 px",
+    "Flat colors, thick ink, thin light outer cutout",
+    "No textures, tiny objects, lighting or decorative particles",
+    "Distinct silhouettes, retain effects dialogs, values and IDs"
+  ]
+}

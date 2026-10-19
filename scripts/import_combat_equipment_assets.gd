@@ -3,9 +3,9 @@ extends SceneTree
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
 var manifest: Dictionary
 func _initialize() -> void:
-	var ledger = "res://docs/art_direction/postapocalyptic/assets.json"
+	var ledger = "res://art_sources/art_direction/postapocalyptic/assets.json"
 	manifest = JSON.parse_string(FileAccess.get_file_as_string(ledger))
-	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string("res://docs/combat_equipment_assets/jobs.json"))
+	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string("res://art_sources/combat_equipment_assets/jobs.json"))
 	for job in jobs:
 		var image = Image.load_from_file("res://" + job.source)
 		if image == null or image.detect_alpha() == Image.ALPHA_NONE:
@@ -36,4 +36,4 @@ func install(image: Image, target: String, job: Dictionary) -> void:
 	output.blit_rect(crop, Rect2i(Vector2i.ZERO, crop.get_size()), (Vector2i(512, 512) - crop.get_size()) / 2)
 	DirAccess.make_dir_recursive_absolute(("res://" + target).get_base_dir())
 	Pack.save(output, "res://" + target)
-	manifest[target] = {"sha256":FileAccess.get_sha256("res://" + target), "source":job.source, "source_sha256":FileAccess.get_sha256("res://" + job.source), "style":"postapocalyptic_comic", "tool":"image_gen.imagegen", "processing":"individual 512px icon, proportional alpha crop, no low-resolution atlas enlargement", "provenance":"docs/combat_equipment_assets/" + job.id + ".json"}
+	manifest[target] = {"sha256":FileAccess.get_sha256("res://" + target), "source":job.source, "source_sha256":FileAccess.get_sha256("res://" + job.source), "style":"postapocalyptic_comic", "tool":"image_gen.imagegen", "processing":"individual 512px icon, proportional alpha crop, no low-resolution atlas enlargement", "provenance":"art_sources/combat_equipment_assets/" + job.id + ".json"}

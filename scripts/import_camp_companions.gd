@@ -1,7 +1,7 @@
 extends SceneTree
 ## Uniform geometric packing of eight authored poses per animal.
-const BASE = "res://docs/base_camp/companions/"
-const INDEX = "res://docs/art_direction/postapocalyptic/"
+const BASE = "res://art_sources/base_camp/companions/"
+const INDEX = "res://art_sources/art_direction/postapocalyptic/"
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
 func _initialize() -> void:
 	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string(BASE + "jobs.json"))
@@ -29,7 +29,7 @@ func _initialize() -> void:
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(INDEX + "assets.json"))
 	for job in jobs:
 		Pack.save(prepared[job.id], "res://" + job.target)
-		manifest[job.target] = {"sha256":FileAccess.get_sha256("res://" + job.target), "source":job.source, "source_sha256":FileAccess.get_sha256("res://" + job.source), "style":"postapocalyptic_comic", "tool":"image_gen.imagegen", "generation":"docs/base_camp/companions/%s.json" % job.id, "processing":"eight poses at one scale, 4x2 cells of 192px, feet baseline 174px"}
+		manifest[job.target] = {"sha256":FileAccess.get_sha256("res://" + job.target), "source":job.source, "source_sha256":FileAccess.get_sha256("res://" + job.source), "style":"postapocalyptic_comic", "tool":"image_gen.imagegen", "generation":"art_sources/base_camp/companions/%s.json" % job.id, "processing":"eight poses at one scale, 4x2 cells of 192px, feet baseline 174px"}
 	FileAccess.open(INDEX + "assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest, "\t", false) + "\n")
 	print("CAMP COMPANIONS: ", jobs.size(), " atlases / 16 poses")
 	quit()

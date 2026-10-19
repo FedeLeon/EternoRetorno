@@ -1,0 +1,16 @@
+{
+  "id": "rogue_cut",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/rogue_cut.png",
+  "source": "art_sources/cards/pixel_retain/sources/rogue_cut.png",
+  "prompt": "Use case: illustration-story. Create one standalone landscape 3:2 MINIMALIST COMIC card illustration for Eterno Retorno, NOT a card frame. Exact subject: One utility knife cuts through a short sharp teal slash arc.. OBJECTS ONLY, no person, no face, no torso, no portrait. If a hand is essential to the action, show ONLY the cropped hand at the edge. Everything in the composition is specified by the exact subject; do not add a hero holding the object. Thick bold black comic ink outlines, large simple shapes, flat saturated teal green identity accents against charcoal black. ONLY TWO shadow shades, no fine texture, no tiny screws, no ornate decoration, minimal material details. Extremely clear silhouette, large central motif, dark negative space surrounding it. No scenery, no buildings, no full environment, no complex machine, no multiple panels, no letters, no words, no numbers, no frame or UI. Retain postapocalyptic improvised tools instead of fantasy weapons. A single readable comic action or object vignette with much less detail than a full scene.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-16d2fbfc-547d-4242-a8c9-d976e8e7c784.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "visual_style": "minimal_comic",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "1538ab25a556c1d065b5d3a604b3e09dda6f70b651b218f08f58b0492da103df"
+}

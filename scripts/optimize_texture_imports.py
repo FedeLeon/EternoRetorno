@@ -5,7 +5,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT = ROOT / 'docs/quality/import_optimization'
+REPORT = ROOT / 'artifacts/import_optimization'
 
 def imported_bytes(text):
     return sum((ROOT / p).stat().st_size for p in re.findall(r'^path(?:\.\w+)?="res://([^"]+)"', text, re.M) if (ROOT / p).exists())
@@ -19,8 +19,8 @@ def policy(path):
         return 1, 0.9, 1280  # Full-screen first-person junction illustrations.
     if path.startswith('assets/cinematics/'):
         return 1, 0.9, 1280  # Story art is viewed full-screen with a gentle pan.
-    if path.startswith(('assets/heroes/detail/', 'assets/heroes/actions/')):
-        return 1, 0.9, 0  # Fixed frame coordinates, preserve all twelve poses.
+    if path.startswith('assets/combat_static/'):
+        return 1, 0.9, 0  # Individual action illustrations, preserve original resolution.
     if path.startswith('assets/relics/boss/'):
         return 0, 0.9, 256
     if path.startswith('assets/combat_depth/'):

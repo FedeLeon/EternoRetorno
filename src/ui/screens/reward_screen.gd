@@ -31,8 +31,9 @@ static func build(ui: Control) -> void:
 		gap = 20.0
 		left = 418.0 + (838.0 - count * width - maxi(0, count - 1) * gap) / 2.0
 	for i in range(count):
-		var card = ui.card_panel(ui.game.run.reward[i], left + i * (width + gap), 160, width, 414, func(): ui.act(func(): ui.game.choose_reward(i)))
+		var card = ui.card_panel(ui.game.run.reward[i], left + i * (width + gap), 160, width, 404, func(): ui.act(func(): ui.game.choose_reward(i)))
 		card.name = "RewardCard%d" % i
+	preload("res://src/ui/components/forge_material_display.gd").reward(ui, ui.game.run.get("reward_salvage", {}))
 	ui.button("Rechazar carta · +12 celdas", 461, 605, 358, 54, func(): ui.act(func(): ui.game.choose_reward(-1)))
 	if not ui.game.run.new_unlocks.is_empty():
 		ui.label_at("Nuevo eco: " + ", ".join(ui.game.run.new_unlocks), 80, 663, 1110, 27, 17, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

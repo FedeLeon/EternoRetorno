@@ -1,0 +1,16 @@
+{
+  "id": "rogue_echo",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/rogue_echo.png",
+  "source": "art_sources/cards/pixel_retain/sources/rogue_echo.png",
+  "prompt": "Use case: illustration-story. Create one standalone landscape 3:2 MINIMALIST COMIC card illustration for Eterno Retorno, NOT a card frame. Exact subject: One plain steel plate marked with three spreading green corrosion spots.. OBJECTS ONLY, no person, no face, no torso, no portrait. If a hand is essential to the action, show ONLY the cropped hand at the edge. Everything in the composition is specified by the exact subject; do not add a hero holding the object. Thick bold black comic ink outlines, large simple shapes, flat saturated teal green identity accents against charcoal black. ONLY TWO shadow shades, no fine texture, no tiny screws, no ornate decoration, minimal material details. Extremely clear silhouette, large central motif, dark negative space surrounding it. No scenery, no buildings, no full environment, no complex machine, no multiple panels, no letters, no words, no numbers, no frame or UI. Retain postapocalyptic improvised tools instead of fantasy weapons. A single readable comic action or object vignette with much less detail than a full scene.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-92ecc098-42b3-45cc-becc-b8305584ed22.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "visual_style": "minimal_comic",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "79cecc94b9d597d37e5425af358b72446f72f380ee34e1840225dc3023d761db"
+}

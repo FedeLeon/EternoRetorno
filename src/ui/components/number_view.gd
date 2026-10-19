@@ -4,6 +4,10 @@ extends Control
 # The comic glyph bank shares one opaque baseline at source row 46.
 const BASELINE_OFFSET = {}
 
+# Medallions, active shields and energy center ink, not the transparent canvas.
+# Current digits occupy rows 12..45; their optical center is five pixels lower.
+var center_ink = false
+
 var value: int = 0:
 	set(next):
 		value = maxi(0, next)
@@ -32,5 +36,7 @@ func refresh() -> void:
 		glyph.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		var glyph_scale = minf(width / 32.0, height / 48.0)
 		glyph.position = Vector2(left + i * width, (size.y - height) / 2 + BASELINE_OFFSET.get(digits[i], 0.0) * glyph_scale)
+		if center_ink:
+			glyph.position.y -= 5.0 * glyph_scale
 		glyph.size = Vector2(width, height)
 		add_child(glyph)

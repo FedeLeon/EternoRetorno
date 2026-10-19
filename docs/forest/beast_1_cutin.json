@@ -1,7 +1,0 @@
-{
-  "prompt": "Generate one dynamic foreground attack illustration for Eterno Retorno, dark fantasy comic style with crisp ink contours and pixel-art compatible colors. Reference image shows the exact enemy identity: brown wild boar with bristly mane and large ivory tusks. Show this same enemy attacking from RIGHT towards LEFT, weapon or jaws leading on the LEFT, body on the RIGHT, intense foreshortening, strong dynamic attack pose. Three-quarter closeup of head and torso, full readable weapon or claws. Minimal slashing energy highlights colored to fit character. Transparent background with genuine alpha, NO scenery, NO rectangular panel, NO text, NO border. Landscape 1536x1024. Designed to overlay the bottom-right corner of a battle screen with the level visible behind it. Keep all important features inside canvas.",
-  "reference": "assets/enemies/hd/beast_1.png",
-  "tool": "imagegen built-in",
-  "source": "sources/beast_1_cutin.png",
-  "output": "assets/comic/enemies/beast_1.png"
-}

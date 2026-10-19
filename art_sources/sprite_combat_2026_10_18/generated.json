@@ -1,0 +1,18 @@
+[
+  {
+    "hero": "warrior",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-c02d3710-a24a-4061-b735-f6efc2d46d23.png"
+  },
+  {
+    "hero": "guardian",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-228bba57-f2c2-492b-96c6-97b19e4c6e0b.png"
+  },
+  {
+    "hero": "rogue",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-cbcce76d-61db-4398-b8d6-4f663dd4591c.png"
+  },
+  {
+    "hero": "mage",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-da0ee43b-ae5c-4350-9ab3-faddaf514511.png"
+  }
+]

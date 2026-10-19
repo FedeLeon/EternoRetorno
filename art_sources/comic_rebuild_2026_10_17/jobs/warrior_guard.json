@@ -1,0 +1,27 @@
+{
+  "id": "warrior_guard",
+  "kind": "hero_sheet",
+  "prompt": "Production animation sheet of Nicolas,42,weathered short brown beard and short brown hair, carpenter. NO helmet, NO medieval armor, NO sword. Faded aubergine work shirt sleeves rolled up, dusty carpenter apron over dark cargo trousers, heavy patched boots, work gloves, tape measure and bent nails in belt. Holds a homemade long tool made from an old industrial hand-saw blade bolted to a wooden handle, a cable-wrapped grip, NO firearm. Strong tired civilian worker, protectively stubborn.. TWELVE distinct coherent full-body drawings, FOUR columns THREE rows: raise the held tool/shield to brace, absorb impact, return to guard. Same scale/camera in every cell, generous transparent gutters, planted foot baseline identical, no cropping, no labels, no terrain.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/heroes/detail/warrior_guard.png",
+      "dimensions": [
+        1024,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "warrior",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/warrior_guard.png",
+  "action": "guard",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-7c8218ea-a5b0-490d-8ac3-c96fee2bee0d.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

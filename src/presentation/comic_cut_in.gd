@@ -4,12 +4,14 @@ signal finished
 const DURATION = 0.72
 var duration = DURATION
 var texture_path: String
-var from_right = false
-var framing_scale = 1.0
-var framing_offset = Vector2.ZERO # Relative to the viewport; adapter-owned framing.
+var from_right = false # Direction of the attack/light.
+var align_right = false # Enemy adapter mirrors the framing, not the illustration.
+var framing_scale = 0.90
+var framing_offset = Vector2(-0.04, 0.15) # Relative to the viewport.
 var elapsed = 0.0
 var accent: Color
 var picture: TextureRect
+var impact_panel: Control
 var frame_grid = Vector2i.ONE
 var frame_index = 0
 var frame_texture: AtlasTexture
@@ -50,9 +52,9 @@ func _ready() -> void:
 		hero_fx.from_right = from_right
 	var panel = preload("res://src/presentation/comic_panel.gd").new()
 	panel.name = "ComicImpactPanel"
-	panel.impact = true; panel.from_right = from_right; panel.accent = accent
+	panel.impact = true; panel.from_right = align_right; panel.accent = accent
+	impact_panel = panel
 	add_child(panel); move_child(panel,0)
-	panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_layout()
 	resized.connect(_layout)
 	modulate.a = 0.0
@@ -63,6 +65,9 @@ func _layout() -> void:
 	var height = minf(size.y * 0.72, size.x * 0.62 / 1.5) * framing_scale
 	picture.size = Vector2(height * 1.5, height)
 	picture.position = Vector2(_rest_x(), size.y - height + size.y * framing_offset.y)
+	if impact_panel != null:
+		impact_panel.position = picture.position
+		impact_panel.size = picture.size
 
 func _process(delta: float) -> void:
 	if completed: return
@@ -93,7 +98,7 @@ func _draw() -> void:
 		else: draw_line(start, end, Color(accent, 0.65), 1 + i % 3)
 
 func _rest_x() -> float:
-	return (size.x * 0.985 - picture.size.x if from_right else size.x * 0.015) + size.x * framing_offset.x
+	return size.x * (0.985 - framing_offset.x) - picture.size.x if align_right else size.x * (0.015 + framing_offset.x)
 
 func _set_static_region() -> void:
 	if frame_texture == null: return

@@ -1,0 +1,12 @@
+{
+  "id": "warrior_hurt_refined",
+  "source": "art_sources/art_direction/migration/sources/heroes/warrior_hurt.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-424f75e9-9ab1-40cc-b0e7-b94d969df3f8.png",
+  "prompt": "Edit this 4-column by 3-row twelve-pose animation sheet. Preserve the graphite/colored-pencil hand drawing, Nicolas Carpenter's face, age42 brown beard, plain gray iron helmet raised visor, charcoal armor and violet cape. CRITICAL character correction: Nicolas has NO SHIELD in any pose. Remove ALL shields from every pose, and keep one straight steel SWORD; left hand empty or helping two-handed sword motion. For guard he PARRIES with the sword, no shield. No green magical rings. Use the second image as definitive clothing/weapon reference. Retain the hurt action cycle and 12 consecutive distinct poses reading left-to-right. Each full body AND entire weapon/effect must fit separately inside one of12 equal cells. Make each figure and its longest sword stroke SMALLER WITHIN ITS CELL to leave wide empty transparent gutters around all four edges, at least45px, no body/weapon/particle can cross into the next cell. No detached chopped sword pieces. Same anatomical size in all12 poses. Do NOT add text, borders, floor, paper background, checkerboard or white outline. TRUE alpha transparent outside pencil drawing.",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/migration/sources/heroes/warrior_hurt.png",
+    "/var/www/html/EternoRetorno/art_sources/art_direction/migration/sources/heroes/warrior_idle.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

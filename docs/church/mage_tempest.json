@@ -1,9 +1,0 @@
-{
-  "hero": "mage",
-  "id": "tempest",
-  "name": "Tejedora de tormentas",
-  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: silver-haired female blue and white robed mage casting a wide fan of icy shards across multiple shadow foes. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Tejedora de tormentas.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-d7d81358-d72a-41f9-974f-595b1877a6ee.png",
-  "reference": "assets/rest/mage.png",
-  "tool": "image_gen built-in"
-}

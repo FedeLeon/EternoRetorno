@@ -1,7 +1,6 @@
 extends RefCounted
 ## Geometric conversion only; every drawing comes from its recorded ImageGen source.
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
-const BODY_HEIGHT = {"warrior":183.0,"guardian":188.0,"rogue":203.0,"mage":182.0}
 
 static func fit(source: Image, dimensions: Vector2i, transparent: bool, margin: int = 4, align_top: bool = false) -> Image:
 	var image = source.duplicate()
@@ -23,23 +22,11 @@ static func fit(source: Image, dimensions: Vector2i, transparent: bool, margin: 
 	result.blit_rect(image,Rect2i(Vector2i.ZERO,image.get_size()),(dimensions-image.get_size())/2)
 	return result
 
-static func actor(poses: Array[Image], columns: int, cell: int, baseline: int, target_height: float = 0, foot_anchor: bool = false) -> Image:
+static func actor(poses: Array[Image], columns: int, cell: int, baseline: int) -> Image:
 	var extent = Vector2.ZERO
 	for pose in poses: extent = extent.max(Vector2(pose.get_size()))
 	var ratio = minf(float(cell-(12 if cell<=128 else 28))/extent.x,float(cell-(12 if cell<=128 else 28))/extent.y)
-	if target_height>0: ratio = minf(ratio,target_height/poses[0].get_height())
-	if not foot_anchor: return Pack.pack(poses,columns,cell,ratio,baseline)
-	var image=Image.create(columns*cell,ceili(float(poses.size())/columns)*cell,false,Image.FORMAT_RGBA8)
-	image.fill(Color.TRANSPARENT)
-	for i in range(poses.size()):
-		var pose=poses[i].duplicate()
-		pose.resize(maxi(1,roundi(pose.get_width()*ratio)),maxi(1,roundi(pose.get_height()*ratio)),Image.INTERPOLATE_LANCZOS)
-		var bottom=Pack.bottom(pose)
-		var band=pose.get_region(Rect2i(0,maxi(0,bottom-20),pose.get_width(),mini(20,bottom)))
-		var boots=Pack.bounds(band,0.5)
-		var x=clampi(cell/2-boots.position.x-boots.size.x/2,4,maxi(4,cell-pose.get_width()-4))
-		image.blit_rect(pose,Rect2i(Vector2i.ZERO,pose.get_size()),Vector2i((i%columns)*cell+x,(i/columns)*cell+baseline-bottom))
-	return image
+	return Pack.pack(poses,columns,cell,ratio,baseline)
 
 static func process(job: Dictionary) -> Dictionary:
 	var result: Dictionary = {}
@@ -52,44 +39,6 @@ static func process(job: Dictionary) -> Dictionary:
 			for target in job.targets:
 				var image = fit(source,Vector2i(target.dimensions[0],target.dimensions[1]),job.transparent,4,job.id=="title__background")
 				if image!=null: result[target.path]=image
-		"hero_sheet":
-			var poses = Pack.actor_cells("res://"+job.source,job.columns,job.rows)
-			if poses.size()!=int(job.frames): return result
-			if job.action in ["run","run8"]:
-				# Limit accidental scale drift between authored gait poses, offline only.
-				var heights:Array[int]=[]
-				for pose in poses:heights.append(Pack.bounds(pose,0.5).size.y)
-				heights.sort()
-				var middle=heights.size()/2
-				var median=(heights[middle-1]+heights[middle])*0.5
-				for pose in poses:
-					var height=float(Pack.bounds(pose,0.5).size.y)
-					var ratio=clampf(height,median*0.96,median*1.04)/height
-					pose.resize(roundi(pose.get_width()*ratio),roundi(pose.get_height()*ratio),Image.INTERPOLATE_LANCZOS)
-			var target: Dictionary = job.targets[0]
-			var large = job.action in ["thrust","sweep","charged"]
-			var cell = 128 if job.action=="run8" else 384 if large else 256
-			var baseline = 120 if cell==128 else 368 if large else 240
-			var columns = 8 if job.action=="run8" else int(job.columns)
-			result[target.path]=actor(poses,columns,cell,baseline,BODY_HEIGHT[job.hero]*(0.5 if cell==128 else 1.0),job.action in ["idle","guard24"])
-		"machine_bank":
-			var poses = Pack.actor_cells("res://"+job.source,4,4)
-			if poses.size()!=16:return result
-			for row in range(4):
-				var id: String = job.machines[row]
-				var path = "assets/enemies/animations/%s.png"%id
-				if not job.targets.any(func(t):return t.path==path):continue
-				var frames: Array[Image] = []
-				for index in [0,0,0,0,1,1,2,3]: frames.append(poses[row*4+index])
-				var sheet = actor(frames,8,256,240)
-				result[path]=sheet
-				result["assets/enemies/hd/%s.png"%id]=sheet.get_region(Rect2i(0,0,256,256))
-		"enemy_sheet":
-			var poses = Pack.actor_cells("res://"+job.source,4,2)
-			if poses.size()!=8:return result
-			var sheet = actor(poses,8,256,240)
-			result["assets/enemies/animations/%s.png"%job.enemy]=sheet
-			result["assets/enemies/hd/%s.png"%job.enemy]=sheet.get_region(Rect2i(0,0,256,256))
 		"enemy_foreground_bank", "icon_bank":
 			var poses = Pack.cells("res://"+job.source,job.columns,job.rows)
 			# Empty trailing icon cells are deliberately unused; extract them individually.

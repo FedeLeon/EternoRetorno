@@ -1,0 +1,35 @@
+{
+  "id": "rogue_guard24",
+  "kind": "hero_sheet",
+  "prompt": "Production 2D COMBAT IDLE animation sheet of Mauro the apothecary. Identity reference only: unmasked dark-haired man with visible face, teal rolled-sleeve jacket, burgundy medical satchel, dark work trousers and brown boots; small improvised utility knives held in both hands, one lime-green acid vial on belt. Match reference inks, colors, proportions and civilian tools. Original American comic illustration: bold black ink, flat rich colors, cel shadows, very thin ivory silhouette border; NO gray rectangle or reference background. EXACT TWENTY FOUR sequential full-body animation poses in SIX columns FOUR rows, perfectly regular grid, landscape 3:2. ONE complete coherent breathing cycle FORWARD chronology, left-to-right row-major. Frame1 relaxed exhale/neutral guard, frame6 inhaling, frame12 full inhale, frame18 exhaling, frame24 almost identical to frame1. alert slightly nervous low guard, no crouch lunge. Shorter breath through chest, left elbow lifts a little before right wrist settles; eyes/head scan subtly without changing facing. Satchel strap, loose jacket edge and hair tips respond a beat later. Knives remain attached to hands. Both feet stay planted. This is real hand-drawn anatomical in-between animation, NOT the same picture shifted, rotated or scaled. Chest, upper arms, forearms, head and cloth change relative to each other with natural delayed overlapping action. Small believable movement range: hands/shoulders 2 to 4 percent of torso height maximum. Boots planted at EXACT SAME x/y positions and ground line in EVERY cell. Hips, head size, body proportions, camera and equipment remain consistent. No stepping, no attacks, no gesture out of guard, no weapon swaps, no perspective changes, no extra limbs, no detached fingers or boots. Every pose entirely inside its cell with large empty TRANSPARENT gutters; all background pixels truly transparent including inside each cell. NO shadows, NO backdrop tiles, NO captions, NO labels, NO cell borders. Loop start and end must match.",
+  "targets": [
+    {
+      "path": "assets/heroes/guard/rogue.png",
+      "dimensions": [
+        1536,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "rogue",
+  "source": "art_sources/combat_idle_2026_10_17/sources/rogue_breath.png",
+  "action": "guard24",
+  "columns": 6,
+  "rows": 3,
+  "frames": 18,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-43c8c63f-8609-47f8-a5bc-ba67650dad90.png",
+  "references": [
+    "art_sources/combat_idle_2026_10_17/references/rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/combat_idle_2026_10_17/rogue_previous_job.json",
+  "row_edges": [
+    0,
+    290,
+    575,
+    1024
+  ],
+  "review": "Accepted 18 complete authored poses; 24-pose retry rejected for cropped boots."
+}

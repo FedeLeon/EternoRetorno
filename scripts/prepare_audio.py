@@ -56,7 +56,7 @@ def download(url):
 
 def main():
     records = []
-    docs = ROOT / 'docs/audio'
+    docs = ROOT / 'art_sources/audio'
     docs.mkdir(parents=True, exist_ok=True)
     licenses = docs / 'licenses'
     licenses.mkdir(exist_ok=True)

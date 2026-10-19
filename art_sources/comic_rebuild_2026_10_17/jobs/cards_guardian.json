@@ -1,0 +1,196 @@
+{
+  "id": "cards_guardian",
+  "kind": "card_bank",
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE card-symbol atlas, SIX columns by FOUR rows24cells1536x1024. All cells have the same opaque dark charcoal background #131922, no visible grid or borders. Minimalist symbols,1to3 simple shapes per cell, no full hero or portraits. NO people, heads, faces, shoulders, armor wearers or full bodies in ANY cell. Only isolated objects or abstract action marks. Professional tools: rusted saw blades for carpenter, street-sign metal panels and crowbar for builder, utility knives and chemical vials for pharmacist, antenna coils and battery pulses for teacher. All symbols centered inside central65percent width and central50percent height of each cell. EXACT reading order left to right top to bottom: cell0: One plain battered steel sheet-metal panel tilted forward hitting a single small gray impact star, no person.; cell1: One sturdy plain steel sheet-metal panel front-on, one short violet protective arc. No heraldry or person.; cell2: Exactly two plain gray sheet-metal panels side by side joined by one broad violet protective line.; cell3: One short steel improvised saw blade emerging from behind a small plain sheet-metal panel, one returning violet stroke.; cell4: Two plain steel sheet-metal panels connected by one simple loop of violet thread, no ornamentation.; cell5: A cropped gloved palm bracing the rear of a plain sheet-metal panel as its edge nudges forward. No person.; cell6: One plain sheet-metal panel leaning over a tiny unidentifiable charcoal companion silhouette, very few broad lines.; cell7: Exactly three thick iron chain links joining a short improvised saw blade hilt and a simple sheet-metal panel edge.; cell8: Exactly two tiny plain STEEL SHIELD SHAPES inside one incomplete hand-drawn violet protective circle. Only two sheet-metal panel-shaped metal plates and one circle. No people, no creatures, no faces, no eyes, no ghosts, no silhouettes.; cell9: One upright plain steel sheet-metal panel with a simple eye-shaped pencil mark above it, representing watchful protection.; cell10: One plain steel sheet-metal panel shown edge-first with two broad charcoal forward force strokes and a tiny violet impact.; cell11: Exactly two small simple upright STEEL SHIELD PLATES sheltered beneath one broad violet arch suggesting a sheet-metal panel-shaped canopy. Three simple shapes total. No people, no creatures, no faces, no eyes, no ghosts, no silhouettes, no building.; cell12: A battered steel sheet-metal panel with one small dent and a short steel blade pointing back outward from beside it.; cell13: One large plain steel sheet-metal panel sheltering two very small plain steel sheet-metal panel shapes, with one broad violet protective arch. Simple steel plates only. No people, no creatures, no faces, no eyes, no ghosts, no silhouettes.; cell14: Two linked plain sheet-metal panel silhouettes with one small muted red healing cross between them.; cell15: One visibly cracked plain steel sheet-metal panel releasing a single sharp violet outward stroke.; cell16: One braced sheet-metal panel tilted toward the right, a single compressed violet coil line behind it suggesting a prepared charge.; cell17: One plain sheet-metal panel edge stopping and snapping a thin incoming steel blade stroke. Minimal impact marks.; cell18: One simple gloved hand wrapping a clean bandage around a second cropped forearm, small muted red healing cross. No full people.; cell19: Exactly two gloved fists touching, one short upward violet stroke above them. No people or faces.; cell20: A plain sheet-metal panel edge striking one small separate armor plate and making one broad crack in it.; cell21: One sturdy sheet-metal panel facing a thin improvised saw blade whose tip droops and fades, one small violet protective arc.. Cells22and23 empty. NO text or numbers. Bold clean ink outlines, flat bright colors, very sparse hard shadows, no tiny detail. Each illustration is an inked miniature comic vignette, slightly richer than a flat symbol but restrained and readable; white cutline around its focal shapes, Ben-Day corner texture. Maintain every specified cell subject/order. Matte near-black backdrop per cell. No text.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/cards/art/minimal/guardian_bash.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_guard.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_wall.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_strike.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_echo.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_tap.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_shelter.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_iron_chain.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_circle.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_sentinel.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_ram.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_sanctuary.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_reprisal.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_aegis.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_unbroken.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_risk.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_prepared.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_interrupt.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_lay_hands.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_inspire.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_shield_break.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    },
+    {
+      "path": "assets/cards/art/minimal/guardian_rebuke.png",
+      "dimensions": [
+        512,
+        340
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": "guardian",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/cards_guardian.png",
+  "cards": [
+    "guardian_bash",
+    "guardian_guard",
+    "guardian_wall",
+    "guardian_strike",
+    "guardian_echo",
+    "guardian_tap",
+    "guardian_shelter",
+    "guardian_iron_chain",
+    "guardian_circle",
+    "guardian_sentinel",
+    "guardian_ram",
+    "guardian_sanctuary",
+    "guardian_reprisal",
+    "guardian_aegis",
+    "guardian_unbroken",
+    "guardian_risk",
+    "guardian_prepared",
+    "guardian_interrupt",
+    "guardian_lay_hands",
+    "guardian_inspire",
+    "guardian_shield_break",
+    "guardian_rebuke"
+  ],
+  "columns": 6,
+  "rows": 4,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-5099969e-aeab-4eaa-9800-fe0c2a27a998.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "minimal_rogue_assassin",
+  "card_id": "rogue_assassin",
+  "hero": "rogue",
+  "kind": "minimal_card",
+  "motif": "One extremely narrow knife tip passing cleanly through a small gray armor plate, a single violet guide stroke.",
+  "card": {
+    "id": "rogue_assassin",
+    "owner": "rogue",
+    "name": "Estocada del asesino",
+    "cost": 2,
+    "target": "enemy",
+    "damage": 22,
+    "block": 0,
+    "heal": 0,
+    "poison": 0,
+    "hits": 1,
+    "pierce": true,
+    "locked": false,
+    "tier": "market",
+    "market_price": 180
+  },
+  "prompt": "Use case: stylized-concept. Asset type: ONE minimalist card illustration for the hand-drawn dark-fantasy game Eterno Retorno. Primary subject: One extremely narrow knife tip passing cleanly through a small gray armor plate, a single violet guide stroke. This is a visual metaphor for the card Estocada del asesino, NOT text to write. Draw ONE isolated central motif using at most 1-3 main simple shapes. Very low detail, immediately readable at 180 pixels wide. Strong clean silhouette built with a few imperfect dark pencil lines, sparse hand hatching and broad flat colored-pencil patches. Graphite, steel gray, chalk gray and one subdued violet accent; green only for poison, red only for healing/blood. Most of the image is empty charcoal-purple paper (#19151f), no scenery, no floor, no landscape, no cinematic background, no detailed textures, no dust, no decorative border, no elaborate armor or weapon engraving, no little stars everywhere, no smooth bloom. Absolutely NO portraits or full heroes; only simple cropped hands/boots where the subject explicitly requires them. Handmade rough sketch, not pixel art, not glossy digital painting, not photorealism. Landscape 16:9 composition, leave ample blank margins. Keep the complete motif inside the central 65 percent width and central 65 percent height, including all tips, to allow geometric center cropping. ONE illustration only, NOT a sprite sheet or collage, no multiple panels. NO text, NO letters, NO numerals, NO labels, NO watermark. Opaque dark matte paper background matching all other cards.",
+  "source": "art_sources/cards/minimal/sources/rogue_assassin.png",
+  "target": "assets/cards/art/minimal/rogue_assassin.png",
+  "transparent": false,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c680497f-f2a5-4a81-b1f5-4ea413e57111.png",
+  "tool": "image_gen.imagegen",
+  "references": [],
+  "status": "generated"
+}

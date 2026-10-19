@@ -23,13 +23,13 @@ func verify() -> void:
 		check(maxf(extent.x, extent.y) > Scale.HERO_HEIGHT * 0.98, "every machine has a substantial visual span: " + id)
 		check(extent.x <= 220.01 and extent.y <= 245.01, "uniform fit preserves complete silhouette: " + id)
 		check(is_equal_approx(actor.scale.x, actor.scale.y), "no stretched machine: " + id)
-		var center = (actor.get_global_transform() * actor.sprite.position).x
+		var center = (actor.get_global_transform() * actor.body_rect().get_center()).x
 		check(center - extent.x / 2 >= 535.99 and center + extent.x / 2 <= 1264.01, "wide machine stays in enemy arena: " + id)
 		var scale_before = actor.scale
 		Scale.fit_enemy(actor, 245, 220)
 		check(actor.scale == scale_before, "repeat layout cannot progressively shrink machine: " + id)
-		for frame in [0, 4, 6, 7]:
-			actor.sprite.frame = frame
+		for action in ["idle","guard","attack","hurt"]:
+			actor.begin_action(action)
 			check(actor.scale == scale_before, "animation leaves outer scale fixed: " + id)
 		actor.queue_free(); await process_frame
 	host.queue_free(); await process_frame
@@ -49,14 +49,14 @@ func verify() -> void:
 		app.continue_run(); await process_frame
 		check(app.game.run == before and app.game.rng.state == rng, "bigger actors do not change combat state or RNG")
 		var ground = Layout.ground_for(app)
-		check(ground >= 335, "normal formation moves lower")
+		check(ground >= 335 - (Layout.INTENT_ROW_HEIGHT - 34), "normal formation stays low while reserving the enlarged intent row")
 		var occupied: Array[Rect2] = []
 		for index in app.enemy_art:
 			var actor: Control = app.enemy_art[index]
 			var extent = Scale.silhouette(actor).size * actor.sprite.scale * actor.scale
-			check(maxf(extent.x, extent.y) > Scale.HERO_HEIGHT * 0.98, "real formation retains imposing size")
+			check(maxf(extent.x, extent.y) > minf(Scale.HERO_HEIGHT * 0.98, ground - 127), "real formation retains imposing size")
 			var bounds = Scale.silhouette(actor)
-			var local_left = actor.sprite.position.x + (bounds.position.x - actor.sprite.texture.get_height() / 2.0) * actor.sprite.scale.x
+			var local_left = actor.body_rect().position.x
 			var left = (actor.get_global_transform() * Vector2(local_left, 0)).x
 			var footprint = Rect2(left, 0, extent.x, 1)
 			for previous in occupied:
@@ -64,7 +64,7 @@ func verify() -> void:
 			occupied.append(footprint)
 			check(not app.enemy_health[index].z_as_relative and app.enemy_health[index].z_index > actor.z_index, "life stays legible above overlapping machine")
 			var intent = app.layer.get_node("EnemyIntent%d" % index)
-			check(intent.global_position.y > ground and intent.get_global_rect().end.y <= Layout.INFO_BOTTOM, "intent and effects follow feet without covering cards")
+			check(intent.get_global_rect().end.y <= 126 and intent.global_position.y >= 64, "intent reserves head space below menu")
 		if DisplayServer.get_name() != "headless":
 			await RenderingServer.frame_post_draw
 			root.get_texture().get_image().save_png(preload("res://tests/artifacts.gd").path("enemy_presence/formation_%d.png" % i))

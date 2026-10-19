@@ -1,0 +1,18 @@
+{
+  "id": "rogue",
+  "count": 6,
+  "target_dir": "assets/forge/badges",
+  "ids": [
+    "rogue_weapon_1",
+    "rogue_weapon_2",
+    "rogue_weapon_3",
+    "rogue_armor_1",
+    "rogue_armor_2",
+    "rogue_armor_3"
+  ],
+  "subject": "Apothecary Mauro: weapon utility knives and green acid injector vials; armor teal field medical jacket with padded reinforced pockets and small medical satchel. Create a SIX ICON equipment-upgrade ATLAS, exactly 3 equal columns by 2 equal rows. TOP ROW three weapon icons ordered basic repaired, reinforced, fully refitted advanced. BOTTOM ROW three armor icons similarly basic patched, reinforced, advanced fully refitted. Each isolated icon centered in its own cell with generous clear transparent gutter. All six icons same visual size. Three tiers clearly differ by silhouette, reinforcement, added coils or protective plates. No characters wearing items; only tools/clothing standalone.",
+  "prompt": "Use case: stylized-concept. Production bitmap game UI asset for Eterno Retorno, original postapocalyptic civilian resistance comic. Bold black ink outlines, sharp American action-comic cel shading, tiny halftone texture, readable rich colors, graphite metal, violet shadows, cyan electronic accent, rust orange, brass. Detailed but clear at small HUD size. Genuine transparent RGBA background, no scenery, no labels, no numerals, no text, no watermark, no fantasy armor. Apothecary Mauro: weapon utility knives and green acid injector vials; armor teal field medical jacket with padded reinforced pockets and small medical satchel. Create a SIX ICON equipment-upgrade ATLAS, exactly 3 equal columns by 2 equal rows. TOP ROW three weapon icons ordered basic repaired, reinforced, fully refitted advanced. BOTTOM ROW three armor icons similarly basic patched, reinforced, advanced fully refitted. Each isolated icon centered in its own cell with generous clear transparent gutter. All six icons same visual size. Three tiers clearly differ by silhouette, reinforcement, added coils or protective plates. No characters wearing items; only tools/clothing standalone.",
+  "source": "art_sources/combat_equipment_assets/sources/rogue.png",
+  "generated_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-274ea217-e713-4541-b29e-19858116a83c.png",
+  "tool": "image_gen.imagegen"
+}

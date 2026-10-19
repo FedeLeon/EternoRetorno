@@ -17,6 +17,6 @@ static func play(ui: Control) -> void:
 	for index in last:
 		if index < current.size() and int(current[index].hp) > 0: continue
 		if int(last[index].hp) > 0 or ui.enemy_art[index].fallen: continue
-		ui.audio.play_sfx("death")
+		preload("res://src/audio/battle_audio.gd").enemy(ui.audio, ui.enemy_art[index].get_meta("battle_enemy_id", ""), "death")
 		ui.audio.play_sfx("ash", -8)
 		await ui.enemy_art[index].play_once("death")

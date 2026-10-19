@@ -1,9 +1,0 @@
-{
-  "hero": "warrior",
-  "id": "whirlwind",
-  "name": "Guerrero del torbellino",
-  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: black armored knight with purple cape performing two swift crossing sword slashes, two purple arcs. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Guerrero del torbellino.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-780f907b-b5fa-4832-9318-a647473a7cfa.png",
-  "reference": "assets/rest/warrior.png",
-  "tool": "image_gen built-in"
-}

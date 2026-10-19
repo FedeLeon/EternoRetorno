@@ -1,0 +1,15 @@
+{
+  "generator": "image_gen built-in",
+  "date": "2026-10-18",
+  "reference_roles": "canonical character design only; generated transparent sheets used for later variants",
+  "packing": "scripts/import_sprite_combat.gd + scripts/sprite_pose_source.gd; connected-component extraction, antialiased edge, held exposures when source poses merge; common scale and baseline",
+  "prompts": [
+    "prompts.json",
+    "variant_prompts.json",
+    "variant_replacements.json",
+    "mage_variant_replacement.json",
+    "guardian_variant_replacement.json",
+    "transparency_corrections.json"
+  ],
+  "scope": "battle body PNGs only; no skeletal authoring or runtime; foreground illustrations preserved"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "guardian_idle_adjust",
+  "kind": "hero_sheet",
+  "prompt": "Production 2D sprite animation sheet, identity-preserving small COMBAT GUARD ADJUSTMENT for Ines the construction worker: strong auburn-haired woman with long practical braid, orange construction jacket, violet scarf, gray trousers, brown safety boots, BLUE-WHITE rectangular road-sign shield on left arm and a short crowbar in right hand. Reference is exact neutral guard to match. Exactly TWELVE complete full-body hand-drawn in-betweens, FOUR columns THREE rows, regular equal grid. Each figure occupies at most 75 percent of its cell height, large EMPTY transparent margins all around including bottom. All face RIGHT, same camera, proportions and equipment, both boots in exact reference locations on the SAME baseline each cell. One tiny gesture: She slightly raises her shield with the left elbow, adjusts her right crowbar grip and shoulders, then carefully settles back to the original defensive guard. Braid and scarf lag behind the shoulder movement. Frame1 and frame12 match the reference neutral pose. Frames2-5 gradually adjust, frame6-7 peak, frames8-11 gently return. Chest breath continues through gesture, head/arms/cloth have overlapping delays. Small safe range, NOT attack, NOT walking, NOT whole-image rotation/scaling, no swapping tools, no extra limbs or floating parts. American comic black ink, rich flat colors, cel shadows and thin ivory rim, same outfit and face as reference. TRUE transparent background in every cell and all gutters. DO NOT copy gray reference background, no ground, shadows, gradients, boxes, labels, numbers or frame lines. Every boot and weapon tip entirely within its own cell.",
+  "targets": [
+    {
+      "path": "assets/heroes/guard_adjust/guardian.png",
+      "dimensions": [
+        1024,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/combat_idle_2026_10_17/sources/guardian_adjust.png",
+  "action": "idle_adjust",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-2409b351-519f-4ad5-a266-d04195f02dd0.png",
+  "references": [
+    "art_sources/combat_idle_2026_10_17/references/guardian_new_neutral.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

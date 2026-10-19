@@ -1,11 +1,12 @@
 """Re-ink existing semantic SVG drawings; preserve paths, sizes and transparency."""
 from pathlib import Path
 import json,hashlib,copy,xml.etree.ElementTree as ET
-ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'docs/comic_rebuild_2026_10_17'
-manifest_path=ROOT/'docs/art_direction/postapocalyptic/assets.json'
+ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'art_sources/comic_rebuild_2026_10_17'
+manifest_path=ROOT/'art_sources/art_direction/postapocalyptic/assets.json'
 manifest=json.loads(manifest_path.read_text());q=json.loads((BASE/'queue.json').read_text())
 ET.register_namespace('','http://www.w3.org/2000/svg')
 for name in q['vector_targets']:
+ if not (ROOT/name).is_file():continue  # Retired runtime icons are never restored.
  p=ROOT/name;backup=BASE/'sources'/('vector_'+name.replace('/','__'))
  if not backup.exists():backup.write_bytes(p.read_bytes())
  if name not in ['assets/ui/polished/button.svg','assets/ui/polished/panel.svg']:

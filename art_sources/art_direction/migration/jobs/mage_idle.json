@@ -1,0 +1,15 @@
+{
+  "id": "mage_idle",
+  "hero": "mage",
+  "action": "idle",
+  "source": "art_sources/art_direction/migration/sources/heroes/mage_idle.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-420a9db1-2caf-401c-a532-8b5f7d03b27d.png",
+  "prompt": "Use case: stylized-concept. Production full-body battlefield animation sheet for Eterno Retorno. First reference provides outfit/body identity (use ONLY mage protagonist described below), second reference fixes exact facial identity. Subject: Vera, adult female teacher, silver-gray hair, recognizable ordinary human face, charcoal long coat and violet collar/cloak, worn book at waist, simple plain wooden staff with violet crystal. Style genuinely rough graphite and colored pencil conceptual drawing, broken searching outlines and double lines, strong charcoal shadows, irregular violet pigment, not pixel art, not polished glossy comic painting, no white sticker outline. Full body facing RIGHT in three-quarter profile, match existing hand-drawn portraits. EXACTLY TWELVE DISTINCT consecutive poses in a FOUR COLUMNS by THREE ROWS sheet. Landscape 1536x1024. Each equal cell ~384x341 contains one complete body, feet near center x192 y300, same anatomical scale in all frames; head roughly y45. Keep at least 24px transparent gutter on every edge; all hands/weapons/cloth/effects MUST remain within their cell, never overlap adjacent poses. Frame order left-to-right then next row. Action: quiet ready stance, feet planted at the SAME exact location in all twelve poses, slight small hand/weapon adjustments and gentle cloak flutter. No whole body bobbing or breathing scaling; first and last pose closely match. Ground contact aligns in all cells. Paper tooth inside drawing only. Genuine TRANSPARENT RGBA background, alpha zero outside drawn figures and short effects. NO paper rectangle, no painted floor or shadow platform, no captions, numbers, cell dividers, grid lines, text, no other heroes. Keep recognizable face/outfit and weapons unchanged throughout.",
+  "references": [
+    "assets/heroes/identity/sketchbook.png",
+    "assets/heroes/identity/portraits/mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "transparent_background": true,
+  "status": "generated"
+}

@@ -1,10 +1,9 @@
 extends RefCounted
 # Read-only deck gallery. Upgrade selection remains in card_upgrade_screen.gd.
-static func build(ui: Control, back: Callable) -> void:
+static func build(ui: Control) -> void:
 	preload("res://src/ui/components/inventory_background.gd").build(ui)
 	ui.panel(0, 0, 1280, 84)
-	ui.label_at("El mazo compartido", 36, 18, 920, 48, 30, ui.TEXT)
-	ui.button("Volver", 1020, 22, 224, 40, back).name = "BackFromDeck"
+	ui.label_at("El mazo compartido", 100, 18, 920, 48, 30, ui.TEXT)
 	var battle = ui.game.run.combat
 	var detail = "Total: %d cartas" % ui.game.run.deck.size()
 	if ui.game.run.phase == "combat":

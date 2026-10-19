@@ -1,0 +1,27 @@
+{
+  "id": "rogue_idle",
+  "kind": "hero_sheet",
+  "prompt": "Production animation sprite sheet for Eterno Retorno. Reference image is identity reference only: preserve this exact character and outfit, remove all opaque backdrop tiles. Mauro, dark messy-haired male pharmacist with fully visible unmasked face, teal rolled-sleeve jacket, burgundy medical satchel and small chemical flasks at belt, dark pants and boots, two short utility knives in his hands. ORIGINAL AMERICAN ACTION COMIC: crisp confident dark ink contours, vibrant flat colors, hard cel shadows, sparse halftone. NOT pixel art, NOT 3D, NO medieval armor. Create ONE complete idle combat guard loop, 12 genuinely distinct sequential hand-drawn in-between poses, exactly 4 columns by 3 rows, row-major left-to-right chronology. All twelve complete full-body characters FACE RIGHT with identical proportions, same camera distance, same planted boot locations on a shared baseline WITHIN each cell. Feet NEVER take a step. Animate a gentle realistic slow inhale/exhale, shoulders and elbows easing, hands subtly readjusting their weapon grip, knees slightly flexing, strands of hair and loose clothing moving with delayed follow-through. Avoid exaggerated bobbing, rubber body scaling, or large gestures. Frame1 calm ready, frames2-6 slowly inhale/raise hands a few pixels, frames7-12 slowly exhale and settle back into frame1 for a seamless loop. Twelve equally sized well-separated cells, generous transparent gutters, every head, boot and weapon tip fully inside its cell. Uniform scale in all cells. NO text, NO cell borders, NO cast shadow, NO backdrops or rectangular colored tiles. TRUE fully transparent RGBA background throughout all gutters and behind each individual character. Landscape sheet 4:3, high detail readable around 256 px per pose.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/heroes/detail/rogue_idle.png",
+      "dimensions": [
+        1024,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "rogue",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/rogue_idle.png",
+  "action": "idle",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-fe058a58-2e43-4a30-98b8-482e237435e8.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_rogue.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

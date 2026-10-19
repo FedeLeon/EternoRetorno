@@ -79,6 +79,11 @@ func buy_forge_upgrade(hero: String, track: String, expected_level: int) -> bool
 	checkpoint()
 	return true
 
+func smelt_forge(batches: int) -> bool:
+	if not Forge.Materials.smelt(profile, batches): return false
+	checkpoint()
+	return true
+
 func build_market() -> bool:
 	if not Progression.build(profile): return false
 	checkpoint()
@@ -96,8 +101,8 @@ func checkpoint() -> void:
 	if save_enabled and not store.write(profile, run):
 		message = store.last_error
 
-func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1) -> bool:
-	var accepted: bool = preload("res://src/rules/run_lifecycle.gd").start(self, party, seed_value, equipment, starting_floor)
+func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1, pet: String = "") -> bool:
+	var accepted: bool = preload("res://src/rules/run_lifecycle.gd").start(self, party, seed_value, equipment, starting_floor, pet)
 	if accepted: checkpoint()
 	return accepted
 

@@ -35,6 +35,22 @@ func run_tests():
 	app.screen="deck";app.return_screen="room";app.upgrade_mode=true;app.render();await process_frame
 	var upgrade=app.layer.get_node("CardUpgradeScreen");upgrade.select(0);upgrade.choose_branch(1)
 	check(upgrade.variant=="efficient" and not upgrade.confirm.disabled,"upgrade branch preview choice")
+	var deck_before = app.game.run.deck.duplicate(true)
+	var choices = preload("res://src/rules/card_upgrades.gd")
+	for i in range(upgrade.cards.size()):
+		if upgrade.cards[i].upgraded: continue
+		upgrade.select(i)
+		var expected = choices.choices(app.game.content.cards[upgrade.cards[i].id])[1].id
+		check(upgrade.variant == expected and upgrade.branches[1].disabled, "alternate upgrade stays selected across cards " + str(i))
+	upgrade.choose_branch(0)
+	for i in range(upgrade.cards.size()):
+		if upgrade.cards[i].upgraded: continue
+		upgrade.select(i)
+		check(upgrade.variant == "power" and upgrade.branches[0].disabled, "manual power choice stays selected across cards " + str(i))
+	check(app.game.run.deck == deck_before, "changing upgrade previews does not mutate the deck")
+	upgrade.select(0)
+	upgrade.choose_branch(1)
+
 	await capture("upgrade-choice")
 	app.game._finish(false);app.open_collection();await process_frame
 	var gallery=app.layer.get_node("CollectionScreen");gallery.show_tab(2);await process_frame

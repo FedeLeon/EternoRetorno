@@ -1,0 +1,17 @@
+{
+  "id": "frame_warrior",
+  "kind": "frame",
+  "target": "assets/cards/frames/warrior.png",
+  "source": "art_sources/cards/pixel_retain/sources/frame_warrior.png",
+  "prompt": "Use case: ui-mockup. Create ONE production game card FRONT template, flat orthographic, tall 2:3 rectangle filling canvas edge to edge, no perspective, transparent outside corners only. Reference image: match the attached Eterno Retorno concept sheet's detailed crisp PIXEL ART worn metal and parchment physical tabletop cards. Adapt to postapocalyptic civilian Nicolas the carpenter: violet worn steel, subtle saw-tooth corner fittings, screws, scratched metal, tiny copper repairs. Layout STRICT normalized: title blank cream parchment banner x.10-.78 y.065-.16; EMPTY circular cost socket centered(.89,.10) radius .07width; dark EMPTY rectangular illustration window x.10-.90 y.19-.58; narrow EMPTY dark category ribbon x.16-.84 y.59-.65; large CLEAN pale parchment description x.10-.90 y.66-.91; small bottom metal emblem shaped like saw blade y.94. Refined handmade pixel clusters, strong dark outlines, crisp highlights, layered corners, limited colors, readable at small size. NO letters NO numbers NO words NO illustration in window. This is a usable full standalone frame, not a sheet, no surrounding margin.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-cb8435fb-858b-4cba-a69d-3f0af83f7b12.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "reference": "user attached concept sheet",
+  "visual_style": "pixel_metal_parchment",
+  "measured_dimensions": [
+    1024,
+    1536
+  ],
+  "source_sha256": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+}

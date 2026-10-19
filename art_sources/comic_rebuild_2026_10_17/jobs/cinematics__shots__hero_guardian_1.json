@@ -1,0 +1,23 @@
+{
+  "id": "cinematics__shots__hero_guardian_1",
+  "kind": "direct",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Ines,35,strong auburn-haired woman with practical long braid, construction worker. Orange-brown reinforced construction jacket with violet neck scarf, dusty gray work trousers, scuffed safety boots, work gloves, chalk and wrench in belt. NO knight armor. Holds an improvised rectangular shield made of a dented street-sign panel with riveted wood backing, and a short crowbar. Everyday civilian worker, protective fierce expression. ONE single cinematic shot: Ines marks a weak concrete support with chalk while a neighbor holds a work light; repaired homes and shared practical work, no battle. Wide16:9 composition, strong dramatic comic staging, quiet lower25percent for subtitles. One clear main panel, small sequential inset details only at extreme margins, no words or UI.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. BACKGROUND COMIC PAGE TREATMENT: thin ivory paper gutter and imperfect thick black vignette boundary at outermost 1 percent edge; subtle halftone blocks and angular secondary panel corner slivers confined to far corners. Keep the center and UI/character zones completely clear; no letters, no speech text, no captions baked in. Preserve specified flat arena ground and all usable empty space. Backgrounds stay ominous and dark so bright characters pop.",
+  "targets": [
+    {
+      "path": "assets/cinematics/shots/hero_guardian_1.png",
+      "dimensions": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": "guardian",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/cinematics__shots__hero_guardian_1.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-094c1323-d323-46e3-9ad5-ea363a284d05.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/heroes/identity/postapocalyptic/guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

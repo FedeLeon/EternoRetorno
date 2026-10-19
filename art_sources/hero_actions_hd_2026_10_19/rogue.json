@@ -1,0 +1,129 @@
+{
+  "hero": "rogue",
+  "source": "art_sources/hero_actions_hd_2026_10_19/sources/rogue.png",
+  "source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-5576b3a1-feeb-4b76-9d50-6ffe064f4528.png",
+  "prompt": "Create one production game sprite pose sheet for Eterno Retorno. Use the attached local image as the visual identity reference ONLY: same person, face, hair, clothing palette, improvised weapon and American comic drawing style. Crisp expressive black ink, clean cel-shaded flat colors, modest material detail, thin ivory-white cutout outline around the whole figure and tools, genuine transparent alpha background. NOT pixel art, NOT blurry, NOT low-res, NOT pencil sketch. Six separate FULL BODY static illustrations in an exact regular 3 columns x 2 rows grid, landscape 1536x1024 or larger (prefer 3072x2048). Each cell is square and isolated, generous clear transparent gutters and outer padding; nothing overlaps another cell or crosses its boundaries. Same anatomical scale and head size across ALL six poses; full boots and tools visible with no cropping. All face toward the right. No scenery, no ground shadow, no captions, no text, no frames, no spark/light effects (those run separately in the game). Cell order reading left to right: TOP LEFT = strong attack contact pose using the tool/weapon; TOP MIDDLE = guarded defensive stance protecting face and torso using existing equipment; TOP RIGHT = tactical support/skill gesture with existing equipment; BOTTOM LEFT = recoil from being hit while keeping both feet on the ground; BOTTOM MIDDLE = defeated slumped seated/kneeling pose with lowered head and tool, same head size, NOT flat prone and NOT gore; BOTTOM RIGHT = neutral upright combat-ready reference pose for scale comparison, near the input idle stance. These are six action stills, NOT a sprite animation sequence.\nCharacter: Ciro the civilian apothecary: slim adult man, tousled dark-brown hair, fully visible unmasked face, worn teal rolled-sleeve work jacket with red medical patch, black shirt, charcoal trousers, brown work boots and burgundy cross-body satchel, small green medicine vials on belt. He holds two short improvised utility/medical blades with brown grips, one in each hand. Attack is a low forward right-hand utility-blade thrust with left blade held defensively; guard crosses the two blades at chest level in a crouch; skill holds a small green vial near the right blade while preparing its coating. Complete both boots (input crops below shins), normal anatomy. No hood, mask, cloak or fantasy armor.",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "actions": [
+    "attack",
+    "guard",
+    "skill",
+    "hurt",
+    "death",
+    "scale_reference"
+  ],
+  "parts": [
+    {
+      "seed": [
+        356,
+        277
+      ],
+      "bounds": [
+        33,
+        46,
+        648,
+        464
+      ],
+      "pixels": 99722,
+      "center": [
+        356.5,
+        277.5
+      ]
+    },
+    {
+      "seed": [
+        839,
+        287
+      ],
+      "bounds": [
+        623,
+        65,
+        433,
+        445
+      ],
+      "pixels": 79188,
+      "center": [
+        839.0,
+        287.0
+      ]
+    },
+    {
+      "seed": [
+        1292,
+        267
+      ],
+      "bounds": [
+        1117,
+        15,
+        352,
+        505
+      ],
+      "pixels": 82919,
+      "center": [
+        1292.5,
+        267.0
+      ]
+    },
+    {
+      "seed": [
+        266,
+        748
+      ],
+      "bounds": [
+        26,
+        523,
+        482,
+        451
+      ],
+      "pixels": 92944,
+      "center": [
+        266.5,
+        748.0
+      ]
+    },
+    {
+      "seed": [
+        819,
+        811
+      ],
+      "bounds": [
+        660,
+        652,
+        319,
+        319
+      ],
+      "pixels": 65043,
+      "center": [
+        819.0,
+        811.0
+      ]
+    },
+    {
+      "seed": [
+        1290,
+        746
+      ],
+      "bounds": [
+        1120,
+        501,
+        341,
+        491
+      ],
+      "pixels": 81891,
+      "center": [
+        1290.0,
+        746.0
+      ]
+    }
+  ],
+  "reference": "assets/combat_static/heroes/rogue/idle.png",
+  "reference_sha256": "131f934e704051e72ad6cba978d5353ab42fb7810569c6a5fa55cfdde8bb9af1",
+  "processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
+  "outline_baked": true
+}

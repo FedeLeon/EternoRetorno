@@ -1,7 +1,8 @@
 extends SceneTree
 ## Rasterize native vector symbols while preserving all PNG resource paths.
+const Retired = preload("res://scripts/resource_retirements.gd")
 func _initialize() -> void:
-	var base = "res://docs/art_direction/postapocalyptic/"
+	var base = "res://art_sources/art_direction/postapocalyptic/"
 	var records: Array = JSON.parse_string(FileAccess.get_file_as_string(base+"vectors.json"))
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(base+"assets.json")) if FileAccess.file_exists(base+"assets.json") else {}
 	var imported = 0
@@ -10,6 +11,7 @@ func _initialize() -> void:
 	var hud_icons_only = "--hud-icons-only" in OS.get_cmdline_user_args()
 	var collection_only = "--collection-only" in OS.get_cmdline_user_args()
 	for record in records:
+		if Retired.contains(record.target): continue
 		if frames_only and record.symbol != "card frame": continue
 		if map_icons_only and (not record.target.begins_with("assets/map/minimal/") or record.symbol == "route blueprint"): continue
 		if hud_icons_only and record.target != "assets/dungeon/bag.png": continue
@@ -31,7 +33,7 @@ func _initialize() -> void:
 		if frames_only or map_icons_only or hud_icons_only or collection_only: continue
 		manifest[path] = {"sha256":FileAccess.get_sha256("res://"+path),"style":"postapocalyptic_comic","tool":"native SVG"}
 	if not frames_only and not map_icons_only and not hud_icons_only:
-		for path in ["ui/achievements.svg", "ui/unlocks.svg", "ui/history.svg", "ui/hourglass.svg", "ui/victory.svg", "ui/return.svg"]:
+		for path in ["ui/achievements.svg", "ui/history.svg", "ui/victory.svg", "ui/return.svg"]:
 			var target = "assets/collection/" + path
 			manifest[target] = {"sha256": FileAccess.get_sha256("res://" + target), "style": "postapocalyptic_comic", "tool": "native SVG", "source": "scripts/collection_icons.py", "source_sha256": FileAccess.get_sha256("res://scripts/collection_icons.py")}
 	FileAccess.open(base+"assets.json",FileAccess.WRITE).store_string(JSON.stringify(manifest,"\t")+"\n")

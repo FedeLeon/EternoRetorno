@@ -1,0 +1,24 @@
+{
+  "id": "church__mage_focus",
+  "target": "assets/church/mage_focus.png",
+  "kind": "specialization",
+  "hero": "mage",
+  "dimensions": [
+    480,
+    320
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/postapocalyptic/sources/church__mage_focus.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Protagonist design MUST match the reference exactly: Vera,27,young woman with silver-gray short tousled bob, teacher, graphite-smudged fingers, pencil behind ear. Aubergine civilian long coat with teal lining over cream ordinary shirt and worn gray trousers, scuffed boots, notebook and reused school satchel. Holds a homemade electromagnetic pulse device built from an old antenna, exposed cables and a salvaged battery, with small cyan arcs; NO magic staff, NO robes, NO plate armor. Curious determined civilian, not military. ONE readable comic specialization card illustration: mage focus. Show the civilian reference hero using professional equipment in a small industrial workshop context. No fantasy armor/magic. Same hero identity, one action, no text/UI/frame. Landscape3:2.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1ab158fe-19ba-479d-b3bd-13935a5bd2c5.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/identity_mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "9ace0f17cf593f8f4028e43c562ac0b32e5f07ace371f526f95bfe17d6e39bc3",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

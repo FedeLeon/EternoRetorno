@@ -32,5 +32,8 @@ static func frame_screen(ui: Control) -> void:
 	panel.name = "ComicPageMargin"
 	panel.z_index = 8
 	panel.floor_number = int(ui.game.run.get("floor",1))
-	var top = 0 if ui.screen in ["home","cinematics","paths"] else 64
+	var top = 0 if ui.screen in ["home","cinematics","paths"] or ui.layer.has_node("EncounterScreen") else 64
+	for header_name in ["PreparationHeader", "MarketHeader"]:
+		var header = ui.layer.get_node_or_null(header_name)
+		if header != null: top = roundi(header.get_rect().end.y)
 	ui.rect(panel,0,top,1280,720-top)

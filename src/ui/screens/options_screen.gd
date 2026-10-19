@@ -45,4 +45,3 @@ static func build(ui: Control) -> void:
 	force.select(0 if float(settings.get("impact_strength",0.65))==0 else 2 if float(settings.get("impact_strength",0.65))>=1 else 1)
 	ui.rect(force,680,562,390,34);force.item_selected.connect(func(index):ui.set_option("impact_strength",[0.0,0.65,1.0][index]))
 	ui.button("Cómo jugar",905,105,172,38,func(): preload("res://src/ui/tutorial_navigation.gd").open(ui)).add_theme_font_size_override("font_size",17)
-	ui.button("Volver",350,602,580,48,func(): ui.screen = "home"; ui.render())

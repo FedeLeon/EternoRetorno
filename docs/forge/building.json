@@ -1,7 +1,0 @@
-{
-  "tool": "image_gen built-in",
-  "prompt": "Use case: stylized-concept. Game asset for Eterno Retorno. Create a standalone medieval fantasy blacksmith workshop building for the supplied camp background (style reference only). Transparent background genuine alpha. Three-quarter elevated view, matching the camp ground perspective, whole building contained with generous transparent margin. Timber and grey stone, weathered dark slate roof, brick chimney, warm orange lit forge opening, small anvil and hammer rack under an awning. No people, no text, no terrain rectangle. Detailed dark fantasy pixel art consistent with reference, not a cartoon. It will occupy the lower-left empty plot in camp; clear silhouette at 320 pixels wide.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-f00ef434-dec1-4f1c-8f87-78ee963311ec.png",
-  "asset": "assets/forge/building.png",
-  "reference": "assets/base_camp/background.png"
-}

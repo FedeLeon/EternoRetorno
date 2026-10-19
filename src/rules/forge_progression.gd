@@ -1,5 +1,6 @@
 extends RefCounted
 # Permanent purchases. No UI, animation or file writes.
+const Materials = preload("res://src/rules/forge_materials.gd")
 const HEROES = ["warrior", "guardian", "rogue", "mage"]
 const TRACKS = ["weapon", "armor"]
 
@@ -7,10 +8,11 @@ static func config() -> Dictionary:
 	return preload("res://src/data/json_catalog.gd").dictionary("res://data/forge.json")
 
 static func migrate(profile: Dictionary) -> bool:
-	if profile.has("forge_upgrades"):
-		return false
-	profile.forge_upgrades = {}
-	return true
+	var changed = Materials.migrate(profile)
+	if not profile.has("forge_upgrades"):
+		profile.forge_upgrades = {}
+		changed = true
+	return changed
 
 static func levels(profile: Dictionary, hero: String) -> Dictionary:
 	var saved = profile.get("forge_upgrades", {}).get(hero, {})
@@ -31,10 +33,8 @@ static func buy(profile: Dictionary, hero: String, track: String, expected_level
 	var level = int(current[track])
 	if level >= 3 or expected_level != level + 1:
 		return false
-	var cost = int(config().prices[level])
-	if profile.souls < cost:
-		return false
-	profile.souls -= cost
+	var cost = int(config().alloy_prices[level])
+	if not Materials.spend(profile, cost): return false
 	current[track] = level + 1
 	profile.forge_upgrades[hero] = current
 	return true

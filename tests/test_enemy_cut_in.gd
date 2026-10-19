@@ -34,7 +34,8 @@ func run_tests() -> void:
 			var tip = origin + Vector2.from_angle(direction * TAU / 16.0) * reach * 0.85
 			check(not Rect2(Vector2.ZERO, host.size).has_point(tip), "enemy ray reaches beyond viewport %s/%d" % [visual,direction])
 		check(preload("res://src/presentation/comic_outline.gd").is_baked(effect.picture.texture) or effect.picture.material is ShaderMaterial, "thin silhouette border " + visual)
-		check(is_equal_approx(effect.picture.position.x + effect.picture.size.x, host.size.x * 0.985), "right anchor " + visual)
+		check(effect.picture.position.x > host.size.x*.4 and effect.picture.position.y >= 355 and is_equal_approx(effect.picture.position.x+effect.picture.size.x,host.size.x*1.025) and is_equal_approx(effect.picture.position.y+effect.picture.size.y,host.size.y*1.15), "lower-right framing clears battle actors " + visual)
+		check(effect.picture.size.y < host.size.y*.66 and effect.impact_panel.position==effect.picture.position,"smaller enemy and local comic frame " + visual)
 		check(effect.picture.texture.get_image().detect_alpha() != Image.ALPHA_NONE, "transparent " + visual)
 		if catalog[visual].get("foreground_frames",1) == 4:
 			check(effect.frame_grid == Vector2i(2,2) and effect.frame_index == 2, "one contact pose from legacy sheet " + visual)

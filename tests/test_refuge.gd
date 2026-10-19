@@ -70,7 +70,7 @@ func run_tests() -> void:
 		check(view.attacks == 4 and not view.body.get_node("SaveStarter").disabled, "reset previews original")
 		await click(view.body.get_node("SaveStarter"))
 		check(app.game.profile.starter_attacks[hero] == 4, "reset persists on confirm")
-		await click(view.body.get_node("RefugeBack"))
+		await click(app.layer.get_node("HeaderBack"))
 		check(view.selected == "", "back to hero cards")
 	app.back()
 	check(app.screen == "base_camp", "return to camp")

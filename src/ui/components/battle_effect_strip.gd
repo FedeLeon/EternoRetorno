@@ -28,9 +28,9 @@ func _ready() -> void:
 		button.size = Vector2(cell, cell)
 		for state in ["normal", "hover", "pressed"]:
 			var style = StyleBoxFlat.new()
-			style.bg_color = Color(0.025, 0.022, 0.035, 0.85 if state == "normal" else 0.98)
+			style.bg_color = Color(0.025, 0.022, 0.035, 0.0 if state == "normal" else 0.8)
 			style.set_corner_radius_all(1)
-			style.set_border_width_all(1)
+			style.set_border_width_all(0)
 			style.border_color = Color(0.94,0.91,0.85,0.55)
 			if state != "normal":
 				style.set_border_width_all(1); style.border_color = Color("bba06e")

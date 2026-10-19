@@ -1,7 +1,0 @@
-{
-  "tool": "image_gen built-in",
-  "prompt": "Use case: stylized-concept. Asset: full screen 16:9 game background, interior of a medieval fantasy blacksmith shop in Eterno Retorno, detailed pixel art matching supplied camp style. Warm glowing stone forge on LEFT, a sturdy adult bearded blacksmith with leather apron hammering metal on an anvil in the left third; hanging tongs, swords, plate armour, wooden beams, soot, amber sparks. Right half is a darker uncluttered wooden/stone wall, reserved for legible game UI drawn separately. Full-bleed room, no frame, no lettering, no menu, no logos. Dark fantasy but inviting camp workshop. Camera sees the blacksmith full upper body and workbench. Wide landscape.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-6fe720df-7f80-4400-b32c-c1efde1a1720.png",
-  "asset": "assets/forge/interior.png",
-  "reference": "assets/base_camp/background.png"
-}

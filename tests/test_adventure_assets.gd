@@ -21,15 +21,12 @@ func run_tests():
 		seen.append(visual)
 		app.game._start_combat([id]); app.continue_run(); await process_frame
 		var actor = app.enemy_art[0]
-		check(actor.has_motion_frames, "animated actor " + id)
-		var image = actor.sprite.texture.get_image()
-		var unique: Dictionary = {}
-		for frame in range(8): unique[image.get_region(Rect2i(frame*image.get_height(),0,image.get_height(),image.get_height())).get_data().hex_encode().sha256_text()] = true
-		check(unique.size() == (8 if id == "volcano_boss" else 4), "authored keyposes match revision " + id)
-		actor.play_once("attack"); await create_timer(0.17).timeout
-		check(actor.acting and actor.sprite.frame >= 4,"drawn attack " + id)
+		check(actor.sprite is TextureRect, "animated actor " + id)
+		check(actor.poses.size()==6,"six static action assets "+id)
+		actor.play_once("attack")
+		check(actor.acting and actor.current_action == "attack","drawn attack " + id)
 		await create_timer(0.65).timeout
-		check(not actor.acting and actor.sprite.frame < 4,"idle restored " + id)
+		check(not actor.acting and actor.current_action == "idle","idle restored " + id)
 		var cut = preload("res://src/presentation/enemy_cut_in.gd").play(app.layer,visual)
 		check(cut != null and cut.from_right,"right to left " + id)
 		var art = cut.picture.texture.get_image()

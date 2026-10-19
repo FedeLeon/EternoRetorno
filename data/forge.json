@@ -1,10 +1,16 @@
 {
   "build_cost": 400,
-  "prices": [
-    150,
-    300,
-    600
-  ],
   "strength_per_level": 1,
-  "block_per_level": 2
+  "block_per_level": 2,
+  "alloy_prices": [
+    3,
+    6,
+    10
+  ],
+  "smelt_scrap_per_alloy": 3,
+  "scrap_drop_min": 1,
+  "scrap_drop_max": 3,
+  "scrap_floor_bonus": 1,
+  "scrap_elite_bonus": 2,
+  "scrap_boss_bonus": 5
 }

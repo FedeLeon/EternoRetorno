@@ -1,0 +1,4295 @@
+{
+  "jobs": [
+    {
+      "id": "warrior_idle_refined",
+      "kind": "idle_refinement",
+      "hero": "warrior",
+      "target": null,
+      "transparent": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "art_sources/art_direction/migration/sources/heroes/warrior_idle.png"
+    },
+    {
+      "id": "guardian_idle_refined",
+      "kind": "idle_refinement",
+      "hero": "guardian",
+      "target": null,
+      "transparent": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "art_sources/art_direction/migration/sources/heroes/guardian_idle.png"
+    },
+    {
+      "id": "rogue_idle_refined",
+      "kind": "idle_refinement",
+      "hero": "rogue",
+      "target": null,
+      "transparent": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "art_sources/art_direction/migration/sources/heroes/rogue_idle.png"
+    },
+    {
+      "id": "mage_idle_refined",
+      "kind": "idle_refinement",
+      "hero": "mage",
+      "target": null,
+      "transparent": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "art_sources/art_direction/migration/sources/heroes/mage_idle.png"
+    },
+    {
+      "id": "battle_effects__ambush",
+      "target": "assets/battle_effects/ambush.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__ambush.png"
+    },
+    {
+      "id": "battle_effects__armor_plates",
+      "target": "assets/battle_effects/armor_plates.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__armor_plates.png"
+    },
+    {
+      "id": "battle_effects__attack",
+      "target": "assets/battle_effects/attack.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__attack.png"
+    },
+    {
+      "id": "battle_effects__beast_command",
+      "target": "assets/battle_effects/beast_command.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__beast_command.png"
+    },
+    {
+      "id": "battle_effects__bond_focus",
+      "target": "assets/battle_effects/bond_focus.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__bond_focus.png"
+    },
+    {
+      "id": "battle_effects__bulwark",
+      "target": "assets/battle_effects/bulwark.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__bulwark.png"
+    },
+    {
+      "id": "battle_effects__charged_strike",
+      "target": "assets/battle_effects/charged_strike.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__charged_strike.png"
+    },
+    {
+      "id": "battle_effects__counter",
+      "target": "assets/battle_effects/counter.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__counter.png"
+    },
+    {
+      "id": "battle_effects__curse_blood",
+      "target": "assets/battle_effects/curse_blood.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_blood.png"
+    },
+    {
+      "id": "battle_effects__curse_burden",
+      "target": "assets/battle_effects/curse_burden.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_burden.png"
+    },
+    {
+      "id": "battle_effects__curse_scar",
+      "target": "assets/battle_effects/curse_scar.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_scar.png"
+    },
+    {
+      "id": "battle_effects__embers",
+      "target": "assets/battle_effects/embers.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__embers.png"
+    },
+    {
+      "id": "battle_effects__enraged",
+      "target": "assets/battle_effects/enraged.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__enraged.png"
+    },
+    {
+      "id": "battle_effects__fracture",
+      "target": "assets/battle_effects/fracture.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__fracture.png"
+    },
+    {
+      "id": "battle_effects__frenzy",
+      "target": "assets/battle_effects/frenzy.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__frenzy.png"
+    },
+    {
+      "id": "battle_effects__grief",
+      "target": "assets/battle_effects/grief.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__grief.png"
+    },
+    {
+      "id": "battle_effects__guard",
+      "target": "assets/battle_effects/guard.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__guard.png"
+    },
+    {
+      "id": "battle_effects__healer",
+      "target": "assets/battle_effects/healer.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__healer.png"
+    },
+    {
+      "id": "battle_effects__imprisonment",
+      "target": "assets/battle_effects/imprisonment.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__imprisonment.png"
+    },
+    {
+      "id": "battle_effects__magic_boost",
+      "target": "assets/battle_effects/magic_boost.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__magic_boost.png"
+    },
+    {
+      "id": "battle_effects__poison",
+      "target": "assets/battle_effects/poison.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__poison.png"
+    },
+    {
+      "id": "battle_effects__prepared",
+      "target": "assets/battle_effects/prepared.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__prepared.png"
+    },
+    {
+      "id": "battle_effects__protector",
+      "target": "assets/battle_effects/protector.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__protector.png"
+    },
+    {
+      "id": "battle_effects__rear_guard",
+      "target": "assets/battle_effects/rear_guard.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__rear_guard.png"
+    },
+    {
+      "id": "battle_effects__resurrection",
+      "target": "assets/battle_effects/resurrection.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__resurrection.png"
+    },
+    {
+      "id": "battle_effects__roots",
+      "target": "assets/battle_effects/roots.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__roots.png"
+    },
+    {
+      "id": "battle_effects__set_block",
+      "target": "assets/battle_effects/set_block.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_block.png"
+    },
+    {
+      "id": "battle_effects__set_heal",
+      "target": "assets/battle_effects/set_heal.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_heal.png"
+    },
+    {
+      "id": "battle_effects__set_multi",
+      "target": "assets/battle_effects/set_multi.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_multi.png"
+    },
+    {
+      "id": "battle_effects__set_poison",
+      "target": "assets/battle_effects/set_poison.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_poison.png"
+    },
+    {
+      "id": "battle_effects__source",
+      "target": "assets/battle_effects/source.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__source.png"
+    },
+    {
+      "id": "battle_effects__strength",
+      "target": "assets/battle_effects/strength.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__strength.png"
+    },
+    {
+      "id": "battle_effects__tainted",
+      "target": "assets/battle_effects/tainted.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__tainted.png"
+    },
+    {
+      "id": "battle_effects__vampiric",
+      "target": "assets/battle_effects/vampiric.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__vampiric.png"
+    },
+    {
+      "id": "battle_effects__weakness",
+      "target": "assets/battle_effects/weakness.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__weakness.png"
+    },
+    {
+      "id": "battle_effects__weapon_boost",
+      "target": "assets/battle_effects/weapon_boost.png",
+      "family": "battle_effects",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/battle_effects__weapon_boost.png"
+    },
+    {
+      "id": "camp__background",
+      "target": "assets/camp/background.png",
+      "family": "camp",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/camp__background.png"
+    },
+    {
+      "id": "cards__frames__guardian",
+      "target": "assets/cards/frames/guardian.png",
+      "family": "cards/frames",
+      "kind": "frame",
+      "hero": "guardian",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/frame/cards__frames__guardian.png"
+    },
+    {
+      "id": "cards__frames__mage",
+      "target": "assets/cards/frames/mage.png",
+      "family": "cards/frames",
+      "kind": "frame",
+      "hero": "mage",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/frame/cards__frames__mage.png"
+    },
+    {
+      "id": "cards__frames__rogue",
+      "target": "assets/cards/frames/rogue.png",
+      "family": "cards/frames",
+      "kind": "frame",
+      "hero": "rogue",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/frame/cards__frames__rogue.png"
+    },
+    {
+      "id": "cards__frames__warrior",
+      "target": "assets/cards/frames/warrior.png",
+      "family": "cards/frames",
+      "kind": "frame",
+      "hero": "warrior",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/frame/cards__frames__warrior.png"
+    },
+    {
+      "id": "church__guardian_protector",
+      "target": "assets/church/guardian_protector.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "guardian",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__guardian_protector.png"
+    },
+    {
+      "id": "church__guardian_retaliator",
+      "target": "assets/church/guardian_retaliator.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "guardian",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__guardian_retaliator.png"
+    },
+    {
+      "id": "church__mage_focus",
+      "target": "assets/church/mage_focus.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "mage",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__mage_focus.png"
+    },
+    {
+      "id": "church__mage_tempest",
+      "target": "assets/church/mage_tempest.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "mage",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__mage_tempest.png"
+    },
+    {
+      "id": "church__rogue_assassin",
+      "target": "assets/church/rogue_assassin.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "rogue",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__rogue_assassin.png"
+    },
+    {
+      "id": "church__rogue_venom",
+      "target": "assets/church/rogue_venom.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "rogue",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__rogue_venom.png"
+    },
+    {
+      "id": "church__warrior_executioner",
+      "target": "assets/church/warrior_executioner.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "warrior",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__warrior_executioner.png"
+    },
+    {
+      "id": "church__warrior_whirlwind",
+      "target": "assets/church/warrior_whirlwind.png",
+      "family": "church",
+      "kind": "specialization",
+      "hero": "warrior",
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/specialization/church__warrior_whirlwind.png"
+    },
+    {
+      "id": "cinematics__crypt",
+      "target": "assets/cinematics/crypt.png",
+      "family": "cinematics",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/cinematics__crypt.png"
+    },
+    {
+      "id": "cinematics__forest",
+      "target": "assets/cinematics/forest.png",
+      "family": "cinematics",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/cinematics__forest.png"
+    },
+    {
+      "id": "cinematics__intro",
+      "target": "assets/cinematics/intro.png",
+      "family": "cinematics",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/cinematics__intro.png"
+    },
+    {
+      "id": "cinematics__shots__boss_1_0",
+      "target": "assets/cinematics/shots/boss_1_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_0.png",
+      "narrative": {
+        "title": "Los ecos se apagan",
+        "text": "La fuente se quiebra. Por primera vez, los huesos de la cripta dejan de responder al llamado."
+      }
+    },
+    {
+      "id": "cinematics__shots__boss_1_1",
+      "target": "assets/cinematics/shots/boss_1_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_1.png",
+      "narrative": {
+        "title": "El camino continúa",
+        "text": "Más allá de la puerta, el bosque respira. La victoria es un paso, no el final del camino."
+      }
+    },
+    {
+      "id": "cinematics__shots__boss_2_0",
+      "target": "assets/cinematics/shots/boss_2_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_2_0.png",
+      "narrative": {
+        "title": "La raíz se libera",
+        "text": "El guardián cae y las raíces aflojan su prisión. La luz alcanza un suelo que llevaba siglos esperando."
+      }
+    },
+    {
+      "id": "cinematics__shots__boss_2_1",
+      "target": "assets/cinematics/shots/boss_2_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_2_1.png",
+      "narrative": {
+        "title": "El camino continúa",
+        "text": "En el horizonte arde la fortaleza. Allí duerme el último fuego de este retorno."
+      }
+    },
+    {
+      "id": "cinematics__shots__boss_3_0",
+      "target": "assets/cinematics/shots/boss_3_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_3_0.png",
+      "narrative": {
+        "title": "Después del último fuego",
+        "text": "Las alas del guardián dejan de oscurecer el cielo. Entre las cenizas, la fortaleza guarda silencio."
+      }
+    },
+    {
+      "id": "cinematics__shots__boss_3_1",
+      "target": "assets/cinematics/shots/boss_3_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_3_1.png",
+      "narrative": {
+        "title": "Un lugar al que volver",
+        "text": "El campamento sigue allí. Dos sombras vuelven a la fogata, llevando una historia que el olvido no podrá borrar."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_guardian_0",
+      "target": "assets/cinematics/shots/hero_guardian_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "guardian",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_guardian_0.png",
+      "narrative": {
+        "title": "Inés · Albañila",
+        "text": "Su primer escudo fue una tabla contra una puerta. La sostuvo mientras los vecinos salían. En el siguiente retorno volvió a intentarlo."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_guardian_1",
+      "target": "assets/cinematics/shots/hero_guardian_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "guardian",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_guardian_1.png",
+      "narrative": {
+        "title": "Un lugar seguro",
+        "text": "En el campamento refuerza refugios y revisa el pozo. En la batalla aprende a confiar: no puede sostener todas las puertas sola."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_mage_0",
+      "target": "assets/cinematics/shots/hero_mage_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "mage",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_mage_0.png",
+      "narrative": {
+        "title": "Vera · Maestra",
+        "text": "Copiaba cartas y daba clase en una habitación prestada. Empezó a estudiar las marcas que reaparecían después del retorno."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_mage_1",
+      "target": "assets/cinematics/shots/hero_mage_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "mage",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_mage_1.png",
+      "narrative": {
+        "title": "Aprender probando",
+        "text": "Su primera chispa quemó una mesa. Guarda esa hoja entre sus notas: le recuerda que saber cómo hacerlo no es lo mismo que hacerlo bien."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_rogue_0",
+      "target": "assets/cinematics/shots/hero_rogue_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "rogue",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_rogue_0.png",
+      "narrative": {
+        "title": "Mauro · Boticario",
+        "text": "Salió a buscar plantas cuando faltaron remedios. Llevaba un cuchillo de cortar raíces y una lista de ingredientes."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_rogue_1",
+      "target": "assets/cinematics/shots/hero_rogue_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "rogue",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_rogue_1.png",
+      "narrative": {
+        "title": "La medida justa",
+        "text": "Aprendió a frenar una persecución con venenos. Todavía cuenta gotas cuando se pone nervioso y sueña con una botica que solo prepare remedios."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_warrior_0",
+      "target": "assets/cinematics/shots/hero_warrior_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "warrior",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_warrior_0.png",
+      "narrative": {
+        "title": "Nicolás · Carpintero",
+        "text": "Hacía muebles y reparaba carros. Se ofreció a buscar la caravana porque sabía arreglar una rueda, no porque supiera combatir."
+      }
+    },
+    {
+      "id": "cinematics__shots__hero_warrior_1",
+      "target": "assets/cinematics/shots/hero_warrior_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": "warrior",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_warrior_1.png",
+      "narrative": {
+        "title": "El peso que carga",
+        "text": "Ahora lleva una espada y sigue guardando clavos doblados. Quiere terminar un carro que pueda sacar a las familias del campamento."
+      }
+    },
+    {
+      "id": "cinematics__shots__intro_0",
+      "target": "assets/cinematics/shots/intro_0.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_0.png",
+      "narrative": {
+        "title": "El día repetido",
+        "text": "La ruta de provisiones vuelve a cerrarse cada mañana. Los soldados que fueron a abrirla no regresaron."
+      }
+    },
+    {
+      "id": "cinematics__shots__intro_1",
+      "target": "assets/cinematics/shots/intro_1.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_1.png",
+      "narrative": {
+        "title": "El campamento",
+        "text": "Junto al fuego, los arreglos y las notas permanecen. Afuera, el mundo vuelve a empezar."
+      }
+    },
+    {
+      "id": "cinematics__shots__intro_2",
+      "target": "assets/cinematics/shots/intro_2.png",
+      "family": "cinematics/shots",
+      "kind": "cinematic",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_2.png",
+      "narrative": {
+        "title": "Cuatro vecinos",
+        "text": "Un carpintero, una albañila, un boticario y una maestra salen a buscar un camino. Ninguno sabe cuánto tardará en aprender a luchar."
+      }
+    },
+    {
+      "id": "cinematics__volcano",
+      "target": "assets/cinematics/volcano.png",
+      "family": "cinematics",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/cinematics__volcano.png"
+    },
+    {
+      "id": "collection__background",
+      "target": "assets/collection/background.png",
+      "family": "collection",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/collection__background.png"
+    },
+    {
+      "id": "collection__icons__fifty_battles",
+      "target": "assets/collection/icons/fifty_battles.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__fifty_battles.png"
+    },
+    {
+      "id": "collection__icons__first_battle",
+      "target": "assets/collection/icons/first_battle.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_battle.png"
+    },
+    {
+      "id": "collection__icons__first_chest",
+      "target": "assets/collection/icons/first_chest.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_chest.png"
+    },
+    {
+      "id": "collection__icons__first_contract",
+      "target": "assets/collection/icons/first_contract.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_contract.png"
+    },
+    {
+      "id": "collection__icons__first_elite",
+      "target": "assets/collection/icons/first_elite.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_elite.png"
+    },
+    {
+      "id": "collection__icons__first_guardian",
+      "target": "assets/collection/icons/first_guardian.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_guardian.png"
+    },
+    {
+      "id": "collection__icons__first_purchase",
+      "target": "assets/collection/icons/first_purchase.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_purchase.png"
+    },
+    {
+      "id": "collection__icons__first_steps",
+      "target": "assets/collection/icons/first_steps.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_steps.png"
+    },
+    {
+      "id": "collection__icons__first_upgrade",
+      "target": "assets/collection/icons/first_upgrade.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_upgrade.png"
+    },
+    {
+      "id": "collection__icons__first_victory",
+      "target": "assets/collection/icons/first_victory.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_victory.png"
+    },
+    {
+      "id": "collection__icons__five_victories",
+      "target": "assets/collection/icons/five_victories.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__five_victories.png"
+    },
+    {
+      "id": "collection__icons__forbidden_pact",
+      "target": "assets/collection/icons/forbidden_pact.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__forbidden_pact.png"
+    },
+    {
+      "id": "collection__icons__guardian_victory",
+      "target": "assets/collection/icons/guardian_victory.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": "guardian",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__guardian_victory.png"
+    },
+    {
+      "id": "collection__icons__home_again",
+      "target": "assets/collection/icons/home_again.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__home_again.png"
+    },
+    {
+      "id": "collection__icons__last_breath",
+      "target": "assets/collection/icons/last_breath.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__last_breath.png"
+    },
+    {
+      "id": "collection__icons__mage_victory",
+      "target": "assets/collection/icons/mage_victory.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": "mage",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__mage_victory.png"
+    },
+    {
+      "id": "collection__icons__master_armor",
+      "target": "assets/collection/icons/master_armor.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__master_armor.png"
+    },
+    {
+      "id": "collection__icons__master_weapon",
+      "target": "assets/collection/icons/master_weapon.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__master_weapon.png"
+    },
+    {
+      "id": "collection__icons__oathbound",
+      "target": "assets/collection/icons/oathbound.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__oathbound.png"
+    },
+    {
+      "id": "collection__icons__rogue_victory",
+      "target": "assets/collection/icons/rogue_victory.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": "rogue",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__rogue_victory.png"
+    },
+    {
+      "id": "collection__icons__six_echoes",
+      "target": "assets/collection/icons/six_echoes.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__six_echoes.png"
+    },
+    {
+      "id": "collection__icons__ten_battles",
+      "target": "assets/collection/icons/ten_battles.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_battles.png"
+    },
+    {
+      "id": "collection__icons__ten_chests",
+      "target": "assets/collection/icons/ten_chests.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_chests.png"
+    },
+    {
+      "id": "collection__icons__ten_elites",
+      "target": "assets/collection/icons/ten_elites.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_elites.png"
+    },
+    {
+      "id": "collection__icons__ten_purchases",
+      "target": "assets/collection/icons/ten_purchases.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_purchases.png"
+    },
+    {
+      "id": "collection__icons__ten_upgrades",
+      "target": "assets/collection/icons/ten_upgrades.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_upgrades.png"
+    },
+    {
+      "id": "collection__icons__ten_victories",
+      "target": "assets/collection/icons/ten_victories.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_victories.png"
+    },
+    {
+      "id": "collection__icons__warrior_victory",
+      "target": "assets/collection/icons/warrior_victory.png",
+      "family": "collection/icons",
+      "kind": "icon",
+      "hero": "warrior",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/collection__icons__warrior_victory.png"
+    },
+    {
+      "id": "combat_depth__dummy",
+      "target": "assets/combat_depth/dummy.png",
+      "family": "combat_depth",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/scene/combat_depth__dummy.png"
+    },
+    {
+      "id": "combat_depth__merchant",
+      "target": "assets/combat_depth/merchant.png",
+      "family": "combat_depth",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/combat_depth__merchant.png"
+    },
+    {
+      "id": "combat_depth__roots",
+      "target": "assets/combat_depth/roots.png",
+      "family": "combat_depth",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/scene/combat_depth__roots.png"
+    },
+    {
+      "id": "combat_depth__training",
+      "target": "assets/combat_depth/training.png",
+      "family": "combat_depth",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/combat_depth__training.png"
+    },
+    {
+      "id": "comic__enemies__bandit_0",
+      "target": "assets/comic/enemies/bandit_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_0.png"
+    },
+    {
+      "id": "comic__enemies__bandit_1",
+      "target": "assets/comic/enemies/bandit_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_1.png"
+    },
+    {
+      "id": "comic__enemies__bandit_2",
+      "target": "assets/comic/enemies/bandit_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_2.png"
+    },
+    {
+      "id": "comic__enemies__bandit_3",
+      "target": "assets/comic/enemies/bandit_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_3.png"
+    },
+    {
+      "id": "comic__enemies__bandit_4",
+      "target": "assets/comic/enemies/bandit_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_4.png"
+    },
+    {
+      "id": "comic__enemies__bandit_5",
+      "target": "assets/comic/enemies/bandit_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_5.png"
+    },
+    {
+      "id": "comic__enemies__bandit_6",
+      "target": "assets/comic/enemies/bandit_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        507
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_6.png"
+    },
+    {
+      "id": "comic__enemies__bandit_7",
+      "target": "assets/comic/enemies/bandit_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_7.png"
+    },
+    {
+      "id": "comic__enemies__beast_0",
+      "target": "assets/comic/enemies/beast_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_0.png"
+    },
+    {
+      "id": "comic__enemies__beast_1",
+      "target": "assets/comic/enemies/beast_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_1.png"
+    },
+    {
+      "id": "comic__enemies__beast_2",
+      "target": "assets/comic/enemies/beast_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_2.png"
+    },
+    {
+      "id": "comic__enemies__beast_3",
+      "target": "assets/comic/enemies/beast_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_3.png"
+    },
+    {
+      "id": "comic__enemies__beast_4",
+      "target": "assets/comic/enemies/beast_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_4.png"
+    },
+    {
+      "id": "comic__enemies__beast_5",
+      "target": "assets/comic/enemies/beast_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_5.png"
+    },
+    {
+      "id": "comic__enemies__beast_6",
+      "target": "assets/comic/enemies/beast_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_6.png"
+    },
+    {
+      "id": "comic__enemies__beast_7",
+      "target": "assets/comic/enemies/beast_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_7.png"
+    },
+    {
+      "id": "comic__enemies__crypt_automaton",
+      "target": "assets/comic/enemies/crypt_automaton.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_automaton.png"
+    },
+    {
+      "id": "comic__enemies__crypt_bandit",
+      "target": "assets/comic/enemies/crypt_bandit.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_bandit.png"
+    },
+    {
+      "id": "comic__enemies__crypt_bat",
+      "target": "assets/comic/enemies/crypt_bat.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_bat.png"
+    },
+    {
+      "id": "comic__enemies__crypt_beetle",
+      "target": "assets/comic/enemies/crypt_beetle.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_beetle.png"
+    },
+    {
+      "id": "comic__enemies__crypt_lancer",
+      "target": "assets/comic/enemies/crypt_lancer.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_lancer.png"
+    },
+    {
+      "id": "comic__enemies__crypt_shaman",
+      "target": "assets/comic/enemies/crypt_shaman.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_shaman.png"
+    },
+    {
+      "id": "comic__enemies__crypt_slime",
+      "target": "assets/comic/enemies/crypt_slime.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_slime.png"
+    },
+    {
+      "id": "comic__enemies__crypt_wolf",
+      "target": "assets/comic/enemies/crypt_wolf.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        450
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_wolf.png"
+    },
+    {
+      "id": "comic__enemies__elemental_0",
+      "target": "assets/comic/enemies/elemental_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_0.png"
+    },
+    {
+      "id": "comic__enemies__elemental_1",
+      "target": "assets/comic/enemies/elemental_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_1.png"
+    },
+    {
+      "id": "comic__enemies__elemental_2",
+      "target": "assets/comic/enemies/elemental_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_2.png"
+    },
+    {
+      "id": "comic__enemies__elemental_3",
+      "target": "assets/comic/enemies/elemental_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_3.png"
+    },
+    {
+      "id": "comic__enemies__elemental_4",
+      "target": "assets/comic/enemies/elemental_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_4.png"
+    },
+    {
+      "id": "comic__enemies__elemental_5",
+      "target": "assets/comic/enemies/elemental_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_5.png"
+    },
+    {
+      "id": "comic__enemies__elemental_6",
+      "target": "assets/comic/enemies/elemental_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_6.png"
+    },
+    {
+      "id": "comic__enemies__elemental_7",
+      "target": "assets/comic/enemies/elemental_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_7.png"
+    },
+    {
+      "id": "comic__enemies__flying_0",
+      "target": "assets/comic/enemies/flying_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_0.png"
+    },
+    {
+      "id": "comic__enemies__flying_1",
+      "target": "assets/comic/enemies/flying_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_1.png"
+    },
+    {
+      "id": "comic__enemies__flying_2",
+      "target": "assets/comic/enemies/flying_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_2.png"
+    },
+    {
+      "id": "comic__enemies__flying_3",
+      "target": "assets/comic/enemies/flying_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_3.png"
+    },
+    {
+      "id": "comic__enemies__flying_4",
+      "target": "assets/comic/enemies/flying_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_4.png"
+    },
+    {
+      "id": "comic__enemies__flying_5",
+      "target": "assets/comic/enemies/flying_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_5.png"
+    },
+    {
+      "id": "comic__enemies__flying_6",
+      "target": "assets/comic/enemies/flying_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_6.png"
+    },
+    {
+      "id": "comic__enemies__flying_7",
+      "target": "assets/comic/enemies/flying_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_7.png"
+    },
+    {
+      "id": "comic__enemies__goblin_0",
+      "target": "assets/comic/enemies/goblin_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_0.png"
+    },
+    {
+      "id": "comic__enemies__goblin_1",
+      "target": "assets/comic/enemies/goblin_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_1.png"
+    },
+    {
+      "id": "comic__enemies__goblin_2",
+      "target": "assets/comic/enemies/goblin_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_2.png"
+    },
+    {
+      "id": "comic__enemies__goblin_3",
+      "target": "assets/comic/enemies/goblin_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_3.png"
+    },
+    {
+      "id": "comic__enemies__goblin_4",
+      "target": "assets/comic/enemies/goblin_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_4.png"
+    },
+    {
+      "id": "comic__enemies__goblin_5",
+      "target": "assets/comic/enemies/goblin_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_5.png"
+    },
+    {
+      "id": "comic__enemies__goblin_6",
+      "target": "assets/comic/enemies/goblin_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_6.png"
+    },
+    {
+      "id": "comic__enemies__goblin_7",
+      "target": "assets/comic/enemies/goblin_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_7.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_0",
+      "target": "assets/comic/enemies/skeleton_0.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_0.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_1",
+      "target": "assets/comic/enemies/skeleton_1.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_1.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_2",
+      "target": "assets/comic/enemies/skeleton_2.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_2.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_3",
+      "target": "assets/comic/enemies/skeleton_3.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_3.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_4",
+      "target": "assets/comic/enemies/skeleton_4.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_4.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_5",
+      "target": "assets/comic/enemies/skeleton_5.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_5.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_6",
+      "target": "assets/comic/enemies/skeleton_6.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_6.png"
+    },
+    {
+      "id": "comic__enemies__skeleton_7",
+      "target": "assets/comic/enemies/skeleton_7.png",
+      "family": "comic/enemies",
+      "kind": "enemy_foreground",
+      "hero": null,
+      "dimensions": [
+        900,
+        600
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_7.png"
+    },
+    {
+      "id": "dungeon__bag",
+      "target": "assets/dungeon/bag.png",
+      "family": "dungeon",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/dungeon__bag.png"
+    },
+    {
+      "id": "dungeon__combat",
+      "target": "assets/dungeon/combat.png",
+      "family": "dungeon",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat.png"
+    },
+    {
+      "id": "dungeon__combat_canal",
+      "target": "assets/dungeon/combat_canal.png",
+      "family": "dungeon",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat_canal.png"
+    },
+    {
+      "id": "dungeon__combat_columns",
+      "target": "assets/dungeon/combat_columns.png",
+      "family": "dungeon",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat_columns.png"
+    },
+    {
+      "id": "encounters__altar",
+      "target": "assets/encounters/altar.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__altar.png"
+    },
+    {
+      "id": "encounters__ash_archive",
+      "target": "assets/encounters/ash_archive.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__ash_archive.png"
+    },
+    {
+      "id": "encounters__forest_hunter",
+      "target": "assets/encounters/forest_hunter.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_hunter.png"
+    },
+    {
+      "id": "encounters__forest_spirit",
+      "target": "assets/encounters/forest_spirit.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_spirit.png"
+    },
+    {
+      "id": "encounters__forest_spring",
+      "target": "assets/encounters/forest_spring.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_spring.png"
+    },
+    {
+      "id": "encounters__forge_altar",
+      "target": "assets/encounters/forge_altar.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__forge_altar.png"
+    },
+    {
+      "id": "encounters__lava_bridge",
+      "target": "assets/encounters/lava_bridge.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__lava_bridge.png"
+    },
+    {
+      "id": "encounters__library",
+      "target": "assets/encounters/library.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__library.png"
+    },
+    {
+      "id": "encounters__well",
+      "target": "assets/encounters/well.png",
+      "family": "encounters",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/encounters__well.png"
+    },
+    {
+      "id": "enemies__animations__bandit_0",
+      "target": "assets/enemies/animations/bandit_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_0.png"
+    },
+    {
+      "id": "enemies__animations__bandit_1",
+      "target": "assets/enemies/animations/bandit_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_1.png"
+    },
+    {
+      "id": "enemies__animations__bandit_2",
+      "target": "assets/enemies/animations/bandit_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_2.png"
+    },
+    {
+      "id": "enemies__animations__bandit_3",
+      "target": "assets/enemies/animations/bandit_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_3.png"
+    },
+    {
+      "id": "enemies__animations__bandit_4",
+      "target": "assets/enemies/animations/bandit_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_4.png"
+    },
+    {
+      "id": "enemies__animations__bandit_5",
+      "target": "assets/enemies/animations/bandit_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_5.png"
+    },
+    {
+      "id": "enemies__animations__bandit_6",
+      "target": "assets/enemies/animations/bandit_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_6.png"
+    },
+    {
+      "id": "enemies__animations__bandit_7",
+      "target": "assets/enemies/animations/bandit_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_7.png"
+    },
+    {
+      "id": "enemies__animations__beast_0",
+      "target": "assets/enemies/animations/beast_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_0.png"
+    },
+    {
+      "id": "enemies__animations__beast_1",
+      "target": "assets/enemies/animations/beast_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_1.png"
+    },
+    {
+      "id": "enemies__animations__beast_2",
+      "target": "assets/enemies/animations/beast_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_2.png"
+    },
+    {
+      "id": "enemies__animations__beast_3",
+      "target": "assets/enemies/animations/beast_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_3.png"
+    },
+    {
+      "id": "enemies__animations__beast_4",
+      "target": "assets/enemies/animations/beast_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_4.png"
+    },
+    {
+      "id": "enemies__animations__beast_5",
+      "target": "assets/enemies/animations/beast_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_5.png"
+    },
+    {
+      "id": "enemies__animations__beast_6",
+      "target": "assets/enemies/animations/beast_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_6.png"
+    },
+    {
+      "id": "enemies__animations__beast_7",
+      "target": "assets/enemies/animations/beast_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_7.png"
+    },
+    {
+      "id": "enemies__animations__crypt_automaton",
+      "target": "assets/enemies/animations/crypt_automaton.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_automaton.png"
+    },
+    {
+      "id": "enemies__animations__crypt_bandit",
+      "target": "assets/enemies/animations/crypt_bandit.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bandit.png"
+    },
+    {
+      "id": "enemies__animations__crypt_bat",
+      "target": "assets/enemies/animations/crypt_bat.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bat.png"
+    },
+    {
+      "id": "enemies__animations__crypt_beetle",
+      "target": "assets/enemies/animations/crypt_beetle.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_beetle.png"
+    },
+    {
+      "id": "enemies__animations__crypt_lancer",
+      "target": "assets/enemies/animations/crypt_lancer.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_lancer.png"
+    },
+    {
+      "id": "enemies__animations__crypt_shaman",
+      "target": "assets/enemies/animations/crypt_shaman.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_shaman.png"
+    },
+    {
+      "id": "enemies__animations__crypt_slime",
+      "target": "assets/enemies/animations/crypt_slime.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_slime.png"
+    },
+    {
+      "id": "enemies__animations__crypt_wolf",
+      "target": "assets/enemies/animations/crypt_wolf.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_wolf.png"
+    },
+    {
+      "id": "enemies__animations__elemental_0",
+      "target": "assets/enemies/animations/elemental_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_0.png"
+    },
+    {
+      "id": "enemies__animations__elemental_1",
+      "target": "assets/enemies/animations/elemental_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_1.png"
+    },
+    {
+      "id": "enemies__animations__elemental_2",
+      "target": "assets/enemies/animations/elemental_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_2.png"
+    },
+    {
+      "id": "enemies__animations__elemental_3",
+      "target": "assets/enemies/animations/elemental_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_3.png"
+    },
+    {
+      "id": "enemies__animations__elemental_4",
+      "target": "assets/enemies/animations/elemental_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_4.png"
+    },
+    {
+      "id": "enemies__animations__elemental_5",
+      "target": "assets/enemies/animations/elemental_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_5.png"
+    },
+    {
+      "id": "enemies__animations__elemental_6",
+      "target": "assets/enemies/animations/elemental_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_6.png"
+    },
+    {
+      "id": "enemies__animations__elemental_7",
+      "target": "assets/enemies/animations/elemental_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_7.png"
+    },
+    {
+      "id": "enemies__animations__flying_0",
+      "target": "assets/enemies/animations/flying_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_0.png"
+    },
+    {
+      "id": "enemies__animations__flying_1",
+      "target": "assets/enemies/animations/flying_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_1.png"
+    },
+    {
+      "id": "enemies__animations__flying_2",
+      "target": "assets/enemies/animations/flying_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_2.png"
+    },
+    {
+      "id": "enemies__animations__flying_3",
+      "target": "assets/enemies/animations/flying_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_3.png"
+    },
+    {
+      "id": "enemies__animations__flying_4",
+      "target": "assets/enemies/animations/flying_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_4.png"
+    },
+    {
+      "id": "enemies__animations__flying_5",
+      "target": "assets/enemies/animations/flying_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_5.png"
+    },
+    {
+      "id": "enemies__animations__flying_6",
+      "target": "assets/enemies/animations/flying_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_6.png"
+    },
+    {
+      "id": "enemies__animations__flying_7",
+      "target": "assets/enemies/animations/flying_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_7.png"
+    },
+    {
+      "id": "enemies__animations__goblin_0",
+      "target": "assets/enemies/animations/goblin_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_0.png"
+    },
+    {
+      "id": "enemies__animations__goblin_1",
+      "target": "assets/enemies/animations/goblin_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_1.png"
+    },
+    {
+      "id": "enemies__animations__goblin_2",
+      "target": "assets/enemies/animations/goblin_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_2.png"
+    },
+    {
+      "id": "enemies__animations__goblin_3",
+      "target": "assets/enemies/animations/goblin_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_3.png"
+    },
+    {
+      "id": "enemies__animations__goblin_4",
+      "target": "assets/enemies/animations/goblin_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_4.png"
+    },
+    {
+      "id": "enemies__animations__goblin_5",
+      "target": "assets/enemies/animations/goblin_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_5.png"
+    },
+    {
+      "id": "enemies__animations__goblin_6",
+      "target": "assets/enemies/animations/goblin_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_6.png"
+    },
+    {
+      "id": "enemies__animations__goblin_7",
+      "target": "assets/enemies/animations/goblin_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_7.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_0",
+      "target": "assets/enemies/animations/skeleton_0.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_0.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_1",
+      "target": "assets/enemies/animations/skeleton_1.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_1.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_2",
+      "target": "assets/enemies/animations/skeleton_2.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_2.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_3",
+      "target": "assets/enemies/animations/skeleton_3.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_3.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_4",
+      "target": "assets/enemies/animations/skeleton_4.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_4.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_5",
+      "target": "assets/enemies/animations/skeleton_5.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_5.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_6",
+      "target": "assets/enemies/animations/skeleton_6.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_6.png"
+    },
+    {
+      "id": "enemies__animations__skeleton_7",
+      "target": "assets/enemies/animations/skeleton_7.png",
+      "family": "enemies/animations",
+      "kind": "enemy_actor",
+      "hero": null,
+      "dimensions": [
+        1024,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_7.png"
+    },
+    {
+      "id": "equipment__door",
+      "target": "assets/equipment/door.png",
+      "family": "equipment",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/equipment__door.png"
+    },
+    {
+      "id": "equipment__valhalla",
+      "target": "assets/equipment/valhalla.png",
+      "family": "equipment",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/equipment__valhalla.png"
+    },
+    {
+      "id": "expeditions__contract_battle",
+      "target": "assets/expeditions/contract_battle.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_battle.png"
+    },
+    {
+      "id": "expeditions__contract_elite",
+      "target": "assets/expeditions/contract_elite.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_elite.png"
+    },
+    {
+      "id": "expeditions__contract_exploration",
+      "target": "assets/expeditions/contract_exploration.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_exploration.png"
+    },
+    {
+      "id": "expeditions__contract_guardian",
+      "target": "assets/expeditions/contract_guardian.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_guardian.png"
+    },
+    {
+      "id": "expeditions__contract_mastery",
+      "target": "assets/expeditions/contract_mastery.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_mastery.png"
+    },
+    {
+      "id": "expeditions__contract_pair",
+      "target": "assets/expeditions/contract_pair.png",
+      "family": "expeditions",
+      "kind": "contract",
+      "hero": null,
+      "dimensions": [
+        480,
+        320
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_pair.png"
+    },
+    {
+      "id": "forest__combat_glade",
+      "target": "assets/forest/combat_glade.png",
+      "family": "forest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/forest__combat_glade.png"
+    },
+    {
+      "id": "forest__combat_ruins",
+      "target": "assets/forest/combat_ruins.png",
+      "family": "forest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/forest__combat_ruins.png"
+    },
+    {
+      "id": "forest__rest",
+      "target": "assets/forest/rest.png",
+      "family": "forest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/forest__rest.png"
+    },
+    {
+      "id": "forge__icons__armor_1",
+      "target": "assets/forge/icons/armor_1.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_1.png"
+    },
+    {
+      "id": "forge__icons__armor_2",
+      "target": "assets/forge/icons/armor_2.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_2.png"
+    },
+    {
+      "id": "forge__icons__armor_3",
+      "target": "assets/forge/icons/armor_3.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_3.png"
+    },
+    {
+      "id": "forge__icons__guardian_1",
+      "target": "assets/forge/icons/guardian_1.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "guardian",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_1.png"
+    },
+    {
+      "id": "forge__icons__guardian_2",
+      "target": "assets/forge/icons/guardian_2.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "guardian",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_2.png"
+    },
+    {
+      "id": "forge__icons__guardian_3",
+      "target": "assets/forge/icons/guardian_3.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "guardian",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_3.png"
+    },
+    {
+      "id": "forge__icons__mage_1",
+      "target": "assets/forge/icons/mage_1.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "mage",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_1.png"
+    },
+    {
+      "id": "forge__icons__mage_2",
+      "target": "assets/forge/icons/mage_2.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "mage",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_2.png"
+    },
+    {
+      "id": "forge__icons__mage_3",
+      "target": "assets/forge/icons/mage_3.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "mage",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_3.png"
+    },
+    {
+      "id": "forge__icons__rogue_1",
+      "target": "assets/forge/icons/rogue_1.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "rogue",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_1.png"
+    },
+    {
+      "id": "forge__icons__rogue_2",
+      "target": "assets/forge/icons/rogue_2.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "rogue",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_2.png"
+    },
+    {
+      "id": "forge__icons__rogue_3",
+      "target": "assets/forge/icons/rogue_3.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "rogue",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_3.png"
+    },
+    {
+      "id": "forge__icons__warrior_1",
+      "target": "assets/forge/icons/warrior_1.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "warrior",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_1.png"
+    },
+    {
+      "id": "forge__icons__warrior_2",
+      "target": "assets/forge/icons/warrior_2.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "warrior",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_2.png"
+    },
+    {
+      "id": "forge__icons__warrior_3",
+      "target": "assets/forge/icons/warrior_3.png",
+      "family": "forge/icons",
+      "kind": "icon",
+      "hero": "warrior",
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_3.png"
+    },
+    {
+      "id": "inventory__background",
+      "target": "assets/inventory/background.png",
+      "family": "inventory",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/inventory__background.png"
+    },
+    {
+      "id": "map__group_tab",
+      "target": "assets/map/group_tab.png",
+      "family": "map",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__group_tab.png"
+    },
+    {
+      "id": "map__minimal__boss",
+      "target": "assets/map/minimal/boss.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__boss.png"
+    },
+    {
+      "id": "map__minimal__combat",
+      "target": "assets/map/minimal/combat.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__combat.png"
+    },
+    {
+      "id": "map__minimal__elite",
+      "target": "assets/map/minimal/elite.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__elite.png"
+    },
+    {
+      "id": "map__minimal__event",
+      "target": "assets/map/minimal/event.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__event.png"
+    },
+    {
+      "id": "map__minimal__parchment",
+      "target": "assets/map/minimal/parchment.png",
+      "family": "map/minimal",
+      "kind": "map",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/map/map__minimal__parchment.png"
+    },
+    {
+      "id": "map__minimal__rest",
+      "target": "assets/map/minimal/rest.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__rest.png"
+    },
+    {
+      "id": "map__minimal__room_papyrus",
+      "target": "assets/map/minimal/room_papyrus.png",
+      "family": "map/minimal",
+      "kind": "map",
+      "hero": null,
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/map/map__minimal__room_papyrus.png"
+    },
+    {
+      "id": "map__minimal__treasure",
+      "target": "assets/map/minimal/treasure.png",
+      "family": "map/minimal",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/map__minimal__treasure.png"
+    },
+    {
+      "id": "objects__icons",
+      "target": "assets/objects/icons.png",
+      "family": "objects",
+      "kind": "objects_atlas",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/objects_atlas/objects__icons.png"
+    },
+    {
+      "id": "relics__ancient_cog",
+      "target": "assets/relics/ancient_cog.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__ancient_cog.png"
+    },
+    {
+      "id": "relics__blood_ruby",
+      "target": "assets/relics/blood_ruby.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__blood_ruby.png"
+    },
+    {
+      "id": "relics__boss__crypt_blood",
+      "target": "assets/relics/boss/crypt_blood.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_blood.png"
+    },
+    {
+      "id": "relics__boss__crypt_lantern",
+      "target": "assets/relics/boss/crypt_lantern.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_lantern.png"
+    },
+    {
+      "id": "relics__boss__crypt_seal",
+      "target": "assets/relics/boss/crypt_seal.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_seal.png"
+    },
+    {
+      "id": "relics__boss__fire_crown",
+      "target": "assets/relics/boss/fire_crown.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_crown.png"
+    },
+    {
+      "id": "relics__boss__fire_spark",
+      "target": "assets/relics/boss/fire_spark.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_spark.png"
+    },
+    {
+      "id": "relics__boss__fire_ward",
+      "target": "assets/relics/boss/fire_ward.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_ward.png"
+    },
+    {
+      "id": "relics__boss__forest_eye",
+      "target": "assets/relics/boss/forest_eye.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_eye.png"
+    },
+    {
+      "id": "relics__boss__forest_heart",
+      "target": "assets/relics/boss/forest_heart.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_heart.png"
+    },
+    {
+      "id": "relics__boss__forest_thorn",
+      "target": "assets/relics/boss/forest_thorn.png",
+      "family": "relics/boss",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_thorn.png"
+    },
+    {
+      "id": "relics__dawn_bell",
+      "target": "assets/relics/dawn_bell.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__dawn_bell.png"
+    },
+    {
+      "id": "relics__drill_tusk",
+      "target": "assets/relics/drill_tusk.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__drill_tusk.png"
+    },
+    {
+      "id": "relics__duelist_seal",
+      "target": "assets/relics/duelist_seal.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__duelist_seal.png"
+    },
+    {
+      "id": "relics__giant_heart",
+      "target": "assets/relics/giant_heart.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__giant_heart.png"
+    },
+    {
+      "id": "relics__iron_knot",
+      "target": "assets/relics/iron_knot.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__iron_knot.png"
+    },
+    {
+      "id": "relics__ivory_mirror",
+      "target": "assets/relics/ivory_mirror.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__ivory_mirror.png"
+    },
+    {
+      "id": "relics__oath_chain",
+      "target": "assets/relics/oath_chain.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__oath_chain.png"
+    },
+    {
+      "id": "relics__raven_quill",
+      "target": "assets/relics/raven_quill.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__raven_quill.png"
+    },
+    {
+      "id": "relics__rune_chisel",
+      "target": "assets/relics/rune_chisel.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__rune_chisel.png"
+    },
+    {
+      "id": "relics__sentinel_mask",
+      "target": "assets/relics/sentinel_mask.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__sentinel_mask.png"
+    },
+    {
+      "id": "relics__silver_thread",
+      "target": "assets/relics/silver_thread.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__silver_thread.png"
+    },
+    {
+      "id": "relics__spring_seed",
+      "target": "assets/relics/spring_seed.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__spring_seed.png"
+    },
+    {
+      "id": "relics__star_shard",
+      "target": "assets/relics/star_shard.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__star_shard.png"
+    },
+    {
+      "id": "relics__storm_drum",
+      "target": "assets/relics/storm_drum.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__storm_drum.png"
+    },
+    {
+      "id": "relics__sun_spark",
+      "target": "assets/relics/sun_spark.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__sun_spark.png"
+    },
+    {
+      "id": "relics__titan_hammer",
+      "target": "assets/relics/titan_hammer.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__titan_hammer.png"
+    },
+    {
+      "id": "relics__turtle_charm",
+      "target": "assets/relics/turtle_charm.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__turtle_charm.png"
+    },
+    {
+      "id": "relics__viper_tooth",
+      "target": "assets/relics/viper_tooth.png",
+      "family": "relics",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        192,
+        192
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/relics__viper_tooth.png"
+    },
+    {
+      "id": "rest__background",
+      "target": "assets/rest/background.png",
+      "family": "rest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/rest__background.png"
+    },
+    {
+      "id": "rest__guardian",
+      "target": "assets/rest/guardian.png",
+      "family": "rest",
+      "kind": "seated",
+      "hero": "guardian",
+      "dimensions": [
+        320,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/seated/rest__guardian.png"
+    },
+    {
+      "id": "rest__heal",
+      "target": "assets/rest/heal.png",
+      "family": "rest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        384,
+        256
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/rest__heal.png"
+    },
+    {
+      "id": "rest__mage",
+      "target": "assets/rest/mage.png",
+      "family": "rest",
+      "kind": "seated",
+      "hero": "mage",
+      "dimensions": [
+        320,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/seated/rest__mage.png"
+    },
+    {
+      "id": "rest__rogue",
+      "target": "assets/rest/rogue.png",
+      "family": "rest",
+      "kind": "seated",
+      "hero": "rogue",
+      "dimensions": [
+        320,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/seated/rest__rogue.png"
+    },
+    {
+      "id": "rest__upgrade",
+      "target": "assets/rest/upgrade.png",
+      "family": "rest",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        384,
+        256
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/rest__upgrade.png"
+    },
+    {
+      "id": "rest__warrior",
+      "target": "assets/rest/warrior.png",
+      "family": "rest",
+      "kind": "seated",
+      "hero": "warrior",
+      "dimensions": [
+        320,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/seated/rest__warrior.png"
+    },
+    {
+      "id": "reward__background",
+      "target": "assets/reward/background.png",
+      "family": "reward",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/reward__background.png"
+    },
+    {
+      "id": "title__background",
+      "target": "assets/title/background.png",
+      "family": "title",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/title__background.png"
+    },
+    {
+      "id": "treasure__chest",
+      "target": "assets/treasure/chest.png",
+      "family": "treasure",
+      "kind": "chest_atlas",
+      "hero": null,
+      "dimensions": [
+        1536,
+        256
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/chest_atlas/treasure__chest.png"
+    },
+    {
+      "id": "ui__end_turn_round",
+      "target": "assets/ui/end_turn_round.png",
+      "family": "ui",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/ui__end_turn_round.png"
+    },
+    {
+      "id": "ui__energy",
+      "target": "assets/ui/energy.png",
+      "family": "ui",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        128,
+        128
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/ui__energy.png"
+    },
+    {
+      "id": "ui__soul",
+      "target": "assets/ui/soul.png",
+      "family": "ui",
+      "kind": "icon",
+      "hero": null,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent": true,
+      "source": "art_sources/art_direction/migration/sources/icon/ui__soul.png"
+    },
+    {
+      "id": "volcano__combat",
+      "target": "assets/volcano/combat.png",
+      "family": "volcano",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/volcano__combat.png"
+    },
+    {
+      "id": "volcano__rest",
+      "target": "assets/volcano/rest.png",
+      "family": "volcano",
+      "kind": "scene",
+      "hero": null,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "transparent": false,
+      "source": "art_sources/art_direction/migration/sources/scene/volcano__rest.png"
+    },
+    {
+      "id": "number_bank",
+      "kind": "numbers",
+      "target": null,
+      "hero": null,
+      "transparent": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png"
+    }
+  ],
+  "derived": [
+    "assets/camp/fire-natural.png",
+    "assets/camp/front-128.png",
+    "assets/forge/heroes/guardian_w0_a0.png",
+    "assets/forge/heroes/guardian_w0_a1.png",
+    "assets/forge/heroes/guardian_w0_a2.png",
+    "assets/forge/heroes/guardian_w0_a3.png",
+    "assets/forge/heroes/guardian_w1_a0.png",
+    "assets/forge/heroes/guardian_w1_a1.png",
+    "assets/forge/heroes/guardian_w1_a2.png",
+    "assets/forge/heroes/guardian_w1_a3.png",
+    "assets/forge/heroes/guardian_w2_a0.png",
+    "assets/forge/heroes/guardian_w2_a1.png",
+    "assets/forge/heroes/guardian_w2_a2.png",
+    "assets/forge/heroes/guardian_w2_a3.png",
+    "assets/forge/heroes/guardian_w3_a0.png",
+    "assets/forge/heroes/guardian_w3_a1.png",
+    "assets/forge/heroes/guardian_w3_a2.png",
+    "assets/forge/heroes/guardian_w3_a3.png",
+    "assets/forge/heroes/mage_w0_a0.png",
+    "assets/forge/heroes/mage_w0_a1.png",
+    "assets/forge/heroes/mage_w0_a2.png",
+    "assets/forge/heroes/mage_w0_a3.png",
+    "assets/forge/heroes/mage_w1_a0.png",
+    "assets/forge/heroes/mage_w1_a1.png",
+    "assets/forge/heroes/mage_w1_a2.png",
+    "assets/forge/heroes/mage_w1_a3.png",
+    "assets/forge/heroes/mage_w2_a0.png",
+    "assets/forge/heroes/mage_w2_a1.png",
+    "assets/forge/heroes/mage_w2_a2.png",
+    "assets/forge/heroes/mage_w2_a3.png",
+    "assets/forge/heroes/mage_w3_a0.png",
+    "assets/forge/heroes/mage_w3_a1.png",
+    "assets/forge/heroes/mage_w3_a2.png",
+    "assets/forge/heroes/mage_w3_a3.png",
+    "assets/forge/heroes/rogue_w0_a0.png",
+    "assets/forge/heroes/rogue_w0_a1.png",
+    "assets/forge/heroes/rogue_w0_a2.png",
+    "assets/forge/heroes/rogue_w0_a3.png",
+    "assets/forge/heroes/rogue_w1_a0.png",
+    "assets/forge/heroes/rogue_w1_a1.png",
+    "assets/forge/heroes/rogue_w1_a2.png",
+    "assets/forge/heroes/rogue_w1_a3.png",
+    "assets/forge/heroes/rogue_w2_a0.png",
+    "assets/forge/heroes/rogue_w2_a1.png",
+    "assets/forge/heroes/rogue_w2_a2.png",
+    "assets/forge/heroes/rogue_w2_a3.png",
+    "assets/forge/heroes/rogue_w3_a0.png",
+    "assets/forge/heroes/rogue_w3_a1.png",
+    "assets/forge/heroes/rogue_w3_a2.png",
+    "assets/forge/heroes/rogue_w3_a3.png",
+    "assets/forge/heroes/warrior_w0_a0.png",
+    "assets/forge/heroes/warrior_w0_a1.png",
+    "assets/forge/heroes/warrior_w0_a2.png",
+    "assets/forge/heroes/warrior_w0_a3.png",
+    "assets/forge/heroes/warrior_w1_a0.png",
+    "assets/forge/heroes/warrior_w1_a1.png",
+    "assets/forge/heroes/warrior_w1_a2.png",
+    "assets/forge/heroes/warrior_w1_a3.png",
+    "assets/forge/heroes/warrior_w2_a0.png",
+    "assets/forge/heroes/warrior_w2_a1.png",
+    "assets/forge/heroes/warrior_w2_a2.png",
+    "assets/forge/heroes/warrior_w2_a3.png",
+    "assets/forge/heroes/warrior_w3_a0.png",
+    "assets/forge/heroes/warrior_w3_a1.png",
+    "assets/forge/heroes/warrior_w3_a2.png",
+    "assets/forge/heroes/warrior_w3_a3.png",
+    "assets/guardian/guardian-128.png",
+    "assets/heroes/running/guardian.png",
+    "assets/heroes/running/mage.png",
+    "assets/heroes/running/rogue.png",
+    "assets/heroes/running/warrior.png",
+    "assets/mage/mage-128.png",
+    "assets/rogue/rogue-128.png",
+    "assets/ui/numbers/0.png",
+    "assets/ui/numbers/1.png",
+    "assets/ui/numbers/2.png",
+    "assets/ui/numbers/3.png",
+    "assets/ui/numbers/4.png",
+    "assets/ui/numbers/5.png",
+    "assets/ui/numbers/6.png",
+    "assets/ui/numbers/7.png",
+    "assets/ui/numbers/8.png",
+    "assets/ui/numbers/9.png",
+    "assets/warrior/warrior-128.png",
+    "assets/cinematics/portraits/guardian.png",
+    "assets/cinematics/portraits/mage.png",
+    "assets/cinematics/portraits/rogue.png",
+    "assets/cinematics/portraits/warrior.png",
+    "assets/enemies/hd/bandit_0.png",
+    "assets/enemies/hd/bandit_1.png",
+    "assets/enemies/hd/bandit_2.png",
+    "assets/enemies/hd/bandit_3.png",
+    "assets/enemies/hd/bandit_4.png",
+    "assets/enemies/hd/bandit_5.png",
+    "assets/enemies/hd/bandit_6.png",
+    "assets/enemies/hd/bandit_7.png",
+    "assets/enemies/hd/beast_0.png",
+    "assets/enemies/hd/beast_1.png",
+    "assets/enemies/hd/beast_2.png",
+    "assets/enemies/hd/beast_3.png",
+    "assets/enemies/hd/beast_4.png",
+    "assets/enemies/hd/beast_5.png",
+    "assets/enemies/hd/beast_6.png",
+    "assets/enemies/hd/beast_7.png",
+    "assets/enemies/hd/crypt_automaton.png",
+    "assets/enemies/hd/crypt_bandit.png",
+    "assets/enemies/hd/crypt_bat.png",
+    "assets/enemies/hd/crypt_beetle.png",
+    "assets/enemies/hd/crypt_lancer.png",
+    "assets/enemies/hd/crypt_shaman.png",
+    "assets/enemies/hd/crypt_slime.png",
+    "assets/enemies/hd/crypt_wolf.png",
+    "assets/enemies/hd/elemental_0.png",
+    "assets/enemies/hd/elemental_1.png",
+    "assets/enemies/hd/elemental_2.png",
+    "assets/enemies/hd/elemental_3.png",
+    "assets/enemies/hd/elemental_4.png",
+    "assets/enemies/hd/elemental_5.png",
+    "assets/enemies/hd/elemental_6.png",
+    "assets/enemies/hd/elemental_7.png",
+    "assets/enemies/hd/flying_0.png",
+    "assets/enemies/hd/flying_1.png",
+    "assets/enemies/hd/flying_2.png",
+    "assets/enemies/hd/flying_3.png",
+    "assets/enemies/hd/flying_4.png",
+    "assets/enemies/hd/flying_5.png",
+    "assets/enemies/hd/flying_6.png",
+    "assets/enemies/hd/flying_7.png",
+    "assets/enemies/hd/goblin_0.png",
+    "assets/enemies/hd/goblin_1.png",
+    "assets/enemies/hd/goblin_2.png",
+    "assets/enemies/hd/goblin_3.png",
+    "assets/enemies/hd/goblin_4.png",
+    "assets/enemies/hd/goblin_5.png",
+    "assets/enemies/hd/goblin_6.png",
+    "assets/enemies/hd/goblin_7.png",
+    "assets/enemies/hd/skeleton_0.png",
+    "assets/enemies/hd/skeleton_1.png",
+    "assets/enemies/hd/skeleton_2.png",
+    "assets/enemies/hd/skeleton_3.png",
+    "assets/enemies/hd/skeleton_4.png",
+    "assets/enemies/hd/skeleton_5.png",
+    "assets/enemies/hd/skeleton_6.png",
+    "assets/enemies/hd/skeleton_7.png"
+  ]
+}

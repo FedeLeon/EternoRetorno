@@ -1,0 +1,23 @@
+{
+  "id": "identity_guardian",
+  "kind": "direct",
+  "prompt": "NEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. Full body three-quarter RIGHT facing civilian. Ines,35,strong auburn-haired woman with practical long braid, construction worker. Orange-brown reinforced construction jacket with violet neck scarf, dusty gray work trousers, scuffed safety boots, work gloves, chalk and wrench in belt. NO knight armor. Holds an improvised rectangular shield made of a dented street-sign panel with riveted wood backing, and a short crowbar. Everyday civilian worker, protective fierce expression. Centered entire character and tool visible, white cutline, generous transparent margins, no text, no backdrop.",
+  "targets": [
+    {
+      "path": "assets/heroes/identity/postapocalyptic/guardian.png",
+      "dimensions": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/identity_guardian.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-2d3bdadb-eed9-4a5f-9d99-6a23b33726a4.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/heroes/identity/postapocalyptic/guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

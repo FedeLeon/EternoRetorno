@@ -3,6 +3,7 @@ extends RefCounted
 static func build(ui: Control, actions: Dictionary) -> void:
 	preload("res://src/ui/components/preparation_header.gd").build(ui, "Elegí tus personajes · El fuego nos reúne", actions.menu)
 	ui.label_at("Tocá a dos personajes para formar tu pareja de aventura.", 28, 88, 1100, 30, 18, ui.TEXT)
+	preload("res://src/ui/components/pet_choice.gd").build(ui, actions.pet)
 	var fire = ui.Campfire.new()
 	fire.name = "Campfire"
 	fire.embers_only = true
@@ -42,7 +43,6 @@ static func build(ui: Control, actions: Dictionary) -> void:
 	var footer = ui.panel(24, 647, 1232, 70)
 	footer.name = "PartyFooter"
 	footer.add_theme_stylebox_override("panel", preload("res://src/ui/components/button_skin.gd").style("party_panel"))
-	ui.button("Volver", 36, 659, 145, 46, actions.back)
 	ui.label_at("%d / 2 elegidos" % ui.selected_party.size(), 185, 669, 210, 30, 20, ui.GOLD)
 	var choose = ui.button("Elegir componente", 894, 659, 350, 46, actions.equipment, ui.selected_party.size() == 2)
 

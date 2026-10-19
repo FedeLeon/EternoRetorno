@@ -30,7 +30,6 @@ static func build(ui: Control, paths: bool) -> void:
 	for hero in ui.game.run.heroes:
 		var snapshot = hero.duplicate(true)
 		snapshot.title = ui.game.content.heroes[hero.id].name
-		snapshot.visual = ui.ANIMATED_HEROES[hero.id]
 		view.heroes.append(snapshot)
 	view.room_requested.connect(func(id): preload("res://src/ui/map_room_prompt.gd").enter(ui, id))
 	view.deck_requested.connect(ui.open_deck)

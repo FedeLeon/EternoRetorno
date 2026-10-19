@@ -55,7 +55,7 @@ func _ready() -> void:
 	fire.name = "RestCampfire"
 	fire.embers_only = true
 	fire.position = Vector2(640,444)
-	fire.scale = Vector2(0.75,0.75)
+	fire.scale = Vector2(1.25,1.25) # Full-size brazier between the seated heroes.
 	add_child(fire)
 	for i in range(heroes.size()):
 		var hero: Dictionary = heroes[i]
@@ -87,7 +87,8 @@ func choice(id: String, art: String, title: String, description: String, area: R
 		button.add_theme_stylebox_override(state, style)
 	button.pressed.connect(action)
 	place(button, area)
-	picture("res://assets/rest/%s.png" % art, Rect2(10, 10, 260, 112), button).stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	var illustration = picture("res://assets/rest/%s.png" % art, Rect2(10, 10, 260, 112), button)
+	illustration.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED if art == "upgrade" else TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	label(title, Rect2(12, 125, 256, 32), 22, button).add_theme_color_override("font_color", Color("e5c48d"))
 	label(description, Rect2(16, 161, 248, 49), 17, button)
 	return button

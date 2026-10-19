@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'artifacts/sketchbook-review-current'
+OUT = ROOT / 'artifacts/visual_contact_sheets'
 FONT = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 12)
 
 def representative(asset):
@@ -30,7 +30,7 @@ def group(asset):
     return 'screens'
 
 def generate():
-    report = json.loads((ROOT/'docs/art_direction/2026-10-13/review/inventory.json').read_text())
+    report = json.loads((ROOT/'artifacts/visual_inventory/inventory.json').read_text())
     OUT.mkdir(parents=True,exist_ok=True)
     (ROOT/'artifacts/.gdignore').touch()
     families = {}

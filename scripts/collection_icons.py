@@ -1,5 +1,5 @@
 """Original inked industrial collection badges; deterministic native SVG artwork."""
-UI = ('achievements', 'unlocks', 'history', 'hourglass', 'victory', 'return')
+UI = ('achievements', 'history', 'victory', 'return')
 
 
 def collection_icon(name):

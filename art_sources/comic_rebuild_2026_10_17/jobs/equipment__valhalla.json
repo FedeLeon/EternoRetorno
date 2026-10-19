@@ -1,0 +1,24 @@
+{
+  "id": "equipment__valhalla",
+  "kind": "direct",
+  "prompt": "Edit this game background for the equipment selection screen. Keep its original American inked post-apocalyptic comic style, violet city, thin ivory comic-page edge and civilian survival equipment. RECOMPOSE FOR UI LEGIBILITY: all detailed storage lockers, bags, helmets, tools, glowing batteries and crates must stay strictly in the outer LEFT 23% and outer RIGHT 23% of the image. The ENTIRE CENTRAL 54% from top to bottom must be a very DARK nearly black aubergine/navy quiet negative-space area, continuous soft shadow across the city wall AND floor, with very faint low-contrast suggestion of environment only. This is where eight bright selectable icons float: absolutely no objects, bright road markings, yellow barriers, cyan reflections, glowing lights, rubble silhouettes or busy texture behind them. The center floor must remain almost black too. Integrate the dark center naturally as deep nighttime shadow, gentle transition into richly illustrated edge objects, not a hard rectangular UI panel. Small restrained orange and cyan accents only at extreme side edges. No characters, no component icons, no labels, no text, no UI buttons. Keep landscape 16:9 composition.",
+  "targets": [
+    {
+      "path": "assets/equipment/valhalla.png",
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "art_sources/equipment/contrast_2026_10_17/sources/background.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-f65be09f-79c3-45ed-9645-48218c2193cb.png",
+  "references": [
+    "art_sources/comic_rebuild_2026_10_17/sources/equipment__valhalla.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/equipment/contrast_2026_10_17/previous_job.json"
+}

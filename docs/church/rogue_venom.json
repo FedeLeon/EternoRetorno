@@ -1,9 +1,0 @@
-{
-  "hero": "rogue",
-  "id": "venom",
-  "name": "Alquimista tóxico",
-  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: green hooded masked rogue coating a dagger with bright green venom from a vial. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Alquimista tóxico.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-c0c4bbf0-baf0-4b0b-a366-e32fbc490a5d.png",
-  "reference": "assets/rest/rogue.png",
-  "tool": "image_gen built-in"
-}

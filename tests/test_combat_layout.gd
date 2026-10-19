@@ -39,7 +39,7 @@ func run_tests() -> void:
 		for corner in [Vector2.ZERO, Vector2(card.size.x, 0), Vector2(card.size.x - 24, card.size.y - 23), Vector2(24, card.size.y - 23)]:
 			var point = card.get_global_transform() * corner
 			check(point.y >= 350 and point.y <= 720, "Card text remains within screen despite cropped lower rim")
-	check(app.hero_health[0].global_position.y < (app.hero_art[0].get_global_transform() * Vector2(0, app.hero_art[0].size.y)).y - preload("res://src/ui/components/combat_actor_scale.gd").HERO_HEIGHT, "Hero health above artwork")
+	check(app.hero_health[0].global_position.y > preload("res://src/ui/components/combat_layout.gd").ground_for(app), "Hero health below feet")
 	var index = 0
 	for i in range(6):
 		if not app.game.valid_targets(i).is_empty():

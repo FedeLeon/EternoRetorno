@@ -1,0 +1,28 @@
+{
+  "id": "guardian_run",
+  "kind": "hero_sheet",
+  "prompt": "Create a NEW clean transparent running animation sprite sheet, identity reference only from the attached woman. Ines, civilian construction worker, auburn braid, orange work jacket, violet scarf, gray work trousers, work boots, blue-white rectangular road-sign shield in left arm, short crowbar in right hand. American inked comic illustration, flat vibrant color, black outlines and thin ivory cutout rim. EXACTLY TWELVE complete full-body chronological RUNNING poses, arranged EXACT FOUR COLUMNS by THREE ROWS in a regular grid, left-to-right row-major. Each pose faces RIGHT. Each has exactly TWO legs attached to her own hips, exactly TWO boots attached to her legs, two arms. Natural alternating run cycle: leg push-off, knee lift, forward extension, contact, alternating left/right. No extra feet, no detached body parts, no motion ghosts, no duplicated overlapping limbs. VERY WIDE EMPTY TRANSPARENT GUTTERS between figures, all bodies and equipment fully contained inside their own cell, do not touch or cross any cell boundary. Same camera scale in all cells, planted boot on the same local ground line per cell. TRUE TRANSPARENT RGBA background throughout, no backdrop rectangles, no gray tiles, no gradients, no shadows, no smoke, no scenery. Reference background must NOT be copied. Twelve distinct clean cutout figures only. Landscape 4:3 sheet.",
+  "targets": [
+    {
+      "path": "assets/heroes/detail/guardian_run.png",
+      "dimensions": [
+        1024,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/guardian_run_fix_2026_10_17/sources/guardian_run.png",
+  "action": "run",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-0acf0a48-f108-4223-9f2d-f912c27fbe29.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/guardian_run_fix_2026_10_17/previous_job.json"
+}

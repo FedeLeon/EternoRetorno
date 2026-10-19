@@ -39,7 +39,6 @@ static func build(ui: Control) -> void:
 		if node.event == "altar":
 			view.can_offer = ui.game.run.heroes.all(func(h): return h.hp > 5) and ui.game.run.deck.any(func(c): return not c.upgraded)
 		view.choice_requested.connect(func(index): ui.act(func(): ui.game.choose_event(index)))
-		view.menu_requested.connect(ui.pause_menu)
 		ui.rect(view, 0, 0, 1280, 720)
 
 static func treasure_display(ui: Control) -> Dictionary:

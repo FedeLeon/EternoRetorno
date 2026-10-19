@@ -82,9 +82,21 @@ static func populate(ui: Control, body: Control, records: Dictionary, state: Dic
 		if record.is_empty():
 			ui.label_at("?\nSin descubrir",20,38,337,110,26,ui.MUTED,row).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 			continue
-		var actor = ui.EnemySprite.new()
-		actor.visual_id = definition.visual
-		ui.rect(actor,-8,58,128,126,row)
+		# A gallery needs one fitted illustration, not eight combat frames and an
+		# idle player per entry. Remove transparent padding before fitting the art.
+		var source: Texture2D = load("res://assets/enemies/hd/%s.png" % definition.visual)
+		var crop = AtlasTexture.new()
+		crop.atlas = source
+		crop.region = Rect2(source.get_image().get_used_rect())
+		crop.filter_clip = true
+		var artwork = TextureRect.new()
+		artwork.name = "BestiaryArtwork"
+		artwork.texture = crop
+		artwork.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		artwork.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		artwork.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+		artwork.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		ui.rect(artwork,4,52,102,128,row)
 		ui.label_at(definition.name,110,12,251,48,18,ui.GOLD,row)
 		var attacks: Array[String] = []
 		var blocks: Array[String] = []
@@ -92,5 +104,5 @@ static func populate(ui: Control, body: Control, records: Dictionary, state: Dic
 			attacks.append(str(int(intent.get("damage",0))))
 			blocks.append(str(int(intent.get("block",0))))
 		var role = {"protector":"Protege a sus compañeros.","support":"Restaura vida a sus aliados.","attacker":"Ataca según su intención."}.get(definition.get("role","attacker"),"Observá su intención.")
-		var text = "%d PV base · %s\n%s\nAtaque %s · bloqueo %s\nEncontrado %d · derrotado %d" % [definition.hp,"Guardián" if definition.get("boss",false) else "Criatura",role,"/".join(attacks),"/".join(blocks),record.get("encounters",0),record.get("kills",0)]
+		var text = "%d PV base · %s\n%s\nAtaque %s · bloqueo %s\nEncontrado %d · derrotado %d" % [definition.hp,"Guardián" if definition.get("boss",false) else "Máquina",role,"/".join(attacks),"/".join(blocks),record.get("encounters",0),record.get("kills",0)]
 		ui.label_at(text,110,64,251,116,15,ui.TEXT,row)

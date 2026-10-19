@@ -1,0 +1,25 @@
+{
+  "id": "base_camp__dusk__plot",
+  "target": "assets/base_camp/dusk/plot.png",
+  "kind": "building",
+  "hero": null,
+  "dimensions": [
+    512,
+    294
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/postapocalyptic/sources/base_camp__dusk__plot.png",
+  "building": "plot",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE isolated ONE empty square concrete foundation pad with scattered scrap at edge and clear center. View slightly from above and front, matches refuge camp camera, grounded base, warm sunset fromupperleft. TRUE transparent RGBA, no surrounding landscape, no people, no text. Generous clear margins. Building proportions wide and squat, not tall.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-34a75546-99e2-43dc-ac30-d3a1609aa5b4.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/identity_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "3ea4b3e3137f24ff10f3b0128a447618087d64a250b3df5957d3bd7b22ca5f1a",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

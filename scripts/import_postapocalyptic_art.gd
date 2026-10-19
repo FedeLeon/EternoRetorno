@@ -1,7 +1,8 @@
 extends SceneTree
 ## Geometric import of generated comic art. No drawing, gameplay or persistence.
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
-const ROOT = "res://docs/art_direction/postapocalyptic/"
+const Retired = preload("res://scripts/resource_retirements.gd")
+const ROOT = "res://art_sources/art_direction/postapocalyptic/"
 var manifest: Dictionary = {}
 var visuals: Dictionary = {}
 var installed = 0
@@ -19,13 +20,9 @@ func _initialize() -> void:
 		if manifest.get(job.target,{}).get("comic_rebuild_revision",0)==1: continue
 		if not only_job.is_empty() and job.id != only_job: continue
 		if job.kind == "card_bank" and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0], {}).get("style", "") == "postapocalyptic_pixel_cards": continue
-		if "--actors-only" in OS.get_cmdline_user_args() and job.kind not in ["machine_bank", "enemy_bank"]: continue
-		if job.kind in ["hero_action", "hero_bank"]: continue # Shared actor scale is imported separately.
+		if job.kind in ["hero_action", "hero_bank", "machine_bank", "enemy_bank"]: continue # Retired battle atlas jobs.
 		if not FileAccess.file_exists("res://" + job.source): continue
 		var source_hash = FileAccess.get_sha256("res://" + job.source)
-		if job.kind in ["machine_bank", "enemy_bank"] and manifest.get(job.target, {}).get("processing_version", 0) != processing_version(job):
-			install(job, source_hash)
-			continue
 		if job.kind == "card_bank" and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0],{}).get("source_sha256", "") == source_hash and manifest.get("assets/cards/art/minimal/%s.png" % job.cards[0],{}).get("fit_mode", "") == "symbol_bounds": continue
 		if job.kind not in ["card_bank", "portrait"] and manifest.get(job.target, {}).get("source_sha256", "") == source_hash: continue
 		if not FileAccess.file_exists(ROOT + "jobs/" + job.id + ".json"): continue
@@ -57,23 +54,6 @@ func install(job: Dictionary, source_hash: String) -> void:
 		push_error("Opaque cutout rejected: " + job.id); return
 	var dimensions = Vector2i(int(job.dimensions[0]), int(job.dimensions[1]))
 	match job.kind:
-		"machine_bank":
-			var layout: Dictionary = layouts.get(job.id, {})
-			if not layout.is_empty() and layout.source_sha256 != source_hash:
-				push_error("Reviewed layout belongs to a different source: " + job.id); return
-			var drawings = Pack.actor_cells("res://"+job.source,4,4,[],layout.get("row_edges", []))
-			if drawings.size()!=16: push_error("Invalid machine pose bank: "+job.id); return
-			for row in range(4):
-				var poses: Array[Image] = []
-				for phase in [0,0,0,0,0,1,2,3]: poses.append(drawings[row*4+phase])
-				var ratio = 1000.0
-				for pose in poses: ratio = minf(ratio,minf(228.0/pose.get_width(),228.0/pose.get_height()))
-				var atlas = Pack.pack(poses,8,256,ratio,240)
-				var id: String = job.machines[row]
-				visuals[id].merge({"style":"postapocalyptic_comic","frame_size":256,"idle_frames":4,"attack_frames":4},true)
-				store(atlas,"assets/enemies/animations/%s.png"%id,job,source_hash)
-				store(atlas.get_region(Rect2i(0,0,256,256)),"assets/enemies/hd/%s.png"%id,job,source_hash)
-			return
 		"machine_foreground_bank":
 			var cell = image.get_size()/2
 			for i in range(4):
@@ -82,22 +62,6 @@ func install(job: Dictionary, source_hash: String) -> void:
 				store(foreground,"assets/comic/enemies/%s.png"%id,job,source_hash)
 				visuals[id]["foreground_frames"] = 1
 			return
-		"enemy_bank":
-			var drawings = Pack.actor_cells("res://" + job.source, 2, 2)
-			if drawings.size() != 4: push_error("Invalid enemy atlas: " + job.id); return
-			var poses: Array[Image] = []
-			for index in [0,0,0,0,1,1,2,3]: poses.append(drawings[index])
-			var ratio = 1000.0
-			for pose in poses: ratio = minf(ratio, minf(228.0/pose.get_width(), 228.0/pose.get_height()))
-			image = Pack.pack(poses,8,256,ratio,240)
-			var id = job.target.get_file().get_basename()
-			visuals[id].merge({"style":"postapocalyptic_comic","frame_size":256,"idle_frames":4,"attack_frames":4},true)
-			store(image.get_region(Rect2i(0,0,256,256)),"assets/enemies/hd/%s.png"%id,job,source_hash)
-			var foreground = Image.load_from_file("res://"+job.source)
-			var cell = foreground.get_size()/2
-			foreground = foreground.get_region(Rect2i(Vector2i(0,cell.y),cell))
-			store(foreground,"assets/comic/enemies/%s.png"%id,job,source_hash)
-			visuals[id]["foreground_frames"] = 1
 		"card_bank":
 			var cell = image.get_size()/Vector2i(6,4)
 			for i in range(job.cards.size()):
@@ -162,14 +126,12 @@ func install(job: Dictionary, source_hash: String) -> void:
 	store(image,job.target,job,source_hash)
 
 func store(image: Image, path: String, job: Dictionary, source_hash: String) -> void:
+	if Retired.contains(path): return
 	if manifest.get(path.trim_prefix("res://"), {}).get("fluid_revision", 0): return
 	DirAccess.make_dir_recursive_absolute(("res://"+path).get_base_dir())
 	Pack.save(image,"res://"+path)
 	manifest[path] = {"sha256":FileAccess.get_sha256("res://"+path),"source_sha256":source_hash,"source":job.source,"job":job.id,"style":"postapocalyptic_comic"}
 	if job.kind == "card_bank": manifest[path]["fit_mode"] = "symbol_bounds"
-	if job.kind in ["machine_bank", "enemy_bank"]:
-		manifest[path]["processing_version"] = processing_version(job)
-		manifest[path]["processing"] = "adaptive gutters, principal silhouette crop, common scale and baseline"
 	if layouts.has(job.id):
 		manifest[path]["row_edges"] = layouts[job.id].row_edges
 		manifest[path]["processing"] = "reviewed nonuniform rows, adaptive columns, principal silhouette crop, common scale and baseline"
@@ -186,6 +148,3 @@ func symbol_bounds(image: Image) -> Rect2i:
 				low = low.min(Vector2i(x,y)); high = high.max(Vector2i(x,y))
 	if high.x < 0: return Rect2i(Vector2i.ZERO,image.get_size())
 	return Rect2i(low,high-low+Vector2i.ONE).grow(6).intersection(Rect2i(Vector2i.ZERO,image.get_size()))
-
-func processing_version(job: Dictionary) -> int:
-	return 6 if layouts.has(job.id) else 5

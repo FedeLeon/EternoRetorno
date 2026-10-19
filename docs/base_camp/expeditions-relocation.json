@@ -1,9 +1,0 @@
-{
-  "date": "2026-09-30",
-  "tool": "image_gen integrated",
-  "mode": "precise-object-edit",
-  "input": "assets/base_camp/background.png (previous version in Git)",
-  "output": "assets/base_camp/background.png",
-  "source": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d20b4c84-3e0a-468d-9097-142bb0d688f2.png",
-  "prompt": "Use case: precise-object-edit. Edit target: attached daytime pixel-art camp background. Move ONLY the empty construction plot currently in the middle-right, directly below the stone arch (roughly x 62%-87%, y 40%-49%), to the CENTER FOREGROUND BELOW the central campfire. Remove its old stone outline and stakes and restore natural grass and a clear dirt path toward the arch there. Draw the relocated empty plot as a flat rectangular perspective patch of compacted dirt bordered with low stones and four short stakes, centered at x50%, spanning approximately x34%-66%, y69%-88% (below the fire, above the bottom edge). Keep clear separation from campfire and its sitting logs; move the little abandoned cart in the lower center-right out of this plot if necessary. Preserve precisely the other three plots (two left, one lower right), tent, campfire and its location, stone arch, trees, lake, distant castle, waterfalls, daylight palette, camera, composition, original wide aspect ratio and detailed pixel art style. Do not add buildings, people, words, signs or UI. This is a game background; the expedition building will be placed separately over the new bottom-center plot."
-}

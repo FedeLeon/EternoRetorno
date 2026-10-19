@@ -1,7 +1,6 @@
 extends Control
 
 const TargetGlow = preload("res://src/ui/components/target_glow.gd")
-const CombatEffects = preload("res://src/presentation/combat_effects.gd")
 const EnemyIntent = preload("res://src/ui/components/enemy_intent.gd")
 const BattleBackground = preload("res://src/ui/components/battle_background.gd")
 const TreasureScreen = preload("res://src/ui/screens/treasure_screen.gd")
@@ -14,11 +13,7 @@ const NumberView = preload("res://src/ui/components/number_view.gd")
 const Game = preload("res://src/game.gd")
 const Art = preload("res://src/pixel_art.gd")
 const EnemySprite = preload("res://src/enemy_sprite.gd")
-const Warrior = preload("res://src/warrior_sprite.gd")
-const Guardian = preload("res://src/guardian_sprite.gd")
-const Rogue = preload("res://src/rogue_sprite.gd")
-const Mage = preload("res://src/mage_sprite.gd")
-const ANIMATED_HEROES = {"warrior": Warrior, "guardian": Guardian, "rogue": Rogue, "mage": Mage}
+const BATTLE_HEROES = {"warrior": true, "guardian": true, "rogue": true, "mage": true}
 const Campfire = preload("res://src/campfire.gd")
 const CAMP_POSITIONS = [Vector2(180, 558), Vector2(1100, 558), Vector2(380, 558), Vector2(900, 558)]
 const Dungeon = preload("res://src/dungeon.gd")
@@ -36,6 +31,7 @@ var equipped: Dictionary = {}
 var selected_item = ""
 var screen = "home"
 var selected_party: Array = []
+var selected_pet: String = "dog"
 const SynergyView = preload("res://src/ui/components/synergy_view.gd")
 var selected_synergy = ""
 var selected_card = -1
@@ -44,6 +40,7 @@ var layer: Control
 var overlay: Control
 var upgrade_mode = false
 var return_screen = "home"
+var navigation = preload("res://src/ui/back_navigation.gd").new()
 var combat_busy = false
 var hero_health: Dictionary = {}
 var enemy_health: Dictionary = {}
@@ -77,15 +74,17 @@ func panel(x: float, y: float, w: float, h: float, border: Color = Color("343b4d
 	return preload("res://src/ui/components/ui_factory.gd").panel(x, y, w, h, border, parent if parent != null else layer)
 
 func art(kind: String, x: float, y: float, w: float, h: float, parent: Control = null, gear: Dictionary = {}) -> Control:
-	var visual = ANIMATED_HEROES[kind].new()
+	var visual = preload("res://src/presentation/detailed_hero.gd").new()
+	visual.hero_id = kind
 	rect(visual, x - w * 0.18, y, w * 1.36, h, parent)
-	preload("res://src/presentation/hero_equipment.gd").apply(visual, kind, gear)
+	visual.apply_gear(gear)
 	return visual
 
 func background() -> void:
 	preload("res://src/ui/screen_backgrounds.gd").build(self)
 
 func render() -> void:
+	navigation.observe(self)
 	audio.select_screen(screen, game.run, return_screen)
 	hero_health.clear()
 	enemy_health.clear()
@@ -126,6 +125,7 @@ func render() -> void:
 		"event_cards": preload("res://src/ui/screens/event_cards_screen.gd").build(self)
 		"reward": reward_view()
 		"victory", "defeat": result_view()
+	preload("res://src/ui/components/header_back_button.gd").build(self)
 	preload("res://src/presentation/comic_presentation.gd").frame_screen(self)
 	if screen == "combat" and game.run.combat.turn == 1:
 		preload("res://src/ui/tutorial_navigation.gd").maybe.call_deferred(self)
@@ -251,6 +251,7 @@ func base_camp_view() -> void:
 		"market": market_plot, "forge": func(): preload("res://src/ui/forge_navigation.gd").plot(self), "close_modal": close_modal})
 
 func open_selection() -> void:
+	selected_pet = "dog"
 	selected_party = []
 	equipped = {}
 	if game.profile.erase("preparation"):
@@ -265,6 +266,7 @@ func confirm_new() -> void:
 
 func selection() -> void:
 	preload("res://src/ui/screens/selection_screen.gd").build(self, {
+		"pet": func(id): selected_pet = id; render(),
 		"toggle": toggle_hero, "back": open_base_camp, "equipment": open_equipment,
 		"menu": func(): screen = "home"; render(),
 	})
@@ -287,7 +289,7 @@ func begin_on_floor(starting_floor: int) -> void:
 	# Abandon only after a valid replacement party has been chosen.
 	if active_run():
 		game._finish(false)
-	if game.new_run(selected_party, -1, equipped, starting_floor):
+	if game.new_run(selected_party, -1, equipped, starting_floor, selected_pet):
 		# Commit the first encounter before any presentation; resume starts in combat.
 		game.enter_node(0)
 		await preload("res://src/ui/cinematic_navigation.gd").party(self)
@@ -322,6 +324,8 @@ func combat_target_style(target: Button) -> void:
 
 func equipped_relics() -> Array:
 	var result: Array = []
+	var pet = preload("res://src/ui/components/pet_choice.gd").indicator(game.run.get("pet", ""))
+	if not pet.is_empty(): result.append(pet)
 	var team_relic = game.run.get("team_relic", "")
 	if game.content.equipment.has(team_relic):
 		var relic = game.content.equipment[team_relic].duplicate()
@@ -376,11 +380,7 @@ func animate_combat_action(hand_index: int = -1, target_index: int = -1, synergy
 	await preload("res://src/ui/combat_flow.gd").run(self, hand_index, target_index, synergy_id)
 
 func flash_hit(visual: Control) -> void:
-	var original = visual.modulate
-	visual.modulate = Color(1.6, 0.5, 0.5)
-	var tween = visual.create_tween()
-	tween.tween_interval(0.10)
-	tween.tween_property(visual, "modulate", original, 0.20)
+	if visual.has_method("play_once"): visual.play_once("hurt")
 
 func reward_view() -> void:
 	preload("res://src/ui/screens/reward_screen.gd").build(self)
@@ -401,7 +401,7 @@ func deck_view() -> void:
 		view.name = "CardUpgradeScreen"
 		rect(view, 0, 0, 1280, 720)
 		return
-	preload("res://src/ui/screens/deck_screen.gd").build(self, func(): screen = return_screen; upgrade_mode = false; render())
+	preload("res://src/ui/screens/deck_screen.gd").build(self)
 
 func open_collection() -> void:
 	screen = "collection"
@@ -445,58 +445,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 func back() -> void:
-	var hud = layer.get_node_or_null("CombatHUD")
-	if is_instance_valid(hud) and hud.close_relic():
-		return
-	if combat_busy:
-		return
-	var treasure = layer.get_node_or_null("TreasureScreen")
-	if is_instance_valid(treasure) and treasure.busy:
-		return
-	if is_instance_valid(treasure) and treasure.result.get("opened", false) and not is_instance_valid(overlay):
-		treasure.continue_requested.emit()
-		return
-	if is_instance_valid(overlay):
-		close_modal()
-	elif screen == "home":
-		show_modal("Cerrar el libro", "Tu progreso está guardado.", "Salir del juego", func(): game.checkpoint(); get_tree().quit())
-	elif screen == "bonds":
-		screen = "refuge"; render()
-	elif screen == "refuge":
-		layer.get_node("RefugeScreen").go_back()
-	elif screen == "items":
-		continue_run()
-	elif screen == "equipment":
-		screen = "select"
-		render()
-	elif screen == "market" and market_hero != "":
-		market_hero = ""
-		render()
-	elif screen == "forge" and forge_hero != "":
-		forge_hero = ""
-		render()
-	elif screen == "church" and church_hero != "":
-		church_hero = ""
-		render()
-	elif screen == "bestiary" and return_screen == "home":
-		screen = "home"; render()
-	elif screen in ["select", "market", "forge", "church", "expeditions", "projects", "training_setup", "bestiary"]:
-		open_base_camp()
-	elif screen in ["base_camp", "collection", "options"]:
-		screen = "home"
-		render()
-	elif screen == "map" and preload("res://src/ui/adventure_navigation.gd").has_paths(game):
-		continue_run()
-	elif screen == "deck":
-		screen = return_screen
-		upgrade_mode = false
-		render()
-	elif screen == "combat" and (selected_card >= 0 or selected_synergy != ""):
-		selected_card = -1
-		selected_synergy = ""
-		render()
-	else:
-		pause_menu()
+	navigation.back(self)
 
 func object_icon(index: int, x: float, y: float, side: float, parent: Control = null) -> void:
 	var icon = TextureRect.new()

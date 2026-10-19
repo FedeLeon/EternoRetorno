@@ -16,13 +16,12 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 		ui.rect(heading_frame, 724, 94, 536, 62)
 		preload("res://src/ui/components/building_hero_picker.gd").build(ui, snapshot.heroes, "Una victoria abre nuevos caminos", "ChurchHero_", actions.hero, true)
 		return
-	ui.button("Volver a héroes", 1024, 94, 228, 48, func(): actions.hero.call("")).name = "BackToHeroes"
 	var specialization_heading = Panel.new()
 	specialization_heading.name = "SpecializationHeadingFrame"
 	specialization_heading.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	specialization_heading.add_theme_stylebox_override("panel", preload("res://src/ui/components/dark_skin.gd").dialog())
-	ui.rect(specialization_heading, 528, 94, 486, 48)
-	ui.label_at(snapshot.heroes[snapshot.hero].name + " · Especializaciones", 528, 94, 486, 48, 23, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ui.rect(specialization_heading, 528, 94, 724, 48)
+	ui.label_at(snapshot.heroes[snapshot.hero].name + " · Especializaciones", 528, 94, 724, 48, 23, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	for i in range(snapshot.options.size()):
 		var spec: Dictionary = snapshot.options[i]
 		var active = spec.id == snapshot.active

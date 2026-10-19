@@ -61,7 +61,7 @@ func run_tests() -> void:
 	check(intent.get_node("Attack").amount == 9 and intent.get_node("Block").amount == 9, "intent displays effective values")
 	var buff = app.hero_art[0].get_parent().get_node("HeroEffects/Effect_strength")
 	check(buff.get_meta("battle_effect").value == 25 and buff.get_child(1).text == "25%", "hero buff icon")
-	var enemy_effects = intent.get_node("EnemyEffects")
+	var enemy_effects = app.layer.get_node("EnemyTarget0/EnemyEffects")
 	check(enemy_effects.has_node("Effect_weakness") and enemy_effects.has_node("Effect_fracture"), "both enemy debuffs visible")
 	await shot("combat")
 	for pressed in [true, false]:

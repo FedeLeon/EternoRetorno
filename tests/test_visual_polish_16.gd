@@ -42,19 +42,13 @@ func breathing_render() -> void:
 	root.add_child(viewport)
 	var actor = Actor.new(); actor.size = Vector2(256, 240)
 	viewport.add_child(actor); actor.set_process(false)
-	actor.idle_motion.advance(0.13)
 	await RenderingServer.frame_post_draw
 	var first = viewport.get_texture().get_image()
-	actor.idle_motion.advance(0.95)
+	await create_timer(.2).timeout
 	await RenderingServer.frame_post_draw
 	var second = viewport.get_texture().get_image()
-	actor.idle_motion.advance(0.001)
-	await RenderingServer.frame_post_draw
-	var near = viewport.get_texture().get_image()
-	var movement = pixels_different(first, second)
-	check(movement > 100, "native rendered guard changes authored drawing")
-	check(pixels_different(second, near) < movement / 3, "sub-frame times do not jump between poses")
-	check(preload("res://src/presentation/hero_grounding.gd").bottom(actor.sprite.sprite_frames.get_frame_texture("idle",actor.sprite.frame)) == 240, "authored guard feet stay planted")
+	check(pixels_different(first,second)==0,"static idle does not change rendered pixels")
+	check(not actor.is_processing(),"static body has no idle processor")
 	viewport.queue_free(); await process_frame
 func run_tests() -> void:
 	root.size = Vector2i(1280, 720)
@@ -100,5 +94,5 @@ func run_tests() -> void:
 	collection.tabs[1].pressed.emit(); await process_frame; await shot("unlocks")
 	await unlock_gallery(collection.snapshot.unlocks)
 	print("VISUAL POLISH 16: %d checks / %d failures" % [checks, failures])
-	app.queue_free(); await process_frame; Actor.cache.clear()
+	app.queue_free(); await process_frame
 	quit(1 if failures else 0)

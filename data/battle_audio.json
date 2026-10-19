@@ -1,0 +1,517 @@
+{
+  "enemies": {
+    "armored_beetle": {
+      "name": "Blindado de inspección",
+      "visual": "crypt_beetle",
+      "kind": "servo",
+      "seed": 18000,
+      "frequency": 95,
+      "pulses": 2,
+      "mass": 0.3764705882352941
+    },
+    "ash_bombardier": {
+      "name": "Lanzacargas",
+      "visual": "bandit_4",
+      "kind": "pneumatic",
+      "seed": 18071,
+      "frequency": 162,
+      "pulses": 3,
+      "mass": 0.4470588235294118
+    },
+    "ash_brute": {
+      "name": "Prensa de demolición",
+      "visual": "bandit_5",
+      "kind": "servo",
+      "seed": 18142,
+      "frequency": 229,
+      "pulses": 4,
+      "mass": 0.5647058823529412
+    },
+    "ash_brute_elite": {
+      "name": "Prensa de demolición · reforzada",
+      "visual": "bandit_5",
+      "kind": "servo",
+      "seed": 18213,
+      "frequency": 296,
+      "pulses": 5,
+      "mass": 1.0823529411764705
+    },
+    "ash_cinder_wolf": {
+      "name": "Sabueso térmico",
+      "visual": "crypt_wolf",
+      "kind": "servo",
+      "seed": 18284,
+      "frequency": 363,
+      "pulses": 6,
+      "mass": 0.43529411764705883
+    },
+    "ash_lancer": {
+      "name": "Punzón de la central",
+      "visual": "bandit_1",
+      "kind": "servo",
+      "seed": 18355,
+      "frequency": 430,
+      "pulses": 2,
+      "mass": 0.4470588235294118
+    },
+    "ash_shielder": {
+      "name": "Barrera de la central",
+      "visual": "bandit_3",
+      "kind": "servo",
+      "seed": 18426,
+      "frequency": 497,
+      "pulses": 3,
+      "mass": 0.5176470588235295
+    },
+    "ash_warlord": {
+      "name": "Supervisor de fundición",
+      "visual": "bandit_7",
+      "kind": "servo",
+      "seed": 18497,
+      "frequency": 564,
+      "pulses": 4,
+      "mass": 0.5411764705882353
+    },
+    "ash_wing_beetle": {
+      "name": "Coraza de vuelo",
+      "visual": "flying_5",
+      "kind": "rotor",
+      "seed": 18568,
+      "frequency": 111,
+      "pulses": 5,
+      "mass": 0.49411764705882355
+    },
+    "bandit_archer": {
+      "name": "Vigía de precisión",
+      "visual": "bandit_2",
+      "kind": "servo",
+      "seed": 18639,
+      "frequency": 178,
+      "pulses": 6,
+      "mass": 0.3176470588235294
+    },
+    "boss": {
+      "name": "Guardián del subsuelo",
+      "visual": "crypt_automaton",
+      "kind": "servo",
+      "seed": 18710,
+      "frequency": 245,
+      "pulses": 2,
+      "mass": 1.2941176470588236
+    },
+    "crypt_frost_serpent": {
+      "name": "Serpentín refrigerante",
+      "visual": "beast_6",
+      "kind": "servo",
+      "seed": 18781,
+      "frequency": 312,
+      "pulses": 3,
+      "mass": 0.38823529411764707
+    },
+    "crypt_horse": {
+      "name": "Corredor de carga",
+      "visual": "skeleton_7",
+      "kind": "servo",
+      "seed": 18852,
+      "frequency": 379,
+      "pulses": 4,
+      "mass": 0.3764705882352941
+    },
+    "crypt_lancer_new": {
+      "name": "Perforador de riel",
+      "visual": "skeleton_1",
+      "kind": "servo",
+      "seed": 18923,
+      "frequency": 446,
+      "pulses": 5,
+      "mass": 0.35294117647058826
+    },
+    "crypt_scorpion": {
+      "name": "Pinza de túnel",
+      "visual": "beast_3",
+      "kind": "servo",
+      "seed": 18994,
+      "frequency": 513,
+      "pulses": 6,
+      "mass": 0.35294117647058826
+    },
+    "crypt_storm": {
+      "name": "Bobina de tormenta",
+      "visual": "elemental_3",
+      "kind": "electric",
+      "seed": 19065,
+      "frequency": 580,
+      "pulses": 2,
+      "mass": 0.4
+    },
+    "crypt_tomb_raider": {
+      "name": "Extractor de archivos",
+      "visual": "crypt_bandit",
+      "kind": "servo",
+      "seed": 19136,
+      "frequency": 127,
+      "pulses": 3,
+      "mass": 0.35294117647058826
+    },
+    "cultist": {
+      "name": "Relé incendiario",
+      "visual": "crypt_shaman",
+      "kind": "electric",
+      "seed": 19207,
+      "frequency": 194,
+      "pulses": 4,
+      "mass": 0.32941176470588235
+    },
+    "dragon_hatchling": {
+      "name": "Dron de combustión",
+      "visual": "flying_2",
+      "kind": "rotor",
+      "seed": 19278,
+      "frequency": 261,
+      "pulses": 5,
+      "mass": 0.4588235294117647
+    },
+    "elite": {
+      "name": "Custodio de acceso",
+      "visual": "skeleton_6",
+      "kind": "servo",
+      "seed": 19349,
+      "frequency": 328,
+      "pulses": 6,
+      "mass": 0.9176470588235294
+    },
+    "fire_elemental": {
+      "name": "Incinerador",
+      "visual": "elemental_0",
+      "kind": "electric",
+      "seed": 19420,
+      "frequency": 395,
+      "pulses": 2,
+      "mass": 0.35294117647058826
+    },
+    "forest_alpha_bat": {
+      "name": "Dron alfa",
+      "visual": "flying_1",
+      "kind": "rotor",
+      "seed": 19491,
+      "frequency": 462,
+      "pulses": 3,
+      "mass": 0.4
+    },
+    "forest_bat": {
+      "name": "Dron de ala ancha",
+      "visual": "beast_2",
+      "kind": "rotor",
+      "seed": 19562,
+      "frequency": 529,
+      "pulses": 4,
+      "mass": 0.24705882352941178
+    },
+    "forest_boar": {
+      "name": "Excavador compacto",
+      "visual": "beast_1",
+      "kind": "servo",
+      "seed": 19633,
+      "frequency": 596,
+      "pulses": 5,
+      "mass": 0.3764705882352941
+    },
+    "forest_boss": {
+      "name": "Supervisor del cinturón",
+      "visual": "goblin_7",
+      "kind": "servo",
+      "seed": 19704,
+      "frequency": 143,
+      "pulses": 6,
+      "mass": 1.4705882352941178
+    },
+    "forest_cutthroat": {
+      "name": "Asaltante de chatarra",
+      "visual": "bandit_0",
+      "kind": "servo",
+      "seed": 19775,
+      "frequency": 210,
+      "pulses": 2,
+      "mass": 0.36470588235294116
+    },
+    "forest_dark_raven": {
+      "name": "Vigía de azotea",
+      "visual": "flying_6",
+      "kind": "rotor",
+      "seed": 19846,
+      "frequency": 277,
+      "pulses": 3,
+      "mass": 0.3411764705882353
+    },
+    "forest_elite": {
+      "name": "Triturador pesado",
+      "visual": "beast_5",
+      "kind": "servo",
+      "seed": 19917,
+      "frequency": 344,
+      "pulses": 4,
+      "mass": 1.011764705882353
+    },
+    "forest_hunter_enemy": {
+      "name": "Rastreador de perímetro",
+      "visual": "bandit_6",
+      "kind": "servo",
+      "seed": 19988,
+      "frequency": 411,
+      "pulses": 5,
+      "mass": 0.3411764705882353
+    },
+    "forest_miasma": {
+      "name": "Nebulizador industrial",
+      "visual": "elemental_4",
+      "kind": "electric",
+      "seed": 20059,
+      "frequency": 478,
+      "pulses": 6,
+      "mass": 0.4117647058823529
+    },
+    "forest_nightbat": {
+      "name": "Dron nocturno",
+      "visual": "flying_0",
+      "kind": "rotor",
+      "seed": 20130,
+      "frequency": 545,
+      "pulses": 2,
+      "mass": 0.27058823529411763
+    },
+    "forest_raven": {
+      "name": "Carroñero aéreo",
+      "visual": "beast_7",
+      "kind": "rotor",
+      "seed": 20201,
+      "frequency": 612,
+      "pulses": 3,
+      "mass": 0.23529411764705882
+    },
+    "forest_wolf": {
+      "name": "Sabueso de patrulla",
+      "visual": "beast_0",
+      "kind": "servo",
+      "seed": 20272,
+      "frequency": 159,
+      "pulses": 4,
+      "mass": 0.2823529411764706
+    },
+    "giant_wasp": {
+      "name": "Aguijón de seguridad",
+      "visual": "flying_4",
+      "kind": "rotor",
+      "seed": 20343,
+      "frequency": 226,
+      "pulses": 5,
+      "mass": 0.3058823529411765
+    },
+    "goblin_archer": {
+      "name": "Disparador de clavos",
+      "visual": "goblin_2",
+      "kind": "servo",
+      "seed": 20414,
+      "frequency": 293,
+      "pulses": 6,
+      "mass": 0.25882352941176473
+    },
+    "goblin_bomber": {
+      "name": "Portacargas explosivas",
+      "visual": "goblin_4",
+      "kind": "pneumatic",
+      "seed": 20485,
+      "frequency": 360,
+      "pulses": 2,
+      "mass": 0.27058823529411763
+    },
+    "goblin_lancer": {
+      "name": "Recolector de asta",
+      "visual": "goblin_1",
+      "kind": "servo",
+      "seed": 20556,
+      "frequency": 427,
+      "pulses": 3,
+      "mass": 0.32941176470588235
+    },
+    "goblin_raider": {
+      "name": "Desmontador",
+      "visual": "goblin_5",
+      "kind": "servo",
+      "seed": 20627,
+      "frequency": 494,
+      "pulses": 4,
+      "mass": 0.29411764705882354
+    },
+    "goblin_rider": {
+      "name": "Patrulla de arrastre",
+      "visual": "goblin_6",
+      "kind": "servo",
+      "seed": 20698,
+      "frequency": 561,
+      "pulses": 5,
+      "mass": 0.4
+    },
+    "goblin_shaman": {
+      "name": "Nodo de reparación",
+      "visual": "goblin_3",
+      "kind": "servo",
+      "seed": 20769,
+      "frequency": 108,
+      "pulses": 6,
+      "mass": 0.32941176470588235
+    },
+    "goblin_warrior": {
+      "name": "Recolector armado",
+      "visual": "goblin_0",
+      "kind": "servo",
+      "seed": 20840,
+      "frequency": 175,
+      "pulses": 2,
+      "mass": 0.3058823529411765
+    },
+    "ice_elemental": {
+      "name": "Refrigerador móvil",
+      "visual": "elemental_1",
+      "kind": "electric",
+      "seed": 20911,
+      "frequency": 242,
+      "pulses": 3,
+      "mass": 0.4235294117647059
+    },
+    "poison_toad": {
+      "name": "Fumigador",
+      "visual": "beast_4",
+      "kind": "pneumatic",
+      "seed": 20982,
+      "frequency": 309,
+      "pulses": 4,
+      "mass": 0.3058823529411765
+    },
+    "rat": {
+      "name": "Sonda de conductos",
+      "visual": "crypt_bat",
+      "kind": "servo",
+      "seed": 21053,
+      "frequency": 376,
+      "pulses": 5,
+      "mass": 0.25882352941176473
+    },
+    "rock_elemental": {
+      "name": "Compactador",
+      "visual": "elemental_2",
+      "kind": "electric",
+      "seed": 21124,
+      "frequency": 443,
+      "pulses": 6,
+      "mass": 0.4235294117647059
+    },
+    "root_elemental": {
+      "name": "Enredador de cables",
+      "visual": "elemental_6",
+      "kind": "electric",
+      "seed": 21195,
+      "frequency": 510,
+      "pulses": 2,
+      "mass": 0.4470588235294118
+    },
+    "sand_elemental": {
+      "name": "Filtro de ceniza",
+      "visual": "elemental_5",
+      "kind": "electric",
+      "seed": 21266,
+      "frequency": 577,
+      "pulses": 3,
+      "mass": 0.4823529411764706
+    },
+    "shadow_elemental": {
+      "name": "Interferencia negra",
+      "visual": "elemental_7",
+      "kind": "electric",
+      "seed": 21337,
+      "frequency": 124,
+      "pulses": 4,
+      "mass": 0.2823529411764706
+    },
+    "skeleton": {
+      "name": "Operario perforador",
+      "visual": "crypt_lancer",
+      "kind": "servo",
+      "seed": 21408,
+      "frequency": 191,
+      "pulses": 5,
+      "mass": 0.35294117647058826
+    },
+    "skeleton_archer": {
+      "name": "Torreta móvil",
+      "visual": "skeleton_2",
+      "kind": "servo",
+      "seed": 21479,
+      "frequency": 258,
+      "pulses": 6,
+      "mass": 0.25882352941176473
+    },
+    "skeleton_berserker": {
+      "name": "Desguazador",
+      "visual": "skeleton_5",
+      "kind": "servo",
+      "seed": 21550,
+      "frequency": 325,
+      "pulses": 2,
+      "mass": 0.32941176470588235
+    },
+    "skeleton_mage": {
+      "name": "Enlace de reactivación",
+      "visual": "skeleton_4",
+      "kind": "servo",
+      "seed": 21621,
+      "frequency": 392,
+      "pulses": 3,
+      "mass": 0.29411764705882354
+    },
+    "skeleton_shielder": {
+      "name": "Unidad de contención",
+      "visual": "skeleton_3",
+      "kind": "servo",
+      "seed": 21692,
+      "frequency": 459,
+      "pulses": 4,
+      "mass": 0.3764705882352941
+    },
+    "skeleton_warrior": {
+      "name": "Cortador industrial",
+      "visual": "skeleton_0",
+      "kind": "servo",
+      "seed": 21763,
+      "frequency": 526,
+      "pulses": 5,
+      "mass": 0.2823529411764706
+    },
+    "slime": {
+      "name": "Fuga corrosiva",
+      "visual": "crypt_slime",
+      "kind": "pneumatic",
+      "seed": 21834,
+      "frequency": 593,
+      "pulses": 6,
+      "mass": 0.4
+    },
+    "volcano_boss": {
+      "name": "ARCA, núcleo del reinicio",
+      "visual": "flying_3",
+      "kind": "rotor",
+      "seed": 21905,
+      "frequency": 140,
+      "pulses": 2,
+      "mass": 1.7
+    },
+    "watch_owl": {
+      "name": "Ojo de rastreo",
+      "visual": "flying_7",
+      "kind": "rotor",
+      "seed": 21976,
+      "frequency": 207,
+      "pulses": 3,
+      "mass": 0.3411764705882353
+    }
+  }
+}

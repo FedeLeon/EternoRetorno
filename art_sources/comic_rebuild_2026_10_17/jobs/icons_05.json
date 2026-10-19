@@ -1,0 +1,80 @@
+{
+  "id": "icons_05",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: first victory; cell 2: five victories; cell 3: forbidden pact; cell 4: guardian victory; cell 5: home again; cell 6: last breath; cell 7: mage victory; cell 8: master armor; cell 9: master weapon. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\n\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/collection/icons/first_victory.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/five_victories.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/forbidden_pact.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/guardian_victory.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/home_again.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/last_breath.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/mage_victory.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/master_armor.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "path": "assets/collection/icons/master_weapon.png",
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/icons_05.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ff04c8f1-10ca-44ce-8aad-fd456b94986a.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

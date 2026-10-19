@@ -1,0 +1,27 @@
+{
+  "id": "mage_sweep",
+  "kind": "hero_sheet",
+  "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Vera, mature silver-haired female teacher, purple long civilian coat, cream shirt, dark work trousers and boots, improvised cyan electrical coil emitter held in her hands. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a wide cyan ELECTRICAL FAN pulse: coil emitter arcs from high right to low right, sweeping electrical wave, torso turns, arms follow through then reset. Visibly different from a focused straight discharge. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/heroes/actions/mage_sweep.png",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "mage",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/mage_sweep.png",
+  "action": "sweep",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-f0ec6a86-1505-4478-8c99-25096b17b5a8.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_mage.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

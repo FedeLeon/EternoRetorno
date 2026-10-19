@@ -1,0 +1,14 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Game inventory icon pair for original post-apocalyptic American inked comic. EXACT TWO icons side by side, TWO columns ONE row with wide fully transparent gutter. Left: small clear pile of 3 salvaged rusty steel fragments, a bent metal plate, a short bolt and copper offcut, recognizable SCRAP METAL, no machinery or face. Right: ONE clean forged rectangular steel ALLOY INGOT in three-quarter view, beveled shape and a small glowing orange forging seam. Minimalist strong readable silhouettes, bold dark ink contours, flat gray-blue steel, restrained rusty orange highlights, thin ivory cutout rim. No fine texture or tiny detail. Must be readable at 40px. Both objects same visual size centered in their own equal cell, generous transparent margin, no overlap or cropping. TRUE transparent background, no backdrop, no ground, no shadows, no labels, no letters, no digits, no UI panels.",
+  "source": "sources/materials.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-592ac4ce-c12c-409e-87cf-0cc5c34e2324.png",
+  "transparent_background": true,
+  "columns": 2,
+  "rows": 1,
+  "targets": [
+    "assets/forge/materials/scrap.png",
+    "assets/forge/materials/alloy.png"
+  ],
+  "processing": "Geometric column crop, trim alpha, proportional Lanczos fit into 128x128; no painted changes."
+}

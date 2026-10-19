@@ -1,0 +1,5 @@
+{
+  "hero": "guardian",
+  "prompt": "Generate a NEW game animation sprite sheet. Transparent alpha background. Mara the red braided construction worker from reference, orange jacket purple scarf road sign shield and crowbar, comic ink and thin white outline. Landscape sheet EXACT FOUR columns THREE rows (12 drawings). Large generous transparent gutters: each complete full-body figure AND complete weapon must fit comfortably within its own cell with 20% clear margin on both sides, never overlapping or touching another figure. Uniform size, face right. Row1 FOUR consecutive poses of a crowbar jab: guard, arm winds up, full forward jab, guard recovery. Row2 FOUR poses of horizontal crowbar slash: windup, torso turns, slash, recovery. Row3 FOUR poses of strong shield shove: crouch, prepare shield, full shield block shove, recover. Keep weapons short enough to stay in the cell. No text, no scene, true transparent PNG, all limbs intact.",
+  "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-eca1777c-df0f-44f8-8aab-c1b1402be3c1.png"
+}

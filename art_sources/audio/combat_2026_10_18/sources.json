@@ -1,0 +1,4518 @@
+[
+  {
+    "id": "enemy_armored_beetle_attack_0",
+    "file": "assets/audio/combat/enemy_armored_beetle_attack_0.ogg",
+    "sha256": "7806c0971349c47d800d655e8494771adf8c769cff60f75dbb43368f81ce63f0",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "armored_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_armored_beetle_attack_1",
+    "file": "assets/audio/combat/enemy_armored_beetle_attack_1.ogg",
+    "sha256": "89c67820efb05cdcee8553dd620cefc72c0129a23661ad09472ccebc247e07ce",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "armored_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_armored_beetle_guard_0",
+    "file": "assets/audio/combat/enemy_armored_beetle_guard_0.ogg",
+    "sha256": "a040bfdc0f2c3a886dc2ade40ee4d3f5c0b44f4c29aa38819c76773b222546c1",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "armored_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_armored_beetle_death_0",
+    "file": "assets/audio/combat/enemy_armored_beetle_death_0.ogg",
+    "sha256": "4aa9427b33802097a721738b55daa1f6159a284dcb94a2dbd058319f7babd291",
+    "seconds": 0.8253,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "armored_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_bombardier_attack_0",
+    "file": "assets/audio/combat/enemy_ash_bombardier_attack_0.ogg",
+    "sha256": "976ef0cfc2f549525afa05f0a92d63267bbd7edd32cf248a7d1bf931ac34283a",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_bombardier",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_bombardier_attack_1",
+    "file": "assets/audio/combat/enemy_ash_bombardier_attack_1.ogg",
+    "sha256": "489165c67361573a1a1da11e6aaf94a9053543b33ac3e1035b4f5f654aab7564",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_bombardier",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_bombardier_guard_0",
+    "file": "assets/audio/combat/enemy_ash_bombardier_guard_0.ogg",
+    "sha256": "09b9250a6b66dc5073770dbecb817aacea2b5938925e23dddadc970a42b0830d",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_bombardier",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_bombardier_death_0",
+    "file": "assets/audio/combat/enemy_ash_bombardier_death_0.ogg",
+    "sha256": "cb4195ec650b04cf510794cdbf193114b891f5c324562ac0c6a63f698002e601",
+    "seconds": 0.8394,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_bombardier",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_attack_0",
+    "file": "assets/audio/combat/enemy_ash_brute_attack_0.ogg",
+    "sha256": "9d57dee66cb2665643c6e04e4899d45440661be54f80d1b0c610cb562a794c9c",
+    "seconds": 0.5703,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_attack_1",
+    "file": "assets/audio/combat/enemy_ash_brute_attack_1.ogg",
+    "sha256": "5a5e0b280a68a2bfa21a7795cc36bfda73407f6c8ee1edaabe36872ed2336c06",
+    "seconds": 0.5703,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_guard_0",
+    "file": "assets/audio/combat/enemy_ash_brute_guard_0.ogg",
+    "sha256": "a3c3fb2aa9678783704f7306faa76226e1b73ec2e1bcb2b562919d2e6c21a3f0",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_death_0",
+    "file": "assets/audio/combat/enemy_ash_brute_death_0.ogg",
+    "sha256": "90750ae68e7eac6e39b9445bea89161546e2aa63454fb98650d87deb88a3c6eb",
+    "seconds": 0.8629,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_elite_attack_0",
+    "file": "assets/audio/combat/enemy_ash_brute_elite_attack_0.ogg",
+    "sha256": "3ceb1a5157c2513e758e41576b94e2316d1c23eb7da84017ecc801b590a81c7d",
+    "seconds": 0.6532,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_elite_attack_1",
+    "file": "assets/audio/combat/enemy_ash_brute_elite_attack_1.ogg",
+    "sha256": "b881d2592027a9da858ba0cb07be9af0d57039f0983cc8bac3ae4dfeef9e05f9",
+    "seconds": 0.6532,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_elite_guard_0",
+    "file": "assets/audio/combat/enemy_ash_brute_elite_guard_0.ogg",
+    "sha256": "0fa3cdc8955d6d424cc520dcd2bafdee35bccd7c43683ded35f4276ef40a74a3",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_brute_elite_death_0",
+    "file": "assets/audio/combat/enemy_ash_brute_elite_death_0.ogg",
+    "sha256": "69eeb82e5f3d623ae4f8aa45f0a7314c7f5afaf470aa14025365515ea7efeab6",
+    "seconds": 0.9665,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_brute_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_cinder_wolf_attack_0",
+    "file": "assets/audio/combat/enemy_ash_cinder_wolf_attack_0.ogg",
+    "sha256": "2c97748e5cb5faa750586847c4d6dd604c1cff4512bbc684f748ca56221691e8",
+    "seconds": 0.5496,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_cinder_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_cinder_wolf_attack_1",
+    "file": "assets/audio/combat/enemy_ash_cinder_wolf_attack_1.ogg",
+    "sha256": "c975c15c2174a06670ac05627869fcf12b1be9f5e4046afd15ac05ef3c2f58b7",
+    "seconds": 0.5496,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_cinder_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_cinder_wolf_guard_0",
+    "file": "assets/audio/combat/enemy_ash_cinder_wolf_guard_0.ogg",
+    "sha256": "d3039fb72beb7fe8fac0b5673bf3b16b7e1c35ec346685720339102f75eb112a",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_cinder_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_cinder_wolf_death_0",
+    "file": "assets/audio/combat/enemy_ash_cinder_wolf_death_0.ogg",
+    "sha256": "a1ba9dec16ce358946e6f707912e1a719c8687e75fd7651128ada3828c630d20",
+    "seconds": 0.837,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_cinder_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_lancer_attack_0",
+    "file": "assets/audio/combat/enemy_ash_lancer_attack_0.ogg",
+    "sha256": "1de7fc209b9e6fdffb8a593c414581da3824da4d83de1473bb09c91a05adad1a",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_lancer_attack_1",
+    "file": "assets/audio/combat/enemy_ash_lancer_attack_1.ogg",
+    "sha256": "75b6afbab5cd0432e7c94b07b779e70b1137438711c499a798237f8aa2a7e6b1",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_lancer_guard_0",
+    "file": "assets/audio/combat/enemy_ash_lancer_guard_0.ogg",
+    "sha256": "8958b97dcd1ddef4105cd938bdeb65221d9d6565a7825c35ff0058f5ceacc6d7",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_lancer_death_0",
+    "file": "assets/audio/combat/enemy_ash_lancer_death_0.ogg",
+    "sha256": "1a3b59fbde6e1da5a81b47ea0d736f53460a9166d07f72b98fd22a3295853ca8",
+    "seconds": 0.8394,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_shielder_attack_0",
+    "file": "assets/audio/combat/enemy_ash_shielder_attack_0.ogg",
+    "sha256": "d579092755b9fd2b365305fefb6dd45e57753eca406a8e13295318f3cf652a50",
+    "seconds": 0.5628,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_shielder_attack_1",
+    "file": "assets/audio/combat/enemy_ash_shielder_attack_1.ogg",
+    "sha256": "a17d274a0d9702a85a2616a9d22c82549cb0f67936b316a7651bddb34ee24f9f",
+    "seconds": 0.5628,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_shielder_guard_0",
+    "file": "assets/audio/combat/enemy_ash_shielder_guard_0.ogg",
+    "sha256": "95536ebf55aafcabcb16ba85dc540977b680488743fb09cd113b3ae2c2e3920f",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_shielder_death_0",
+    "file": "assets/audio/combat/enemy_ash_shielder_death_0.ogg",
+    "sha256": "75b50079563ad5219e6d9ae5bb6b8e86235577ff598735e0d335423da30e730d",
+    "seconds": 0.8535,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_warlord_attack_0",
+    "file": "assets/audio/combat/enemy_ash_warlord_attack_0.ogg",
+    "sha256": "91c4372265e9da4ad435a8634abcb2ae577112a345b13ff391c7f926c5ba215a",
+    "seconds": 0.5666,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_warlord",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_warlord_attack_1",
+    "file": "assets/audio/combat/enemy_ash_warlord_attack_1.ogg",
+    "sha256": "062f769d604e69f567efb852b8638da78c94194ac6f6b785453fe7c639dff50a",
+    "seconds": 0.5666,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_warlord",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_warlord_guard_0",
+    "file": "assets/audio/combat/enemy_ash_warlord_guard_0.ogg",
+    "sha256": "d7af4af3aa479d1fb655e0a9f259a36ac906ec8ecd10c4d559c0f1c8d654ab77",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_warlord",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_warlord_death_0",
+    "file": "assets/audio/combat/enemy_ash_warlord_death_0.ogg",
+    "sha256": "66bbe553f4ae84a29b7c41602badad484d142ad926e7817eb37e0e635509207b",
+    "seconds": 0.8582,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_warlord",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_wing_beetle_attack_0",
+    "file": "assets/audio/combat/enemy_ash_wing_beetle_attack_0.ogg",
+    "sha256": "24e9f421a7dc05b281c079f93025e7e89008dcc75c857d705cca955f6a627434",
+    "seconds": 0.559,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_wing_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_wing_beetle_attack_1",
+    "file": "assets/audio/combat/enemy_ash_wing_beetle_attack_1.ogg",
+    "sha256": "60b0de48219137e51aa7e06b6b8973bb38215277886f83ec4d3ab7086e046074",
+    "seconds": 0.559,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_wing_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_wing_beetle_guard_0",
+    "file": "assets/audio/combat/enemy_ash_wing_beetle_guard_0.ogg",
+    "sha256": "b1eafb2d488f307f0f56c7f1d38c2ecbadbdbece1125a7e0557887e07fcdb135",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_wing_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ash_wing_beetle_death_0",
+    "file": "assets/audio/combat/enemy_ash_wing_beetle_death_0.ogg",
+    "sha256": "910aabfbc005b7fd706471f33dc00b442e08bc8f3de3994ac4d58aae234031f8",
+    "seconds": 0.8488,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ash_wing_beetle",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_bandit_archer_attack_0",
+    "file": "assets/audio/combat/enemy_bandit_archer_attack_0.ogg",
+    "sha256": "a06857560e21981646f1002d6bc91fc0fa2426cf62e2d1d607af679a5f62663b",
+    "seconds": 0.5308,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "bandit_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_bandit_archer_attack_1",
+    "file": "assets/audio/combat/enemy_bandit_archer_attack_1.ogg",
+    "sha256": "9850a67c9bf2366d50524fda5f64e469ca14e4fb08254c2adf79d3ed97c1b18a",
+    "seconds": 0.5308,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "bandit_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_bandit_archer_guard_0",
+    "file": "assets/audio/combat/enemy_bandit_archer_guard_0.ogg",
+    "sha256": "49090332d9c923f8224eefeab75baed7c07de8d13a927a89d2bfe3d9a3bdc261",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "bandit_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_bandit_archer_death_0",
+    "file": "assets/audio/combat/enemy_bandit_archer_death_0.ogg",
+    "sha256": "d8b9036204fbdd151182e99b85480eb737d6c2a463b103393a853fa68a79a357",
+    "seconds": 0.8135,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "bandit_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_boss_attack_0",
+    "file": "assets/audio/combat/enemy_boss_attack_0.ogg",
+    "sha256": "f557864da5f070c4a83a8001889ff8f5321c47bb3a0da42810bfa0c71875cf82",
+    "seconds": 0.687,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_boss_attack_1",
+    "file": "assets/audio/combat/enemy_boss_attack_1.ogg",
+    "sha256": "54cac5e609eea9af29db66829a1d731607ca11c9b05cf3978448059351f6b379",
+    "seconds": 0.687,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_boss_guard_0",
+    "file": "assets/audio/combat/enemy_boss_guard_0.ogg",
+    "sha256": "d037b4437bb24958ba5cb26ec01960906c3ba0fdd1302a2ee7b03628731f8975",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_boss_death_0",
+    "file": "assets/audio/combat/enemy_boss_death_0.ogg",
+    "sha256": "facaddaab0024bbceaba10fa504f59def882a8d2d11ada38fdab07022c6a7e1a",
+    "seconds": 1.0088,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_frost_serpent_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_frost_serpent_attack_0.ogg",
+    "sha256": "0a087bb02d58c43a0d5832c16025ae58de0746b7f1ae2816b4a8515843a34eb2",
+    "seconds": 0.5421,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_frost_serpent",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_frost_serpent_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_frost_serpent_attack_1.ogg",
+    "sha256": "645d1d52cffbe61646317a2c92ab29e7961ba71da4069e37795129b67d2ea51b",
+    "seconds": 0.5421,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_frost_serpent",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_frost_serpent_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_frost_serpent_guard_0.ogg",
+    "sha256": "734bcb5b3d2842f24a69d1b51c510d2ead40a87906fcdcb8336185e23eca9c2b",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_frost_serpent",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_frost_serpent_death_0",
+    "file": "assets/audio/combat/enemy_crypt_frost_serpent_death_0.ogg",
+    "sha256": "50add27649c694970e04067cf2fdaa81e1862eb7544fafa3f9190c8d6438358f",
+    "seconds": 0.8276,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_frost_serpent",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_horse_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_horse_attack_0.ogg",
+    "sha256": "003176a902238e0f673bfb8c85498be5653583c3d8c70ceef5195e1f8b4a9a21",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_horse",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_horse_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_horse_attack_1.ogg",
+    "sha256": "ee64afb29a16ae56657ce9f1a2c5af0f2d0295efc8f36d00e6858096054a0453",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_horse",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_horse_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_horse_guard_0.ogg",
+    "sha256": "e0eb25bd49a8585b6a5bdebd8c79d3cd1749cc1495f05110792d6a837fdd46ea",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_horse",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_horse_death_0",
+    "file": "assets/audio/combat/enemy_crypt_horse_death_0.ogg",
+    "sha256": "0908e1579004c86d0e08a4858b03d80f4a7f12e6862be0feeeb8f5e98b3e2965",
+    "seconds": 0.8253,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_horse",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_lancer_new_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_lancer_new_attack_0.ogg",
+    "sha256": "e0d21bd32ea928d4ac9c4e40794dac624c48595b00352720a5fe48828c9f5d96",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_lancer_new",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_lancer_new_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_lancer_new_attack_1.ogg",
+    "sha256": "4dacc8537dc8c7ebda16b285e6a495f31305e998a656327d6441e30919f172d8",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_lancer_new",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_lancer_new_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_lancer_new_guard_0.ogg",
+    "sha256": "f2a58f0456d34fa1bdef064e1320441f654df0f79c09c9da6bcc6e939de1b459",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_lancer_new",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_lancer_new_death_0",
+    "file": "assets/audio/combat/enemy_crypt_lancer_new_death_0.ogg",
+    "sha256": "52dde49d19f9dce99548bdb2a2fe0f9873a7877f982d05ac894d2e7830dac9aa",
+    "seconds": 0.8206,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_lancer_new",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_scorpion_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_scorpion_attack_0.ogg",
+    "sha256": "6482e7f684aa6d1083a069e04b2e65f969d3a360517b7db65e33e0f5b47219f1",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_scorpion",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_scorpion_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_scorpion_attack_1.ogg",
+    "sha256": "5f4ed31fa04f10029e12e4e5ab84878800b0030a0adbfd6bf79df06b6333302e",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_scorpion",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_scorpion_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_scorpion_guard_0.ogg",
+    "sha256": "813de2a32f24825990734ff0cf2719a1ae35e00be2e96579f332bdad7a490206",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_scorpion",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_scorpion_death_0",
+    "file": "assets/audio/combat/enemy_crypt_scorpion_death_0.ogg",
+    "sha256": "4d56f0710d0f79ee8871f3df30cd931e4c8ef96628aa46bf69292ce0f231dcdd",
+    "seconds": 0.8206,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_scorpion",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_storm_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_storm_attack_0.ogg",
+    "sha256": "4051ef03be88cad447389c20a803056557d413568d8800de62b63c4ba23b2f94",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_storm",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_storm_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_storm_attack_1.ogg",
+    "sha256": "78caaa47927129cb33a1120f633b62ac4879e2d5f11b3e788fe437ca892d2c9b",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_storm",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_storm_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_storm_guard_0.ogg",
+    "sha256": "63be75a1b96e766ce1141051107534dbc504ddda1514f0459eca519636e1c537",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_storm",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_storm_death_0",
+    "file": "assets/audio/combat/enemy_crypt_storm_death_0.ogg",
+    "sha256": "afcacfa11a04386ececebb198cd584c31320cabfc70301f5bb6d4a157eff4756",
+    "seconds": 0.83,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_storm",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_tomb_raider_attack_0",
+    "file": "assets/audio/combat/enemy_crypt_tomb_raider_attack_0.ogg",
+    "sha256": "0ce2d9c3a054549dedb7cd297a03c12d5442268181a9467770df436065c71df3",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_tomb_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_tomb_raider_attack_1",
+    "file": "assets/audio/combat/enemy_crypt_tomb_raider_attack_1.ogg",
+    "sha256": "10520ed1f59bda7a6da489dab8c0cd7d2dd4bdd31d709ee332dcb68e19f8a9e9",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_tomb_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_tomb_raider_guard_0",
+    "file": "assets/audio/combat/enemy_crypt_tomb_raider_guard_0.ogg",
+    "sha256": "70bc02b70f3b2236d9d5e58e536056bbe2b19ffc8dabadd1a961429bc67925c1",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_tomb_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_crypt_tomb_raider_death_0",
+    "file": "assets/audio/combat/enemy_crypt_tomb_raider_death_0.ogg",
+    "sha256": "035bc17f2bc2a9992b739db51e66556d47a7b9b306b91af260686bb7928ec895",
+    "seconds": 0.8206,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "crypt_tomb_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_cultist_attack_0",
+    "file": "assets/audio/combat/enemy_cultist_attack_0.ogg",
+    "sha256": "9ab6aef16f9e387e3213436f069da91748fa95a73ab6adda854f30e1c630b77d",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "cultist",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_cultist_attack_1",
+    "file": "assets/audio/combat/enemy_cultist_attack_1.ogg",
+    "sha256": "569f644b4fa47c9792b59b2fd1af681eb6bf82a7654196bcb20d8adff1ea52f7",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "cultist",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_cultist_guard_0",
+    "file": "assets/audio/combat/enemy_cultist_guard_0.ogg",
+    "sha256": "75ac19283f603a95f893d382adf619a286884525361baf44965419f5677b897c",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "cultist",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_cultist_death_0",
+    "file": "assets/audio/combat/enemy_cultist_death_0.ogg",
+    "sha256": "1038b04667d97aad242874d1b73658f1af91824dbe16a068c276eaa5ac7faea7",
+    "seconds": 0.8159,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "cultist",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_dragon_hatchling_attack_0",
+    "file": "assets/audio/combat/enemy_dragon_hatchling_attack_0.ogg",
+    "sha256": "ceda10f4ddc6481c40e9aceb692807e0f134786befc8489e2155e1fd5cb531f4",
+    "seconds": 0.5534,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "dragon_hatchling",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_dragon_hatchling_attack_1",
+    "file": "assets/audio/combat/enemy_dragon_hatchling_attack_1.ogg",
+    "sha256": "ecd40b68bad15253116f117c46b22af5276f9e35257b12bee1e0165f13122647",
+    "seconds": 0.5534,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "dragon_hatchling",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_dragon_hatchling_guard_0",
+    "file": "assets/audio/combat/enemy_dragon_hatchling_guard_0.ogg",
+    "sha256": "030992fbd6d1872c52e41606b5cbdc71d0cffce5d7eb5f72a343c38a3130d5fa",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "dragon_hatchling",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_dragon_hatchling_death_0",
+    "file": "assets/audio/combat/enemy_dragon_hatchling_death_0.ogg",
+    "sha256": "daa207369040771d65272d4084d7fdc1cbb92c466a3b079bb7a0673ee06eab86",
+    "seconds": 0.8417,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "dragon_hatchling",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_elite_attack_0",
+    "file": "assets/audio/combat/enemy_elite_attack_0.ogg",
+    "sha256": "52a6a0953b3589fa757c767efed8a3d582f700f228d4a6870431a68b56ff1cb1",
+    "seconds": 0.6268,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_elite_attack_1",
+    "file": "assets/audio/combat/enemy_elite_attack_1.ogg",
+    "sha256": "94df7db1cfd33cd0fbba0b1c1af62194825794233b01839801efd6175525efb5",
+    "seconds": 0.6268,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_elite_guard_0",
+    "file": "assets/audio/combat/enemy_elite_guard_0.ogg",
+    "sha256": "fad3471bae252847e7cb175f0dee7fcddcc85a4283bb0f75ea6c1d9c5f207fd0",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_elite_death_0",
+    "file": "assets/audio/combat/enemy_elite_death_0.ogg",
+    "sha256": "729a894c6cfaa061d5bfe436dcbd514d1de2e88d0c662d7566cb524a6ba9eb98",
+    "seconds": 0.9335,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_fire_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_fire_elemental_attack_0.ogg",
+    "sha256": "71226bc3be944f64f8b7484782c5b66af63a56b9da7dc290f9ca3320fbddbae9",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "fire_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_fire_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_fire_elemental_attack_1.ogg",
+    "sha256": "11dd66623bdce804c19675c954e3cd10d3c4d12af595675dad0c07f7297582f9",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "fire_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_fire_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_fire_elemental_guard_0.ogg",
+    "sha256": "b8d5c18a740545fa916d9fead2fedd4a1cdbd52aea41ff0e8418b0ee2ceaa561",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "fire_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_fire_elemental_death_0",
+    "file": "assets/audio/combat/enemy_fire_elemental_death_0.ogg",
+    "sha256": "bb4ae0c33df4abf8a3e654d4b7f8f11a18bb754143682701a4cd436d0b50b3b4",
+    "seconds": 0.8206,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "fire_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_alpha_bat_attack_0",
+    "file": "assets/audio/combat/enemy_forest_alpha_bat_attack_0.ogg",
+    "sha256": "d98c817fb69e6ed66e295d5c99e443794510a9b7ba041df829596178c91a2d56",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_alpha_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_alpha_bat_attack_1",
+    "file": "assets/audio/combat/enemy_forest_alpha_bat_attack_1.ogg",
+    "sha256": "e8865abc1ef065a960f6d03a481a82da6ee77ea627cf558a5b2adbb10f326ec2",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_alpha_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_alpha_bat_guard_0",
+    "file": "assets/audio/combat/enemy_forest_alpha_bat_guard_0.ogg",
+    "sha256": "cdac3f4d79a7e4172a07553f358a9c6651eb5f7dd505ffa86f54ebdf5297469b",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_alpha_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_alpha_bat_death_0",
+    "file": "assets/audio/combat/enemy_forest_alpha_bat_death_0.ogg",
+    "sha256": "e2fd77dc87478bdcde6abfa79ce4b83fbd58fa4cd10dc44366cd4895309e12e5",
+    "seconds": 0.83,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_alpha_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_bat_attack_0",
+    "file": "assets/audio/combat/enemy_forest_bat_attack_0.ogg",
+    "sha256": "8045bfec1dbc96651f4d277dbf3b97345538bbfe16d7e3ba924e164739abea92",
+    "seconds": 0.5195,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_bat_attack_1",
+    "file": "assets/audio/combat/enemy_forest_bat_attack_1.ogg",
+    "sha256": "7ce50b6771233b675f581245d216836f07c839b0156606d3ff22296a2c0d7fe7",
+    "seconds": 0.5195,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_bat_guard_0",
+    "file": "assets/audio/combat/enemy_forest_bat_guard_0.ogg",
+    "sha256": "a8e34b276b8f9a100fb974240ee095fab8b0aacda3a7c562cc6798ba28d5ab60",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_bat_death_0",
+    "file": "assets/audio/combat/enemy_forest_bat_death_0.ogg",
+    "sha256": "475b1dc3941e5cb8b9c5bc9e400d60d4a2d133a4d6c4d4ff8d8028009b355b57",
+    "seconds": 0.7994,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_bat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boar_attack_0",
+    "file": "assets/audio/combat/enemy_forest_boar_attack_0.ogg",
+    "sha256": "3823eedcaf440679551aee44aba3f5894e8ed090a0b243839d371223308a18de",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boar",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boar_attack_1",
+    "file": "assets/audio/combat/enemy_forest_boar_attack_1.ogg",
+    "sha256": "74458f8a61ff5ffe87ac3fe40d13162ba93360c891f3fff8716e9a956feaf96d",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boar",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boar_guard_0",
+    "file": "assets/audio/combat/enemy_forest_boar_guard_0.ogg",
+    "sha256": "f84c1f9580b47746a492f6cc8e5032d7596b7f8d7b8c5890a57f6a30ea5d5945",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boar",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boar_death_0",
+    "file": "assets/audio/combat/enemy_forest_boar_death_0.ogg",
+    "sha256": "fdbb9a0d452daf1e40a021267ca7454791929d69ae39ec9528d47b4a6d8cecc5",
+    "seconds": 0.8253,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boar",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boss_attack_0",
+    "file": "assets/audio/combat/enemy_forest_boss_attack_0.ogg",
+    "sha256": "e20ce1a6977035ae4ed4ff7be4c4ea13ae5fbaf917467df5389fbcb1bf42f0a2",
+    "seconds": 0.7153,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boss_attack_1",
+    "file": "assets/audio/combat/enemy_forest_boss_attack_1.ogg",
+    "sha256": "3282a53358f60afa482c06cd2d30a403a483b202c4bcef84bd47d089950a4267",
+    "seconds": 0.7153,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boss_guard_0",
+    "file": "assets/audio/combat/enemy_forest_boss_guard_0.ogg",
+    "sha256": "aee04f4cda6879f29a8a9a5a047905422eaa79af1234f38140c7505f680b2f5a",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_boss_death_0",
+    "file": "assets/audio/combat/enemy_forest_boss_death_0.ogg",
+    "sha256": "f79486edbe7002c2e8ab3d8f311aea5b4539b0594908d759e0124fc5096a14d5",
+    "seconds": 1.0441,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_cutthroat_attack_0",
+    "file": "assets/audio/combat/enemy_forest_cutthroat_attack_0.ogg",
+    "sha256": "30117225c3e6a15cd05d8ebbc8ea84cbfca30de00ca34ccd510a562a670b2a1f",
+    "seconds": 0.5383,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_cutthroat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_cutthroat_attack_1",
+    "file": "assets/audio/combat/enemy_forest_cutthroat_attack_1.ogg",
+    "sha256": "5814ad758deac0bbffbce3886f6b473bb9e0bd17e84bbc4b7a2ac57f5f56176b",
+    "seconds": 0.5383,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_cutthroat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_cutthroat_guard_0",
+    "file": "assets/audio/combat/enemy_forest_cutthroat_guard_0.ogg",
+    "sha256": "c2d79e89de643fc728f19836fd1a1a293b493e25351637aae9b28c9b5fe2a530",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_cutthroat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_cutthroat_death_0",
+    "file": "assets/audio/combat/enemy_forest_cutthroat_death_0.ogg",
+    "sha256": "55865f92349a43cb3199801527efc40e68822fab53d3b4cf6000d92583687907",
+    "seconds": 0.8229,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_cutthroat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_dark_raven_attack_0",
+    "file": "assets/audio/combat/enemy_forest_dark_raven_attack_0.ogg",
+    "sha256": "205e00c7be12de670bd87d5365d6478055147999c65bd1cc224558af544bb478",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_dark_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_dark_raven_attack_1",
+    "file": "assets/audio/combat/enemy_forest_dark_raven_attack_1.ogg",
+    "sha256": "ce02f395079b38c3a43ebd4c7abb21cff63c772242faccf8402a67bc73414b6c",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_dark_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_dark_raven_guard_0",
+    "file": "assets/audio/combat/enemy_forest_dark_raven_guard_0.ogg",
+    "sha256": "80d0c8b0c8dc3fe6d8a7b666cf29964dc484d671cbc07f81a980306377d06df4",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_dark_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_dark_raven_death_0",
+    "file": "assets/audio/combat/enemy_forest_dark_raven_death_0.ogg",
+    "sha256": "16ed2fe040a66b254631c5f9dbab3109fcddeb057956f3543062a37403f432f4",
+    "seconds": 0.8182,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_dark_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_elite_attack_0",
+    "file": "assets/audio/combat/enemy_forest_elite_attack_0.ogg",
+    "sha256": "41fc7939c5f7ac5da86ba509a60e21c85fd9de2cc04f44f354e2d519a5dfcb4f",
+    "seconds": 0.6419,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_elite_attack_1",
+    "file": "assets/audio/combat/enemy_forest_elite_attack_1.ogg",
+    "sha256": "26d56cf908413bea9c6af9728b99e0eac40017849db088cb47d8f37f92c944e1",
+    "seconds": 0.6419,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_elite_guard_0",
+    "file": "assets/audio/combat/enemy_forest_elite_guard_0.ogg",
+    "sha256": "2a2d7c9f1b18531fcf74a94e0ee8d4715eca6a0183bd391488e3535f5200beda",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_elite_death_0",
+    "file": "assets/audio/combat/enemy_forest_elite_death_0.ogg",
+    "sha256": "6f5a2159fbd9ca253d243fb0f63dcacf03cd3dcd8de4c151fb8284d6c582e12c",
+    "seconds": 0.9523,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_elite",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_hunter_enemy_attack_0",
+    "file": "assets/audio/combat/enemy_forest_hunter_enemy_attack_0.ogg",
+    "sha256": "68a6d7744161a1220718c50d6b593c151cb70d60fd13278eca28651ca422e196",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_hunter_enemy",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_hunter_enemy_attack_1",
+    "file": "assets/audio/combat/enemy_forest_hunter_enemy_attack_1.ogg",
+    "sha256": "c2132eef8351fcf2edba21ee99024860c9e6c5f86a7b40a43cb5872f9dc05345",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_hunter_enemy",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_hunter_enemy_guard_0",
+    "file": "assets/audio/combat/enemy_forest_hunter_enemy_guard_0.ogg",
+    "sha256": "90d2853f636b594c78ee37cf3b6a6f8a91c326784a01117212a573c7427b938e",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_hunter_enemy",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_hunter_enemy_death_0",
+    "file": "assets/audio/combat/enemy_forest_hunter_enemy_death_0.ogg",
+    "sha256": "3d0027d9d6c6cc18b949535d18076cd91eb8ce2af6afb97df59e4734bea84011",
+    "seconds": 0.8182,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_hunter_enemy",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_miasma_attack_0",
+    "file": "assets/audio/combat/enemy_forest_miasma_attack_0.ogg",
+    "sha256": "507041708104d6b35a6bac9b48d3110966ba1c14e23d4edab8814a7beee98cea",
+    "seconds": 0.5459,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_miasma",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_miasma_attack_1",
+    "file": "assets/audio/combat/enemy_forest_miasma_attack_1.ogg",
+    "sha256": "49d01fc8da5eba8582799983369040b9fff8142ba5cdb60959576e548887f519",
+    "seconds": 0.5459,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_miasma",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_miasma_guard_0",
+    "file": "assets/audio/combat/enemy_forest_miasma_guard_0.ogg",
+    "sha256": "ff7e5601ed025ebc049152b56f8ce83b43349051e64035817365f3435f9eb572",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_miasma",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_miasma_death_0",
+    "file": "assets/audio/combat/enemy_forest_miasma_death_0.ogg",
+    "sha256": "72403bd8bf956e0d2d84f79ae5004315aeeb9a87061358810f97f6d056657728",
+    "seconds": 0.8323,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_miasma",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_nightbat_attack_0",
+    "file": "assets/audio/combat/enemy_forest_nightbat_attack_0.ogg",
+    "sha256": "7652b76dfb03f6bc967fcf92f5334472b2ef928b762849405581b152ad77c702",
+    "seconds": 0.5233,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_nightbat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_nightbat_attack_1",
+    "file": "assets/audio/combat/enemy_forest_nightbat_attack_1.ogg",
+    "sha256": "086002db6a828cf523092fb83c9e22e158cf41d1f81a1bd2834425d0010e6f19",
+    "seconds": 0.5233,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_nightbat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_nightbat_guard_0",
+    "file": "assets/audio/combat/enemy_forest_nightbat_guard_0.ogg",
+    "sha256": "a12a9d9f6d39a0c131120c250517c42410f26053d474358e92c102ad7e6eb7cd",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_nightbat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_nightbat_death_0",
+    "file": "assets/audio/combat/enemy_forest_nightbat_death_0.ogg",
+    "sha256": "d31d8a3195c73df762c3b76ae3e9ed76104d69b0b19774f480a36625d4126db6",
+    "seconds": 0.8041,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_nightbat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_raven_attack_0",
+    "file": "assets/audio/combat/enemy_forest_raven_attack_0.ogg",
+    "sha256": "b3cd6f080b6496e2bc3fd84e70845a9e58ba5a57b4d52b4932696b26daeeaa9c",
+    "seconds": 0.5176,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_raven_attack_1",
+    "file": "assets/audio/combat/enemy_forest_raven_attack_1.ogg",
+    "sha256": "7ea3b9c79f33fc8ae2430c5cefb86500d29c6a0962181c258c21240e29d8c549",
+    "seconds": 0.5176,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_raven_guard_0",
+    "file": "assets/audio/combat/enemy_forest_raven_guard_0.ogg",
+    "sha256": "cf4dcd518a5859b9d572c1b3ec66b13469dc24626f17c13780c350053995075a",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_raven_death_0",
+    "file": "assets/audio/combat/enemy_forest_raven_death_0.ogg",
+    "sha256": "96c3a43ab357c7d11c6a800b3d4287014411a8a2a41ff974584669440b65412a",
+    "seconds": 0.797,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_raven",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_wolf_attack_0",
+    "file": "assets/audio/combat/enemy_forest_wolf_attack_0.ogg",
+    "sha256": "129ce0b5cf18ccabcf9901d32c2461e2ea8f981a2e9e65538c5f6220caaf4508",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_wolf_attack_1",
+    "file": "assets/audio/combat/enemy_forest_wolf_attack_1.ogg",
+    "sha256": "1201f53ee08531fd69524162c1485d6a68684b6c54a3e8774c785ac9512f4379",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_wolf_guard_0",
+    "file": "assets/audio/combat/enemy_forest_wolf_guard_0.ogg",
+    "sha256": "2c42e89b01fc3f2dd0ea3177e7d6b47bbbda36e7b190f959d068e94d30f9748d",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_forest_wolf_death_0",
+    "file": "assets/audio/combat/enemy_forest_wolf_death_0.ogg",
+    "sha256": "558b2eae81ba3d7a0de920cc5b95faa9ef0716b3f380bc5a8d42282d5f0f0c30",
+    "seconds": 0.8065,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "forest_wolf",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_giant_wasp_attack_0",
+    "file": "assets/audio/combat/enemy_giant_wasp_attack_0.ogg",
+    "sha256": "28d7d7d533fb9bbe8607d3fe91102e3c2df830090815a2deed2eaeb82265e434",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "giant_wasp",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_giant_wasp_attack_1",
+    "file": "assets/audio/combat/enemy_giant_wasp_attack_1.ogg",
+    "sha256": "93293c484ac2c43b44ab256d5d30b2ee9f395a6413861caaacc62b808084032d",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "giant_wasp",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_giant_wasp_guard_0",
+    "file": "assets/audio/combat/enemy_giant_wasp_guard_0.ogg",
+    "sha256": "269ddb016f336af0cddaff38d7a1564fd5c965bc478ab01f76f238413edb7178",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "giant_wasp",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_giant_wasp_death_0",
+    "file": "assets/audio/combat/enemy_giant_wasp_death_0.ogg",
+    "sha256": "e8ddf75535238ca1a7e8769f63dddf162f581465ccd1085d8336ea4dfa1283de",
+    "seconds": 0.8112,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "giant_wasp",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_archer_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_archer_attack_0.ogg",
+    "sha256": "70cd68b26360805b848770c6f8c0a886f9c430bb94474d796e43adade5c12ae1",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_archer_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_archer_attack_1.ogg",
+    "sha256": "e08f935efab6a1849ab91cb6e320c5d201958505d4a67fed3bc60c44e3655dab",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_archer_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_archer_guard_0.ogg",
+    "sha256": "937a4af0dbd6188e0cb61bfc077b6025c1b66b569bfcba72ffae9fa430138ad3",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_archer_death_0",
+    "file": "assets/audio/combat/enemy_goblin_archer_death_0.ogg",
+    "sha256": "a16ba6d44aeac3cba8417f9d165f6f8be4a08041ab6b92b03a776d8cb2c78afb",
+    "seconds": 0.8017,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_bomber_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_bomber_attack_0.ogg",
+    "sha256": "0b412847c11d7e347372273f65e7718235b96d3e5a4548d8ca7507d439a1c1e6",
+    "seconds": 0.5233,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_bomber",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_bomber_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_bomber_attack_1.ogg",
+    "sha256": "797858dae5f1f1890d82d8ce0de15d1ac38a6995ead57c77d6aae882f16752f9",
+    "seconds": 0.5233,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_bomber",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_bomber_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_bomber_guard_0.ogg",
+    "sha256": "a9feab5c78d59feea1e475e685a29aeac51296ff5f5dfbec17424ae9c4198ea6",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_bomber",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_bomber_death_0",
+    "file": "assets/audio/combat/enemy_goblin_bomber_death_0.ogg",
+    "sha256": "61abecede490b52ecfd768675fda833dbf13ffb6556aae809e469887d63937d1",
+    "seconds": 0.8041,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_bomber",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_lancer_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_lancer_attack_0.ogg",
+    "sha256": "d7e05f03ac5afbc3a058e2dc25b50aa58711ed80613c63031674e1884e4e8bf3",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_lancer_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_lancer_attack_1.ogg",
+    "sha256": "22253b25b8302cf08637576c05fd7cd3a439c5c72035629a4e893779c44caba8",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_lancer_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_lancer_guard_0.ogg",
+    "sha256": "b2fbc97e7a008ea6a446b19f615bbc454d557497525a33ea99501393e94c266b",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_lancer_death_0",
+    "file": "assets/audio/combat/enemy_goblin_lancer_death_0.ogg",
+    "sha256": "096f4b018797d6c2d3aa3ba4c7a484032fdf6b7fcdd4aea80cb8d04e886a5367",
+    "seconds": 0.8159,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_lancer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_raider_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_raider_attack_0.ogg",
+    "sha256": "6764b153d3bb21d33f470769496ecb1ca723ae1563521e6d97220ed6f72ada9f",
+    "seconds": 0.527,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_raider_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_raider_attack_1.ogg",
+    "sha256": "f5407fcf77f3eb6855edd551e388b4ab5d07d8b6781bdda56a1c95713d4d0f86",
+    "seconds": 0.527,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_raider_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_raider_guard_0.ogg",
+    "sha256": "5b5b32b93578be8161fad2666c0055eacbe9180b0b644a8a720a91e1583bc4b3",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_raider_death_0",
+    "file": "assets/audio/combat/enemy_goblin_raider_death_0.ogg",
+    "sha256": "6756f2fcde468491b735b27ce7997da3beb3d73b5dbf04da429b3cc11427ce8b",
+    "seconds": 0.8088,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_raider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_rider_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_rider_attack_0.ogg",
+    "sha256": "70ee5138eff87383ef5e211d50a3068176bffaebb736723297108685d421e2b9",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_rider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_rider_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_rider_attack_1.ogg",
+    "sha256": "c3c6550f8d074ac490dff79d55a49da4dbcbe8cc755dabfd56e4399f67181cea",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_rider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_rider_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_rider_guard_0.ogg",
+    "sha256": "c0afa1e4bbbf83e02b9b9f02d211cc7f0ab3a6a5e9002954610618f4c587f084",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_rider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_rider_death_0",
+    "file": "assets/audio/combat/enemy_goblin_rider_death_0.ogg",
+    "sha256": "1645451436885f0936acf2e96581b2ca5a174cc4e35214510439a0b85e2d8068",
+    "seconds": 0.83,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_rider",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_shaman_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_shaman_attack_0.ogg",
+    "sha256": "a2f2646f96b1d4cfa7f04c1ab3322fff148c49e5b797ae47cf917460324bbcef",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_shaman",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_shaman_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_shaman_attack_1.ogg",
+    "sha256": "cacd87464a66362b9245764b6537b65789c4e0abf06e8729498b18102751790a",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_shaman",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_shaman_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_shaman_guard_0.ogg",
+    "sha256": "3309d5c76fe0e02c389dcdef016a59c9c1c8244318ce3d2eee8b8b428bf7905a",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_shaman",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_shaman_death_0",
+    "file": "assets/audio/combat/enemy_goblin_shaman_death_0.ogg",
+    "sha256": "c62d3df0144de7f378ba7bf5733a9bb7a04f45cb08d90c4537a6b90c95df6cdc",
+    "seconds": 0.8159,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_shaman",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_warrior_attack_0",
+    "file": "assets/audio/combat/enemy_goblin_warrior_attack_0.ogg",
+    "sha256": "80823bb5e3ec8cb20af9d65a584a61e61ade7a415968b6a9b5c1619190d57d5e",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_warrior_attack_1",
+    "file": "assets/audio/combat/enemy_goblin_warrior_attack_1.ogg",
+    "sha256": "abcb405cc7af6c4ceecb750ff673ecc60ec7df356ce82db9394130bf41c56c38",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_warrior_guard_0",
+    "file": "assets/audio/combat/enemy_goblin_warrior_guard_0.ogg",
+    "sha256": "1f65ed045a95b5903a8cac48971fc259d03e5a212a4166e1bc7af39bd82f9994",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_goblin_warrior_death_0",
+    "file": "assets/audio/combat/enemy_goblin_warrior_death_0.ogg",
+    "sha256": "1ca0e65217b87ecf416495a597741a86307bfa844f18ae337e4239163a5c25b5",
+    "seconds": 0.8112,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "goblin_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ice_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_ice_elemental_attack_0.ogg",
+    "sha256": "5258d10493e17b960499374405cc076e5562e06a026f4e92b3b0cfa122d00604",
+    "seconds": 0.5477,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ice_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ice_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_ice_elemental_attack_1.ogg",
+    "sha256": "ae7a5669f1aaeff51af50bd4ac895fc6df50d7f8bd8189e69443515949ba8792",
+    "seconds": 0.5477,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ice_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ice_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_ice_elemental_guard_0.ogg",
+    "sha256": "c4390bf0b8d3fc8ffa18e25c315fc78427eaff9355b43810275514460990f332",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ice_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_ice_elemental_death_0",
+    "file": "assets/audio/combat/enemy_ice_elemental_death_0.ogg",
+    "sha256": "d5a1f2ac8f902c7686c6bbd432d9b02c57826d5b43163d78ea3c010b2f64c141",
+    "seconds": 0.8347,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "ice_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_poison_toad_attack_0",
+    "file": "assets/audio/combat/enemy_poison_toad_attack_0.ogg",
+    "sha256": "5fd0dc25860d1c4628eb9be0df4567590785df02be0746ff6e2beb7a19266ee4",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "poison_toad",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_poison_toad_attack_1",
+    "file": "assets/audio/combat/enemy_poison_toad_attack_1.ogg",
+    "sha256": "67aa762ec3513ac0c426a5433ab16028f6b7477d17f4901c9dd6ad855675c04e",
+    "seconds": 0.5289,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "poison_toad",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_poison_toad_guard_0",
+    "file": "assets/audio/combat/enemy_poison_toad_guard_0.ogg",
+    "sha256": "4fe6c54583e6ac5e1baa9cbaca62fe771c1e3c692f3819706090a5302bf3f538",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "poison_toad",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_poison_toad_death_0",
+    "file": "assets/audio/combat/enemy_poison_toad_death_0.ogg",
+    "sha256": "a3e54c34033b8b1eb3be6646fb5d519c7c28eca4e416c718e8e1355380933e0d",
+    "seconds": 0.8112,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "poison_toad",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rat_attack_0",
+    "file": "assets/audio/combat/enemy_rat_attack_0.ogg",
+    "sha256": "dcf26470a30a4f92199cfce259bb54a142815602db8d9903520aad258b69641b",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rat_attack_1",
+    "file": "assets/audio/combat/enemy_rat_attack_1.ogg",
+    "sha256": "6440a72c85df175397a89a8cddb20a0fb10dd720f65410da34d9c86d66ac6022",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rat_guard_0",
+    "file": "assets/audio/combat/enemy_rat_guard_0.ogg",
+    "sha256": "5f070e80979aec28fdc73788c172f0ae817e0deb39b9d469e539e955a0bdb2cb",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rat_death_0",
+    "file": "assets/audio/combat/enemy_rat_death_0.ogg",
+    "sha256": "d5a3e9c2462d45f91db5ffba435902c5e335de1bbac56a770dc3fe752c9e9dd0",
+    "seconds": 0.8017,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rat",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rock_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_rock_elemental_attack_0.ogg",
+    "sha256": "49c88bea0d7ca84771624ccc0467d9bac57eaf9c958a94a46b74e8580104bd6b",
+    "seconds": 0.5477,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rock_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rock_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_rock_elemental_attack_1.ogg",
+    "sha256": "4803d07d92dd8be3f74fd7dd108ee171feb1f345c2b9df19b5268996307745dd",
+    "seconds": 0.5477,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rock_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rock_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_rock_elemental_guard_0.ogg",
+    "sha256": "ef2e604a1f65e8d196d5d1f75a51427e8e2e167b81e630a969f40d5102135b84",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rock_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_rock_elemental_death_0",
+    "file": "assets/audio/combat/enemy_rock_elemental_death_0.ogg",
+    "sha256": "f35d18d18483224f9d85d01cac3cf83d6156b44388e77110bc99d9ef6a53e91a",
+    "seconds": 0.8347,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "rock_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_root_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_root_elemental_attack_0.ogg",
+    "sha256": "d371cf28dc1129389b0c5ea60aa9fed554c43b38aeed89504bfbb8b0c88fcdab",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "root_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_root_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_root_elemental_attack_1.ogg",
+    "sha256": "986841b3bdab9f7d76758b5d1ca06e25d7df1cbd469d2752101d8fc864d19800",
+    "seconds": 0.5515,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "root_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_root_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_root_elemental_guard_0.ogg",
+    "sha256": "fb3145c11ca18800fb7cb7e52dec746f0adc831429df90e65358a0aaf404b7cc",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "root_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_root_elemental_death_0",
+    "file": "assets/audio/combat/enemy_root_elemental_death_0.ogg",
+    "sha256": "f535a7f687ebaf24d8af6b724761d10ed58eb80556d65c8246f518f07ef78860",
+    "seconds": 0.8394,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "root_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_sand_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_sand_elemental_attack_0.ogg",
+    "sha256": "15b0033610162848896dde109833fbe0fe05de225e9c146ca3b7c57b7623c020",
+    "seconds": 0.5572,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "sand_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_sand_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_sand_elemental_attack_1.ogg",
+    "sha256": "d3ea25b17d71c1ef8877c3a5a7f04bafff4b712bb7ce4eaba8f100775534fbb6",
+    "seconds": 0.5572,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "sand_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_sand_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_sand_elemental_guard_0.ogg",
+    "sha256": "5240e2d64844de8d804f56cadaaf59b5379fa51fa41efbacb98fe314eb6d1c02",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "sand_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_sand_elemental_death_0",
+    "file": "assets/audio/combat/enemy_sand_elemental_death_0.ogg",
+    "sha256": "d8900195a7fb157c234cbb0a7faae175cd9d09d42935b0461d9479d5c820afe5",
+    "seconds": 0.8465,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "sand_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_shadow_elemental_attack_0",
+    "file": "assets/audio/combat/enemy_shadow_elemental_attack_0.ogg",
+    "sha256": "bf43b0b542fe8e40e700f4a5a972853cf5db46c3ba5ca5a295c96832c39f92f8",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "shadow_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_shadow_elemental_attack_1",
+    "file": "assets/audio/combat/enemy_shadow_elemental_attack_1.ogg",
+    "sha256": "c2848726270e3256c5a6e50e6b57901e61600bf953f888e4f41e367ba495a08b",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "shadow_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_shadow_elemental_guard_0",
+    "file": "assets/audio/combat/enemy_shadow_elemental_guard_0.ogg",
+    "sha256": "122863a1f6889991e10f363095f026e52e7aa03380bf621207a39b092a8c0b6d",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "shadow_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_shadow_elemental_death_0",
+    "file": "assets/audio/combat/enemy_shadow_elemental_death_0.ogg",
+    "sha256": "3f782ff729be1682bccfe3c63b05b9d6601d8cb971df2155034e4b0cdbdead06",
+    "seconds": 0.8065,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "shadow_elemental",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_attack_0.ogg",
+    "sha256": "58971d5f1eaf2ca7550b2756f99ccd7e63c664c65332712c32e1e2c1bbcea9f2",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_attack_1.ogg",
+    "sha256": "ffb06e47c70dfedd16d3a1820bc769f858a2cf6542510d9fbb4aca0ba140c52f",
+    "seconds": 0.5365,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_guard_0.ogg",
+    "sha256": "b9add03c3be522c033232a99b24d93f8dcc8a0f27798004e49927f600b151ab8",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_death_0.ogg",
+    "sha256": "b052cc799a6cbf0c2fd4035da095b79b8c86e7d51ab99a6fb4b748c670ba2b09",
+    "seconds": 0.8206,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_archer_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_archer_attack_0.ogg",
+    "sha256": "8e8ba753ec51dbe1c48aec6839e032d42e2ad885a32d5e67f7ab5b69d52431c2",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_archer_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_archer_attack_1.ogg",
+    "sha256": "ac9c428629e00f1a864242ef780fc8f8a36ab67cf9e1a1292d94352ad90b1fe8",
+    "seconds": 0.5214,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_archer_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_archer_guard_0.ogg",
+    "sha256": "578bc83e0894f967b629ee12dd0df1ea30b8dcf4fb80be9cd38c9ca5bdaa052d",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_archer_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_archer_death_0.ogg",
+    "sha256": "4520dcbf75897a9db2da5b30cb9022fe7112cc34e74b022d73d26aadc20cc155",
+    "seconds": 0.8017,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_archer",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_berserker_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_berserker_attack_0.ogg",
+    "sha256": "64b54a191d2e6178408c9250d7595d12cee8976759b895fa91a7da74cd5e91ea",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_berserker",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_berserker_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_berserker_attack_1.ogg",
+    "sha256": "fb4a564e9399fc7a2ce0135adfeae49af96e3b93f0cee8341038bddc95215d41",
+    "seconds": 0.5327,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_berserker",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_berserker_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_berserker_guard_0.ogg",
+    "sha256": "0f3333a7024e8f44c200db9e339bd5b024757f92101e73d4df90a2ca7b401378",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_berserker",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_berserker_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_berserker_death_0.ogg",
+    "sha256": "b8162ef8a17a856488c7e9608ad147882f8f896f9e8f0c0187e7a5a611871bd2",
+    "seconds": 0.8159,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_berserker",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_mage_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_mage_attack_0.ogg",
+    "sha256": "e68ce0fa225416c0077601f94c21b2fad4e3c67af128d0c0c676a50bac143f55",
+    "seconds": 0.527,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_mage",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_mage_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_mage_attack_1.ogg",
+    "sha256": "a4a988576d6137c20c6a0018ed02553dad573179636db4f651c36fc249977f54",
+    "seconds": 0.527,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_mage",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_mage_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_mage_guard_0.ogg",
+    "sha256": "0270133605b996b0b21fe857b833bdfbbdcb3b4922fa4677077090f090d8b544",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_mage",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_mage_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_mage_death_0.ogg",
+    "sha256": "8060dbb8dc8a2f9ab1180c4d474a8895bb23c158f45fa4cc84b35677f4d877f1",
+    "seconds": 0.8088,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_mage",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_shielder_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_shielder_attack_0.ogg",
+    "sha256": "cce281044083f0c24319c7017804aab64cc20f3d6380132145581c0d42e7255f",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_shielder_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_shielder_attack_1.ogg",
+    "sha256": "e2fe191dedc6e8efee639b0e15967ed10b06d4d7438b3a1c18bf75606d1d157c",
+    "seconds": 0.5402,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_shielder_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_shielder_guard_0.ogg",
+    "sha256": "cc13e689b2aa79ce673ca4e208ac924e00df9c70cc53a8bc4322e331c1431ac8",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_shielder_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_shielder_death_0.ogg",
+    "sha256": "00f2c880f042991591f02afab005a81273ef5d55efc756d1dbe37c029d76f586",
+    "seconds": 0.8253,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_shielder",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_warrior_attack_0",
+    "file": "assets/audio/combat/enemy_skeleton_warrior_attack_0.ogg",
+    "sha256": "b0a87567a9a4fc0197295781f766a3a7c64e0bca5ca035dbacd44ce47b4ed896",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_warrior_attack_1",
+    "file": "assets/audio/combat/enemy_skeleton_warrior_attack_1.ogg",
+    "sha256": "d48fade3eb366f83bea4f9aaba55fce855d6298d48ea9ee364fea87d7aa17597",
+    "seconds": 0.5252,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_warrior_guard_0",
+    "file": "assets/audio/combat/enemy_skeleton_warrior_guard_0.ogg",
+    "sha256": "a608d8880d85c9131394eb2427e9050375c82065239cc1d2267889759a75df50",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_skeleton_warrior_death_0",
+    "file": "assets/audio/combat/enemy_skeleton_warrior_death_0.ogg",
+    "sha256": "97d08be04b8d2a6c0f1a86c92ab68b6618839045b3e6fc275bb3c7de1d1ad5cb",
+    "seconds": 0.8065,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "skeleton_warrior",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_slime_attack_0",
+    "file": "assets/audio/combat/enemy_slime_attack_0.ogg",
+    "sha256": "a89d768eb19a27dc5cee1f62ba318afd78ecb35889dae7160b8a9841a7b7848c",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "slime",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_slime_attack_1",
+    "file": "assets/audio/combat/enemy_slime_attack_1.ogg",
+    "sha256": "7a3ec3446a800bdac5bbd6437102e5a466c32c57cd5073da5ffd4a72fe1065d7",
+    "seconds": 0.544,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "slime",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_slime_guard_0",
+    "file": "assets/audio/combat/enemy_slime_guard_0.ogg",
+    "sha256": "c1c7335b1435032c55449cd0d475fe621463defc349ac2f6fe4f320e3766514d",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "slime",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_slime_death_0",
+    "file": "assets/audio/combat/enemy_slime_death_0.ogg",
+    "sha256": "d3f918dc036b9fa0f967887d6dad699e2a1d6da7da609083d5e8b71b2e701bf7",
+    "seconds": 0.83,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "slime",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_volcano_boss_attack_0",
+    "file": "assets/audio/combat/enemy_volcano_boss_attack_0.ogg",
+    "sha256": "2e910577a8252bee2fa6e0ed32e3dd5bb4186d3caca71dd249317adee030bd04",
+    "seconds": 0.752,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "volcano_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_volcano_boss_attack_1",
+    "file": "assets/audio/combat/enemy_volcano_boss_attack_1.ogg",
+    "sha256": "e3d671d86e4665cb5e35db2a88a20c8655fb98279340f5dd807c50480b8d1b30",
+    "seconds": 0.752,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "volcano_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_volcano_boss_guard_0",
+    "file": "assets/audio/combat/enemy_volcano_boss_guard_0.ogg",
+    "sha256": "77849b272b2c655597ef5374a5dbfa70f90bbe15a7070475e34cffddac71a6b6",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "volcano_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_volcano_boss_death_0",
+    "file": "assets/audio/combat/enemy_volcano_boss_death_0.ogg",
+    "sha256": "ccde429f98ed542b5d10ed75bba5dc9172101ae9ead8542402e7eb156137a925",
+    "seconds": 1.09,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "volcano_boss",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_watch_owl_attack_0",
+    "file": "assets/audio/combat/enemy_watch_owl_attack_0.ogg",
+    "sha256": "f4978c73cb3f57412ff52eeb48bff34eea05cde4d57b67aac7a07d923962613f",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "watch_owl",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_watch_owl_attack_1",
+    "file": "assets/audio/combat/enemy_watch_owl_attack_1.ogg",
+    "sha256": "4e215f3a1c7594faa7abd1a7d1906deba1253038d294f8513d5305a3941037dd",
+    "seconds": 0.5346,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "watch_owl",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_watch_owl_guard_0",
+    "file": "assets/audio/combat/enemy_watch_owl_guard_0.ogg",
+    "sha256": "d749bd5de0f877ac2ad418dd6c639aed198372af65ea0ea1b56ebe8f555b4d9b",
+    "seconds": 0.31,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "watch_owl",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "enemy_watch_owl_death_0",
+    "file": "assets/audio/combat/enemy_watch_owl_death_0.ogg",
+    "sha256": "0fd823bb905dd10567bfd7aadc073fdd617a293ab53200220f6cced3bbadc27b",
+    "seconds": 0.8182,
+    "source": {
+      "type": "original mechanical design + CC0 foley",
+      "profile": "watch_owl",
+      "foley": [
+        "hammer",
+        "metal_clash",
+        "block_2"
+      ],
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "seeded motor, inharmonic metal modes, air/noise pulses; mono 32kHz Vorbis; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "steel_clash_0",
+    "file": "assets/audio/combat/steel_clash_0.ogg",
+    "sha256": "05534342d87f731e171afef0f04a15b69d093a418963992052d694991cb35a0e",
+    "seconds": 0.58,
+    "source": {
+      "file": "assets/audio/sfx/metal_clash.ogg",
+      "sha256": "6d9172d6adbc5ad5e2aa47784b2ae36738fb1bbbceb0aedaa67062ad16382bf6",
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "real metal hit + short inharmonic ringing; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "steel_clash_1",
+    "file": "assets/audio/combat/steel_clash_1.ogg",
+    "sha256": "96842df69afad55acc3b53f5d1dd14fe4907a99b4f7bf174ca62140664755f0f",
+    "seconds": 0.58,
+    "source": {
+      "file": "assets/audio/sfx/metal_clash_2.ogg",
+      "sha256": "b719feb79ba3efa8dceb92b27649a535e8b63ebd2bfab09182f1bb838d20cce6",
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "real metal hit + short inharmonic ringing; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "steel_clash_2",
+    "file": "assets/audio/combat/steel_clash_2.ogg",
+    "sha256": "549e9fc7534b5797a7f698960d3fde9460838782d62ee923d04fe7f6f1418c61",
+    "seconds": 0.58,
+    "source": {
+      "file": "assets/audio/sfx/block.ogg",
+      "sha256": "becf023677b22b1aa0b74180c060c30875b0f255e2c2c88fe031e57864221614",
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "real metal hit + short inharmonic ringing; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "steel_clash_3",
+    "file": "assets/audio/combat/steel_clash_3.ogg",
+    "sha256": "d09d6f4516fc9387557afb192cfcd37cb239c2e18a2eb3fc2c06440a38c96677",
+    "seconds": 0.58,
+    "source": {
+      "file": "assets/audio/sfx/block_2.ogg",
+      "sha256": "3bc43a28ce480594e5e50df0264480c89baabbac0ddf9f08126ef8bdcb22d175",
+      "provenance": "art_sources/audio/sources.json"
+    },
+    "processing": "real metal hit + short inharmonic ringing; peak -3dB",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_attack_0",
+    "file": "assets/audio/combat/voice_warrior_attack_0.ogg",
+    "sha256": "39cd2d89c8166607b067cfa319f0dcf36bd7ca3ea9b06c8869d8ec0d91238619",
+    "seconds": 0.4076,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt1.wav",
+      "sha256": "57b3a59c39ffe74a1706bcb85c451443c3b388d1f6423827b2af4af508c8416b",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_attack_1",
+    "file": "assets/audio/combat/voice_warrior_attack_1.ogg",
+    "sha256": "fa379ae55403b9952817a3aa8b91395bfa9580a3f3cbccd750441006437cfa73",
+    "seconds": 0.6671,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt2.wav",
+      "sha256": "a377c43f2151000713a45c18223c94e1de2e2393ad10569a391c1b9f96898544",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_defense_0",
+    "file": "assets/audio/combat/voice_warrior_defense_0.ogg",
+    "sha256": "a47494d2ee554bfa8af3c7bba1bef89e41871d99db8e64f69bbaee592fd3af3d",
+    "seconds": 0.4993,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt3.wav",
+      "sha256": "6006516ae7979896a4053cfc88f26ef575a67133fa0c51de5d9a893498960cc9",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_defense_1",
+    "file": "assets/audio/combat/voice_warrior_defense_1.ogg",
+    "sha256": "771fe0ab3517c05b96da0ffb7eaa6b487deb2bb11deb5ff118f2455b2695fac1",
+    "seconds": 0.2621,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt4.wav",
+      "sha256": "4ba97adf030acefa10195f88c3fb329ebbea2c9638bd412896e1b4fc0ca35404",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_hurt_0",
+    "file": "assets/audio/combat/voice_warrior_hurt_0.ogg",
+    "sha256": "53fb98ec37892740aa26878c3e7b519b7fed00417fa6f1eeccf8a60a49d66691",
+    "seconds": 0.3815,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt5.wav",
+      "sha256": "32705e7835d0cdce3eb6e9d3a512ef128ee6c50564bd53bb0723b4474be85181",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_warrior_hurt_1",
+    "file": "assets/audio/combat/voice_warrior_hurt_1.ogg",
+    "sha256": "ca460f1da88aa7da5cdde48739b94aed3334be599cac96e403a899179328e093",
+    "seconds": 1.1205,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/3grunt6.wav",
+      "sha256": "c334b34e7a64d67f226cd0a54fb237b8fbcc09e5ac6258a32fafcecc2c2e0857",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_attack_0",
+    "file": "assets/audio/combat/voice_guardian_attack_0.ogg",
+    "sha256": "cff214036d27dd1ff3d7d02f570c2e17b6e42a27777bc1abd8b9029e6ff2b894",
+    "seconds": 0.76,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 0.43,
+      "end": 1.19,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_attack_1",
+    "file": "assets/audio/combat/voice_guardian_attack_1.ogg",
+    "sha256": "9ec26cba9a07a04e8303a5b79fc4d78d9e7d9c3c88b320f0c67032da251fd123",
+    "seconds": 0.75,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 2.03,
+      "end": 2.78,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_defense_0",
+    "file": "assets/audio/combat/voice_guardian_defense_0.ogg",
+    "sha256": "8a03df88421d80c2facb69b3dcdb20614919231cfde75932e9e888810e478b58",
+    "seconds": 0.55,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 3.65,
+      "end": 4.2,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_defense_1",
+    "file": "assets/audio/combat/voice_guardian_defense_1.ogg",
+    "sha256": "f6af2005a7ad1dbc7124e5c50bd0d0dcd2a8a55d5110b03474243c2659942f33",
+    "seconds": 0.89,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 7.28,
+      "end": 8.17,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_hurt_0",
+    "file": "assets/audio/combat/voice_guardian_hurt_0.ogg",
+    "sha256": "2a91ee2296f94364b0d3d3c388c2ee80fec8adac4ebc8948d8f305ae1ce3a884",
+    "seconds": 1.05,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 9.32,
+      "end": 10.37,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_guardian_hurt_1",
+    "file": "assets/audio/combat/voice_guardian_hurt_1.ogg",
+    "sha256": "bdd4f9487f5585af0c001ca907937739f8c8fb6901a30b81ecb381cf509becb5",
+    "seconds": 1.01,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 11.62,
+      "end": 12.63,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_attack_0",
+    "file": "assets/audio/combat/voice_rogue_attack_0.ogg",
+    "sha256": "1273becd95a81893a9de18157f5b579b4326d3e590bc3af26bc3b65f1d2226b8",
+    "seconds": 0.4592,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell1.wav",
+      "sha256": "7c14c178f7d765cc60e20f72d296de8a6ad26172dcc98e69a36b4f817df7fa25",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_attack_1",
+    "file": "assets/audio/combat/voice_rogue_attack_1.ogg",
+    "sha256": "b60448389739777c9c655b86ea3a7b3f3440f4acadf06ce648aa009de7dad956",
+    "seconds": 0.9629,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell3.wav",
+      "sha256": "5fbacf0e1d7fca6f8c3022203793af19f6903a6281f6822e022206ec29bf625d",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_defense_0",
+    "file": "assets/audio/combat/voice_rogue_defense_0.ogg",
+    "sha256": "09234d9373d5c3c7bf056f3232d5380858902db5bb99ccae39e659af0aa979d2",
+    "seconds": 0.6528,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell10.wav",
+      "sha256": "718542b6a1ba707b613499f4510c2fe1eb063a28546cc608030bc63354e45b83",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_defense_1",
+    "file": "assets/audio/combat/voice_rogue_defense_1.ogg",
+    "sha256": "2955f15d3ce0cf8df5ba332da168c8d3c341a4b1419923062d80eaa0b404ba77",
+    "seconds": 0.8114,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell2.wav",
+      "sha256": "1a9836ad95d3102459a416839ccc0b0cf551dfc3322b44284fb7b6ab0b7daf77",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_hurt_0",
+    "file": "assets/audio/combat/voice_rogue_hurt_0.ogg",
+    "sha256": "346a4c4239fb62ac694cc71727ff1081bbdca33a895eb828644fbca5a4d8c19b",
+    "seconds": 1.7116,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell5.wav",
+      "sha256": "ac7d9933dad827ad105bb6e2b229161631b5b760d90bf4ee1dbf869e8f6f6ec5",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_rogue_hurt_1",
+    "file": "assets/audio/combat/voice_rogue_hurt_1.ogg",
+    "sha256": "6300d0fc502ec69d16aeb7d81b46db440a4984f1ba4e35b70c7a54dda9a2c128",
+    "seconds": 0.7541,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/2yell9.wav",
+      "sha256": "927c5b00d74e44302da73ffe89b2b27a4d78a207d81136eb1a1dceffd6fa9f54",
+      "author": "HaelDB",
+      "page": "https://opengameart.org/content/male-gruntyelling-sounds"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_attack_0",
+    "file": "assets/audio/combat/voice_mage_attack_0.ogg",
+    "sha256": "b3bd3f694142e27bd35d86854a6d26a405d1500d39412c615a640375cb797925",
+    "seconds": 0.55,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 3.65,
+      "end": 4.2,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_attack_1",
+    "file": "assets/audio/combat/voice_mage_attack_1.ogg",
+    "sha256": "9079a4185ea3510e1e8f969411ade14bfdc4622a8da9e02038230189ef70f09e",
+    "seconds": 0.89,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 7.28,
+      "end": 8.17,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_defense_0",
+    "file": "assets/audio/combat/voice_mage_defense_0.ogg",
+    "sha256": "c15799e78f01ece7a6fa76e9b22dd80c2bf58592cbb2f249b027c545c766bf45",
+    "seconds": 0.76,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 0.43,
+      "end": 1.19,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_defense_1",
+    "file": "assets/audio/combat/voice_mage_defense_1.ogg",
+    "sha256": "41b9fe5860b8653994afd282a7fb78d9dc1e6d2579768f74099936e7164504a4",
+    "seconds": 0.75,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 2.03,
+      "end": 2.78,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_hurt_0",
+    "file": "assets/audio/combat/voice_mage_hurt_0.ogg",
+    "sha256": "326ebf761ef6b3f0d717f66dfe8a58a44752812810ae6eac5a1f6eb0b04ec5f8",
+    "seconds": 1.28,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 4.9,
+      "end": 6.18,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "voice_mage_hurt_1",
+    "file": "assets/audio/combat/voice_mage_hurt_1.ogg",
+    "sha256": "d728a84a22dfef827a0d7ab328040d820a91ba2f8b53b87242776c212c24eacf",
+    "seconds": 1.05,
+    "source": {
+      "file": "art_sources/audio/combat_2026_10_18/sources/female.ogg",
+      "sha256": "80a9fb09203bb8feb065ba15197609b118cbe167c9a2264670a31ee22c384adb",
+      "start": 9.32,
+      "end": 10.37,
+      "author": "Nocturnal_Vanguard / AuraVoice",
+      "page": "https://opengameart.org/content/female-hurt-grunts-groans"
+    },
+    "processing": "trim, mono 32kHz Vorbis; 5ms fades; peak -3dB; original pitch",
+    "license": "CC0-1.0"
+  }
+]

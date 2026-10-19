@@ -1,4 +1,4 @@
-"""Inventory visual assets and traced consumers for the sketchbook migration.
+"""Inventory visual assets and traced consumers for the current comic artwork.
 
 Style labels are conservative human-review decisions by family, not an image
 classifier. No resource is deleted or altered. Sources without a resolved caller
@@ -16,40 +16,17 @@ from PIL import Image
 from audit_content import load_documents, EXPANSIONS
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'docs/art_direction/2026-10-13/review'
+OUT = ROOT / 'artifacts/visual_inventory'
 REFERENCES = re.compile(r'res://(assets/[^"\s\)]+)')
 VISUAL_EXTENSIONS = {'.png', '.svg'}
 
 
 def approved_assets():
-    approved = {}
-    manifests = ['docs/base_camp/dusk/sources.json', 'docs/base_camp/interiors/sources.json']
-    for name in manifests:
-        for item in json.loads((ROOT/name).read_text())['assets']:
-            path = item.get('runtime', item.get('path'))
-            approved[path] = {'document':name, 'sha256':item['sha256']}
-    static_manifest = ROOT/'docs/comic/static/assets.json'
-    if static_manifest.exists():
-        for path, item in json.loads(static_manifest.read_text()).items():
-            approved[path] = {'document':'docs/comic/static/assets.json', 'sha256':item['sha256']}
-    minimal_manifest = ROOT/'docs/cards/minimal/assets.json'
-    if minimal_manifest.exists():
-        for path, item in json.loads(minimal_manifest.read_text()).items():
-            approved[path] = {'document':'docs/cards/minimal/assets.json', 'sha256':item['sha256']}
-    for path,digest in json.loads((ROOT/'docs/portraits/2026-10-13/vertical_baseline.json').read_text()).items():
-        approved[path] = {'document':'docs/portraits/2026-10-13/vertical_baseline.json', 'sha256':digest}
-    for item in json.loads((ROOT/'docs/portraits/2026-10-13/sources.json').read_text())['assets']:
-        approved[item['asset']] = {'document':'docs/portraits/2026-10-13/sources.json', 'sha256':item['asset_sha256']}
-    for name in ['actors','assets','vectors']:
-        path = ROOT/f'docs/art_direction/migration/{name}.json'
-        if path.exists():
-            for asset,record in json.loads(path.read_text()).items():
-                approved[asset] = {'document':str(path.relative_to(ROOT)), 'sha256':record['sha256']}
-    modern = ROOT/'docs/art_direction/postapocalyptic/assets.json'
-    if modern.exists():
-        for asset, record in json.loads(modern.read_text()).items():
-            approved[asset] = {'document':str(modern.relative_to(ROOT)), 'sha256':record['sha256']}
-    return approved
+    # Only the current production ledger defines approval; old migrations are
+    # provenance, not competing sources of truth for the current visual state.
+    ledger = ROOT / 'art_sources/art_direction/postapocalyptic/assets.json'
+    return {asset: {'document': str(ledger.relative_to(ROOT)), 'sha256': record['sha256']}
+            for asset, record in json.loads(ledger.read_text()).items()}
 
 
 def screen_inventory(records):
@@ -106,28 +83,24 @@ def inventory():
     for id, definition in enemies.items():
         visual = definition['visual']; config = documents['enemy_visuals'][visual]
         row = {'id':id,'name':definition['name'],'visual':visual,'floors':sorted(floors[id]),
-               'idle_frames':config.get('idle_frames',8),'attack_frames':config.get('attack_frames',0),
+               'idle_frames':1,'attack_frames':1,
                'foreground_drawings':config.get('foreground_frames',1),'style':config.get('style','pending')}
         enemy_rows.append(row)
-        for folder in ['enemies/animations','comic/enemies']:
+        for folder in ['comic/enemies']:
             consumers[f'assets/{folder}/{visual}.png'].add(f'enemy catalogue: {id} ({definition["name"]})')
         consumers[f'assets/enemies/hd/{visual}.png'].add(f'enemy static fallback: {id}')
+    for kind, actors in documents['static_combat'].items():
+        for identity, poses in actors.items():
+            for action, pose in poses.items():
+                consumers[pose['path'][6:]].add(f'static combat: {kind}/{identity}/{action}')
     for hero in content['heroes']:
-        for action in ['idle','attack','skill','guard','hurt','death','run']:
-            consumers[f'assets/heroes/detail/{hero}_{action}.png'].add('src/presentation/detailed_hero.gd:14')
-        for action in ['thrust','sweep','charged']:
-            consumers[f'assets/heroes/actions/{hero}_{action}.png'].add('src/presentation/detailed_hero.gd:15')
         for suffix in ['attack','defense']:
             consumers[f'assets/comic/static/{hero}_{suffix}.png'].add('src/presentation/hero_cut_in.gd')
-        consumers[f'assets/heroes/running/{hero}.png'].add('src/presentation/hero_run.gd:8')
         consumers[f'assets/heroes/identity/portraits/{hero}.png'].add('src/ui/components/refuge_portrait.gd:34')
         consumers[f'assets/heroes/identity/postapocalyptic/{hero}.png'].add('src/ui/components/refuge_portrait.gd: individual full-body comic identity')
         consumers[f'assets/rest/{hero}.png'].add('selection_screen/rest_screen: seated party')
         consumers[f'assets/cards/frames/{hero}.png'].add('src/ui/components/card_view.gd:25')
         consumers[f'assets/cinematics/portraits/{hero}.png'].add('conditional cinematic portrait: chapter without image')
-        for weapon in range(4):
-            for armor in range(4):
-                consumers[f'assets/forge/heroes/{hero}_w{weapon}_a{armor}.png'].add('src/presentation/hero_equipment.gd:14; forge preview')
     for id in documents['battle_effects']: consumers[f'assets/battle_effects/{id}.png'].add(f'battle effect: {id}')
     for entry in documents['achievements']: consumers[f'assets/collection/icons/{entry["id"]}.png'].add(f'achievement: {entry["id"]}')
     for id,spec in documents['camp_expansion']['specializations'].items(): consumers[f'assets/church/{spec["art"]}.png'].add(f'specialization: {id}')
@@ -178,9 +151,6 @@ def inventory():
                 priority = 1
             if group in ['enemies/hd','cinematics/portraits']:
                 usage = 'conditional'; priority = 3
-            if group == 'comic':
-                usage = 'provenance'; status = 'legacy'; priority = None
-                consumers[key].add('docs/comic/attacks/*.json: historical generation reference')
             if group in ['dungeon','forest','volcano','encounters','camp','base_camp','forge','market','church','expeditions','refuge','reward','inventory','equipment','title']:
                 priority = 2
             if status == 'updated': priority = None
@@ -216,7 +186,7 @@ def write_outputs(report):
         relative = os.path.relpath(ROOT/asset['path'],OUT)
         safe = html.escape
         rows.append(f'<article data-path="{safe(asset["path"])}" data-usage="{asset["usage"]}" data-style="{asset["style"]}" data-family="{safe(asset["family"])}"><a href="{safe(relative)}"><img loading="lazy" src="{safe(relative)}" alt="{safe(asset["path"])}"></a><p>{safe(asset["path"])}</p><small>{asset["style"]} · {asset["usage"]}</small><details><summary>Consumidores</summary>{safe(chr(10).join(asset["consumers"]))}</details></article>')
-    page = '''<!doctype html><html lang="es"><meta charset="utf-8"><title>Auditoría visual sketchbook</title><style>body{background:#17131d;color:#dfd9e8;font:14px system-ui;margin:20px}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}article{padding:10px;border:1px solid #675274}img{width:100%;height:150px;object-fit:contain;background:#332c3b}p{overflow-wrap:anywhere}details{white-space:pre-wrap;font-size:11px}input,select{padding:10px;margin:8px}article[hidden]{display:none}</style><h1>Assets actuales: revisión sketchbook</h1><p>Clasificación por familia y revisión visual. «unresolved» no demuestra que un recurso esté muerto. Los atlas completos se muestran tal como están guardados.</p><input id="q" placeholder="Buscar ruta o familia"><select id="s"><option value="">Todos</option><option>updated</option><option>adapted</option><option>pending</option><option>review</option></select><main>'''+''.join(rows)+'''</main><script>function filter(){document.querySelectorAll('article').forEach(a=>a.hidden=(!a.innerText.toLowerCase().includes(q.value.toLowerCase()))||(s.value&&s.value!==a.dataset.style))}q.oninput=filter;s.onchange=filter</script></html>'''
+    page = '''<!doctype html><html lang="es"><meta charset="utf-8"><title>Auditoría visual de cómic</title><style>body{background:#17131d;color:#dfd9e8;font:14px system-ui;margin:20px}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}article{padding:10px;border:1px solid #675274}img{width:100%;height:150px;object-fit:contain;background:#332c3b}p{overflow-wrap:anywhere}details{white-space:pre-wrap;font-size:11px}input,select{padding:10px;margin:8px}article[hidden]{display:none}</style><h1>Assets actuales: revisión de cómic</h1><p>Clasificación por familia y revisión visual. «unresolved» no demuestra que un recurso esté muerto. Los atlas completos se muestran tal como están guardados.</p><input id="q" placeholder="Buscar ruta o familia"><select id="s"><option value="">Todos</option><option>updated</option><option>adapted</option><option>pending</option><option>review</option></select><main>'''+''.join(rows)+'''</main><script>function filter(){document.querySelectorAll('article').forEach(a=>a.hidden=(!a.innerText.toLowerCase().includes(q.value.toLowerCase()))||(s.value&&s.value!==a.dataset.style))}q.oninput=filter;s.onchange=filter</script></html>'''
     screen_options = ''.join(f'<option>{html.escape(s["screen"])}</option>' for s in report['screens'])
     screen_data = json.dumps({s['screen']:s['assets'] for s in report['screens']},ensure_ascii=False)
     controls = '<select id="u"><option value="">Todos los usos</option><option>referenced</option><option>conditional</option><option>unresolved</option><option>provenance</option></select>'

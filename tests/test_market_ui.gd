@@ -50,7 +50,7 @@ func run_tests() -> void:
 		check(id in app.game.profile.market_cards, "purchase " + hero)
 		check(app.game.profile.souls == balance - app.game.content.cards[id].market_price, "balance updated")
 		check(app.layer.find_child("Buy_" + id, true, false).disabled, "owned disabled")
-		app.layer.get_node("BackToHeroes").pressed.emit()
+		app.layer.get_node("HeaderBack").pressed.emit()
 		await process_frame
 		check(app.market_hero == "" and not app.layer.has_node("MarketCards"), "back to hero cards")
 	app.market_hero = "mage"

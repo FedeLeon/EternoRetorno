@@ -8,6 +8,7 @@ var icon_texture: Texture2D
 var explanation = ""
 var overlay_number = false
 var compact = false
+var show_number = true
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP if explanation != "" else Control.MOUSE_FILTER_IGNORE
 	if explanation != "":
@@ -35,6 +36,7 @@ func _ready() -> void:
 	shield.size = Vector2(32, 32)
 	add_child(shield)
 	var number = NumberView.new()
+	number.center_ink = overlay_number
 	number.value = amount
 	number.position = Vector2(35, (28 - number_height) / 2)
 	number.size = Vector2(minf(35 if number_height < 24 else 41, str(maxi(0, amount)).length() * number_height * 0.65), number_height)
@@ -46,10 +48,13 @@ func _ready() -> void:
 		number.size.x = 20
 	if overlay_number:
 		shield.texture = preload("res://assets/ui/block_active.svg")
-		shield.position = Vector2.ZERO
+		shield.position = Vector2(0, -2)
 		shield.size = Vector2(42, 42)
-		number.position = Vector2(4, 9)
+		number.position = Vector2(4, 8) # Center within the wider shield body, above its tip.
 		number.size = Vector2(34, 24)
+	number.visible = show_number
+	if not show_number:
+		size.x = 32 if compact else 34
 
 	if gaining_block:
 		var arrow = TextureRect.new()
@@ -84,6 +89,7 @@ func _dissolve() -> void:
 	shield.size = get_child(0).size
 	snapshot.add_child(shield)
 	var number = NumberView.new()
+	number.center_ink = overlay_number
 	number.value = amount
 	number.position = get_child(1).position
 	number.size = get_child(1).size

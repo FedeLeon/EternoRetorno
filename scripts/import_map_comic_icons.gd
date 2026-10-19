@@ -1,8 +1,8 @@
 extends SceneTree
 ## Geometric preparation of individually generated transparent map illustrations.
-const ROOMS = "res://docs/map/comic_icons/"
-const SIDEBAR = "res://docs/map/sidebar_icons/"
-const INVENTORY = "res://docs/art_direction/postapocalyptic/"
+const ROOMS = "res://art_sources/map/comic_icons/"
+const SIDEBAR = "res://art_sources/map/sidebar_icons/"
+const INVENTORY = "res://art_sources/art_direction/postapocalyptic/"
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
 func _initialize() -> void:
 	var sidebar = "--sidebar" in OS.get_cmdline_user_args()

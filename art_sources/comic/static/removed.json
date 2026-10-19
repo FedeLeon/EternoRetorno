@@ -1,0 +1,1575 @@
+{
+  "reason": "Foreground hero pose animations replaced by eight static drawings. Other actor/enemy animations retained. Historical prompt and provenance JSON retained.",
+  "files": [
+    {
+      "path": "assets/comic/motion/rogue_0.png.import",
+      "bytes": 946,
+      "sha256": "0e9d826427e4ee9fffb3eaf6243a4e2822cacddec7a03b0cd18223746640a1dd"
+    },
+    {
+      "path": "assets/comic/motion/mage_2.png",
+      "bytes": 10658010,
+      "sha256": "6fd8b75e82da4f9dadfd05daa6f432339334ddd812ab9d09200b8046926b91ac"
+    },
+    {
+      "path": "assets/comic/motion/mage_0.png.import",
+      "bytes": 943,
+      "sha256": "d3612633525ef4ff6c9f601d9cbf5a4e8673300191891876c27e1980e5f7a068"
+    },
+    {
+      "path": "assets/comic/motion/rogue_3.png",
+      "bytes": 10351630,
+      "sha256": "5cc61d0a9faf26bf35436c7bfd4c5d47d382f40958b7f29d2809c3c9549e3cca"
+    },
+    {
+      "path": "assets/comic/motion/guardian_2.png",
+      "bytes": 10596650,
+      "sha256": "76f1a4b26c87943ed113898d3877d2a5461036a240b02365742570acc9d2ead2"
+    },
+    {
+      "path": "assets/comic/motion/rogue_2.png",
+      "bytes": 10500098,
+      "sha256": "2cad786d5fab03a21b9ae51d4e0ca42fd28d19e6b992412b6c55ed7ad6a0964b"
+    },
+    {
+      "path": "assets/comic/motion/mage_1.png",
+      "bytes": 10532898,
+      "sha256": "5f0ab72e3a41b723ac3b775436e6a9177b3262eca50e5022e870000df6079c7b"
+    },
+    {
+      "path": "assets/comic/motion/rogue_3.png.import",
+      "bytes": 946,
+      "sha256": "acf5d82d313f93d7402a111b400a3ef60f3804eeffab99366c0916e19c87b6f8"
+    },
+    {
+      "path": "assets/comic/motion/mage_defense.png.import",
+      "bytes": 961,
+      "sha256": "a880cfb8f792506d899b4b5101f9f005f35b7e799e85db82b8cb57d7e202e3d0"
+    },
+    {
+      "path": "assets/comic/motion/warrior_1.png",
+      "bytes": 10401106,
+      "sha256": "24268a7884ba7e6ab134ac69962ce8cd8e776591b37189439c60f626040b265c"
+    },
+    {
+      "path": "assets/comic/motion/mage_2.png.import",
+      "bytes": 942,
+      "sha256": "58270265320da607bee4ea81182dd8d6b4be31d9c9ebb4dc4b366fb983fe0384"
+    },
+    {
+      "path": "assets/comic/motion/guardian_3.png",
+      "bytes": 10550651,
+      "sha256": "cd5dc1e4d56647c2a653448ee497716e91ad50cc49c42787957e16e1b480ce13"
+    },
+    {
+      "path": "assets/comic/motion/warrior_3.png",
+      "bytes": 10204059,
+      "sha256": "9505975c594fde4c89716de940ed87f9c6c7815eeca8ed2629f017c12a11f566"
+    },
+    {
+      "path": "assets/comic/motion/mage_3.png.import",
+      "bytes": 942,
+      "sha256": "dccd23e0f772601e942840a5de8fd691465c4186844b5677e3b2eb669b85d354"
+    },
+    {
+      "path": "assets/comic/motion/guardian_3.png.import",
+      "bytes": 955,
+      "sha256": "91ab09e360815e28df91e07a906d6283630681300f83484c91408c28e8764620"
+    },
+    {
+      "path": "assets/comic/motion/warrior_defense.png",
+      "bytes": 10921422,
+      "sha256": "d5643c3cbc69681614c744eb6b0faebaadd5f8db8107acfdf01e63f6fd50a48d"
+    },
+    {
+      "path": "assets/comic/motion/mage_0.png",
+      "bytes": 10593230,
+      "sha256": "f9e35e5624a32dd5d1da586d2d0b8dffa9e3848e9ec731f3e87dd7b8d29976fa"
+    },
+    {
+      "path": "assets/comic/motion/mage_1.png.import",
+      "bytes": 943,
+      "sha256": "27d06834ef5f167119589019221a5d9f0976493197171edba170b9068f135e3c"
+    },
+    {
+      "path": "assets/comic/motion/mage_3.png",
+      "bytes": 10380481,
+      "sha256": "d2eee6266f123b194e71ea54c9287a34fe197e0a613c9bd94da1794ba47bb965"
+    },
+    {
+      "path": "assets/comic/motion/warrior_0.png",
+      "bytes": 10291032,
+      "sha256": "16db74113c52e2f7dbf381fbdc0640ecb12deb655c4ea09dac0ae0cde3c5e15a"
+    },
+    {
+      "path": "assets/comic/motion/warrior_2.png.import",
+      "bytes": 952,
+      "sha256": "ab0c42a9588e7a894f426fc4db1df0b9873982f26df94da12b5767c5da47c381"
+    },
+    {
+      "path": "assets/comic/motion/rogue_1.png",
+      "bytes": 10587242,
+      "sha256": "8a5a2dc61b7bbe26e42a289c8d568a862977470985ad3ce09bbcb74c4c312c96"
+    },
+    {
+      "path": "assets/comic/motion/rogue_0.png",
+      "bytes": 10495157,
+      "sha256": "a2cea11779f61b9e02f22543a65ddd27f01bb446e9ba74938268f7aa3b8274f8"
+    },
+    {
+      "path": "assets/comic/motion/guardian_2.png.import",
+      "bytes": 955,
+      "sha256": "36e69c1eb577531fbdb6d026429462274cac20c1c2ba4ee83b2bb2a9928aeac6"
+    },
+    {
+      "path": "assets/comic/motion/rogue_1.png.import",
+      "bytes": 946,
+      "sha256": "f6cfbdbde6f03acf996d6dd3326e2fa589eeb19514a5576b1eaa91ab4ffa1170"
+    },
+    {
+      "path": "assets/comic/motion/guardian_1.png.import",
+      "bytes": 954,
+      "sha256": "e5594f2cb6c7fb6b8ca4f6557cc31fdda363c23edf6bdc90f36b4f25e3a72de7"
+    },
+    {
+      "path": "assets/comic/motion/warrior_defense.png.import",
+      "bytes": 970,
+      "sha256": "16f756d9198f33aef3928ceffa65eecc0cf182094a8cde4ebdd9690995e6d875"
+    },
+    {
+      "path": "assets/comic/motion/rogue_2.png.import",
+      "bytes": 945,
+      "sha256": "4e38df5b8b7677961025819ddb3807fc141283c9e27e990f48158e929d716b91"
+    },
+    {
+      "path": "assets/comic/motion/rogue_defense.png.import",
+      "bytes": 964,
+      "sha256": "4473e9d167ed375a3e76c56834c411a53932b1ab447b6b0a2f3d911054f5f0c4"
+    },
+    {
+      "path": "assets/comic/motion/warrior_3.png.import",
+      "bytes": 952,
+      "sha256": "dac18ff8782cdf070ac07fdcd455292ec02af0eb8efd2f577cb4a7775f7da8ce"
+    },
+    {
+      "path": "assets/comic/motion/guardian_1.png",
+      "bytes": 11561047,
+      "sha256": "1eff972ee27de19b59d68d3ba37431c6604190907d60fdc4d74885bc19cd06ee"
+    },
+    {
+      "path": "assets/comic/motion/warrior_0.png.import",
+      "bytes": 952,
+      "sha256": "068d7e9c69306890e9d261cdfd15abbd3d4a3a9a57b638f70918733dad3e98b8"
+    },
+    {
+      "path": "assets/comic/motion/warrior_2.png",
+      "bytes": 10256921,
+      "sha256": "d6b4e539972eb07a33b82a856c74d03d8e2088910e08ab375fb465c023b939c4"
+    },
+    {
+      "path": "assets/comic/motion/mage_defense.png",
+      "bytes": 11221826,
+      "sha256": "6b7550fe61fbf3b98f72a790b6068669ed56839ffd9f9f3a1d3473116377b1bf"
+    },
+    {
+      "path": "assets/comic/motion/guardian_0.png",
+      "bytes": 11017647,
+      "sha256": "5eace78cdd7480b7a9a06ae6c4bcec2a4f846bbcc1d971c722507df491c3df4f"
+    },
+    {
+      "path": "assets/comic/motion/guardian_defense.png",
+      "bytes": 11434509,
+      "sha256": "899bc719073a913a24d9e83a379dbfb9b3b5ed7fdea779ca35d824d657e025d3"
+    },
+    {
+      "path": "assets/comic/motion/rogue_defense.png",
+      "bytes": 10670684,
+      "sha256": "bcbabe829d5005e8c8e6c44e81ad51a3c617a12233101015f65a08563b955033"
+    },
+    {
+      "path": "assets/comic/motion/guardian_0.png.import",
+      "bytes": 955,
+      "sha256": "b574b9a4b0de03ac9c480e839183ce67ae7bf4a0027f08054216ba290dffea93"
+    },
+    {
+      "path": "assets/comic/motion/guardian_defense.png.import",
+      "bytes": 973,
+      "sha256": "ef5e981ea9ab18af07164b2bd578287c998e93f16fb01d07275015e7aab32530"
+    },
+    {
+      "path": "assets/comic/motion/warrior_1.png.import",
+      "bytes": 952,
+      "sha256": "ba2e53d01a92eac1d049c01c9b71954b0de4027f83fb7a4ddc9509249ca775de"
+    },
+    {
+      "path": "assets/comic/warrior.png",
+      "bytes": 2688910,
+      "sha256": "9c224bc1036ffd12ca3c1565a97e24486ca69c86b3d2a0f4de9645eed0377570"
+    },
+    {
+      "path": "assets/comic/warrior.png.import",
+      "bytes": 939,
+      "sha256": "d828c00ae1053178047cbba84250179b28e8432acb658eceff2c1d631629d2ef"
+    },
+    {
+      "path": "assets/comic/guardian.png",
+      "bytes": 2803849,
+      "sha256": "af6ca922d2b7143933e014a0114ab3a2ee638211cc3146caccd318c6d70195f3"
+    },
+    {
+      "path": "assets/comic/guardian.png.import",
+      "bytes": 942,
+      "sha256": "73b846e5575fc38d8add7f64dea83e416da2bb3caf831a85970b9a379e315874"
+    },
+    {
+      "path": "assets/comic/rogue.png",
+      "bytes": 2666437,
+      "sha256": "62ba9d2c7da035b9e120c96b2fa8ce86f9d95413c663976366b272ab93d173b6"
+    },
+    {
+      "path": "assets/comic/rogue.png.import",
+      "bytes": 933,
+      "sha256": "fafd4965769a1caef8cdab7e6db7591b2d8a5828fdc766821e8b68bf61d51f2a"
+    },
+    {
+      "path": "assets/comic/mage.png",
+      "bytes": 2754066,
+      "sha256": "d552cd17d9e3b52c1045b311e8bf2a8cfbd7153620eb6bcccb18f2bb86bf950a"
+    },
+    {
+      "path": "assets/comic/mage.png.import",
+      "bytes": 929,
+      "sha256": "5729ebbbf546db60f57938c4ca47f6fcb3212a9b8befe1701f6887cb106ca3ff"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/mage_2.png",
+      "bytes": 2425918,
+      "sha256": "1cbc03bd20e84a6dc4f58214ff650d88e14c5ad8ea2bbfad319e635a1323931c"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/rogue_3.png",
+      "bytes": 1996734,
+      "sha256": "d321580e356c7f3833d4435bdb48c958b432901b1794975cd29bc466e25c911b"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/guardian_2.png",
+      "bytes": 2968911,
+      "sha256": "a82db29a7cacbec43f52b42c12fb44c6b961923e8e03a0f26a129bd6faba928d"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/rogue_2.png",
+      "bytes": 2865606,
+      "sha256": "bfc4b7983b32182487400e1aa003ed176c4dfe9a744b59e03aedd9c6e3931e23"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/mage_1.png",
+      "bytes": 2303962,
+      "sha256": "0b392ad396bfc035e50884c50b7fee0b4de87449c9a8b44b3f8dd8c379d417a3"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/warrior_1.png",
+      "bytes": 1983760,
+      "sha256": "effd67375c17e4887a6fa4176afaf8b708e0fd5e51e2ef7e92549ca473d2954f"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/guardian_3.png",
+      "bytes": 2340068,
+      "sha256": "2b54c13511ccfd8ab35c648bd392d643f28d0a58e18ad5387a7f74189ff6a3f4"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/warrior_3.png",
+      "bytes": 1937920,
+      "sha256": "1f942c2e82536792877c268a09ae69dad12d8c307a1251025c9db8a6e7d5c82e"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/mage_0.png",
+      "bytes": 2276405,
+      "sha256": "242e27d347a92d51d32c91ca08301d081ac58d1e09610417983479ef55996188"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/mage_3.png",
+      "bytes": 2254559,
+      "sha256": "0fbb4497324d14530d7dac7172cdaf60ce2356750e7218490734cb59ad21a02b"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/warrior_0.png",
+      "bytes": 2085027,
+      "sha256": "f331aa36ac208c71bd7616612b2a479d13f49d4f002c1ddf4b29b6a740969329"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/rogue_1.png",
+      "bytes": 1957230,
+      "sha256": "b69f23cb6e1b080f5f067231fe574d274951f2ade85919c3d8bade7387d19089"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/rogue_0.png",
+      "bytes": 1922151,
+      "sha256": "2261afa9ecd83e73b5b10d51c1e05c654042d706e8b5f83769fdc2aa761fdca6"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/guardian_1.png",
+      "bytes": 2320572,
+      "sha256": "31905230f232d9c5ba35c084ae4e01ad85a645030d7dbe33f6a6d9d269342a41"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/warrior_2.png",
+      "bytes": 2198606,
+      "sha256": "6402100487e2e940cac79075d9a5027328f913aea3cedbc6e5c73758d3a701fc"
+    },
+    {
+      "path": "art_sources/comic/motion/sources/guardian_0.png",
+      "bytes": 2250444,
+      "sha256": "3a11a198545dce02bc12f083752b5f3ef619f17d6e6a53bd2917708dd21df94b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_defense_part2.png",
+      "bytes": 2455930,
+      "sha256": "a45aad21879f9b37d3e8654586f7bb5b4b80a4987aa0a5e44fb32b1a05123f2f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_3_part0.png",
+      "bytes": 2358816,
+      "sha256": "e8520ea1f5714f90f41a80758f92bc040e2c1d3ac12059b8de6fb6166c8d9eee"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_1_part1.png",
+      "bytes": 2963846,
+      "sha256": "9370c158dd0be87deb8c308426f2d4bd1a24c7f9f0c830660fa5e9124708534e"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_0_part3.png",
+      "bytes": 2115139,
+      "sha256": "1624cf3fc2db98a0afd91ce9d7d55b0d77c69826f150d7e1a70be2555915768f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_3_part2.png",
+      "bytes": 2598803,
+      "sha256": "a98fa8e72a7210ac47bed475fa2477a9ad772bfdd28cdf874a98bab4fa8e0abd"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_3_part3.png",
+      "bytes": 2211664,
+      "sha256": "56ac79405efa481d540d7ebb599a56517f4fe8cb99fad5a33f2248bd64e49bdf"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_3_part1.png",
+      "bytes": 2490454,
+      "sha256": "c505ca73efe3a7c64a86d63dea73008eef3f279caa126f449301dc583c7b30c0"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_1_part1.png",
+      "bytes": 2382031,
+      "sha256": "de5726af87bfdd61e6f28de952d0c5850847fefde612da14bc7821eeb094bc89"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_1_part2.png",
+      "bytes": 3076482,
+      "sha256": "54bc48f74179e099781f8215ef97b62626884045ef3a9bd8d0539e2e31f2a300"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_defense_part1.png",
+      "bytes": 2483619,
+      "sha256": "8e9f3783217237acdb0a56ae9cb3438eb7d19703e1a6a6711bf045329f63fc97"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_0_part1.png",
+      "bytes": 2256319,
+      "sha256": "a81df77f9d54ad2ccfdece629e6c54be23e6bdf800e00b9d1ad726333d144868"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_defense_part1.png",
+      "bytes": 2458790,
+      "sha256": "96c3b43a58b6a4086a27f1753ecd21006f281cc69a97e3774a389b842b38284e"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_defense_part1.png",
+      "bytes": 2374948,
+      "sha256": "5326b5761b89d42e9e215790d0058d280ad1291546c77db26e92e67c2be2d598"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_1_part3.png",
+      "bytes": 2121538,
+      "sha256": "8b394c26eb89b9d90b2722918fc25e3bce06031a0b9b7415ab5ab63d81f8cd09"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_defense_part0.png",
+      "bytes": 2309086,
+      "sha256": "75a24e137c5f98034b336467012f7e414d9284d3a67a408621b0164bed12b5c7"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_defense_part2.png",
+      "bytes": 2879995,
+      "sha256": "53b5e3b9510d3419df09d9de4624368b361ca840bf3536e41f3a1740726ea5d9"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_defense_part1.png",
+      "bytes": 2440970,
+      "sha256": "109f5df10e2f613aafab3863d181e466f30f2b01c5753bc65d8a261cc65e2eaf"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_1_part2.png",
+      "bytes": 2282412,
+      "sha256": "e1ffedac151809e76a7bff7c3eeb506f4aedf3de521faeeab4311664a5b02032"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_1_part3.png",
+      "bytes": 2121463,
+      "sha256": "c6a587ec85a27b4b1c9947011961ddecf89b28826608e167fa57918e9a105a2e"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_2_part1.png",
+      "bytes": 2550917,
+      "sha256": "a7173ea0598ac45aae344eb73c62bb511307a90317d096ea5981c6ba9f8ccbe2"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_3_part1.png",
+      "bytes": 2607805,
+      "sha256": "72b4a2bfad86c6606cf77c46013f769518ed234af0b851ae8a49ce466b9fbaa7"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_3_part1.png",
+      "bytes": 2297287,
+      "sha256": "f5f4c1e79c3c5391401ed294d0f77fc85b5d5f1c6651886caff3462a15db268f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_3_part3.png",
+      "bytes": 2340213,
+      "sha256": "4d40f8041815b2387cae1ef794b9af6886fdf83def42544594089c7c4795bc56"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_1_part2.png",
+      "bytes": 2224205,
+      "sha256": "28f4ef08b86ff752e9cf15a2fbcf6e5228c04c99ae843f95a65d4fac453d6b81"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_3_part2.png",
+      "bytes": 2484808,
+      "sha256": "fd9e34e0da5df037932ff353f7aa358c60c697ec64721635bc80c6ffbb2925fb"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_1_part1.png",
+      "bytes": 2130262,
+      "sha256": "fbb68231070eb4674b83808d6111aa27bb09daf8f1a0a4724a071ae5c9af1baf"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_1_part0.png",
+      "bytes": 2011965,
+      "sha256": "3a2acae7018e9f59f2c226879532abefaaccae7d24dc4c73110e336f6157b174"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_0_part0.png",
+      "bytes": 2146939,
+      "sha256": "0af55e17da321305ad85d142105fa2140f44c626aae19cd52be424172e074314"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_3_part0.png",
+      "bytes": 2398040,
+      "sha256": "1c45563c6489ca48d935d98838afe05162bd1f4512d6f1e7f642c65d732b7ea3"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_defense_part3.png",
+      "bytes": 2399186,
+      "sha256": "00134f6752f6819062cceeede1a30c5cceed635d2a3e323c7c5cbda564d0554b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_1_part0.png",
+      "bytes": 2066821,
+      "sha256": "75f5dfb94f6bd339c4d799caa1cc5dc114544e69311f843ce0687c01f5129792"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_defense_part2.png",
+      "bytes": 2502068,
+      "sha256": "08f084b32b35b84d15097aeae60f7f3179bede113a96748919952c5ba5c94ce7"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_defense_part3.png",
+      "bytes": 2124309,
+      "sha256": "42ef4027b75fd9145d3a5fae4ed95d2c1285b14c1f9dda9ee4d7f1e06b99f873"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_2_part1.png",
+      "bytes": 2772669,
+      "sha256": "dce5bf1a53ba1634146c2b62e4cfd3e55a1d543fb0ba5e2d36763db912dac22b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_0_part2.png",
+      "bytes": 2331770,
+      "sha256": "49b4ebcb7006435d8aba1840c366a61f7a2825d42fddf770bd3741e20a986dcc"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_1_part3.png",
+      "bytes": 2754122,
+      "sha256": "02cef4bcab1b7be673a03b5dfeaf9d7d53f0384cf14c539a406db36f26025d02"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_2_part0.png",
+      "bytes": 2437820,
+      "sha256": "c51f180e9aa9e4b3171295277ff4e7c876c767bb7d9dc73e0a0ee38402563297"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_defense_part3.png",
+      "bytes": 2655325,
+      "sha256": "3693ed99c2826c881fe242fd8f3f7df31862f184503002f56197d0cff15f6e4d"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_2_part0.png",
+      "bytes": 2496357,
+      "sha256": "3fb96cc7d22f1f5ea358f50b057c575318cdf22783ac71d6a955beea267ec608"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_2_part0.png",
+      "bytes": 2384576,
+      "sha256": "504dbe9e9a9e5a259fab6c557aeb4779dbef6a4a5e4c8869267210de7f631293"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_2_part3.png",
+      "bytes": 2535618,
+      "sha256": "b3b537d500ae1504b459f8b82912365be43c54b4852f3b269ee9fece44662671"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_0_part3.png",
+      "bytes": 2267638,
+      "sha256": "d791b14fddb1e7edf30b45f3ec1667e292bdc84d5abe28fe963cf07b713b4e5a"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_0_part0.png",
+      "bytes": 2128980,
+      "sha256": "f530f8303405c78d8c859a6a6ad06db37d1698aea4a0e23dd1f8b765898fe34a"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_3_part2.png",
+      "bytes": 2472623,
+      "sha256": "5a727e5d5133b9bbb44d3e0c0fba02d616edbd9584446c4a910c1f22266200cd"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_0_part3.png",
+      "bytes": 2397382,
+      "sha256": "f2fc45a2719e263a4dc837b5125c17fdeed4dc28439f52d49064dff1bf876a4f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_2_part2.png",
+      "bytes": 2639610,
+      "sha256": "1699835a33aaa56f4fc5aea04b84a416ec6b79ba4020386f9d8bf66d04bb592c"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_defense_part2.png",
+      "bytes": 2490006,
+      "sha256": "72bf63597d9fbf3976cc7c23e3b2cfb494894ed89d29b83af19f83113b0b4a24"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_2_part2.png",
+      "bytes": 2662025,
+      "sha256": "7af349ffae916cb3daf4c7d11b8e3ab2973eb5e4c2bb484bfbc1172d0a562745"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_3_part1.png",
+      "bytes": 2493196,
+      "sha256": "cbe9e5917da958e3d1057b76eed2e8af73e082f749ab4050e0e88fc5c5d86ba9"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_0_part1.png",
+      "bytes": 2354217,
+      "sha256": "ca8407ff406fb0f8446a97af54cc09a286ff57a203d70a627d9647bfd71aba7a"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_2_part3.png",
+      "bytes": 2118544,
+      "sha256": "92dc3bada9a2b9d879c94c221e288c4e3d4ca5310ef2d83818624ef378a244c3"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_0_part0.png",
+      "bytes": 2608438,
+      "sha256": "22ee3d66eafad1e503150d1d06502019da1d19688e189a033b0f45028fd870a1"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_0_part2.png",
+      "bytes": 2256718,
+      "sha256": "e74cf5a5e02520c2d0bad5e9565ff3b2577990ef0a32acf4f8e66d788ee2af4e"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_0_part3.png",
+      "bytes": 2479973,
+      "sha256": "590b43df60da2dc6abdb5c84a7ffdd133778a4c7a33f6737ec8d951f770b439d"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_2_part2.png",
+      "bytes": 2744030,
+      "sha256": "a4e7b0f05adc89dfb0cd069b599b6f37a6066289aede916c0acff724242a33b5"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_3_part0.png",
+      "bytes": 2263925,
+      "sha256": "2a4ed67130ba568dc217ce201be946c28e1f5caa6dc4cde342ab3790b73c8d19"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_3_part3.png",
+      "bytes": 2254023,
+      "sha256": "342c661ba795a42b6114b734121c5532b0f5f7193f8db74f6cc05a9141e89458"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_1_part3.png",
+      "bytes": 2288705,
+      "sha256": "60c862e578980ea411a35b71063741a4d1bab5b2e0490d7796111e1933d25aca"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_0_part0.png",
+      "bytes": 2320471,
+      "sha256": "ef6e4b4083e381106ee48e8917fa51adf1b3555a2ca793e0ff4a1c144d9f9fd9"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_2_part0.png",
+      "bytes": 2462520,
+      "sha256": "d13521f036194c22c96644acfb4651c3c8ebc5109f2481d75f85c3fbfd19c70f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_2_part1.png",
+      "bytes": 2352514,
+      "sha256": "668ef84a938040c841dff34e08851f970108742894fbdd6f50689bb3e3f75f94"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_defense_part0.png",
+      "bytes": 2196883,
+      "sha256": "8e9b3a613f326bbeed4a9836f6b0bddb02e9729452cdd297cd7f59bd175884d2"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_2_part3.png",
+      "bytes": 2577556,
+      "sha256": "fdfe513c0b6dd258254d3cb60691911002c6b54cc27c3f51648884c7d0e77eba"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_0_part2.png",
+      "bytes": 2581306,
+      "sha256": "ee80c96221b46bc2a1f3f0a1956b130a1029806241a24277ddec1d605b2f264d"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_1_part0.png",
+      "bytes": 2712556,
+      "sha256": "ccb73269414168d55db87428f7c1bcd0ebb08303dab5394796280fcb558f316b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_2_part3.png",
+      "bytes": 2230255,
+      "sha256": "8a4ef309069c4403cdd74d0667d37f61dd933b3e455ebb944d4b9b31becec818"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_defense_part0.png",
+      "bytes": 2350193,
+      "sha256": "116c5345fa84e5959ec2445279afcadb893fdccc68698991c713719e68887069"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_2_part1.png",
+      "bytes": 2678029,
+      "sha256": "e71b901db64da51553097f2595ac00673c2ccc87ec0e05d057dc4eb90d8d4b8f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_0_part2.png",
+      "bytes": 2711711,
+      "sha256": "f5ac78edb97b9aeb8cd5f3cb05be1b26eaaf9e973ca4283fef3eaa8bc6b981f1"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_1_part2.png",
+      "bytes": 2239153,
+      "sha256": "b566046742cff61b361af6ead01a1bdd59e04ab836361366d9a599c5926f57e7"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_defense_part3.png",
+      "bytes": 2348548,
+      "sha256": "ec66a92e4c30f78052216ac0c9ff37801e8a468e406048a2606282a5886427bd"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_1_part1.png",
+      "bytes": 2321700,
+      "sha256": "d2b77a648e2611b7e7fd4f9b625ad1c78618aa1ac4d009554dd8e7ae8c4d801a"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_defense_part0.png",
+      "bytes": 2104096,
+      "sha256": "407ac6c3e882f655a088822942493f34b4bc1a82b5f6bd4a7949a7e37273d7c0"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_0_part1.png",
+      "bytes": 2208833,
+      "sha256": "4a7b7a36c2dfc4b4e5bdb123d36955eee6e9d44625db6feed09419b32938617e"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/rogue_1_part0.png",
+      "bytes": 2016993,
+      "sha256": "e4362683d67dfb8ec511aeabf3559c4abbc9cf178618154bd22e69052c4bbc0b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_3_part0.png",
+      "bytes": 2297020,
+      "sha256": "39ae66b91649156e29481cac2db544d01d3ee0abe54dc457f49f32b8ef33e8c1"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_3_part3.png",
+      "bytes": 2512191,
+      "sha256": "dbabf2989ba1bc7568c58e1bc309c4c85c6deb6d82579a65930540892899eed8"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/mage_2_part2.png",
+      "bytes": 2431947,
+      "sha256": "165c640f177044cd9ca09ebd2c17bf505c04274d9766c17b8c70ccbda56e3a9f"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/warrior_3_part2.png",
+      "bytes": 2258800,
+      "sha256": "aa4f27bdb2f9b450f817116f6f14a6555ace8f3e350f6767f3c490bc41c94a3b"
+    },
+    {
+      "path": "art_sources/comic/hd/sources/guardian_0_part1.png",
+      "bytes": 2765102,
+      "sha256": "4658edce95b6e6fe1a4a3e133b344b3df0c24109d66cb02e841ea9949c20c920"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/mage_2.png",
+      "bytes": 2425038,
+      "sha256": "011aa28e18634e8aabd849a756fb35bad0a3425763a0a7452c43940597fbd1b3"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/rogue_3.png",
+      "bytes": 2480435,
+      "sha256": "3148d975b325cf1e5df374f4e44fd09c66978ee323a6c66407921111cae10f4f"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/guardian_2.png",
+      "bytes": 2744162,
+      "sha256": "23201b96686c08c93df2dc02be9e8c55a0e5b67182f8bbdf541b73bec2c6aa73"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/rogue_2.png",
+      "bytes": 2502148,
+      "sha256": "84ad316a33ba5e3fa23a427b1aafc47d6f3fa219cc261f71321b518894055982"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/mage_1.png",
+      "bytes": 2153167,
+      "sha256": "bfa28c419d59efb9fdbf2c774ec8af25de80e08f8f5154cee6158fb5d758071b"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/warrior_1.png",
+      "bytes": 2220399,
+      "sha256": "ee1cafb70af8965e92a5055f0b703b5ac5724013772f89e02c705f4c5c9222c5"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/guardian_3.png",
+      "bytes": 2345285,
+      "sha256": "edd9765b5a5a0f71e80e0d1d387fff09c01b348e5b248be00765b8fd8553b21b"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/warrior_3.png",
+      "bytes": 2284712,
+      "sha256": "0e9d5297f0981daead56b88a6f3a6277fd0736ef553b473570f9b4cf7b3484d4"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/warrior_defense.png",
+      "bytes": 2785637,
+      "sha256": "9c6efdc3fbab1cb02dc48ecdd04d16702d7a41b5828dd8572a14eec2c0fb05d3"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/mage_0.png",
+      "bytes": 2197141,
+      "sha256": "2c9251a54d9f2f5c2a5276750295790673401a88e7f379050171a043b5efd63b"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/mage_3.png",
+      "bytes": 2411366,
+      "sha256": "76fadde449847b101326b216a62efbe739a36a1525eb28004ff29308545175c3"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/warrior_0.png",
+      "bytes": 2189921,
+      "sha256": "f71b1b5d9dc6296c9ddfcdbffcb245321cfd8ea25b2a50e2857b0078af1b3943"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/rogue_1.png",
+      "bytes": 2041256,
+      "sha256": "2b34bfeb2e8ca9b481bf2bb07611dbe4f249336675efde8dd60ba8450de670f5"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/rogue_0.png",
+      "bytes": 2332058,
+      "sha256": "773651540f4311489a26436862c7c02a181b65c1c7bdfd67fa5a448d363c544d"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/guardian_1.png",
+      "bytes": 3100087,
+      "sha256": "a5193626c7688bf0ac223243459c0072aeca2009bbb40425e45539a3c60ef03e"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/warrior_2.png",
+      "bytes": 2622395,
+      "sha256": "bc266ca81f4720c1e7f5fcbe6db70f716ba20083111f3e3e46252e953660046d"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/mage_defense.png",
+      "bytes": 2453889,
+      "sha256": "7652e199d151375a78c689b8f1dae233afdcc1fe50ce5814d5f768484302b9b3"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/guardian_0.png",
+      "bytes": 2798981,
+      "sha256": "c3eec3db2da15c2f43a6a9dfaa73f67cc4bf56ba128aff5f1f8479f4afb10c80"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/guardian_defense.png",
+      "bytes": 2247012,
+      "sha256": "947c88a5b5b2df92bed2a691a65d31179b15b0745fc40e2174953415aa2b2ef1"
+    },
+    {
+      "path": "art_sources/comic/smooth/sources/rogue_defense.png",
+      "bytes": 2471310,
+      "sha256": "1151021b32515601af661d2ff2afe54b3dd1c51da9cdbae90b8a878525ab58fe"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_defense_part2.png",
+      "bytes": 3001071,
+      "sha256": "08e46c61353bd6cb7e21cf46b1ee004ba9849059d2e26dd0577a1e0d1785e0da"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_3_part0.png",
+      "bytes": 2712938,
+      "sha256": "4342288256abb9f619cdefb45cea310a8713a352c2dedb2661cddd0a7aa05973"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_1_part1.png",
+      "bytes": 3143553,
+      "sha256": "0caf38a76a790e9b38d4592f46926a1d45257ba9e75475b5a88c8a077175a5d1"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_0_part3.png",
+      "bytes": 2715374,
+      "sha256": "fb3ed58bdff7441fc126c046acfdacdb9319b6037304bc795bd46dff3102e635"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_3_part2.png",
+      "bytes": 2634658,
+      "sha256": "8a5c4ddd67ac4e96df04e9ee4ad0bc147ebd5f5954e3caecbf4a067b5bc3a7b0"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_3_part3.png",
+      "bytes": 2593964,
+      "sha256": "f5ae0647260ab33fbaf1207f90b70f586bf05142606f9f839dd1caa0ea4b5f6e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_3_part1.png",
+      "bytes": 3056982,
+      "sha256": "9c1f86acfb27033762859b081e587bae2b1789f8d5dbde01aa735abb9f5ef3ee"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_1_part1.png",
+      "bytes": 2720889,
+      "sha256": "200eb5607c905687c3175acbe6f7557090378b561a34d61e346ba148774015c5"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_1_part2.png",
+      "bytes": 3211128,
+      "sha256": "844ac76071a15dd0790a28839862062003962f779739b0745ac20278129a23f5"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_defense_part1.png",
+      "bytes": 3007104,
+      "sha256": "18b6b5676dbee0cc45b46efda579ee02899b9b9ac1d9826a509c24d8a26f86b2"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_0_part1.png",
+      "bytes": 2699529,
+      "sha256": "45b9a7b8f451c9920e699eedb5bc1956d1912764621e42e360ed433aafbfe522"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_defense_part1.png",
+      "bytes": 2873775,
+      "sha256": "e279a34e896c3905e09a757d2f006923205609de0b18660856edd0c0f5a6fd33"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_defense_part1.png",
+      "bytes": 3092234,
+      "sha256": "7d3e25619b279daefae89c1033eec362cbb16c24ac0d4144e94b85e5fea22083"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_1_part3.png",
+      "bytes": 2731243,
+      "sha256": "6024ca7553821e3af57f7e4cbb15a8757bd862e950f6154ae540db7e2b299193"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_defense_part0.png",
+      "bytes": 2992556,
+      "sha256": "470747a269b7a2975adb85b6a5f8736e49e44c083289ca5dc6f6eaa55e196414"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_defense_part2.png",
+      "bytes": 2923656,
+      "sha256": "cc0d87ce22da0f1877da0d9fc303202d5b431a15700fc7f89b550805dd7293f9"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_defense_part1.png",
+      "bytes": 2898019,
+      "sha256": "0fb7dafdeab7bf5243b483302a3691a56d27ec5d577aac30858ddd132cb84be5"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_1_part2.png",
+      "bytes": 2717501,
+      "sha256": "052ee39d6a065878f746de66cf3452a551152f3ca01c5ff6422833cf8ae8f765"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_1_part3.png",
+      "bytes": 2736661,
+      "sha256": "90e2e5dc469a1a6cfca87e41e816889cb23f0ee4e55e722706d2af89a8e1acef"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_2_part1.png",
+      "bytes": 2877000,
+      "sha256": "60a577d27206d2260c8c9b26b433b16a255e1372635f4352495852157a6d26ef"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_3_part1.png",
+      "bytes": 2615713,
+      "sha256": "b5f2ee03b725dfb7c36cc076d41309b2177e434399f5933ce780a933b9bd9f2e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_3_part1.png",
+      "bytes": 2820655,
+      "sha256": "6ad87606f96db0ea966351919d6982e11af12852d489105ae4f67725a8b1138f"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_3_part3.png",
+      "bytes": 2645993,
+      "sha256": "b1453c83ff0c473657f4422ea091a1d61dc68c7e3e4a8fdf120f0077c259c6f4"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_1_part2.png",
+      "bytes": 3010212,
+      "sha256": "736ee595878befa10c9c7424712809d345e0b565f97b2d6ae1d6c52a43a5fdae"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_3_part2.png",
+      "bytes": 2919580,
+      "sha256": "c571209f9a3d80125db6c832cf76bc3ad7d0c91417a52249d7b0889bb4319831"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_1_part1.png",
+      "bytes": 2774605,
+      "sha256": "375c0bc6c3b7b8bcc939458bb3cc3eb4afa65e1269ffd983b00dc7ec1f9b846c"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_1_part0.png",
+      "bytes": 2935953,
+      "sha256": "9c8dbc30f33f7760c9e8640e11ad07d8839323abbd2846cd84db2673e5609a31"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_0_part0.png",
+      "bytes": 2780474,
+      "sha256": "17853450c733ca6a093a49d5f2df4f4802122b45a3ef5ad13cf56a224ac675c1"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_3_part0.png",
+      "bytes": 2763806,
+      "sha256": "68fe7555357f5a3591f6ead03ea5eb755d60e2c12f27c7ad59a5a61efdfc90df"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_defense_part3.png",
+      "bytes": 2861251,
+      "sha256": "02d4935277011b892fb3fef9cab681d899a9ae56b8b287062d0227b40b321127"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_1_part0.png",
+      "bytes": 2804866,
+      "sha256": "5e99c4b883005a3a2f6ec6e1d354f2b772ce5ff747aecc0d4673e3ffe8d5c153"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_defense_part2.png",
+      "bytes": 3210304,
+      "sha256": "bdd1ab2e685eb2151f50005ee90285eb96458e395c582585f326810dff850b06"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_defense_part3.png",
+      "bytes": 2991047,
+      "sha256": "424ce48c75d41518d4dc4cd49d99e6eaaa5fdcb1fd969c5b4a501f123a56b85f"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_2_part1.png",
+      "bytes": 2652505,
+      "sha256": "49c69d83bd733301b51ff4b5e6bedaceb3b8ccd56c2525d68b722be2c839c837"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_0_part2.png",
+      "bytes": 2816505,
+      "sha256": "b992116de5086b21a5c80327c15f3e41e1795d5d203d699a6b44e3dc7efdd179"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_1_part3.png",
+      "bytes": 2858087,
+      "sha256": "ccd443ab9d541ada7cba1cfc10034a88e655f7d5d4449a1e4f54b4246c379fdf"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_2_part0.png",
+      "bytes": 2808985,
+      "sha256": "175f2cc7b537c162735d14a9975db719aa0bd50bc27c136788c97b655702fbf5"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_defense_part3.png",
+      "bytes": 2667974,
+      "sha256": "39d68de42d524efbe7d4c3bd920e8685fd5a4d4ab7d945fd6c8c0814a7d1dd51"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_2_part0.png",
+      "bytes": 2796110,
+      "sha256": "65ceebf23affa12bd1c915e9c3d39c96c9e4180f74eae4089b682d4d7bce5b73"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_2_part0.png",
+      "bytes": 2889565,
+      "sha256": "8d621e636bf7606a75bfc021b7481422263d2501665f9b19a41b4d5f6ed685db"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_2_part3.png",
+      "bytes": 2727177,
+      "sha256": "757219ae3478d35938e152fd553cbfc4d9bd79af36d2669489328170cf7e2fcf"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_0_part3.png",
+      "bytes": 2717409,
+      "sha256": "eb5cd0ce9ce25564d6c8d67fa2fe714ceff4bb321d2ad24432d9b3ddb7d00226"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_0_part0.png",
+      "bytes": 2804301,
+      "sha256": "2b83194b5fa0bb22e7f40ec4fe73f9f9d706694102bcd0a1afc68c43b1e58709"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_3_part2.png",
+      "bytes": 2901696,
+      "sha256": "79d45018fead5c53cd048d5756fa495b8fd9139aa6b2f4da328bea1bc0190959"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_0_part3.png",
+      "bytes": 2715560,
+      "sha256": "0abcedd3a0d9773208b53dd55cfd5546e3082930a9d393be3260edd2437064bd"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_2_part2.png",
+      "bytes": 2846341,
+      "sha256": "dd50a82ca0ce1160b24f805092b018229846394079a7a658a1324ad36df03a7f"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_defense_part2.png",
+      "bytes": 2690967,
+      "sha256": "9259ce880a5ba4831787fd17e28421b13684579aaed121abb21d270537a1882d"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_2_part2.png",
+      "bytes": 2579752,
+      "sha256": "ff95dc3b1716dcaece92011d41baebc8ba5ce81d23cc4521e1275d2cd2f1665f"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_3_part1.png",
+      "bytes": 2667009,
+      "sha256": "5b4d4c66fdffe1cb724be179d0fba8afc5125ade42094a8ba08ad0b0a4d8ecf7"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_0_part1.png",
+      "bytes": 2746505,
+      "sha256": "5bbcee3b5c7abcdb239c483fcfe63e13be5b5f74f915b77fc587d23462517d25"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_2_part3.png",
+      "bytes": 2742265,
+      "sha256": "f51728646a840e4225dec71aa82bee6919fce96f8f8cf9bfa6a84cff146a5f5d"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_0_part0.png",
+      "bytes": 2970005,
+      "sha256": "10f2a214244ab4dc3a99fdc40435f8485e8628f5605c8b1d6cc6519911a2c14e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_0_part2.png",
+      "bytes": 2714605,
+      "sha256": "9628c1389afa1bc14bb19dd4f7fa36f6bc351eb70ab169518605a38570f69d53"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_0_part3.png",
+      "bytes": 2910948,
+      "sha256": "f3eb566e559c5b1545841dcd84a2003c5ee277adac3bc0de35ecb5ae0267b929"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_2_part2.png",
+      "bytes": 2725498,
+      "sha256": "ebf288391ae87d9a01e6d74a3b0c009e8cee2cbab30a668e665c18efc6bb8d19"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_3_part0.png",
+      "bytes": 2734856,
+      "sha256": "000d603c1418f65692a6d6e4147c842dd6ec4909f1c7d4c18a2a59de2c924d5f"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_3_part3.png",
+      "bytes": 2603830,
+      "sha256": "394e049f7a930dbad5f8a32982bd66c7f7aefd149ad74b8a177d9f417b05e5ba"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_1_part3.png",
+      "bytes": 2682152,
+      "sha256": "4ed3340cc472dc99b286a6412837e06a14f1f8826acf59dc35be45e9af412f1e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_0_part0.png",
+      "bytes": 2644213,
+      "sha256": "85361bbbc41558d25cb92aeb9e14c3c8d138eb51d168e12bef238edfa1b7a5e0"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_2_part0.png",
+      "bytes": 2739797,
+      "sha256": "c3d4a43bdd287d5393152d3b9676acd21905f60891cd9ef6fa7cf145b1e3e6bc"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_2_part1.png",
+      "bytes": 2879733,
+      "sha256": "f465e32177dd0e9f58cb73eeccc0d6912bfc6ce77877ed3c946dfb7123176967"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_defense_part0.png",
+      "bytes": 3033280,
+      "sha256": "71ca15bd38438c0ac5d7621f3c85800eade1a18639e0f94c50efd8ad1ea81071"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_2_part3.png",
+      "bytes": 2662001,
+      "sha256": "f50f1496f8b91792f23fbe9e8d2cd9b1db4ea2102b5b7989f1eaf12ece33cdf6"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_0_part2.png",
+      "bytes": 2899119,
+      "sha256": "3100a0f0cb582c79e7bc9b4b3c1ace29359a6ca60dfb79b03604aefae330280e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_1_part0.png",
+      "bytes": 2949978,
+      "sha256": "e8dbc9279ff410b2fed4e81be066e2e0afd92ca4081a429be58451d1b5c492a8"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_2_part3.png",
+      "bytes": 2754455,
+      "sha256": "24ffdc48db6093a020cb3b1d37c22c257771706c44f1f79d5d899b38e7196922"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_defense_part0.png",
+      "bytes": 2821233,
+      "sha256": "63c088e795a33f04920969157bfc3c6cb4559af9449919773eaed4dff8c7e012"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_2_part1.png",
+      "bytes": 2832086,
+      "sha256": "61c4eb4df88a5f406bf25c1b5f7183c658a6cb346da3ab1254d3d4bf8327cce6"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_0_part2.png",
+      "bytes": 2885445,
+      "sha256": "851970ea3233b983f7da383abfb4264abb89d7a1c5dc10488240187f656ac378"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_1_part2.png",
+      "bytes": 2689534,
+      "sha256": "50082e1962003fc34fbf4708cc7fa9b1b345906ad52195213ba61e91021d1190"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_defense_part3.png",
+      "bytes": 2758010,
+      "sha256": "32e0f32ab9fb54a8aa8f5a4ca36e2e8e42db578263e2d75a7e41f45508a92b03"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_1_part1.png",
+      "bytes": 2818607,
+      "sha256": "7e2ee9c0d6b1de66c17c3a28c021f6faea90a5b12395fc34703618eb67a9cea3"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_defense_part0.png",
+      "bytes": 2902355,
+      "sha256": "388b2da19d174d7509ecf0ddade1ced0dc78f2cb6ea53ab9287211506d141560"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_0_part1.png",
+      "bytes": 2911958,
+      "sha256": "fddca204e1c780c46cf6a9fe3a70497b82013ca967a0a1c73a3f712394a69e78"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/rogue_1_part0.png",
+      "bytes": 2682993,
+      "sha256": "b876529c643c4d5263b575e08649edef1137280fe53f5a7c477dee61d8d37e57"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_3_part0.png",
+      "bytes": 2777006,
+      "sha256": "0bb5248e0ffac67f0f8b9c6405c378122776dcd2784b1e037adb68c89fe9d9f0"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_3_part3.png",
+      "bytes": 2570985,
+      "sha256": "68a71deffce6bc6330ca31920181a8c2384f28eab3eb6f71f4040fb27d00766e"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/mage_2_part2.png",
+      "bytes": 2751863,
+      "sha256": "26764979f21466972b51b9c664b96703a4a2c96d06e57e16246b1fdc7cb19c83"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/warrior_3_part2.png",
+      "bytes": 2763769,
+      "sha256": "d4dc9c7a1a95be2fe10171d7d16bc7d61418d0d71cdf2b365859333eac41c309"
+    },
+    {
+      "path": "art_sources/comic/sketchbook/sources/guardian_0_part1.png",
+      "bytes": 2833687,
+      "sha256": "17c60e54b7a09cfa43bd26d8b3d749e28989b090b3183902f57ea913a4694590"
+    },
+    {
+      "path": "scripts/import_comic_motion.gd",
+      "bytes": 129,
+      "sha256": "3a48d08bfdf84515d5eac94a4bada4ce8173f28d0920a65ea10e3d116e27c51d"
+    },
+    {
+      "path": "scripts/import_comic_motion.gd.uid",
+      "bytes": 19,
+      "sha256": "a7ccc6591f1aa1d9ffa07cdef2c99ea156b9e6bf88d75d6932ded5787ea462e1"
+    },
+    {
+      "path": "scripts/import_hero_motion.gd",
+      "bytes": 2672,
+      "sha256": "b0b527f6e497221953d06813bffcdf9e976c8680c700210f32d7d84658f4072d"
+    },
+    {
+      "path": "scripts/import_hero_motion.gd.uid",
+      "bytes": 20,
+      "sha256": "776f913c56beee36024e3ccf2946e29a729aa9d3750971f068790db43c81809f"
+    },
+    {
+      "path": "scripts/import_sketchbook_cutins.gd",
+      "bytes": 807,
+      "sha256": "a9980261e2cca36e23633f0f1b0511dec8c9fc8e6a168518664ac99f348e198b"
+    },
+    {
+      "path": "scripts/import_sketchbook_cutins.gd.uid",
+      "bytes": 19,
+      "sha256": "13e6032721fd7b8d5c7facc492c98dd8cd804ad1a7fb5a22fd546b1998202d54"
+    },
+    {
+      "path": "scripts/prepare_hero_hd_refs.gd",
+      "bytes": 762,
+      "sha256": "572d1e70616755f3c66de27a84a06c47ac0339cb9d40fe1df5d3362c77a8e34f"
+    },
+    {
+      "path": "scripts/prepare_hero_hd_refs.gd.uid",
+      "bytes": 20,
+      "sha256": "198dd30ba203488777cb2d34ca6ba20edbc51af76d50634bafdffa06ee1b1ad4"
+    },
+    {
+      "path": "scripts/audit_sketchbook_cutins.py",
+      "bytes": 3374,
+      "sha256": "7daefde390b7dfd8b093a322d38fed6025e1b708909e80a28adaa2940ea511ba"
+    },
+    {
+      "path": "tests/test_comic_motion.gd",
+      "bytes": 3269,
+      "sha256": "fda3a546ff5dc96293fca943d12546309cc21d317d22ea824a16d81dbca2b2f6"
+    },
+    {
+      "path": "tests/test_comic_motion.gd.uid",
+      "bytes": 20,
+      "sha256": "2c6378d7281371e9b1ac8f2ce2adac80b8a73021b17cf6d2d13cba584966b9d2"
+    },
+    {
+      "path": "artifacts/comic_motion/mage_2.png",
+      "bytes": 1931070,
+      "sha256": "bf057ba1b0479d0a4685f88ead294d909873bcbbdecd87d9b22e0114ff026aa4"
+    },
+    {
+      "path": "artifacts/comic_motion/rogue_3.png",
+      "bytes": 1929347,
+      "sha256": "a9bf228e51964cf075611190f66492b41be79eb89e5ce39cf79d8cd8e1ec1e60"
+    },
+    {
+      "path": "artifacts/comic_motion/guardian_2.png",
+      "bytes": 1939640,
+      "sha256": "106673ad1e6984fed5faaabe691b745937422d0829aea8735d491f8126f59709"
+    },
+    {
+      "path": "artifacts/comic_motion/rogue_2.png",
+      "bytes": 1939965,
+      "sha256": "6d65c1e0f7d98ea0c8ec23f84c898cba5435bf7b735a5416cec6abe6f873885b"
+    },
+    {
+      "path": "artifacts/comic_motion/mage_1.png",
+      "bytes": 1953838,
+      "sha256": "80d68aa414bd14808652fcb2390c3ce9dcb710996223fdbddaa3e8fe6e08d6f9"
+    },
+    {
+      "path": "artifacts/comic_motion/warrior_1.png",
+      "bytes": 1969662,
+      "sha256": "0496e6f5b9ac09334e2c046808b8b4edd40692fe506a8e1c5093e5e9c4630f5a"
+    },
+    {
+      "path": "artifacts/comic_motion/guardian_3.png",
+      "bytes": 1968804,
+      "sha256": "64dbe91328358b35abdf4f50f7f021968206e12bb4a0bf7721de7d3d14985f96"
+    },
+    {
+      "path": "artifacts/comic_motion/warrior_3.png",
+      "bytes": 1938072,
+      "sha256": "cc27f179946de9ade047ae59a8508ea67b9f2e0fd226293c96a84f483f248d3f"
+    },
+    {
+      "path": "artifacts/comic_motion/warrior_defense.png",
+      "bytes": 1945401,
+      "sha256": "b5f68ecadeb4a468daa53a7af70a728fd2fd6f0dcb67bc29db83098543cc1218"
+    },
+    {
+      "path": "artifacts/comic_motion/mage_0.png",
+      "bytes": 1950501,
+      "sha256": "8de77b04eb4d709107e8f8fbc99eb5647a2153071ee9f36dd2263e1f683a3f28"
+    },
+    {
+      "path": "artifacts/comic_motion/mage_3.png",
+      "bytes": 1930770,
+      "sha256": "7d05e7da7600dc402263a7157c406caa355a75c758061637a3482829645c9eb0"
+    },
+    {
+      "path": "artifacts/comic_motion/warrior_0.png",
+      "bytes": 1923605,
+      "sha256": "46d4cfed70719d63bf0bb7c06c5f122a59b9c7a2f11d20b95f9c3047f5dec2cd"
+    },
+    {
+      "path": "artifacts/comic_motion/rogue_1.png",
+      "bytes": 1935048,
+      "sha256": "c89058014016c1761b866fbf113564279eae8866c944b574fc54c0dc9fb0dedb"
+    },
+    {
+      "path": "artifacts/comic_motion/rogue_0.png",
+      "bytes": 1969000,
+      "sha256": "dfd9713e136058bcd96b3e49f185fad01bcffaff423842fe1235cccc7df5b6da"
+    },
+    {
+      "path": "artifacts/comic_motion/guardian_1.png",
+      "bytes": 1985230,
+      "sha256": "a5e94cc27ab33e4e787372f6f7e7327df7e62e1e54c82fe765e8872eed316b61"
+    },
+    {
+      "path": "artifacts/comic_motion/warrior_2.png",
+      "bytes": 1929797,
+      "sha256": "f9154f14b4993583a4599be6f69e468d7d763052de0a89a3cdbfc563ee47ccec"
+    },
+    {
+      "path": "artifacts/comic_motion/mage_defense.png",
+      "bytes": 1951396,
+      "sha256": "b9823e74b89e442660c45d3946b254ea90220a52719c581a2f7d3dc54f618fe8"
+    },
+    {
+      "path": "artifacts/comic_motion/guardian_0.png",
+      "bytes": 1935047,
+      "sha256": "be0365f61ce9a46d67e1c53009ad919db9e0d8c99eafdfd559cd4c5dd2f7d071"
+    },
+    {
+      "path": "artifacts/comic_motion/guardian_defense.png",
+      "bytes": 1973644,
+      "sha256": "b22479e0d6dfef49d9fda01cf8ee1a0e269a85ec5f5a13e29db17e15cac4f282"
+    },
+    {
+      "path": "artifacts/comic_motion/rogue_defense.png",
+      "bytes": 1931014,
+      "sha256": "64ec3dc601c61f82d3c44df75ec77114ff964704b0bc1b16a4dcf1c8166aeaea"
+    }
+  ],
+  "bytes_removed": 765639392,
+  "regenerable_cache_removed": [
+    {
+      "path": ".godot/imported/mage_2.png-74021e229dd897f98f73ad6088497cdc.ctex",
+      "bytes": 2406884
+    },
+    {
+      "path": ".godot/imported/mage_2.png-74021e229dd897f98f73ad6088497cdc.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue_3.png-dc5a84daf1100c5fb971407f4c12a188.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue_3.png-dc5a84daf1100c5fb971407f4c12a188.ctex",
+      "bytes": 1994418
+    },
+    {
+      "path": ".godot/imported/guardian_2.png-7c4a0d7cb27d6247f985a526df4c15f0.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian_2.png-7c4a0d7cb27d6247f985a526df4c15f0.ctex",
+      "bytes": 2256086
+    },
+    {
+      "path": ".godot/imported/rogue_2.png-28ffd285197b9743bf0258947aeec18b.ctex",
+      "bytes": 2119426
+    },
+    {
+      "path": ".godot/imported/rogue_2.png-28ffd285197b9743bf0258947aeec18b.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/mage_1.png-0d6c726a77ee0b6bacda3b1cac05fe24.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/mage_1.png-0d6c726a77ee0b6bacda3b1cac05fe24.ctex",
+      "bytes": 2264640
+    },
+    {
+      "path": ".godot/imported/warrior_1.png-d7bc7888b143b4145e25d4f74dc718b3.ctex",
+      "bytes": 2105834
+    },
+    {
+      "path": ".godot/imported/warrior_1.png-d7bc7888b143b4145e25d4f74dc718b3.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian_3.png-9e63a65380388b94b0a1bb079c6b60ff.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian_3.png-9e63a65380388b94b0a1bb079c6b60ff.ctex",
+      "bytes": 2105380
+    },
+    {
+      "path": ".godot/imported/warrior_3.png-9d6bc4b3055e92f6616c7e59a3709251.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior_3.png-9d6bc4b3055e92f6616c7e59a3709251.ctex",
+      "bytes": 2110834
+    },
+    {
+      "path": ".godot/imported/warrior_defense.png-f4eec6d27d0a6d120f2a2758e9210b60.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior_defense.png-f4eec6d27d0a6d120f2a2758e9210b60.ctex",
+      "bytes": 2234558
+    },
+    {
+      "path": ".godot/imported/mage_0.png-5ef30108f6fd3532aeb9c2b51302bdd8.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/mage_0.png-5ef30108f6fd3532aeb9c2b51302bdd8.ctex",
+      "bytes": 2281978
+    },
+    {
+      "path": ".godot/imported/mage_3.png-9bc079b089fe7b8057151b981cc3dbe8.ctex",
+      "bytes": 2261888
+    },
+    {
+      "path": ".godot/imported/mage_3.png-9bc079b089fe7b8057151b981cc3dbe8.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior_0.png-49909b5e52ec0f0ca63c963e0d5e8ae5.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior_0.png-49909b5e52ec0f0ca63c963e0d5e8ae5.ctex",
+      "bytes": 2010332
+    },
+    {
+      "path": ".godot/imported/rogue_1.png-a5bab1e7b6cb3cb569317fa23a40f2b5.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue_1.png-a5bab1e7b6cb3cb569317fa23a40f2b5.ctex",
+      "bytes": 2244002
+    },
+    {
+      "path": ".godot/imported/rogue_0.png-b02d656b9d2e0c3584350fc900bbc69f.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue_0.png-b02d656b9d2e0c3584350fc900bbc69f.ctex",
+      "bytes": 2078360
+    },
+    {
+      "path": ".godot/imported/guardian_1.png-d073476d85b5a0c8db96e23d49cf1f2a.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian_1.png-d073476d85b5a0c8db96e23d49cf1f2a.ctex",
+      "bytes": 2552940
+    },
+    {
+      "path": ".godot/imported/warrior_2.png-ee00d051118e91168e2744006e78ea9e.ctex",
+      "bytes": 2109732
+    },
+    {
+      "path": ".godot/imported/warrior_2.png-ee00d051118e91168e2744006e78ea9e.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/mage_defense.png-150bb27cc2a35207416a912f85ba659f.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/mage_defense.png-150bb27cc2a35207416a912f85ba659f.ctex",
+      "bytes": 2566184
+    },
+    {
+      "path": ".godot/imported/guardian_0.png-a21f398aee482c32871ab3853bc7bb43.ctex",
+      "bytes": 2309556
+    },
+    {
+      "path": ".godot/imported/guardian_0.png-a21f398aee482c32871ab3853bc7bb43.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian_defense.png-29ea1afe8159af280dec2bebe49ca5c8.ctex",
+      "bytes": 2379628
+    },
+    {
+      "path": ".godot/imported/guardian_defense.png-29ea1afe8159af280dec2bebe49ca5c8.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue_defense.png-4d45a4fd2d10361ba6e73efaa895fc2e.ctex",
+      "bytes": 2122814
+    },
+    {
+      "path": ".godot/imported/rogue_defense.png-4d45a4fd2d10361ba6e73efaa895fc2e.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior.png-cc36e448bfd648af37d4ae58fd86e676.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/warrior.png-cc36e448bfd648af37d4ae58fd86e676.ctex",
+      "bytes": 554760
+    },
+    {
+      "path": ".godot/imported/guardian.png-7008d38ed12147581912fdc5ffc18178.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/guardian.png-7008d38ed12147581912fdc5ffc18178.ctex",
+      "bytes": 539290
+    },
+    {
+      "path": ".godot/imported/rogue.png-599a633cd3a45241a8cc63616e7fd752.md5",
+      "bytes": 91
+    },
+    {
+      "path": ".godot/imported/rogue.png-599a633cd3a45241a8cc63616e7fd752.ctex",
+      "bytes": 496052
+    },
+    {
+      "path": ".godot/imported/mage.png-81ca2fc57321e9378a298ca2a0b52564.ctex",
+      "bytes": 523744
+    },
+    {
+      "path": ".godot/imported/mage.png-81ca2fc57321e9378a298ca2a0b52564.md5",
+      "bytes": 91
+    }
+  ]
+}

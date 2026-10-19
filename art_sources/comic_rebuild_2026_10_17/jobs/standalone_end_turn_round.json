@@ -1,0 +1,24 @@
+{
+  "id": "standalone_end_turn_round",
+  "kind": "direct",
+  "prompt": "EDIT THE PROVIDED IMAGE into a clean isolated GAME UI BUTTON. Keep ONLY the central round technological ring, its thick black comic inks, ivory white cutout edge and small orange/violet electricity notches. DELETE every person, robot, building, rubble, sky, square backing and scene surrounding that ring. Outside the circular physical ring must be TRUE TRANSPARENT ALPHA. Inside the ring keep an OPAQUE nearly-black empty disk with enough clean space for two lines of live interface text; no letters or symbols inside. The circle fills 92 percent of the square canvas, centered and completely visible. Flat American action comic ink, hard cel shading, sparse halftone confined to metal. ONE circular UI component only, no scenery, no comic panels behind it, no rectangular border, no text.",
+  "targets": [
+    {
+      "path": "assets/ui/end_turn_round.png",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/standalone_end_turn_round_isolated.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-b62aad54-db79-41be-9b10-0670c8c86e51.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_standalone_end_turn_round.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/comic_rebuild_2026_10_17/revisions/standalone_end_turn_round_original.json"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "enemies__animations__bandit_4",
+  "target": "assets/enemies/animations/bandit_4.png",
+  "kind": "machine_bank",
+  "hero": null,
+  "dimensions": [
+    2048,
+    256
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/postapocalyptic/sources/enemies__animations__bandit_4.png",
+  "machines": [
+    "bandit_4",
+    "flying_5",
+    "crypt_bandit",
+    "beast_6"
+  ],
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE mechanical enemy animation atlas, FOUR columns by FOUR rows1536x1024. FOUR DIFFERENT machine designs, ONE machine per ROW. Exact row order: row1: broad-shouldered demolition robot with orange shoulder mortar; row2: six-legged black heat-shield inspection drone with small folding wings; row3: agile archive-recovery automaton with utility blade and storage satchel; row4: long segmented mechanical coolant serpent with cyan fluid tubes. Each ROW has4 full-body poses of its machine: idle, windup, attack contact toward LEFT, recovery. Same scale and ground line within each row, entire limbs/tools inside cells,20px clear alpha gutters. All face LEFT. No scenery/floor/grid/numbers/labels, TRUE transparent background. Not a montage: regular sprite sheet.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-426f46d3-906f-45f5-9ea2-d0bd4a162caa.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/identity_warrior.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "67d1c318bb75506131b53570de3cf77ca619f3215e1b41b61d9953b011fd89ae",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

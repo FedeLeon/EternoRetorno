@@ -19,22 +19,22 @@
       },
       {
         "title": "Cuatro vecinos",
-        "text": "Nicolás, Inés, Mauro y Vera salen con herramientas prestadas. Buscan provisiones y una forma de detener el siguiente reinicio.",
+        "text": "Bruno, Mara, Ciro y Alma salen con herramientas prestadas. Buscan provisiones y una forma de detener el siguiente reinicio.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/intro_2.png"
       }
     ]
   },
   "hero_warrior": {
-    "title": "Nicolás · Carpintero",
+    "title": "Bruno · Carpintero",
     "background": "intro",
     "portrait": "warrior",
     "context": "cinematic_hero",
     "color": "bd75df",
     "chapters": [
       {
-        "title": "Nicolás · Carpintero",
-        "text": "Nicolás reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
+        "title": "Bruno · Carpintero",
+        "text": "Bruno reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_warrior_0.png"
       },
@@ -47,15 +47,15 @@
     ]
   },
   "hero_guardian": {
-    "title": "Inés · Constructora",
+    "title": "Mara · Constructora",
     "background": "intro",
     "portrait": "guardian",
     "context": "cinematic_hero",
     "color": "e3c68a",
     "chapters": [
       {
-        "title": "Inés · Albañila",
-        "text": "Inés levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
+        "title": "Mara · Albañila",
+        "text": "Mara levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_guardian_0.png"
       },
@@ -68,15 +68,15 @@
     ]
   },
   "hero_rogue": {
-    "title": "Mauro · Boticario",
+    "title": "Ciro · Boticario",
     "background": "intro",
     "portrait": "rogue",
     "context": "cinematic_hero",
     "color": "8ab75b",
     "chapters": [
       {
-        "title": "Mauro · Boticario",
-        "text": "Mauro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
+        "title": "Ciro · Boticario",
+        "text": "Ciro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_rogue_0.png"
       },
@@ -89,15 +89,15 @@
     ]
   },
   "hero_mage": {
-    "title": "Vera · Profesora",
+    "title": "Alma · Profesora",
     "background": "intro",
     "portrait": "mage",
     "context": "cinematic_hero",
     "color": "8ba8ea",
     "chapters": [
       {
-        "title": "Vera · Maestra",
-        "text": "Vera enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
+        "title": "Alma · Maestra",
+        "text": "Alma enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
         "duration": 6.0,
         "image": "res://assets/cinematics/shots/hero_mage_0.png"
       },

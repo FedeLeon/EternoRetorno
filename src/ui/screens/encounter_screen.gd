@@ -1,7 +1,6 @@
 extends Control
 # Event presentation only. Choices are validated, resolved and saved by Game.
 signal choice_requested(index: int)
-signal menu_requested
 const Buttons = preload("res://src/ui/components/button_skin.gd")
 const Chrome = preload("res://src/ui/components/dark_skin.gd")
 const Atmosphere = preload("res://assets/shaders/encounter_atmosphere.gdshader")
@@ -56,12 +55,6 @@ func _ready() -> void:
 	effect.set_shader_parameter("scenery_tint", Vector3(scenery_tint.r, scenery_tint.g, scenery_tint.b))
 	background.material = effect
 	place(background, Rect2(0, 0, 1280, 720))
-	var menu = Button.new()
-	menu.name = "Menu"
-	menu.text = "Menú"
-	Buttons.decorate(menu, "wood_menu")
-	menu.pressed.connect(func(): menu_requested.emit())
-	place(menu, Rect2(1138, 22, 106, 42))
 	var panel = Panel.new()
 	panel.name = "EncounterDialog"
 	panel.add_theme_stylebox_override("panel", Chrome.dialog())

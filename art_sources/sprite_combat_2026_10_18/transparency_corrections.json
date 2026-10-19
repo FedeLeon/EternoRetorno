@@ -1,0 +1,12 @@
+[
+  {
+    "hero": "warrior",
+    "prompt": "Remove only gray/brown background to true alpha; preserve all drawings and layout.",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-2f27720d-e228-4f7c-b388-efb3071211be.png"
+  },
+  {
+    "hero": "rogue",
+    "prompt": "Remove only gray/brown background to true alpha; preserve all drawings and layout.",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-0493774b-ca57-4e19-9e1c-a7c664280c62.png"
+  }
+]

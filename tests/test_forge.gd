@@ -19,15 +19,16 @@ func _initialize() -> void:
 	check(not g.build_forge(), "no duplicate construction")
 	check(not g.buy_forge_upgrade("bad", "weapon", 1), "valid hero")
 	check(not g.buy_forge_upgrade("warrior", "bad", 1), "valid track")
+	g.profile.forge_materials.alloy = 1000
 	g.new_run(["warrior", "guardian"], 42)
 	var initial = g.run.duplicate(true)
 	for id in g.content.heroes:
 		for track in ["weapon", "armor"]:
 			check(not g.buy_forge_upgrade(id, track, 2), "no skipping " + id)
 			for level in range(1, 4):
-				var before = g.profile.souls
+				var before = g.profile.forge_materials.alloy
 				check(g.buy_forge_upgrade(id, track, level), "buy " + id + track)
-				check(g.profile.souls == before - int(g.Forge.config().prices[level - 1]), "exact price")
+				check(g.profile.forge_materials.alloy == before - int(g.Forge.config().alloy_prices[level - 1]), "exact price")
 				check(not g.buy_forge_upgrade(id, track, level), "stale purchase rejected")
 			check(not g.buy_forge_upgrade(id, track, 4), "maximum three")
 	check(g.run == initial, "active adventure keeps snapshot")
@@ -54,6 +55,7 @@ func _initialize() -> void:
 	check(g.Forge.migrate(legacy) and not g.Forge.migrate(legacy), "idempotent migration")
 	g.profile.forge_upgrades = {}
 	g.profile.souls = 149
+	g.profile.forge_materials.alloy = 0
 	check(not g.buy_forge_upgrade("warrior", "weapon", 1) and g.profile.souls == 149, "insufficient purchase funds")
 	for suffix in ["", ".bak", ".tmp"]: DirAccess.remove_absolute(path + suffix)
 	print("FORGE: %d checks / %d failures" % [checks, failures])

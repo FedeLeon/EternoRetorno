@@ -37,17 +37,16 @@ func run_tests() -> void:
 			check(app.layer.find_children("EnemyName", "Label", true, false).is_empty(), "No enemy name plates")
 			for i in range(2):
 				var actor = app.hero_art[i]
-				var bottom = preload("res://src/presentation/hero_grounding.gd").bottom(actor.sprite.sprite_frames.get_frame_texture("idle",0))
-				var foot = actor.get_global_transform() * Vector2(0,actor.sprite.position.y + bottom*actor.sprite.scale.y)
-				check(absf(foot.y-hero_ground)<1 and is_equal_approx(hero_ground-ground, 16), "Heroes share a ground line slightly below enemies")
-				check(app.hero_health[i].global_position.y == Layout.TOP, "Hero health moved up")
+				var foot = actor.get_global_transform() * actor.body_rect().end
+				check(absf(foot.y-hero_ground)<1 and is_equal_approx(hero_ground, ground), "Heroes and enemies share the floor band")
+				check(app.hero_health[i].global_position.y > hero_ground, "Hero health below feet")
 				check(actor.scale.y * actor.get_meta("idle_height") > 210, "Heroes use the newly available height")
 				var strip = actor.get_parent().get_node("HeroEffects")
 				check(strip.global_position.y > hero_ground and strip.get_global_rect().end.y <= Layout.INFO_BOTTOM, "Hero effects below feet and clear of cards")
 			for i in range(3):
 				var intent = app.layer.get_node("EnemyIntent%d" % i)
-				check(intent.global_position.y > ground and intent.get_global_rect().end.y <= Layout.INFO_BOTTOM, "Enemy intent below feet and clear of cards")
-				check(app.enemy_health[i].global_position.y == Layout.TOP, "Enemy health moved up")
+				check(intent.global_position.y >= Layout.TOP - 2 and intent.get_global_rect().end.y <= 126, "Enemy intent above silhouette and below menu")
+				check(app.enemy_health[i].global_position.y > ground, "Enemy health below feet")
 			var before = app.game.run.duplicate(true)
 			var rng = app.game.rng.state
 			await click(app.layer.get_node("EnemyTarget0").get_global_rect().get_center())

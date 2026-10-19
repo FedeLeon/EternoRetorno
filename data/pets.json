@@ -1,0 +1,16 @@
+{
+  "dog": {
+    "name": "Perro",
+    "passive": "Guardia fiel",
+    "description": "Ambos héroes comienzan cada combate con 3 de bloqueo.",
+    "opening_block": 3,
+    "opening_draw": 0
+  },
+  "cat": {
+    "name": "Gato",
+    "passive": "Curiosidad",
+    "description": "Robás 1 carta adicional en el primer turno de cada combate.",
+    "opening_block": 0,
+    "opening_draw": 1
+  }
+}

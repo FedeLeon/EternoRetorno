@@ -2,8 +2,8 @@ extends RefCounted
 # Shared presentation for combat, rewards, collection and market.
 # Shared normalized centers measured on the generated pixel-art frames.
 const COST_CENTERS = {
-	"warrior": Vector2(0.878, 0.088), "guardian": Vector2(0.878, 0.088),
-	"rogue": Vector2(0.878, 0.088), "mage": Vector2(0.878, 0.088)
+	"warrior": Vector2(0.872, 0.088), "guardian": Vector2(0.872, 0.088),
+	"rogue": Vector2(0.872, 0.088), "mage": Vector2(0.872, 0.088)
 }
 static func build(ui: Control, instance: Dictionary, x: float, y: float, w: float, h: float, callback: Callable, _chosen: bool, enabled: bool, parent: Control, base_values: bool) -> Button:
 	var c = ui.game.content.card(instance)
@@ -36,17 +36,17 @@ static func build(ui: Control, instance: Dictionary, x: float, y: float, w: floa
 	title.add_theme_font_size_override("font_size", font_size)
 	var cost = preload("res://src/ui/components/number_view.gd").new()
 	cost.name = "CostNumber"
+	cost.center_ink = true
 	cost.z_index = 1 # Keep the energy digits above the small overlap between neighbours.
 	cost.value = int(c.cost)
 	var cost_center: Vector2 = COST_CENTERS[c.owner]
 	ui.rect(cost, w * (cost_center.x - 0.08), h * (cost_center.y - 0.05), w * 0.16, h * 0.10, b)
-	preload("res://src/ui/components/card_type_icons.gd").attach(b, c, linked)
 	var picture_area = ui.panel(w * 0.095, h * 0.185, w * 0.81, h * 0.32, accent, b)
 	picture_area.name = "IllustrationSpace"
 	picture_area.add_theme_stylebox_override("panel", ui.box(Color("14151c"), accent.darkened(0.3), 1))
 	preload("res://src/ui/components/card_art.gd").attach(picture_area, instance.id, Rect2(3, 3, picture_area.size.x - 6, picture_area.size.y - 6))
 	var category = "Ataque" if c.damage > 0 or c.poison > 0 else ("Defensa" if c.block > 0 and not support else "Habilidad")
-	var ribbon = ui.label_at(category, w * 0.22, h * 0.52, w * 0.56, h * 0.055, 10 if h < 300 else 12, Color("f1e8d5"), b)
+	var ribbon = ui.label_at(category, w * 0.22, h * 0.513, w * 0.56, h * 0.055, 10 if h < 300 else 12, Color("f1e8d5"), b)
 	ribbon.name = "CardCategory"
 	ribbon.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var description_top = h * 0.60

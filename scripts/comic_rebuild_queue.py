@@ -1,7 +1,7 @@
 """Inspect durable ImageGen work; does not call a paid API or modify game assets."""
 import json,sys
 from pathlib import Path
-root=Path(__file__).resolve().parents[1];base=root/'docs/comic_rebuild_2026_10_17'
+root=Path(__file__).resolve().parents[1];base=root/'art_sources/comic_rebuild_2026_10_17'
 q=json.loads((base/'queue.json').read_text());phase=sys.argv[1] if len(sys.argv)>1 else 'status'
 jobs=q['jobs'][100:] if phase=='remaining' else q['jobs']
 pending=[j for j in jobs if not (base/'jobs'/f'{j["id"]}.json').exists()]

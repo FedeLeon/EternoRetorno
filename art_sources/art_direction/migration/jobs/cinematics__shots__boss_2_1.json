@@ -1,0 +1,15 @@
+{
+  "id": "cinematics__shots__boss_2_1",
+  "kind": "cinematic",
+  "target": "assets/cinematics/shots/boss_2_1.png",
+  "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_2_1.png",
+  "transparent": false,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-757e9381-e6c0-4144-97de-9f710fd2e214.png",
+  "prompt": "ONE full-frame cinematic illustration for Eterno Retorno, landscape16:9. The path OUT of a dense gray/violet FOREST onto a jagged rocky ridge. In the distance dominates a huge VOLCANIC FORTRESS with black broken towers, smoke and faint red-orange embers. Dark trunks and roots frame the FOREGROUND, far fortress is the clear focal point. No camp, no tents, no campfire, no lake, no peaceful sunset valley. Genuine hand-drawn graphite and colored-pencil sketchbook medium: imperfect searching contours, strong charcoal hatching, coarse paper pigment, muted gray and substantial violet, small warm ember accents. Use the reference for fortress architecture and dungeon theme, not a generic camp. High contrast, readable focus. No glossy digital painting, no pixel art, no text, captions, logos, numbers, panels, collage or UI. Bottom zone calm and dark for existing subtitles.",
+  "references": [
+    "assets/volcano/combat.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": "Correct fortress context, remove generic camp composition"
+}

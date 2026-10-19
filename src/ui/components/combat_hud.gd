@@ -47,7 +47,7 @@ func _ready() -> void:
 	if item_count > 0:
 		preload("res://src/ui/components/combat_backplate.gd").attach(self, Rect2(923, 0, 36, 24))
 		add_number(item_count, Rect2(925, 1, 32, 22), "BagCount")
-	var deck = icon_button(preload("res://assets/ui/deck.svg"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())
+	var deck = icon_button(preload("res://assets/map/sidebar/deck.png"), Rect2(829, 4, 56, 56), "Ver mazo", func(): deck_requested.emit())
 	deck.name = "Deck"
 	if show_journal:
 		var journal = icon_button(preload("res://assets/ui/journal.svg"), Rect2(962, 8, 46, 48), "Registro del combate", func(): journal_requested.emit())
@@ -79,7 +79,11 @@ func _ready() -> void:
 	electricity.name = "EnergyElectricity"
 	electricity.energy = energy
 	place(electricity, orb.get_rect())
-	add_number(energy, Rect2(49, 615, 74, 52), "EnergyNumber")
+	add_number(energy, Rect2(49, 616, 74, 52), "EnergyNumber")
+
+func update_turn(number: int) -> void:
+	turn = number
+	get_node("TurnNumber").value = number
 
 func update_energy(amount: int) -> void:
 	energy = amount
@@ -97,6 +101,7 @@ func place(node: Control, area: Rect2) -> void:
 
 func add_number(amount: int, area: Rect2, id: String) -> void:
 	var display = NumberView.new()
+	display.center_ink = id == "EnergyNumber"
 	display.value = amount
 	display.name = id
 	place(display, area)

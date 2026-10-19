@@ -1,7 +1,0 @@
-{
-  "tool": "image_gen built-in",
-  "prompt": "Create ONE new attack cut-in illustration for this exact hero. Reference supplies character identity, clothing, weapon and detailed inked fantasy comic style; KEEP those features. NEW POSE: Long forward thrust with greatsword extended horizontally right, cape streaming left, narrow violet energy spear. Single full hero with weapon and colored attack effects, facing and attacking toward RIGHT. Landscape 1536x1024, entirely inside canvas with 5 percent padding, dynamic close-up full-body foreshortening, strong clean outline like reference. This is combo strike 3, it must have substantially different body/weapon silhouette from reference. Real transparent alpha background outside hero and tight attack effects. No environment, gradient backdrop, floor, frame, text, letters, enemies or additional figures. No opaque glow rectangle; dungeon must remain visible around the cutout.",
-  "reference": "assets/comic/warrior.png",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-120eb539-9976-4fc9-9d25-af8f9cdfeac7.png",
-  "target": "assets/comic/attacks/warrior_3.png"
-}

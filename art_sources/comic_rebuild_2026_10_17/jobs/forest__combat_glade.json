@@ -1,0 +1,21 @@
+{
+  "id": "forest__combat_glade",
+  "kind": "direct",
+  "prompt": "Use case: stylized-concept. Asset type: finished original 2D comic videogame battlefield background, landscape 3:2 canvas 1536x1024. Scene: postapocalyptic overgrown machine scrapyard clearing at deep twilight, immense dead tree silhouettes, rusted excavator wrecks and broken robot remains behind the arena, dense dark ivy, muted teal moonlight through stormclouds, eerie thin ground mist in the distance. Match Eterno Retorno's original American action comic world: heavy hand-inked black contours, hard cel shadows, restrained screentone, flat desaturated steel-gray, black, muted purple and petrol teal palette. This is a new final asset, NOT a contact sheet. Dark, gloomy, frightening abandoned world ruled by killing machines. Low key nighttime lighting, readable structural silhouettes, very limited tiny colored practical lights. NO bright orange sky or bright sunny vegetation, no bloom, no photographic/3D render. CRUCIAL GAMEPLAY COMPOSITION: flat horizontal continuous ground across entire image, wall-to-ground junction at 52 percent image height. Lower half is unobstructed broad cracked concrete arena stretching from left to right, EMPTY where fighters will stand, all large scenery/trees/debris BEHIND that line, no raised platforms or foreground objects across character positions. Side-on battle camera from moderate distance, straight level horizon. Ground slightly lighter than deepest background so boot contacts read, dark backdrop makes foreground colorful characters stand out. No people, no monsters, no heroes, no giant character drawing, no UI, no letters, no logo, no frame. Horror atmosphere without gore. Keep essential layout simple, foreground clear.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. BACKGROUND COMIC PAGE TREATMENT: thin ivory paper gutter and imperfect thick black vignette boundary at outermost 1 percent edge; subtle halftone blocks and angular secondary panel corner slivers confined to far corners. Keep the center and UI/character zones completely clear; no letters, no speech text, no captions baked in. Preserve specified flat arena ground and all usable empty space. Backgrounds stay ominous and dark so bright characters pop.",
+  "targets": [
+    {
+      "path": "assets/forest/combat_glade.png",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/forest__combat_glade.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-54908188-67d8-4a41-a46b-4f7dc0789ddb.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

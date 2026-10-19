@@ -1,7 +1,7 @@
 extends SceneTree
 ## Preflight the complete requested set; process authored images only.
-const BASE = "res://docs/cards/pixel_retain/"
-const INVENTORY = "res://docs/art_direction/postapocalyptic/"
+const BASE = "res://art_sources/cards/pixel_retain/"
+const INVENTORY = "res://art_sources/art_direction/postapocalyptic/"
 func _initialize() -> void:
 	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string(BASE + "jobs.json"))
 	if jobs.size() != 96:
@@ -25,7 +25,7 @@ func _initialize() -> void:
 		img.resize(512, 340 if job.kind == "illustration" else 768, Image.INTERPOLATE_LANCZOS)
 		preload("res://scripts/sketchbook_sheet_packer.gd").save(img, "res://" + job.target)
 		targets[job.target] = job
-		manifest[job.target] = {"sha256": FileAccess.get_sha256("res://" + job.target), "source": job.source, "source_sha256": FileAccess.get_sha256("res://" + job.source), "style": "postapocalyptic_pixel_cards", "tool": "image_gen.imagegen", "processing": "Lanczos resize; text and values remain runtime UI", "generation": "docs/cards/pixel_retain/%s.json" % job.id}
+		manifest[job.target] = {"sha256": FileAccess.get_sha256("res://" + job.target), "source": job.source, "source_sha256": FileAccess.get_sha256("res://" + job.source), "style": "postapocalyptic_pixel_cards", "tool": "image_gen.imagegen", "processing": "Lanczos resize; text and values remain runtime UI", "generation": "art_sources/cards/pixel_retain/%s.json" % job.id}
 		var ledger: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BASE + job.id + ".json"))
 		var reference: String = str(ledger.get("reference", ""))
 		if FileAccess.file_exists("res://" + reference):

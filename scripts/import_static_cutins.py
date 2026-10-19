@@ -6,7 +6,7 @@ import shutil
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / 'docs/comic/static'
+DOCS = ROOT / 'art_sources/comic/static'
 HEROES = ['warrior', 'guardian', 'rogue', 'mage']
 
 
@@ -14,7 +14,7 @@ def install():
     manifest = {}
     for hero in HEROES:
         for action in ['attack', 'defense']:
-            ledger = ROOT / f'docs/art_direction/migration/jobs/static_{hero}_{action}.json'
+            ledger = ROOT / f'art_sources/art_direction/migration/jobs/static_{hero}_{action}.json'
             job = json.loads(ledger.read_text())
             source, target = ROOT / job['source'], ROOT / job['target']
             with Image.open(source) as image:

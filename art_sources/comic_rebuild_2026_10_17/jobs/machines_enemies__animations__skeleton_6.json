@@ -1,0 +1,64 @@
+{
+  "id": "machines_enemies__animations__skeleton_6",
+  "kind": "machine_bank",
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE mechanical enemy animation atlas, FOUR columns by FOUR rows1536x1024. FOUR DIFFERENT machine designs, ONE machine per ROW. Exact row order: row1: heavy biped security robot with broad riot shield and blue sensor; row2: massive broken hydraulic tunnel guardian, claw and cylindrical reactor chest; row3: thin biped factory cutter robot with saw-arm and rusted orange shell; row4: thin biped mobile rivet-launcher robot with long crossbar gun. Each ROW has4 full-body poses of its machine: idle, windup, attack contact toward LEFT, recovery. Same scale and ground line within each row, entire limbs/tools inside cells,20px clear alpha gutters. All face LEFT. No scenery/floor/grid/numbers/labels, TRUE transparent background. Not a montage: regular sprite sheet.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/enemies/animations/skeleton_6.png",
+      "dimensions": [
+        2048,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/hd/skeleton_6.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/animations/skeleton_0.png",
+      "dimensions": [
+        2048,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/hd/skeleton_0.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/animations/skeleton_2.png",
+      "dimensions": [
+        2048,
+        256
+      ]
+    },
+    {
+      "path": "assets/enemies/hd/skeleton_2.png",
+      "dimensions": [
+        256,
+        256
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_6.png",
+  "machines": [
+    "skeleton_6",
+    "crypt_automaton",
+    "skeleton_0",
+    "skeleton_2"
+  ],
+  "columns": 4,
+  "rows": 4,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-1dfbb0d0-a6e6-4108-b080-fde16c0f09a5.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

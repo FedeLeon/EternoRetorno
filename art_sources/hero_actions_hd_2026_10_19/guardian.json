@@ -1,0 +1,129 @@
+{
+  "hero": "guardian",
+  "source": "art_sources/hero_actions_hd_2026_10_19/sources/guardian.png",
+  "source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-0d7bd371-1fc7-4f92-9d0a-0fe9e0aa8e3e.png",
+  "prompt": "Create one production game sprite pose sheet for Eterno Retorno. Use the attached local image as the visual identity reference ONLY: same person, face, hair, clothing palette, improvised weapon and American comic drawing style. Crisp expressive black ink, clean cel-shaded flat colors, modest material detail, thin ivory-white cutout outline around the whole figure and tools, genuine transparent alpha background. NOT pixel art, NOT blurry, NOT low-res, NOT pencil sketch. Six separate FULL BODY static illustrations in an exact regular 3 columns x 2 rows grid, landscape 1536x1024 or larger (prefer 3072x2048). Each cell is square and isolated, generous clear transparent gutters and outer padding; nothing overlaps another cell or crosses its boundaries. Same anatomical scale and head size across ALL six poses; full boots and tools visible with no cropping. All face toward the right. No scenery, no ground shadow, no captions, no text, no frames, no spark/light effects (those run separately in the game). Cell order reading left to right: TOP LEFT = strong attack contact pose using the tool/weapon; TOP MIDDLE = guarded defensive stance protecting face and torso using existing equipment; TOP RIGHT = tactical support/skill gesture with existing equipment; BOTTOM LEFT = recoil from being hit while keeping both feet on the ground; BOTTOM MIDDLE = defeated slumped seated/kneeling pose with lowered head and tool, same head size, NOT flat prone and NOT gore; BOTTOM RIGHT = neutral upright combat-ready reference pose for scale comparison, near the input idle stance. These are six action stills, NOT a sprite animation sequence.\nCharacter: Mara the civilian builder: athletic adult woman with a long copper-red braid, orange rolled-sleeve work jacket, violet neck scarf, charcoal utility trousers and brown work boots. Her existing equipment is a rectangular battered teal/cream road-sign shield strapped to her left forearm and a red steel crowbar in her right hand. Attack swings the crowbar to the right from behind the shield; guard braces the shield squarely toward the right with her face still visible; skill kneels slightly to firmly plant and reinforce her existing sign shield. Preserve the face and silhouette; no medieval armor, sword or helmet.",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "actions": [
+    "attack",
+    "guard",
+    "skill",
+    "hurt",
+    "death",
+    "scale_reference"
+  ],
+  "parts": [
+    {
+      "seed": [
+        308,
+        270
+      ],
+      "bounds": [
+        44,
+        34,
+        529,
+        473
+      ],
+      "pixels": 104591,
+      "center": [
+        308.0,
+        270.0
+      ]
+    },
+    {
+      "seed": [
+        810,
+        287
+      ],
+      "bounds": [
+        603,
+        67,
+        415,
+        442
+      ],
+      "pixels": 93946,
+      "center": [
+        810.0,
+        287.5
+      ]
+    },
+    {
+      "seed": [
+        1291,
+        322
+      ],
+      "bounds": [
+        1089,
+        137,
+        405,
+        371
+      ],
+      "pixels": 100296,
+      "center": [
+        1291.0,
+        322.0
+      ]
+    },
+    {
+      "seed": [
+        294,
+        751
+      ],
+      "bounds": [
+        37,
+        532,
+        516,
+        439
+      ],
+      "pixels": 100875,
+      "center": [
+        294.5,
+        751.0
+      ]
+    },
+    {
+      "seed": [
+        803,
+        806
+      ],
+      "bounds": [
+        623,
+        629,
+        361,
+        355
+      ],
+      "pixels": 84671,
+      "center": [
+        803.0,
+        806.0
+      ]
+    },
+    {
+      "seed": [
+        1271,
+        746
+      ],
+      "bounds": [
+        1083,
+        515,
+        378,
+        463
+      ],
+      "pixels": 92059,
+      "center": [
+        1271.5,
+        746.0
+      ]
+    }
+  ],
+  "reference": "assets/combat_static/heroes/guardian/idle.png",
+  "reference_sha256": "bf28d1df1e0c55079b7d0e95ff3b66b0ec4a564b026d33ec97ee2bebfab15f71",
+  "processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
+  "outline_baked": true
+}

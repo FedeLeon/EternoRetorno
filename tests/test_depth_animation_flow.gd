@@ -24,6 +24,6 @@ func run_tests():
 	app.game.run.combat.hand=[{"id":guard,"upgraded":false}];app.game.run.combat.energy=3;app.render();await process_frame
 	app.animate_combat_action(0,0)
 	while app.combat_busy:await process_frame
-	check(app.hero_art[0].sprite.animation=="idle","drawn guard returns to idle")
+	check(app.hero_art[0].current_action=="idle","drawn guard returns to idle")
 	app.queue_free();await process_frame;await process_frame
 	print("DEPTH FLOW: %d checks / %d failures"%[checks,failures]);quit(1 if failures else 0)

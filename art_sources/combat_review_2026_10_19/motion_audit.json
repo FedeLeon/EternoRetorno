@@ -1,0 +1,547 @@
+{
+  "enemies": 57,
+  "models": 56,
+  "heroes": [
+    {
+      "id": "guardian",
+      "cell": 512,
+      "body_pixels": 358,
+      "guard_drawings": 8,
+      "shared_adjust_texture": true,
+      "sha256": "f5d41df6ac28bd2a8a0319e90bdba2680d23636e361ad49542c78bf9a56e7afd"
+    },
+    {
+      "id": "mage",
+      "cell": 512,
+      "body_pixels": 358,
+      "guard_drawings": 8,
+      "shared_adjust_texture": true,
+      "sha256": "b9a31faf8063cdaaacaf3c64a60ddbdc73d9a4798f8ab7940f9bbc182929c389"
+    },
+    {
+      "id": "rogue",
+      "cell": 512,
+      "body_pixels": 358,
+      "guard_drawings": 8,
+      "shared_adjust_texture": true,
+      "sha256": "5b511992e4db506992a5c277ea80ec3fbecb2372997d81c1d0f227b7122f1277"
+    },
+    {
+      "id": "warrior",
+      "cell": 512,
+      "body_pixels": 358,
+      "guard_drawings": 8,
+      "shared_adjust_texture": true,
+      "sha256": "e372baea449209ea7b07a15e5ebef5b02ab14b3cbbec6a6adb17eb63248c0d63"
+    }
+  ],
+  "drawn_idle_cycles": 9,
+  "vigilance_from_existing_poses": 47,
+  "errors": [],
+  "machines": [
+    {
+      "id": "bandit_0",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 99,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "d39b61ecff45d4e5976647d748a154e17fcedc9471701c62d5da08b331099095"
+    },
+    {
+      "id": "bandit_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 112,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "5eea37af211266da81e7491c954004d6d2d810b2e70b9c4b7b651395dac4172f"
+    },
+    {
+      "id": "bandit_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 129,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "d860ba2a08c041d50c3b5b5fab24fdd7e43db3da5cf08ec0b1a3a3cc8d5a38d5"
+    },
+    {
+      "id": "bandit_3",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 150,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "944d82710c4636e79092c3bcf0ba3c78e3ed111eb9eb8dac0b91e4a814450a2c"
+    },
+    {
+      "id": "bandit_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 149,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "e85c56c32fef2105279fc9ad36b06a18321324413e729bd743196e1f205e5855"
+    },
+    {
+      "id": "bandit_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 132,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "bd7b5b4ef224a955684e6e28b01f8dffd4f9445b5b54a7e9591f79b5e83c6f36"
+    },
+    {
+      "id": "bandit_6",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 146,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "9c41f23ee2eb10a6d3a2a1860db10a84f2c03e9dd6e3ec7cf89c33d91409de85"
+    },
+    {
+      "id": "bandit_7",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 192,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "40fdce0302c1933d16afc45d4a581e39a133e70a68a04ff7b17a2c7d8207290b"
+    },
+    {
+      "id": "beast_0",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 96,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "2c4fd88b32097a18696372554e196798a9be44fcad04a216280e6b862e2875dc"
+    },
+    {
+      "id": "beast_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 109,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "4685ffb6542e792d30fca8b277833709e558d71c8ed011cab2a3122cdb4392b1"
+    },
+    {
+      "id": "beast_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 115,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "438531693c73e91005b50887f015eabf563e5c38539e2dc96b1a70a5448de2c4"
+    },
+    {
+      "id": "beast_3",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 137,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "a5ff074ec2be8c94a7e8884534d0d5cda391bd95cb5b20a471e417afed3a46aa"
+    },
+    {
+      "id": "beast_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 98,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "96b70633207338524347b619e7b620377fd0e8071e9762b5c2820fd1aada7c97"
+    },
+    {
+      "id": "beast_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 117,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "0b0bd6906ed71286d27986d004569573a138b7e25d7a2aebb79fa817e0814f9a"
+    },
+    {
+      "id": "beast_6",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 90,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "e293c8c7f61be4332700c78da95fceb712bf7d478648cad552296f8c576b0d1f"
+    },
+    {
+      "id": "beast_7",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 90,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "c0f3c017103c76833b728ea7d39054e38bdbeda5130607c2063773c5c72a32f4"
+    },
+    {
+      "id": "crypt_automaton",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 218,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "373fbbd338cd87e38b158d48711ab051f52429b4d83b08ee35a6c8db14bce113"
+    },
+    {
+      "id": "crypt_bandit",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 103,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "688df5c02e707b4ebbe32bd560d994bdec6118b49e341ae10b84836dcf6ba516"
+    },
+    {
+      "id": "crypt_bat",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 130,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "0f1b769bff9127d85db0f2200acf8704799b9dc2c6ee4692bd1d227022ba883a"
+    },
+    {
+      "id": "crypt_beetle",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 129,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "95d752b37bf9b463045052821cc9be897a7c285ba67f1375c054185f80c805e8"
+    },
+    {
+      "id": "crypt_lancer",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 228,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "746d830ebdda150211a0a8e30dcd22d638491b75eb4a7918627467322ac76a53"
+    },
+    {
+      "id": "crypt_shaman",
+      "cell": 384,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 208,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "c145e9e180e364cd1e754b56fcd6bf3fb8ceefdf7cc5fbc57067b59b48c24eae"
+    },
+    {
+      "id": "crypt_slime",
+      "cell": 384,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 178,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "7e57518b26b7460a58f4c4debb909b46bfc59be719da775c020e4d75694d960a"
+    },
+    {
+      "id": "crypt_wolf",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 95,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "a6dff0e8b14b625fa2c9ef50dc380543aa8ce21fcbc14f332655bd39b7081b2c"
+    },
+    {
+      "id": "elemental_0",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 93,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "577932e3222a7d2b003800148f81bca1a6b6baf2c59fc79171c23c466976d9a2"
+    },
+    {
+      "id": "elemental_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 142,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "7531408b0562590af1fcb98b8ea6528033d27ec6ee7e53bff7c1aea54f34c017"
+    },
+    {
+      "id": "elemental_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 137,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "44b52fbf72287458ad617f4b67045f91c007d5c5f58bbdceb981e00dfeb9494f"
+    },
+    {
+      "id": "elemental_3",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 117,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "1157c510e9edd358522c42a65fcda0934bbfdf61af044c2b198236f7bceac707"
+    },
+    {
+      "id": "elemental_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 123,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "dde86e21aec74225cd9575228d2ecabe56ff87ec0f0d730e00f3425e6454a923"
+    },
+    {
+      "id": "elemental_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 105,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "e4307df1affe34a80a7a783f87e2ffba38a2e980e3c911ebdb2044dfb82848ce"
+    },
+    {
+      "id": "elemental_6",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 125,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "dbe3587f705d1e2aed1414d4ea6a5e4f970002943a05c7847162b1e235b4727e"
+    },
+    {
+      "id": "elemental_7",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 114,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "751c34c67f0b2dd1f307a2a1283bd376a3d1427ec7d56ccc250add67ceb0070f"
+    },
+    {
+      "id": "flying_0",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 100,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "95cc29e1a760e78d61b6861b7d70c95a587f0b4fdb8401d7666a00b7e3704509"
+    },
+    {
+      "id": "flying_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 116,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "91b553f09d1847d5450e7edfbe57c489c5e40ad46e8bc9e477b18e4baa85b527"
+    },
+    {
+      "id": "flying_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 91,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "a5cb64415c135ef111e2cbf8f7ce183ba2fc99ebcf8640df1855f7351f23400c"
+    },
+    {
+      "id": "flying_3",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 144,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "82d41414cbfa61f22b4932bdda505ae5299ea8d6659d93395fee4f3e4797c210"
+    },
+    {
+      "id": "flying_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 125,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "45543af6b981d627cc9980baa5c26c10438a9e98ced2f6aaab774cc39f5e4868"
+    },
+    {
+      "id": "flying_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 88,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "3d3a59a0d8a0cd0926ca84b554a516d9533923a8dc4969a0d94518e0f9da86e5"
+    },
+    {
+      "id": "flying_6",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 77,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "21b4434c857427b16945613cd6519560ddc96172f66763fbaff68f5b9676d025"
+    },
+    {
+      "id": "flying_7",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 116,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "d4e4423b7248ddb06dc1461acbb2d2532a600e4905fbdf8bc8166e14efb2c106"
+    },
+    {
+      "id": "goblin_0",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 201,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "00f14eaf8fbe8aafe2a81fa53e6c08f12e6d4a265a64e583e23f0c99b3891718"
+    },
+    {
+      "id": "goblin_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 85,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "47593e7672ee760bfbc9546b32a0b227d07bb9578d9dad801b722e972327d5f3"
+    },
+    {
+      "id": "goblin_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 147,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "147b01bf25cbbcc1ff16b32eb164e2e766a25500cc0e4920d333d0cc2bdf4105"
+    },
+    {
+      "id": "goblin_3",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 128,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "a99ad42876128af3353a44adfe0793789438ce5370e7d0d638e74d90013fdac3"
+    },
+    {
+      "id": "goblin_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 122,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "29ef0b80c0ebe2c174d7940dda32af4662747ceb1c66e7b71e2d6848520be7dc"
+    },
+    {
+      "id": "goblin_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 127,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "9686ee00362982676689fac81f1d26334d46e7a9fed4231e3dff9a6c2fed7e81"
+    },
+    {
+      "id": "goblin_6",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 121,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "91d7e75f4508c08cdd4d9a81039c2a5c9f9985357aa40d10bf6764964b9c0e46"
+    },
+    {
+      "id": "goblin_7",
+      "cell": 256,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 205,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "e1bfd255e3e79aaf989ce9b36617e04614de66f53d84286f53ee0d9672e0f871"
+    },
+    {
+      "id": "skeleton_0",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 124,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "a377016bc47ce554c13a47db1d54513f7ab5c61cfedc53053e2dccbdf05fae05"
+    },
+    {
+      "id": "skeleton_1",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 115,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "204a8cd94d86bbdefa5a99bd389816149ed644483ef094de809f64031e6488d9"
+    },
+    {
+      "id": "skeleton_2",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 142,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "6ecc3a6eec514781c7f888ef000e1208991ef4063f7b246a045263764a382dfb"
+    },
+    {
+      "id": "skeleton_3",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 131,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "78ea54c53846d680da253b8b7ce548cd7eeea86f0dca5167301c14843248894b"
+    },
+    {
+      "id": "skeleton_4",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 134,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "b08be4fc5da6d6093be19f366fec3a18bd8108204c80129dee137c9a2b603fae"
+    },
+    {
+      "id": "skeleton_5",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 119,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "b01b3d5390a1ae2ef280f3cefdc3603fe8f9d53c534219cee648d84a634b3924"
+    },
+    {
+      "id": "skeleton_6",
+      "cell": 384,
+      "profile": "drawn_cycle",
+      "neutral_body_pixels": 297,
+      "idle_drawings": 4,
+      "original_idle_drawings": 4,
+      "sha256": "ec12616d1950312ebbf995b45063e3260c24f5d4f1ad483731e518aa349c36f1"
+    },
+    {
+      "id": "skeleton_7",
+      "cell": 256,
+      "profile": "vigilance_from_authored_poses",
+      "neutral_body_pixels": 143,
+      "idle_drawings": 3,
+      "original_idle_drawings": 1,
+      "sha256": "4a22344181c749ae37c485ccf64325c68be8424fb42b87b7347d80105dbbee74"
+    }
+  ]
+}

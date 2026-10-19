@@ -1,0 +1,23 @@
+{
+  "id": "props_treasure__chest",
+  "kind": "chest_atlas",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. SIX sequential poses of ONE salvaged metal supply case opening, THREE columns by TWO rows1536x1024. Closed to fully open with cyan interior light. Same scale and base, transparent gutters, no scenery or text. TRUE transparent background.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/treasure/chest.png",
+      "dimensions": [
+        1536,
+        256
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/props_treasure__chest.png",
+  "columns": 3,
+  "rows": 2,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ae9e8b20-41b4-48ad-9003-caa83ddf175d.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

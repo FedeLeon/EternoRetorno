@@ -22,22 +22,20 @@ const COLORS = {
 }
 var visual_id: String
 
-static func play(parent: Control, visual: String) -> Control:
+static func play(parent: Control, visual: String, kind: String = "attack") -> Control:
 	if not preload("res://src/presentation/preferences.gd").cutins(): return null
 	if not COLORS.has(visual) and not ResourceLoader.exists("res://assets/comic/enemies/%s.png" % visual):
 		return null
 	var effect = new()
 	effect.visual_id = visual
 	effect.accent = COLORS.get(visual, Color("eca864"))
-	var config = preload("res://src/enemy_sprite.gd").entries().get(visual,{})
-	if config.get("foreground_frames",1) == 4:
-		effect.frame_grid = Vector2i(2,2)
-		effect.frame_index = 2 # One contact pose while legacy sheets are replaced.
 	effect.static_illustration = true
 	effect.enhanced_lights = true
 	effect.full_view_rays = true
+	effect.defensive_effect = kind == "defense"
 	effect.texture_path = "res://assets/comic/enemies/%s.png" % visual
 	effect.from_right = true
+	effect.align_right = true
 	effect.name = "EnemyCutIn"
 	parent.add_child(effect)
 	return effect

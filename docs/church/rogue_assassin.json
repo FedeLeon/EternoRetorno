@@ -1,9 +1,0 @@
-{
-  "hero": "rogue",
-  "id": "assassin",
-  "name": "Hoja certera",
-  "prompt": "One landscape 3:2 specialization card illustration for dark fantasy RPG Eterno Retorno: green hooded masked rogue thrusting two precise daggers through a shattered armor plate. Match hero identity, colors and outfit from reference, but create an active specialization pose, not sitting. Detailed crisp pixel art, dramatic gold and class-colored magical lighting on dark navy dungeon background. Single hero upper body framed clearly, no text, no letters, no captions, no border or UI. Distinct symbolic scene for specialization Hoja certera.",
-  "source": "/home/fede/.codex/generated_images/01a0a562-61cc-7bb1-a543-33cde1a8b249/exec-70a1744d-1e97-4fcb-b0d5-6f476afa89ba.png",
-  "reference": "assets/rest/rogue.png",
-  "tool": "image_gen built-in"
-}

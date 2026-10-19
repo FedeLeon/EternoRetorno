@@ -4,7 +4,6 @@ const Chrome = preload("res://src/ui/components/dark_skin.gd")
 const Buttons = preload("res://src/ui/components/button_skin.gd")
 var ui: Control
 var snapshot: Dictionary
-var home: Callable
 var body: Control
 var detail: Control
 var tabs: Array[Button] = []
@@ -19,14 +18,7 @@ func _ready() -> void:
 	ui.rect(background, 0, 0, 1280, 720, self)
 	var header = ui.panel(0, 0, 1280, 84, ui.GOLD, self)
 	header.name = "CollectionHeader"
-	ui.label_at("La colección de ecos", 48, 17, 900, 50, 30, ui.GOLD, self)
-	var back = ui.button("Inicio", 1060, 22, 184, 40, home, true, self)
-	back.name = "CollectionHome"
-	for state in ["normal", "hover", "pressed", "disabled"]:
-		var style = back.get_theme_stylebox(state).duplicate()
-		style.content_margin_left = 40
-		style.content_margin_right = 40
-		back.add_theme_stylebox_override(state, style)
+	ui.label_at("La colección de ecos", 100, 17, 900, 50, 30, ui.GOLD, self)
 	var summary = _frame(Rect2(36, 100, 1208, 48), self)
 	var earned = snapshot.achievements.filter(func(a): return a.unlocked).size()
 	var totals = ui.label_at("%d / %d logros    ·    %d aventuras    ·    %d victorias" % [earned, snapshot.achievements.size(), snapshot.attempts, snapshot.victories], 20, 5, 1168, 38, 20, ui.TEXT, summary)

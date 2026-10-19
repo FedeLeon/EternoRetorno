@@ -1,0 +1,21 @@
+{
+  "id": "equipment__valhalla",
+  "target": "assets/equipment/valhalla.png",
+  "family": "equipment",
+  "kind": "scene",
+  "hero": null,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/migration/sources/scene/equipment__valhalla.png",
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Full scene/background assets/equipment/valhalla.png. Preserve the relevant camp/dungeon/forest/volcanic/collection/reward/inventory theme and broad composition, but fully redraw in graphite and colored pencil. Landscape 16:9, usable ground and low-detail regions behind UI and characters. Black/gray/violet dominant, restrained warm lanterns/fire and muted nature accents. No characters added unless reference requires them, no UI/text. For selection/rest/camp: space around the central campfire for heroes, twilight/night charcoal-violet mood matching the new camp. For title: retain ONLY the exact game name 'ETERNO RETORNO' in the existing central position as drawn lettering, no other writing. For bag/door: one isolated cutout with true alpha if reference is transparent.",
+  "references": [
+    "assets/equipment/valhalla.png",
+    "art_sources/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-b12b54d6-e528-4f33-acc7-6148f11ad3a3.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

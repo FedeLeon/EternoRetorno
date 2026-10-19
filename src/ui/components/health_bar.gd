@@ -9,6 +9,7 @@ var animating = false
 var elapsed = 0.0
 var fill: ColorRect
 var caption: Label
+var combat_style = false
 var liquid: ShaderMaterial
 
 func _ready() -> void:
@@ -22,6 +23,10 @@ func _ready() -> void:
 	add_child(fill)
 	caption = Label.new()
 	caption.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	# The font's minimum line height can exceed the thin combat bar. Grow on
+	# both sides so that minimum size never pushes the caption below its center.
+	caption.grow_vertical = Control.GROW_DIRECTION_BOTH
+	caption.grow_horizontal = Control.GROW_DIRECTION_BOTH
 	caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	caption.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	caption.add_theme_font_size_override("font_size", 17)
@@ -61,7 +66,28 @@ func _process(delta: float) -> void:
 		animation_finished.emit()
 
 func refresh() -> void:
+	fill.visible = not combat_style
+	caption.add_theme_font_size_override("font_size", 16 if combat_style else 17)
+	queue_redraw()
 	fill.size = size
 	liquid.set_shader_parameter("tube_size", size)
 	liquid.set_shader_parameter("level", displayed_hp / float(maximum_hp))
 	caption.text = "%d / %d" % [displayed_hp, maximum_hp] if displayed_hp > 0 else "CAÍDO"
+
+func _draw() -> void:
+	if not combat_style: return
+	# Quiet, thin bar: the silhouette and intent remain the main visual signals.
+	draw_style_box(_bar_style(Color("161823"), Color("bbb5aa")), Rect2(Vector2.ZERO, size))
+	var inside = Rect2(Vector2(2, 2), Vector2(maxf(0, size.x - 4), maxf(0, size.y - 4)))
+	inside.size.x *= displayed_hp / float(maximum_hp)
+	if inside.size.x > 0:
+		draw_rect(inside, Color("bd3349"))
+		draw_line(inside.position, inside.position + Vector2(inside.size.x, 0), Color("ed6c74"), 1)
+
+func _bar_style(fill_color: Color, edge: Color) -> StyleBoxFlat:
+	var style = StyleBoxFlat.new()
+	style.bg_color = fill_color
+	style.border_color = edge
+	style.set_border_width_all(1)
+	style.set_corner_radius_all(3)
+	return style

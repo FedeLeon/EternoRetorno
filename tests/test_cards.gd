@@ -30,16 +30,7 @@ func run_tests() -> void:
 				check(not card.has_node("CardOwner"), "No identity plaque on card: " + id)
 				check(card.get_node("CardTitle").text.ends_with(" +") == upgraded, "Upgrade remains visible in title: " + id)
 				check(card.get_node("IllustrationSpace").position.y < 0.2 * card.size.y, "Artwork uses removed plaque space: " + id)
-				# The lower strip communicates special effects, never the category again.
-				for icon in card.get_children():
-					if icon is TextureRect and (icon.name.begins_with("CardType") or icon.name == "CardLinkIcon"):
-						var old_shield = icon.texture is AtlasTexture and icon.texture.atlas.resource_path == "res://assets/objects/icons.png" and icon.texture.region.intersects(Rect2(128,64,64,64))
-						check(icon.texture.resource_path != "res://assets/ui/sword.svg" and not old_shield, "No redundant attack/block icon: " + id)
-				var data = app.game.content.card({"id":id,"upgraded":upgraded})
-				if data.poison > 0:
-					check(card.get_node("CardType0").texture.resource_path == "res://assets/ui/poison.svg", "Corrosion icon preserved: " + id)
-				if app.game.content.synergies.any(func(recipe): return id in recipe.cards):
-					check(card.has_node("CardLinkIcon"), "Synergy icon preserved: " + id)
+				check(not card.get_children().any(func(node): return node.name.begins_with("CardType") or node.name == "CardLinkIcon"), "No lower effect icon strip: " + id)
 				for node in card.get_children():
 					if node is Label:
 						check(node.get_line_count() * node.get_line_height() <= node.size.y + 1, "Text clipped: " + node.text)

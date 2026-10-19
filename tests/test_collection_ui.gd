@@ -31,7 +31,7 @@ func run_tests() -> void:
 	await create_timer(0.3).timeout
 	var screen = app.layer.get_node("CollectionScreen")
 	var before = app.game.profile.duplicate(true)
-	check(screen.get_node("CollectionHome").icon != null, "Home has back arrow asset")
+	check(app.layer.get_node("HeaderBack").icon != null, "Home has back arrow asset")
 	check(screen.find_children("*", "Button", true, false).all(func(b): return b.text != "Menú"), "no menu button in collection")
 	check(screen.find_children("Achievement_*", "Button", true, false).size() == 28, "active achievements present; unearned legacy hero milestones hidden")
 	check(screen.find_child("AchievementTotals", true, false).text.begins_with("0 / %d logros" % app.game.Achievements.catalog().size()), "summary uses the actual active achievement count")
@@ -59,7 +59,7 @@ func run_tests() -> void:
 	await click(screen.get_node("HistoryTab"))
 	check(screen.find_children("*", "Label", true, false).any(func(l): return "Tu historia" in l.text), "empty history explained")
 	check(app.game.profile == before, "view and tab changes do not mutate profile")
-	await click(screen.get_node("CollectionHome"))
+	await click(app.layer.get_node("HeaderBack"))
 	check(app.screen == "home", "Home button navigates to title screen")
 	app.game.profile.victories = 1
 	app.game.profile.attempts = 3

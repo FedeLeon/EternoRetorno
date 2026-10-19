@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cell",
+    "target": "assets/ui/cell.png",
+    "source": "art_sources/preparation_assets/sources/cell.png",
+    "count": 1,
+    "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Draw ONE salvaged rechargeable energy cell currency token: a compact cylindrical cartridge with protective ribbed steel casing, two small brass terminals, a luminous cyan energy core behind a glass strip, violet cable grip and a tiny orange indicator. Three-quarter view, balanced centered composition, thin pale edge highlight, complete object with generous transparent margin, square 1024x1024. This is a tangible detailed battery cartridge, not a plain battery pictogram."
+  },
+  {
+    "id": "components_1",
+    "source": "art_sources/preparation_assets/sources/components_1.png",
+    "ids": [
+      "vital_amulet",
+      "vigor_ring",
+      "phoenix_idol",
+      "poison_fang"
+    ],
+    "target_dir": "assets/equipment/components",
+    "count": 4,
+    "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Inventory icon bank with EXACT 2 columns by 2 rows, four different isolated objects. TOP LEFT: rugged vital-monitor module, black/red casing, tiny green pulse-line screen, medical cross shaped metal inset and clip. TOP RIGHT: starter capacitor, steel cylinder with exposed copper coil, glowing blue charging strips and ribbed cable. BOTTOM LEFT: emergency relay, orange safety housing, mechanical latch, spare fuse and red alarm lamp, revival device. BOTTOM RIGHT: corrosion injector nozzle, metallic threaded tip, transparent green acid reservoir, tubing and safety clamp. Each complete object centered inside its own square quadrant with 15 percent transparent margins; no touching edges or crossing between quadrants. High detail original ink illustration. Square 2048x2048 sheet, consistent scale and lighting."
+  },
+  {
+    "id": "components_2",
+    "source": "art_sources/preparation_assets/sources/components_2.png",
+    "ids": [
+      "arcane_orb",
+      "wind_boots",
+      "pilgrim_shield",
+      "merchant_coin"
+    ],
+    "target_dir": "assets/equipment/components",
+    "count": 4,
+    "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Inventory icon bank with EXACT 2 columns by 2 rows, four different isolated objects. TOP LEFT: electromagnetic amplifier coil, violet housing, copper windings, cyan sparking conductors and round energy window. TOP RIGHT: pair of reinforced civilian work boots, brown leather, metal toe caps, violet straps and repaired soles. BOTTOM LEFT: protective armor plate, dented steel rectangle, rivets, layered bolted backing, orange hazard stripe and teal paint wear. BOTTOM RIGHT: exchange token, substantial brass/steel hexagonal coin with engraved linked-handshake geometric mark, tiny cyan circuit inset, dark violet center, chipped metal edge. Each complete object centered inside its own square quadrant with 15 percent transparent margins; no touching edges or crossing between quadrants. High detail original ink illustration. Square 2048x2048 sheet, consistent scale and lighting."
+  },
+  {
+    "id": "difficulty",
+    "source": "art_sources/preparation_assets/sources/difficulty.png",
+    "ids": [
+      "normal",
+      "return_1",
+      "return_2",
+      "return_3"
+    ],
+    "target_dir": "assets/run_setup/difficulty",
+    "count": 4,
+    "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Dedicated difficulty/condition selection icons in EXACT 2x2 regular grid. TOP LEFT: safe balanced expedition, a sturdy blue steel shield with small cyan light and one work glove, calm silhouette. TOP RIGHT: moderate threat, a triangular orange hazard plate behind a cracked gray gear with a single red light. BOTTOM LEFT: severe machine threat, two interlocking sharp steel gears around a red glowing optic, purple sparks. BOTTOM RIGHT: extreme machine threat, aggressive armored reactor core with three radiating orange hazard blades and red electrical arcs. Complete isolated emblem composition centered in each square quadrant with at least 15 percent transparent gutter, no crossing cells. More crafted and detailed than a flat pictogram but simple silhouettes that read at 58 pixels. Square 2048x2048 sheet."
+  },
+  {
+    "id": "conditions",
+    "source": "art_sources/preparation_assets/sources/conditions.png",
+    "ids": [
+      "normal",
+      "tainted",
+      "dangerous"
+    ],
+    "target_dir": "assets/run_setup/conditions",
+    "count": 3,
+    "prompt": "Original postapocalyptic American action-comic inventory art matching the reference: confident thick black ink, crisp cel shading, restrained print halftone, graphite metal, aubergine shadows, vivid cyan and rust-orange highlights. Technological salvaged civilian equipment, no medieval artifacts. Clean strong silhouettes and carefully drawn material details readable as icons. No text, letters, labels, numbers, hands, characters, scenery, floors or cast shadows. Real transparent RGBA background. Dedicated difficulty/condition selection icons in EXACT 2x2 regular grid. TOP LEFT: ordinary expedition, intact salvaged field compass with steady cyan glass, calm neutral silhouette. TOP RIGHT: enemy reinforcement condition, cracked industrial shielding plate with lime-green electrical interference and thick locking brackets. BOTTOM LEFT: dangerous expedition, two crossed improvised serrated tools over a red alarm lamp and angular orange danger burst. BOTTOM RIGHT: fully EMPTY transparent quadrant, no object. Complete isolated emblem composition centered in each square quadrant with at least 15 percent transparent gutter, no crossing cells. More crafted and detailed than a flat pictogram but simple silhouettes that read at 58 pixels. Square 2048x2048 sheet."
+  }
+]

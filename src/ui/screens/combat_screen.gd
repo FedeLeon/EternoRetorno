@@ -56,25 +56,9 @@ static func build(ui: Control) -> void:
 		ui.TargetGlow.attach(visual, valid)
 		ui.hero_art[i] = visual
 		var hero_effects = preload("res://src/ui/components/battle_effect_snapshot.gd").hero(ui.game, i)
-		var extra_height = preload("res://src/ui/components/battle_effect_strip.gd").height_for(hero_effects.size(), true)
-		var strip = preload("res://src/ui/components/battle_effect_strip.gd").new()
-		strip.name = "HeroEffects"
-		strip.ui = ui; strip.entries = hero_effects; strip.compact = true
-		ui.rect(strip, 0, hero_ground - top + 8, 204, extra_height, target)
-		if h.id in ui.ANIMATED_HEROES:
+		if h.id in ui.BATTLE_HEROES:
 			visual.set_fallen(h.hp <= 0)
-		ui.hero_health[i] = ui.health_bar(h, 16, 0, 172, target)
-		ui.hero_health[i].z_as_relative = false
-		ui.hero_health[i].z_index = 30
-		ui.hero_health[i].value_changed.connect(func(hp): strip.visible = hp > 0)
-		if h.hp > 0:
-			var effects = ui.StatusEffects.new()
-			effects.unit = h
-			effects.z_as_relative = false; effects.z_index = 31
-			effects.block_position = Vector2(-15, -8)
-			ui.rect(effects, 10, 0, 184, 28, target)
-		else:
-			ui.label_at("Vuelve si ganás", 10, 30, 184, 24, 16, Color("9cbacb"), target).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		ui.hero_health[i] = preload("res://src/ui/components/combat_vitals.gd").build(ui, target, h, hero_effects, hero_ground)
 	for i in range(b.enemies.size()):
 		var e = b.enemies[i]
 		var def = ui.game.content.enemies[e.id]
@@ -88,43 +72,31 @@ static func build(ui: Control) -> void:
 		if valid and ui.selected_card >= 0:
 			target.tooltip_text = preload("res://src/rules/combat_preview.gd").describe(ui.game, ui.selected_card, i)
 		var enemy_visual = ui.EnemySprite.new()
+		enemy_visual.set_meta("battle_enemy_id", e.id)
 		enemy_visual.visual_id = def.visual
 		enemy_visual.fallen = e.hp <= 0
-		ui.rect(enemy_visual, 43, ground - top - 124, 128, 132, target)
+		ui.rect(enemy_visual, 43, ground - top - 132, 128, 132, target)
 		if ui.game.run.get("training", false) and ui.game.run.get("training_config",{}).get("enemies",[]).is_empty():
-			enemy_visual.has_motion_frames = false
-			enemy_visual.sprite.hframes = 1
-			enemy_visual.sprite.texture = preload("res://assets/combat_depth/dummy.png")
-			enemy_visual.set_process(false)
+			enemy_visual.replace_illustration(preload("res://assets/combat_depth/dummy.png"))
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
-		preload("res://src/ui/components/combat_actor_scale.gd").fit_enemy(enemy_visual, ground - 90, 220.0 if b.enemies.size() > 1 else 440.0)
+		preload("res://src/ui/components/combat_actor_scale.gd").fit_enemy(enemy_visual, ground - 126, 220.0 if b.enemies.size() > 1 else 440.0)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
 		var cables = preload("res://src/ui/components/tactical_badges.gd").enemy(ui, target, e)
 		var enemy_effects = preload("res://src/ui/components/battle_effect_snapshot.gd").enemy(ui.game, i)
-		var extra_height = preload("res://src/ui/components/battle_effect_strip.gd").height_for(enemy_effects.size(), true)
 		target.tooltip_text = target.tooltip_text if not target.tooltip_text.is_empty() else "Tocá para inspeccionar"
-		ui.enemy_health[i] = ui.health_bar(e, 16, 0, 182, target)
-		ui.enemy_health[i].z_as_relative = false
-		ui.enemy_health[i].z_index = 30
-		var health = ui.enemy_health[i]
-		var update_visibility = func(hp: int):
-			health.visible = hp > 0
-			if cables != null: cables.visible = hp > 0
-		health.value_changed.connect(update_visibility)
-		update_visibility.call(e.hp)
-		var effects = ui.StatusEffects.new()
-		effects.unit = e
-		effects.z_as_relative = false; effects.z_index = 31
-		effects.block_position = Vector2(-12, -8)
-		ui.rect(effects, 7, 0, 200, 28, target)
+		var health = preload("res://src/ui/components/combat_vitals.gd").build(ui, target, e, enemy_effects, ground, true)
+		ui.enemy_health[i] = health
+		if cables != null:
+			cables.visible = e.hp > 0
+			health.value_changed.connect(func(hp): cables.visible = hp > 0)
 		if e.hp > 0:
 			var intent_view = ui.EnemyIntent.new()
 			intent_view.name = "EnemyIntent%d" % i
 			intent_view.intent = preload("res://src/rules/enemy_coordination.gd").intent(ui.game, e)
 			intent_view.heroes = ui.game.run.heroes.duplicate(true)
-			intent_view.ui = ui; intent_view.effects = enemy_effects; intent_view.compact_effects = true
-			ui.rect(intent_view, x, ground + 8, 214, layout.INTENT_ROW_HEIGHT + extra_height)
+			intent_view.ui = ui
+			ui.rect(intent_view, x, layout.INTENT_TOP, 214, layout.INTENT_ROW_HEIGHT)
 			health.value_changed.connect(func(hp): intent_view.visible = hp > 0)
 
 	if ui.selected_card >= 0 and ui.selected_card < b.hand.size() and ui.game.available_synergies().is_empty():

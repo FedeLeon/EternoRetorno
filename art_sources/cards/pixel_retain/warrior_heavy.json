@@ -1,0 +1,17 @@
+{
+  "id": "warrior_heavy",
+  "kind": "illustration",
+  "target": "assets/cards/art/minimal/warrior_heavy.png",
+  "source": "art_sources/cards/pixel_retain/sources/warrior_heavy.png",
+  "prompt": "Use case: illustration-story. Create one standalone landscape 3:2 MINIMALIST COMIC card illustration for Eterno Retorno, NOT a card frame. Exact subject: Half-body Nicolas swings a heavy workshop mallet downward, one violet impact star.. The only person is NICOLAS, a grown bearded MAN with short brown hair in a violet civilian workshirt and tan carpenter apron. Match reference male identity. Show his requested action, cropped half-body, not a full-body standing portrait. Thick bold black comic ink outlines, large simple shapes, flat saturated violet identity accents against charcoal black. ONLY TWO shadow shades, no fine texture, no tiny screws, no ornate decoration, minimal material details. Extremely clear silhouette, large central motif, dark negative space surrounding it. No scenery, no buildings, no full environment, no complex machine, no multiple panels, no letters, no words, no numbers, no frame or UI. Retain postapocalyptic improvised tools instead of fantasy weapons. A single readable comic action or object vignette with much less detail than a full scene.",
+  "reference": "assets/heroes/identity/postapocalyptic/warrior.png",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-1af82b48-b5b0-483b-ba3c-464426fc620e.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "measured_dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "079e159c72b9d688dada308baeb0de680ac920001f450475d46a5722c907ca96",
+  "reference_sha256": "28eeed03de5bb57d5626e5ddfc75571c400db574f3b41ad96335c73782378f67"
+}

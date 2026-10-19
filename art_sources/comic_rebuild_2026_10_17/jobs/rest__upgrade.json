@@ -1,0 +1,22 @@
+{
+  "id": "rest__upgrade",
+  "kind": "direct",
+  "prompt": "A HORIZONTAL compact GAME REST-CHOICE ILLUSTRATION in American action comic ink and flat cel colors. ONE physical blank tabletop playing card with violet and copper technological metal edges, tilted slightly, its face bearing only a large stylized bright upward chevron with a small orange electric spark; a small improvised metal tuning clamp touches the card edge to suggest upgrading it. Bold black ink, thin WHITE cutout outline around card and clamp, two-tone hard shadows, sparse halftone, minimal clear objects readable small. Entire composition centered within middle 60 percent of width and 45 percent of height so a wide 2.3:1 crop preserves it. OPAQUE plain near-black aubergine background. No room, background scene, buildings, robots, characters, hands or scenery. No text, letters, numbers, captions, card statistics or UI. Clear image meaning IMPROVE A CARD.",
+  "targets": [
+    {
+      "path": "assets/rest/upgrade.png",
+      "dimensions": [
+        384,
+        256
+      ]
+    }
+  ],
+  "transparent": false,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/rest__upgrade_semantic.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-dd85b2c9-bf28-491f-a726-c007fc257591.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/comic_rebuild_2026_10_17/revisions/rest__upgrade_original.json"
+}

@@ -37,22 +37,18 @@ func run_tests() -> void:
 	for id in additions:
 		app.game._start_combat([id]);app.continue_run();await process_frame
 		var actor = app.enemy_art[0]
-		check(actor.has_motion_frames,"new enemy has drawn animation: "+id)
-		var texture = actor.sprite.texture.get_image()
-		var unique = {}
-		for frame in range(8):
-			unique[texture.get_region(Rect2i(frame*texture.get_height(),0,texture.get_height(),texture.get_height())).get_data().hex_encode().sha256_text()] = true
-			var cell_size = Vector2i(texture.get_height(),texture.get_height())
-			var cell = texture.get_region(Rect2i(frame*cell_size.x,0,cell_size.x,cell_size.y))
-			var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(cell,0.5)
-			check(bounds.position.x>=8 and bounds.position.y>=8 and bounds.end.x<=cell_size.x-8 and bounds.end.y<=cell_size.y-8,"complete packed silhouette keeps clear margins: %s / %d" % [id,frame])
-		check(unique.size()==4,"four authored keyposes: "+id)
-		var baseline = actor.sprite.position
-		actor.play_once("attack");await create_timer(0.25).timeout
-		check(actor.acting and actor.sprite.frame>=4,"windup and strike use drawn poses: "+id)
+		check(actor.sprite is TextureRect,"new enemy has drawn animation: "+id)
+		check(actor.poses.size()==6,"six static action assets "+id)
+		var baseline = actor.position
+		actor.play_once("attack")
+		check(actor.acting and actor.current_action=="attack","windup and strike use drawn poses: "+id)
 		await capture(id+"-attack")
-		await create_timer(0.32).timeout
-		check(not actor.acting and absf(actor.sprite.position.x-baseline.x)<0.01,"returns to actor position: "+id)
+		# Wait for completion rather than assuming a fixed frame rate under
+		# software rendering. Keep a wall-clock limit so a stuck action still fails.
+		var deadline=Time.get_ticks_msec()+2000
+		while actor.acting and Time.get_ticks_msec()<deadline:
+			await process_frame
+		check(not actor.acting and actor.position==baseline,"returns to actor position: "+id)
 		var cut = preload("res://src/presentation/enemy_cut_in.gd").play(app.layer,additions[id].visual)
 		check(cut != null and cut.from_right,"new transparent foreground attack: "+id)
 		check(cut.picture.texture.get_image().get_pixel(0,0).a<0.05,"transparent cut-in corner: "+id)
@@ -145,7 +141,7 @@ func run_tests() -> void:
 		AudioServer.remove_bus_effect(0,AudioServer.get_bus_effect_count(0)-1)
 	Preferences.settings.low_effects=true
 	var dummy = Control.new();root.add_child(dummy)
-	check(preload("res://src/presentation/support_feedback.gd").play(app.layer,dummy,"heal")==null,"support particles honor low effects")
+	check(app.layer.find_children("SupportFeedback*","",true,false).is_empty(),"battle bodies have no support particles")
 	dummy.queue_free()
 	app.apply_options()
 	app.queue_free();await process_frame

@@ -1,0 +1,20 @@
+{
+  "id": "warrior_idle_refined",
+  "kind": "idle_refinement",
+  "hero": "warrior",
+  "target": null,
+  "transparent": true,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "source": "art_sources/art_direction/migration/sources/heroes/warrior_idle.png",
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Any protagonist depicted MUST be Nicolas the Carpenter, 42-year-old ordinary weathered man, short brown beard, plain worn angular gray iron helmet with visor raised, NO HORNS, patched charcoal-gray plate and violet cloak, only a plain straight steel sword, NO SHIELD. Its new face/outfit replaces the old design. EXACT twelve near-identical full-body IDLE poses in four columns by three rows, 1536x1024. Feet planted at x192 y300 in each 384x341 cell, head near y45, body proportions identical. Character facing RIGHT. Holds the SAME weapon in exactly the same downwards resting position in every pose. NO attacks, NO swings, NO shield for Nicolas, NO crouches, no pointing, no weapon above waist, no alternate equipment. Only extremely small wrist/grip adjustments under 5 degrees and slightly different cloak folds. Legs and torso remain stationary. First and last nearly identical. Each pose fits fully in cell with 25px clear alpha gutters. TRUE transparent RGBA, no scenery, no floor, no cloudy shadow/glow, no paper outside the figure, no grid or frame numbers.",
+  "references": [
+    "assets/heroes/identity/sketchbook.png",
+    "assets/heroes/identity/portraits/warrior.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-5bd1ae67-bdef-4479-bb4d-d7965831a08a.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

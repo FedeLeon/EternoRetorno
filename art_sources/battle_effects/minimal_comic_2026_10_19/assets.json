@@ -1,0 +1,392 @@
+[
+  {
+    "id": "rear_guard",
+    "title": "Retaguardia cubierta",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/rear_guard.svg",
+    "target": "assets/battle_effects/rear_guard.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "roots",
+    "title": "Cables de sujeción",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/roots.svg",
+    "target": "assets/battle_effects/roots.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "resurrection",
+    "title": "Intención de reactivación",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/resurrection.svg",
+    "target": "assets/battle_effects/resurrection.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "embers",
+    "title": "Intención de sobrecarga térmica",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/embers.svg",
+    "target": "assets/battle_effects/embers.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "imprisonment",
+    "title": "Pinza de sujeción",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/imprisonment.svg",
+    "target": "assets/battle_effects/imprisonment.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "charged_strike",
+    "title": "Golpe cargado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/charged_strike.svg",
+    "target": "assets/battle_effects/charged_strike.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "vampiric",
+    "title": "Recuperación de energía",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/vampiric.svg",
+    "target": "assets/battle_effects/vampiric.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "bulwark",
+    "title": "Élite acorazado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/bulwark.svg",
+    "target": "assets/battle_effects/bulwark.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "frenzy",
+    "title": "Élite frenético",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/frenzy.svg",
+    "target": "assets/battle_effects/frenzy.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "beast_command",
+    "title": "Orden de caza",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/beast_command.svg",
+    "target": "assets/battle_effects/beast_command.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "grief",
+    "title": "Furia por los caídos",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/grief.svg",
+    "target": "assets/battle_effects/grief.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "protector",
+    "title": "Protector",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/protector.svg",
+    "target": "assets/battle_effects/protector.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "healer",
+    "title": "Apoyo sanador",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/healer.svg",
+    "target": "assets/battle_effects/healer.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "prepared",
+    "title": "Ataque preparado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/prepared.svg",
+    "target": "assets/battle_effects/prepared.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "armor_plates",
+    "title": "Placas del guardián",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/armor_plates.svg",
+    "target": "assets/battle_effects/armor_plates.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "source",
+    "title": "Capacitor",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/source.svg",
+    "target": "assets/battle_effects/source.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "enraged",
+    "title": "Segunda fase",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/enraged.svg",
+    "target": "assets/battle_effects/enraged.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "ambush",
+    "title": "Emboscada",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/ambush.svg",
+    "target": "assets/battle_effects/ambush.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "tainted",
+    "title": "Fluido corrosivo",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/tainted.svg",
+    "target": "assets/battle_effects/tainted.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "strength",
+    "title": "Fuerza",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/strength.svg",
+    "target": "assets/battle_effects/strength.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "weakness",
+    "title": "Debilidad",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/weakness.svg",
+    "target": "assets/battle_effects/weakness.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "fracture",
+    "title": "Defensa quebrada",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/fracture.svg",
+    "target": "assets/battle_effects/fracture.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "poison",
+    "title": "Corrosión",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/poison.svg",
+    "target": "assets/battle_effects/poison.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "weapon_boost",
+    "title": "Herramienta reforzada",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/weapon_boost.svg",
+    "target": "assets/battle_effects/weapon_boost.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "magic_boost",
+    "title": "Voltaje amplificado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/magic_boost.svg",
+    "target": "assets/battle_effects/magic_boost.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "bond_focus",
+    "title": "Concentración del vínculo",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/bond_focus.svg",
+    "target": "assets/battle_effects/bond_focus.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "curse_blood",
+    "title": "Avería hidráulica",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/curse_blood.svg",
+    "target": "assets/battle_effects/curse_blood.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "curse_burden",
+    "title": "Lastre averiado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/curse_burden.svg",
+    "target": "assets/battle_effects/curse_burden.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "curse_scar",
+    "title": "Aislamiento dañado",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/curse_scar.svg",
+    "target": "assets/battle_effects/curse_scar.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "set_multi",
+    "title": "Cadencia sangrienta",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/set_multi.svg",
+    "target": "assets/battle_effects/set_multi.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "set_poison",
+    "title": "Pacto tóxico",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/set_poison.svg",
+    "target": "assets/battle_effects/set_poison.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "set_block",
+    "title": "Baluarte",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/set_block.svg",
+    "target": "assets/battle_effects/set_block.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "set_heal",
+    "title": "Fuente vital",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/set_heal.svg",
+    "target": "assets/battle_effects/set_heal.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "attack",
+    "title": "Intención de ataque",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/attack.svg",
+    "target": "assets/battle_effects/attack.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "guard",
+    "title": "Intención de bloqueo",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/guard.svg",
+    "target": "assets/battle_effects/guard.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "counter",
+    "title": "Contraataque",
+    "source": "art_sources/battle_effects/minimal_comic_2026_10_19/sources/counter.svg",
+    "target": "assets/battle_effects/counter.png",
+    "dimensions": [
+      128,
+      128
+    ]
+  },
+  {
+    "id": "attack",
+    "target": "assets/ui/intent/attack.svg",
+    "source": "assets/ui/intent/attack.svg",
+    "native": true
+  },
+  {
+    "id": "guard",
+    "target": "assets/ui/intent/guard.svg",
+    "source": "assets/ui/intent/guard.svg",
+    "native": true
+  },
+  {
+    "id": "counter",
+    "target": "assets/ui/intent/counter.svg",
+    "source": "assets/ui/intent/counter.svg",
+    "native": true
+  },
+  {
+    "id": "active_block",
+    "target": "assets/ui/block_active.svg",
+    "source": "assets/ui/block_active.svg",
+    "native": true
+  },
+  {
+    "id": "block_up",
+    "target": "assets/ui/block_up.svg",
+    "source": "assets/ui/block_up.svg",
+    "native": true
+  }
+]

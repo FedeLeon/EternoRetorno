@@ -45,7 +45,9 @@ func run_tests() -> void:
 				effect._process(0.24)
 				check(effect.picture.position == position and effect.picture.scale == Vector2.ONE, "still image transform " + hero + kind)
 				check(effect.picture.texture == texture and effect.frame_index == 0 and effect.picture.self_modulate == Color.WHITE, "unchanged artwork " + hero + kind)
-			check(position.x < 0 and is_equal_approx(position.y + effect.picture.size.y, host.size.y * 1.12), "lower left framing " + hero + kind)
+			check(position.x < 0 and is_equal_approx(position.y + effect.picture.size.y, host.size.y * 1.15), "lower left framing " + hero + kind)
+			check(position.y >= 355 and effect.picture.size.y < host.size.y*.66,"foreground leaves battle actors visible")
+			check(effect.impact_panel.position==position and effect.impact_panel.size==effect.picture.size,"comic details stay beside the lower-left illustration")
 			check(effect.hero_fx.elapsed > 0.0 and effect.hero_fx.area.size.x > 0, "live background effects " + hero + kind)
 			if DisplayServer.get_name() != "headless":
 				await RenderingServer.frame_post_draw

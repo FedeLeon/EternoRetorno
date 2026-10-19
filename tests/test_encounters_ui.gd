@@ -68,7 +68,13 @@ func run_tests() -> void:
 	check(accept.disabled, "altar offering blocked when health is insufficient")
 	await click(accept)
 	check(app.screen == "room" and app.game.run.heroes[0].hp == 5, "disabled offer leaves state unchanged")
-	await click(view.get_node("Menu"))
+	check(not view.has_node("Menu"), "encounter artwork has no menu button")
+	check(app.layer.get_node("ComicPageMargin").position.y == 0, "encounter frame stays at screen edge without a header band")
+	var escape = InputEventKey.new()
+	escape.keycode = KEY_ESCAPE
+	escape.pressed = true
+	root.push_input(escape)
+	await process_frame
 	check(is_instance_valid(app.overlay), "pause menu remains accessible")
 	app.close_modal()
 	await process_frame

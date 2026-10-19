@@ -82,10 +82,11 @@ func toggle() -> void:
 
 func show_hero(hero: Dictionary, index: int) -> void:
 	var top = 124 + index * 152
-	var actor = hero.visual.new()
+	var actor = preload("res://src/presentation/detailed_hero.gd").new()
+	actor.hero_id = hero.id
 	actor.name = "Hero%d" % index
 	place(actor, Rect2(18, top, 152, 128))
-	preload("res://src/presentation/hero_equipment.gd").apply(actor, hero.id, hero.get("forge", {}))
+	actor.apply_gear(hero.get("forge", {}))
 	actor.set_fallen(hero.hp <= 0)
 	label(hero.title, Rect2(185, top + 25, 274, 40), 24)
 	var health = HealthBar.new()

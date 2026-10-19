@@ -1,0 +1,162 @@
+{
+  "assets/comic/static/warrior_attack.png": {
+    "id": "static_warrior_attack",
+    "hero": "warrior",
+    "action": "attack",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Nicolas the Carpenter: weathered 42-year-old ordinary man, short brown beard, open simple angular gray iron helmet VISOR UP showing face, patched charcoal-gray armor and muted violet cloak. Only one plain straight steel sword, NO SHIELD, NO HORNS. Action: One decisive sword slash to the RIGHT, powerful diagonal sword across foreground, determined readable face. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/warrior_attack.png",
+    "target": "assets/comic/static/warrior_attack.png",
+    "references": [
+      "assets/heroes/identity/portraits/warrior.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-698ff3e3-948d-4e77-a77c-a366f04ae2f1.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "9e148e56e54ab1bc61a182746a0cc2776614cb3209aeaa6297dbdad96bae5b27",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.558
+  },
+  "assets/comic/static/warrior_defense.png": {
+    "id": "static_warrior_defense",
+    "hero": "warrior",
+    "action": "defense",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Nicolas the Carpenter: weathered 42-year-old ordinary man, short brown beard, open simple angular gray iron helmet VISOR UP showing face, patched charcoal-gray armor and muted violet cloak. Only one plain straight steel sword, NO SHIELD, NO HORNS. Action: A braced defensive sword parry toward the RIGHT, sword angled in front of torso, two hands on hilt, NO SHIELD. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/warrior_defense.png",
+    "target": "assets/comic/static/warrior_defense.png",
+    "references": [
+      "assets/heroes/identity/portraits/warrior.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-9834dabd-989d-4cbe-82c8-89ab1867fdec.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "7f90ce2524031ab1994d461b6d14dfc41e6debacb05e53f71632c17f716c7933",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.5514
+  },
+  "assets/comic/static/guardian_attack.png": {
+    "id": "static_guardian_attack",
+    "hero": "guardian",
+    "action": "attack",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Ines the Builder: strong adult woman, auburn hair in practical braid, familiar face from reference, patched gray plate armor, violet cloth/cape, battered plain steel shield and short straight steel sword. Action: Shield bash toward the RIGHT, heavy battered shield thrust forward, short sword held safely back, determined readable face. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/guardian_attack.png",
+    "target": "assets/comic/static/guardian_attack.png",
+    "references": [
+      "assets/heroes/identity/portraits/guardian.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-be7f911c-02d0-468b-b069-269be3070db9.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "c8440cda5f2a421cf666310634022857ac8a20b2d980ca0b220c6fe59ffe090b",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.4056
+  },
+  "assets/comic/static/guardian_defense.png": {
+    "id": "static_guardian_defense",
+    "hero": "guardian",
+    "action": "defense",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Ines the Builder: strong adult woman, auburn hair in practical braid, familiar face from reference, patched gray plate armor, violet cloth/cape, battered plain steel shield and short straight steel sword. Action: Braced shield block facing RIGHT, broad steel shield protecting torso, determined readable face visible above shield. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/guardian_defense.png",
+    "target": "assets/comic/static/guardian_defense.png",
+    "references": [
+      "assets/heroes/identity/portraits/guardian.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-74fb3b9a-8b5b-418b-9ecd-63a4b370dde6.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "0d6825418cba90433013744369fc840f8e0452a525910d741495f3ec35e98ec7",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.3978
+  },
+  "assets/comic/static/rogue_attack.png": {
+    "id": "static_rogue_attack",
+    "hero": "rogue",
+    "action": "attack",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Mauro the Apothecary: adult ordinary man with messy dark hair and light stubble, entire HUMAN FACE fully exposed including nose and mouth, NO MASK OR BEAK, hood pushed back, charcoal coat, violet sash, small medicine vials and two plain short knives. Action: Quick sweeping knife strike toward the RIGHT, second knife guarding, vial on belt, ENTIRE FACE CLEARLY VISIBLE. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/rogue_attack.png",
+    "target": "assets/comic/static/rogue_attack.png",
+    "references": [
+      "assets/heroes/identity/portraits/rogue.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-30d029cb-a2cc-4d62-95c2-9141060e271d.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "2c397a47a419758d5d493bfb124fa31bcee06efa43a88f555a889d67fd69a7aa",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.5194
+  },
+  "assets/comic/static/rogue_defense.png": {
+    "id": "static_rogue_defense",
+    "hero": "rogue",
+    "action": "defense",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Mauro the Apothecary: adult ordinary man with messy dark hair and light stubble, entire HUMAN FACE fully exposed including nose and mouth, NO MASK OR BEAK, hood pushed back, charcoal coat, violet sash, small medicine vials and two plain short knives. Action: Defensive crossed-knife parry facing RIGHT, lean back slightly but face visible, ENTIRE FACE CLEARLY VISIBLE. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/rogue_defense.png",
+    "target": "assets/comic/static/rogue_defense.png",
+    "references": [
+      "assets/heroes/identity/portraits/rogue.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-3d792fe8-6ced-4718-a4a3-8dc56964fdf4.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "fc0b9cd3ec7731f4aa306066fb867f0b61e403edec186284f002b4288530acce",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.5153
+  },
+  "assets/comic/static/mage_attack.png": {
+    "id": "static_mage_attack",
+    "hero": "mage",
+    "action": "attack",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Vera the Teacher: adult woman with short swept silver-gray hair, charcoal long coat with violet high collar and sleeves, worn book and plain wooden staff with small violet crystal. Action: Casts violet force toward the RIGHT using staff and outstretched hand, worn book at waist, expressive readable face. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/mage_attack.png",
+    "target": "assets/comic/static/mage_attack.png",
+    "references": [
+      "assets/heroes/identity/portraits/mage.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-dbdcc11b-6fb2-4562-bd0a-84f62ed84269.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "5aff7180214baac4c879d3276fceb447b84966fabe26a3163251a7f04e5b84bb",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.4624
+  },
+  "assets/comic/static/mage_defense.png": {
+    "id": "static_mage_defense",
+    "hero": "mage",
+    "action": "defense",
+    "prompt": "Use case: stylized-concept. Production transparent foreground comic cut-in for Eterno Retorno. Create exactly ONE STATIC illustration, ONE character, ONE action pose. Landscape 1536x1024. Reference image is identity and hand-drawn medium only, NOT its paper background. Vera the Teacher: adult woman with short swept silver-gray hair, charcoal long coat with violet high collar and sleeves, worn book and plain wooden staff with small violet crystal. Action: Braced spell ward facing RIGHT, wooden staff held across body, free hand raised, only a few short violet ward strokes near palm, expressive readable face. Close three-quarter view with large face, torso and complete arms/weapon; cropped below upper thigh is fine. Facing and acting LEFT TO RIGHT, designed to appear anchored at lower-left of screen; head near upper-left-middle, weapon extends toward right. Dynamic comic composition but ONE frozen drawing, NO sprite sheet, NO panels, NO duplicates, NO animation frames. Genuine rough graphite and colored-pencil sketchbook concept art: imperfect searching outlines, visible dark crosshatching, rich charcoal black, steel gray, substantial muted violet, high contrast, natural muted skin and hair. Textured handwork inside silhouette. NO pixel art, NO smooth airbrush, NO photorealism, NO glossy fantasy armor, NO gold decorations. TRUE transparent alpha around entire character, NO paper rectangle, NO checkerboard painted, NO backdrop/scenery/floor, NO white sticker outline, NO text or watermark. Keep 5 percent clear margins above head and weapons. Very few small scratched violet action marks allowed, most dynamic lights and particles added separately behind in game.",
+    "source": "art_sources/comic/static/sources/mage_defense.png",
+    "target": "assets/comic/static/mage_defense.png",
+    "references": [
+      "assets/heroes/identity/portraits/mage.png"
+    ],
+    "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-72aa4fef-ebb8-4a25-a3b6-2130d60ef73b.png",
+    "tool": "image_gen.imagegen",
+    "status": "integrated",
+    "sha256": "ff4c88168e6bfa567e699a624f5a03b94a49f44cc0f2c727544fd23c9b774b34",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "clear_fraction": 0.5137
+  }
+}

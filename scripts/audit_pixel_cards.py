@@ -5,12 +5,12 @@ import json
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / 'docs/cards/pixel_retain'
+BASE = ROOT / 'art_sources/cards/pixel_retain'
 
 def audit():
     jobs = json.loads((BASE / 'jobs.json').read_text())
     catalogue = json.loads((ROOT / 'data/card_art.json').read_text())
-    manifest = json.loads((ROOT / 'docs/art_direction/postapocalyptic/assets.json').read_text())
+    manifest = json.loads((ROOT / 'art_sources/art_direction/postapocalyptic/assets.json').read_text())
     errors = []
     illustrations = [j for j in jobs if j['kind'] == 'illustration']
     if len(jobs) != 96 or len(illustrations) != 88:
@@ -19,7 +19,11 @@ def audit():
         errors.append('Illustration IDs differ from production catalogue')
     hashes = set()
     for job in jobs:
-        source, target = ROOT / job['source'], ROOT / job['target']
+        target = ROOT / job['target']
+        record = manifest.get(job['target'], {})
+        # The production ledger records the initial card. Later approved redraws
+        # have their own source in the current manifest; validate that source.
+        source = ROOT / record.get('source', job['source'])
         ledger = BASE / (job['id'] + '.json')
         if not source.exists() or not target.exists() or not ledger.exists():
             errors.append('Missing source, active asset or provenance: ' + job['id'])
@@ -28,7 +32,6 @@ def audit():
         if meta.get('prompt') != job['prompt']:
             errors.append('Prompt mismatch: ' + job['id'])
         digest = hashlib.sha256(target.read_bytes()).hexdigest()
-        record = manifest.get(job['target'], {})
         if digest != record.get('sha256') or record.get('source_sha256') != hashlib.sha256(source.read_bytes()).hexdigest():
             errors.append('Inventory hash mismatch: ' + job['id'])
         expected = (512, 340) if job['kind'] == 'illustration' else (512, 768)

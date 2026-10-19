@@ -1,0 +1,28 @@
+{
+  "id": "guardian_guard24",
+  "kind": "hero_sheet",
+  "prompt": "Production 2D COMBAT IDLE animation sheet of Ines the construction worker. Identity reference only: strong auburn-haired woman with long practical braid, orange construction jacket, violet scarf, gray trousers, brown safety boots, BLUE-WHITE rectangular road-sign shield on left arm and a short crowbar in right hand. Match reference inks, colors, proportions and civilian tools. Original American comic illustration: bold black ink, flat rich colors, cel shadows, very thin ivory silhouette border; NO gray rectangle or reference background. EXACT TWENTY FOUR sequential full-body animation poses in SIX columns FOUR rows, perfectly regular grid, landscape 3:2. ONE complete coherent breathing cycle FORWARD chronology, left-to-right row-major. Frame1 relaxed exhale/neutral guard, frame6 inhaling, frame12 full inhale, frame18 exhaling, frame24 almost identical to frame1. defensive planted stance with slightly bent knees. Quiet steady breathing opens chest under jacket, shoulder and shield arm respond gently later; right wrist and crowbar grip adjust subtly independently. Braid and scarf sway a little with delayed follow-through. Shield is always secured to forearm; no extra hand. This is real hand-drawn anatomical in-between animation, NOT the same picture shifted, rotated or scaled. Chest, upper arms, forearms, head and cloth change relative to each other with natural delayed overlapping action. Small believable movement range: hands/shoulders 2 to 4 percent of torso height maximum. Boots planted at EXACT SAME x/y positions and ground line in EVERY cell. Hips, head size, body proportions, camera and equipment remain consistent. No stepping, no attacks, no gesture out of guard, no weapon swaps, no perspective changes, no extra limbs, no detached fingers or boots. Every pose entirely inside its cell with large empty TRANSPARENT gutters; all background pixels truly transparent including inside each cell. NO shadows, NO backdrop tiles, NO captions, NO labels, NO cell borders. Loop start and end must match.",
+  "targets": [
+    {
+      "path": "assets/heroes/guard/guardian.png",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/combat_idle_2026_10_17/sources/guardian_breath.png",
+  "action": "guard24",
+  "columns": 6,
+  "rows": 4,
+  "frames": 24,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ba61bac4-22a8-468e-9b2b-c2833edbabdf.png",
+  "references": [
+    "art_sources/combat_idle_2026_10_17/references/guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "previous_generation": "art_sources/combat_idle_2026_10_17/guardian_previous_job.json"
+}

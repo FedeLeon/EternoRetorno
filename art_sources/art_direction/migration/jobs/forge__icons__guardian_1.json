@@ -1,0 +1,22 @@
+{
+  "id": "forge__icons__guardian_1",
+  "target": "assets/forge/icons/guardian_1.png",
+  "family": "forge/icons",
+  "kind": "icon",
+  "hero": "guardian",
+  "dimensions": [
+    128,
+    128
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_1.png",
+  "queue_position": 299,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Any protagonist depicted MUST be Ines the Builder, strong 35-year-old auburn-haired woman with practical braid, repaired gray plate and violet cloak, plain battered steel shield and short straight sword. Its new face/outfit replaces the old design. ONE isolated minimal icon representing assets/forge/icons/guardian_1.png as in the reference, clear solid silhouette, sparse pencil hatch shading and imperfect charcoal outline. No complex scene, no person/portrait unless strictly essential to the symbol, no ornamental gold frame, no labels. Readable at 30-60 pixels, centered with 10% clear margins. True transparent background. If energy/end-turn: retain circular shape and clean dark center for overlaid numbers/text, use violet/gray drawn border with restrained light. If hero achievement: use civilian profession symbol (carpentry, construction, apothecary, teaching), never masked rogue or horned knight.",
+  "references": [
+    "assets/forge/icons/guardian_1.png",
+    "art_sources/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-4a9e92d5-c7c7-4c98-8385-4ad103d3c77b.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

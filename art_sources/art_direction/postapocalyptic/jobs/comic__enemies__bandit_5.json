@@ -1,0 +1,32 @@
+{
+  "id": "comic__enemies__bandit_5",
+  "target": "assets/comic/enemies/bandit_5.png",
+  "kind": "machine_foreground_bank",
+  "hero": null,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/postapocalyptic/sources/comic__enemies__bandit_5.png",
+  "machines": [
+    "bandit_5",
+    "flying_2",
+    "elemental_5",
+    "flying_3"
+  ],
+  "prompt": "Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE four-character foreground cutout atlas, TWO columns by TWO rows1536x1024. Each768x512 cell contains exactly ONE machine attacking LEFT in one STATIC dramatic contact pose, same recognizable chassis as machine-sheet reference. Exact order top-left/top-right/bottom-left/bottom-right: huge riveted industrial press automaton with a hammer piston arm; small twin-wing furnace drone with two orange burner nozzles; floating industrial filter drone with segmented dust-extraction tubes; massive dragon-shaped autonomous reactor maintenance machine with articulated wings, cable tail and bright cyan central reactor; entirely mechanical. Big head/sensors and weapon or claws, close framing. White thin outer outline around machine AND tool. All art fully within own cell with25px clear margin. No scene/floor/grid/text, TRUE transparent RGBA. No consecutive animation: FOUR DIFFERENT enemies.",
+  "reference_bank": "art_sources/art_direction/postapocalyptic/sources/enemies__animations__bandit_5.png",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-c73462c6-7214-451f-b7bc-97954f0415d6.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/identity_warrior.png",
+    "/var/www/html/EternoRetorno/art_sources/art_direction/postapocalyptic/sources/enemies__animations__bandit_5.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "e7831b8e29ed4bacdd0ce61e8004e5d9672c243942dbf9dc0bafaec65d07aab1",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

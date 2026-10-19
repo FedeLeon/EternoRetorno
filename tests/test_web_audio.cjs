@@ -1,5 +1,5 @@
 // Probe an existing export; never creates or overwrites export files.
-// Requires Playwright and an HTTP server. See docs/audio/README.md.
+// Requires Playwright and an HTTP server. See docs/AUDIO.md.
 const { chromium } = require('playwright');
 const fs = require('node:fs');
 const assert = require('node:assert/strict');

@@ -100,8 +100,8 @@ func run_tests() -> void:
 	impact.play(app,target,{"absorbed":3,"lost":4})
 	impact.play(app,target,{"absorbed":0,"lost":4})
 	check(sound_events == ["shield_impact","shield_impact","flesh_impact"],"full and partial absorption sound metallic; unblocked damage uses flesh")
-	check(app.audio.catalog.events.shield_impact.files == ["metal_clash","metal_clash_2"],"two dedicated metallic impact variants")
-	for id in ["metal_clash","metal_clash_2"]:
+	check(app.audio.catalog.events.shield_impact.files == ["steel_clash_0","steel_clash_1","steel_clash_2","steel_clash_3"],"four dedicated metallic impact variants")
+	for id in ["steel_clash_0","steel_clash_1","steel_clash_2","steel_clash_3"]:
 		var stream = app.audio.stream(id)
 		check(stream != null and stream.get_length()>0.1,"metal impact playable "+id)
 	if recording != null:

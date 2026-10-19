@@ -1,0 +1,15 @@
+{
+  "id": "cinematics__shots__boss_1_0",
+  "kind": "cinematic",
+  "target": "assets/cinematics/shots/boss_1_0.png",
+  "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_0.png",
+  "transparent": false,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7889bc8c-b95a-4583-9ad8-c90fdf38cb3f.png",
+  "prompt": "One SINGLE full-frame cinematic shot for Eterno Retorno, landscape16:9. INSIDE the underground stone CRYPT, immediately after its final guardian falls. Show the great skull-and-bone source on the central altar CRACKED APART, violet energy fading into graphite dust, bones collapsed on the cold stone floor, recessed hooded stone statues and candles. No forest, no mountains, no camp, no campfire, no outdoors, no heroes close-up. Authentic rough hand-drawn graphite and colored-pencil conceptual art on paper: searching broken contours, directional crosshatching, dark charcoal shadows, muted gray and violet pigment, imperfect lines and eraser marks. Reference fixes the correct location and architectural/natural theme; do not change it into a camp scene. Strong contrast, sparse scene details around a clear focal event. No glossy digital painting or pixel art. NO text, logos, captions, panels, collage, UI, numbers or card frames. Keep a quiet dark bottom area for subtitle overlay.",
+  "references": [
+    "assets/dungeon/combat.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": "Correct dungeon location, remove generic camp composition"
+}

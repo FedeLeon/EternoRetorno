@@ -1,0 +1,3032 @@
+{
+  "assets/battle_effects/ambush.png": {
+    "job": "battle_effects__ambush",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9c6a23631b8021d33806d49e48d12b02740d5aea94a7246fd0c79d6eb8cf7d36",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__ambush.png",
+    "source_sha256": "19e5e097f2f3aeab84a11373c7cecf30d3d032462fefb1a8f9cf7e2c59a11b44"
+  },
+  "assets/battle_effects/armor_plates.png": {
+    "job": "battle_effects__armor_plates",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3dbf164fcb9464e77a8b15c5a2d6cdc42ba6a49967ffbb31401dd198e750eef3",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__armor_plates.png",
+    "source_sha256": "b17b3521311a575e2ed44743a6f941c2fc07049e7d8d85a956188260f9a2faaf"
+  },
+  "assets/battle_effects/attack.png": {
+    "job": "battle_effects__attack",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "da374ac99539fdfaa9fdda936a8623eade06057dfe61591b1b4c6ed76c808e1d",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__attack.png",
+    "source_sha256": "24364f646e7d205873b2bae209f1436797f3f9e8b86f9982d9f1dea55e256d09"
+  },
+  "assets/battle_effects/beast_command.png": {
+    "job": "battle_effects__beast_command",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ef527dff5926c06f85941b1d7b95d80edbafd631ad0d171a7b68c5133e913a43",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__beast_command.png",
+    "source_sha256": "86bb3a2e3fdf510cd75030ed2925b36ea65ba32009a7d91870b98712362bf500"
+  },
+  "assets/battle_effects/bond_focus.png": {
+    "job": "battle_effects__bond_focus",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5b54a754a37a8441d9c6dd03719430ad17a0996675047040311fee90284eb0b4",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__bond_focus.png",
+    "source_sha256": "755e0a7153ee63bfd2668a5bd7d556b45d68ba39b36e5931ab7502dbaff77793"
+  },
+  "assets/battle_effects/bulwark.png": {
+    "job": "battle_effects__bulwark",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "147fde018e7c08269f55469f52a346556675acfd33f6b3eabf78268cb0a65f3e",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__bulwark.png",
+    "source_sha256": "a04922d2c18c2a85cff92686ad1b40ec73873c350a21807815457615ef23db40"
+  },
+  "assets/battle_effects/charged_strike.png": {
+    "job": "battle_effects__charged_strike",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1fdf59b384a480c0e13a99dfd2fdcf680b60ea9da82215891b9a84832ed7ee6b",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__charged_strike.png",
+    "source_sha256": "793cd3c0dfafc89fddbf1388649e0a809abe9b849d3c3d1dccd0a5f52509667f"
+  },
+  "assets/battle_effects/counter.png": {
+    "job": "battle_effects__counter",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "23729cf8523f5be86fcd75e04f7865986220e8d16cfb7e1716c064bb847dcd35",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__counter.png",
+    "source_sha256": "d3a62c0839f138067983860375db767091e8f661e5f41401d798191beb589242"
+  },
+  "assets/battle_effects/curse_blood.png": {
+    "job": "battle_effects__curse_blood",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "737ad813bc9529c215b0f72c63453260c709e592a8deedcc048a26890f22573c",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_blood.png",
+    "source_sha256": "2b96c28f87fa201146fdc9a2048a024a7c26e8c1eb9aa1f96e3c63ec6eb69917"
+  },
+  "assets/battle_effects/curse_burden.png": {
+    "job": "battle_effects__curse_burden",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8443ad70f25dc1380d64f8da7b4bdec58f4ed2ebf11423223f68da543cbaa30f",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_burden.png",
+    "source_sha256": "2c6c932ee8959a69a5ca8bf8a39601e7de7616668fc9065d87c48fb89b107ea0"
+  },
+  "assets/battle_effects/curse_scar.png": {
+    "job": "battle_effects__curse_scar",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "df9268f12ed150c9b7b8af8bf4d8fe4bb5657cc03a74cb27e7e6d671833afce3",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__curse_scar.png",
+    "source_sha256": "a1140ccc47b45b0336c9cb62e276686cec902c42d48c58a314d222d126aa5f37"
+  },
+  "assets/battle_effects/embers.png": {
+    "job": "battle_effects__embers",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e1643ad1af2a19d708b7269619d9ca41e0ac0efe25ea85fc3e8d27faa0701b82",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__embers.png",
+    "source_sha256": "0dd5a80b71ef68c429f36c4b807fe39a6b7331329329f74fd46bb97ac696dac0"
+  },
+  "assets/battle_effects/enraged.png": {
+    "job": "battle_effects__enraged",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "895116cc1588d528c056dae770b388032fc54253f899f2806b5188e0bf651813",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__enraged.png",
+    "source_sha256": "d4c2a4b14f6f384a7e76534742bae64fa9cb14203e0d7ed6149b24b559bda2c2"
+  },
+  "assets/battle_effects/fracture.png": {
+    "job": "battle_effects__fracture",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3c8f8248d140e345ecfd8f865717e0e85a96e316b8f9a86a3a9ae66a4acbd69b",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__fracture.png",
+    "source_sha256": "63856b6d6b13bece4632fd185f795bdb68a483e11780661863414e2e6080ea1c"
+  },
+  "assets/battle_effects/frenzy.png": {
+    "job": "battle_effects__frenzy",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "275b6b028484900061558addf32273a7da5c252ba5671c185da2698aec44d8e3",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__frenzy.png",
+    "source_sha256": "a3cfb452586133bfc7037485f6e4abe361f441050085b083d9b6b666c85c511a"
+  },
+  "assets/battle_effects/grief.png": {
+    "job": "battle_effects__grief",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5c45fa4ac200ba15adf81c1c170ebbd592882529fad67c39ef1aef66c438b760",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__grief.png",
+    "source_sha256": "dd3e616d08c5a9b57c4346f85f52ee73f58e8ae228c23c522015cd75916d6f50"
+  },
+  "assets/battle_effects/guard.png": {
+    "job": "battle_effects__guard",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "dfd4c1b7ab02fa402a4b5286a22e8224a75131292f92617c2a6f0ea528ce0f6f",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__guard.png",
+    "source_sha256": "2585e483dbfc05b481b9a5e8229f8b671705b508e05c17a173c83d06b5bf2426"
+  },
+  "assets/battle_effects/healer.png": {
+    "job": "battle_effects__healer",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "13d8ce513eb82aa2b47df069bf8e7fcef38eca4b5bfdcd116fd9b848f3a8eb8d",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__healer.png",
+    "source_sha256": "741832977b36b92e57cd50870cdbb2e984e3126eef667e304fb015fc96df265d"
+  },
+  "assets/battle_effects/imprisonment.png": {
+    "job": "battle_effects__imprisonment",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "af6193079c1f98d98d2444c9f1ac6516d1754a91101411b5df572f916242255f",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__imprisonment.png",
+    "source_sha256": "5112f44f2248a1daa5a11be4423ff9bd3e2a954862596a96a788376925c6bc28"
+  },
+  "assets/battle_effects/magic_boost.png": {
+    "job": "battle_effects__magic_boost",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6d4bb81a481480fa17fce5b3551a2973cf3f51e68201d0e0a7a785836b9f70c2",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__magic_boost.png",
+    "source_sha256": "0e75e70ed9496b5438ad6451d3ac25e1c6343d70f636bd959f5f6303fd1833f6"
+  },
+  "assets/battle_effects/poison.png": {
+    "job": "battle_effects__poison",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "36d955a6c115fbdf3c15b2c61d39b39a51585ba5a3ef64f07681b5f568c4f6e3",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__poison.png",
+    "source_sha256": "0341e68976f29de03b33d271397912f4bfac49ae09498ce83eda14a08ac0d6d3"
+  },
+  "assets/battle_effects/prepared.png": {
+    "job": "battle_effects__prepared",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2f8c4ddc5e607bdc4d28ccedf82b5d5d184592c78b788be2a811ab65daba8f1d",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__prepared.png",
+    "source_sha256": "0234e8c9000da5cc6be916675758fb235fc8fae4b51befe7b0bfd2ebacf7d32d"
+  },
+  "assets/battle_effects/protector.png": {
+    "job": "battle_effects__protector",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e232c58c62f5065592e2391ce5a035ed2740bfc7e184013dc40af8c1bbb4c3de",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__protector.png",
+    "source_sha256": "b50e2eab8eb56f7709c4fcaf5915592b627c882e76520019697e58e07ebf15fa"
+  },
+  "assets/battle_effects/rear_guard.png": {
+    "job": "battle_effects__rear_guard",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bb6480a9ff1275da458c706b0929c1bdf12f63a68b99383057a7e9fae8dad7ec",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__rear_guard.png",
+    "source_sha256": "3338ee23411e56e70038c2048a17c35319574c5dd3430a257a88d0dc3ed59163"
+  },
+  "assets/battle_effects/resurrection.png": {
+    "job": "battle_effects__resurrection",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "129e38659f24efc2d06eebec61043a104e55250340158511d821c97a55cf1e9f",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__resurrection.png",
+    "source_sha256": "037e4f8f55e98d29c26c9b495fa2c9ac0ef48a2fc102087f4535575ca3670f3c"
+  },
+  "assets/battle_effects/roots.png": {
+    "job": "battle_effects__roots",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b160f265d0f47806d7665bfde5187d87bbad9cbdf0733e6d90ec81fe2950c1d0",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__roots.png",
+    "source_sha256": "c903e445eac9c91c6b04a1474a4f4c56b2a472e8ce2946aae1aaaf2d3c27b86c"
+  },
+  "assets/battle_effects/set_block.png": {
+    "job": "battle_effects__set_block",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c73ad05c5258f39cc74edb238d057ec0c9ade5b437884790a6dffe514c5fc479",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_block.png",
+    "source_sha256": "6fd981df47d80d7e5f43f0af6910fc12d2b8b1818a21edeb6598ce44627339c6"
+  },
+  "assets/battle_effects/set_heal.png": {
+    "job": "battle_effects__set_heal",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4658f56e64428afee31fd1d81ac2a296299f6a3120b7b47fce5dc883278c8f0a",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_heal.png",
+    "source_sha256": "a85e9d595cc95d9ac58499d0da7163e87bfd105c191e95aa49984bfa06d64f7c"
+  },
+  "assets/battle_effects/set_multi.png": {
+    "job": "battle_effects__set_multi",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fe87f888d4a66c66d8c455bad92e9309619b8e7bda593b29cc800f236e70578a",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_multi.png",
+    "source_sha256": "aac2f40cfa1c7b77206b0534403b0df226b23bd88c7e73bedd68982eb62079c8"
+  },
+  "assets/battle_effects/set_poison.png": {
+    "job": "battle_effects__set_poison",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ae16bb36835a7fc55f1601418339f0ac55df8941e4c2f5e128956106c8454657",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__set_poison.png",
+    "source_sha256": "9dd80fee6231daed40459982b7e754ec7bf885074a835f5a8f07fc54bae9adc1"
+  },
+  "assets/battle_effects/source.png": {
+    "job": "battle_effects__source",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "05b3d226f037f7fd81acb20ef66d0976a7257645d8847493113b434313bb5521",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__source.png",
+    "source_sha256": "c3bb1017ea5df356a00b10eb8f18521af68737d819cbb6440a2aaf20d80f5252"
+  },
+  "assets/battle_effects/strength.png": {
+    "job": "battle_effects__strength",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b832a5aa589b0f40f46b743489d1081da45944a22694df28428e9e4c51368419",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__strength.png",
+    "source_sha256": "1d8482cbc39eb16fa42e5638f91a590ace4b6f3cc6cb31cd7496645ae13b22cf"
+  },
+  "assets/battle_effects/tainted.png": {
+    "job": "battle_effects__tainted",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "95669f08e4aba697fb9cfb67dba547cc7558c299fa9d0caf04f206d62e4ebb94",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__tainted.png",
+    "source_sha256": "623016e529bdc19c786a915388532a2cf4399bedc82448a088b43daa138ed0dd"
+  },
+  "assets/battle_effects/vampiric.png": {
+    "job": "battle_effects__vampiric",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d5123fd4433a0cfd8dc58e6231827e656d0372b5143c910e6cf686721f0ed130",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__vampiric.png",
+    "source_sha256": "4f75cd0471a9072135a56225f0ba721f221f3850f8fcae224fd9ed868d70d294"
+  },
+  "assets/battle_effects/weakness.png": {
+    "job": "battle_effects__weakness",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "45f3813815a2ee368ef1e7edb1677d4cbe4b2af2398d901abc24507763e760a6",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__weakness.png",
+    "source_sha256": "95d63b021cb132f5f9d2bde1528b9a55e0d921007d22fecc7017995ba0249e6d"
+  },
+  "assets/battle_effects/weapon_boost.png": {
+    "job": "battle_effects__weapon_boost",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9a1743fb1ee153732b2b715d7ab3f6eafe14012fd6d1cc4058a5ecb923f770a2",
+    "source": "art_sources/art_direction/migration/sources/icon/battle_effects__weapon_boost.png",
+    "source_sha256": "8e0283ba4fd5306c8b7e6a4a1ba0ef29bb508ecb283af2f5659f1df2db88ec8c"
+  },
+  "assets/camp/background.png": {
+    "job": "camp__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "90948a3dc5611e0443f47e894d650088a9262c3bc1de2a6d02ac7ee886e2de20",
+    "source": "art_sources/art_direction/migration/sources/scene/camp__background.png",
+    "source_sha256": "f520c1ed736851ee01dabc0795cefde3681447d1a8054a1bd4d7d4842fcd8dc6"
+  },
+  "assets/camp/fire-natural.png": {
+    "processing": "reuse approved 24-frame pencil fire",
+    "sha256": "3bde84df10fe3a6c858cd7421ea3146c080ab33b4431eff2341ec8483441b4f0",
+    "source": "assets/base_camp/dusk/fire.png"
+  },
+  "assets/camp/front-128.png": {
+    "processing": "four approved faces, central square crops",
+    "sha256": "11e8c0887c43e0f5489324e54f85b44957eb71ef1cbac1703616db2e542fff83",
+    "source": "assets/heroes/identity/portraits"
+  },
+  "assets/cards/frames/guardian.png": {
+    "job": "cards__frames__guardian",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fcf162ad95cec7dfcb6671f1288b569373d9f89ff8c6c8ba302406d17c2751df",
+    "source": "art_sources/art_direction/migration/sources/frame/cards__frames__guardian.png",
+    "source_sha256": "e9d76ef34ac819d0a0c71bfca9da081fa6e512c665535a8857249e79dc3224b3"
+  },
+  "assets/cards/frames/mage.png": {
+    "job": "cards__frames__mage",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bbc5f8987d7282a2cf82b397ae6bc2bef62f19424d65672321aa5e411bdeae1c",
+    "source": "art_sources/art_direction/migration/sources/frame/cards__frames__mage.png",
+    "source_sha256": "7a479cb9143efda542f49d95b82dbd1be5dd7bcfab178b9b487c64c0298b9313"
+  },
+  "assets/cards/frames/rogue.png": {
+    "job": "cards__frames__rogue",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "aead470c00134194f6128c5b6c6c7382ec3b82f432a9a98101a77909d4d3e242",
+    "source": "art_sources/art_direction/migration/sources/frame/cards__frames__rogue.png",
+    "source_sha256": "e4e65fe1aa8ee9ebcea1988ddb8febad5649aee5cb82be1614727ec4f6629286"
+  },
+  "assets/cards/frames/warrior.png": {
+    "job": "cards__frames__warrior",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "953918808a79204b9c3e2dfd06366f89e25815917c188955e60afc4207c44fd3",
+    "source": "art_sources/art_direction/migration/sources/frame/cards__frames__warrior.png",
+    "source_sha256": "aa308d8d38d97888b2f743701e5349770065a3431aec2332de73a6f932108bb9"
+  },
+  "assets/church/guardian_protector.png": {
+    "job": "church__guardian_protector",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "610c56e77482037f2acb9a44f013f40a4bef9f85da864ab92655089380417fed",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__guardian_protector.png",
+    "source_sha256": "aca32e2242d9a2b690342bfd5edb25ecc6510ceaf1ae95b85ccd1c4323885676"
+  },
+  "assets/church/guardian_retaliator.png": {
+    "job": "church__guardian_retaliator",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0fa3644f097677af53eae402f285e447b13897ab9a0820e91ded5bb16efa668b",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__guardian_retaliator.png",
+    "source_sha256": "02183379f8fc798c74eee903abde7693a194e6fc8f48607063f828bb38124c48"
+  },
+  "assets/church/mage_focus.png": {
+    "job": "church__mage_focus",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7dc789a16420d79c401602276bcecf21db3d62edb979e15ca3a1d58b378b7a75",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__mage_focus.png",
+    "source_sha256": "40a59979688116d288666b324ca9eeeffa21caab91dd128606d400dbf69c2dd9"
+  },
+  "assets/church/mage_tempest.png": {
+    "job": "church__mage_tempest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "91bc7b096ff1a856aef4260779ed17570ea3c92f6ec3dbfe99c3ddb6533fa905",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__mage_tempest.png",
+    "source_sha256": "ada6f0fa49b9e241614513c39b3e1a70f7ec67c9226edbe5e093fcf2d11c47e4"
+  },
+  "assets/church/rogue_assassin.png": {
+    "job": "church__rogue_assassin",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d8a3fc4245ef6ada4b6c32e3d2917a92b51a64ccaffecfb4b6f06258cadac5df",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__rogue_assassin.png",
+    "source_sha256": "1c2a0d8c813062393dc0b979df79ec765c78d0e7144f2181938d695ce829ebb1"
+  },
+  "assets/church/rogue_venom.png": {
+    "job": "church__rogue_venom",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "26b631b798ea451e2084c9a177e8aa9281176a6a414a7f4b66c8c431cd96a9cc",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__rogue_venom.png",
+    "source_sha256": "12aedd0a9cad4c5a1de3574ef384d2d2566e28174d29365c857487eacb66dd58"
+  },
+  "assets/church/warrior_executioner.png": {
+    "job": "church__warrior_executioner",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "52ddd692d8bd11e8b185af06d8f1671c6aeb302b5cf24cdf70abca342a851ee8",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__warrior_executioner.png",
+    "source_sha256": "981ea429374e155c45e951058bd467bea40bdf17e07b56a2b77f532ee1a0dd3f"
+  },
+  "assets/church/warrior_whirlwind.png": {
+    "job": "church__warrior_whirlwind",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c28b78deca803b567f93d53d0a272c62b497a3030a329b535468fafeec78cd2a",
+    "source": "art_sources/art_direction/migration/sources/specialization/church__warrior_whirlwind.png",
+    "source_sha256": "f44d536a4fa770d09d1e13955430d80a9a5696393e53c46657c5826d62f5e4f8"
+  },
+  "assets/cinematics/crypt.png": {
+    "job": "cinematics__crypt",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0cdc765a6545a943504f91439d266b052ef503501d1207ce1f512c2fe8ab262c",
+    "source": "art_sources/art_direction/migration/sources/scene/cinematics__crypt.png",
+    "source_sha256": "ac3a2f88a2df2be2efd21fba4e425e36377cdf9b2f353eaf94078c9c5576c7cd"
+  },
+  "assets/cinematics/forest.png": {
+    "job": "cinematics__forest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "451398aafad72a59f42ef4d880f7f0b38223a8b37062698786fcc2df6eca45d4",
+    "source": "art_sources/art_direction/migration/sources/scene/cinematics__forest.png",
+    "source_sha256": "47c26682cf28a9c60854f20ff2870099fb265a1083a79e788655aaefa3876a40"
+  },
+  "assets/cinematics/intro.png": {
+    "job": "cinematics__intro",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "936fc5f84181c2ef75cca7ed513135bc88b28a4413dd6efa24af1887244110d8",
+    "source": "art_sources/art_direction/migration/sources/scene/cinematics__intro.png",
+    "source_sha256": "f41b60cc62f868092d651e1adc54224f56c7f621714739b76b2e00d41129b810"
+  },
+  "assets/cinematics/portraits/guardian.png": {
+    "processing": "approved portrait fallback",
+    "sha256": "8bc59ef14b5b6291a5b9fc9698925f0744cab17349f5e32c75bb9e23bdd53905",
+    "source": "assets/heroes/identity/portraits/guardian.png"
+  },
+  "assets/cinematics/portraits/mage.png": {
+    "processing": "approved portrait fallback",
+    "sha256": "d6b8c6ec5d5f2fc5b081d9c41031b2d6b9a6f34301862dbeb9f704b074242f2b",
+    "source": "assets/heroes/identity/portraits/mage.png"
+  },
+  "assets/cinematics/portraits/rogue.png": {
+    "processing": "approved portrait fallback",
+    "sha256": "f6f80595997db3078960b575d22af6ae2fa7e1d45baefd4a82ba2fc003fcdf05",
+    "source": "assets/heroes/identity/portraits/rogue.png"
+  },
+  "assets/cinematics/portraits/warrior.png": {
+    "processing": "approved portrait fallback",
+    "sha256": "faee921f0127f291bd5265c5eea9626cc08bc83fb24bde507a6b7377536eae0b",
+    "source": "assets/heroes/identity/portraits/warrior.png"
+  },
+  "assets/cinematics/shots/boss_1_0.png": {
+    "job": "cinematics__shots__boss_1_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1d8c03eb02389d614e02f3d1722cd0a8f32c87ec828b23ecba146d6d32c5dcfe",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_0.png",
+    "source_sha256": "1b4b0c4d959395ef7c10a30fc1e2dd48752717def6b05b2848930ee83981a180"
+  },
+  "assets/cinematics/shots/boss_1_1.png": {
+    "job": "cinematics__shots__boss_1_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fc458d254ca43143a3789719ab0eafbfca5d31af7f22e43a7c49d7e7182fe8d5",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_1_1.png",
+    "source_sha256": "56f40d829ce33d48c6e82992b4eae5e4d0eca24b7203a7f9f715c9e70a1b4885"
+  },
+  "assets/cinematics/shots/boss_2_0.png": {
+    "job": "cinematics__shots__boss_2_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "43d5d2836e6c1e532acad00f506bd0a3e6f2f7159dc7aea1681dc98af134616a",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_2_0.png",
+    "source_sha256": "c396fe676df222e21a3a937d92acb96ad17c1cc30cd2117ac3c125770b95649e"
+  },
+  "assets/cinematics/shots/boss_2_1.png": {
+    "job": "cinematics__shots__boss_2_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "418535f3b16af39ef239674cc879f62bb9b5da8b15353af1d677ce642ace3f87",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_2_1.png",
+    "source_sha256": "c267ba05dda06414fdb3177fb7c422f64d7dd9a6358df18085dd7670eb151931"
+  },
+  "assets/cinematics/shots/boss_3_0.png": {
+    "job": "cinematics__shots__boss_3_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "35f6a56ea0d0b0f370bac39b27ee52ce8b9328795593a967e125a84aae19a3a0",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_3_0.png",
+    "source_sha256": "4bc65f02b4facb15801a0a4c4765fa5927093720bfd58eaba5461dd1416c1dfd"
+  },
+  "assets/cinematics/shots/boss_3_1.png": {
+    "job": "cinematics__shots__boss_3_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cffe5967b03d736f9ce967ee869d75703a698d20c33fa791992fce9e75e3d3c3",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__boss_3_1.png",
+    "source_sha256": "a5e54d57534e386290e8300b1c0d67bf009c772f3619ed1cb509fd2ab6221369"
+  },
+  "assets/cinematics/shots/hero_guardian_0.png": {
+    "job": "cinematics__shots__hero_guardian_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e818714f3bebc2cfbcc1fe85bbd7e596feb993df4e8f3cac1b0bced3e3bcaebf",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_guardian_0.png",
+    "source_sha256": "2ee9d3fc1633b7d398bf2c1784615506e1caefc7965afca6727e9dfdfd1d7c78"
+  },
+  "assets/cinematics/shots/hero_guardian_1.png": {
+    "job": "cinematics__shots__hero_guardian_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4639949bf53d134ab2ec53196b2f34f3cccabe67e3e8baaef4ae3c289078e99c",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_guardian_1.png",
+    "source_sha256": "71bd3db8c5b95360754dfe5d727dfdc2ac050b3636636e8139ca9375dfc47ff3"
+  },
+  "assets/cinematics/shots/hero_mage_0.png": {
+    "job": "cinematics__shots__hero_mage_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cf8bdfc37c63bf893981deddf13da1d00e28b953a3e881bd4183621d4ae3b117",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_mage_0.png",
+    "source_sha256": "0b56090840f2832345597851ee53eb3d74c65fe717f6b6ed6fbf76dd4b4e4800"
+  },
+  "assets/cinematics/shots/hero_mage_1.png": {
+    "job": "cinematics__shots__hero_mage_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "12acfaa5459f655cc8003841308108238729aed68c09683b73a73ffaf0d1eb2c",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_mage_1.png",
+    "source_sha256": "27a31546e0f2dfb958535cf64d41444d7e7433d4350ed1e1b38f16d1cc5d7d98"
+  },
+  "assets/cinematics/shots/hero_rogue_0.png": {
+    "job": "cinematics__shots__hero_rogue_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8eb73532e08ec1acc05ef0c2c98c28a6407349924cb43b8c9e8a7ccd9fae8a88",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_rogue_0.png",
+    "source_sha256": "11d57af54e408a66b0167e53def857e5b1211a74b64e4acd6267c60c4d0edede"
+  },
+  "assets/cinematics/shots/hero_rogue_1.png": {
+    "job": "cinematics__shots__hero_rogue_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1c065dc726c02ae8f3feb812033097315cad07fa97a216f587a11289fe8ecd72",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_rogue_1.png",
+    "source_sha256": "aa36c09112ff5095c3d212341a7994404b1b35a7a526425ed99e97c83474b1f5"
+  },
+  "assets/cinematics/shots/hero_warrior_0.png": {
+    "job": "cinematics__shots__hero_warrior_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bb2a80f678697db4e3922fc2803fdc4bf28973d11eb5979fd24519660c8c8a58",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_warrior_0.png",
+    "source_sha256": "5cbd7056513c615e5da135fcba4b628b6885c7101f9c7c51d7d73514e6ac1c28"
+  },
+  "assets/cinematics/shots/hero_warrior_1.png": {
+    "job": "cinematics__shots__hero_warrior_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8cf7763f87bdd7d1c7b190e917adabf59ada3fae516478f671a168ac653f04d0",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__hero_warrior_1.png",
+    "source_sha256": "dc4fcd16c7f18618228d20c44562667e77a8748423a980b9da476d910b3d3232"
+  },
+  "assets/cinematics/shots/intro_0.png": {
+    "job": "cinematics__shots__intro_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6fce9ad4d501a69ec0845b28a06980d002b24a50991e9437c36016868f023b0d",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_0.png",
+    "source_sha256": "1143a2e37af35bce5423188a59a522972a6ad287691ab09910abe65f6914a4ba"
+  },
+  "assets/cinematics/shots/intro_1.png": {
+    "job": "cinematics__shots__intro_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1126dc84f037512ba758db1431deac13dd9284224c2409755ba3fa419d00c999",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_1.png",
+    "source_sha256": "3eebb4504da458de96d011eb9db96586509773b3d9008542be4f85f8c8c7b0c3"
+  },
+  "assets/cinematics/shots/intro_2.png": {
+    "job": "cinematics__shots__intro_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6e3942cd0259b4aed5d6ab364d7e00f4938e24010b6d96f613c1a94e4927260b",
+    "source": "art_sources/art_direction/migration/sources/cinematic/cinematics__shots__intro_2.png",
+    "source_sha256": "0b48637aa83ccdf990938ece6d85d89b203b52f5b13a414d3ffa33e36d6eaa12"
+  },
+  "assets/cinematics/volcano.png": {
+    "job": "cinematics__volcano",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bc1a378ca91f9435aae7dbcd72bf4c608042a8f7073d5aa040b6bdf0c9f3c463",
+    "source": "art_sources/art_direction/migration/sources/scene/cinematics__volcano.png",
+    "source_sha256": "26cc8447064c74bc4710f6b97bc1147ff1f173029a15e21a930eed56983dc2b5"
+  },
+  "assets/collection/background.png": {
+    "job": "collection__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4cc66842a939afefd25c2f494f8cdd6f4585c8ffe065c8e273b2fad2350240bd",
+    "source": "art_sources/art_direction/migration/sources/scene/collection__background.png",
+    "source_sha256": "99e8a5b9104f6765e909c579a5eb94eba85488659bbd2aa607adf90cb8076dfd"
+  },
+  "assets/collection/icons/fifty_battles.png": {
+    "job": "collection__icons__fifty_battles",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8de2530a27b095c50660505e4fe7fcb45433c35fa24cea2a188cc4c1dfbcc2d0",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__fifty_battles.png",
+    "source_sha256": "e2bbad5a55aaeea0428aac518709bc45241eb4ffa8fd1bcff4be3200d0363823"
+  },
+  "assets/collection/icons/first_battle.png": {
+    "job": "collection__icons__first_battle",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "470eb0ee0405de6b50997e0a7a855546b289bfd62f671f9e2b79230a0a8439fc",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_battle.png",
+    "source_sha256": "d8ba0bc55abd73768cf0bc6b896e51cc7fd3a1c467c20bc114dff5d5b09cde2b"
+  },
+  "assets/collection/icons/first_chest.png": {
+    "job": "collection__icons__first_chest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "659bbfd0749f89a94cb45bb6f57f9c4059c942c285beecd8bf8a501ab7772447",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_chest.png",
+    "source_sha256": "4d9937bdd09c56024b3467664dde9fe8bf05d8ac892a9917d19724f9fb5943a3"
+  },
+  "assets/collection/icons/first_contract.png": {
+    "job": "collection__icons__first_contract",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "18ae6397e45f3e18a01668e35ac8ccb5ca73461c0b886629212bdca44aeae9ba",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_contract.png",
+    "source_sha256": "b3833d4c07b8c5805c7c3e675b42f7dbf3b2fa6052c1e73c3da3b6f5400509ca"
+  },
+  "assets/collection/icons/first_elite.png": {
+    "job": "collection__icons__first_elite",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4c48f1e7ad4ded8469d3cd509a801cf6e9da37b6ad46cc6bcbfff91a9ac01ed8",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_elite.png",
+    "source_sha256": "926bca8894d51576ea75ed1457f0beb5a1948067e567b85bbb802dd8bca824be"
+  },
+  "assets/collection/icons/first_guardian.png": {
+    "job": "collection__icons__first_guardian",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "20944d3ded5f88cbefe8a9cbf53658a1ce7230d9535cb90b09ed3822a454108c",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_guardian.png",
+    "source_sha256": "62c4d3a24575c35f738b3bd72cca9c26bfc5d448e3bd7a6c9858bd27da98f4d3"
+  },
+  "assets/collection/icons/first_purchase.png": {
+    "job": "collection__icons__first_purchase",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c2d3c90c31c05922f76244af3617afdcd5375eb4562049e34ee1bc038d1d4066",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_purchase.png",
+    "source_sha256": "4e9670bf179e7de1252712314a63548e9f3994ea5365f5ffd6266b6b862bb0fc"
+  },
+  "assets/collection/icons/first_steps.png": {
+    "job": "collection__icons__first_steps",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bc402390dff5484f87646d25edfbf61a3b23914b8d6e96680ea9764b53438050",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_steps.png",
+    "source_sha256": "46c7897e652686ff71868ec315efc7b54b6b747395ff7e802dfd091c374934e2"
+  },
+  "assets/collection/icons/first_upgrade.png": {
+    "job": "collection__icons__first_upgrade",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c17c265d2408eced3b6ceaa81d3205b4cb783bcd35728d75038ae521f2d41f0e",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_upgrade.png",
+    "source_sha256": "f499c325f350aff68be1bda39ca7bd128bd0961fc4626ba18fed0669c6c6ce97"
+  },
+  "assets/collection/icons/first_victory.png": {
+    "job": "collection__icons__first_victory",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e91e6b698e2237fca920e3410de822243762b9eb3d6932af566f5b5af8cf92fd",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__first_victory.png",
+    "source_sha256": "780be2cd6fde86167e1225b3d0b31ecb638413ec6f5d5366d207bbd17a95f591"
+  },
+  "assets/collection/icons/five_victories.png": {
+    "job": "collection__icons__five_victories",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8bbafe389e0ffe75490bff47e5c43a833d517e437d1d0d587f1c3877a43b3fe8",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__five_victories.png",
+    "source_sha256": "6cc461e439d3fea2e17040335ba97a3bd258f14e51002ed2c8498a25e908d755"
+  },
+  "assets/collection/icons/forbidden_pact.png": {
+    "job": "collection__icons__forbidden_pact",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "35ff95197418645e3aea5f01e3a56afe738d71152ad09c6b39209b39fae73f24",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__forbidden_pact.png",
+    "source_sha256": "ea56244da1e599ce44c4f42bd76bd586b0d8eb556ce01aad92842339ba2eba92"
+  },
+  "assets/collection/icons/guardian_victory.png": {
+    "job": "collection__icons__guardian_victory",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bc7cbb54d1a0d8f979e5555aa30188f230c6673fdacb004198c0508e91f51ecf",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__guardian_victory.png",
+    "source_sha256": "764d34637ddc67f126d772105f7170a59dc485868555148e639f6e7c08e5c3a7"
+  },
+  "assets/collection/icons/home_again.png": {
+    "job": "collection__icons__home_again",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d7d812f2d475c9088e9557c4af8468bbd9398866f53f6e211ef22d29ea74b383",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__home_again.png",
+    "source_sha256": "1a11a742fe7bc25c3a615654eef72d5309a672ff98a0a58075209c6971a9276d"
+  },
+  "assets/collection/icons/last_breath.png": {
+    "job": "collection__icons__last_breath",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "12fdbf721b31830644114800cb687fd1cb7fbee1e24c835df828b3f72b0bc215",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__last_breath.png",
+    "source_sha256": "6bb3f41a86c69b7ac825beaa13dd5856e51e35184f3e77421c2c775b1ae8fe5b"
+  },
+  "assets/collection/icons/mage_victory.png": {
+    "job": "collection__icons__mage_victory",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f45da20aab7c517b272a2909fa5dccfad1e563019fe81c90ab2a80dd1c7958cf",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__mage_victory.png",
+    "source_sha256": "b5f780cee3737b6bc907a22d020f5eab498b0199f4e32abbdee3b7f7caaaf7d8"
+  },
+  "assets/collection/icons/master_armor.png": {
+    "job": "collection__icons__master_armor",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1611f28aa1c52dcdfb32413a06129e842e12b99d697d8da3a9f9b57c5fbf8210",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__master_armor.png",
+    "source_sha256": "ccc1c8175c8db71750604896f65e616514c7873f2a447a0723fa71e82c20b91a"
+  },
+  "assets/collection/icons/master_weapon.png": {
+    "job": "collection__icons__master_weapon",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "24085d576ba91c6b9050f12a1a689ca287cab1d8a2e42b9ca7fa65e904965ddf",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__master_weapon.png",
+    "source_sha256": "8b0caa90a9458660ba34f075efd667fd51ce6199a3d436d9ab2dc8e30ee5f9e9"
+  },
+  "assets/collection/icons/oathbound.png": {
+    "job": "collection__icons__oathbound",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9f093972e42e813a44976376d4af1cd441046a678a4aa0a3075fd5a26bb9d948",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__oathbound.png",
+    "source_sha256": "707012c61d8942e927e03a9d4da9d51d44142232d5b77a84cbcb1953f4ba2102"
+  },
+  "assets/collection/icons/rogue_victory.png": {
+    "job": "collection__icons__rogue_victory",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b845b5a9cff1f322263116c96fc7f91a773e334345ff38bfddd2d331dc3e5a26",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__rogue_victory.png",
+    "source_sha256": "d84cc676bde6f81b54d7845e328afcfb1062396884959ca9fda91595b3ad0b2f"
+  },
+  "assets/collection/icons/six_echoes.png": {
+    "job": "collection__icons__six_echoes",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "250da2a5794a6e27f511533ae79c20ca3096bcb120514bc4c1aef4aa8a1253c3",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__six_echoes.png",
+    "source_sha256": "7075451b0c306dfb081461ee119034ba9975a69aaeacf8e67b0e939c990c0519"
+  },
+  "assets/collection/icons/ten_battles.png": {
+    "job": "collection__icons__ten_battles",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1f5d71391638fce348078a4caf76652aa4eeaf01cbce2eac97bb2e808960813b",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_battles.png",
+    "source_sha256": "eba35d4fb024006e2a62fff93c7ea4adcef66499478e7e47202721e0487d7613"
+  },
+  "assets/collection/icons/ten_chests.png": {
+    "job": "collection__icons__ten_chests",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4c9062e472b9611d8d7ab69f70b54758dc22f774f7a8058186db3e0fec6d63d0",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_chests.png",
+    "source_sha256": "ef3b17532799d7011c13179bf78ad971e29436fcd54ba5d7ca765e876e51490d"
+  },
+  "assets/collection/icons/ten_elites.png": {
+    "job": "collection__icons__ten_elites",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a06659e49e260b8364d666a7ebcedeb5f6bcc5ff974750a8d9eedd1581eb97f8",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_elites.png",
+    "source_sha256": "978f72b8c46018b6e5720714960718c2acf7d043d00f64968d73498bfe377051"
+  },
+  "assets/collection/icons/ten_purchases.png": {
+    "job": "collection__icons__ten_purchases",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8ae8d9e08019271ac3594211fabb2017ad8e4b93042296c9a2f50112973266ac",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_purchases.png",
+    "source_sha256": "433166f8d957992b7cd0714220836bc5744f7a979ac63fb2110a40f61252e96f"
+  },
+  "assets/collection/icons/ten_upgrades.png": {
+    "job": "collection__icons__ten_upgrades",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "38473f3bbf208b5b221aee261128bc4819ae4efee1d75777b728d6edea81aa6e",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_upgrades.png",
+    "source_sha256": "288d2ad28df3aff74b7e255a6d7f13b3278fd0c2fd9399c5ef04d48a87fbf862"
+  },
+  "assets/collection/icons/ten_victories.png": {
+    "job": "collection__icons__ten_victories",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cf01d07d122ec40b21e80d5edfefd157f2a578949036db18aa714d4f21eefcc1",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__ten_victories.png",
+    "source_sha256": "53ea309275bd7f829fc3cb518fdf5a01f2780d6142cb3738ab6ca4697736ecaa"
+  },
+  "assets/collection/icons/warrior_victory.png": {
+    "job": "collection__icons__warrior_victory",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d92e01615fa8286a0d3ed9b5c3df70d7893ce17a300a2e4ba0db8a3103e43955",
+    "source": "art_sources/art_direction/migration/sources/icon/collection__icons__warrior_victory.png",
+    "source_sha256": "891bdd3f3949cc027f64dd6ab005c34bab438752c7de411f9143ca5033b3be65"
+  },
+  "assets/combat_depth/dummy.png": {
+    "job": "combat_depth__dummy",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6c1d06dcdffe381b1daf172857248a40bc737e004d3990c2353be57150210c63",
+    "source": "art_sources/art_direction/migration/sources/scene/combat_depth__dummy.png",
+    "source_sha256": "3f55766a4947a705111ffd628f7b940cb2a8e0ddc671d67a129d94138ab7819c"
+  },
+  "assets/combat_depth/merchant.png": {
+    "job": "combat_depth__merchant",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "07b5a3a34593606116595cea7097c63befeaf325aa182b3b373aab9c56ccf0ce",
+    "source": "art_sources/art_direction/migration/sources/scene/combat_depth__merchant.png",
+    "source_sha256": "696b65a3dd7520e693cacf7edf4e4389d3903ff85f7156f0d53ef46dffb659e6"
+  },
+  "assets/combat_depth/roots.png": {
+    "job": "combat_depth__roots",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "18515a1dd658abb4ecfd1eb26b0007ef208ae00a673a67b60ba175fcae62d591",
+    "source": "art_sources/art_direction/migration/sources/scene/combat_depth__roots.png",
+    "source_sha256": "de28aa98ba88d9277e03bbd68d6e0258e128bb0c3fd3e82696ee5c570249d742"
+  },
+  "assets/combat_depth/training.png": {
+    "job": "combat_depth__training",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "df4b398986518bb8ad523db5ee7888787e903ab889bfa37c7dc40f6f91cd4762",
+    "source": "art_sources/art_direction/migration/sources/scene/combat_depth__training.png",
+    "source_sha256": "1cfeaa77724901e1f91d43fd5509b417ac3017afd2ef97f4cd6b567526f0d69c"
+  },
+  "assets/comic/enemies/bandit_0.png": {
+    "job": "comic__enemies__bandit_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "513c7eda12e10f688d5394f25e0bf7fc9b0afb55204fb2af3af964c10f421df0",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_0.png",
+    "source_sha256": "09c28e882e4cc86474e79829dc848203a43ec2e46fc7448913b0153cbe890985"
+  },
+  "assets/comic/enemies/bandit_1.png": {
+    "job": "comic__enemies__bandit_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3a0c8f01f0aee39b3366678d9ce42a6a7d097efcebee4c408cf3b823b26aa43d",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_1.png",
+    "source_sha256": "0d78fa7134ae8b943f738af8e904cdb75841d630020fb255e05e6ae28db8ec0a"
+  },
+  "assets/comic/enemies/bandit_2.png": {
+    "job": "comic__enemies__bandit_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0aa8c005090da37ee61668f004094a72ca7c8f514626c6a2376fb55e59c3b298",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_2.png",
+    "source_sha256": "2bc2f98cb5b88bf81cdd20c1d21123dbf9b1644ad9e0d269b91610536ee83ce6"
+  },
+  "assets/comic/enemies/bandit_3.png": {
+    "job": "comic__enemies__bandit_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8a4251ff506b58fdb955cfd620a6c6d4163dde15faeaadb530f23a0cb131aba7",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_3.png",
+    "source_sha256": "1df6a9bf51f7358c3a01ea5f2a2403bdbb43595c42ef19e8fb5cd8f877a863ee"
+  },
+  "assets/comic/enemies/bandit_4.png": {
+    "job": "comic__enemies__bandit_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1f2bbb51d9f751154773f06ac5fa02597499eeaf2697dcac34e9242baeeda67e",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_4.png",
+    "source_sha256": "2b7dd37030d1c27b668e6b4580a44369536a51fb75ad767bd1203887f58e90bd"
+  },
+  "assets/comic/enemies/bandit_5.png": {
+    "job": "comic__enemies__bandit_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "548a453c596b6802fe101c984725b5a58c9394666236b9541560cbedaa7be199",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_5.png",
+    "source_sha256": "0fc803cac9190a29e8b4f9b7e6c6c4c8abfa4d05563f20081fc3ab55f921aebf"
+  },
+  "assets/comic/enemies/bandit_6.png": {
+    "job": "comic__enemies__bandit_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "73732d48c0ad4a2c4d0d7a4e9aadf014a40dc2a1652ccbbd28c25a5ff0a22304",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_6.png",
+    "source_sha256": "ad8483f13de92f6bd0e6f2f9fe344a42c49ed7047e6af14ec0baba074953ab4b"
+  },
+  "assets/comic/enemies/bandit_7.png": {
+    "job": "comic__enemies__bandit_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4632d48b4abf170b6bc35cba6bc3223d0de3ec48b4e90b28bfb4c2cf2c663c54",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__bandit_7.png",
+    "source_sha256": "3d48a8bfb0c664d3083e6120819695ded516fbb0ace2af165a33143123cf40b1"
+  },
+  "assets/comic/enemies/beast_0.png": {
+    "job": "comic__enemies__beast_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cb7a337cbef812461aa61b6e7aedc4896f1fc2b5f66b3c572df9618e6d0acae3",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_0.png",
+    "source_sha256": "4057f8f1a2fff421eab16b99594b3df16cd60d923150c145234e533dd5ba547c"
+  },
+  "assets/comic/enemies/beast_1.png": {
+    "job": "comic__enemies__beast_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "08f84a84868c695f069a705a5db60ba5e5e0836094a009c5fa19f77024b68d8b",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_1.png",
+    "source_sha256": "c5d8c90c5d7a543ab2270437f2a98fb0ddf4d9541762545e63ebf258cd87bbc0"
+  },
+  "assets/comic/enemies/beast_2.png": {
+    "job": "comic__enemies__beast_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "312392684133104a3479aa8c96b05ec5a26d292b7c7bb7d788bd185ba9978124",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_2.png",
+    "source_sha256": "7dca992f28242b4c7063babefba0f3307401cf5b601a9c359d6b9f6cd7e3aaa5"
+  },
+  "assets/comic/enemies/beast_3.png": {
+    "job": "comic__enemies__beast_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8243176fa2c90ed161c4d398da2da0eba783da57d9196c7a3c79e71857d167fc",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_3.png",
+    "source_sha256": "9ff95d70c281bb59f4fd4526a30351838ea021882e2e8d709cab33c67c658551"
+  },
+  "assets/comic/enemies/beast_4.png": {
+    "job": "comic__enemies__beast_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "72ef8eaf6c5f9b6266a81573143edd7e4838208bcb7e590619dfd279b2006d24",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_4.png",
+    "source_sha256": "1608d3a450dbec293419f4b8b5cffe1847f4cb869290522a742adddf17cbb76e"
+  },
+  "assets/comic/enemies/beast_5.png": {
+    "job": "comic__enemies__beast_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e8e55934948b4d6cd4232e23b063da15863bcb9a68db1e06b38203c9bc538284",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_5.png",
+    "source_sha256": "0050ec9b2f6eb9afffcfa196f2f72c0b7e3b8e0a936afd84542e3bdf8f991f70"
+  },
+  "assets/comic/enemies/beast_6.png": {
+    "job": "comic__enemies__beast_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5dc528bf43001565986e4327d6d60b3c3244b8e8bd5fd2234b23f098b42fac2f",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_6.png",
+    "source_sha256": "37c63c90a424d0dd8fcbb7891e6a74194b255d8b23a5cd9179015041947c770a"
+  },
+  "assets/comic/enemies/beast_7.png": {
+    "job": "comic__enemies__beast_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e9b1aa5806fd8b8293e86e66c8e6fd94b869cb9ee04e3aadb2e38626d0c163bd",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_7.png",
+    "source_sha256": "8fe198b313701e7ceb95dd2b30feca90e1e681253a5bdc7b23ab3f7c6c2ac560"
+  },
+  "assets/comic/enemies/crypt_automaton.png": {
+    "job": "comic__enemies__crypt_automaton",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8777cffd9da940723a13e4a8169ee49a0feec82184e8bb6f543a258ce3ee925a",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_automaton.png",
+    "source_sha256": "eb20f375f82ac7056565f2062d0392bdef2f0579575d4b4e381d99097e3ebde2"
+  },
+  "assets/comic/enemies/crypt_bandit.png": {
+    "job": "comic__enemies__crypt_bandit",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "33ca275bb09db405b7cd44239cdb9d7776597adb45b99177081d672e3761cfd6",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_bandit.png",
+    "source_sha256": "0a245c92acddf2d90199a54539199bf65eaa3af1d60b0e3e9a4e30d7b8cf4f5b"
+  },
+  "assets/comic/enemies/crypt_bat.png": {
+    "job": "comic__enemies__crypt_bat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "963d0782d2704cb721cb219ab5096de66891b1ac02f752af3a9062eabc2c525c",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_bat.png",
+    "source_sha256": "3725c2861ede7b6be38a799bb15b8390cc37381571556f49f9c98f98a7cec498"
+  },
+  "assets/comic/enemies/crypt_beetle.png": {
+    "job": "comic__enemies__crypt_beetle",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e09ef9b3ba33617821e7cc0c72e7c51f9cbb19c3c53bc7a14bb5cc9702741f63",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_beetle.png",
+    "source_sha256": "60300220879306eba5572103c0cb0a00001ec406b9bbc45aefcb86e76f9c2a93"
+  },
+  "assets/comic/enemies/crypt_lancer.png": {
+    "job": "comic__enemies__crypt_lancer",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8579b7e31a2c65b23fa1e3821cc7d325b3fcba0996e88779897be32349668928",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_lancer.png",
+    "source_sha256": "43a4f2f121151493b81261a83913fe5679247e70ae8cd6ddbdf78b5ddc286ff4"
+  },
+  "assets/comic/enemies/crypt_shaman.png": {
+    "job": "comic__enemies__crypt_shaman",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e91d382c962bcc7aca697d49069fdeb4ce95e345981546afc133ccce0dc2f37a",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_shaman.png",
+    "source_sha256": "38e2f62e8bb498b31dbb8ea1429c18711e0a3791beb1e22fbeb2ad82a9a82398"
+  },
+  "assets/comic/enemies/crypt_slime.png": {
+    "job": "comic__enemies__crypt_slime",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "edb98e1baf424be500cf683ea05fced17f4f6ee4b79fcc91155ddc222c37720d",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_slime.png",
+    "source_sha256": "57b5d3f07b4df2406dbeaa13ec92e4038c4ee1c930e0f878cfdfbce6de45ce20"
+  },
+  "assets/comic/enemies/crypt_wolf.png": {
+    "job": "comic__enemies__crypt_wolf",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b7db53d652689627babdf190b55de705164abb4b5ce61b1b91ec449c101b1517",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__crypt_wolf.png",
+    "source_sha256": "d09e155a49438540e4d05314c0dbaae003aa460f38e986c40fedb986440bf63b"
+  },
+  "assets/comic/enemies/elemental_0.png": {
+    "job": "comic__enemies__elemental_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ac06367276132ac3220ff35912e37e410fd4b1921f1d76b56cd3291bd379ede6",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_0.png",
+    "source_sha256": "7e9a2f71e04d628db1be9e0d054d132839c705f17124b8da8d586a72d1249895"
+  },
+  "assets/comic/enemies/elemental_1.png": {
+    "job": "comic__enemies__elemental_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8e879ecbab0a7c6e70ea9c4e90a332e2d903985631224f696f6d4fce5c100530",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_1.png",
+    "source_sha256": "d2035c5def043552ef75dcc3abf8759e0235bd5b27eb73fcc8e67ab007b08b49"
+  },
+  "assets/comic/enemies/elemental_2.png": {
+    "job": "comic__enemies__elemental_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e163c8b52c88b1cdae569c0452aa8fa76926a4cd9c37cf14628947b5b13205a3",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_2.png",
+    "source_sha256": "9a3cb95a332ac5ec0f6e959f4dff4222c4acdaa8fbaad18757d3f652d079ac9d"
+  },
+  "assets/comic/enemies/elemental_3.png": {
+    "job": "comic__enemies__elemental_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2ed406ce052e38306d75ff6570bab745535958a51eda0a37965d629ac46c6808",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_3.png",
+    "source_sha256": "3d6b8f118787513b5631032e5676daea28cbaa3cfdc9971b22054c40fb2a8546"
+  },
+  "assets/comic/enemies/elemental_4.png": {
+    "job": "comic__enemies__elemental_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cc4f207f0c67375db5fe26441a443051a75c77d327fd2f099887aff2a38b0bce",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_4.png",
+    "source_sha256": "a394209185ad8f4c62f0db4af84d7cac9646241e6a102432336d2479907c82b6"
+  },
+  "assets/comic/enemies/elemental_5.png": {
+    "job": "comic__enemies__elemental_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8967281b480544873391a88bd804676a492ba9911b8cb219806cec02881c4dd3",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_5.png",
+    "source_sha256": "d85478b09d8f5019f6228895714c0d3559fed92ca623ccb6e954c6e7c502a229"
+  },
+  "assets/comic/enemies/elemental_6.png": {
+    "job": "comic__enemies__elemental_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a06d355b30d264ea0d0182ae1cecee54bb5d38d688cffaad69de2352b166b53d",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_6.png",
+    "source_sha256": "7f64038821a523370dc6f901bf80c83d152bab49e2d8f4d516cfe7d00c6f33c5"
+  },
+  "assets/comic/enemies/elemental_7.png": {
+    "job": "comic__enemies__elemental_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "816ce3fc454e834e5e6ffae1de87955aae7df2492a7a5f903e50dd61f60e344f",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__elemental_7.png",
+    "source_sha256": "9af36926d7bc001cb9b6e296b339a8f3a6997d65d3d32650f920f926059b1597"
+  },
+  "assets/comic/enemies/flying_0.png": {
+    "job": "comic__enemies__flying_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ff42bb57f9e95d9e08ac010f69b66a645c1eabe01620d9dadb8951b69f22ab43",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_0.png",
+    "source_sha256": "e1916e648ca74a2e7334ccbcab483f00345d8f56f9035eb7db2ea1b9bd4b09c8"
+  },
+  "assets/comic/enemies/flying_1.png": {
+    "job": "comic__enemies__flying_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4990e2eb4b01a4c12d44500fc76cebe6ea6d4cb04a21f1d45e7425139edbd4da",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_1.png",
+    "source_sha256": "7db1abcd86a63fc154a27668ba5c8c909175ba3e31169108a3f03fa14a71cb91"
+  },
+  "assets/comic/enemies/flying_2.png": {
+    "job": "comic__enemies__flying_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "31ee798e65bad1c5f7d2231665920e01e202a3d36c7382a53f2f0085482a769b",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_2.png",
+    "source_sha256": "ae8726f0c851f80d7990f013c3abf649a9acc2794727a5cb51b471addfadaed8"
+  },
+  "assets/comic/enemies/flying_3.png": {
+    "job": "comic__enemies__flying_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6a400531812a30ba53a7bd7d4a61e9f4512a363664fbd58a0753fad247709eea",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_3.png",
+    "source_sha256": "5ec51c2465828059f3e6dceaeab02a19a17e91a4729e9171b1214a7fb240e52b"
+  },
+  "assets/comic/enemies/flying_4.png": {
+    "job": "comic__enemies__flying_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ec7c1f42673be213e111215c2042eb65086687303d6d6035191f894ab6b824c9",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_4.png",
+    "source_sha256": "24c49e7243ba94ee51ab82bc4877b62d6d88fdb16b1fbd4c779802ae4d858413"
+  },
+  "assets/comic/enemies/flying_5.png": {
+    "job": "comic__enemies__flying_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e9f1a4907f3ddbb1cdc64fbdc1632d5db4e3b9dfc48df417673384d3a94f6b4a",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_5.png",
+    "source_sha256": "0bbef113e8aa392a2b70b97beffcb2d7fd874e2097023aa3f85760296efc5b2f"
+  },
+  "assets/comic/enemies/flying_6.png": {
+    "job": "comic__enemies__flying_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "78f49ab3fbd20e44e6bc75bdb48a3c616c54179350cfc41c7a2b21fc53ce1f62",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_6.png",
+    "source_sha256": "dc224d910041e1bbf5f00fda0106480318381738db8ebf4781261b7079eb9d66"
+  },
+  "assets/comic/enemies/flying_7.png": {
+    "job": "comic__enemies__flying_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7e612e324bb77f2bae23268a194e97dc6ad66c54776fecc2a71c6b4e07188b7e",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__flying_7.png",
+    "source_sha256": "f9bd54f28293e71d9f06106d3eca4ca0e3a48277d27e548a76c738ff0c017fe8"
+  },
+  "assets/comic/enemies/goblin_0.png": {
+    "job": "comic__enemies__goblin_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e010a816af74448e4a4fe153966e6996417ed8b35743fe8d140949aa5b310e16",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_0.png",
+    "source_sha256": "a298e641df8eeeb4d6e473bd0977bfbe6deea1819263fbe4a3b8f6aa570f5b6d"
+  },
+  "assets/comic/enemies/goblin_1.png": {
+    "job": "comic__enemies__goblin_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "82ed7fdc7b89314890f4b909536820cf3aad59e594cc566f733270718e58ddce",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_1.png",
+    "source_sha256": "bd1a9c5eb16b770de070da9525c79ee07f4717bb0c145abbf05bf3c7257cfbfe"
+  },
+  "assets/comic/enemies/goblin_2.png": {
+    "job": "comic__enemies__goblin_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1c9d06d6a874acde2d1f4774256eb0cfbd5f5222cc188565ea627a73f4de4937",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_2.png",
+    "source_sha256": "f3c91d5835eca582ed48abdade72e68c339313aae4dd3cc01822a95cd489c4c8"
+  },
+  "assets/comic/enemies/goblin_3.png": {
+    "job": "comic__enemies__goblin_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d28bd24ecf30e290aa3877b3901d759dec13aa76d531cad5484d2f5d2b42f452",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_3.png",
+    "source_sha256": "6249cfe96dd3df7803c73a7499a41ba813cf10eda94e149be19370108ead122c"
+  },
+  "assets/comic/enemies/goblin_4.png": {
+    "job": "comic__enemies__goblin_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9be1113c8e27365b13a9f05aba2f1cc4dccca8de68fe7cbf0b57e687989ee60b",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_4.png",
+    "source_sha256": "9cc971424e479ce2c7ca07198f24aa4bd5272c72fd4ad7129c63f244361a2f4b"
+  },
+  "assets/comic/enemies/goblin_5.png": {
+    "job": "comic__enemies__goblin_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "21276204de16aba20092637b1093ac79d13f31caa872a9a48c7caa30b6352a26",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_5.png",
+    "source_sha256": "d83f98f7a422d0999c3f6c6ba1358d9102bafc7d35fe4ebe9b352ef224ae0c8c"
+  },
+  "assets/comic/enemies/goblin_6.png": {
+    "job": "comic__enemies__goblin_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d1d98db48c9977af915cc9cf5324832d5692752500a3546f4dd7e28d1b5ee5d0",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_6.png",
+    "source_sha256": "8945eceb55cb490cc8c80cac6e78f0779412f35b1e13ab5be55d9652c23042cf"
+  },
+  "assets/comic/enemies/goblin_7.png": {
+    "job": "comic__enemies__goblin_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cf5d0371c48985f648ec286ced6dfd45cb3a50ff783ce5ec275aaf20f0a69732",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__goblin_7.png",
+    "source_sha256": "5881af46448e5d1190ad540b5c4026a9f04a9daf9006ef2a0cbedf58785e0ff5"
+  },
+  "assets/comic/enemies/skeleton_0.png": {
+    "job": "comic__enemies__skeleton_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "80219094d4068a7dca0c84a37d12b3d3f2e9f61d9ed1fa9354aa85ecf1710d94",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_0.png",
+    "source_sha256": "7e6e3c3260cc78b259bc86a9c7719bdb55f943b53e5b32a8f02b1171d6d67d1a"
+  },
+  "assets/comic/enemies/skeleton_1.png": {
+    "job": "comic__enemies__skeleton_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5603be1f3a546a2fcf70a5c8c4f74ce564c4cb850683926be09930c03fe00050",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_1.png",
+    "source_sha256": "c5002b3d1c3187fe1cdcc8c643175d82e23cb11fe4eb5daad56d2d8fbac202fc"
+  },
+  "assets/comic/enemies/skeleton_2.png": {
+    "job": "comic__enemies__skeleton_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9a68345a46f1c678adc5de27f08a841575fd1f6566e7b41bbe45406f896ebc04",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_2.png",
+    "source_sha256": "d33867c12613bcaf38c284ce796eca738b4e53fb05a635ec07b0ee0684d35667"
+  },
+  "assets/comic/enemies/skeleton_3.png": {
+    "job": "comic__enemies__skeleton_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9d2c682387e55fd293e98d9dd72bf780508523e285c9a6c121904aec6953086d",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_3.png",
+    "source_sha256": "b19e12f92da2e65034759c1180a35065d04bdecfaae27117013571bedcf73026"
+  },
+  "assets/comic/enemies/skeleton_4.png": {
+    "job": "comic__enemies__skeleton_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2d406abf9ba349783292455ff157e82c713147f6878fa771b83107b6b228c6eb",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_4.png",
+    "source_sha256": "2c9b1c76a3edb03e234f2295698f3826539e69254e1a153a3dfa1d72e1f275e6"
+  },
+  "assets/comic/enemies/skeleton_5.png": {
+    "job": "comic__enemies__skeleton_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9d0a07efc765d9834bb8e7e86910c6316ecae9091c2de949b58aaac7ed20bc0d",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_5.png",
+    "source_sha256": "1cced5e1c492afbe1874cfb927815da1003e30d5acf2ab6f57336d4e9c2bed11"
+  },
+  "assets/comic/enemies/skeleton_6.png": {
+    "job": "comic__enemies__skeleton_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "62104bffe768b0a0bbbb87c122e999410c12bcd14e120f56848d435a5a8412fc",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_6.png",
+    "source_sha256": "1e244f016906655a97a839eabba57761342d193929fdf2fd893ebe28e71e3e31"
+  },
+  "assets/comic/enemies/skeleton_7.png": {
+    "job": "comic__enemies__skeleton_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8849c8386c28ce2eec8437276f8e76ebba3c42498ce627a2bb99e22f78b25c14",
+    "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__skeleton_7.png",
+    "source_sha256": "e28d42d0374b57a520b2284d7cadd2356571938acfbf9fe37b9890af2ee4ed87"
+  },
+  "assets/dungeon/bag.png": {
+    "job": "dungeon__bag",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "906bc4d0f9c3745b133da55644c6d5c425a1775f5f56c7f62e212ffd27608b99",
+    "source": "art_sources/art_direction/migration/sources/icon/dungeon__bag.png",
+    "source_sha256": "d3c03d8b67fb735ec8b2f71c5c26a7ae7267113a0d7cf45af876002449fa26ee"
+  },
+  "assets/dungeon/combat.png": {
+    "job": "dungeon__combat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "129f2ea41ad1cc5cd997383ad64c88378f2ddea8fc2bb9f104d2119848fb1269",
+    "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat.png",
+    "source_sha256": "a32bfe2be5064fadb1eaae06cfaa3f9923887da5363b33b20488832656a0586b"
+  },
+  "assets/dungeon/combat_canal.png": {
+    "job": "dungeon__combat_canal",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9eaf2dbf9ee0a656428818e7226beecb028937fde09efa68e1f74c5e5209333b",
+    "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat_canal.png",
+    "source_sha256": "7b717f3fbca4efa095096652546ad9f5a5234c291cf8c109b9ebff89695f24db"
+  },
+  "assets/dungeon/combat_columns.png": {
+    "job": "dungeon__combat_columns",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a7c68ea8698b34540078184103a43b1df825aa13b409595dae6d324778b66532",
+    "source": "art_sources/art_direction/migration/sources/scene/dungeon__combat_columns.png",
+    "source_sha256": "2ab613ff65f713324ce4d8d1188ee52e799b44907f9a575c0ffec9b6452381f9"
+  },
+  "assets/encounters/altar.png": {
+    "job": "encounters__altar",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "970521990dfef42d6896886c6886fe77ec5c7ec4bb9ece1a83b9147c6c29ee22",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__altar.png",
+    "source_sha256": "3a1c3d6bf4366eb15542baeaeaa76eb2835e22349e55b98eaf0499060f4acc3c"
+  },
+  "assets/encounters/ash_archive.png": {
+    "job": "encounters__ash_archive",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9f69664e51ac0b9732c20d8000f882a18d32c8341e17d366d245e6e11cd4cc63",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__ash_archive.png",
+    "source_sha256": "e4685bee2fa4f39aebaa36156391c046488f277226aa1275b867a7ade914f7f5"
+  },
+  "assets/encounters/forest_hunter.png": {
+    "job": "encounters__forest_hunter",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e77acfe145fe5e4c63e65dc1648b14046247eceec4538c4c5f277ea9ccdc0fe7",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_hunter.png",
+    "source_sha256": "7af906966902aeba6b77a284464126702c4e8c7ba0a1d54360ff0491d2565b6b"
+  },
+  "assets/encounters/forest_spirit.png": {
+    "job": "encounters__forest_spirit",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a81f0c873fc441ac7abfd5ad89d11a189cff039b7fca1527d520edbd0924415c",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_spirit.png",
+    "source_sha256": "f5c5a58c584c118595568fdf25a9fcafeadb8c61ac4516c1cc552ab21acb375d"
+  },
+  "assets/encounters/forest_spring.png": {
+    "job": "encounters__forest_spring",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "13abdcaa49937f7452e78d54d969cf5c46b3f3e47627731d7497d5191c0381e7",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__forest_spring.png",
+    "source_sha256": "b8285cd37e83b145975be44418dfb7fec01bfa5fb6993925fdf5a06c8b4333de"
+  },
+  "assets/encounters/forge_altar.png": {
+    "job": "encounters__forge_altar",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6ecb11e54f0ac8aabe6a8e4b167e3018021b703bce613b8b30da5e1cab913473",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__forge_altar.png",
+    "source_sha256": "007a86942a5d30761c819f3f358525370407fb5cb6ab487513cf0f21119ae3da"
+  },
+  "assets/encounters/lava_bridge.png": {
+    "job": "encounters__lava_bridge",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2f8dc1517d3df3cf6eada9010cac3b124f616790efaa013ac8f5c46eea49ef55",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__lava_bridge.png",
+    "source_sha256": "74abe91264abba37fc4c6d47755559aecd26b786c57afa2e2e971fab742dc954"
+  },
+  "assets/encounters/library.png": {
+    "job": "encounters__library",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "35c6746268788e951db6743b3d09a9c28eb4ba65c267d923dbbbbd67c0a45d8e",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__library.png",
+    "source_sha256": "584c89997b067855723772588262a4e6fada6894f21ddc7e2baa26a71f7c64d1"
+  },
+  "assets/encounters/well.png": {
+    "job": "encounters__well",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "266b9dcd2fbebf4cc5da17be00a5c677e1fbfe211c7aad27c77cc8ec1eecfc43",
+    "source": "art_sources/art_direction/migration/sources/scene/encounters__well.png",
+    "source_sha256": "9860fad87a0d72e5bcd325fcea35284494a2b12af5ad32d17dc78a1ea35a77e3"
+  },
+  "assets/enemies/animations/bandit_0.png": {
+    "job": "enemies__animations__bandit_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f66dc5576831f1cac9decb4cf25c477fe73f4c1705c9e45cf32fd6a0ea5e1d4e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_0.png",
+    "source_sha256": "1890e61d65267803f30fc2ce1d7d01b1df085ffa5aa309d4c9fcc1dc14fdb469"
+  },
+  "assets/enemies/animations/bandit_1.png": {
+    "job": "enemies__animations__bandit_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7f4fbc30942cacea7282380e8642c5549089bf257e94951a8dacbe014e93bb88",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_1.png",
+    "source_sha256": "0d19b15b846076799bba5b5e713bc095c7678662577b80ea458b2445b2bd1bd3"
+  },
+  "assets/enemies/animations/bandit_2.png": {
+    "job": "enemies__animations__bandit_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "958e16a20ec37a649c3990d332b7ac73b3c946288806076bbadb73b70aba9386",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_2.png",
+    "source_sha256": "b830f1e9149b7d259bd671bc42e0ab92379848ce2340237a7d394d1c33564adf"
+  },
+  "assets/enemies/animations/bandit_3.png": {
+    "job": "enemies__animations__bandit_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8b0def29e69e05ae3de0d9e26599f711ba63cb6772274ecef08a9f268ac2d82f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_3.png",
+    "source_sha256": "bc95cd8069f1e8ac36cbce84b12e9abf654c0c0a63d1eb12522979722efb6030"
+  },
+  "assets/enemies/animations/bandit_4.png": {
+    "job": "enemies__animations__bandit_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bc8173384801b2468c2458f5f3ff7061bbaeabdbc9a03bdd2406b588dc1ca4c4",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_4.png",
+    "source_sha256": "4b0b21c873a177313c9386465fff5083b7e10f4d4db4a1cf6a0127fe43ea3dc2"
+  },
+  "assets/enemies/animations/bandit_5.png": {
+    "job": "enemies__animations__bandit_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "de25e3431af4eb508929b71814e1017456eca7116a241e9ca00b59edc9bd4e9b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_5.png",
+    "source_sha256": "14d5849f278cfdcd04e6bcabde0f8d932796ed6ff534b6fb7bfffda51604197d"
+  },
+  "assets/enemies/animations/bandit_6.png": {
+    "job": "enemies__animations__bandit_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d9e41e4a08340a393589657cefb365b90b74325248cf1b255e7bed0f6beb7afa",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_6.png",
+    "source_sha256": "4757f7f341a55e6c2ff0338cf2785a5f0cb52758b830fde13c0849f92f79db91"
+  },
+  "assets/enemies/animations/bandit_7.png": {
+    "job": "enemies__animations__bandit_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a7c5addda0cfc34ba69bba80c99eb5b9193a5c78bd6ab8adba707c3de8549e64",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_7.png",
+    "source_sha256": "202663692a6e70e60b644ba711d0edbc8fddc2b94e2810568d4e980794f21412"
+  },
+  "assets/enemies/animations/beast_0.png": {
+    "job": "enemies__animations__beast_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3962bdce13bd2fe81583dc7a4e7bbc5917c8230470a7af84cd75a5842f571f8e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_0.png",
+    "source_sha256": "e816d441a55d52ff0640e7b393fcebee495471335d42aa5da29eef8650042505"
+  },
+  "assets/enemies/animations/beast_1.png": {
+    "job": "enemies__animations__beast_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9fe5e1ca50172878004f4f7beaa77bc9f35d0e1efc33579ae1abf573934270fb",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_1.png",
+    "source_sha256": "8feac15d58e82ee498565bf01070d131d3986840e985ee1a4b31184fa7d7a294"
+  },
+  "assets/enemies/animations/beast_2.png": {
+    "job": "enemies__animations__beast_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3a4b1a360fd4b46e7c72b840072a91ea1e8d39343b627a6f03dc1e7e981fd671",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_2.png",
+    "source_sha256": "a3f6cff766bc48e17745e1efafee82fd659517ae6f3b238459116e075adfd520"
+  },
+  "assets/enemies/animations/beast_3.png": {
+    "job": "enemies__animations__beast_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e34da4373bec9024fba9f0e159b747d6d597552e2eb7370d711a2439810eb41b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_3.png",
+    "source_sha256": "94dcf831dbae157710e5e35507dbe2b49b9d23a67684485880171888dc575222"
+  },
+  "assets/enemies/animations/beast_4.png": {
+    "job": "enemies__animations__beast_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bf0f0efbb008eb1ab2bbe2117c25d43955cd4d7b5567922938a727ec9506d97f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_4.png",
+    "source_sha256": "2f40c35dc01babecd27e43ac51502bdf39736d303e3c4759ff4a02fee0cf1211"
+  },
+  "assets/enemies/animations/beast_5.png": {
+    "job": "enemies__animations__beast_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8b8a136a56e85941e9725c1576e5201c6f5db4f9a13d1c9b6891168080b5c244",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_5.png",
+    "source_sha256": "a1baf030d7e05e006fc6c0f31784e2337d97f95b37508367e32e48c513b5000a"
+  },
+  "assets/enemies/animations/beast_6.png": {
+    "job": "enemies__animations__beast_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0067c80471ffb999064739e992363dcad23ec778d712d77a3d616e80297676a2",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_6.png",
+    "source_sha256": "33bc8b8fb29acca516c4720cb6088bfbe7d2e0a528c210b5224344806e099bd6"
+  },
+  "assets/enemies/animations/beast_7.png": {
+    "job": "enemies__animations__beast_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a3337a0d3f6a6c849dd481a235f76734b78397d850c81e2c2bb0296d113d96e5",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_7.png",
+    "source_sha256": "045b20288176378dffe68a4d4e6c763f672b5e92f0290893d09b95341a142dbb"
+  },
+  "assets/enemies/animations/crypt_automaton.png": {
+    "job": "enemies__animations__crypt_automaton",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "01e8199238dc34b0e10a736fbc8ac9aa06eb07e23e6b9cf17c95d2faa9fae696",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_automaton.png",
+    "source_sha256": "ac9671afc1978766b3b3759c9a3473aed41bd79145e49674c4fa0c1c932c3313"
+  },
+  "assets/enemies/animations/crypt_bandit.png": {
+    "job": "enemies__animations__crypt_bandit",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3a29cecc89b13274e3962c606759ff8df8f9ab0bec9df6d1723876d04386c46f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bandit.png",
+    "source_sha256": "25b325bc6a75bb69fdc25ac8de3635ed5384e656352a253fc45dd040428f07d6"
+  },
+  "assets/enemies/animations/crypt_bat.png": {
+    "job": "enemies__animations__crypt_bat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "113e17772f3308e0e2d52743d8b433b4da5361c4abb41fbed3b7f69867aad89d",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bat.png",
+    "source_sha256": "2ce7f816d1e5a8241fd6f687bd9e80adb64eaf4c36b660a6295751cbdb3245d7"
+  },
+  "assets/enemies/animations/crypt_beetle.png": {
+    "job": "enemies__animations__crypt_beetle",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "616934bc022c0256076f4b5550093ccf034c13514b28c30b7b0855a6dc598927",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_beetle.png",
+    "source_sha256": "ebc4d175108d05e5bc0cc54264156e5731f5d64284ba586acb20ca667db61bb4"
+  },
+  "assets/enemies/animations/crypt_lancer.png": {
+    "job": "enemies__animations__crypt_lancer",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4d1fa102ed0abd1c93c6d5752e7b5114266069650301565bbaa306d72967d460",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_lancer.png",
+    "source_sha256": "7cf36545c0504da6ee14306f1b1a08b19b7432688b76ea4c8ebec1ad0c4907ff"
+  },
+  "assets/enemies/animations/crypt_shaman.png": {
+    "job": "enemies__animations__crypt_shaman",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "62bae9b3cfa0a68213a3f4b3465fd562e136f2edadf49cd33a396dfb7eb269eb",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_shaman.png",
+    "source_sha256": "3536ba2b35eb8b4e3e9be4bf66fad958315ce0cbdf514b0a2751a8d614d0d77d"
+  },
+  "assets/enemies/animations/crypt_slime.png": {
+    "job": "enemies__animations__crypt_slime",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8c4ca9670cc75214fcb84c0ec02eb1ca3f9dc949eee5d9cf2f2f94e4cf2a7d9e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_slime.png",
+    "source_sha256": "1451b5bd995b6548cc33452756da477fc5f5353ec4182dfd521ee1e18b4b19b5"
+  },
+  "assets/enemies/animations/crypt_wolf.png": {
+    "job": "enemies__animations__crypt_wolf",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "428ca8e6e94984bcab3a29d37b9dffa14d7d5715e296a29342b1597f682e2fca",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_wolf.png",
+    "source_sha256": "9ae8b2290dd5001455f3093e2adca17ce9b98f7b26b475f96e5981490f261080"
+  },
+  "assets/enemies/animations/elemental_0.png": {
+    "job": "enemies__animations__elemental_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "48a2e4caaa7f82e6ac2a65fdbb3e730a093ea9e94997bcc9806f22d7c9941b39",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_0.png",
+    "source_sha256": "cfc1223cf5f7235efcea5574a5429b53938acf128e341a7c356a13d53d07efc1"
+  },
+  "assets/enemies/animations/elemental_1.png": {
+    "job": "enemies__animations__elemental_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "698de7202625e61cc28458a2f5814412739c5a7e78d6aa51318027c4ca6e6ef2",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_1.png",
+    "source_sha256": "0c4ae50dfdfc3b35f4153890af9ad7f0130515eb6c722efafc60ced74032202c"
+  },
+  "assets/enemies/animations/elemental_2.png": {
+    "job": "enemies__animations__elemental_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ec65fc2ac9b292c67ee8c0a09b50a6c235d494fe64fec715cf565b44b9ab4d13",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_2.png",
+    "source_sha256": "c4f2f6d32e43d5ea1829e9ee9499aaa5a17c878f6f268e4ab2d890a617197547"
+  },
+  "assets/enemies/animations/elemental_3.png": {
+    "job": "enemies__animations__elemental_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2084f5b3cb3205f578f0945fff6666dccfd1326b4ebe080792249957a9740d6e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_3.png",
+    "source_sha256": "aa18d9c7217d080dceb6141b438aab065e27d98f4b55fc059ae2e9c37bafb401"
+  },
+  "assets/enemies/animations/elemental_4.png": {
+    "job": "enemies__animations__elemental_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "34e1b4833a552f999181c587ead793316c692f0d2fc63854d590e2d991aeb1f8",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_4.png",
+    "source_sha256": "86eeba2f993e2bd23879d09eac334509e0d6e0300ea71584d899da2bc8f1e46f"
+  },
+  "assets/enemies/animations/elemental_5.png": {
+    "job": "enemies__animations__elemental_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5342b1118a8becb1acb5be9e9d10f0da4f2d22a496b1e7d92e0d8db4efb0f75b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_5.png",
+    "source_sha256": "34d00424c601ba6f74b564dadf779f30671bc97354b50aeaebb8b809640668d5"
+  },
+  "assets/enemies/animations/elemental_6.png": {
+    "job": "enemies__animations__elemental_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3de075605fad1c52dddc33b07e55ce5435936598dbeb5ef615c1b5225caabf91",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_6.png",
+    "source_sha256": "ab2b53a432092bf3813a0cf976eb67820e312df39ca1beceaeefea431bbad9a0"
+  },
+  "assets/enemies/animations/elemental_7.png": {
+    "job": "enemies__animations__elemental_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "70e99d89b117037a196b1a6e3d094deb0de508a110cf68c86778d495ef1d7956",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_7.png",
+    "source_sha256": "9c1ab7ef514d79859bd95d73c0c0ac84f454c805056f2781b69ed0825a35f928"
+  },
+  "assets/enemies/animations/flying_0.png": {
+    "job": "enemies__animations__flying_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3ed136d405adba183a646bcc24744e13a7df0bef9cafe07471b980c7a20f033c",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_0.png",
+    "source_sha256": "6aeb23d021dd505713f093a7e2f823e7ea17028f5134f9bb1c3ecc0940a956a5"
+  },
+  "assets/enemies/animations/flying_1.png": {
+    "job": "enemies__animations__flying_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bda6fcfe2114cf5b19f93fd4887627aa0885488652d7e34625a766334a80623e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_1.png",
+    "source_sha256": "70e5d3e7d3d96a34eb6660938c6ae7ab36c0061e57c2ae9dfb54641c90134c02"
+  },
+  "assets/enemies/animations/flying_2.png": {
+    "job": "enemies__animations__flying_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d8d35f3e0ccc7fde67d9275f3b2d61c560df7e2efb9225b150144185a4b99f1f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_2.png",
+    "source_sha256": "878392ae67b1c56b3b2884edcb88e743c3754f73955503e9b1480c3be55c7993"
+  },
+  "assets/enemies/animations/flying_3.png": {
+    "job": "enemies__animations__flying_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0af5b85ce6c359d66b21ab16ce5241b872d21538fca4ec5d36e0d4009e7ac449",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_3.png",
+    "source_sha256": "333e84cf1c574ccb065434e00f9b1c3a7304f6b11d778050f0b47466db3d0c4e"
+  },
+  "assets/enemies/animations/flying_4.png": {
+    "job": "enemies__animations__flying_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cfc1214b82f24392f0e8d564a6ffb164be54de3ef709ba47fc40575378ad1552",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_4.png",
+    "source_sha256": "e200a7f5bf2cd2634a093387d60bc8903dd5b770f265cb58239dd126e141ef29"
+  },
+  "assets/enemies/animations/flying_5.png": {
+    "job": "enemies__animations__flying_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1b32bf215843e9bb51b17ff12b947eee21280bb4acdd794e7317b379cd6ea9e5",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_5.png",
+    "source_sha256": "72621b9764763f50e077b7a7ab8f2722b6449c69405c3c8cc26f7a16e4321b99"
+  },
+  "assets/enemies/animations/flying_6.png": {
+    "job": "enemies__animations__flying_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "434056e37b97b404f67d2ddff124f45b86851a0c3002dbc5f3ae6542578bc712",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_6.png",
+    "source_sha256": "e75e1b23f4276e78eb3e5a0aefd09622e9184860a07c18fdd7aacb5122e0a7f6"
+  },
+  "assets/enemies/animations/flying_7.png": {
+    "job": "enemies__animations__flying_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "50dce38972491cedd4845f4dfb07d999366dfa9938751691dea4a05f31ceddda",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_7.png",
+    "source_sha256": "cea004f14461b940046cbd32fc527c4d5d7277ecaeb80517d53aaed08d17322b"
+  },
+  "assets/enemies/animations/goblin_0.png": {
+    "job": "enemies__animations__goblin_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9771f4336776cb951446e70edf9d55137404713b12cf55ced67165bf5183ef6b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_0.png",
+    "source_sha256": "087de941b0692e183a8a8b9e2dedf0933f5fa8476286fd2183a7f3aacba4b5f7"
+  },
+  "assets/enemies/animations/goblin_1.png": {
+    "job": "enemies__animations__goblin_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "46644346d3ac9e9d8d2a406578b60b710febe6b90a32dad4cbd62429a0dbbdcd",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_1.png",
+    "source_sha256": "1defbd10ec7a728da2b62acf435fe4cc4cffea36e95de687a23d6ba4f5712841"
+  },
+  "assets/enemies/animations/goblin_2.png": {
+    "job": "enemies__animations__goblin_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a7dd0697031a570ea6b45d955cf2f89b385e5831cdfa22d920ec1056c3723095",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_2.png",
+    "source_sha256": "18486cc74463ba8619a6ca06327e8954c6fe96560190aa452e00a3f88765bd06"
+  },
+  "assets/enemies/animations/goblin_3.png": {
+    "job": "enemies__animations__goblin_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f23fd428509b92021652b3fcabd61cc0bc7a2ee1c38a5e2788e2566159525f1e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_3.png",
+    "source_sha256": "ee8072277ab4c1ef1d682fe0b21b5ff2fba7c92dc65311086e2142a3f7571a34"
+  },
+  "assets/enemies/animations/goblin_4.png": {
+    "job": "enemies__animations__goblin_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "80b1bc33629aa3001fc0cec808117e49bffcc25b25fe35bcf0836ae7453d54ae",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_4.png",
+    "source_sha256": "8498d033178b1addf128cf7a5fbdd47f999a55da62752eb4772b15636221958d"
+  },
+  "assets/enemies/animations/goblin_5.png": {
+    "job": "enemies__animations__goblin_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "92cfd767130392c2767d5a57025b228caa02c09565e72149117fc9e8ac0e346e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_5.png",
+    "source_sha256": "334ce16dd538973c22fd6ffdaca0a44d58921f58e5e295b13badf846b53504a6"
+  },
+  "assets/enemies/animations/goblin_6.png": {
+    "job": "enemies__animations__goblin_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "13104d80286d1fb0460d8fea65fc7ebb2b6108b1c2f14b489696a9d4abf3ae26",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_6.png",
+    "source_sha256": "4a0cc1614073006aef6bd8cabccfc2fc8e32f660289694dd70a4cc4c08450470"
+  },
+  "assets/enemies/animations/goblin_7.png": {
+    "job": "enemies__animations__goblin_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e4d4c46c478ddb366d14599652feaee5444ef3c3fe3b5d6d815e28016d9c61bf",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_7.png",
+    "source_sha256": "f9ecd9e759a3d7a9440134690f18b63727cb72056b211a6a567d2f59e1a53f3e"
+  },
+  "assets/enemies/animations/skeleton_0.png": {
+    "job": "enemies__animations__skeleton_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bd606600509bc30a03c277b607e35c68e423de11f1ca8242d988dd1592721ca8",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_0.png",
+    "source_sha256": "323c0ecca75dc34e1d24b9a30802a2455ef608a35d9c3907b36692ad57ebb78c"
+  },
+  "assets/enemies/animations/skeleton_1.png": {
+    "job": "enemies__animations__skeleton_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "461cb712d1b29c55ff33c5a87b6499e7ec397e485462f056595e5e8ec30441d8",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_1.png",
+    "source_sha256": "ef0dffec35a2d2f758ac0466af3891bcb02fb1e6f7b9b6ab9670312e22155d04"
+  },
+  "assets/enemies/animations/skeleton_2.png": {
+    "job": "enemies__animations__skeleton_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b5884d5a81943802d48c5353fd9eca70e4db2919c2a2c07a16086240e1d07feb",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_2.png",
+    "source_sha256": "d3fdd643225d811ef659d4611857f5e0af5c8ae577a18f322bb4d8cb70c1830b"
+  },
+  "assets/enemies/animations/skeleton_3.png": {
+    "job": "enemies__animations__skeleton_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cbff22d5b1883db08a031312633969b6a9f7b97fc05ca526952a6e69e4e4d942",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_3.png",
+    "source_sha256": "1a62cd05127a81b2105984fa39c626963e53aa84cba7c27eb3c94e03bb04201a"
+  },
+  "assets/enemies/animations/skeleton_4.png": {
+    "job": "enemies__animations__skeleton_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2888208881b15aa0bbbd87bae1731ea4b6c8620886196a8e1f7b03c29c3845b1",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_4.png",
+    "source_sha256": "3855a35bb1ec0f907a965d7bb134c0df9fe5c4d26540261348c681d41a119060"
+  },
+  "assets/enemies/animations/skeleton_5.png": {
+    "job": "enemies__animations__skeleton_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bff80f70986c3536ad27e6a38293d961f27f307dc6a7f0aecb14429a898dc96d",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_5.png",
+    "source_sha256": "c2c05673e8c7e0414edb55d6f040c8521789cf0bfcfc93050cf17807562fce0e"
+  },
+  "assets/enemies/animations/skeleton_6.png": {
+    "job": "enemies__animations__skeleton_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "aebcd2060a1a958b0fe6326cb103fbc37f448afe372d2061d26be44d6d8519f3",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_6.png",
+    "source_sha256": "ba58e29fc898704c9e4ed4abc24827fb51ec4cc9bf8f1cd898badef21edbd6d2"
+  },
+  "assets/enemies/animations/skeleton_7.png": {
+    "job": "enemies__animations__skeleton_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "48184ed427758d7d7dfbfa18f909eb1aa33a8ddd20e9c5d206569c22461eebb3",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_7.png",
+    "source_sha256": "90950a3c11bda06ed3f7130f5ae0ee92668dc7faf7b13a85f45a38b534a1f790"
+  },
+  "assets/enemies/hd/bandit_0.png": {
+    "job": "enemies__animations__bandit_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "349c33b5052bca9fd5792e77ba279fabe4773255c61e0c6b19925a00f5e29450",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_0.png",
+    "source_sha256": "1890e61d65267803f30fc2ce1d7d01b1df085ffa5aa309d4c9fcc1dc14fdb469"
+  },
+  "assets/enemies/hd/bandit_1.png": {
+    "job": "enemies__animations__bandit_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7f5b05296a1659f84957e9a0c209cb7349a3ef9cce9e1ba87a8b3a863203e822",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_1.png",
+    "source_sha256": "0d19b15b846076799bba5b5e713bc095c7678662577b80ea458b2445b2bd1bd3"
+  },
+  "assets/enemies/hd/bandit_2.png": {
+    "job": "enemies__animations__bandit_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "893bb3729b76e3c81532a54100bb0ab00e99cd959f354f577de60dfe9ba784e5",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_2.png",
+    "source_sha256": "b830f1e9149b7d259bd671bc42e0ab92379848ce2340237a7d394d1c33564adf"
+  },
+  "assets/enemies/hd/bandit_3.png": {
+    "job": "enemies__animations__bandit_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "15bde1876f802e6586aacde185dba8bb241d5da5310fe1b1ff43f199f11e9ec5",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_3.png",
+    "source_sha256": "bc95cd8069f1e8ac36cbce84b12e9abf654c0c0a63d1eb12522979722efb6030"
+  },
+  "assets/enemies/hd/bandit_4.png": {
+    "job": "enemies__animations__bandit_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3acd91641efa28ac1604e8d023e6b25b00c840db439278cec257c1c421b5d363",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_4.png",
+    "source_sha256": "4b0b21c873a177313c9386465fff5083b7e10f4d4db4a1cf6a0127fe43ea3dc2"
+  },
+  "assets/enemies/hd/bandit_5.png": {
+    "job": "enemies__animations__bandit_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4b2c49ab57c0a3e9fcb195b5bfbf5d71d429f5872dbbe6d3a2473250b5e2f40d",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_5.png",
+    "source_sha256": "14d5849f278cfdcd04e6bcabde0f8d932796ed6ff534b6fb7bfffda51604197d"
+  },
+  "assets/enemies/hd/bandit_6.png": {
+    "job": "enemies__animations__bandit_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8b870bb9c77a0c55d06ede7fbe90f43ce680239b98f3ec85a17fb7b857d8e2c5",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_6.png",
+    "source_sha256": "4757f7f341a55e6c2ff0338cf2785a5f0cb52758b830fde13c0849f92f79db91"
+  },
+  "assets/enemies/hd/bandit_7.png": {
+    "job": "enemies__animations__bandit_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f04a01307a4aa390b51ac5ca1fb2e379906c1061b7404853c8354cdabc028ff7",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__bandit_7.png",
+    "source_sha256": "202663692a6e70e60b644ba711d0edbc8fddc2b94e2810568d4e980794f21412"
+  },
+  "assets/enemies/hd/beast_0.png": {
+    "job": "enemies__animations__beast_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ae54f7bda678a77d81663a616ec884e4c44aff632dd36ee9eca1f37af519cfda",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_0.png",
+    "source_sha256": "e816d441a55d52ff0640e7b393fcebee495471335d42aa5da29eef8650042505"
+  },
+  "assets/enemies/hd/beast_1.png": {
+    "job": "enemies__animations__beast_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5429dc296db72790061ae61b2d6ad5168464b480fd44186740d6dbafbbf61aa9",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_1.png",
+    "source_sha256": "8feac15d58e82ee498565bf01070d131d3986840e985ee1a4b31184fa7d7a294"
+  },
+  "assets/enemies/hd/beast_2.png": {
+    "job": "enemies__animations__beast_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ca00e81595f721cb66e080a26d512796d6049c8febc7101a0ca3c62ecdc0e01b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_2.png",
+    "source_sha256": "a3f6cff766bc48e17745e1efafee82fd659517ae6f3b238459116e075adfd520"
+  },
+  "assets/enemies/hd/beast_3.png": {
+    "job": "enemies__animations__beast_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1889801cb60a97c89a1cb6f52c005626b04dbd6f05c7011a347aaf22d92e5925",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_3.png",
+    "source_sha256": "94dcf831dbae157710e5e35507dbe2b49b9d23a67684485880171888dc575222"
+  },
+  "assets/enemies/hd/beast_4.png": {
+    "job": "enemies__animations__beast_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bca4a1b7f47e9431c4d23c75a45d627c0abffb0ab2da805ccdda71303b824292",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_4.png",
+    "source_sha256": "2f40c35dc01babecd27e43ac51502bdf39736d303e3c4759ff4a02fee0cf1211"
+  },
+  "assets/enemies/hd/beast_5.png": {
+    "job": "enemies__animations__beast_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7012c87a79f0e17378ee93d77a5df1df0889fd530b323b80a9bf2752356ac831",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_5.png",
+    "source_sha256": "a1baf030d7e05e006fc6c0f31784e2337d97f95b37508367e32e48c513b5000a"
+  },
+  "assets/enemies/hd/beast_6.png": {
+    "job": "enemies__animations__beast_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "17e48aa82bb80045b42fe3fd12965b9286418f006d44abc67ad6efc34072ce03",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_6.png",
+    "source_sha256": "33bc8b8fb29acca516c4720cb6088bfbe7d2e0a528c210b5224344806e099bd6"
+  },
+  "assets/enemies/hd/beast_7.png": {
+    "job": "enemies__animations__beast_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e9f4e4e9a1c2beaf6bafadac767cc86517ffe1b34b0f26dabe679fb3c2ed14d0",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_7.png",
+    "source_sha256": "045b20288176378dffe68a4d4e6c763f672b5e92f0290893d09b95341a142dbb"
+  },
+  "assets/enemies/hd/crypt_automaton.png": {
+    "job": "enemies__animations__crypt_automaton",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cf21f9997c41f6119f19681927a2e3faa0fefc2cc5bcfa9e69acaaf244fab198",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_automaton.png",
+    "source_sha256": "ac9671afc1978766b3b3759c9a3473aed41bd79145e49674c4fa0c1c932c3313"
+  },
+  "assets/enemies/hd/crypt_bandit.png": {
+    "job": "enemies__animations__crypt_bandit",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "eee48b839267f86af0c276bab1be45213af1ddb39b2cb003ab93bee23532749a",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bandit.png",
+    "source_sha256": "25b325bc6a75bb69fdc25ac8de3635ed5384e656352a253fc45dd040428f07d6"
+  },
+  "assets/enemies/hd/crypt_bat.png": {
+    "job": "enemies__animations__crypt_bat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cd8ee79d65dbacc7d44ea7234f004d1c5fc3cb1a03146de31c3a0ebdc392da64",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_bat.png",
+    "source_sha256": "2ce7f816d1e5a8241fd6f687bd9e80adb64eaf4c36b660a6295751cbdb3245d7"
+  },
+  "assets/enemies/hd/crypt_beetle.png": {
+    "job": "enemies__animations__crypt_beetle",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "169c708daf4a3794de66695f6ffdab9426297ae7e190dfe522c4ee09941d888b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_beetle.png",
+    "source_sha256": "ebc4d175108d05e5bc0cc54264156e5731f5d64284ba586acb20ca667db61bb4"
+  },
+  "assets/enemies/hd/crypt_lancer.png": {
+    "job": "enemies__animations__crypt_lancer",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5a492fa58883b29c5397cf5b98990e023c0fb53836be57c6f28ee99a8b0c115b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_lancer.png",
+    "source_sha256": "7cf36545c0504da6ee14306f1b1a08b19b7432688b76ea4c8ebec1ad0c4907ff"
+  },
+  "assets/enemies/hd/crypt_shaman.png": {
+    "job": "enemies__animations__crypt_shaman",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "91c95ba0a8304e459f55b168bac2759cc7ce1896a753a4eb5e7dd779aea9982f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_shaman.png",
+    "source_sha256": "3536ba2b35eb8b4e3e9be4bf66fad958315ce0cbdf514b0a2751a8d614d0d77d"
+  },
+  "assets/enemies/hd/crypt_slime.png": {
+    "job": "enemies__animations__crypt_slime",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b6229931139483a9063dbf1da422f4957e00c99e82966e6665ea50870251527d",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_slime.png",
+    "source_sha256": "1451b5bd995b6548cc33452756da477fc5f5353ec4182dfd521ee1e18b4b19b5"
+  },
+  "assets/enemies/hd/crypt_wolf.png": {
+    "job": "enemies__animations__crypt_wolf",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "4d443625c01886d115deffae648ee8520a4defdc4e4574b37b08ae4be1d3519a",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__crypt_wolf.png",
+    "source_sha256": "9ae8b2290dd5001455f3093e2adca17ce9b98f7b26b475f96e5981490f261080"
+  },
+  "assets/enemies/hd/elemental_0.png": {
+    "job": "enemies__animations__elemental_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8dbb3d3ae813d12559919d71b84743f3c56158754dd1519932062281e5b04ad3",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_0.png",
+    "source_sha256": "cfc1223cf5f7235efcea5574a5429b53938acf128e341a7c356a13d53d07efc1"
+  },
+  "assets/enemies/hd/elemental_1.png": {
+    "job": "enemies__animations__elemental_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0c913d507c10a807e29f984a008678b4f6e7a8456f69e43b8413032e1b5b00a1",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_1.png",
+    "source_sha256": "0c4ae50dfdfc3b35f4153890af9ad7f0130515eb6c722efafc60ced74032202c"
+  },
+  "assets/enemies/hd/elemental_2.png": {
+    "job": "enemies__animations__elemental_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "56eebdcc8c0d84ad35789707b8a6d87ecff6fa4c3286e595b0c115668119ff98",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_2.png",
+    "source_sha256": "c4f2f6d32e43d5ea1829e9ee9499aaa5a17c878f6f268e4ab2d890a617197547"
+  },
+  "assets/enemies/hd/elemental_3.png": {
+    "job": "enemies__animations__elemental_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d071e1717bbfd0f5bc51c4955d04b3ab1820168e480c80bb1839e0dabb4f9554",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_3.png",
+    "source_sha256": "aa18d9c7217d080dceb6141b438aab065e27d98f4b55fc059ae2e9c37bafb401"
+  },
+  "assets/enemies/hd/elemental_4.png": {
+    "job": "enemies__animations__elemental_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2815e00e835b5ed1b3e88b2d7ff8d71268598855935dc9dc0023ebd4672a2636",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_4.png",
+    "source_sha256": "86eeba2f993e2bd23879d09eac334509e0d6e0300ea71584d899da2bc8f1e46f"
+  },
+  "assets/enemies/hd/elemental_5.png": {
+    "job": "enemies__animations__elemental_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "53f0418f9bdf194fdf53baa0275e7869f9920288b3a374bc8a28b458876b87e3",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_5.png",
+    "source_sha256": "34d00424c601ba6f74b564dadf779f30671bc97354b50aeaebb8b809640668d5"
+  },
+  "assets/enemies/hd/elemental_6.png": {
+    "job": "enemies__animations__elemental_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e0adb46e2f93759a2b8c259a0b9e5db6e02eb1b69d032068f931007a374d91b3",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_6.png",
+    "source_sha256": "ab2b53a432092bf3813a0cf976eb67820e312df39ca1beceaeefea431bbad9a0"
+  },
+  "assets/enemies/hd/elemental_7.png": {
+    "job": "enemies__animations__elemental_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "44736aa0f21ef7e628a74e48f54f0bf899332e0899e03049daa20c3dca5aaf8e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__elemental_7.png",
+    "source_sha256": "9c1ab7ef514d79859bd95d73c0c0ac84f454c805056f2781b69ed0825a35f928"
+  },
+  "assets/enemies/hd/flying_0.png": {
+    "job": "enemies__animations__flying_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "dd09546d01cb968992c67441183d87f03246ec96a85201b600e983d41e912406",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_0.png",
+    "source_sha256": "6aeb23d021dd505713f093a7e2f823e7ea17028f5134f9bb1c3ecc0940a956a5"
+  },
+  "assets/enemies/hd/flying_1.png": {
+    "job": "enemies__animations__flying_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "80b60b264f7121e20f7d62054902ff7e10518e32711ce0644db0dd47c731735b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_1.png",
+    "source_sha256": "70e5d3e7d3d96a34eb6660938c6ae7ab36c0061e57c2ae9dfb54641c90134c02"
+  },
+  "assets/enemies/hd/flying_2.png": {
+    "job": "enemies__animations__flying_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ed04c8b63ea04d97298badfec098418c4bac44bafe945afcfa9f136fb8217062",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_2.png",
+    "source_sha256": "878392ae67b1c56b3b2884edcb88e743c3754f73955503e9b1480c3be55c7993"
+  },
+  "assets/enemies/hd/flying_3.png": {
+    "job": "enemies__animations__flying_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "13a59039150680ebabf4060a0b170780a08035590f4e657e87cdbaaf4f411768",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_3.png",
+    "source_sha256": "333e84cf1c574ccb065434e00f9b1c3a7304f6b11d778050f0b47466db3d0c4e"
+  },
+  "assets/enemies/hd/flying_4.png": {
+    "job": "enemies__animations__flying_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ebea5de726568d82e0f936f0be6fae359858b04ca68c59046fcaedc474a53b27",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_4.png",
+    "source_sha256": "e200a7f5bf2cd2634a093387d60bc8903dd5b770f265cb58239dd126e141ef29"
+  },
+  "assets/enemies/hd/flying_5.png": {
+    "job": "enemies__animations__flying_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a80d3c2beb93358dbea68d20e79ddd07ee56159adf3511a22da595aefd7f5ae9",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_5.png",
+    "source_sha256": "72621b9764763f50e077b7a7ab8f2722b6449c69405c3c8cc26f7a16e4321b99"
+  },
+  "assets/enemies/hd/flying_6.png": {
+    "job": "enemies__animations__flying_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e784b68e662e32aba9666c6417d82cfc7129df11cb0489ff7cb88054bc897063",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_6.png",
+    "source_sha256": "e75e1b23f4276e78eb3e5a0aefd09622e9184860a07c18fdd7aacb5122e0a7f6"
+  },
+  "assets/enemies/hd/flying_7.png": {
+    "job": "enemies__animations__flying_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fd0f989ae5b82204794ea73c5dacae921fe4080af769bfdb521702493de4da8f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__flying_7.png",
+    "source_sha256": "cea004f14461b940046cbd32fc527c4d5d7277ecaeb80517d53aaed08d17322b"
+  },
+  "assets/enemies/hd/goblin_0.png": {
+    "job": "enemies__animations__goblin_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c0bc652ade54b9bbdacc17266cd7bb6a8e1932e0aa59545951615051d4a773c0",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_0.png",
+    "source_sha256": "087de941b0692e183a8a8b9e2dedf0933f5fa8476286fd2183a7f3aacba4b5f7"
+  },
+  "assets/enemies/hd/goblin_1.png": {
+    "job": "enemies__animations__goblin_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ee1289d926d814c4ef4370f197126117e648b4e7c9fcc78b1c74e53abc98293a",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_1.png",
+    "source_sha256": "1defbd10ec7a728da2b62acf435fe4cc4cffea36e95de687a23d6ba4f5712841"
+  },
+  "assets/enemies/hd/goblin_2.png": {
+    "job": "enemies__animations__goblin_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9f3e45279094e7d3005847211f3c4f15b005f2c627dda8ff1ecfe4b8696f756a",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_2.png",
+    "source_sha256": "18486cc74463ba8619a6ca06327e8954c6fe96560190aa452e00a3f88765bd06"
+  },
+  "assets/enemies/hd/goblin_3.png": {
+    "job": "enemies__animations__goblin_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6ef57b02431ad6b873a1c476305afbbfad9d04727e7e12f277c54ff74e18f2e7",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_3.png",
+    "source_sha256": "ee8072277ab4c1ef1d682fe0b21b5ff2fba7c92dc65311086e2142a3f7571a34"
+  },
+  "assets/enemies/hd/goblin_4.png": {
+    "job": "enemies__animations__goblin_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "80d05ce662f72bc5eede9ef6d111a83e36c5b65151c251a7f581b859a628248e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_4.png",
+    "source_sha256": "8498d033178b1addf128cf7a5fbdd47f999a55da62752eb4772b15636221958d"
+  },
+  "assets/enemies/hd/goblin_5.png": {
+    "job": "enemies__animations__goblin_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6eb600071f309d000f2471c7eefd3eef33bb6d5397f791c83c3ccaeff51de292",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_5.png",
+    "source_sha256": "334ce16dd538973c22fd6ffdaca0a44d58921f58e5e295b13badf846b53504a6"
+  },
+  "assets/enemies/hd/goblin_6.png": {
+    "job": "enemies__animations__goblin_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ad72e780a91559fc75efe28d4ec2a881c2c9731bd0c650b0c018d87f90ce0386",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_6.png",
+    "source_sha256": "4a0cc1614073006aef6bd8cabccfc2fc8e32f660289694dd70a4cc4c08450470"
+  },
+  "assets/enemies/hd/goblin_7.png": {
+    "job": "enemies__animations__goblin_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "26fd169e9b775e33358b6b328787117e025aade22b3c45a734625894ca8b9779",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__goblin_7.png",
+    "source_sha256": "f9ecd9e759a3d7a9440134690f18b63727cb72056b211a6a567d2f59e1a53f3e"
+  },
+  "assets/enemies/hd/skeleton_0.png": {
+    "job": "enemies__animations__skeleton_0",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7bbfbe27a59a9660ba302cdb7abe32d99241b2f65649ae6b4ec871503d07d9cb",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_0.png",
+    "source_sha256": "323c0ecca75dc34e1d24b9a30802a2455ef608a35d9c3907b36692ad57ebb78c"
+  },
+  "assets/enemies/hd/skeleton_1.png": {
+    "job": "enemies__animations__skeleton_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3b6fd415f7b281ec08630f763a606f3ca9c72858ca308cf3e66496bd161b77c1",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_1.png",
+    "source_sha256": "ef0dffec35a2d2f758ac0466af3891bcb02fb1e6f7b9b6ab9670312e22155d04"
+  },
+  "assets/enemies/hd/skeleton_2.png": {
+    "job": "enemies__animations__skeleton_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fdddcd2822b18e9f50f46fbaa40b984da8d4023c7265076f231ebe2900284cf7",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_2.png",
+    "source_sha256": "d3fdd643225d811ef659d4611857f5e0af5c8ae577a18f322bb4d8cb70c1830b"
+  },
+  "assets/enemies/hd/skeleton_3.png": {
+    "job": "enemies__animations__skeleton_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e70440026ad80d309aa9e3897ccc0862c9b0721798d98a0a3c692f633adf66ff",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_3.png",
+    "source_sha256": "1a62cd05127a81b2105984fa39c626963e53aa84cba7c27eb3c94e03bb04201a"
+  },
+  "assets/enemies/hd/skeleton_4.png": {
+    "job": "enemies__animations__skeleton_4",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2818ffd36fa8860aad70538558a28a95ee8c78753a361443263cc8bb336ae55b",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_4.png",
+    "source_sha256": "3855a35bb1ec0f907a965d7bb134c0df9fe5c4d26540261348c681d41a119060"
+  },
+  "assets/enemies/hd/skeleton_5.png": {
+    "job": "enemies__animations__skeleton_5",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "57a5fe0924194a585c6a4cc00cafc9f85fbcdc320ab7f59953b62d8398d6519f",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_5.png",
+    "source_sha256": "c2c05673e8c7e0414edb55d6f040c8521789cf0bfcfc93050cf17807562fce0e"
+  },
+  "assets/enemies/hd/skeleton_6.png": {
+    "job": "enemies__animations__skeleton_6",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "eb43a70771e2151c5f6dbfc78ede390d5be2a01c7b4e7c4f46e70d2c202cc61e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_6.png",
+    "source_sha256": "ba58e29fc898704c9e4ed4abc24827fb51ec4cc9bf8f1cd898badef21edbd6d2"
+  },
+  "assets/enemies/hd/skeleton_7.png": {
+    "job": "enemies__animations__skeleton_7",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "47c8a1341e0d1805825b95904deeca2cbf410a952d9a1f4722300db21a327c9e",
+    "source": "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__skeleton_7.png",
+    "source_sha256": "90950a3c11bda06ed3f7130f5ae0ee92668dc7faf7b13a85f45a38b534a1f790"
+  },
+  "assets/equipment/door.png": {
+    "job": "equipment__door",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "42c5b25125801f6c4e00078604ba389bd2a7ee94019af54810a975d3a54017d5",
+    "source": "art_sources/art_direction/migration/sources/icon/equipment__door.png",
+    "source_sha256": "122fa85a644c55911017b12edb88cdd2d7debe9baf0a501ea1af84fc0d192064"
+  },
+  "assets/equipment/valhalla.png": {
+    "job": "equipment__valhalla",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bafab0fabb6e606fdf5dad2894909d83a89d46d0af09e3b798c4a2d9c7c79fbe",
+    "source": "art_sources/art_direction/migration/sources/scene/equipment__valhalla.png",
+    "source_sha256": "3729f2c53ebee3140e6daa5ee45b25bee241462278e267e8bf4e22340c8c998d"
+  },
+  "assets/expeditions/contract_battle.png": {
+    "job": "expeditions__contract_battle",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8f02a37b41281e3040bd04c1eff02200433a86d91e639218ececf16782f8adc0",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_battle.png",
+    "source_sha256": "ad1c768685075e3afab7e16c446725734c17fa69f3abaea54ad04ce5dc34f712"
+  },
+  "assets/expeditions/contract_elite.png": {
+    "job": "expeditions__contract_elite",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6c20a40cfa0b1148da1986e3d7a1487e69441a2dc76a7f34ea0d8b5625ce61fe",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_elite.png",
+    "source_sha256": "74e1c8966ac049d036f506302d542506453f236d4190bfe06821c0936de6e304"
+  },
+  "assets/expeditions/contract_exploration.png": {
+    "job": "expeditions__contract_exploration",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cec06af73dd3c4ba3768e40d2080d3337bd78f2f6e58c93c65f6fefb14f37b9a",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_exploration.png",
+    "source_sha256": "2925cf16050fd904d46b2de602d836cfa2bc4ffd145f0f6f5b55a87c49defa20"
+  },
+  "assets/expeditions/contract_guardian.png": {
+    "job": "expeditions__contract_guardian",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cf7e4f6a2fadd7e97791a534399f44f56999e694135b4b76d5f98b7d1ae15465",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_guardian.png",
+    "source_sha256": "62ba68401f541f7927543d87f99c07516d4e7383734480b82dab7618caf5d4f5"
+  },
+  "assets/expeditions/contract_mastery.png": {
+    "job": "expeditions__contract_mastery",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e08d82906cd51e5a9417642ea63943a926d74dd233baeb4ad8503032df9a032c",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_mastery.png",
+    "source_sha256": "a10a5c5e6baac562db60d57643e75c888b222a689af5fd8b43941100626e0a60"
+  },
+  "assets/expeditions/contract_pair.png": {
+    "job": "expeditions__contract_pair",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "2d9c944f7607f733ec9dabaaa6616813f8857801f06b91800b84c7012bfd0d77",
+    "source": "art_sources/art_direction/migration/sources/contract/expeditions__contract_pair.png",
+    "source_sha256": "174dec57ea9f6ff256f56fa4c766567806500cb98408eb08bb989decc786ff8c"
+  },
+  "assets/forest/combat_glade.png": {
+    "job": "forest__combat_glade",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5aa1930dbcc5110414076409cb6d3f75b8728d92107eaeb58088d4fb767c8ee3",
+    "source": "art_sources/art_direction/migration/sources/scene/forest__combat_glade.png",
+    "source_sha256": "10c48f18bbc5173c3738175c5a951933ae364dad80af0c43d52be2a587f015b0"
+  },
+  "assets/forest/combat_ruins.png": {
+    "job": "forest__combat_ruins",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a1e99e09ea885fb5c04f74c4f6f317f8f6ee8efb69800382b1d665e4428f61a9",
+    "source": "art_sources/art_direction/migration/sources/scene/forest__combat_ruins.png",
+    "source_sha256": "1c289f0081a6c61cc30a8b181626a449b8f6d5e076acd9a2e71ecf8b2b99ce75"
+  },
+  "assets/forest/rest.png": {
+    "job": "forest__rest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c1120d73d1ca34b9ca6dadf990e1b48b9789ce1d7a07f2fcd26bc8824ea29635",
+    "source": "art_sources/art_direction/migration/sources/scene/forest__rest.png",
+    "source_sha256": "3d3018bfd4e54145d44bf17b9cd65377c18e374bd5161e10c89da9f0058d92f2"
+  },
+  "assets/forge/icons/armor_1.png": {
+    "job": "forge__icons__armor_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1a946c7d7d8a57e727ce2c7e392c09a2c86f7fae46362aee88f7076be14c33ed",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_1.png",
+    "source_sha256": "fc97706577d2af253497dbe718de735c5ddf7e435a58100b95f037dc507ea9f6"
+  },
+  "assets/forge/icons/armor_2.png": {
+    "job": "forge__icons__armor_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6a568c87e76508373b18f216ee34346a3afd839fe51cf02c84b54c715975346f",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_2.png",
+    "source_sha256": "89a60e9ccb838d702bcadd78c9e0ba3a486b33711b1add877d77b6c234421fb8"
+  },
+  "assets/forge/icons/armor_3.png": {
+    "job": "forge__icons__armor_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c590010c8bd1ff1297cde5b4a78f9e6dee5a97b41467b9007fbf51390344d5a0",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__armor_3.png",
+    "source_sha256": "c2d0eb700f1bb5a8e2aac76c4eaa07995e3a252bd5c53056979d29ccd9ac32aa"
+  },
+  "assets/forge/icons/guardian_1.png": {
+    "job": "forge__icons__guardian_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f987c47564c25b824ceb9c5603fde26d4e3d857576bd92032cb9d5871abd9953",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_1.png",
+    "source_sha256": "74773b22b72569f9a4ce2eff5aeea0dc270df914246afd43317cb053af7cb6d3"
+  },
+  "assets/forge/icons/guardian_2.png": {
+    "job": "forge__icons__guardian_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b623ef2f8b24b21f8b2cc1c330e831ddb4c9522fb8b19ee5507cf0750464b573",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_2.png",
+    "source_sha256": "27bc4bee7db7640a2c546e31dcfe23d04340b63061e39c45fa763fad37f758f8"
+  },
+  "assets/forge/icons/guardian_3.png": {
+    "job": "forge__icons__guardian_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "463fcd4f27471d6f6e10249688bb55224e681a1e6eddb907f19ddee6acaeea9e",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__guardian_3.png",
+    "source_sha256": "766617c6008bea5ba8216599f43d7b92c2ffb5211de89cd804b9bf27a6fada3a"
+  },
+  "assets/forge/icons/mage_1.png": {
+    "job": "forge__icons__mage_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bce145bb73ef915ec2e39914db75f304980ec5dab8161a8531974cccdb95dd9c",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_1.png",
+    "source_sha256": "5449d0d95bfdcba9ae32935188bbc01ce2218d6b9afb7e844402a21b709b86c7"
+  },
+  "assets/forge/icons/mage_2.png": {
+    "job": "forge__icons__mage_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c9edfbb495e82ed9a7e3340943ea47480bf6b5346b624a1d1a6b76b641531624",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_2.png",
+    "source_sha256": "8ca8367ed1208e6c1ea9aa604fb26c775d05df68f96ffd2f1ab144ceba537cfe"
+  },
+  "assets/forge/icons/mage_3.png": {
+    "job": "forge__icons__mage_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "65919b83ee91dc74e48d136f6d541a81093259a06f96a9b9709d188e84e7ca21",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__mage_3.png",
+    "source_sha256": "738eecfa5b8c5c36f477984025b84f8087fd5a6d8a42242f4bde1827ae55f983"
+  },
+  "assets/forge/icons/rogue_1.png": {
+    "job": "forge__icons__rogue_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9f9dfa63a10b6de1ef5d8c2e6197af02138fc06530e18d7b0d96788b23393f49",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_1.png",
+    "source_sha256": "6b52dfd8798c8f371c61ba0da16b399e16077e647863c01e870f13c16136fe04"
+  },
+  "assets/forge/icons/rogue_2.png": {
+    "job": "forge__icons__rogue_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8a3ddfcd8f1ac95c7632c4478596596ee713fe29b5adb86abe9be90810c0b4d6",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_2.png",
+    "source_sha256": "4dc9f4aa7987afe831be298fde4c53b5532d60b8915351cd05fc8a55329c3411"
+  },
+  "assets/forge/icons/rogue_3.png": {
+    "job": "forge__icons__rogue_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "50f3260bc6fabb0fc16a129f5283364cce66fadd4c2eeb16749934d6ee3d7086",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__rogue_3.png",
+    "source_sha256": "1c0c846be61894f32a35c6d51f35e42358cd10534541276840b810ebbe65fe6f"
+  },
+  "assets/forge/icons/warrior_1.png": {
+    "job": "forge__icons__warrior_1",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0e65a8f3768e06b5a1c89681b2d56b051d7af38222aab0f41d52a4161371dfb6",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_1.png",
+    "source_sha256": "e456b644fba5dbb868296f3ecc2ad2a0390198c09070336ee16b1b65210d3555"
+  },
+  "assets/forge/icons/warrior_2.png": {
+    "job": "forge__icons__warrior_2",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f8d6f81ca40356fbb64a884ea37a34cfab52fdb665dc1ba15d44d23d38272056",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_2.png",
+    "source_sha256": "2bf253b0e82d9e8caf76e7456004a516c1245961de3542fc1b244e24e0f738cf"
+  },
+  "assets/forge/icons/warrior_3.png": {
+    "job": "forge__icons__warrior_3",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1ff207cefe94ad50d1dc96c83b8b5fbcb0a85ba098e1de31346cad6239484488",
+    "source": "art_sources/art_direction/migration/sources/icon/forge__icons__warrior_3.png",
+    "source_sha256": "d1440ece0b5a7cabb09a51256c2823c4fb6184bf46a478d4cd05ecdaeb72db70"
+  },
+  "assets/inventory/background.png": {
+    "job": "inventory__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ceeaeec50c0169c09e09f2115f015597d253ae85a6b9815dbdc1277987cfeb91",
+    "source": "art_sources/art_direction/migration/sources/scene/inventory__background.png",
+    "source_sha256": "9fcdd6a6c6936f20df4cd26dae8817babd87d1453e4d21b3d00975f39f05abff"
+  },
+  "assets/map/group_tab.png": {
+    "job": "map__group_tab",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "71d1b925558159141b1741593681abee9a514a2a5e0afb1c8938e6facff25572",
+    "source": "art_sources/art_direction/migration/sources/icon/map__group_tab.png",
+    "source_sha256": "8e1e6cfb3dffe400c2f24d05a6620085c8adece43775ed71c34bdd8c63e92e8b"
+  },
+  "assets/map/minimal/boss.png": {
+    "job": "map__minimal__boss",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ed664d60f33345ec193d5b187c36ef81553681553fb49996afc806a00779d6bd",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__boss.png",
+    "source_sha256": "ac08eda5789a2f17a0b369fe045261e70906b50aa7b9be35f4b1a1623e302010"
+  },
+  "assets/map/minimal/combat.png": {
+    "job": "map__minimal__combat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ebe821c2640a499514ec8ea869369626c0736677277b95538741c96a688e0997",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__combat.png",
+    "source_sha256": "e95b5d88b3545da127f03aa67d572682c37c963dba0facc6ddea440ff3c8c65b"
+  },
+  "assets/map/minimal/elite.png": {
+    "job": "map__minimal__elite",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bf77c0c50ea0eda960a6c1a8e945d412b5bf977379336d37d691ff0dc6e100d6",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__elite.png",
+    "source_sha256": "3e06faa19709d24694fba99b27af3ce8404415566ddb746998258adb9d04418b"
+  },
+  "assets/map/minimal/event.png": {
+    "job": "map__minimal__event",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "cfb9201a4df0a345731e53ce796444ce79a78fa7baa5bfe4ae5563b4d9c88c4f",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__event.png",
+    "source_sha256": "dadbcedb292d63a70c30d3560118ac50fc241b57111408ccd7dd8d4fd720c3ef"
+  },
+  "assets/map/minimal/parchment.png": {
+    "job": "map__minimal__parchment",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ff1ef965809918243c93bbcd816d0821f9b4199973e91ea315e24f59ed435f90",
+    "source": "art_sources/art_direction/migration/sources/map/map__minimal__parchment.png",
+    "source_sha256": "c824053c1a9e83491b8c7d457c390a9d3ba64258f17e47c02a5c52d42f83b862"
+  },
+  "assets/map/minimal/rest.png": {
+    "job": "map__minimal__rest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "f5cdb7ada7670baaf024406b7d22bb1c8ed7f6e922a001450fdd5f9c7873e610",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__rest.png",
+    "source_sha256": "5d0738cc9a0021a45d5991c125712403d2c1e7c2a5211428ea91808845153a6c"
+  },
+  "assets/map/minimal/room_papyrus.png": {
+    "job": "map__minimal__room_papyrus",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "078692349da8041734089f12b1044647395f2a453d9a542ed18eada4991083db",
+    "source": "art_sources/art_direction/migration/sources/map/map__minimal__room_papyrus.png",
+    "source_sha256": "33c1568ac4baed02a2d9e9e72262d3a10f64cb2cb68e24ce7acd93ea7e255024"
+  },
+  "assets/map/minimal/treasure.png": {
+    "job": "map__minimal__treasure",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "40e4265a5ffd1f9264c187acf2cac8ef966ecb64b970971db5c518c75c10f958",
+    "source": "art_sources/art_direction/migration/sources/icon/map__minimal__treasure.png",
+    "source_sha256": "0a402f0e2a466ad6a6910f694d02acde5b5c328259450cee7d568da35753fb99"
+  },
+  "assets/objects/icons.png": {
+    "job": "objects__icons",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "09e0982485d05312639cbd3a4e4e98d995a132ad7895669c6685e2c710626165",
+    "source": "art_sources/art_direction/migration/sources/objects_atlas/objects__icons.png",
+    "source_sha256": "2b5cdc04a33e6cf677f2b4350ce65c40d6ed32b6b71c81e5563b5b70562d4d42"
+  },
+  "assets/relics/ancient_cog.png": {
+    "job": "relics__ancient_cog",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "a8ead7d06e94dec44fccce075a433cf75e429ac52ca48c3e7aede2058eb342b1",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__ancient_cog.png",
+    "source_sha256": "8a6ab847588cc7f9af2117eac7e7801f82efdf765218589e3cbedc24c31b9b0e"
+  },
+  "assets/relics/blood_ruby.png": {
+    "job": "relics__blood_ruby",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "78e19d819ec356581b035d296c684b142f23266842acf48b23b5dcbb544cd850",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__blood_ruby.png",
+    "source_sha256": "130c9d3ba7e7a1a36cac460bb232e7033c9755d268c1af526ed8bf86d7f12c08"
+  },
+  "assets/relics/boss/crypt_blood.png": {
+    "job": "relics__boss__crypt_blood",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "66994043aae7c22acc6fb4271e81f55d999b633abb41bdffecd8dab614927826",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_blood.png",
+    "source_sha256": "1e27c95ee1abe4863ac2e3e0f445a677452570d93559d137bda4f4e8b774de4b"
+  },
+  "assets/relics/boss/crypt_lantern.png": {
+    "job": "relics__boss__crypt_lantern",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "414e6da80a93dce484131f6d1c107e769c79ffc924fab34c3fb1277188c4c8e6",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_lantern.png",
+    "source_sha256": "b143182d2453cbe597195313b14dce7b9057090850848544028241ca4925b729"
+  },
+  "assets/relics/boss/crypt_seal.png": {
+    "job": "relics__boss__crypt_seal",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7660f71666bc44c7ad27f6ba926e81ead5517205070809b8c0f64370dd27ec08",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__crypt_seal.png",
+    "source_sha256": "c4d5f4632300b6e9946e5feff55cf4d51153e221f9066ed9ccd57b19a53049f9"
+  },
+  "assets/relics/boss/fire_crown.png": {
+    "job": "relics__boss__fire_crown",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "311cb0b4a56da8e350b6c07505cd644ec9d31e708a02caaf48e0eb6c42959ac2",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_crown.png",
+    "source_sha256": "9b8eaa439bbd82538f3e90d490c312a69bd938eeaee18b05e5b469ca93e7320f"
+  },
+  "assets/relics/boss/fire_spark.png": {
+    "job": "relics__boss__fire_spark",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "221acbf972ce39beb97b80e0d15088a32b83ffaaa01834cc6100af9d01ce2db0",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_spark.png",
+    "source_sha256": "82382c402f8fbd3e26040b699a8afbd943083648454a06163995ff8fe43c1a68"
+  },
+  "assets/relics/boss/fire_ward.png": {
+    "job": "relics__boss__fire_ward",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "9d3bcc960508a4b6528764e63a4cf82409671a2f32e2cf1f2d17df3307e2c920",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__fire_ward.png",
+    "source_sha256": "10afb1a00302a60f5e569523b57e710387c6614b4bc634da3016cd85122178cd"
+  },
+  "assets/relics/boss/forest_eye.png": {
+    "job": "relics__boss__forest_eye",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "10f48faa077de95ff87d1f92e32454686d9024909f11fd1b2b2d40ce06728629",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_eye.png",
+    "source_sha256": "eb808358544011db643df0a1fb078a76271f96de426133983835d053b10aa5c5"
+  },
+  "assets/relics/boss/forest_heart.png": {
+    "job": "relics__boss__forest_heart",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1d42c8ab7da71d82d80cfa989b558f6fea0fa29510125b1424370abdfb086c32",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_heart.png",
+    "source_sha256": "b62850280a90e6005f22c053f99b8082d501d791ecb12f5014e96a11eb5f4fd7"
+  },
+  "assets/relics/boss/forest_thorn.png": {
+    "job": "relics__boss__forest_thorn",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "fe8c8c586ae6443fd0b5006afa197aef7617d811303026c6106ae280c79acebe",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__boss__forest_thorn.png",
+    "source_sha256": "a439503801256903b1a3ded2238177926a66abf9c147a465642b15ede3ef5108"
+  },
+  "assets/relics/dawn_bell.png": {
+    "job": "relics__dawn_bell",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c24ff3d83c3bf3846dc72bc9b22f011d6ac406564f998e099ab5b19d889d599b",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__dawn_bell.png",
+    "source_sha256": "b50d56ad9fdea72a5279ae37bb87260afb26d42b05012edfa404aa48e3fb8fd9"
+  },
+  "assets/relics/drill_tusk.png": {
+    "job": "relics__drill_tusk",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c22139a74f9c6901773d5c4b04624897ed38533fe19f28f40d61b919cdc28d5b",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__drill_tusk.png",
+    "source_sha256": "76108941e2bc232089a9d00df6c89c242456b6e9565733b65d4b935bf3b632a2"
+  },
+  "assets/relics/duelist_seal.png": {
+    "job": "relics__duelist_seal",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "0ed80497ad6d8ff2e27dccdd02d6f23435a09abaddca8a410a6c6263e64f07f9",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__duelist_seal.png",
+    "source_sha256": "dfb1a125eed85a6c8256e64845a70ddaf5be1331deef679adfb3be49d57c494a"
+  },
+  "assets/relics/giant_heart.png": {
+    "job": "relics__giant_heart",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b0bad6a49b48d0693e05d9eee619a79b5bdaf9763a97fa311742de3dce85e8af",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__giant_heart.png",
+    "source_sha256": "f35de907b06918cfca1816ab3c1ca2fe7705cfc5c8f3894ba09f984c2356c648"
+  },
+  "assets/relics/iron_knot.png": {
+    "job": "relics__iron_knot",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "dd25a444bf76bf247898fe8ef38694abd34918adc82b7f3a3d1214ee4c620795",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__iron_knot.png",
+    "source_sha256": "6f6fe962efd731353bd8d417740bfb73dd4aca334fb2fdc26e5bb0d71ee7de4d"
+  },
+  "assets/relics/ivory_mirror.png": {
+    "job": "relics__ivory_mirror",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ac02212827933fc2d359247f21ab081bea5baff72f8c04939b9ae750140b8254",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__ivory_mirror.png",
+    "source_sha256": "fcfed353115aea0f2a75858aca9e2807e4672951ef9e060408a906936af0d91a"
+  },
+  "assets/relics/oath_chain.png": {
+    "job": "relics__oath_chain",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "31b13b989cbb1e5e326e7a168e61a2ffe593d6abd69855b6e43556b507d14a8e",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__oath_chain.png",
+    "source_sha256": "468fe08ab25a177edd049072ecf8f09ffae1b6340081091127bd1248edf03a49"
+  },
+  "assets/relics/raven_quill.png": {
+    "job": "relics__raven_quill",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "c9a134f148bf7c90a79c2e1ece2aa50b26ccaf7bff1cad08545df452137d7e9f",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__raven_quill.png",
+    "source_sha256": "5bd985040dec92c46d70f2f5c22ab86b27feb8581b23827b5e2ed3ad0b024727"
+  },
+  "assets/relics/rune_chisel.png": {
+    "job": "relics__rune_chisel",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "eb0848e5277c7a5ad248d0c0a23810cb5ae6f2002369718e2ece07ec281a145f",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__rune_chisel.png",
+    "source_sha256": "2da820000637655a599d11eafe560595458aa866619b1b417bcfe6dbdb4f3f1e"
+  },
+  "assets/relics/sentinel_mask.png": {
+    "job": "relics__sentinel_mask",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "160f7e852d2f8e073e083d2a8113b8f603ca190e411a9d2de604ee00888d01b6",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__sentinel_mask.png",
+    "source_sha256": "f291c2a33b30586d62ebef2ad4fa8552cd862682a10039abff65dfc25b1f076a"
+  },
+  "assets/relics/silver_thread.png": {
+    "job": "relics__silver_thread",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7fbb91b871839fe050938324542e85a3168c706e93f6e11353bb5098a34b81d6",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__silver_thread.png",
+    "source_sha256": "e6bd80c48ddea693657253391a0f5d03855b00990ff20014cf54fc4af1168bb2"
+  },
+  "assets/relics/spring_seed.png": {
+    "job": "relics__spring_seed",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ff2a2d9e4c0bf0ade98fc739a539f8ed517a2a6e9ee64b37b15fc7e8db2a0af0",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__spring_seed.png",
+    "source_sha256": "fbd007923e84a31f7004650532ee95e1d88f1617307b5e0d145ad7acb4cb18ec"
+  },
+  "assets/relics/star_shard.png": {
+    "job": "relics__star_shard",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "bcaa9cffc03c22b41bf0e479089f2d03c0afdf4e31195988f21d25d4942024a9",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__star_shard.png",
+    "source_sha256": "2ffaca91a903b77e047a67dfdb2560a1093e3e3cc9deb393946c2afa281ac4c5"
+  },
+  "assets/relics/storm_drum.png": {
+    "job": "relics__storm_drum",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7f1db475efbeb0c21bcba23b2b0109650d439632b9b311983c151885d226b903",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__storm_drum.png",
+    "source_sha256": "568dc185d68a8e902337214308510d0394fe1bd6623931bd09888c24df9b6c4d"
+  },
+  "assets/relics/sun_spark.png": {
+    "job": "relics__sun_spark",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "afcdde2f9df0e1dfb096c8c7ccd7f0ca42aa10a26b45d69c34c9236abfe86e01",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__sun_spark.png",
+    "source_sha256": "5daeda3c280ca6093bbb4773393b042c391588813961d441c5b094b69e8bfcf1"
+  },
+  "assets/relics/titan_hammer.png": {
+    "job": "relics__titan_hammer",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6f187b85e05de4805dacdf5c170f7ee0917b8ad3dfa76b5e058d0f5c36e1603b",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__titan_hammer.png",
+    "source_sha256": "1059155fbdb7df52ca07dd653d4f7ae140868109bb8ad4ec3158c0aef7ed1e7e"
+  },
+  "assets/relics/turtle_charm.png": {
+    "job": "relics__turtle_charm",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7eb8b538cc2eca43856f8001f1a52d3fa80e035122f2a538a10f339e7b249cfa",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__turtle_charm.png",
+    "source_sha256": "37faeb6fab43c79632bad2ea022ef19ccd8b8c06ccd5e093390c174253e7bccd"
+  },
+  "assets/relics/viper_tooth.png": {
+    "job": "relics__viper_tooth",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "02f0eaa8bd2a828964eec325837a6d0f56cdeabf98b692a9b66ab7c3b5d55ff2",
+    "source": "art_sources/art_direction/migration/sources/icon/relics__viper_tooth.png",
+    "source_sha256": "527a95f0ed489c2c4f011a32eac7e323bcbf1229a6f504d1dfac35025998aeb4"
+  },
+  "assets/rest/background.png": {
+    "job": "rest__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "7414dd549bdd9c55f96d34d833d80c93e212da1cea03b3c9e9d278b26ff0370b",
+    "source": "art_sources/art_direction/migration/sources/scene/rest__background.png",
+    "source_sha256": "67b6cdf065ab5c64fd8e41c344b2ce0cc8e6e91f06616124cb6e5f3e596af228"
+  },
+  "assets/rest/guardian.png": {
+    "job": "rest__guardian",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "623accbc255f361b8fe4463f1457cc2c086869e8d7efe96a79e1b0ed9ef4efad",
+    "source": "art_sources/art_direction/migration/sources/seated/rest__guardian.png",
+    "source_sha256": "98b497174faa9ef3e92ed90bc1f247a7320d630b9342ed2cd1b4722e6a267966"
+  },
+  "assets/rest/heal.png": {
+    "job": "rest__heal",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "63472c893d7e7534c59cc6805c3ed27068eae055f5999499567d23c97e85f564",
+    "source": "art_sources/art_direction/migration/sources/scene/rest__heal.png",
+    "source_sha256": "2c207b22b9f879b323795baf39b78cd1b0d727205ced136124ad043765e4fa78"
+  },
+  "assets/rest/mage.png": {
+    "job": "rest__mage",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "af488a4a9f348c3d0aa6f6de06430cd90ba94fd08177de12faf39d83e9436d04",
+    "source": "art_sources/art_direction/migration/sources/seated/rest__mage.png",
+    "source_sha256": "9969475ff087b970b5a0a7dbfb2789bb6c4ef8bd66038d0c724498b76a34b1ac"
+  },
+  "assets/rest/rogue.png": {
+    "job": "rest__rogue",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "17d951f96197e58e584bc5a0721a7bd9000d3bc56dfba73a7b4f44236aaedff4",
+    "source": "art_sources/art_direction/migration/sources/seated/rest__rogue.png",
+    "source_sha256": "a18b3e92186e94e3fd5098e3b5f1bad8919466d2360ec81dbf60be437e2ee97d"
+  },
+  "assets/rest/upgrade.png": {
+    "job": "rest__upgrade",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d7567f04f4c26338c5b16a42b8e9c67f6c67bf2893621df3de207d99c97adfba",
+    "source": "art_sources/art_direction/migration/sources/scene/rest__upgrade.png",
+    "source_sha256": "6a5c167b472ba91cad2211a53ee66bf0e24afb16d4c04bc9af0cfd9f19a87f13"
+  },
+  "assets/rest/warrior.png": {
+    "job": "rest__warrior",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "884da9e8aea9d22b5ab6a950bb8e01b1531feae4321724dd4c5684124ec4a02c",
+    "source": "art_sources/art_direction/migration/sources/seated/rest__warrior.png",
+    "source_sha256": "e4872ad553e70494962dbf22cf2641b8115210bc743f64bc6e10048044aa0c52"
+  },
+  "assets/reward/background.png": {
+    "job": "reward__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e4ac9a88215f82bc0bbbfa35b35a0cd88229f8be04616835c342dbd211d6bd9b",
+    "source": "art_sources/art_direction/migration/sources/scene/reward__background.png",
+    "source_sha256": "d5d883616ba1e91c0c26785d117983830f590c95a78a78910825f681de38d32d"
+  },
+  "assets/title/background.png": {
+    "job": "title__background",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "5b85b421b79b22e50673f3dd53c18396e026afa0e987da656ca90ad521d4af81",
+    "source": "art_sources/art_direction/migration/sources/scene/title__background.png",
+    "source_sha256": "3b294bf48d8e541e85e4a12fafd4eea939b23df30d1763172d625989466c304b"
+  },
+  "assets/treasure/chest.png": {
+    "job": "treasure__chest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "e211cab35c98f2c797fa5299252a2ecf2804e045faae2d6e67255eaf27ca173b",
+    "source": "art_sources/art_direction/migration/sources/chest_atlas/treasure__chest.png",
+    "source_sha256": "7c57730a612d87045f25377a380607d00f4ad14fd362631dc836ed29dc27e599"
+  },
+  "assets/ui/end_turn_round.png": {
+    "job": "ui__end_turn_round",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "80d83d717237e3242edfbf7c6ba05aaedac92ec04144fde175552e69e4a25856",
+    "source": "art_sources/art_direction/migration/sources/icon/ui__end_turn_round.png",
+    "source_sha256": "abf42243961cefa70162b5b469c900793a3650d2997a24d7659ccdc44e035554"
+  },
+  "assets/ui/energy.png": {
+    "job": "ui__energy",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "d22c0bac4a2735e29111c4a11b611c042fd8b85778b8197e135db01f393368c9",
+    "source": "art_sources/art_direction/migration/sources/icon/ui__energy.png",
+    "source_sha256": "3f549bf1dd277dec6d1a281c44cd9bf9795549e7c341b7e7544d2888b16c0e8e"
+  },
+  "assets/ui/numbers/0.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8583e2480b71f3615f5ae8b733ec4b0ad06c15ea0f40d83fce5f022fcd8a77fd",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/1.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8e8ec0d51e14282b538bcbc7e7f76f53a9198e0b39cb072db998bfad5ed3c2b7",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/2.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "58e74fb8aab46c8bbe626050aed5646271eba003a58f02bb1f86e80900419b4b",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/3.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "8427d35abd9204685a42cc39c5783652cf353c868d1df58de23120afc3b72d25",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/4.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "82b1d12ae09322b5d1bb4e33bcce3f0c007b132ef918a94d5be670ee581b118c",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/5.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "65a44f1357bfda01902d9779f7a490cee83521eca2f02b1b8780d367efa4b7a3",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/6.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "6b5bcf4fdd2edeb6d9e175a5369027fca704044602e4b12250ac5d3c66b3130a",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/7.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "b068d17d331012f935c2ef54a2074b14f4470e984bd5f8d2090fabf95540dfb4",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/8.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "39dc1e3a7d8c66e37c3b627cd17031e35d1ec36ce358fd85bfa9d14bc8d80bba",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/numbers/9.png": {
+    "job": "number_bank",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "1bea2eb4473d5d0b160cd185377108e5ae457d9bd58876aaaef4ac50d5ab0550",
+    "source": "art_sources/art_direction/migration/sources/numbers/number_bank.png",
+    "source_sha256": "62ed6af7f95aa71da248fda22b2e272592c3c0c940039da61c3a652c567bec34"
+  },
+  "assets/ui/soul.png": {
+    "job": "ui__soul",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "ebb793d92f950b2229b3b79152c29dddbb78cb0cef2a4eb2e7be9f202881a047",
+    "source": "art_sources/art_direction/migration/sources/icon/ui__soul.png",
+    "source_sha256": "3306f9dfa1dad808880d132c7031bbbf881beefd1fb579a6c2a3df6a32c287e6"
+  },
+  "assets/volcano/combat.png": {
+    "job": "volcano__combat",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "87f4ce2e754571c051da1ebd6d45e933b6552345efd52839525f32a4194da654",
+    "source": "art_sources/art_direction/migration/sources/scene/volcano__combat.png",
+    "source_sha256": "87f4ce2e754571c051da1ebd6d45e933b6552345efd52839525f32a4194da654"
+  },
+  "assets/volcano/rest.png": {
+    "job": "volcano__rest",
+    "processing": "proportional alpha crop or original layout resize; atlas baseline preserved",
+    "processing_version": 2.0,
+    "sha256": "3f45aaff39b886ec3e01cd5b5db1321300e599a824b85048e1c4eec5bec3702a",
+    "source": "art_sources/art_direction/migration/sources/scene/volcano__rest.png",
+    "source_sha256": "7a238d5afc9c1881f8f7697095daf71ee07f497f99c1ab427987a1912075e2c1"
+  }
+}

@@ -1,0 +1,632 @@
+[
+  {
+    "target": "assets/battle_effects/ambush.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__ambush.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "eye"
+  },
+  {
+    "target": "assets/battle_effects/armor_plates.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__armor_plates.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "armor"
+  },
+  {
+    "target": "assets/battle_effects/attack.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__attack.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/battle_effects/beast_command.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__beast_command.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "radio"
+  },
+  {
+    "target": "assets/battle_effects/bond_focus.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__bond_focus.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "chain"
+  },
+  {
+    "target": "assets/battle_effects/bulwark.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__bulwark.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/battle_effects/charged_strike.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__charged_strike.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "bolt"
+  },
+  {
+    "target": "assets/battle_effects/counter.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__counter.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/battle_effects/curse_blood.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__curse_blood.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "heart"
+  },
+  {
+    "target": "assets/battle_effects/curse_burden.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__curse_burden.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "case"
+  },
+  {
+    "target": "assets/battle_effects/curse_scar.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__curse_scar.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "fracture"
+  },
+  {
+    "target": "assets/battle_effects/embers.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__embers.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "flame"
+  },
+  {
+    "target": "assets/battle_effects/enraged.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__enraged.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "flame"
+  },
+  {
+    "target": "assets/battle_effects/fracture.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__fracture.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "fracture"
+  },
+  {
+    "target": "assets/battle_effects/frenzy.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__frenzy.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "bolt"
+  },
+  {
+    "target": "assets/battle_effects/grief.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__grief.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "heart"
+  },
+  {
+    "target": "assets/battle_effects/guard.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__guard.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/battle_effects/healer.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__healer.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "cross"
+  },
+  {
+    "target": "assets/battle_effects/imprisonment.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__imprisonment.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "lock"
+  },
+  {
+    "target": "assets/battle_effects/magic_boost.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__magic_boost.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "coil"
+  },
+  {
+    "target": "assets/battle_effects/poison.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__poison.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "acid"
+  },
+  {
+    "target": "assets/battle_effects/prepared.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__prepared.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "check"
+  },
+  {
+    "target": "assets/battle_effects/protector.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__protector.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/battle_effects/rear_guard.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__rear_guard.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/battle_effects/resurrection.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__resurrection.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "battery"
+  },
+  {
+    "target": "assets/battle_effects/roots.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__roots.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "chain"
+  },
+  {
+    "target": "assets/battle_effects/set_block.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__set_block.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/battle_effects/set_heal.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__set_heal.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "cross"
+  },
+  {
+    "target": "assets/battle_effects/set_multi.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__set_multi.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/battle_effects/set_poison.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__set_poison.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "acid"
+  },
+  {
+    "target": "assets/battle_effects/source.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__source.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "battery"
+  },
+  {
+    "target": "assets/battle_effects/strength.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__strength.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "up"
+  },
+  {
+    "target": "assets/battle_effects/tainted.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__tainted.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "acid"
+  },
+  {
+    "target": "assets/battle_effects/vampiric.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__vampiric.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "heart"
+  },
+  {
+    "target": "assets/battle_effects/weakness.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__weakness.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "down"
+  },
+  {
+    "target": "assets/battle_effects/weapon_boost.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/battle_effects__weapon_boost.svg",
+    "dimensions": [
+      128.0,
+      128.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/dungeon/bag.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/dungeon__bag.svg",
+    "dimensions": [
+      1254.0,
+      1254.0
+    ],
+    "symbol": "case"
+  },
+  {
+    "target": "assets/map/group_tab.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/map__group_tab.svg",
+    "dimensions": [
+      1086.0,
+      1448.0
+    ],
+    "symbol": "group"
+  },
+  {
+    "target": "assets/relics/ancient_cog.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__ancient_cog.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "gear"
+  },
+  {
+    "target": "assets/relics/blood_ruby.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__blood_ruby.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "heart"
+  },
+  {
+    "target": "assets/relics/boss/crypt_blood.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__crypt_blood.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "heart"
+  },
+  {
+    "target": "assets/relics/boss/crypt_lantern.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__crypt_lantern.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "battery"
+  },
+  {
+    "target": "assets/relics/boss/crypt_seal.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__crypt_seal.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "chip"
+  },
+  {
+    "target": "assets/relics/boss/fire_crown.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__fire_crown.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "gear"
+  },
+  {
+    "target": "assets/relics/boss/fire_spark.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__fire_spark.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "bolt"
+  },
+  {
+    "target": "assets/relics/boss/fire_ward.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__fire_ward.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/relics/boss/forest_eye.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__forest_eye.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "eye"
+  },
+  {
+    "target": "assets/relics/boss/forest_heart.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__forest_heart.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "flame"
+  },
+  {
+    "target": "assets/relics/boss/forest_thorn.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__boss__forest_thorn.svg",
+    "dimensions": [
+      256.0,
+      256.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/relics/dawn_bell.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__dawn_bell.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "radio"
+  },
+  {
+    "target": "assets/relics/drill_tusk.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__drill_tusk.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "saw"
+  },
+  {
+    "target": "assets/relics/duelist_seal.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__duelist_seal.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chip"
+  },
+  {
+    "target": "assets/relics/giant_heart.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__giant_heart.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chip"
+  },
+  {
+    "target": "assets/relics/iron_knot.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__iron_knot.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chain"
+  },
+  {
+    "target": "assets/relics/ivory_mirror.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__ivory_mirror.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chip"
+  },
+  {
+    "target": "assets/relics/oath_chain.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__oath_chain.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chain"
+  },
+  {
+    "target": "assets/relics/raven_quill.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__raven_quill.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "check"
+  },
+  {
+    "target": "assets/relics/rune_chisel.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__rune_chisel.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "wrench"
+  },
+  {
+    "target": "assets/relics/sentinel_mask.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__sentinel_mask.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "eye"
+  },
+  {
+    "target": "assets/relics/silver_thread.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__silver_thread.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "chain"
+  },
+  {
+    "target": "assets/relics/spring_seed.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__spring_seed.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "battery"
+  },
+  {
+    "target": "assets/relics/star_shard.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__star_shard.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "bolt"
+  },
+  {
+    "target": "assets/relics/storm_drum.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__storm_drum.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "coil"
+  },
+  {
+    "target": "assets/relics/sun_spark.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__sun_spark.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "bolt"
+  },
+  {
+    "target": "assets/relics/titan_hammer.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__titan_hammer.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "wrench"
+  },
+  {
+    "target": "assets/relics/turtle_charm.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__turtle_charm.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "shield"
+  },
+  {
+    "target": "assets/relics/viper_tooth.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/relics__viper_tooth.svg",
+    "dimensions": [
+      192.0,
+      192.0
+    ],
+    "symbol": "acid"
+  },
+  {
+    "target": "assets/ui/end_turn_round.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/ui__end_turn_round.svg",
+    "dimensions": [
+      1254.0,
+      1254.0
+    ],
+    "symbol": "radio"
+  },
+  {
+    "target": "assets/map/minimal/parchment.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/map__minimal__parchment.svg",
+    "dimensions": [
+      1672.0,
+      941.0
+    ],
+    "symbol": "route blueprint"
+  },
+  {
+    "target": "assets/map/minimal/room_papyrus.png",
+    "source": "art_sources/art_direction/postapocalyptic/vectors/map__minimal__room_papyrus.svg",
+    "dimensions": [
+      96.0,
+      96.0
+    ],
+    "symbol": "route blueprint"
+  }
+]

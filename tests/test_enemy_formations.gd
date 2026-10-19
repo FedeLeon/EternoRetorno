@@ -17,7 +17,7 @@ func _initialize() -> void:
 		var observed: Dictionary = {}
 		for id in config.common:
 			var visual = content.enemies[id].visual
-			check(ResourceLoader.exists("res://assets/enemies/animations/%s.png" % visual), "motion asset " + id)
+			check(ResourceLoader.exists("res://assets/combat_static/enemies/%s/idle.png" % visual), "motion asset " + id)
 			check(ResourceLoader.exists("res://assets/comic/enemies/%s.png" % visual), "cut-in asset " + id)
 		for seed_value in range(200):
 			rng.seed = seed_value

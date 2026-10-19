@@ -11,6 +11,8 @@ static func attach(ui: Control, amount: int, origin: Vector2) -> void:
 	ui.rect(icon, origin.x, origin.y, 48, 52)
 	var number = NumberView.new()
 	number.name = "SoulNumber"
+	number.center_ink = true
 	number.value = amount
 	number.tooltip_text = "Celdas disponibles"
-	ui.rect(number, origin.x + 52, origin.y + 8, 160, 36)
+	var width = minf(160.0, maxf(36.0, str(maxi(0, amount)).length() * 36.0 * 0.65))
+	ui.rect(number, origin.x + 52, origin.y + 8, width, 36)

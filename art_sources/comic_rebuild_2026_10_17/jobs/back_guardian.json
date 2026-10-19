@@ -1,0 +1,23 @@
+{
+  "id": "back_guardian",
+  "kind": "direct",
+  "prompt": "Use case: ui-mockup. ONE card BACK production game asset for Eterno Retorno, tall 2:3, orthographic flat filling entire canvas edge to edge. Reference: match this image's detailed CRISP INKED COMIC ART worn metal tabletop card, dark charcoal engraved steel, screws, weathered bevels, subtle material texture, sparse copper repairs. Hero Ines, civilian CONSTRUCTION WORKER, auburn braid, orange utility jacket, battered street-sign shield and crowbar, amber orange identity. Use the hero identity accent color on narrow frame and luminous central emblem representing profession and tools. Symmetrical composition, large single central emblem, dark quiet engraved mechanical pattern, refined crisp ink shapes. No character portrait, no paper text areas (this is BACK), NO letters NO words NO numbers. Rounded clipped outer corners transparent, frame nearly fills canvas. One coherent card only, no sheet. New final card aesthetic: bold hand-inked comic book panel, thin ivory paper cutout outer boundary, dark technological violet/steel trim, small halftone in corners and speed-hatch fittings. Preserve EXACT layout normalized slots of title, cost, image, type and description; no text/numbers baked in. Clean pale ivory description area for black live lettering. No pixel-art texture.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/cards/backs/guardian.png",
+      "dimensions": [
+        512,
+        768
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/back_guardian.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-209cbe06-5def-4c7f-bc19-b775b88228d4.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

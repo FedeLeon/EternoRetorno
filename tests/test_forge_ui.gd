@@ -47,38 +47,47 @@ func run_tests() -> void:
 	check(app.screen == "forge", "enter forge")
 	check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "forge starts in portrait gallery")
 	await capture("gallery.png")
+	check(app.layer.get_node("ForgeMaterials/SmeltMaterials").disabled, "empty workshop cannot smelt")
+	app.game.profile.forge_materials.scrap = 240
+	app.render()
+	await process_frame
+	await click(app.layer.get_node("ForgeMaterials/SmeltMaterials").get_global_rect().get_center())
+	check(app.game.profile.forge_materials == {"scrap":0,"alloy":80}, "smelting converts only scrap to alloy")
+
 	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		app.layer.get_node("ForgeHero_" + id).pressed.emit()
 		await process_frame
 		check(app.forge_hero == id, "select " + id)
 		check(not app.layer.has_node("ForgeHero_" + id), "gallery hidden in forge detail")
-		var before = app.game.profile.souls
+		var before = app.game.profile.forge_materials.alloy
 		app.layer.get_node("Upgrade_weapon").pressed.emit()
 		await process_frame
-		check(app.game.profile.souls == before - 150, "weapon purchase " + id)
+		check(app.game.profile.forge_materials.alloy == before - 3, "weapon purchase " + id)
 		check(app.layer.get_node("SoulNumber").value == app.game.profile.souls, "visible balance refreshed")
 		check(app.game.Forge.levels(app.game.profile, id).weapon == 1, "weapon level " + id)
 		app.layer.get_node("Upgrade_armor").pressed.emit()
 		await process_frame
 		check(app.game.Forge.levels(app.game.profile, id).armor == 1, "armor level " + id)
-		await click(app.layer.get_node("BackToHeroes").get_global_rect().get_center())
+		await click(app.layer.get_node("HeaderBack").get_global_rect().get_center())
 		check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "back to forge hero cards")
 	app.forge_hero = "warrior"
 	app.render()
 	await create_timer(0.2).timeout
 	await capture("interior.png")
-	app.game.profile.souls = 0
+	app.game.profile.forge_materials.alloy = 0
 	app.render()
 	await process_frame
-	check(app.layer.get_node("Upgrade_weapon").disabled, "insufficient souls disabled")
+	check(app.layer.get_node("Upgrade_weapon").disabled, "insufficient alloy disabled")
 	app.game.profile.souls = 5000
 	app.game.profile.forge_upgrades.warrior = {"weapon": 3, "armor": 3}
 	app.render()
 	await process_frame
 	check(app.layer.get_node("Upgrade_weapon").disabled and app.layer.get_node("Upgrade_armor").disabled, "both maximum tiers disabled")
-	var back_button = app.layer.find_children("*", "Button", true, false).filter(func(button): return button.text == "Campamento")[0]
+	var back_button = app.layer.get_node("HeaderBack")
 	await click(back_button.get_global_rect().get_center())
-	check(app.screen == "base_camp", "top camp button returns to camp")
+	check(app.screen == "forge" and app.forge_hero == "", "top arrow first returns to hero gallery")
+	await click(app.layer.get_node("HeaderBack").get_global_rect().get_center())
+	check(app.screen == "base_camp", "top arrow then returns to camp")
 	for pair in [["warrior", "guardian"], ["rogue", "mage"], ["guardian", "rogue"]]:
 		for id in pair:
 			app.game.profile.forge_upgrades[id] = {"weapon": 3, "armor": 3}
@@ -90,8 +99,8 @@ func run_tests() -> void:
 		app.continue_run()
 		await create_timer(0.2).timeout
 		for i in range(2):
-			var texture = app.hero_art[i].sprite.sprite_frames.get_frame_texture("idle", 0)
-			check(texture.atlas.resource_path == "res://assets/heroes/guard/%s.png" % pair[i] and app.hero_art[i].sprite.material.get_shader_parameter("weapon_rank") == 3.0 and app.hero_art[i].sprite.material.get_shader_parameter("armor_rank") == 3.0, "battle displays detailed upgraded gear " + pair[i])
+			var hero = app.hero_art[i]
+			check(hero.sprite.visible and hero.sprite.material.get_shader_parameter("weapon_rank") == 3.0 and hero.sprite.material.get_shader_parameter("armor_rank") == 3.0, "battle displays upgraded PNG gear " + pair[i])
 
 		var hud = app.layer.get_node("CombatHUD")
 		check(hud.equipment.size() == 4, "both upgraded tracks of each hero in HUD")

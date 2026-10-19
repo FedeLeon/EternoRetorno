@@ -1,0 +1,80 @@
+{
+  "id": "icons_15",
+  "kind": "icon_bank",
+  "prompt": "Production icon bank, exactly NINE equal cells in 3 columns x3 rows, square 1536x1536 canvas. cell 1: drill tusk; cell 2: duelist seal; cell 3: giant heart; cell 4: iron knot; cell 5: ivory mirror; cell 6: oath chain; cell 7: raven quill; cell 8: rune chisel; cell 9: sentinel mask. Last 0 cells empty. Each subject is a DISTINCT readable standalone icon, tight centered composition, white cut-paper silhouette edge, heavy black ink, strong flat accent color, sparse halftone. True transparent alpha in each cell, clear wide gutters, no sheet borders, no words or numbers. Civilian/industrial machine world. Not a flat geometric placeholder, moderate comic detail.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.\n\nSymbols only, no letters or numbers.",
+  "targets": [
+    {
+      "path": "assets/relics/drill_tusk.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/duelist_seal.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/giant_heart.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/iron_knot.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/ivory_mirror.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/oath_chain.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/raven_quill.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/rune_chisel.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "path": "assets/relics/sentinel_mask.png",
+      "dimensions": [
+        192,
+        192
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/icons_15.png",
+  "columns": 3,
+  "rows": 3,
+  "meanings_added": true,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-ab4505ea-6f70-4f17-9413-598d82febd0b.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

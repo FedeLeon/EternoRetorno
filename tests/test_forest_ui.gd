@@ -37,42 +37,29 @@ func run_tests() -> void:
 		var actor = app.enemy_art[index]
 		var target = actor.get_parent()
 		check(target.get_global_rect().end.x <= 1280 and target.get_global_rect().position.x >= 520, "enemy fully in right arena")
-		check(actor.has_motion_frames and actor.sprite.hframes == 8, "drawn enemy frames")
+		check(actor.sprite is TextureRect, "drawn enemy frames")
 		check(app.enemy_health[index].get_global_rect().end.x <= 1280, "health inside screen")
 	await shot("three-goblins")
 	var catalog = JSON.parse_string(FileAccess.get_file_as_string("res://data/forest_enemies.json"))
 	var additions = ["goblin_lancer", "goblin_bomber", "goblin_raider", "goblin_rider", "forest_bat", "forest_raven"]
 	var ids = catalog.values().map(func(enemy): return enemy.visual)
 	for id in ids:
-		var texture = load("res://assets/enemies/animations/%s.png" % id)
-		var img = texture.get_image()
-		check(img.get_size() == Vector2i(img.get_height()*8,img.get_height()), "eight-frame atlas " + id)
-		var unique: Array = []
-		for i in range(8):
-			var frame = img.get_region(Rect2i(i*img.get_height(),0,img.get_height(),img.get_height()))
-			var fingerprint = hash(frame.get_data())
-			if fingerprint not in unique: unique.append(fingerprint)
-		check(unique.size() == (8 if id in ["goblin_0", "goblin_7"] else 4), "authored pose count matches revision " + id)
-		check(img.get_pixel(0,0).a == 0, "transparent atlas " + id)
+		for action in ["idle","attack","guard","skill","hurt","death"]:
+			var texture = load("res://assets/combat_static/enemies/%s/%s.png" % [id,action])
+			check(texture!=null and not texture.get_image().is_invisible(),"populated static action "+id+"/"+action)
 		var addition = additions.filter(func(key): return catalog[key].visual == id)
 		if not addition.is_empty():
-			for index in range(8):
-				var size = img.get_height()
-				var frame = img.get_region(Rect2i(index*size,0,size,size))
-				var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(frame,0.5)
-				check(bounds.position.x >= 8 and bounds.end.x <= size-8, "packed pose keeps clear side margins " + id)
 			app.game._start_combat([addition[0]])
 			app.continue_run()
 			await process_frame
 			var actor = app.enemy_art[0]
-			check(actor.visual_id == id and actor.has_motion_frames, "live new sprite " + id)
+			check(actor.visual_id == id and actor.sprite is TextureRect, "live new sprite " + id)
 			await shot("idle-" + id)
 			actor.play_once("attack")
-			await create_timer(0.17).timeout
-			check(actor.sprite.frame >= 4, "new enemy attack poses " + id)
+			check(actor.current_action == "attack", "new enemy attack poses " + id)
 			await shot("motion-" + id)
 			await await_actions([actor])
-			check(not actor.acting and actor.sprite.frame < 4, "new enemy returns to idle " + id)
+			check(not actor.acting and actor.current_action == "idle", "new enemy returns to idle " + id)
 		var cut = CutIn.play(app.layer, id)
 		check(cut != null and cut.from_right, "right-to-left cutin " + id)
 		var illustration = load(cut.texture_path).get_image()
@@ -86,10 +73,10 @@ func run_tests() -> void:
 	await shot("three-beasts")
 	for actor in app.enemy_art.values(): actor.play_once("attack")
 	await create_timer(0.18).timeout
-	check(app.enemy_art.values().all(func(actor): return actor.sprite.frame >= 4), "attacks use drawn attack row")
+	check(app.enemy_art.values().all(func(actor): return actor.current_action == "attack"), "attacks use drawn attack row")
 	await shot("beasts-motion")
 	await await_actions(app.enemy_art.values())
-	check(app.enemy_art.values().all(func(actor): return not actor.acting and actor.sprite.frame < 4), "return to idle row")
+	check(app.enemy_art.values().all(func(actor): return not actor.acting and actor.current_action == "idle"), "return to idle row")
 	preload("res://tests/room_fixture.gd").enter(app.game, "rest")
 	app.continue_run()
 	await process_frame

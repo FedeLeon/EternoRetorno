@@ -15,11 +15,15 @@ func run_tests() -> void:
 	ui.continue_run()
 	ui.open_deck()
 	check(ui.layer.get_node("DeckSummary").text.contains("Descarte:"), "combat deck lists piles")
-	ui.game._make_reward()
+	preload("res://tests/room_fixture.gd").break_objective(ui.game)
+	for enemy in ui.game.run.combat.enemies: enemy.hp = 0
+	check(ui.game._check_combat_end(), "real victory grants pending reward and salvage")
 	ui.continue_run()
 	await process_frame
 	var offered = ui.game.run.reward.duplicate(true)
 	var old_size = ui.game.run.deck.size()
+	var salvage = ui.game.profile.forge_materials.scrap
+	check(ui.layer.has_node("SalvageReward/SalvageAmount") and ui.game.run.reward_salvage.scrap == salvage, "material receipt visible after victory")
 	check(ui.layer.has_node("RewardBackground"), "reward background")
 	check(ui.layer.has_node("CombatHUD/Deck") and ui.layer.has_node("CombatHUD/Bag"), "reward navigation")
 	check(not ui.layer.has_node("CombatHUD/EnergyOrb"), "no combat energy on reward")
@@ -32,6 +36,7 @@ func run_tests() -> void:
 	check(ui.screen == "items", "bag opens")
 	ui.continue_run()
 	check(ui.screen == "reward" and ui.game.run.reward == offered, "navigation preserves pending reward")
+	check(ui.game.profile.forge_materials.scrap == salvage and ui.layer.has_node("SalvageReward"), "reward navigation preserves salvage without regranting it")
 	if DisplayServer.get_name() != "headless":
 		await create_timer(0.3).timeout
 		await RenderingServer.frame_post_draw
@@ -50,6 +55,8 @@ func run_tests() -> void:
 	var dropped = ui.game.run.reward_relic
 	ui.continue_run()
 	await process_frame
+	check(ui.layer.has_node("SalvageReward"), "elite salvage shown alongside relic and cards")
+	check(not ui.layer.get_node("SalvageReward").get_global_rect().intersects(ui.layer.get_node("EliteRelicReward").get_global_rect()), "salvage receipt stays clear of elite relic panel")
 	check(ui.layer.has_node("EliteRelicReward/RelicArtwork"), "elite relic displayed alongside cards")
 	check(ui.layer.get_node("RewardCard0").position.x > ui.layer.get_node("EliteRelicReward").get_rect().end.x, "relic does not overlap cards")
 	check(ui.layer.get_node("CombatHUD").relics.size() == 2, "equipped and dropped relic in toolbar")

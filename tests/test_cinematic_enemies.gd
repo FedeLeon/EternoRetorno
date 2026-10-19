@@ -22,17 +22,13 @@ func run_tests() -> void:
 	for id in additions:
 		app.game._start_combat([id]);app.continue_run();await process_frame
 		var actor = app.enemy_art[0]
-		check(actor.has_motion_frames,"animated new enemy "+id)
-		var pixels = actor.sprite.texture.get_image()
-		var unique = {}
-		for frame in range(8):unique[pixels.get_region(Rect2i(frame*pixels.get_height(),0,pixels.get_height(),pixels.get_height())).get_data().hex_encode().sha256_text()]=true
-		check(unique.size()==4,"four authored keyposes in eight timing frames "+id)
+		check(actor.sprite is TextureRect,"animated new enemy "+id)
+		check(actor.poses.size()==6,"six static action assets "+id)
 		actor.play_once("attack")
-		await create_timer(0.25).timeout
-		check(actor.acting and actor.sprite.frame>=4,"attack poses played "+id)
+		check(actor.acting and actor.current_action=="attack","attack poses played "+id)
 		await capture("enemy-"+id+"-attack")
 		await create_timer(0.55).timeout
-		check(not actor.acting and actor.sprite.frame<4,"idle restored "+id)
+		check(not actor.acting and actor.current_action=="idle","idle restored "+id)
 		var cut = preload("res://src/presentation/enemy_cut_in.gd").play(app.layer,additions[id].visual)
 		check(cut!=null and cut.from_right,"HD cut-in attacks left "+id)
 		var image = cut.picture.texture.get_image()
@@ -42,16 +38,9 @@ func run_tests() -> void:
 		await cut.finished
 	var profile = app.game.profile.duplicate(true)
 	var adventure = app.game.run.duplicate(true)
-	for event in [{"absorbed":7,"lost":0,"damage":7},{"lost":19,"damage":19},{"lost":12,"damage":12,"pierce":true}]:
-		var burst = preload("res://src/presentation/impact_burst.gd").play(app.layer,app.enemy_art[0],event)
-		check(burst!=null,"impact burst appears")
-		await create_timer(0.12).timeout
-		await capture("impact-"+str(event.damage))
-		await create_timer(0.42).timeout
-		check(not is_instance_valid(burst),"particles cleaned up")
+	check(app.layer.find_children("ImpactBurst*","",true,false).is_empty(),"no animated body impact effects")
 	check(app.game.run==adventure and app.game.profile==profile,"effects never mutate game")
 	preload("res://src/presentation/preferences.gd").settings.low_effects=true
-	check(preload("res://src/presentation/impact_burst.gd").play(app.layer,app.enemy_art[0],{"damage":20})==null,"reduced effects respected")
 	app.apply_options()
 	app.audio.apply_settings({"music_volume":0.5})
 	var bus = AudioServer.get_bus_index("Music")

@@ -33,6 +33,11 @@ func show(id: String) -> void:
 		check(not strip.get_children().any(func(n): return n is ScrollContainer), "no hidden effects: " + id)
 		for button in strip.find_children("Effect_*", "Button", true, false):
 			check(strip.get_global_rect().encloses(button.get_global_rect()), "effect fits panel: " + id + "/" + button.name)
+			check(button.get_global_rect().end.y <= preload("res://src/ui/components/combat_layout.gd").INFO_BOTTOM, "effect stays above raised cards: " + id)
+			for block_holder in strip.get_parent().get_children().filter(func(n): return n.get_script() == preload("res://src/ui/components/status_effects.gd")):
+				var shield = block_holder.get_node_or_null("Block")
+				if shield != null and shield.is_visible_in_tree():
+					check(not button.get_global_rect().intersects(shield.get_global_rect()), "effect clear of active shield: " + id)
 			for health in app.hero_health.values() + app.enemy_health.values():
 				if is_instance_valid(health) and health.visible:
 					check(not button.get_global_rect().intersects(health.get_global_rect()), "effect clear of life: " + id)
@@ -91,11 +96,11 @@ func run_tests() -> void:
 	for intent in app.layer.find_children("EnemyIntent*","",true,false):
 		for indicator in intent.get_children().filter(func(n): return n is Indicator):
 			check(indicator.position.x >= 0 and indicator.get_rect().end.x <= intent.size.x, "compact intention stays in actor column")
-		for button in intent.find_children("Effect_*","Button",true,false):
-			check(button.text.is_empty() and button.get_global_rect().position.y > 110 and button.get_global_rect().end.y <= preload("res://src/ui/components/combat_layout.gd").INFO_BOTTOM, "special icon below actor and clear of cards")
+	for strip in app.layer.find_children("EnemyEffects", "Control", true, false):
+		check(strip.global_position.y > app.enemy_health[0].global_position.y and strip.get_global_rect().end.y <= preload("res://src/ui/components/combat_layout.gd").INFO_BOTTOM, "statuses under life and clear of cards")
 	check(not app.layer.find_children("*","Button",true,false).any(func(n): return "Brasas" in n.text or "Retaguardia" in n.text), "no tactical text signs")
 	for button in app.layer.find_children("Effect_*","Button",true,false): await inspect_dialog(button)
-	var ember_button = app.layer.get_node("EnemyIntent0/EnemyEffects/Effect_embers")
+	var ember_button = app.layer.get_node("EnemyTarget0/EnemyEffects/Effect_embers")
 	await click(ember_button); await shot("embers-dialog"); app.close_modal(); await process_frame
 	b.enemies[1].hp = 0
 	check(not ids(Snapshot.enemy(app.game,0)).has("rear_guard"), "cover gone when last protector falls")
@@ -105,7 +110,7 @@ func run_tests() -> void:
 	for special in ["resurrect","prison","armored_strike"]:
 		b.enemies[0].intent.special = special; await show(special)
 		var id: String = {"resurrect":"resurrection","prison":"imprisonment","armored_strike":"charged_strike"}[special]
-		await inspect_dialog(app.layer.get_node("EnemyIntent0/EnemyEffects/Effect_"+id))
+		await inspect_dialog(app.layer.get_node("EnemyTarget0/EnemyEffects/Effect_"+id))
 	for modifier in ["bulwark","frenzied"]:
 		b.enemies[0].modifier = modifier
 		check(ids(Snapshot.enemy(app.game,0)).has("frenzy" if modifier == "frenzied" else modifier), "elite effect " + modifier)
@@ -130,10 +135,10 @@ func run_tests() -> void:
 		await inspect_dialog(button)
 	app.game.profile.settings = {"text_scale":1.12}
 	await show("large-text-effects")
-	await click(app.layer.get_node("EnemyIntent0/EnemyEffects/Effect_weakness"))
+	await click(app.layer.get_node("EnemyTarget0/EnemyEffects/Effect_weakness"))
 	await shot("large-text-dialog"); app.close_modal(); await process_frame
 	app.combat_busy = true
-	await click(app.layer.get_node("EnemyIntent0/EnemyEffects/Effect_weakness"))
+	await click(app.layer.get_node("EnemyTarget0/EnemyEffects/Effect_weakness"))
 	check(not is_instance_valid(app.overlay), "inspection cannot interrupt action playback")
 	app.combat_busy = false
 	app.hero_health[0].set_health(1, app.game.run.heroes[0].max_hp)

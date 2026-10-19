@@ -1,0 +1,27 @@
+{
+  "id": "guardian_sweep",
+  "kind": "hero_sheet",
+  "prompt": "Production 12-frame character animation atlas, EXACTLY FOUR columns by THREE rows, chronological left-to-right row-major. Identity reference only: Inés, athletic auburn-haired construction worker with braided hair, orange work jacket, purple neck scarf, dark work pants, boots, rectangular blue-white road-sign scrap shield in left arm and crowbar in right hand. Preserve face and outfit exactly. AMERICAN ACTION COMIC style, confident black ink, vivid flat colors, hard-edged shadows, no 3D or pixel art. Action: a wide rightward CROWBAR SWING: shield braces near chest, right hand draws crowbar behind shoulder, horizontal crowbar strike with strong torso twist, follow-through, return. NOT a shield bash. Pose1 guard, poses2-4 windup, poses5-7 strike, poses8-11 recovery, pose12 guard matching pose1. Full body, same proportions and camera distance in all twelve cells, all characters face RIGHT, identical baseline for boots, root stays fixed. Twelve genuinely different intermediate drawings with smooth motion progression. Entire weapon tips and heads must fit each equally sized cell with generous transparent gutters. Small attached colored motion arcs allowed but do not obscure figure. No words, grids, borders, ground shadows or backdrop tiles. REAL transparent RGBA background behind each character and between cells. Landscape4:3 sheet, high resolution for384pixel output cells.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art.",
+  "targets": [
+    {
+      "path": "assets/heroes/actions/guardian_sweep.png",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": "guardian",
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/guardian_sweep.png",
+  "action": "sweep",
+  "columns": 4,
+  "rows": 3,
+  "frames": 12,
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-01c9a52b-e9b7-4049-92cd-14a3a1757e01.png",
+  "references": [
+    "/var/www/html/EternoRetorno/art_sources/comic_rebuild_2026_10_17/sources/reference_guardian.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

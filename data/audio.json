@@ -54,7 +54,263 @@
     "metal_clash": "res://assets/audio/sfx/metal_clash.ogg",
     "metal_clash_2": "res://assets/audio/sfx/metal_clash_2.ogg",
     "battle_forest": "res://assets/audio/music/battle_forest.ogg",
-    "battle_volcano": "res://assets/audio/music/battle_volcano.ogg"
+    "battle_volcano": "res://assets/audio/music/battle_volcano.ogg",
+    "enemy_armored_beetle_attack_0": "res://assets/audio/combat/enemy_armored_beetle_attack_0.ogg",
+    "enemy_armored_beetle_attack_1": "res://assets/audio/combat/enemy_armored_beetle_attack_1.ogg",
+    "enemy_armored_beetle_guard_0": "res://assets/audio/combat/enemy_armored_beetle_guard_0.ogg",
+    "enemy_armored_beetle_death_0": "res://assets/audio/combat/enemy_armored_beetle_death_0.ogg",
+    "enemy_ash_bombardier_attack_0": "res://assets/audio/combat/enemy_ash_bombardier_attack_0.ogg",
+    "enemy_ash_bombardier_attack_1": "res://assets/audio/combat/enemy_ash_bombardier_attack_1.ogg",
+    "enemy_ash_bombardier_guard_0": "res://assets/audio/combat/enemy_ash_bombardier_guard_0.ogg",
+    "enemy_ash_bombardier_death_0": "res://assets/audio/combat/enemy_ash_bombardier_death_0.ogg",
+    "enemy_ash_brute_attack_0": "res://assets/audio/combat/enemy_ash_brute_attack_0.ogg",
+    "enemy_ash_brute_attack_1": "res://assets/audio/combat/enemy_ash_brute_attack_1.ogg",
+    "enemy_ash_brute_guard_0": "res://assets/audio/combat/enemy_ash_brute_guard_0.ogg",
+    "enemy_ash_brute_death_0": "res://assets/audio/combat/enemy_ash_brute_death_0.ogg",
+    "enemy_ash_brute_elite_attack_0": "res://assets/audio/combat/enemy_ash_brute_elite_attack_0.ogg",
+    "enemy_ash_brute_elite_attack_1": "res://assets/audio/combat/enemy_ash_brute_elite_attack_1.ogg",
+    "enemy_ash_brute_elite_guard_0": "res://assets/audio/combat/enemy_ash_brute_elite_guard_0.ogg",
+    "enemy_ash_brute_elite_death_0": "res://assets/audio/combat/enemy_ash_brute_elite_death_0.ogg",
+    "enemy_ash_cinder_wolf_attack_0": "res://assets/audio/combat/enemy_ash_cinder_wolf_attack_0.ogg",
+    "enemy_ash_cinder_wolf_attack_1": "res://assets/audio/combat/enemy_ash_cinder_wolf_attack_1.ogg",
+    "enemy_ash_cinder_wolf_guard_0": "res://assets/audio/combat/enemy_ash_cinder_wolf_guard_0.ogg",
+    "enemy_ash_cinder_wolf_death_0": "res://assets/audio/combat/enemy_ash_cinder_wolf_death_0.ogg",
+    "enemy_ash_lancer_attack_0": "res://assets/audio/combat/enemy_ash_lancer_attack_0.ogg",
+    "enemy_ash_lancer_attack_1": "res://assets/audio/combat/enemy_ash_lancer_attack_1.ogg",
+    "enemy_ash_lancer_guard_0": "res://assets/audio/combat/enemy_ash_lancer_guard_0.ogg",
+    "enemy_ash_lancer_death_0": "res://assets/audio/combat/enemy_ash_lancer_death_0.ogg",
+    "enemy_ash_shielder_attack_0": "res://assets/audio/combat/enemy_ash_shielder_attack_0.ogg",
+    "enemy_ash_shielder_attack_1": "res://assets/audio/combat/enemy_ash_shielder_attack_1.ogg",
+    "enemy_ash_shielder_guard_0": "res://assets/audio/combat/enemy_ash_shielder_guard_0.ogg",
+    "enemy_ash_shielder_death_0": "res://assets/audio/combat/enemy_ash_shielder_death_0.ogg",
+    "enemy_ash_warlord_attack_0": "res://assets/audio/combat/enemy_ash_warlord_attack_0.ogg",
+    "enemy_ash_warlord_attack_1": "res://assets/audio/combat/enemy_ash_warlord_attack_1.ogg",
+    "enemy_ash_warlord_guard_0": "res://assets/audio/combat/enemy_ash_warlord_guard_0.ogg",
+    "enemy_ash_warlord_death_0": "res://assets/audio/combat/enemy_ash_warlord_death_0.ogg",
+    "enemy_ash_wing_beetle_attack_0": "res://assets/audio/combat/enemy_ash_wing_beetle_attack_0.ogg",
+    "enemy_ash_wing_beetle_attack_1": "res://assets/audio/combat/enemy_ash_wing_beetle_attack_1.ogg",
+    "enemy_ash_wing_beetle_guard_0": "res://assets/audio/combat/enemy_ash_wing_beetle_guard_0.ogg",
+    "enemy_ash_wing_beetle_death_0": "res://assets/audio/combat/enemy_ash_wing_beetle_death_0.ogg",
+    "enemy_bandit_archer_attack_0": "res://assets/audio/combat/enemy_bandit_archer_attack_0.ogg",
+    "enemy_bandit_archer_attack_1": "res://assets/audio/combat/enemy_bandit_archer_attack_1.ogg",
+    "enemy_bandit_archer_guard_0": "res://assets/audio/combat/enemy_bandit_archer_guard_0.ogg",
+    "enemy_bandit_archer_death_0": "res://assets/audio/combat/enemy_bandit_archer_death_0.ogg",
+    "enemy_boss_attack_0": "res://assets/audio/combat/enemy_boss_attack_0.ogg",
+    "enemy_boss_attack_1": "res://assets/audio/combat/enemy_boss_attack_1.ogg",
+    "enemy_boss_guard_0": "res://assets/audio/combat/enemy_boss_guard_0.ogg",
+    "enemy_boss_death_0": "res://assets/audio/combat/enemy_boss_death_0.ogg",
+    "enemy_crypt_frost_serpent_attack_0": "res://assets/audio/combat/enemy_crypt_frost_serpent_attack_0.ogg",
+    "enemy_crypt_frost_serpent_attack_1": "res://assets/audio/combat/enemy_crypt_frost_serpent_attack_1.ogg",
+    "enemy_crypt_frost_serpent_guard_0": "res://assets/audio/combat/enemy_crypt_frost_serpent_guard_0.ogg",
+    "enemy_crypt_frost_serpent_death_0": "res://assets/audio/combat/enemy_crypt_frost_serpent_death_0.ogg",
+    "enemy_crypt_horse_attack_0": "res://assets/audio/combat/enemy_crypt_horse_attack_0.ogg",
+    "enemy_crypt_horse_attack_1": "res://assets/audio/combat/enemy_crypt_horse_attack_1.ogg",
+    "enemy_crypt_horse_guard_0": "res://assets/audio/combat/enemy_crypt_horse_guard_0.ogg",
+    "enemy_crypt_horse_death_0": "res://assets/audio/combat/enemy_crypt_horse_death_0.ogg",
+    "enemy_crypt_lancer_new_attack_0": "res://assets/audio/combat/enemy_crypt_lancer_new_attack_0.ogg",
+    "enemy_crypt_lancer_new_attack_1": "res://assets/audio/combat/enemy_crypt_lancer_new_attack_1.ogg",
+    "enemy_crypt_lancer_new_guard_0": "res://assets/audio/combat/enemy_crypt_lancer_new_guard_0.ogg",
+    "enemy_crypt_lancer_new_death_0": "res://assets/audio/combat/enemy_crypt_lancer_new_death_0.ogg",
+    "enemy_crypt_scorpion_attack_0": "res://assets/audio/combat/enemy_crypt_scorpion_attack_0.ogg",
+    "enemy_crypt_scorpion_attack_1": "res://assets/audio/combat/enemy_crypt_scorpion_attack_1.ogg",
+    "enemy_crypt_scorpion_guard_0": "res://assets/audio/combat/enemy_crypt_scorpion_guard_0.ogg",
+    "enemy_crypt_scorpion_death_0": "res://assets/audio/combat/enemy_crypt_scorpion_death_0.ogg",
+    "enemy_crypt_storm_attack_0": "res://assets/audio/combat/enemy_crypt_storm_attack_0.ogg",
+    "enemy_crypt_storm_attack_1": "res://assets/audio/combat/enemy_crypt_storm_attack_1.ogg",
+    "enemy_crypt_storm_guard_0": "res://assets/audio/combat/enemy_crypt_storm_guard_0.ogg",
+    "enemy_crypt_storm_death_0": "res://assets/audio/combat/enemy_crypt_storm_death_0.ogg",
+    "enemy_crypt_tomb_raider_attack_0": "res://assets/audio/combat/enemy_crypt_tomb_raider_attack_0.ogg",
+    "enemy_crypt_tomb_raider_attack_1": "res://assets/audio/combat/enemy_crypt_tomb_raider_attack_1.ogg",
+    "enemy_crypt_tomb_raider_guard_0": "res://assets/audio/combat/enemy_crypt_tomb_raider_guard_0.ogg",
+    "enemy_crypt_tomb_raider_death_0": "res://assets/audio/combat/enemy_crypt_tomb_raider_death_0.ogg",
+    "enemy_cultist_attack_0": "res://assets/audio/combat/enemy_cultist_attack_0.ogg",
+    "enemy_cultist_attack_1": "res://assets/audio/combat/enemy_cultist_attack_1.ogg",
+    "enemy_cultist_guard_0": "res://assets/audio/combat/enemy_cultist_guard_0.ogg",
+    "enemy_cultist_death_0": "res://assets/audio/combat/enemy_cultist_death_0.ogg",
+    "enemy_dragon_hatchling_attack_0": "res://assets/audio/combat/enemy_dragon_hatchling_attack_0.ogg",
+    "enemy_dragon_hatchling_attack_1": "res://assets/audio/combat/enemy_dragon_hatchling_attack_1.ogg",
+    "enemy_dragon_hatchling_guard_0": "res://assets/audio/combat/enemy_dragon_hatchling_guard_0.ogg",
+    "enemy_dragon_hatchling_death_0": "res://assets/audio/combat/enemy_dragon_hatchling_death_0.ogg",
+    "enemy_elite_attack_0": "res://assets/audio/combat/enemy_elite_attack_0.ogg",
+    "enemy_elite_attack_1": "res://assets/audio/combat/enemy_elite_attack_1.ogg",
+    "enemy_elite_guard_0": "res://assets/audio/combat/enemy_elite_guard_0.ogg",
+    "enemy_elite_death_0": "res://assets/audio/combat/enemy_elite_death_0.ogg",
+    "enemy_fire_elemental_attack_0": "res://assets/audio/combat/enemy_fire_elemental_attack_0.ogg",
+    "enemy_fire_elemental_attack_1": "res://assets/audio/combat/enemy_fire_elemental_attack_1.ogg",
+    "enemy_fire_elemental_guard_0": "res://assets/audio/combat/enemy_fire_elemental_guard_0.ogg",
+    "enemy_fire_elemental_death_0": "res://assets/audio/combat/enemy_fire_elemental_death_0.ogg",
+    "enemy_forest_alpha_bat_attack_0": "res://assets/audio/combat/enemy_forest_alpha_bat_attack_0.ogg",
+    "enemy_forest_alpha_bat_attack_1": "res://assets/audio/combat/enemy_forest_alpha_bat_attack_1.ogg",
+    "enemy_forest_alpha_bat_guard_0": "res://assets/audio/combat/enemy_forest_alpha_bat_guard_0.ogg",
+    "enemy_forest_alpha_bat_death_0": "res://assets/audio/combat/enemy_forest_alpha_bat_death_0.ogg",
+    "enemy_forest_bat_attack_0": "res://assets/audio/combat/enemy_forest_bat_attack_0.ogg",
+    "enemy_forest_bat_attack_1": "res://assets/audio/combat/enemy_forest_bat_attack_1.ogg",
+    "enemy_forest_bat_guard_0": "res://assets/audio/combat/enemy_forest_bat_guard_0.ogg",
+    "enemy_forest_bat_death_0": "res://assets/audio/combat/enemy_forest_bat_death_0.ogg",
+    "enemy_forest_boar_attack_0": "res://assets/audio/combat/enemy_forest_boar_attack_0.ogg",
+    "enemy_forest_boar_attack_1": "res://assets/audio/combat/enemy_forest_boar_attack_1.ogg",
+    "enemy_forest_boar_guard_0": "res://assets/audio/combat/enemy_forest_boar_guard_0.ogg",
+    "enemy_forest_boar_death_0": "res://assets/audio/combat/enemy_forest_boar_death_0.ogg",
+    "enemy_forest_boss_attack_0": "res://assets/audio/combat/enemy_forest_boss_attack_0.ogg",
+    "enemy_forest_boss_attack_1": "res://assets/audio/combat/enemy_forest_boss_attack_1.ogg",
+    "enemy_forest_boss_guard_0": "res://assets/audio/combat/enemy_forest_boss_guard_0.ogg",
+    "enemy_forest_boss_death_0": "res://assets/audio/combat/enemy_forest_boss_death_0.ogg",
+    "enemy_forest_cutthroat_attack_0": "res://assets/audio/combat/enemy_forest_cutthroat_attack_0.ogg",
+    "enemy_forest_cutthroat_attack_1": "res://assets/audio/combat/enemy_forest_cutthroat_attack_1.ogg",
+    "enemy_forest_cutthroat_guard_0": "res://assets/audio/combat/enemy_forest_cutthroat_guard_0.ogg",
+    "enemy_forest_cutthroat_death_0": "res://assets/audio/combat/enemy_forest_cutthroat_death_0.ogg",
+    "enemy_forest_dark_raven_attack_0": "res://assets/audio/combat/enemy_forest_dark_raven_attack_0.ogg",
+    "enemy_forest_dark_raven_attack_1": "res://assets/audio/combat/enemy_forest_dark_raven_attack_1.ogg",
+    "enemy_forest_dark_raven_guard_0": "res://assets/audio/combat/enemy_forest_dark_raven_guard_0.ogg",
+    "enemy_forest_dark_raven_death_0": "res://assets/audio/combat/enemy_forest_dark_raven_death_0.ogg",
+    "enemy_forest_elite_attack_0": "res://assets/audio/combat/enemy_forest_elite_attack_0.ogg",
+    "enemy_forest_elite_attack_1": "res://assets/audio/combat/enemy_forest_elite_attack_1.ogg",
+    "enemy_forest_elite_guard_0": "res://assets/audio/combat/enemy_forest_elite_guard_0.ogg",
+    "enemy_forest_elite_death_0": "res://assets/audio/combat/enemy_forest_elite_death_0.ogg",
+    "enemy_forest_hunter_enemy_attack_0": "res://assets/audio/combat/enemy_forest_hunter_enemy_attack_0.ogg",
+    "enemy_forest_hunter_enemy_attack_1": "res://assets/audio/combat/enemy_forest_hunter_enemy_attack_1.ogg",
+    "enemy_forest_hunter_enemy_guard_0": "res://assets/audio/combat/enemy_forest_hunter_enemy_guard_0.ogg",
+    "enemy_forest_hunter_enemy_death_0": "res://assets/audio/combat/enemy_forest_hunter_enemy_death_0.ogg",
+    "enemy_forest_miasma_attack_0": "res://assets/audio/combat/enemy_forest_miasma_attack_0.ogg",
+    "enemy_forest_miasma_attack_1": "res://assets/audio/combat/enemy_forest_miasma_attack_1.ogg",
+    "enemy_forest_miasma_guard_0": "res://assets/audio/combat/enemy_forest_miasma_guard_0.ogg",
+    "enemy_forest_miasma_death_0": "res://assets/audio/combat/enemy_forest_miasma_death_0.ogg",
+    "enemy_forest_nightbat_attack_0": "res://assets/audio/combat/enemy_forest_nightbat_attack_0.ogg",
+    "enemy_forest_nightbat_attack_1": "res://assets/audio/combat/enemy_forest_nightbat_attack_1.ogg",
+    "enemy_forest_nightbat_guard_0": "res://assets/audio/combat/enemy_forest_nightbat_guard_0.ogg",
+    "enemy_forest_nightbat_death_0": "res://assets/audio/combat/enemy_forest_nightbat_death_0.ogg",
+    "enemy_forest_raven_attack_0": "res://assets/audio/combat/enemy_forest_raven_attack_0.ogg",
+    "enemy_forest_raven_attack_1": "res://assets/audio/combat/enemy_forest_raven_attack_1.ogg",
+    "enemy_forest_raven_guard_0": "res://assets/audio/combat/enemy_forest_raven_guard_0.ogg",
+    "enemy_forest_raven_death_0": "res://assets/audio/combat/enemy_forest_raven_death_0.ogg",
+    "enemy_forest_wolf_attack_0": "res://assets/audio/combat/enemy_forest_wolf_attack_0.ogg",
+    "enemy_forest_wolf_attack_1": "res://assets/audio/combat/enemy_forest_wolf_attack_1.ogg",
+    "enemy_forest_wolf_guard_0": "res://assets/audio/combat/enemy_forest_wolf_guard_0.ogg",
+    "enemy_forest_wolf_death_0": "res://assets/audio/combat/enemy_forest_wolf_death_0.ogg",
+    "enemy_giant_wasp_attack_0": "res://assets/audio/combat/enemy_giant_wasp_attack_0.ogg",
+    "enemy_giant_wasp_attack_1": "res://assets/audio/combat/enemy_giant_wasp_attack_1.ogg",
+    "enemy_giant_wasp_guard_0": "res://assets/audio/combat/enemy_giant_wasp_guard_0.ogg",
+    "enemy_giant_wasp_death_0": "res://assets/audio/combat/enemy_giant_wasp_death_0.ogg",
+    "enemy_goblin_archer_attack_0": "res://assets/audio/combat/enemy_goblin_archer_attack_0.ogg",
+    "enemy_goblin_archer_attack_1": "res://assets/audio/combat/enemy_goblin_archer_attack_1.ogg",
+    "enemy_goblin_archer_guard_0": "res://assets/audio/combat/enemy_goblin_archer_guard_0.ogg",
+    "enemy_goblin_archer_death_0": "res://assets/audio/combat/enemy_goblin_archer_death_0.ogg",
+    "enemy_goblin_bomber_attack_0": "res://assets/audio/combat/enemy_goblin_bomber_attack_0.ogg",
+    "enemy_goblin_bomber_attack_1": "res://assets/audio/combat/enemy_goblin_bomber_attack_1.ogg",
+    "enemy_goblin_bomber_guard_0": "res://assets/audio/combat/enemy_goblin_bomber_guard_0.ogg",
+    "enemy_goblin_bomber_death_0": "res://assets/audio/combat/enemy_goblin_bomber_death_0.ogg",
+    "enemy_goblin_lancer_attack_0": "res://assets/audio/combat/enemy_goblin_lancer_attack_0.ogg",
+    "enemy_goblin_lancer_attack_1": "res://assets/audio/combat/enemy_goblin_lancer_attack_1.ogg",
+    "enemy_goblin_lancer_guard_0": "res://assets/audio/combat/enemy_goblin_lancer_guard_0.ogg",
+    "enemy_goblin_lancer_death_0": "res://assets/audio/combat/enemy_goblin_lancer_death_0.ogg",
+    "enemy_goblin_raider_attack_0": "res://assets/audio/combat/enemy_goblin_raider_attack_0.ogg",
+    "enemy_goblin_raider_attack_1": "res://assets/audio/combat/enemy_goblin_raider_attack_1.ogg",
+    "enemy_goblin_raider_guard_0": "res://assets/audio/combat/enemy_goblin_raider_guard_0.ogg",
+    "enemy_goblin_raider_death_0": "res://assets/audio/combat/enemy_goblin_raider_death_0.ogg",
+    "enemy_goblin_rider_attack_0": "res://assets/audio/combat/enemy_goblin_rider_attack_0.ogg",
+    "enemy_goblin_rider_attack_1": "res://assets/audio/combat/enemy_goblin_rider_attack_1.ogg",
+    "enemy_goblin_rider_guard_0": "res://assets/audio/combat/enemy_goblin_rider_guard_0.ogg",
+    "enemy_goblin_rider_death_0": "res://assets/audio/combat/enemy_goblin_rider_death_0.ogg",
+    "enemy_goblin_shaman_attack_0": "res://assets/audio/combat/enemy_goblin_shaman_attack_0.ogg",
+    "enemy_goblin_shaman_attack_1": "res://assets/audio/combat/enemy_goblin_shaman_attack_1.ogg",
+    "enemy_goblin_shaman_guard_0": "res://assets/audio/combat/enemy_goblin_shaman_guard_0.ogg",
+    "enemy_goblin_shaman_death_0": "res://assets/audio/combat/enemy_goblin_shaman_death_0.ogg",
+    "enemy_goblin_warrior_attack_0": "res://assets/audio/combat/enemy_goblin_warrior_attack_0.ogg",
+    "enemy_goblin_warrior_attack_1": "res://assets/audio/combat/enemy_goblin_warrior_attack_1.ogg",
+    "enemy_goblin_warrior_guard_0": "res://assets/audio/combat/enemy_goblin_warrior_guard_0.ogg",
+    "enemy_goblin_warrior_death_0": "res://assets/audio/combat/enemy_goblin_warrior_death_0.ogg",
+    "enemy_ice_elemental_attack_0": "res://assets/audio/combat/enemy_ice_elemental_attack_0.ogg",
+    "enemy_ice_elemental_attack_1": "res://assets/audio/combat/enemy_ice_elemental_attack_1.ogg",
+    "enemy_ice_elemental_guard_0": "res://assets/audio/combat/enemy_ice_elemental_guard_0.ogg",
+    "enemy_ice_elemental_death_0": "res://assets/audio/combat/enemy_ice_elemental_death_0.ogg",
+    "enemy_poison_toad_attack_0": "res://assets/audio/combat/enemy_poison_toad_attack_0.ogg",
+    "enemy_poison_toad_attack_1": "res://assets/audio/combat/enemy_poison_toad_attack_1.ogg",
+    "enemy_poison_toad_guard_0": "res://assets/audio/combat/enemy_poison_toad_guard_0.ogg",
+    "enemy_poison_toad_death_0": "res://assets/audio/combat/enemy_poison_toad_death_0.ogg",
+    "enemy_rat_attack_0": "res://assets/audio/combat/enemy_rat_attack_0.ogg",
+    "enemy_rat_attack_1": "res://assets/audio/combat/enemy_rat_attack_1.ogg",
+    "enemy_rat_guard_0": "res://assets/audio/combat/enemy_rat_guard_0.ogg",
+    "enemy_rat_death_0": "res://assets/audio/combat/enemy_rat_death_0.ogg",
+    "enemy_rock_elemental_attack_0": "res://assets/audio/combat/enemy_rock_elemental_attack_0.ogg",
+    "enemy_rock_elemental_attack_1": "res://assets/audio/combat/enemy_rock_elemental_attack_1.ogg",
+    "enemy_rock_elemental_guard_0": "res://assets/audio/combat/enemy_rock_elemental_guard_0.ogg",
+    "enemy_rock_elemental_death_0": "res://assets/audio/combat/enemy_rock_elemental_death_0.ogg",
+    "enemy_root_elemental_attack_0": "res://assets/audio/combat/enemy_root_elemental_attack_0.ogg",
+    "enemy_root_elemental_attack_1": "res://assets/audio/combat/enemy_root_elemental_attack_1.ogg",
+    "enemy_root_elemental_guard_0": "res://assets/audio/combat/enemy_root_elemental_guard_0.ogg",
+    "enemy_root_elemental_death_0": "res://assets/audio/combat/enemy_root_elemental_death_0.ogg",
+    "enemy_sand_elemental_attack_0": "res://assets/audio/combat/enemy_sand_elemental_attack_0.ogg",
+    "enemy_sand_elemental_attack_1": "res://assets/audio/combat/enemy_sand_elemental_attack_1.ogg",
+    "enemy_sand_elemental_guard_0": "res://assets/audio/combat/enemy_sand_elemental_guard_0.ogg",
+    "enemy_sand_elemental_death_0": "res://assets/audio/combat/enemy_sand_elemental_death_0.ogg",
+    "enemy_shadow_elemental_attack_0": "res://assets/audio/combat/enemy_shadow_elemental_attack_0.ogg",
+    "enemy_shadow_elemental_attack_1": "res://assets/audio/combat/enemy_shadow_elemental_attack_1.ogg",
+    "enemy_shadow_elemental_guard_0": "res://assets/audio/combat/enemy_shadow_elemental_guard_0.ogg",
+    "enemy_shadow_elemental_death_0": "res://assets/audio/combat/enemy_shadow_elemental_death_0.ogg",
+    "enemy_skeleton_attack_0": "res://assets/audio/combat/enemy_skeleton_attack_0.ogg",
+    "enemy_skeleton_attack_1": "res://assets/audio/combat/enemy_skeleton_attack_1.ogg",
+    "enemy_skeleton_guard_0": "res://assets/audio/combat/enemy_skeleton_guard_0.ogg",
+    "enemy_skeleton_death_0": "res://assets/audio/combat/enemy_skeleton_death_0.ogg",
+    "enemy_skeleton_archer_attack_0": "res://assets/audio/combat/enemy_skeleton_archer_attack_0.ogg",
+    "enemy_skeleton_archer_attack_1": "res://assets/audio/combat/enemy_skeleton_archer_attack_1.ogg",
+    "enemy_skeleton_archer_guard_0": "res://assets/audio/combat/enemy_skeleton_archer_guard_0.ogg",
+    "enemy_skeleton_archer_death_0": "res://assets/audio/combat/enemy_skeleton_archer_death_0.ogg",
+    "enemy_skeleton_berserker_attack_0": "res://assets/audio/combat/enemy_skeleton_berserker_attack_0.ogg",
+    "enemy_skeleton_berserker_attack_1": "res://assets/audio/combat/enemy_skeleton_berserker_attack_1.ogg",
+    "enemy_skeleton_berserker_guard_0": "res://assets/audio/combat/enemy_skeleton_berserker_guard_0.ogg",
+    "enemy_skeleton_berserker_death_0": "res://assets/audio/combat/enemy_skeleton_berserker_death_0.ogg",
+    "enemy_skeleton_mage_attack_0": "res://assets/audio/combat/enemy_skeleton_mage_attack_0.ogg",
+    "enemy_skeleton_mage_attack_1": "res://assets/audio/combat/enemy_skeleton_mage_attack_1.ogg",
+    "enemy_skeleton_mage_guard_0": "res://assets/audio/combat/enemy_skeleton_mage_guard_0.ogg",
+    "enemy_skeleton_mage_death_0": "res://assets/audio/combat/enemy_skeleton_mage_death_0.ogg",
+    "enemy_skeleton_shielder_attack_0": "res://assets/audio/combat/enemy_skeleton_shielder_attack_0.ogg",
+    "enemy_skeleton_shielder_attack_1": "res://assets/audio/combat/enemy_skeleton_shielder_attack_1.ogg",
+    "enemy_skeleton_shielder_guard_0": "res://assets/audio/combat/enemy_skeleton_shielder_guard_0.ogg",
+    "enemy_skeleton_shielder_death_0": "res://assets/audio/combat/enemy_skeleton_shielder_death_0.ogg",
+    "enemy_skeleton_warrior_attack_0": "res://assets/audio/combat/enemy_skeleton_warrior_attack_0.ogg",
+    "enemy_skeleton_warrior_attack_1": "res://assets/audio/combat/enemy_skeleton_warrior_attack_1.ogg",
+    "enemy_skeleton_warrior_guard_0": "res://assets/audio/combat/enemy_skeleton_warrior_guard_0.ogg",
+    "enemy_skeleton_warrior_death_0": "res://assets/audio/combat/enemy_skeleton_warrior_death_0.ogg",
+    "enemy_slime_attack_0": "res://assets/audio/combat/enemy_slime_attack_0.ogg",
+    "enemy_slime_attack_1": "res://assets/audio/combat/enemy_slime_attack_1.ogg",
+    "enemy_slime_guard_0": "res://assets/audio/combat/enemy_slime_guard_0.ogg",
+    "enemy_slime_death_0": "res://assets/audio/combat/enemy_slime_death_0.ogg",
+    "enemy_volcano_boss_attack_0": "res://assets/audio/combat/enemy_volcano_boss_attack_0.ogg",
+    "enemy_volcano_boss_attack_1": "res://assets/audio/combat/enemy_volcano_boss_attack_1.ogg",
+    "enemy_volcano_boss_guard_0": "res://assets/audio/combat/enemy_volcano_boss_guard_0.ogg",
+    "enemy_volcano_boss_death_0": "res://assets/audio/combat/enemy_volcano_boss_death_0.ogg",
+    "enemy_watch_owl_attack_0": "res://assets/audio/combat/enemy_watch_owl_attack_0.ogg",
+    "enemy_watch_owl_attack_1": "res://assets/audio/combat/enemy_watch_owl_attack_1.ogg",
+    "enemy_watch_owl_guard_0": "res://assets/audio/combat/enemy_watch_owl_guard_0.ogg",
+    "enemy_watch_owl_death_0": "res://assets/audio/combat/enemy_watch_owl_death_0.ogg",
+    "steel_clash_0": "res://assets/audio/combat/steel_clash_0.ogg",
+    "steel_clash_1": "res://assets/audio/combat/steel_clash_1.ogg",
+    "steel_clash_2": "res://assets/audio/combat/steel_clash_2.ogg",
+    "steel_clash_3": "res://assets/audio/combat/steel_clash_3.ogg",
+    "voice_warrior_attack_0": "res://assets/audio/combat/voice_warrior_attack_0.ogg",
+    "voice_warrior_attack_1": "res://assets/audio/combat/voice_warrior_attack_1.ogg",
+    "voice_warrior_defense_0": "res://assets/audio/combat/voice_warrior_defense_0.ogg",
+    "voice_warrior_defense_1": "res://assets/audio/combat/voice_warrior_defense_1.ogg",
+    "voice_warrior_hurt_0": "res://assets/audio/combat/voice_warrior_hurt_0.ogg",
+    "voice_warrior_hurt_1": "res://assets/audio/combat/voice_warrior_hurt_1.ogg",
+    "voice_guardian_attack_0": "res://assets/audio/combat/voice_guardian_attack_0.ogg",
+    "voice_guardian_attack_1": "res://assets/audio/combat/voice_guardian_attack_1.ogg",
+    "voice_guardian_defense_0": "res://assets/audio/combat/voice_guardian_defense_0.ogg",
+    "voice_guardian_defense_1": "res://assets/audio/combat/voice_guardian_defense_1.ogg",
+    "voice_guardian_hurt_0": "res://assets/audio/combat/voice_guardian_hurt_0.ogg",
+    "voice_guardian_hurt_1": "res://assets/audio/combat/voice_guardian_hurt_1.ogg",
+    "voice_rogue_attack_0": "res://assets/audio/combat/voice_rogue_attack_0.ogg",
+    "voice_rogue_attack_1": "res://assets/audio/combat/voice_rogue_attack_1.ogg",
+    "voice_rogue_defense_0": "res://assets/audio/combat/voice_rogue_defense_0.ogg",
+    "voice_rogue_defense_1": "res://assets/audio/combat/voice_rogue_defense_1.ogg",
+    "voice_rogue_hurt_0": "res://assets/audio/combat/voice_rogue_hurt_0.ogg",
+    "voice_rogue_hurt_1": "res://assets/audio/combat/voice_rogue_hurt_1.ogg",
+    "voice_mage_attack_0": "res://assets/audio/combat/voice_mage_attack_0.ogg",
+    "voice_mage_attack_1": "res://assets/audio/combat/voice_mage_attack_1.ogg",
+    "voice_mage_defense_0": "res://assets/audio/combat/voice_mage_defense_0.ogg",
+    "voice_mage_defense_1": "res://assets/audio/combat/voice_mage_defense_1.ogg",
+    "voice_mage_hurt_0": "res://assets/audio/combat/voice_mage_hurt_0.ogg",
+    "voice_mage_hurt_1": "res://assets/audio/combat/voice_mage_hurt_1.ogg"
   },
   "events": {
     "ui_click": {
@@ -349,10 +605,12 @@
     },
     "shield_impact": {
       "files": [
-        "metal_clash",
-        "metal_clash_2"
+        "steel_clash_0",
+        "steel_clash_1",
+        "steel_clash_2",
+        "steel_clash_3"
       ],
-      "db": -2,
+      "db": -3,
       "vary_pitch": true
     },
     "flesh_impact": {
@@ -377,6 +635,1446 @@
         "blade_swish"
       ],
       "db": -9
+    },
+    "enemy_armored_beetle_attack": {
+      "files": [
+        "enemy_armored_beetle_attack_0",
+        "enemy_armored_beetle_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_armored_beetle_guard": {
+      "files": [
+        "enemy_armored_beetle_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_armored_beetle_death": {
+      "files": [
+        "enemy_armored_beetle_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_bombardier_attack": {
+      "files": [
+        "enemy_ash_bombardier_attack_0",
+        "enemy_ash_bombardier_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_bombardier_guard": {
+      "files": [
+        "enemy_ash_bombardier_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_bombardier_death": {
+      "files": [
+        "enemy_ash_bombardier_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_brute_attack": {
+      "files": [
+        "enemy_ash_brute_attack_0",
+        "enemy_ash_brute_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_brute_guard": {
+      "files": [
+        "enemy_ash_brute_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_brute_death": {
+      "files": [
+        "enemy_ash_brute_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_brute_elite_attack": {
+      "files": [
+        "enemy_ash_brute_elite_attack_0",
+        "enemy_ash_brute_elite_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_brute_elite_guard": {
+      "files": [
+        "enemy_ash_brute_elite_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_brute_elite_death": {
+      "files": [
+        "enemy_ash_brute_elite_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_cinder_wolf_attack": {
+      "files": [
+        "enemy_ash_cinder_wolf_attack_0",
+        "enemy_ash_cinder_wolf_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_cinder_wolf_guard": {
+      "files": [
+        "enemy_ash_cinder_wolf_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_cinder_wolf_death": {
+      "files": [
+        "enemy_ash_cinder_wolf_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_lancer_attack": {
+      "files": [
+        "enemy_ash_lancer_attack_0",
+        "enemy_ash_lancer_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_lancer_guard": {
+      "files": [
+        "enemy_ash_lancer_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_lancer_death": {
+      "files": [
+        "enemy_ash_lancer_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_shielder_attack": {
+      "files": [
+        "enemy_ash_shielder_attack_0",
+        "enemy_ash_shielder_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_shielder_guard": {
+      "files": [
+        "enemy_ash_shielder_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_shielder_death": {
+      "files": [
+        "enemy_ash_shielder_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_warlord_attack": {
+      "files": [
+        "enemy_ash_warlord_attack_0",
+        "enemy_ash_warlord_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_warlord_guard": {
+      "files": [
+        "enemy_ash_warlord_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_warlord_death": {
+      "files": [
+        "enemy_ash_warlord_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ash_wing_beetle_attack": {
+      "files": [
+        "enemy_ash_wing_beetle_attack_0",
+        "enemy_ash_wing_beetle_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ash_wing_beetle_guard": {
+      "files": [
+        "enemy_ash_wing_beetle_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ash_wing_beetle_death": {
+      "files": [
+        "enemy_ash_wing_beetle_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_bandit_archer_attack": {
+      "files": [
+        "enemy_bandit_archer_attack_0",
+        "enemy_bandit_archer_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_bandit_archer_guard": {
+      "files": [
+        "enemy_bandit_archer_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_bandit_archer_death": {
+      "files": [
+        "enemy_bandit_archer_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_boss_attack": {
+      "files": [
+        "enemy_boss_attack_0",
+        "enemy_boss_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_boss_guard": {
+      "files": [
+        "enemy_boss_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_boss_death": {
+      "files": [
+        "enemy_boss_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_frost_serpent_attack": {
+      "files": [
+        "enemy_crypt_frost_serpent_attack_0",
+        "enemy_crypt_frost_serpent_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_frost_serpent_guard": {
+      "files": [
+        "enemy_crypt_frost_serpent_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_frost_serpent_death": {
+      "files": [
+        "enemy_crypt_frost_serpent_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_horse_attack": {
+      "files": [
+        "enemy_crypt_horse_attack_0",
+        "enemy_crypt_horse_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_horse_guard": {
+      "files": [
+        "enemy_crypt_horse_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_horse_death": {
+      "files": [
+        "enemy_crypt_horse_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_lancer_new_attack": {
+      "files": [
+        "enemy_crypt_lancer_new_attack_0",
+        "enemy_crypt_lancer_new_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_lancer_new_guard": {
+      "files": [
+        "enemy_crypt_lancer_new_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_lancer_new_death": {
+      "files": [
+        "enemy_crypt_lancer_new_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_scorpion_attack": {
+      "files": [
+        "enemy_crypt_scorpion_attack_0",
+        "enemy_crypt_scorpion_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_scorpion_guard": {
+      "files": [
+        "enemy_crypt_scorpion_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_scorpion_death": {
+      "files": [
+        "enemy_crypt_scorpion_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_storm_attack": {
+      "files": [
+        "enemy_crypt_storm_attack_0",
+        "enemy_crypt_storm_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_storm_guard": {
+      "files": [
+        "enemy_crypt_storm_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_storm_death": {
+      "files": [
+        "enemy_crypt_storm_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_crypt_tomb_raider_attack": {
+      "files": [
+        "enemy_crypt_tomb_raider_attack_0",
+        "enemy_crypt_tomb_raider_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_crypt_tomb_raider_guard": {
+      "files": [
+        "enemy_crypt_tomb_raider_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_crypt_tomb_raider_death": {
+      "files": [
+        "enemy_crypt_tomb_raider_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_cultist_attack": {
+      "files": [
+        "enemy_cultist_attack_0",
+        "enemy_cultist_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_cultist_guard": {
+      "files": [
+        "enemy_cultist_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_cultist_death": {
+      "files": [
+        "enemy_cultist_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_dragon_hatchling_attack": {
+      "files": [
+        "enemy_dragon_hatchling_attack_0",
+        "enemy_dragon_hatchling_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_dragon_hatchling_guard": {
+      "files": [
+        "enemy_dragon_hatchling_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_dragon_hatchling_death": {
+      "files": [
+        "enemy_dragon_hatchling_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_elite_attack": {
+      "files": [
+        "enemy_elite_attack_0",
+        "enemy_elite_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_elite_guard": {
+      "files": [
+        "enemy_elite_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_elite_death": {
+      "files": [
+        "enemy_elite_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_fire_elemental_attack": {
+      "files": [
+        "enemy_fire_elemental_attack_0",
+        "enemy_fire_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_fire_elemental_guard": {
+      "files": [
+        "enemy_fire_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_fire_elemental_death": {
+      "files": [
+        "enemy_fire_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_alpha_bat_attack": {
+      "files": [
+        "enemy_forest_alpha_bat_attack_0",
+        "enemy_forest_alpha_bat_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_alpha_bat_guard": {
+      "files": [
+        "enemy_forest_alpha_bat_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_alpha_bat_death": {
+      "files": [
+        "enemy_forest_alpha_bat_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_bat_attack": {
+      "files": [
+        "enemy_forest_bat_attack_0",
+        "enemy_forest_bat_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_bat_guard": {
+      "files": [
+        "enemy_forest_bat_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_bat_death": {
+      "files": [
+        "enemy_forest_bat_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_boar_attack": {
+      "files": [
+        "enemy_forest_boar_attack_0",
+        "enemy_forest_boar_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_boar_guard": {
+      "files": [
+        "enemy_forest_boar_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_boar_death": {
+      "files": [
+        "enemy_forest_boar_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_boss_attack": {
+      "files": [
+        "enemy_forest_boss_attack_0",
+        "enemy_forest_boss_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_boss_guard": {
+      "files": [
+        "enemy_forest_boss_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_boss_death": {
+      "files": [
+        "enemy_forest_boss_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_cutthroat_attack": {
+      "files": [
+        "enemy_forest_cutthroat_attack_0",
+        "enemy_forest_cutthroat_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_cutthroat_guard": {
+      "files": [
+        "enemy_forest_cutthroat_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_cutthroat_death": {
+      "files": [
+        "enemy_forest_cutthroat_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_dark_raven_attack": {
+      "files": [
+        "enemy_forest_dark_raven_attack_0",
+        "enemy_forest_dark_raven_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_dark_raven_guard": {
+      "files": [
+        "enemy_forest_dark_raven_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_dark_raven_death": {
+      "files": [
+        "enemy_forest_dark_raven_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_elite_attack": {
+      "files": [
+        "enemy_forest_elite_attack_0",
+        "enemy_forest_elite_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_elite_guard": {
+      "files": [
+        "enemy_forest_elite_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_elite_death": {
+      "files": [
+        "enemy_forest_elite_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_hunter_enemy_attack": {
+      "files": [
+        "enemy_forest_hunter_enemy_attack_0",
+        "enemy_forest_hunter_enemy_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_hunter_enemy_guard": {
+      "files": [
+        "enemy_forest_hunter_enemy_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_hunter_enemy_death": {
+      "files": [
+        "enemy_forest_hunter_enemy_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_miasma_attack": {
+      "files": [
+        "enemy_forest_miasma_attack_0",
+        "enemy_forest_miasma_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_miasma_guard": {
+      "files": [
+        "enemy_forest_miasma_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_miasma_death": {
+      "files": [
+        "enemy_forest_miasma_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_nightbat_attack": {
+      "files": [
+        "enemy_forest_nightbat_attack_0",
+        "enemy_forest_nightbat_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_nightbat_guard": {
+      "files": [
+        "enemy_forest_nightbat_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_nightbat_death": {
+      "files": [
+        "enemy_forest_nightbat_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_raven_attack": {
+      "files": [
+        "enemy_forest_raven_attack_0",
+        "enemy_forest_raven_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_raven_guard": {
+      "files": [
+        "enemy_forest_raven_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_raven_death": {
+      "files": [
+        "enemy_forest_raven_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_forest_wolf_attack": {
+      "files": [
+        "enemy_forest_wolf_attack_0",
+        "enemy_forest_wolf_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_forest_wolf_guard": {
+      "files": [
+        "enemy_forest_wolf_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_forest_wolf_death": {
+      "files": [
+        "enemy_forest_wolf_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_giant_wasp_attack": {
+      "files": [
+        "enemy_giant_wasp_attack_0",
+        "enemy_giant_wasp_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_giant_wasp_guard": {
+      "files": [
+        "enemy_giant_wasp_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_giant_wasp_death": {
+      "files": [
+        "enemy_giant_wasp_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_archer_attack": {
+      "files": [
+        "enemy_goblin_archer_attack_0",
+        "enemy_goblin_archer_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_archer_guard": {
+      "files": [
+        "enemy_goblin_archer_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_archer_death": {
+      "files": [
+        "enemy_goblin_archer_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_bomber_attack": {
+      "files": [
+        "enemy_goblin_bomber_attack_0",
+        "enemy_goblin_bomber_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_bomber_guard": {
+      "files": [
+        "enemy_goblin_bomber_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_bomber_death": {
+      "files": [
+        "enemy_goblin_bomber_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_lancer_attack": {
+      "files": [
+        "enemy_goblin_lancer_attack_0",
+        "enemy_goblin_lancer_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_lancer_guard": {
+      "files": [
+        "enemy_goblin_lancer_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_lancer_death": {
+      "files": [
+        "enemy_goblin_lancer_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_raider_attack": {
+      "files": [
+        "enemy_goblin_raider_attack_0",
+        "enemy_goblin_raider_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_raider_guard": {
+      "files": [
+        "enemy_goblin_raider_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_raider_death": {
+      "files": [
+        "enemy_goblin_raider_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_rider_attack": {
+      "files": [
+        "enemy_goblin_rider_attack_0",
+        "enemy_goblin_rider_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_rider_guard": {
+      "files": [
+        "enemy_goblin_rider_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_rider_death": {
+      "files": [
+        "enemy_goblin_rider_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_shaman_attack": {
+      "files": [
+        "enemy_goblin_shaman_attack_0",
+        "enemy_goblin_shaman_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_shaman_guard": {
+      "files": [
+        "enemy_goblin_shaman_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_shaman_death": {
+      "files": [
+        "enemy_goblin_shaman_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_goblin_warrior_attack": {
+      "files": [
+        "enemy_goblin_warrior_attack_0",
+        "enemy_goblin_warrior_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_goblin_warrior_guard": {
+      "files": [
+        "enemy_goblin_warrior_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_goblin_warrior_death": {
+      "files": [
+        "enemy_goblin_warrior_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_ice_elemental_attack": {
+      "files": [
+        "enemy_ice_elemental_attack_0",
+        "enemy_ice_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_ice_elemental_guard": {
+      "files": [
+        "enemy_ice_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_ice_elemental_death": {
+      "files": [
+        "enemy_ice_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_poison_toad_attack": {
+      "files": [
+        "enemy_poison_toad_attack_0",
+        "enemy_poison_toad_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_poison_toad_guard": {
+      "files": [
+        "enemy_poison_toad_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_poison_toad_death": {
+      "files": [
+        "enemy_poison_toad_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_rat_attack": {
+      "files": [
+        "enemy_rat_attack_0",
+        "enemy_rat_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_rat_guard": {
+      "files": [
+        "enemy_rat_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_rat_death": {
+      "files": [
+        "enemy_rat_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_rock_elemental_attack": {
+      "files": [
+        "enemy_rock_elemental_attack_0",
+        "enemy_rock_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_rock_elemental_guard": {
+      "files": [
+        "enemy_rock_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_rock_elemental_death": {
+      "files": [
+        "enemy_rock_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_root_elemental_attack": {
+      "files": [
+        "enemy_root_elemental_attack_0",
+        "enemy_root_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_root_elemental_guard": {
+      "files": [
+        "enemy_root_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_root_elemental_death": {
+      "files": [
+        "enemy_root_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_sand_elemental_attack": {
+      "files": [
+        "enemy_sand_elemental_attack_0",
+        "enemy_sand_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_sand_elemental_guard": {
+      "files": [
+        "enemy_sand_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_sand_elemental_death": {
+      "files": [
+        "enemy_sand_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_shadow_elemental_attack": {
+      "files": [
+        "enemy_shadow_elemental_attack_0",
+        "enemy_shadow_elemental_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_shadow_elemental_guard": {
+      "files": [
+        "enemy_shadow_elemental_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_shadow_elemental_death": {
+      "files": [
+        "enemy_shadow_elemental_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_attack": {
+      "files": [
+        "enemy_skeleton_attack_0",
+        "enemy_skeleton_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_guard": {
+      "files": [
+        "enemy_skeleton_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_death": {
+      "files": [
+        "enemy_skeleton_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_archer_attack": {
+      "files": [
+        "enemy_skeleton_archer_attack_0",
+        "enemy_skeleton_archer_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_archer_guard": {
+      "files": [
+        "enemy_skeleton_archer_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_archer_death": {
+      "files": [
+        "enemy_skeleton_archer_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_berserker_attack": {
+      "files": [
+        "enemy_skeleton_berserker_attack_0",
+        "enemy_skeleton_berserker_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_berserker_guard": {
+      "files": [
+        "enemy_skeleton_berserker_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_berserker_death": {
+      "files": [
+        "enemy_skeleton_berserker_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_mage_attack": {
+      "files": [
+        "enemy_skeleton_mage_attack_0",
+        "enemy_skeleton_mage_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_mage_guard": {
+      "files": [
+        "enemy_skeleton_mage_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_mage_death": {
+      "files": [
+        "enemy_skeleton_mage_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_shielder_attack": {
+      "files": [
+        "enemy_skeleton_shielder_attack_0",
+        "enemy_skeleton_shielder_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_shielder_guard": {
+      "files": [
+        "enemy_skeleton_shielder_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_shielder_death": {
+      "files": [
+        "enemy_skeleton_shielder_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_warrior_attack": {
+      "files": [
+        "enemy_skeleton_warrior_attack_0",
+        "enemy_skeleton_warrior_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_skeleton_warrior_guard": {
+      "files": [
+        "enemy_skeleton_warrior_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_skeleton_warrior_death": {
+      "files": [
+        "enemy_skeleton_warrior_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_slime_attack": {
+      "files": [
+        "enemy_slime_attack_0",
+        "enemy_slime_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_slime_guard": {
+      "files": [
+        "enemy_slime_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_slime_death": {
+      "files": [
+        "enemy_slime_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_volcano_boss_attack": {
+      "files": [
+        "enemy_volcano_boss_attack_0",
+        "enemy_volcano_boss_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_volcano_boss_guard": {
+      "files": [
+        "enemy_volcano_boss_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_volcano_boss_death": {
+      "files": [
+        "enemy_volcano_boss_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "enemy_watch_owl_attack": {
+      "files": [
+        "enemy_watch_owl_attack_0",
+        "enemy_watch_owl_attack_1"
+      ],
+      "db": -6,
+      "vary_pitch": true
+    },
+    "enemy_watch_owl_guard": {
+      "files": [
+        "enemy_watch_owl_guard_0"
+      ],
+      "db": -6,
+      "vary_pitch": true,
+      "cooldown_ms": 160
+    },
+    "enemy_watch_owl_death": {
+      "files": [
+        "enemy_watch_owl_death_0"
+      ],
+      "db": -8,
+      "vary_pitch": true
+    },
+    "voice_warrior_attack": {
+      "files": [
+        "voice_warrior_attack_0",
+        "voice_warrior_attack_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "warrior"
+    },
+    "voice_warrior_defense": {
+      "files": [
+        "voice_warrior_defense_0",
+        "voice_warrior_defense_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "warrior"
+    },
+    "voice_warrior_hurt": {
+      "files": [
+        "voice_warrior_hurt_0",
+        "voice_warrior_hurt_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "warrior"
+    },
+    "voice_guardian_attack": {
+      "files": [
+        "voice_guardian_attack_0",
+        "voice_guardian_attack_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "guardian"
+    },
+    "voice_guardian_defense": {
+      "files": [
+        "voice_guardian_defense_0",
+        "voice_guardian_defense_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "guardian"
+    },
+    "voice_guardian_hurt": {
+      "files": [
+        "voice_guardian_hurt_0",
+        "voice_guardian_hurt_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "guardian"
+    },
+    "voice_rogue_attack": {
+      "files": [
+        "voice_rogue_attack_0",
+        "voice_rogue_attack_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "rogue"
+    },
+    "voice_rogue_defense": {
+      "files": [
+        "voice_rogue_defense_0",
+        "voice_rogue_defense_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "rogue"
+    },
+    "voice_rogue_hurt": {
+      "files": [
+        "voice_rogue_hurt_0",
+        "voice_rogue_hurt_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "rogue"
+    },
+    "voice_mage_attack": {
+      "files": [
+        "voice_mage_attack_0",
+        "voice_mage_attack_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "mage"
+    },
+    "voice_mage_defense": {
+      "files": [
+        "voice_mage_defense_0",
+        "voice_mage_defense_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "mage"
+    },
+    "voice_mage_hurt": {
+      "files": [
+        "voice_mage_hurt_0",
+        "voice_mage_hurt_1"
+      ],
+      "db": -8,
+      "vary_pitch": false,
+      "cooldown_ms": 450,
+      "voice_group": "mage"
+    },
+    "machine_impact": {
+      "files": [
+        "hammer",
+        "steel_clash_2",
+        "steel_clash_3"
+      ],
+      "db": -6,
+      "vary_pitch": true
     }
   },
   "contexts": {

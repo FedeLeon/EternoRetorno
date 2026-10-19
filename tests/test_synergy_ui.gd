@@ -34,7 +34,7 @@ func run_tests() -> void:
 	var hand = app.layer.get_node("CombatHand").get_child(0)
 	var timings: Array = []
 	for card in hand.get_children():
-		check(card.has_node("CardLinkIcon") and card.has_node("LinkGlow"), "linked card chain and glow")
+		check(not card.has_node("CardLinkIcon") and card.has_node("LinkGlow"), "linked card retains glow without lower icon")
 		check(not card.find_children("*", "Label", true, false).any(func(label): return label.text == "ENLACE"), "no text badge")
 		timings.append(card.get_node("CardSheen").remaining)
 	check(timings[0] != timings[1], "independent reflection timing")

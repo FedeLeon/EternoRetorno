@@ -7,7 +7,7 @@ import sys
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
-DOC=ROOT/'docs/art_direction/postapocalyptic'
+DOC=ROOT/'art_sources/art_direction/postapocalyptic'
 
 def pending(limit):
     jobs=json.loads((DOC/'queue.json').read_text())['jobs']

@@ -1,0 +1,15 @@
+{
+  "id": "rest__upgrade",
+  "target": "assets/rest/upgrade.png",
+  "source": "art_sources/art_direction/migration/sources/scene/rest__upgrade.png",
+  "prompt": "ONE clear landscape illustration for the rest option UPGRADE A CARD in Eterno Retorno, no text. Close-up of ONE worn gray paper playing card on a charcoal travel workboard; a graphite pencil and a violet quill redraw a stronger sword emblem on that same card, with a small simple VIOLET UPWARD ARROW drawn beside the card. A few rough violet pencil energy strokes around its edges. The large central paper card and pencil are the readable main subject at260x112px. NOT a forest landscape, NOT an abstract rune floating on a rock, NOT a grid or collage. Authentic rough graphite/colored-pencil sketchbook art, searching irregular contours, crossed hatch shadows and pigment grain, BLACK/GRAY/VIOLET with high contrast. Very dark simple background, wide16:9. No letters, words, costs, numbers, captions, UI frames, shiny digital painting or pixel art.",
+  "kind": "scene",
+  "transparent": false,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-f59e65f0-e5e9-4f3f-9ac3-e24c7d86c3da.png",
+  "references": [
+    "art_sources/base_camp/dusk/sources/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "revision": "Clear function-specific composition; discard generic camp landscape"
+}

@@ -1,0 +1,129 @@
+{
+  "hero": "warrior",
+  "source": "art_sources/hero_actions_hd_2026_10_19/sources/warrior.png",
+  "source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-1ae6dafb-15be-49f1-8a47-ede30b97106c.png",
+  "prompt": "Create one production game sprite pose sheet for Eterno Retorno. Use the attached local image as the visual identity reference ONLY: same person, face, hair, clothing palette, improvised weapon and American comic drawing style. Crisp expressive black ink, clean cel-shaded flat colors, modest material detail, thin ivory-white cutout outline around the whole figure and tools, genuine transparent alpha background. NOT pixel art, NOT blurry, NOT low-res, NOT pencil sketch. Six separate FULL BODY static illustrations in an exact regular 3 columns x 2 rows grid, landscape 1536x1024 or larger (prefer 3072x2048). Each cell is square and isolated, generous clear transparent gutters and outer padding; nothing overlaps another cell or crosses its boundaries. Same anatomical scale and head size across ALL six poses; full boots and tools visible with no cropping. All face toward the right. No scenery, no ground shadow, no captions, no text, no frames, no spark/light effects (those run separately in the game). Cell order reading left to right: TOP LEFT = strong attack contact pose using the tool/weapon; TOP MIDDLE = guarded defensive stance protecting face and torso using existing equipment; TOP RIGHT = tactical support/skill gesture with existing equipment; BOTTOM LEFT = recoil from being hit while keeping both feet on the ground; BOTTOM MIDDLE = defeated slumped seated/kneeling pose with lowered head and tool, same head size, NOT flat prone and NOT gore; BOTTOM RIGHT = neutral upright combat-ready reference pose for scale comparison, near the input idle stance. These are six action stills, NOT a sprite animation sequence.\nCharacter: Bruno the civilian carpenter, middle-aged stocky man, short brown hair and stubble, rolled-sleeve burgundy/violet work shirt, tan stained canvas work apron, charcoal work trousers, brown boots, fingerless gloves. He wields the long improvised two-handed saw with its rough steel toothed blade and teal-wrapped shaft from the reference. Attack is a committed two-handed diagonal saw strike to the right, guarded defense raises the saw across chest, skill is a careful two-handed adjustment/regrip of the same saw. Preserve his recognizable appearance; no armor, swords or fantasy gear.",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "actions": [
+    "attack",
+    "guard",
+    "skill",
+    "hurt",
+    "death",
+    "scale_reference"
+  ],
+  "parts": [
+    {
+      "seed": [
+        335,
+        281
+      ],
+      "bounds": [
+        26,
+        48,
+        619,
+        467
+      ],
+      "pixels": 97274,
+      "center": [
+        335.0,
+        281.0
+      ]
+    },
+    {
+      "seed": [
+        794,
+        264
+      ],
+      "bounds": [
+        594,
+        15,
+        401,
+        499
+      ],
+      "pixels": 81458,
+      "center": [
+        794.0,
+        264.0
+      ]
+    },
+    {
+      "seed": [
+        1287,
+        280
+      ],
+      "bounds": [
+        1066,
+        46,
+        443,
+        470
+      ],
+      "pixels": 91287,
+      "center": [
+        1287.0,
+        280.5
+      ]
+    },
+    {
+      "seed": [
+        295,
+        755
+      ],
+      "bounds": [
+        101,
+        529,
+        390,
+        453
+      ],
+      "pixels": 94322,
+      "center": [
+        295.5,
+        755.0
+      ]
+    },
+    {
+      "seed": [
+        772,
+        795
+      ],
+      "bounds": [
+        585,
+        610,
+        376,
+        371
+      ],
+      "pixels": 85225,
+      "center": [
+        772.5,
+        795.0
+      ]
+    },
+    {
+      "seed": [
+        1291,
+        750
+      ],
+      "bounds": [
+        1071,
+        520,
+        441,
+        462
+      ],
+      "pixels": 90297,
+      "center": [
+        1291.0,
+        750.5
+      ]
+    }
+  ],
+  "reference": "assets/combat_static/heroes/warrior/idle.png",
+  "reference_sha256": "9418996f0f9239ecced121c364aa97d71810284332919417d045eb2a61426d16",
+  "processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
+  "outline_baked": true
+}

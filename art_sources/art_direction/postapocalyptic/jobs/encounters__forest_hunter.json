@@ -1,0 +1,24 @@
+{
+  "id": "encounters__forest_hunter",
+  "target": "assets/encounters/forest_hunter.png",
+  "kind": "scene",
+  "hero": null,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/postapocalyptic/sources/encounters__forest_hunter.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. An ordinary stranded scavenger beside an empty disabled drone chassis in overgrown factory ruins, patched civilian clothes, wary human face. Wide landscape3:2. No characters unless explicitly requested.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-13cffa47-4bef-48f4-a263-df66b865fc19.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "0e788438b89d2d9413d4ff1b3e688d7d9bbd6f13c141e62bad95330a48995a5c",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

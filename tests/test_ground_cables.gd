@@ -22,7 +22,7 @@ func verify() -> void:
 	var cables = target.get_node("GroundCables")
 	check(cables.get_index()<actor.get_index(),"cables render behind enemy artwork")
 	check(cables.global_position.y>=Layout.ground_for(app)-1,"cables lie on ground, not over body")
-	check(cables.get_global_rect().end.y<=app.layer.get_node("EnemyIntent0").global_position.y,"cables do not cover intentions")
+	check(cables.get_global_rect().end.y<=app.enemy_health[0].global_position.y,"cables do not cover life below feet")
 	check(cables.size.y==8 and cables.size.x>cables.size.y*20,"restraints are horizontal rather than circular")
 	check(cables.mouse_filter==Control.MOUSE_FILTER_IGNORE,"cables never consume enemy clicks")
 	check(not cables is TextureRect,"old circular artwork is not displayed")

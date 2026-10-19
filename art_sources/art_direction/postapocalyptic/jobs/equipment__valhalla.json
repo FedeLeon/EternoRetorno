@@ -1,0 +1,24 @@
+{
+  "id": "equipment__valhalla",
+  "target": "assets/equipment/valhalla.png",
+  "kind": "scene",
+  "hero": null,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/postapocalyptic/sources/equipment__valhalla.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Improvised supply lockers in ruined urban refuge, repaired armor pads, batteries and utility tools at side edges, quiet middle for equipment selection. No palace or medieval objects. Wide landscape3:2. No characters unless explicitly requested.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-646b2469-de8f-4d4a-bbe0-98a0631b8a4b.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "a823458520f5204a9c0b45238337f7537a5492202c16be8646fb284d65235c53",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

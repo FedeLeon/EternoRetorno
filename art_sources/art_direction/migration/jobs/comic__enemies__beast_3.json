@@ -1,0 +1,23 @@
+{
+  "id": "comic__enemies__beast_3",
+  "target": "assets/comic/enemies/beast_3.png",
+  "family": "comic/enemies",
+  "kind": "enemy_foreground",
+  "hero": null,
+  "dimensions": [
+    900,
+    600
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/migration/sources/enemy_foreground/comic__enemies__beast_3.png",
+  "queue_position": 116,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Enemy assets/comic/enemies/beast_3.png. Create FOUR DIFFERENT consecutive foreground attack poses in TWO COLUMNS by TWO ROWS on 1536x1024, each cell 768x512. Attack goes from RIGHT TO LEFT. Preserve the creature species/outfit/weapon from reference. For humanoids show close upper-body/weapon, for beasts show expressive head/forequarters or needed full silhouette. Poses anticipation, wind-up, contact, follow-through. Same character scale and anchor. Short scratched pencil energy/sparks, no glossy bloom. Keep all creature and effects inside each cell with at least 30px transparent gutters. TRUE transparent RGBA alpha zero outside drawing/effects, no opaque paper, no scenery, no frame numbers.",
+  "references": [
+    "assets/comic/enemies/beast_3.png",
+    "art_sources/art_direction/migration/sources/enemy_actor/enemies__animations__beast_3.png",
+    "art_sources/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-835ab680-35c6-4e86-ac4b-bfdffcb0632f.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

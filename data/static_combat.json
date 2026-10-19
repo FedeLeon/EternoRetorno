@@ -1,0 +1,5166 @@
+{
+	"heroes": {
+		"guardian": {
+			"idle": {
+				"path": "res://assets/combat_static/heroes/guardian/idle.png",
+				"scale": 0.282122905027933,
+				"anchor": [
+					256.0,
+					496.0
+				],
+				"bounds": [
+					111.0,
+					138.0,
+					283.0,
+					358.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/heroes/guardian/attack.png",
+				"scale": 0.238770685579196,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					14,
+					63,
+					484,
+					433
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/heroes/guardian/guard.png",
+				"scale": 0.238770685579196,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					66,
+					93,
+					380,
+					403
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/heroes/guardian/skill.png",
+				"scale": 0.238770685579196,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					71,
+					158,
+					370,
+					338
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/heroes/guardian/hurt.png",
+				"scale": 0.238770685579196,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					20,
+					94,
+					472,
+					402
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/heroes/guardian/death.png",
+				"scale": 0.238770685579196,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					92,
+					172,
+					329,
+					324
+				]
+			}
+		},
+		"mage": {
+			"idle": {
+				"path": "res://assets/combat_static/heroes/mage/idle.png",
+				"scale": 0.28072625698324,
+				"anchor": [
+					256.0,
+					496.0
+				],
+				"bounds": [
+					118.0,
+					138.0,
+					300.0,
+					358.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/heroes/mage/attack.png",
+				"scale": 0.268716577540107,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					14,
+					148,
+					484,
+					348
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/heroes/mage/guard.png",
+				"scale": 0.268716577540107,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					84,
+					148,
+					344,
+					348
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/heroes/mage/skill.png",
+				"scale": 0.268716577540107,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					106,
+					108,
+					300,
+					388
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/heroes/mage/hurt.png",
+				"scale": 0.268716577540107,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					69,
+					120,
+					374,
+					376
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/heroes/mage/death.png",
+				"scale": 0.268716577540107,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					77,
+					186,
+					358,
+					310
+				]
+			}
+		},
+		"rogue": {
+			"idle": {
+				"path": "res://assets/combat_static/heroes/rogue/idle.png",
+				"scale": 0.262569832402235,
+				"anchor": [
+					256.0,
+					496.0
+				],
+				"bounds": [
+					119.0,
+					138.0,
+					281.0,
+					358.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/heroes/rogue/attack.png",
+				"scale": 0.256830601092897,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					14,
+					150,
+					484,
+					346
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/heroes/rogue/guard.png",
+				"scale": 0.256830601092897,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					95,
+					164,
+					323,
+					332
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/heroes/rogue/skill.png",
+				"scale": 0.256830601092897,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					125,
+					119,
+					262,
+					377
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/heroes/rogue/hurt.png",
+				"scale": 0.256830601092897,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					76,
+					159,
+					360,
+					337
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/heroes/rogue/death.png",
+				"scale": 0.256830601092897,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					137,
+					258,
+					238,
+					238
+				]
+			}
+		},
+		"warrior": {
+			"idle": {
+				"path": "res://assets/combat_static/heroes/warrior/idle.png",
+				"scale": 0.217877094972067,
+				"anchor": [
+					256.0,
+					496.0
+				],
+				"bounds": [
+					123.0,
+					138.0,
+					327.0,
+					358.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/heroes/warrior/attack.png",
+				"scale": 0.21606648199446,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					14,
+					131,
+					484,
+					365
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/heroes/warrior/guard.png",
+				"scale": 0.21606648199446,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					100,
+					106,
+					313,
+					390
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/heroes/warrior/skill.png",
+				"scale": 0.21606648199446,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					83,
+					129,
+					346,
+					367
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/heroes/warrior/hurt.png",
+				"scale": 0.21606648199446,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					104,
+					142,
+					305,
+					354
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/heroes/warrior/death.png",
+				"scale": 0.21606648199446,
+				"anchor": [
+					256,
+					496
+				],
+				"bounds": [
+					109,
+					206,
+					294,
+					290
+				]
+			}
+		}
+	},
+	"enemies": {
+		"bandit_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					51.0,
+					141.0,
+					153.0,
+					99.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					146.0,
+					228.0,
+					94.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					130.0,
+					118.0,
+					110.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					130.0,
+					118.0,
+					110.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					60.0,
+					144.0,
+					135.0,
+					96.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					60.0,
+					144.0,
+					135.0,
+					96.0
+				]
+			}
+		},
+		"bandit_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					55.0,
+					128.0,
+					145.0,
+					112.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					138.0,
+					228.0,
+					102.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					124.0,
+					148.0,
+					116.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					124.0,
+					148.0,
+					116.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					128.0,
+					133.0,
+					112.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					128.0,
+					133.0,
+					112.0
+				]
+			}
+		},
+		"bandit_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					111.0,
+					157.0,
+					129.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					118.0,
+					228.0,
+					122.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					119.0,
+					161.0,
+					121.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					119.0,
+					161.0,
+					121.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					109.0,
+					161.0,
+					131.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					109.0,
+					161.0,
+					131.0
+				]
+			}
+		},
+		"bandit_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					90.0,
+					157.0,
+					150.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					90.0,
+					228.0,
+					150.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					92.0,
+					161.0,
+					148.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					92.0,
+					161.0,
+					148.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					91.0,
+					148.0,
+					149.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					91.0,
+					148.0,
+					149.0
+				]
+			}
+		},
+		"bandit_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					91.0,
+					150.0,
+					149.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					89.0,
+					228.0,
+					151.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_4/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					90.0,
+					147.0,
+					150.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_4/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					90.0,
+					147.0,
+					150.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					97.0,
+					175.0,
+					143.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					97.0,
+					175.0,
+					143.0
+				]
+			}
+		},
+		"bandit_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					44.0,
+					108.0,
+					167.0,
+					132.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					15.0,
+					125.0,
+					227.0,
+					115.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					98.0,
+					170.0,
+					142.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					98.0,
+					170.0,
+					142.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					107.0,
+					160.0,
+					133.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					107.0,
+					160.0,
+					133.0
+				]
+			}
+		},
+		"bandit_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_6/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					21.0,
+					94.0,
+					213.0,
+					146.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_6/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					101.0,
+					228.0,
+					139.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_6/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					29.0,
+					96.0,
+					197.0,
+					144.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_6/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					29.0,
+					96.0,
+					197.0,
+					144.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_6/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					94.0,
+					169.0,
+					146.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_6/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					94.0,
+					169.0,
+					146.0
+				]
+			}
+		},
+		"bandit_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/bandit_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					48.0,
+					159.0,
+					192.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/bandit_7/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					56.0,
+					228.0,
+					184.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/bandit_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					37.0,
+					50.0,
+					182.0,
+					190.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/bandit_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					37.0,
+					50.0,
+					182.0,
+					190.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/bandit_7/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					50.0,
+					152.0,
+					190.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/bandit_7/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					50.0,
+					152.0,
+					190.0
+				]
+			}
+		},
+		"beast_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					144.0,
+					157.0,
+					96.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					145.0,
+					228.0,
+					95.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					148.0,
+					156.0,
+					92.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					148.0,
+					156.0,
+					92.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					62.0,
+					150.0,
+					131.0,
+					90.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					62.0,
+					150.0,
+					131.0,
+					90.0
+				]
+			}
+		},
+		"beast_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					27.0,
+					131.0,
+					202.0,
+					109.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					137.0,
+					228.0,
+					103.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					41.0,
+					128.0,
+					174.0,
+					112.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					41.0,
+					128.0,
+					174.0,
+					112.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					135.0,
+					160.0,
+					105.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					135.0,
+					160.0,
+					105.0
+				]
+			}
+		},
+		"beast_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					125.0,
+					228.0,
+					115.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					112.0,
+					227.0,
+					128.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					96.0,
+					177.0,
+					144.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					96.0,
+					177.0,
+					144.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					32.0,
+					123.0,
+					192.0,
+					117.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					32.0,
+					123.0,
+					192.0,
+					117.0
+				]
+			}
+		},
+		"beast_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					19.0,
+					103.0,
+					217.0,
+					137.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					17.0,
+					103.0,
+					225.0,
+					137.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					23.0,
+					96.0,
+					210.0,
+					144.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					23.0,
+					96.0,
+					210.0,
+					144.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					104.0,
+					184.0,
+					136.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					104.0,
+					184.0,
+					136.0
+				]
+			}
+		},
+		"beast_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					142.0,
+					140.0,
+					98.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					143.0,
+					228.0,
+					97.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_4/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					142.0,
+					133.0,
+					98.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_4/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					142.0,
+					133.0,
+					98.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					144.0,
+					129.0,
+					96.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					144.0,
+					129.0,
+					96.0
+				]
+			}
+		},
+		"beast_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					46.0,
+					123.0,
+					163.0,
+					117.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					123.0,
+					228.0,
+					117.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					116.0,
+					134.0,
+					124.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					116.0,
+					134.0,
+					124.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					128.0,
+					140.0,
+					112.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					128.0,
+					140.0,
+					112.0
+				]
+			}
+		},
+		"beast_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_6/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					150.0,
+					161.0,
+					90.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_6/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					150.0,
+					228.0,
+					90.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_6/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					64.0,
+					141.0,
+					128.0,
+					99.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_6/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					64.0,
+					141.0,
+					128.0,
+					99.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_6/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					146.0,
+					118.0,
+					94.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_6/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					146.0,
+					118.0,
+					94.0
+				]
+			}
+		},
+		"beast_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/beast_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					150.0,
+					157.0,
+					90.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/beast_7/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					154.0,
+					228.0,
+					86.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/beast_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					55.0,
+					125.0,
+					146.0,
+					115.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/beast_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					55.0,
+					125.0,
+					146.0,
+					115.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/beast_7/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					147.0,
+					141.0,
+					93.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/beast_7/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					147.0,
+					141.0,
+					93.0
+				]
+			}
+		},
+		"crypt_automaton": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					46.0,
+					22.0,
+					164.0,
+					218.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					53.0,
+					228.0,
+					187.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/guard.png",
+				"scale": 0.57645,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					71.0,
+					160.0,
+					169.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					24.0,
+					147.0,
+					216.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					59.0,
+					35.0,
+					138.0,
+					205.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_automaton/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					59.0,
+					35.0,
+					138.0,
+					205.0
+				]
+			}
+		},
+		"crypt_bandit": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					137.0,
+					161.0,
+					103.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					141.0,
+					228.0,
+					99.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					126.0,
+					165.0,
+					114.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					126.0,
+					165.0,
+					114.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					142.0,
+					155.0,
+					98.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_bandit/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					142.0,
+					155.0,
+					98.0
+				]
+			}
+		},
+		"crypt_bat": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					110.0,
+					176.0,
+					130.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					94.0,
+					228.0,
+					146.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					103.0,
+					169.0,
+					137.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/skill.png",
+				"scale": 0.57075,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					137.0,
+					160.0,
+					103.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					116.0,
+					166.0,
+					124.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_bat/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					116.0,
+					166.0,
+					124.0
+				]
+			}
+		},
+		"crypt_beetle": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					111.0,
+					227.0,
+					129.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					19.0,
+					103.0,
+					217.0,
+					137.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					97.0,
+					228.0,
+					143.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					97.0,
+					228.0,
+					143.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					20.0,
+					106.0,
+					215.0,
+					134.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_beetle/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					20.0,
+					106.0,
+					215.0,
+					134.0
+				]
+			}
+		},
+		"crypt_lancer": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					12.0,
+					180.0,
+					228.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					22.0,
+					29.0,
+					212.0,
+					211.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					32.0,
+					19.0,
+					192.0,
+					221.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/skill.png",
+				"scale": 0.5784,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					46.0,
+					156.0,
+					194.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					15.0,
+					130.0,
+					225.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_lancer/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					15.0,
+					130.0,
+					225.0
+				]
+			}
+		},
+		"crypt_shaman": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/idle.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					53.0,
+					152.0,
+					277.0,
+					208.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/attack.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					18.0,
+					155.0,
+					348.0,
+					205.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/guard.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					64.0,
+					113.0,
+					255.0,
+					247.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/skill.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					52.0,
+					100.0,
+					280.0,
+					260.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/hurt.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					56.0,
+					141.0,
+					271.0,
+					219.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_shaman/death.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					56.0,
+					141.0,
+					271.0,
+					219.0
+				]
+			}
+		},
+		"crypt_slime": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/idle.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					31.0,
+					182.0,
+					322.0,
+					178.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/attack.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					17.0,
+					182.0,
+					349.0,
+					178.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/guard.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					52.0,
+					162.0,
+					280.0,
+					198.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/skill.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					39.0,
+					134.0,
+					307.0,
+					226.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/hurt.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					43.0,
+					172.0,
+					297.0,
+					188.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_slime/death.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					43.0,
+					172.0,
+					297.0,
+					188.0
+				]
+			}
+		},
+		"crypt_wolf": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					145.0,
+					157.0,
+					95.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					146.0,
+					228.0,
+					94.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					155.0,
+					165.0,
+					85.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					155.0,
+					165.0,
+					85.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					154.0,
+					162.0,
+					86.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/crypt_wolf/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					154.0,
+					162.0,
+					86.0
+				]
+			}
+		},
+		"elemental_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					65.0,
+					147.0,
+					125.0,
+					93.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					146.0,
+					228.0,
+					94.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					71.0,
+					138.0,
+					114.0,
+					102.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					71.0,
+					138.0,
+					114.0,
+					102.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					148.0,
+					133.0,
+					92.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					148.0,
+					133.0,
+					92.0
+				]
+			}
+		},
+		"elemental_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					98.0,
+					161.0,
+					142.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					99.0,
+					228.0,
+					141.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					42.0,
+					95.0,
+					171.0,
+					145.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					42.0,
+					95.0,
+					171.0,
+					145.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					101.0,
+					160.0,
+					139.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					101.0,
+					160.0,
+					139.0
+				]
+			}
+		},
+		"elemental_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					46.0,
+					103.0,
+					164.0,
+					137.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					104.0,
+					227.0,
+					136.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					103.0,
+					166.0,
+					137.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					103.0,
+					166.0,
+					137.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					102.0,
+					151.0,
+					138.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					102.0,
+					151.0,
+					138.0
+				]
+			}
+		},
+		"elemental_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					79.0,
+					123.0,
+					98.0,
+					117.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					15.0,
+					131.0,
+					227.0,
+					109.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					74.0,
+					126.0,
+					107.0,
+					114.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					74.0,
+					126.0,
+					107.0,
+					114.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					72.0,
+					126.0,
+					111.0,
+					114.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					72.0,
+					126.0,
+					111.0,
+					114.0
+				]
+			}
+		},
+		"elemental_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					45.0,
+					117.0,
+					165.0,
+					123.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					121.0,
+					228.0,
+					119.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_4/guard.png",
+				"scale": 0.55455,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					130.0,
+					150.0,
+					110.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_4/skill.png",
+				"scale": 0.55455,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					130.0,
+					150.0,
+					110.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					122.0,
+					134.0,
+					118.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					122.0,
+					134.0,
+					118.0
+				]
+			}
+		},
+		"elemental_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					61.0,
+					135.0,
+					134.0,
+					105.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					138.0,
+					228.0,
+					102.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					135.0,
+					161.0,
+					105.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					135.0,
+					161.0,
+					105.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					135.0,
+					150.0,
+					105.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					135.0,
+					150.0,
+					105.0
+				]
+			}
+		},
+		"elemental_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_6/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					115.0,
+					184.0,
+					125.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_6/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					124.0,
+					228.0,
+					116.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_6/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					25.0,
+					125.0,
+					205.0,
+					115.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_6/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					25.0,
+					125.0,
+					205.0,
+					115.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_6/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					118.0,
+					140.0,
+					122.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_6/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					118.0,
+					140.0,
+					122.0
+				]
+			}
+		},
+		"elemental_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/elemental_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					126.0,
+					170.0,
+					114.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/elemental_7/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					130.0,
+					228.0,
+					110.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/elemental_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					133.0,
+					179.0,
+					107.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/elemental_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					133.0,
+					179.0,
+					107.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/elemental_7/hurt.png",
+				"scale": 0.5646,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					140.0,
+					152.0,
+					100.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/elemental_7/death.png",
+				"scale": 0.5646,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					52.0,
+					140.0,
+					152.0,
+					100.0
+				]
+			}
+		},
+		"flying_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					140.0,
+					193.0,
+					100.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					140.0,
+					228.0,
+					100.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					33.0,
+					139.0,
+					190.0,
+					101.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					33.0,
+					139.0,
+					190.0,
+					101.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					35.0,
+					136.0,
+					185.0,
+					104.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					35.0,
+					136.0,
+					185.0,
+					104.0
+				]
+			}
+		},
+		"flying_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					124.0,
+					193.0,
+					116.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					20.0,
+					124.0,
+					222.0,
+					116.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					29.0,
+					122.0,
+					198.0,
+					118.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					29.0,
+					122.0,
+					198.0,
+					118.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					126.0,
+					183.0,
+					114.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					126.0,
+					183.0,
+					114.0
+				]
+			}
+		},
+		"flying_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					149.0,
+					162.0,
+					91.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					17.0,
+					142.0,
+					224.0,
+					98.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					60.0,
+					141.0,
+					136.0,
+					99.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					60.0,
+					141.0,
+					136.0,
+					99.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					148.0,
+					147.0,
+					92.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					148.0,
+					147.0,
+					92.0
+				]
+			}
+		},
+		"flying_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					96.0,
+					194.0,
+					144.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					86.0,
+					228.0,
+					154.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					86.0,
+					194.0,
+					154.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					81.0,
+					170.0,
+					159.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					95.0,
+					175.0,
+					145.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					95.0,
+					175.0,
+					145.0
+				]
+			}
+		},
+		"flying_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					115.0,
+					156.0,
+					125.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					116.0,
+					228.0,
+					124.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_4/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					119.0,
+					156.0,
+					121.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_4/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					119.0,
+					156.0,
+					121.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					117.0,
+					139.0,
+					123.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					117.0,
+					139.0,
+					123.0
+				]
+			}
+		},
+		"flying_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					152.0,
+					183.0,
+					88.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					15.0,
+					112.0,
+					227.0,
+					128.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					114.0,
+					179.0,
+					126.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					114.0,
+					179.0,
+					126.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					142.0,
+					194.0,
+					98.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					142.0,
+					194.0,
+					98.0
+				]
+			}
+		},
+		"flying_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_6/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					36.0,
+					163.0,
+					183.0,
+					77.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_6/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					147.0,
+					228.0,
+					93.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_6/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					170.0,
+					177.0,
+					70.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_6/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					170.0,
+					177.0,
+					70.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_6/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					146.0,
+					194.0,
+					94.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_6/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					146.0,
+					194.0,
+					94.0
+				]
+			}
+		},
+		"flying_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/flying_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					124.0,
+					228.0,
+					116.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/flying_7/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					18.0,
+					127.0,
+					220.0,
+					113.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/flying_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					28.0,
+					116.0,
+					199.0,
+					124.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/flying_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					28.0,
+					116.0,
+					199.0,
+					124.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/flying_7/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					19.0,
+					113.0,
+					218.0,
+					127.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/flying_7/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					19.0,
+					113.0,
+					218.0,
+					127.0
+				]
+			}
+		},
+		"goblin_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					39.0,
+					159.0,
+					201.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					78.0,
+					228.0,
+					162.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					28.0,
+					142.0,
+					212.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					55.0,
+					14.0,
+					146.0,
+					226.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					51.0,
+					59.0,
+					153.0,
+					181.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					51.0,
+					59.0,
+					153.0,
+					181.0
+				]
+			}
+		},
+		"goblin_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					41.0,
+					155.0,
+					173.0,
+					85.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					157.0,
+					228.0,
+					83.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					71.0,
+					146.0,
+					113.0,
+					94.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					71.0,
+					146.0,
+					113.0,
+					94.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					66.0,
+					157.0,
+					124.0,
+					83.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					66.0,
+					157.0,
+					124.0,
+					83.0
+				]
+			}
+		},
+		"goblin_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					29.0,
+					93.0,
+					198.0,
+					147.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					95.0,
+					227.0,
+					145.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					34.0,
+					93.0,
+					188.0,
+					147.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					34.0,
+					93.0,
+					188.0,
+					147.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					94.0,
+					180.0,
+					146.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					38.0,
+					94.0,
+					180.0,
+					146.0
+				]
+			}
+		},
+		"goblin_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					112.0,
+					160.0,
+					128.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					118.0,
+					228.0,
+					122.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					118.0,
+					177.0,
+					122.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					39.0,
+					118.0,
+					177.0,
+					122.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					115.0,
+					141.0,
+					125.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					115.0,
+					141.0,
+					125.0
+				]
+			}
+		},
+		"goblin_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					64.0,
+					118.0,
+					128.0,
+					122.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					114.0,
+					228.0,
+					126.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_4/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					56.0,
+					117.0,
+					142.0,
+					123.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_4/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					56.0,
+					117.0,
+					142.0,
+					123.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					41.0,
+					122.0,
+					173.0,
+					118.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					41.0,
+					122.0,
+					173.0,
+					118.0
+				]
+			}
+		},
+		"goblin_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					51.0,
+					113.0,
+					154.0,
+					127.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					134.0,
+					228.0,
+					106.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					116.0,
+					169.0,
+					124.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					116.0,
+					169.0,
+					124.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					112.0,
+					147.0,
+					128.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					112.0,
+					147.0,
+					128.0
+				]
+			}
+		},
+		"goblin_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_6/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					68.0,
+					119.0,
+					119.0,
+					121.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_6/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					15.0,
+					132.0,
+					227.0,
+					108.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_6/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					66.0,
+					124.0,
+					124.0,
+					116.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_6/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					66.0,
+					124.0,
+					124.0,
+					116.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_6/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					68.0,
+					120.0,
+					120.0,
+					120.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_6/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					68.0,
+					120.0,
+					120.0,
+					120.0
+				]
+			}
+		},
+		"goblin_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/goblin_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					40.0,
+					35.0,
+					176.0,
+					205.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/goblin_7/attack.png",
+				"scale": 0.57295,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					71.0,
+					149.0,
+					169.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/goblin_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					44.0,
+					23.0,
+					168.0,
+					217.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/goblin_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					48.0,
+					12.0,
+					160.0,
+					228.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/goblin_7/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					48.0,
+					150.0,
+					192.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/goblin_7/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					53.0,
+					48.0,
+					150.0,
+					192.0
+				]
+			}
+		},
+		"skeleton_0": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					59.0,
+					116.0,
+					138.0,
+					124.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					124.0,
+					228.0,
+					116.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					46.0,
+					112.0,
+					164.0,
+					128.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					46.0,
+					112.0,
+					164.0,
+					128.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					62.0,
+					116.0,
+					133.0,
+					124.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_0/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					62.0,
+					116.0,
+					133.0,
+					124.0
+				]
+			}
+		},
+		"skeleton_1": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					57.0,
+					125.0,
+					141.0,
+					115.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					128.0,
+					228.0,
+					112.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					129.0,
+					162.0,
+					111.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					47.0,
+					129.0,
+					162.0,
+					111.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					126.0,
+					118.0,
+					114.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_1/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					69.0,
+					126.0,
+					118.0,
+					114.0
+				]
+			}
+		},
+		"skeleton_2": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					98.0,
+					157.0,
+					142.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					98.0,
+					228.0,
+					142.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					42.0,
+					99.0,
+					172.0,
+					141.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					42.0,
+					99.0,
+					172.0,
+					141.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					98.0,
+					148.0,
+					142.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_2/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					54.0,
+					98.0,
+					148.0,
+					142.0
+				]
+			}
+		},
+		"skeleton_3": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					73.0,
+					109.0,
+					110.0,
+					131.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					110.0,
+					228.0,
+					130.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					65.0,
+					109.0,
+					126.0,
+					131.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					65.0,
+					109.0,
+					126.0,
+					131.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					107.0,
+					129.0,
+					133.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_3/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					63.0,
+					107.0,
+					129.0,
+					133.0
+				]
+			}
+		},
+		"skeleton_4": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					58.0,
+					106.0,
+					139.0,
+					134.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					131.0,
+					228.0,
+					109.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					110.0,
+					170.0,
+					130.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					110.0,
+					170.0,
+					130.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					56.0,
+					107.0,
+					143.0,
+					133.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_4/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					56.0,
+					107.0,
+					143.0,
+					133.0
+				]
+			}
+		},
+		"skeleton_5": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					51.0,
+					121.0,
+					153.0,
+					119.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					130.0,
+					228.0,
+					110.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					118.0,
+					158.0,
+					122.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					49.0,
+					118.0,
+					158.0,
+					122.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					123.0,
+					156.0,
+					117.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_5/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					50.0,
+					123.0,
+					156.0,
+					117.0
+				]
+			}
+		},
+		"skeleton_6": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/idle.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					56.0,
+					63.0,
+					271.0,
+					297.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/attack.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					20.0,
+					65.0,
+					344.0,
+					295.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/guard.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					19.0,
+					60.0,
+					346.0,
+					300.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/skill.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					35.0,
+					22.0,
+					313.0,
+					338.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/hurt.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					42.0,
+					62.0,
+					299.0,
+					298.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_6/death.png",
+				"scale": 0.333333333333333,
+				"anchor": [
+					192.0,
+					360.0
+				],
+				"bounds": [
+					42.0,
+					62.0,
+					299.0,
+					298.0
+				]
+			}
+		},
+		"skeleton_7": {
+			"idle": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/idle.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					31.0,
+					97.0,
+					194.0,
+					143.0
+				]
+			},
+			"attack": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/attack.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					14.0,
+					105.0,
+					228.0,
+					135.0
+				]
+			},
+			"guard": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/guard.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					30.0,
+					100.0,
+					196.0,
+					140.0
+				]
+			},
+			"skill": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/skill.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					30.0,
+					100.0,
+					196.0,
+					140.0
+				]
+			},
+			"hurt": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/hurt.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					103.0,
+					169.0,
+					137.0
+				]
+			},
+			"death": {
+				"path": "res://assets/combat_static/enemies/skeleton_7/death.png",
+				"scale": 0.5,
+				"anchor": [
+					128.0,
+					240.0
+				],
+				"bounds": [
+					43.0,
+					103.0,
+					169.0,
+					137.0
+				]
+			}
+		}
+	}
+}

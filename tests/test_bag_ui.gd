@@ -94,7 +94,7 @@ func run_tests() -> void:
 	app.render()
 	await tap(app.layer.get_node("Item_agility_brew"))
 	check(app.layer.get_node("ItemPopover/ConsumeUnavailable").disabled, "outside combat cannot consume")
-	await tap(app.layer.get_node("BackFromBag"))
+	await tap(app.layer.get_node("HeaderBack"))
 	check(app.screen == "reward", "return to pending reward")
 	print("BAG UI: %d checks / %d failures" % [checks, failures])
 	quit(1 if failures else 0)

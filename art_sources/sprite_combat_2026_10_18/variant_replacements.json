@@ -1,0 +1,12 @@
+[
+  {
+    "hero": "warrior",
+    "prompt": "Generate a BRAND NEW animation sheet from this character reference. Use a transparent empty background with alpha=0, absolutely no gray or brown or gradient backdrop. Isolated comic cutout sprites. FOUR columns by SIX rows of equal cells, 24 sequential full-body frames. The reference gives character appearance only; do not repeat its layout. Thin white edge. Each pose completely contained in a cell, facing RIGHT, same size and feet on common ground. First TWO rows (8 sequential frames): quick forward THRUST, anticipation extend weapon straight ahead then recover. Next TWO rows (8 frames): horizontal broad SWEEP from rear across the body and recover. Last TWO rows (8 frames): powerful CHARGED overhead blow with two hands lift weapon then strike low and recover. Brown haired carpenter in burgundy shirt tan apron wielding taped long saw. No text no panel lines no effects no environment. Portrait sheet aspect2:3. True transparent PNG, not a poster.",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-0e318476-e5d8-497c-aa6d-03276523eb76.png"
+  },
+  {
+    "hero": "rogue",
+    "prompt": "Generate a BRAND NEW animation sheet from this character reference. Use a transparent empty background with alpha=0, absolutely no gray or brown or gradient backdrop. Isolated comic cutout sprites. FOUR columns by SIX rows of equal cells, 24 sequential full-body frames. The reference gives character appearance only; do not repeat its layout. Thin white edge. Each pose completely contained in a cell, facing RIGHT, same size and feet on common ground. First TWO rows (8 sequential frames): quick forward THRUST, anticipation extend weapon straight ahead then recover. Next TWO rows (8 frames): horizontal broad SWEEP from rear across the body and recover. Last TWO rows (8 frames): powerful CHARGED overhead blow with two hands lift weapon then strike low and recover. Brown haired unmasked medic with teal jacket burgundy medical satchel and knives. No text no panel lines no effects no environment. Portrait sheet aspect2:3. True transparent PNG, not a poster.",
+    "source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-3eb06b32-4bf7-40ad-a280-c06405dfcf8f.png"
+  }
+]

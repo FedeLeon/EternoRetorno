@@ -1,0 +1,24 @@
+{
+  "id": "cards__art__rogue_adrenaline",
+  "target": "assets/cards/art/rogue_adrenaline.png",
+  "family": "cards/art",
+  "kind": "card",
+  "hero": "rogue",
+  "dimensions": [
+    512,
+    341
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/migration/sources/card/cards__art__rogue_adrenaline.png",
+  "queue_position": 196,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. Any protagonist depicted MUST be Mauro the Apothecary, adult human man with messy dark hair, ENTIRE HUMAN FACE VISIBLE, NO MASK, NO BEAK, charcoal hood pushed back, patched dark coat, violet sash, two plain short knives and little green medicine vials. Its new face/outfit replaces the old design. Card illustration asset assets/cards/art/rogue_adrenaline.png. Keep the same action meaning and minimal silhouette-driven composition as reference, but draw real graphite/colored-pencil marks instead of hard-edged digital comic shapes. Dark gray/violet setting, visible protagonist face when shown and new outfit/weapon, a few energetic pencil strokes rather than huge neon bloom. For originals.png: exactly FIVE COLUMNS by FOUR ROWS of TWENTY separate illustration panels, first row Nicolas/sword, second Ines/shield, third Mauro/knives and green poison with FACE VISIBLE, fourth Vera/staff. Keep same action ordering as old atlas. NO frames, labels, costs or text. Landscape.",
+  "references": [
+    "assets/cards/art/rogue_adrenaline.png",
+    "assets/heroes/identity/sketchbook.png",
+    "assets/heroes/identity/portraits/rogue.png",
+    "assets/heroes/identity/rogue_unmasked.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-6cb91218-2464-461f-a8c7-f921baacfef4.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

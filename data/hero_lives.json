@@ -9,10 +9,10 @@
   },
   "heroes": {
     "warrior": {
-      "name": "Nicolás",
+      "name": "Bruno",
       "age": 42,
       "occupation": "Carpintero",
-      "hook": "Nicolás reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
+      "hook": "Bruno reparaba puertas. Salió a buscar el convoy con una hoja de sierra adaptada y sigue guardando clavos doblados.",
       "before": "Trabajó veinte años haciendo muebles, mangos de herramientas y carros. Vivía con su pareja y enseñaba a su hijo a medir antes de cortar. Nunca quiso ser soldado. Conserva un banco de trabajo lleno de piezas que piensa terminar cuando puedan irse.",
       "camp_work": "Repara camas, ruedas, techos y mangos. Lleva una lista de arreglos en un trozo de madera y se enfada cuando alguien usa una hoja de carpintería para partir leña.",
       "forced_to_fight": "La caravana de comida dejó de llegar. Se ofreció a acompañar a quienes buscaran la ruta porque el carro necesitaba una reparación y nadie más sabía hacerla. Cuando los atacaron, levantó una herramienta antes de aprender a llevar una herramienta.",
@@ -26,10 +26,10 @@
       "visual": "Camisa violeta, delantal gastado, botas de trabajo, barba corta y sierra industrial montada sobre un mango reparado. Sin casco ni armadura militar."
     },
     "guardian": {
-      "name": "Inés",
+      "name": "Mara",
       "age": 35,
       "occupation": "Constructora",
-      "hook": "Inés levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
+      "hook": "Mara levantaba muros. Su primera defensa fue una señal de chapa contra los drones que entraban al barrio.",
       "before": "Aprendió el oficio en las obras de su madre. Trabajaba reparando casas y canales, cobraba tarde y sabía cuáles escaleras no soportaban una persona más. Ahorra para construir una casa que pueda llamar suya.",
       "camp_work": "Refuerza refugios, revisa el pozo y organiza turnos para reparar la empalizada. Marca con tiza los apoyos que están cediendo y exige que nadie trabaje debajo de ellos.",
       "forced_to_fight": "Durante el primer ataque sostuvo una puerta con una tabla mientras los demás salían. Volvió a hacerlo en el siguiente ciclo y empezó a reconocer qué movimientos compraban unos segundos. El escudo llegó después.",
@@ -43,10 +43,10 @@
       "visual": "Trenza pelirroja, chaqueta de obra naranja, tiza en el cinturón, escudo de señalización reparado y palanca. Sin armadura medieval."
     },
     "rogue": {
-      "name": "Mauro",
+      "name": "Ciro",
       "age": 30,
       "occupation": "Boticario",
-      "hook": "Mauro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
+      "hook": "Ciro preparaba remedios. Ahora dosifica también ácidos capaces de corroer las juntas de una máquina.",
       "before": "Trabajaba en la botica de su tía: secaba plantas, preparaba ungüentos y llevaba cuentas de dosis. Conoce a los vecinos por sus dolencias y por qué sabor de jarabe toleran. No era un ladrón ni un asesino.",
       "camp_work": "Mantiene la botica, busca hierbas, limpia heridas y separa los frascos que parecen iguales. Anota las dosis con letra pequeña y se niega a llamar milagro a un tratamiento que todavía no probó.",
       "forced_to_fight": "Los ingredientes empezaron a escasear. Salió al bosque a buscarlos con un cuchillo de cortar raíces. Aprendió a moverse sin llamar la atención; después descubrió que podía frenar una persecución con sustancias que antes guardaba bajo llave.",
@@ -60,10 +60,10 @@
       "visual": "Rostro completo visible sin máscara, pelo oscuro desordenado, chaqueta verde petróleo, botiquín, cuchillos utilitarios y frascos bien separados."
     },
     "mage": {
-      "name": "Vera",
+      "name": "Alma",
       "age": 27,
       "occupation": "Profesora",
-      "hook": "Vera enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
+      "hook": "Alma enseñaba a leer. Encontró un patrón en los reinicios y armó un emisor con una antena rota y una batería.",
       "before": "Daba clase en una habitación prestada y copiaba cartas para quienes no sabían escribir. Hacía cuadernos con papel reutilizado. Tenía alumnos difíciles, uno especialmente bueno dibujando, y planes para una escuela con ventanas grandes.",
       "camp_work": "Da clases, escribe mensajes, ordena mapas y registra qué cambió en cada ciclo. Pide a los vecinos que describan los hechos antes de buscar explicaciones y conserva hojas contradictorias en vez de tirar las que parecen equivocadas.",
       "forced_to_fight": "Comparó los horarios de patrulla y las señales que precedían a cada reinicio. Un aparato recuperado respondía a esas frecuencias. Quemó dos fusibles antes de conseguir que un dron se detuviera.",

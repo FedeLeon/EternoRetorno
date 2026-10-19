@@ -11,11 +11,12 @@ static func build(ui: Control) -> void:
 	scroll.name = "CombatHand"
 	ui.rect(scroll, 160, layout.HAND_TOP, 954, 720 - layout.HAND_TOP)
 	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	var contents = Control.new()
 	contents.custom_minimum_size = Vector2(ui.HandLayout.content_width(count), 720 - layout.HAND_TOP)
 	scroll.add_child(contents)
-	scroll.set_deferred("scroll_horizontal", ui.hand_scroll)
+	ui.hand_scroll = 0
+	scroll.set_deferred("scroll_horizontal", 0)
 	var drag = preload("res://src/ui/components/card_drag.gd").install(ui)
 	var selected: Control
 	for position in range(count):

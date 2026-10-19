@@ -1,0 +1,18 @@
+{
+  "id": "back_mage",
+  "kind": "back",
+  "target": "assets/cards/backs/mage.png",
+  "source": "art_sources/cards/pixel_retain/sources/back_mage.png",
+  "prompt": "Use case: ui-mockup. ONE card BACK production game asset for Eterno Retorno, tall 2:3, orthographic flat filling entire canvas edge to edge. Reference: match this image's detailed CRISP PIXEL ART worn metal tabletop card, dark charcoal engraved steel, screws, weathered bevels, subtle material texture, sparse copper repairs. Hero Vera, civilian SCHOOLTEACHER, silver bob haircut, purple coat, homemade electromagnetic emitter wired from scrap electronics, cyan identity. Use the hero identity accent color on narrow frame and luminous central emblem representing profession and tools. Symmetrical composition, large single central emblem, dark quiet engraved mechanical pattern, refined crisp pixel clusters. No character portrait, no paper text areas (this is BACK), NO letters NO words NO numbers. Rounded clipped outer corners transparent, frame nearly fills canvas. One coherent card only, no sheet.",
+  "original_path": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d817de65-ab76-4d11-b771-112a20ebb567.png",
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-15",
+  "reference": "art_sources/cards/pixel_retain/sources/frame_warrior.png",
+  "visual_style": "pixel_metal_parchment",
+  "measured_dimensions": [
+    1024,
+    1536
+  ],
+  "source_sha256": "6f42d037f7aa6c27282425719ddc0b404747c19c9af27819a345ce6a95c35a86",
+  "reference_sha256": "eb8f6e47cb7b585dd625d96f11825c77d8ad2ecad718955737ce584878422001"
+}

@@ -3,10 +3,10 @@ from pathlib import Path
 import json
 
 ROOT=Path(__file__).resolve().parents[1]
-DOC=ROOT/'docs/art_direction/postapocalyptic'
+DOC=ROOT/'art_sources/art_direction/postapocalyptic'
 SHAPES={
  'saw':'<path d="M11 49L45 9L55 17L50 22L45 21L45 27L39 27L39 33L33 33L33 39L27 39L25 45L19 44L15 53Z"/><path d="M8 48L17 55L11 61L3 54Z"/>',
- 'shield':'<path d="M12 10L32 4L52 10V31Q49 48 32 59Q15 48 12 31Z"/><path d="M19 17L32 12L45 17V30Q42 41 32 49Q22 41 19 30Z" fill="#172432"/>',
+ 'shield':'<path d="M6 10L32 5L58 10V31Q55 47 32 59Q9 47 6 31Z"/><path d="M19 17L32 12L45 17V30Q42 41 32 49Q22 41 19 30Z" fill="#172432"/>',
  'bolt':'<path d="M35 3L12 35H29L23 61L54 24H36L43 3Z"/>',
  'acid':'<path d="M24 6H40V16L49 43Q54 57 40 59H23Q10 57 15 43L24 16Z"/><path d="M20 36H44L48 48Q49 53 41 54H23Q17 53 18 48Z" fill="#213b2d"/><circle cx="29" cy="43" r="3" fill="#d6ff8c"/>',
  'cross':'<path d="M24 7H40V23H56V40H40V56H24V40H8V23H24Z"/>',
@@ -73,7 +73,7 @@ def svg_for(stem,path):
 
 def active_block_svg(width='48', height='48'):
     """Quiet dark backing for overlaid digits; one fine light outline."""
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 64 64"><path d="M12 10L32 4L52 10V31Q49 48 32 59Q15 48 12 31Z" fill="#111720" stroke="#c8d3de" stroke-width="1.5" stroke-linejoin="round"/></svg>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 64 64"><path d="M6 10L32 5L58 10V31Q55 47 32 59Q9 47 6 31Z" fill="#111720" stroke="#c8d3de" stroke-width="1.5" stroke-linejoin="round"/></svg>'
 
 def create():
     (DOC/'vectors').mkdir(exist_ok=True)
@@ -85,13 +85,13 @@ def create():
     records=[]
     for job in queue['derived']:
         if job['kind']!='icon':continue
-        stem=Path(job['target']).stem;source='docs/art_direction/postapocalyptic/vectors/'+job['id']+'.svg'
+        stem=Path(job['target']).stem;source='art_sources/art_direction/postapocalyptic/vectors/'+job['id']+'.svg'
         (ROOT/source).write_text(svg_for(stem,job['target']))
         records.append(dict(target=job['target'],source=source,dimensions=job['dimensions'],symbol=symbol(stem,job['target'])))
     from postapocalyptic_ui_art import card_frame, blueprint
     for job in queue['derived']:
         if job['kind'] not in ['frame','map']:continue
-        source='docs/art_direction/postapocalyptic/vectors/'+job['id']+'.svg'
+        source='art_sources/art_direction/postapocalyptic/vectors/'+job['id']+'.svg'
         art=card_frame(job['hero'],SHAPES) if job['kind']=='frame' else blueprint(job['target'].endswith('room_papyrus.png'))
         (ROOT/source).write_text(art)
         records.append(dict(target=job['target'],source=source,dimensions=job['dimensions'],symbol='card frame' if job['kind']=='frame' else 'route blueprint'))

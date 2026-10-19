@@ -59,25 +59,14 @@ func run_tests() -> void:
 		app.continue_run()
 		await process_frame
 		var actor = app.enemy_art[0]
-		check(actor.visual_id == def.visual and actor.has_motion_frames, "live sprite " + id)
-		var image = actor.sprite.texture.get_image()
-		var unique: Array = []
-		for index in range(8):
-			var cell = image.get_height()
-			var frame = image.get_region(Rect2i(index*cell,0,cell,cell))
-			var bounds = preload("res://scripts/sketchbook_sheet_packer.gd").bounds(frame,0.5)
-			check(bounds.position.x >= 8 and bounds.end.x <= cell-8, "packed pose keeps clear side margins " + id)
-			var key = hash(frame.get_data())
-			if key not in unique: unique.append(key)
-			check(frame.get_pixel(0,0).a == 0 and frame.get_used_rect().size.x > 20, "transparent populated frame")
-		check(unique.size() == 4, "four authored keyposes " + id)
+		check(actor.visual_id == def.visual and actor.sprite is TextureRect, "live sprite " + id)
+		check(actor.poses.size()==6,"six static action assets "+id)
 		await shot(id + "-idle")
 		actor.play_once("attack")
-		await create_timer(0.17).timeout
-		check(actor.sprite.frame >= 4 and actor.acting, "drawn attack poses " + id)
+		check(actor.current_action == "attack" and actor.acting, "drawn attack poses " + id)
 		await shot(id + "-motion")
 		await create_timer(0.65).timeout
-		check(not actor.acting and actor.sprite.frame < 4, "returns to idle " + id)
+		check(not actor.acting and actor.current_action == "idle", "returns to idle " + id)
 		var cut = CutIn.play(app.layer, def.visual)
 		check(cut != null and cut.from_right, "cut-in from right " + id)
 		var art = load(cut.texture_path).get_image()

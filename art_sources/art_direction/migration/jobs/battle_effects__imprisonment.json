@@ -1,0 +1,22 @@
+{
+  "id": "battle_effects__imprisonment",
+  "target": "assets/battle_effects/imprisonment.png",
+  "family": "battle_effects",
+  "kind": "icon",
+  "hero": null,
+  "dimensions": [
+    128,
+    128
+  ],
+  "transparent": true,
+  "source": "art_sources/art_direction/migration/sources/icon/battle_effects__imprisonment.png",
+  "queue_position": 248,
+  "prompt": "Use case: stylized-concept. Production game asset for Eterno Retorno. Input images are composition/meaning references and the approved NEW graphite/colored-pencil medium. Fully redraw as genuine rough hand-drawn conceptual art, not a filter: broken searching outlines, double lines, directional crosshatching, irregular pigment, discreet eraser marks, deep charcoal blacks and gray with substantial muted violet, strong contrast. NOT pixel art, NOT glossy digital painting, NOT photorealism, no white sticker outline. Preserve recognizable subject and functional meaning of the old asset. Palette restrained; green poison, red blood/healing, amber fire and natural material colors may remain as small functional accents. No watermark, no captions, no UI labels, no written instructions. ONE isolated minimal icon representing assets/battle_effects/imprisonment.png as in the reference, clear solid silhouette, sparse pencil hatch shading and imperfect charcoal outline. No complex scene, no person/portrait unless strictly essential to the symbol, no ornamental gold frame, no labels. Readable at 30-60 pixels, centered with 10% clear margins. True transparent background. If energy/end-turn: retain circular shape and clean dark center for overlaid numbers/text, use violet/gray drawn border with restrained light. If hero achievement: use civilian profession symbol (carpentry, construction, apothecary, teaching), never masked rogue or horned knight.",
+  "references": [
+    "assets/battle_effects/imprisonment.png",
+    "art_sources/base_camp/dusk/sources/background.png"
+  ],
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-01b6c986-324e-4d8a-b23f-577484a3d7e4.png",
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}

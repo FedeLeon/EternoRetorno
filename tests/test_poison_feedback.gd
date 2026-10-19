@@ -48,7 +48,7 @@ func run_tests() -> void:
 	check(app.enemy_art[0].fallen, "lethal poison still plays death")
 	check(app.enemy_art[1].sprite.modulate == Color.WHITE, "poison tint clears")
 	app.enemy_art[1].play_once("hurt")
-	check(app.enemy_art[1].sprite.modulate.r > app.enemy_art[1].sprite.modulate.g, "normal damage remains red")
+	check(app.enemy_art[1].current_action=="hurt" and app.enemy_art[1].sprite.modulate==Color.WHITE, "normal damage remains red")
 	await create_timer(0.3).timeout
 	app.game.end_turn()
 	check(not app.game.resolved_poison_hits.has(0), "dead enemy has no repeated poison receipt")

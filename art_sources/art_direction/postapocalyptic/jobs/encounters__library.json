@@ -1,0 +1,24 @@
+{
+  "id": "encounters__library",
+  "target": "assets/encounters/library.png",
+  "kind": "scene",
+  "hero": null,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "transparent": false,
+  "source": "art_sources/art_direction/postapocalyptic/sources/encounters__library.png",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, sparse printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Ruined school archive with torn exercise books, offline data terminals and a cyan emergency lamp, no people. Wide landscape3:2. No characters unless explicitly requested.",
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-7ca9569a-cb73-428d-b42a-809673a60cbd.png",
+  "references": [
+    "/var/www/html/EternoRetorno/assets/base_camp/dusk/background.png"
+  ],
+  "tool": "image_gen.imagegen",
+  "status": "generated",
+  "source_sha256": "508dd846dd1ee40a13edc7820fc198618a95dc8df2de277730f0de213f62a953",
+  "actual_dimensions": [
+    1536,
+    1024
+  ]
+}

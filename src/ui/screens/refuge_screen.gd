@@ -70,7 +70,6 @@ func redraw() -> void:
 		else:
 			ui.label_at("Carta de clase", x, 464, 230, 30, 18, ui.MUTED, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	ui.label_at(notice if notice != "" else "Solo cambia el mazo de aventuras nuevas. Tu partida actual se conserva.", 150, 510, 980, 30, 18, ui.TEXT, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	ui.button("Volver", 125, 554, 230, 46, go_back, true, body).name = "RefugeBack"
 	ui.button("Restaurar original", 400, 554, 260, 46, func(): attacks = 4; notice = "Configuración original lista para guardar."; redraw(), attacks != 4, body).name = "RestoreStarter"
 	ui.button("Guardar mazo", 750, 554, 390, 46, func(): save_requested.emit(selected, attacks), attacks != choices[selected].attacks, body).name = "SaveStarter"
 

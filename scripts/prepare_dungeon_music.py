@@ -18,8 +18,8 @@ def main():
         output = ROOT / f'assets/audio/music/{name}.ogg'
         graph = f'[0:a]{filters}[music];[1:a]volume=0.07[amb];[music][amb]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-22:TP=-2:LRA=11[out]'
         subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(music),'-stream_loop','-1','-i',str(atmosphere),'-filter_complex',graph,'-map','[out]','-ar','44100','-ac','2','-c:a','libvorbis','-q:a','4',str(output)],check=True)
-        records.append({'id':name,'file':str(output.relative_to(ROOT)),'license':'CC0-1.0','sources':[str(music.relative_to(ROOT)),str(atmosphere.relative_to(ROOT))],'source_sha256':[hashlib.sha256(p.read_bytes()).hexdigest() for p in [music,atmosphere]],'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'processing':graph,'original_credits':'docs/audio/sources.json','date':'2026-10-08','type':'arrangement of existing licensed recordings, not a new composition'})
-    destination = ROOT / 'docs/whole_game_polish/music_sources.json'
+        records.append({'id':name,'file':str(output.relative_to(ROOT)),'license':'CC0-1.0','sources':[str(music.relative_to(ROOT)),str(atmosphere.relative_to(ROOT))],'source_sha256':[hashlib.sha256(p.read_bytes()).hexdigest() for p in [music,atmosphere]],'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'processing':graph,'original_credits':'art_sources/audio/sources.json','date':'2026-10-08','type':'arrangement of existing licensed recordings, not a new composition'})
+    destination = ROOT / 'art_sources/whole_game_polish/music_sources.json'
     destination.write_text(json.dumps(records,indent=2)+'\n')
     print('Two dungeon battle arrangements prepared')
 

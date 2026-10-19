@@ -62,7 +62,7 @@ func run_tests() -> void:
 	app.animate_combat_action(0, 0)
 	check(app.game.run.phase == "reward" and app.combat_busy, "victory resolves before effects")
 	check(app.layer.has_node("HeroCutIn"), "offensive play shows hero comic after commit")
-	check(app.layer.has_node("AttackFlash"), "attack creates white flash")
+	check(not app.layer.has_node("AttackFlash"), "no battlefield flash outside foreground effect")
 	check(app.layer.has_node("CardAsh") and not app.layer.get_node("CombatHand").get_child(0).get_child(0).visible, "accepted play hides original and creates ash effect")
 	await create_timer(0.4).timeout
 	await shot("card-ash")
@@ -75,7 +75,7 @@ func run_tests() -> void:
 			moved = moved or actor.global_position.x > initial + 100
 			outside = outside or actor.global_position.x > 1280
 		await process_frame
-	check(moved and outside and app.screen == "reward", "party runs offscreen before reward UI")
+	check(not moved and not outside and app.screen == "reward", "reward replaces the static arena without a running animation")
 	check(app.game.run.heroes[1].hp > 0, "fallen companion revived before exit")
 	app.game.new_run(["warrior", "guardian"], 42)
 	app.game.enter_node(0)

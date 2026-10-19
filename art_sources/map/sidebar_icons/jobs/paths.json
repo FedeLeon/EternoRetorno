@@ -1,0 +1,11 @@
+{
+  "id": "paths",
+  "subject": "PATHS / MAP navigation icon: a folded gray-blue industrial route blueprint with three thick paper panels, irregular inked edge, worn corners and a small graphite metal clip. The face of the map shows ONE very clear orange branching Y route starting at one cyan node below and splitting into two cyan destination nodes above, with exactly one additional faint parallel blueprint line. Strong readable forked-path motif. Slight three-quarter angle gives paper folds volume. No legends, arrows, lettering, grids or tiny symbols.",
+  "prompt": "Use case: stylized-concept. Game UI icon for Eterno Retorno, an original post-apocalyptic world of civilian resistance against autonomous machines. ONE single isolated illustrated button icon, square composition, genuine transparent background. Match our American action comic assets: thick confident BLACK ink contours, rich FLAT orange/violet/cyan colors, angular hard-edged cel shadows, restrained sparse halftone, worn metal or cloth details. Thin clean ivory keyline along outside silhouette. Strong large readable shapes at 64px, no tiny clutter. Not a generic SVG pictogram, not 3D, not realistic rendering, not pixel art. Centered object occupies 85% of square with fully clear margins, no scenery, no background plate/frame, no text, no words, no letters, no numbers, no logos, no medieval equipment. PATHS / MAP navigation icon: a folded gray-blue industrial route blueprint with three thick paper panels, irregular inked edge, worn corners and a small graphite metal clip. The face of the map shows ONE very clear orange branching Y route starting at one cyan node below and splitting into two cyan destination nodes above, with exactly one additional faint parallel blueprint line. Strong readable forked-path motif. Slight three-quarter angle gives paper folds volume. No legends, arrows, lettering, grids or tiny symbols.",
+  "source": "art_sources/map/sidebar_icons/sources/paths.png",
+  "target": "assets/map/sidebar/paths.png",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "original": "/home/fede/.codex/generated_images/01a0f37c-dfae-7c20-8ac3-2f968cf043da/exec-d4092555-579c-483c-bb47-9675de133532.png",
+  "source_sha256": "0589be1d8c4729e733de7917b630419b8582804d7d0ecd4ad6cdbd5f695fd51b"
+}

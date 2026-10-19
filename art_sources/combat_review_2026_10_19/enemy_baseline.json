@@ -1,0 +1,338 @@
+[
+  {
+    "id": "bandit_0",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_3",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "bandit_7",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_0",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_3",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "beast_7",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "crypt_automaton",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "crypt_bandit",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "crypt_bat",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "crypt_beetle",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "crypt_lancer",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "crypt_shaman",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "crypt_slime",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "crypt_wolf",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_0",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_3",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "elemental_7",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_0",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_3",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "flying_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "flying_7",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_0",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "goblin_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_3",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "goblin_7",
+    "cell": 256,
+    "idle_unique": 4,
+    "attack_unique": 4
+  },
+  {
+    "id": "skeleton_0",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_1",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_2",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_3",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_4",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_5",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_6",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  },
+  {
+    "id": "skeleton_7",
+    "cell": 256,
+    "idle_unique": 1,
+    "attack_unique": 3
+  }
+]

@@ -93,14 +93,14 @@ func run_tests() -> void:
 	await process_frame
 	await app.animate_combat_action(0, 0)
 	check(played.count("blade") == 2, "one weapon sound per combo hit")
-	check(played.has("card_use") and played.has("flesh_impact"), "card and impact sounds accompany committed action")
+	check(played.has("card_use") and played.has("machine_impact"), "card and impact sounds accompany committed action")
 	battle = app.game.run.combat
 	battle.enemies[0].intent = {"damage":2, "block":4, "target":0}
 	app.render()
 	played.clear()
 	await app.animate_combat_action()
-	check(played.has("ash") and played.has("block"), "discard and enemy block sound")
-	check(played.has("shield_bash") or played.has("shield_impact") or played.has("magic"), "mechanical enemy attack audio")
+	check(played.has("ash") and played.any(func(event): return event.begins_with("enemy_") and event.ends_with("_guard")), "discard and enemy block sound")
+	check(played.any(func(event): return event.begins_with("enemy_") and event.ends_with("_attack")), "mechanical enemy attack audio")
 	check(not played.has("bones") and not played.has("monster") and not played.has("goblin"), "machines avoid creature voices")
 	if recording != null:
 		recording.set_recording_active(false)

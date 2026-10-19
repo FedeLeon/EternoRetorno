@@ -5,7 +5,7 @@ import json
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
-DOC=ROOT/'docs/art_direction/postapocalyptic'
+DOC=ROOT/'art_sources/art_direction/postapocalyptic'
 
 def audit():
     queue=json.loads((DOC/'queue.json').read_text())
@@ -43,8 +43,9 @@ def audit():
                 invalid_alpha=bad_alpha,converted_resources=len(converted),converted=converted,
                 legacy_resources=len(legacy),legacy=legacy,hash_mismatches=mismatches,
                 complete=not pending and not legacy and not mismatches)
-    (DOC/'review').mkdir(exist_ok=True)
-    (DOC/'review/status.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    output = ROOT / 'artifacts/art_provenance'
+    output.mkdir(parents=True, exist_ok=True)
+    (output/'status.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if not isinstance(v,list)},ensure_ascii=False,indent=2))
     return report
 

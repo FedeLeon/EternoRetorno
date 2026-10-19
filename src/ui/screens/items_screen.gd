@@ -2,7 +2,7 @@ extends RefCounted
 # Inventory presentation only: explicit snapshot and callbacks, no gameplay mutation.
 static func build(ui: Control, items: Dictionary, inventory: Dictionary, selected: String, targets: Array, in_combat: bool, actions: Dictionary) -> void:
 	preload("res://src/ui/components/inventory_background.gd").build(ui)
-	preload("res://src/ui/components/preparation_header.gd").build(ui, "Bolsa compartida · Objetos para el camino", actions.back, -1, "Volver").name = "BackFromBag"
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "Bolsa compartida · Objetos para el camino", actions.back, -1, "Volver")
 	var ids = items.keys()
 	var selected_anchor = Vector2.ZERO
 	for i in range(ids.size()):

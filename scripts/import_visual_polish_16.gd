@@ -2,8 +2,8 @@ extends SceneTree
 ## Geometric packing of generated cutouts and icons; no drawing or game state.
 const Pack = preload("res://scripts/sketchbook_sheet_packer.gd")
 func _initialize() -> void:
-	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string("res://docs/visual_polish_2026_10_16/jobs.json"))
-	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://docs/art_direction/postapocalyptic/assets.json"))
+	var jobs: Array = JSON.parse_string(FileAccess.get_file_as_string("res://art_sources/visual_polish_2026_10_16/jobs.json"))
+	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://art_sources/art_direction/postapocalyptic/assets.json"))
 	for job in jobs:
 		if job.kind == "cut_in":
 			var source = Image.load_from_file("res://" + job.source)
@@ -15,7 +15,7 @@ func _initialize() -> void:
 			for i in range(cells.size()):
 				if job.icons[i] in job.get("principal_crop", []): cells[i] = cells[i].get_region(Pack.principal_bounds(cells[i]))
 				store(fit(cells[i], Vector2i(256, 256), 12), "assets/collection/unlocks/%s.png" % job.icons[i], job, manifest)
-	FileAccess.open("res://docs/art_direction/postapocalyptic/assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest, "\t") + "\n")
+	FileAccess.open("res://art_sources/art_direction/postapocalyptic/assets.json", FileAccess.WRITE).store_string(JSON.stringify(manifest, "\t") + "\n")
 	quit()
 
 func fit(source: Image, dimensions: Vector2i, margin: int) -> Image:

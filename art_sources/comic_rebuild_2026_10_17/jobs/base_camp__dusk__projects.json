@@ -1,0 +1,21 @@
+{
+  "id": "base_camp__dusk__projects",
+  "kind": "direct",
+  "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE isolated compact neighborhood construction shed, ladders, plans, salvaged solar panel. View slightly from above and front, matches refuge camp camera, grounded base, warm sunset fromupperleft. TRUE transparent RGBA, no surrounding landscape, no people, no text. Generous clear margins. Building proportions wide and squat, not tall.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. True transparent alpha behind the entire cutout and ALL gutters; no solid rectangular backdrops, no opaque panels. White silhouette contour, selective speed hatching and small isolated comic spark accents only, all within canvas.",
+  "targets": [
+    {
+      "path": "assets/base_camp/dusk/projects.png",
+      "dimensions": [
+        512,
+        388
+      ]
+    }
+  ],
+  "transparent": true,
+  "hero": null,
+  "source": "art_sources/comic_rebuild_2026_10_17/sources/base_camp__dusk__projects.png",
+  "original_source": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-4da539db-74af-4932-94cb-58b3356fc0d8.png",
+  "references": [],
+  "tool": "image_gen.imagegen",
+  "status": "generated"
+}
