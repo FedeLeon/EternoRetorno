@@ -18,7 +18,8 @@ func _initialize() -> void:
 		for id in config.common:
 			var visual = content.enemies[id].visual
 			check(ResourceLoader.exists("res://assets/combat_static/enemies/%s/idle.png" % visual), "motion asset " + id)
-			check(ResourceLoader.exists("res://assets/comic/enemies/%s.png" % visual), "cut-in asset " + id)
+			for action in ["attack", "defense"]:
+				check(ResourceLoader.exists(preload("res://src/presentation/enemy_cut_in.gd").artwork(visual, action)), "cut-in asset " + id + "/" + action)
 		for seed_value in range(200):
 			rng.seed = seed_value
 			var nodes = Dungeon.create(rng, floor_number)

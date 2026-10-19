@@ -16,7 +16,7 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			var action = preload("res://src/presentation/action_motion.gd").for_card(card,hit_index) if not card.is_empty() else motion
 			var revision: int = actor.action_revision
 			if strike not in shown_strikes:
-				await playback.recover(ui,active_actor,active_revision,cut_in)
+				await playback.recover(ui,active_actor,active_revision,cut_in if is_instance_valid(cut_in) else null)
 				if is_instance_valid(cut_in): await ui.get_tree().process_frame
 				shown_strikes.append(strike)
 				cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer,hero)
@@ -34,7 +34,7 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			ui.audio.play_sfx("magic")
 			await ui.get_tree().create_timer(0.25).timeout
 		else:
-			await playback.recover(ui,active_actor,active_revision,cut_in)
+			await playback.recover(ui,active_actor,active_revision,cut_in if is_instance_valid(cut_in) else null)
 			if is_instance_valid(cut_in): await ui.get_tree().process_frame
 			var enemy_id: String = ui.enemy_art[event.enemy].get_meta("battle_enemy_id", "")
 			preload("res://src/audio/battle_audio.gd").enemy(ui.audio, enemy_id)
@@ -50,7 +50,7 @@ static func play(ui: Control, events: Array, motion: String) -> void:
 			if bar.animating: await bar.animation_finished
 			await ui.hero_art[event.owner].play_once("death" if event.hp <= 0 else "guard" if int(event.get("absorbed", 0)) > 0 else "hurt")
 
-	await playback.recover(ui,active_actor,active_revision,cut_in)
+	await playback.recover(ui,active_actor,active_revision,cut_in if is_instance_valid(cut_in) else null)
 
 
 static func update_block(bar: Control, amount: int) -> void:

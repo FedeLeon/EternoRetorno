@@ -21,19 +21,27 @@ const COLORS = {
 	"goblin_1": Color("bd8155"), "goblin_4": Color("eaa352"), "goblin_5": Color("cbb06c"), "goblin_6": Color("b58868"), "beast_2": Color("b480cf"), "beast_7": Color("a79dbb")
 }
 var visual_id: String
+var action: String = "attack"
+
+static func artwork(visual: String, kind: String = "attack") -> String:
+	if kind not in ["attack", "defense"]: return ""
+	var visuals = preload("res://src/data/json_catalog.gd").dictionary("res://data/enemy_visuals.json")
+	return visuals.get(visual, {}).get("foreground", {}).get(kind, "")
 
 static func play(parent: Control, visual: String, kind: String = "attack") -> Control:
 	if not preload("res://src/presentation/preferences.gd").cutins(): return null
-	if not COLORS.has(visual) and not ResourceLoader.exists("res://assets/comic/enemies/%s.png" % visual):
+	var path = artwork(visual, kind)
+	if path.is_empty() or not ResourceLoader.exists(path):
 		return null
 	var effect = new()
 	effect.visual_id = visual
+	effect.action = kind
 	effect.accent = COLORS.get(visual, Color("eca864"))
 	effect.static_illustration = true
 	effect.enhanced_lights = true
 	effect.full_view_rays = true
 	effect.defensive_effect = kind == "defense"
-	effect.texture_path = "res://assets/comic/enemies/%s.png" % visual
+	effect.texture_path = path
 	effect.from_right = true
 	effect.align_right = true
 	effect.name = "EnemyCutIn"

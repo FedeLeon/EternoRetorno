@@ -1,0 +1,54 @@
+{
+  "visual": "crypt_bat",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-9f8aafbb-44c3-4285-abfa-0a2dd569c137.png",
+  "prompt": "Production artwork for Eterno Retorno, a post-apocalyptic American action-comic game about autonomous killer machines. The attached image is the exact enemy-machine identity reference, NOT an edit target: preserve its unique chassis/silhouette, locomotion (wheels/legs/wings), mechanical head/sensors, eye colors, paint colors, existing weapons and attachments. Create a NEW HD transparent pose pair of THIS ONE MACHINE ONLY. Bold clean black comic ink, saturated cel-shaded industrial colors, moderate restrained halftone, thin pale ivory cutout rim. Crisp detailed original drawing, not pixel art, not sketchbook, not photorealism.\nComposition: landscape 1536x1024 or larger, TWO isolated illustrations side by side with a very generous EMPTY transparent gutter and clear outer margins. The LEFT half contains only the machine in a forceful ATTACK pose, directing its existing weapon/claws/nozzle/blades toward screen LEFT and slightly toward the viewer. The RIGHT half contains only the SAME machine in a visibly DIFFERENT DEFENSE pose: brace, retract or fold its existing equipment, bring its existing armored plating/claws to protect its chassis. No new equipment or limbs. For aircraft/legless machines, retain the actual wing/wheel configuration and show defensive body orientation or retracted weapon rather than inventing human arms/shields. Three-quarter comic foreground framing, machine fills each half; keep the whole distinctive silhouette and all relevant parts within its own half. Same scale, identity and drawing quality for both poses. Medium/large machines can use a close-up but must not be cut at outer edges. Preserve transparent alpha around both drawings.\nABSOLUTE CONTENT RULE: each half shows ONE single machine with its OWN existing mechanical parts. ZERO humans, heroes, survivors, victims, soldiers, operators, riders, companions or enemies it is fighting. NO organic faces, skin, flesh, human hands or biological creatures. A biped robot remains clearly all-metal and mechanical. Do not show it interacting with another character or prop. Do not include an extra third machine, floating extra body parts, explosions, projectile trails, letters, captions, panels, backgrounds, floor, shadows or text. Action effects and lights are added by game code. The only two subjects in the entire output are the attack and defense drawings of the same referenced enemy machine.",
+  "reference": "assets/combat_static/enemies/crypt_bat/idle.png",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source": "art_sources/enemy_cutins_2026_10_19/sources/crypt_bat.png",
+  "source_sha256": "4aa0d7ecd5e379caff81f2309062f52b8a5f15c528a5a81dbd2fa971eb66ddcd",
+  "reference_sha256": "eda9e5e6e52d62f7c9874bebb5a0fa1e080b696975ef1961d0cdcd49dac32c4c",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "parts": [
+    {
+      "bounds": [
+        63,
+        86,
+        959,
+        666
+      ],
+      "seed": [
+        542,
+        419
+      ],
+      "pixels": 321159
+    },
+    {
+      "bounds": [
+        1102,
+        222,
+        638,
+        578
+      ],
+      "seed": [
+        1421,
+        511
+      ],
+      "pixels": 250643
+    }
+  ],
+  "actions": [
+    "attack",
+    "defense"
+  ],
+  "review_status": "approved",
+  "review": {
+    "identity": "matches idle reference; machine alone, no humans or neighboring figures",
+    "actions": "distinct attack and guarded/retracted defense",
+    "evidence": "artifacts/enemy_cutins_review/review_04.png",
+    "method": "manual visual inspection of all 112 imported drawings"
+  }
+}

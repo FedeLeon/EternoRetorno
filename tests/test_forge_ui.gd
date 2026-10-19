@@ -45,8 +45,11 @@ func run_tests() -> void:
 	await click(app.layer.get_node("Plot2").get_meta("caption_rect").get_center())
 	await process_frame
 	check(app.screen == "forge", "enter forge")
-	check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "forge starts in portrait gallery")
+	check(app.forge_hero == "" and app.layer.find_child("Upgrade_weapon", true, false) == null, "forge starts in portrait gallery")
 	await capture("gallery.png")
+	check(not app.layer.has_node("ForgeMaterials"), "gallery keeps attendant dialogue clear")
+	app.layer.get_node("ForgeHero_warrior").pressed.emit()
+	await process_frame
 	check(app.layer.get_node("ForgeMaterials/SmeltMaterials").disabled, "empty workshop cannot smelt")
 	app.game.profile.forge_materials.scrap = 240
 	app.render()
@@ -54,22 +57,31 @@ func run_tests() -> void:
 	await click(app.layer.get_node("ForgeMaterials/SmeltMaterials").get_global_rect().get_center())
 	check(app.game.profile.forge_materials == {"scrap":0,"alloy":80}, "smelting converts only scrap to alloy")
 
+	app.layer.get_node("HeaderBack").pressed.emit()
+	await process_frame
 	for id in preload("res://src/rules/hero_roster.gd").ids(app.game.content.heroes):
 		app.layer.get_node("ForgeHero_" + id).pressed.emit()
 		await process_frame
 		check(app.forge_hero == id, "select " + id)
 		check(not app.layer.has_node("ForgeHero_" + id), "gallery hidden in forge detail")
+		check(not app.layer.has_node("ForgePreview"), "detail uses equipment instead of hero preview")
+		check(not app.layer.get_node("ForgeMaterials").get_global_rect().intersects(app.layer.get_node("AttendantDialogue").get_global_rect()), "smelting does not cover attendant")
+		for track in ["weapon", "armor"]:
+			var card = app.layer.get_node("Equipment_" + track)
+			check(card.get_node("EquipmentArt").texture.resource_path.ends_with("%s_%s_1.png" % [id, track]), "own equipment illustration " + id + "/" + track)
+			check(card.get_global_rect().encloses(card.get_node("Upgrade_" + track).get_global_rect()), "upgrade action contained")
+		await capture("detail-" + id + ".png")
 		var before = app.game.profile.forge_materials.alloy
-		app.layer.get_node("Upgrade_weapon").pressed.emit()
+		app.layer.find_child("Upgrade_weapon", true, false).pressed.emit()
 		await process_frame
 		check(app.game.profile.forge_materials.alloy == before - 3, "weapon purchase " + id)
 		check(app.layer.get_node("SoulNumber").value == app.game.profile.souls, "visible balance refreshed")
 		check(app.game.Forge.levels(app.game.profile, id).weapon == 1, "weapon level " + id)
-		app.layer.get_node("Upgrade_armor").pressed.emit()
+		app.layer.find_child("Upgrade_armor", true, false).pressed.emit()
 		await process_frame
 		check(app.game.Forge.levels(app.game.profile, id).armor == 1, "armor level " + id)
 		await click(app.layer.get_node("HeaderBack").get_global_rect().get_center())
-		check(app.forge_hero == "" and not app.layer.has_node("Upgrade_weapon"), "back to forge hero cards")
+		check(app.forge_hero == "" and app.layer.find_child("Upgrade_weapon", true, false) == null, "back to forge hero cards")
 	app.forge_hero = "warrior"
 	app.render()
 	await create_timer(0.2).timeout
@@ -77,12 +89,12 @@ func run_tests() -> void:
 	app.game.profile.forge_materials.alloy = 0
 	app.render()
 	await process_frame
-	check(app.layer.get_node("Upgrade_weapon").disabled, "insufficient alloy disabled")
+	check(app.layer.find_child("Upgrade_weapon", true, false).disabled, "insufficient alloy disabled")
 	app.game.profile.souls = 5000
 	app.game.profile.forge_upgrades.warrior = {"weapon": 3, "armor": 3}
 	app.render()
 	await process_frame
-	check(app.layer.get_node("Upgrade_weapon").disabled and app.layer.get_node("Upgrade_armor").disabled, "both maximum tiers disabled")
+	check(app.layer.find_child("Upgrade_weapon", true, false).disabled and app.layer.find_child("Upgrade_armor", true, false).disabled, "both maximum tiers disabled")
 	var back_button = app.layer.get_node("HeaderBack")
 	await click(back_button.get_global_rect().get_center())
 	check(app.screen == "forge" and app.forge_hero == "", "top arrow first returns to hero gallery")

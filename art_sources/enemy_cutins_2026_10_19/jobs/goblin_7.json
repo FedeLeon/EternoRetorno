@@ -1,0 +1,54 @@
+{
+  "visual": "goblin_7",
+  "original": "/home/fede/.codex/generated_images/01a14015-46f9-7392-8085-c0c613ec86bf/exec-145bfc1e-b2b0-4415-b1f1-76be19cfbee0.png",
+  "prompt": "Production artwork for Eterno Retorno, a post-apocalyptic American action-comic game about autonomous killer machines. The attached image is the exact enemy-machine identity reference, NOT an edit target: preserve its unique chassis/silhouette, locomotion (wheels/legs/wings), mechanical head/sensors, eye colors, paint colors, existing weapons and attachments. Create a NEW HD transparent pose pair of THIS ONE MACHINE ONLY. Bold clean black comic ink, saturated cel-shaded industrial colors, moderate restrained halftone, thin pale ivory cutout rim. Crisp detailed original drawing, not pixel art, not sketchbook, not photorealism.\nComposition: landscape 1536x1024 or larger, TWO isolated illustrations side by side with a very generous EMPTY transparent gutter and clear outer margins. The LEFT half contains only the machine in a forceful ATTACK pose, directing its existing weapon/claws/nozzle/blades toward screen LEFT and slightly toward the viewer. The RIGHT half contains only the SAME machine in a visibly DIFFERENT DEFENSE pose: brace, retract or fold its existing equipment, bring its existing armored plating/claws to protect its chassis. No new equipment or limbs. For aircraft/legless machines, retain the actual wing/wheel configuration and show defensive body orientation or retracted weapon rather than inventing human arms/shields. Three-quarter comic foreground framing, machine fills each half; keep the whole distinctive silhouette and all relevant parts within its own half. Same scale, identity and drawing quality for both poses. Medium/large machines can use a close-up but must not be cut at outer edges. Preserve transparent alpha around both drawings.\nABSOLUTE CONTENT RULE: each half shows ONE single machine with its OWN existing mechanical parts. ZERO humans, heroes, survivors, victims, soldiers, operators, riders, companions or enemies it is fighting. NO organic faces, skin, flesh, human hands or biological creatures. A biped robot remains clearly all-metal and mechanical. Do not show it interacting with another character or prop. Do not include an extra third machine, floating extra body parts, explosions, projectile trails, letters, captions, panels, backgrounds, floor, shadows or text. Action effects and lights are added by game code. The only two subjects in the entire output are the attack and defense drawings of the same referenced enemy machine.",
+  "reference": "assets/combat_static/enemies/goblin_7/idle.png",
+  "tool": "image_gen.imagegen",
+  "transparent": true,
+  "source": "art_sources/enemy_cutins_2026_10_19/sources/goblin_7.png",
+  "source_sha256": "7ca3dfad435b213e2663c79839f9dacd00d4afde01ad12d0c9edb94e75053b17",
+  "reference_sha256": "ae3447c9ecdd1f514f04cceaa88db60e6c424cddd4b30121727cdcb3d60b6652",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "parts": [
+    {
+      "bounds": [
+        22,
+        70,
+        969,
+        890
+      ],
+      "seed": [
+        506,
+        515
+      ],
+      "pixels": 349725
+    },
+    {
+      "bounds": [
+        1016,
+        47,
+        520,
+        917
+      ],
+      "seed": [
+        1276,
+        505
+      ],
+      "pixels": 296198
+    }
+  ],
+  "actions": [
+    "attack",
+    "defense"
+  ],
+  "review_status": "approved",
+  "review": {
+    "identity": "matches idle reference; machine alone, no humans or neighboring figures",
+    "actions": "distinct attack and guarded/retracted defense",
+    "evidence": "artifacts/enemy_cutins_review/review_11.png",
+    "method": "manual visual inspection of all 112 imported drawings"
+  }
+}

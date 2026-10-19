@@ -29,6 +29,14 @@ cuerpos estáticos de batalla.
 
 ## Materiales del taller
 
+La galería inicial mantiene las cuatro tarjetas y deja libre el diálogo del
+herrero. Al elegir un héroe, el bloque derecho muestra dos paneles de arma y
+armadura, sin figura del héroe. Cada panel reutiliza el asset de equipo existente
+del próximo nivel (o nivel 3 si está al máximo), muestra nivel y beneficio actual,
+beneficio siguiente y coste en aleación. Debajo se encuentra la fundición y el
+depósito compartido. La fundición solo está disponible dentro de este detalle;
+volver a la galería no consume materiales ni altera las mejoras.
+
 Los enemigos derrotados conceden chatarra al resolver una victoria. El depósito
 se conserva en el perfil y no ocupa espacio en la bolsa de objetos.
 

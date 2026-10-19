@@ -59,6 +59,11 @@ con geometría analítica, sin transformar el actor, leer imágenes de GPU ni co
 RNG de reglas. Su tiempo de vida está acotado y respeta preferencias de destellos
 y efectos reducidos. Véase [Combate](COMBATE.md).
 
+`enemy_visuals.json` declara `foreground.attack` y `foreground.defense` por modelo.
+`enemy_cut_in.gd.artwork()` resuelve esas rutas con `json_catalog.gd`; no compone
+una ruta antigua ni selecciona imágenes de otra identidad. El importador offline
+`import_enemy_cutins.gd` separa las dos ilustraciones en PNG individuales.
+
 ## Cartas, reserva y parejas
 
 `card_reserve.gd` conserva una carta apartada y su posición visual. La fachada

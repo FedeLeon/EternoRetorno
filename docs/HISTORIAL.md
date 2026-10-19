@@ -4,6 +4,56 @@ Esta página registra el mantenimiento de la documentación y sistemas actuales.
 Los registros extensos de diseños reemplazados se consultan en Git; no se
 mantienen como manuales alternativos dentro de `docs/`.
 
+## 19/10/2026 — Taller centrado en equipo y regreso cuadrado
+
+- `forge_screen.gd` reemplaza la figura del héroe en el detalle por dos paneles
+  de arma/armadura con los assets HD existentes de `assets/forge/badges/`.
+  Presenta nivel actual, beneficio actual/siguiente y coste o estado máximo.
+- Fundición trasladada al detalle del héroe, debajo del equipo y a la derecha:
+  `forge_material_display.gd` recibe su rectángulo de colocación. La galería no
+  muestra fundición y el diálogo del herrero queda libre en ambas vistas.
+  Se conservan receta, depósito compartido, precios, niveles y transacciones.
+- `header_back_button.gd` usa tamaño fijo cuadrado de 44×44 en (24,20), icono
+  de 24 px, marco compartido y márgenes simétricos propios para todos los estados.
+  Se conserva la navegación y la restricción de no retroceder fases confirmadas.
+- Validación posterior a estos cambios: taller 124/0 y regreso 252/0, headless y
+  nativo aislado X11/Mesa llvmpipe. Revisadas capturas del detalle, galería y
+  configuración. Contenido 2794/0, repositorio sin errores y diff sin espacios
+  inválidos. No se repitió la regresión completa de 104 suites para estos cambios.
+- El cierre nativo del taller avisa 8 objetos/2 recursos retenidos; regreso
+  16/4. Sin validación web, dispositivo físico, escucha ni exportación APK.
+  Evidencia en `artifacts/forge/review_*`, `artifacts/forge/detail-*` y
+  `artifacts/header_back/`.
+
+## 19/10/2026 — Primeros planos enemigos propios de ataque y defensa
+
+- Revisados los 56 primeros planos anteriores: algunos incluían supervivientes
+  ajenos, fragmentos de otros personajes o máquinas distintas; todas las defensas
+  reutilizaban el ataque. Sustituidos por 112 PNG individuales de 768×512, dos por
+  máquina, cubriendo las 57 definiciones de enemigos. Solo aparece la máquina;
+  estética cómic, alfa real y contorno claro, sin animación corporal.
+- `data/enemy_visuals.json.foreground` declara ambas acciones. El selector de
+  `enemy_cut_in.gd` rechaza identidades/acciones desconocidas sin fallback antiguo.
+  Se conservan duración, luces, partículas y encuadre inferior derecho.
+- Fuentes, prompts exactos de ImageGen, referencias de reposo y aprobación manual
+  en `art_sources/enemy_cutins_2026_10_19/`. Importación geométrica reproducible,
+  manifiesto de procedencia y borde pintado actualizados. Retirados los 56 PNG
+  antiguos y sus imports; regeneradores respetan la política de retirada.
+- Añadidas auditoría `audit_enemy_cutins.py` y prueba de 112 recursos/57 enemigos;
+  adaptados validadores de contenido, consumidores visuales y formaciones.
+- Durante la regresión se corrigió la recuperación de contraataques que recibía
+  una referencia de primer plano ya liberada. Separación de efectos bajo vida
+  aumentada de 4 a 8 px para evitar invadir el escudo activo, conservando su centro.
+  No cambian reglas, recompensas, IDs ni guardados.
+- Validación final local: 104/104 suites headless; primeros planos 1350/0
+  headless y nativo aislado; efectos 1029/0 en ambos. Revisión manual de 14 láminas
+  (112 dibujos contra sus modelos), ocho capturas de batalla y dos vistas de
+  estados apilados. Contenido 2794/0, diez pruebas Python correctas, 360 cuerpos
+  estáticos válidos, 952 recursos con procedencia y repositorio sin rutas rotas.
+- X11/Mesa llvmpipe y audio Dummy; sin navegador, emulador, dispositivo físico ni
+  exportación. La regresión final registra avisos de retención en 44 suites; no se
+  declara ausencia de fugas. Evidencia en `artifacts/enemy_cutins_review/`.
+
 ## 19/10/2026 — Acciones de héroes con calidad equivalente al reposo
 
 - Sustituidas veinte ilustraciones de ataque, defensa, habilidad, daño y derrota

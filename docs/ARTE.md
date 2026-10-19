@@ -42,6 +42,11 @@ con expresión y herramientas visibles. Sus luces y partículas son independient
 con rayos que cubren el fondo sin cortarse al borde del recorte. El héroe se
 encuadra abajo a la izquierda y el enemigo abajo a la derecha.
 
+Los 112 primeros planos enemigos son dibujos independientes de ataque/defensa,
+con alfa y borde claro pintado. Conservan chasis, sensores y herramientas del
+modelo en batalla. La defensa retrae o protege con sus propias piezas; no añade
+un héroe rival. Las 56 parejas fueron revisadas visualmente contra sus reposos.
+
 ## Cartas y tipografía
 
 Se conservan los cuatro marcos y reversos de metal/papel restaurados, con las

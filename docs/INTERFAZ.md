@@ -25,6 +25,9 @@ Compatibility y controles compartidos con texto en español.
 La flecha izquierda vuelve a la vista anterior únicamente cuando se permite
 retroceder. No revierte combates, decisiones ni etapas confirmadas de aventura.
 La navegación la resuelve `back_navigation.gd`, sin botones interiores redundantes.
+`header_back_button.gd` fija el botón en (24, 20), de 44×44 px, con flecha
+centrada de 24 px y márgenes simétricos propios en todos sus estados. El estilo
+general de los botones no puede ensancharlo al calcular el tamaño mínimo.
 
 En batalla, el HUD contiene energía, mazo, objetos, registro y menú.
 El botón de mazo reutiliza `assets/map/sidebar/deck.png`, el mismo icono del menú

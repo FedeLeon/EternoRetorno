@@ -94,7 +94,9 @@ def validate(documents, root=ROOT):
         check(bool(data.get('pattern')), f'{enemy}: empty intent pattern')
         visual = data.get('visual', '')
         check(visual in visuals, f'{enemy}: unknown visual {visual}')
-        for path in [f'assets/combat_static/enemies/{visual}/idle.png', f'assets/comic/enemies/{visual}.png']:
+        foreground = visuals.get(visual, {}).get('foreground', {})
+        check(set(foreground) == {'attack', 'defense'}, f'{enemy}: missing foreground actions')
+        for path in [f'assets/combat_static/enemies/{visual}/idle.png'] + [p.removeprefix('res://') for p in foreground.values()]:
             check((root / path).is_file(), f'{enemy}: missing dynamic asset {path}')
     for floor, data in documents.get('dungeons', {}).items():
         pool = data.get('common', [])

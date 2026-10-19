@@ -11,8 +11,8 @@ static func icon(ui: Control, kind: String, area: Rect2, parent: Control) -> voi
 	picture.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(picture, area.position.x, area.position.y, area.size.x, area.size.y, parent)
 
-static func stock(ui: Control, model: Dictionary, smelt: Callable) -> void:
-	var panel = ui.panel(28, 532, 570, 174)
+static func stock(ui: Control, model: Dictionary, smelt: Callable, area: Rect2) -> void:
+	var panel = ui.panel(area.position.x, area.position.y, area.size.x, area.size.y)
 	panel.name = "ForgeMaterials"
 	ui.label_at("Fundición · Materiales recuperados", 18, 6, 534, 32, 22, ui.GOLD, panel)
 	icon(ui, "scrap", Rect2(20, 45, 42, 42), panel)

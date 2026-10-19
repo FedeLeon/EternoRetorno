@@ -91,6 +91,17 @@ ejecutarse como si fueran verificaciones de solo lectura. Los auditores generan
 
 ## Limpieza segura
 
+Los primeros planos enemigos vigentes están en `assets/comic/enemies/attack/`
+y `defense/`. Las fuentes originales, prompts exactos, referencias y aprobaciones
+de las 56 parejas están en `art_sources/enemy_cutins_2026_10_19/`; se generaron con
+la herramienta integrada ImageGen. `scripts/import_enemy_cutins.gd` extrae cada
+silueta conectada y su antialias, reduce proporcionalmente sin ampliar y centra
+el dibujo sobre un lienzo transparente de 768×512. No crea un atlas en ejecución.
+`scripts/audit_enemy_cutins.py` verifica cobertura de las 57 definiciones, acciones
+distintas, transparencia, hashes, referencias y aprobación visual registrada.
+Los 56 PNG anteriores están retirados, también en la política que consultan los
+importadores antiguos para evitar restaurarlos por accidente.
+
 1. Comprobar referencias de código, catálogos, importadores y rutas dinámicas.
 2. Revisar relaciones de fuentes, geometría y procedencia antes de borrarlas.
 3. Conservar IDs/UIDs de recursos vigentes y compatibilidad de guardados.

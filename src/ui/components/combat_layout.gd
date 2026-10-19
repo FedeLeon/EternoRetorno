@@ -9,7 +9,7 @@ const SELECTED_SIZE = Vector2(202, 302)
 
 const LIFE_GAP = 8.0
 const LIFE_HEIGHT = 18.0
-const EFFECT_GAP = 4.0
+const EFFECT_GAP = 8.0
 const INTENT_TOP = 76.0
 
 static func ground_for(ui: Control) -> float:

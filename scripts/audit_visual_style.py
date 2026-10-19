@@ -84,10 +84,10 @@ def inventory():
         visual = definition['visual']; config = documents['enemy_visuals'][visual]
         row = {'id':id,'name':definition['name'],'visual':visual,'floors':sorted(floors[id]),
                'idle_frames':1,'attack_frames':1,
-               'foreground_drawings':config.get('foreground_frames',1),'style':config.get('style','pending')}
+               'foreground_drawings':len(config.get('foreground',{})),'style':config.get('style','pending')}
         enemy_rows.append(row)
-        for folder in ['comic/enemies']:
-            consumers[f'assets/{folder}/{visual}.png'].add(f'enemy catalogue: {id} ({definition["name"]})')
+        for action, path in config.get('foreground',{}).items():
+            consumers[path.removeprefix('res://')].add(f'enemy catalogue: {id}/{action} ({definition["name"]})')
         consumers[f'assets/enemies/hd/{visual}.png'].add(f'enemy static fallback: {id}')
     for kind, actors in documents['static_combat'].items():
         for identity, poses in actors.items():

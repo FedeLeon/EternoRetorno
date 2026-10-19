@@ -14,6 +14,12 @@ No se animan cuerpos con esqueletos, spritesheets, deformación, balanceo,
 escalado, retroceso ni carrera al terminar la batalla.
 
 Los primeros planos conservan ilustraciones estáticas con luces y partículas.
+
+Cada una de las 56 máquinas tiene dos primeros planos propios: ataque y defensa
+(112 PNG de 768×512 para las 57 definiciones de enemigos). Solo aparece la máquina,
+sin supervivientes, víctimas ni personajes adicionales. `enemy_cut_in.gd` elige
+la acción desde `enemy_visuals.json.foreground`; una identidad o acción desconocida
+no reutiliza otra imagen. Se conserva el encuadre inferior derecho y la duración.
 El héroe aparece abajo a la izquierda y el enemigo abajo a la derecha, dejando
 visibles los personajes del escenario. Los rayos de fondo cubren la vista sin
 terminar en el límite del recorte del personaje.

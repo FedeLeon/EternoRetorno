@@ -49,6 +49,15 @@ class ContentAuditTest(unittest.TestCase):
         self.assertIn('missing dynamic asset', self.errors(
             lambda d: d['content']['enemies']['rat'].update(visual='missing')))
 
+    def test_enemy_foreground_requires_both_actions(self):
+        self.assertIn('missing foreground actions', self.errors(
+            lambda d: d['enemy_visuals'][d['content']['enemies']['rat']['visual']]['foreground'].pop('defense')))
+
+    def test_enemy_foreground_resource(self):
+        self.assertIn('missing dynamic asset', self.errors(
+            lambda d: d['enemy_visuals'][d['content']['enemies']['rat']['visual']]['foreground'].update(
+                defense='res://assets/missing-defense.png')))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -10,6 +10,7 @@ python3 scripts/audit_content.py
 python3 scripts/audit_static_combat.py
 python3 scripts/audit_postapocalyptic_art.py
 python3 scripts/audit_pixel_cards.py
+python3 scripts/audit_enemy_cutins.py
 python3 scripts/run_regressions.py --jobs 6 --output artifacts/regressions
 ```
 
@@ -38,6 +39,30 @@ No hace falta generar una APK para trabajar ni para verificar documentación.
 Los avisos de objetos/recursos retenidos al salir deben registrarse aparte.
 Un proceso que cierra sin fallar no demuestra ausencia de fugas.
 
+## Primeros planos enemigos — 19/10/2026
+
+- Cobertura: 57 definiciones, 56 modelos y 112 dibujos distintos de ataque/defensa;
+  auditoría específica sin errores y diez pruebas Python del validador correctas.
+- `test_enemy_foreground_pairs.gd`: 1350 comprobaciones sin fallos headless y en
+  ventana nativa aislada. Verifica selección de acción/identidad, alfa, encuadre,
+  imagen estática, cierre, ausencia de fallback y preferencias de primeros planos.
+- Revisión visual manual de los 112 dibujos en 14 láminas contra su modelo de
+  batalla y ocho capturas con primeros planos reales. No aparecen humanos ajenos.
+- Contenido 2794/0; repositorio sin referencias rotas o metadatos huérfanos;
+  360 cuerpos estáticos válidos y procedencia vigente de los 952 recursos visuales.
+- Evidencia y registros en `artifacts/enemy_cutins_review/`. Las aprobaciones
+  visuales y prompts están en `art_sources/enemy_cutins_2026_10_19/`.
+- Regresión final completa: **104/104 suites headless aprobadas**, sin errores de
+  script ni fallos de aserción, con datos temporales aislados por suite. 44 suites
+  registran avisos de retención al salir; detalle en `regressions_verified/`.
+- Efectos activos: 1029/0 headless y nativo aislado; separación respecto al escudo
+  revisada visualmente. Contraataques: prueba existente sin fallos tras proteger
+  el paso de referencias de primeros planos que ya fueron liberados.
+
+La ventana nativa usa X11/Mesa llvmpipe y audio Dummy. Se registraron avisos de
+retención de 4 objetos/1 recurso al cerrar algunas ejecuciones nativas; no se
+deduce ausencia general de fugas. No se probó navegador ni dispositivo físico.
+
 ## Revisión de acciones HD de héroes — 19/10/2026
 
 Las veinte poses nuevas se verificaron después de importar sus imágenes:
@@ -57,7 +82,8 @@ uno; impacto registra 12/3. Actores estáticos y recorrido nativo no registraron
 esos avisos. No se declara ausencia general de fugas. Evidencia actual en
 `artifacts/hero_actions_hd/`; alcance en [Historial](HISTORIAL.md).
 
-No se repitió la regresión completa ni se exportó APK/web. No se probó navegador,
+En esa revisión de héroes no se repitió la regresión completa. No se exportó
+APK/web. No se probó navegador,
 emulador, dispositivo físico o mezcla de audio por escucha. La revisión documental
 conserva 12 guías Markdown y el marcador `.gdignore`, sin archivos generados dentro
 de `docs/`.
