@@ -39,7 +39,3 @@ static func build(ui: Control, paths: bool) -> void:
 		ui.screen = "map" if paths else screen_for(ui.game)
 		ui.render())
 	ui.rect(view, 0, 0, 1280, 720)
-	if not paths and preload("res://src/rules/building_projects.gd").owned(ui.game.profile, "scouting"):
-		var scout = ui.button("Reconocer caminos · 20 celdas", 52, 90, 340, 40, func():
-			if ui.game.polish_action("scout"): ui.render(), ui.game.profile.souls >= 20 and view.available.any(func(i): return not ui.game.run.nodes[i].get("scouted", false)))
-		scout.name = "ScoutPaths"

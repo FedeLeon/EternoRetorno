@@ -39,6 +39,35 @@ No hace falta generar una APK para trabajar ni para verificar documentación.
 Los avisos de objetos/recursos retenidos al salir deben registrarse aparte.
 Un proceso que cierra sin fallar no demuestra ausencia de fugas.
 
+## Mapa vertical — 20/10/2026
+
+- Regresión completa: 105/105 suites headless aprobadas tras el cambio.
+- `test_vertical_map.gd`: 24813/0 headless y nativo aislado; 30 mazmorras de los
+  tres pisos, caminos ascendentes, separación, jefe superior y compatibilidad de
+  geometría sin metadatos. Comprueba rueda, foco inicial/actual, recorte, retratos,
+  menú fijo y que inspeccionar no modifique la aventura ni el RNG.
+- `test_map.gd`: 141/0 headless y nativo; clics en salas, grupo, mazo y transiciones.
+- Capturas de recorrido inferior, intermedio, superior y posición actual revisadas
+  con X11/Mesa llvmpipe y audio Dummy. Avisos de retención de 8 objetos/2 recursos
+  en la prueba nativa de interacción. Contenido 2793/0, repositorio y enlaces sin
+  errores. Evidencia en `artifacts/vertical_map/` y `artifacts/map/`.
+- Sin validación táctil en celular, navegador ni exportación APK. La ejecución
+  nativa y los eventos de ratón no certifican esas plataformas.
+
+## Retirada de proyectos y mascotas — 20/10/2026
+
+- Regresión completa posterior a la retirada: 104/104 suites headless aprobadas.
+- Prueba `test_retired_projects_pets.gd`: 24/0 headless y nativo aislado; carga y
+  segunda carga de guardados antiguos, conservación de combate/RNG/progreso,
+  ausencia de bonos en nuevos combates, precios normales y controles retirados.
+- Animales ambientales: 54/0, con las animaciones originales conservadas.
+- Capturas revisadas de campamento, selección, componentes y combate en ventana
+  X11/Mesa llvmpipe. Audio Dummy. No se probó navegador ni dispositivo físico.
+- Contenido 2793/0; 360 dibujos de cuerpos, 112 primeros planos de máquinas y
+  procedencia de 950 recursos sin errores. Repositorio y enlaces válidos.
+- 47 suites avisan retención al salir; la revisión nativa registra 20 objetos/5
+  recursos. Evidencia en `artifacts/retired_projects_pets/`. No se exportó APK.
+
 ## Primeros planos enemigos — 19/10/2026
 
 - Cobertura: 57 definiciones, 56 modelos y 112 dibujos distintos de ataque/defensa;
@@ -94,6 +123,6 @@ de `docs/`.
   lentitud a una causa concreta.
 - Escuchar la mezcla de música, golpes de metal y voces durante partidas reales.
 - Investigar avisos de retención al cerrar algunas suites.
-- Balancear materiales, mascotas, parejas y progresión con partidas humanas.
+- Balancear materiales, parejas y progresión con partidas humanas.
 
 Son trabajos pendientes; no se presentan como resultados de esta limpieza.

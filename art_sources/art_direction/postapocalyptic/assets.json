@@ -89,16 +89,6 @@
 		"source_sha256": "27032c323b8042fc558d70b16d41ddadefa454f10b026db4bd73778ab617de76",
 		"style": "postapocalyptic_comic"
 	},
-	"assets/base_camp/dusk/projects.png": {
-		"comic_processing_version": 3.0,
-		"comic_rebuild_revision": 1.0,
-		"job": "base_camp__dusk__projects",
-		"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-		"sha256": "23c184db1498ddaea15c9b11b3eb384b5258259a4396144cd99f29e7c281cc09",
-		"source": "art_sources/comic_rebuild_2026_10_17/sources/base_camp__dusk__projects.png",
-		"source_sha256": "34cff8205539fb279ddfb309b53b8affa631fbed9226fe9e33e44d4af6738762",
-		"style": "postapocalyptic_comic"
-	},
 	"assets/base_camp/dusk/refuge.png": {
 		"comic_processing_version": 3.0,
 		"comic_rebuild_revision": 1.0,
@@ -3929,16 +3919,6 @@
 		"sha256": "6743e8f7fe658020aa94f3392799a765b8810316399a1aed77ffad93c41ce490",
 		"source": "art_sources/comic_rebuild_2026_10_17/sources/path_floor_3_3.png",
 		"source_sha256": "305f0ef9d0297856e807989b1ceb48c8853c927219fd4ffd2f9f64bb5f8bb9db",
-		"style": "postapocalyptic_comic"
-	},
-	"assets/projects/interior.png": {
-		"comic_processing_version": 3.0,
-		"comic_rebuild_revision": 1.0,
-		"job": "projects__interior",
-		"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-		"sha256": "4691b4f7de711cf0f1ee38a74cb7ad9a23868ef0319edb66a780ad240271988a",
-		"source": "art_sources/comic_rebuild_2026_10_17/sources/projects__interior.png",
-		"source_sha256": "775873d18a95975123c68f892f9bd7466a6bc76b3023f8857a2679bb5440f55a",
 		"style": "postapocalyptic_comic"
 	},
 	"assets/refuge/interior.png": {

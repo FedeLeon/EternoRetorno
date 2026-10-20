@@ -19,6 +19,10 @@ a la raíz del repositorio.
 | Persistencia | `src/save_store.gd` | Escritura atómica, archivo temporal y respaldo. |
 
 La interfaz y los efectos visuales no calculan daño, conceden premios ni guardan.
+`training_config_dialog.gd` conserva un borrador de los tres rivales y opciones;
+`training_enemy_picker.gd` presenta tarjetas con PNG de combate y devuelve el ID
+elegido. `training_config.gd` conserva la validación y los rivales disponibles.
+La preparación de entrenamiento reutiliza `building_hero_picker.gd` para sus héroes.
 La resolución de una acción aceptada y su checkpoint preceden a la presentación.
 Los contadores o retrasos visuales no deben modificar el RNG de la aventura.
 
@@ -79,9 +83,13 @@ temporal para la práctica, separada del progreso real.
 ## Exploración y pantallas
 
 `dungeon_generator.gd` delega selección de grupos en `enemy_formations.gd` y
-geometría en `map_geometry.gd`. `map_screen.gd` presenta el grafo y
-`paths_screen.gd` las salidas inmediatas. Las adaptaciones visuales de mapas
-cargados no regeneran su contenido ni cambian conexiones guardadas.
+coordenadas serializadas en `map_geometry.gd`. `map_screen.gd` presenta el grafo
+en `MapScroll/Route`; `vertical_map_layout.gd` calcula exclusivamente posiciones
+visuales por profundidad del grafo, con etapas separadas y jefe arriba. También
+admite guardados sin metadatos de etapa. Título y menú lateral quedan fuera del
+contenedor desplazable. `paths_screen.gd` presenta las salidas inmediatas.
+Las adaptaciones visuales no regeneran contenido, consumen RNG ni cambian
+conexiones o coordenadas guardadas.
 
 Las pantallas tienen archivos propios en `src/ui/screens/`: campamento,
 selección, preparación, mapa, caminos, combate, recompensas, descanso,
@@ -101,9 +109,10 @@ realizan desde las reglas/fachada, conservando IDs, equipo y progreso anteriores
 al resolver victoria. `forge_material_display.gd` presenta el depósito sin
 modificarlo. La aventura conserva su instantánea de equipo.
 
-`pet_companions.gd` valida la mascota y aplica su pasiva al inicio del combate.
-`data/pets.json` define sus valores. Los datos narrativos de `hero_lives.json`
-no cambian estadísticas ni introducen penalizaciones de memoria.
+`content_migration.gd` limpia los campos de proyectos y mascotas retirados sin
+reiniciar aventuras válidas ni modificar celdas, equipo, mano o vida actuales.
+`camp_companions.gd` conserva los animales exclusivamente como presentación
+ambiental. Los datos narrativos de `hero_lives.json` no cambian estadísticas.
 
 ## Recursos y herramientas
 

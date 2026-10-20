@@ -61,8 +61,8 @@ func run_tests() -> void:
 	for screen in ["market","forge","church","refuge","training_setup"]:
 		app.screen=screen;app.render();await process_frame
 		var portraits=app.layer.find_children("RefugeHero_*","Button",true,false)
-		if screen in ["market","forge","church"]:
-			portraits=app.layer.find_children({"market":"Category_*","forge":"ForgeHero_*","church":"ChurchHero_*"}[screen],"Button",true,false)
+		if screen in ["market","forge","church","training_setup"]:
+			portraits=app.layer.find_children({"market":"Category_*","forge":"ForgeHero_*","church":"ChurchHero_*","training_setup":"TrainingHero_*"}[screen],"Button",true,false)
 		check(portraits.size()==4,"four gallery entries: "+screen)
 		for portrait in portraits:
 			var picture=portrait.get_node("ComicPortrait")

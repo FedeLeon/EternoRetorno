@@ -8,7 +8,7 @@ Compatibility y controles compartidos con texto en español.
 - Inicio: entrar/continuar, colección, bestiario y configuración.
 - Campamento e interiores: edificios, progreso permanente, galería de cuatro
   héroes y preparación. Los rótulos se alinean con los edificios.
-- Preparación: selección de dos héroes y mascota; componentes sobre un centro
+- Preparación: selección de dos héroes; componentes sobre un centro
   oscuro con objetos laterales; dificultad/condición en tarjetas ilustradas.
 - Aventura: primera batalla directa; luego recompensas y vista de caminos.
   El panel lateral permite consultar grupo, mazo y mapa.
@@ -19,6 +19,23 @@ Compatibility y controles compartidos con texto en español.
 - Colección, logros y bestiario: consulta del progreso descubierto y sus fichas.
   Los logros desbloqueados permiten ampliar su imagen.
 - Cinemáticas: secuencias ilustradas y galería de capítulos descubiertos.
+
+En entrenamiento, los héroes usan la misma cuadrícula de tarjetas grandes (dos
+por fila) que los edificios. Configurar rivales ofrece tres botones: cada uno abre
+una galería desplazable de enemigos descubiertos con imagen y nombre. Tocar una
+tarjeta la elige para ese espacio; Volver conserva el borrador y permite cancelar
+la galería. Se puede vaciar cada espacio; sin rivales se utiliza el maniquí.
+Daño, bloqueo y demás ajustes se conservan al elegir, y Aplicar confirma el conjunto.
+
+## Mapa vertical
+
+El mapa conserva su fondo y usa un área de desplazamiento exclusivamente vertical.
+Las salas ocupan etapas separadas de abajo hacia arriba; el jefe tiene un icono
+mayor y rótulo en la parte superior. Dos retratos marcan la sala actual. La apertura
+enfoca al grupo y permite inspeccionar el resto del recorrido con la rueda o el
+desplazamiento del contenedor. Título, estado y menú lateral permanecen fijos.
+Los caminos disponibles se destacan en cian y los recorridos tienen su propio tono.
+La distribución visual no modifica conexiones, encuentros ni posiciones guardadas.
 
 ## Cabecera y regreso
 

@@ -5,7 +5,9 @@ var artwork_size: Vector2
 var artwork_rect: Rect2
 var pixel_scale = 1.0
 var passthrough_areas: Array[Rect2] = []
-func configure(texture: Texture2D, area: Vector2, artwork_offset: Vector2 = Vector2.ZERO) -> void:
+var artwork_flipped = false
+func configure(texture: Texture2D, area: Vector2, artwork_offset: Vector2 = Vector2.ZERO, flipped: bool = false) -> void:
+	artwork_flipped = flipped
 	artwork_size = area
 	pixel_scale = minf(area.x / texture.get_width(), area.y / texture.get_height())
 	var drawn_size = texture.get_size() * pixel_scale
@@ -20,4 +22,6 @@ func _has_point(point: Vector2) -> bool:
 		return true
 	if alpha_mask == null or not artwork_rect.has_point(point):
 		return false
-	return alpha_mask.get_bitv(Vector2i((point - artwork_rect.position) / pixel_scale))
+	var pixel = Vector2i((point - artwork_rect.position) / pixel_scale)
+	if artwork_flipped: pixel.x = alpha_mask.get_size().x - 1 - pixel.x
+	return alpha_mask.get_bitv(pixel)

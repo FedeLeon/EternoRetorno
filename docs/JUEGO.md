@@ -6,19 +6,12 @@ aventura, con progreso permanente de campamento y una ciudad dominada por máqui
 ## Preparación
 
 Se eligen dos entre Bruno/Carpintero, Mara/Constructora, Ciro/Boticario y
-Alma/Profesora. La pareja comparte mazo y energía. Se seleccionan mascota,
+Alma/Profesora. La pareja comparte mazo y energía. Se seleccionan
 componentes, dificultad y condición adicional mediante opciones ilustradas.
 El comienzo conduce a la primera batalla.
 
-Las mascotas acompañan toda la aventura:
-
-| Mascota | Pasiva actual |
-| --- | --- |
-| Perro | Ambos héroes comienzan cada combate con 3 de bloqueo. |
-| Gato | Se roba una carta adicional en el primer turno de cada combate. |
-
-La definición autorizada está en `data/pets.json`; las pasivas no son objetos
-consumibles. La selección se conserva al continuar la aventura.
+El perro y el gato son parte del ambiente del campamento; no se eligen para
+la aventura ni otorgan efectos de combate.
 
 ## Recorrido
 
@@ -28,8 +21,9 @@ Se conservan IDs internos anteriores para no romper catálogos ni guardados.
 
 Después de una victoria normal se resuelven las recompensas y se elige entre
 los caminos disponibles en una vista ilustrada. Los accesos laterales permiten
-consultar grupo, mazo y mapa. El mapa muestra conexiones y salas con geometría
-espiral; la vista de caminos presenta únicamente los destinos inmediatos.
+consultar grupo, mazo y mapa. El mapa es vertical y desplazable: se comienza abajo
+y se avanza por etapas hacia el jefe final, arriba de todo. Al abrirlo se enfoca
+la posición del grupo. La vista de caminos presenta únicamente destinos inmediatos.
 
 Hay combates normales, élites, jefes, cofres, encuentros, mercader y descansos.
 El generador combina formaciones y considera salas previas para reducir

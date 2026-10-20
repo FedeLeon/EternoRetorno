@@ -36,7 +36,7 @@ def screen_inventory(records):
         'Mercado':['market/interior.png'], 'Herrería':['forge/interior.png'],
         'Iglesia':['church/interior.png','church/warrior_','church/guardian_','church/rogue_','church/mage_'],
         'Expediciones':['expeditions/interior.png','expeditions/contract_'],
-        'Refugio y vínculos':['refuge/interior.png'], 'Proyectos':['projects/interior.png'],
+        'Refugio y vínculos':['refuge/interior.png'],
         'Elección de pareja':['camp/background.png','camp/fire-natural.png','rest/warrior.png','rest/guardian.png','rest/rogue.png','rest/mage.png'],
         'Equipo previo':['equipment'], 'Mapa de todas las mazmorras':['map'],
         'Combate: cripta':['dungeon/combat'], 'Combate: bosque':['forest/combat'],
@@ -120,7 +120,7 @@ def inventory():
         if (ROOT/f'assets/encounters/{id}.png').exists(): consumers[f'assets/encounters/{id}.png'].add('event backdrop (shared by related encounters)')
     for path in (ROOT/'assets/encounters').glob('*.png'): consumers[str(path.relative_to(ROOT))].add('encounter backdrop selection: event/alias')
     for path in (ROOT/'assets/ui/polished').glob('*.svg'): consumers[str(path.relative_to(ROOT))].add('src/ui/components/dark_skin.gd: trim(asset)')
-    for id in ['market','forge','church','expeditions','refuge','projects','plot','training','fire']:
+    for id in ['market','forge','church','expeditions','refuge','plot','training','fire']:
         consumers[f'assets/base_camp/dusk/{id}.png'].add('src/ui/screens/base_camp_screen.gd: ART + asset ID')
     for id in ['crypt','forest','volcano']:
         consumers[f'assets/cinematics/{id}.png'].add('src/ui/screens/run_result_screen.gd:8; floor background')

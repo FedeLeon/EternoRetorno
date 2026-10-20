@@ -21,11 +21,9 @@ static func build(ui: Control) -> void:
 	var start = ui.button("Entrenar", 60, 470, 300, 58, func(): preload("res://src/ui/training_navigation.gd").start(ui, chosen, weapon.selected, armor.selected), false)
 	start.disabled = true
 	var ids = preload("res://src/rules/hero_roster.gd").ids(ui.game.content.heroes)
-	for i in range(ids.size()):
-		var id = ids[i]
-		var button = preload("res://src/ui/components/refuge_portrait.gd").build(ui, ui.layer, id, ui.game.content.heroes[id].name, Vector2(688 + (i % 2) * 266, 172 + (i / 2) * 174), func():
-			if id in chosen: chosen.erase(id)
-			elif chosen.size() < 2: chosen.append(id)
-			for j in range(buttons.size()): buttons[j].modulate = Color(1.3,1.2,1.0) if ids[j] in chosen else Color.WHITE
-			start.disabled = chosen.size() != 2, true, ui.game.content.heroes[id].get("civilian",{}))
-		buttons.append(button)
+	preload("res://src/ui/components/building_hero_picker.gd").build(ui, ui.game.content.heroes, "Elegí dos héroes para entrenar", "TrainingHero_", func(id):
+		if id in chosen: chosen.erase(id)
+		elif chosen.size() < 2: chosen.append(id)
+		for j in range(buttons.size()): buttons[j].modulate = Color(1.3,1.2,1.0) if ids[j] in chosen else Color.WHITE
+		start.disabled = chosen.size() != 2, true)
+	for id in ids: buttons.append(ui.layer.get_node("TrainingHero_" + id))

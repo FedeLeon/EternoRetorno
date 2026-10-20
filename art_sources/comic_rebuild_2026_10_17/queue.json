@@ -291,23 +291,6 @@
       "source": "art_sources/comic_rebuild_2026_10_17/sources/base_camp__dusk__plot.png"
     },
     {
-      "id": "base_camp__dusk__projects",
-      "kind": "direct",
-      "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE isolated compact neighborhood construction shed, ladders, plans, salvaged solar panel. View slightly from above and front, matches refuge camp camera, grounded base, warm sunset fromupperleft. TRUE transparent RGBA, no surrounding landscape, no people, no text. Generous clear margins. Building proportions wide and squat, not tall.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. True transparent alpha behind the entire cutout and ALL gutters; no solid rectangular backdrops, no opaque panels. White silhouette contour, selective speed hatching and small isolated comic spark accents only, all within canvas.",
-      "targets": [
-        {
-          "path": "assets/base_camp/dusk/projects.png",
-          "dimensions": [
-            512,
-            388
-          ]
-        }
-      ],
-      "transparent": true,
-      "hero": null,
-      "source": "art_sources/comic_rebuild_2026_10_17/sources/base_camp__dusk__projects.png"
-    },
-    {
       "id": "base_camp__dusk__refuge",
       "kind": "direct",
       "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. ONE isolated patched civilian shelter made from heavy violet canvas, salvaged doors and corrugated panels. View slightly from above and front, matches refuge camp camera, grounded base, warm sunset fromupperleft. TRUE transparent RGBA, no surrounding landscape, no people, no text. Generous clear margins. Building proportions wide and squat, not tall.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. True transparent alpha behind the entire cutout and ALL gutters; no solid rectangular backdrops, no opaque panels. White silhouette contour, selective speed hatching and small isolated comic spark accents only, all within canvas.",
@@ -408,23 +391,6 @@
       "transparent": false,
       "hero": null,
       "source": "art_sources/comic_rebuild_2026_10_17/sources/market__interior.png"
-    },
-    {
-      "id": "projects__interior",
-      "kind": "direct",
-      "prompt": "Use case: stylized-concept. Production asset for Eterno Retorno. Original post-apocalyptic civilian resistance world. AMERICAN ACTION COMIC, late 1990s arcade fighting-game illustration. Bold confident BLACK INK contours, clean angular silhouettes, rich FLAT vibrant colors, large HARD-EDGED cel-shaded shadows, bold printed halftone. Deep ink black and aubergine, vivid teal/cyan electronics, rusty orange and violet clothing, warm natural skin. NOT pencil sketchbook, NOT grayscale, NO dense scratchy crosshatching, NO photorealism, NO 3D, NO pixel art. Ordinary people with patched civilian clothes and improvised tools fight autonomous machines. NO medieval armor, swords, cloaks, runes, magic staffs, skeletons, goblins or monsters. No franchise characters, logos or superhero costumes. No text or UI baked in unless explicitly required. Wide16:9 interior: construction planning shed with paper plans and reclaimed components, civilian architect. Attendant if present confined to LEFT30percent, waist-up framing. Entire HEAD must fit between20percent and45percent image height, with clear space ABOVE it so a top HUD cannot cover the face. No oversized portrait or head at the top edge. If no attendant specified, show ONLY the furnished room, NO person at all. Keep RIGHT65percent spacious, dark, low detail for2x2 hero cards or contract cards. Foreground desk only along bottom/left. No actual UI cards, no text, no labels.\nNEW FINAL ART DIRECTION: original printed American action COMIC BOOK, this is a full REDRAW of the illustration. Strong expressive black ink outlines, angular purposeful shapes, two-tone cel shadows, vivid controlled hero accents on a dark violet/steel/petrol palette, visible Ben-Day halftone clusters and occasional dry ink. A clear THIN WHITE PAPER CUTOUT border around every person, machine, standalone object and icon silhouette. Comics cut-paper aesthetic, NOT 3D, NOT realistic painting, NOT pixel art, NOT generic airbrushed fantasy. Civilian survivors versus autonomous killing machines; retain their identities, jobs, workwear and improvised tools. No superhero costumes. The illustration must visibly feel like hand-inked printed comic art. BACKGROUND COMIC PAGE TREATMENT: thin ivory paper gutter and imperfect thick black vignette boundary at outermost 1 percent edge; subtle halftone blocks and angular secondary panel corner slivers confined to far corners. Keep the center and UI/character zones completely clear; no letters, no speech text, no captions baked in. Preserve specified flat arena ground and all usable empty space. Backgrounds stay ominous and dark so bright characters pop.",
-      "targets": [
-        {
-          "path": "assets/projects/interior.png",
-          "dimensions": [
-            1672,
-            941
-          ]
-        }
-      ],
-      "transparent": false,
-      "hero": null,
-      "source": "art_sources/comic_rebuild_2026_10_17/sources/projects__interior.png"
     },
     {
       "id": "refuge__interior",

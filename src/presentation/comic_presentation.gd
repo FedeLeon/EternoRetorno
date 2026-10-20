@@ -27,7 +27,7 @@ func _decorate(reference: WeakRef) -> void:
 	picture.material = Outline.material_for(picture.texture)
 
 static func frame_screen(ui: Control) -> void:
-	if ui.screen not in ["home","cinematics","combat","paths","map","room","event_cards","reward","boss_reward","base_camp","select","victory","defeat","market","merchant","forge","church","refuge","expeditions","projects","equipment","items","collection","options","training_setup"]: return
+	if ui.screen not in ["home","cinematics","combat","paths","map","room","event_cards","reward","boss_reward","base_camp","select","victory","defeat","market","merchant","forge","church","refuge","expeditions","equipment","items","collection","options","training_setup"]: return
 	var panel = preload("res://src/presentation/comic_panel.gd").new()
 	panel.name = "ComicPageMargin"
 	panel.z_index = 8

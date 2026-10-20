@@ -4,6 +4,103 @@ Esta página registra el mantenimiento de la documentación y sistemas actuales.
 Los registros extensos de diseños reemplazados se consultan en Git; no se
 mantienen como manuales alternativos dentro de `docs/`.
 
+## 20/10/2026 — Documentación y pruebas mínimas
+
+Preferencia guardada en `AGENTS.md`: resúmenes cortos tipo commit, arquitectura
+breve solo cuando cambie y eliminación de las pruebas nuevas tras pasar.
+
+## 20/10/2026 — Mapa vertical desplazable
+
+- `map_screen.gd` conserva el fondo y reemplaza la presentación comprimida en
+  espiral por `MapScroll/Route`, un lienzo vertical de unas cuatro pantallas.
+  Salas de 72 px, jefe de 88 px arriba de todo y separación de 156 px por etapa.
+  Caminos curvos de mayor contraste, disponibles en cian y recorridos diferenciados.
+- `vertical_map_layout.gd` obtiene profundidad y carriles del grafo existente;
+  admite guardados anteriores sin etapa o coordenadas. Solo calcula presentación:
+  no altera contenido, conexiones, encuentros, guardados ni RNG de la aventura.
+- Al abrir, enfoca la posición del grupo; los dos retratos acompañan la sala
+  actual. Desplazamiento vertical con rueda/barra del contenedor, recorte del
+  contenido y cabecera/estado/menú lateral fijos. Se conserva elección de salas,
+  grupo, mazo, regreso a caminos y transición tras vencer al jefe.
+- Validación posterior: **105/105 suites headless aprobadas**. Mapa vertical
+  24813/0 headless y nativo aislado (30 mazmorras, orden ascendente, separación,
+  jefe superior, guardados antiguos, rueda real, foco y conservación de estado).
+  Interacción del mapa 141/0 headless y nativo: selección, panel lateral, mazo,
+  objetivos deshabilitados y transiciones. Contenido 2793/0 y repositorio sin
+  errores; diff y enlaces documentales correctos.
+- Revisadas capturas inferior, intermedia, superior y sala actual con X11/Mesa
+  llvmpipe, audio Dummy. Prueba nativa de interacción avisa 8 objetos/2 recursos
+  retenidos al cerrar. No se declara ausencia general de fugas ni validación en
+  navegador, pantalla táctil/dispositivo físico o exportación APK.
+  Evidencia en `artifacts/vertical_map/` y `artifacts/map/`.
+
+## 20/10/2026 — Retirada de proyectos y mascotas de aventura
+
+- Eliminados el edificio/entrada de proyectos, su pantalla y reglas. Retirados
+  reservas/descuentos del mercado, renovación de provisiones y reconocimiento
+  pagado de salas, incluidos sus controles y transacciones. Las compras normales,
+  expediciones, reserva de cartas en combate y demás edificios se conservan.
+- Eliminados selector, resumen y entrada de HUD de mascotas, catálogo y pasivas;
+  `new_run` vuelve a recibir únicamente pareja, semilla, equipo y piso inicial.
+  El perro y el gato de `camp_companions.gd` conservan íntegros sus assets y
+  animaciones ambientales. No se retocó el balance de dificultad.
+- `content_migration.gd` elimina campos retirados del perfil/aventura, persiste
+  también limpiezas exclusivas del run y no reinicia una aventura válida. Conserva
+  moneda, equipo, cartas, vida, mano y RNG del combate actual; los turnos y combates
+  siguientes ya no conceden pasivas de mascotas.
+- Retirados dos assets activos de proyectos, sus imports y sus fuentes/jobs
+  exclusivos de ambas generaciones; colas, manifiesto, índice de bordes y política
+  de retirada actualizados. Se conservaron fuentes compartidas y animales del
+  campamento. Eliminadas pruebas exclusivas de funciones retiradas y adaptadas
+  regresiones vigentes; nueva prueba de compatibilidad y ausencia de controles.
+- Validación final local: **104/104 suites headless aprobadas**; retirada y guardados
+  24/0 headless y nativo aislado, animales ambientales 54/0. Revisión de capturas
+  de campamento, selección, componentes y combate con X11/Mesa llvmpipe y audio
+  Dummy. Contenido 2793/0, 360 cuerpos estáticos válidos, 112 primeros planos
+  enemigos válidos y 950 recursos visuales con procedencia vigente. Repositorio,
+  enlaces documentales y diff sin errores. Evidencia en
+  `artifacts/retired_projects_pets/`, regresión final en `regressions_final/`.
+- 47 suites registran avisos de retención al cierre; prueba nativa de retirada
+  20 objetos/5 recursos. No se declara ausencia general de fugas. Sin navegador,
+  dispositivo físico, escucha ni exportación APK.
+
+## 19/10/2026 — Orientación y distribución del campamento
+
+- Mercado y taller reflejados horizontalmente mediante `TextureRect.flip_h` en
+  `base_camp_screen.gd`, mirando hacia el centro. `building_hotspot.gd` refleja
+  también el muestreo de su máscara alfa para mantener accesos precisos.
+- Intercambiados laboratorio y proyectos: proyectos arriba a la derecha y
+  laboratorio abajo a la derecha, incluido su solar sin construir. Rótulos arriba
+  de ambos edificios para evitar superposición. Se conservan IDs, construcción,
+  funciones, guardados y assets originales; no se modificó la dificultad.
+- Validación posterior: suelo/accesos 326/0 headless y nativo aislado; expansión
+  del campamento 33/0 headless. Revisadas capturas de solares y campamento
+  construido con X11/Mesa llvmpipe. Repositorio sin errores y diff sin espacios
+  inválidos. Evidencia en `artifacts/camp_rearrange/` y `artifacts/camp_dusk/`.
+- El cierre headless de suelo/accesos avisa 22 objetos/5 recursos retenidos;
+  no se declara ausencia general de fugas. Sin navegador, dispositivo físico ni
+  exportación; no se repitió la batería completa para este cambio visual.
+
+## 19/10/2026 — Rivales con tarjetas y héroes del entrenamiento
+
+- Reemplazados los tres desplegables de rivales por botones en
+  `training_config_dialog.gd`. Cada botón abre `training_enemy_picker.gd`, una
+  galería desplazable con nombre y PNG estático del enemigo descubierto.
+- Elegir una tarjeta regresa al borrador y conserva daño, bloqueo y opciones.
+  Volver desde la galería cancela esa elección; cada espacio se puede vaciar.
+  Aplicar mantiene el contrato existente y sin rivales sigue disponible el maniquí.
+- `training_screen.gd` reutiliza las tarjetas grandes de los edificios, dos por
+  fila, conservando la selección máxima de dos héroes y el botón Entrenar.
+  Se reutilizan assets existentes; no cambian reglas, descubrimientos ni guardados.
+- Prueba nueva 25/0 headless y nativo aislado: imágenes, enemigos descubiertos,
+  borrador, cancelación, limpieza de espacio, Aplicar, perfil y pareja de héroes.
+  Regresiones locales: profundidad de combate 48/0 y pulido de interfaz 13/0.
+  Contenido 2794/0 y repositorio sin errores; capturas de héroes, galería y
+  configuración revisadas en `artifacts/training_picker/`.
+- X11/Mesa llvmpipe, audio Dummy; sin navegador, dispositivo físico ni exportación.
+  Al cierre headless del selector se registran 46 objetos/7 recursos retenidos y
+  en profundidad 26/5; no se declara ausencia de fugas. No se repitió toda la suite.
+
 ## 19/10/2026 — Taller centrado en equipo y regreso cuadrado
 
 - `forge_screen.gd` reemplaza la figura del héroe en el detalle por dos paneles

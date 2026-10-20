@@ -1,9 +1,16 @@
 # Pautas de trabajo
 
-- Mantener la documentación como parte de cada cambio funcional o visual.
-  Consultar `docs/README.md` para estado, índice y convención de mantenimiento.
-- Actualizar el documento del sistema y `docs/HISTORIAL.md`; registrar decisiones,
-  archivos relevantes, pendientes y pruebas realmente realizadas.
+- Generar la menor documentación posible. Registrar solo cambios principales en
+  `docs/HISTORIAL.md`, con texto corto tipo commit y una explicación breve si aporta.
+  No duplicar el mismo cambio en varias guías ni crear informes por rutina.
+- Actualizar `docs/ARQUITECTURA.md` únicamente si cambia la estructura o una
+  responsabilidad importante, con explicaciones pequeñas de la arquitectura vigente.
+  Consultar `docs/README.md` para el índice y la convención de mantenimiento.
+- Las pruebas creadas para una tarea son temporales: ejecutarlas y, cuando pasen,
+  eliminar sus archivos, UIDs y artefactos temporales. No acumular nuevas suites
+  permanentes salvo solicitud explícita. Si fallan, corregir y volver a probar
+  antes de eliminarlas. Esta preferencia no ordena borrar en bloque pruebas
+  preexistentes fuera del alcance de la tarea.
 - Diferenciar resultados locales, revisión visual, emulador y dispositivo físico.
   No presentar resultados históricos como validación de cambios posteriores.
 - Conservar prompts y procedencia de assets generados en la carpeta correspondiente.
@@ -22,5 +29,5 @@
   no un límite que justifique fragmentación artificial o código comprimido.
 - Mantener IDs, UIDs y compatibilidad de guardado; actualizar referencias y pruebas
   al mover recursos. Preservar resolución y guardado antes de las animaciones.
-- Documentar estructura actual y propuesta por separado; registrar cada extracción
-  terminada en el historial y actualizar el mapa de arquitectura.
+- Documentar solo la estructura vigente cuando cambie; resumir cada extracción
+  importante en el historial sin mantener planes ni relatos extensos de ejecución.

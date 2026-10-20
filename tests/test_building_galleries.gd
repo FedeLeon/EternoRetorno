@@ -54,7 +54,7 @@ func run_tests() -> void:
 			app.back()
 			await process_frame
 		check(app.game.profile == profile,screen+": selecting heroes does not change progress")
-	for screen in ["expeditions","projects"]:
+	for screen in ["expeditions"]:
 		app.screen = screen
 		app.render()
 		await process_frame

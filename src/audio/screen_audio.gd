@@ -7,7 +7,6 @@ static func context(screen: String, run: Dictionary, return_screen: String = "")
 		screen = return_screen
 	if screen == "bestiary": return "title" if return_screen == "home" else "refuge"
 	if screen in ["bonds", "training_setup"]: return "refuge"
-	if screen == "projects": return "camp"
 	if screen == "boss_reward": return "reward"
 	if screen == "merchant": return "market"
 	if screen in ["home", "options", "collection", "cinematics"]: return "title"

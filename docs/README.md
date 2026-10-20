@@ -1,13 +1,13 @@
 # Documentación de Eterno Retorno
 
-Estado actual revisado el **19/10/2026**. Este índice describe lo que contiene el
+Estado actual revisado el **20/10/2026**. Este índice describe lo que contiene el
 proyecto; las versiones anteriores se consultan en el historial de Git.
 
 ## Guías vigentes
 
 | Documento | Contenido |
 | --- | --- |
-| [Juego](JUEGO.md) | Preparación, aventura, cartas, mascotas y progreso. |
+| [Juego](JUEGO.md) | Preparación, aventura, cartas y progreso. |
 | [Combate](COMBATE.md) | Turnos, reserva, sinergias, cuerpos estáticos y primeros planos. |
 | [Campamento](CAMPAMENTO.md) | Edificios, materiales, equipo y progresión permanente. |
 | [Interfaz](INTERFAZ.md) | Vistas, navegación, cartas, intenciones y lectura en pantalla. |
@@ -32,12 +32,15 @@ proyecto; las versiones anteriores se consultan en el historial de Git.
 
 ## Convención de mantenimiento
 
-1. Actualizar la guía del sistema y este índice si cambia la organización.
-2. Añadir al historial el alcance y las pruebas realmente realizadas.
+1. Documentación mínima: cambios principales en el historial, con texto corto
+   tipo commit. No repetir cada tarea en varias guías ni producir informes por rutina.
+2. Añadir explicaciones breves de arquitectura solo si cambia una responsabilidad
+   o estructura importante. Actualizar este índice únicamente si cambia la organización.
 3. Conservar prompts, fuentes útiles y procedencia en `art_sources/`, junto a su
    familia de producción; actualizar los importadores cuando se mueven.
-4. Escribir el comportamiento vigente y separar las propuestas pendientes.
-   Retirar explicaciones de sistemas eliminados en lugar de acumularlas en la guía.
+4. Mantener solo documentación vigente. Las pruebas nuevas de cada tarea son
+   temporales: eliminarlas junto con sus UIDs y artefactos cuando pasen. No crear
+   suites permanentes salvo solicitud explícita; corregir los fallos antes de borrar.
 5. Distinguir pruebas automáticas, revisión visual local, audio por escucha,
    navegador, emulador y dispositivo físico. No atribuir pruebas anteriores a una
    modificación posterior.

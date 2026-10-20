@@ -58,20 +58,6 @@ func verify() -> void:
 	check(not app.combat_busy and cutins.size() == 3, "three prepared cards each have their own attack presentation")
 	check(app.game.run == committed, "replay does not resolve or save combat twice")
 	check(app.game.resolved_prepared_hits.map(func(hit): return hit.action_index) == [0,1,2], "prepared receipts distinguish separate actions")
-	# Scout from an actual post-battle map inspection, preserving that view.
-	for e in app.game.run.combat.enemies: e.hp = 0
-	app.game._check_combat_end()
-	app.game.choose_reward(-1)
-	app.game.profile.get_or_add("projects", {}).scouting = true
-	app.screen = "map"
-	app.render()
-	var balance = app.game.profile.souls
-	var current = app.game.run.current
-	app.layer.get_node("ScoutPaths").pressed.emit()
-	check(app.screen == "map" and app.layer.has_node("MapScreen"), "scouting stays on map")
-	check(app.game.run.current == current and app.game.available_nodes().all(func(i):return app.game.run.nodes[i].scouted), "scouting reveals exact reachable rooms without moving")
-	check(app.game.profile.souls == balance - 20 and app.layer.get_node("ScoutPaths").disabled, "scouting charges once and disables completed action")
-	check(not app.game.polish_action("scout") and app.game.profile.souls == balance - 20, "repeat scouting is rejected without charge")
 	fixture()
 	app.game.run.heroes[0].block = 20
 	app.game.run.combat.enemies[0].hp = 999

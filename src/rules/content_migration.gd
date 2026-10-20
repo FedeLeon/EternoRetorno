@@ -2,12 +2,16 @@ extends RefCounted
 ## Remove unknown catalogue entries without changing valid progress or RNG.
 static func clean(profile: Dictionary, run: Dictionary, content: RefCounted) -> Dictionary:
 	var before = profile.duplicate(true)
+	var before_run = run.duplicate(true)
+	# Retired optional systems: preserve currency, equipment and current combat.
+	for field in ["projects", "reserved_card"]: profile.erase(field)
+	for field in ["pet", "merchant_refresh_floor"]: run.erase(field)
+	for node in run.get("nodes", []): node.erase("scouted")
 	var heroes: Array = content.heroes.keys()
 	for field in ["unlocked_cards", "market_cards"]:
 		if profile.has(field): profile[field] = profile[field].filter(func(id): return content.cards.has(id))
 	for field in ["starter_attacks", "forge_upgrades"]:
 		if profile.has(field): retain_keys(profile[field], heroes)
-	if profile.has("reserved_card") and not content.cards.has(profile.reserved_card): profile.erase("reserved_card")
 	var pairs: Array = []
 	for a in heroes:
 		for b in heroes:
@@ -48,7 +52,7 @@ static func clean(profile: Dictionary, run: Dictionary, content: RefCounted) -> 
 			var id = card.get("id", "") if card is Dictionary else card
 			if not content.cards.has(id): closed = true
 	if closed: run = {}
-	return {"changed": before != profile or closed, "run": run, "closed": closed}
+	return {"changed": before != profile or before_run != run or closed, "run": run, "closed": closed}
 
 static func retain_keys(state: Dictionary, allowed: Array) -> void:
 	for key in state.keys():

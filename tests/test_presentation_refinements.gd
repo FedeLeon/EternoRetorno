@@ -36,15 +36,12 @@ func run_tests() -> void:
 	check(is_equal_approx(shared.duration,0.72),"enemy default duration unchanged")
 	shared.free()
 	app.game.profile.buildings = {}
-	var profile_before = app.game.profile.duplicate(true)
 	app.screen = "base_camp"; app.render()
-	check(app.layer.has_node("ProjectsBuilding") and app.layer.has_node("ProjectsEntrance"),"permanent projects workshop without construction")
+	check(not app.layer.has_node("ProjectsBuilding") and not app.layer.has_node("ProjectsEntrance"),"projects workshop removed")
 	check(not app.layer.get_children().any(func(node):return node is Button and node.text == "Bestiario"),"no camp bestiary access")
 	var training = app.layer.get_node("TrainingEntrance")
 	check(training.icon != null and training.size.x == training.size.y and training.text == "","square illustrated training button")
 	await capture("camp-unbuilt")
-	app.layer.get_node("ProjectsEntrance").pressed.emit()
-	check(app.screen == "projects" and app.game.profile == profile_before,"workshop opens without cost or profile mutation")
 	app.game.profile.buildings = {"market":true,"forge":true,"church":true,"expeditions":true}
 	app.screen = "base_camp"; app.render(); await capture("camp-built")
 	app.screen = "home"; app.render()

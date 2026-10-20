@@ -3,7 +3,7 @@ extends RefCounted
 var last_screen = ""
 var origins: Dictionary = {}
 const AUXILIARY = ["options","collection","cinematics"]
-const RETURNABLE = ["base_camp","select","equipment","market","forge","church","expeditions","projects","training_setup","refuge","bonds","bestiary","collection","options","cinematics","items"]
+const RETURNABLE = ["base_camp","select","equipment","market","forge","church","expeditions","training_setup","refuge","bonds","bestiary","collection","options","cinematics","items"]
 
 func observe(ui: Control) -> void:
 	if ui.screen == last_screen: return
@@ -52,7 +52,7 @@ func back(ui: Control) -> void:
 		ui.render()
 	elif ui.screen == "bestiary" and ui.return_screen == "home":
 		ui.screen = "home"; ui.render()
-	elif ui.screen in ["select", "market", "forge", "church", "expeditions", "projects", "training_setup", "bestiary"]:
+	elif ui.screen in ["select", "market", "forge", "church", "expeditions", "training_setup", "bestiary"]:
 		ui.open_base_camp()
 	elif ui.screen in ["collection", "options", "cinematics"]:
 		ui.screen = origins.get(ui.screen,"home")

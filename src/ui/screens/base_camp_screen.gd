@@ -7,7 +7,7 @@ const LOTS = [
 	{"id":"market", "node":"MarketBuilding", "title":"Mercado", "area":Rect2(88,157,342,205), "plot":Rect2(140,300,220,70)},
 	{"id":"expeditions", "node":"ExpeditionsBuilding", "title":"Expediciones", "area":Rect2(476,478,328,200), "plot":Rect2(530,580,220,80)},
 	{"id":"forge", "node":"ForgeBuilding", "title":"Taller", "area":Rect2(56,376,350,224), "plot":Rect2(115,515,220,80)},
-	{"id":"church", "node":"ChurchBuilding", "title":"Laboratorio", "area":Rect2(780,176,320,215), "plot":Rect2(840,315,220,75)}
+	{"id":"church", "node":"ChurchBuilding", "title":"Laboratorio", "area":Rect2(866,416,282,183), "plot":Rect2(897,524,220,75)}
 ]
 
 static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void:
@@ -31,15 +31,11 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 		var hotspot = ui.camp_hotspot("Plot%d" % i, area, lot.title if built else "Solar %d · %s" % [i + 1, lot.title], actions[lot.id], caption_above)
 		if built:
 			hotspot.set_script(preload("res://src/ui/components/building_hotspot.gd"))
-			hotspot.configure(picture.texture, area.size, area.position - hotspot.position)
+			hotspot.configure(picture.texture, area.size, area.position - hotspot.position, picture.flip_h)
 	var refuge = artwork(ui, "RefugeBuilding", "refuge", Rect2(516,116,282,175))
 	var tent = ui.camp_hotspot("CampTent", refuge.get_rect(), "Refugio de personajes", actions.refuge)
 	tent.set_script(preload("res://src/ui/components/building_hotspot.gd"))
 	tent.configure(refuge.texture, refuge.size)
-	var projects = artwork(ui, "ProjectsBuilding", "projects", Rect2(866,416,282,183))
-	var entrance = ui.camp_hotspot("ProjectsEntrance", projects.get_rect(), "Proyectos", func(): ui.screen = "projects"; ui.render())
-	entrance.set_script(preload("res://src/ui/components/building_hotspot.gd"))
-	entrance.configure(projects.texture, projects.size)
 	protect_captions(ui)
 	preload("res://src/presentation/camp_companions.gd").attach(ui)
 	var training = ui.button("", 40, 630, 76, 76, func(): ui.screen = "training_setup"; ui.render())
@@ -62,6 +58,7 @@ static func building_texture(asset: String) -> Texture2D:
 static func artwork(ui: Control, node_name: String, asset: String, area: Rect2) -> TextureRect:
 	var building = TextureRect.new()
 	building.name = node_name
+	building.flip_h = asset in ["market", "forge"]
 	building.texture = building_texture(asset)
 	building.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	building.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -75,7 +72,7 @@ static func artwork(ui: Control, node_name: String, asset: String, area: Rect2) 
 	return building
 
 static func protect_captions(ui: Control) -> void:
-	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit", "ProjectsEntrance"]
+	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit"]
 	for id in entrances:
 		var button = ui.layer.get_node(id)
 		if not button.has_method("configure"): continue

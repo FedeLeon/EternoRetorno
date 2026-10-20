@@ -6,9 +6,6 @@ static func build(ui: Control) -> void:
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(bg, 0, 0, 1280, 720)
 	preload("res://src/ui/components/section_header.gd").build(ui,"El mercader errante", ("Contraseña aceptada · %d celdas" if ui.game.run.get("merchant_discount", false) else "Provisiones para el camino · %d celdas") % ui.game.profile.souls,func(): ui.act(func(): ui.game.merchant_action("leave")),"Continuar",220)
-	var projects=preload("res://src/rules/building_projects.gd")
-	if projects.owned(ui.game.profile,"refresh"):
-		ui.button("Renovar provisiones · 25 celdas",46,520,430,48,func(): ui.act(func():ui.game.polish_action("refresh")),ui.game.profile.souls>=25 and int(ui.game.run.get("merchant_refresh_floor",0))!=int(ui.game.run.floor))
 	if not ui.game.run.get("curses",[]).is_empty():
 		ui.button("Limpiar avería · 35 celdas",46,586,430,48,func(): ui.act(func():ui.game.polish_action("cleanse")),ui.game.profile.souls>=35)
 	var offers: Array = ui.game.run.get("merchant_offers", [])

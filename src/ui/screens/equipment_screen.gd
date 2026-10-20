@@ -32,11 +32,6 @@ static func build(ui: Control, relics: Dictionary, equipped: Dictionary, can_sta
 		ui.rect(icon, 0, 0, 132, 132, b)
 		b.mouse_entered.connect(func(): b.modulate = Color(1.2, 1.2, 1.2))
 		b.mouse_exited.connect(func(): b.modulate = Color.WHITE)
-	var companion = preload("res://src/ui/components/pet_choice.gd").indicator(ui.selected_pet)
-	if not companion.is_empty():
-		var summary = ui.label_at(companion.name + " · " + companion.description, 235, 594, 810, 38, 18, ui.TEXT)
-		summary.name = "PetSummary"
-		summary.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var start = ui.button("Iniciar aventura", 904, 647, 340, 54, actions.start, can_start)
 	start.name = "StartAdventure"
 	start.icon = preload("res://assets/ui/play.svg")

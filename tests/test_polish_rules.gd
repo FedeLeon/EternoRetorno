@@ -71,15 +71,6 @@ func _initialize() -> void:
 	check(g.choose_event(0) and g.run.curses==["blood"] and g.run.relics.size()==1,"pact has reward and explicit curse")
 	g.run.phase="merchant";hp=int(g.profile.souls);check(g.polish_action("cleanse") and g.run.curses.is_empty() and g.profile.souls==hp-35,"merchant cleanse charges once")
 	check(not g.polish_action("cleanse"),"no payment without curse")
-	g.profile.buildings.market=true;g.profile.buildings.expeditions=true
-	for id in ["reservation","refresh","scouting"]:check(g.polish_action("project",{"id":id}),"buy project "+id)
-	check(not g.polish_action("project",{"id":"reservation"}),"project not bought twice")
-	check(g.polish_action("reserve",{"id":"warrior_risk"}),"reserve market card")
-	hp=int(g.profile.souls);check(g.buy_market_card("warrior_risk") and g.profile.souls==hp-140 and not g.profile.has("reserved_card"),"reservation discount used once")
-	preload("res://src/rules/travel_encounters.gd").prepare(g)
-	check(g.polish_action("refresh") and not g.polish_action("refresh"),"one merchant refresh per floor")
-	g.run.phase="map";g.run.current=-1
-	check(g.polish_action("scout") and g.run.nodes[0].scouted and not g.polish_action("scout"),"scout only charges for new rooms")
 	g=battle();var state=g.rng.state;hand(g,"warrior_slash");g.play_card(0,0)
 	check(g.rng.state==state and g.run.telemetry.cards.warrior_slash==1,"telemetry never consumes gameplay RNG")
 	g=battle(["warrior","guardian"],2);g._start_combat(["forest_wolf","goblin_shaman"])

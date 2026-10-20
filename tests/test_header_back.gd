@@ -37,7 +37,7 @@ func verify() -> void:
 		check(app.screen==building and app.get(building+"_hero")=="","detail returns to hero selection: "+building)
 		await press_back(app);check(app.screen=="base_camp","gallery returns camp: "+building)
 		check(app.game.profile==before,"back does not buy, build or save: "+building)
-	for screen in ["projects","expeditions","training_setup","select","refuge"]:
+	for screen in ["expeditions","training_setup","select","refuge"]:
 		app.screen=screen;app.render();await process_frame
 		await press_back(app);check(app.screen=="base_camp","return from "+screen)
 	app.screen="select";app.render();app.screen="equipment";app.render();await process_frame

@@ -36,7 +36,7 @@ func run_tests() -> void:
 	app.game.profile.specializations.victorious=app.game.content.heroes.keys()
 	app.game.profile.bestiary={"skeleton":{"encounters":1,"kills":1},"rat":{"encounters":1,"kills":0},"ice_elemental":{"encounters":1,"kills":0}}
 	for id in app.game.content.heroes:app.game.profile.forge_upgrades[id]={"weapon":3,"armor":3}
-	await show("home");await show("options");await show("base_camp");await show("projects")
+	await show("home");await show("options");await show("base_camp")
 	await show("market");app.market_hero="warrior";await show("market","market-cards")
 	app.market_hero="";await show("forge");app.forge_hero="guardian";await show("forge","forge-detail")
 	await show("church");app.church_hero="guardian";await show("church","church-detail")

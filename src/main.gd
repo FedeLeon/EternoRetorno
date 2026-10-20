@@ -31,7 +31,6 @@ var equipped: Dictionary = {}
 var selected_item = ""
 var screen = "home"
 var selected_party: Array = []
-var selected_pet: String = "dog"
 const SynergyView = preload("res://src/ui/components/synergy_view.gd")
 var selected_synergy = ""
 var selected_card = -1
@@ -100,7 +99,6 @@ func render() -> void:
 	match screen:
 		"home": home()
 		"cinematics": preload("res://src/ui/screens/cinematics_screen.gd").build(self)
-		"projects": preload("res://src/ui/screens/projects_screen.gd").build(self)
 		"boss_reward": preload("res://src/ui/screens/boss_reward_screen.gd").build(self)
 		"merchant": preload("res://src/ui/screens/merchant_screen.gd").build(self)
 		"bestiary": preload("res://src/ui/screens/bestiary_screen.gd").build(self)
@@ -251,7 +249,6 @@ func base_camp_view() -> void:
 		"market": market_plot, "forge": func(): preload("res://src/ui/forge_navigation.gd").plot(self), "close_modal": close_modal})
 
 func open_selection() -> void:
-	selected_pet = "dog"
 	selected_party = []
 	equipped = {}
 	if game.profile.erase("preparation"):
@@ -266,7 +263,6 @@ func confirm_new() -> void:
 
 func selection() -> void:
 	preload("res://src/ui/screens/selection_screen.gd").build(self, {
-		"pet": func(id): selected_pet = id; render(),
 		"toggle": toggle_hero, "back": open_base_camp, "equipment": open_equipment,
 		"menu": func(): screen = "home"; render(),
 	})
@@ -289,7 +285,7 @@ func begin_on_floor(starting_floor: int) -> void:
 	# Abandon only after a valid replacement party has been chosen.
 	if active_run():
 		game._finish(false)
-	if game.new_run(selected_party, -1, equipped, starting_floor, selected_pet):
+	if game.new_run(selected_party, -1, equipped, starting_floor):
 		# Commit the first encounter before any presentation; resume starts in combat.
 		game.enter_node(0)
 		await preload("res://src/ui/cinematic_navigation.gd").party(self)
@@ -324,8 +320,6 @@ func combat_target_style(target: Button) -> void:
 
 func equipped_relics() -> Array:
 	var result: Array = []
-	var pet = preload("res://src/ui/components/pet_choice.gd").indicator(game.run.get("pet", ""))
-	if not pet.is_empty(): result.append(pet)
 	var team_relic = game.run.get("team_relic", "")
 	if game.content.equipment.has(team_relic):
 		var relic = game.content.equipment[team_relic].duplicate()

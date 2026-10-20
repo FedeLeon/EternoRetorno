@@ -10,7 +10,6 @@ static func start(game: RefCounted) -> void:
 		game.Modifiers.clear(h)
 		if h.hp > 0:
 			h.block += game.RunRelics.amount(game.run, game.content.relics, "turn_block")
-			h.block += preload("res://src/rules/pet_companions.gd").opening_bonus(game.run, "opening_block")
 			if battle.turn == 1: h.block += game.RunRelics.amount(game.run, game.content.relics, "start_block")
 		if battle.turn == 1: h.block += int(game.run.get("event_flags", {}).get("pair_guard", 0))
 		h.turn_strength = 0
@@ -37,7 +36,7 @@ static func start(game: RefCounted) -> void:
 		if event.kind == "revive": game.resolved_prepared_hits.append(event)
 	if ended: return
 	preload("res://src/rules/card_reserve.gd").restore(game)
-	game._draw(6 + preload("res://src/rules/pet_companions.gd").opening_bonus(game.run, "opening_draw") + (game.RunRelics.amount(game.run, game.content.relics, "opening_draw") if battle.turn == 1 else 0))
+	game._draw(6 + (game.RunRelics.amount(game.run, game.content.relics, "opening_draw") if battle.turn == 1 else 0))
 
 
 static func end(game: RefCounted) -> bool:

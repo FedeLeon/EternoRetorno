@@ -1,8 +1,6 @@
 extends RefCounted
 # Rules only. Game facade retains public API and owns checkpoints.
-static func start(game: RefCounted, party: Array, seed_value: int, equipment: Dictionary, starting_floor: int, pet: String = "") -> bool:
-	if not preload("res://src/rules/pet_companions.gd").valid(pet):
-		return false
+static func start(game: RefCounted, party: Array, seed_value: int, equipment: Dictionary, starting_floor: int) -> bool:
 	if starting_floor not in [1, 2, 3]:
 		return false
 	if party.size() != 2 or party[0] == party[1]:
@@ -18,7 +16,6 @@ static func start(game: RefCounted, party: Array, seed_value: int, equipment: Di
 		game.rng.seed = seed_value
 	var initial_seed = game.rng.seed
 	game.run = {"seed": initial_seed, "rng_state": game.rng.state, "phase": "map", "party": party.duplicate(), "heroes": [], "deck": [], "nodes": game.Dungeon.create(game.rng, starting_floor), "current": -1, "visited": [], "relics": [], "combat": {}, "reward": [], "boss_defeated": false, "log": [], "new_unlocks": []}
-	game.run.pet = pet
 	game.run.polish_version = 1
 	game.run.pair_tactics_version = 1
 	game.run.telemetry = {"cards":{},"offered":{},"picked":{},"unused":{},"battles":[]}

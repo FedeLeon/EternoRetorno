@@ -2,8 +2,10 @@
 
 El campamento es un refugio civil al atardecer. Sus edificios dan acceso a los
 sistemas permanentes; los marcadores de construcción y los niveles corresponden
-al perfil guardado. Los proyectos tienen su puesto permanente junto al círculo
-central. El refugio se sitúa arriba del círculo, separado del mercado.
+al perfil guardado. El refugio se sitúa arriba del círculo, separado del mercado.
+Mercado y taller miran hacia la derecha, al centro del campamento, con su dibujo
+y máscara de clic reflejados horizontalmente. El laboratorio ocupa el puesto
+inferior derecho, incluido su solar de construcción. El puesto superior derecho queda libre.
 
 ## Instalaciones
 
@@ -14,9 +16,8 @@ central. El refugio se sitúa arriba del círculo, separado del mercado.
 | Mercado | Comprar cartas mediante su economía y catálogo. |
 | Iglesia | Progresión y opciones propias de ese edificio. |
 | Expediciones | Consultar y gestionar contratos. |
-| Proyectos | Proyectos del campamento con sus requisitos y efectos. |
 | Entrenamiento | Práctica/configuración mediante partidas temporales. |
-| Aventuras | Preparar pareja, mascota y componentes para una aventura. |
+| Aventuras | Preparar pareja y componentes para una aventura. |
 
 Cada interior conserva su vista y cuatro tarjetas de héroes distribuidas dos
 por fila en el bloque derecho. La cabecera permite retroceder por niveles cuando
@@ -59,7 +60,7 @@ segunda entrega al abrir la recompensa o recargar.
 ## Persistencia
 
 Las reglas del campamento se distribuyen en `src/rules/camp_progression.gd`,
-`camp_expansion.gd`, `building_projects.gd`, `forge_progression.gd` y sus
+`camp_expansion.gd`, `forge_progression.gd` y sus
 colaboradores. Los datos residen en `data/camp_expansion.json`,
 `data/progression.json` y `data/forge.json`. Deben conservarse niveles, materiales,
 contratos y compatibilidad de guardado al cambiar la presentación.

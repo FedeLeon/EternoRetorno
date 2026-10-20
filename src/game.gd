@@ -101,8 +101,8 @@ func checkpoint() -> void:
 	if save_enabled and not store.write(profile, run):
 		message = store.last_error
 
-func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1, pet: String = "") -> bool:
-	var accepted: bool = preload("res://src/rules/run_lifecycle.gd").start(self, party, seed_value, equipment, starting_floor, pet)
+func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, starting_floor: int = 1) -> bool:
+	var accepted: bool = preload("res://src/rules/run_lifecycle.gd").start(self, party, seed_value, equipment, starting_floor)
 	if accepted: checkpoint()
 	return accepted
 

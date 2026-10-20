@@ -18,7 +18,7 @@ func run_tests():
 	app.open_base_camp()
 	await process_frame
 	check(app.layer.get_node("DayCampBackground").texture.resource_path.ends_with("dusk/background.png"), "dusk landscape is loaded")
-	check(app.layer.has_node("ProjectsBuilding") and app.layer.has_node("RefugeBuilding"), "permanent buildings present without construction")
+	check(app.layer.has_node("RefugeBuilding") and not app.layer.has_node("ProjectsBuilding"), "refuge remains without removed projects")
 	var fire = app.layer.get_node("DayCampfire")
 	check(fire.embers_only and not fire.has_node("Flames") and fire.has_node("InteriorEmbers"), "camp uses interior light and sparks without flames")
 	check(fire.position == Vector2(674, 409), "barrel base is centred on the illustrated camp circle")
@@ -38,19 +38,31 @@ func run_tests():
 			check(app.layer.has_node("EmptyPlot%d" % j) == (j > i), "only unbuilt lots display stakes")
 			check(app.layer.has_node(NODES[j]) == (j <= i), "built artwork follows saved buildings")
 		await capture(str(i) + "-" + IDS[i])
-	for id in NODES + ["RefugeBuilding", "ProjectsBuilding"]:
+	for id in NODES + ["RefugeBuilding"]:
 		var picture = app.layer.get_node(id)
+		check(picture.flip_h == (id in ["MarketBuilding", "ForgeBuilding"]), "only market and forge face the camp centre: " + id)
 		check(picture.texture is AtlasTexture, "building trims transparent canvas: " + id)
 		check(picture.size.x >= 260, "building occupies its ground footprint: " + id)
 		var opaque = picture.texture.get_image().get_used_rect()
 		check(float(opaque.size.x) / picture.texture.get_width() > 0.97 and float(opaque.size.y) / picture.texture.get_height() > 0.97, "no unused image margins inside building slot: " + id)
-	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit", "ProjectsEntrance"]
+	var entrances = ["Plot0", "Plot1", "Plot2", "Plot3", "CampTent", "CampExit"]
+	check(app.layer.get_node("ChurchBuilding").get_rect().end.y == 599, "laboratory keeps lower-right ground position")
+	for pair in [["Plot0", "MarketBuilding"], ["Plot2", "ForgeBuilding"]]:
+		var entrance = app.layer.get_node(pair[0])
+		check(entrance.artwork_flipped, "click mask follows mirrored artwork")
+		var mask = entrance.alpha_mask
+		for y in range(1,10):
+			for x in range(1,10):
+				var pixel = Vector2i(mask.get_size().x*x/10,mask.get_size().y*y/10)
+				var point = entrance.artwork_rect.position + (Vector2(pixel)+Vector2(.5,.5))*entrance.pixel_scale
+				if entrance.passthrough_areas.any(func(area):return area.has_point(point)): continue
+				check(entrance._has_point(point) == mask.get_bitv(Vector2i(mask.get_size().x-1-pixel.x,pixel.y)), "mirrored silhouette remains clickable")
 	for pair in [["Plot0", "MarketBuilding"], ["Plot3", "ChurchBuilding"]]:
 		var caption: Rect2 = app.layer.get_node(pair[0]).get_meta("caption_rect")
 		var picture: Control = app.layer.get_node(pair[1])
 		check(caption.end.y <= picture.position.y, "market and laboratory captions sit above roofs")
 		var entrance = app.layer.get_node(pair[0])
-		check(entrance.artwork_rect.position == picture.position - entrance.position, "raised caption preserves artwork hit mask")
+		check(entrance.artwork_rect.position.is_equal_approx(picture.position - entrance.position), "raised caption preserves artwork hit mask")
 	for id in entrances:
 		var area: Rect2 = app.layer.get_node(id).get_meta("caption_rect")
 		check(Rect2(0,80,1280,640).encloses(area), "caption stays clear of header and viewport: " + id)
