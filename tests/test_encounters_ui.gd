@@ -42,8 +42,9 @@ func run_tests() -> void:
 			var background = view.get_node("EncounterBackground")
 			check(background.texture.resource_path == "res://assets/encounters/%s.png" % id, "dedicated encounter artwork")
 			check(background.material is ShaderMaterial, "local atmosphere shader attached")
-			check(dialog.size == Vector2(660, 280) and dialog.position.y >= 400, "compact lower dialog leaves focal area visible")
-			check(dialog.find_children("*", "Label", true, false).all(func(l): return l.horizontal_alignment == HORIZONTAL_ALIGNMENT_CENTER), "all dialog text centered")
+			check(dialog.size == Vector2(1208,148) and dialog.position.y >= 500, "illustrated choices below the scene")
+			check(view.has_node("StoryBubble/Narration"), "story appears in a comic speech bubble")
+			check(dialog.get_node("EventChoice0/ChoiceIcon").texture != null, "choice has contextual action art")
 			check(app.layer.find_children("*", "Label", true, false).all(func(l): return "ETERNO RETORNO" not in l.text and "Sala " not in l.text and l.text != "Encuentro"), "old room headings removed")
 			if DisplayServer.get_name() != "headless" and floor_index == 1:
 				await RenderingServer.frame_post_draw
@@ -52,10 +53,12 @@ func run_tests() -> void:
 				await create_timer(0.6).timeout
 				await RenderingServer.frame_post_draw
 				var after = root.get_texture().get_image()
-				check(before.get_region(Rect2i(400, 100, 480, 230)).get_data() != after.get_region(Rect2i(400, 100, 480, 230)).get_data(), "encounter atmosphere visibly animates")
+				check(before.get_region(Rect2i(120, 90, 560, 440)).get_data() != after.get_region(Rect2i(120, 90, 560, 440)).get_data(), "encounter atmosphere visibly animates")
 				check(before.get_region(Rect2i(80, 550, 80, 80)).get_data() == after.get_region(Rect2i(80, 550, 80, 80)).get_data(), "distant masonry stays still")
 			var hp = app.game.run.heroes[0].hp
 			await click(dialog.get_node("EventChoice0"))
+			check(view.outcome_visible and app.screen == "room", "confirmed outcome stays readable before navigation")
+			await click(view.get_node("ContinueEncounter"))
 			if id == "well": check(app.screen == "paths" and app.game.run.heroes[0].hp == hp + 8, "well choice heals once and returns to paths")
 			elif id == "altar": check(app.screen == "paths" and app.game.run.heroes[0].hp == hp - 5 and app.game.run.deck.filter(func(c): return c.upgraded).size() == 1, "altar pays health and upgrades one card")
 			else: check(app.screen == "reward" and app.game.run.reward.size() > 0, "library opens existing card reward")
@@ -79,6 +82,7 @@ func run_tests() -> void:
 	app.close_modal()
 	await process_frame
 	await click(view.get_node("EncounterDialog/EventChoice1"))
+	await click(view.get_node("ContinueEncounter"))
 	check(app.screen == "paths", "leaving encounter remains possible")
 	await prepare("altar")
 	for card in app.game.run.deck: card.upgraded = true

@@ -36,14 +36,14 @@ func run_tests() -> void:
 	check(view.relics.size() == 2 and view.relics[0].name == app.game.content.equipment["vital_amulet"].name, "equipped and found relics shown")
 	check(view.get_node("GroupDrawer/Hero0").size.y > 80 and view.get_node("GroupDrawer/Health0") != null, "larger actor with health")
 	check(not view.has_node("Descend"), "stairs hidden before boss victory")
-	for i in range(28):
+	for i in range(view.nodes.size()):
 		var room = view.route.get_node("Room%d" % i)
-		check(room.disabled == (i != 0), "only reachable rooms enabled")
+		check(room.disabled == (i not in [0,1,2]), "only reachable rooms enabled")
 		check(room.get_theme_stylebox("normal") is StyleBoxTexture, "room uses papyrus asset")
 		check(not room.tooltip_text.contains(preload("res://src/dungeon.gd").LABELS[view.nodes[i].kind]), "tooltip does not reveal room type")
 	check(view.route.has_node("RoomGlow0"), "entry illuminated before first encounter")
 	check(view.route.get_node("RoomGlow0").mouse_filter == Control.MOUSE_FILTER_IGNORE, "entry glow does not block clicks")
-	check(not view.route.has_node("RoomGlow1"), "unreachable room has no glow")
+	check(not view.route.has_node("RoomGlow3"), "unreachable room has no glow")
 	var before = app.game.run.duplicate(true)
 	await shot()
 	await click(view.route.get_node("Room27").get_global_rect().get_center())
@@ -88,13 +88,13 @@ func run_tests() -> void:
 	app.render()
 	await process_frame
 	view = app.layer.get_node("MapScreen")
-	check(not view.route.get_node("Room1").disabled and not view.route.get_node("Room2").disabled, "branch availability retained")
+	check(view.available == app.game.run.nodes[0].next and view.available.all(func(id): return not view.route.get_node("Room%d" % id).disabled), "branch availability retained")
 	check(view.route.has_node("RoomGlow0"), "current room retains its glow")
 	for node in view.nodes:
 		check(view.route.has_node("RoomGlow%d" % node.id) == (node.id == view.current or node.id in view.available), "only current and available rooms glow")
-	var next_glow = view.route.get_node("RoomGlow1")
+	var next_glow = view.route.get_node("RoomGlow%d" % view.available[0])
 	check(next_glow.mouse_filter == Control.MOUSE_FILTER_IGNORE, "available glow ignores input")
-	check(next_glow.get_index() < view.route.get_node("Room1").get_index(), "available glow behind papyrus")
+	check(next_glow.get_index() < view.route.get_node("Room%d" % view.available[0]).get_index(), "available glow behind papyrus")
 	check(next_glow.get_theme_stylebox("panel").shadow_color != view.route.get_node("RoomGlow0").get_theme_stylebox("panel").shadow_color, "available and current have distinct colors")
 	var alpha = next_glow.modulate.a
 	await create_timer(0.45).timeout

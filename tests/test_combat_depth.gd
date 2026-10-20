@@ -17,7 +17,9 @@ func _initialize():
 	check(g.play_card(0,0) and enemy.hp==hp and g.run.combat.energy==energy-1,"charge spends now without damage")
 	check(g.run.combat.prepared.size()==1,"charge queue stored")
 	g.end_turn()
-	check(enemy.hp==hp-17 and g.resolved_prepared_hits.size()==1 and g.run.combat.prepared.is_empty(),"charge hits once next turn")
+	# Counterattacks are separate receipts, not additional prepared hits.
+	var prepared_hits=g.resolved_prepared_hits.filter(func(event):return event.kind=="hit")
+	check(enemy.hp==hp-17 and prepared_hits.size()==1 and g.run.combat.prepared.is_empty(),"charge hits once next turn")
 	var save_path="user://depth-charge-test.save";var store=Game.new(save_path,true)
 	store.new_run(["warrior","guardian"],81);store.enter_node(0);store.run.combat.enemies[0].hp=300;store.run.combat.enemies[0].max_hp=300
 	hand(store,"warrior_prepared");store.play_card(0,0)

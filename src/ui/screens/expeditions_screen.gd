@@ -25,4 +25,15 @@ static func build(ui: Control, snapshot: Dictionary, actions: Dictionary) -> voi
 	var note = "Cancelá el contrato elegido para seleccionar otro. La recompensa se entrega al finalizar la aventura."
 	if snapshot.running: note = "Ya hay una aventura en curso. Finalizala para elegir otro contrato."
 	elif not snapshot.last.is_empty(): note = ("Contrato completado: %s · +%d celdas" % [snapshot.last.name, snapshot.last.reward]) if snapshot.last.complete else "Contrato anterior no completado: " + snapshot.last.name
-	ui.label_at(note, 510, 650, 740, 54, 18, ui.GOLD).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	var notice = ui.panel(510, 646, 740, 64)
+	notice.name = "ExpeditionNotice"
+	if snapshot.running:
+		var warning = TextureRect.new()
+		warning.name = "WarningIcon"
+		warning.texture = preload("res://assets/battle_effects/enraged.png")
+		warning.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		warning.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		warning.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		ui.rect(warning, 14, 12, 40, 40, notice)
+	var text = ui.label_at(note, 66 if snapshot.running else 18, 8, 656 if snapshot.running else 704, 48, 18, ui.GOLD, notice)
+	text.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT if snapshot.running else HORIZONTAL_ALIGNMENT_CENTER

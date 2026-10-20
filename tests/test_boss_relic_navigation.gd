@@ -41,7 +41,7 @@ func run_tests() -> void:
 		if next_map == null:
 			next_map = app.layer.get_children().filter(func(n): return n.get_script() == preload("res://src/ui/screens/paths_screen.gd"))[0]
 		if floor_number<3:
-			check(not next_map.has_node("Descend") and app.game.available_nodes()==[0],"single entrance path without extra transition button")
+			check(not next_map.has_node("Descend") and app.game.available_nodes()==[0,1,2],"single entrance path without extra transition button")
 			check(next_map.dungeon_name == preload("res://src/dungeon.gd").definition(floor_number+1).name,"next dungeon title rendered")
 		else:
 			check(next_map.has_node("Descend") and app.game.profile.victories==0,"last floor retains adventure completion")

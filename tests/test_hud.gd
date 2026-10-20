@@ -36,6 +36,7 @@ func run_tests() -> void:
 	app.game.run.combat.enemies[0].block = 7
 	app.game.run.combat.enemies[0].poison = 4
 	app.game.run.combat.enemies[0].intent.counter = 4
+	app.game.run.combat.enemies[0].intent.block = 5
 	app.continue_run()
 	await process_frame
 	var hud = app.layer.get_node("CombatHUD")

@@ -109,7 +109,10 @@ func new_run(party: Array, seed_value: int = -1, equipment: Dictionary = {}, sta
 func available_nodes() -> Array:
 	if run.is_empty() or run.phase != "map" or run.boss_defeated:
 		return []
-	return [0] if run.current == -1 else run.nodes[run.current].next
+	if run.current == -1:
+		var entries: Array = run.nodes.filter(func(node): return node.get("entry", false)).map(func(node): return node.id)
+		return entries if not entries.is_empty() else [0] # Legacy floors keep their single entrance.
+	return run.nodes[run.current].next
 
 func enter_node(index: int) -> bool:
 	if index not in available_nodes():

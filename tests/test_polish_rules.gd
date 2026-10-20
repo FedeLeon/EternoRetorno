@@ -38,7 +38,7 @@ func _initialize() -> void:
 		check(g.polish_action("boss_relic",{"id":id}) and id in g.run.relics and id in g.profile.boss_relics and g.run.phase=="map","one boss relic granted")
 		check(g.run.floor==mini(floor_number+1,3),"boss relic automatically opens next dungeon")
 		if floor_number<3:
-			check(g.run.current==-1 and g.available_nodes()==[0] and not g.run.boss_defeated,"next dungeon ready at entrance")
+			check(g.run.current==-1 and g.available_nodes()==[0,1,2] and not g.run.boss_defeated,"next dungeon ready at entrance")
 			check(not g.descend(),"transition cannot skip an unbeaten dungeon")
 		before=g.run.duplicate(true);check(not g.polish_action("boss_relic",{"id":id}) and g.run==before,"boss reward cannot repeat")
 	g=boss(1);g.run.combat.energy=3;check(g.polish_action("boss_objective") and g.run.combat.boss_objective.hp==10,"source first strike")

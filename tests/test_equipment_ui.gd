@@ -77,9 +77,10 @@ func run_tests() -> void:
 		check(app.has_node("CinematicPlayer"),"hero story follows preparation")
 		app.get_node("CinematicPlayer").finish()
 	await process_frame
-	check(app.screen == "combat" and app.game.run.current == 0 and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
+	check(app.screen == "map" and app.game.run.current == -1 and app.game.run.team_relic == "arcane_orb" and app.game.run.heroes.all(func(h): return h.equipped_relic == "arcane_orb"), "loadout applied to adventure")
 	check(app.game.run.inventory.is_empty(), "new adventure has no consumables")
 	app.game.run.inventory["agility_brew"] = 1 # Explicit UI fixture for bag use.
+	check(app.game.enter_node(0), "first battle is chosen from the map")
 	check(not app.game.enter_node(0), "first battle cannot be entered twice")
 	app.continue_run()
 	await process_frame

@@ -14703,5 +14703,106 @@
 			"assets/combat_static/enemies/skeleton_7/idle.png": "23d11ed3292cf93536e53a42cfa9bdcc41b65f3d2596a58e73241b929779e16d"
 		},
 		"processing": "One authored machine only; connected silhouette + antialias fringe; proportional reduction only; centered 768x512 static cut-in, independent attack/defense"
+	},
+	"assets/ui/polished/speech_bubble.svg": {
+		"source": "art_sources/ui/comic_dialogue/speech_bubble.svg",
+		"source_sha256": "a2f7c8bb5719fc09ad2f508c0f26bbdb8fb19bda9981cac523d9bc49eef879ea",
+		"sha256": "a2f7c8bb5719fc09ad2f508c0f26bbdb8fb19bda9981cac523d9bc49eef879ea",
+		"style": "postapocalyptic_comic",
+		"tool": "authored SVG",
+		"generation": "art_sources/ui/comic_dialogue/brief.json",
+		"outline_baked": true,
+		"user_preserved_revision": 1
+	},
+	"assets/ui/polished/encounters/heal.svg": {
+		"source": "art_sources/ui/encounters/heal.svg",
+		"source_sha256": "8635847a5bb6a23330e0c45e76c47b60b2695a96ebea98c8b6b10c103986536f",
+		"sha256": "8635847a5bb6a23330e0c45e76c47b60b2695a96ebea98c8b6b10c103986536f",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/transform.svg": {
+		"source": "art_sources/ui/encounters/transform.svg",
+		"source_sha256": "01334d171364fd646ade803620e9c539b4feb3a880e897bfa71c0ef88dbee81b",
+		"sha256": "01334d171364fd646ade803620e9c539b4feb3a880e897bfa71c0ef88dbee81b",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/remove.svg": {
+		"source": "art_sources/ui/encounters/remove.svg",
+		"source_sha256": "c4bd901aa40a6f1ac7ae032ed3a6e41b562fb0587ef4df8450ef8b93506aea74",
+		"sha256": "c4bd901aa40a6f1ac7ae032ed3a6e41b562fb0587ef4df8450ef8b93506aea74",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/choice.svg": {
+		"source": "art_sources/ui/encounters/choice.svg",
+		"source_sha256": "3278e4c27f69cfdd0ca6b3ee338288ab1ee917567f5d1f926ab1e8253a270103",
+		"sha256": "3278e4c27f69cfdd0ca6b3ee338288ab1ee917567f5d1f926ab1e8253a270103",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/exchange.svg": {
+		"source": "art_sources/ui/encounters/exchange.svg",
+		"source_sha256": "60e86a6371ea85e7c7a15d4e7cb3c191c13eb167a596b91498506360a1919b51",
+		"sha256": "60e86a6371ea85e7c7a15d4e7cb3c191c13eb167a596b91498506360a1919b51",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/read.svg": {
+		"source": "art_sources/ui/encounters/read.svg",
+		"source_sha256": "9f03be7255e4242e0f44f69bd5d585b68590347780e3f9bc20b93f79d3709bb9",
+		"sha256": "9f03be7255e4242e0f44f69bd5d585b68590347780e3f9bc20b93f79d3709bb9",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/link.svg": {
+		"source": "art_sources/ui/encounters/link.svg",
+		"source_sha256": "d08c1168a63dc3d6f1777a62fdb4b7d152b9d487ccfbeede1f346efb7b0ef0eb",
+		"sha256": "d08c1168a63dc3d6f1777a62fdb4b7d152b9d487ccfbeede1f346efb7b0ef0eb",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/accept.svg": {
+		"source": "art_sources/ui/encounters/accept.svg",
+		"source_sha256": "c78ec4aac13b3922894f123efa934a8cbb507989d94c57e75e2845734e2b1bc4",
+		"sha256": "c78ec4aac13b3922894f123efa934a8cbb507989d94c57e75e2845734e2b1bc4",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/continue.svg": {
+		"source": "art_sources/ui/encounters/continue.svg",
+		"source_sha256": "a3f9fe72ce36b29f0bc4cd0bef46fbf4b5f45a2a530fdc9ff843f74cc2bdf722",
+		"sha256": "a3f9fe72ce36b29f0bc4cd0bef46fbf4b5f45a2a530fdc9ff843f74cc2bdf722",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/leave.svg": {
+		"source": "art_sources/ui/encounters/leave.svg",
+		"source_sha256": "929967ff44149971a2cb0d96a9b90a1802d9cca2aa6efc3d79cddba819e442db",
+		"sha256": "929967ff44149971a2cb0d96a9b90a1802d9cca2aa6efc3d79cddba819e442db",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/bubble.svg": {
+		"source": "art_sources/ui/encounters/bubble.svg",
+		"source_sha256": "647da8aeed84957878276bae38bb5573a635da7b3527c42c286d350f4ed826d0",
+		"sha256": "647da8aeed84957878276bae38bb5573a635da7b3527c42c286d350f4ed826d0",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/risk.svg": {
+		"source": "art_sources/ui/encounters/risk.svg",
+		"source_sha256": "d8e794a9029e3a9c30363ccc4e80ef20f99e0d07399d455e4b325daf78044fd3",
+		"sha256": "d8e794a9029e3a9c30363ccc4e80ef20f99e0d07399d455e4b325daf78044fd3",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
+	},
+	"assets/ui/polished/encounters/upgrade.svg": {
+		"source": "art_sources/ui/encounters/upgrade.svg",
+		"source_sha256": "a56f4f7d6e072e8dad63452ffe03ec4c6404a263a04037ab74e8aa9e8b7de93e",
+		"sha256": "a56f4f7d6e072e8dad63452ffe03ec4c6404a263a04037ab74e8aa9e8b7de93e",
+		"style": "postapocalyptic_comic",
+		"processing": "original SVG ink, ivory paper and action silhouettes; live interface text"
 	}
 }

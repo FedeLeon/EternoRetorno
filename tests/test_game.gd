@@ -47,7 +47,7 @@ func content_and_map() -> void:
 	check(g.run.deck.size() == 20, "20 starter instances")
 	check(not g.enter_node(27), "cannot jump to boss")
 	check(not g.descend(), "staircase initially locked")
-	check(g.run.nodes.size() == 28, "28 nodes")
+	check(g.run.nodes.size() == 35, "35 nodes")
 	check(paths_end_at_boss(g.run.nodes, 0), "every branch terminates at boss")
 	var same = fresh()
 	check(g.run.nodes == same.run.nodes, "seed reproduces encounters")

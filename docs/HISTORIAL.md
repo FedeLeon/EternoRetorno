@@ -4,10 +4,69 @@ Esta página registra el mantenimiento de la documentación y sistemas actuales.
 Los registros extensos de diseños reemplazados se consultan en Git; no se
 mantienen como manuales alternativos dentro de `docs/`.
 
+## 20/10/2026 — Robots que desprenden piezas al recibir daño
+
+Chapas, tornillos y cables saltan, rebotan y permanecen junto al robot durante el
+combate, incluso al consultar mazo/bolsa. Acumulación acotada y modo de efectos
+reducidos; sin alterar los cuerpos estáticos ni las reglas de daño. Revisión visual
+nativa y 105 suites locales correctas; pruebas temporales retiradas.
+
+## 20/10/2026 — Condiciones tras la primera victoria
+
+Interferida y Peligrosa requieren ganar con Sin condición. Bloqueo en interfaz y
+reglas; desbloqueo permanente con reconocimiento de victorias anteriores, sin
+alterar aventuras activas. Revisión visual local y 105 suites correctas.
+
+## 20/10/2026 — Héroes más grandes en la selección
+
+Ilustraciones sentadas ampliadas aproximadamente un 16 %, con el mismo apoyo y
+rótulos; áreas de selección adaptadas. Revisión visual local y 139 controles correctos.
+
+## 20/10/2026 — Encuentros como viñetas de cómic
+
+Globos integrados al escenario, opciones de papel con iconos propios y resultado
+visible tras confirmar el guardado. Entradas y foco animados, efectos anclados al
+arte vigente y modo de efectos reducidos. Fuentes SVG y procedencia conservadas.
+105 suites locales correctas y revisión visual de 18 encuentros; sin prueba web/celular.
+
+## 20/10/2026 — Tres entradas y más rutas en el mapa
+
+La aventura abre el mapa con tres batallas iniciales y conexiones distintas;
+35 salas por mazmorra. Menú elevado y bloque inferior eliminado. Los guardados
+anteriores conservan sus rutas. Revisión visual nativa, generación en 150 mapas y
+105 suites locales correctas; algunas pruebas avisan recursos retenidos al cerrar.
+
 ## 20/10/2026 — Documentación y pruebas mínimas
 
 Preferencia guardada en `AGENTS.md`: resúmenes cortos tipo commit, arquitectura
 breve solo cuando cambie y eliminación de las pruebas nuevas tras pasar.
+
+## 20/10/2026 — Globos de cómic en edificios
+
+Asset SVG blanco con tinta negra y texto oscuro; diálogos arriba a la derecha del
+encargado, adaptados a galería/detalle. Fuente y procedencia conservadas. Revisión
+visual de cuatro edificios y 171 comprobaciones locales correctas; avisos al cierre.
+
+## 20/10/2026 — Aviso de expediciones legible
+
+Estado del contrato dentro de un panel con fondo y marco; aventura en curso
+identificada con icono de advertencia. Revisión visual nativa y 33 pruebas sin fallos.
+
+## 20/10/2026 — Bloque informativo del refugio
+
+Botón de vínculos centrado junto a sus textos en un panel oscuro con marco.
+Revisión visual nativa y 109 comprobaciones sin fallos; sin prueba en celular.
+
+## 20/10/2026 — Instrucción de selección centrada
+
+Instrucción y contador de héroes reunidos en un marco superior centrado con el
+asset compartido del juego. Revisión visual nativa y 24 comprobaciones sin fallos.
+
+## 20/10/2026 — Cabecera uniforme del mercado
+
+Mercado integrado en la cabecera compartida de edificios: mismo marco, altura,
+título y contador de celdas. Verificación local 43/0 headless y nativa; revisión
+visual correcta. Sin prueba en celular; avisos de retención al cierre conservados.
 
 ## 20/10/2026 — Mapa vertical desplazable
 

@@ -22,18 +22,18 @@ func _initialize() -> void:
 			rng.seed = seed_value
 			check(nodes == Dungeon.create(rng, floor_number), "seed determinism")
 			var kinds: Dictionary = {}
-			var reached: Array = [0]
-			var pending: Array = [0]
+			var reached: Array = [0,1,2]
+			var pending: Array = [0,1,2]
 			while not pending.is_empty():
 				for next in nodes[pending.pop_front()].next:
 					if next not in reached:
 						reached.append(next)
 						pending.append(next)
-			check(reached.size() == 28, "all rooms reachable")
+			check(reached.size() == 35, "all rooms reachable")
 			for n in nodes:
 				kinds[n.kind] = int(kinds.get(n.kind, 0)) + 1
 				check(n.next.all(func(i): return i > n.id and i < nodes.size()), "acyclic forward edges")
-				check(n.id == 27 or not n.next.is_empty(), "no dead ends")
+				check(n.id == nodes.size()-1 or not n.next.is_empty(), "no dead ends")
 				check(Rect2(60,100,1090,545).has_point(Dungeon.map_position(n)), "inside map")
 				if n.kind == "combat":
 					check(n.encounter.size() in [1,2,3], "formation size")
@@ -45,7 +45,7 @@ func _initialize() -> void:
 							unique[id] = true
 							forest_types[id] = true
 						check(unique.size() == n.encounter.size() and n.encounter.size() >= 2, "forest mixed groups")
-			check(kinds == {"combat":13,"rest":6,"event":4,"treasure":2,"elite":2,"boss":1}, "same room inventory")
+			check(kinds == {"combat":18,"rest":7,"event":5,"treasure":2,"elite":2,"boss":1}, "expanded room inventory")
 			check(nodes.filter(func(n): return n.kind == "combat" and n.encounter.size() >= 2).size() >= 7, "more group battles")
 			check(nodes[0].kind == "combat" and nodes[-1].kind == "boss", "entry and guardian")
 			kind_orders[str(nodes.map(func(n): return n.kind))] = true
@@ -73,7 +73,7 @@ func _initialize() -> void:
 	var contract_cycle = g.profile.expeditions.cycle
 	Room.collect_boss_relic(g)
 	check(g.run.floor == 2 and g.run.phase == "map" and not g.descend(), "relic selection opens forest without staircase")
-	check(g.run.current == -1 and g.available_nodes() == [0] and g.run.visited.is_empty(), "new floor starts at entrance")
+	check(g.run.current == -1 and g.available_nodes() == [0,1,2] and g.run.visited.is_empty(), "new floor starts at entrance")
 	check(g.run.deck == deck and g.run.heroes == heroes and g.run.relics == ["iron_knot", "crypt_blood"] and g.run.inventory.healing_potion == 2, "party inventory deck preserved")
 	check(g.run.soul_rooms.is_empty() and g.run.rooms_completed == rooms_before, "room reward ledger separated by floor")
 	check(g.profile.victories == 0 and g.profile.expeditions.cycle == contract_cycle, "floor one does not complete contracts or specialization victory")

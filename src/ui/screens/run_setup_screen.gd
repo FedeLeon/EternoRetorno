@@ -24,7 +24,7 @@ static func open(ui: Control, floor_number: int, start: Callable) -> void:
 	ui.label_at("Preparar la expedición",160,70,960,48,30,ui.GOLD,panel).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var limit = preload("res://src/rules/adventure_extensions.gd").difficulty_limit(ui.game.profile)
 	var selected = {"difficulty":clampi(int(ui.game.profile.get("preferred_difficulty",0)),0,limit), "variant":ui.game.profile.get("preferred_variant","normal")}
-	if selected.variant not in ["normal","tainted","dangerous"]: selected.variant = "normal"
+	if not preload("res://src/rules/adventure_extensions.gd").variant_available(ui.game.profile, selected.variant): selected.variant = "normal"
 	ui.label_at("Dificultad",170,124,930,28,20,ui.TEXT,panel)
 	var difficulties = ButtonGroup.new()
 	for i in range(DIFFICULTIES.size()):
@@ -35,7 +35,9 @@ static func open(ui: Control, floor_number: int, start: Callable) -> void:
 	var conditions = ButtonGroup.new()
 	for i in range(CONDITIONS.size()):
 		var entry: Array = CONDITIONS[i]
-		card(ui,panel,"ConditionCard_"+entry[0],entry[1],entry[2],entry[3],170+i*318,368,306,148,conditions,entry[0]==selected.variant,true,func(): selected.variant=entry[0])
+		var enabled = preload("res://src/rules/adventure_extensions.gd").variant_available(ui.game.profile, entry[0])
+		var detail = entry[3] if enabled else "Ganá una aventura Sin condición para desbloquear."
+		card(ui,panel,"ConditionCard_"+entry[0],entry[1],entry[2],detail,170+i*318,368,306,148,conditions,entry[0]==selected.variant,enabled,func(): selected.variant=entry[0])
 	ui.label_at("La configuración queda fija para toda esta aventura.",170,526,940,28,17,ui.MUTED,panel).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	var begin_button = ui.button("Iniciar aventura",485,566,310,48,func():
 		ui.game.profile.preferred_difficulty = selected.difficulty

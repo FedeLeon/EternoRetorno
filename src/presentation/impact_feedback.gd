@@ -6,16 +6,20 @@ static func play(ui: Control, target: Control, event: Dictionary) -> void:
 	var hero_id = ""
 	var enemy_id = ""
 	var enemy_target = false
+	var enemy_index = -1
 	for owner in ui.hero_art:
 		if ui.hero_art[owner] == target: hero_id = ui.game.run.party[owner]
 	for index in ui.enemy_art:
 		if ui.enemy_art[index] == target:
 			enemy_target = true
+			enemy_index = index
 			enemy_id = target.get_meta("battle_enemy_id", "")
 	preload("res://src/audio/battle_audio.gd").impact(ui.audio, event, hero_id, enemy_id)
 	var blocked = lost == 0 and absorbed > 0
 	if target.has_method("play_once"): target.play_once("guard" if blocked else "hurt")
 	if enemy_target:
+		var debris = ui.get_node_or_null("RobotDebrisState")
+		if debris != null: debris.burst(enemy_index, event)
 		preload("res://src/presentation/hit_slash.gd").play(ui.layer, target, int(event.get("hit_index", 0)), blocked)
 	var label = Label.new(); label.text = str(absorbed) if blocked else "0" if lost == 0 else "-%d" % lost
 	label.name = "FloatingDamage"

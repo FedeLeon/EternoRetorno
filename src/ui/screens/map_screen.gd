@@ -17,12 +17,12 @@ func _ready() -> void:
 	var title = label(dungeon_name, Rect2(380, 24, 520, 48), 30, Color("e7dded"))
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.add_theme_font_override("font",preload("res://src/ui/components/polish_theme.gd").HEADING)
-	action("Menú", Rect2(1068, 26, 108, 48), func(): menu_requested.emit()).name = "Menu"
+	action("Menú", Rect2(1068, 22, 108, 44), func(): menu_requested.emit()).name = "Menu"
 	scroll = ScrollContainer.new()
 	scroll.name = "MapScroll"
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.scroll_deadzone = 10
-	place(scroll, Rect2(44, 100, 1136, 548))
+	place(scroll, Rect2(44, 100, 1136, 604))
 	route = Control.new()
 	route.name = "Route"
 	route.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -33,11 +33,6 @@ func _ready() -> void:
 	var drawer = preload("res://src/ui/components/map_group_drawer.gd").new()
 	drawer.host = self
 	add_child(drawer)
-	var footer = Panel.new()
-	footer.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	footer.add_theme_stylebox_override("panel",preload("res://src/ui/components/button_skin.gd").style("header_frame"))
-	place(footer,Rect2(44,665,650,36))
-	label("Elegí la sala iluminada · Deslizá para ver el recorrido" if current < 0 else "Avanzá hacia arriba · %d salas recorridas · Deslizá para explorar" % visited.size(), Rect2(56,670,626,25),15,GOLD)
 	tooltip_text = "Semilla: %s" % run_seed
 	if boss_defeated:
 		action(exit_caption, Rect2(461, 626, 358, 44), func(): descend_requested.emit()).name = "Descend"

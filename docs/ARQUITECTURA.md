@@ -63,6 +63,11 @@ con geometría analítica, sin transformar el actor, leer imágenes de GPU ni co
 RNG de reglas. Su tiempo de vida está acotado y respeta preferencias de destellos
 y efectos reducidos. Véase [Combate](COMBATE.md).
 
+`robot_debris.gd` conserva restos cosméticos por combate fuera de los controles
+recreados: piezas en vuelo delante del cuerpo y restos asentados detrás. Lee los
+impactos confirmados, sin cambiar reglas, guardados ni RNG; deja de actualizar al
+asentarse y reinicia al cambiar de combate.
+
 `enemy_visuals.json` declara `foreground.attack` y `foreground.defense` por modelo.
 `enemy_cut_in.gd.artwork()` resuelve esas rutas con `json_catalog.gd`; no compone
 una ruta antigua ni selecciona imágenes de otra identidad. El importador offline
@@ -90,10 +95,14 @@ admite guardados sin metadatos de etapa. Título y menú lateral quedan fuera de
 contenedor desplazable. `paths_screen.gd` presenta las salidas inmediatas.
 Las adaptaciones visuales no regeneran contenido, consumen RNG ni cambian
 conexiones o coordenadas guardadas.
+Las nuevas mazmorras señalan tres salas `entry`; `available_nodes()` las ofrece
+al iniciar. Los guardados anteriores sin esa marca conservan su entrada única.
 
 Las pantallas tienen archivos propios en `src/ui/screens/`: campamento,
 selección, preparación, mapa, caminos, combate, recompensas, descanso,
 encuentros, bolsa, mazo, edificios, colección, bestiario y cinemáticas.
+`encounter_choice.gd` presenta las opciones ilustradas; `encounter_feedback.gd`
+compara el estado confirmado para mostrar el resultado, sin aplicar reglas.
 `back_navigation.gd` permite retroceder solo en vistas reversibles;
 `pause_navigation.gd` coordina la pausa. Las cinemáticas presentan capítulos
 confirmados y no conceden premios.

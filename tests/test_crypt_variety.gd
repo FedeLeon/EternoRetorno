@@ -25,7 +25,7 @@ func run_tests() -> void:
 		var nodes = Dungeon.create(rng, 1)
 		rng.seed = seed_value
 		check(nodes == Dungeon.create(rng, 1), "deterministic generation")
-		check(nodes.size() == 28 and nodes[0].encounter.size() == 1, "same graph size and solo entrance")
+		check(nodes.size() == 35 and nodes[0].encounter.size() == 1, "same graph size and solo entrance")
 		for room in nodes:
 			if room.kind != "combat": continue
 			check(room.encounter.size() in [1,2,3], "formation size")

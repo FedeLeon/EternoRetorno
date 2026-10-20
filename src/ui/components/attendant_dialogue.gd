@@ -1,6 +1,12 @@
 extends Control
 # Ambient presentation only; local RNG never touches run generation or saves.
-const Chrome = preload("res://src/ui/components/dark_skin.gd")
+const BUBBLE = preload("res://assets/ui/polished/speech_bubble.svg")
+const AREAS = {
+	"market": Rect2(380, 94, 336, 160),
+	"forge": Rect2(378, 94, 338, 164),
+	"church": Rect2(374, 94, 342, 166),
+	"expeditions": Rect2(302, 94, 200, 160)
+}
 var phrases: Array = []
 var phrase_index = -1
 var speaking = false
@@ -13,34 +19,36 @@ static func attach(ui: Control, attendant: String) -> Control:
 	var bubble = new()
 	bubble.name = "AttendantDialogue"
 	bubble.phrases = preload("res://src/data/json_catalog.gd").dictionary("res://data/camp_dialogue.json").get(attendant, [])
-	ui.rect(bubble, 48, 584, 408, 104)
+	var area: Rect2 = AREAS[attendant]
+	if attendant == "forge" and ui.forge_hero != "": area.size.x = 242
+	if attendant == "church" and ui.church_hero != "": area.size = Vector2(146, 186)
+	ui.rect(bubble, area.position.x, area.position.y, area.size.x, area.size.y)
 	return bubble
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	rng.randomize()
-	var panel = Panel.new()
-	panel.size = size
-	panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	panel.add_theme_stylebox_override("panel", Chrome.dialog())
-	add_child(panel)
+	var artwork = TextureRect.new()
+	artwork.name = "SpeechBubbleArt"
+	artwork.texture = BUBBLE
+	artwork.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	artwork.stretch_mode = TextureRect.STRETCH_SCALE
+	artwork.size = size
+	artwork.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(artwork)
 	text_label = Label.new()
-	text_label.position = Vector2(20, 12)
-	text_label.size = size - Vector2(40, 24)
+	text_label.position = size * Vector2(.10, .10)
+	text_label.size = size * Vector2(.80, .62)
 	text_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	text_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	text_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	text_label.add_theme_font_size_override("font_size", 20)
+	text_label.add_theme_font_size_override("font_size", 18 if size.x >= 260 else 17)
+	text_label.add_theme_color_override("font_color", Color("171723"))
+	text_label.add_theme_constant_override("outline_size", 0)
 	text_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(text_label)
 	modulate.a = 0.0
 	set_process(not phrases.is_empty())
-
-func _draw() -> void:
-	# Small upward tail points toward the attendant, above the shared dark frame.
-	var points = PackedVector2Array([Vector2(170, 1), Vector2(185, -17), Vector2(204, 1)])
-	draw_colored_polygon(points, Color("14121c"))
-	draw_polyline(points, Chrome.ACCENT, 2.0, true)
 
 func _process(delta: float) -> void:
 	elapsed += delta

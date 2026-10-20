@@ -14,9 +14,9 @@ func _initialize() -> void:
 			var nodes = Dungeon.create(rng,floor_number)
 			rng.seed = seed_value
 			check(nodes==Dungeon.create(rng,floor_number),"deterministic spiral")
-			check(nodes.size()==28 and nodes[-1].kind=="boss","room inventory and guardian")
+			check(nodes.size()==35 and nodes[-1].kind=="boss","room inventory and guardian")
 			check(Dungeon.map_position(nodes[-1]).distance_to(Geometry.CENTERS[-1])<5,"guardian in spiral center")
-			var reached: Array = [0]
+			var reached: Array = [0,1,2]
 			for node in nodes:
 				check(node.id in reached,"all rooms reachable")
 				var pos = Dungeon.map_position(node)

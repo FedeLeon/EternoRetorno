@@ -23,12 +23,12 @@ func _initialize() -> void:
 	var g = Game.new("user://unused-dungeon-test.save", false)
 	g.new_run(["warrior", "guardian"], 42)
 	var nodes = g.run.nodes
-	check(nodes.size() == 28, "28 rooms")
+	check(nodes.size() == 35, "35 rooms")
 	check(nodes.any(func(n): return n.next.size() == 3), "three-way forks")
 	check(nodes.filter(func(n): return n.kind == "elite").size() == 2, "two elites")
-	walk(nodes, 0, [])
+	for entry in g.available_nodes(): walk(nodes, entry, [])
 	check(paths.size() > 20, "many complete routes")
-	check(paths.all(func(path): return path[-1] == 27 and 18 in path), "all routes cross late elite and guardian")
+	check(paths.all(func(path): return path[-1] == nodes.size()-1 and nodes.filter(func(n):return n.stage == 8)[0].id in path), "all routes cross late elite and guardian")
 	var early = nodes.filter(func(n): return n.kind == "elite")[0].id
 	check(paths.any(func(path): return early in path) and paths.any(func(path): return early not in path), "first elite optional")
 	for n in nodes:

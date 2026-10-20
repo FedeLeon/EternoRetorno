@@ -9,7 +9,7 @@ func check(ok: bool, label: String):
 func run_tests():
 	var game = Game.new("user://unused-expansion.save",false)
 	check(game.new_run(["warrior","guardian"],27,{},3),"floor 3 selectable")
-	check(game.run.floor_count == 3 and game.run.nodes.size() == 28,"third floor inventory")
+	check(game.run.floor_count == 3 and game.run.nodes.size() == 35,"third floor inventory")
 	for floor in range(1,4):
 		for seed_value in range(20):
 			game.new_run(["warrior","guardian"],seed_value,{},floor)

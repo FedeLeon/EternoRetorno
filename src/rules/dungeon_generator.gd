@@ -8,17 +8,10 @@ static func shuffle(values: Array, rng: RandomNumberGenerator) -> void:
 		values[j] = swap
 
 static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictionary) -> Array:
-	var widths: Array = [1, 3, 2, 3, 1, 3, 2, 3, 1, 3, 2, 3, 1]
-	for start in [5, 9]:
-		var group: Array = widths.slice(start, start + 3)
-		shuffle(group, rng)
-		for i in range(3): widths[start + i] = group[i]
-	if rng.randf() < 0.5:
-		widths[2] = 3
-		widths[3] = 2
+	var widths: Array = [3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 1]
 	var pool: Array = []
-	# Same room inventory as the previous 28-room floor.
-	for entry in [["combat",12],["rest",6],["event",4],["treasure",2]]:
+	# More alternatives without extending the thirteen-stage journey.
+	for entry in [["combat",16],["rest",7],["event",5],["treasure",2]]:
 		for i in range(entry[1]): pool.append(entry[0])
 	shuffle(pool, rng)
 	var nodes: Array = []
@@ -27,16 +20,18 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 		var layer: Array = []
 		for lane in range(widths[stage]):
 			var id = nodes.size()
-			var kind = "combat" if stage == 0 else ("boss" if stage == 12 else ("elite" if stage in [4,8] else pool.pop_back()))
+			var kind = "combat" if stage == 0 else ("boss" if stage == 12 else ("elite" if stage == 8 else pool.pop_back()))
 			var point = preload("res://src/map_geometry.gd").position(stage, lane, widths[stage], rng)
 			nodes.append({"id":id,"kind":kind,"next":[],"position":[point.x,point.y],"layout":"spiral","layout_version":2,"encounter":[],"event":config.get("events", ["well","altar","library"])[rng.randi_range(0,2)],"stage":stage})
+			if stage == 0: nodes.back().entry = true
 			layer.append(id)
 		layers.append(layer)
 	# The early elite is an optional branch; the later elite guards every route.
 	var early_choices: Array = layers[2] + layers[3]
 	var early = early_choices[rng.randi_range(0, early_choices.size() - 1)]
-	var checkpoint = layers[4][0]
-	nodes[checkpoint].kind = nodes[early].kind
+	if nodes[early].kind != "combat":
+		var replacement = nodes.filter(func(node): return node.kind == "combat" and node.stage > 3)[0]
+		replacement.kind = nodes[early].kind
 	nodes[early].kind = "elite"
 	for stage in range(layers.size() - 1):
 		var here: Array = layers[stage]
@@ -51,7 +46,7 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 		for from in here: nodes[from].next.sort()
 	var common_nodes: Array = []
 	for node in nodes:
-		if node.kind == "combat" and node.id != 0: common_nodes.append(node.id)
+		if node.kind == "combat" and node.stage > 0: common_nodes.append(node.id)
 	# More groups than solitary fights, with triples restricted to later stages.
 	shuffle(common_nodes, rng)
 	var doubles: Array = common_nodes.slice(0, 7)
@@ -60,7 +55,7 @@ static func create(rng: RandomNumberGenerator, floor_number: int, config: Dictio
 	for node in nodes:
 		if node.kind == "combat":
 			var count = 3 if node.id in triples else (2 if node.id in doubles or floor_number >= 2 else 1)
-			if node.id == 0: count = 1 if floor_number == 1 else 2
+			if node.stage == 0: count = 1 if floor_number == 1 else 2
 			if config.get("distinct_common", false):
 				node.encounter = preload("res://src/rules/enemy_formations.gd").choose(nodes, node, count, config, enemy_usage, rng)
 			else:

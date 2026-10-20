@@ -5,6 +5,7 @@ static func build(ui: Control) -> void:
 	var layout = preload("res://src/ui/components/combat_layout.gd")
 	var ground = layout.ground_for(ui)
 	var hero_ground = layout.hero_ground_for(ui, ground)
+	var debris = preload("res://src/presentation/robot_debris.gd").bind(ui)
 	var top = layout.TOP
 	var hud = ui.CombatHUD.new()
 	hud.item_count = ui.game.run.get("inventory", {}).values().reduce(func(total, amount): return total + maxi(0, int(amount)), 0)
@@ -78,10 +79,12 @@ static func build(ui: Control) -> void:
 		ui.rect(enemy_visual, 43, ground - top - 132, 128, 132, target)
 		if ui.game.run.get("training", false) and ui.game.run.get("training_config",{}).get("enemies",[]).is_empty():
 			enemy_visual.replace_illustration(preload("res://assets/combat_depth/dummy.png"))
+			enemy_visual.set_meta("scrap_disabled",true)
 		preload("res://src/ui/components/combat_actor_scale.gd").enemy(enemy_visual)
 		preload("res://src/ui/components/combat_actor_scale.gd").fit_enemy(enemy_visual, ground - 126, 220.0 if b.enemies.size() > 1 else 440.0)
 		ui.TargetGlow.attach(enemy_visual, valid)
 		ui.enemy_art[i] = enemy_visual
+		debris.track(i, enemy_visual)
 		var cables = preload("res://src/ui/components/tactical_badges.gd").enemy(ui, target, e)
 		var enemy_effects = preload("res://src/ui/components/battle_effect_snapshot.gd").enemy(ui.game, i)
 		target.tooltip_text = target.tooltip_text if not target.tooltip_text.is_empty() else "Tocá para inspeccionar"

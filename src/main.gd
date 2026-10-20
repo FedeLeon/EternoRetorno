@@ -286,8 +286,6 @@ func begin_on_floor(starting_floor: int) -> void:
 	if active_run():
 		game._finish(false)
 	if game.new_run(selected_party, -1, equipped, starting_floor):
-		# Commit the first encounter before any presentation; resume starts in combat.
-		game.enter_node(0)
 		await preload("res://src/ui/cinematic_navigation.gd").party(self)
 		continue_run()
 

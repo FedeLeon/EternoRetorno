@@ -38,9 +38,11 @@ func redraw() -> void:
 			attacks = choices[hero].attacks
 			notice = ""
 			redraw(), true, body)
-		ui.button("Vínculos entre héroes", 110, 496, 360, 46, func():
-			ui.screen = "bonds"; ui.render(), true, body)
-		ui.label_at("Prepará sus 10 cartas iniciales.\nLos cambios se aplican en aventuras nuevas.", 70, 550, 600, 60, 18, ui.TEXT, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		var guidance = ui.panel(60, 480, 620, 140, ui.GOLD, body)
+		guidance.name = "RefugeGuidance"
+		ui.button("Vínculos entre héroes", 130, 14, 360, 44, func():
+			ui.screen = "bonds"; ui.render(), true, guidance)
+		ui.label_at("Prepará sus 10 cartas iniciales.\nLos cambios se aplican en aventuras nuevas.", 20, 66, 580, 60, 18, ui.TEXT, guidance).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		return
 	ui.panel(90, 10, 1100, 610, Color("67573d"), body)
 	ui.label_at(heroes[selected].name + " · Mazo inicial · 10 / 10 cartas", 150, 24, 980, 38, 27, ui.GOLD, body).horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

@@ -10,7 +10,7 @@ Compatibility y controles compartidos con texto en español.
   héroes y preparación. Los rótulos se alinean con los edificios.
 - Preparación: selección de dos héroes; componentes sobre un centro
   oscuro con objetos laterales; dificultad/condición en tarjetas ilustradas.
-- Aventura: primera batalla directa; luego recompensas y vista de caminos.
+- Aventura: elección entre tres batallas en el mapa; luego recompensas y caminos.
   El panel lateral permite consultar grupo, mazo y mapa.
 - Encuentros: ilustración a pantalla completa sin franja superior. La pausa usa
   Escape en la navegación existente.
@@ -33,7 +33,8 @@ El mapa conserva su fondo y usa un área de desplazamiento exclusivamente vertic
 Las salas ocupan etapas separadas de abajo hacia arriba; el jefe tiene un icono
 mayor y rótulo en la parte superior. Dos retratos marcan la sala actual. La apertura
 enfoca al grupo y permite inspeccionar el resto del recorrido con la rueda o el
-desplazamiento del contenedor. Título, estado y menú lateral permanecen fijos.
+desplazamiento del contenedor. Título y menú lateral permanecen fijos, sin el
+bloque inferior de instrucciones y salas recorridas.
 Los caminos disponibles se destacan en cian y los recorridos tienen su propio tono.
 La distribución visual no modifica conexiones, encuentros ni posiciones guardadas.
 

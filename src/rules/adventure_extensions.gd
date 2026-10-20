@@ -3,11 +3,19 @@ extends RefCounted
 static func difficulty_limit(profile: Dictionary) -> int:
 	return clampi(int(profile.get("difficulty_unlocked", 1 if profile.get("victories", 0) > 0 else 0)), 0, 3)
 
+static func conditions_unlocked(profile: Dictionary) -> bool:
+	if profile.get("conditions_unlocked", false): return true
+	# Older victories without condition metadata belonged to the default condition.
+	return profile.get("history", []).any(func(entry): return entry.get("won", false) and entry.get("summary", {}).get("variant", "normal") == "normal")
+
+static func variant_available(profile: Dictionary, variant: String) -> bool:
+	return variant == "normal" or (variant in ["tainted", "dangerous"] and conditions_unlocked(profile))
+
 static func prepare(game: RefCounted) -> void:
 	var run: Dictionary = game.run
 	run.difficulty = clampi(int(game.profile.get("preferred_difficulty", 0)), 0, difficulty_limit(game.profile))
 	run.variant = game.profile.get("preferred_variant", "normal")
-	if run.variant not in ["normal", "tainted", "dangerous"]: run.variant = "normal"
+	if not variant_available(game.profile, run.variant): run.variant = "normal"
 	run.statistics = {"battles":0, "elites":0, "bosses":0, "souls":0, "damage_taken":0, "fallen":0, "cards_removed":0}
 	run.bond_variant = game.profile.get("bond_variants", {}).get(pair_key(run.party), "balanced")
 	if int(game.profile.get("bonds", {}).get(pair_key(run.party), 0)) < 1: run.bond_variant = "balanced"
@@ -41,6 +49,7 @@ static func settle(game: RefCounted, won: bool) -> void:
 	var profile: Dictionary = game.profile
 	statistic(run, "souls", int(run.get("contract_result", {}).get("reward", 0)))
 	if won:
+		if run.get("variant", "normal") == "normal": profile.conditions_unlocked = true
 		profile.difficulty_unlocked = mini(3, maxi(difficulty_limit(profile), int(run.get("difficulty", 0)) + 1))
 		if not profile.has("bonds"): profile.bonds = {}
 		var key = pair_key(run.party)

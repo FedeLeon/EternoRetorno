@@ -1,0 +1,6 @@
+{
+  "brief": "Globo blanco de cómic americano con contorno de tinta irregular y punta inferior izquierda; texto vivo oscuro, situado arriba a la derecha de los encargados de edificios.",
+  "tool": "authored SVG",
+  "source": "art_sources/ui/comic_dialogue/speech_bubble.svg",
+  "target": "assets/ui/polished/speech_bubble.svg"
+}

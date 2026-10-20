@@ -30,15 +30,28 @@ static func build(ui: Control) -> void:
 	if node.kind == "event":
 		var view = preload("res://src/ui/screens/encounter_screen.gd").new()
 		view.event_id = node.event
+		view.choice_id = node.event
 		view.event = preload("res://src/rules/adventure_choices.gd").definition(ui.game, node.event)
 		if view.event.is_empty(): view.event = ui.game.content.events[node.event].duplicate(true)
 		else: view.event_id = view.event.background
 		var chains = {"forest_hunter":"Además, las provisiones esconden una contraseña de descuento para el mercader errante.", "forest_spirit":"Además, el siguiente descanso restaurará 5 PV extra.", "library":"Además, el siguiente cofre ocultará otra ampolla de curación."}
 		if chains.has(node.event): view.event.text += " " + chains[node.event]
-		if node.event == "lava_bridge": view.can_offer = ui.game.run.heroes.all(func(h): return h.hp > 8)
+		if node.event == "lava_bridge":
+			view.can_offer = ui.game.run.heroes.all(func(h): return h.hp > 8)
+			view.unavailable_reason = "Cada héroe necesita más de 8 PV para cruzar."
 		if node.event == "altar":
 			view.can_offer = ui.game.run.heroes.all(func(h): return h.hp > 5) and ui.game.run.deck.any(func(c): return not c.upgraded)
-		view.choice_requested.connect(func(index): ui.act(func(): ui.game.choose_event(index)))
+			view.unavailable_reason = "Cada héroe necesita más de 5 PV." if ui.game.run.heroes.any(func(h): return h.hp <= 5) else "No quedan cartas sin mejorar."
+		view.choice_requested.connect(func(index):
+			var receipt = preload("res://src/ui/encounter_feedback.gd")
+			var before = receipt.snapshot(ui.game)
+			if not ui.game.choose_event(index):
+				ui.audio.play_sfx("error", -10)
+				view.reject_submission("No se pudo completar esta opción. Podés elegir otra.")
+				return
+			ui.audio.play_sfx("confirm", -10)
+			view.show_outcome(receipt.describe(ui.game, before), ui.game.run.phase))
+		view.continue_requested.connect(ui.continue_run)
 		ui.rect(view, 0, 0, 1280, 720)
 
 static func treasure_display(ui: Control) -> Dictionary:

@@ -8,7 +8,8 @@ aventura, con progreso permanente de campamento y una ciudad dominada por máqui
 Se eligen dos entre Bruno/Carpintero, Mara/Constructora, Ciro/Boticario y
 Alma/Profesora. La pareja comparte mazo y energía. Se seleccionan
 componentes, dificultad y condición adicional mediante opciones ilustradas.
-El comienzo conduce a la primera batalla.
+El comienzo abre el mapa con tres batallas iniciales para elegir, cada una con
+distintas conexiones posteriores. Las nuevas mazmorras tienen 35 salas en 13 etapas.
 
 El perro y el gato son parte del ambiente del campamento; no se eligen para
 la aventura ni otorgan efectos de combate.

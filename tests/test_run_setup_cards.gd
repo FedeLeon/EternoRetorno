@@ -20,6 +20,7 @@ func verify() -> void:
 	var app = load("res://main.tscn").instantiate()
 	app.game = preload("res://src/game.gd").new("user://unused-setup-cards",false)
 	root.add_child(app)
+	app.game.profile.conditions_unlocked = true
 	app.game.profile.difficulty_unlocked = 1
 	app.game.profile.preferred_difficulty = 0
 	app.game.profile.preferred_variant = "normal"

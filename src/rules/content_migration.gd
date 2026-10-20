@@ -3,6 +3,8 @@ extends RefCounted
 static func clean(profile: Dictionary, run: Dictionary, content: RefCounted) -> Dictionary:
 	var before = profile.duplicate(true)
 	var before_run = run.duplicate(true)
+	if preload("res://src/rules/adventure_extensions.gd").conditions_unlocked(profile):
+		profile.conditions_unlocked = true
 	# Retired optional systems: preserve currency, equipment and current combat.
 	for field in ["projects", "reserved_card"]: profile.erase(field)
 	for field in ["pet", "merchant_refresh_floor"]: run.erase(field)

@@ -8,10 +8,7 @@ static func build(ui: Control, content: RefCounted, profile: Dictionary, selecte
 	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui.rect(background, 0, 0, 1280, 720)
 	preload("res://src/ui/components/attendant_dialogue.gd").attach(ui, "market")
-	var header = ui.panel(24, 18, 1232, 66)
-	header.name = "MarketHeader"
-	ui.label_at("EL MERCADO DE LOS ECOS", 100, 28, 660, 42, 26, ui.GOLD)
-	preload("res://src/ui/components/soul_counter.gd").attach(ui, profile.souls, Vector2(810, 25))
+	preload("res://src/ui/components/preparation_header.gd").build(ui, "El Mercado de los Ecos", actions.back, profile.souls, "Campamento")
 	if selected == "":
 		preload("res://src/ui/components/building_hero_picker.gd").build(ui, content.heroes, "Elegí un héroe para descubrir nuevas cartas", "Category_", actions.category, true)
 		return
