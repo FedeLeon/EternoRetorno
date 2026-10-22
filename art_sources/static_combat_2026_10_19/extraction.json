@@ -22,7 +22,7 @@
 			"source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/guardian.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -42,9 +42,9 @@
 				]
 			},
 			"common_downscale": 0.915572232645403,
-			"reference_height": 423
+			"reference_height": 423.0
 		},
-		"selected_frame": 0,
+		"selected_frame": 0.0,
 		"scale": 0.238770685579196,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/guardian/attack.png",
 		"source_sha256": "9c7bb132aded1fa0071111e19ccd4d788c1cdedb89b11fa88846ea34221b6f49",
@@ -57,7 +57,7 @@
 			"source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/guardian.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -77,9 +77,9 @@
 				]
 			},
 			"common_downscale": 0.915572232645403,
-			"reference_height": 423
+			"reference_height": 423.0
 		},
-		"selected_frame": 1,
+		"selected_frame": 1.0,
 		"scale": 0.238770685579196,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/guardian/guard.png",
 		"source_sha256": "4b35526a1f2905a10f3cc40ee9ed72f4aa92fcad110747d2dbce5cd20b8e9935",
@@ -92,7 +92,7 @@
 			"source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/guardian.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -112,9 +112,9 @@
 				]
 			},
 			"common_downscale": 0.915572232645403,
-			"reference_height": 423
+			"reference_height": 423.0
 		},
-		"selected_frame": 2,
+		"selected_frame": 2.0,
 		"scale": 0.238770685579196,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/guardian/skill.png",
 		"source_sha256": "a8cd25738217ca4da1c15a527e3d1513fddbd175b292ac27ea71dac0fd2d3f13",
@@ -127,7 +127,7 @@
 			"source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/guardian.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -147,9 +147,9 @@
 				]
 			},
 			"common_downscale": 0.915572232645403,
-			"reference_height": 423
+			"reference_height": 423.0
 		},
-		"selected_frame": 3,
+		"selected_frame": 3.0,
 		"scale": 0.238770685579196,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/guardian/hurt.png",
 		"source_sha256": "d8a301a72ba2ff4f97c7899c26d43e088dbff373602da918891ca6926cdf3639",
@@ -162,7 +162,7 @@
 			"source_sha256": "ceeb190c43f65ebf43e0a93564768d0d88390f83d94c85f6207a45d5f286166e",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/guardian.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -182,9 +182,9 @@
 				]
 			},
 			"common_downscale": 0.915572232645403,
-			"reference_height": 423
+			"reference_height": 423.0
 		},
-		"selected_frame": 4,
+		"selected_frame": 4.0,
 		"scale": 0.238770685579196,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/guardian/death.png",
 		"source_sha256": "0446f094e32fdd1b845b2a41f36cd3d42fc8d6dfcce3ce96d2d90f872ec799dc",
@@ -213,7 +213,7 @@
 			"source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/mage.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -233,9 +233,9 @@
 				]
 			},
 			"common_downscale": 0.81198003327787,
-			"reference_height": 374
+			"reference_height": 374.0
 		},
-		"selected_frame": 0,
+		"selected_frame": 0.0,
 		"scale": 0.268716577540107,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/mage/attack.png",
 		"source_sha256": "5a28fa876c719c2fa2918329e9a6b4de3235c07872b544cc28234a81bb107b94",
@@ -248,7 +248,7 @@
 			"source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/mage.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -268,9 +268,9 @@
 				]
 			},
 			"common_downscale": 0.81198003327787,
-			"reference_height": 374
+			"reference_height": 374.0
 		},
-		"selected_frame": 1,
+		"selected_frame": 1.0,
 		"scale": 0.268716577540107,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/mage/guard.png",
 		"source_sha256": "29b3babe151d369680efa0027ce3ea90dfb010628eb5fb0a1cba83ec3ce7232c",
@@ -283,7 +283,7 @@
 			"source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/mage.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -303,9 +303,9 @@
 				]
 			},
 			"common_downscale": 0.81198003327787,
-			"reference_height": 374
+			"reference_height": 374.0
 		},
-		"selected_frame": 2,
+		"selected_frame": 2.0,
 		"scale": 0.268716577540107,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/mage/skill.png",
 		"source_sha256": "814efdd807a098772a63f4cd55e2ec569f1c95287cdd6aca68903e24a2eb42a9",
@@ -318,7 +318,7 @@
 			"source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/mage.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -338,9 +338,9 @@
 				]
 			},
 			"common_downscale": 0.81198003327787,
-			"reference_height": 374
+			"reference_height": 374.0
 		},
-		"selected_frame": 3,
+		"selected_frame": 3.0,
 		"scale": 0.268716577540107,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/mage/hurt.png",
 		"source_sha256": "5e59aaa2982ee66f4d19ba44c2153d15cb2a2d8e4dbe568b54ee4ca6685a8070",
@@ -353,7 +353,7 @@
 			"source_sha256": "980d21b4c808a30e6e23b78969a7ac59f4164369c223686467486a20a0480395",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/mage.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -373,9 +373,9 @@
 				]
 			},
 			"common_downscale": 0.81198003327787,
-			"reference_height": 374
+			"reference_height": 374.0
 		},
-		"selected_frame": 4,
+		"selected_frame": 4.0,
 		"scale": 0.268716577540107,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/mage/death.png",
 		"source_sha256": "5b58c545208bedc5d6debcea013e5bf311e516fe63880f5f93dc2e5b2c37858b",
@@ -404,7 +404,7 @@
 			"source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/rogue.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -424,9 +424,9 @@
 				]
 			},
 			"common_downscale": 0.748466257668712,
-			"reference_height": 366
+			"reference_height": 366.0
 		},
-		"selected_frame": 0,
+		"selected_frame": 0.0,
 		"scale": 0.256830601092897,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/rogue/attack.png",
 		"source_sha256": "3519b6ccbc3b47f572f6f87c12e689f58abe14db1e3a5104be1cde4cf6b7af7c",
@@ -439,7 +439,7 @@
 			"source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/rogue.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -459,9 +459,9 @@
 				]
 			},
 			"common_downscale": 0.748466257668712,
-			"reference_height": 366
+			"reference_height": 366.0
 		},
-		"selected_frame": 1,
+		"selected_frame": 1.0,
 		"scale": 0.256830601092897,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/rogue/guard.png",
 		"source_sha256": "8d337219b777276c0653238fcf8a843646590685f67b7199caa5935a4ed3c322",
@@ -474,7 +474,7 @@
 			"source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/rogue.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -494,9 +494,9 @@
 				]
 			},
 			"common_downscale": 0.748466257668712,
-			"reference_height": 366
+			"reference_height": 366.0
 		},
-		"selected_frame": 2,
+		"selected_frame": 2.0,
 		"scale": 0.256830601092897,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/rogue/skill.png",
 		"source_sha256": "6e2644e9cd74bce4820bd7406503afe3040b9240546ba643d8d66b09e615d0ea",
@@ -509,7 +509,7 @@
 			"source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/rogue.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -529,9 +529,9 @@
 				]
 			},
 			"common_downscale": 0.748466257668712,
-			"reference_height": 366
+			"reference_height": 366.0
 		},
-		"selected_frame": 3,
+		"selected_frame": 3.0,
 		"scale": 0.256830601092897,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/rogue/hurt.png",
 		"source_sha256": "68e215cae154cf1cfe62459420ec875954e39341a836e90a00e58cde96067cd3",
@@ -544,7 +544,7 @@
 			"source_sha256": "673771ff726df7e5814771b63a21264cf8b4c6064ac337180cfa8086e5e8ad25",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/rogue.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -564,9 +564,9 @@
 				]
 			},
 			"common_downscale": 0.748466257668712,
-			"reference_height": 366
+			"reference_height": 366.0
 		},
-		"selected_frame": 4,
+		"selected_frame": 4.0,
 		"scale": 0.256830601092897,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/rogue/death.png",
 		"source_sha256": "8f091a98cc3d481f009e21b6cc32d8872d741ee27692606f8e3e79287614e524",
@@ -595,7 +595,7 @@
 			"source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/warrior.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -615,9 +615,9 @@
 				]
 			},
 			"common_downscale": 0.78330658105939,
-			"reference_height": 361
+			"reference_height": 361.0
 		},
-		"selected_frame": 0,
+		"selected_frame": 0.0,
 		"scale": 0.21606648199446,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/warrior/attack.png",
 		"source_sha256": "3860feb1a15523acfd0648eef1561c2705937c1c101c38e2f70d2ebdd31511ef",
@@ -630,7 +630,7 @@
 			"source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/warrior.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -650,9 +650,9 @@
 				]
 			},
 			"common_downscale": 0.78330658105939,
-			"reference_height": 361
+			"reference_height": 361.0
 		},
-		"selected_frame": 1,
+		"selected_frame": 1.0,
 		"scale": 0.21606648199446,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/warrior/guard.png",
 		"source_sha256": "fdb61c22807c412a33fb90cd2c8a2e95f61d7a0cfb8c81a8d7b36640a0effd93",
@@ -665,7 +665,7 @@
 			"source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/warrior.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -685,9 +685,9 @@
 				]
 			},
 			"common_downscale": 0.78330658105939,
-			"reference_height": 361
+			"reference_height": 361.0
 		},
-		"selected_frame": 2,
+		"selected_frame": 2.0,
 		"scale": 0.21606648199446,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/warrior/skill.png",
 		"source_sha256": "78225f2d54c82fd1d08922e439d360898e5d9dfc9cdcc10b57f6ed83f99cf068",
@@ -700,7 +700,7 @@
 			"source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/warrior.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -720,9 +720,9 @@
 				]
 			},
 			"common_downscale": 0.78330658105939,
-			"reference_height": 361
+			"reference_height": 361.0
 		},
-		"selected_frame": 3,
+		"selected_frame": 3.0,
 		"scale": 0.21606648199446,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/warrior/hurt.png",
 		"source_sha256": "e6888a753a023b452eb36f57feba73c89e2cde59f6b0f87b1ee85fbb3e84de29",
@@ -735,7 +735,7 @@
 			"source_sha256": "ebf2c376b238a560d0107095a88e0a4e3ef528c6d4c4efda3be0cebf3f71836b",
 			"generation": "art_sources/hero_actions_hd_2026_10_19/warrior.json",
 			"processing": "Six disconnected authored drawings; isolate connected silhouettes at alpha > 0.2 with 1px antialias fringe; common proportional downscale only; baseline 496, centered on 512px transparent canvas; reference pose supplies consistent anatomical scale; one static runtime image per action",
-			"hero_action_hd_revision": 1,
+			"hero_action_hd_revision": 1.0,
 			"outline_baked": true,
 			"source_part": {
 				"seed": [
@@ -755,9 +755,9 @@
 				]
 			},
 			"common_downscale": 0.78330658105939,
-			"reference_height": 361
+			"reference_height": 361.0
 		},
-		"selected_frame": 4,
+		"selected_frame": 4.0,
 		"scale": 0.21606648199446,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/heroes/warrior/death.png",
 		"source_sha256": "9d1b8b5b9aaaf9f39584954bc5b187a81e30b11f7a458cb9942d6a2c347c7e27",
@@ -854,22 +854,18 @@
 		"source_sha256": "86e6b6a0a483e1e5eb620cf555f22ea13483135fde73875771b1d6c0e7b7074c"
 	},
 	"enemies/bandit_0/death": {
-		"original_atlas": "assets/enemies/animations/bandit_0.png",
-		"original_sha256": "d39b61ecff45d4e5976647d748a154e17fcedc9471701c62d5da08b331099095",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "d39b61ecff45d4e5976647d748a154e17fcedc9471701c62d5da08b331099095",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_7.png",
-			"source_sha256": "fed1ce36775a87ed77b7df363b778493fb4b0c634bb4bdbf77fb2a599a500e96",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_0/death.png",
-		"source_sha256": "86e6b6a0a483e1e5eb620cf555f22ea13483135fde73875771b1d6c0e7b7074c"
+		"source_sha256": "4003da37ec43909053ec30a649407bbe0712162cacb1268e9229c8ec1d0ab21e",
+		"scale": 0.153972457627119,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_0.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_0.png",
+			"source_sha256": "b793fcbf4047e16f9a68b5e994c740cdf02d93da60e0d8fb9044ac9064b41ca6",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_1/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_1.png",
@@ -962,22 +958,18 @@
 		"source_sha256": "b41aa77803e3818cbde32571d77879b5cd4af7d62ff39f0b90bd340d3c4c1d4c"
 	},
 	"enemies/bandit_1/death": {
-		"original_atlas": "assets/enemies/animations/bandit_1.png",
-		"original_sha256": "5eea37af211266da81e7491c954004d6d2d810b2e70b9c4b7b651395dac4172f",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "5eea37af211266da81e7491c954004d6d2d810b2e70b9c4b7b651395dac4172f",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_7.png",
-			"source_sha256": "fed1ce36775a87ed77b7df363b778493fb4b0c634bb4bdbf77fb2a599a500e96",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_1/death.png",
-		"source_sha256": "b41aa77803e3818cbde32571d77879b5cd4af7d62ff39f0b90bd340d3c4c1d4c"
+		"source_sha256": "f91f0b9d9e68232c22fdcb08446a8cccc67073c36274e24e49a94aa77ce7cd39",
+		"scale": 0.145921610169492,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_1.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_1.png",
+			"source_sha256": "3e719a6a00b2aed7b731d9f350c27a708c417f081b94d090607cf6fdb27d1e5d",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_2/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_2.png",
@@ -1070,22 +1062,18 @@
 		"source_sha256": "6802fff0ad4a7d3ef70e2fbb0b7be660573eed48badabf5f405650d4223b00a8"
 	},
 	"enemies/bandit_2/death": {
-		"original_atlas": "assets/enemies/animations/bandit_2.png",
-		"original_sha256": "d860ba2a08c041d50c3b5b5fab24fdd7e43db3da5cf08ec0b1a3a3cc8d5a38d5",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_2",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "d860ba2a08c041d50c3b5b5fab24fdd7e43db3da5cf08ec0b1a3a3cc8d5a38d5",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_2.png",
-			"source_sha256": "bffd5fee570fcbf58fdafae643002d873d47b2a899948aa535d2b7edd5068906",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_2/death.png",
-		"source_sha256": "6802fff0ad4a7d3ef70e2fbb0b7be660573eed48badabf5f405650d4223b00a8"
+		"source_sha256": "01ba7025c8d6912f294b83e9064417937359b7bae6465a9ea4594a061c9eeecd",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_2.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_2.png",
+			"source_sha256": "04ce80b0244267d3d09e06fad495209e84b2f3a915b366cbea5d43fc8d436edf",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_3/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_3.png",
@@ -1178,22 +1166,18 @@
 		"source_sha256": "729b646b6f77412f7fe2b6e5a4904419aeb1294e431016842ab32fd5ae0cf732"
 	},
 	"enemies/bandit_3/death": {
-		"original_atlas": "assets/enemies/animations/bandit_3.png",
-		"original_sha256": "944d82710c4636e79092c3bcf0ba3c78e3ed111eb9eb8dac0b91e4a814450a2c",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "944d82710c4636e79092c3bcf0ba3c78e3ed111eb9eb8dac0b91e4a814450a2c",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_7.png",
-			"source_sha256": "fed1ce36775a87ed77b7df363b778493fb4b0c634bb4bdbf77fb2a599a500e96",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_3/death.png",
-		"source_sha256": "729b646b6f77412f7fe2b6e5a4904419aeb1294e431016842ab32fd5ae0cf732"
+		"source_sha256": "621864dc776a4006da07e43e60e036a18e47878fd6c478b2888c873f498be823",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_3.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_3.png",
+			"source_sha256": "36dac465e8dfc24843b9b76a94f113c383bd17270392eab0589e5f0228a3b00c",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_4/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_4.png",
@@ -1286,22 +1270,18 @@
 		"source_sha256": "2518ae117ae72f24afdc64e453c441c2100fc37b6adc0eb7086bc942f2ceaf24"
 	},
 	"enemies/bandit_4/death": {
-		"original_atlas": "assets/enemies/animations/bandit_4.png",
-		"original_sha256": "e85c56c32fef2105279fc9ad36b06a18321324413e729bd743196e1f205e5855",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "e85c56c32fef2105279fc9ad36b06a18321324413e729bd743196e1f205e5855",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_4.png",
-			"source_sha256": "90e699172a812181540ba68d740b46abe0652cc94240214472c0cfc4686b5b40",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_4/death.png",
-		"source_sha256": "2518ae117ae72f24afdc64e453c441c2100fc37b6adc0eb7086bc942f2ceaf24"
+		"source_sha256": "e7332376f4f5d54c0afdb474945737efe7adf88b9a53919fcd247e8744884700",
+		"scale": 0.150953389830508,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_4.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_4.png",
+			"source_sha256": "bb10e8b6210c1771fd1a9b009a643858a84f1cb55b78c44678f3b68ec809c04e",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_5/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_5.png",
@@ -1394,22 +1374,18 @@
 		"source_sha256": "e23a201d0936c96d4d7f3325186d165bc845a468b41f686d9016295b7f3d4cd8"
 	},
 	"enemies/bandit_5/death": {
-		"original_atlas": "assets/enemies/animations/bandit_5.png",
-		"original_sha256": "bd7b5b4ef224a955684e6e28b01f8dffd4f9445b5b54a7e9591f79b5e83c6f36",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_5",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "bd7b5b4ef224a955684e6e28b01f8dffd4f9445b5b54a7e9591f79b5e83c6f36",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_5.png",
-			"source_sha256": "cf28246c938493dd19b1310f74c5d9292633269b3c58ad7f1e80a544a4e036ec",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_5/death.png",
-		"source_sha256": "e23a201d0936c96d4d7f3325186d165bc845a468b41f686d9016295b7f3d4cd8"
+		"source_sha256": "dcd6e9b6eb8d5adc71600bc36ea7a8fa17fe7ae64629bffc966555ae0970b343",
+		"scale": 0.168061440677966,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_5.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_5.png",
+			"source_sha256": "0ef0c5891cbff7122fdc31f3482bfeedff86eddc8e3378e0f726f9ba996d0879",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_6/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_6.png",
@@ -1502,22 +1478,18 @@
 		"source_sha256": "6f942a434d646e53b419a0bc9f87d269848bb88a2f5095d97fc16e980c627e13"
 	},
 	"enemies/bandit_6/death": {
-		"original_atlas": "assets/enemies/animations/bandit_6.png",
-		"original_sha256": "9c41f23ee2eb10a6d3a2a1860db10a84f2c03e9dd6e3ec7cf89c33d91409de85",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__elemental_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "9c41f23ee2eb10a6d3a2a1860db10a84f2c03e9dd6e3ec7cf89c33d91409de85",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__elemental_3.png",
-			"source_sha256": "544a9d0903623ee3d9f5ae30636ef79c317bed93f304bba93a4b7fa15f2f0053",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_6/death.png",
-		"source_sha256": "6f942a434d646e53b419a0bc9f87d269848bb88a2f5095d97fc16e980c627e13"
+		"source_sha256": "6e301935303a76dbd9a854844053eb0856b691e05eca228d66c1292532453857",
+		"scale": 0.214353813559322,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_6.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_6.png",
+			"source_sha256": "d431add7cac202cd90078545dee4c3cdaeae2752fddea52070967b9d60173c31",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/bandit_7/idle": {
 		"original_atlas": "assets/enemies/animations/bandit_7.png",
@@ -1650,30 +1622,18 @@
 		"source_sha256": "83101cc7e80ea1ab630421c98e4b093f299a137a7a6ff128341461bc91d302e4"
 	},
 	"enemies/bandit_7/death": {
-		"original_atlas": "assets/enemies/animations/bandit_7.png",
-		"original_sha256": "40fdce0302c1933d16afc45d4a581e39a133e70a68a04ff7b17a2c7d8207290b",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_1",
-			"processing": "Original complete drawings, reviewed uneven row boundaries, proportional packing with fixed feet",
-			"row_edges": [
-				0.0,
-				232.0,
-				417.0,
-				608.0,
-				1024.0
-			],
-			"sha256": "40fdce0302c1933d16afc45d4a581e39a133e70a68a04ff7b17a2c7d8207290b",
-			"sheet_repair_revision": 1.0,
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_1.png",
-			"source_sha256": "b9e3a15992f5f7634826d851f0834b2e03ebe9a14c21ab1214db89e510d3d51a",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_7/death.png",
-		"source_sha256": "83101cc7e80ea1ab630421c98e4b093f299a137a7a6ff128341461bc91d302e4"
+		"source_sha256": "c084afe6695dce222a94a26d4dcf3500e02ddf7855c02f92e75c8863ffc56f76",
+		"scale": 0.160010593220339,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_7.png",
+		"original_provenance": {
+			"job": "wreckage_bandit_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_7.png",
+			"source_sha256": "9d2b532c3368bb9016e8863d187aec99431403187539d812c9e284a4f3e51a9a",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_0/idle": {
 		"original_atlas": "assets/enemies/animations/beast_0.png",
@@ -1766,22 +1726,18 @@
 		"source_sha256": "595b923a803a1fff37db94d7db2186ec96efc8384cd5abcc83b54a57793f020d"
 	},
 	"enemies/beast_0/death": {
-		"original_atlas": "assets/enemies/animations/beast_0.png",
-		"original_sha256": "2c4fd88b32097a18696372554e196798a9be44fcad04a216280e6b862e2875dc",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_0",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "2c4fd88b32097a18696372554e196798a9be44fcad04a216280e6b862e2875dc",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_0.png",
-			"source_sha256": "f116f3dd0dd83e4b742741eab6fefc339b4ae3b9346c4d51bc48abdf19a15305",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_0/death.png",
-		"source_sha256": "595b923a803a1fff37db94d7db2186ec96efc8384cd5abcc83b54a57793f020d"
+		"source_sha256": "9d4229dd6d1d93151be25cb2fe22117ccbfd4333fbb88a012f53eca96bb54b9d",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_0.png",
+		"original_provenance": {
+			"job": "wreckage_beast_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_0.png",
+			"source_sha256": "2389867290a395a7538afa3b032933db619c3efc7d602dd64cf68b447aefb347",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_1/idle": {
 		"original_atlas": "assets/enemies/animations/beast_1.png",
@@ -1874,22 +1830,18 @@
 		"source_sha256": "08015d386a2f84142fb9948b4f741616db60b1e59a638cdcd2a8aad23f233cab"
 	},
 	"enemies/beast_1/death": {
-		"original_atlas": "assets/enemies/animations/beast_1.png",
-		"original_sha256": "4685ffb6542e792d30fca8b277833709e558d71c8ed011cab2a3122cdb4392b1",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_1",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "4685ffb6542e792d30fca8b277833709e558d71c8ed011cab2a3122cdb4392b1",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_1.png",
-			"source_sha256": "5dc91e0ff04cf94afac5f394379e6e76da3d53c20ede1bd9524344e3dcb66059",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_1/death.png",
-		"source_sha256": "08015d386a2f84142fb9948b4f741616db60b1e59a638cdcd2a8aad23f233cab"
+		"source_sha256": "f6edd77884b4bdf7a58353e1ee5d892720a7d819a03ead11a14fa4a5f54c2259",
+		"scale": 0.203283898305085,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_1.png",
+		"original_provenance": {
+			"job": "wreckage_beast_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_1.png",
+			"source_sha256": "51ca159d678d0e8ea31df95da85105f5739eaccd67e57a95c0b9674140784278",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_2/idle": {
 		"original_atlas": "assets/enemies/animations/beast_2.png",
@@ -1982,22 +1934,18 @@
 		"source_sha256": "dcd45e869a01e963bc650dd5ef0c784873ddb193cc8099219e13fbbabd9ba146"
 	},
 	"enemies/beast_2/death": {
-		"original_atlas": "assets/enemies/animations/beast_2.png",
-		"original_sha256": "438531693c73e91005b50887f015eabf563e5c38539e2dc96b1a70a5448de2c4",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "438531693c73e91005b50887f015eabf563e5c38539e2dc96b1a70a5448de2c4",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_4.png",
-			"source_sha256": "3291cab58483d5161c6bfbc381bec53869c7471f43b73ef0ab09e67ccf52d555",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_2/death.png",
-		"source_sha256": "dcd45e869a01e963bc650dd5ef0c784873ddb193cc8099219e13fbbabd9ba146"
+		"source_sha256": "3f9638afff72d578379dc76086bd0d8395dcf4cd5e82211d7306e316cd789041",
+		"scale": 0.229449152542373,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_2.png",
+		"original_provenance": {
+			"job": "wreckage_beast_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_2.png",
+			"source_sha256": "5898c3272b1c444b525544e5f17717f7142c05cb815ec6e7c6c1cb7801e09f97",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_3/idle": {
 		"original_atlas": "assets/enemies/animations/beast_3.png",
@@ -2090,22 +2038,18 @@
 		"source_sha256": "850cb15595d63d754581ff32e2b2d56fdbbd2d91b064086be8d3ada3349c8244"
 	},
 	"enemies/beast_3/death": {
-		"original_atlas": "assets/enemies/animations/beast_3.png",
-		"original_sha256": "a5ff074ec2be8c94a7e8884534d0d5cda391bd95cb5b20a471e417afed3a46aa",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__elemental_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "a5ff074ec2be8c94a7e8884534d0d5cda391bd95cb5b20a471e417afed3a46aa",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__elemental_3.png",
-			"source_sha256": "544a9d0903623ee3d9f5ae30636ef79c317bed93f304bba93a4b7fa15f2f0053",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_3/death.png",
-		"source_sha256": "850cb15595d63d754581ff32e2b2d56fdbbd2d91b064086be8d3ada3349c8244"
+		"source_sha256": "8e480fbf77afc7207f606cd42c34668bb7df7cc662edb389c16dcaf0b6971390",
+		"scale": 0.218379237288136,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_3.png",
+		"original_provenance": {
+			"job": "wreckage_beast_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_3.png",
+			"source_sha256": "b2965118e44e68a7801fa18fc05761ec27631a697927a719369e811d9ff64987",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_4/idle": {
 		"original_atlas": "assets/enemies/animations/beast_4.png",
@@ -2198,22 +2142,18 @@
 		"source_sha256": "9923cbcd2409cae6479efb08d6d94b0ca18526015584b3743ec4ac001b568728"
 	},
 	"enemies/beast_4/death": {
-		"original_atlas": "assets/enemies/animations/beast_4.png",
-		"original_sha256": "96b70633207338524347b619e7b620377fd0e8071e9762b5c2820fd1aada7c97",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_2",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "96b70633207338524347b619e7b620377fd0e8071e9762b5c2820fd1aada7c97",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_2.png",
-			"source_sha256": "bffd5fee570fcbf58fdafae643002d873d47b2a899948aa535d2b7edd5068906",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_4/death.png",
-		"source_sha256": "9923cbcd2409cae6479efb08d6d94b0ca18526015584b3743ec4ac001b568728"
+		"source_sha256": "dcf7a2684fa6308aaaaee9103d5668ebcfb738fa5a2bd5be089b2fb8d73ef69b",
+		"scale": 0.140889830508475,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_4.png",
+		"original_provenance": {
+			"job": "wreckage_beast_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_4.png",
+			"source_sha256": "a70688a4e7804e55e9b242237ef8254b0a8884a4994cd94a13273e63cab5e34b",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_5/idle": {
 		"original_atlas": "assets/enemies/animations/beast_5.png",
@@ -2306,22 +2246,18 @@
 		"source_sha256": "5ad80bb5b39f060187e38c5666dd4998a46f7a5d1f180b57cebc26df52165efc"
 	},
 	"enemies/beast_5/death": {
-		"original_atlas": "assets/enemies/animations/beast_5.png",
-		"original_sha256": "0b0bd6906ed71286d27986d004569573a138b7e25d7a2aebb79fa817e0814f9a",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_1",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "0b0bd6906ed71286d27986d004569573a138b7e25d7a2aebb79fa817e0814f9a",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_1.png",
-			"source_sha256": "5dc91e0ff04cf94afac5f394379e6e76da3d53c20ede1bd9524344e3dcb66059",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_5/death.png",
-		"source_sha256": "5ad80bb5b39f060187e38c5666dd4998a46f7a5d1f180b57cebc26df52165efc"
+		"source_sha256": "2e7ac90aa8e941064bf1450b92c057ce1b1ea6afbb9ccba1ec410358a41a2018",
+		"scale": 0.164036016949153,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_5.png",
+		"original_provenance": {
+			"job": "wreckage_beast_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_5.png",
+			"source_sha256": "aa0ee513ff3b48afe8420f9f80c6af50a1a5ff803c9fe5a36fa46bdeca5f59c1",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_6/idle": {
 		"original_atlas": "assets/enemies/animations/beast_6.png",
@@ -2414,22 +2350,18 @@
 		"source_sha256": "e39207420a95193ad7b020e014ccd3989c06ca833db73ecc4099773527da7ba8"
 	},
 	"enemies/beast_6/death": {
-		"original_atlas": "assets/enemies/animations/beast_6.png",
-		"original_sha256": "e293c8c7f61be4332700c78da95fceb712bf7d478648cad552296f8c576b0d1f",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "e293c8c7f61be4332700c78da95fceb712bf7d478648cad552296f8c576b0d1f",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_4.png",
-			"source_sha256": "90e699172a812181540ba68d740b46abe0652cc94240214472c0cfc4686b5b40",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_6/death.png",
-		"source_sha256": "e39207420a95193ad7b020e014ccd3989c06ca833db73ecc4099773527da7ba8"
+		"source_sha256": "4b2e478f8848c63160d443b8a5e7c4ce5804917e0cd3f0c845284fdddd2cfab6",
+		"scale": 0.162023305084746,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_6.png",
+		"original_provenance": {
+			"job": "wreckage_beast_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_6.png",
+			"source_sha256": "2cd6e5d5161230442d25643a5df109b1cfdf7d03225e7fe9c2d9e9aada2a5b6e",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/beast_7/idle": {
 		"original_atlas": "assets/enemies/animations/beast_7.png",
@@ -2522,22 +2454,18 @@
 		"source_sha256": "5f5865159c93fd09050a19c8c560d37cb50e885a44477adc67abed6a87f0cbb1"
 	},
 	"enemies/beast_7/death": {
-		"original_atlas": "assets/enemies/animations/beast_7.png",
-		"original_sha256": "c0f3c017103c76833b728ea7d39054e38bdbeda5130607c2063773c5c72a32f4",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "c0f3c017103c76833b728ea7d39054e38bdbeda5130607c2063773c5c72a32f4",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_7.png",
-			"source_sha256": "746129b18dff88b237e0fb66a6fa423a53b6cc0b3d0b1b687aa34f9bac776675",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_7/death.png",
-		"source_sha256": "5f5865159c93fd09050a19c8c560d37cb50e885a44477adc67abed6a87f0cbb1"
+		"source_sha256": "2129cd164a2f81c896a31d09c435082e2d81f9a05f0c40653f5eea4d8324891c",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/beast_7.png",
+		"original_provenance": {
+			"job": "wreckage_beast_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_7.png",
+			"source_sha256": "538eeb12bb80b903738eded40f3614c7f303f87e2d189bd80e9770a63a134cf4",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_automaton/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_automaton.png",
@@ -2630,22 +2558,18 @@
 		"source_sha256": "37da142dcfd11e2e3c1c96a9af44872e41596b4a028ea739877c47d54335491a"
 	},
 	"enemies/crypt_automaton/death": {
-		"original_atlas": "assets/enemies/animations/crypt_automaton.png",
-		"original_sha256": "373fbbd338cd87e38b158d48711ab051f52429b4d83b08ee35a6c8db14bce113",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_crypt_automaton",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "373fbbd338cd87e38b158d48711ab051f52429b4d83b08ee35a6c8db14bce113",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_crypt_automaton.png",
-			"source_sha256": "de79f338a55192b018f44fdc5e7d1c3e7f4d23a24163946ff57cc82fa658aab4",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_automaton/death.png",
-		"source_sha256": "37da142dcfd11e2e3c1c96a9af44872e41596b4a028ea739877c47d54335491a"
+		"source_sha256": "0643459ea7243738762f6982894037e07ed3e2cc794cfc46b0898af590fc44e5",
+		"scale": 0.173199152542373,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_automaton.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_automaton",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_automaton.png",
+			"source_sha256": "5003d9262e232bb5998451570bdbe1bd4620b785a71c20b45617050dc7ece722",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_bandit/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_bandit.png",
@@ -2738,22 +2662,18 @@
 		"source_sha256": "71dcb309f68b08ebfff2306cc2e528f3c7ff4b1847e5cf72eb0832674c599c07"
 	},
 	"enemies/crypt_bandit/death": {
-		"original_atlas": "assets/enemies/animations/crypt_bandit.png",
-		"original_sha256": "688df5c02e707b4ebbe32bd560d994bdec6118b49e341ae10b84836dcf6ba516",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "688df5c02e707b4ebbe32bd560d994bdec6118b49e341ae10b84836dcf6ba516",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_4.png",
-			"source_sha256": "90e699172a812181540ba68d740b46abe0652cc94240214472c0cfc4686b5b40",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_bandit/death.png",
-		"source_sha256": "71dcb309f68b08ebfff2306cc2e528f3c7ff4b1847e5cf72eb0832674c599c07"
+		"source_sha256": "3005b15df2be63237a053ed0cecab2a796bc352445e670c01b66ded6ce7a77e4",
+		"scale": 0.162023305084746,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bandit.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_bandit",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bandit.png",
+			"source_sha256": "a196012a85b220b71165861a51b9eae86f0df8feabc3da1c674f11d6d1fdfafa",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_bat/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_bat.png",
@@ -2846,22 +2766,18 @@
 		"source_sha256": "b96b10348484f21de1b2e7152dc3574f8348184f41eaa82348bb8a68d5ad714d"
 	},
 	"enemies/crypt_bat/death": {
-		"original_atlas": "assets/enemies/animations/crypt_bat.png",
-		"original_sha256": "0f1b769bff9127d85db0f2200acf8704799b9dc2c6ee4692bd1d227022ba883a",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_crypt_bat",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "0f1b769bff9127d85db0f2200acf8704799b9dc2c6ee4692bd1d227022ba883a",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_crypt_bat.png",
-			"source_sha256": "a4a2dc7c9c668446c38b3fb23f13a74edd9cee8e1650d90223d1e2afb7834370",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_bat/death.png",
-		"source_sha256": "b96b10348484f21de1b2e7152dc3574f8348184f41eaa82348bb8a68d5ad714d"
+		"source_sha256": "9f413f78d938eae8e1285a8de73445fed6c0f63aac4a33cce4311ea1dc6c4482",
+		"scale": 0.177118644067797,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bat.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_bat",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bat.png",
+			"source_sha256": "019b585cc127ea76367217eaa68f13a46a126f58a52a4f45d7294d2480158b58",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_beetle/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_beetle.png",
@@ -2954,22 +2870,18 @@
 		"source_sha256": "a93b043c2d0edbd34677963fc3d81e0e57df794e45c5b5c97344539c2ce6c7cd"
 	},
 	"enemies/crypt_beetle/death": {
-		"original_atlas": "assets/enemies/animations/crypt_beetle.png",
-		"original_sha256": "95d752b37bf9b463045052821cc9be897a7c285ba67f1375c054185f80c805e8",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "95d752b37bf9b463045052821cc9be897a7c285ba67f1375c054185f80c805e8",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_7.png",
-			"source_sha256": "746129b18dff88b237e0fb66a6fa423a53b6cc0b3d0b1b687aa34f9bac776675",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_beetle/death.png",
-		"source_sha256": "a93b043c2d0edbd34677963fc3d81e0e57df794e45c5b5c97344539c2ce6c7cd"
+		"source_sha256": "7b790024f806de68bb6a1d8a3d92312606163d67a55b63aeddd14824b0b897c5",
+		"scale": 0.228442796610169,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_beetle.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_beetle",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_beetle.png",
+			"source_sha256": "a3d4f26b6ea1c3063fe5c2b151d4779695872d1863f63bf67d3b633e202598eb",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_lancer/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_lancer.png",
@@ -3062,22 +2974,18 @@
 		"source_sha256": "b9ee6440779e7e3a6f86ff9902d8d1578c639d0206704af398f8fc6bfc4ecb22"
 	},
 	"enemies/crypt_lancer/death": {
-		"original_atlas": "assets/enemies/animations/crypt_lancer.png",
-		"original_sha256": "746d830ebdda150211a0a8e30dcd22d638491b75eb4a7918627467322ac76a53",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_crypt_lancer",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "746d830ebdda150211a0a8e30dcd22d638491b75eb4a7918627467322ac76a53",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_crypt_lancer.png",
-			"source_sha256": "d57225d641d55bcda32b82286c768c99601fa672b974598764aa00bbd1ad23df",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_lancer/death.png",
-		"source_sha256": "b9ee6440779e7e3a6f86ff9902d8d1578c639d0206704af398f8fc6bfc4ecb22"
+		"source_sha256": "fd5f9020531bf08902f2372818f9ab67434a2c161d3c26f6c997f0fd56aa57b0",
+		"scale": 0.18114406779661,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_lancer.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_lancer",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_lancer.png",
+			"source_sha256": "a941de1a1148b33251f6b3fc3ea097bd237a66ca8a0cde3b3e2c8746406731b6",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_shaman/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_shaman.png",
@@ -3160,20 +3068,18 @@
 		"source_sha256": "c27fa105632a483d4c11ef98e6752909910661da3e8f34dd48bc08db13aced41"
 	},
 	"enemies/crypt_shaman/death": {
-		"original_atlas": "assets/enemies/animations/crypt_shaman.png",
-		"original_sha256": "c145e9e180e364cd1e754b56fcd6bf3fb8ceefdf7cc5fbc57067b59b48c24eae",
-		"original_provenance": {
-			"combat_hd_review": 1.0,
-			"processing": "New authored higher-resolution drawings; connected silhouettes, common scale and fixed feet",
-			"sha256": "c145e9e180e364cd1e754b56fcd6bf3fb8ceefdf7cc5fbc57067b59b48c24eae",
-			"source": "art_sources/combat_review_2026_10_19/sources/crypt_shaman.png",
-			"source_sha256": "f393a06fce9be582cbd3a4a82263986222d897e3a1a5919451abf1a69f0d4a97",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.333333333333333,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_shaman/death.png",
-		"source_sha256": "c27fa105632a483d4c11ef98e6752909910661da3e8f34dd48bc08db13aced41"
+		"source_sha256": "682f4172f22a61624a11875cb5995b420b94142e5d562962cec1d29dc1522d94",
+		"scale": 0.185840395480226,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_shaman.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_shaman",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_shaman.png",
+			"source_sha256": "6f73d29ae44dc3c331a8e4bbc01131bdd109fb2fa49b99ff743bb5aa4027b6c3",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_slime/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_slime.png",
@@ -3256,20 +3162,18 @@
 		"source_sha256": "a8b9c3ac156773f0094d3af79d232d14b3e45eb10595ab193d95f580820fa0a9"
 	},
 	"enemies/crypt_slime/death": {
-		"original_atlas": "assets/enemies/animations/crypt_slime.png",
-		"original_sha256": "7e57518b26b7460a58f4c4debb909b46bfc59be719da775c020e4d75694d960a",
-		"original_provenance": {
-			"combat_hd_review": 1.0,
-			"processing": "New authored higher-resolution drawings; connected silhouettes, common scale and fixed feet",
-			"sha256": "7e57518b26b7460a58f4c4debb909b46bfc59be719da775c020e4d75694d960a",
-			"source": "art_sources/combat_review_2026_10_19/sources/crypt_slime.png",
-			"source_sha256": "095374a102cf8d61cdfc73234e51783da18834b741ff0d3b35250bf92ee96099",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.333333333333333,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_slime/death.png",
-		"source_sha256": "a8b9c3ac156773f0094d3af79d232d14b3e45eb10595ab193d95f580820fa0a9"
+		"source_sha256": "98fdc7512c05a48bde9c369a1e7b61d122dcc1a9ba9c23cacbb55963ea1f7e9a",
+		"scale": 0.216031073446327,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_slime.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_slime",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_slime.png",
+			"source_sha256": "a20497b4e01bcd3365a0b0dea9d159ee86e07f57981c2c73c450dd9d216babc3",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/crypt_wolf/idle": {
 		"original_atlas": "assets/enemies/animations/crypt_wolf.png",
@@ -3402,30 +3306,18 @@
 		"source_sha256": "3c23754a1c2919a86c6ea51cffa63bf6116da0ee87fb77babb65e6fd65d28e01"
 	},
 	"enemies/crypt_wolf/death": {
-		"original_atlas": "assets/enemies/animations/crypt_wolf.png",
-		"original_sha256": "a6dff0e8b14b625fa2c9ef50dc380543aa8ce21fcbc14f332655bd39b7081b2c",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_1",
-			"processing": "Original complete drawings, reviewed uneven row boundaries, proportional packing with fixed feet",
-			"row_edges": [
-				0.0,
-				232.0,
-				417.0,
-				608.0,
-				1024.0
-			],
-			"sha256": "a6dff0e8b14b625fa2c9ef50dc380543aa8ce21fcbc14f332655bd39b7081b2c",
-			"sheet_repair_revision": 1.0,
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_1.png",
-			"source_sha256": "b9e3a15992f5f7634826d851f0834b2e03ebe9a14c21ab1214db89e510d3d51a",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_wolf/death.png",
-		"source_sha256": "3c23754a1c2919a86c6ea51cffa63bf6116da0ee87fb77babb65e6fd65d28e01"
+		"source_sha256": "8d40761c170e700ca2aebe3021caa5484b8a6e54d60b3553166c33ece3b63e3d",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_wolf.png",
+		"original_provenance": {
+			"job": "wreckage_crypt_wolf",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_wolf.png",
+			"source_sha256": "f346b6fa2804542e68243098db346056fabdf6285138d92a31abc43da354baf1",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_0/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_0.png",
@@ -3518,22 +3410,18 @@
 		"source_sha256": "5988f97b9040a250b1a57e3b11968e4b7a8410e0c52224b10d70598a55f144e4"
 	},
 	"enemies/elemental_0/death": {
-		"original_atlas": "assets/enemies/animations/elemental_0.png",
-		"original_sha256": "577932e3222a7d2b003800148f81bca1a6b6baf2c59fc79171c23c466976d9a2",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "577932e3222a7d2b003800148f81bca1a6b6baf2c59fc79171c23c466976d9a2",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_7.png",
-			"source_sha256": "746129b18dff88b237e0fb66a6fa423a53b6cc0b3d0b1b687aa34f9bac776675",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_0/death.png",
-		"source_sha256": "5988f97b9040a250b1a57e3b11968e4b7a8410e0c52224b10d70598a55f144e4"
+		"source_sha256": "37c8ed43b12280549e39ae94d881f008c35cdf547d914d6ecddccefdabb4b0fe",
+		"scale": 0.125794491525424,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_0.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_0.png",
+			"source_sha256": "2e6f0077fec2f253eb583a59bb878edfd2c97866f338be0047f19db43ec0fd58",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_1/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_1.png",
@@ -3626,22 +3514,18 @@
 		"source_sha256": "a4aeec4ca21cc755ff5a171c4df3ccbc855584ef5f7dee753b4685f7e93423ad"
 	},
 	"enemies/elemental_1/death": {
-		"original_atlas": "assets/enemies/animations/elemental_1.png",
-		"original_sha256": "7531408b0562590af1fcb98b8ea6528033d27ec6ee7e53bff7c1aea54f34c017",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "7531408b0562590af1fcb98b8ea6528033d27ec6ee7e53bff7c1aea54f34c017",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_7.png",
-			"source_sha256": "60a9e518db7adccfdb7c1c843c6ccae6fb4412c7b4c73c98b64463ca362520e9",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_1/death.png",
-		"source_sha256": "a4aeec4ca21cc755ff5a171c4df3ccbc855584ef5f7dee753b4685f7e93423ad"
+		"source_sha256": "f37933842fc92bd048e1cc8e69e4b5bcd3ce8d6cff77503ebbc6c7db5d4036a3",
+		"scale": 0.162023305084746,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_1.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_1.png",
+			"source_sha256": "fa1b3dc6b5c9241c8a74c22a396f364a838efdb8d9d3a05b38dcb50772e440a4",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_2/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_2.png",
@@ -3734,22 +3618,18 @@
 		"source_sha256": "75e664807cbd643c34f0d5453193c7863a226c95737c972b0d8b04e07c256de3"
 	},
 	"enemies/elemental_2/death": {
-		"original_atlas": "assets/enemies/animations/elemental_2.png",
-		"original_sha256": "44b52fbf72287458ad617f4b67045f91c007d5c5f58bbdceb981e00dfeb9494f",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "44b52fbf72287458ad617f4b67045f91c007d5c5f58bbdceb981e00dfeb9494f",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_3.png",
-			"source_sha256": "5ff2156f69348246a00fd85e3c235b4500165f25842d70d9131b399091e2b786",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_2/death.png",
-		"source_sha256": "75e664807cbd643c34f0d5453193c7863a226c95737c972b0d8b04e07c256de3"
+		"source_sha256": "cdfc46b96330b1d38ff4ff01c1c323a2819e333f1658ef8a73be68ab69f12fe7",
+		"scale": 0.165042372881356,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_2.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_2.png",
+			"source_sha256": "ea645ec5bc1ff677e9ece2e28319c253b0e80b94dbbb44132af4862a36bc3882",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_3/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_3.png",
@@ -3842,22 +3722,18 @@
 		"source_sha256": "b0efd2c2a1390d04572fa535769f8fb69fe4dc7eff39cc88517d64057395d905"
 	},
 	"enemies/elemental_3/death": {
-		"original_atlas": "assets/enemies/animations/elemental_3.png",
-		"original_sha256": "1157c510e9edd358522c42a65fcda0934bbfdf61af044c2b198236f7bceac707",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__elemental_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "1157c510e9edd358522c42a65fcda0934bbfdf61af044c2b198236f7bceac707",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__elemental_3.png",
-			"source_sha256": "544a9d0903623ee3d9f5ae30636ef79c317bed93f304bba93a4b7fa15f2f0053",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_3/death.png",
-		"source_sha256": "b0efd2c2a1390d04572fa535769f8fb69fe4dc7eff39cc88517d64057395d905"
+		"source_sha256": "8636d5f8a6843bb37c1037998f5219a3ab61b82729957b41af9971ea62507bb1",
+		"scale": 0.0986228813559322,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_3.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_3.png",
+			"source_sha256": "5d40ac157cbfc9b7959f297bc280197d441c02b9a4fe5a4dc607dff29163a8c4",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_4/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_4.png",
@@ -3950,22 +3826,18 @@
 		"source_sha256": "8f59dd1fb39507b47e38ce839e2d45b0f9892775293f6842c2909a27e7d556d5"
 	},
 	"enemies/elemental_4/death": {
-		"original_atlas": "assets/enemies/animations/elemental_4.png",
-		"original_sha256": "dde86e21aec74225cd9575228d2ecabe56ff87ec0f0d730e00f3425e6454a923",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__elemental_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "dde86e21aec74225cd9575228d2ecabe56ff87ec0f0d730e00f3425e6454a923",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__elemental_3.png",
-			"source_sha256": "544a9d0903623ee3d9f5ae30636ef79c317bed93f304bba93a4b7fa15f2f0053",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_4/death.png",
-		"source_sha256": "8f59dd1fb39507b47e38ce839e2d45b0f9892775293f6842c2909a27e7d556d5"
+		"source_sha256": "4e4b7bfb86671a0cbbd3ba8a9d952f82b3927276ac9a384b204c597ef3e71d68",
+		"scale": 0.166048728813559,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_4.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_4.png",
+			"source_sha256": "1f8ccb86760d988b64b13eaa2278a9f1a4c01815d90ed71c29148274cc736a3e",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_5/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_5.png",
@@ -4058,22 +3930,18 @@
 		"source_sha256": "9a2f8b95b6172de0214aae6ff97a17c242f6e79484c590db36271817c04937d3"
 	},
 	"enemies/elemental_5/death": {
-		"original_atlas": "assets/enemies/animations/elemental_5.png",
-		"original_sha256": "e4307df1affe34a80a7a783f87e2ffba38a2e980e3c911ebdb2044dfb82848ce",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_5",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "e4307df1affe34a80a7a783f87e2ffba38a2e980e3c911ebdb2044dfb82848ce",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_5.png",
-			"source_sha256": "cf28246c938493dd19b1310f74c5d9292633269b3c58ad7f1e80a544a4e036ec",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_5/death.png",
-		"source_sha256": "9a2f8b95b6172de0214aae6ff97a17c242f6e79484c590db36271817c04937d3"
+		"source_sha256": "316bae028f92c45e4fcc8ab45e9073e977bad1462a5856536e29a0e5fbc78de6",
+		"scale": 0.134851694915254,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_5.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_5.png",
+			"source_sha256": "f9482c7bf9454217d9edd6d1e6d94c8b0d00261ba641fc48074bc57877360d68",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_6/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_6.png",
@@ -4166,22 +4034,18 @@
 		"source_sha256": "f844555acb557a160732c9526c0f8c33a2248d1c7a12476ff629a2563b699c48"
 	},
 	"enemies/elemental_6/death": {
-		"original_atlas": "assets/enemies/animations/elemental_6.png",
-		"original_sha256": "dbe3587f705d1e2aed1414d4ea6a5e4f970002943a05c7847162b1e235b4727e",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_2",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "dbe3587f705d1e2aed1414d4ea6a5e4f970002943a05c7847162b1e235b4727e",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_2.png",
-			"source_sha256": "bffd5fee570fcbf58fdafae643002d873d47b2a899948aa535d2b7edd5068906",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_6/death.png",
-		"source_sha256": "f844555acb557a160732c9526c0f8c33a2248d1c7a12476ff629a2563b699c48"
+		"source_sha256": "60fcd7ee8fc2e2a37d3e848549923593652499402fa96dc9293c91e75e108e82",
+		"scale": 0.185169491525424,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_6.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_6.png",
+			"source_sha256": "8c5adf1acf2362e186f90fefeaf09766600aaf2d5164a1ce32b4e3869b066cd5",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/elemental_7/idle": {
 		"original_atlas": "assets/enemies/animations/elemental_7.png",
@@ -4274,22 +4138,18 @@
 		"source_sha256": "55372c0565f9f01ff2f0fec5b2ed4a5e8a49d79676269dfb986bfc92cafac2c4"
 	},
 	"enemies/elemental_7/death": {
-		"original_atlas": "assets/enemies/animations/elemental_7.png",
-		"original_sha256": "751c34c67f0b2dd1f307a2a1283bd376a3d1427ec7d56ccc250add67ceb0070f",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "751c34c67f0b2dd1f307a2a1283bd376a3d1427ec7d56ccc250add67ceb0070f",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_3.png",
-			"source_sha256": "5ff2156f69348246a00fd85e3c235b4500165f25842d70d9131b399091e2b786",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5646,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_7/death.png",
-		"source_sha256": "55372c0565f9f01ff2f0fec5b2ed4a5e8a49d79676269dfb986bfc92cafac2c4"
+		"source_sha256": "a54ccbb0bd32ffa784b5fd3eb418d1b329fc24c8a0f596bfd77392849fb245e4",
+		"scale": 0.171080508474576,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_7.png",
+		"original_provenance": {
+			"job": "wreckage_elemental_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_7.png",
+			"source_sha256": "9dcf7571faa5906bc3196e04f9166c6434a6dfa809b619471f17b4f1d6e99fa4",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_0/idle": {
 		"original_atlas": "assets/enemies/animations/flying_0.png",
@@ -4382,22 +4242,18 @@
 		"source_sha256": "b59634ea7297c24c322972a82e1e23590829cd357c5be40c1abb557b180bfc79"
 	},
 	"enemies/flying_0/death": {
-		"original_atlas": "assets/enemies/animations/flying_0.png",
-		"original_sha256": "95cc29e1a760e78d61b6861b7d70c95a587f0b4fdb8401d7666a00b7e3704509",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "95cc29e1a760e78d61b6861b7d70c95a587f0b4fdb8401d7666a00b7e3704509",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_7.png",
-			"source_sha256": "60a9e518db7adccfdb7c1c843c6ccae6fb4412c7b4c73c98b64463ca362520e9",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_0/death.png",
-		"source_sha256": "b59634ea7297c24c322972a82e1e23590829cd357c5be40c1abb557b180bfc79"
+		"source_sha256": "8931a00b81f8cbb4373a73e713f69087d1965a4b0ddf59ca7efa41ee86bd5a11",
+		"scale": 0.194226694915254,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_0.png",
+		"original_provenance": {
+			"job": "wreckage_flying_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_0.png",
+			"source_sha256": "24a0a6ee72f53dbfd8d42ae8b1a778fef43f2e8b72475eda37fd35ffb062eba3",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_1/idle": {
 		"original_atlas": "assets/enemies/animations/flying_1.png",
@@ -4530,30 +4386,18 @@
 		"source_sha256": "636ecc05ef7255ae07989e0f181c08c763a487ee5f252514a3f06c2cf9465dcf"
 	},
 	"enemies/flying_1/death": {
-		"original_atlas": "assets/enemies/animations/flying_1.png",
-		"original_sha256": "91b553f09d1847d5450e7edfbe57c489c5e40ad46e8bc9e477b18e4baa85b527",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_1",
-			"processing": "Original complete drawings, reviewed uneven row boundaries, proportional packing with fixed feet",
-			"row_edges": [
-				0.0,
-				232.0,
-				417.0,
-				608.0,
-				1024.0
-			],
-			"sha256": "91b553f09d1847d5450e7edfbe57c489c5e40ad46e8bc9e477b18e4baa85b527",
-			"sheet_repair_revision": 1.0,
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_1.png",
-			"source_sha256": "b9e3a15992f5f7634826d851f0834b2e03ebe9a14c21ab1214db89e510d3d51a",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_1/death.png",
-		"source_sha256": "636ecc05ef7255ae07989e0f181c08c763a487ee5f252514a3f06c2cf9465dcf"
+		"source_sha256": "a59a533d7f50d70267c75a286410e8bd4bcd3a9b8c24b44c7e6696a376d3ea4c",
+		"scale": 0.194226694915254,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_1.png",
+		"original_provenance": {
+			"job": "wreckage_flying_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_1.png",
+			"source_sha256": "0e2502047dc295afaebc5763040d0e2fb10c4fc4f7beac51f8a80c2d864493d1",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_2/idle": {
 		"original_atlas": "assets/enemies/animations/flying_2.png",
@@ -4646,22 +4490,18 @@
 		"source_sha256": "6747b0f1a23f80665bd9ccee5520be42b44e5756dd0ce77a46221f7e1d757d8b"
 	},
 	"enemies/flying_2/death": {
-		"original_atlas": "assets/enemies/animations/flying_2.png",
-		"original_sha256": "a5cb64415c135ef111e2cbf8f7ce183ba2fc99ebcf8640df1855f7351f23400c",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_5",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "a5cb64415c135ef111e2cbf8f7ce183ba2fc99ebcf8640df1855f7351f23400c",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_5.png",
-			"source_sha256": "cf28246c938493dd19b1310f74c5d9292633269b3c58ad7f1e80a544a4e036ec",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_2/death.png",
-		"source_sha256": "6747b0f1a23f80665bd9ccee5520be42b44e5756dd0ce77a46221f7e1d757d8b"
+		"source_sha256": "055ad8214a60a2868fd055c7ec79cd6b69346ffe0934449fc4748501e03414de",
+		"scale": 0.163029661016949,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_2.png",
+		"original_provenance": {
+			"job": "wreckage_flying_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_2.png",
+			"source_sha256": "ca4329b743c56c5605723873cb8d92727dd9117eb69d6e0523fb02ed5757ed1c",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_3/idle": {
 		"original_atlas": "assets/enemies/animations/flying_3.png",
@@ -4754,22 +4594,18 @@
 		"source_sha256": "a90379c854e8d1f0d6a9e01ce03cf24df69ea183e9fa62c25a63954407c49583"
 	},
 	"enemies/flying_3/death": {
-		"original_atlas": "assets/enemies/animations/flying_3.png",
-		"original_sha256": "82d41414cbfa61f22b4932bdda505ae5299ea8d6659d93395fee4f3e4797c210",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_flying_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "82d41414cbfa61f22b4932bdda505ae5299ea8d6659d93395fee4f3e4797c210",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_flying_3.png",
-			"source_sha256": "40ba0804a0dd5347de474ef4284efadc366615ccea8aebf0a8bb655b1cbb023b",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_3/death.png",
-		"source_sha256": "a90379c854e8d1f0d6a9e01ce03cf24df69ea183e9fa62c25a63954407c49583"
+		"source_sha256": "9a1dd806fd5a738e62ed987f6d49b930fe16c10ad723f06bb19ecf3dd1de7777",
+		"scale": 0.195233050847458,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_3.png",
+		"original_provenance": {
+			"job": "wreckage_flying_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_3.png",
+			"source_sha256": "c9c4a364429c8b9411047818231fbca00f4871861f79c46589f85e9a527a5fc6",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_4/idle": {
 		"original_atlas": "assets/enemies/animations/flying_4.png",
@@ -4862,22 +4698,18 @@
 		"source_sha256": "162e725c4c699808a8a7f0b70766eeab1344dcd249fabd73ea356558ee53a2e3"
 	},
 	"enemies/flying_4/death": {
-		"original_atlas": "assets/enemies/animations/flying_4.png",
-		"original_sha256": "45543af6b981d627cc9980baa5c26c10438a9e98ced2f6aaab774cc39f5e4868",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "45543af6b981d627cc9980baa5c26c10438a9e98ced2f6aaab774cc39f5e4868",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_7.png",
-			"source_sha256": "60a9e518db7adccfdb7c1c843c6ccae6fb4412c7b4c73c98b64463ca362520e9",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_4/death.png",
-		"source_sha256": "162e725c4c699808a8a7f0b70766eeab1344dcd249fabd73ea356558ee53a2e3"
+		"source_sha256": "5d067fceba094bc590ba0204d7b69f60bfab3823106e8379e7302915c457851f",
+		"scale": 0.156991525423729,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_4.png",
+		"original_provenance": {
+			"job": "wreckage_flying_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_4.png",
+			"source_sha256": "6c8642d0b395e5353dc2dfd55eeb0fee01bf7d061fd0b1d1498bf4ec4c6f73e7",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_5/idle": {
 		"original_atlas": "assets/enemies/animations/flying_5.png",
@@ -4970,22 +4802,18 @@
 		"source_sha256": "ca65aef49536e9918510e97b657ed045cc7f7fdaa2e7ceedcb0bb9de80d69fb3"
 	},
 	"enemies/flying_5/death": {
-		"original_atlas": "assets/enemies/animations/flying_5.png",
-		"original_sha256": "3d3a59a0d8a0cd0926ca84b554a516d9533923a8dc4969a0d94518e0f9da86e5",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "3d3a59a0d8a0cd0926ca84b554a516d9533923a8dc4969a0d94518e0f9da86e5",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_4.png",
-			"source_sha256": "90e699172a812181540ba68d740b46abe0652cc94240214472c0cfc4686b5b40",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_5/death.png",
-		"source_sha256": "ca65aef49536e9918510e97b657ed045cc7f7fdaa2e7ceedcb0bb9de80d69fb3"
+		"source_sha256": "b20c99254bbdf130abf0fceb1c45e437c6db7d5a88a6316edb1be0d3f56c2475",
+		"scale": 0.18416313559322,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_5.png",
+		"original_provenance": {
+			"job": "wreckage_flying_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_5.png",
+			"source_sha256": "b8f1159066d9bdea4cc808eb5d4bdca6f209520ed2bcbdef41d13f8ce3b6394d",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_6/idle": {
 		"original_atlas": "assets/enemies/animations/flying_6.png",
@@ -5118,30 +4946,18 @@
 		"source_sha256": "e8b6a1a6d0438dac21cc8d447c926bd3f0243fcce4992e372c5574b8f7809218"
 	},
 	"enemies/flying_6/death": {
-		"original_atlas": "assets/enemies/animations/flying_6.png",
-		"original_sha256": "21b4434c857427b16945613cd6519560ddc96172f66763fbaff68f5b9676d025",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_1",
-			"processing": "Original complete drawings, reviewed uneven row boundaries, proportional packing with fixed feet",
-			"row_edges": [
-				0.0,
-				232.0,
-				417.0,
-				608.0,
-				1024.0
-			],
-			"sha256": "21b4434c857427b16945613cd6519560ddc96172f66763fbaff68f5b9676d025",
-			"sheet_repair_revision": 1.0,
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_1.png",
-			"source_sha256": "b9e3a15992f5f7634826d851f0834b2e03ebe9a14c21ab1214db89e510d3d51a",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_6/death.png",
-		"source_sha256": "e8b6a1a6d0438dac21cc8d447c926bd3f0243fcce4992e372c5574b8f7809218"
+		"source_sha256": "f6fe29c5089abb3bcf9a26bc5cb48dc77c8f1b8c6b3f6e2a309fc7eecd4c4a90",
+		"scale": 0.18416313559322,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_6.png",
+		"original_provenance": {
+			"job": "wreckage_flying_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_6.png",
+			"source_sha256": "1498c7b1fd3455e1908e5b4c2faa820e87ad9f6708accdb2f921090094bd3f28",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/flying_7/idle": {
 		"original_atlas": "assets/enemies/animations/flying_7.png",
@@ -5234,22 +5050,18 @@
 		"source_sha256": "4bfdf23cd380300d4ee34cbbec5189ac9930fccc5474937bb1dfacc18a13e45e"
 	},
 	"enemies/flying_7/death": {
-		"original_atlas": "assets/enemies/animations/flying_7.png",
-		"original_sha256": "d4e4423b7248ddb06dc1461acbb2d2532a600e4905fbdf8bc8166e14efb2c106",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__flying_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "d4e4423b7248ddb06dc1461acbb2d2532a600e4905fbdf8bc8166e14efb2c106",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__flying_7.png",
-			"source_sha256": "fed1ce36775a87ed77b7df363b778493fb4b0c634bb4bdbf77fb2a599a500e96",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_7/death.png",
-		"source_sha256": "4bfdf23cd380300d4ee34cbbec5189ac9930fccc5474937bb1dfacc18a13e45e"
+		"source_sha256": "179e31054b0313cec25b6c21c724daa7151a29fd8a06f834d677b55f627af555",
+		"scale": 0.229449152542373,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/flying_7.png",
+		"original_provenance": {
+			"job": "wreckage_flying_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_7.png",
+			"source_sha256": "13621062c50aad44faf034411c208f161de91c7c25f99b55b1ee3099615addce",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_0/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_0.png",
@@ -5342,22 +5154,18 @@
 		"source_sha256": "e30aef938d93fadc836ca37757088dc54eedf66c252c5e3c55e7528415ace0a0"
 	},
 	"enemies/goblin_0/death": {
-		"original_atlas": "assets/enemies/animations/goblin_0.png",
-		"original_sha256": "00f14eaf8fbe8aafe2a81fa53e6c08f12e6d4a265a64e583e23f0c99b3891718",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_goblin_0",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "00f14eaf8fbe8aafe2a81fa53e6c08f12e6d4a265a64e583e23f0c99b3891718",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_goblin_0.png",
-			"source_sha256": "32854b73ac82009703e6600cf66520f4078dfebbc1c3c4fc258a2131beb58840",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_0/death.png",
-		"source_sha256": "e30aef938d93fadc836ca37757088dc54eedf66c252c5e3c55e7528415ace0a0"
+		"source_sha256": "bad6dc5129b2453cd2d40582f21d1cdf9086127e2746969c4569b629f919264a",
+		"scale": 0.160010593220339,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_0.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_0.png",
+			"source_sha256": "d63915b10a41f2eb39b152e2bf4de128c11d607be2f0cb357cf5d44001ea377c",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_1/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_1.png",
@@ -5450,22 +5258,18 @@
 		"source_sha256": "7d9d0a4056f4b921b37c02964422511bc0547a4d9f669d7076306b3e0b7f3a65"
 	},
 	"enemies/goblin_1/death": {
-		"original_atlas": "assets/enemies/animations/goblin_1.png",
-		"original_sha256": "47593e7672ee760bfbc9546b32a0b227d07bb9578d9dad801b722e972327d5f3",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_1",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "47593e7672ee760bfbc9546b32a0b227d07bb9578d9dad801b722e972327d5f3",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_1.png",
-			"source_sha256": "5dc91e0ff04cf94afac5f394379e6e76da3d53c20ede1bd9524344e3dcb66059",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_1/death.png",
-		"source_sha256": "7d9d0a4056f4b921b37c02964422511bc0547a4d9f669d7076306b3e0b7f3a65"
+		"source_sha256": "295cfce3413660650c0b6e3bea5de8d7d8110727735470aae13bf322ee4c1c5e",
+		"scale": 0.174099576271186,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_1.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_1.png",
+			"source_sha256": "c99b5a4591b56f87475f30f91a2716702ae09a2ad477b3ab4a0a2087823cc76b",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_2/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_2.png",
@@ -5558,22 +5362,18 @@
 		"source_sha256": "ba1358f41b5407be97f17c81c2badc6b02444a5cecf036e1e706d5e0a7dcddda"
 	},
 	"enemies/goblin_2/death": {
-		"original_atlas": "assets/enemies/animations/goblin_2.png",
-		"original_sha256": "147b01bf25cbbcc1ff16b32eb164e2e766a25500cc0e4920d333d0cc2bdf4105",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_0",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "147b01bf25cbbcc1ff16b32eb164e2e766a25500cc0e4920d333d0cc2bdf4105",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_0.png",
-			"source_sha256": "f116f3dd0dd83e4b742741eab6fefc339b4ae3b9346c4d51bc48abdf19a15305",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_2/death.png",
-		"source_sha256": "ba1358f41b5407be97f17c81c2badc6b02444a5cecf036e1e706d5e0a7dcddda"
+		"source_sha256": "04516454706d787e2c2763f7a2acdbb2508414620d9977d6d0ae9d9d3daa168b",
+		"scale": 0.199258474576271,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_2.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_2.png",
+			"source_sha256": "21d626fe7b1ada0db544c9cade53680760e68c4e642a54d1a1406436567ebc94",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_3/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_3.png",
@@ -5666,22 +5466,18 @@
 		"source_sha256": "dee8e3458b524a33230ae1f3454657ce9abbd4828eb8ddec01b36d846ef86f30"
 	},
 	"enemies/goblin_3/death": {
-		"original_atlas": "assets/enemies/animations/goblin_3.png",
-		"original_sha256": "a99ad42876128af3353a44adfe0793789438ce5370e7d0d638e74d90013fdac3",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_0",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "a99ad42876128af3353a44adfe0793789438ce5370e7d0d638e74d90013fdac3",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_0.png",
-			"source_sha256": "f116f3dd0dd83e4b742741eab6fefc339b4ae3b9346c4d51bc48abdf19a15305",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_3/death.png",
-		"source_sha256": "dee8e3458b524a33230ae1f3454657ce9abbd4828eb8ddec01b36d846ef86f30"
+		"source_sha256": "5a0f95baede957355fe94fa016e5bc14def64ddccb0e68f02d867f30ee3595b4",
+		"scale": 0.161016949152542,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_3.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_3.png",
+			"source_sha256": "71a1c66407194cc6da92c90db5966e90e3dae0d6b1ff84a559c7dd65bac55e33",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_4/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_4.png",
@@ -5774,22 +5570,18 @@
 		"source_sha256": "ec02f566556668a1de0d2459a2e49be3f12470d8e6f7e1442ae6e902e4b7e3ed"
 	},
 	"enemies/goblin_4/death": {
-		"original_atlas": "assets/enemies/animations/goblin_4.png",
-		"original_sha256": "29ef0b80c0ebe2c174d7940dda32af4662747ceb1c66e7b71e2d6848520be7dc",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "29ef0b80c0ebe2c174d7940dda32af4662747ceb1c66e7b71e2d6848520be7dc",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_4.png",
-			"source_sha256": "3291cab58483d5161c6bfbc381bec53869c7471f43b73ef0ab09e67ccf52d555",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_4/death.png",
-		"source_sha256": "ec02f566556668a1de0d2459a2e49be3f12470d8e6f7e1442ae6e902e4b7e3ed"
+		"source_sha256": "a8e98e60fc298963dcee61e364bfa845e9959076dbd3396ac44e9769e5874c1d",
+		"scale": 0.128813559322034,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_4.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_4.png",
+			"source_sha256": "75d638a89e3bf3063e8f01ce3348a6fb8e080a8a4f305e0a06e82ebece6f5740",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_5/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_5.png",
@@ -5882,22 +5674,18 @@
 		"source_sha256": "a70b5f2e7090b8a83f9ebf3fca6c2260545785a5067d79432e9caaaca0056f2f"
 	},
 	"enemies/goblin_5/death": {
-		"original_atlas": "assets/enemies/animations/goblin_5.png",
-		"original_sha256": "9686ee00362982676689fac81f1d26334d46e7a9fed4231e3dff9a6c2fed7e81",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "9686ee00362982676689fac81f1d26334d46e7a9fed4231e3dff9a6c2fed7e81",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_4.png",
-			"source_sha256": "3291cab58483d5161c6bfbc381bec53869c7471f43b73ef0ab09e67ccf52d555",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_5/death.png",
-		"source_sha256": "a70b5f2e7090b8a83f9ebf3fca6c2260545785a5067d79432e9caaaca0056f2f"
+		"source_sha256": "0b8be1fb9db9fc7b363e9d3dc8893bab753aee8e380c8086d43f2d7fa731f8af",
+		"scale": 0.154978813559322,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_5.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_5.png",
+			"source_sha256": "db6bce67325ab027c7a49b42c10dd8d16639361cee61d4f9d57ec699752a939d",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_6/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_6.png",
@@ -5990,22 +5778,18 @@
 		"source_sha256": "6a3f2d2cb7c7ed6fa1be925dece31bd655e9f5bdf40464c958bc039eed425d6c"
 	},
 	"enemies/goblin_6/death": {
-		"original_atlas": "assets/enemies/animations/goblin_6.png",
-		"original_sha256": "91d7e75f4508c08cdd4d9a81039c2a5c9f9985357aa40d10bf6764964b9c0e46",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__goblin_4",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "91d7e75f4508c08cdd4d9a81039c2a5c9f9985357aa40d10bf6764964b9c0e46",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__goblin_4.png",
-			"source_sha256": "3291cab58483d5161c6bfbc381bec53869c7471f43b73ef0ab09e67ccf52d555",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_6/death.png",
-		"source_sha256": "6a3f2d2cb7c7ed6fa1be925dece31bd655e9f5bdf40464c958bc039eed425d6c"
+		"source_sha256": "dcb15db53014c1170aa02bc4d3c695b6e9d97194f90246b6ed3c6e63dfdc351d",
+		"scale": 0.119756355932203,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_6.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_6.png",
+			"source_sha256": "95ef5e50934783c1960988f532589ef71ec5e73a6ca3439fcac6d4db5ca84ddd",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/goblin_7/idle": {
 		"original_atlas": "assets/enemies/animations/goblin_7.png",
@@ -6098,22 +5882,18 @@
 		"source_sha256": "e43a1853d8f3bd7e1d3bcec7f265071894090bdd15219e65833b38015c763dbb"
 	},
 	"enemies/goblin_7/death": {
-		"original_atlas": "assets/enemies/animations/goblin_7.png",
-		"original_sha256": "e1bfd255e3e79aaf989ce9b36617e04614de66f53d84286f53ee0d9672e0f871",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "expressive_goblin_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "e1bfd255e3e79aaf989ce9b36617e04614de66f53d84286f53ee0d9672e0f871",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/expressive_goblin_7.png",
-			"source_sha256": "a0fd1be892f8b842da262426c671321842ef946c76c0163ab23f4e25ed180319",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_7/death.png",
-		"source_sha256": "e43a1853d8f3bd7e1d3bcec7f265071894090bdd15219e65833b38015c763dbb"
+		"source_sha256": "02370608adbda8374d852b6824569b7ed6144c2db1e871280c1a56c863e8875c",
+		"scale": 0.177118644067797,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_7.png",
+		"original_provenance": {
+			"job": "wreckage_goblin_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_7.png",
+			"source_sha256": "608725bb17b1a02448837f8db3d942fdb16591ad3f9107c2931fcba69207b58b",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_0/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_0.png",
@@ -6206,22 +5986,18 @@
 		"source_sha256": "e12e274e045d3897faf56c3ca3180d68ceacc11e3517734e1370d3b6f9539f5c"
 	},
 	"enemies/skeleton_0/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_0.png",
-		"original_sha256": "a377016bc47ce554c13a47db1d54513f7ab5c61cfedc53053e2dccbdf05fae05",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_6",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "a377016bc47ce554c13a47db1d54513f7ab5c61cfedc53053e2dccbdf05fae05",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_6.png",
-			"source_sha256": "4d0c991fa8fd2e5836a810c534250d84180a502129f789ba89682296b8a1cbfb",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_0/death.png",
-		"source_sha256": "e12e274e045d3897faf56c3ca3180d68ceacc11e3517734e1370d3b6f9539f5c"
+		"source_sha256": "613b26c1aa553dcab818ac7cfa98156f33fc213cbf42560cdcee3287ad9b7920",
+		"scale": 0.138877118644068,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_0.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_0",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_0.png",
+			"source_sha256": "4b5de9672ac4da2a9df96b6dcfdbf50683f6c4194085ceb1c4a2b39a6ce778c3",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_1/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_1.png",
@@ -6314,22 +6090,18 @@
 		"source_sha256": "6defd9afbd8a7386bce12ff78360f86f9bbec3a6e7941f1eb116591326b38c07"
 	},
 	"enemies/skeleton_1/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_1.png",
-		"original_sha256": "204a8cd94d86bbdefa5a99bd389816149ed644483ef094de809f64031e6488d9",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__bandit_2",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "204a8cd94d86bbdefa5a99bd389816149ed644483ef094de809f64031e6488d9",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__bandit_2.png",
-			"source_sha256": "bffd5fee570fcbf58fdafae643002d873d47b2a899948aa535d2b7edd5068906",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_1/death.png",
-		"source_sha256": "6defd9afbd8a7386bce12ff78360f86f9bbec3a6e7941f1eb116591326b38c07"
+		"source_sha256": "5a4fd950bfff4a29346e07d063c5b85856a06ff8064c1b82e4bb1eedf17de889",
+		"scale": 0.141896186440678,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_1.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_1",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_1.png",
+			"source_sha256": "eee5f04239909666d2c575e613a98ef656724cd58feb2a6a7c742c697387fd27",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_2/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_2.png",
@@ -6422,22 +6194,18 @@
 		"source_sha256": "68a4e6d32893ce1a2692b314d016c2532ce56e050edf95e4d1645a9b309e8661"
 	},
 	"enemies/skeleton_2/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_2.png",
-		"original_sha256": "6ecc3a6eec514781c7f888ef000e1208991ef4063f7b246a045263764a382dfb",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_6",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "6ecc3a6eec514781c7f888ef000e1208991ef4063f7b246a045263764a382dfb",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_6.png",
-			"source_sha256": "4d0c991fa8fd2e5836a810c534250d84180a502129f789ba89682296b8a1cbfb",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_2/death.png",
-		"source_sha256": "68a4e6d32893ce1a2692b314d016c2532ce56e050edf95e4d1645a9b309e8661"
+		"source_sha256": "2d7da60ebdc198fa2cc9a5ffc1c75401f7d7f58af2c79c0945baa3cc8b589f20",
+		"scale": 0.157997881355932,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_2.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_2",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_2.png",
+			"source_sha256": "0d6121e3571d9b18870f6d1802fbf31d951e612678884dc4d6967703e81713ff",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_3/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_3.png",
@@ -6530,22 +6298,18 @@
 		"source_sha256": "f0de6f81a548105cfdffbbad5c06148f546e28f130870e3d1a8e8acc45967e91"
 	},
 	"enemies/skeleton_3/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_3.png",
-		"original_sha256": "78ea54c53846d680da253b8b7ce548cd7eeea86f0dca5167301c14843248894b",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "78ea54c53846d680da253b8b7ce548cd7eeea86f0dca5167301c14843248894b",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_3.png",
-			"source_sha256": "5ff2156f69348246a00fd85e3c235b4500165f25842d70d9131b399091e2b786",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_3/death.png",
-		"source_sha256": "f0de6f81a548105cfdffbbad5c06148f546e28f130870e3d1a8e8acc45967e91"
+		"source_sha256": "147efe283e55de1871aaeeafcf7c6884d9f7e1ee4918062f9826e37f8366faf4",
+		"scale": 0.110699152542373,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_3.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_3",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_3.png",
+			"source_sha256": "5fe948d80abdcd212a655c1dd54c1f41d5bc9155604575ef81145749014c5a6c",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_4/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_4.png",
@@ -6638,22 +6402,18 @@
 		"source_sha256": "1770057db214e889cb3e41c5e7420801cd288d6282d7c59b4c90f79f2988d774"
 	},
 	"enemies/skeleton_4/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_4.png",
-		"original_sha256": "b08be4fc5da6d6093be19f366fec3a18bd8108204c80129dee137c9a2b603fae",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__beast_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "b08be4fc5da6d6093be19f366fec3a18bd8108204c80129dee137c9a2b603fae",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__beast_7.png",
-			"source_sha256": "746129b18dff88b237e0fb66a6fa423a53b6cc0b3d0b1b687aa34f9bac776675",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_4/death.png",
-		"source_sha256": "1770057db214e889cb3e41c5e7420801cd288d6282d7c59b4c90f79f2988d774"
+		"source_sha256": "6ebea598ced5f48d0f312ddd0aeb069c7b0dfe0d72e77e768c5ad0a19794fa14",
+		"scale": 0.139883474576271,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_4.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_4",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_4.png",
+			"source_sha256": "5f69a7f93855c86fd06eb969b627c780161a0530b11995f534c5444dbd0f7609",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_5/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_5.png",
@@ -6746,22 +6506,18 @@
 		"source_sha256": "3e81ecf0a72fe1f0bc731982994b6175d8ef6a6e3e77ef7c348c49ee94b391a9"
 	},
 	"enemies/skeleton_5/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_5.png",
-		"original_sha256": "b01b3d5390a1ae2ef280f3cefdc3603fe8f9d53c534219cee648d84a634b3924",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_3",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "b01b3d5390a1ae2ef280f3cefdc3603fe8f9d53c534219cee648d84a634b3924",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_3.png",
-			"source_sha256": "5ff2156f69348246a00fd85e3c235b4500165f25842d70d9131b399091e2b786",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_5/death.png",
-		"source_sha256": "3e81ecf0a72fe1f0bc731982994b6175d8ef6a6e3e77ef7c348c49ee94b391a9"
+		"source_sha256": "136cc485f087f4ae73f14708356389e255a4100005456d0481cc5a83bd82db8c",
+		"scale": 0.153972457627119,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_5.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_5",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_5.png",
+			"source_sha256": "30131f4b02caaf3700961908f827488af86a8422bb8c57c4fef9e7ef2bb3e3e0",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_6/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_6.png",
@@ -6844,20 +6600,18 @@
 		"source_sha256": "b0732053c451e84378e2f777dd6bd5a8841e79baa90cd3cd27a8fa82e51c2be2"
 	},
 	"enemies/skeleton_6/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_6.png",
-		"original_sha256": "ec12616d1950312ebbf995b45063e3260c24f5d4f1ad483731e518aa349c36f1",
-		"original_provenance": {
-			"combat_hd_review": 1.0,
-			"processing": "New authored higher-resolution drawings; connected silhouettes, common scale and fixed feet",
-			"sha256": "ec12616d1950312ebbf995b45063e3260c24f5d4f1ad483731e518aa349c36f1",
-			"source": "art_sources/combat_review_2026_10_19/sources/skeleton_6.png",
-			"source_sha256": "54f84fb2463d14d33c03bf7370a9dfdfe1a5ff9571663ca8d7ee5a40dd2e5cc7",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.333333333333333,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_6/death.png",
-		"source_sha256": "b0732053c451e84378e2f777dd6bd5a8841e79baa90cd3cd27a8fa82e51c2be2"
+		"source_sha256": "ec0cbebcf3b62bac4c21dbb51cf3d19f4eec7bff87924426535f1dc10eb6ce46",
+		"scale": 0.181814971751412,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_6.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_6",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_6.png",
+			"source_sha256": "f747a4beef12803469b24e56328afa765d1dda34dd64bbba9006bd110f02a74d",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	},
 	"enemies/skeleton_7/idle": {
 		"original_atlas": "assets/enemies/animations/skeleton_7.png",
@@ -6950,21 +6704,17 @@
 		"source_sha256": "44f421eee37e7c26869345f19f42d783cb7da6d231ce0ff0b0688c230dbfd863"
 	},
 	"enemies/skeleton_7/death": {
-		"original_atlas": "assets/enemies/animations/skeleton_7.png",
-		"original_sha256": "4a22344181c749ae37c485ccf64325c68be8424fb42b87b7347d80105dbbee74",
-		"original_provenance": {
-			"comic_processing_version": 3.0,
-			"comic_rebuild_revision": 1.0,
-			"job": "machines_enemies__animations__skeleton_7",
-			"processing": "new authored comic illustration, geometric crop/pack, same resource path",
-			"sha256": "4a22344181c749ae37c485ccf64325c68be8424fb42b87b7347d80105dbbee74",
-			"source": "art_sources/comic_rebuild_2026_10_17/sources/machines_enemies__animations__skeleton_7.png",
-			"source_sha256": "60a9e518db7adccfdb7c1c843c6ccae6fb4412c7b4c73c98b64463ca362520e9",
-			"style": "postapocalyptic_comic"
-		},
-		"selected_frame": 7.0,
-		"scale": 0.5,
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_7/death.png",
-		"source_sha256": "44f421eee37e7c26869345f19f42d783cb7da6d231ce0ff0b0688c230dbfd863"
+		"source_sha256": "7b939181202b8595832e09308f056b1d41638fd1c329157e3c6239f2b0d1598e",
+		"scale": 0.195233050847458,
+		"original_atlas": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_7.png",
+		"original_provenance": {
+			"job": "wreckage_skeleton_7",
+			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_7.png",
+			"source_sha256": "bb2ef7b1c1048b612122d1a0c082e360e205fb79aadee8fb97d9bbea77ce288b",
+			"wreckage_revision": 1
+		},
+		"outline_baked": true,
+		"wreckage": true
 	}
 }

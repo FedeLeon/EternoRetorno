@@ -4,6 +4,39 @@ Esta página registra el mantenimiento de la documentación y sistemas actuales.
 Los registros extensos de diseños reemplazados se consultan en Git; no se
 mantienen como manuales alternativos dentro de `docs/`.
 
+## 22/10/2026 — Anuncio de victoria sobre la batalla
+
+VICTORIA y K.O. superpuestos en el centro, con letras de pincel inspiradas en el
+título inicial, colores distintos y flotación suave. Aparece tras el último impacto
+y antes de las recompensas; fuentes y prompts conservados. Revisión visual nativa
+y comprobaciones locales correctas; pruebas temporales retiradas.
+
+## 22/10/2026 — Ataques enemigos más legibles
+
+Primer plano de ataque de 0,72 a 0,92 s y pausa de 0,18 s tras cada impacto.
+Mayor duración también sin primeros planos; conserva la velocidad configurable.
+Comprobación nativa de tiempos y pruebas locales de secuencia y primeros planos
+correctas; pruebas temporales retiradas.
+
+## 21/10/2026 — Robots destruidos permanecen en batalla
+
+56 dibujos propios de máquinas desarmadas, con cables y piezas rotas sobre el suelo
+y chispazos intermitentes. Escala estable al reconstruir la vista y restauración al
+revivir. Fuentes y prompts conservados; revisión visual nativa, 520 controles
+temporales y 105 suites locales correctas, sin exportar APK.
+
+## 21/10/2026 — Campamento sin dibujos de solares
+
+Edificios sin construir muestran solo el fondo y conservan la zona clickeable de
+construcción. Retirado el bloque informativo inferior del laboratorio. Revisión
+visual nativa y 375 controles locales correctos; pruebas temporales retiradas.
+
+## 21/10/2026 — Pantalla completa en celular
+
+Lienzo ajustado al ancho y alto disponibles y Android de borde a borde, manteniendo
+el modo inmersivo. Revisión nativa en cuatro formatos y 140 controles locales
+correctos; sin exportar APK ni validar en dispositivo físico.
+
 ## 20/10/2026 — Robots que desprenden piezas al recibir daño
 
 Chapas, tornillos y cables saltan, rebotan y permanecen junto al robot durante el

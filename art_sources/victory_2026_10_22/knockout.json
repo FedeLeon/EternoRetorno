@@ -1,0 +1,13 @@
+{
+  "purpose": "Battle victory announcement lettering matching the title screen",
+  "generator": "built-in image_gen",
+  "reference": "assets/title/background.png",
+  "source": "art_sources/victory_2026_10_22/sources/knockout.png",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-302df889-3397-4046-b47b-da9acb340ffb.png",
+  "runtime": "assets/battle_results/knockout.png",
+  "processing": "Transparent bounds crop and proportional reduction in Godot",
+  "prompt": "Create a transparent 2D videogame victory wordmark. The attached image is STYLE REFERENCE ONLY: closely match the distinctive ETERNO RETORNO title lettering at its top: huge heavy forward-slanted uppercase hand-painted brush capitals, irregular sharp jagged edges, energetic dry-brush strokes, black ink rim and short black brush shadow. No generic sans-serif typeface. Only the requested word centered, clean readable comic brush lettering, no other text, scenery, people, panel, border or backdrop. Generous transparent margins, true transparent background. Exact text: \"K.O.\". Bright turquoise/teal letters with ivory brush highlights, black ink rim. Clearly render uppercase K, period, uppercase O, final period. One single horizontal line. No VICTORIA or ETERNO RETORNO text.",
+  "source_sha256": "ba78fcba9f4e66255c1de243f71956939a7de7d0785658d65de274196a287787",
+  "reference_sha256": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320",
+  "sha256": "f1330bd8acea4e73630b97e9cf78545c56ab04b7d1caf459e88f18ea5aba8591"
+}

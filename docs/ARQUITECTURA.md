@@ -68,6 +68,12 @@ recreados: piezas en vuelo delante del cuerpo y restos asentados detrás. Lee lo
 impactos confirmados, sin cambiar reglas, guardados ni RNG; deja de actualizar al
 asentarse y reinicia al cambiar de combate.
 
+Los 56 modelos enemigos conservan su PNG `death` sobre el suelo. El componente
+`wreckage_sparks.gd` dibuja descargas independientes, respeta efectos reducidos y
+destellos y se detiene al revivir. La escala usa la silueta de reposo para no agrandar
+los restos al reconstruir la interfaz. `import_enemy_wreckage.gd` importa las fuentes
+y prompts de `art_sources/enemy_wreckage_2026_10_21/` sin deformar los dibujos.
+
 `enemy_visuals.json` declara `foreground.attack` y `foreground.defense` por modelo.
 `enemy_cut_in.gd.artwork()` resuelve esas rutas con `json_catalog.gd`; no compone
 una ruta antigua ni selecciona imágenes de otra identidad. El importador offline

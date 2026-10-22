@@ -37,7 +37,7 @@ def prepare():
         source = ROOT / source_path
         image = Image.open(source).convert("RGBA")
         scale = record["scale"]
-        if kind == "enemies" and action == "death":
+        if kind == "enemies" and action == "death" and not record.get("wreckage", False):
             # A fixed disabled-machine illustration, not a dissolve or rotation.
             alpha = image.getchannel("A")
             image = ImageEnhance.Brightness(ImageEnhance.Color(image).enhance(.15)).enhance(.55)
@@ -58,6 +58,13 @@ def prepare():
                               "processing": "Single selected authored drawing; disabled enemy is a fixed dark desaturated variant",
                               "origin": provenance["original_provenance"]}
         if comic.get("baked", {}).get(provenance["original_atlas"], False):
+            comic["baked"][relative] = True
+        if provenance.get("wreckage", False):
+            manifest[relative]["processing"] = "Machine-specific wreckage still with baked ivory cutout edge"
+            manifest[relative]["wreckage_revision"] = 1
+            manifest[relative]["outline_baked"] = True
+            manifest[relative]["inputs_sha256"] = {
+                provenance["original_atlas"]: provenance["original_provenance"]["source_sha256"]}
             comic["baked"][relative] = True
         if kind == "heroes":
             # New authored action stills already include their fine ivory rim;

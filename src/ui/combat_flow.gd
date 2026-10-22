@@ -168,6 +168,8 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 		hud.update_turn(int(ui.game.run.combat.turn))
 		hud.update_energy(int(ui.game.run.combat.energy))
 		await preload("res://src/presentation/turn_announcement.gd").play(ui.layer, false, int(ui.game.run.combat.turn))
+	if ui.game.run.phase == "reward":
+		await preload("res://src/presentation/victory_announcement.gd").play(ui.layer)
 	# Keep the arena snapshot alive throughout busy playback; navigation/cinematics
 	# take ownership only after all presentation has finished.
 	ui.combat_busy = false

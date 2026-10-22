@@ -35,7 +35,7 @@ func run_tests():
 		app.open_base_camp()
 		await process_frame
 		for j in range(IDS.size()):
-			check(app.layer.has_node("EmptyPlot%d" % j) == (j > i), "only unbuilt lots display stakes")
+			check(not app.layer.has_node("EmptyPlot%d" % j), "unbuilt lots show background without plot artwork")
 			check(app.layer.has_node(NODES[j]) == (j <= i), "built artwork follows saved buildings")
 		await capture(str(i) + "-" + IDS[i])
 	for id in NODES + ["RefugeBuilding"]:

@@ -1,4 +1,5 @@
 extends "res://src/presentation/comic_cut_in.gd"
+const ATTACK_DURATION = 0.92
 const COLORS = {
 	"crypt_bandit":Color("ad8cbb"),"beast_6":Color("81d5ef"),
 	"flying_1":Color("be617e"),"flying_6":Color("858fc6"),
@@ -36,6 +37,7 @@ static func play(parent: Control, visual: String, kind: String = "attack") -> Co
 	var effect = new()
 	effect.visual_id = visual
 	effect.action = kind
+	if kind == "attack": effect.duration = ATTACK_DURATION
 	effect.accent = COLORS.get(visual, Color("eca864"))
 	effect.static_illustration = true
 	effect.enhanced_lights = true

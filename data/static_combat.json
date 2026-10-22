@@ -19,70 +19,70 @@
 				"path": "res://assets/combat_static/heroes/guardian/attack.png",
 				"scale": 0.238770685579196,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					14,
-					63,
-					484,
-					433
+					14.0,
+					63.0,
+					484.0,
+					433.0
 				]
 			},
 			"guard": {
 				"path": "res://assets/combat_static/heroes/guardian/guard.png",
 				"scale": 0.238770685579196,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					66,
-					93,
-					380,
-					403
+					66.0,
+					93.0,
+					380.0,
+					403.0
 				]
 			},
 			"skill": {
 				"path": "res://assets/combat_static/heroes/guardian/skill.png",
 				"scale": 0.238770685579196,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					71,
-					158,
-					370,
-					338
+					71.0,
+					158.0,
+					370.0,
+					338.0
 				]
 			},
 			"hurt": {
 				"path": "res://assets/combat_static/heroes/guardian/hurt.png",
 				"scale": 0.238770685579196,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					20,
-					94,
-					472,
-					402
+					20.0,
+					94.0,
+					472.0,
+					402.0
 				]
 			},
 			"death": {
 				"path": "res://assets/combat_static/heroes/guardian/death.png",
 				"scale": 0.238770685579196,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					92,
-					172,
-					329,
-					324
+					92.0,
+					172.0,
+					329.0,
+					324.0
 				]
 			}
 		},
@@ -105,70 +105,70 @@
 				"path": "res://assets/combat_static/heroes/mage/attack.png",
 				"scale": 0.268716577540107,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					14,
-					148,
-					484,
-					348
+					14.0,
+					148.0,
+					484.0,
+					348.0
 				]
 			},
 			"guard": {
 				"path": "res://assets/combat_static/heroes/mage/guard.png",
 				"scale": 0.268716577540107,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					84,
-					148,
-					344,
-					348
+					84.0,
+					148.0,
+					344.0,
+					348.0
 				]
 			},
 			"skill": {
 				"path": "res://assets/combat_static/heroes/mage/skill.png",
 				"scale": 0.268716577540107,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					106,
-					108,
-					300,
-					388
+					106.0,
+					108.0,
+					300.0,
+					388.0
 				]
 			},
 			"hurt": {
 				"path": "res://assets/combat_static/heroes/mage/hurt.png",
 				"scale": 0.268716577540107,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					69,
-					120,
-					374,
-					376
+					69.0,
+					120.0,
+					374.0,
+					376.0
 				]
 			},
 			"death": {
 				"path": "res://assets/combat_static/heroes/mage/death.png",
 				"scale": 0.268716577540107,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					77,
-					186,
-					358,
-					310
+					77.0,
+					186.0,
+					358.0,
+					310.0
 				]
 			}
 		},
@@ -191,70 +191,70 @@
 				"path": "res://assets/combat_static/heroes/rogue/attack.png",
 				"scale": 0.256830601092897,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					14,
-					150,
-					484,
-					346
+					14.0,
+					150.0,
+					484.0,
+					346.0
 				]
 			},
 			"guard": {
 				"path": "res://assets/combat_static/heroes/rogue/guard.png",
 				"scale": 0.256830601092897,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					95,
-					164,
-					323,
-					332
+					95.0,
+					164.0,
+					323.0,
+					332.0
 				]
 			},
 			"skill": {
 				"path": "res://assets/combat_static/heroes/rogue/skill.png",
 				"scale": 0.256830601092897,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					125,
-					119,
-					262,
-					377
+					125.0,
+					119.0,
+					262.0,
+					377.0
 				]
 			},
 			"hurt": {
 				"path": "res://assets/combat_static/heroes/rogue/hurt.png",
 				"scale": 0.256830601092897,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					76,
-					159,
-					360,
-					337
+					76.0,
+					159.0,
+					360.0,
+					337.0
 				]
 			},
 			"death": {
 				"path": "res://assets/combat_static/heroes/rogue/death.png",
 				"scale": 0.256830601092897,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					137,
-					258,
-					238,
-					238
+					137.0,
+					258.0,
+					238.0,
+					238.0
 				]
 			}
 		},
@@ -277,70 +277,70 @@
 				"path": "res://assets/combat_static/heroes/warrior/attack.png",
 				"scale": 0.21606648199446,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					14,
-					131,
-					484,
-					365
+					14.0,
+					131.0,
+					484.0,
+					365.0
 				]
 			},
 			"guard": {
 				"path": "res://assets/combat_static/heroes/warrior/guard.png",
 				"scale": 0.21606648199446,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					100,
-					106,
-					313,
-					390
+					100.0,
+					106.0,
+					313.0,
+					390.0
 				]
 			},
 			"skill": {
 				"path": "res://assets/combat_static/heroes/warrior/skill.png",
 				"scale": 0.21606648199446,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					83,
-					129,
-					346,
-					367
+					83.0,
+					129.0,
+					346.0,
+					367.0
 				]
 			},
 			"hurt": {
 				"path": "res://assets/combat_static/heroes/warrior/hurt.png",
 				"scale": 0.21606648199446,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					104,
-					142,
-					305,
-					354
+					104.0,
+					142.0,
+					305.0,
+					354.0
 				]
 			},
 			"death": {
 				"path": "res://assets/combat_static/heroes/warrior/death.png",
 				"scale": 0.21606648199446,
 				"anchor": [
-					256,
-					496
+					256.0,
+					496.0
 				],
 				"bounds": [
-					109,
-					206,
-					294,
-					290
+					109.0,
+					206.0,
+					294.0,
+					290.0
 				]
 			}
 		}
@@ -419,16 +419,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_0/death.png",
-				"scale": 0.5,
+				"scale": 0.153972457627119,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					60.0,
-					144.0,
-					135.0,
-					96.0
+					20,
+					315,
+					472,
+					181
 				]
 			}
 		},
@@ -505,16 +505,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_1/death.png",
-				"scale": 0.5,
+				"scale": 0.145921610169492,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					61.0,
-					128.0,
-					133.0,
-					112.0
+					20,
+					301,
+					472,
+					195
 				]
 			}
 		},
@@ -591,16 +591,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_2/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					47.0,
-					109.0,
-					161.0,
-					131.0
+					20,
+					336,
+					472,
+					160
 				]
 			}
 		},
@@ -677,16 +677,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_3/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					54.0,
-					91.0,
-					148.0,
-					149.0
+					20,
+					281,
+					472,
+					215
 				]
 			}
 		},
@@ -763,16 +763,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_4/death.png",
-				"scale": 0.5,
+				"scale": 0.150953389830508,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					40.0,
-					97.0,
-					175.0,
-					143.0
+					20,
+					290,
+					472,
+					206
 				]
 			}
 		},
@@ -849,16 +849,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_5/death.png",
-				"scale": 0.5,
+				"scale": 0.168061440677966,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					48.0,
-					107.0,
-					160.0,
-					133.0
+					20,
+					317,
+					472,
+					179
 				]
 			}
 		},
@@ -935,16 +935,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_6/death.png",
-				"scale": 0.5,
+				"scale": 0.214353813559322,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					43.0,
-					94.0,
-					169.0,
-					146.0
+					20,
+					311,
+					472,
+					185
 				]
 			}
 		},
@@ -1021,16 +1021,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/bandit_7/death.png",
-				"scale": 0.5,
+				"scale": 0.160010593220339,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					52.0,
-					50.0,
-					152.0,
-					190.0
+					20,
+					283,
+					472,
+					213
 				]
 			}
 		},
@@ -1107,16 +1107,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_0/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					62.0,
-					150.0,
-					131.0,
-					90.0
+					20,
+					318,
+					472,
+					178
 				]
 			}
 		},
@@ -1193,16 +1193,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_1/death.png",
-				"scale": 0.5,
+				"scale": 0.203283898305085,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					48.0,
-					135.0,
-					160.0,
-					105.0
+					20,
+					309,
+					472,
+					187
 				]
 			}
 		},
@@ -1279,16 +1279,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_2/death.png",
-				"scale": 0.5,
+				"scale": 0.229449152542373,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					32.0,
-					123.0,
-					192.0,
-					117.0
+					20,
+					290,
+					472,
+					206
 				]
 			}
 		},
@@ -1365,16 +1365,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_3/death.png",
-				"scale": 0.5,
+				"scale": 0.218379237288136,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					36.0,
-					104.0,
-					184.0,
-					136.0
+					20,
+					262,
+					472,
+					234
 				]
 			}
 		},
@@ -1451,16 +1451,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_4/death.png",
-				"scale": 0.5,
+				"scale": 0.140889830508475,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					63.0,
-					144.0,
-					129.0,
-					96.0
+					20,
+					305,
+					472,
+					191
 				]
 			}
 		},
@@ -1537,16 +1537,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_5/death.png",
-				"scale": 0.5,
+				"scale": 0.164036016949153,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					58.0,
-					128.0,
-					140.0,
-					112.0
+					20,
+					321,
+					472,
+					175
 				]
 			}
 		},
@@ -1623,16 +1623,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_6/death.png",
-				"scale": 0.5,
+				"scale": 0.162023305084746,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					69.0,
-					146.0,
-					118.0,
-					94.0
+					20,
+					334,
+					472,
+					162
 				]
 			}
 		},
@@ -1709,16 +1709,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/beast_7/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					57.0,
-					147.0,
-					141.0,
-					93.0
+					20,
+					309,
+					472,
+					187
 				]
 			}
 		},
@@ -1795,16 +1795,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_automaton/death.png",
-				"scale": 0.5,
+				"scale": 0.173199152542373,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					59.0,
-					35.0,
-					138.0,
-					205.0
+					20,
+					252,
+					472,
+					244
 				]
 			}
 		},
@@ -1881,16 +1881,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_bandit/death.png",
-				"scale": 0.5,
+				"scale": 0.162023305084746,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					50.0,
-					142.0,
-					155.0,
-					98.0
+					20,
+					305,
+					472,
+					191
 				]
 			}
 		},
@@ -1967,16 +1967,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_bat/death.png",
-				"scale": 0.5,
+				"scale": 0.177118644067797,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					45.0,
-					116.0,
-					166.0,
-					124.0
+					20,
+					318,
+					472,
+					178
 				]
 			}
 		},
@@ -2053,16 +2053,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_beetle/death.png",
-				"scale": 0.5,
+				"scale": 0.228442796610169,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					20.0,
-					106.0,
-					215.0,
-					134.0
+					20,
+					307,
+					472,
+					189
 				]
 			}
 		},
@@ -2139,16 +2139,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_lancer/death.png",
-				"scale": 0.5,
+				"scale": 0.18114406779661,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					63.0,
-					15.0,
-					130.0,
-					225.0
+					20,
+					272,
+					472,
+					224
 				]
 			}
 		},
@@ -2225,16 +2225,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_shaman/death.png",
-				"scale": 0.333333333333333,
+				"scale": 0.185840395480226,
 				"anchor": [
-					192.0,
-					360.0
+					256,
+					496
 				],
 				"bounds": [
-					56.0,
-					141.0,
-					271.0,
-					219.0
+					20,
+					286,
+					472,
+					210
 				]
 			}
 		},
@@ -2311,16 +2311,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_slime/death.png",
-				"scale": 0.333333333333333,
+				"scale": 0.216031073446327,
 				"anchor": [
-					192.0,
-					360.0
+					256,
+					496
 				],
 				"bounds": [
-					43.0,
-					172.0,
-					297.0,
-					188.0
+					20,
+					280,
+					472,
+					216
 				]
 			}
 		},
@@ -2397,16 +2397,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/crypt_wolf/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					47.0,
-					154.0,
-					162.0,
-					86.0
+					20,
+					315,
+					472,
+					181
 				]
 			}
 		},
@@ -2483,16 +2483,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_0/death.png",
-				"scale": 0.5,
+				"scale": 0.125794491525424,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					61.0,
-					148.0,
-					133.0,
-					92.0
+					20,
+					296,
+					472,
+					200
 				]
 			}
 		},
@@ -2569,16 +2569,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_1/death.png",
-				"scale": 0.5,
+				"scale": 0.162023305084746,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					48.0,
-					101.0,
-					160.0,
-					139.0
+					20,
+					325,
+					472,
+					171
 				]
 			}
 		},
@@ -2655,16 +2655,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_2/death.png",
-				"scale": 0.5,
+				"scale": 0.165042372881356,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					52.0,
-					102.0,
-					151.0,
-					138.0
+					20,
+					295,
+					472,
+					201
 				]
 			}
 		},
@@ -2741,16 +2741,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_3/death.png",
-				"scale": 0.5,
+				"scale": 0.0986228813559322,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					72.0,
-					126.0,
-					111.0,
-					114.0
+					20,
+					314,
+					472,
+					182
 				]
 			}
 		},
@@ -2827,16 +2827,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_4/death.png",
-				"scale": 0.5,
+				"scale": 0.166048728813559,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					61.0,
-					122.0,
-					134.0,
-					118.0
+					20,
+					269,
+					472,
+					227
 				]
 			}
 		},
@@ -2913,16 +2913,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_5/death.png",
-				"scale": 0.5,
+				"scale": 0.134851694915254,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					53.0,
-					135.0,
-					150.0,
-					105.0
+					20,
+					297,
+					472,
+					199
 				]
 			}
 		},
@@ -2999,16 +2999,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_6/death.png",
-				"scale": 0.5,
+				"scale": 0.185169491525424,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					58.0,
-					118.0,
-					140.0,
-					122.0
+					20,
+					300,
+					472,
+					196
 				]
 			}
 		},
@@ -3085,16 +3085,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/elemental_7/death.png",
-				"scale": 0.5646,
+				"scale": 0.171080508474576,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					52.0,
-					140.0,
-					152.0,
-					100.0
+					20,
+					327,
+					472,
+					169
 				]
 			}
 		},
@@ -3171,16 +3171,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_0/death.png",
-				"scale": 0.5,
+				"scale": 0.194226694915254,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					35.0,
-					136.0,
-					185.0,
-					104.0
+					20,
+					316,
+					472,
+					180
 				]
 			}
 		},
@@ -3257,16 +3257,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_1/death.png",
-				"scale": 0.5,
+				"scale": 0.194226694915254,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					36.0,
-					126.0,
-					183.0,
-					114.0
+					20,
+					285,
+					472,
+					211
 				]
 			}
 		},
@@ -3343,16 +3343,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_2/death.png",
-				"scale": 0.5,
+				"scale": 0.163029661016949,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					54.0,
-					148.0,
-					147.0,
-					92.0
+					20,
+					283,
+					472,
+					213
 				]
 			}
 		},
@@ -3429,16 +3429,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_3/death.png",
-				"scale": 0.5,
+				"scale": 0.195233050847458,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					40.0,
-					95.0,
-					175.0,
-					145.0
+					20,
+					283,
+					472,
+					213
 				]
 			}
 		},
@@ -3515,16 +3515,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_4/death.png",
-				"scale": 0.5,
+				"scale": 0.156991525423729,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					58.0,
-					117.0,
-					139.0,
-					123.0
+					20,
+					280,
+					472,
+					216
 				]
 			}
 		},
@@ -3601,16 +3601,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_5/death.png",
-				"scale": 0.5,
+				"scale": 0.18416313559322,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					31.0,
-					142.0,
-					194.0,
-					98.0
+					20,
+					324,
+					472,
+					172
 				]
 			}
 		},
@@ -3687,16 +3687,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_6/death.png",
-				"scale": 0.5,
+				"scale": 0.18416313559322,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					31.0,
-					146.0,
-					194.0,
-					94.0
+					20,
+					312,
+					472,
+					184
 				]
 			}
 		},
@@ -3773,16 +3773,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/flying_7/death.png",
-				"scale": 0.5,
+				"scale": 0.229449152542373,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					19.0,
-					113.0,
-					218.0,
-					127.0
+					20,
+					291,
+					472,
+					205
 				]
 			}
 		},
@@ -3859,16 +3859,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_0/death.png",
-				"scale": 0.5,
+				"scale": 0.160010593220339,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					51.0,
-					59.0,
-					153.0,
-					181.0
+					20,
+					251,
+					472,
+					245
 				]
 			}
 		},
@@ -3945,16 +3945,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_1/death.png",
-				"scale": 0.5,
+				"scale": 0.174099576271186,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					66.0,
-					157.0,
-					124.0,
-					83.0
+					20,
+					303,
+					472,
+					193
 				]
 			}
 		},
@@ -4031,16 +4031,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_2/death.png",
-				"scale": 0.5,
+				"scale": 0.199258474576271,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					38.0,
-					94.0,
-					180.0,
-					146.0
+					20,
+					316,
+					472,
+					180
 				]
 			}
 		},
@@ -4117,16 +4117,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_3/death.png",
-				"scale": 0.5,
+				"scale": 0.161016949152542,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					57.0,
-					115.0,
-					141.0,
-					125.0
+					20,
+					276,
+					472,
+					220
 				]
 			}
 		},
@@ -4203,16 +4203,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_4/death.png",
-				"scale": 0.5,
+				"scale": 0.128813559322034,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					41.0,
-					122.0,
-					173.0,
-					118.0
+					20,
+					278,
+					472,
+					218
 				]
 			}
 		},
@@ -4289,16 +4289,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_5/death.png",
-				"scale": 0.5,
+				"scale": 0.154978813559322,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					54.0,
-					112.0,
-					147.0,
-					128.0
+					20,
+					300,
+					472,
+					196
 				]
 			}
 		},
@@ -4375,16 +4375,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_6/death.png",
-				"scale": 0.5,
+				"scale": 0.119756355932203,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					68.0,
-					120.0,
-					120.0,
-					120.0
+					20,
+					276,
+					472,
+					220
 				]
 			}
 		},
@@ -4461,16 +4461,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/goblin_7/death.png",
-				"scale": 0.5,
+				"scale": 0.177118644067797,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					53.0,
-					48.0,
-					150.0,
-					192.0
+					20,
+					271,
+					472,
+					225
 				]
 			}
 		},
@@ -4547,16 +4547,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_0/death.png",
-				"scale": 0.5,
+				"scale": 0.138877118644068,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					62.0,
-					116.0,
-					133.0,
-					124.0
+					20,
+					320,
+					472,
+					176
 				]
 			}
 		},
@@ -4633,16 +4633,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_1/death.png",
-				"scale": 0.5,
+				"scale": 0.141896186440678,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					69.0,
-					126.0,
-					118.0,
-					114.0
+					20,
+					312,
+					472,
+					184
 				]
 			}
 		},
@@ -4719,16 +4719,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_2/death.png",
-				"scale": 0.5,
+				"scale": 0.157997881355932,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					54.0,
-					98.0,
-					148.0,
-					142.0
+					20,
+					283,
+					472,
+					213
 				]
 			}
 		},
@@ -4805,16 +4805,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_3/death.png",
-				"scale": 0.5,
+				"scale": 0.110699152542373,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					63.0,
-					107.0,
-					129.0,
-					133.0
+					20,
+					245,
+					472,
+					251
 				]
 			}
 		},
@@ -4891,16 +4891,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_4/death.png",
-				"scale": 0.5,
+				"scale": 0.139883474576271,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					56.0,
-					107.0,
-					143.0,
-					133.0
+					20,
+					292,
+					472,
+					204
 				]
 			}
 		},
@@ -4977,16 +4977,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_5/death.png",
-				"scale": 0.5,
+				"scale": 0.153972457627119,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					50.0,
-					123.0,
-					156.0,
-					117.0
+					20,
+					293,
+					472,
+					203
 				]
 			}
 		},
@@ -5063,16 +5063,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_6/death.png",
-				"scale": 0.333333333333333,
+				"scale": 0.181814971751412,
 				"anchor": [
-					192.0,
-					360.0
+					256,
+					496
 				],
 				"bounds": [
-					42.0,
-					62.0,
-					299.0,
-					298.0
+					20,
+					265,
+					472,
+					231
 				]
 			}
 		},
@@ -5149,16 +5149,16 @@
 			},
 			"death": {
 				"path": "res://assets/combat_static/enemies/skeleton_7/death.png",
-				"scale": 0.5,
+				"scale": 0.195233050847458,
 				"anchor": [
-					128.0,
-					240.0
+					256,
+					496
 				],
 				"bounds": [
-					43.0,
-					103.0,
-					169.0,
-					137.0
+					20,
+					303,
+					472,
+					193
 				]
 			}
 		}

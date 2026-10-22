@@ -80,9 +80,9 @@ Deben conservar presencia sin solaparse de forma permanente. Las métricas
 permiten mantener el mismo apoyo y escala cuando cambia la imagen por acción.
 
 `static_combat_actor.gd` conserva la imagen hasta que termina la acción o se
-restaura reposo. Al morir deja de volver a guardia. La caída enemiga utiliza
-una variante fija oscura/desaturada de su dibujo; no son 56 caídas originales
-nuevas. Se oculta al finalizar la presentación, sin cenizas corporales.
+restaura reposo. Al morir deja de volver a guardia. Cada modelo enemigo tiene
+su propio dibujo destruido: piezas rotas y cables sobre el suelo, visibles durante
+el resto del combate, con chispazos intermitentes. Al revivir recupera su postura.
 
 ## Archivos de referencia
 

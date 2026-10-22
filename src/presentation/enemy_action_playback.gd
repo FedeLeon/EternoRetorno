@@ -1,5 +1,6 @@
 extends RefCounted
 ## Replay one committed enemy action without resolving or saving again.
+const HIT_READ_TIME = 0.18
 static func play(ui: Control, index: int, visual: String) -> void:
 	var enemy_id: String = ui.enemy_art[index].get_meta("battle_enemy_id", visual)
 	var impacts = preload("res://src/presentation/card_impacts.gd")
@@ -22,6 +23,8 @@ static func play(ui: Control, index: int, visual: String) -> void:
 		if ui.game.run.party[owner] in ui.BATTLE_HEROES:
 			await actor.play_once("death" if event.hp <= 0 else "guard" if int(event.absorbed)>0 else "hurt")
 		if ui.hero_health[owner].animating: await ui.hero_health[owner].animation_finished
+		# Leave a short beat to read damage/block before the next hit or enemy.
+		await ui.get_tree().create_timer(HIT_READ_TIME).timeout
 
 static func illustrate(ui: Control, actor: Control, visual: String, action: String) -> void:
 	var revision: int = actor.begin_action(action)
@@ -29,5 +32,5 @@ static func illustrate(ui: Control, actor: Control, visual: String, action: Stri
 	if not ui.game.run.get("training",false):
 		cut = preload("res://src/presentation/enemy_cut_in.gd").play(ui.layer,visual,"defense" if action=="guard" else "attack")
 	if cut != null: await cut.finished
-	else: await ui.get_tree().create_timer(.28).timeout
+	else: await ui.get_tree().create_timer(.50 if action == "attack" else .28).timeout
 	actor.finish_action(revision)

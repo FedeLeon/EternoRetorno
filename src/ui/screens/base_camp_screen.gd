@@ -25,8 +25,10 @@ static func build(ui: Control, profile: Dictionary, actions: Dictionary) -> void
 		var lot: Dictionary = LOTS[i]
 		var built: bool = profile.buildings.get(lot.id, false)
 		var area: Rect2 = lot.area if built else lot.plot
-		var picture = artwork(ui, lot.node if built else "EmptyPlot%d" % i, lot.id if built else "plot", area)
-		area = picture.get_rect()
+		var picture: TextureRect
+		if built:
+			picture = artwork(ui, lot.node, lot.id, area)
+			area = picture.get_rect()
 		var caption_above: bool = built and lot.id in ["market", "church"]
 		var hotspot = ui.camp_hotspot("Plot%d" % i, area, lot.title if built else "Solar %d · %s" % [i + 1, lot.title], actions[lot.id], caption_above)
 		if built:

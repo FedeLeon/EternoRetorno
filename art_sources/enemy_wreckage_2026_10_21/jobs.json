@@ -1,0 +1,562 @@
+[
+  {
+    "id": "bandit_0",
+    "reference": "assets/combat_static/enemies/bandit_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_0.png",
+    "prompt": "Create ONE production-ready 2D videogame enemy wreckage sprite, using the attached image ONLY as the identity reference. The reference is a squat orange-and-black industrial excavator robot with a bulldozer scoop, a dark sensor head and mechanical legs. Draw THIS SAME MACHINE utterly destroyed and collapsed flat on the floor, not standing or crouching: crushed orange hull lying sideways, broken scoop detached beside it, separated mechanical leg, exposed dark interior, hanging and spilled copper cables, torn hoses, several recognizable orange armor plates and metal bolts scattered close to the hull. All debris belongs to this exact robot. Wide low silhouette, about twice as wide as tall. Hand-inked American post-apocalyptic comic game illustration, flat richly colored cel shading, precise black ink, fine ivory cutout edge. Match reference visual language but higher clarity. Dark steel, burnt orange and copper. Disabled dim sensors. NO human, NO hero, NO text, NO flame, NO drawn sparks, NO scenery, NO floor or opaque rectangular backing, NO upright intact machine. Transparent background, clean alpha, isolated single asset centered with generous transparent padding on a square canvas. The broken parts must read at a 200-pixel in-game width. This is a death-state sprite, NOT an attack pose. Save as a local project-use image.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "3d6ffa10bd6fe68aec641695f16a6548dcaa8a759fa7316ea974599dcd7ddc23",
+    "source_sha256": "b793fcbf4047e16f9a68b5e994c740cdf02d93da60e0d8fb9044ac9064b41ca6"
+  },
+  {
+    "id": "bandit_1",
+    "reference": "assets/combat_static/enemies/bandit_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "0cf7e3a0899d47b78aeef140ef0d5e59fce6bae72180f57b5bc4837e2ef2df28",
+    "source_sha256": "3e719a6a00b2aed7b731d9f350c27a708c417f081b94d090607cf6fdb27d1e5d"
+  },
+  {
+    "id": "bandit_2",
+    "reference": "assets/combat_static/enemies/bandit_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "04c914246681d4ad958b7b3f62aaecedfaa695ce20889bf351bfdd2368378fec",
+    "source_sha256": "04ce80b0244267d3d09e06fad495209e84b2f3a915b366cbea5d43fc8d436edf"
+  },
+  {
+    "id": "bandit_3",
+    "reference": "assets/combat_static/enemies/bandit_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "d98a8ad3fedcff25e7a7da3eb442dca7297ee13f200b5f32517e7de0448bb310",
+    "source_sha256": "36dac465e8dfc24843b9b76a94f113c383bd17270392eab0589e5f0228a3b00c"
+  },
+  {
+    "id": "bandit_4",
+    "reference": "assets/combat_static/enemies/bandit_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "aae5df91e20d0fd516a7a255acd38ed9f37bc400310ec8275e1c937d4569ed72",
+    "source_sha256": "bb10e8b6210c1771fd1a9b009a643858a84f1cb55b78c44678f3b68ec809c04e"
+  },
+  {
+    "id": "bandit_5",
+    "reference": "assets/combat_static/enemies/bandit_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "2d5d5ff0c63cac250b622a13bb98219ec19591255404179fa18abd9ccb1bfa77",
+    "source_sha256": "0ef0c5891cbff7122fdc31f3482bfeedff86eddc8e3378e0f726f9ba996d0879"
+  },
+  {
+    "id": "bandit_6",
+    "reference": "assets/combat_static/enemies/bandit_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "414f730559f2b1b46588b7cb049d63d700c645cf623479800928bfe61df5c3d7",
+    "source_sha256": "d431add7cac202cd90078545dee4c3cdaeae2752fddea52070967b9d60173c31"
+  },
+  {
+    "id": "bandit_7",
+    "reference": "assets/combat_static/enemies/bandit_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "65b007ba832fa03156275aa4b8468a2648477552b0417430f3ede1c326164571",
+    "source_sha256": "9d2b532c3368bb9016e8863d187aec99431403187539d812c9e284a4f3e51a9a"
+  },
+  {
+    "id": "beast_0",
+    "reference": "assets/combat_static/enemies/beast_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_0.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "4010ce4f8d29ed72bd6b69b43681416632cde4d0941c80efc54af49fbb035e0f",
+    "source_sha256": "2389867290a395a7538afa3b032933db619c3efc7d602dd64cf68b447aefb347"
+  },
+  {
+    "id": "beast_1",
+    "reference": "assets/combat_static/enemies/beast_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "9d355e281560156daf5fa6bc664f0f827c17238f79f244aa276996a27dde14ab",
+    "source_sha256": "51ca159d678d0e8ea31df95da85105f5739eaccd67e57a95c0b9674140784278"
+  },
+  {
+    "id": "beast_2",
+    "reference": "assets/combat_static/enemies/beast_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "4da0616ff670b46c706fb00c82fe2c87d6a0f0587e464371ca1d6dfe13179191",
+    "source_sha256": "5898c3272b1c444b525544e5f17717f7142c05cb815ec6e7c6c1cb7801e09f97"
+  },
+  {
+    "id": "beast_3",
+    "reference": "assets/combat_static/enemies/beast_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "ece5b99597e9d7caa168748975904fc0a68a9567e9f038de786c1d65e5156fab",
+    "source_sha256": "b2965118e44e68a7801fa18fc05761ec27631a697927a719369e811d9ff64987"
+  },
+  {
+    "id": "beast_4",
+    "reference": "assets/combat_static/enemies/beast_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "c732eaf3e0537baecddc1215ed0425209f3efcaac20d5e5bc8cfad07b3f6ae14",
+    "source_sha256": "a70688a4e7804e55e9b242237ef8254b0a8884a4994cd94a13273e63cab5e34b"
+  },
+  {
+    "id": "beast_5",
+    "reference": "assets/combat_static/enemies/beast_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "d5428def7c867c51ec3a468e65898de35b6bbff827d5228250353845bf51de44",
+    "source_sha256": "aa0ee513ff3b48afe8420f9f80c6af50a1a5ff803c9fe5a36fa46bdeca5f59c1"
+  },
+  {
+    "id": "beast_6",
+    "reference": "assets/combat_static/enemies/beast_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "99a3efc58f3ae3aab97a6ee0d163a69ecf95ecd51b6f3971a11b5197e82abced",
+    "source_sha256": "2cd6e5d5161230442d25643a5df109b1cfdf7d03225e7fe9c2d9e9aada2a5b6e"
+  },
+  {
+    "id": "beast_7",
+    "reference": "assets/combat_static/enemies/beast_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "b98fa6f95036ab0683a8691bce76136760c7c66235d77c08b9fcd804606929e4",
+    "source_sha256": "538eeb12bb80b903738eded40f3614c7f303f87e2d189bd80e9770a63a134cf4"
+  },
+  {
+    "id": "crypt_automaton",
+    "reference": "assets/combat_static/enemies/crypt_automaton/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_automaton.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "6a35de3483118628026609f8235f99f1eeaae14c9e2a64817ab4379d7ae7090c",
+    "source_sha256": "5003d9262e232bb5998451570bdbe1bd4620b785a71c20b45617050dc7ece722"
+  },
+  {
+    "id": "crypt_bandit",
+    "reference": "assets/combat_static/enemies/crypt_bandit/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bandit.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "8afbf1efc033dcff2b0fc1fa4c5a5bfa012f8c1132640b88157195b43827f794",
+    "source_sha256": "a196012a85b220b71165861a51b9eae86f0df8feabc3da1c674f11d6d1fdfafa"
+  },
+  {
+    "id": "crypt_bat",
+    "reference": "assets/combat_static/enemies/crypt_bat/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bat.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "eda9e5e6e52d62f7c9874bebb5a0fa1e080b696975ef1961d0cdcd49dac32c4c",
+    "source_sha256": "019b585cc127ea76367217eaa68f13a46a126f58a52a4f45d7294d2480158b58"
+  },
+  {
+    "id": "crypt_beetle",
+    "reference": "assets/combat_static/enemies/crypt_beetle/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_beetle.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "dfe809806a624813fcd0a31693f151216162f70f5be8b6d9c4d19f173f49f817",
+    "source_sha256": "a3d4f26b6ea1c3063fe5c2b151d4779695872d1863f63bf67d3b633e202598eb"
+  },
+  {
+    "id": "crypt_lancer",
+    "reference": "assets/combat_static/enemies/crypt_lancer/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_lancer.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "4928a9e42666f91241e9c7639f61ff840f5cb9266f621ebdb8ca86a2c5e8d3fb",
+    "source_sha256": "a941de1a1148b33251f6b3fc3ea097bd237a66ca8a0cde3b3e2c8746406731b6"
+  },
+  {
+    "id": "crypt_shaman",
+    "reference": "assets/combat_static/enemies/crypt_shaman/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_shaman.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "292160b2ae7b193c8c9d435872c1cabe3c1b827ac1046e4e1c8f3632ee08ebd0",
+    "source_sha256": "6f73d29ae44dc3c331a8e4bbc01131bdd109fb2fa49b99ff743bb5aa4027b6c3"
+  },
+  {
+    "id": "crypt_slime",
+    "reference": "assets/combat_static/enemies/crypt_slime/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_slime.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "2515596563fb91bb816acb4edd959fbbde89bfc978fb4408399c774d0adea79f",
+    "source_sha256": "a20497b4e01bcd3365a0b0dea9d159ee86e07f57981c2c73c450dd9d216babc3"
+  },
+  {
+    "id": "crypt_wolf",
+    "reference": "assets/combat_static/enemies/crypt_wolf/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_wolf.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "9e1dda998f158a255c71b4c79674b2ac17b4ce3372f7420ace907a6ee5793b77",
+    "source_sha256": "f346b6fa2804542e68243098db346056fabdf6285138d92a31abc43da354baf1"
+  },
+  {
+    "id": "elemental_0",
+    "reference": "assets/combat_static/enemies/elemental_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_0.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "4328567a91c76066e44a3385444c4275a402baf58c05db461614f33abee04fc7",
+    "source_sha256": "2e6f0077fec2f253eb583a59bb878edfd2c97866f338be0047f19db43ec0fd58"
+  },
+  {
+    "id": "elemental_1",
+    "reference": "assets/combat_static/enemies/elemental_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "66838b302e5be0ffcce206232abc2bc333dc7e4c5f7309a51103c106d1aa6dab",
+    "source_sha256": "fa1b3dc6b5c9241c8a74c22a396f364a838efdb8d9d3a05b38dcb50772e440a4"
+  },
+  {
+    "id": "elemental_2",
+    "reference": "assets/combat_static/enemies/elemental_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "3dcc4b45d281d1fd041fe59d1b1d5bc6615968d3cb19de53638748e01dc87300",
+    "source_sha256": "ea645ec5bc1ff677e9ece2e28319c253b0e80b94dbbb44132af4862a36bc3882"
+  },
+  {
+    "id": "elemental_3",
+    "reference": "assets/combat_static/enemies/elemental_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "fc5900e1edaa400c27d89e7d8e065ac5f5e4c5d49b475d572e8a1347a9547e45",
+    "source_sha256": "5d40ac157cbfc9b7959f297bc280197d441c02b9a4fe5a4dc607dff29163a8c4"
+  },
+  {
+    "id": "elemental_4",
+    "reference": "assets/combat_static/enemies/elemental_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "e45ba7740072d2f9df0118b9b81f1ec1d497f5881ac036dfdcf2c7597d7d18f5",
+    "source_sha256": "1f8ccb86760d988b64b13eaa2278a9f1a4c01815d90ed71c29148274cc736a3e"
+  },
+  {
+    "id": "elemental_5",
+    "reference": "assets/combat_static/enemies/elemental_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "b482a74fd6d20516955a6493a7fea78f73041630b48a6c21edb38476614a7b32",
+    "source_sha256": "f9482c7bf9454217d9edd6d1e6d94c8b0d00261ba641fc48074bc57877360d68"
+  },
+  {
+    "id": "elemental_6",
+    "reference": "assets/combat_static/enemies/elemental_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "ad62449a5d1988cf9430772281d940277326ad39cbf150221131ac838d1a50c5",
+    "source_sha256": "8c5adf1acf2362e186f90fefeaf09766600aaf2d5164a1ce32b4e3869b066cd5"
+  },
+  {
+    "id": "elemental_7",
+    "reference": "assets/combat_static/enemies/elemental_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "df6047f07c467be2ef778f895b8510369ac3ab1037687b014f4af09738135a8b",
+    "source_sha256": "9dcf7571faa5906bc3196e04f9166c6434a6dfa809b619471f17b4f1d6e99fa4"
+  },
+  {
+    "id": "flying_0",
+    "reference": "assets/combat_static/enemies/flying_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_0.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "55e3609e314607bb7deecfb53079b8e97a78754de3122c5bea888aaf23bd153d",
+    "source_sha256": "24a0a6ee72f53dbfd8d42ae8b1a778fef43f2e8b72475eda37fd35ffb062eba3"
+  },
+  {
+    "id": "flying_1",
+    "reference": "assets/combat_static/enemies/flying_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "8e71475a4b43e092455900af265122e33d83e3df7c7e14168a96cfd278e072aa",
+    "source_sha256": "0e2502047dc295afaebc5763040d0e2fb10c4fc4f7beac51f8a80c2d864493d1"
+  },
+  {
+    "id": "flying_2",
+    "reference": "assets/combat_static/enemies/flying_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "2f98f04d01b60dba5804b6b47c9a2881a5713b4c58b20ab85ba00f65b70facb6",
+    "source_sha256": "ca4329b743c56c5605723873cb8d92727dd9117eb69d6e0523fb02ed5757ed1c"
+  },
+  {
+    "id": "flying_3",
+    "reference": "assets/combat_static/enemies/flying_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "6877ff0edfd04eb1988022c141716db97100872629f59783ab7f0bb85e524981",
+    "source_sha256": "c9c4a364429c8b9411047818231fbca00f4871861f79c46589f85e9a527a5fc6"
+  },
+  {
+    "id": "flying_4",
+    "reference": "assets/combat_static/enemies/flying_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "418295de262ae92bc6c3bf1037a360b08b64bbc1b24feabd6aa22625bf154c9b",
+    "source_sha256": "6c8642d0b395e5353dc2dfd55eeb0fee01bf7d061fd0b1d1498bf4ec4c6f73e7"
+  },
+  {
+    "id": "flying_5",
+    "reference": "assets/combat_static/enemies/flying_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "00fb7c879f3162117f6a41639681006f36a9a19d68f91ebe7e1baa27fd1ec7fc",
+    "source_sha256": "b8f1159066d9bdea4cc808eb5d4bdca6f209520ed2bcbdef41d13f8ce3b6394d"
+  },
+  {
+    "id": "flying_6",
+    "reference": "assets/combat_static/enemies/flying_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "09f2f33e5b06db24599a55c5935677cf50aa1afcfb3982341fee081a6c981d3e",
+    "source_sha256": "1498c7b1fd3455e1908e5b4c2faa820e87ad9f6708accdb2f921090094bd3f28"
+  },
+  {
+    "id": "flying_7",
+    "reference": "assets/combat_static/enemies/flying_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "863b229edb07471b115519fc8e106f7e7b3f36b41ca7d570bdcbcd88404aa1c0",
+    "source_sha256": "13621062c50aad44faf034411c208f161de91c7c25f99b55b1ee3099615addce"
+  },
+  {
+    "id": "goblin_0",
+    "reference": "assets/combat_static/enemies/goblin_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_0.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "aec277afdb47588f8f085352618eeedd3465ad70fb9e16e84030b8a5650d84d7",
+    "source_sha256": "d63915b10a41f2eb39b152e2bf4de128c11d607be2f0cb357cf5d44001ea377c"
+  },
+  {
+    "id": "goblin_1",
+    "reference": "assets/combat_static/enemies/goblin_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "11393571973630225bc97a639cdf5e9a6ed97689f18e410a7ec1bfffa364b503",
+    "source_sha256": "c99b5a4591b56f87475f30f91a2716702ae09a2ad477b3ab4a0a2087823cc76b"
+  },
+  {
+    "id": "goblin_2",
+    "reference": "assets/combat_static/enemies/goblin_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "b6d35d6a62e035ece5cdcfda4786b250f5577633240c9d10303d297eb2df02c9",
+    "source_sha256": "21d626fe7b1ada0db544c9cade53680760e68c4e642a54d1a1406436567ebc94"
+  },
+  {
+    "id": "goblin_3",
+    "reference": "assets/combat_static/enemies/goblin_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "0f70455c317cdc8b9e000c231310c8025b9b42ee42c0d498555fbf30965830cd",
+    "source_sha256": "71a1c66407194cc6da92c90db5966e90e3dae0d6b1ff84a559c7dd65bac55e33"
+  },
+  {
+    "id": "goblin_4",
+    "reference": "assets/combat_static/enemies/goblin_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "eafa8f8d4e8d732d277dcd26acd433d6936f81401214224d0df6cd52f274a418",
+    "source_sha256": "75d638a89e3bf3063e8f01ce3348a6fb8e080a8a4f305e0a06e82ebece6f5740"
+  },
+  {
+    "id": "goblin_5",
+    "reference": "assets/combat_static/enemies/goblin_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "1ec4dcd8babc6102343ba5a8a869740b99f0fa02c0a7f8f0d348f88870e3dcd6",
+    "source_sha256": "db6bce67325ab027c7a49b42c10dd8d16639361cee61d4f9d57ec699752a939d"
+  },
+  {
+    "id": "goblin_6",
+    "reference": "assets/combat_static/enemies/goblin_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "08fa9a576884b15047cb29c38a196cc66328122fd508767964c0bf31e44e12bf",
+    "source_sha256": "95ef5e50934783c1960988f532589ef71ec5e73a6ca3439fcac6d4db5ca84ddd"
+  },
+  {
+    "id": "goblin_7",
+    "reference": "assets/combat_static/enemies/goblin_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "ae3447c9ecdd1f514f04cceaa88db60e6c424cddd4b30121727cdcb3d60b6652",
+    "source_sha256": "608725bb17b1a02448837f8db3d942fdb16591ad3f9107c2931fcba69207b58b"
+  },
+  {
+    "id": "skeleton_0",
+    "reference": "assets/combat_static/enemies/skeleton_0/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_0.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "66f89adbcff2b84fcfca928e741e07bce154159ef5d3b5d5a6acfd5810a1f8f8",
+    "source_sha256": "4b5de9672ac4da2a9df96b6dcfdbf50683f6c4194085ceb1c4a2b39a6ce778c3"
+  },
+  {
+    "id": "skeleton_1",
+    "reference": "assets/combat_static/enemies/skeleton_1/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_1.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "218b5039259ea075a5754ee79c74e575852d878ff7f789f4ff3d6190bbef26ab",
+    "source_sha256": "eee5f04239909666d2c575e613a98ef656724cd58feb2a6a7c742c697387fd27"
+  },
+  {
+    "id": "skeleton_2",
+    "reference": "assets/combat_static/enemies/skeleton_2/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_2.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "3069ddfc0cf856b14aa563e919aa44e7b36587022cd9b6a50319b2377b8c09ba",
+    "source_sha256": "0d6121e3571d9b18870f6d1802fbf31d951e612678884dc4d6967703e81713ff"
+  },
+  {
+    "id": "skeleton_3",
+    "reference": "assets/combat_static/enemies/skeleton_3/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_3.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "e33a0224a7d9c366e0aa7b026139cc0a287c0e52e8a31376250dcddbb54cba51",
+    "source_sha256": "5fe948d80abdcd212a655c1dd54c1f41d5bc9155604575ef81145749014c5a6c"
+  },
+  {
+    "id": "skeleton_4",
+    "reference": "assets/combat_static/enemies/skeleton_4/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_4.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "74bfd14036edd9542ef1ead68db034b9ece212ed225959822c3216281433b65a",
+    "source_sha256": "5f69a7f93855c86fd06eb969b627c780161a0530b11995f534c5444dbd0f7609"
+  },
+  {
+    "id": "skeleton_5",
+    "reference": "assets/combat_static/enemies/skeleton_5/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_5.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "8ddefc3c75cc878d88d5cf658fd51e18646490461369d37853f876e002b4a7f1",
+    "source_sha256": "30131f4b02caaf3700961908f827488af86a8422bb8c57c4fef9e7ef2bb3e3e0"
+  },
+  {
+    "id": "skeleton_6",
+    "reference": "assets/combat_static/enemies/skeleton_6/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_6.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "539cedb49b5f208960e9706af0d6e30c0bafe4bf4316d1ade7403ecbfea7a487",
+    "source_sha256": "f747a4beef12803469b24e56328afa765d1dda34dd64bbba9006bd110f02a74d"
+  },
+  {
+    "id": "skeleton_7",
+    "reference": "assets/combat_static/enemies/skeleton_7/idle.png",
+    "source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_7.png",
+    "prompt": "Create ONE production-ready 2D game enemy death-state sprite. Use the attached idle sprite ONLY as the exact machine identity reference: preserve its distinctive chassis shape, armor colors, sensors, limbs and weapon/tool. Draw that SAME robot utterly destroyed, collapsed sideways into a LOW HEAP on the floor, its main chassis split open, several recognizable armor sections and mechanical limbs detached and lying beside it, broken weapon/tool, exposed copper wire bundles, hanging severed cables and torn hoses. All wreckage belongs to that one machine. Clearly beyond repair, NOT a standing, sitting, kneeling, crouching or merely hurt intact robot. Wide low silhouette, roughly twice as wide as tall, readable as wreckage at 200 pixels wide. Match the game's hand-inked American post-apocalyptic comic style: precise heavy black ink, clear flat cel shading, dark steel and the SAME identity accents, fine ivory cutout outline. No person, hero or unrelated robot. NO text, NO scenery, NO floor patch, NO flames, NO sparks drawn into the image (those are animated separately). True transparent background and clean alpha. Only one isolated wreckage asset centered with generous transparent padding on a square canvas. Do not copy any rectangular background from the reference. This is a permanent destroyed corpse sprite, not an action illustration.",
+    "generator": "built-in image_gen",
+    "transparent": true,
+    "reference_sha256": "23d11ed3292cf93536e53a42cfa9bdcc41b65f3d2596a58e73241b929779e16d",
+    "source_sha256": "bb2ef7b1c1048b612122d1a0c082e360e205fb79aadee8fb97d9bbea77ce288b"
+  }
+]

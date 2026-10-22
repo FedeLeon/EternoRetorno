@@ -21,10 +21,12 @@ static func silhouette(actor: Control) -> Rect2:
 static func fit_enemy(actor: Control, max_height: float, max_width: float = 220.0) -> void:
 	# Normalize the actual drawing, rather than preserving accidental source sizes.
 	# Wide machines get their presence from width; tall machines from height.
-	var bounds = silhouette(actor)
-	var factor = minf(max_height / maxf(1.0, bounds.size.y * actor.sprite.scale.y), max_width / maxf(1.0, bounds.size.x * actor.sprite.scale.x))
+	# Normalize against the living silhouette, including when rebuilding a corpse.
+	var idle: Array = actor.poses.idle.bounds
+	var bounds = Rect2(idle[0],idle[1],idle[2],idle[3])
+	var factor = minf(max_height / maxf(1.0, bounds.size.y * float(actor.poses.idle.scale)), max_width / maxf(1.0, bounds.size.x * float(actor.poses.idle.scale)))
 	actor.scale = Vector2.ONE * factor
 	# Keep wide silhouettes inside the enemy arena; their bars stay in their columns.
-	var half_width = bounds.size.x * actor.sprite.scale.x * factor * 0.5
-	var center = (actor.get_global_transform() * actor.body_rect().get_center()).x
+	var half_width = bounds.size.x * float(actor.poses.idle.scale) * factor * 0.5
+	var center = (actor.get_global_transform() * Vector2(actor.size.x*.5,actor.size.y)).x
 	actor.position.x += clampf(center, 536.0 + half_width, 1264.0 - half_width) - center
