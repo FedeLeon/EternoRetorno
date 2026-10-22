@@ -7,6 +7,8 @@ const BASELINE_OFFSET = {}
 # Medallions, active shields and energy center ink, not the transparent canvas.
 # Current digits occupy rows 12..45; their optical center is five pixels lower.
 var center_ink = false
+var glyph_directory = "res://assets/ui/numbers"
+var glyph_aspect = 0.65
 
 var value: int = 0:
 	set(next):
@@ -25,12 +27,12 @@ func refresh() -> void:
 		remove_child(child)
 		child.queue_free()
 	var digits = str(value)
-	var height = minf(size.y, size.x / (digits.length() * 0.65))
-	var width = height * 0.65
+	var height = minf(size.y, size.x / (digits.length() * glyph_aspect))
+	var width = height * glyph_aspect
 	var left = (size.x - width * digits.length()) / 2.0
 	for i in range(digits.length()):
 		var glyph = TextureRect.new()
-		glyph.texture = load("res://assets/ui/numbers/%s.png" % digits[i])
+		glyph.texture = load("%s/%s.png" % [glyph_directory,digits[i]])
 		glyph.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		glyph.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		glyph.mouse_filter = Control.MOUSE_FILTER_IGNORE

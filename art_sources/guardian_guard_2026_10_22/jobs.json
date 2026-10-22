@@ -1,0 +1,37 @@
+[
+  {
+    "hero": "guardian",
+    "id": "idle",
+    "duration": 4.2,
+    "ping_pong": true,
+    "prompt": "EDIT this 4x4 sixteen-frame sprite sheet of the female Constructor heroine. Keep her exact red braid, orange jacket, purple scarf, shield design, brown boots, comic ink style and fine ivory cutout edge. Preserve identical camera, body scale, face, low shield guard, legs and both fixed ground contacts in EVERY cell. Draw precisely SIXTEEN consecutive in-between full-body frames, row-major, on true TRANSPARENT background, generous empty gutters with full boots, shield and crowbar inside each cell. CHANGE ONLY the CROWBAR HAND/FOREARM gesture, retain a very subtle chest breath. This is HALF of a slow 4.2-second out-and-back idle cycle: Frame1 current neutral low-guard pose, right hand holds red hooked crowbar beside outer thigh. Through frames2-15, right forearm and wrist gradually swing inward a little so she gently TAPS THE SHAFT OF THE CROWBAR AGAINST THE OUTSIDE OF HER RIGHT THIGH, like a small confident habitual waiting gesture. Frame16 is the gentle CONTACT pose: visible red steel shaft touches the outer seam of her trousers high on thigh, hand just outside her hip, hooked lower end points toward ground beside her leg. The arm must articulate naturally at elbow/wrist; weapon stays firmly in same hand, no extra fingers or detached props. Total hand travel about 15 pixels at 300px body height, crowbar rotates only about 12 degrees toward thigh: visible small gesture, not large attack. Divide this small travel evenly into 16 VERY CLOSE drawings, only ~1 pixel difference in hand from one frame to the next, with consistent weapon length and hook shape. Do NOT draw the return in the sheet: engine plays the same sixteen frames in reverse to lift crowbar away smoothly after contact. NO jumps at row boundaries, no isolated alternative poses. Keep shield and head essentially STILL; do not lift shield. COPY BOOTS/LOWER LEGS IDENTICALLY IN ALL CELLS, feet never move, no stepping, no bounce, no whole-body translation/rotation/scaling. Hair and scarf barely move. No text, frame labels, grid, floor, shadows, effects or extra objects. Prioritize a readable small hand-and-crowbar tap against thigh with coherent neighboring drawings over adding other movement.",
+    "references": [
+      "art_sources/guardian_guard_2026_10_22/sources/guardian_idle_subtle.png"
+    ],
+    "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_idle_thigh_tap.png",
+    "frame_height": 288,
+    "scale": 0.350694444444445
+  },
+  {
+    "hero": "guardian",
+    "id": "attack",
+    "duration": 0.9,
+    "prompt": "EDIT IMAGE1 animation sheet with ONLY one correction: FIX THE FEET AND LOWER LEGS. Keep all its sixteen chronological UPPER-BODY POSES, facial identity, costume, shield/crowbar motion, exact comic drawing detail and color unchanged. Image2 is a repeated-pose master with IDENTICAL BOOTS/LOWER LEGS in every cell: use its fixed lower-leg silhouette as the blueprint. In the edited 4x4 transparent sheet, both brown boots must have IDENTICAL shape, position, spacing, angle and dimensions in ALL SIXTEEN frames; do not widen stance when blocking or attacking. COPY the same two boots and shins into every cell, knee joints can flex above the shins but ankles/boots are completely immobile. Preserve the torso twisting/crowbar arc for attack or torso ducking behind the shield for block from image1. Same body scale every frame, no zoom. Do not change weapon/hand identity. Keep the whole figure and full weapons inside each frame with generous TRANSPARENT margin on ALL FOUR SIDES, including soles; no sole touching a cell boundary. Precisely 4 equal columns by 4 equal rows, sixteen drawings ordered as image1, transparent background, no lettering, grid, floor or shadows. No whole-image rotations/deformations. This is an animation registration correction; avoid redesigning the upper body. The attack still must turn hips/shoulders, wind up, swing the red crowbar to the right, follow through and recover.",
+    "references": [
+      "art_sources/guardian_guard_2026_10_22/sources/guardian_attack.png",
+      "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png"
+    ],
+    "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_attack_grounded.png"
+  },
+  {
+    "hero": "guardian",
+    "id": "guard",
+    "duration": 0.9,
+    "prompt": "EDIT IMAGE1 animation sheet with ONLY one correction: FIX THE FEET AND LOWER LEGS. Keep all its sixteen chronological UPPER-BODY POSES, facial identity, costume, shield/crowbar motion, exact comic drawing detail and color unchanged. Image2 is a repeated-pose master with IDENTICAL BOOTS/LOWER LEGS in every cell: use its fixed lower-leg silhouette as the blueprint. In the edited 4x4 transparent sheet, both brown boots must have IDENTICAL shape, position, spacing, angle and dimensions in ALL SIXTEEN frames; do not widen stance when blocking or attacking. COPY the same two boots and shins into every cell, knee joints can flex above the shins but ankles/boots are completely immobile. Preserve the torso twisting/crowbar arc for attack or torso ducking behind the shield for block from image1. Same body scale every frame, no zoom. Do not change weapon/hand identity. Keep the whole figure and full weapons inside each frame with generous TRANSPARENT margin on ALL FOUR SIDES, including soles; no sole touching a cell boundary. Precisely 4 equal columns by 4 equal rows, sixteen drawings ordered as image1, transparent background, no lettering, grid, floor or shadows. No whole-image rotations/deformations. This is an animation registration correction; avoid redesigning the upper body. The defense still must raise shield IN FRONT of face and chest, duck behind it, and return to original guard.",
+    "references": [
+      "art_sources/guardian_guard_2026_10_22/sources/guardian_guard.png",
+      "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png"
+    ],
+    "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_guard_grounded.png"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "hero": "guardian",
+  "id": "guard",
+  "duration": 0.72,
+  "prompt": "Use BOTH supplied references: image1 identity/neutral idle sequence, image2 repeated neutral pose guide. Create ONE high-resolution transparent sheet of EXACTLY 16 sequential full-body drawings, 4 columns x 4 rows, chronological row-major. Match reference identity, sharp comic ink, fine ivory edge, consistent face, clothes and proportions. Same camera, facing right, identical anatomical scale in EVERY cell, big empty transparent gutters around the full body AND weapons. No cropped hands/feet/weapons, no grid, labels, floor, cast shadows, extra characters or drawn effects. Small coherent changes between adjacent frames, all in-betweens explicitly drawn, smooth acceleration/recovery. MOST IMPORTANT: lower legs and BOTH BOOTS must be COPIED UNCHANGED at the exact same TWO ground-contact positions in every cell. No foot lifting, sliding, walking, running, whole-body tilt/rotation, zoom or scaling. Only upper-body articulation, arms, wrists, equipment, hair and cloth.  Identity: Female constructor hero, red braided hair, orange work jacket, purple scarf, dark trousers and brown work boots. Rectangular improvised turquoise/white metal shield on one forearm and red crowbar in the other hand. Action: Frames1-4 neutral guard.5-8 lift rectangular shield across chest;9-11 brace against a hit from the right, elbow flexes very slightly;12-16 lower shield to original guard. Crowbar stays in the other hand. Feet/lower legs unchanged.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png",
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/guardian_guard.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-6772cd84-9cda-489b-8e70-866c504b4e15.png",
+  "source_sha256": "cac94192e7bee64822113fa1ceb4362d2b559a6b8f113c075b3eb9ea1c0dde20",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png": "5b02ea41d0a1309dc7e19d9a1eb10d98f797c3d0edfc4ae4283ac93f6b26fabf",
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png": "fdf3640964f1f4e00fa9f629f0400bb14497b557f1fac1495e8813b8e3e66708"
+  }
+}

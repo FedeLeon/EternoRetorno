@@ -1,0 +1,18 @@
+{
+  "hero": "guardian",
+  "id": "guard",
+  "duration": 0.9,
+  "prompt": "Generate one transparent animation sprite sheet for the existing female Constructor heroine. Reference 1 is her exact character design; reference 2 shows her current proportions and planted stance. Keep red braid, orange work jacket, purple scarf, dark trousers, brown boots, rectangular turquoise-and-white scrap-metal shield on her LEFT forearm and RED CROWBAR held in her RIGHT HAND. Detailed sharp post-apocalyptic comic ink with fine ivory cutout rim, same face and costume. Exactly SIXTEEN full-body sequential drawings in FOUR columns x FOUR rows, chronological row-major, uniform cells with generous TRANSPARENT gutters and margins. Fixed orthographic camera, facing right. All 16 figures same anatomical scale; no zoom. BOTH BOOTS and lower shins copied identically in every cell, same two horizontal positions and same baseline. Feet never step, slide, rotate, lift or change size; knees can flex above the fixed shins. Draw genuine changes of anatomy and occlusion, never rotate or distort an entire cutout. No ground, cast shadow, grid lines, text, VFX, extra people, duplicate limbs, cropped weapons or cropped feet. Keep every figure and all equipment wholly inside its own cell. Continuous motion with tiny consistent changes between neighboring frames, clear in-betweens. ACTION: HIDE BEHIND SHIELD TO BLOCK, complete one-shot. Frames1-3 original low-shield guard. Frames4-7 LEFT arm raises and pulls the rectangular shield up and forward toward the enemy on the RIGHT; knees bend and torso lowers behind it, chin tucks. Frames8-11 FULL COVER: shield is visibly IN FRONT of her face and torso, its upper edge above nose, only eyes/crown may peek, shoulders hunched protected BEHIND its broad metal face. Crowbar hand tucks safely beside right hip, shield overlaps chest/head naturally. Anatomically convincing shoulder/elbow grips; do not just move shield next to unchanged face. Frames12-16 controlled smooth uncrouch and shield lowering back to original guard. Both boots/lower shins stay IDENTICAL and planted at original two contacts throughout. Shield keeps same physical dimensions, no growing/shrinking. Do not alter shield markings; no impact flashes.",
+  "references": [
+    "assets/combat_static/heroes/guardian/idle.png",
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png"
+  ],
+  "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_guard.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-928fe96e-62dd-489c-b094-50ed357f043b.png",
+  "source_sha256": "b0eb1141ec484598ceae9750c4b2bba28fe656301d537b92a23750402a4e0380",
+  "reference_sha256": {
+    "assets/combat_static/heroes/guardian/idle.png": "bf28d1df1e0c55079b7d0e95ff3b66b0ec4a564b026d33ec97ee2bebfab15f71",
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png": "5b02ea41d0a1309dc7e19d9a1eb10d98f797c3d0edfc4ae4283ac93f6b26fabf"
+  }
+}

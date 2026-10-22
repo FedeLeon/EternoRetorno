@@ -1,0 +1,28 @@
+[
+  {
+    "id": "player_turn",
+    "text": "TU TURNO",
+    "prompt": "Create ONE transparent 2D game turn-announcement wordmark matching ETERNO RETORNO title in attached image1 and VICTORIA in image2: heavy forward-slanted uppercase dry-brush letters, jagged energetic ink strokes, clear readable shapes, black ink outline and short black brush shadow. Only requested text, all words on ONE HORIZONTAL LINE, transparent padding, true transparent alpha. No scenery, people, rectangle, panel, extra words or numbers. Exact text: \"TU TURNO\". Bright turquoise letters with light ivory brush highlights. Single line, no number.",
+    "generator": "built-in image_gen",
+    "source": "art_sources/turn_announcements_2026_10_22/sources/player_turn.png",
+    "reference": "assets/title/background.png",
+    "runtime": "assets/battle_turns/player_turn.png",
+    "processing": "Alpha-threshold bounds crop and proportional reduction in Godot",
+    "source_sha256": "b87722344299a0a2f46d1f91223e713fda461d7de7f89d54ce4ed69f1d78239a",
+    "reference_sha256": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320",
+    "runtime_sha256": "64cde9d8bcfe27522c2b713c6e2c68d5c2a4a7d5c75bfbc3935960887b84abad"
+  },
+  {
+    "id": "enemy_turn",
+    "text": "TURNO DEL ENEMIGO",
+    "prompt": "Create ONE transparent 2D game turn-announcement wordmark matching ETERNO RETORNO title in attached image1 and VICTORIA in image2: heavy forward-slanted uppercase dry-brush letters, jagged energetic ink strokes, clear readable shapes, black ink outline and short black brush shadow. Only requested text, all words on ONE HORIZONTAL LINE, transparent padding, true transparent alpha. No scenery, people, rectangle, panel, extra words or numbers. Exact text: \"TURNO DEL ENEMIGO\". Warm parchment ivory lettering. Correct Spanish spelling, all three words on ONE SINGLE horizontal line. No other text.",
+    "generator": "built-in image_gen",
+    "source": "art_sources/turn_announcements_2026_10_22/sources/enemy_turn.png",
+    "reference": "assets/title/background.png",
+    "runtime": "assets/battle_turns/enemy_turn.png",
+    "processing": "Alpha-threshold bounds crop and proportional reduction in Godot",
+    "source_sha256": "a1344ac07a83427f1aca30f967a6af8eed6a9ea5e3d4d0861d0480dc44182892",
+    "reference_sha256": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320",
+    "runtime_sha256": "235a51865ca6995c0c5d64b43af050099bc852086eea96d1908d4a75b5631bc3"
+  }
+]

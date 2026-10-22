@@ -36,17 +36,17 @@ func verify() -> void:
 			check(Game.new("user://static-combat.save",true).run==committed,"save resolves before visual presentation")
 			var deadline=Time.get_ticks_msec()+5000
 			while app.combat_busy and app.hero_art[0].current_action!="attack" and Time.get_ticks_msec()<deadline:await process_frame
-			check(app.hero_art[0].current_action=="attack","attack selects its fixed illustration")
-			var pose=app.hero_art[0].sprite.texture;var transform=app.hero_art[0].sprite.get_transform()
+			check(app.hero_art[0].current_action=="attack","attack selects its authored sequence")
+			var transform=app.hero_art[0].sprite.get_transform()
 			await create_timer(.08).timeout
-			check(app.hero_art[0].sprite.texture==pose and app.hero_art[0].sprite.get_transform()==transform and app.hero_art[0].position==origin,"attacking body stays still while cut-in plays")
+			check(app.hero_art[0].sprite.get_transform()==transform and app.hero_art[0].position==origin,"authored poses keep body transform fixed while cut-in plays")
 			await capture("floor%d-%s-attack"%[floor_number,party[0]])
 			await settle()
 			check(app.game.run==committed,"presentation never reapplies damage or changes saved state")
-			check(app.hero_art[0].current_action=="idle","completed attack restores a static idle")
+			check(app.hero_art[0].current_action=="idle","completed attack restores combat idle")
 			# Defense-only enemies exercise the fixed guard pose and foreground effect.
 			for enemy in app.game.run.combat.enemies:enemy.intent={"damage":0,"block":7,"target":0}
 			app.animate_combat_action();await settle()
-			check(app.hero_art.values().all(func(actor):return not actor.is_processing()),"no idle player after a full turn")
+			check(app.hero_art.values().all(func(actor):return not actor.is_processing()),"actors keep animation processing in their player")
 	app.queue_free();await process_frame
 	print("STATIC COMBAT FLOW: %d checks / %d failures"%[checks,failures]);quit(1 if failures else 0)

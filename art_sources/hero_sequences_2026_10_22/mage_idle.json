@@ -1,0 +1,17 @@
+{
+  "hero": "mage",
+  "id": "idle",
+  "duration": 4.2,
+  "ping_pong": true,
+  "prompt": "EDIT the supplied repeated-pose sheet preserving EXACT same identity, face, clothing details, physique, scale, stance and camera in every cell. ONE SQUARE transparent sprite sheet: exactly 16 full-body frames in the same 4 columns by 4 rows. High-resolution crisp detailed hand-inked American post-apocalyptic comic art, precise black contours and fine ivory cutout rim. Each complete figure including all weapons and BOTH boots fits its own cell with generous transparent gutters. No figures cut off, no grid, text, numbers, floor, scenery, shadows or VFX. Make 16 coherent sequential IN-BETWEEN drawings of ONE VERY SUBTLE INHALATION HALF-CYCLE; chronological row-major. Frame1 neutral reference pose. Frame16 peak inhalation ONLY 2-3 pixels of shoulder/chest rise at 300px-tall character. Hands/weapon move only 2-3 pixels TOTAL across ALL 16 frames, cloth edge 2 pixels, hair tips 1 pixel, gently lagging the breathing. Every adjacent pose is almost identical, changes distributed evenly, not separate guard poses. These 16 frames will play out-and-back in 4.2 seconds, so DO NOT return to neutral at frame16. MOST IMPORTANT: copy BOTH BOOTS, lower legs and their exact TWO FIXED GROUND CONTACTS IDENTICALLY in every cell. No stepping, sliding, leaning whole figure, resizing, turning head or changing body proportions. No uncoordinated changes in face, costume markings, hair or weapon. True clean transparent alpha. Identity: Female professor hero with short silver-white hair, burgundy-purple long coat with turquoise lining, white shirt, grey trousers and brown lace-up boots, brown shoulder bag, book in one hand and a long homemade electrified antenna staff in the other.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/references/mage_idle_guide.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/mage_idle.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-7043a2c3-4f49-41ea-a011-f1bc21d1a436.png",
+  "source_sha256": "22e96a48db138fa7942a1a5358c1caefa9aa15ac7549886d527ff1b28cca9e54",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/references/mage_idle_guide.png": "74636bffed7c40e9a1152fd1dff70d625533219ccb0812928fb035ffacbfa915"
+  }
+}

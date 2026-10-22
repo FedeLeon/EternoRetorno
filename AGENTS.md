@@ -17,6 +17,7 @@
 - Preferencia del usuario: desarrollar y probar localmente; no compilar/exportar
   APK salvo que lo pida explícitamente.
 - Preservar cambios existentes del usuario y compatibilidad de guardados.
+- Para animaciones de héroes en batalla, seguir el criterio de continuidad de `docs/ARTE.md`.
 
 ## Arquitectura y tamaño de archivos
 

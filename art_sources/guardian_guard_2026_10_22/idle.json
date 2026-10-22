@@ -1,0 +1,19 @@
+{
+  "hero": "guardian",
+  "id": "idle",
+  "duration": 4.2,
+  "ping_pong": true,
+  "prompt": "Generate one transparent animation sprite sheet for the existing female Constructor heroine. Reference 1 is her exact character design; reference 2 shows her current proportions and planted stance. Keep red braid, orange work jacket, purple scarf, dark trousers, brown boots, rectangular turquoise-and-white scrap-metal shield on her LEFT forearm and RED CROWBAR held in her RIGHT HAND. Detailed sharp post-apocalyptic comic ink with fine ivory cutout rim, same face and costume. Exactly SIXTEEN full-body sequential drawings in FOUR columns x FOUR rows, chronological row-major, uniform cells with generous TRANSPARENT gutters and margins. Fixed orthographic camera, facing right. All 16 figures same anatomical scale; no zoom. BOTH BOOTS and lower shins copied identically in every cell, same two horizontal positions and same baseline. Feet never step, slide, rotate, lift or change size; knees can flex above the fixed shins. Draw genuine changes of anatomy and occlusion, never rotate or distort an entire cutout. No ground, cast shadow, grid lines, text, VFX, extra people, duplicate limbs, cropped weapons or cropped feet. Keep every figure and all equipment wholly inside its own cell. Continuous motion with tiny consistent changes between neighboring frames, clear in-betweens. ACTION: ACTIVE SHIELD GUARD, one ascending HALF-CYCLE to play forward and backward over 4.2 seconds. Frame1 matches original stance: shield held low beside left hip/ribs, crowbar ready on right. Across frames2-16 the LEFT arm and elbow smoothly RAISE THE SHIELD from lower ribs up to face/chin height, clearly noticeable travel of about 15% of her body height. Shield remains on LEFT arm, between her and the enemies to the RIGHT; slightly turn its front outward to protect her. Head and shoulders settle slightly behind its upper rim, eyes stay vigilant above it, right hand keeps crowbar ready. Subtle breathing in chest, braid/scarf lagging motion. Frame16 is maximum HIGH GUARD, do NOT lower shield again in this sheet; playback reverses these exact frames for smooth lowering. Stable torso height and identical planted feet across all frames, no global bounce. This is a shield being raised by an arm, NOT a hovering shield or whole-body oscillation.",
+  "references": [
+    "assets/combat_static/heroes/guardian/idle.png",
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png"
+  ],
+  "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_idle.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-86c87d3c-e038-4d6e-aed3-cfad4fc8dabf.png",
+  "source_sha256": "e22775bf1f772fd889e515ed539040eaa47d9490330ae4dfd8b3f677afdfda86",
+  "reference_sha256": {
+    "assets/combat_static/heroes/guardian/idle.png": "bf28d1df1e0c55079b7d0e95ff3b66b0ec4a564b026d33ec97ee2bebfab15f71",
+    "art_sources/hero_sequences_2026_10_22/sources/guardian_idle.png": "5b02ea41d0a1309dc7e19d9a1eb10d98f797c3d0edfc4ae4283ac93f6b26fabf"
+  }
+}

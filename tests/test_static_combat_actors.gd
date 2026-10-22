@@ -19,14 +19,15 @@ func verify() -> void:
 			check(actor.sprite is TextureRect,"body uses a plain illustration: "+id)
 			check(not actor.is_processing(),"body has no animation processor: "+id)
 			var origin=actor.position;var outer=actor.scale
+			var animated = kind=="heroes"
 			for action in ["idle","attack","guard","skill","hurt","death"]:
 				actor.set_fallen(false)
 				actor.begin_action(action)
-				check(not actor.sprite.texture is AtlasTexture,"individual PNG, no sprite sheet: "+id+"/"+action)
+				check((actor.sprite.texture is AtlasTexture)==animated,"authored sequences for heroes: "+id+"/"+action)
 				var texture=actor.sprite.texture;var transform=actor.sprite.get_transform()
 				var pixels=hash(texture.get_image().get_data())
 				for i in range(2): await process_frame
-				check(actor.sprite.texture==texture and hash(texture.get_image().get_data())==pixels,"held action never advances drawings")
+				if not animated: check(actor.sprite.texture==texture and hash(texture.get_image().get_data())==pixels,"held action never advances drawings")
 				check(actor.sprite.get_transform()==transform and actor.position==origin and actor.scale==outer,"no body movement, scale, rotation or recoil")
 				check(absf(actor.body_rect().end.y-actor.size.y)<.01,"every action stays planted: "+id+"/"+action)
 			check(actor.begin_action("hurt")==-1 and actor.current_action=="death","late damage cannot overwrite death")

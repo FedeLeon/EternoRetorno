@@ -38,15 +38,29 @@ la acción sin recalcularla. Los cálculos pertenecen a los módulos de combate 
 `attack`, `guard`, `skill`, `hurt`, `death`. `detailed_hero.gd` y `enemy_sprite.gd`
 son adaptadores de identidad sobre esa base. `data/static_combat.json` declara
 ruta, escala, límites y apoyo para 360 dibujos: cuatro héroes y 56 modelos enemigos.
-No hay reproductor de animación corporal, rig, mezcla de poses ni carrera victoriosa.
+Los cuatro héroes activan secuencias mediante `data/hero_sprite_sequences.json`:
+`combat_sprite_player.gd` reproduce seis secuencias de 16 dibujos desde atlas,
+con anclaje de botas y regiones de shader por fotograma. El adaptador del héroe
+mantiene la misma API de acciones y permite recurrir a poses fijas; los enemigos siguen estáticos.
+El reposo usa una sola escala de importación y medio ciclo de respiración recorrido
+en ida y vuelta con aceleración suave, para evitar saltos de tamaño y de cierre.
+No hay rig, deformación de cuerpos ni carrera victoriosa.
 
 `begin_action()`/`finish_action()` mantienen la imagen durante el primer plano.
-`play_once()` conserva una imagen durante un intervalo; no avanza fotogramas.
+`play_once()` conserva una imagen durante un intervalo en actores estáticos;
+cada héroe espera la duración de su secuencia y conserva el último cuadro al caer.
 `hero_attack_playback.gd` conecta la liberación de la pose a `finished` y a la
 salida del primer plano del árbol. `recover()` espera su salida antes de iniciar
 el siguiente golpe; la recuperación de la barra no acorta ni alarga la pose.
 Las revisiones de acción cancelan retornos obsoletos al interrumpir o restaurar.
 El equipo se aplica directamente al actor con `apply_gear()` y un shader fijo.
+El contacto del héroe espera la mitad del ataque antes de mostrar el impacto;
+la recuperación respeta la secuencia también sin primeros planos. El importador
+`scripts/import_carpenter_sequences.gd` separa figuras conectadas, registra sus apoyos
+y empaqueta las fuentes de `art_sources/carpenter_sequences_2026_10_22/`.
+`import_hero_sequences.gd` incorpora Constructora, Boticario y Profesora desde
+`art_sources/hero_sequences_2026_10_22/`; ambos comparten `hero_sequence_geometry.gd`
+y conservan los bancos existentes. Los cuatro reposos duran 4,2 s.
 
 Las 20 acciones de héroes usan nuevos PNG de 512×512, con escala y anclaje por
 pose en el mismo catálogo. `scripts/import_hero_actions_hd.gd` extrae figuras

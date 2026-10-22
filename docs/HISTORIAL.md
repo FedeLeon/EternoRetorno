@@ -4,6 +4,63 @@ Esta página registra el mantenimiento de la documentación y sistemas actuales.
 Los registros extensos de diseños reemplazados se consultan en Git; no se
 mantienen como manuales alternativos dentro de `docs/`.
 
+## 22/10/2026 — Defensa del Boticario y criterio de continuidad
+
+Nueva cobertura con retroceso de cintura y brazos, 16 dibujos recorridos en ida y
+vuelta, pies apoyados y regreso gradual a guardia. El reproductor completa también
+secuencias inversas de una sola acción. Criterio de animación en Arte, AGENTS y memoria.
+Revisión gráfica local, 62 controles y cuatro suites correctas; otras poses intactas,
+fuentes/prompts guardados y pruebas temporales retiradas.
+
+## 22/10/2026 — Gesto de espera con la barreta
+
+Constructora: acerca suavemente la barreta al costado de la pierna y vuelve a guardia,
+con respiración, apoyos y ciclo de 4,2 s. Solo cambia reposo; ataque y defensa intactos.
+Revisión gráfica local, 543 controles y dos suites correctas; fuente/prompt guardados,
+pruebas temporales retiradas.
+
+## 22/10/2026 — Respiración sutil de la Constructora
+
+Reemplaza solo reposo por 16 cuadros casi idénticos, con leves movimientos de escudo
+y barreta durante 4,2 s. Importación por clip: ataque y defensa conservan archivos,
+escalas y configuración. Revisión gráfica local, 543 controles y tres suites correctas;
+fuente/prompt guardados y pruebas temporales retiradas.
+
+## 22/10/2026 — Guardia y golpes propios de la Constructora
+
+Rehace 48 cuadros: reposo de 4,2 s levantando el escudo, ataque con giro y barreta,
+y bloqueo cubriendo cara y torso. Apoyos registrados, escala fija e importación por
+héroe sin alterar los otros bancos. Revisión gráfica local, 624 controles específicos
+y cuatro suites de combate correctas; fuentes/prompts conservados y pruebas temporales retiradas.
+
+## 22/10/2026 — Secuencias coherentes para los cuatro héroes
+
+Constructora, Boticario y Profesora incorporan seis secuencias de 16 dibujos cada
+uno: 288 cuadros nuevos, reposos suaves de 4,2 s, escala fija y apoyos registrados.
+Importadores comparten geometría y conservan los bancos existentes. Revisión gráfica
+local, 2.878 controles específicos y 105 suites correctas; fuentes y prompts guardados,
+pruebas temporales retiradas. Sin validación en navegador ni celular.
+
+## 22/10/2026 — Número de turno con letras de pincel
+
+Dígitos 0–9 en ámbar con el estilo del título, compuestos dinámicamente bajo
+Tu turno. Revisión nativa de una, dos y tres cifras y pruebas de HUD y turnos
+correctas; fuentes y prompt conservados, pruebas temporales retiradas.
+
+## 22/10/2026 — Reposo más estable y leyendas con letras del título
+
+Carpintero: nuevos cuadros de reposo con cambios menores, una sola escala y ciclo
+suave de ida y vuelta de 4,2 s. Tu turno y Turno del enemigo usan letras de pincel
+como Eterno Retorno, conservando el número de turno. Revisión nativa y 105 suites
+locales correctas; fuentes y prompts guardados, pruebas temporales retiradas.
+
+## 22/10/2026 — Prueba de sprites animados del Carpintero
+
+Seis secuencias de 16 dibujos: reposo, ataque, bloqueo, habilidad, daño y caída.
+Apoyos registrados, impacto sincronizado y regreso a guardia, también sin primeros
+planos. Los otros héroes siguen estáticos. Fuentes y prompts conservados; revisión
+gráfica local, 373 controles temporales y 105 suites correctas, sin exportar APK.
+
 ## 22/10/2026 — Anuncio de victoria sobre la batalla
 
 VICTORIA y K.O. superpuestos en el centro, con letras de pincel inspiradas en el

@@ -1,0 +1,52 @@
+{
+	"0": {
+		"runtime": "assets/battle_turns/digits/0.png",
+		"sha256": "8bd9e10356745b533fafa5399b223ecf48aefe6505010644032de1a6bd61b2ce",
+		"baseline": 136
+	},
+	"1": {
+		"runtime": "assets/battle_turns/digits/1.png",
+		"sha256": "234b591814f4d110bf1b293609081ff34294fbae2076a5d87f4ec9a18dccf12b",
+		"baseline": 136
+	},
+	"2": {
+		"runtime": "assets/battle_turns/digits/2.png",
+		"sha256": "a8ec6fe4b879de8dadf8a198c00225e96450b97b8c21767185e619219ebbb9cf",
+		"baseline": 136
+	},
+	"3": {
+		"runtime": "assets/battle_turns/digits/3.png",
+		"sha256": "d8388e470c61b20e44d0301f6ac7b25192979dc14764fb94f38bbbb3f4e48175",
+		"baseline": 136
+	},
+	"4": {
+		"runtime": "assets/battle_turns/digits/4.png",
+		"sha256": "f329cf9de9827bb34d493abd1d08020b934b1897dd17d5fd7d00dfd7ddf6f22d",
+		"baseline": 136
+	},
+	"5": {
+		"runtime": "assets/battle_turns/digits/5.png",
+		"sha256": "b1d2c53d5add623ce723394cd70f49ba23ad9499134d71c5e594c29a39e4fa48",
+		"baseline": 136
+	},
+	"6": {
+		"runtime": "assets/battle_turns/digits/6.png",
+		"sha256": "5d7ac089bf450b63cfb1850c0ffff050fe49fa2ba54e0e09df217e9799dee2a8",
+		"baseline": 136
+	},
+	"7": {
+		"runtime": "assets/battle_turns/digits/7.png",
+		"sha256": "0774075943251c34161f9376ee943942248b9d8bba90a998dbf0cdab4dabb964",
+		"baseline": 136
+	},
+	"8": {
+		"runtime": "assets/battle_turns/digits/8.png",
+		"sha256": "9179b68a1ed1bfd554f5ff318261eaae0e177147c8cadfac7078364b1eeead4c",
+		"baseline": 136
+	},
+	"9": {
+		"runtime": "assets/battle_turns/digits/9.png",
+		"sha256": "52d4b197973bd253f0980110f8c8d09ae98516967a373f5db49cef6860e2e134",
+		"baseline": 136
+	}
+}

@@ -43,11 +43,10 @@ func verify() -> void:
 			check(record.original_provenance.common_downscale <= 1.0 and record.original_provenance.reference_height >= 358, "authored detail instead of upscaling: " + hero + "/" + action)
 			check(image.get_pixel(0, 0).a == 0 and image.get_pixel(511, 511).a == 0, "transparent background preserved")
 			var revision: int = actor.begin_action(action)
-			var illustration = actor.sprite.texture
 			await create_timer(.025).timeout
-			check(actor.sprite.texture == illustration and actor.get_transform() == transform, "body remains static with the new artwork")
+			check(actor.get_transform() == transform, "body transform remains fixed with the new artwork")
 			check(absf(actor.body_rect().end.y - actor.size.y) < .01, "pose keeps its feet on the same floor")
-			check(not actor.sprite.texture is AtlasTexture and not actor.is_processing(), "no frame player or runtime sheet introduced")
+			check(actor.sprite.texture is AtlasTexture and not actor.is_processing(), "all heroes use authored sequences")
 			if action in ["attack", "guard"]: await capture(hero + "-" + action)
 			actor.finish_action(revision)
 		check(app.game.run == state and app.game.rng.state == rng, "HD presentation leaves rules and RNG unchanged")

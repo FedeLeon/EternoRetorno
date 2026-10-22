@@ -5574,10 +5574,10 @@
 			"job": "wreckage_bandit_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_0.png",
 			"source_sha256": "b793fcbf4047e16f9a68b5e994c740cdf02d93da60e0d8fb9044ac9064b41ca6",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_1/idle.png",
@@ -5677,10 +5677,10 @@
 			"job": "wreckage_bandit_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_1.png",
 			"source_sha256": "3e719a6a00b2aed7b731d9f350c27a708c417f081b94d090607cf6fdb27d1e5d",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_2/idle.png",
@@ -5780,10 +5780,10 @@
 			"job": "wreckage_bandit_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_2.png",
 			"source_sha256": "04ce80b0244267d3d09e06fad495209e84b2f3a915b366cbea5d43fc8d436edf",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_3/idle.png",
@@ -5883,10 +5883,10 @@
 			"job": "wreckage_bandit_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_3.png",
 			"source_sha256": "36dac465e8dfc24843b9b76a94f113c383bd17270392eab0589e5f0228a3b00c",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_4/idle.png",
@@ -5986,10 +5986,10 @@
 			"job": "wreckage_bandit_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_4.png",
 			"source_sha256": "bb10e8b6210c1771fd1a9b009a643858a84f1cb55b78c44678f3b68ec809c04e",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_5/idle.png",
@@ -6089,10 +6089,10 @@
 			"job": "wreckage_bandit_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_5.png",
 			"source_sha256": "0ef0c5891cbff7122fdc31f3482bfeedff86eddc8e3378e0f726f9ba996d0879",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_6/idle.png",
@@ -6192,10 +6192,10 @@
 			"job": "wreckage_bandit_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_6.png",
 			"source_sha256": "d431add7cac202cd90078545dee4c3cdaeae2752fddea52070967b9d60173c31",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/bandit_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/bandit_7/idle.png",
@@ -6335,10 +6335,10 @@
 			"job": "wreckage_bandit_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/bandit_7.png",
 			"source_sha256": "9d2b532c3368bb9016e8863d187aec99431403187539d812c9e284a4f3e51a9a",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_0/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_0/idle.png",
@@ -6438,10 +6438,10 @@
 			"job": "wreckage_beast_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_0.png",
 			"source_sha256": "2389867290a395a7538afa3b032933db619c3efc7d602dd64cf68b447aefb347",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_1/idle.png",
@@ -6541,10 +6541,10 @@
 			"job": "wreckage_beast_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_1.png",
 			"source_sha256": "51ca159d678d0e8ea31df95da85105f5739eaccd67e57a95c0b9674140784278",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_2/idle.png",
@@ -6644,10 +6644,10 @@
 			"job": "wreckage_beast_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_2.png",
 			"source_sha256": "5898c3272b1c444b525544e5f17717f7142c05cb815ec6e7c6c1cb7801e09f97",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_3/idle.png",
@@ -6747,10 +6747,10 @@
 			"job": "wreckage_beast_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_3.png",
 			"source_sha256": "b2965118e44e68a7801fa18fc05761ec27631a697927a719369e811d9ff64987",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_4/idle.png",
@@ -6850,10 +6850,10 @@
 			"job": "wreckage_beast_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_4.png",
 			"source_sha256": "a70688a4e7804e55e9b242237ef8254b0a8884a4994cd94a13273e63cab5e34b",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_5/idle.png",
@@ -6953,10 +6953,10 @@
 			"job": "wreckage_beast_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_5.png",
 			"source_sha256": "aa0ee513ff3b48afe8420f9f80c6af50a1a5ff803c9fe5a36fa46bdeca5f59c1",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_6/idle.png",
@@ -7056,10 +7056,10 @@
 			"job": "wreckage_beast_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_6.png",
 			"source_sha256": "2cd6e5d5161230442d25643a5df109b1cfdf7d03225e7fe9c2d9e9aada2a5b6e",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/beast_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/beast_7/idle.png",
@@ -7159,10 +7159,10 @@
 			"job": "wreckage_beast_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/beast_7.png",
 			"source_sha256": "538eeb12bb80b903738eded40f3614c7f303f87e2d189bd80e9770a63a134cf4",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_automaton/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_automaton/idle.png",
@@ -7262,10 +7262,10 @@
 			"job": "wreckage_crypt_automaton",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_automaton.png",
 			"source_sha256": "5003d9262e232bb5998451570bdbe1bd4620b785a71c20b45617050dc7ece722",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_bandit/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_bandit/idle.png",
@@ -7365,10 +7365,10 @@
 			"job": "wreckage_crypt_bandit",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bandit.png",
 			"source_sha256": "a196012a85b220b71165861a51b9eae86f0df8feabc3da1c674f11d6d1fdfafa",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_bat/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_bat/idle.png",
@@ -7468,10 +7468,10 @@
 			"job": "wreckage_crypt_bat",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_bat.png",
 			"source_sha256": "019b585cc127ea76367217eaa68f13a46a126f58a52a4f45d7294d2480158b58",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_beetle/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_beetle/idle.png",
@@ -7571,10 +7571,10 @@
 			"job": "wreckage_crypt_beetle",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_beetle.png",
 			"source_sha256": "a3d4f26b6ea1c3063fe5c2b151d4779695872d1863f63bf67d3b633e202598eb",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_lancer/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_lancer/idle.png",
@@ -7674,10 +7674,10 @@
 			"job": "wreckage_crypt_lancer",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_lancer.png",
 			"source_sha256": "a941de1a1148b33251f6b3fc3ea097bd237a66ca8a0cde3b3e2c8746406731b6",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_shaman/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_shaman/idle.png",
@@ -7767,10 +7767,10 @@
 			"job": "wreckage_crypt_shaman",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_shaman.png",
 			"source_sha256": "6f73d29ae44dc3c331a8e4bbc01131bdd109fb2fa49b99ff743bb5aa4027b6c3",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_slime/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_slime/idle.png",
@@ -7860,10 +7860,10 @@
 			"job": "wreckage_crypt_slime",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_slime.png",
 			"source_sha256": "a20497b4e01bcd3365a0b0dea9d159ee86e07f57981c2c73c450dd9d216babc3",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/crypt_wolf/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/crypt_wolf/idle.png",
@@ -8003,10 +8003,10 @@
 			"job": "wreckage_crypt_wolf",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/crypt_wolf.png",
 			"source_sha256": "f346b6fa2804542e68243098db346056fabdf6285138d92a31abc43da354baf1",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_0/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_0/idle.png",
@@ -8106,10 +8106,10 @@
 			"job": "wreckage_elemental_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_0.png",
 			"source_sha256": "2e6f0077fec2f253eb583a59bb878edfd2c97866f338be0047f19db43ec0fd58",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_1/idle.png",
@@ -8209,10 +8209,10 @@
 			"job": "wreckage_elemental_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_1.png",
 			"source_sha256": "fa1b3dc6b5c9241c8a74c22a396f364a838efdb8d9d3a05b38dcb50772e440a4",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_2/idle.png",
@@ -8312,10 +8312,10 @@
 			"job": "wreckage_elemental_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_2.png",
 			"source_sha256": "ea645ec5bc1ff677e9ece2e28319c253b0e80b94dbbb44132af4862a36bc3882",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_3/idle.png",
@@ -8415,10 +8415,10 @@
 			"job": "wreckage_elemental_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_3.png",
 			"source_sha256": "5d40ac157cbfc9b7959f297bc280197d441c02b9a4fe5a4dc607dff29163a8c4",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_4/idle.png",
@@ -8518,10 +8518,10 @@
 			"job": "wreckage_elemental_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_4.png",
 			"source_sha256": "1f8ccb86760d988b64b13eaa2278a9f1a4c01815d90ed71c29148274cc736a3e",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_5/idle.png",
@@ -8621,10 +8621,10 @@
 			"job": "wreckage_elemental_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_5.png",
 			"source_sha256": "f9482c7bf9454217d9edd6d1e6d94c8b0d00261ba641fc48074bc57877360d68",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_6/idle.png",
@@ -8724,10 +8724,10 @@
 			"job": "wreckage_elemental_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_6.png",
 			"source_sha256": "8c5adf1acf2362e186f90fefeaf09766600aaf2d5164a1ce32b4e3869b066cd5",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/elemental_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/elemental_7/idle.png",
@@ -8827,10 +8827,10 @@
 			"job": "wreckage_elemental_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/elemental_7.png",
 			"source_sha256": "9dcf7571faa5906bc3196e04f9166c6434a6dfa809b619471f17b4f1d6e99fa4",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_0/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_0/idle.png",
@@ -8930,10 +8930,10 @@
 			"job": "wreckage_flying_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_0.png",
 			"source_sha256": "24a0a6ee72f53dbfd8d42ae8b1a778fef43f2e8b72475eda37fd35ffb062eba3",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_1/idle.png",
@@ -9073,10 +9073,10 @@
 			"job": "wreckage_flying_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_1.png",
 			"source_sha256": "0e2502047dc295afaebc5763040d0e2fb10c4fc4f7beac51f8a80c2d864493d1",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_2/idle.png",
@@ -9176,10 +9176,10 @@
 			"job": "wreckage_flying_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_2.png",
 			"source_sha256": "ca4329b743c56c5605723873cb8d92727dd9117eb69d6e0523fb02ed5757ed1c",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_3/idle.png",
@@ -9279,10 +9279,10 @@
 			"job": "wreckage_flying_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_3.png",
 			"source_sha256": "c9c4a364429c8b9411047818231fbca00f4871861f79c46589f85e9a527a5fc6",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_4/idle.png",
@@ -9382,10 +9382,10 @@
 			"job": "wreckage_flying_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_4.png",
 			"source_sha256": "6c8642d0b395e5353dc2dfd55eeb0fee01bf7d061fd0b1d1498bf4ec4c6f73e7",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_5/idle.png",
@@ -9485,10 +9485,10 @@
 			"job": "wreckage_flying_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_5.png",
 			"source_sha256": "b8f1159066d9bdea4cc808eb5d4bdca6f209520ed2bcbdef41d13f8ce3b6394d",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_6/idle.png",
@@ -9628,10 +9628,10 @@
 			"job": "wreckage_flying_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_6.png",
 			"source_sha256": "1498c7b1fd3455e1908e5b4c2faa820e87ad9f6708accdb2f921090094bd3f28",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/flying_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/flying_7/idle.png",
@@ -9731,10 +9731,10 @@
 			"job": "wreckage_flying_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/flying_7.png",
 			"source_sha256": "13621062c50aad44faf034411c208f161de91c7c25f99b55b1ee3099615addce",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_0/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_0/idle.png",
@@ -9834,10 +9834,10 @@
 			"job": "wreckage_goblin_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_0.png",
 			"source_sha256": "d63915b10a41f2eb39b152e2bf4de128c11d607be2f0cb357cf5d44001ea377c",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_1/idle.png",
@@ -9937,10 +9937,10 @@
 			"job": "wreckage_goblin_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_1.png",
 			"source_sha256": "c99b5a4591b56f87475f30f91a2716702ae09a2ad477b3ab4a0a2087823cc76b",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_2/idle.png",
@@ -10040,10 +10040,10 @@
 			"job": "wreckage_goblin_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_2.png",
 			"source_sha256": "21d626fe7b1ada0db544c9cade53680760e68c4e642a54d1a1406436567ebc94",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_3/idle.png",
@@ -10143,10 +10143,10 @@
 			"job": "wreckage_goblin_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_3.png",
 			"source_sha256": "71a1c66407194cc6da92c90db5966e90e3dae0d6b1ff84a559c7dd65bac55e33",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_4/idle.png",
@@ -10246,10 +10246,10 @@
 			"job": "wreckage_goblin_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_4.png",
 			"source_sha256": "75d638a89e3bf3063e8f01ce3348a6fb8e080a8a4f305e0a06e82ebece6f5740",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_5/idle.png",
@@ -10349,10 +10349,10 @@
 			"job": "wreckage_goblin_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_5.png",
 			"source_sha256": "db6bce67325ab027c7a49b42c10dd8d16639361cee61d4f9d57ec699752a939d",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_6/idle.png",
@@ -10452,10 +10452,10 @@
 			"job": "wreckage_goblin_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_6.png",
 			"source_sha256": "95ef5e50934783c1960988f532589ef71ec5e73a6ca3439fcac6d4db5ca84ddd",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/goblin_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/goblin_7/idle.png",
@@ -10555,10 +10555,10 @@
 			"job": "wreckage_goblin_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/goblin_7.png",
 			"source_sha256": "608725bb17b1a02448837f8db3d942fdb16591ad3f9107c2931fcba69207b58b",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_0/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_0/idle.png",
@@ -10658,10 +10658,10 @@
 			"job": "wreckage_skeleton_0",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_0.png",
 			"source_sha256": "4b5de9672ac4da2a9df96b6dcfdbf50683f6c4194085ceb1c4a2b39a6ce778c3",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_1/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_1/idle.png",
@@ -10761,10 +10761,10 @@
 			"job": "wreckage_skeleton_1",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_1.png",
 			"source_sha256": "eee5f04239909666d2c575e613a98ef656724cd58feb2a6a7c742c697387fd27",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_2/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_2/idle.png",
@@ -10864,10 +10864,10 @@
 			"job": "wreckage_skeleton_2",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_2.png",
 			"source_sha256": "0d6121e3571d9b18870f6d1802fbf31d951e612678884dc4d6967703e81713ff",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_3/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_3/idle.png",
@@ -10967,10 +10967,10 @@
 			"job": "wreckage_skeleton_3",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_3.png",
 			"source_sha256": "5fe948d80abdcd212a655c1dd54c1f41d5bc9155604575ef81145749014c5a6c",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_4/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_4/idle.png",
@@ -11070,10 +11070,10 @@
 			"job": "wreckage_skeleton_4",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_4.png",
 			"source_sha256": "5f69a7f93855c86fd06eb969b627c780161a0530b11995f534c5444dbd0f7609",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_5/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_5/idle.png",
@@ -11173,10 +11173,10 @@
 			"job": "wreckage_skeleton_5",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_5.png",
 			"source_sha256": "30131f4b02caaf3700961908f827488af86a8422bb8c57c4fef9e7ef2bb3e3e0",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_6/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_6/idle.png",
@@ -11266,10 +11266,10 @@
 			"job": "wreckage_skeleton_6",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_6.png",
 			"source_sha256": "f747a4beef12803469b24e56328afa765d1dda34dd64bbba9006bd110f02a74d",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/combat_static/enemies/skeleton_7/idle.png": {
 		"source": "art_sources/static_combat_2026_10_19/source_frames/enemies/skeleton_7/idle.png",
@@ -11369,10 +11369,10 @@
 			"job": "wreckage_skeleton_7",
 			"source": "art_sources/enemy_wreckage_2026_10_21/sources/skeleton_7.png",
 			"source_sha256": "bb2ef7b1c1048b612122d1a0c082e360e205fb79aadee8fb97d9bbea77ce288b",
-			"wreckage_revision": 1
+			"wreckage_revision": 1.0
 		},
 		"outline_baked": true,
-		"wreckage_revision": 1
+		"wreckage_revision": 1.0
 	},
 	"assets/comic/enemies/attack/bandit_0.png": {
 		"sha256": "aa2bb2e6235f915ad4806192acc341eabd7c3248e738a3c50d08c1163aa05977",
@@ -14864,5 +14864,461 @@
 			"record": "art_sources/victory_2026_10_22/knockout.json"
 		},
 		"outline_baked": true
+	},
+	"assets/combat_sequences/warrior/idle.png": {
+		"sha256": "f662f72b3d941785820dba2893f6214363f3ab06b8150416f46023db6d6e6c5a",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/idle_refined.png",
+		"source_sha256": "e5f1070b9df473cdc53dc0bdc0a1d2126956a92195ccb751b19f4cb3a01ae578",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "idle",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/warrior/attack.png": {
+		"sha256": "7e61819e9d20f8603d838f6c7e4296dd2e484ca69f7e2b6dfaf0a4f350a78a8e",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/attack.png",
+		"source_sha256": "e48d3da882d991c9dceb15b2cc49c7d27e122b850987ac8aa27d813685ab41f8",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "attack",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/warrior/guard.png": {
+		"sha256": "1aa39108a99232cbd0c96888642d289c9044249b828345b45900afd45863d965",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/guard.png",
+		"source_sha256": "c4c053ece53023d5fe78271cc3623f1bc06e36afb399210df1c174d74bbb9679",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "guard",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/warrior/hurt.png": {
+		"sha256": "74143ac5412d98ad88ee875e218afdbd1d2cf59c1d765632a91ff07b3e28ec34",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/hurt.png",
+		"source_sha256": "b3653869dcd15240f669275a35c157885305321121420d7013fb6cd5719a19e5",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "hurt",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/warrior/skill.png": {
+		"sha256": "8129337e86c1ba0db45a62ad7b0068723c157fa729a549ec8e4ae63f6d718aaa",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/skill.png",
+		"source_sha256": "b3857286316fc5677932e35432b191271e08927d46620696adfaf7cf14cef599",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "skill",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/warrior/death.png": {
+		"sha256": "e9352c87747983403181072a2b335f8da90291be7075b2ad8645d1e75a1f1eeb",
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/death.png",
+		"source_sha256": "9a52f03e72ef29815c84e93228151fab521899d99948096b4c2ed6b0d77125a2",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored poses, uniform boot registration and atlas packing; no synthesized motion",
+		"outline_baked": false,
+		"origin": {
+			"job": "death",
+			"record": "art_sources/carpenter_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/battle_turns/player_turn.png": {
+		"sha256": "64cde9d8bcfe27522c2b713c6e2c68d5c2a4a7d5c75bfbc3935960887b84abad",
+		"source": "art_sources/turn_announcements_2026_10_22/sources/player_turn.png",
+		"source_sha256": "b87722344299a0a2f46d1f91223e713fda461d7de7f89d54ce4ed69f1d78239a",
+		"inputs_sha256": {
+			"assets/title/background.png": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320"
+		},
+		"style": "postapocalyptic_comic",
+		"processing": "Alpha-threshold bounds crop and proportional reduction in Godot",
+		"origin": {
+			"job": "player_turn",
+			"record": "art_sources/turn_announcements_2026_10_22/jobs.json"
+		},
+		"outline_baked": true
+	},
+	"assets/battle_turns/enemy_turn.png": {
+		"sha256": "235a51865ca6995c0c5d64b43af050099bc852086eea96d1908d4a75b5631bc3",
+		"source": "art_sources/turn_announcements_2026_10_22/sources/enemy_turn.png",
+		"source_sha256": "a1344ac07a83427f1aca30f967a6af8eed6a9ea5e3d4d0861d0480dc44182892",
+		"inputs_sha256": {
+			"assets/title/background.png": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320"
+		},
+		"style": "postapocalyptic_comic",
+		"processing": "Alpha-threshold bounds crop and proportional reduction in Godot",
+		"origin": {
+			"job": "enemy_turn",
+			"record": "art_sources/turn_announcements_2026_10_22/jobs.json"
+		},
+		"outline_baked": true
+	},
+	"assets/battle_turns/digits/0.png": {
+		"sha256": "8bd9e10356745b533fafa5399b223ecf48aefe6505010644032de1a6bd61b2ce",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 0.0
+		}
+	},
+	"assets/battle_turns/digits/1.png": {
+		"sha256": "234b591814f4d110bf1b293609081ff34294fbae2076a5d87f4ec9a18dccf12b",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 1.0
+		}
+	},
+	"assets/battle_turns/digits/2.png": {
+		"sha256": "a8ec6fe4b879de8dadf8a198c00225e96450b97b8c21767185e619219ebbb9cf",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 2.0
+		}
+	},
+	"assets/battle_turns/digits/3.png": {
+		"sha256": "d8388e470c61b20e44d0301f6ac7b25192979dc14764fb94f38bbbb3f4e48175",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 3.0
+		}
+	},
+	"assets/battle_turns/digits/4.png": {
+		"sha256": "f329cf9de9827bb34d493abd1d08020b934b1897dd17d5fd7d00dfd7ddf6f22d",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 4.0
+		}
+	},
+	"assets/battle_turns/digits/5.png": {
+		"sha256": "b1d2c53d5add623ce723394cd70f49ba23ad9499134d71c5e594c29a39e4fa48",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 5.0
+		}
+	},
+	"assets/battle_turns/digits/6.png": {
+		"sha256": "5d7ac089bf450b63cfb1850c0ffff050fe49fa2ba54e0e09df217e9799dee2a8",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 6.0
+		}
+	},
+	"assets/battle_turns/digits/7.png": {
+		"sha256": "0774075943251c34161f9376ee943942248b9d8bba90a998dbf0cdab4dabb964",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 7.0
+		}
+	},
+	"assets/battle_turns/digits/8.png": {
+		"sha256": "9179b68a1ed1bfd554f5ff318261eaae0e177147c8cadfac7078364b1eeead4c",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 8.0
+		}
+	},
+	"assets/battle_turns/digits/9.png": {
+		"sha256": "52d4b197973bd253f0980110f8c8d09ae98516967a373f5db49cef6860e2e134",
+		"source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+		"source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+		"style": "postapocalyptic_comic",
+		"processing": "Generated brush numeral, transparent crop and proportional reduction; common baseline",
+		"outline_baked": true,
+		"origin": {
+			"record": "art_sources/turn_digits_2026_10_22/generation.json",
+			"digit": 9.0
+		}
+	},
+	"assets/combat_sequences/guardian/idle.png": {
+		"sha256": "3227d5760af8bc0478d4f009b76c3d7b5563946e4df49a2d429ca883eb6d1740",
+		"source": "art_sources/guardian_guard_2026_10_22/sources/guardian_idle_thigh_tap.png",
+		"source_sha256": "505050f9bc3a5e26283d1ca7848f24ebdd1dd2ce892997698b0ed5207eb2584e",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "idle",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/guardian/attack.png": {
+		"sha256": "fee1119230e3def7019910ecc6c5bcb2a4e7d384c24d9450d00afe87ee635c63",
+		"source": "art_sources/guardian_guard_2026_10_22/sources/guardian_attack_grounded.png",
+		"source_sha256": "6eb7ea8ac6f9125f38a20392c4f06c09ae02ec08ed752e5872c58e4d28b538db",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "attack",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/guardian/guard.png": {
+		"sha256": "f606645271682e6de650ddb583eefcfe1982142fc1e0075bd3fc7f3f8d4952fb",
+		"source": "art_sources/guardian_guard_2026_10_22/sources/guardian_guard_grounded.png",
+		"source_sha256": "80d7c0961651b7ee9e5276ec955cd0a237762df8b8f6c410499e2e0b4ffde20b",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "guard",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/guardian/death.png": {
+		"sha256": "e3558def2ba11ec847b92cee2bfa3e64407cafdc05fd72659f7d9e8d8d52d6e3",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/guardian_death.png",
+		"source_sha256": "c5239d89945567e22e15ce9c9d94ee6b4cb35a600e62c7885f82ca6cb4abc03b",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "death",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/idle.png": {
+		"sha256": "713e1220836148aad0f42c39d32a99090586b83f6d453e943521508f8f2ae3c9",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_idle.png",
+		"source_sha256": "29dd525516e28cef74d9b9c761fa7b17ccbe2a22f96aefeaf2683fb869d5333c",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "idle",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/attack.png": {
+		"sha256": "46afbd39716276c7f95905323cfb154db291a9ab1edd392754950afafa392866",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_attack.png",
+		"source_sha256": "8b281956ce2ced98db36e92b473267daa5a53a6f5f788ecd18752aaffc6cc99f",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "attack",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/idle.png": {
+		"sha256": "9e86051c1ce83c8e3c00e79f57c2eaab0d2ec1a1605b5df5afc0747270389fc9",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_idle.png",
+		"source_sha256": "22e96a48db138fa7942a1a5358c1caefa9aa15ac7549886d527ff1b28cca9e54",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "idle",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/guardian/hurt.png": {
+		"sha256": "d464c903f5a0f881ea4b5272a753d32111de0a38932853dd3a5d7fee8bcb6013",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/guardian_hurt.png",
+		"source_sha256": "dfdb52da0af97f24d7df2a4687cb7c280871eea70feda828b552468e25360303",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "hurt",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/guardian/skill.png": {
+		"sha256": "22b416c7957bd286e20019f4502946bebb3ba65a4ffce117d2cb729255c8795e",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/guardian_skill.png",
+		"source_sha256": "d79d5870789716613f7de41cf383c4671d1039143c292fae536ec6b07cc5ca8a",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "guardian",
+			"action": "skill",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/guard.png": {
+		"sha256": "3e8013f398af7852ab3d4e1a33ee2ede9329972674f5d6e8a6767c6b21b28296",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_keyed.png",
+		"source_sha256": "859b0deeaa63faa011c21f7ab7ac5130c18edaaecff3da8a718b1e71a4ae2f0b",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "guard",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/hurt.png": {
+		"sha256": "45bab42db3e8e086e77aeb31b2f485540748cce1bffb4743ab7544f13d65f097",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_hurt.png",
+		"source_sha256": "8d846b993d5b77ad90ea350dde4e756620f29d3167b0693a46dc7f62d175f017",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "hurt",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/skill.png": {
+		"sha256": "1163fef4b39317be0f2c4f1a618549058e916215fb88100e985d9d6a890e97b2",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_skill.png",
+		"source_sha256": "b8503342b93cb4c1e1ace2fb0a6e9648cce877a076cb45476c2c0f58027e9d81",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "skill",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/rogue/death.png": {
+		"sha256": "e49cb319773f01cbba89c0e8168e078b947416e0e305a7c8f79c8b5364ae3861",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/rogue_death.png",
+		"source_sha256": "b19b8eba97990c58a5ecd86cbbbd0ae78914870665a739046b9a993ae42016e4",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "rogue",
+			"action": "death",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/attack.png": {
+		"sha256": "44bf25bcc2a57b11a2bcd81a5640573e80f34743938239810c3489086d00a0b6",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_attack.png",
+		"source_sha256": "72a202eba0df819c48ceca9fdc3e89b5cd8b3e8e819ea3580e7d6c3a5afcc55e",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "attack",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/guard.png": {
+		"sha256": "7a6dbb7f5abdafa5c243aa6e69b56721aabcf8414f0ddf51f5f19291b892b098",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_guard.png",
+		"source_sha256": "13b945b88f5f6edc36c246cf8415fb19eb6e02164facb78329363cc3e6150193",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "guard",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/hurt.png": {
+		"sha256": "d8e4f0e57f9d6518c3170d0e84a3ce241f002676d3ea0d200a30ee0414260681",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_hurt.png",
+		"source_sha256": "756dba15fa49e801229d733d83973bd0cc146d1abeac9c5ded4ac69b81abc91a",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "hurt",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/skill.png": {
+		"sha256": "0a7beb2dcdc423caefaf92da0d08bffe0ef1082593ea12fb54d1fee09dd899ce",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_skill.png",
+		"source_sha256": "44ebdb74a0a243991b2b5b300df329c5aaeb7dd58cff36d1419a76b66416805c",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "skill",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
+	},
+	"assets/combat_sequences/mage/death.png": {
+		"sha256": "1813adcab31360a5a15eb9663f6d91bb0bd49a05a01e79fe64d275de6bb888cb",
+		"source": "art_sources/hero_sequences_2026_10_22/sources/mage_death.png",
+		"source_sha256": "b09219e37f54a727992c80836a946fe39bb3c0f4f3d76625cad40192c9498f69",
+		"style": "postapocalyptic_comic",
+		"processing": "16 authored drawings, one fixed scale per sequence, boot registration and atlas packing",
+		"outline_baked": false,
+		"origin": {
+			"hero": "mage",
+			"action": "death",
+			"record": "art_sources/hero_sequences_2026_10_22/jobs.json"
+		}
 	}
 }

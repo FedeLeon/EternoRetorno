@@ -1,0 +1,19 @@
+{
+  "hero": "guardian",
+  "id": "idle",
+  "duration": 4.2,
+  "ping_pong": true,
+  "prompt": "EDIT the supplied repeated-pose sheet into a MICRO-MOVEMENT BREATHING sequence for the female Constructor heroine. Retain the EXACT same character silhouette, stance, head angle, face, shield markings, crowbar shape, outfit, size and camera in every cell of this 4x4 sheet. Exactly 16 chronological full-body frames, row-major. Crisp post-apocalyptic comic ink with fine ivory cutout outline, true transparent background, generous empty margin around every full figure and weapons. MOST IMPORTANT: these are IN-BETWEENS of a SINGLE VERY SMALL INHALATION, NOT 16 independent poses. Frame1 is the reference pose. Frame16 is the same pose with only a TINY breathing adjustment: shield and crowbar each rise ONLY 2 PIXELS TOTAL for a 300px tall figure (less than 1% body height), chest/hands/shoulders follow a tiny natural inhale, hair and scarf barely react. Distribute that total change in EVEN SUBPIXEL steps across all16 drawings. Adjacent frames must be virtually identical, no sudden jump even across row boundaries 4-to5,8-to9,12-to13. Frame16 does NOT return to frame1: playback will reverse the same drawings for a smooth 4.2 second full breath. Keep shield at the SAME LOW GUARD beside ribs throughout, never lift it toward face, never tilt it back and forth or change its shape/size; crowbar stays in the same relaxed-ready hand with just breathing drift. LOCK face/head and all costume detail; no head turns, posture changes, stepping, blinking or large flowing hair. Copy BOTH FEET, boots, lower legs and trousers IDENTICALLY from the master pose into every frame with precisely the same ground contact and boot spacing. No full body translation, bounce, squash/stretch, zoom, scaling, image rotation or effect layers. Do not improvise additional movement. No grid, labels, scenery, floor, shadows or particles. Preserve the original heroine exactly; the only visible motion should be slow, barely perceptible breathing in the shoulders and equipment.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png"
+  ],
+  "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_idle_subtle.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-491d08c0-0e9e-4e23-9dad-9ac93784b290.png",
+  "frame_height": 288,
+  "scale": 0.350694444444445,
+  "source_sha256": "0d0da8a63ad11f1853ec22ed6e64d6c8df45176cc59311af55e495c420feef75",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png": "fdf3640964f1f4e00fa9f629f0400bb14497b557f1fac1495e8813b8e3e66708"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "hero": "rogue",
+  "id": "death",
+  "duration": 1,
+  "prompt": "Use BOTH supplied references: image1 identity/neutral idle sequence, image2 repeated neutral pose guide. Create ONE high-resolution transparent sheet of EXACTLY 16 sequential full-body drawings, 4 columns x 4 rows, chronological row-major. Match reference identity, sharp comic ink, fine ivory edge, consistent face, clothes and proportions. Same camera, facing right, identical anatomical scale in EVERY cell, big empty transparent gutters around the full body AND weapons. No cropped hands/feet/weapons, no grid, labels, floor, cast shadows, extra characters or drawn effects. Small coherent changes between adjacent frames, all in-betweens explicitly drawn, smooth acceleration/recovery. MOST IMPORTANT: lower legs and BOTH BOOTS must be COPIED UNCHANGED at the exact same TWO ground-contact positions in every cell. No foot lifting, sliding, walking, running, whole-body tilt/rotation, zoom or scaling. Only upper-body articulation, arms, wrists, equipment, hair and cloth.  Identity: Male apothecary hero, wavy brown hair, teal rolled-sleeve medical jacket with red cross patch, burgundy medical satchel, dark trousers, brown work boots, one small steel knife in each hand. Keep the defensive crossed-knives stance of the reference for this idle half-cycle. Action: DEFEAT/FALL sequence, not looping. Frames1-3 neutral guard.4-7 shoulders sag and hands lower equipment;8-11 knees fold and body sinks straight down BETWEEN THE SAME TWO PLANTED BOOTS;12-16 slump forward with head bowed, arms slack and equipment touching the floor, ending fully incapacitated over bent knees. Do not move either boot to a new place, do not spread or close stance, do not skate, leap or rotate the whole body. Final frame stays collapsed, NEVER stand up again. No blood or dismemberment.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_idle.png",
+    "art_sources/hero_sequences_2026_10_22/references/rogue_idle_guide.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/rogue_death.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-56a2ce32-9df6-4298-b10a-286783dcdb58.png",
+  "source_sha256": "b19b8eba97990c58a5ecd86cbbbd0ae78914870665a739046b9a993ae42016e4",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_idle.png": "29dd525516e28cef74d9b9c761fa7b17ccbe2a22f96aefeaf2683fb869d5333c",
+    "art_sources/hero_sequences_2026_10_22/references/rogue_idle_guide.png": "45e97aa0fde64b6a8d47e3d442e7c8f47501950d67168a7ba3aacfeae4059354"
+  }
+}

@@ -33,9 +33,22 @@ borde claro pintado y PNG individuales 512×512. Los originales de producción
 permiten más detalle que los bancos reducidos antiguos; no se consideran una
 mejora de calidad los reescalados que inventan píxeles sobre esos bancos.
 
-Los cuerpos en batalla son estáticos por acción. No se deben añadir huesos,
-reposos animados ni deformaciones para simular articulaciones. Se conserva
-apoyo y escala al intercambiar imágenes.
+Los cuatro héroes usan animación corporal mediante dibujos cuadro a cuadro;
+los enemigos conservan una imagen por acción. No se añaden huesos ni
+deformaciones para simular articulaciones. Se conserva el apoyo al cambiar cuadros.
+
+### Criterio para animaciones de héroes en batalla
+
+- Pies en las mismas posiciones sobre el suelo; escala y proporciones constantes.
+- Muchos cuadros consecutivos con diferencias pequeñas y coherentes, sin saltos al
+  cambiar de fila, invertir un ciclo o regresar a guardia.
+- Gestos corporales legibles y contenidos, dibujados en brazos, cintura y equipo;
+  evitar tanto poses casi inmóviles como cambios grandes entre cuadros. No resolver
+  el movimiento desplazando, girando o deformando el recorte completo.
+- Reposo lento: respiración y pequeños gestos propios del personaje; ciclo actual
+  de 4,2 s. Ataque y defensa mantienen su duración y movimiento según la acción.
+- Revisar en batalla el contacto con el suelo, continuidad y vuelta a reposo;
+  conservar las acciones aprobadas al corregir otra secuencia.
 
 Los primeros planos son recortes estáticos de ataque, defensa u otra acción,
 con expresión y herramientas visibles. Sus luces y partículas son independientes,

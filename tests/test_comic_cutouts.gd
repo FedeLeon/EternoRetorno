@@ -26,7 +26,7 @@ func verify() -> void:
 			var old_pos = actor.position
 			actor.begin_action("guard")
 			if actor.sprite.material is ShaderMaterial:
-				check(actor.sprite.material.get_shader_parameter("cutout_region").z==1,"outline stays within current atlas cell")
+				check(actor.sprite.material.get_shader_parameter("cutout_region").is_equal_approx(Outline.region(actor.sprite.texture)),"outline stays within current atlas cell")
 				if Outline.is_baked(texture):check(not actor.sprite.material.get_shader_parameter("cutout_enabled"),"baked paper rim skips extra sampling and a second outline")
 			check(actor.scale==old_scale and actor.position==old_pos,"outline cannot change scale or grounding")
 		var attack = app.layer.get_node("EnemyIntent0/Attack").get_child(0)

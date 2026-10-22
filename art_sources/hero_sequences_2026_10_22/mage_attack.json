@@ -1,0 +1,18 @@
+{
+  "hero": "mage",
+  "id": "attack",
+  "duration": 0.72,
+  "prompt": "Use BOTH supplied references: image1 identity/neutral idle sequence, image2 repeated neutral pose guide. Create ONE high-resolution transparent sheet of EXACTLY 16 sequential full-body drawings, 4 columns x 4 rows, chronological row-major. Match reference identity, sharp comic ink, fine ivory edge, consistent face, clothes and proportions. Same camera, facing right, identical anatomical scale in EVERY cell, big empty transparent gutters around the full body AND weapons. No cropped hands/feet/weapons, no grid, labels, floor, cast shadows, extra characters or drawn effects. Small coherent changes between adjacent frames, all in-betweens explicitly drawn, smooth acceleration/recovery. MOST IMPORTANT: lower legs and BOTH BOOTS must be COPIED UNCHANGED at the exact same TWO ground-contact positions in every cell. No foot lifting, sliding, walking, running, whole-body tilt/rotation, zoom or scaling. Only upper-body articulation, arms, wrists, equipment, hair and cloth.  Identity: Female professor hero with short silver-white hair, burgundy-purple long coat with turquoise lining, white shirt, grey trousers and brown lace-up boots, brown shoulder bag, book in one hand and a long homemade electrified antenna staff in the other. Action: Frames1-4 neutral staff/book guard.5-8 bend staff elbow to prepare;9-11 point the antenna staff firmly forward-right through a compact wrist/elbow action, book stays in other hand;12-16 return staff to original diagonal guard. No beam, lightning, glow or VFX painted, no stepping.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/sources/mage_idle.png",
+    "art_sources/hero_sequences_2026_10_22/references/mage_idle_guide.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/mage_attack.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-846b2ab6-096e-4a7a-b372-ba5aa5659482.png",
+  "source_sha256": "72a202eba0df819c48ceca9fdc3e89b5cd8b3e8e819ea3580e7d6c3a5afcc55e",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/sources/mage_idle.png": "22e96a48db138fa7942a1a5358c1caefa9aa15ac7549886d527ff1b28cca9e54",
+    "art_sources/hero_sequences_2026_10_22/references/mage_idle_guide.png": "74636bffed7c40e9a1152fd1dff70d625533219ccb0812928fb035ffacbfa915"
+  }
+}

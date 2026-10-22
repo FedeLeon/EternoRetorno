@@ -1,0 +1,20 @@
+{
+  "hero": "rogue",
+  "id": "guard",
+  "duration": 0.9,
+  "prompt": "EDIT the supplied male Apothecary hero sprite sheet into a readable DEFENSE animation. Exactly SIXTEEN sequential full-body in-between drawings in FOUR equal columns by FOUR equal rows, chronological row-major, full figures and both knives entirely inside their cell with generous transparent margins. True transparent alpha. Retain exact wavy brown hair, teal rolled-sleeve medical jacket with red cross patch, burgundy medical satchel, dark trousers, brown boots, two small steel knives, detailed post-apocalyptic comic ink and fine ivory edge. Same camera and anatomical scale EVERY frame, facing enemy on the RIGHT. Start and finish in the exact neutral crossed-knives stance of the reference. Frames1-2 neutral. Frames3-7 gently RECOIL BACK THROUGH WAIST AND HIPS away from the right-hand enemy: hips retreat toward LEFT only 5-8 pixels for a 300px tall body, upper torso/head retreat LEFT about 12-15px total; knees flex above stationary shins, back rounds a little, chin tucks. Simultaneously forearms pull inward and raise both knives crossed into a tight X directly IN FRONT OF FACE and upper chest, elbows bend, shoulders hunch BEHIND BLADES. Frames8-10 maximum protection: clearly shelter behind crossed knives, face partly occluded by own forearms/blades, abdomen retracted. Frames11-16 recover smoothly to identical initial guard without sudden snap. Motion is small but clearly readable, coordinated body articulation, NOT a whole-image rigid shift. Every adjacent drawing changes by only 1-3 pixels in moving parts, evenly distributed, no jump across row boundaries. Crucial: COPY BOTH BOOTS, lower shins and their EXACT TWO ground-contact positions UNCHANGED in every drawing; same boot spacing and orientation, no foot lift, sliding or stepping. No changing scale, weapon length, facial identity or clothing. No running, lunging toward enemy, exaggerated lean, twisting entire cutout, detached knives, extra fingers/limbs, floor, shadows, text, labels, grid, VFX or sparks. Preserve sharp readable silhouettes and slight lag in hair/satchel only if needed. This must show a modest waist-and-arm retreat to hide behind knives, then a gradual return.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_idle.png",
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_guard.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_recoil.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-210ccd75-14e6-4d73-9e02-02ed79a8c661.png",
+  "frame_height": 205.0,
+  "scale": 0.441314553990611,
+  "source_sha256": "70f818a8813583fec9732112e0a0042d28b3be242da87a48735e4bc48e8b19bc",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_idle.png": "29dd525516e28cef74d9b9c761fa7b17ccbe2a22f96aefeaf2683fb869d5333c",
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_guard.png": "075db7d9421c01ce4613ca5f5d88f4ad7d0a6d8998f024189bdafe51d10705cc"
+  }
+}

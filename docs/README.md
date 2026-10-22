@@ -8,7 +8,7 @@ proyecto; las versiones anteriores se consultan en el historial de Git.
 | Documento | Contenido |
 | --- | --- |
 | [Juego](JUEGO.md) | Preparación, aventura, cartas y progreso. |
-| [Combate](COMBATE.md) | Turnos, reserva, sinergias, cuerpos estáticos y primeros planos. |
+| [Combate](COMBATE.md) | Turnos, reserva, sinergias, sprites de héroes y primeros planos. |
 | [Campamento](CAMPAMENTO.md) | Edificios, materiales, equipo y progresión permanente. |
 | [Interfaz](INTERFAZ.md) | Vistas, navegación, cartas, intenciones y lectura en pantalla. |
 | [Historia y protagonistas](HISTORIA.md) | Mundo y cuatro civiles; alcance de la narrativa. |

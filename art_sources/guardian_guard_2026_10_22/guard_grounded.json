@@ -1,0 +1,18 @@
+{
+  "hero": "guardian",
+  "id": "guard",
+  "duration": 0.9,
+  "prompt": "EDIT IMAGE1 animation sheet with ONLY one correction: FIX THE FEET AND LOWER LEGS. Keep all its sixteen chronological UPPER-BODY POSES, facial identity, costume, shield/crowbar motion, exact comic drawing detail and color unchanged. Image2 is a repeated-pose master with IDENTICAL BOOTS/LOWER LEGS in every cell: use its fixed lower-leg silhouette as the blueprint. In the edited 4x4 transparent sheet, both brown boots must have IDENTICAL shape, position, spacing, angle and dimensions in ALL SIXTEEN frames; do not widen stance when blocking or attacking. COPY the same two boots and shins into every cell, knee joints can flex above the shins but ankles/boots are completely immobile. Preserve the torso twisting/crowbar arc for attack or torso ducking behind the shield for block from image1. Same body scale every frame, no zoom. Do not change weapon/hand identity. Keep the whole figure and full weapons inside each frame with generous TRANSPARENT margin on ALL FOUR SIDES, including soles; no sole touching a cell boundary. Precisely 4 equal columns by 4 equal rows, sixteen drawings ordered as image1, transparent background, no lettering, grid, floor or shadows. No whole-image rotations/deformations. This is an animation registration correction; avoid redesigning the upper body. The defense still must raise shield IN FRONT of face and chest, duck behind it, and return to original guard.",
+  "references": [
+    "art_sources/guardian_guard_2026_10_22/sources/guardian_guard.png",
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png"
+  ],
+  "source": "art_sources/guardian_guard_2026_10_22/sources/guardian_guard_grounded.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-d94da99b-74ba-4489-a81c-1129646c5fd2.png",
+  "source_sha256": "80d7c0961651b7ee9e5276ec955cd0a237762df8b8f6c410499e2e0b4ffde20b",
+  "reference_sha256": {
+    "art_sources/guardian_guard_2026_10_22/sources/guardian_guard.png": "b0eb1141ec484598ceae9750c4b2bba28fe656301d537b92a23750402a4e0380",
+    "art_sources/hero_sequences_2026_10_22/references/guardian_idle_guide.png": "fdf3640964f1f4e00fa9f629f0400bb14497b557f1fac1495e8813b8e3e66708"
+  }
+}

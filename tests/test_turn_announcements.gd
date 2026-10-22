@@ -29,7 +29,9 @@ func observe(expected: Array[String]) -> void:
 		frames += 1
 		var banner = app.layer.get_node_or_null("TurnAnnouncement")
 		if banner != null:
-			var text: String = banner.get_node("Caption").text
+			var caption = banner.get_node("Caption")
+			check(caption.texture.resource_path.ends_with("enemy_turn.png" if banner.enemy_turn else "player_turn.png"),"correct illustrated turn lettering")
+			var text: String = "Turno del enemigo" if banner.enemy_turn else "Tu turno · %d"%banner.get_node("TurnNumber").value
 			if seen.is_empty() or seen.back() != text:
 				seen.append(text)
 				app.animate_combat_action()

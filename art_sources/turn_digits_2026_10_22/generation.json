@@ -1,0 +1,10 @@
+{
+  "generator": "built-in image_gen",
+  "purpose": "Dynamic turn announcement numbers matching the title lettering",
+  "reference": "assets/title/background.png",
+  "source": "art_sources/turn_digits_2026_10_22/sources/digits.png",
+  "prompt": "Create ONE transparent bitmap-font digit atlas for a 2D comic game, matching the ETERNO RETORNO title lettering in the attached image (STYLE REFERENCE ONLY). Exactly TEN separate numerals, in a clear evenly spaced 5-column by 2-row grid. Top row reads 0 1 2 3 4. Bottom row reads 5 6 7 8 9. Each numeral appears ONCE only, complete and readable. Heavy forward-slanted hand-painted dry-brush strokes, sharp jagged energetic edges, strong black ink outline and short black brush shadow like the title. Warm AMBER ORANGE/GOLD fill (#ffb24e) with small pale golden brush highlights, visibly different from turquoise turn lettering. Same numeral height, weight, angle and baseline in every cell, generous empty transparent margins around EVERY numeral so they can be cropped individually. Each numeral is one connected silhouette including its black rim; no disconnected paint splashes outside its silhouette. Genuine transparent background, no grid lines, panels, text labels, scenery, people or other symbols. Large landscape canvas. This is a complete 0-9 glyph set, not a single multi-digit number.",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-ec47e1b4-890c-4db4-b9f7-8f8c2cddeb08.png",
+  "source_sha256": "e589880b6021f5908c639e951b62e17d9a4848f8c20806a9a551aa1642cf2a9a",
+  "reference_sha256": "1790de6ad127bbc0286f143cc949726881d4a63fa3230eb9946512bf29d87320"
+}

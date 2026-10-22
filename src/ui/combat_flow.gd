@@ -96,7 +96,7 @@ static func present(ui: Control, hand_index: int, target_index: int, synergy_id:
 			var cut_in = preload("res://src/presentation/hero_cut_in.gd").play(ui.layer,ui.game.run.party[owner],"attack" if offensive else "defense")
 			preload("res://src/presentation/hero_attack_playback.gd").hold_until_finished(actor,revision,cut_in)
 			if cut_in != null: await preload("res://src/presentation/hero_attack_playback.gd").recover(ui,actor,revision,cut_in)
-			else: await ui.get_tree().create_timer(.28).timeout
+			else: await ui.get_tree().create_timer(maxf(.28, actor.presentation_remaining())).timeout
 			actor.finish_action(revision)
 		else:
 			await preload("res://src/presentation/card_impacts.gd").play(ui, impacts, motion)

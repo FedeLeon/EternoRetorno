@@ -1,0 +1,50 @@
+{
+	"idle": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/idle_refined.png",
+		"source_sha256": "e5f1070b9df473cdc53dc0bdc0a1d2126956a92195ccb751b19f4cb3a01ae578",
+		"runtime": "assets/combat_sequences/warrior/idle.png",
+		"runtime_sha256": "f662f72b3d941785820dba2893f6214363f3ab06b8150416f46023db6d6e6c5a",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	},
+	"attack": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/attack.png",
+		"source_sha256": "e48d3da882d991c9dceb15b2cc49c7d27e122b850987ac8aa27d813685ab41f8",
+		"runtime": "assets/combat_sequences/warrior/attack.png",
+		"runtime_sha256": "7e61819e9d20f8603d838f6c7e4296dd2e484ca69f7e2b6dfaf0a4f350a78a8e",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	},
+	"guard": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/guard.png",
+		"source_sha256": "c4c053ece53023d5fe78271cc3623f1bc06e36afb399210df1c174d74bbb9679",
+		"runtime": "assets/combat_sequences/warrior/guard.png",
+		"runtime_sha256": "1aa39108a99232cbd0c96888642d289c9044249b828345b45900afd45863d965",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	},
+	"hurt": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/hurt.png",
+		"source_sha256": "b3653869dcd15240f669275a35c157885305321121420d7013fb6cd5719a19e5",
+		"runtime": "assets/combat_sequences/warrior/hurt.png",
+		"runtime_sha256": "74143ac5412d98ad88ee875e218afdbd1d2cf59c1d765632a91ff07b3e28ec34",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	},
+	"skill": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/skill.png",
+		"source_sha256": "b3857286316fc5677932e35432b191271e08927d46620696adfaf7cf14cef599",
+		"runtime": "assets/combat_sequences/warrior/skill.png",
+		"runtime_sha256": "8129337e86c1ba0db45a62ad7b0068723c157fa729a549ec8e4ae63f6d718aaa",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	},
+	"death": {
+		"source": "art_sources/carpenter_sequences_2026_10_22/sources/death.png",
+		"source_sha256": "9a52f03e72ef29815c84e93228151fab521899d99948096b4c2ed6b0d77125a2",
+		"runtime": "assets/combat_sequences/warrior/death.png",
+		"runtime_sha256": "e9352c87747983403181072a2b335f8da90291be7075b2ad8645d1e75a1f1eeb",
+		"frames": 16,
+		"boot_span": 165.584415584416
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "hero": "rogue",
+  "id": "guard",
+  "duration": 0.9,
+  "ping_pong": true,
+  "prompt": "Create a transparent 4x4 sprite sheet of EXACTLY 16 consecutive IN-BETWEEN drawings interpolating ONLY between these TWO EXACT KEY POSES. IMAGE1 = frame1 neutral crossed-knives guard; IMAGE2 = frame16 maximum defensive recoil, waist/shoulders retracted back to LEFT and face tucked BEHIND crossed knives. Both images show the SAME existing male Apothecary hero. Preserve precisely the design, face, clothes, two knife shapes, boots, anatomical scale, ink detail and fine ivory comic outline. Frame1 must match image1; frame16 must match image2. Frames2-15 must evenly and gradually transition from image1 to image2, NEVER return to image1 in this sheet. One smooth backward-and-down torso/waist bend and inward forearm cover; shoulders/head shift LEFT about20px and down15px over ALL16 frames, roughly1px per neighboring drawing. No large changes at row boundaries 4-to5,8-to9,12-to13, not separate poses per row. Keep every intermediate drawing close to its immediate neighbors, preserve equipment proportions. Exactly four columns/four rows chronological row-major, each full-body figure with ALL knives and boots inside its cell with wide transparent margins. Fixed camera and identical physical scale, no resizing/zooming. BOOTS AND LOWER SHINS MUST BE IDENTICAL AND UNMOVING IN ALL16 FRAMES: copy the same feet in same two positions and spacing from image1, maintain both ground contacts; knees bend above shins only. Do not rotate/slide/squash the whole character, genuinely draw bending waist and elbows. Image2 is the destination, not inspiration for an unrelated action. Engine plays drawings backward after reaching image2 to recover smoothly, so draw ONLY the outgoing phase. Keep crisp post-apocalyptic comic coloring, same teal/red-cross medical jacket and burgundy satchel, no new accessories, no extra limbs or knives. Genuine transparent alpha. No labels, numbers, visible grid, background, floor, shadows, VFX or additional poses. Highest priority is steady incremental body articulation between the TWO specified keys while boots stay fixed.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/references/rogue_guard_key0.png",
+    "art_sources/hero_sequences_2026_10_22/references/rogue_guard_key8.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_keyed.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-02722f2e-4f5a-4257-81f0-ad13f9bda098.png",
+  "key_origin": {
+    "source": "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_recoil_back.png",
+    "frames": [
+      0,
+      8
+    ],
+    "processing": "Unmodified authored figures cropped and registered to boot contacts; no deformation or per-frame scale",
+    "source_sha256": "557f1b651dc83d6847c715fb8c27c90ed59a36d88bb46c5b4254a51c4d650c08"
+  },
+  "frame_height": 205.0,
+  "scale": 0.441314553990611,
+  "source_sha256": "859b0deeaa63faa011c21f7ab7ac5130c18edaaecff3da8a718b1e71a4ae2f0b",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/references/rogue_guard_key0.png": "1f1f8f56d7cec59237de3ed4053482966d4ba0cdd95b6efe9c1b210612788746",
+    "art_sources/hero_sequences_2026_10_22/references/rogue_guard_key8.png": "a962b117fa9c71d4909ad153afef8e21097dfc39a913a18bea9b056384de53ec"
+  }
+}

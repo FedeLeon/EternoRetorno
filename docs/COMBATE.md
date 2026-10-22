@@ -2,16 +2,16 @@
 
 ## Contrato actual
 
-Héroes y enemigos muestran **una imagen estática por acción**. Los estados son
+Los enemigos muestran **una imagen estática por acción**. Los estados son
 reposo, ataque, defensa, habilidad, daño y caída. Hay 360 PNG individuales en
 `assets/combat_static/`, configurados por `data/static_combat.json`.
 Las cinco poses de acción de cada héroe usan dibujos HD nuevos sobre lienzos
 de 512×512. Su escala anatómica se compara con una referencia de reposo del
 mismo trabajo: evita ampliar figuras pequeñas o cambiar de tamaño al actuar.
-Las cuatro ilustraciones de reposo vigentes se conservan.
+Los PNG individuales de héroes se conservan como respaldo.
 
-No se animan cuerpos con esqueletos, spritesheets, deformación, balanceo,
-escalado, retroceso ni carrera al terminar la batalla.
+Los cuatro héroes usan dibujos cuadro a cuadro. No hay esqueletos,
+deformación, balanceo del cuerpo completo ni carrera al terminar la batalla.
 
 Los primeros planos conservan ilustraciones estáticas con luces y partículas.
 
@@ -83,6 +83,11 @@ permiten mantener el mismo apoyo y escala cuando cambia la imagen por acción.
 restaura reposo. Al morir deja de volver a guardia. Cada modelo enemigo tiene
 su propio dibujo destruido: piezas rotas y cables sobre el suelo, visibles durante
 el resto del combate, con chispazos intermitentes. Al revivir recupera su postura.
+
+Cada héroe usa seis secuencias de 16 dibujos: guardia con respiración y ajustes
+del arma, ataque, bloqueo, habilidad, daño y caída. Sus acciones interrumpen el reposo
+y luego lo restauran; la caída mantiene el último fotograma. El reposo recorre
+un medio ciclo en ida y vuelta durante 4,2 s, sin cambiar escala y con apoyos registrados.
 
 ## Archivos de referencia
 

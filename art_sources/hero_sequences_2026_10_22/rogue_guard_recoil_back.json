@@ -1,0 +1,18 @@
+{
+  "hero": "rogue",
+  "id": "guard",
+  "duration": 0.9,
+  "prompt": "Correct ONLY the DIRECTION of the defensive recoil in this 16-frame 4x4 animation sheet. The enemy is on the RIGHT. The current middle frames wrongly lean the hero FORWARD to the RIGHT. Redraw the middle motion so he visibly LEANS/SITS BACK toward the LEFT, AWAY from the enemy, sheltering behind his knives. Keep the exact same comic Apothecary character, original start/end poses, outfit, satchel, size and camera. Frames1-2 original neutral crossed-knives stance. Frames3-7 progressively retract pelvis/waist to LEFT toward his rear boot; shoulders and head move LEFT about 15px for a 300px character, hips LEFT 8px, knees flex above FIXED shins. His upper body should stack closer over the LEFT/rear leg, not over the right/front leg. Bend at hips anatomically, don't move the whole cutout. Forearms form a protective crossed X in front of nose/chin, fists draw back close to cheeks, rightward blade tips between face and enemy. Frames8-10 maximum backward recoil: head, shoulder and waist positions are LEFT OF their frame1 positions relative to the IMMOBILE BOOTS. Chin tucked, blades/forearms partly cover face. Frames11-16 gradually return to EXACT original crossed guard. Ensure tiny consistent changes between neighbors (~1-3px per frame), no jumps across rows. DO NOT lean torso to the right or thrust forward, do not rotate the entire image, do not change physical scale. COPY BOTH BOOTS, feet, ankles and lower shins UNCHANGED at SAME two floor coordinates for all sixteen cells: no stepping, sliding, lifting, widening stance. Exactly sixteen full-body frames ordered left-to-right top-to-bottom in equal 4x4 grid with generous transparent gutters, no cropping. True transparent background, crisp detailed comic ink and fine ivory cutout edge. Keep two knives attached to same hands and identical weapon lengths, preserve face/hair/costume details. No text, grid lines, ground, shadows, VFX, additional limbs or characters.",
+  "references": [
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_recoil.png"
+  ],
+  "source": "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_recoil_back.png",
+  "generator": "built-in image_gen",
+  "generation_output": "/home/fede/.codex/generated_images/01a159c8-8ed8-7733-8dcb-29a7f9096fe3/exec-8b3ebb0d-6280-452c-b299-79246c4f8869.png",
+  "frame_height": 205.0,
+  "scale": 0.441314553990611,
+  "source_sha256": "557f1b651dc83d6847c715fb8c27c90ed59a36d88bb46c5b4254a51c4d650c08",
+  "reference_sha256": {
+    "art_sources/hero_sequences_2026_10_22/sources/rogue_guard_recoil.png": "70f818a8813583fec9732112e0a0042d28b3be242da87a48735e4bc48e8b19bc"
+  }
+}
